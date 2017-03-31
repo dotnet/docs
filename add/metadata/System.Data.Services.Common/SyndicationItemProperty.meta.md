@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Services.Common.SyndicationItemProperty
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

@@ -1,4 +1,4 @@
 ---
 uid: System.ServiceModel.PeerMessagePropagation
-internalonly: False
+manager: "ghogen"
 ---

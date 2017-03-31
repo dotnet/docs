@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a synchronous HTTP handler that processes requests for tracing information.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Handlers.TraceHandler" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether another request can use the <see cref="T:System.Web.Handlers.TraceHandler" /> instance.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +69,18 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">An <see cref="T:System.Web.HttpContext" /> object that provides access to the current <see langword="Request" /> and <see langword="Response" /> instances.</param>
+        <summary>Processes an HTTP request.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Handlers.TraceHandler.ProcessRequest%2A> method writes an <xref:System.Web.HttpResponse> that includes all current trace information. The trace information includes calls to the `protected`<xref:System.Web.Handlers.TraceHandler.ShowDetails%2A>, <xref:System.Web.Handlers.TraceHandler.ShowRequests%2A>, and <xref:System.Web.Handlers.TraceHandler.ShowVersionDetails%2A> methods.  
+  
+ The <xref:System.Web.Handlers.TraceHandler> class implements the <xref:System.Web.Handlers.TraceHandler.ProcessRequest%2A> method to delegate to the implementation of the <xref:System.Web.Handlers.TraceHandler.ProcessRequest%2A> method. If you extend the <xref:System.Web.Handlers.TraceHandler> class, implement your own <xref:System.Web.Handlers.TraceHandler.ProcessRequest%2A> method to display different tracing information.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDetails">
@@ -89,9 +99,16 @@
         <Parameter Name="data" Type="System.Data.DataSet" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="data">A <see cref="T:System.Data.DataSet" /> object that contains tracing information.</param>
+        <summary>Writes the details of the current system state and page information to the response stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Handlers.TraceHandler.ShowDetails%2A> method writes tracing details to the response stream, including information about the application state, session state for the current session, control tree created for the current page, and HTTP request information such as the query string and form parameters. It is called by <xref:System.Web.Handlers.TraceHandler.ProcessRequest%2A>, and cannot be overridden.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowRequests">
@@ -110,9 +127,16 @@
         <Parameter Name="data" Type="System.Collections.IList" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="data">A set of <see cref="T:System.Data.DataSet" /> objects that represent the recent HTTP requests the server has processed.</param>
+        <summary>Writes the details of recent HTTP request traffic to the response stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Handlers.TraceHandler.ShowRequests%2A> method writes tracing details to the response stream, including information on the most recent HTTP requests that ASP.NET has processed for the site. It is called by <xref:System.Web.Handlers.TraceHandler.ProcessRequest%2A>, and cannot be overridden.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowVersionDetails">
@@ -129,8 +153,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Writes the details of the current Common Language Runtime and ASP.NET build versions that the Web server is using.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Handlers.TraceHandler.ShowVersionDetails%2A> method writes tracing details on the Common Language Runtime (CLR) and ASP.NET versions currently in use. It is called by <xref:System.Web.Handlers.TraceHandler.ProcessRequest%2A>, and cannot be overridden.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpHandler.IsReusable">
@@ -146,9 +177,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether another request can use the <see cref="T:System.Web.Handlers.TraceHandler" /> instance.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit-interface member implementation. It can be used only when the <xref:System.Web.Handlers.TraceHandler> instance is cast to an <xref:System.Web.IHttpHandler> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpHandler.ProcessRequest">
@@ -167,9 +206,16 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">An <see cref="T:System.Web.HttpContext" /> object that provides access to the current <see langword="Request" /> and <see langword="Response" /> instances.</param>
+        <summary>Processes an HTTP request.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method writes all current trace information to the <xref:System.Web.HttpResponse>. The trace information includes information on the state of the Web server, the current session, the control tree for the current page, HTTP request parameters, and recent HTTP requests processed by the server.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

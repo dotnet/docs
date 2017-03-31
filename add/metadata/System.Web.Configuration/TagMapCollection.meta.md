@@ -1,29 +1,39 @@
 ---
 uid: System.Web.Configuration.TagMapCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TagMapCollection.Item(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TagMapCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.TagMapCollection.Item
 ---
 
 ---
 uid: System.Web.Configuration.TagMapCollection.Remove(System.Web.Configuration.TagMapInfo)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TagMapCollection.Add(System.Web.Configuration.TagMapInfo)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.TagMapCollection.Clear
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

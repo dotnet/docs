@@ -1,219 +1,289 @@
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.AttributeCount
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.Name
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.ReadState
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.EOF
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.Item(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.MoveToFirstAttribute
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.ReadContentAsUniqueId
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.Item(System.Int32)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.GetAttribute(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.DelegatingXmlDictionaryReader.ReadContentAsBinHex
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.GetAttribute(System.Int32)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.InnerReader
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.XmlSpace
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.IsEmptyElement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.ResolveEntity
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.ValueType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.InitializeInnerReader(System.Xml.XmlDictionaryReader)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.MoveToAttribute(System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.DelegatingXmlDictionaryReader.GetAttribute
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.Depth
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.QuoteChar
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.ReadValueChunk(System.Char[],System.Int32,System.Int32)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.LookupNamespace(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.MoveToElement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.MoveToAttribute(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.BaseURI
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.DelegatingXmlDictionaryReader.ReadContentAsBase64
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.LocalName
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.MoveToNextAttribute
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.IsDefault
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.NodeType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.Value
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.XmlLang
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.Item(System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.NameTable
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.HasValue
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.MoveToAttribute(System.Int32)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.DelegatingXmlDictionaryReader.MoveToAttribute
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.ReadAttributeValue
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.Prefix
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.NamespaceURI
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.GetAttribute(System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.DelegatingXmlDictionaryReader.Item
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.Close
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.DelegatingXmlDictionaryReader.Read
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Cryptography.X509Certificates.X509ContentType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

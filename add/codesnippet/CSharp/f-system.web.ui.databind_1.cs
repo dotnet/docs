@@ -1,2 +1,0 @@
-            DataBindingHandlerAttribute myDataBindingHandlerAttribute = 
-               DataBindingHandlerAttribute.Default;

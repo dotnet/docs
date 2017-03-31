@@ -11,8 +11,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of authentication used for the binding.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Values from this enumeration are used by the  
+  
+ <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> property to indicate how a message must be authenticated by the MSMQ transport.  
+  
+ If security is turned off by setting the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> to None, then the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> property must also be set to <xref:System.Net.Security.ProtectionLevel> for consistency.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Certificate">
@@ -29,7 +40,7 @@
         <ReturnType>System.ServiceModel.MsmqAuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The client is authenticated using X.509 certificates. The client certificate must be present in the certificate store of the server.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -46,7 +57,7 @@
         <ReturnType>System.ServiceModel.MsmqAuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No security is used with this binding.</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsDomain">
@@ -63,7 +74,7 @@
         <ReturnType>System.ServiceModel.MsmqAuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Kerberos is used for authentication. The client and server must be joined to a trusted domain.</summary>
       </Docs>
     </Member>
   </Members>

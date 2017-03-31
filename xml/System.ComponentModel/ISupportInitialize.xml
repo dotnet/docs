@@ -13,8 +13,26 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that this object supports a simple, transacted notification for batch initialization.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.ISupportInitialize> allows controls to optimize multiple property assignments. As a result, you can initialize co-dependent properties or batch set multiple properties at design time.  
+  
+ Call the <xref:System.ComponentModel.ISupportInitialize.BeginInit%2A> method to signal the object that initialization is starting. Call the <xref:System.ComponentModel.ISupportInitialize.EndInit%2A> method to signal that initialization is complete.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.ISupportInitialize> interface to initialize three <xref:System.Windows.Forms.TrackBar> controls.  
+  
+ [!code-cpp[TrackBar#4](~/samples/snippets/cpp/VS_Snippets_Winforms/Trackbar/CPP/form1.cpp#4)]
+ [!code-csharp[TrackBar#4](~/samples/snippets/csharp/VS_Snippets_Winforms/Trackbar/CS/form1.cs#4)]
+ [!code-vb[TrackBar#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Trackbar/VB/form1.vb#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginInit">
@@ -36,8 +54,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Signals the object that initialization is starting.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.ISupportInitialize> interface to initialize three <xref:System.Windows.Forms.TrackBar> controls.  
+  
+ [!code-cpp[TrackBar#4](~/samples/snippets/cpp/VS_Snippets_Winforms/Trackbar/CPP/form1.cpp#4)]
+ [!code-csharp[TrackBar#4](~/samples/snippets/csharp/VS_Snippets_Winforms/Trackbar/CS/form1.cs#4)]
+ [!code-vb[TrackBar#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Trackbar/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -59,8 +88,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Signals the object that initialization is complete.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.ISupportInitialize> interface to initialize three <xref:System.Windows.Forms.TrackBar> controls.  
+  
+ [!code-cpp[TrackBar#4](~/samples/snippets/cpp/VS_Snippets_Winforms/Trackbar/CPP/form1.cpp#4)]
+ [!code-csharp[TrackBar#4](~/samples/snippets/csharp/VS_Snippets_Winforms/Trackbar/CS/form1.cs#4)]
+ [!code-vb[TrackBar#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Trackbar/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

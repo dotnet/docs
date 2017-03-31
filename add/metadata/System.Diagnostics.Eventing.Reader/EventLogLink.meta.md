@@ -1,19 +1,23 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogLink
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogLink.DisplayName
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogLink.IsImported
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogLink.LogName
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

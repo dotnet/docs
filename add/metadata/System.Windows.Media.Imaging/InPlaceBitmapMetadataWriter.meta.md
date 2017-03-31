@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter.TrySave
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

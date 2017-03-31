@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides access to information about the structural type and column information for a <see cref="T:System.Data.Common.DbDataRecord" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="memberInfo" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Metadata.Edm.EdmMember&gt;" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="memberInfo">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="metadata">The metadata for the type represented by this object, supplied by <see cref="T:System.Data.Metadata.Edm.TypeUsage" />.</param>
+        <param name="memberInfo">An enumerable collection of <see cref="T:System.Data.Metadata.Edm.EdmMember" /> objects that represent column information.</param>
+        <summary>Initializes a new <see cref="T:System.Data.Common.DbDataRecord" /> object for a specific type with an enumerable collection of data fields.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.FieldMetadata&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets <see cref="T:System.Data.Common.FieldMetadata" /> for this <see cref="P:System.Data.IExtendedDataRecord.DataRecordInfo" /> object.</summary>
+        <value>A <see cref="T:System.Data.Common.FieldMetadata" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets type info for this object as a <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

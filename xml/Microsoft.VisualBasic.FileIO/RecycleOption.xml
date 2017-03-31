@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether a file should be deleted permanently or placed in the **Recycle Bin**.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:Microsoft.VisualBasic.FileIO.FileSystem.DeleteDirectory%2A> and <xref:Microsoft.VisualBasic.FileIO.FileSystem.DeleteFile%2A> methods.  
+  
+ To protect users against accidental deletion of important files, the **Recycle Bin** collects deleted files and provides a method for restoring those files. You must explicitly delete the files from the **Recycle Bin** to make the deletion permanent. Until the files are deleted from the **Recycle Bin**, the disk space occupied by those files is unavailable for other uses.  
+  
+ Sometimes it is beneficial to bypass the **Recycle Bin**, especially if you are deleting a large number of files (or a smaller number of very large files) that you are sure are no longer needed, and you want to reclaim the disk space.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DeletePermanently">
@@ -27,7 +38,7 @@
         <ReturnType>Microsoft.VisualBasic.FileIO.RecycleOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Delete the file or directory permanently. Default.</summary>
       </Docs>
     </Member>
     <Member MemberName="SendToRecycleBin">
@@ -43,7 +54,7 @@
         <ReturnType>Microsoft.VisualBasic.FileIO.RecycleOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Send the file or directory to the **Recycle Bin**.</summary>
       </Docs>
     </Member>
   </Members>

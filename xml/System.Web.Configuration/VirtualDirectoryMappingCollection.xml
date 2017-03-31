@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a collection of <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.VirtualDirectoryMappingCollection> class allows you to programmatically access a collection of <xref:System.Web.Configuration.VirtualDirectoryMapping> objects. The collection can be accessed with either the key or the index.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +54,15 @@
         <Parameter Name="mapping" Type="System.Web.Configuration.VirtualDirectoryMapping" />
       </Parameters>
       <Docs>
-        <param name="virtualDirectory">To be added.</param>
-        <param name="mapping">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="virtualDirectory">A <see cref="T:System.String" /> that contains the virtual directory path.</param>
+        <param name="mapping">A <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</param>
+        <summary>Adds a <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object to the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> instance.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="mapping" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualDirectory" /> already exists in the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllKeys">
@@ -66,8 +78,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a string array that contains all the keys in the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> instance.</summary>
+        <value>A string array that contains all the keys in the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +97,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears all <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> objects from the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,10 +118,13 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">A one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the entire <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Array.Length" /> property of <paramref name="array" /> is less than the value of <see cref="P:System.Collections.Specialized.NameObjectCollectionBase.Count" /> plus <paramref name="index" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -128,9 +143,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">An integer value that specifies a particular <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object within the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />.</param>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> collection element at the specified index.</summary>
+        <returns>The <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> element at the specified index.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,9 +165,9 @@
         <Parameter Name="virtualDirectory" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualDirectory">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="virtualDirectory">A string that contains the name of the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> collection element based on the specified virtual-directory name.</summary>
+        <returns>The <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> element based on the specified virtual-directory name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,9 +187,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">An integer value that specifies a particular <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object within the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />.</param>
+        <summary>Gets the key of the entry at the specified index of the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> instance.</summary>
+        <returns>A string that contains the name of the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,9 +209,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">An integer value that specifies a particular <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object within the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />.</param>
+        <summary>Gets or sets the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object at the specified index location.</summary>
+        <value>A <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,9 +231,9 @@
         <Parameter Name="virtualDirectory" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualDirectory">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="virtualDirectory">A string that contains the name of the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</param>
+        <summary>Gets or sets the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object based on the specified virtual directory name.</summary>
+        <value>A <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,8 +253,8 @@
         <Parameter Name="virtualDirectory" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualDirectory">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="virtualDirectory">A string that contains the name of the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</param>
+        <summary>Removes a <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object from the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,8 +274,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">An integer value that specifies a particular <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object within the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />.</param>
+        <summary>Removes a <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object at the specified index from the <see cref="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

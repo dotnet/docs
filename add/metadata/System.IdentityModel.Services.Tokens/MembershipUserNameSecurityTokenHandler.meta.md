@@ -1,34 +1,47 @@
 ---
 uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.MembershipProvider
-internalonly: False
----
-
----
-uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.#ctor(System.Web.Security.MembershipProvider)
-internalonly: False
----
-
----
-uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.CanValidateToken
-internalonly: False
----
-
----
-uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.LoadCustomConfiguration(System.Xml.XmlNodeList)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.#ctor(System.Web.Security.MembershipProvider)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.CanValidateToken
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.LoadCustomConfiguration(System.Xml.XmlNodeList)
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

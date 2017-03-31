@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a method used to create an <see cref="T:System.AppDomain" /> instance for a Web-application manager and a method used to stop all <see cref="T:System.AppDomain" /> instances for a Web-application manager.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +37,10 @@
         <Parameter Name="appPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="appId">To be added.</param>
-        <param name="appPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="appId">The unique identifier for the new application.</param>
+        <param name="appPath">The path to the new application's files.</param>
+        <summary>Creates a new application domain for the specified Web application.</summary>
+        <returns>A new application domain for the specified Web application.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +58,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stops all application domains associated with this application manager.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

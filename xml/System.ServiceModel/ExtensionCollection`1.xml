@@ -32,9 +32,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type for the collection.</typeparam>
+    <summary>Represents a collection of extensions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, implementations of <xref:System.ServiceModel.IExtensibleObject%601?displayProperty=fullName> return an <xref:System.ServiceModel.ExtensionCollection%601> from the <xref:System.ServiceModel.IExtensibleObject%601.Extensions%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,8 +58,8 @@
         <Parameter Name="owner" Type="T" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The owner of the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ExtensionCollection`1" /> class with a specified owner.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +78,9 @@
         <Parameter Name="syncRoot" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <param name="syncRoot">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The owner of the collection.</param>
+        <param name="syncRoot">The object used to synchronize.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ExtensionCollection`1" /> class with a specified owner and synchronization root.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,9 +121,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="E">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="E">The type of extension sought.</typeparam>
+        <summary>Returns an extension if it is in the collection.</summary>
+        <returns>An extension of the type sought, or <see langword="null" /> if no extensions implement the type. If more than one extension implements the type, the most recently added is returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,9 +145,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="E">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="E">The type for which the collection of extensions is sought.</typeparam>
+        <summary>Returns a collection of extensions if found in the collection.</summary>
+        <returns>A collection of extensions of the type sought. If no extensions implement this type, a non-null empty collection is returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +235,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether the collection is read-only.</summary>
+        <value>
+          <see cref="T:System.ServiceModel.ExtensionCollection`1" /> always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

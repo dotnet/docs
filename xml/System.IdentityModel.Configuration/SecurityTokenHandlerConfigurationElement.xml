@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a <see langword="&lt;securityTokenHandlerConfiguration&gt;" /> element in a configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `<securityTokenHandlerConfiguration>` element provides default configuration settings for the collection of security token handlers configured under a `<securityTokenHandlers>` element. The `<securityTokenHandlers>` element is represented by the <xref:System.IdentityModel.Configuration.SecurityTokenHandlerElement> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +55,16 @@
         <ReturnType>System.IdentityModel.Configuration.AudienceUriElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.IdentityModel.Configuration.AudienceUriElementCollection" /> that is associated with this token handler configuration element.</summary>
+        <value>The collection of audience URIs that are configured for this token handler configuration element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<audienceUris>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Caches">
@@ -71,9 +85,16 @@
         <ReturnType>System.IdentityModel.Configuration.IdentityModelCachesElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Configuration.IdentityModelCachesElement" /> that is associated with this token handler configuration element.</summary>
+        <value>The element that configures the token replay cache and the session security token cache for this token handler configuration element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<caches>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CertificateValidation">
@@ -94,9 +115,16 @@
         <ReturnType>System.IdentityModel.Configuration.X509CertificateValidationElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Configuration.X509CertificateValidationElement" /> that is associated with this token handler configuration element.</summary>
+        <value>The element that configures the certificate validator and its properties for this token handler configuration element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<certificateValidator>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -135,9 +163,16 @@
         <ReturnType>System.IdentityModel.Configuration.IssuerNameRegistryElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Configuration.IssuerNameRegistryElement" /> that is associated with this token handler configuration element.</summary>
+        <value>The element that configures the issuer name registry for this token handler configuration element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<issuerNameRegistry>` element that is configured under the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IssuerTokenResolver">
@@ -158,9 +193,16 @@
         <ReturnType>System.IdentityModel.Configuration.CustomTypeElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the issuer token resolver that is associated with this token handler configuration element.</summary>
+        <value>A custom type element that specifies the <see cref="T:System.Type" /> of the issuer token resolver. The type must derive from <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<issuerTokenResolver>` element that is configured under the `<securityTokenHandlerConfiguration>` element. The `<issuerTokenResolver>` element registers an issuer token resolver. This can be used to resolve Issuer key identifier clauses while deserializing a SAML token.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumClockSkew">
@@ -184,9 +226,16 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum clock skew that is configured for this token handler configuration element.</summary>
+        <value>The maximum clock skew.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `maxClockSkew` attribute of the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -210,9 +259,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the token handler configuration element.</summary>
+        <value>The name of the identity configuration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `name` attribute of the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -251,9 +307,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether to save the bootstrap context in claims identities and session security tokens created by the handlers configured in this identity collection.</summary>
+        <value>
+          <see langword="true" /> to save the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `saveBootstrapContext` attribute of the `<securityTokenHandlerConfiguration>` element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceTokenResolver">
@@ -274,9 +338,16 @@
         <ReturnType>System.IdentityModel.Configuration.CustomTypeElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the service token resolver that is associated with this token handler configuration element.</summary>
+        <value>A custom type element that specifies the <see cref="T:System.Type" /> of the service token resolver. The type must derive from <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<serviceTokenResolver>` element that is configured under the `<securityTokenHandlerConfiguration>` element. The `<serviceTokenResolver>` element registers a service token resolver. This can be used to resolve Issuer key identifier clauses while deserializing a SAML token.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TokenReplayDetection">
@@ -297,8 +368,8 @@
         <ReturnType>System.IdentityModel.Configuration.TokenReplayDetectionElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Configuration.TokenReplayDetectionElement" /> that is associated with this token handler configuration element.</summary>
+        <value>The element that specifies whether token replay detection is enabled and specifies the maximum expiration period for tokens in the token replay cache.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

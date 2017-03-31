@@ -33,7 +33,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A sequence of XML nodes that dynamically expands and allows random access to items.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +73,8 @@
         <Parameter Name="list" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt;" />
       </Parameters>
       <Docs>
-        <param name="list">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="list">A sequence of <see cref="T:System.Xml.XPath.XPathNavigator" /> instances.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,8 +95,8 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="capacity">A value of type <see langword="Int32" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +117,8 @@
         <Parameter Name="navigator" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,9 +140,9 @@
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">An array of instances of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <param name="size">A value of type <see langword="int" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +166,8 @@
         <Parameter Name="navigator" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <summary>Clone the navigator and then adds a node to the sequence.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,9 +191,9 @@
         <Parameter Name="seq" Type="System.Xml.Xsl.Runtime.XmlQueryNodeSequence" />
       </Parameters>
       <Docs>
-        <param name="seq">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="seq">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</param>
+        <summary>Clears and reuses the specified <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> if it is available. If the <paramref name="seq" /> parameter is <see langword="null" />, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" />.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,10 +218,10 @@
         <Parameter Name="navigator" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="seq">To be added.</param>
-        <param name="navigator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="seq">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</param>
+        <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <summary>Clears and reuses the specified <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> if it is available. If the <paramref name="seq" /> parameter is <see langword="null" />, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> and adds <paramref name="navigator" /> to the sequence.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,9 +245,9 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Xml.XPath.XPathNavigator&gt;" />
       </Parameters>
       <Docs>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="comparer">A sequence of <see cref="T:System.Xml.XPath.XPathNavigator" /> instances.</param>
+        <summary>Returns a sequence that contains all the distinct nodes in this cache, sorted in document order.</summary>
+        <returns>A sequence of <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> class instances.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,7 +268,7 @@
         <ReturnType>System.Xml.Xsl.Runtime.XmlQueryNodeSequence</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets an empty <see cref="T:System.Xml.Xsl.Runtime.XmlQueryNodeSequence" /> that is properly initialized.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,8 +289,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>If this property is true, the nodes in this cache are in document order with no duplicates.</summary>
+        <value>
+          <see langword="true" /> if the nodes are distinct, otherwise return <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,8 +337,8 @@
         <Parameter Name="value" Type="System.Xml.XPath.XPathItem" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,7 +360,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,9 +384,10 @@
         <Parameter Name="value" Type="System.Xml.XPath.XPathItem" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <summary>Returns true if the specified value is in the sequence.</summary>
+        <returns>
+          <see langword="true" /> if the value is in the sequence; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,9 +412,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">An array of <see cref="T:System.Xml.XPath.XPathItem" /> instances.</param>
+        <param name="index">A value of type <see langword="int" />.</param>
+        <summary>Copies the contents of this sequence to the specified array, starting at the specified index in the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,8 +454,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies that items cannot be added, removed, or modified through the <see cref="T:System.Collections.Generic.ICollection`1" /> interface.</summary>
+        <value>
+          <see langword="true" /> if the collection is read only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,9 +480,10 @@
         <Parameter Name="value" Type="System.Xml.XPath.XPathItem" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
+        <returns>
+          <see langword="true" /> if the item is removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,8 +505,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the <see cref="T:System.Collections.Generic.IEnumerator`1" /> of <see cref="T:System.Xml.XPath.XPathItem" /> implementation.</summary>
+        <returns>The IEnumerator&lt;XPathItem&gt; implementation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -526,9 +530,9 @@
         <Parameter Name="value" Type="System.Xml.XPath.XPathItem" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <summary>Returns the index of the specified value in the sequence.</summary>
+        <returns>The index of the specified value in the sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,9 +557,9 @@
         <Parameter Name="value" Type="System.Xml.XPath.XPathItem" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">A value of type <see langword="int" />.</param>
+        <param name="value">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -579,9 +583,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">A value of type <see langword="Int32" />.</param>
+        <summary>Returns the item at the specified index.</summary>
+        <value>An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,8 +609,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">A value of type <see langword="int" />.</param>
+        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

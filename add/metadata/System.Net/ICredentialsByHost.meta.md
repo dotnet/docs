@@ -1,9 +1,11 @@
 ---
 uid: System.Net.ICredentialsByHost
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ICredentialsByHost.GetCredential(System.String,System.Int32,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

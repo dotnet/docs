@@ -1,24 +1,40 @@
 ---
 uid: System.Windows.Forms.LinkLabelLinkClickedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkLabelLinkClickedEventArgs.#ctor(System.Windows.Forms.LinkLabel.Link)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkLabelLinkClickedEventArgs.Link
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.LinkLabelLinkClickedEventArgs.Button
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkLabelLinkClickedEventArgs.#ctor(System.Windows.Forms.LinkLabel.Link,System.Windows.Forms.MouseButtons)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.LinkLabelLinkClickedEventArgs.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

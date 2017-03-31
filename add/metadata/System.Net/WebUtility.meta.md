@@ -1,44 +1,65 @@
 ---
 uid: System.Net.WebUtility
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebUtility.HtmlDecode
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebUtility.HtmlDecode(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebUtility.HtmlEncode
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebUtility.UrlDecodeToBytes(System.Byte[],System.Int32,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebUtility.HtmlEncode(System.String,System.IO.TextWriter)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebUtility.UrlEncodeToBytes(System.Byte[],System.Int32,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebUtility.HtmlEncode(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebUtility.UrlEncode(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebUtility.UrlDecode(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

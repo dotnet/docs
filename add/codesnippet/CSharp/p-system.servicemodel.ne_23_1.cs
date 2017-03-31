@@ -1,1 +1,0 @@
-            NetMsmqSecurityMode secMode = security.Mode;

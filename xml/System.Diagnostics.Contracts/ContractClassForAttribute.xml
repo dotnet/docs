@@ -28,8 +28,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that a class is a contract for a type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Types that are marked with this attribute represent a code contract for another type. The type that the contract applies to is specified in the constructor.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Diagnostics.Contracts.ContractClassForAttribute> attribute to specify the contracts for another type. This code example is part of a larger example provided for the <xref:System.Diagnostics.Contracts.ContractClassAttribute> class.  
+  
+ [!code-csharp[ContractExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/contractexample/cs/program.cs#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,9 +68,18 @@
         <Parameter Name="typeContractsAreFor" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeContractsAreFor">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="typeContractsAreFor">The type the current class is a contract for.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Contracts.ContractClassForAttribute" /> class, specifying the type the current class is a contract for.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example shows how to use the <xref:System.Diagnostics.Contracts.ContractClassAttribute.%23ctor%2A> constructor to specify that the contracts in the type apply to the `IArray` interface. This code example is part of a larger example provided for the <xref:System.Diagnostics.Contracts.ContractClassAttribute> class.  
+  
+ [!code-csharp[ContractExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/contractexample/cs/program.cs#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeContractsAreFor">
@@ -81,8 +104,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type that this code contract applies to.</summary>
+        <value>The type that this contract applies to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

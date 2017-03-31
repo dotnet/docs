@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Cryptography.CngKeyCreationOptions
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

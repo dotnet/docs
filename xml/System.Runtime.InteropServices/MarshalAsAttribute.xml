@@ -32,8 +32,44 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates how to marshal the data between managed and unmanaged code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to parameters, fields, or return values.  
+  
+ This attribute is optional, as each data type has a default marshaling behavior. This attribute is only necessary when a given type can be marshaled to multiple types. For example, you can marshal a string to unmanaged code as either a <xref:System.Runtime.InteropServices.UnmanagedType>, a <xref:System.Runtime.InteropServices.UnmanagedType>, a <xref:System.Runtime.InteropServices.UnmanagedType>, or a <xref:System.Runtime.InteropServices.UnmanagedType>. By default, the common language runtime marshals a string parameter as a <xref:System.Runtime.InteropServices.UnmanagedType> to COM methods. You can apply the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to an individual field or parameter to cause that particular string to be marshaled as a <xref:System.Runtime.InteropServices.UnmanagedType> instead of a <xref:System.Runtime.InteropServices.UnmanagedType>. The [Tlbexp.exe (Type Library Exporter)](../Topic/Tlbexp.exe%20\(Type%20Library%20Exporter\).md) passes your marshaling preferences to the common language runtime.  
+  
+ Some parameters and return values have different default marshaling behavior when used with COM interop or platform invoke. By default, the runtime marshals a string parameter (and fields in a value type) as a <xref:System.Runtime.InteropServices.UnmanagedType> to a platform invoke method or function. For additional information, see [Default Marshaling Behavior](../Topic/Default%20Marshaling%20Behavior.md).  
+  
+ In most cases, the attribute simply identifies the format of the unmanaged data using the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration, as shown in the following C# signature:  
+  
+ [!code-csharp[system.runtime.interopservices.MarshalAsAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.interopservices.MarshalAsAttribute/cs/Signature1.cs#2)]
+ [!code-vb[system.runtime.interopservices.MarshalAsAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.interopservices.MarshalAsAttribute/vb/Signature1.vb#2)]  
+  
+ Some <xref:System.Runtime.InteropServices.UnmanagedType> enumeration members require additional information. For example, additional information is needed when the <xref:System.Runtime.InteropServices.UnmanagedType> is <xref:System.Runtime.InteropServices.UnmanagedType>. For a complete description of how to use this attribute with arrays, see [Default Marshaling for Arrays](../Topic/Default%20Marshaling%20for%20Arrays.md).  
+  
+ The [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) also applies this attribute to parameters, fields, and return values to indicate that the data type in the input type library is not the default type for the corresponding managed data type. Tlbimp.exe always applies the <xref:System.Runtime.InteropServices.MarshalAsAttribute> to <xref:System.String> and <xref:System.Object> types for clarity, regardless of the type specified in the input type library.  
+  
+> [!NOTE]
+>  The <xref:System.Runtime.InteropServices.MarshalAsAttribute> does not support marshaling of generic types.  
+  
+   
+  
+## Examples  
+ The following example applies the <xref:System.Runtime.InteropServices.MarshalAsAttribute> to a field, a method parameter, and a method return value in a managed type.  
+  
+ [!code-csharp[System.Runtime.InteropServices.MarshalAsAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.interopservices.MarshalAsAttribute/cs/marshalasattribute.cs#1)]
+ [!code-vb[System.Runtime.InteropServices.MarshalAsAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.interopservices.MarshalAsAttribute/vb/marshalasattribute.vb#1)]  
+  
+ The following example applies the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to a property:  
+  
+ [!code-csharp[System.Runtime.InteropServices.MarshalAsAttribute#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.interopservices.MarshalAsAttribute/cs/Signature1.cs#3)]
+ [!code-vb[System.Runtime.InteropServices.MarshalAsAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.interopservices.MarshalAsAttribute/vb/Signature1.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,9 +98,16 @@
         <Parameter Name="unmanagedType" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="unmanagedType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="unmanagedType">The value the data is to be marshaled as.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.MarshalAsAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.UnmanagedType" /> value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor takes an underlying 16-bit signed integer that represents each <xref:System.Runtime.InteropServices.UnmanagedType> enumeration member. The [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) uses this constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,9 +136,16 @@
         <Parameter Name="unmanagedType" Type="System.Runtime.InteropServices.UnmanagedType" />
       </Parameters>
       <Docs>
-        <param name="unmanagedType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="unmanagedType">The value the data is to be marshaled as.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.MarshalAsAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.UnmanagedType" /> enumeration member.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For readable code that is less prone to error, always use this constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ArraySubType">
@@ -124,8 +174,15 @@
         <ReturnType>System.Runtime.InteropServices.UnmanagedType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the element type of the unmanaged <see cref="F:System.Runtime.InteropServices.UnmanagedType.LPArray" /> or <see cref="F:System.Runtime.InteropServices.UnmanagedType.ByValArray" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set this parameter to a value from the <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> enumeration to specify the type of the array's elements. If a type is not specified, the default unmanaged type corresponding to the managed array's element type is used. For example, the `ArraySubType` for a `LPWStr` array in COM is <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. For additional information, see [Default Marshaling for Arrays](../Topic/Default%20Marshaling%20for%20Arrays.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IidParameterIndex">
@@ -154,7 +211,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the parameter index of the unmanaged <see langword="iid_is" /> attribute used by COM.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +241,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Provides additional information to a custom marshaler.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is optional when using a custom marshaler.  
+  
+ You can set this field to a string that supplies additional information to a custom marshaler. For example, the same marshaler can be used to provide a number of wrappers, where the cookie is used to indicate the specific wrapper.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MarshalType">
@@ -219,8 +285,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the fully qualified name of a custom marshaler.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use either the <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> or <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef?displayProperty=fullName> field specify a custom marshaler type for the attributed parameter, field, or return type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> field enables you to specify a string representing the fully qualified name of a custom marshaler. It is useful for late-bound references, but is less preferred than <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef> for specifying a custom marshaler. For additional information about creating and using custom marshalers, see [Custom Marshaling](http://msdn.microsoft.com/en-us/49f9ac47-1619-4d6e-9da6-bf06bba12079).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MarshalTypeRef">
@@ -254,8 +327,25 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Implements <see cref="F:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType" /> as a type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use either the <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef> or <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> field to specify a custom marshaler type for the attributed parameter, field, or return type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef> field allows easier usage of <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> by shortening the syntax. In the following example, the first line represents syntax using <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> and the second line represents syntax using <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef>.  
+  
+```  
+[MarshalAs(UnmanagedType.CustomMarshaler, MarshalType = "Assembly, NameSpace.TypeName")]   
+```  
+  
+```  
+[MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(NameSpace.TypeName)]  
+```  
+  
+ You can set a <xref:System.Type> object using `typeof` in C#, `GetType` in Visual Basic, or `typeid` in C++. For additional information about creating and using custom marshalers, see [Custom Marshaling](http://msdn.microsoft.com/en-us/49f9ac47-1619-4d6e-9da6-bf06bba12079).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SafeArraySubType">
@@ -284,8 +374,15 @@
         <ReturnType>System.Runtime.InteropServices.VarEnum</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Indicates the element type of the <see cref="F:System.Runtime.InteropServices.UnmanagedType.SafeArray" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set this field to a value from the <xref:System.Runtime.InteropServices.VarEnum?displayProperty=fullName> enumeration to specify the type of the safe array's elements. If a type is not specified, the managed element type's default type (if passed as a VARIANT) is used. For example, the `SafeArraySubType` for an `int` array in COM is <xref:System.Runtime.InteropServices.VarEnum>. For additional information, see [Default Marshaling for Arrays](../Topic/Default%20Marshaling%20for%20Arrays.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SafeArrayUserDefinedSubType">
@@ -314,8 +411,15 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Indicates the user-defined element type of the <see cref="F:System.Runtime.InteropServices.UnmanagedType.SafeArray" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Initialize this field with your custom type to enable the elements of the `SAFEARRAY` to be marshaled successfully. This field is only needed when the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType?displayProperty=fullName> is either <xref:System.Runtime.InteropServices.VarEnum?displayProperty=fullName>, <xref:System.Runtime.InteropServices.VarEnum?displayProperty=fullName>, or <xref:System.Runtime.InteropServices.VarEnum?displayProperty=fullName>. For additional information, see [Default Marshaling for Arrays](../Topic/Default%20Marshaling%20for%20Arrays.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeConst">
@@ -344,8 +448,17 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Indicates the number of elements in the fixed-length array or the number of characters (not bytes) in a string to import.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is required for the <xref:System.Runtime.InteropServices.UnmanagedType> and <xref:System.Runtime.InteropServices.UnmanagedType> members of the <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> enumeration. Because the compressed format of the metadata is limited to 0x1FFFFFFF, the range of allowed values for <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst> are (>= 0 and <= 0x1FFFFFFF).  
+  
+ For additional information, see [Default Marshaling for Arrays](../Topic/Default%20Marshaling%20for%20Arrays.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeParamIndex">
@@ -374,8 +487,36 @@
         <ReturnType>System.Int16</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Indicates the zero-based parameter that contains the count of array elements, similar to <see langword="size_is" /> in COM.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex> field supports managed-to-unmanaged and unmanaged-to-managed calls. It does not have any effect on managed code that calls COM objects.  
+  
+ Depending on the managed type and the attributes applied to it, the array can be passed as a safe array or C-style array.  
+  
+ When arrays are passed as C-style arrays, the marshaler cannot determine the size of the array. Therefore, to pass an managed array to an unmanaged function or method, you must provide two arguments:  
+  
+-   The array, defined by reference or value.  
+  
+-   The array size, defined by reference or value.  
+  
+ The zero-based index of the array size parameter is defined by using the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex> field.  
+  
+ If you specify both <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex> and <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst?displayProperty=fullName> with a <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> field, the sum of the fields' values produces a size total.  
+  
+ For more information, see [Default Marshaling for Arrays](../Topic/Default%20Marshaling%20for%20Arrays.md).  
+  
+   
+  
+## Examples  
+ [!code-cpp[System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex/CPP/marshalas.sizeparamindex.cpp#1)]
+ [!code-csharp[System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex/CS/marshalas.sizeparamindex.cs#1)]
+ [!code-vb[System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex/VB/marshalas.sizeparamindex.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -404,9 +545,16 @@
         <ReturnType>System.Runtime.InteropServices.UnmanagedType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Runtime.InteropServices.UnmanagedType" /> value the data is to be marshaled as.</summary>
+        <value>The <see cref="T:System.Runtime.InteropServices.UnmanagedType" /> value the data is to be marshaled as.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is used with <xref:System.Runtime.InteropServices.MarshalAsAttribute> to indicate how types should be marshaled between managed and unmanaged code. In some cases, you can use this field with certain `UnmanagedType` enumeration members. For <xref:System.Runtime.InteropServices.UnmanagedType> and <xref:System.Runtime.InteropServices.UnmanagedType>, you must use additional named parameters.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

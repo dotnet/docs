@@ -10,8 +10,21 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies when objects are to be tested for concurrency conflicts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The code example after the table specifies that `HomePage` objects should never be tested.  
+  
+   
+  
+## Examples  
+ [!code-csharp[System.Data.Linq.Mapping.UpdateCheck#1](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.mapping.updatecheck/cs/northwind.cs#1)]
+ [!code-vb[System.Data.Linq.Mapping.UpdateCheck#1](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.mapping.updatecheck/vb/northwind.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Always">
@@ -27,7 +40,7 @@
         <ReturnType>System.Data.Linq.Mapping.UpdateCheck</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Always check. This is the default unless <see cref="P:System.Data.Linq.Mapping.ColumnAttribute.IsVersion" /> is <see langword="true" /> for a member.</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -43,7 +56,7 @@
         <ReturnType>System.Data.Linq.Mapping.UpdateCheck</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Never check.</summary>
       </Docs>
     </Member>
     <Member MemberName="WhenChanged">
@@ -59,7 +72,7 @@
         <ReturnType>System.Data.Linq.Mapping.UpdateCheck</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Check only when the object has been changed.</summary>
       </Docs>
     </Member>
   </Members>

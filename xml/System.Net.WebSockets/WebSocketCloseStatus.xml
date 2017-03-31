@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents well known WebSocket close codes as defined in [section 11.7](http://www.rfc-editor.org/rfc/rfc6455.txt) of the WebSocket protocol spec.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No error specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndpointUnavailable">
@@ -70,7 +70,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>(1001) Indicates an endpoint is being removed. Either the server or client will become unavailable.</summary>
       </Docs>
     </Member>
     <Member MemberName="InternalServerError">
@@ -95,7 +95,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The connection will be closed by the server because of an error on the server.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidMessageType">
@@ -120,7 +120,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>(1003) The client or server is terminating the connection because it cannot accept the data type it received.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidPayloadData">
@@ -145,7 +145,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>(1007) The client or server is terminating the connection because it has received data inconsistent with the message type.</summary>
       </Docs>
     </Member>
     <Member MemberName="MandatoryExtension">
@@ -170,7 +170,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>(1010) The client is terminating the connection because it expected the server to negotiate an extension.</summary>
       </Docs>
     </Member>
     <Member MemberName="MessageTooBig">
@@ -195,7 +195,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>(1004) Reserved for future use.</summary>
       </Docs>
     </Member>
     <Member MemberName="NormalClosure">
@@ -220,7 +220,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>(1000) The connection has closed after the request was fulfilled.</summary>
       </Docs>
     </Member>
     <Member MemberName="PolicyViolation">
@@ -245,7 +245,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>(1008) The connection will be closed because an endpoint has received a message that violates its policy.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProtocolError">
@@ -270,7 +270,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketCloseStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>(1002) The client or server is terminating the connection because of a protocol error.</summary>
       </Docs>
     </Member>
   </Members>

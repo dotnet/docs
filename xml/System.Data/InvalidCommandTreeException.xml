@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The exception that is thrown to indicate that a command tree is invalid. This exception is currently not thrown anywhere in the Entity Framework.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.InvalidCommandTreeException" /> class  with a default message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The exception message.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.InvalidCommandTreeException" /> class with the specified message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The exception message.</param>
+        <param name="innerException">The exception that is the cause of this <see cref="T:System.Data.InvalidCommandTreeException" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.InvalidCommandTreeException" /> class  with the specified message and inner exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

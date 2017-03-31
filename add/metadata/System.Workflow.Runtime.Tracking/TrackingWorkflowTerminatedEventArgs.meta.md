@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs.Exception
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

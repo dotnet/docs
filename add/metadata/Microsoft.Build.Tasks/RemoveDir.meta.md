@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Tasks.RemoveDir
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RemoveDir.RemovedDirectories
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RemoveDir.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RemoveDir.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RemoveDir.Directories
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

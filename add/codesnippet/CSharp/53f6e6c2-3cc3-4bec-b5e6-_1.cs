@@ -1,1 +1,0 @@
-            SyndicationPerson person2 = new SyndicationPerson("lene@company.com", "Lene Aalling", "http://lene/Aalling");

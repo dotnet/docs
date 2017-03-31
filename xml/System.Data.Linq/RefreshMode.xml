@@ -10,8 +10,33 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines how the <see cref="Overload:System.Data.Linq.DataContext.Refresh" /> method handles optimistic concurrency conflicts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration applies to all <xref:System.Data.Linq.DataContext.Refresh%2A> overloads.  
+  
+   
+  
+## Examples  
+ The following example overwrites current values with values from the database.  
+  
+ [!code-csharp[System.Data.Linq.RefreshMode#1](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.refreshmode/cs/program.cs#1)]
+ [!code-vb[System.Data.Linq.RefreshMode#1](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.refreshmode/vb/module1.vb#1)]  
+  
+ The following example shows how to swap the original value with the values retrieved from the database. No current value is modified.  
+  
+ [!code-csharp[System.Data.Linq.RefreshMode#2](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.refreshmode/cs/program.cs#2)]
+ [!code-vb[System.Data.Linq.RefreshMode#2](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.refreshmode/vb/module1.vb#2)]  
+  
+ The following example keeps the current values that have been changed, but updates the other values with database values.  
+  
+ [!code-csharp[System.Data.Linq.RefreshMode#3](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.refreshmode/cs/program.cs#3)]
+ [!code-vb[System.Data.Linq.RefreshMode#3](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.refreshmode/vb/module1.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="KeepChanges">
@@ -27,7 +52,7 @@
         <ReturnType>System.Data.Linq.RefreshMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Forces the <see cref="Overload:System.Data.Linq.DataContext.Refresh" /> method to keep the current value that has been changed, but updates the other values with the database values.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeepCurrentValues">
@@ -43,7 +68,7 @@
         <ReturnType>System.Data.Linq.RefreshMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Forces the <see cref="Overload:System.Data.Linq.DataContext.Refresh" /> method to swap the original value with the values retrieved from the database. No current value is modified.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverwriteCurrentValues">
@@ -59,7 +84,7 @@
         <ReturnType>System.Data.Linq.RefreshMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Forces the <see cref="Overload:System.Data.Linq.DataContext.Refresh" /> method to override all the current values with the values from the database.</summary>
       </Docs>
     </Member>
   </Members>

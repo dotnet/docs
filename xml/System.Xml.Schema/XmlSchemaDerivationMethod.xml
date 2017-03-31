@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides different methods for preventing derivation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,7 +47,8 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see langword="#all" />. Refers to all derivation methods.</summary>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -73,7 +74,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Override default derivation method to allow any derivation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Extension">
@@ -99,7 +100,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Refers to derivations by <see langword="Extension" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -125,7 +126,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Refers to derivations by <see langword="List" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -151,7 +152,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Accepts the default derivation method.</summary>
       </Docs>
     </Member>
     <Member MemberName="Restriction">
@@ -177,7 +178,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Refers to derivations by <see langword="Restriction" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Substitution">
@@ -203,7 +204,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Refers to derivations by <see langword="Substitution" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -229,7 +230,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Refers to derivations by <see langword="Union" />.</summary>
       </Docs>
     </Member>
   </Members>

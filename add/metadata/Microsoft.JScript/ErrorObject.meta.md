@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.JScript.ErrorObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ErrorObject.description
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ErrorObject.number
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ErrorObject.message
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ErrorObject.ToException(Microsoft.JScript.ErrorObject)
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of leader line that should be drawn from the point to the label.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle> enumeration represents the type of leader line that should be drawn from the point to the label. It is used in conjunction with the <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle> object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Box">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Line will terminate at a box drawn around the label text.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Line will terminate at the label without any added style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Underlined">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Line will terminate with a horizontal line beneath the label text.</summary>
       </Docs>
     </Member>
   </Members>

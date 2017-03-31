@@ -1,1 +1,0 @@
-            TcpClient tcpClientD = new TcpClient (AddressFamily.InterNetwork);

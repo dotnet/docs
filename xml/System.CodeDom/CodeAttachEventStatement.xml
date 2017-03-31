@@ -19,8 +19,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a statement that attaches an event-handler delegate to an event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeAttachEventStatement> can be used to represent a statement that adds an event-handler delegate for an event. The <xref:System.CodeDom.CodeAttachEventStatement.Event%2A> property indicates the event to attach the event handler to. The <xref:System.CodeDom.CodeAttachEventStatement.Listener%2A> property indicates the event handler to attach.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates use of a <xref:System.CodeDom.CodeAttachEventStatement> to attach an event handler with an event.  
+  
+ [!code-cpp[CodeAttachEventStatementExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeAttachEventStatementExample/CPP/codeattacheventstatementexample.cpp#3)]
+ [!code-csharp[CodeAttachEventStatementExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeAttachEventStatementExample/CS/codeattacheventstatementexample.cs#3)]
+ [!code-vb[CodeAttachEventStatementExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeAttachEventStatementExample/VB/codeattacheventstatementexample.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +50,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttachEventStatement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +68,9 @@
         <Parameter Name="listener" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="eventRef">To be added.</param>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="eventRef">A <see cref="T:System.CodeDom.CodeEventReferenceExpression" /> that indicates the event to attach an event handler to.</param>
+        <param name="listener">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the new event handler.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttachEventStatement" /> class using the specified event and delegate.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,10 +89,10 @@
         <Parameter Name="listener" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="targetObject">To be added.</param>
-        <param name="eventName">To be added.</param>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="targetObject">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object that contains the event.</param>
+        <param name="eventName">The name of the event to attach an event handler to.</param>
+        <param name="listener">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the new event handler.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttachEventStatement" /> class using the specified object containing the event, event name, and event-handler delegate.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +109,8 @@
         <ReturnType>System.CodeDom.CodeEventReferenceExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the event to attach an event-handler delegate to.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeEventReferenceExpression" /> that indicates the event to attach an event handler to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +127,8 @@
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the new event-handler delegate to attach to the event.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the new event handler to attach.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

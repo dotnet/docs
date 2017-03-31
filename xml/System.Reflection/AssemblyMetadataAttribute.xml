@@ -28,7 +28,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a key/value metadata pair for the decorated assembly.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -58,9 +58,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The metadata key.</param>
+        <param name="value">The metadata value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyMetadataAttribute" /> class by using the specified metadata key and value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +89,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the metadata key.</summary>
+        <value>The metadata key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +119,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the metadata value.</summary>
+        <value>The metadata value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

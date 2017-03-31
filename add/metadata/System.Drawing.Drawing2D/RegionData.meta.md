@@ -1,9 +1,13 @@
 ---
 uid: System.Drawing.Drawing2D.RegionData
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.RegionData.Data
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

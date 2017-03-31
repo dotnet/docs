@@ -1,44 +1,67 @@
 ---
 uid: System.Windows.Media.VisualBrush
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.VisualBrush.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.VisualBrush.VisualProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.VisualBrush.AutoLayoutContentProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.VisualBrush.Visual
-internalonly: False
----
-
----
-uid: System.Windows.Media.VisualBrush.AutoLayoutContent
-internalonly: False
----
-
----
-uid: System.Windows.Media.VisualBrush.CloneCurrentValue
-internalonly: False
----
-
----
-uid: System.Windows.Media.VisualBrush.#ctor(System.Windows.Media.Visual)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.VisualBrush.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.VisualBrush.AutoLayoutContent
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.VisualBrush.CloneCurrentValue
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.VisualBrush.#ctor(System.Windows.Media.Visual)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.VisualBrush.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---

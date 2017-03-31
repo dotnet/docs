@@ -12,8 +12,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a kind of <see langword="ISession" /> that enforces the requirement that all messages exchanged on the session are between the same communicating parties that established the session.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceModel.Security.ISecuritySession> instances are provided by message security channels (which use WS-SecureConversation) and by TCP secure transport channels.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="RemoteIdentity">
@@ -29,8 +36,8 @@
         <ReturnType>System.ServiceModel.EndpointIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the identity of the remote principal.</summary>
+        <value>The <see cref="T:System.ServiceModel.EndpointIdentity" /> of the remote principal.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

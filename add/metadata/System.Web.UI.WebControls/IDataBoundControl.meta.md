@@ -1,29 +1,35 @@
 ---
 uid: System.Web.UI.WebControls.IDataBoundControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IDataBoundControl.DataMember
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IDataBoundControl.DataSourceID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IDataBoundControl.DataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IDataBoundControl.DataKeyNames
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IDataBoundControl.DataSourceObject
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

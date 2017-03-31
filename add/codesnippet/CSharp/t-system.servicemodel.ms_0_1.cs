@@ -1,1 +1,0 @@
-            MsmqMessage<string> message = new MsmqMessage<string>("Hello, world");

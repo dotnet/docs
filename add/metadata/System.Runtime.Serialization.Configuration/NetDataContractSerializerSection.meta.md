@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.Serialization.Configuration.NetDataContractSerializerSection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.NetDataContractSerializerSection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.NetDataContractSerializerSection.EnableUnsafeTypeForwarding
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

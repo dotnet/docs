@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the anti-aliasing options for the chart.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.AntiAliasingStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use anti-aliasing for text and graphics.</summary>
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -48,7 +48,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.AntiAliasingStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use anti-aliasing when drawing graphics primitives such as circles or rectangles.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +64,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.AntiAliasingStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not use anti-aliasing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -80,7 +80,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.AntiAliasingStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use anti-aliasing when drawing text.</summary>
       </Docs>
     </Member>
   </Members>

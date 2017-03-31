@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines the type of operation that the user was performing when the **Cancel** button was clicked in a <see cref="T:System.Web.UI.WebControls.ListView" /> item.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListViewCancelMode> enumeration is used to represent the type of operation that the user was performing when the **Cancel** button was clicked in a <xref:System.Web.UI.WebControls.ListView> item. (A Cancel button is a button whose `CommandName` property set to "Cancel".)  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewCancelMode> enumeration to check which operation is being canceled in a <xref:System.Web.UI.WebControls.ListView> item.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListView.ItemCanceling#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/CS/ListViewItemCancelingCS.aspx#2)]
+ [!code-vb[System.Web.UI.WebControls.ListView.ItemCanceling#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/VB/ListViewItemCancelingVB.aspx#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CancelingEdit">
@@ -27,7 +42,7 @@
         <ReturnType>System.Web.UI.WebControls.ListViewCancelMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user canceled an edit operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="CancelingInsert">
@@ -43,7 +58,7 @@
         <ReturnType>System.Web.UI.WebControls.ListViewCancelMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user canceled an insert operation.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,13 @@
 ---
 uid: System.Reflection.ICustomTypeProvider
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.ICustomTypeProvider.GetCustomType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

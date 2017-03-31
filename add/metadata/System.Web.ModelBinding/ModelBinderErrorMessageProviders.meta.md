@@ -1,14 +1,20 @@
 ---
 uid: System.Web.ModelBinding.ModelBinderErrorMessageProviders
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBinderErrorMessageProviders.ValueRequiredErrorMessageProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelBinderErrorMessageProviders.TypeConversionErrorMessageProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

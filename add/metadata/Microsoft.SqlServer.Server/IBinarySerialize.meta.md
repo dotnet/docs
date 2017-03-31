@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.SqlServer.Server.IBinarySerialize
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.IBinarySerialize.Write(System.IO.BinaryWriter)
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.IBinarySerialize.Read(System.IO.BinaryReader)
-internalonly: False
+manager: "mblythe"
 ---

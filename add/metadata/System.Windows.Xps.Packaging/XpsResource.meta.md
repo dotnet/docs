@@ -1,24 +1,24 @@
 ---
 uid: System.Windows.Xps.Packaging.XpsResource
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsResource.System#IDisposable#Dispose
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsResource.RelativeUri(System.Uri)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsResource.Commit
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.XpsResource.GetStream
-internalonly: False
+manager: "leannef"
 ---

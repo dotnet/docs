@@ -32,8 +32,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that the attributed type was previously defined in COM.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to classes or interfaces, although the [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) typically applies it for you when it imports a type library.  
+  
+ <xref:System.Runtime.InteropServices.ComImportAttribute> is a pseudo-custom attribute that indicates that a type has been defined in a previously published type library. The common language runtime treats these types differently when activating, exporting, coercing, and so on.  
+  
+> [!NOTE]
+>  All base COM types that are inherited by a managed object must aggregate the Free Threaded Marshaller (FTM).  COM types that do not aggregate the FTM can't be inherited by managed objects.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to apply the <xref:System.Runtime.InteropServices.ComImportAttribute> to a managed interface declaration. You apply this attribute only when generating an interop assembly manually in source code, and want to simulate the metadata produced by Tlbimp.exe.  
+  
+ [!code-cpp[ImprovedInteropSnippets#2](~/samples/snippets/cpp/VS_Snippets_CLR/ImprovedInteropSnippets/CPP/codefile2.cpp#2)]
+ [!code-csharp[ImprovedInteropSnippets#2](~/samples/snippets/csharp/VS_Snippets_CLR/ImprovedInteropSnippets/CS/codefile2.cs#2)]
+ [!code-vb[ImprovedInteropSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ImprovedInteropSnippets/VB/codefile2.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,7 +81,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComImportAttribute" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

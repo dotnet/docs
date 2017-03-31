@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines which date to include in the names of the <see cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" /> class log files.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Assign one of the <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption> enumeration values to the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A> property to specify which date to include in the names of its log files.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Daily">
@@ -27,7 +34,7 @@
         <ReturnType>Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Include the current date in the log file name.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +50,7 @@
         <ReturnType>Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not include the date in the log file name.</summary>
       </Docs>
     </Member>
     <Member MemberName="Weekly">
@@ -59,7 +66,7 @@
         <ReturnType>Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Include the first day of the current week in the log file name.</summary>
       </Docs>
     </Member>
   </Members>

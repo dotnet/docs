@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of location for the style sheet for a mobile control or page. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation> enumeration is used by classes in the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters> namespace to facilitate creating XHTML markup.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ApplicationCache">
@@ -32,7 +39,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The style sheet is stored in the Application Cache.</summary>
       </Docs>
     </Member>
     <Member MemberName="Internal">
@@ -48,7 +55,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The style sheet is a set of styles within the current source file (either .aspx or .ascx).</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +71,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Not currently used.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -80,7 +87,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default value. The location has not yet been determined.</summary>
       </Docs>
     </Member>
     <Member MemberName="PhysicalFile">
@@ -96,7 +103,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The style sheet is an external physical file, such as MyStylesheet.css.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionState">
@@ -112,7 +119,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The style sheet is stored in the current Session state.</summary>
       </Docs>
     </Member>
   </Members>

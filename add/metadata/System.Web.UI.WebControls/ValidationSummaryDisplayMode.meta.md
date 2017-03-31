@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.WebControls.ValidationSummaryDisplayMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

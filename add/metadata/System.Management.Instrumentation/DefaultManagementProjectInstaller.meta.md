@@ -1,9 +1,9 @@
 ---
 uid: System.Management.Instrumentation.DefaultManagementProjectInstaller
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.DefaultManagementProjectInstaller.#ctor
-internalonly: False
+manager: "jillfra"
 ---

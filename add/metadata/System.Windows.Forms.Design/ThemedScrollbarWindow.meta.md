@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.Forms.Design.ThemedScrollbarWindow
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ThemedScrollbarWindow.Handle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.Design.ThemedScrollbarWindow.Mode
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,19 +1,19 @@
 ---
 uid: System.Windows.Markup.XmlnsCompatibleWithAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlnsCompatibleWithAttribute.#ctor(System.String,System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlnsCompatibleWithAttribute.OldNamespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlnsCompatibleWithAttribute.NewNamespace
-internalonly: False
+manager: "martinek"
 ---

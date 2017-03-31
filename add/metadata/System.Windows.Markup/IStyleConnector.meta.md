@@ -1,9 +1,9 @@
 ---
 uid: System.Windows.Markup.IStyleConnector
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.IStyleConnector.Connect(System.Int32,System.Object)
-internalonly: False
+manager: "martinek"
 ---

@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Serialization.IDeserializationCallback
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)
-internalonly: False
+manager: "ghogen"
 ---

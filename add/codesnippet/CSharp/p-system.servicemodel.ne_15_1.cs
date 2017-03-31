@@ -1,1 +1,0 @@
-            MessageSecurityOverMsmq msgSecurity = security.Message;

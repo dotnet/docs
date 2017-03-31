@@ -1,104 +1,181 @@
 ---
 uid: System.Threading.SemaphoreSlim
-internalonly: False
----
-
----
-uid: System.Threading.SemaphoreSlim.#ctor(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SemaphoreSlim.Wait
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.#ctor(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.Wait
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SemaphoreSlim.CurrentCount
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SemaphoreSlim.Wait(System.Threading.CancellationToken)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SemaphoreSlim.Wait(System.TimeSpan)
-internalonly: False
----
-
----
-uid: System.Threading.SemaphoreSlim.WaitAsync(System.TimeSpan)
-internalonly: False
----
-
----
-uid: System.Threading.SemaphoreSlim.Wait(System.Int32,System.Threading.CancellationToken)
-internalonly: False
----
-
----
-uid: System.Threading.SemaphoreSlim.WaitAsync(System.Int32)
-internalonly: False
----
-
----
-uid: System.Threading.SemaphoreSlim.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Threading.SemaphoreSlim.Wait(System.TimeSpan,System.Threading.CancellationToken)
-internalonly: False
----
-
----
-uid: System.Threading.SemaphoreSlim.WaitAsync(System.Int32,System.Threading.CancellationToken)
-internalonly: False
----
-
----
-uid: System.Threading.SemaphoreSlim.#ctor(System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.Threading.SemaphoreSlim.AvailableWaitHandle
-internalonly: False
----
-
----
-uid: System.Threading.SemaphoreSlim.Wait(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SemaphoreSlim.Release
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.SemaphoreSlim.WaitAsync
-internalonly: False
+uid: System.Threading.SemaphoreSlim.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.SemaphoreSlim.WaitAsync(System.TimeSpan,System.Threading.CancellationToken)
-internalonly: False
+uid: System.Threading.SemaphoreSlim.WaitAsync(System.TimeSpan)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.SemaphoreSlim.WaitAsync(System.Threading.CancellationToken)
-internalonly: False
----
-
----
-uid: System.Threading.SemaphoreSlim.Release(System.Int32)
-internalonly: False
+uid: System.Threading.SemaphoreSlim.Wait(System.Int32,System.Threading.CancellationToken)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.SemaphoreSlim.Dispose
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.WaitAsync
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.WaitAsync(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.Dispose(System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.Wait(System.TimeSpan,System.Threading.CancellationToken)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.WaitAsync(System.Int32,System.Threading.CancellationToken)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.#ctor(System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.AvailableWaitHandle
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.Wait(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.Release
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.WaitAsync
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.WaitAsync(System.TimeSpan,System.Threading.CancellationToken)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.WaitAsync(System.Threading.CancellationToken)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.Release(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreSlim.Dispose
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

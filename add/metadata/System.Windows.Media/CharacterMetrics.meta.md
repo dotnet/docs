@@ -1,64 +1,96 @@
 ---
 uid: System.Windows.Media.CharacterMetrics
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.CharacterMetrics.Baseline
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.CharacterMetrics.RightSideBearing
-internalonly: False
----
-
----
-uid: System.Windows.Media.CharacterMetrics.LeftSideBearing
-internalonly: False
----
-
----
-uid: System.Windows.Media.CharacterMetrics.TopSideBearing
-internalonly: False
----
-
----
-uid: System.Windows.Media.CharacterMetrics.Metrics
-internalonly: False
----
-
----
-uid: System.Windows.Media.CharacterMetrics.BlackBoxWidth
-internalonly: False
----
-
----
-uid: System.Windows.Media.CharacterMetrics.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Media.CharacterMetrics.BottomSideBearing
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.CharacterMetrics.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics.LeftSideBearing
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics.TopSideBearing
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics.Metrics
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics.BlackBoxWidth
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics.#ctor(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics.BottomSideBearing
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.CharacterMetrics.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.CharacterMetrics.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.CharacterMetrics.BlackBoxHeight
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

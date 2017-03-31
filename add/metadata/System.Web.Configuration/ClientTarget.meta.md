@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Configuration.ClientTarget
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ClientTarget.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ClientTarget.Alias
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ClientTarget.UserAgent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

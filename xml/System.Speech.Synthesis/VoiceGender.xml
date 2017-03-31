@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the values for the gender of a synthesized voice.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Speech.Synthesis.VoiceGender> can indicate the gender of an existing voice or a gender preference when selecting a voice. All of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods and three of the <xref:System.Speech.Synthesis.PromptBuilder.StartVoice%2A> methods use <xref:System.Speech.Synthesis.VoiceGender> to specify the gender when selecting a voice. The <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> property obtains the gender of an existing voice using a <xref:System.Speech.Synthesis.VoiceGender> member.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Female">
@@ -27,7 +34,7 @@
         <ReturnType>System.Speech.Synthesis.VoiceGender</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a female voice.</summary>
       </Docs>
     </Member>
     <Member MemberName="Male">
@@ -43,7 +50,7 @@
         <ReturnType>System.Speech.Synthesis.VoiceGender</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a male voice.</summary>
       </Docs>
     </Member>
     <Member MemberName="Neutral">
@@ -59,7 +66,7 @@
         <ReturnType>System.Speech.Synthesis.VoiceGender</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a gender-neutral voice.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -75,7 +82,7 @@
         <ReturnType>System.Speech.Synthesis.VoiceGender</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates no voice gender specification.</summary>
       </Docs>
     </Member>
   </Members>

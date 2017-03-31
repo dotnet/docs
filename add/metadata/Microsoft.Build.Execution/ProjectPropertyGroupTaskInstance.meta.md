@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Execution.ProjectPropertyGroupTaskInstance
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectPropertyGroupTaskInstance.ConditionLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectPropertyGroupTaskInstance.Properties
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectPropertyGroupTaskInstance.Condition
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectPropertyGroupTaskInstance.Location
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

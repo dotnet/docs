@@ -1,24 +1,29 @@
 ---
 uid: System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.SingleSignOnServices
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.WantAuthenticationRequestsSigned
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.SupportedAttributes
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

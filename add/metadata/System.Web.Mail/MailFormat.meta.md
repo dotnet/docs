@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Mail.MailFormat
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

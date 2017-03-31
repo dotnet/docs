@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Handles the XML elements used to add known types that are used for serialization by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used to handle the XML element that specifies the declared type and contains its collection of known types.  
+  
+ For an example of adding known types to the collection using configuration, see [\&lt;declaredTypes\&gt;](../Topic/%3CdeclaredTypes%3E.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.DeclaredTypeElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +52,8 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="typeName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="typeName">The name of the type that requires a collection of known types.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.DeclaredTypeElement" /> class with the specified type name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +75,8 @@
         <ReturnType>System.Runtime.Serialization.Configuration.TypeElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of known types.</summary>
+        <value>A <see cref="T:System.Runtime.Serialization.Configuration.TypeElementCollection" /> that contains the known types.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +139,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the declared type that requires a collection of known types.</summary>
+        <value>The name of the declared type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

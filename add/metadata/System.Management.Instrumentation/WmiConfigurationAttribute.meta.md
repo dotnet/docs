@@ -1,39 +1,39 @@
 ---
 uid: System.Management.Instrumentation.WmiConfigurationAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.WmiConfigurationAttribute.SecurityRestriction
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.WmiConfigurationAttribute.NamespaceSecurity
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.WmiConfigurationAttribute.Scope
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.WmiConfigurationAttribute.#ctor(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.WmiConfigurationAttribute.IdentifyLevel
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.WmiConfigurationAttribute.HostingGroup
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.WmiConfigurationAttribute.HostingModel
-internalonly: False
+manager: "jillfra"
 ---

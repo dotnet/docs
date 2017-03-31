@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This interface is implemented by composite extensions, or extensions that need access to the workflow instance. Implementers of this interface will be called by the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> prior to execution in order to provide additional extensions, or get access to the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> through the <see cref="T:System.Activities.Hosting.WorkflowInstanceProxy" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When implemented, returns any additional extensions the implementing class requires.</summary>
+        <returns>A collection of additional workflow extensions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
         <Parameter Name="instance" Type="System.Activities.Hosting.WorkflowInstanceProxy" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">The target workflow instance to set.</param>
+        <summary>Sets the specified target <see cref="T:System.Activities.Hosting.WorkflowInstanceProxy" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

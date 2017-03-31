@@ -1,9 +1,11 @@
 ---
 uid: System.Net.Mail.AttachmentCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.AttachmentCollection.Dispose
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

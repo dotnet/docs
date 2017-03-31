@@ -1,19 +1,29 @@
 ---
 uid: System.IdentityModel.Metadata.LocalizedName
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.LocalizedName.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.LocalizedName.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.LocalizedName.Name
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.LocalizedName.#ctor(System.String,System.Globalization.CultureInfo)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

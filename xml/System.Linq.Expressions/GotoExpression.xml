@@ -27,8 +27,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an unconditional jump. This includes return statements, break and continue statements, and other jumps.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create an expression that contains a <xref:System.Linq.Expressions.GotoExpression> object by using the <xref:System.Linq.Expressions.Expression.Goto%2A> method.  
+  
+ [!code-csharp[System.Linq.Expressions.ExpressionDev10#45](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#45)]
+ [!code-vb[System.Linq.Expressions.ExpressionDev10#45](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#45)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -88,8 +98,8 @@
         <ReturnType>System.Linq.Expressions.GotoExpressionKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The kind of the "go to" expression. Serves information purposes only.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.GotoExpressionKind" /> object representing the kind of the "go to" expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +127,8 @@
         <ReturnType>System.Linq.Expressions.ExpressionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the node type of this <see cref="T:System.Linq.Expressions.Expression" />.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.ExpressionType" /> that represents this expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +156,8 @@
         <ReturnType>System.Linq.Expressions.LabelTarget</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The target label where this node jumps to.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.LabelTarget" /> object representing the target label for this node.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +185,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the static type of the expression that this <see cref="T:System.Linq.Expressions.Expression" /> represents.</summary>
+        <value>The <see cref="P:System.Linq.Expressions.GotoExpression.Type" /> that represents the static type of the expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,10 +218,10 @@
         <Parameter Name="value" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The <see cref="P:System.Linq.Expressions.GotoExpression.Target" /> property of the result.</param>
+        <param name="value">The <see cref="P:System.Linq.Expressions.GotoExpression.Value" /> property of the result.</param>
+        <summary>Creates a new expression that is like this one, but using the supplied children. If all of the children are the same, it will return this expression.</summary>
+        <returns>This expression if no children are changed or an expression with the updated children.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,8 +249,8 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The value passed to the target, or null if the target is of type System.Void.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.Expression" /> object representing the value passed to the target or null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

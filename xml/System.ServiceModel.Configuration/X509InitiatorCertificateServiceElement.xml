@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represent a configuration element that specifies the sender's requirement for an X.509 certificate, which is used by the recipient when replying to the sender. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.ServiceModel.Configuration.X509ClientCertificateAuthenticationElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the client certificate used for authentication.</summary>
+        <value>A <see cref="T:System.ServiceModel.Security.X509ClientCertificateAuthentication" /> that contains the client certificate used for authentication.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +71,8 @@
         <ReturnType>System.ServiceModel.Configuration.X509ClientCertificateCredentialsElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the certificate that is used to represent the service when communicating back to the client.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that is used to represent the service when communicating back to the client.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +92,12 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The configuration element to be copied.</param>
+        <summary>Copies the content of the specified configuration element to this configuration element.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="from" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="Properties">

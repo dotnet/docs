@@ -1,4 +1,6 @@
 ---
 uid: System.ServiceModel.Security.X509CertificateValidationMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

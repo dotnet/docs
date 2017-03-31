@@ -28,8 +28,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a destination <see cref="T:System.Type" /> in another assembly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> attribute to move a type from one assembly to another without disrupting callers that compiled against the old assembly.  
+  
+ **Note** [!INCLUDE[vbprvbext](~/includes/vbprvbext-md.md)] does not support the use of the <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> attribute to forward types written in [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)]. Applications written in [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)] can use forwarded types written in other languages.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,8 +66,8 @@
         <Parameter Name="destination" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="destination">The destination <see cref="T:System.Type" /> in another assembly.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.TypeForwardedToAttribute" /> class specifying a destination <see cref="T:System.Type" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +96,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the destination <see cref="T:System.Type" /> in another assembly.</summary>
+        <value>The destination <see cref="T:System.Type" /> in another assembly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

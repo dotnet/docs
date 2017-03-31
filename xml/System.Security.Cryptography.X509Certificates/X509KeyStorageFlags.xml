@@ -28,7 +28,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines where and how to import the private key of an X.509 certificate.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -55,7 +55,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyStorageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default key set is used.  The user key set is usually the default.</summary>
       </Docs>
     </Member>
     <Member MemberName="Exportable">
@@ -81,7 +81,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyStorageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Imported keys are marked as exportable.</summary>
       </Docs>
     </Member>
     <Member MemberName="MachineKeySet">
@@ -107,7 +107,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyStorageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Private keys are stored in the local computer store rather than the current user store.</summary>
       </Docs>
     </Member>
     <Member MemberName="PersistKeySet">
@@ -133,7 +133,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyStorageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key associated with a PFX file is persisted when importing a certificate.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserKeySet">
@@ -159,7 +159,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyStorageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Private keys are stored in the current user store rather than the local computer store. This occurs even if the certificate specifies that the keys should go in the local computer store.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserProtected">
@@ -185,7 +185,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509KeyStorageFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Notify the user through a dialog box or other method that the key is accessed.  The Cryptographic Service Provider (CSP) in use defines the precise behavior.</summary>
       </Docs>
     </Member>
   </Members>

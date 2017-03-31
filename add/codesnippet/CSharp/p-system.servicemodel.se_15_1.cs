@@ -1,2 +1,0 @@
-        int manualFlowControlLimit =
-                hostDefault.ManualFlowControlLimit;

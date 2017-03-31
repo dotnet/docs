@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAsSiblingAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.OutlineView.ShowPropertyInOutlineViewAsSiblingAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

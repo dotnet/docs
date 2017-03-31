@@ -1,4 +1,6 @@
 ---
 uid: System.Security.RightsManagement
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a logical direction in which to perform certain text operations, such as inserting, retrieving, or navigating through text relative to a specified position (a <see cref="T:System.Windows.Documents.TextPointer" />).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ One of the ways in which this enumeration is used to determine where to place a <xref:System.Windows.Documents.TextPointer> when new content is inserted.  A value of **Backward** places the text position directly before the new content, whereas a value of **Forward** places the <xref:System.Windows.Documents.TextPointer> directly after the new content.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Backward">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Documents.LogicalDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backward, or from right to left.</summary>
       </Docs>
     </Member>
     <Member MemberName="Forward">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Documents.LogicalDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Forward, or from left to right.</summary>
       </Docs>
     </Member>
   </Members>

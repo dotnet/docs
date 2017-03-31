@@ -15,8 +15,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates when events and other life-cycle events occur while a <see cref="T:System.Web.HttpApplication" /> request is being processed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.RequestNotification> enumeration is used with the <xref:System.Web.HttpContext.CurrentNotification%2A> property of the <xref:System.Web.HttpContext> class to determine what event in the pipeline is currently processing. To determine when all the handlers for a specific event of the <xref:System.Web.HttpApplication> instance have finished processing, use the <xref:System.Web.HttpContext.IsPostNotification%2A> property.  
+  
+ The <xref:System.Web.RequestNotification> type is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.RequestNotification> enumeration with the <xref:System.Web.HttpContext.CurrentNotification%2A> property to determine which event of the current <xref:System.Web.HttpApplication> instance is processing the request.  
+  
+ [!code-csharp[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/CS/App_Code/TestModule.cs#1)]
+ [!code-vb[System.Web.HttpResponse.IsPostNotification#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.IsPostNotification/VB/App_Code/TestModule.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AcquireRequestState">
@@ -32,7 +49,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="E:System.Web.HttpApplication.AcquireRequestState" /> event was raised for the request and is processing.</summary>
       </Docs>
     </Member>
     <Member MemberName="AuthenticateRequest">
@@ -48,7 +65,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="E:System.Web.HttpApplication.AuthenticateRequest" /> event was raised for the request and is processing.</summary>
       </Docs>
     </Member>
     <Member MemberName="AuthorizeRequest">
@@ -64,7 +81,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="E:System.Web.HttpApplication.AuthorizeRequest" /> event was raised for the request and is processing.</summary>
       </Docs>
     </Member>
     <Member MemberName="BeginRequest">
@@ -80,7 +97,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="E:System.Web.HttpApplication.BeginRequest" /> event was raised for the request and is processing.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndRequest">
@@ -96,7 +113,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="E:System.Web.HttpApplication.EndRequest" /> event was raised for the request and is processing.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExecuteRequestHandler">
@@ -112,7 +129,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the handler that is mapped to the requested resource is being invoked to process the request.</summary>
       </Docs>
     </Member>
     <Member MemberName="LogRequest">
@@ -128,7 +145,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="E:System.Web.HttpApplication.LogRequest" /> event was raised for the request and is processing.</summary>
       </Docs>
     </Member>
     <Member MemberName="MapRequestHandler">
@@ -144,7 +161,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="E:System.Web.HttpApplication.MapRequestHandler" /> event was raised for the request and is processing.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreExecuteRequestHandler">
@@ -160,7 +177,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a point in the application life cycle just before the handler that processes the request is mapped.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReleaseRequestState">
@@ -176,7 +193,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="E:System.Web.HttpApplication.ReleaseRequestState" /> event was raised for the request and is processing.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResolveRequestCache">
@@ -192,7 +209,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="E:System.Web.HttpApplication.ResolveRequestCache" /> event was raised for the request and is processing.</summary>
       </Docs>
     </Member>
     <Member MemberName="SendResponse">
@@ -208,7 +225,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that processing of the request is complete and that the response is being sent.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdateRequestCache">
@@ -224,7 +241,7 @@
         <ReturnType>System.Web.RequestNotification</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="E:System.Web.HttpApplication.UpdateRequestCache" /> event was raised for the request and is processing.</summary>
       </Docs>
     </Member>
   </Members>

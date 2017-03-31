@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.ITemplate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

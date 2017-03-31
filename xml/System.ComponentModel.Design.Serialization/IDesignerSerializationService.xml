@@ -13,8 +13,19 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an interface that can invoke serialization and deserialization.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This service provides methods to convert a collection of objects to a serializable object that represents them, and to convert serialization data to the object or objects that it represents.  
+  
+ All components that support a designer must support serialization of each component's type. This occurs when the designer scans the public properties, methods, and events of each type and represents these within a type descriptor.  
+  
+ This interface uses the technique of scanning members to convert a collection of components into a single object that supports run-time serialization. This does not necessarily provide for the serialization of custom types that belong to the class. Many objects require a custom serializer to have their values serialized at run time. To specify a serializer for a custom type, use a <xref:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute> attribute or implement an <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Deserialize">
@@ -38,9 +49,9 @@
         <Parameter Name="serializationData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="serializationData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serializationData">An object consisting of serialized data.</param>
+        <summary>Deserializes the specified serialization data object and returns a collection of objects represented by that data.</summary>
+        <returns>An <see cref="T:System.Collections.ICollection" /> of objects rebuilt from the specified serialization data object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,10 +76,19 @@
         <Parameter Name="objects" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="objects">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="objects">A collection of objects to serialize.</param>
+        <summary>Serializes the specified collection of objects and stores them in a serialization data object.</summary>
+        <returns>An object that contains the serialized state of the specified collection of objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned object fully supports run-time serialization.  
+  
+ The object returned from this method contains live references to objects in the collection. This object can then be passed to any run-time serialization mechanism. The object itself serializes components the same way designers write source for them, by storing their state, property by property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

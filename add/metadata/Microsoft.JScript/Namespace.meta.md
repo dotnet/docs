@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.Namespace
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Namespace.GetNamespace(System.String,Microsoft.JScript.Vsa.VsaEngine)
-internalonly: False
+ms.author: "mikejo"
 ---

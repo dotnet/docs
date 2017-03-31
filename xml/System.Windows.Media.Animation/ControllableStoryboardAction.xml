@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Manipulates a <see cref="T:System.Windows.Media.Animation.Storyboard" /> that has been applied by a <see cref="T:System.Windows.Media.Animation.BeginStoryboard" /> action.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Pause, Resume, Stop, or Otherwise Control a Storyboard Interactively  
+ To be able to pause, resume, or otherwise control a <xref:System.Windows.Media.Animation.BeginStoryboard.Storyboard%2A> interactively, set the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> property of its <xref:System.Windows.Media.Animation.BeginStoryboard> and use a <xref:System.Windows.Media.Animation.ControllableStoryboardAction> object (such as <xref:System.Windows.Media.Animation.PauseStoryboard>, <xref:System.Windows.Media.Animation.ResumeStoryboard>, or <xref:System.Windows.Media.Animation.StopStoryboard>) to control it by referencing its <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A>. If the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> of <xref:System.Windows.Media.Animation.BeginStoryboard> is unspecified, the <xref:System.Windows.Media.Animation.BeginStoryboard.Storyboard%2A> cannot be interactively controlled after it is begun. See [How to: Use Event Triggers to Control a Storyboard After It Starts](../Topic/How%20to:%20Use%20Event%20Triggers%20to%20Control%20a%20Storyboard%20After%20It%20Starts.md) for more information.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BeginStoryboardName">
@@ -33,8 +42,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.Windows.Media.Animation.BeginStoryboard.Name" /> of the <see cref="T:System.Windows.Media.Animation.BeginStoryboard" /> that began the <see cref="T:System.Windows.Media.Animation.Storyboard" /> you want to interactively control.</summary>
+        <value>The <see cref="P:System.Windows.Media.Animation.BeginStoryboard.Name" /> of the <see cref="T:System.Windows.Media.Animation.BeginStoryboard" /> that began the <see cref="T:System.Windows.Media.Animation.Storyboard" /> you want to interactively control. The default value is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

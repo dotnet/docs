@@ -1,1 +1,0 @@
-            msgVersion.Equals(msgVersion2);

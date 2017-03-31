@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.AxHost.ActiveXInvokeKind
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

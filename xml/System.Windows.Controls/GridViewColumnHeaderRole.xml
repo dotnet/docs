@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the state or role of a <see cref="T:System.Windows.Controls.GridViewColumnHeader" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The role of a <xref:System.Windows.Controls.GridViewColumnHeader> is defined by the read-only <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Floating">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Controls.GridViewColumnHeaderRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The column header is the object of a drag-and-drop operation to move a column.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Controls.GridViewColumnHeaderRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The column header displays above its associated column.</summary>
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Controls.GridViewColumnHeaderRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The column header is the last header in the row of column headers and is used for padding.</summary>
       </Docs>
     </Member>
   </Members>

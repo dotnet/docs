@@ -1,29 +1,35 @@
 ---
 uid: System.IdentityModel.Tokens.KerberosSecurityTokenHandler
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.KerberosSecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.KerberosSecurityTokenHandler.CanValidateToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.KerberosSecurityTokenHandler.GetTokenTypeIdentifiers
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.KerberosSecurityTokenHandler.TokenType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.KerberosSecurityTokenHandler.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

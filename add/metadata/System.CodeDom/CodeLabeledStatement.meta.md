@@ -1,29 +1,48 @@
 ---
 uid: System.CodeDom.CodeLabeledStatement
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeLabeledStatement.#ctor(System.String,System.CodeDom.CodeStatement)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeLabeledStatement.Statement
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeLabeledStatement.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeLabeledStatement.Label
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeLabeledStatement.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeLabeledStatement.#ctor(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeLabeledStatement.Label
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeLabeledStatement.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

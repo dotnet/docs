@@ -1,1 +1,0 @@
-        Dim link As SyndicationLink = SyndicationLink.CreateAlternateLink(New Uri("http://server/link"))

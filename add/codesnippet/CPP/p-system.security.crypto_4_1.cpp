@@ -1,1 +1,0 @@
-            int skipKeySize = firstKeySize->SkipSize;

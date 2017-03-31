@@ -1,24 +1,35 @@
 ---
 uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo.#ctor(System.ServiceModel.PeerNodeAddress[])
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo.#ctor
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo.HasBody
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo.Addresses
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---

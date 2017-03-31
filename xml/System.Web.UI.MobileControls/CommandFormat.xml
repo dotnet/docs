@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Sets the rendering style of the <see cref="T:System.Web.UI.MobileControls.Command" /> control, through the <see cref="P:System.Web.UI.MobileControls.Command.Format" /> property. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example demonstrates the usage of the <xref:System.Web.UI.MobileControls.CommandFormat> class.  
+  
+  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Button">
@@ -32,7 +41,7 @@
         <ReturnType>System.Web.UI.MobileControls.CommandFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Renders the <see cref="T:System.Web.UI.MobileControls.Command" /> control as a button. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
     </Member>
     <Member MemberName="Link">
@@ -48,7 +57,7 @@
         <ReturnType>System.Web.UI.MobileControls.CommandFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Renders the <see cref="T:System.Web.UI.MobileControls.Command" /> control as a hyperlink. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
     </Member>
   </Members>

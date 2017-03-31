@@ -1,2 +1,0 @@
-            ts.Flush()
-            ts.Close()

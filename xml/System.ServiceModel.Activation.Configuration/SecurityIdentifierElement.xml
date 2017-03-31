@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a configuration element that contains user accounts for processes that host WCF services, and are granted connection access to the sharing service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The security identifier specifies a unique identifier used to identify a user account. The default values are LocalSystem, Administrators, NS, LS, and IIS_USRS.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activation.Configuration.SecurityIdentifierElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <Parameter Name="sid" Type="System.Security.Principal.SecurityIdentifier" />
       </Parameters>
       <Docs>
-        <param name="sid">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sid">A security identifier.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activation.Configuration.SecurityIdentifierElement" /> class wit the specified security identifier.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +94,8 @@
         <ReturnType>System.Security.Principal.SecurityIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the security identifier that this element associates with.</summary>
+        <value>The security identifier that this element associates with.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

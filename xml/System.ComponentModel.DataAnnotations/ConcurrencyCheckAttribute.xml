@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies that a property participates in optimistic concurrency checks.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,8 +41,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.ConcurrencyCheckAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You apply the <xref:System.ComponentModel.DataAnnotations.ConcurrencyCheckAttribute> attribute to a property in order to specify that the property indicates whether the data record in the application is still current with the data record in the data source.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

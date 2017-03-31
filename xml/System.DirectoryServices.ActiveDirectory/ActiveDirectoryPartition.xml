@@ -15,8 +15,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition" /> class is an abstract class that represents a directory partition in a domain.</summary>
     <remarks>To be added.</remarks>
+    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +49,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all managed and unmanaged resources that are held by the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +69,16 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">A <see cref="T:System.Boolean" /> value that determines if the managed resources should be released. <see langword="true" /> if the managed resources are released; <see langword="false" /> if only the unmanaged resources are released.</param>
+        <summary>Releases the managed resources that are used by the object and, optionally, releases unmanaged resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `disposing` parameter only affects the release of the managed resources. The unmanaged resources are always released by this method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -87,9 +95,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves a <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the directory partition.</summary>
+        <returns>Returns a <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the directory partition.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
+          <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
+        </permission>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -105,8 +116,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the partition name.</summary>
+        <value>A <see cref="T:System.String" /> that contains the partition name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +135,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves a string representation of the current directory partition.</summary>
+        <returns>Returns a string representation of the current directory partition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,69 +1,74 @@
 ---
 uid: System.Windows.Markup.XamlParseException
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.LinePosition
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.LineNumber
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.#ctor(System.String,System.Int32,System.Int32,System.Exception)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.UidContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.#ctor(System.String,System.Int32,System.Int32)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.#ctor(System.String,System.Exception)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.NameContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.KeyContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.XamlParseException.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlParseException.BaseUri
-internalonly: False
+manager: "martinek"
 ---

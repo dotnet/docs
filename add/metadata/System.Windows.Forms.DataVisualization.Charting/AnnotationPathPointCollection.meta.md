@@ -1,19 +1,27 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection.#ctor(System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection.Dispose(System.Boolean)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection.Dispose
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPathPointCollection.Invalidate
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

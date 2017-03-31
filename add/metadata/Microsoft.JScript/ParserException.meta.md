@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.ParserException
-internalonly: False
+ms.author: "mikejo"
 ---

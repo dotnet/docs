@@ -25,9 +25,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The access rights type for the access rule.</typeparam>
+    <summary>Represents a combination of a user's identity, an access mask, and an access control type (allow or deny). An AccessRule`1 object also contains information about the how the rule is inherited by child objects and how that inheritance is propagated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Access rights (permissions) are type T, which you can type-cast to or from an int. For example, you can cast a <xref:System.Security.AccessControl.FileSystemRights> as the access rights type, and then use the instance normally. In contrast, <xref:System.Security.AccessControl.AccessRule> always takes access rights of type int.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,10 +57,10 @@
         <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <param name="rights">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="identity">The identity to which the access rule applies.</param>
+        <param name="rights">The rights of the access rule.</param>
+        <param name="type">The valid access control type.</param>
+        <summary>Initializes a new instance of the AccessRule’1 class by using the specified values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,10 +84,10 @@
         <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <param name="rights">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="identity">The identity to which the access rule applies.</param>
+        <param name="rights">The rights of the access rule.</param>
+        <param name="type">The valid access control type.</param>
+        <summary>Initializes a new instance of the AccessRule’1 class by using the specified values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,12 +113,12 @@
         <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <param name="rights">To be added.</param>
-        <param name="inheritanceFlags">To be added.</param>
-        <param name="propagationFlags">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="identity">The identity to which the access rule applies.</param>
+        <param name="rights">The rights of the access rule.</param>
+        <param name="inheritanceFlags">The inheritance properties of the access rule.</param>
+        <param name="propagationFlags">Whether inherited access rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="type">The valid access control type.</param>
+        <summary>Initializes a new instance of the AccessRule’1 class by using the specified values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,12 +144,12 @@
         <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <param name="rights">To be added.</param>
-        <param name="inheritanceFlags">To be added.</param>
-        <param name="propagationFlags">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="identity">The identity to which the access rule applies.</param>
+        <param name="rights">The rights of the access rule.</param>
+        <param name="inheritanceFlags">The inheritance properties of the access rule.</param>
+        <param name="propagationFlags">Whether inherited access rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="type">The valid access control type.</param>
+        <summary>Initializes a new instance of the AccessRule’1 class by using the specified values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,9 +171,16 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the rights of the current instance.</summary>
+        <value>The rights, cast as type &lt;T&gt;, of the current instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property contains the same information as the AccessMask property, but cast as type \<T>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,8 +11,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the different security modes for <see cref="T:System.ServiceModel.WSFederationHttpBinding" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration defines the security modes that the <xref:System.ServiceModel.WSFederationHttpBinding> supports.  
+  
+   
+  
+## Examples  
+ The following code shows how to set <xref:System.ServiceModel.WSFederationHttpSecurity.Mode%2A> to a member of this enumeration.  
+  
+ [!code-csharp[WSFederationHttpSecurity#3](~/samples/snippets/csharp/VS_Snippets_CFX/wsfederationhttpsecurity/cs/source.cs#3)]
+ [!code-vb[WSFederationHttpSecurity#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/wsfederationhttpsecurity/vb/source.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Message">
@@ -29,7 +44,7 @@
         <ReturnType>System.ServiceModel.WSFederationHttpSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Integrity, confidentiality, server authentication and client authentication are provided using SOAP message security. By default, the body is encrypted and signed. The service must be configured with a certificate. Client authentication is based on the token issued to the client by a security token service.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -46,7 +61,7 @@
         <ReturnType>System.ServiceModel.WSFederationHttpSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The SOAP message is not secure during transfer. No Security Token Service is contacted. This mode is equivalent to using the <see langword="wsHttpBinding" /> binding with <see langword="SecurityMode.None" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="TransportWithMessageCredential">
@@ -63,7 +78,7 @@
         <ReturnType>System.ServiceModel.WSFederationHttpSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Integrity, confidentiality and server authentication are provided by HTTPS. The service must be configured with a certificate. Client authentication is provided by means of SOAP message security and is based on the token issued to the client by a security token service.</summary>
       </Docs>
     </Member>
   </Members>

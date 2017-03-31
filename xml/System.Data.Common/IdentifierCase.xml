@@ -15,8 +15,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how identifiers are treated by the data source when searching the system catalog.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Identifiers may be either quoted or unquoted.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Insensitive">
@@ -37,7 +44,7 @@
         <ReturnType>System.Data.Common.IdentifierCase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data source ignores identifier case when searching the system catalog. The identifiers "ab" and "AB" will match.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sensitive">
@@ -58,7 +65,7 @@
         <ReturnType>System.Data.Common.IdentifierCase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data source distinguishes identifier case when searching the system catalog. The identifiers "ab" and "AB" will not match.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -79,7 +86,7 @@
         <ReturnType>System.Data.Common.IdentifierCase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data source has ambiguous rules regarding identifier case and cannot discern this information.</summary>
       </Docs>
     </Member>
   </Members>

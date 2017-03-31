@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts an <see cref="T:System.Collections.IList" /> collection of <see cref="T:System.Windows.Point" /> values to and from instances of <see cref="T:System.String" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The converted <xref:System.String> is a sequence of delimited <xref:System.Windows.Point> values.  
+  
+ This class is only intended to be used by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization of [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Converters.PointIListConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Media.BitmapScalingMode
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

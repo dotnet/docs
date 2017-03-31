@@ -1,9 +1,13 @@
 ---
 uid: System.Web.Services.Description.HttpUrlEncodedBinding
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Description.HttpUrlEncodedBinding.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

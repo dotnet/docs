@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies which GDI+ objects use color adjustment information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Bitmap>, <xref:System.Drawing.Brush>, and <xref:System.Drawing.Pen> objects use any color adjustments that have been set in the default <xref:System.Drawing.Imaging.ImageAttributes> object until their own color adjustments have been set.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Any">
@@ -27,7 +34,7 @@
         <ReturnType>System.Drawing.Imaging.ColorAdjustType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The number of types specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bitmap">
@@ -43,7 +50,7 @@
         <ReturnType>System.Drawing.Imaging.ColorAdjustType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Color adjustment information for <see cref="T:System.Drawing.Bitmap" /> objects.</summary>
       </Docs>
     </Member>
     <Member MemberName="Brush">
@@ -59,7 +66,7 @@
         <ReturnType>System.Drawing.Imaging.ColorAdjustType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Color adjustment information for <see cref="T:System.Drawing.Brush" /> objects.</summary>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -75,7 +82,7 @@
         <ReturnType>System.Drawing.Imaging.ColorAdjustType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The number of types specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -91,7 +98,7 @@
         <ReturnType>System.Drawing.Imaging.ColorAdjustType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Color adjustment information that is used by all GDI+ objects that do not have their own color adjustment information.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pen">
@@ -107,7 +114,7 @@
         <ReturnType>System.Drawing.Imaging.ColorAdjustType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Color adjustment information for <see cref="T:System.Drawing.Pen" /> objects.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -123,7 +130,7 @@
         <ReturnType>System.Drawing.Imaging.ColorAdjustType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Color adjustment information for text.</summary>
       </Docs>
     </Member>
   </Members>

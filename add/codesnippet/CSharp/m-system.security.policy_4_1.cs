@@ -1,1 +1,0 @@
-        PolicyStatement policyStatementCopy = policyStatement.Copy();

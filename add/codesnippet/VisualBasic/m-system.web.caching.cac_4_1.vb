@@ -1,1 +1,0 @@
-        Cache.Get("MyTextBox.Value")

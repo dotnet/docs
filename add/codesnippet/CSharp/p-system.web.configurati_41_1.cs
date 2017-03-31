@@ -1,1 +1,0 @@
-ruleSetting.Profile = "Custom";

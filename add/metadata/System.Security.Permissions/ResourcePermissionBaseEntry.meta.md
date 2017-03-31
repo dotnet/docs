@@ -1,24 +1,41 @@
 ---
 uid: System.Security.Permissions.ResourcePermissionBaseEntry
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.ResourcePermissionBaseEntry.PermissionAccess
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.ResourcePermissionBaseEntry.#ctor(System.Int32,System.String[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.ResourcePermissionBaseEntry.PermissionAccessPath
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Permissions.ResourcePermissionBaseEntry.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Permissions.ResourcePermissionBaseEntry.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

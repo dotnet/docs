@@ -1,9 +1,11 @@
 ---
 uid: System.Speech.Recognition.LoadGrammarCompletedEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.LoadGrammarCompletedEventArgs.Grammar
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

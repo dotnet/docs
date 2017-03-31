@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an extension method for objects that implement the <see cref="T:System.Linq.IQueryable`1" /> interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,11 +39,11 @@
         <Parameter Name="sortExpression" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="sortExpression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The generic type of the object.</typeparam>
+        <param name="source">The object to sort.</param>
+        <param name="sortExpression">The sort expression.</param>
+        <summary>Specifies a sort order.</summary>
+        <returns>The sorted version of the <paramref name="source" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

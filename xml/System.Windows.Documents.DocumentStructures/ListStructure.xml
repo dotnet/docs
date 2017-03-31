@@ -18,8 +18,23 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a list of items in a document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Documents.DocumentStructures.ListStructure> can be a child of the following document structure elements:  
+  
+-   <xref:System.Windows.Documents.DocumentStructures.StoryFragment>  
+  
+-   <xref:System.Windows.Documents.DocumentStructures.SectionStructure>  
+  
+-   <xref:System.Windows.Documents.DocumentStructures.TableCellStructure>  
+  
+-   <xref:System.Windows.Documents.DocumentStructures.ListItemStructure> (when the list is nested in an outer list)  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +48,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.DocumentStructures.ListStructure" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +68,10 @@
         <Parameter Name="listItem" Type="System.Windows.Documents.DocumentStructures.ListItemStructure" />
       </Parameters>
       <Docs>
-        <param name="listItem">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="listItem">The list item to add.</param>
+        <summary>Adds a list item to the list.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="listItem" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.ListItemStructure&gt;.GetEnumerator">
@@ -72,8 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This method has not been implemented.</summary>
+        <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +107,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This method has not been implemented.</summary>
+        <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +128,20 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The child <see cref="T:System.Object" /> that is added.</param>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adds a child object to the <xref:System.Windows.Documents.DocumentStructures.ListStructure>.  
+  
+ Only <xref:System.Windows.Documents.DocumentStructures.ListItemStructure> can be a child of <xref:System.Windows.Documents.DocumentStructures.ListStructure> and there must be at least one child.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not one of the types that can be a child of this class. See **Remarks**.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddText">
@@ -133,8 +160,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

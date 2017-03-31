@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the event arguments for the workflow view element created event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="view" Type="System.Activities.Presentation.WorkflowViewElement" />
       </Parameters>
       <Docs>
-        <param name="view">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="view">The workflow view element that is created.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.View.ViewCreatedEventArgs" /> class with the specified workflow view element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Activities.Presentation.WorkflowViewElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the workflow view element that is created.</summary>
+        <value>The workflow view element that is created.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents either an entity, entity stub or relationship.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No content here will be updated; please do not add material here.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AcceptChanges">
@@ -33,7 +40,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Accepts the current values as original values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +60,8 @@
         <Parameter Name="currentEntity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="currentEntity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="currentEntity">The detached object that has updated values to apply to the object. <c>currentEntity</c> can also be the object’s entity key.</param>
+        <summary>Sets the current values of the entry to match the property values of a supplied object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +81,8 @@
         <Parameter Name="originalEntity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="originalEntity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="originalEntity">The detached object that has original values to apply to the object. <c>originalEntity</c> can also be the object’s entity key.</param>
+        <summary>Sets the original values of the entry to match the property values of a supplied object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,8 +102,8 @@
         <Parameter Name="state" Type="System.Data.EntityState" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="state">The <see cref="T:System.Data.EntityState" /> value to set for the <see cref="P:System.Data.Objects.ObjectStateEntry.State" /> property of the entry.</param>
+        <summary>Changes state of the entry to the specified <see cref="T:System.Data.EntityState" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +125,8 @@
         <ReturnType>System.Data.Objects.CurrentValueRecord</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current property values of the object or relationship associated with this <see cref="T:System.Data.Objects.ObjectStateEntry" />.</summary>
+        <value>A <see cref="T:System.Data.Objects.CurrentValueRecord" /> that contains the current values of the object or relationship associated with this <see cref="T:System.Data.Objects.ObjectStateEntry" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +144,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Marks an entity as deleted.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +161,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the entity object.</summary>
+        <value>The entity object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,8 +179,8 @@
         <ReturnType>System.Data.EntityKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the entity key.</summary>
+        <value>The entity key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,8 +197,8 @@
         <ReturnType>System.Data.Metadata.Edm.EntitySetBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Metadata.Edm.EntitySetBase" /> for the object or relationship.</summary>
+        <value>The <see cref="T:System.Data.Metadata.Edm.EntitySetBase" /> for the object or relationship.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,8 +216,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the names of an object’s properties that have changed since the last time <see cref="M:System.Data.Objects.ObjectContext.SaveChanges" /> was called.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection of names as string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +235,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the updatable version of original values of the object associated with this <see cref="T:System.Data.Objects.ObjectStateEntry" />.</summary>
+        <returns>The updatable original values of object data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,10 +256,18 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertyName">The name of the property.</param>
+        <summary>Uses DetectChanges to determine whether or not the current value of the property with the given name is different from its original value. Note that this may be different from the property being marked as modified since a property which has not changed can still be marked as modified.</summary>
+        <returns>
+          <see langword="true" /> if the property has changed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For complex properties, a new instance of the complex object which has all the same property values as the original instance is not considered to be different by this method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRelationship">
@@ -268,8 +283,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Data.Objects.ObjectStateEntry" /> represents a relationship.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Data.Objects.ObjectStateEntry" /> represents a relationship; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,8 +302,8 @@
         <ReturnType>System.Data.Objects.ObjectStateManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Objects.ObjectStateManager" /> for the <see cref="T:System.Data.Objects.ObjectStateEntry" />.</summary>
+        <value>The <see cref="T:System.Data.Objects.ObjectStateManager" /> for the <see cref="T:System.Data.Objects.ObjectStateEntry" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -309,8 +325,8 @@
         <ReturnType>System.Data.Common.DbDataRecord</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the read-only version of original values of the object or relationship.</summary>
+        <value>The read-only version of original values of the relationship set entry or entity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,9 +346,16 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="propertyName">The name of the property to change.</param>
+        <summary>Rejects any changes made to the property with the given name since the property was last loaded, attached, saved, or changes were accepted. The orginal value of the property is stored and the property will no longer be marked as modified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the result is that no properties of the entity are marked as modified, then the entity will be marked as Unchanged. Changes to properties can only rejected for entities that are in the Modified or Unchanged state. Calling this method for entities in other states (Added, Deleted, or Detached) will result in an exception being thrown. Rejecting changes to properties of an Unchanged entity or unchanged properties of a Modifed is a no-op.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RelationshipManager">
@@ -348,8 +371,8 @@
         <ReturnType>System.Data.Objects.DataClasses.RelationshipManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" /> instance for the object represented by entry.</summary>
+        <value>The <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -367,7 +390,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the state of the object or relationship to modify.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -387,8 +410,8 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The name of the property.</param>
+        <summary>Marks the specified property as modified.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,8 +428,8 @@
         <ReturnType>System.Data.EntityState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the state of the <see cref="T:System.Data.Objects.ObjectStateEntry" />.</summary>
+        <value>The state of the <see cref="T:System.Data.Objects.ObjectStateEntry" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,10 +451,10 @@
         <Parameter Name="complexObjectMemberName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="entityMemberName">To be added.</param>
-        <param name="complexObject">To be added.</param>
-        <param name="complexObjectMemberName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityMemberName">The name of the top-level object property that is changing.</param>
+        <param name="complexObject">The complex object that contains the property that is changing.</param>
+        <param name="complexObjectMemberName">The name of the property on the complex object that is changing.</param>
+        <summary>Notifies the state manager that a complex property has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -453,10 +476,10 @@
         <Parameter Name="complexObjectMemberName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="entityMemberName">To be added.</param>
-        <param name="complexObject">To be added.</param>
-        <param name="complexObjectMemberName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityMemberName">The name of the complex property.</param>
+        <param name="complexObject">The complex object that contains the property that is changing.</param>
+        <param name="complexObjectMemberName">The name of the property on the complex object that is changing.</param>
+        <summary>Notifies the state manager that a complex property has a pending change.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,8 +499,8 @@
         <Parameter Name="entityMemberName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="entityMemberName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityMemberName">The name of the entity property that has changed.</param>
+        <summary>Notifies the state manager that a property has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -497,8 +520,8 @@
         <Parameter Name="entityMemberName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="entityMemberName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityMemberName">The name of the entity property that is changing.</param>
+        <summary>Notifies the state manager that a property has a pending change.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,8 +538,8 @@
         <ReturnType>System.Data.EntityState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.EntityState" /> for the <see cref="T:System.Data.Objects.ObjectStateEntry" />.</summary>
+        <value>The <see cref="T:System.Data.EntityState" /> for the <see cref="T:System.Data.Objects.ObjectStateEntry" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

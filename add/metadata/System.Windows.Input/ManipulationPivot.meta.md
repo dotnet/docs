@@ -1,24 +1,40 @@
 ---
 uid: System.Windows.Input.ManipulationPivot
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationPivot.Radius
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationPivot.#ctor(System.Windows.Point,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Input.ManipulationPivot.Center
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationPivot.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.ManipulationPivot.Center
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.ManipulationPivot.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

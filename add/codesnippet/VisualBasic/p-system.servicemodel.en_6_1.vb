@@ -1,1 +1,0 @@
-            Dim envS12 As EnvelopeVersion = EnvelopeVersion.Soap12

@@ -20,8 +20,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see cref="T:System.Net.Sockets.TransmitFileOptions" /> enumeration defines values used in file transfer requests.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ **Note** The flags Disconnect and ReuseSocket return the socket to a disconnected, reusable state after the file has been transmitted. These flags should not be used on a socket where quality of service (QOS) has been requested, because the service provider might immediately delete any quality of service associated with the socket before the file transfer has completed. The best approach for a QOS-enabled socket is to call <xref:System.Net.Sockets.Socket.Close%2A> when the file transfer has completed, rather than relying on these flags.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of <xref:System.Net.Sockets.TransmitFileOptions> in a call to <xref:System.Net.Sockets.Socket.SendFile%2A>. The file "test.txt" is located in the root directory of the local machine. In this example, a prebuffer and postbuffer of data are created and sent to the remote host with the file. To use the system's default thread, UseDefaultWorkerThread is specified.  
+  
+ [!code-cpp[NCLSocketEnhancements#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSocketEnhancements/CPP/nclsocketenhancements.cpp#4)]
+ [!code-csharp[NCLSocketEnhancements#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSocketEnhancements/CS/nclsocketenhancements.cs#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disconnect">
@@ -42,7 +57,7 @@
         <ReturnType>System.Net.Sockets.TransmitFileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Start a transport-level disconnect after all the file data has been queued for transmission. When used with <see cref="F:System.Net.Sockets.TransmitFileOptions.ReuseSocket" />, these flags return the socket to a disconnected, reusable state after the file has been transmitted.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReuseSocket">
@@ -63,7 +78,7 @@
         <ReturnType>System.Net.Sockets.TransmitFileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The socket handle may be reused when the request completes. This flag is valid only if <see cref="F:System.Net.Sockets.TransmitFileOptions.Disconnect" /> is also specified. When used with <see cref="F:System.Net.Sockets.TransmitFileOptions.Disconnect" />, these flags return the socket to a disconnected, reusable state after the file has been transmitted.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseDefaultWorkerThread">
@@ -84,7 +99,7 @@
         <ReturnType>System.Net.Sockets.TransmitFileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use the default thread to process long file transfer requests.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseKernelApc">
@@ -105,7 +120,7 @@
         <ReturnType>System.Net.Sockets.TransmitFileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use kernel asynchronous procedure calls (APCs) instead of worker threads to process long file transfer requests. Long requests are defined as requests that require more than a single read from the file or a cache; the request therefore depends on the size of the file and the specified length of the send packet.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseSystemThread">
@@ -126,7 +141,7 @@
         <ReturnType>System.Net.Sockets.TransmitFileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use system threads to process long file transfer requests.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteBehind">
@@ -147,7 +162,7 @@
         <ReturnType>System.Net.Sockets.TransmitFileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Complete the file transfer request immediately, without pending. If this flag is specified and the file transfer succeeds, the data has been accepted by the system but not necessarily acknowledged by the remote end. Do not use this flag with the <see cref="F:System.Net.Sockets.TransmitFileOptions.Disconnect" /> and <see cref="F:System.Net.Sockets.TransmitFileOptions.ReuseSocket" /> flags.</summary>
       </Docs>
     </Member>
   </Members>

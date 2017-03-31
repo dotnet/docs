@@ -1,19 +1,27 @@
 ---
 uid: System.ServiceModel.Configuration.SecureConversationServiceElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.SecureConversationServiceElement.SecurityStateEncoderType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.SecureConversationServiceElement.Copy(System.ServiceModel.Configuration.SecureConversationServiceElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.SecureConversationServiceElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

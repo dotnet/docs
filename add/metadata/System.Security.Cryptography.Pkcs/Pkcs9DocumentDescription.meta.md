@@ -1,29 +1,46 @@
 ---
 uid: System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription.DocumentDescription
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription.#ctor(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription.CopyFrom(System.Security.Cryptography.AsnEncodedData)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription.#ctor(System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

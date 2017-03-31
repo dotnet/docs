@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.ExeContext
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ExeContext.UserLevel
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ExeContext.ExePath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

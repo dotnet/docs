@@ -19,8 +19,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Workflow.Activities.WorkflowRole" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.Activities.WorkflowRoleCollection> provides programmatic access to check whether an identity associated with a <xref:System.Workflow.Activities.WorkflowRole> has been added to a <xref:System.Workflow.Activities.HandleExternalEventActivity> or <xref:System.Workflow.Activities.WebServiceInputActivity>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WorkflowRoleCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +65,10 @@
         <Parameter Name="identity" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="identity">A string that contains the identity for which to search.</param>
+        <summary>Returns a value indicating whether the <see cref="T:System.Workflow.Activities.WorkflowRoleCollection" /> contains the specified identity.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Workflow.Activities.WorkflowRoleCollection" /> contains the identity; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

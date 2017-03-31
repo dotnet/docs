@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.XmlDataFileEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XmlDataFileEditor.Filter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XmlDataFileEditor.Caption
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XmlDataFileEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

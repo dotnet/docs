@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.BuildEngine.ToolsetDefinitionLocations
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

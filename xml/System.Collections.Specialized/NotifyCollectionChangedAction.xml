@@ -25,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the action that caused a <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An item was added to the collection.</summary>
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -78,7 +78,7 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An item was moved within the collection.</summary>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -104,7 +104,7 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An item was removed from the collection.</summary>
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -130,7 +130,7 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An item was replaced in the collection.</summary>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -156,7 +156,7 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content of the collection was cleared.</summary>
       </Docs>
     </Member>
   </Members>

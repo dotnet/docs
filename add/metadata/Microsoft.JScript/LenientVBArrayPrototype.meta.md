@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.JScript.LenientVBArrayPrototype
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientVBArrayPrototype.lbound
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientVBArrayPrototype.toArray
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientVBArrayPrototype.constructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientVBArrayPrototype.dimensions
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientVBArrayPrototype.ubound
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientVBArrayPrototype.getItem
-internalonly: False
+ms.author: "mikejo"
 ---

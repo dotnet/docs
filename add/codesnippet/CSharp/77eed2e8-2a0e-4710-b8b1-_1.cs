@@ -1,1 +1,0 @@
-            be.MaxReadPoolSize = 16;

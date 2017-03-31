@@ -1,4 +1,5 @@
 ---
 uid: System.Configuration.OverrideMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The task factory provider for XAML tasks.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a task factory for XAML tasks.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +50,16 @@
         <Parameter Name="task" Type="Microsoft.Build.Framework.ITask" />
       </Parameters>
       <Docs>
-        <param name="task">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="task">The task to clean up.</param>
+        <summary>Cleans up any context or state that may have been built up for a given task.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some factories may create an AppDomain as part of an individual task instance. Such factories use this method to shutdown the AppDomain.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateTask">
@@ -71,9 +78,9 @@
         <Parameter Name="taskFactoryLoggingHost" Type="Microsoft.Build.Framework.IBuildEngine" />
       </Parameters>
       <Docs>
-        <param name="taskFactoryLoggingHost">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="taskFactoryLoggingHost">The task factory logging host that logs messages in the context of the task.</param>
+        <summary>Creates an instance of the task to be used.</summary>
+        <returns>Returns the new task factory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +97,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of this task factory, to be used in error messages. For example, Task "Mytask" failed to load from "FactoryName".</summary>
+        <value>Returns the name of this task factory</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +116,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the type information for the parameters of the task.</summary>
+        <returns>Returns the type information as an array of PropertyInfo.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,12 +140,12 @@
         <Parameter Name="taskFactoryLoggingHost" Type="Microsoft.Build.Framework.IBuildEngine" />
       </Parameters>
       <Docs>
-        <param name="taskName">To be added.</param>
-        <param name="taskParameters">To be added.</param>
-        <param name="taskElementContents">To be added.</param>
-        <param name="taskFactoryLoggingHost">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="taskName">The name of the task.</param>
+        <param name="taskParameters">The parameters to pass to the task.</param>
+        <param name="taskElementContents">The element contents.</param>
+        <param name="taskFactoryLoggingHost">The task factory logging host that logs messages in the context of the task.</param>
+        <summary>Initializes the factory.</summary>
+        <returns>Returns <see cref="T:System.Boolean" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +162,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the contents of the UsingTask body.</summary>
+        <value>Returns the contents of the UsingTask body.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,8 +180,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the task, pulled from the XAML.</summary>
+        <value>Returns the name of the task.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,8 +198,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the namespace of the task, pulled from the XAML.</summary>
+        <value>Returns the namespace of the task.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,8 +216,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of the task, pulled from the XAML.</summary>
+        <value>Returns the task type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -25,8 +25,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the processor and bits-per-word of the platform targeted by an executable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Not all combinations of <xref:System.Reflection.PortableExecutableKinds> and <xref:System.Reflection.ImageFileMachine> describe valid PE file types. <xref:System.Reflection.ProcessorArchitecture> is the set of combinations of <xref:System.Reflection.PortableExecutableKinds> and <xref:System.Reflection.ImageFileMachine> that describe valid PE file types for managed code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Amd64">
@@ -52,7 +59,7 @@
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A 64-bit AMD processor only.</summary>
       </Docs>
     </Member>
     <Member MemberName="Arm">
@@ -78,7 +85,7 @@
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An ARM processor.</summary>
       </Docs>
     </Member>
     <Member MemberName="IA64">
@@ -104,7 +111,7 @@
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A 64-bit Intel processor only.</summary>
       </Docs>
     </Member>
     <Member MemberName="MSIL">
@@ -130,7 +137,7 @@
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Neutral with respect to processor and bits-per-word.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -156,7 +163,7 @@
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unknown or unspecified combination of processor and bits-per-word.</summary>
       </Docs>
     </Member>
     <Member MemberName="X86">
@@ -182,7 +189,7 @@
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A 32-bit Intel processor, either native or in the Windows on Windows environment on a 64-bit platform (WOW64).</summary>
       </Docs>
     </Member>
   </Members>

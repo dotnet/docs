@@ -1,14 +1,20 @@
 ---
 uid: System.Threading.Tasks.ParallelLoopResult
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.Tasks.ParallelLoopResult.IsCompleted
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.Tasks.ParallelLoopResult.LowestBreakIteration
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

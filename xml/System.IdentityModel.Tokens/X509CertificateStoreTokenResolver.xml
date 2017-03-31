@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a token resolver that can resolve tokens of type <see cref="T:System.IdentityModel.Tokens.X509SecurityToken" /> against a specified X.509 certificate store.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver" /> class with a default X.509 certificate store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default store location is <xref:System.Security.Cryptography.X509Certificates.StoreLocation>. The default store name is <xref:System.Security.Cryptography.X509Certificates.StoreName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -44,9 +51,9 @@
         <Parameter Name="storeLocation" Type="System.Security.Cryptography.X509Certificates.StoreLocation" />
       </Parameters>
       <Docs>
-        <param name="storeName">To be added.</param>
-        <param name="storeLocation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="storeName">One of the enumeration values that specify the name of the X.509 certificate store.</param>
+        <param name="storeLocation">One of the enumeration values that specify the location of the X.509 certificate store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver" /> class that uses the X.509 certificate store with the specified location and name to resolve tokens.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,10 +71,12 @@
         <Parameter Name="storeLocation" Type="System.Security.Cryptography.X509Certificates.StoreLocation" />
       </Parameters>
       <Docs>
-        <param name="storeName">To be added.</param>
-        <param name="storeLocation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="storeName">The name of the X.509 certificate store.</param>
+        <param name="storeLocation">One of the enumeration values that specify the location of an X.509 certificate store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509CertificateStoreTokenResolver" /> class that uses the X.509 certificate store with the specified location and name to resolve tokens.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="storeLocation" /> is <see langword="null" /> or an empty string.</exception>
       </Docs>
     </Member>
     <Member MemberName="StoreLocation">
@@ -83,8 +92,8 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.StoreLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location of the X.509 certificate store that is used by this token resolver.</summary>
+        <value>One of the enumeration values that specify the location of an X.509 certificate store.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +110,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the X.509 certificate store that is used by this token resolver.</summary>
+        <value>The name of the X.509 certificate store that is used by this token resolver.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,11 +132,14 @@
         <Parameter Name="key" Type="System.IdentityModel.Tokens.SecurityKey&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifierClause">The key identifier clause from which to resolve the security key.</param>
+        <param name="key">When this method returns, contains the security key that was resolved from the key identifier clause. This parameter is treated as uninitialized.</param>
+        <summary>Attempts to resolve the specified key identifier clause to a security key.</summary>
+        <returns>
+          <see langword="true" /> if the key identifier clause is successfully resolved; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyIdentifierClause" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryResolveTokenCore">
@@ -147,11 +159,14 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifier">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifier">The key identifier to resolve.</param>
+        <param name="token">When this method returns, contains the security token that was resolved from the key identifier. This parameter is treated as uninitialized.</param>
+        <summary>Resolves the specified key identifier to a security token.</summary>
+        <returns>
+          <see langword="true" /> if the key identifier is successfully resolved; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyIdentifier" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryResolveTokenCore">
@@ -171,11 +186,14 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifierClause">The key identifier clause to resolve.</param>
+        <param name="token">When this method returns, contains the security token that was resolved from the key identifier clause. This parameter is treated as uninitialized.</param>
+        <summary>Resolves the specified key identifier clause to a security token.</summary>
+        <returns>
+          <see langword="true" /> if the key identifier clause is successfully resolved; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyIdentifierClause" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

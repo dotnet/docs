@@ -1,109 +1,167 @@
 ---
 uid: System.CodeDom.Compiler.TempFileCollection
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.KeepFiles
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.System#Collections#ICollection#Count
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.AddExtension(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.TempDir
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.BasePath
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.System#Collections#ICollection#IsSynchronized
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.CopyTo(System.String[],System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.Delete
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.GetEnumerator
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.TempFileCollection.AddFile(System.String,System.Boolean)
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.TempFileCollection.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.TempFileCollection.Finalize
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.TempFileCollection.#ctor(System.String,System.Boolean)
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.TempFileCollection.Count
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.TempFileCollection.AddExtension(System.String,System.Boolean)
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.TempFileCollection.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.CodeDom.Compiler.TempFileCollection.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.TempFileCollection.AddFile(System.String,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.TempFileCollection.Dispose(System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.TempFileCollection.Finalize
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.TempFileCollection.#ctor(System.String,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.TempFileCollection.Count
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.TempFileCollection.AddExtension(System.String,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.TempFileCollection.AddExtension
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.TempFileCollection.#ctor(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.TempFileCollection.System#Collections#IEnumerable#GetEnumerator
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.TempFileCollection.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.System#IDisposable#Dispose
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.TempFileCollection.System#Collections#ICollection#SyncRoot
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

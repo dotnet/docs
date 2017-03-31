@@ -1,39 +1,45 @@
 ---
 uid: System.Security.Claims.ClaimProperties
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimProperties.SamlAttributeDisplayName
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimProperties.SamlNameIdentifierSPProvidedId
-internalonly: False
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimProperties.SamlNameIdentifierSPNameQualifier
-internalonly: False
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimProperties.SamlAttributeNameFormat
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimProperties.SamlNameIdentifierFormat
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimProperties.SamlNameIdentifierNameQualifier
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimProperties.Namespace
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

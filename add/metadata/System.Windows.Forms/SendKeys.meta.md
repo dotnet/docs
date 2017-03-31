@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.Forms.SendKeys
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.SendKeys.SendWait(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.SendKeys.Flush
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.SendKeys.Send(System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

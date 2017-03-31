@@ -15,8 +15,31 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents information about how to display a button in the [!INCLUDE[win7](~/includes/win7-md.md)] taskbar thumbnail.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[win7](~/includes/win7-md.md)] taskbar provides enhanced functionality that enables you to use the taskbar button to communicate status to a user and expose common tasks when the window is minimized or hidden. You can add buttons to the taskbar thumbnail to provide access to common tasks without switching to the application window. For example, Windows Media Player provides Play, Pause, Forward, and Back buttons that you can use to control media playback from the taskbar thumbnail when the application is minimized.  
+  
+ The <xref:System.Windows.Shell.ThumbButtonInfo> class contains properties that describe how the [!INCLUDE[win7](~/includes/win7-md.md)] shell displays the buttons in the taskbar thumbnail. It provides a managed wrapper around the native Windows API. <xref:System.Windows.Shell.ThumbButtonInfo> objects are contained in the <xref:System.Windows.Shell.TaskbarItemInfo.ThumbButtonInfos%2A?displayProperty=fullName> collection.  
+  
+ The enhanced taskbar functionality is not available in versions of Windows earlier than [!INCLUDE[win7](~/includes/win7-md.md)]. In [!INCLUDE[win7](~/includes/win7-md.md)], some functionality might not be available depending on the user's settings. For example, buttons are only shown in the taskbar thumbnail when [!INCLUDE[TLA#tla_aero](~/includes/tlasharptla-aero-md.md)] is enabled. Your application should provide alternate ways of interacting with the user that are not dependent on the enhanced taskbar functionality.  
+  
+ The following illustration shows a taskbar preview with two thumb buttons that provide access to the Play and Stop commands.  
+  
+ ![Taskbar Item Info Sample](~/add/media/wpfshell-taskbariteminfo.png "Taskbar Item Info Sample")  
+Windows Taskbar Thumb Buttons  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.TaskbarItemInfo> contains a collection of <xref:System.Windows.Shell.ThumbButtonInfo> objects that provide access to the Play and Stop commands from the taskbar item. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
+  
+ [!code-xml[Shell_TaskbarItemSample#010](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#010)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +53,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.ThumbButtonInfo" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +70,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the thumbnail button is clicked.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you handle the <xref:System.Windows.Shell.ThumbButtonInfo.Click> event, the event handler executes instead of any <xref:System.Windows.Shell.ThumbButtonInfo.Command%2A> that is bound to the thumbnail button.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -64,9 +94,25 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the command to invoke when this thumbnail button is clicked.</summary>
+        <value>The command to invoke when this thumbnail button is clicked. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you handle the <xref:System.Windows.Shell.ThumbButtonInfo.Click> event, the event handler executes instead of any <xref:System.Windows.Shell.ThumbButtonInfo.Command%2A> that is bound to the thumbnail button.  
+  
+ In XAML, this property is often set to be a static command value from one of the existing command libraries, such as from the <xref:System.Windows.Input.ApplicationCommands> or <xref:System.Windows.Input.NavigationCommands> library.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.ThumbButtonInfo> is bound to the <xref:System.Windows.Input.MediaCommands.Stop%2A?displayProperty=fullName> command. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
+  
+ [!code-xml[Shell_TaskbarItemSample#020](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#020)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandParameter">
@@ -82,8 +128,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the parameter to pass to the <see cref="P:System.Windows.Shell.ThumbButtonInfo.Command" /> property.</summary>
+        <value>The parameter to pass to the <see cref="P:System.Windows.Shell.ThumbButtonInfo.Command" /> property. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +146,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.ThumbButtonInfo.CommandParameter" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,7 +163,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.ThumbButtonInfo.Command" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,9 +180,16 @@
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the element on which to raise the specified command.</summary>
+        <value>The element on which to raise the specified command. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Shell.ThumbButtonInfo.CommandTarget%2A> property provides a reference to an element that is already defined in your application.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandTargetProperty">
@@ -152,7 +205,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.ThumbButtonInfo.CommandTarget" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,9 +241,23 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text to display for the thumbnail button tooltip.</summary>
+        <value>The text to display for the thumbnail button tooltip. The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add an image to a thumbnail button, but no property exists for setting text on the thumbnail button face. However, you can set the <xref:System.Windows.Shell.ThumbButtonInfo.Description%2A> property to add descriptive text that is displayed in a tooltip when the mouse pointer moves over the thumbnail button.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.ThumbButtonInfo> is bound to the <xref:System.Windows.Input.MediaCommands.Stop%2A?displayProperty=fullName> command. The tooltip descriptive text is **Stop**. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
+  
+ [!code-xml[Shell_TaskbarItemSample#020](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#020)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DescriptionProperty">
@@ -206,7 +273,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.ThumbButtonInfo.Description" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,9 +290,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the taskbar thumbnail closes when the thumbnail button is clicked.</summary>
+        <value>
+          <see langword="true" /> if the thumbnail closes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the taskbar thumbnail remains visible when a thumbnail button is clicked. To make the thumbnail close when a thumbnail button is clicked, set the <xref:System.Windows.Shell.ThumbButtonInfo.DismissWhenClicked%2A> property to `true`.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.ThumbButtonInfo> is bound to the <xref:System.Windows.Input.MediaCommands.Stop%2A?displayProperty=fullName> command. It is configured to close when the button is clicked. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
+  
+ [!code-xml[Shell_TaskbarItemSample#020](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#020)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DismissWhenClickedProperty">
@@ -241,7 +323,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.ThumbButtonInfo.DismissWhenClicked" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,9 +340,25 @@
         <ReturnType>System.Windows.Media.ImageSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the image that is displayed on the thumbnail button.</summary>
+        <value>The image that is displayed on the thumbnail button. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can place a static or animated <xref:System.Windows.Media.ImageSource> on the thumbnail button. The images are rendered at the appropriate size. If the <xref:System.Windows.Media.ImageSource> represents an <xref:System.Drawing.Icon>, the appropriate bit depth is also used.  
+  
+ To provide additional textual information about the thumbnail button, set the <xref:System.Windows.Shell.ThumbButtonInfo.Description%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Shell.ThumbButtonInfo> in markup. The <xref:System.Windows.Shell.ThumbButtonInfo> is bound to the <xref:System.Windows.Input.MediaCommands.Stop%2A?displayProperty=fullName> command. The button image is a dark gray square defined in XAML as a static resource. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
+  
+ [!code-xml[Shell_TaskbarItemSample#020](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#020)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImageSourceProperty">
@@ -276,7 +374,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.ThumbButtonInfo.ImageSource" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,9 +391,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether a border and highlight is displayed around the thumbnail button.</summary>
+        <value>
+          <see langword="true" /> if a border and highlight is displayed around the thumbnail button; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, a border appears around the <xref:System.Windows.Shell.ThumbButtonInfo.ImageSource%2A>, and a highlight is displayed when the mouse pointer is moved over the thumbnail button. To display only the <xref:System.Windows.Shell.ThumbButtonInfo.ImageSource%2A> without the border and highlight, set the <xref:System.Windows.Shell.ThumbButtonInfo.IsBackgroundVisible%2A> property to `false`. If <xref:System.Windows.Shell.ThumbButtonInfo.IsBackgroundVisible%2A> is `false`, the <xref:System.Windows.Shell.ThumbButtonInfo.ImageSource%2A> still shifts when the thumbnail button is clicked to provide visual feedback to the user.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsBackgroundVisibleProperty">
@@ -311,7 +417,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.ThumbButtonInfo.IsBackgroundVisible" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,9 +434,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the thumbnail button is enabled.</summary>
+        <value>
+          <see langword="true" /> if the thumbnail button is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Shell.ThumbButtonInfo.IsEnabled%2A> property is `false`, the thumbnail button does not respond to <xref:System.Windows.Shell.ThumbButtonInfo.Click> events and the <xref:System.Windows.Shell.ThumbButtonInfo.ImageSource%2A> is dimmed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabledProperty">
@@ -346,7 +460,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.ThumbButtonInfo.IsEnabled" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -363,9 +477,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the user can interact with the thumbnail button.</summary>
+        <value>
+          <see langword="true" /> if the user can interact with the thumbnail button; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Shell.ThumbButtonInfo.IsInteractive%2A> property is `false`, the thumbnail button does not respond to <xref:System.Windows.Shell.ThumbButtonInfo.Click> events. However, the <xref:System.Windows.Shell.ThumbButtonInfo.ImageSource%2A> is not dimmed. You can use a thumbnail button that is not interactive as a status icon.  
+  
+ If the <xref:System.Windows.Shell.ThumbButtonInfo.IsEnabled%2A> property is `false`, the setting for <xref:System.Windows.Shell.ThumbButtonInfo.IsInteractive%2A> does not have any effect.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInteractiveProperty">
@@ -381,7 +505,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.ThumbButtonInfo.IsInteractive" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -398,9 +522,16 @@
         <ReturnType>System.Windows.Visibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies the display state of the thumbnail button.</summary>
+        <value>An enumeration value that specifies the display state of the thumbnail button. The default is <see cref="F:System.Windows.Visibility.Visible" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the thumbnail button is <xref:System.Windows.Visibility>. [!INCLUDE[win7](~/includes/win7-md.md)] allows a maximum of seven buttons in the taskbar thumbnail. When the <xref:System.Windows.Shell.ThumbButtonInfo.Visibility%2A> property is set to <xref:System.Windows.Visibility>, the thumbnail button has no visible elements, but space is still reserved for it. When the thumbnail button is <xref:System.Windows.Visibility>, it does not have any visible elements and no space is reserved for it. In this case, additional thumbnail buttons in the <xref:System.Windows.Shell.TaskbarItemInfo.ThumbButtonInfos%2A> collection are displayed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibilityProperty">
@@ -416,7 +547,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.ThumbButtonInfo.Visibility" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

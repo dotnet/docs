@@ -16,8 +16,28 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the World Wide Web Consortium (W3C) <see langword="all" /> element (compositor).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Schema.XmlSchemaAll> class permits the elements in the group to appear (or not appear) in any order in the containing element.  
+  
+   
+  
+## Examples  
+ The following example creates an `all` element.  
+  
+ [!code-cpp[Classic WebData XmlSchemaAll Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaAll Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaAll Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaAll Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaAll Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaAll Example/VB/source.vb#1)]  
+  
+ The following XML file is generated for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchemaAll Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaAll Example/XML/source.xml#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +56,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaAll" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +83,8 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of <see langword="XmlSchemaElement" /> elements contained within the <see langword="all" /> compositor.</summary>
+        <value>The collection of elements contained in <see langword="XmlSchemaAll" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

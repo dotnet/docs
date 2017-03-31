@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.MetadataServices.SUDSGeneratorException
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.MetadataServices.SUDSGeneratorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "ghogen"
 ---

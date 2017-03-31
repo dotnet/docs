@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the <see langword="&lt;wst:Lifetime&gt;" /> element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This optional element is used in `wst:RequestSecurityToken` or `wst:RequestSecurityTokenResponse` messages to indicate the desired or required lifetime of a token. All times are specified in UTC time.  
+  
+ [!INCLUDE[wif_wstrust_ref](~/includes/wif-wstrust-ref-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,10 +38,11 @@
         <Parameter Name="expires" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="created">To be added.</param>
-        <param name="expires">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="created">A <see cref="T:System.DateTime" /> that represents the token creation time in UTC.</param>
+        <param name="expires">A <see cref="T:System.DateTime" /> that represents the token expiration time in UTC.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.Lifetime" /> class with the specified creation and expiration time.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The time specified by <paramref name="created" /> occurs before the time specified by <paramref name="expires" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -49,10 +59,11 @@
         <Parameter Name="expires" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="created">To be added.</param>
-        <param name="expires">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="created">A <see cref="T:System.DateTime" /> that specifies the token creation time in UTC. Can be <see langword="null" />.</param>
+        <param name="expires">A <see cref="T:System.DateTime" /> that specifies the token expiration time in UTC. Can be <see langword="null" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.Lifetime" /> class with the specified creation and expiration time.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The time specified by <paramref name="created" /> occurs before the time specified by <paramref name="expires" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Created">
@@ -68,9 +79,18 @@
         <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the token creation time in UTC time.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the UTC time at which the token is created. Can be <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Represents the `<wst:Created>` child element. This optional element specifies the time at which the token is created.  
+  
+ [!INCLUDE[wif_wstrust_ref](~/includes/wif-wstrust-ref-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Expires">
@@ -86,9 +106,18 @@
         <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the token expiration time in UTC time.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the UTC time at which the token expires. Can be <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Represents the `<wst:Expires>` child element. This optional element specifies the time at which the token expires.  
+  
+ [!INCLUDE[wif_wstrust_ref](~/includes/wif-wstrust-ref-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the result of an asynchronously invoked web method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is accepted as an argument by delegates of the type <xref:System.Web.Services.Protocols.InvokeCompletedEventHandler>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Results">
@@ -30,8 +37,8 @@
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the results returned by the Web method.</summary>
+        <value>An array of objects returned by the Web method.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

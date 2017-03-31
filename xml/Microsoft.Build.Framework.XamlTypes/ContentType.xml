@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Used to deserialize the content type information</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Constructor</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +56,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Begins initialization. See ISupportInitialize.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +73,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag that determines whether default content type is available.</summary>
+        <value>Returns true if default content type is available.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +96,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Serializes IContentType.DisplayName.</summary>
+        <value>Returns the serialized display name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +115,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ends initialization.  See ISupportInitialize.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,9 +135,9 @@
         <Parameter Name="metadataName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="metadataName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="metadataName">The name of the metadata whose value is to be retrieved.</param>
+        <summary>Gets the value of the given metadata name.</summary>
+        <returns>Returns the value of the given metadata name. Returns null if the name isn't found in the metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,9 +162,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type of static data to retrieve.</param>
+        <summary>Returns an enumerator over all instances of static data that have the given type.</summary>
+        <returns>Returns an enumerator over all instances of static data that have the given type. Returns <see langword="Null" /> or Empty list if no objects of the given type are provided by this node.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,8 +187,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator over all types of static data for the data-driven features that this node contains.</summary>
+        <returns>Returns an enumerator over all types of static data for the data-driven features that this node contains.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,8 +210,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Serializes IContentType.DefaultContentTypeForItemType</summary>
+        <value>Returns the serialized default content type for the item type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +228,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Serializes IContentType.ItemType</summary>
+        <value>Returns the serialized item type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,9 +246,16 @@
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.NameValuePair&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Serializes content type's metadata.</summary>
+        <value>Returns the serialized metadata.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Accessable via IContentType.GetMetadata().  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -264,8 +271,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Serializes IContentType.Name.</summary>
+        <value>Returns the serialized name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

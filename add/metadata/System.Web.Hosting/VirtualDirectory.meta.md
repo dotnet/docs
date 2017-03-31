@@ -1,29 +1,35 @@
 ---
 uid: System.Web.Hosting.VirtualDirectory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.VirtualDirectory.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.VirtualDirectory.Files
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.VirtualDirectory.IsDirectory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.VirtualDirectory.Directories
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.VirtualDirectory.Children
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

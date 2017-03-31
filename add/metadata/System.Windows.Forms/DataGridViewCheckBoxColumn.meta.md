@@ -1,54 +1,79 @@
 ---
 uid: System.Windows.Forms.DataGridViewCheckBoxColumn
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridViewCheckBoxColumn.ToString
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCheckBoxColumn.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCheckBoxColumn.ToString
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCheckBoxColumn.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCheckBoxColumn.FlatStyle
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCheckBoxColumn.IndeterminateValue
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCheckBoxColumn.#ctor(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

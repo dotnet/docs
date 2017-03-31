@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the reason for which the user's session is ending. Used by the <see cref="P:System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.ReasonSessionEnding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The session is ending because the user is logging off.</summary>
       </Docs>
     </Member>
     <Member MemberName="Shutdown">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.ReasonSessionEnding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The session is ending because the user is shutting down [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)].</summary>
       </Docs>
     </Member>
   </Members>

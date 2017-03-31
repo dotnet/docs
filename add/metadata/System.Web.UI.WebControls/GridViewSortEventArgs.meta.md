@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.GridViewSortEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewSortEventArgs.#ctor(System.String,System.Web.UI.WebControls.SortDirection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewSortEventArgs.SortExpression
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewSortEventArgs.SortDirection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

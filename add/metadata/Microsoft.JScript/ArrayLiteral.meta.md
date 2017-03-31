@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.ArrayLiteral
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ArrayLiteral.#ctor(Microsoft.JScript.Context,Microsoft.JScript.ASTList)
-internalonly: False
+ms.author: "mikejo"
 ---

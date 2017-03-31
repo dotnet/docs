@@ -1,34 +1,41 @@
 ---
 uid: Microsoft.Build.Tasks.FindAppConfigFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.FindAppConfigFile.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.FindAppConfigFile.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.FindAppConfigFile.AppConfigFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.FindAppConfigFile.PrimaryList
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.FindAppConfigFile.TargetPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.FindAppConfigFile.SecondaryList
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

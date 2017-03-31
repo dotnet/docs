@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

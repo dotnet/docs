@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the printer's duplex setting.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Drawing.Printing.PrinterSettings> class.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -27,7 +36,7 @@
         <ReturnType>System.Drawing.Printing.Duplex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer's default duplex setting.</summary>
       </Docs>
     </Member>
     <Member MemberName="Horizontal">
@@ -43,7 +52,7 @@
         <ReturnType>System.Drawing.Printing.Duplex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Double-sided, horizontal printing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Simplex">
@@ -59,7 +68,7 @@
         <ReturnType>System.Drawing.Printing.Duplex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Single-sided printing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -75,7 +84,7 @@
         <ReturnType>System.Drawing.Printing.Duplex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Double-sided, vertical printing.</summary>
       </Docs>
     </Member>
   </Members>

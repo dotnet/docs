@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Computes aggregates over a sequence of Int32 values.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,8 +44,8 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A value of type <see langword="Int32" /> that identifies a group of items to average, such as a column in a table.</param>
+        <summary>Finds the average of a sequence of Int32 values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the average result of a sequence of Int32 values.</summary>
+        <value>An <see langword="Int32" /> value that contains the average result of a sequence of <see langword="Int32" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +89,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a sequence of <see langword="Int32" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +110,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a Boolean value that indicates if the sequence is empty.</summary>
+        <value>
+          <see langword="true" /> if the sequence is empty, otherwise returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +136,8 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A value of type <see langword="Int32" />.</param>
+        <summary>Assigns the <paramref name="value" /> parameter to the existing result if the <paramref name="value" /> parameter is greater than the existing result.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,8 +158,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the largest value in a sequence of <see langword="Int32" /> values.</summary>
+        <value>An <see langword="Int32" /> value that contains the maximum value in a sequence of <see langword="Int32" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,8 +183,8 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A value of type <see langword="Int32" /></param>
+        <summary>Assigns the <paramref name="value" /> parameter to the existing result if the <paramref name="value" /> parameter is less than the existing result.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +205,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the smallest value in a sequence of Int32 values.</summary>
+        <value>An <see langword="Int32" /> value that contains the minimum value in a sequence of <see langword="Int32" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,8 +230,8 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A value of type <see langword="Int32" />.</param>
+        <summary>Adds an <see langword="Int32" /> value to the existing result.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,8 +252,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the sum of a sequence of Int32 values.</summary>
+        <value>An <see langword="Int32" /> value that contains the sum of a sequence of <see langword="Int32" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

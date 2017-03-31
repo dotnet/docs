@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

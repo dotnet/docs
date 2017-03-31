@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents dependencies returned by the build manager.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.BuildDependencySet> object for an application can be retrieved through the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A> method. It contains the properties that represent the list of dependencies.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="HashCode">
@@ -28,8 +35,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a string representing the hash code of the dependent virtual paths.</summary>
+        <value>A <see cref="T:System.String" /> representing the hash code of the dependent virtual paths.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list of virtual path dependencies.</summary>
+        <value>An <see cref="T:System.Collections.IEnumerable" /> containing the virtual path dependencies.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

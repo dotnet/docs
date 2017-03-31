@@ -1,19 +1,32 @@
 ---
 uid: System.ServiceModel.Channels.HttpMessageSettings
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.HttpMessageSettings.Equals
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Channels.HttpMessageSettings.HttpMessagesSupported
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.HttpMessageSettings.Equals(System.ServiceModel.Channels.HttpMessageSettings)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.HttpMessageSettings.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

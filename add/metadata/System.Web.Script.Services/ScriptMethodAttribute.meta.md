@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Script.Services.ScriptMethodAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Services.ScriptMethodAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Services.ScriptMethodAttribute.UseHttpGet
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Services.ScriptMethodAttribute.XmlSerializeString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

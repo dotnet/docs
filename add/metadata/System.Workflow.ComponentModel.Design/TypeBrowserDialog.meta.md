@@ -1,44 +1,69 @@
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserDialog
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserDialog.#ctor(System.IServiceProvider,System.Workflow.ComponentModel.Design.ITypeFilterProvider,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#IServiceProvider#GetService(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Container
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.Design.TypeBrowserDialog.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserDialog.#ctor(System.IServiceProvider,System.Workflow.ComponentModel.Design.ITypeFilterProvider,System.String,System.Workflow.ComponentModel.Compiler.TypeProvider)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserDialog.SelectedType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#DesignMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Component
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

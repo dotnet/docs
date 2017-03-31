@@ -1,4 +1,5 @@
 ---
 uid: System.Security.Authentication.ExtendedProtection.Configuration
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

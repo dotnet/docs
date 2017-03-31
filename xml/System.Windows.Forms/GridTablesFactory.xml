@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the <see cref="M:System.Windows.Forms.GridTablesFactory.CreateGridTables(System.Windows.Forms.DataGridTableStyle,System.Object,System.String,System.Windows.Forms.BindingContext)" /> method.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,12 +34,12 @@
         <Parameter Name="bindingManager" Type="System.Windows.Forms.BindingContext" />
       </Parameters>
       <Docs>
-        <param name="gridTable">To be added.</param>
-        <param name="dataSource">To be added.</param>
-        <param name="dataMember">To be added.</param>
-        <param name="bindingManager">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="gridTable">A <see cref="T:System.Windows.Forms.DataGridTableStyle" />.</param>
+        <param name="dataSource">An <see cref="T:System.Object" />.</param>
+        <param name="dataMember">A <see cref="T:System.String" />.</param>
+        <param name="bindingManager">A <see cref="T:System.Windows.Forms.BindingContext" />.</param>
+        <summary>Returns the specified <see cref="P:System.Windows.Forms.DataGridColumnStyle.DataGridTableStyle" /> in a one-element array.</summary>
+        <returns>An array of <see cref="T:System.Windows.Forms.DataGridTableStyle" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

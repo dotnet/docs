@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Framework.ILogger
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ILogger.Initialize(Microsoft.Build.Framework.IEventSource)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ILogger.Parameters
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ILogger.Verbosity
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ILogger.Shutdown
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

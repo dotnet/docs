@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Customizes SOAP generation and processing for a parameter. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The target objects for the <xref:System.Runtime.Remoting.Metadata.SoapParameterAttribute> attributes are parameters of method calls that are remotely invoked. The <xref:System.Runtime.Remoting.Metadata.SoapParameterAttribute> is used to specify information that controls how the .NET Framework generates the SOAP XML wire format for target parameters.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of <see cref="T:System.Runtime.Remoting.Metadata.SoapParameterAttribute" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

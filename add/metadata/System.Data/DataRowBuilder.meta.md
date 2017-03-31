@@ -1,4 +1,6 @@
 ---
 uid: System.Data.DataRowBuilder
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

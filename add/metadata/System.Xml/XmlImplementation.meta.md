@@ -1,24 +1,41 @@
 ---
 uid: System.Xml.XmlImplementation
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlImplementation.CreateDocument
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlImplementation.HasFeature(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Xml.XmlImplementation.#ctor(System.Xml.XmlNameTable)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlImplementation.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.XmlImplementation.#ctor(System.Xml.XmlNameTable)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.XmlImplementation.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,3 +1,0 @@
-        For Each de As DictionaryEntry In myListDictionary
-            '...
-        Next de

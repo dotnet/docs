@@ -11,8 +11,117 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an abstract class that defines an action to be executed if the associated <see cref="P:System.Workflow.Activities.Rules.Rule.Condition" /> evaluates to <see langword="true" />, for <see cref="P:System.Workflow.Activities.Rules.Rule.ThenActions" />, or <see langword="false" />, for <see cref="P:System.Workflow.Activities.Rules.Rule.ElseActions" />. This class must be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.Rules.RuleStatementAction> objects (which can be used as both <xref:System.Workflow.Activities.Rules.Rule.ThenActions%2A> and <xref:System.Workflow.Activities.Rules.Rule.ElseActions%2A>) typically set a variable value on one of the properties of the activity, call a method of the activity, or call static methods on types in referenced assemblies.  
+  
+ <xref:System.Workflow.Activities.Rules.RuleAction> is the base type that <xref:System.Workflow.Activities.Rules.RuleStatementAction>, <xref:System.Workflow.Activities.Rules.RuleHaltAction>, and <xref:System.Workflow.Activities.Rules.RuleUpdateAction> classes derive from. The uses of these classes is as follows:  
+  
+-   A <xref:System.Workflow.Activities.Rules.RuleStatementAction> modifies a property or calls a method.  
+  
+-   A <xref:System.Workflow.Activities.Rules.RuleHaltAction> causes the <xref:System.Workflow.Activities.Rules.RuleSet> to stop executing and returns control to the calling method.  
+  
+-   A <xref:System.Workflow.Activities.Rules.RuleUpdateAction> explicitly indicates that a rule is updating a variable. This causes the re-evaluation of any affected rules.  
+  
+   
+  
+## Examples  
+ The following code creates an action that can be used in rule sets. The action is named `Log`, and takes a single parameter, which must evaluate to a string. This action outputs the string to the Console.  
+  
+ To use this code, add it to a Class Library project and reference the library from your workflow project.  
+  
+```csharp  
+using System;  
+using System.CodeDom;  
+using System.Collections.Generic;  
+using System.Text;  
+using System.Workflow.Activities.Rules;  
+using System.Workflow.ComponentModel.Compiler;  
+  
+namespace LogRuleAction  
+{  
+    public class Log : RuleAction  
+    {  
+        CodeExpression message;  
+  
+        public CodeExpression Message  
+        {  
+            get { return message; }  
+            set { message = value; }  
+        }  
+  
+        public Log()  
+        {  
+            // constructor required for deserialization  
+        }  
+  
+        public Log(CodeExpression expression)  
+        {  
+            // constructor required by parser  
+            message = expression;  
+        }  
+  
+        public override bool Validate(RuleValidation validator)  
+        {  
+            ValidationError error;  
+            if (message == null)  
+            {  
+                error = new ValidationError("Message cannot be null", 123);  
+                validator.Errors.Add(error);  
+                return false;  
+            }  
+            else  
+            {  
+                RuleExpressionInfo result = RuleExpressionWalker.Validate(validator, message, false);  
+                if ((result == null) || (result.ExpressionType != typeof(string)))  
+                {  
+                    error = new ValidationError("Message must return string result", 123);  
+                    validator.Errors.Add(error);  
+                    return false;  
+                }  
+            }  
+            return (validator.Errors.Count == 0);  
+        }  
+  
+        public override RuleAction Clone()  
+        {  
+            Log result = new Log();  
+            result.Message = RuleExpressionWalker.Clone(message);  
+            return result;  
+        }  
+  
+        public override void Execute(RuleExecution context)  
+        {  
+            RuleExpressionResult result = RuleExpressionWalker.Evaluate(context, message);  
+            if (result != null)  
+                Console.WriteLine(result.Value);  
+        }  
+  
+        public override ICollection<string> GetSideEffects(RuleValidation validation)  
+        {  
+            RuleAnalysis analysis = new RuleAnalysis(validation, true);  
+            if (message != null)  
+                RuleExpressionWalker.AnalyzeUsage(analysis, message, true, false, null);  
+            return analysis.GetSymbols();  
+        }  
+  
+        public override string ToString()  
+        {  
+            // what should be displayed by the parser  
+            StringBuilder result = new StringBuilder("Log(");  
+            RuleExpressionWalker.Decompile(result, message, null);  
+            result.Append(")");  
+            return result.ToString();  
+        }  
+    }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +135,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,8 +153,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a deep copy of the current <see cref="T:System.Workflow.Activities.Rules.RuleAction" />.</summary>
+        <returns>A <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> that is identical to this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +174,8 @@
         <Parameter Name="context" Type="System.Workflow.Activities.Rules.RuleExecution" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The runtime state that the <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> is executing in.</param>
+        <summary>Executes the <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> using the specified <see cref="T:System.Workflow.Activities.Rules.RuleExecution" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +195,9 @@
         <Parameter Name="validation" Type="System.Workflow.Activities.Rules.RuleValidation" />
       </Parameters>
       <Docs>
-        <param name="validation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="validation">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> that was used previously in a call to <see cref="M:System.Workflow.Activities.Rules.RuleAction.Validate(System.Workflow.Activities.Rules.RuleValidation)" />.</param>
+        <summary>Returns the fields and properties updated by a <see cref="T:System.Workflow.Activities.Rules.RuleAction" />.</summary>
+        <returns>A collection of strings that represent the names of fields and properties that are changed by a <see cref="T:System.Workflow.Activities.Rules.RuleAction" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,10 +217,18 @@
         <Parameter Name="validator" Type="System.Workflow.Activities.Rules.RuleValidation" />
       </Parameters>
       <Docs>
-        <param name="validator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="validator">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> to manage the validation process.</param>
+        <summary>Verifies that the <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> is configured correctly and has no errors.</summary>
+        <returns>
+          <see langword="true" /> to show that the <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> validated correctly and has no errors; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Workflow.Activities.Rules.RuleAction> contains errors (the `Validate` method returns `false`), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> will contain the list of errors encountered.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

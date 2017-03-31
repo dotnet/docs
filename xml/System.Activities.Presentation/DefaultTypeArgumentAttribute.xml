@@ -16,8 +16,20 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the default type for a generic type activity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this attribute provides a default type for an element when dropped from the toolbox onto the designer surface. Note that while a default can be set, the designer is required to provide a mechanism to change the type argument if that is required functionality.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_DefaultTypeArgumentAttribute#0](WFD_DefaultTypeArgumentAttribute#0)]  -->  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +45,8 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The default <see cref="T:System.Type" /> for generic parameters.</param>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.DefaultTypeArgumentAttribute" /> class with a specified default type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +63,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type stored by the <see cref="T:System.Activities.Presentation.DefaultTypeArgumentAttribute" />.</summary>
+        <value>The <see cref="T:System.Type" /> stored as a default for generic parameters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

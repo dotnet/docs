@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Acts as the property entry for event handlers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The page parser uses property entry classes during parsing to represent expressions found within server control tags. The <xref:System.Web.UI.EventEntry> class is used for expressions that are bound to properties that specify an event handler. These bound properties start with "on", such as `OnClick` or `OnInit`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.EventEntry" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +50,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the method that handles the event.</summary>
+        <value>A <see cref="T:System.String" /> containing the event handler method name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the property setting, the <xref:System.Web.UI.EventEntry.HandlerMethodName%2A> property is set to the value of the expression.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HandlerType">
@@ -61,8 +75,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of delegate for the event.</summary>
+        <value>A <see cref="T:System.Type" /> that represents the type of delegate for the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +93,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the property from the expression.</summary>
+        <value>A <see cref="T:System.String" /> that contains the name of the property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

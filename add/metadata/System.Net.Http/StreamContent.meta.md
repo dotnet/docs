@@ -1,34 +1,51 @@
 ---
 uid: System.Net.Http.StreamContent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.StreamContent.#ctor(System.IO.Stream)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.StreamContent.#ctor(System.IO.Stream,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.StreamContent.TryComputeLength(System.Int64@)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.StreamContent.Dispose
 ---
 
 ---
 uid: System.Net.Http.StreamContent.Dispose(System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.StreamContent.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.StreamContent.CreateContentReadStreamAsync
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.StreamContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

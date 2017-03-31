@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the formatting methods supported by the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Media.TextFormattingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> lays out text by using GDI-compatible font metrics.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ideal">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Media.TextFormattingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> lays out text by using ideal font metrics.</summary>
       </Docs>
     </Member>
   </Members>

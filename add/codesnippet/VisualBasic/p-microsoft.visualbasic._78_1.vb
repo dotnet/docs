@@ -1,1 +1,0 @@
-        Dim textOnClipboard As String = My.Computer.Clipboard.GetText()

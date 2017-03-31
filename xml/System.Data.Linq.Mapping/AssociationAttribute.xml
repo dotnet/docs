@@ -16,8 +16,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Designates a property to represent a database association, such as a foreign key relationship.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this attribute to represent an association in a database, such as the relationship between a foreign key and a primary key.  
+  
+ In the following example, the `Order` class includes an <xref:System.Data.Linq.Mapping.AssociationAttribute> attribute to associate Orders with Customers.  
+  
+   
+  
+## Examples  
+ [!code-csharp[System.Data.Linq.Mapping.AssociationAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.Mapping.AssociationAttribute/cs/northwind.cs#1)]
+ [!code-vb[System.Data.Linq.Mapping.AssociationAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.Mapping.AssociationAttribute/vb/northwind.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +46,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.AssociationAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +63,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When placed on a 1:1 association whose foreign key members are all non-nullable, deletes the object when the association is set to null.</summary>
+        <value>Setting to <see langword="True" /> deletes the object. The default value is <see langword="False" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +81,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets delete behavior for an association.</summary>
+        <value>A string representing the rule.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If set to null, no delete behavior is added. For example, "CASCADE" would add "ON DELETE CASCADE" to the foreign-key relationship.  
+  
+ In the following example, the rule is to take no action.  
+  
+   
+  
+## Examples  
+ [!code-csharp[System.Data.Linq.Mapping.AssociationAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.Mapping.AssociationAttribute/cs/northwind.cs#2)]
+ [!code-vb[System.Data.Linq.Mapping.AssociationAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.Mapping.AssociationAttribute/vb/northwind.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsForeignKey">
@@ -84,9 +114,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the member as the foreign key in an association representing a database relationship.</summary>
+        <value>Default = <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[System.Data.Linq.Mapping.AssociationAttribute#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.Mapping.AssociationAttribute/cs/northwind.cs#3)]
+ [!code-vb[System.Data.Linq.Mapping.AssociationAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.Mapping.AssociationAttribute/vb/northwind.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsUnique">
@@ -102,9 +140,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the indication of a uniqueness constraint on the foreign key.</summary>
+        <value>Default = <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When true, this property indicates a true 1:1 relationship.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherKey">
@@ -120,9 +165,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets one or more members of the target entity class as key values on the other side of the association.</summary>
+        <value>Default = Id of the related class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For multiple members, use a comma-separated list.  
+  
+ The key is not required to match the primary key or foreign key, but the user-stated cardinality (0-1 for <xref:System.Data.Linq.EntityRef%601> or 0-n for <xref:System.Data.Linq.EntitySet%601>) is assumed to be true.  
+  
+   
+  
+## Examples  
+ [!code-csharp[System.Data.Linq.Mapping.AssociationAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.Mapping.AssociationAttribute/cs/northwind.cs#2)]
+ [!code-vb[System.Data.Linq.Mapping.AssociationAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.Mapping.AssociationAttribute/vb/northwind.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThisKey">
@@ -138,9 +198,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets members of this entity class to represent the key values on this side of the association.</summary>
+        <value>Default = Id of the containing class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For multiple members, use a comma-separated list.  
+  
+ The key is not required to match the primary key or foreign key, but the user-stated cardinality (0-1 for <xref:System.Data.Linq.EntityRef%601> or 0-n for <xref:System.Data.Linq.EntitySet%601>) is assumed to be true.  
+  
+   
+  
+## Examples  
+ [!code-csharp[System.Data.Linq.Mapping.AssociationAttribute#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.Mapping.AssociationAttribute/cs/northwind.cs#3)]
+ [!code-vb[System.Data.Linq.Mapping.AssociationAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.Mapping.AssociationAttribute/vb/northwind.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

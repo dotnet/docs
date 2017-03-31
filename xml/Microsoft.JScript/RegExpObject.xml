@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a regular expression object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether searches are performed with the global flag (<c>/g</c>), matching all occurrences.</summary>
+        <value>
+          <see langword="true" /> if global searches are performed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +47,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether searches are performed with the case-insensitive flag (<c>/i</c>).</summary>
+        <value>
+          <see langword="true" /> if case-insensitive searches are performed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +66,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the index of the last successful match.</summary>
+        <value>The index of the last successful match, if there was one.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +84,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether searches are performed with the multiline flag (<c>/m</c>).</summary>
+        <value>
+          <see langword="true" /> if searches are performed in multiline mode; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +103,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the regular expression pattern that is represented by this object.</summary>
+        <value>The regular expression pattern that is represented by this object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +122,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a string representation of this object that contains the regular expression pattern and flags.</summary>
+        <returns>A string representation of this object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

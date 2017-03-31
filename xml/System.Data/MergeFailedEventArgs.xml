@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Occurs when a target and source <see langword="DataRow" /> have the same primary key value, and the <see cref="P:System.Data.DataSet.EnforceConstraints" /> property is set to true.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,9 +39,9 @@
         <Parameter Name="conflict" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="table">To be added.</param>
-        <param name="conflict">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="table">The <see cref="T:System.Data.DataTable" /> object.</param>
+        <param name="conflict">A description of the merge conflict.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Data.MergeFailedEventArgs" /> class with the <see cref="T:System.Data.DataTable" /> and a description of the merge conflict.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +63,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a description of the merge conflict.</summary>
+        <value>A description of the merge conflict.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +86,8 @@
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the <see cref="T:System.Data.DataTable" /> object.</summary>
+        <value>The <see cref="T:System.Data.DataTable" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

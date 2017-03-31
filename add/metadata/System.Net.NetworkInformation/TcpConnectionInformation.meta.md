@@ -1,24 +1,29 @@
 ---
 uid: System.Net.NetworkInformation.TcpConnectionInformation
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.TcpConnectionInformation.State
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.TcpConnectionInformation.RemoteEndPoint
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.TcpConnectionInformation.LocalEndPoint
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.TcpConnectionInformation.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

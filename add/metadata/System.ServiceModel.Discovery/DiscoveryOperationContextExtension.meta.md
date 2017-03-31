@@ -1,29 +1,41 @@
 ---
 uid: System.ServiceModel.Discovery.DiscoveryOperationContextExtension
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryOperationContextExtension.System#ServiceModel#IExtension{System#ServiceModel#OperationContext}#Attach(System.ServiceModel.OperationContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryOperationContextExtension.DiscoveryVersion
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryOperationContextExtension.MaxResponseDelay
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryOperationContextExtension.System#ServiceModel#IExtension{System#ServiceModel#OperationContext}#Detach(System.ServiceModel.OperationContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryOperationContextExtension.DiscoveryMode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

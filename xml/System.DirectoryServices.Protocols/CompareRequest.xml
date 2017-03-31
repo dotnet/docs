@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.CompareRequest" /> class determines whether the directory object holds the specified value for the attribute.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.CompareRequest.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.CompareRequest" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,10 +44,21 @@
         <Parameter Name="assertion" Type="System.DirectoryServices.Protocols.DirectoryAttribute" />
       </Parameters>
       <Docs>
-        <param name="distinguishedName">To be added.</param>
-        <param name="assertion">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="distinguishedName">The distinguished name of the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object to compare.</param>
+        <param name="assertion">A <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.DirectoryServices.Protocols.DirectoryAttribute)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.CompareRequest" /> class using the specified distinguished name and attributes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates an object that compares `attributeName` on the object    `distinguishedName`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assertion" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="assertion" /> must contain exactly one value.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,11 +76,20 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="distinguishedName">To be added.</param>
-        <param name="attributeName">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="distinguishedName">The distinguished name of the object                       to compare.</param>
+        <param name="attributeName">The name of the attribute to compare.</param>
+        <param name="value">The value to compare.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.String,System.Byte[])" /> constructor creates an instance of <see cref="T:System.DirectoryServices.Protocols.CompareRequest" /> using the specified distinguished name, attribute, and attribute value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates an object that compares `attributeName` on the object  `distinguishedName` against `value`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attributeName" /> or <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -87,11 +107,20 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="distinguishedName">To be added.</param>
-        <param name="attributeName">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="distinguishedName">The distinguished name of the object to compare.</param>
+        <param name="attributeName">The name of the attribute to compare.</param>
+        <param name="value">The value to compare.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.String,System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.CompareRequest" /> class using the specified distinguished name, attribute, and attribute value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates an object that compares `attributeName` on the object `distinguishedName` against `value`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attributeName" /> or <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -109,11 +138,20 @@
         <Parameter Name="value" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="distinguishedName">To be added.</param>
-        <param name="attributeName">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="distinguishedName">The distinguished name of the object                       to compare.</param>
+        <param name="attributeName">The name of the attribute to compare.</param>
+        <param name="value">The value to compare.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.String,System.Uri)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.CompareRequest" /> class using the specified distinguished name, attribute, and attribute value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates an object that compares `attributeName` on the object `distinguishedName` against `value`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attributeName" /> or <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Assertion">
@@ -129,8 +167,8 @@
         <ReturnType>System.DirectoryServices.Protocols.DirectoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.CompareRequest.Assertion" /> property gets the attribute/value pair used to compare.</summary>
+        <value>The attribute/value pair used to compare.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,8 +185,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.CompareRequest.DistinguishedName" /> property gets or sets the distinguished name of the object to compare.</summary>
+        <value>The distinguished name of the object to compare.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,10 +206,11 @@
         <Parameter Name="doc" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
-        <param name="doc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="doc">A <see cref="T:System.Xml.XmlDocument" /> object.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.CompareRequest.ToXmlNode(System.Xml.XmlDocument)" /> method creates an XML node from the specified <see cref="T:System.Xml.XmlDocument" /> object.</summary>
+        <returns>The resulting <see cref="T:System.Xml.XmlElement" /> object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object must contain exactly one value.</exception>
       </Docs>
     </Member>
   </Members>

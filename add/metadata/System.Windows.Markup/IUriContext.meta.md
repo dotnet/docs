@@ -1,9 +1,9 @@
 ---
 uid: System.Windows.Markup.IUriContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.IUriContext.BaseUri
-internalonly: False
+manager: "martinek"
 ---

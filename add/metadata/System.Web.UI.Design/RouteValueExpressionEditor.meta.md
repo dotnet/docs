@@ -1,19 +1,27 @@
 ---
 uid: System.Web.UI.Design.RouteValueExpressionEditor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.RouteValueExpressionEditor.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.RouteValueExpressionEditor.EvaluateExpression(System.String,System.Object,System.Type,System.IServiceProvider)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.RouteValueExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

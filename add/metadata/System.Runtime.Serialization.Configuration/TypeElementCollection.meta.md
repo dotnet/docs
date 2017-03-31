@@ -1,44 +1,67 @@
 ---
 uid: System.Runtime.Serialization.Configuration.TypeElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.TypeElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.TypeElementCollection.CollectionType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.TypeElementCollection.IndexOf(System.Runtime.Serialization.Configuration.TypeElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Runtime.Serialization.Configuration.TypeElementCollection.Item
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.TypeElementCollection.Add(System.Runtime.Serialization.Configuration.TypeElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.TypeElementCollection.Item(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.TypeElementCollection.Clear
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.TypeElementCollection.Remove(System.Runtime.Serialization.Configuration.TypeElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.Configuration.TypeElementCollection.RemoveAt(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

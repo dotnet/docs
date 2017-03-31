@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how Access Control Entries (ACEs) are propagated to child objects.  These flags are significant only if inheritance flags are present.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +42,7 @@
         <ReturnType>System.Security.AccessControl.PropagationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the ACE is propagated only to child objects. This includes both container and leaf child objects.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -63,7 +63,7 @@
         <ReturnType>System.Security.AccessControl.PropagationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that no inheritance flags are set.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoPropagateInherit">
@@ -84,7 +84,7 @@
         <ReturnType>System.Security.AccessControl.PropagationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the ACE is not propagated to child objects.</summary>
       </Docs>
     </Member>
   </Members>

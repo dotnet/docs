@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.Import
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Import.JScriptImport(System.String,Microsoft.JScript.Vsa.VsaEngine)
-internalonly: False
+ms.author: "mikejo"
 ---

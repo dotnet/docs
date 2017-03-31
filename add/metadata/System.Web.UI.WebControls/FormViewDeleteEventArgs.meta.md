@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.WebControls.FormViewDeleteEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewDeleteEventArgs.Values
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewDeleteEventArgs.RowIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewDeleteEventArgs.#ctor(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

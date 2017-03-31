@@ -1,24 +1,34 @@
 ---
 uid: System.ServiceModel.Dispatcher.ChannelDispatcherCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.ChannelDispatcherCollection.SetItem(System.Int32,System.ServiceModel.Dispatcher.ChannelDispatcherBase)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.ChannelDispatcherCollection.RemoveItem(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.ChannelDispatcherCollection.InsertItem(System.Int32,System.ServiceModel.Dispatcher.ChannelDispatcherBase)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.ChannelDispatcherCollection.ClearItems
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

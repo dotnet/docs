@@ -1,69 +1,109 @@
 ---
 uid: System.Drawing.Drawing2D.CustomLineCap
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.CustomLineCap.SetStrokeCaps(System.Drawing.Drawing2D.LineCap,System.Drawing.Drawing2D.LineCap)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.CustomLineCap.GetStrokeCaps(System.Drawing.Drawing2D.LineCap@,System.Drawing.Drawing2D.LineCap@)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.CustomLineCap.WidthScale
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.CustomLineCap.Dispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.CustomLineCap.BaseInset
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.CustomLineCap.#ctor(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.LineCap)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.CustomLineCap.#ctor(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.GraphicsPath)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.CustomLineCap.#ctor(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.LineCap,System.Single)
-internalonly: False
----
-
----
-uid: System.Drawing.Drawing2D.CustomLineCap.Finalize
-internalonly: False
----
-
----
-uid: System.Drawing.Drawing2D.CustomLineCap.BaseCap
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.CustomLineCap.Dispose
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Drawing.Drawing2D.CustomLineCap.Finalize
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Drawing2D.CustomLineCap.BaseCap
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Drawing2D.CustomLineCap.Dispose
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.CustomLineCap.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.CustomLineCap.StrokeJoin
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Drawing2D.CustomLineCap.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

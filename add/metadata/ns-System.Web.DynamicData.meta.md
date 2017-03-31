@@ -1,4 +1,6 @@
 ---
 uid: System.Web.DynamicData
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

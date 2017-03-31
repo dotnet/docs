@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Construction.ProjectImportElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectImportElement.ProjectLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectImportElement.Project
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

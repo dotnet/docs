@@ -1,29 +1,35 @@
 ---
 uid: System.Web.Hosting.IAppDomainInfo
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAppDomainInfo.GetId
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAppDomainInfo.GetVirtualPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAppDomainInfo.GetSiteId
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAppDomainInfo.IsIdle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAppDomainInfo.GetPhysicalPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

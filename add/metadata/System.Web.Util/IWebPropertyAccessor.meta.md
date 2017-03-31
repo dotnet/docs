@@ -1,14 +1,20 @@
 ---
 uid: System.Web.Util.IWebPropertyAccessor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.IWebPropertyAccessor.GetProperty(System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.IWebPropertyAccessor.SetProperty(System.Object,System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

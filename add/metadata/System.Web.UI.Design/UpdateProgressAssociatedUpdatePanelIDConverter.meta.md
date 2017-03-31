@@ -1,24 +1,46 @@
 ---
 uid: System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter.GetStandardValuesExclusive
 ---
 
 ---
 uid: System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter.GetStandardValues
+---
+
+---
+uid: System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter.GetStandardValuesSupported
 ---
 
 ---
 uid: System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

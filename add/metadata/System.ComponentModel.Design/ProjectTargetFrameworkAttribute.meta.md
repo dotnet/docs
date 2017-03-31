@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Design.ProjectTargetFrameworkAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ProjectTargetFrameworkAttribute.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ProjectTargetFrameworkAttribute.TargetFrameworkMoniker
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

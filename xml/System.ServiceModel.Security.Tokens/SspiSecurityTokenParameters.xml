@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the parameters for an SSPI security token that is obtained during the SOAP-level SPNEGO protocol with the server.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is a collection of token properties and methods, and is used in creating security binding elements and tokens.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +33,23 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new instance property values are set to their defaults:  
+  
+-   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>.  
+  
+-   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.ReferenceStyle%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle>.  
+  
+-   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.RequireDerivedKeys%2A> is set to `true`.  
+  
+-   <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters.RequireCancellation%2A> is set to `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,9 +65,24 @@
         <Parameter Name="requireCancellation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="requireCancellation">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="requireCancellation">Whether the token requires cancellation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new instance property values are set to their defaults:  
+  
+-   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>.  
+  
+-   <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.ReferenceStyle%2A> is set to <xref:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle>.  
+  
+ <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.RequireDerivedKeys%2A> is set to `true`.  
+  
+ <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters.RequireCancellation%2A> is set to `requireCancellation`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -61,9 +98,20 @@
         <Parameter Name="other" Type="System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="other">The other instance of this class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new instance property values are set to the corresponding values in `other`.  
+  
+ <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters.RequireCancellation%2A> is set to `false`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -80,9 +128,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Clones another instance of this instance of the class.</summary>
+        <returns>A new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecurityTokenParameters" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.Clone%2A> and <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CloneCore%2A> methods follow the Core design pattern.  
+  
+ <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.CloneCore%2A> is an `abstract` class that is overridden by <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters.CloneCore%2A>.  
+  
+ The <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters.CloneCore%2A> method calls the <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateKeyIdentifierClause">
@@ -102,10 +161,10 @@
         <Parameter Name="referenceStyle" Type="System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <param name="referenceStyle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="token">The token.</param>
+        <param name="referenceStyle">The <see cref="T:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle" />.</param>
+        <summary>Creates a key identifier clause for a token.</summary>
+        <returns>A security key identifier clause.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,9 +181,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the token has an asymmetric key.</summary>
+        <value>Always returns <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Asymmetric keys are used in public-key cryptography, which uses two keys, a public key and a private key, which are related mathematically. The public key is distributed widely, but the private key is kept secret. In public-key cryptography, there is no need to exchange a common key.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeSecurityTokenRequirement">
@@ -143,9 +209,26 @@
         <Parameter Name="requirement" Type="System.IdentityModel.Selectors.SecurityTokenRequirement" />
       </Parameters>
       <Docs>
-        <param name="requirement">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="requirement">The <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" />.</param>
+        <summary>Initializes a security token requirement.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following properties of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> are initialized:  
+  
+-   <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType%2A> = <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes.Spnego%2A>.  
+  
+-   <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicToken%2A> = `true`.  
+  
+-   The `SupportSecurityContextCancellation` property in <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties%2A> is set to <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters.RequireCancellation%2A>.  
+  
+-   The `IssuedSecurityTokenParameters` property in <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties%2A> is set to a clone of the current instance.  
+  
+-   <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType%2A> = <xref:System.IdentityModel.Tokens.SecurityKeyType>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RequireCancellation">
@@ -161,9 +244,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the token requires cancellation.</summary>
+        <value>
+          <see langword="true" /> if the token requires cancellation; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If cancellation is required, then the security context token issued at the end of the SPNEGO protocol is session based; otherwise, it is cookie based.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsClientAuthentication">
@@ -179,8 +270,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented, gets a value that indicates whether the token supports client authentication.</summary>
+        <value>Always returns <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,8 +288,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented, gets a value that indicates whether the token supports a Windows identity for authentication.</summary>
+        <value>Always returns <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,8 +306,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented, gets a value that indicates whether the token supports server authentication.</summary>
+        <value>Always returns <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,10 +325,29 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Displays a text representation of this instance of the class.</summary>
+        <returns>A text representation of this instance of this class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The difference between these overloads is where instance property values come from. <xref:System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.%23ctor%2A> sets them to their default values. <xref:System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.%23ctor%2A> takes them from the instance referenced by the input parameter.  
+  
+ <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters.%23ctor%2A> sets them to their default values and then sets <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters.RequireCancellation%2A> to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

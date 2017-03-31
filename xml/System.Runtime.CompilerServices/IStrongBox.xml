@@ -20,7 +20,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a property for accessing the value that an object references.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,8 +49,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value that an object references.</summary>
+        <value>The value that the object references.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

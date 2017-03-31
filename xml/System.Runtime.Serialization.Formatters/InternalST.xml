@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Logs tracing messages when the .NET Framework serialization infrastructure is compiled.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The trace message is printed during, serialization, remoting and when running [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="InfoSoap">
@@ -52,8 +59,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="messages">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="messages">An array of trace messages to print.</param>
+        <summary>Prints SOAP trace messages.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +81,9 @@
         <Parameter Name="assemblyString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyString">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemblyString">The name of the assembly to load.</param>
+        <summary>Loads a specified assembly to debug.</summary>
+        <returns>The <see cref="T:System.Reflection.Assembly" /> to debug.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,10 +106,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="fi">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fi">A <see cref="T:System.Reflection.FieldInfo" /> containing data about the target field.</param>
+        <param name="target">The field to change.</param>
+        <param name="value">The value to set.</param>
+        <summary>Sets the value of a field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +141,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="messages">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="messages">An array of messages to process.</param>
+        <summary>Processes the specified array of messages.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,9 +169,9 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="condition">To be added.</param>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="condition">A Boolean value to use when asserting.</param>
+        <param name="message">The message to use when asserting.</param>
+        <summary>Asserts the specified message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,8 +190,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Checks if SOAP tracing is enabled.</summary>
+        <returns>
+          <see langword="true" />, if tracing is enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

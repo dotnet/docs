@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A collection of <see cref="T:System.Xml.Schema.XmlSchemaObject" />s.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ See <xref:System.Xml.Schema.XmlSchemaObject> for an example using this class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see langword="XmlSchemaObjectCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +65,8 @@
         <Parameter Name="parent" Type="System.Xml.Schema.XmlSchemaObject" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parent">The <see cref="T:System.Xml.Schema.XmlSchemaObject" />.</param>
+        <summary>Initializes a new instance of the <see langword="XmlSchemaObjectCollection" /> class that takes an <see cref="T:System.Xml.Schema.XmlSchemaObject" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,10 +91,50 @@
         <Parameter Name="item" Type="System.Xml.Schema.XmlSchemaObject" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="item">The <see cref="T:System.Xml.Schema.XmlSchemaObject" />.</param>
+        <summary>Adds an <see cref="T:System.Xml.Schema.XmlSchemaObject" /> to the <see langword="XmlSchemaObjectCollection" />.</summary>
+        <returns>The index at which the item has been added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `Count` already equals the capacity, the capacity of list is doubled by automatically reallocating the internal array and copying the existing elements to the new array before the new element is added.  
+  
+ If `Count` is less than the capacity, this method is an 0(1) operation. If the capacity needs to be increased to accommodate the new element, this method becomes an 0(n) operation, where n is `Count`.  
+  
+ The <xref:System.Xml.Schema.XmlSchemaObjectCollection.Add%2A> method expects only <xref:System.Xml.Schema.XmlSchemaExternal> and its derived types (<xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude>, and <xref:System.Xml.Schema.XmlSchemaRedefine>) as parameters. The following example illustrates adding an included schema to the <xref:System.Xml.Schema.XmlSchema.Includes%2A> collection of an existing <xref:System.Xml.Schema.XmlSchema> object.  
+  
+```vb  
+Dim schema As XmlSchema = New XmlSchema()  
+  
+Dim textReader As XmlTextReader = New XmlTextReader("include.xsd")  
+Dim includeSchema As XmlSchema = XmlSchema.Read(textReader, null)  
+  
+Dim include As XmlSchemaInclude = New XmlSchemaInclude()  
+include.Schema = includeSchema;  
+schema.Includes.Add(include);  
+```  
+  
+```csharp  
+XmlSchema schema = new XmlSchema();  
+  
+XmlTextReader textReader = new XmlTextReader("include.xsd");  
+XmlSchema includeSchema = XmlSchema.Read(textReader, null);  
+  
+XmlSchemaInclude include = new XmlSchemaInclude();  
+include.Schema = includeSchema;  
+schema.Includes.Add(include);  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is greater than <see langword="Count" />.</exception>
+        <exception cref="T:System.InvalidCastException">The <see cref="T:System.Xml.Schema.XmlSchemaObject" /> parameter specified is not of type <see cref="T:System.Xml.Schema.XmlSchemaExternal" /> or its derived types <see cref="T:System.Xml.Schema.XmlSchemaImport" />, <see cref="T:System.Xml.Schema.XmlSchemaInclude" />, and <see cref="T:System.Xml.Schema.XmlSchemaRedefine" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -111,9 +158,10 @@
         <Parameter Name="item" Type="System.Xml.Schema.XmlSchemaObject" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The <see cref="T:System.Xml.Schema.XmlSchemaObject" />.</param>
+        <summary>Indicates if the specified <see cref="T:System.Xml.Schema.XmlSchemaObject" /> is in the <see langword="XmlSchemaObjectCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified qualified name is in the collection; otherwise, returns <see langword="false" />. If null is supplied, <see langword="false" /> is returned because there is no qualified name with a null name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,10 +187,34 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the <see langword="XmlSchemaObjectCollection" />. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in the array at which copying begins.</param>
+        <summary>Copies all the <see cref="T:System.Xml.Schema.XmlSchemaObject" />s from the collection into the given array, starting at the given index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The specified array must be of a compatible type.  
+  
+ This method uses <xref:System.Array.Copy%2A> to copy the elements.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multi-dimensional.  
+  
+ \- or -  
+  
+ <paramref name="index" /> is equal to or greater than the length of <paramref name="array" />.  
+  
+ \- or -  
+  
+ The number of elements in the source <see cref="T:System.Xml.Schema.XmlSchemaObject" /> is greater than the available space from index to the end of the destination array.</exception>
+        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Xml.Schema.XmlSchemaObject" /> cannot be cast automatically to the type of the destination array.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -164,8 +236,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator for iterating through the <see langword="XmlSchemaObjects" /> contained in the <see langword="XmlSchemaObjectCollection" />.</summary>
+        <returns>The iterator returns <see cref="T:System.Xml.Schema.XmlSchemaObjectEnumerator" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,9 +262,9 @@
         <Parameter Name="item" Type="System.Xml.Schema.XmlSchemaObject" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The <see cref="T:System.Xml.Schema.XmlSchemaObject" /> whose index you want to return.</param>
+        <summary>Gets the collection index corresponding to the specified <see cref="T:System.Xml.Schema.XmlSchemaObject" />.</summary>
+        <returns>The index corresponding to the specified <see cref="T:System.Xml.Schema.XmlSchemaObject" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,10 +290,27 @@
         <Parameter Name="item" Type="System.Xml.Schema.XmlSchemaObject" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which an item should be inserted.</param>
+        <param name="item">The <see cref="T:System.Xml.Schema.XmlSchemaObject" /> to insert.</param>
+        <summary>Inserts an <see cref="T:System.Xml.Schema.XmlSchemaObject" /> to the <see langword="XmlSchemaObjectCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `Count` already equals the capacity, the capacity of the list is doubled by automatically reallocating the internal array before the new element is inserted.  
+  
+ If `index` is equal to `Count`, `value` is added to the end of `XmlSchemaObjectCollection`.  
+  
+ The elements that follow the insertion point move down to accommodate the new element.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is greater than <see langword="Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -245,9 +334,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the <see cref="T:System.Xml.Schema.XmlSchemaObject" />.</param>
+        <summary>Gets the <see cref="T:System.Xml.Schema.XmlSchemaObject" /> at the specified index.</summary>
+        <value>The <see cref="T:System.Xml.Schema.XmlSchemaObject" /> at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,7 +359,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see langword="OnClear" /> is invoked before the standard <see langword="Clear" /> behavior. For more information, see OnClear method for <see cref="T:System.Collections.CollectionBase" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,9 +386,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of <see cref="T:System.Xml.Schema.XmlSchemaObject" />.</param>
+        <param name="item">The item.</param>
+        <summary>
+          <see langword="OnInsert" /> is invoked before the standard <see langword="Insert" /> behavior. For more information, see <see langword="OnInsert" /> method <see cref="T:System.Collections.CollectionBase" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,9 +415,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of <see cref="T:System.Xml.Schema.XmlSchemaObject" />.</param>
+        <param name="item">The item.</param>
+        <summary>
+          <see langword="OnRemove" /> is invoked before the standard <see langword="Remove" /> behavior. For more information, see the <see langword="OnRemove" /> method for <see cref="T:System.Collections.CollectionBase" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,10 +445,11 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of <see cref="T:System.Xml.Schema.XmlSchemaObject" />.</param>
+        <param name="oldValue">The old value.</param>
+        <param name="newValue">The new value.</param>
+        <summary>
+          <see langword="OnSet" /> is invoked before the standard <see langword="Set" /> behavior. For more information, see the OnSet method for <see cref="T:System.Collections.CollectionBase" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,9 +474,20 @@
         <Parameter Name="item" Type="System.Xml.Schema.XmlSchemaObject" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The <see cref="T:System.Xml.Schema.XmlSchemaObject" /> to remove.</param>
+        <summary>Removes an <see cref="T:System.Xml.Schema.XmlSchemaObject" /> from the <see langword="XmlSchemaObjectCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.CollectionBase.Count%2A>.  
+  
+ This method determines equality by calling <xref:System.Object.Equals%2A>.  
+  
+ The elements that follow the removed element move up to occupy the vacated spot.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

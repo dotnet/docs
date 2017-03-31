@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor.SetProviderName(System.Object,System.ComponentModel.Design.Data.DesignerDataConnection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor.GetProviderName(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

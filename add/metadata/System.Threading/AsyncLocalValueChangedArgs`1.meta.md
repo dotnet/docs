@@ -1,19 +1,27 @@
 ---
 uid: System.Threading.AsyncLocalValueChangedArgs`1
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.AsyncLocalValueChangedArgs`1.PreviousValue
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.AsyncLocalValueChangedArgs`1.CurrentValue
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.AsyncLocalValueChangedArgs`1.ThreadContextChanged
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -15,8 +15,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how email messages are delivered.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Net.Mail.SmtpDeliveryMethod> enumeration as a parameter to the <xref:System.Net.Mail.SmtpClient.DeliveryMethod?displayProperty=fullName> property to specify the delivery method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Network">
@@ -37,7 +44,7 @@
         <ReturnType>System.Net.Mail.SmtpDeliveryMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Email is sent through the network to an SMTP server.</summary>
       </Docs>
     </Member>
     <Member MemberName="PickupDirectoryFromIis">
@@ -58,7 +65,7 @@
         <ReturnType>System.Net.Mail.SmtpDeliveryMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Email is copied to the pickup directory used by a local Internet Information Services (IIS) for delivery.</summary>
       </Docs>
     </Member>
     <Member MemberName="SpecifiedPickupDirectory">
@@ -79,7 +86,7 @@
         <ReturnType>System.Net.Mail.SmtpDeliveryMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Email is copied to the directory specified by the <see cref="P:System.Net.Mail.SmtpClient.PickupDirectoryLocation" /> property for delivery by an external application.</summary>
       </Docs>
     </Member>
   </Members>

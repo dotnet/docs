@@ -19,11 +19,11 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="recordType">To be added.</param>
-    <param name="flags">To be added.</param>
-    <param name="dataSize">To be added.</param>
-    <param name="recordData">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="recordType">Not used.</param>
+    <param name="flags">Not used.</param>
+    <param name="dataSize">Not used.</param>
+    <param name="recordData">Not used.</param>
+    <summary>This delegate is not used. For an example of enumerating the records of a metafile, see <see cref="M:System.Drawing.Graphics.EnumerateMetafile(System.Drawing.Imaging.Metafile,System.Drawing.Point,System.Drawing.Graphics.EnumerateMetafileProc)" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

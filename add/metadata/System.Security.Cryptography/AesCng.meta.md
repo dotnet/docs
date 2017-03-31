@@ -1,64 +1,111 @@
 ---
 uid: System.Security.Cryptography.AesCng
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AesCng.Key
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AesCng.#ctor(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AesCng.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AesCng.CreateDecryptor(System.Byte[],System.Byte[])
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AesCng.GenerateIV
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AesCng.CreateEncryptor(System.Byte[],System.Byte[])
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AesCng.GenerateKey
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AesCng.KeySize
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AesCng.CreateDecryptor
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.AesCng.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AesCng.CreateEncryptor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.Key
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.#ctor(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.#ctor(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.CreateDecryptor(System.Byte[],System.Byte[])
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.GenerateIV
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.CreateEncryptor(System.Byte[],System.Byte[])
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.GenerateKey
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.KeySize
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.CreateDecryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.CreateDecryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesCng.CreateEncryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.AesCng.#ctor(System.String,System.Security.Cryptography.CngProvider)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

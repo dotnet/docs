@@ -29,8 +29,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Runs a set of child activities according to a single defined ordering.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Activities.SequenceActivity> is a <xref:System.Workflow.ComponentModel.CompositeActivity>, meaning the <xref:System.Workflow.Activities.SequenceActivity> can contain other activities.  
+  
+ The <xref:System.Workflow.Activities.SequenceActivity> class coordinates the running of a set of child activities in an ordered manner, one at a time.  The <xref:System.Workflow.Activities.SequenceActivity> is completed when the final child activity is finished.  
+  
+ Classes that derive from <xref:System.Workflow.Activities.SequenceActivity> should not implement the <xref:System.Workflow.ComponentModel.IActivityEventListener%601> interface, or the derived class will not execute correctly.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.SequenceActivity> class and add the <xref:System.Workflow.Activities.SequenceActivity> classes to the <xref:System.Workflow.Activities.ParallelActivity> class.  This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. For more information, see [Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
+  
+ [!code-csharp[wf_samples#181](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#181)]
+ [!code-vb[wf_samples#181](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#181)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,8 +67,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SequenceActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.SequenceActivity> class and add the <xref:System.Workflow.Activities.SequenceActivity> classes to the <xref:System.Workflow.Activities.ParallelActivity> class.  This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. For more information, see [Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
+  
+ [!code-csharp[wf_samples#277](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#277)]
+ [!code-vb[wf_samples#277](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#277)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -61,8 +94,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SequenceActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +115,9 @@
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="executionContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="executionContext">The execution context of the activity.</param>
+        <summary>Cancels the execution of the activity.</summary>
+        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of the activity after canceling the execution.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,9 +137,9 @@
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="executionContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="executionContext">The execution context of the activity.</param>
+        <summary>Executes the activity.</summary>
+        <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of the activity after executing the activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,10 +160,10 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="executionContext">To be added.</param>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for this instance.</param>
+        <param name="exception">The <see cref="T:System.Exception" /> which caused this fault.</param>
+        <summary>Called when an exception is raised within the context of the execution of this instance.</summary>
+        <returns>The execution status of the activity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,9 +184,9 @@
         <Parameter Name="removedActivity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="executionContext">To be added.</param>
-        <param name="removedActivity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for this instance.</param>
+        <param name="removedActivity">The specified <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <summary>Called when an activity is removed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,9 +206,11 @@
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="executionContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for this instance.</param>
+        <summary>When overridden in a derived class, determines the action taken by the <see cref="T:System.Workflow.Activities.SequenceActivity" /> when the activity has completed execution.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="executionContext" /> is a null reference (Nothing in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="OnWorkflowChangesCompleted">
@@ -194,8 +229,8 @@
         <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="executionContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for this instance.</param>
+        <summary>Called after changes have been made to the collection <see cref="P:System.Workflow.ComponentModel.CompositeActivity.Activities" /> of this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,9 +251,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The object that raised the event.</param>
+        <param name="e">The previously typed event arguments.</param>
+        <summary>Defines the processing procedure when the subscribed-to event occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

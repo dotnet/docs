@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Configures a full trust assembly. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,10 +30,10 @@
         <Parameter Name="publicKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <param name="version">To be added.</param>
-        <param name="publicKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="assemblyName">The assembly name.</param>
+        <param name="version">The assembly version number.</param>
+        <param name="publicKey">The hexadecimal string representation of the public key that is associated with the assembly.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.FullTrustAssembly" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +58,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the assembly name.</summary>
+        <value>The assembly name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +102,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the assembly public key.</summary>
+        <value>The hexadecimal representation of the public key that is associated with the assembly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +128,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the assembly version number.</summary>
+        <value>The assembly version number.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

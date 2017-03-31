@@ -1,19 +1,19 @@
 ---
 uid: System.Transactions.Configuration.DefaultSettingsSection
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Configuration.DefaultSettingsSection.DistributedTransactionManagerName
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Configuration.DefaultSettingsSection.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Configuration.DefaultSettingsSection.Timeout
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,24 +1,34 @@
 ---
 uid: System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.#ctor(System.String,System.String,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.UserName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.RememberMe
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials.Password
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

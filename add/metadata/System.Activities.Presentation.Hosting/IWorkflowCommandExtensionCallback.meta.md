@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.Presentation.Hosting.IWorkflowCommandExtensionCallback
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Hosting.IWorkflowCommandExtensionCallback.OnWorkflowCommandLoaded(System.Activities.Presentation.Hosting.CommandInfo)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.IWorkflowChangeDiff
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.IWorkflowChangeDiff.Diff(System.Object,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

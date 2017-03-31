@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.IUserControlDesignerAccessor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IUserControlDesignerAccessor.InnerText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IUserControlDesignerAccessor.TagName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

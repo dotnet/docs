@@ -1,39 +1,39 @@
 ---
 uid: System.Management.QualifierData
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.QualifierData.PropagatesToSubclass
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.QualifierData.IsLocal
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.QualifierData.Name
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.QualifierData.IsOverridable
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.QualifierData.PropagatesToInstance
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.QualifierData.IsAmended
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.QualifierData.Value
-internalonly: False
+manager: "jillfra"
 ---

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration specifies the type of comparison used in a search.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.MatchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The search results include values that equal the supplied value. If the supplied value specifies a date and time, the returned collection includes objects that have the same date and time.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreaterThan">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.MatchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The search results include values that are greater than the supplied value. If the supplied value specifies a date and time, the returned collection includes objects that are dated after the specified date and time.</summary>
       </Docs>
     </Member>
     <Member MemberName="GreaterThanOrEquals">
@@ -59,7 +59,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.MatchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The search results include values that are greater than or equal to the supplied value. If the supplied value specifies a date and time, the returned collection includes objects that are dated on or after the specified date and time.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -75,7 +75,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.MatchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The search results include values that are less than the supplied value. If the supplied value specifies a date and time, the returned collection includes objects that are dated prior to the specified date and time.</summary>
       </Docs>
     </Member>
     <Member MemberName="LessThanOrEquals">
@@ -91,7 +91,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.MatchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The search results include values that are less than or equal to the supplied value. If the supplied value specifies a date and time, the returned collection includes objects that are dated prior to or on the specified date and time.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotEquals">
@@ -107,7 +107,7 @@
         <ReturnType>System.DirectoryServices.AccountManagement.MatchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The search results include values that are not equal to the supplied value. If the supplied value specifies a date and time, the returned collection includes objects that do not include the specified date and time.</summary>
       </Docs>
     </Member>
   </Members>

@@ -21,8 +21,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+      <see cref="T:System.ComponentModel.DesignTimeVisibleAttribute" /> marks a component's visibility. If <see cref="F:System.ComponentModel.DesignTimeVisibleAttribute.Yes" /> is present, a visual designer can show this component on a designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.DesignTimeVisibleAttribute> is a hint to the Designer. The Designer will ignore this attribute for components that have a UI presence. It can only be applied to classes.  
+  
+ The <xref:System.ComponentModel.DesignTimeVisibleAttribute> is most useful when you have a control that accepts child components. For example, the <xref:System.Windows.Forms.TreeView?displayProperty=fullName> control's node items should not appear in the component tray because they are drawn by the <xref:System.Windows.Forms.TreeView?displayProperty=fullName> control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new <see cref="T:System.ComponentModel.DesignTimeVisibleAttribute" /> set to the default value of <see langword="false" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +73,8 @@
         <Parameter Name="visible" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="visible">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="visible">The value that the <see cref="P:System.ComponentModel.DesignTimeVisibleAttribute.Visible" /> property will be set against.</param>
+        <summary>Creates a new <see cref="T:System.ComponentModel.DesignTimeVisibleAttribute" /> with the <see cref="P:System.ComponentModel.DesignTimeVisibleAttribute.Visible" /> property set to the given value in <paramref name="visible" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,7 +96,7 @@
         <ReturnType>System.ComponentModel.DesignTimeVisibleAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default visibility which is <see langword="Yes" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,9 +121,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">An Object to compare with this instance or a null reference (<see langword="Nothing" /> in Visual Basic).</param>
+        <summary>Returns a value that indicates whether this instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +147,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +171,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a value indicating if this instance is equal to the <see cref="F:System.ComponentModel.DesignTimeVisibleAttribute.Default" /> value.</summary>
+        <returns>
+          <see langword="true" />, if this instance is equal to the <see cref="F:System.ComponentModel.DesignTimeVisibleAttribute.Default" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,7 +195,7 @@
         <ReturnType>System.ComponentModel.DesignTimeVisibleAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Marks a component as not visible in a visual designer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,8 +217,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether the component should be shown at design time.</summary>
+        <value>
+          <see langword="true" /> if this component should be shown at design time, or <see langword="false" /> if it shouldn't.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,7 +241,7 @@
         <ReturnType>System.ComponentModel.DesignTimeVisibleAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Marks a component as visible in a visual designer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the result of retrieving a value from a value provider.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ValueProviderResult" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,10 +45,10 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="rawValue">To be added.</param>
-        <param name="attemptedValue">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rawValue">The raw value.</param>
+        <param name="attemptedValue">The attempted value.</param>
+        <param name="culture">The culture information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ValueProviderResult" /> class by using the specified raw value, attempted value, and culture information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the raw value that is converted to a string for display.</summary>
+        <value>A string representation of the raw value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +86,12 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type.</param>
+        <summary>Converts a value that is encapsulated by this result to the specified type.</summary>
+        <returns>The converted value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">Conversion was unsuccessful.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -109,11 +111,13 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type.</param>
+        <param name="culture">The culture information.</param>
+        <summary>Converts the value that is encapsulated by this result to the specified type by using the specified culture information.</summary>
+        <returns>The converted value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">Conversion was unsuccessful.</exception>
       </Docs>
     </Member>
     <Member MemberName="Culture">
@@ -129,8 +133,8 @@
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the culture.</summary>
+        <value>The culture.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,8 +151,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the raw value that is supplied by the value provider.</summary>
+        <value>The raw value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

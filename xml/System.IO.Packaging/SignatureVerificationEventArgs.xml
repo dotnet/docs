@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the event args provided to the <see cref="T:System.IO.Packaging.InvalidSignatureEventHandler" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.IO.Packaging.PackageDigitalSignature</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the digital signature being verified.</summary>
+        <value>The digital signature being verified.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.IO.Packaging.VerifyResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the signature verification error.</summary>
+        <value>The signature verification error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,24 +1,41 @@
 ---
 uid: System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.#ctor(System.Windows.DataTemplate,System.Windows.DataTemplate)
-internalonly: False
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.ShowDialog(System.Activities.Presentation.PropertyEditing.PropertyValue,System.Windows.IInputElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.TableSectionStyle
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TableSectionStyle.Visible
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TableSectionStyle.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

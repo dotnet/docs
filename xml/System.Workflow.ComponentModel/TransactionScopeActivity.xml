@@ -32,8 +32,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A section of workflow which demarcates a transaction boundary. A new <see cref="T:System.Transactions.Transaction" /> is started when this <see cref="T:System.Workflow.ComponentModel.Activity" /> begins executing and the transaction commits when the <see cref="T:System.Workflow.ComponentModel.Activity" /> closes successfully. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ A <xref:System.Workflow.ComponentModel.TransactionScopeActivity> cannot be nested in another <xref:System.Workflow.ComponentModel.TransactionScopeActivity>.  
+  
+ The workflow instance is always persisted when a <xref:System.Workflow.ComponentModel.TransactionScopeActivity> completes its execution successfully.  
+  
+ A <xref:System.Workflow.ComponentModel.TransactionScopeActivity> cannot have a <xref:System.Workflow.ComponentModel.FaultHandlersActivity>.  
+  
+ A <xref:System.Workflow.ComponentModel.TransactionScopeActivity> cannot have a <xref:System.Workflow.ComponentModel.CancellationHandlerActivity>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,7 +64,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.TransactionScopeActivity" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +81,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.TransactionScopeActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,9 +191,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The object that raised the event.</param>
+        <param name="e">The previously typed event arguments.</param>
+        <summary>Defines the processing procedure when the subscribed-to event occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +221,8 @@
         <ReturnType>System.Workflow.ComponentModel.WorkflowTransactionOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.WorkflowTransactionOptions" /> associated with this instance.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.WorkflowTransactionOptions" /> associated with this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

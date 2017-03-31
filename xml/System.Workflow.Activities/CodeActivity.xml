@@ -31,8 +31,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Runs the code-beside method associated with an activity. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Code-beside methods invoked by <xref:System.Workflow.Activities.CodeActivity> are executed in a synchronous manner; <xref:System.Workflow.Activities.CodeActivity> does not yield its thread until the thread is finished. Therefore, the execution of the code-beside method is expected to be performed and should not block with a dependency on some external resource. For example, the code-beside method should typically not invoke a Web service.  
+  
+ The typical use of the <xref:System.Workflow.Activities.CodeActivity> is to examine workflow instance state, and change local variables and messages.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,8 +59,28 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CodeActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.CodeActivity> class.  The example code also creates new instances of the <xref:System.Workflow.Activities.CodeCondition> and <xref:System.Workflow.Activities.ConditionedActivityGroup> classes. This code example is part of the ConditionedActivityGroup SDK sample from the SimpleCAGWorkflow.designer.cs file. For more information, see [Using ConditionedActivityGroup](http://msdn.microsoft.com/en-us/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
+  
+```csharp  
+private ConditionedActivityGroup BookingCAG;  
+private CodeActivity Car;  
+private CodeActivity Airline;  
+  
+this.CanModifyActivities = true;  
+CodeCondition codecondition1 = new CodeCondition();  
+CodeCondition codecondition2 = new CodeCondition();  
+this.BookingCAG = new ConditionedActivityGroup();  
+this.Car = new CodeActivity();  
+this.Airline = new CodeActivity();  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -63,8 +96,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CodeActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +141,18 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the <see cref="T:System.Workflow.Activities.CodeActivity" /> starts.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use the <xref:System.Workflow.Activities.CodeActivity.ExecuteCode> event. This code example is part of the Compensation SDK sample from the PurchaseOrder.cs file. For more information, see [Using Compensation](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
+  
+ [!code-csharp[WF_Samples#155](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#155)]
+ [!code-vb[WF_Samples#155](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#155)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteCodeEvent">
@@ -125,8 +168,22 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.Activities.CodeActivity.ExecuteCode" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.CodeActivity> and specify the handler for the <xref:System.Workflow.Activities.CodeActivity.ExecuteCode> event.  
+  
+ [!code-csharp[WF_Samples#311](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets38.cs#311)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

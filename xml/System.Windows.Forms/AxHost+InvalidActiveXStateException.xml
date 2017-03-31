@@ -11,8 +11,22 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when the ActiveX control is referenced while in an invalid state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The public properties and methods of an ActiveX control can only be referenced after the ActiveX control has been instantiated and initialized completely; otherwise the <xref:System.Windows.Forms.AxHost.InvalidActiveXStateException> exception is thrown. The <xref:System.Windows.Forms.AxHost.InvalidActiveXStateException> exception class contains the name of the member that made the reference and the member type. The member type is one of the <xref:System.Windows.Forms.AxHost.ActiveXInvokeKind> enumerated values.  
+  
+   
+  
+## Examples  
+ The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
+  
+ [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.InvalidActiveXStateException" /> class without specifying information about the member that referenced the ActiveX control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,10 +58,19 @@
         <Parameter Name="kind" Type="System.Windows.Forms.AxHost+ActiveXInvokeKind" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="kind">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the member that referenced the ActiveX control while it was in an invalid state.</param>
+        <param name="kind">One of the <see cref="T:System.Windows.Forms.AxHost.ActiveXInvokeKind" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.InvalidActiveXStateException" /> class and indicates the name of the member that referenced the ActiveX control and the kind of reference it made.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code requires that you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax because that is the only language output by the AxImp.exe.  
+  
+ [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -64,9 +87,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates and returns a string representation of the current exception.</summary>
+        <returns>A string representation of the current exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a string containing information about the member that referenced the ActiveX control and the kind of reference it made if this information was supplied in the <xref:System.Windows.Forms.AxHost.InvalidActiveXStateException.%23ctor%28System.String%2CSystem.Windows.Forms.AxHost.ActiveXInvokeKind%29> constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

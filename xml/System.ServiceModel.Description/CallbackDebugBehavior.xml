@@ -15,8 +15,37 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables service debugging for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] callback object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true` from an application configuration file or programmatically to enable the flow of managed exception information in a client callback object back to the service for debugging purposes.  
+  
+> [!CAUTION]
+>  Returning managed exception information to services can be a security risk because exception details expose information about the internal client implementation that could be used by unauthorized services. In addition, although the <xref:System.ServiceModel.Description.CallbackDebugBehavior> properties can also be set programmatically, it can be easy to forget to disable <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> when deploying.  
+  
+ Because of the security issues involved, it is strongly recommended that:  
+  
+-   You use an application configuration file to set the value of the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true`.  
+  
+-   You only do so only in controlled debugging scenarios.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] the security issues related to managed exception information, see [Specifying and Handling Faults in Contracts and Services](../Topic/Specifying%20and%20Handling%20Faults%20in%20Contracts%20and%20Services.md).  
+  
+ You can also set the values of this attribute by using the [\&lt;callbackDebug\&gt;](../Topic/%3CcallbackDebug%3E.md) element in a client application configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows a client configuration file that instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to return managed exception information from a client callback object in SOAP messages.  
+  
+ [!code[SCA.CallbackContract#4](~/samples/snippets/common/VS_Snippets_CFX/sca.callbackcontract/common/client.exe.config#4)]
+ [!code-csharp[SCA.CallbackContract#4](~/samples/snippets/csharp/VS_Snippets_CFX/sca.callbackcontract/cs/client.exe.config#4)]
+ [!code-vb[SCA.CallbackContract#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.callbackcontract/vb/client.exe.config#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,9 +61,16 @@
         <Parameter Name="includeExceptionDetailInFaults" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includeExceptionDetailInFaults">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="includeExceptionDetailInFaults">Controls whether a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] callback object includes managed exception information in the detail of the SOAP faults sent back to the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.CallbackDebugBehavior" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor creates a <xref:System.ServiceModel.Description.CallbackDebugBehavior> object in which the value of the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property is the value of `includeExceptionDetailInFaults`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeExceptionDetailInFaults">
@@ -50,9 +86,47 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that controls whether client callback objects return managed exception information in SOAP faults back to the service.</summary>
+        <value>
+          <see langword="true" /> if [!INCLUDE[indigo2](~/includes/indigo2-md.md)] returns managed client callback exception information in the SOAP faults for service debugging purposes in duplex communication; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true` from an application configuration file or programmatically to enable the flow of managed exception information in a client callback object back to the service for debugging purposes.  
+  
+> [!CAUTION]
+>  Returning managed exception information to services can be a security risk because exception details expose information about the internal client implementation that could be used by unauthorized services. In addition, although the <xref:System.ServiceModel.Description.CallbackDebugBehavior> properties can also be set programmatically, it can be easy to forget to disable <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> when deploying.  
+  
+ Because of the security issues involved, it is strongly recommended that:  
+  
+-   You use an application configuration file to set the value of the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to `true`.  
+  
+-   You only do so only in controlled debugging scenarios.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] the security issues related to managed exception information, see [Specifying and Handling Faults in Contracts and Services](../Topic/Specifying%20and%20Handling%20Faults%20in%20Contracts%20and%20Services.md).  
+  
+### To enable or disable a feature of CallbackDebugBehavior using a configuration file  
+  
+1.  Add a `behaviorConfiguration` attribute to the client [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element for your [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client application. The <xref:System.ServiceModel.Description.CallbackDebugBehavior> behavior is an endpoint behavior. Endpoint behaviors are configured on `<endpoint>` elements; service behaviors are configured on [\&lt;service\&gt;](../Topic/%3Cservice%3E.md) elements.  
+  
+2.  Add to or create an [\&lt;endpointBehaviors\&gt;](../Topic/%3CendpointBehaviors%3E.md) section and add a [\&lt;behavior\&gt;](../Topic/%3Cbehavior%3E%20of%20%3CendpointBehaviors%3E.md) element to that with the name that matches the `behaviorConfiguration` attribute value from step 1. Endpoint behaviors are added for use in a client [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element using an [\&lt;endpointBehaviors\&gt;](../Topic/%3CendpointBehaviors%3E.md) element.  
+  
+3.  Add a [\&lt;callbackDebug\&gt;](../Topic/%3CcallbackDebug%3E.md) element to the [\&lt;behavior\&gt;](../Topic/%3Cbehavior%3E%20of%20%3CendpointBehaviors%3E.md) element from step 2 and enable or disable the various properties appropriate to your scenario.  
+  
+ For a specific example, see the Example section. You can also set the values of this attribute by using the [\&lt;callbackDebug\&gt;](../Topic/%3CcallbackDebug%3E.md) element in a client application configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows a client configuration file that instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to return managed exception information from a client callback object in SOAP messages.  
+  
+ [!code[SCA.CallbackContract#4](~/samples/snippets/common/VS_Snippets_CFX/sca.callbackcontract/common/client.exe.config#4)]
+ [!code-csharp[SCA.CallbackContract#4](~/samples/snippets/csharp/VS_Snippets_CFX/sca.callbackcontract/cs/client.exe.config#4)]
+ [!code-vb[SCA.CallbackContract#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.callbackcontract/vb/client.exe.config#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.AddBindingParameters">
@@ -72,9 +146,9 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">To be added.</param>
-        <param name="bindingParameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceEndpoint">The endpoint to modify.</param>
+        <param name="bindingParameters">The objects that binding elements require to support the behavior.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IEndpointBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)" /> method to support the behavior.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,10 +169,17 @@
         <Parameter Name="behavior" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">To be added.</param>
-        <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceEndpoint">The endpoint that is to be customized.</param>
+        <param name="behavior">The client runtime to be customized.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" /> to support the behavior.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Assigns the value of the <xref:System.ServiceModel.Description.CallbackDebugBehavior.IncludeExceptionDetailInFaults%2A> property to the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.IncludeExceptionDetailInFaults%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior">
@@ -118,10 +199,17 @@
         <Parameter Name="endpointDispatcher" Type="System.ServiceModel.Dispatcher.EndpointDispatcher" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">To be added.</param>
-        <param name="endpointDispatcher">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceEndpoint">The endpoint that exposes the contract.</param>
+        <param name="endpointDispatcher">The endpoint dispatcher to be modified or extended.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" /> to support the behavior.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Throws an <xref:System.InvalidOperationException?displayProperty=fullName>; this behavior can only be used in a client application.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.Validate">
@@ -140,8 +228,8 @@
         <Parameter Name="serviceEndpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceEndpoint">The endpoint to validate.</param>
+        <summary>Implements <see cref="M:System.ServiceModel.Description.IEndpointBehavior.Validate(System.ServiceModel.Description.ServiceEndpoint)" /> to support the behavior.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

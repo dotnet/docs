@@ -1,1 +1,0 @@
-                Dim outputObject As Object = xmlTransform.GetOutput()

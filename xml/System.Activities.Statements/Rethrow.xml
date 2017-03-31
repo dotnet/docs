@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Throws a previously thrown exception from within a <see cref="T:System.Activities.Statements.Catch" /> activity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The error is re-thrown retaining the original source of the exception. <xref:System.Activities.Statements.Rethrow> can only be used within a <xref:System.Activities.Statements.Catch> block of a <xref:System.Activities.Statements.TryCatchFinally> activity.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Rethrow" /> activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.WebControls.IPersistedSelector
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IPersistedSelector.DataKey
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

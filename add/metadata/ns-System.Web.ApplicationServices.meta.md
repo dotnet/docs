@@ -1,4 +1,6 @@
 ---
 uid: System.Web.ApplicationServices
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

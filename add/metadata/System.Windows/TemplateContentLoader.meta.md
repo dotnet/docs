@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.TemplateContentLoader
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.TemplateContentLoader.Load(System.Xaml.XamlReader,System.IServiceProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.TemplateContentLoader.Save(System.Object,System.IServiceProvider)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.TemplateContentLoader.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

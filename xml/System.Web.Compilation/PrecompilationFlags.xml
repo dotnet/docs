@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides flags that determine precompilation behavior.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `PrecompilationFlags` class defines the behavior of the build manager during precompilation. The <xref:System.Web.Compilation.ClientBuildManager> class takes `PrecompilationFlags` as one of its constructor parameters. Precompilation can be performed programmatically through <xref:System.Web.Compilation.ClientBuildManager> or through the Aspnet_compiler.exe command-line tool.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowPartiallyTrustedCallers">
@@ -32,7 +39,7 @@
         <ReturnType>System.Web.Compilation.PrecompilationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An <see cref="T:System.Security.AllowPartiallyTrustedCallersAttribute" /> attribute is generated for the assemblies, which means the assemblies can be called by partially trusted code. The <see langword="/aptca" /> flag will be added as a compilation symbol.</summary>
       </Docs>
     </Member>
     <Member MemberName="Clean">
@@ -48,7 +55,7 @@
         <ReturnType>System.Web.Compilation.PrecompilationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The application will be built "clean": Any previously compiled components will be recompiled. This field corresponds to the <see langword="-c" /> switch on Aspnet_compiler.exe.</summary>
       </Docs>
     </Member>
     <Member MemberName="CodeAnalysis">
@@ -64,7 +71,7 @@
         <ReturnType>System.Web.Compilation.PrecompilationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see langword="/define:CodeAnalysis" /> flag will be added as a compilation symbol.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -80,7 +87,7 @@
         <ReturnType>System.Web.Compilation.PrecompilationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default value; no special behavior specified for precompilation.</summary>
       </Docs>
     </Member>
     <Member MemberName="DelaySign">
@@ -96,7 +103,7 @@
         <ReturnType>System.Web.Compilation.PrecompilationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The assembly is not fully signed when created. The assembly can be signed later by a signing tool such as Sn.exe. The <see langword="/delaysign" /> flag will be added as a compilation symbol.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedNames">
@@ -112,7 +119,7 @@
         <ReturnType>System.Web.Compilation.PrecompilationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The assembly is generated with fixed names for the Web pages. The files are not batched during compilation and instead are compiled individually to produce the fixed names.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForceDebug">
@@ -128,7 +135,7 @@
         <ReturnType>System.Web.Compilation.PrecompilationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The compiler will emit debug information. This field corresponds to the <see langword="-d" /> switch on Aspnet_compiler.exe.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreBadImageFormatException">
@@ -144,7 +151,7 @@
         <ReturnType>System.Web.Compilation.PrecompilationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The compiler will ignore bad image format exceptions.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverwriteTarget">
@@ -160,7 +167,7 @@
         <ReturnType>System.Web.Compilation.PrecompilationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The target directory can be overwritten. This field corresponds to the <see langword="-f" /> switch on Aspnet_compiler.exe for a previously precompiled target.</summary>
       </Docs>
     </Member>
     <Member MemberName="Updatable">
@@ -176,7 +183,7 @@
         <ReturnType>System.Web.Compilation.PrecompilationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The deployed application will be updatable. This field corresponds to the <see langword="-u" /> switch on Aspnet_compiler.exe.</summary>
       </Docs>
     </Member>
   </Members>

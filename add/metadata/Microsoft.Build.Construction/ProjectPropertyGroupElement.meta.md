@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Construction.ProjectPropertyGroupElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectPropertyGroupElement.PropertiesReversed
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectPropertyGroupElement.AddProperty(System.String,System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectPropertyGroupElement.SetProperty(System.String,System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectPropertyGroupElement.Properties
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

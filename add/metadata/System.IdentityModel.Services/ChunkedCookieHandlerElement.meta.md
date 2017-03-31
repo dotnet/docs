@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Services.ChunkedCookieHandlerElement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ChunkedCookieHandlerElement.ChunkSize
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ChunkedCookieHandlerElement.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

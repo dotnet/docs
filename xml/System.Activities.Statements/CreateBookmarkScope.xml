@@ -14,8 +14,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates a <see cref="T:System.Activities.BookmarkScope" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Statements.CreateBookmarkScope> activity is deprecated and should not be used. All <xref:System.Activities.BookmarkScope> manipulation should be performed by using a <xref:System.Activities.BookmarkScopeHandle>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,8 +36,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Statements.CreateBookmarkScope" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Statements.CreateBookmarkScope> activity is deprecated and should not be used. All <xref:System.Activities.BookmarkScope> manipulation should be performed by using a <xref:System.Activities.BookmarkScopeHandle>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheMetadata">

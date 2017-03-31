@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.Build.Execution.ProjectItemDefinitionInstance
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectItemDefinitionInstance.MetadataNames
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectItemDefinitionInstance.ItemType
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectItemDefinitionInstance.GetMetadata(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectItemDefinitionInstance.MetadataCount
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectItemDefinitionInstance.Metadata
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

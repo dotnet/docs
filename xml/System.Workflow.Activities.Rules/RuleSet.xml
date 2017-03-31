@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains a collection of <see cref="T:System.Workflow.Activities.Rules.Rule" /> classes along with the semantics for forward-chaining execution of those rules. A <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> can be executed directly in code or using the <see cref="T:System.Workflow.Activities.PolicyActivity" /> activity.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> class by using the name of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="description" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="description">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</param>
+        <param name="description">A description of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> class by using the name and description of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +81,8 @@
         <ReturnType>System.Workflow.Activities.Rules.RuleChainingBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the forward chaining behavior for the <see cref="T:System.Workflow.Activities.Rules.Rule" /> classes in the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleChainingBehavior" /> for the <see cref="T:System.Workflow.Activities.Rules.Rule" /> classes in the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a deep copy of the current <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
+        <returns>A <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> that is identical to this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +118,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a description of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
+        <value>A description of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,9 +139,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Object" />.</param>
+        <summary>Determines whether two object instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,9 +162,12 @@
         <Parameter Name="ruleExecution" Type="System.Workflow.Activities.Rules.RuleExecution" />
       </Parameters>
       <Docs>
-        <param name="ruleExecution">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ruleExecution">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> associated with the <see cref="T:System.Workflow.ComponentModel.Activity" /> that is invoking the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</param>
+        <summary>Evaluates the <see cref="T:System.Workflow.Activities.Rules.Rule" /> instances in the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="ruleExecution" /> is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.InvalidOperationException">The cached <see cref="T:System.Workflow.Activities.Rules.RuleExecution" /> cannot be validated.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -180,8 +184,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>The hash code for this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +202,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the name of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,8 +225,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Workflow.Activities.Rules.Rule&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list of <see cref="T:System.Workflow.Activities.Rules.Rule" /> classes in the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
+        <value>A list of <see cref="T:System.Workflow.Activities.Rules.Rule" /> classes in the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,10 +246,19 @@
         <Parameter Name="validation" Type="System.Workflow.Activities.Rules.RuleValidation" />
       </Parameters>
       <Docs>
-        <param name="validation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="validation">The <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationManager" /> to manage the validation process.</param>
+        <summary>Validates the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> attributes and the <see cref="T:System.Workflow.Activities.Rules.Rule" /> classes in the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
+        <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> of errors found during validation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Workflow.Activities.Rules.RuleSet> contains errors (the `Validate` method returns `false`), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> contains the list of errors encountered.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="validation" /> is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
   </Members>

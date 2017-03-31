@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Handles the XML elements used to configure serialization by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used to handle the [\&lt;dataContractSerializer\&gt;](../Topic/%3CdataContractSerializer%3E.md) within the [\&lt;dataContractSerializer\&gt;](../Topic/%3CdataContractSerializer%3E.md) element, specifically, to allow the addition of types to the collection of known types.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.TypeElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="typeName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="typeName">The name of the type that uses known types.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.TypeElement" /> class with the specified type name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +76,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the position of the element.</summary>
+        <value>The position of the element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +99,8 @@
         <ReturnType>System.Runtime.Serialization.Configuration.ParameterElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of parameters.</summary>
+        <value>A <see cref="T:System.Runtime.Serialization.Configuration.ParameterElementCollection" /> that contains the parameters for the type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,8 +164,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the type.</summary>
+        <value>The name of the type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

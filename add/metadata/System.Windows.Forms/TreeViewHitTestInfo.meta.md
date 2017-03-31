@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Forms.TreeViewHitTestInfo
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeViewHitTestInfo.Node
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeViewHitTestInfo.#ctor(System.Windows.Forms.TreeNode,System.Windows.Forms.TreeViewHitTestLocations)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeViewHitTestInfo.Location
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

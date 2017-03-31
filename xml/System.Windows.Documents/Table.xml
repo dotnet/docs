@@ -20,8 +20,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A block-level flow content element that provides a grid-based presentation organized by rows and columns.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.Table> derives from the <xref:System.Windows.Documents.Block> element, and adheres to the common rules for containing a <xref:System.Windows.Documents.Block> element.  A <xref:System.Windows.Documents.Table> element may be contained by any of the following elements:  
+  
+-   <xref:System.Windows.Documents.FlowDocument>  
+  
+-   <xref:System.Windows.Documents.TableCell>  
+  
+-   <xref:System.Windows.Controls.ListBoxItem>  
+  
+-   <xref:System.Windows.Controls.ListViewItem>  
+  
+-   <xref:System.Windows.Documents.Section>  
+  
+-   <xref:System.Windows.Documents.Floater>  
+  
+-   <xref:System.Windows.Documents.Figure>  
+  
+> [!NOTE]
+>  <xref:System.Windows.Documents.Table> is similar to the <xref:System.Windows.Controls.Grid> element but has more capabilities and, therefore, requires greater resource overhead.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Table" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +77,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called before an element is initialized.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +99,67 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the amount of spacing between cells in a table.</summary>
+        <value>The amount of spacing between cells in a table, in device independent pixels.  
+  
+ The default value is **2.0**.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_CellSpacing"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="double"/>  
+- or -  
+<object property="qualifiedDouble"/>  
+```  
+  
+<a name="xamlValues_CellSpacing"></a>   
+## XAML Values  
+ *double*  
+ <xref:System.Double>  
+  
+ String representation of a <xref:System.Double> value equal to or greater than **0.0** but smaller than <xref:System.Double>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+  
+ *qualifiedDouble*  
+ A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+<a name="dependencyPropertyInfo_CellSpacing"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.Table.CellSpacingProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+   
+  
+## Examples  
+ The following example defines a simple 2 x 3 table with a <xref:System.Windows.Documents.Table.CellSpacing%2A> of 0.35 centimeters.  
+  
+ [!code-xml[TableSnippets2#_Table_ColumnSpacing](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml#_table_columnspacing)]  
+  
+ The following figure shows how this example renders.  
+  
+ ![Screenshot: Table cell spacing](~/add/media/table-cellspacing.png "Screenshot: Table cell spacing")  
+  
+ In contrast, the following figure shows how the same table renders with a default cell spacing of 2 pixels.  
+  
+ ![Screenshot: Table cell spacing](~/add/media/table-cellspacingdefault.png "Screenshot: Table cell spacing")  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CellSpacingProperty">
@@ -93,7 +175,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.Table.CellSpacing" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +197,18 @@
         <ReturnType>System.Windows.Documents.TableColumnCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Documents.TableColumnCollection" /> object that contains the columns hosted by the table.</summary>
+        <value>A <see cref="T:System.Windows.Documents.TableColumnCollection" /> object that contains the columns (represented by <see cref="T:System.Windows.Documents.TableColumn" /> objects) hosted by the table. Note that this number might not be the actual number of columns rendered in the table. It is the <see cref="T:System.Windows.Documents.TableCell" /> objects in a table that determine how many columns are actually rendered.  
+  
+ This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.TableColumn> objects returned by this property can, in conjunction with the <xref:System.Windows.Documents.TableCell> objects in the column, be used to define layout of columns but they do not determine the actual number of columns rendered. It is the <xref:System.Windows.Documents.TableCell> objects in a table that determine how many columns are actually rendered. For example, if you define 3 columns but only have table cells for 2 columns, only 2 columns will be rendered.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -134,7 +225,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called immediately after an element is initialized.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,9 +242,20 @@
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an enumerator that can be used to iterate the logical children of the <see cref="T:System.Windows.Documents.Table" />.</summary>
+        <value>An enumerator for the logical children of the <see cref="T:System.Windows.Documents.Table" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Child objects are enumerated in the following order:  
+  
+1.  Columns (represented by <xref:System.Windows.Documents.TableColumn> objects).  
+  
+2.  Row groups (represented by <xref:System.Windows.Documents.TableRowGroup> objects).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -170,9 +272,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates and returns an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for this <see cref="T:System.Windows.Documents.Table" />.</summary>
+        <returns>An <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for this <see cref="T:System.Windows.Documents.Table" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RowGroups">
@@ -193,8 +302,10 @@
         <ReturnType>System.Windows.Documents.TableRowGroupCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Windows.Documents.TableRowGroupCollection" /> collection object that contains the row groups hosted by the table.</summary>
+        <value>A <see cref="T:System.Windows.Documents.TableRowGroupCollection" /> collection object that contains the row groups (represented by <see cref="T:System.Windows.Documents.TableRowGroup" /> objects) hosted by the table.  
+  
+ This property has no default value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,8 +328,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a value that indicates whether or not the effective value of the <see cref="P:System.Windows.Documents.Table.Columns" /> property should be serialized during serialization of a <see cref="T:System.Windows.Documents.Table" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.Documents.Table.Columns" /> property should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,8 +350,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The child object to add.</param>
+        <summary>Adds a child object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,8 +371,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

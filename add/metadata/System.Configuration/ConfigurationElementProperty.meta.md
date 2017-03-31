@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.ConfigurationElementProperty
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementProperty.Validator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationElementProperty.#ctor(System.Configuration.ConfigurationValidatorBase)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

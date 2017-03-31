@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.Expressions.ThenBy
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.ThenBy.Direction
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.ThenBy.DataField
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.ThenBy.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

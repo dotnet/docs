@@ -1,14 +1,14 @@
 ---
 uid: System.Xaml.XamlObjectReaderSettings
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReaderSettings.RequireExplicitContentVisibility
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectReaderSettings.#ctor
-internalonly: False
+manager: "martinek"
 ---

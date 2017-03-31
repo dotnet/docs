@@ -23,8 +23,29 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the binding element used to specify Windows stream security settings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Transports that use a stream-oriented protocol such as TCP and named pipes support stream-based transport upgrades. Specifically, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] provides security upgrades. The configuration of this transport security is encapsulated by this class as well as by <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>, which can be configured and added to a custom binding. In addition, a third party can write its own custom `StreamSecurityBindingElement`. These binding elements extend the <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement> class that is called to build the client and server stream upgrade providers.  
+  
+ A custom binding contains a collection of binding elements arranged in a specific order: the element representing the top of the binding stack is added first, the next element down in the binding stack is added second, and so on.  
+  
+### To add this class to a binding  
+  
+1.  Create a <xref:System.ServiceModel.Channels.BindingElementCollection>.  
+  
+2.  Create any required custom binding elements that are above this binding element in the binding stack, such as the optional <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> and <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>.  
+  
+3.  Add the created elements in the order described previously to the <xref:System.ServiceModel.Channels.BindingElementCollection> using the <xref:System.ServiceModel.Channels.BindingElementCollection.InsertItem%2A> method.  
+  
+4.  Create an instance of <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement> and add it to the collection.  
+  
+5.  Add any additional custom binding elements to the collection, such as <xref:System.ServiceModel.Channels.TcpTransportBindingElement>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,7 +60,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +79,7 @@
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement" /> class from an existing instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,11 +103,21 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TChannel">Type of channel factory.</typeparam>
+        <param name="context">
+          <see cref="T:System.ServiceModel.Channels.BindingContext" /> members that describe bindings, behaviors, contracts, and other information required to create the channel factory.</param>
+        <summary>Creates a channel factory that can be used to create a channel.</summary>
+        <returns>Returns a channel factory of the specified type. This method adds this class instance to the <see cref="P:System.ServiceModel.Channels.BindingContext.BindingParameters" /> and delegates to the build method <see cref="M:System.ServiceModel.Channels.BindingContext.BuildInnerChannelFactory``1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a channel factory, which is used to create a channel that processes outgoing messages for this binding.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> cannot be <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
@@ -113,11 +144,21 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TChannel">Type of channel listener.</typeparam>
+        <param name="context">
+          <see cref="T:System.ServiceModel.Channels.BindingContext" /> members that describe bindings, behaviors, contracts, and other information required to create the channel listener.</param>
+        <summary>Creates a channel listener of the specified type.</summary>
+        <returns>Returns a channel listener of the specified type. This method adds this class instance to the <see cref="P:System.ServiceModel.Channels.BindingContext.BindingParameters" /> and delegates to the build method <see cref="M:System.ServiceModel.Channels.BindingContext.BuildInnerChannelListener``1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a channel listener, which is used to create a channel that processes incoming messages for this binding.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> cannot be <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BuildClientStreamUpgradeProvider">
@@ -136,10 +177,19 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> for the entire channel stack.</param>
+        <summary>Creates an instance on the client of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeProvider" /> based on the channel context provided.</summary>
+        <returns>An instance of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeProvider" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when building the client channel factory and provides a custom implementation of the <xref:System.ServiceModel.Channels.StreamUpgradeProvider> abstract class.  
+  
+ The <xref:System.ServiceModel.Channels.BindingContext> parameter enables reacting to other elements in the channel stack.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildServerStreamUpgradeProvider">
@@ -158,10 +208,19 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> for the entire channel stack.</param>
+        <summary>Creates an instance on the server of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeProvider" /> based on the channel context provided.</summary>
+        <returns>An instance of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeProvider" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when building the provider channel listener and provides a custom implementation of the <xref:System.ServiceModel.Channels.StreamUpgradeProvider> abstract class.  
+  
+ The <xref:System.ServiceModel.Channels.BindingContext> parameter enables reacting to other elements in the channel stack.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanBuildChannelFactory&lt;TChannel&gt;">
@@ -184,11 +243,21 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TChannel">The type of channel to check.</typeparam>
+        <param name="context">The binding context.</param>
+        <summary>Determines whether a channel factory of the specified type can be built.</summary>
+        <returns>
+          <see langword="true" /> if a channel factory can be built; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A channel factory is used to create a channel that processes outgoing messages for this binding. This method delegates to the <xref:System.ServiceModel.Channels.BindingContext.CanBuildInnerChannelFactory%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanBuildChannelListener&lt;TChannel&gt;">
@@ -215,11 +284,21 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TChannel">The type of channel to check.</typeparam>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> for the channel.</param>
+        <summary>Determines whether a channel listener of the specified type can be built.</summary>
+        <returns>
+          <see langword="true" /> if a channel listener can be built; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A channel listener is used to create a channel that processes incoming messages for this binding. This method delegates to the <xref:System.ServiceModel.Channels.BindingContext.CanBuildInnerChannelListener%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -237,8 +316,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new binding element from this instance of the class.</summary>
+        <returns>
+          <see cref="T:System.ServiceModel.Channels.BindingElement" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,11 +346,26 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The object to get.</typeparam>
+        <param name="context">A <see cref="T:System.ServiceModel.Channels.BindingContext" />.</param>
+        <summary>Gets a specified object from the <see cref="T:System.ServiceModel.Channels.BindingContext" />.</summary>
+        <returns>The specified object from the <see cref="T:System.ServiceModel.Channels.BindingContext" /> or <see langword="null" /> if the object is not found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method receives a binding context as an input parameter, which represents the stack of binding elements. This method gets the specified object directly, delegates the inquiry to the next-lower binding element in the stack, or a combination of the two. It can modify the context if it delegates the inquiry. Each binding element in the stack can repeat this process, if it has been delegated to, until the bottom of the stack is reached. The object returned is usually a collection of properties.  
+  
+ If the type of `T` is <xref:System.ServiceModel.Channels.ISecurityCapabilities>, then an instance of this class is returned with <xref:System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientAuthentication%2A>,  
+  
+ <xref:System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientWindowsIdentity%2A>, and <xref:System.ServiceModel.Channels.ISecurityCapabilities.SupportsServerAuthentication%2A> all set to `true`, and <xref:System.ServiceModel.Channels.ISecurityCapabilities.SupportedRequestProtectionLevel%2A> and <xref:System.ServiceModel.Channels.ISecurityCapabilities.SupportedResponseProtectionLevel%2A> set to the current value in this binding.  
+  
+ If the type of `T` is <xref:System.ServiceModel.Security.IdentityVerifier>, then a default instance of this class is returned.  
+  
+ This method is implemented by binding elements as well as by the run-time objects such as <xref:System.ServiceModel.Channels.IChannelFactory>, <xref:System.ServiceModel.Channels.IChannelListener>, and <xref:System.ServiceModel.Channels.IChannel>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTransportTokenAssertion">
@@ -287,9 +382,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Xml.XmlElement" /> that represents the transport token used in the security binding.</summary>
+        <returns>An <see cref="T:System.Xml.XmlElement" /> that represents the transport token used in the policy generated by this binding.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is used to generate WSDL for the associated service.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectionLevel">
@@ -306,8 +408,8 @@
         <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the protection level.</summary>
+        <value>The <see cref="T:System.Net.Security.ProtectionLevel" />. The default value is <see cref="F:System.Net.Security.ProtectionLevel.EncryptAndSign" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,10 +525,23 @@
         <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="exporter">The <see cref="T:System.ServiceModel.Description.MetadataExporter" /> that you can use to modify the exporting process.</param>
+        <param name="context">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> that you can use to insert your custom policy assertion.</param>
+        <summary>Exports a custom policy assertion about Windows stream security.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to communicate to clients the existence of this custom binding element in the binding stack.  
+  
+ This method takes two parameters: the <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.PolicyConversionContext> objects. Use the <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A>, <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A>, and <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> methods to obtain collections of policy assertions that have already been exported at various scopes. Then use this method to add your own policy assertions to the appropriate collection.  
+  
+ The <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A> property exposes the <xref:System.ServiceModel.Description.ContractDescription> for the endpoint that is being exported. This enables this method to correctly scope their exported policy assertions. For example, security attributes in code can add behaviors to the <xref:System.ServiceModel.Description.ContractDescription> that indicate where security policy assertions should be added.  
+  
+ Once custom policy assertions are attached to the WSDL information, clients can detect and import the custom binding assertions by implementing an <xref:System.ServiceModel.Description.IPolicyImportExtension> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

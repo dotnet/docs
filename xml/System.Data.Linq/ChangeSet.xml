@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a container to hold changes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list of entities that have been deleted from the <see cref="T:System.Data.Linq.ChangeSet" />.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> of deleted entities.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list of entities that have been inserted into the <see cref="T:System.Data.Linq.ChangeSet" />.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> of inserted entities.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents the current <see cref="T:System.Data.Linq.ChangeSet" />.</summary>
+        <returns>A string that represents the current <see cref="T:System.Data.Linq.ChangeSet" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +83,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list of entities that have been updated in the <see cref="T:System.Data.Linq.ChangeSet" />.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> of updated entities.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

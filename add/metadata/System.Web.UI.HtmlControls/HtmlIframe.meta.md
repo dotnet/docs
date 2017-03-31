@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.HtmlControls.HtmlIframe
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlIframe.RenderAttributes(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlIframe.Src
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.HtmlControls.HtmlIframe.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

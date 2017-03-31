@@ -1,59 +1,90 @@
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.DisallowUpdateInside
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.UpdatedWorkflowDefinition
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.LookupImplementationMap
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.UpdatedEnvironment
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.ForImplementation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.OriginalEnvironment
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.CreateMap(System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate}@)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.OriginalWorkflowDefinition
-internalonly: False
----
-
----
-uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.LookupMapItem
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.CreateMap
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.LookupMapItem
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.CreateMap
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies a date and time associated with the type library of an ActiveX control hosted by an <see cref="T:System.Windows.Forms.AxHost" /> control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <Parameter Name="timestamp" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="timestamp">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timestamp">A <see cref="T:System.DateTime" /> value representing the date and time to associate with the type library.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.TypeLibraryTimeStampAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The date and time to associate with the type library.</summary>
+        <value>A <see cref="T:System.DateTime" /> value representing the date and time to associate with the type library.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

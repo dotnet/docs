@@ -1,1 +1,0 @@
-            Dim svcHost As ServiceHost = New ServiceHost(GetType(CalculatorService), baseAddress)

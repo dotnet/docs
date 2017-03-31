@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the event that is raised by the element through the associated <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is passed to the <xref:System.Windows.Automation.Peers.AutomationPeer.RaiseAutomationEvent%2A> method to raise an event.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AsyncContentLoaded">
@@ -27,7 +34,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.AsyncContentLoadedEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="AutomationFocusChanged">
@@ -43,7 +52,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="InputDiscarded">
@@ -59,7 +70,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputDiscardedEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="InputReachedOtherElement">
@@ -75,7 +88,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedOtherElementEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="InputReachedTarget">
@@ -91,7 +106,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedTargetEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="InvokePatternOnInvoked">
@@ -107,7 +124,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="MenuClosed">
@@ -123,7 +142,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.MenuClosedEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="MenuOpened">
@@ -139,7 +160,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.MenuOpenedEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
@@ -155,7 +178,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used to raise a notification that a property has changed.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionItemPatternOnElementAddedToSelection">
@@ -171,7 +194,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionItemPatternOnElementRemovedFromSelection">
@@ -187,7 +212,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionItemPatternOnElementSelected">
@@ -203,7 +230,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionPatternOnInvalidated">
@@ -219,7 +248,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="StructureChanged">
@@ -235,7 +266,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="TextPatternOnTextChanged">
@@ -251,7 +284,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.TextPatternIdentifiers.TextChangedEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="TextPatternOnTextSelectionChanged">
@@ -267,7 +302,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.TextPatternIdentifiers.TextSelectionChangedEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="ToolTipClosed">
@@ -283,7 +320,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.ToolTipClosedEvent" />
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="ToolTipOpened">
@@ -299,7 +338,9 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.ToolTipOpenedEvent" />
+        </summary>
       </Docs>
     </Member>
   </Members>

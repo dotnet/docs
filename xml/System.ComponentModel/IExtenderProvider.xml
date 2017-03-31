@@ -17,8 +17,27 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the interface for extending properties to other components in a container.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An extender provider is a component that provides properties to other components. For example, the <xref:System.Windows.Forms.ToolTip> control is an extender provider. When you add a <xref:System.Windows.Forms.ToolTip> control to a <xref:System.Windows.Forms.Form>, all other controls on the form have a <xref:System.Windows.Forms.ToolTip> property added to their list of properties.  
+  
+ Any component that provides extender properties must implement <xref:System.ComponentModel.IExtenderProvider>. A visual designer can then call <xref:System.ComponentModel.IExtenderProvider.CanExtend%2A> to determine which objects in a container should receive the extender properties.  
+  
+ For more information about extender providers, see [How to: Implement an Extender Provider](../Topic/How%20to:%20Implement%20an%20Extender%20Provider.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.IExtenderProvider> interface. This example is part of a larger example discussed in [How to: Implement a HelpLabel Extender Provider](../Topic/How%20to:%20Implement%20a%20HelpLabel%20Extender%20Provider.md).  
+  
+ [!code-csharp[System.Windows.Forms.HelpLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpLabel/CS/HelpLabel.cs#1)]
+ [!code-vb[System.Windows.Forms.HelpLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpLabel/VB/HelpLabel.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CanExtend">
@@ -46,10 +65,26 @@
         <Parameter Name="extendee" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="extendee">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="extendee">The <see cref="T:System.Object" /> to receive the extender properties.</param>
+        <summary>Specifies whether this object can provide its extender properties to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if this object can provide extender properties to the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on extender properties, see [How to: Implement an Extender Provider](../Topic/How%20to:%20Implement%20an%20Extender%20Provider.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.IExtenderProvider.CanExtend%2A> property. This example is part of a larger example discussed in [How to: Implement a HelpLabel Extender Provider](../Topic/How%20to:%20Implement%20a%20HelpLabel%20Extender%20Provider.md).  
+  
+ [!code-csharp[System.Windows.Forms.HelpLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpLabel/CS/HelpLabel.cs#1)]
+ [!code-vb[System.Windows.Forms.HelpLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpLabel/VB/HelpLabel.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

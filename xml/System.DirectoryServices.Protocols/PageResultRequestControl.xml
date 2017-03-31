@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.PageResultRequestControl" /> class instructs the server to return the search result in the specified page size.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.PageResultRequestControl.#ctor" /> constructor creates a new instance of the <see cref="T:System.DirectoryServices.Protocols.PageResultRequestControl" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="cookie" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cookie">Specifies a cookie used for subsequent paged results search calls.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.PageResultRequestControl.#ctor(System.Byte[])" /> constructor creates a new instance of the <see cref="T:System.DirectoryServices.Protocols.PageResultRequestControl" /> class using the specified page search cookie.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <Parameter Name="pageSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pageSize">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pageSize">The requested page size.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.PageResultRequestControl.#ctor(System.Int32)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.PageResultRequestControl" /> class using the requested page size.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.PageResultRequestControl.Cookie" /> property specifies the page search cookie used for subsequent paged results search calls.</summary>
+        <value>The page search cookie used for subsequent paged results search calls.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +98,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.PageResultRequestControl.GetValue" /> method returns the page size and cookie associated with this control.</summary>
+        <returns>The page size and cookie associated with this control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,8 +116,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.PageResultRequestControl.PageSize" /> property specifies the requested page size.</summary>
+        <value>The requested page size.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Forms.TreeNodeMouseHoverEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNodeMouseHoverEventArgs.#ctor(System.Windows.Forms.TreeNode)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeNodeMouseHoverEventArgs.Node
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.Navigation.FragmentNavigationEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Navigation.FragmentNavigationEventArgs.Handled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Navigation.FragmentNavigationEventArgs.Navigator
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Navigation.FragmentNavigationEventArgs.Fragment
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

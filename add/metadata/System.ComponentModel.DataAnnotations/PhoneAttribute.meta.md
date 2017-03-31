@@ -1,14 +1,17 @@
 ---
 uid: System.ComponentModel.DataAnnotations.PhoneAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.PhoneAttribute.IsValid(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.PhoneAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

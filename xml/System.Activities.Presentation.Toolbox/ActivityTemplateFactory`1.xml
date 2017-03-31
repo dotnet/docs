@@ -27,8 +27,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type this factory created.</typeparam>
+    <summary>Represents a class that is the XAML representation for an IActivityTemplateFactory.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ActivityTemplateFactory`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,10 +64,10 @@
         <Parameter Name="dataObject" Type="System.Windows.IDataObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="dataObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">A reference the target- not used.</param>
+        <param name="dataObject">A reference to the data object - not used.</param>
+        <summary>Creates an activity by calling Implementation.</summary>
+        <returns>The activity created by the implementation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +98,8 @@
         <ReturnType>System.Func&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the factory method that creates an activity as the implementation.</summary>
+        <value>The factory method that creates an activity as the implementation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

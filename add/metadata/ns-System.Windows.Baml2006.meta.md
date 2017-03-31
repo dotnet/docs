@@ -1,4 +1,4 @@
 ---
 uid: System.Windows.Baml2006
-internalonly: False
+manager: "martinek"
 ---

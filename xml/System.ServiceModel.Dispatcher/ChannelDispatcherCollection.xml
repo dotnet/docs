@@ -14,8 +14,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a thread-safe collection that contains channel dispatchers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection is used by <xref:System.ServiceModel.ServiceHostBase> to manage the channel dispatchers associated with the host. A <xref:System.ServiceModel.Dispatcher.ChannelDispatcherCollection> is created when <xref:System.ServiceModel.ServiceHostBase.%23ctor%2A> is called and the collection can be accessed using the <xref:System.ServiceModel.ServiceHostBase.ChannelDispatchers%2A> property.  
+  
+ The collection contains <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> objects (and not just instances of <xref:System.ServiceModel.Dispatcher.ChannelDispatcher>) because it is also used by developers who want to keep the [!INCLUDE[indigo1](~/includes/indigo1-md.md)]programming model but replace the system-provided runtime. They derive a class from <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> and extend <xref:System.ServiceModel.ServiceHost> (which inherits from <xref:System.ServiceModel.ServiceHostBase>) by overriding <xref:System.ServiceModel.ServiceHostBase.InitializeRuntime%2A>, adding instances of the class derived from <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> to <xref:System.ServiceModel.ServiceHostBase.ChannelDispatchers%2A>.  
+  
+ This class has no public constructors and is not intended to be used outside of the <xref:System.ServiceModel.ServiceHost>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ClearItems">
@@ -32,7 +43,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all channel dispatchers from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,10 +64,13 @@
         <Parameter Name="item" Type="System.ServiceModel.Dispatcher.ChannelDispatcherBase" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the channel dispatcher to be retrieved from the collection.</param>
+        <param name="item">The channel dispatcher to be inserted into the collection as an element.</param>
+        <summary>Inserts a channel dispatcher into the collection at a specified index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The service host associated with the channel dispatcher collection is closed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is less than zero or greater than the number of items in the collection.</exception>
+        <exception cref="T:System.InvalidOperationException">The commutation object is not in a state</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -75,9 +89,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the channel dispatcher to be removed from the collection.</param>
+        <summary>Removes a channel dispatcher at a specified index from the collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is less than zero or greater than the number of items in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -97,10 +112,12 @@
         <Parameter Name="item" Type="System.ServiceModel.Dispatcher.ChannelDispatcherBase" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the channel dispatcher to be replaced.</param>
+        <param name="item">The channel dispatcher to replace</param>
+        <summary>Replaces the channel dispatcher at a specified index with another item.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The service associated with this collection of channel dispatchers is in a <see cref="F:System.ServiceModel.CommunicationState.Closed" /> state.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is less than zero or greater than the number of items in the collection.</exception>
       </Docs>
     </Member>
   </Members>

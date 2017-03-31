@@ -1,1 +1,0 @@
-This snippet ID 22 is used in multiple files: /VB/AppSettingsSection.vb, /VB/UsingAppSettingsSection.vb. Rename the duplicate ID to make it unique, and update the reference to the snippet ID in the topic(s).

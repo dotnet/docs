@@ -19,8 +19,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a statement that removes an event handler.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeRemoveEventStatement> can be used to represent a statement that removes an event handler for an event.  
+  
+ The <xref:System.CodeDom.CodeRemoveEventStatement.Event%2A> property specifies the event to remove the event handler from. The <xref:System.CodeDom.CodeRemoveEventStatement.Listener%2A> property specifies the event handler to remove.  
+  
+   
+  
+## Examples  
+ The following example demonstrates use of a <xref:System.CodeDom.CodeRemoveEventStatement> to remove a delegate from an event.  
+  
+ [!code-cpp[CodeRemoveEventExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeRemoveEventExample/CPP/coderemoveeventexample.cpp#2)]
+ [!code-csharp[CodeRemoveEventExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeRemoveEventExample/CS/coderemoveeventexample.cs#2)]
+ [!code-vb[CodeRemoveEventExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeRemoveEventExample/VB/coderemoveeventexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRemoveEventStatement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +70,9 @@
         <Parameter Name="listener" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="eventRef">To be added.</param>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="eventRef">A <see cref="T:System.CodeDom.CodeEventReferenceExpression" /> that indicates the event to detach the event handler from.</param>
+        <param name="listener">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the event handler to remove.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRemoveEventStatement" /> class with the specified event and event handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,10 +91,10 @@
         <Parameter Name="listener" Type="System.CodeDom.CodeExpression" />
       </Parameters>
       <Docs>
-        <param name="targetObject">To be added.</param>
-        <param name="eventName">To be added.</param>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="targetObject">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object that contains the event.</param>
+        <param name="eventName">The name of the event.</param>
+        <param name="listener">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the event handler to remove.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRemoveEventStatement" /> class using the specified target object, event name, and event handler.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +111,8 @@
         <ReturnType>System.CodeDom.CodeEventReferenceExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the event to remove a listener from.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeEventReferenceExpression" /> that indicates the event to remove a listener from.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +129,8 @@
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the event handler to remove.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the event handler to remove.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

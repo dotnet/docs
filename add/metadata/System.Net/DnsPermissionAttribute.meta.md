@@ -1,14 +1,17 @@
 ---
 uid: System.Net.DnsPermissionAttribute
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DnsPermissionAttribute.CreatePermission
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DnsPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

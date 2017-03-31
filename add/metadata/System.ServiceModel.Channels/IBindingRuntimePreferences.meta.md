@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Channels.IBindingRuntimePreferences
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

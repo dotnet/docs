@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.Forms.ToolStripContentPanelRenderEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripContentPanelRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripContentPanel)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripContentPanelRenderEventArgs.Handled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripContentPanelRenderEventArgs.ToolStripContentPanel
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripContentPanelRenderEventArgs.Graphics
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

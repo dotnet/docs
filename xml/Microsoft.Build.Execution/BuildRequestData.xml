@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Encapsulates all of the data needed to submit a build request.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="targetsToBuild" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="projectInstance">To be added.</param>
-        <param name="targetsToBuild">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="projectInstance">The instance to build.</param>
+        <param name="targetsToBuild">The targets to build.</param>
+        <summary>Constructs build request data for build requests based on project instances.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,10 +50,10 @@
         <Parameter Name="hostServices" Type="Microsoft.Build.Execution.HostServices" />
       </Parameters>
       <Docs>
-        <param name="projectInstance">To be added.</param>
-        <param name="targetsToBuild">To be added.</param>
-        <param name="hostServices">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="projectInstance">The instance to build.</param>
+        <param name="targetsToBuild">The targets to build.</param>
+        <param name="hostServices">The host services to use, if any.  May be null.</param>
+        <summary>Constructs build request data for build requests based on project instances.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,11 +73,11 @@
         <Parameter Name="flags" Type="Microsoft.Build.Execution.BuildRequestDataFlags" />
       </Parameters>
       <Docs>
-        <param name="projectInstance">To be added.</param>
-        <param name="targetsToBuild">To be added.</param>
-        <param name="hostServices">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="projectInstance">The instance to build.</param>
+        <param name="targetsToBuild">The targets to build.</param>
+        <param name="hostServices">The host services to use, if any.  May be null.</param>
+        <param name="flags">The flags to use for the build.</param>
+        <summary>Constructs a BuildRequestData for build requests based on project instances.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,12 +98,12 @@
         <Parameter Name="propertiesToTransfer" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="projectInstance">To be added.</param>
-        <param name="targetsToBuild">To be added.</param>
-        <param name="hostServices">To be added.</param>
-        <param name="flags">To be added.</param>
-        <param name="propertiesToTransfer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="projectInstance">The instance to build.</param>
+        <param name="targetsToBuild">The targets to build.</param>
+        <param name="hostServices">The host services to use, if any.  May be null.</param>
+        <param name="flags">The flags to use for the build.</param>
+        <param name="propertiesToTransfer">The list of properties to transfer from the project to any out of process node.</param>
+        <summary>Constructs a BuildRequestData for build requests based on project instances.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,12 +124,12 @@
         <Parameter Name="hostServices" Type="Microsoft.Build.Execution.HostServices" />
       </Parameters>
       <Docs>
-        <param name="projectFullPath">To be added.</param>
-        <param name="globalProperties">To be added.</param>
-        <param name="toolsVersion">To be added.</param>
-        <param name="targetsToBuild">To be added.</param>
-        <param name="hostServices">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="projectFullPath">The full path to the project file.</param>
+        <param name="globalProperties">The global properties to use during evaluation of the project.</param>
+        <param name="toolsVersion">The tools version to use for the build.  May be null.</param>
+        <param name="targetsToBuild">The targets to build.</param>
+        <param name="hostServices">The host services to use, if any.  May be null.</param>
+        <summary>Constructs a BuildRequestData for build requests with a given project path.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,13 +151,13 @@
         <Parameter Name="flags" Type="Microsoft.Build.Execution.BuildRequestDataFlags" />
       </Parameters>
       <Docs>
-        <param name="projectFullPath">To be added.</param>
-        <param name="globalProperties">To be added.</param>
-        <param name="toolsVersion">To be added.</param>
-        <param name="targetsToBuild">To be added.</param>
-        <param name="hostServices">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="projectFullPath">The full path to the project file.</param>
+        <param name="globalProperties">The global properties to use during evaluation of the project.</param>
+        <param name="toolsVersion">The tools version to use for the build.  May be null.</param>
+        <param name="targetsToBuild">The targets to build.</param>
+        <param name="hostServices">The host services to use, if any.  May be null.</param>
+        <param name="flags">The flags to use for the build.</param>
+        <summary>Constructs a BuildRequestData for build requests with a given project path.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,8 +174,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the tools version to use for the build.</summary>
+        <value>Returns the tools version to use for the build.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,8 +192,8 @@
         <ReturnType>Microsoft.Build.Execution.BuildRequestDataFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets additional flags for this build request.</summary>
+        <value>Returns the build request flags.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,8 +210,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Execution.ProjectPropertyInstance&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the global properties to use for this build request.</summary>
+        <value>Returns the global properties to use for this build request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +228,8 @@
         <ReturnType>Microsoft.Build.Execution.HostServices</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the host service for this build.</summary>
+        <value>Returns the host service for this build.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,8 +246,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets of sets the path to the project file for this build.</summary>
+        <value>Returns the path to the project file for this build.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,9 +264,16 @@
         <ReturnType>Microsoft.Build.Execution.ProjectInstance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets project instance for this build.</summary>
+        <value>The project instance, which may be null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used in the case where the project is not located in disk storage.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertiesToTransfer">
@@ -282,8 +289,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the list of properties to transfer to an out of process node for the build.</summary>
+        <value>Returns the list of properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,8 +307,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the names of the targets to build.</summary>
+        <value>Returns the names of the targets to build.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

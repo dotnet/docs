@@ -18,8 +18,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a section of content in a document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.DocumentStructures.SectionStructure> elements are used to mark abstract blocks of content within the document.  Example uses of <xref:System.Windows.Documents.DocumentStructures.SectionStructure> elements would be to mark a summary that describes the main topic of the document, or to identify titled sections of a document that might include a header followed by paragraphs, lists, figures, and tables.  
+  
+ <xref:System.Windows.Documents.DocumentStructures.StoryFragment> is the only allowable parent of a <xref:System.Windows.Documents.DocumentStructures.SectionStructure>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.DocumentStructures.SectionStructure" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +62,10 @@
         <Parameter Name="element" Type="System.Windows.Documents.DocumentStructures.BlockElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The block element to add.</param>
+        <summary>Adds a block to the section.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The element is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.BlockElement&gt;.GetEnumerator">
@@ -72,8 +82,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This method has not been implemented.</summary>
+        <returns>
+          <see cref="T:System.Collections.Generic.IEnumerator`1" />
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +103,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This method has not been implemented.</summary>
+        <returns>System.Collections.IEnumerator</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +124,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The child object to add.</param>
+        <summary>Adds a child object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +145,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

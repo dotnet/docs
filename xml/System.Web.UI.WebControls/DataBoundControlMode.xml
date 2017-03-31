@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the different data-entry modes for a data-bound control or a particular field in ASP.NET Dynamic Data.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.UI.WebControls.DataBoundControlMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the edit mode, which enables users to update the values of an existing record or data field.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.UI.WebControls.DataBoundControlMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the insert mode, which enables users to enter values for a new record or data field.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.UI.WebControls.DataBoundControlMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the display mode, which prevents the user from modifying the values of a record or a data field.</summary>
       </Docs>
     </Member>
   </Members>

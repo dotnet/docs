@@ -15,9 +15,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of continuation token.</typeparam>
+    <summary>Encapsulates a URI that returns the next page of a paged [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] query result.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example uses a `do…while` loop to load `Customers` entities from a paged results from the data service.  
+  
+ [!code-csharp[Astoria Northwind Client#GetCustomersPaged](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#getcustomerspaged)]
+ [!code-vb[Astoria Northwind Client#GetCustomersPaged](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#getcustomerspaged)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

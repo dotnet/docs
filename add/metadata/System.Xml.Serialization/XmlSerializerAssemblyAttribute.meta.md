@@ -1,29 +1,48 @@
 ---
 uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.#ctor(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.AssemblyName
-internalonly: False
----
-
----
-uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.CodeBase
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.AssemblyName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.CodeBase
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the number of colors used to display an image in an <see cref="T:System.Windows.Forms.ImageList" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.ImageList.ColorDepth%2A> property of the <xref:System.Windows.Forms.ImageList> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Depth16Bit">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.ColorDepth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A 16-bit image.</summary>
       </Docs>
     </Member>
     <Member MemberName="Depth24Bit">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.ColorDepth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A 24-bit image.</summary>
       </Docs>
     </Member>
     <Member MemberName="Depth32Bit">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.ColorDepth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A 32-bit image.</summary>
       </Docs>
     </Member>
     <Member MemberName="Depth4Bit">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.ColorDepth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A 4-bit image.</summary>
       </Docs>
     </Member>
     <Member MemberName="Depth8Bit">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Forms.ColorDepth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An 8-bit image.</summary>
       </Docs>
     </Member>
   </Members>

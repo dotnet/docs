@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an object that waits for the completion of an asynchronous task.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ends the wait for the completion of the asynchronous task.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the asynchronous task has completed.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +72,8 @@
         <Parameter Name="continuation" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="continuation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="continuation">The action to perform when the wait operation completes.</param>
+        <summary>Sets the action to perform when the <see cref="T:System.Windows.Threading.DispatcherPriorityAwaiter" /> object stops waiting for the asynchronous task to complete.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

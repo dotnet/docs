@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the abstract base class for composable parts, which import objects and produce exported objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Called when all the imports of the part have been set, and exports can be retrieved.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once this method is called, no further imports can be set unless a call is made to Deactivate.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportDefinitions">
@@ -65,9 +72,19 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ExportDefinition&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of the <see cref="T:System.ComponentModel.Composition.Primitives.ExportDefinition" /> objects that describe the exported objects provided by the part.</summary>
+        <value>A collection of <see cref="T:System.ComponentModel.Composition.Primitives.ExportDefinition" /> objects that describe the exported objects provided by the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ComponentModel.Composition.Primitives.ComposablePart> object was created from a <xref:System.ComponentModel.Composition.Primitives.ComposablePartDefinition> object, this property should return the result of <xref:System.ComponentModel.Composition.Primitives.ComposablePartDefinition.ExportDefinitions%2A>.  
+  
+ Overrides of this property should never return `null`. If the <xref:System.ComponentModel.Composition.Primitives.ComposablePart> does not have exports, return an empty <xref:System.Collections.Generic.IEnumerable%601> collection instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> object has been disposed of.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetExportedValue">
@@ -87,10 +104,17 @@
         <Parameter Name="definition" Type="System.ComponentModel.Composition.Primitives.ExportDefinition" />
       </Parameters>
       <Docs>
-        <param name="definition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="definition">One of the <see cref="T:System.ComponentModel.Composition.Primitives.ExportDefinition" /> objects from the <see cref="P:System.ComponentModel.Composition.Primitives.ComposablePart.ExportDefinitions" /> property that describes the exported object to return.</param>
+        <summary>Gets the exported object described by the specified <see cref="T:System.ComponentModel.Composition.Primitives.ExportDefinition" /> object.</summary>
+        <returns>The exported object described by <paramref name="definition" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> object has been disposed of.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="definition" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.Composition.Primitives.ComposablePartException">An error occurred getting the exported object described by the <see cref="T:System.ComponentModel.Composition.Primitives.ExportDefinition" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="definition" /> did not originate from the <see cref="P:System.ComponentModel.Composition.Primitives.ComposablePart.ExportDefinitions" /> property on the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" />.</exception>
+        <exception cref="T:System.InvalidOperationException">One or more prerequisite imports, indicated by <see cref="P:System.ComponentModel.Composition.Primitives.ImportDefinition.IsPrerequisite" />, have not been set.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportDefinitions">
@@ -107,9 +131,19 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ImportDefinition&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of the <see cref="T:System.ComponentModel.Composition.Primitives.ImportDefinition" /> objects that describe the imported objects required by the part.</summary>
+        <value>A collection of <see cref="T:System.ComponentModel.Composition.Primitives.ImportDefinition" /> objects that describe the imported objects required by the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ComponentModel.Composition.Primitives.ComposablePart> object was created from a <xref:System.ComponentModel.Composition.Primitives.ComposablePartDefinition> object, this property should return the result of <xref:System.ComponentModel.Composition.Primitives.ComposablePartDefinition.ImportDefinitions%2A>.  
+  
+ Overrides of this property should never return `null`. If the <xref:System.ComponentModel.Composition.Primitives.ComposablePart> does not have imports, return an empty <xref:System.Collections.Generic.IEnumerable%601> collection instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> object has been disposed of.</exception>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -126,9 +160,19 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metadata of the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> object.</summary>
+        <value>The metadata of the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> object. The default is an empty, read-only <see cref="T:System.Collections.Generic.IDictionary`2" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ComponentModel.Composition.Primitives.ComposablePart> object was created from a <xref:System.ComponentModel.Composition.Primitives.ComposablePartDefinition> object, this property should return the result of <xref:System.ComponentModel.Composition.Primitives.ComposablePartDefinition.Metadata%2A>.  
+  
+ Overrides of this property should return a read-only <xref:System.Collections.Generic.IDictionary%602> object with a case-sensitive, non-linguistic comparer, such as <xref:System.StringComparer.Ordinal%2A>, and should never return `null`. If the <xref:System.ComponentModel.Composition.Primitives.ComposablePart> does not contain metadata, return an empty <xref:System.Collections.Generic.IDictionary%602> instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> object has been disposed of.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetImport">
@@ -149,10 +193,34 @@
         <Parameter Name="exports" Type="System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.Export&gt;" />
       </Parameters>
       <Docs>
-        <param name="definition">To be added.</param>
-        <param name="exports">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="definition">One of the objects from the <see cref="P:System.ComponentModel.Composition.Primitives.ComposablePart.ImportDefinitions" /> property that specifies the import to be set.</param>
+        <param name="exports">A collection of <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> objects of which to set the import described by <c>definition</c>.</param>
+        <summary>Sets the import described by the specified <see cref="T:System.ComponentModel.Composition.Primitives.ImportDefinition" /> object to be satisfied by the specified exports.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> object has been disposed of.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="definition" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="exports" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.Composition.Primitives.ComposablePartException">An error occurred setting the import described by the <see cref="T:System.ComponentModel.Composition.Primitives.ImportDefinition" /> object.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="definition" /> did not originate from the <see cref="P:System.ComponentModel.Composition.Primitives.ComposablePart.ImportDefinitions" /> property on the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" />.  
+  
+ -or-  
+  
+ <paramref name="exports" /> contains an element that is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="exports" /> is empty and <see cref="P:System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality" /> is <see cref="F:System.ComponentModel.Composition.Primitives.ImportCardinality.ExactlyOne" />.  
+  
+ -or-  
+  
+ <paramref name="exports" /> contains more than one element and <see cref="P:System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality" /> is <see cref="F:System.ComponentModel.Composition.Primitives.ImportCardinality.ZeroOrOne" /> or <see cref="F:System.ComponentModel.Composition.Primitives.ImportCardinality.ExactlyOne" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="M:System.ComponentModel.Composition.Primitives.ComposablePart.SetImport(System.ComponentModel.Composition.Primitives.ImportDefinition,System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.Export})" /> has been previously called and <see cref="P:System.ComponentModel.Composition.Primitives.ImportDefinition.IsRecomposable" /> is <see langword="false" />.</exception>
       </Docs>
     </Member>
   </Members>

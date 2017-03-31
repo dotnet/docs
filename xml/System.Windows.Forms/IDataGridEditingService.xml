@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents methods that process editing requests.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,10 +29,11 @@
         <Parameter Name="rowNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="gridColumn">To be added.</param>
-        <param name="rowNumber">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="gridColumn">The <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> to edit.</param>
+        <param name="rowNumber">The index of the row to edit</param>
+        <summary>Begins an edit operation.</summary>
+        <returns>
+          <see langword="true" /> if the operation can be performed; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,12 +55,20 @@
         <Parameter Name="shouldAbort" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="gridColumn">To be added.</param>
-        <param name="rowNumber">To be added.</param>
-        <param name="shouldAbort">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="gridColumn">The <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> to edit.</param>
+        <param name="rowNumber">The number of the row to edit</param>
+        <param name="shouldAbort">True if an abort operation is requested</param>
+        <summary>Ends the edit operation.</summary>
+        <returns>
+          <see langword="true" /> if value is commited; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value cannot be committed, the <xref:System.Windows.Forms.DataGridColumnStyle> remains editable.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

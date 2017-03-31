@@ -1,14 +1,17 @@
 ---
 uid: System.Net.DownloadProgressChangedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DownloadProgressChangedEventArgs.BytesReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.DownloadProgressChangedEventArgs.TotalBytesToReceive
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

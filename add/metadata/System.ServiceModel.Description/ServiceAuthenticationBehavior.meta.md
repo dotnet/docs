@@ -1,44 +1,62 @@
 ---
 uid: System.ServiceModel.Description.ServiceAuthenticationBehavior
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Description.ServiceAuthenticationBehavior.ServiceAuthenticationManager
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Description.ServiceAuthenticationBehavior.System#ServiceModel#Description#IServiceBehavior#Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Description.ServiceAuthenticationBehavior.ShouldSerializeAuthenticationSchemes
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Description.ServiceAuthenticationBehavior.System#ServiceModel#Description#IServiceBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Description.ServiceAuthenticationBehavior.System#ServiceModel#Description#IServiceBehavior#AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Description.ServiceAuthenticationBehavior.AuthenticationSchemes
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Description.ServiceAuthenticationBehavior.ShouldSerializeServiceAuthenticationManager
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Description.ServiceAuthenticationBehavior.#ctor
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "ghogen"
 ---

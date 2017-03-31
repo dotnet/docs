@@ -1,29 +1,34 @@
 ---
 uid: System.Web.UI.WebControls.RegularExpressionValidator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RegularExpressionValidator.ValidationExpression
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RegularExpressionValidator.EvaluateIsValid
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RegularExpressionValidator.MatchTimeout
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RegularExpressionValidator.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.RegularExpressionValidator.AddAttributesToRender(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

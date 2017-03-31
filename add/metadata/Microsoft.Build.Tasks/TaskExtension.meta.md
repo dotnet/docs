@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Tasks.TaskExtension
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.TaskExtension.Log
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

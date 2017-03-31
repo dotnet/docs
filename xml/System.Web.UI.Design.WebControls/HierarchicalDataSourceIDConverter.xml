@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates a user-selectable list of hierarchical data source names.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter> class is a <xref:System.ComponentModel.TypeConverter> object that is typically referenced by the <xref:System.ComponentModel.TypeConverterAttribute> attribute. All members except the <xref:System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter.IsValidDataSource%2A> method are inherited from the <xref:System.Web.UI.Design.WebControls.DataSourceIDConverter>.  
+  
+ The <xref:System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter.IsValidDataSource%2A> method indicates whether the specified component implements the <xref:System.Web.UI.IHierarchicalDataSource> interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +35,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter> class when the class is referenced by a <xref:System.ComponentModel.TypeConverterAttribute> attribute.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsValidDataSource">
@@ -46,10 +62,18 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="component">An object that implements the <see cref="T:System.ComponentModel.IComponent" />.</param>
+        <summary>Gets a value indicating whether the specified component is a valid data source.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="component" /> is a valid data source; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.HierarchicalDataSourceIDConverter.IsValidDataSource%2A> method considers `component` a valid data source if it implements the <xref:System.Web.UI.IHierarchicalDataSource> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

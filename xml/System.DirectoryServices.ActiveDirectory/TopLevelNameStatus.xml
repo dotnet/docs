@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the forest trust account status of a top-level domain in a forest.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The forest trust account is disabled by administrative action.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConflictDisabled">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The forest trust account is disabled due to a conflict with an existing forest trust account.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -59,7 +59,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The forest trust account is enabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="NewlyCreated">
@@ -75,7 +75,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The forest trust account was disabled on creation.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,6 @@
 ---
 uid: System.IO.Packaging.VerifyResult
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

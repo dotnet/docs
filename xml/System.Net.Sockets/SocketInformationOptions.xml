@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes states for a <see cref="T:System.Net.Sockets.Socket" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +42,7 @@
         <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Net.Sockets.Socket" /> is connected.</summary>
       </Docs>
     </Member>
     <Member MemberName="Listening">
@@ -63,7 +63,7 @@
         <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Net.Sockets.Socket" /> is listening for new connections.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonBlocking">
@@ -84,7 +84,7 @@
         <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Net.Sockets.Socket" /> is nonblocking.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseOnlyOverlappedIO">
@@ -105,7 +105,7 @@
         <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Net.Sockets.Socket" /> uses overlapped I/O.</summary>
       </Docs>
     </Member>
   </Members>

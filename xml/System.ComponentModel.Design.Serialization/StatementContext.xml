@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a location into which statements can be serialized. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Usually, statements are serialized into the statement collection that is on the context stack. You can modify this behavior by creating a statement context and calling the <xref:System.ComponentModel.Design.Serialization.ObjectStatementCollection.Populate%2A> method with a collection of objects whose statements you want stored in the statement table. As each object is serialized in the <xref:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeToExpression%2A> method, it has its contents placed in the statement table and saved in the context. If you push this object on the stack, it is your responsibility to integrate the statements added to it into your own collection of statements.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.StatementContext" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <ReturnType>System.ComponentModel.Design.Serialization.ObjectStatementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of statements offered by the statement context.</summary>
+        <value>An <see cref="T:System.ComponentModel.Design.Serialization.ObjectStatementCollection" /> containing statements offered by the statement context.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

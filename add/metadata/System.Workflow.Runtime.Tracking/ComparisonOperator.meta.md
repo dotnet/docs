@@ -1,4 +1,6 @@
 ---
 uid: System.Workflow.Runtime.Tracking.ComparisonOperator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

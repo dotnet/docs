@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a function exported by a <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.ExportedDelegate" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,9 +47,9 @@
         <Parameter Name="method" Type="System.Reflection.MethodInfo" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="method">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">The part exporting the method.</param>
+        <param name="method">The method to be exported.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.ExportedDelegate" /> class for the specified part and method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +70,9 @@
         <Parameter Name="delegateType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="delegateType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="delegateType">The type of the delegate to return.</param>
+        <summary>Gets a delegate of the specified type.</summary>
+        <returns>A delegate of the specified type, or <see langword="null" /> if no such delegate can be created.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

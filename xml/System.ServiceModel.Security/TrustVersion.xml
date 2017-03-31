@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the set of supported WS-Trust versions. This is an abstract class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,8 +46,8 @@
         <ReturnType>System.ServiceModel.Security.TrustVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default version.</summary>
+        <value>The default version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
         <ReturnType>System.Xml.XmlDictionaryString</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the namespace for this trust version.</summary>
+        <value>The namespace for this trust version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
         <ReturnType>System.Xml.XmlDictionaryString</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the prefix.</summary>
+        <value>The prefix.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +103,8 @@
         <ReturnType>System.ServiceModel.Security.TrustVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version 1.3 of WS-Trust.</summary>
+        <value>The version 1.3 of WS-Trust.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +122,8 @@
         <ReturnType>System.ServiceModel.Security.TrustVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the February 2005 version of WS-Trust.</summary>
+        <value>The February 2005 version of WS-Trust.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -20,8 +20,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables using a dynamic dictionary to compress common strings that appear in a message and maintain state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Session objects (this class together with <xref:System.Xml.XmlBinaryReaderSession>) enable dynamic string atomization that can span an entire conversation. These session objects manage dynamic dictionaries. For more information about dynamic dictionaries see <xref:System.Xml.XmlDictionary>.  
+  
+ Due to asynchronous processing, it is possible for messages that arrive synchronously to be processed in a different order than the order in which they were sent. String atomization that spans messages must ensure the messages are processed in the original order or the atomized strings must be conveyed using a different mechanism.  
+  
+ To use them, you create a session object and pass it to the constructor or initializer for a binary XML reader or writer.  
+  
+ To reuse a dynamic dictionary pass the same session object to all subsequent readers and writers.  
+  
+ The session object can be reset to allow pooling.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of this class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +86,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears out the internal collections.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,11 +116,22 @@
         <Parameter Name="key" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Xml.XmlDictionaryString" /> to add.</param>
+        <param name="key">The key of the <see cref="T:System.Xml.XmlDictionaryString" /> that was successfully added.</param>
+        <summary>Tries to add an <see cref="T:System.Xml.XmlDictionaryString" /> to the internal collection.</summary>
+        <returns>
+          <see langword="true" /> if the string could be added; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use this class you must override this method to send the collection of keys along with the message. Without overriding, a new key is added to the collection, which is saved, but not sent with the message.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">An entry with key = <paramref name="key" /> already exists.</exception>
       </Docs>
     </Member>
   </Members>

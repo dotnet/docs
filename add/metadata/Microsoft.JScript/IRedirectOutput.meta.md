@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.IRedirectOutput
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IRedirectOutput.SetOutputStream(Microsoft.JScript.IMessageReceiver)
-internalonly: False
+ms.author: "mikejo"
 ---

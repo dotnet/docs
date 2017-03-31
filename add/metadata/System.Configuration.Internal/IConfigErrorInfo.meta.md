@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.Internal.IConfigErrorInfo
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IConfigErrorInfo.LineNumber
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IConfigErrorInfo.Filename
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

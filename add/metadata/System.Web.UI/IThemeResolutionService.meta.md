@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.IThemeResolutionService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IThemeResolutionService.GetAllThemeProviders
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IThemeResolutionService.GetThemeProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IThemeResolutionService.GetStylesheetThemeProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

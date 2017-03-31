@@ -19,8 +19,19 @@
     <ReturnType>System.Object</ReturnType>
   </ReturnValue>
   <Docs>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
-    <remarks>To be added.</remarks>
+    <summary>Delegate used by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class for deserialization of types from SOAP-encoded, non-root XML data.</summary>
+    <returns>The object returned by the callback.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization derived from the <xref:System.Xml.Serialization.XmlSerializationReader> class. During this process, the .NET Framework generates read methods that implement the <xref:System.Xml.Serialization.XmlSerializationReadCallback> delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized through SOAP-encoded XML and are not root elements. Then, as necessary, a read method is called during deserialization.  
+  
+ Do not directly create instances of the <xref:System.Xml.Serialization.XmlSerializationReadCallback> class.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

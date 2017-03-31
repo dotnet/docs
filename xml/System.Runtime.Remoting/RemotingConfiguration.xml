@@ -17,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides various static methods for configuring the remoting infrastructure.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,9 +35,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the ID of the currently executing application.</summary>
+        <value>A <see cref="T:System.String" /> that contains the ID of the currently executing application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application ID is prepended to the URI of the objects created by the currently executing application.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -54,9 +63,33 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of a remoting application.</summary>
+        <value>The name of a remoting application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application name can be set only once, either through the current property or through a configuration file. If an application is running inside a hosted environment, such as Internet Information Services (IIS), this value might have already been set (usually to the virtual directory). The current property will return `null` if the application name has not been set.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Runtime.Remoting.RemotingConfiguration.ApplicationName%2A> property to indicate the name of the remoting application. For the full example code, see examples for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> and <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownServiceType%2A> methods.  
+  
+ [!code-cpp[RemotingConfiguration.ServerActivation1#2](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CPP/server.cpp#2)]
+ [!code-csharp[RemotingConfiguration.ServerActivation1#2](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CS/server.cs#2)]
+ [!code-vb[RemotingConfiguration.ServerActivation1#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/VB/server.vb#2)]  
+  
+ The following code example demonstrates how to access an object remoted from a named application.  
+  
+ [!code-cpp[RemotingConfiguration.ServerActivation1#6](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CPP/client.cpp#6)]
+ [!code-csharp[RemotingConfiguration.ServerActivation1#6](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CS/client.cs#6)]
+ [!code-vb[RemotingConfiguration.ServerActivation1#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/VB/client.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels. This exception is thrown only when setting the property value.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Configure">
@@ -81,9 +114,34 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">The name of the remoting configuration file. Can be <see langword="null" />.</param>
+        <summary>Reads the configuration file and configures the remoting infrastructure. <see cref="M:System.Runtime.Remoting.RemotingConfiguration.Configure(System.String)" /> is obsolete. Please use <see cref="M:System.Runtime.Remoting.RemotingConfiguration.Configure(System.String,System.Boolean)" /> instead.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%28System.String%29> is obsolete. Please use <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%28System.String%2CSystem.Boolean%29> instead.  
+  
+ Passing `null` as the `filename` parameter will cause default remoting initialization without requiring the existence of a configuration file.  
+  
+ For configuration file syntax, see [Remoting Settings Schema](http://msdn.microsoft.com/en-us/dc2d1e62-9af7-4ca1-99fd-98b93bb4db9e).  
+  
+> [!NOTE]
+>  Marshal-by-reference objects (MBRs) do not reside in memory forever. Instead, unless the type overrides <xref:System.MarshalByRefObject.InitializeLifetimeService%2A?displayProperty=fullName> to control its own lifetime policies, each MBR has a finite lifetime before the .NET Framework remoting system begins the process of deleting it and reclaiming the memory. For more information, see [Lifetime Leases](http://msdn.microsoft.com/en-us/c72d561c-1266-4c8b-b258-2c168c08da9a).  
+  
+   
+  
+## Examples  
+ [!code-cpp[RemotingConfiguration_Configure_Client#1](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration_Configure_Client/CPP/remotingconfiguration_configure_server.cpp#1)]
+ [!code-csharp[RemotingConfiguration_Configure_Client#1](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration_Configure_Client/CS/remotingconfiguration_configure_server.cs#1)]
+ [!code-vb[RemotingConfiguration_Configure_Client#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration_Configure_Client/VB/remotingconfiguration_configure_server.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Configure">
@@ -104,10 +162,24 @@
         <Parameter Name="ensureSecurity" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="ensureSecurity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filename">The name of the remoting configuration file. Can be <see langword="null" />.</param>
+        <param name="ensureSecurity">If set to <see langword="true" /> security is required. If set to <see langword="false" />, security is not required but still may be used.</param>
+        <summary>Reads the configuration file and configures the remoting infrastructure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Passing `null` as the `filename` parameter will cause default remoting initialization without requiring the existence of a configuration file. For more information about remoting and security see [Security in Remoting.](http://msdn.microsoft.com/en-us/9574262c-d4b1-41c5-8600-24ff147c0add)  
+  
+ For configuration file syntax, see [Remoting Settings Schema](http://msdn.microsoft.com/en-us/dc2d1e62-9af7-4ca1-99fd-98b93bb4db9e).  
+  
+> [!NOTE]
+>  Marshal-by-reference objects (MBRs) do not reside in memory forever. Instead, unless the type overrides <xref:System.MarshalByRefObject.InitializeLifetimeService%2A?displayProperty=fullName> to control its own lifetime policies, each MBR has a finite lifetime before the .NET Framework remoting system begins the process of deleting it and reclaiming the memory. For more information, see [Lifetime Leases](http://msdn.microsoft.com/en-us/c72d561c-1266-4c8b-b258-2c168c08da9a).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="CustomErrorsEnabled">
@@ -127,10 +199,42 @@
         <Parameter Name="isLocalRequest" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isLocalRequest">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="isLocalRequest">
+          <see langword="true" /> to specify local callers; <see langword="false" /> to specify remote callers.</param>
+        <summary>Indicates whether the server channels in this application domain return filtered or complete exception information to local or remote callers.</summary>
+        <returns>
+          <see langword="true" /> if only filtered exception information is returned to local or remote callers, as specified by the <paramref name="isLocalRequest" /> parameter; <see langword="false" /> if complete exception information is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Complete exception information includes the exact server exception and the server stack trace. Filtered information includes a standard remoting exception but no server stack trace.  
+  
+ The `CustomErrorsEnabled` method reflects configuration settings that were specified in the `mode` attribute of the `<customErrors>` element of the application configuration file. For more information about configuration options, see [&#91;\<topic://cpconconfiguration>&#93;](http://msdn.microsoft.com/en-us/92c0c097-d984-4315-835b-7490ecdf1097).  
+  
+ The following table shows the three server channel property values that specify which callers receive exception information and what type of information they receive.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`off`|All callers receive complete exception information.|  
+|`on`|All callers receive filtered exception information.|  
+|`remoteOnly`|Local callers receive complete exception information; remote callers receive filtered exception information.|  
+  
+ The following table shows the interaction of the `isLocalRequest` parameter and the server channel property.  
+  
+|Value|isLocalRequest|Return value|Description|  
+|-----------|--------------------|------------------|-----------------|  
+|`on`|`true`|`true`|Local callers receive filtered exception information.|  
+|`on`|`false`|`true`|Remote callers receive filtered exception information.|  
+|`off`|`true`|`false`|Local callers receive complete exception information.|  
+|`off`|`false`|`false`|Remote callers receive complete exception information.|  
+|`remoteOnly`|`true`|`false`|Local callers receive complete exception information.|  
+|`remoteOnly`|`false`|`true`|Remote callers receive filtered exception information.|  
+  
+ For information about using application configuration files to control the return of exception information to callers, see the `<customErrors>` element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomErrorsMode">
@@ -147,9 +251,10 @@
         <ReturnType>System.Runtime.Remoting.CustomErrorsModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets value that indicates how custom errors are handled.</summary>
+        <value>A member of the <see cref="T:System.Runtime.Remoting.CustomErrorsModes" /> enumeration that indicates how custom errors are handled.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetRegisteredActivatedClientTypes">
@@ -167,9 +272,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves an array of object types registered on the client as types that will be activated remotely.</summary>
+        <returns>An array of object types registered on the client as types that will be activated remotely.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/en-us/4a791494-c18a-4711-a5c1-4ab0e49a8f1a).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetRegisteredActivatedServiceTypes">
@@ -187,9 +301,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves an array of object types registered on the service end that can be activated on request from a client.</summary>
+        <returns>An array of object types registered on the service end that can be activated on request from a client.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/en-us/4a791494-c18a-4711-a5c1-4ab0e49a8f1a).  
+  
+   
+  
+## Examples  
+ [!code-cpp[RemotingConfiguration_GetRegisteredActivatedServer_Client#2](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration_GetRegisteredActivatedServer_Client/CPP/RemotingConfiguration_GetRegisteredActivatedService_server.cpp#2)]
+ [!code-csharp[RemotingConfiguration_GetRegisteredActivatedServer_Client#2](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration_GetRegisteredActivatedServer_Client/CS/remotingconfiguration_getregisteredactivatedservice_server.cs#2)]
+ [!code-vb[RemotingConfiguration_GetRegisteredActivatedServer_Client#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration_GetRegisteredActivatedServer_Client/VB/remotingconfiguration_getregisteredactivatedservice_server.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetRegisteredWellKnownClientTypes">
@@ -207,9 +337,27 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves an array of object types registered on the client end as well-known types.</summary>
+        <returns>An array of object types registered on the client end as well-known types.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Well-known object types can be either single call or singleton. If an object type is single call, then a new instance of it is created each time a call from the client comes in. All calls to a singleton object are handled by one instance of that object.  
+  
+ For a more detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/en-us/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
+  
+   
+  
+## Examples  
+ [!code-cpp[RemotingConfiguration_GetRegisteredWellKnownClient_Client#1](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration_GetRegisteredWellKnownClient_Client/CPP/remotingconfiguration_getregisteredwellknownclient_client.cpp#1)]
+ [!code-csharp[RemotingConfiguration_GetRegisteredWellKnownClient_Client#1](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration_GetRegisteredWellKnownClient_Client/CS/remotingconfiguration_getregisteredwellknownclient_client.cs#1)]
+ [!code-vb[RemotingConfiguration_GetRegisteredWellKnownClient_Client#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration_GetRegisteredWellKnownClient_Client/VB/remotingconfiguration_getregisteredwellknownclient_client.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetRegisteredWellKnownServiceTypes">
@@ -227,9 +375,27 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves an array of object types registered on the service end as well-known types.</summary>
+        <returns>An array of object types registered on the service end as well-known types.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Well-known object types can be either single call or singleton. If an object type is single call, then a new instance of it is created each time a call from the client comes in. All calls to a singleton object are handled by one instance of that object.  
+  
+ For a more detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/en-us/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
+  
+   
+  
+## Examples  
+ [!code-cpp[RemotingConfiguration_Configure_Client#2](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration_Configure_Client/CPP/remotingconfiguration_configure_server.cpp#2)]
+ [!code-csharp[RemotingConfiguration_Configure_Client#2](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration_Configure_Client/CS/remotingconfiguration_configure_server.cs#2)]
+ [!code-vb[RemotingConfiguration_Configure_Client#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration_Configure_Client/VB/remotingconfiguration_configure_server.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="IsActivationAllowed">
@@ -249,10 +415,27 @@
         <Parameter Name="svrType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="svrType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="svrType">The object <see cref="T:System.Type" /> to check.</param>
+        <summary>Returns a Boolean value that indicates whether the specified <see cref="T:System.Type" /> is allowed to be client activated.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Type" /> is allowed to be client activated; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current method is used at the server end to determine whether an activation of the object <xref:System.Type> is explicitly allowed by the server.  
+  
+   
+  
+## Examples  
+ [!code-cpp[RemotingConfiguration_GetRegisteredActivatedServer_Client#1](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration_GetRegisteredActivatedServer_Client/CPP/RemotingConfiguration_GetRegisteredActivatedService_server.cpp#1)]
+ [!code-csharp[RemotingConfiguration_GetRegisteredActivatedServer_Client#1](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration_GetRegisteredActivatedServer_Client/CS/remotingconfiguration_getregisteredactivatedservice_server.cs#1)]
+ [!code-vb[RemotingConfiguration_GetRegisteredActivatedServer_Client#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration_GetRegisteredActivatedServer_Client/VB/remotingconfiguration_getregisteredactivatedservice_server.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="IsRemotelyActivatedClientType">
@@ -272,10 +455,21 @@
         <Parameter Name="svrType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="svrType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="svrType">The object type to check.</param>
+        <summary>Checks whether the specified object <see cref="T:System.Type" /> is registered as a remotely activated client type.</summary>
+        <returns>The <see cref="T:System.Runtime.Remoting.ActivatedClientTypeEntry" /> that corresponds to the specified object type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[RemotingConfiguration_IsRemotelyActivatedClientType1_Client#1](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration_IsRemotelyActivatedClientType1_Client/CPP/remotingconfiguration_isremotelyactivatedclienttype1_client.cpp#1)]
+ [!code-csharp[RemotingConfiguration_IsRemotelyActivatedClientType1_Client#1](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration_IsRemotelyActivatedClientType1_Client/CS/remotingconfiguration_isremotelyactivatedclienttype1_client.cs#1)]
+ [!code-vb[RemotingConfiguration_IsRemotelyActivatedClientType1_Client#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration_IsRemotelyActivatedClientType1_Client/VB/remotingconfiguration_isremotelyactivatedclienttype1_client.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="IsRemotelyActivatedClientType">
@@ -296,11 +490,22 @@
         <Parameter Name="assemblyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="typeName">To be added.</param>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeName">The type name of the object to check.</param>
+        <param name="assemblyName">The assembly name of the object to check.</param>
+        <summary>Checks whether the object specified by its type name and assembly name is registered as a remotely activated client type.</summary>
+        <returns>The <see cref="T:System.Runtime.Remoting.ActivatedClientTypeEntry" /> that corresponds to the specified object type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[RemotingConfiguration_IsRemotelyActivatedClientType2_Client#1](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration_IsRemotelyActivatedClientType2_Client/CPP/remotingconfiguration_isremotelyactivatedclienttype2_client.cpp#1)]
+ [!code-csharp[RemotingConfiguration_IsRemotelyActivatedClientType2_Client#1](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration_IsRemotelyActivatedClientType2_Client/CS/remotingconfiguration_isremotelyactivatedclienttype2_client.cs#1)]
+ [!code-vb[RemotingConfiguration_IsRemotelyActivatedClientType2_Client#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration_IsRemotelyActivatedClientType2_Client/VB/remotingconfiguration_isremotelyactivatedclienttype2_client.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="IsWellKnownClientType">
@@ -320,10 +525,21 @@
         <Parameter Name="svrType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="svrType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="svrType">The object <see cref="T:System.Type" /> to check.</param>
+        <summary>Checks whether the specified object <see cref="T:System.Type" /> is registered as a well-known client type.</summary>
+        <returns>The <see cref="T:System.Runtime.Remoting.WellKnownClientTypeEntry" /> that corresponds to the specified object type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[RemotingConfiguration_IsWellKnownClientType1_Client#1](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration_IsWellKnownClientType1_Client/CPP/remotingconfiguration_iswellknownclienttype1_client.cpp#1)]
+ [!code-csharp[RemotingConfiguration_IsWellKnownClientType1_Client#1](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration_IsWellKnownClientType1_Client/CS/remotingconfiguration_iswellknownclienttype1_client.cs#1)]
+ [!code-vb[RemotingConfiguration_IsWellKnownClientType1_Client#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration_IsWellKnownClientType1_Client/VB/remotingconfiguration_iswellknownclienttype1_client.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="IsWellKnownClientType">
@@ -344,11 +560,22 @@
         <Parameter Name="assemblyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="typeName">To be added.</param>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeName">The type name of the object to check.</param>
+        <param name="assemblyName">The assembly name of the object to check.</param>
+        <summary>Checks whether the object specified by its type name and assembly name is registered as a well-known client type.</summary>
+        <returns>The <see cref="T:System.Runtime.Remoting.WellKnownClientTypeEntry" /> that corresponds to the specified object type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[RemotingConfiguration_IsWellKnownClientType2_Client#1](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration_IsWellKnownClientType2_Client/CPP/remotingconfiguration_iswellknownclienttype2_client.cpp#1)]
+ [!code-csharp[RemotingConfiguration_IsWellKnownClientType2_Client#1](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration_IsWellKnownClientType2_Client/CS/remotingconfiguration_iswellknownclienttype2_client.cs#1)]
+ [!code-vb[RemotingConfiguration_IsWellKnownClientType2_Client#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration_IsWellKnownClientType2_Client/VB/remotingconfiguration_iswellknownclienttype2_client.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ProcessId">
@@ -365,9 +592,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ID of the currently executing process.</summary>
+        <value>A <see cref="T:System.String" /> that contains the ID of the currently executing process.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="RegisterActivatedClientType">
@@ -387,9 +616,22 @@
         <Parameter Name="entry" Type="System.Runtime.Remoting.ActivatedClientTypeEntry" />
       </Parameters>
       <Docs>
-        <param name="entry">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entry">Configuration settings for the client-activated type.</param>
+        <summary>Registers an object <see cref="T:System.Type" /> recorded in the provided <see cref="T:System.Runtime.Remoting.ActivatedClientTypeEntry" /> on the client end as a type that can be activated on the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create an instance of a client-activated object on the server, you must know its <xref:System.Type> and it must be registered on the server end by using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method. To obtain a proxy for a new instance of the client-activated object, the client must first register a channel with <xref:System.Runtime.Remoting.Channels.ChannelServices> and then activate the object by calling `new`.  
+  
+ To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
+  
+ For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/en-us/4a791494-c18a-4711-a5c1-4ab0e49a8f1a).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="RegisterActivatedClientType">
@@ -410,10 +652,33 @@
         <Parameter Name="appUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="appUrl">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">The object <see cref="T:System.Type" />.</param>
+        <param name="appUrl">URL of the application where this type is activated.</param>
+        <summary>Registers an object <see cref="T:System.Type" /> on the client end as a type that can be activated on the server, using the given parameters to initialize a new instance of the <see cref="T:System.Runtime.Remoting.ActivatedClientTypeEntry" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create an instance of a client-activated object on the server, you must know its <xref:System.Type> and it must be registered on the server end by using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method. To obtain a proxy for a new instance of the client-activated object, the client must first register a channel with <xref:System.Runtime.Remoting.Channels.ChannelServices> and then activate the object by calling `new`.  
+  
+ To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
+  
+ For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/en-us/4a791494-c18a-4711-a5c1-4ab0e49a8f1a)  
+  
+   
+  
+## Examples  
+ The following code example demonstrates registration of an object type on the client end as a type that can be activated on the server. For the server code that corresponds to the presented client code, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method.  
+  
+ [!code-cpp[RemotingConfiguration.ClientActivation#1](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration.ClientActivation/CPP/client.cpp#1)]
+ [!code-csharp[RemotingConfiguration.ClientActivation#1](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration.ClientActivation/CS/client.cs#1)]
+ [!code-vb[RemotingConfiguration.ClientActivation#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration.ClientActivation/VB/client.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="typeName" /> or <paramref name="URI" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="RegisterActivatedServiceType">
@@ -433,9 +698,22 @@
         <Parameter Name="entry" Type="System.Runtime.Remoting.ActivatedServiceTypeEntry" />
       </Parameters>
       <Docs>
-        <param name="entry">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entry">Configuration settings for the client-activated type.</param>
+        <summary>Registers an object type recorded in the provided <see cref="T:System.Runtime.Remoting.ActivatedServiceTypeEntry" /> on the service end as one that can be activated on request from a client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create an instance of a client-activated object on the server, you must know its <xref:System.Type> and it must be registered on the server end by using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method. To obtain a proxy for a new instance of the client-activated object, the client must first register a channel with <xref:System.Runtime.Remoting.Channels.ChannelServices> and then activate the object by calling `new` or <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.  
+  
+ To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application, where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
+  
+ For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/en-us/4a791494-c18a-4711-a5c1-4ab0e49a8f1a).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="RegisterActivatedServiceType">
@@ -455,9 +733,37 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">The <see cref="T:System.Type" /> of object to register.</param>
+        <summary>Registers a specified object type on the service end as a type that can be activated on request from a client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create an instance of a client-activated object on the server, you must know its <xref:System.Type> and it must be registered on the server end by using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> method. To obtain a proxy for a new instance of the client-activated object, the client must first register a channel with <xref:System.Runtime.Remoting.Channels.ChannelServices> and then activate the object by calling `new` or <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.  
+  
+ To activate a client-activated object type with the `new` keyword, you must first register the object type on the client end using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method gives the remoting infrastructure the location of the remote application, where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client end is necessary. To supply the <xref:System.Activator.CreateInstance%2A> method with the URL of the server where you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
+  
+ For a detailed description of client-activated objects, see [&#91;\<topic://cpconClientActivation>&#93;](http://msdn.microsoft.com/en-us/4a791494-c18a-4711-a5c1-4ab0e49a8f1a).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates registration of an object type on the server as a type that can be activated by the client. For the client code that corresponds to the presented server code, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method.  
+  
+ [!code-cpp[RemotingConfiguration.ClientActivation#2](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration.ClientActivation/CPP/server.cpp#2)]
+ [!code-csharp[RemotingConfiguration.ClientActivation#2](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration.ClientActivation/CS/server.cs#2)]
+ [!code-vb[RemotingConfiguration.ClientActivation#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration.ClientActivation/VB/server.vb#2)]  
+  
+ The following code example shows the service object registered in the sample code above.  
+  
+ [!code-cpp[RemotingConfiguration.ClientActivation#3](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration.ClientActivation/CPP/service.cpp#3)]
+ [!code-csharp[RemotingConfiguration.ClientActivation#3](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration.ClientActivation/CS/service.cs#3)]
+ [!code-vb[RemotingConfiguration.ClientActivation#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration.ClientActivation/VB/service.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="RegisterWellKnownClientType">
@@ -477,9 +783,20 @@
         <Parameter Name="entry" Type="System.Runtime.Remoting.WellKnownClientTypeEntry" />
       </Parameters>
       <Docs>
-        <param name="entry">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entry">Configuration settings for the well-known type.</param>
+        <summary>Registers an object <see cref="T:System.Type" /> recorded in the provided <see cref="T:System.Runtime.Remoting.WellKnownClientTypeEntry" /> on the client end as a well-known type that can be activated on the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or <xref:System.Activator.GetObject%2A?displayProperty=fullName>. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
+  
+ For a detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/en-us/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="RegisterWellKnownClientType">
@@ -500,10 +817,36 @@
         <Parameter Name="objectUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="objectUrl">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">The object <see cref="T:System.Type" />.</param>
+        <param name="objectUrl">URL of a well-known client object.</param>
+        <summary>Registers an object <see cref="T:System.Type" /> on the client end as a well-known type that can be activated on the server, using the given parameters to initialize a new instance of the <see cref="T:System.Runtime.Remoting.WellKnownClientTypeEntry" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or <xref:System.Activator.GetObject%2A?displayProperty=fullName>. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
+  
+ For a detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/en-us/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates registration of an object type on the client end as a well-known type. For the server code that corresponds to the presented client code, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownServiceType%2A> method.  
+  
+ [!code-cpp[RemotingConfiguration.ServerActivation1#5](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CPP/client.cpp#5)]
+ [!code-csharp[RemotingConfiguration.ServerActivation1#5](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CS/client.cs#5)]
+ [!code-vb[RemotingConfiguration.ServerActivation1#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/VB/client.vb#5)]  
+[!code-cpp[RemotingConfiguration.ServerActivation1#6](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CPP/client.cpp#6)]
+[!code-csharp[RemotingConfiguration.ServerActivation1#6](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CS/client.cs#6)]
+[!code-vb[RemotingConfiguration.ServerActivation1#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/VB/client.vb#6)]  
+[!code-cpp[RemotingConfiguration.ServerActivation1#7](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CPP/client.cpp#7)]
+[!code-csharp[RemotingConfiguration.ServerActivation1#7](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CS/client.cs#7)]
+[!code-vb[RemotingConfiguration.ServerActivation1#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/VB/client.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="RegisterWellKnownServiceType">
@@ -523,9 +866,31 @@
         <Parameter Name="entry" Type="System.Runtime.Remoting.WellKnownServiceTypeEntry" />
       </Parameters>
       <Docs>
-        <param name="entry">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entry">Configuration settings for the well-known type.</param>
+        <summary>Registers an object <see cref="T:System.Type" /> recorded in the provided <see cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" /> on the service end as a well-known type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
+  
+ When the call arrives at the server, the .NET Framework extracts the URI from the message, examines the remoting tables to locate the reference for the object that matches the URI, and then instantiates the object if necessary, forwarding the method call to the object. If the object is registered as <xref:System.Runtime.Remoting.WellKnownObjectMode>, it is destroyed after the method call is completed. A new instance of the object is created for each method called. The only difference between <xref:System.Activator.GetObject%2A?displayProperty=fullName> and `new` is that the former allows you to specify a URL as a parameter, and the latter obtains the URL from the configuration.  
+  
+ The remote object itself is not instantiated by the registration process. This only happens when a client attempts to call a method on the object or activates the object from the client side.  
+  
+ For a detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/en-us/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
+  
+   
+  
+## Examples  
+ [!code-cpp[CreateObjRef2#2](~/samples/snippets/cpp/VS_Snippets_Remoting/CreateObjRef2/CPP/example.cpp#2)]
+ [!code-csharp[CreateObjRef2#2](~/samples/snippets/csharp/VS_Snippets_Remoting/CreateObjRef2/CS/example.cs#2)]
+ [!code-vb[CreateObjRef2#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CreateObjRef2/VB/example.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
     <Member MemberName="RegisterWellKnownServiceType">
@@ -547,11 +912,47 @@
         <Parameter Name="mode" Type="System.Runtime.Remoting.WellKnownObjectMode" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="objectUri">To be added.</param>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">The object <see cref="T:System.Type" />.</param>
+        <param name="objectUri">The object URI.</param>
+        <param name="mode">The activation mode of the well-known object type being registered. (See <see cref="T:System.Runtime.Remoting.WellKnownObjectMode" />.)</param>
+        <summary>Registers an object <see cref="T:System.Type" /> on the service end as a well-known type, using the given parameters to initialize a new instance of <see cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any client that knows the URI of a registered well-known object can obtain a proxy for the object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices>, and activating the object by calling `new` or the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method. To activate a well-known object with `new`, you must first register the well-known object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. Calling the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method gives the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method to activate the well-known object, you must supply it with the object's URL as an argument, so no prior registration on the client end is necessary.  
+  
+ When the call arrives at the server, the .NET Framework extracts the URI from the message, examines the remoting tables to locate the reference for the object that matches the URI, and then instantiates the object if necessary, forwarding the method call to the object. If the object is registered as <xref:System.Runtime.Remoting.WellKnownObjectMode>, it is destroyed after the method call is completed. A new instance of the object is created for each method called. The only difference between <xref:System.Activator.GetObject%2A?displayProperty=fullName> and `new` is that the former allows you to specify a URL as a parameter, and the latter obtains the URL from the configuration.  
+  
+ The remote object itself is not instantiated by the registration process. This only happens when a client attempts to call a method on the object or activates the object from the client side.  
+  
+ For a detailed description of well-known objects, see [&#91;\<topic://cpconServerActivation>&#93;](http://msdn.microsoft.com/en-us/77ded6e2-4ca8-448b-acf2-562d27fd4396).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates registration of an object type on the server as a well-known object type. For the client code that corresponds to the presented server code, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method.  
+  
+ [!code-cpp[RemotingConfiguration.ServerActivation1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CPP/server.cpp#1)]
+ [!code-csharp[RemotingConfiguration.ServerActivation1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CS/server.cs#1)]
+ [!code-vb[RemotingConfiguration.ServerActivation1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/VB/server.vb#1)]  
+[!code-cpp[RemotingConfiguration.ServerActivation1#2](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CPP/server.cpp#2)]
+[!code-csharp[RemotingConfiguration.ServerActivation1#2](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CS/server.cs#2)]
+[!code-vb[RemotingConfiguration.ServerActivation1#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/VB/server.vb#2)]  
+[!code-cpp[RemotingConfiguration.ServerActivation1#3](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CPP/server.cpp#3)]
+[!code-csharp[RemotingConfiguration.ServerActivation1#3](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CS/server.cs#3)]
+[!code-vb[RemotingConfiguration.ServerActivation1#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/VB/server.vb#3)]  
+  
+ The following code example shows the service object registered in the sample code above.  
+  
+ [!code-cpp[RemotingConfiguration.ServerActivation1#4](~/samples/snippets/cpp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CPP/service.cpp#4)]
+ [!code-csharp[RemotingConfiguration.ServerActivation1#4](~/samples/snippets/csharp/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/CS/service.cs#4)]
+ [!code-vb[RemotingConfiguration.ServerActivation1#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/RemotingConfiguration.ServerActivation1/VB/service.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">At least one of the callers higher in the callstack does not have permission to configure remoting types and channels.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for configuration of the remoting infrastructure. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" /></permission>
       </Docs>
     </Member>
   </Members>

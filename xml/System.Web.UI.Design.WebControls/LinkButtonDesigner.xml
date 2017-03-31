@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.LinkButton" /> Web server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.LinkButton> control implements the functionality of a <xref:System.Web.UI.WebControls.HyperLink> control with the visual appearance of a button.  
+  
+ In a visual designer, when you switch from Source to Design view, the markup source code that describes a <xref:System.Web.UI.WebControls.LinkButton> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page. The <xref:System.Web.UI.Design.WebControls.LinkButtonDesigner> class provides design-time support for the <xref:System.Web.UI.WebControls.LinkButton> control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +40,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.LinkButtonDesigner" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.LinkButtonDesigner> class when it creates the associated <xref:System.Web.UI.WebControls.LinkButton> control or a copy of the <xref:System.Web.UI.WebControls.LinkButton> control on the design surface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

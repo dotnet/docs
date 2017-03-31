@@ -1,14 +1,21 @@
 ---
 uid: System.Web.UI.Design.DataSourceBooleanViewSchemaConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataSourceBooleanViewSchemaConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataSourceBooleanViewSchemaConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.DataSourceBooleanViewSchemaConverter.GetStandardValues
 ---

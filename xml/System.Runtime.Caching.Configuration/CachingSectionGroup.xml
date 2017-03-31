@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a configuration section for.NET Framework caching. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.Configuration.CachingSectionGroup> class defines a caching section (`system.runtime.caching`) for configuration files. This section contains elements that are used to configure various types of caches. In ASP.NET, the only element that is available in the caching section is the  element. This element configures caches that are based on the <xref:System.Runtime.Caching.MemoryCache> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Caching.Configuration.CachingSectionGroup" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +55,16 @@
         <ReturnType>System.Runtime.Caching.Configuration.MemoryCacheSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of <see cref="T:System.Runtime.Caching.Configuration.MemoryCacheElement" /> objects.</summary>
+        <value>The collection of cache-section objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.Configuration.CachingSectionGroup.MemoryCaches%2A> property returns the collection of <xref:System.Runtime.Caching.Configuration.MemoryCacheSection> objects from the parent caching section.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

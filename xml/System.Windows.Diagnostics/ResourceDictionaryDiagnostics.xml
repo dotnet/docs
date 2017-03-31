@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables enumeration of generic and themed <see cref="T:System.Windows.ResourceDictionary" /> instances, and provides      a notification infrastructure for listening to the loading and unloading of <see cref="T:System.Windows.ResourceDictionary" /> instances.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type supports the .NET Framework infrastructure and is not intended to be used directly      from application code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GenericResourceDictionaries">
@@ -28,8 +35,9 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Diagnostics.ResourceDictionaryInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets all instances of generic <see cref="T:System.Windows.ResourceDictionary" /> objects loaded by the application when a managed debugger is attached.</summary>
+        <value>
+          <see cref="P:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GenericResourceDictionaries" /> property</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,7 +54,7 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a managed debugger is attached and a generic <see cref="T:System.Windows.ResourceDictionary" /> object is loaded         by the application.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +71,10 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Diagnostics.ResourceDictionaryInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets all instances of themed <see cref="T:System.Windows.ResourceDictionary" /> objects loaded by the application when a managed debugger is attached.</summary>
+        <value>
+          <see cref="P:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaries" />
+        </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +91,7 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a managed debugger is attached, and a themed <see cref="T:System.Windows.ResourceDictionary" /> object is loaded         by the application.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +108,7 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryUnloadedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a managed debugger is attached and a themed <see cref="T:System.Windows.ResourceDictionary" /> object is unloaded         from the application.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

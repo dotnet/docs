@@ -1,1 +1,0 @@
-FileStream s2 = new FileStream(name, FileMode.Open, FileAccess.Read, FileShare.Read);

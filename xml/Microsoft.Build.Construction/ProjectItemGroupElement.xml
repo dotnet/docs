@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an [ItemGroup Element (MSBuild)](../Topic/ItemGroup%20Element%20\(MSBuild\).md) in an MSBuild project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,11 +37,18 @@
         <Parameter Name="include" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="itemType">To be added.</param>
-        <param name="include">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="itemType">Item element name of the item to be added.</param>
+        <param name="include">Include attribute of the item to be added.</param>
+        <summary>Adds a new item to the item group. Items are ordered first by item element name, and then by the Include attribute.</summary>
+        <returns>Returns the new item element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This convenience method picks a location in the MSBuild DOM based on a heuristic.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddItem">
@@ -62,12 +69,19 @@
         <Parameter Name="metadata" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.String&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="itemType">To be added.</param>
-        <param name="include">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="itemType">Item element name of the item to be added.</param>
+        <param name="include">Include attribute of the item to be added.</param>
+        <param name="metadata">Metadata to be added.</param>
+        <summary>Adds a new item with metadata to the item group. Items are ordered first by item element name, and then by the Include attribute.</summary>
+        <returns>Returns the new item element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Metadata` parameter may be null, which indicates no metadata is present.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -83,9 +97,16 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectItemElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets all child items.</summary>
+        <value>Returns all child items.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection can be modified during enumeration.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

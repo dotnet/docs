@@ -1,29 +1,35 @@
 ---
 uid: System.Web.UI.Design.DesignerHierarchicalDataSourceView
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerHierarchicalDataSourceView.Path
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerHierarchicalDataSourceView.GetDesignTimeData(System.Boolean@)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerHierarchicalDataSourceView.Schema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerHierarchicalDataSourceView.#ctor(System.Web.UI.Design.IHierarchicalDataSourceDesigner,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DesignerHierarchicalDataSourceView.DataSourceDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

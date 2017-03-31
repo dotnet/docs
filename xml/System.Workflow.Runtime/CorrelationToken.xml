@@ -19,8 +19,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Manages the subscriptions of the <see cref="T:System.Workflow.Runtime.CorrelationProperty" /> to the owner activities. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +60,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> class using the name of the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,10 +82,12 @@
         <Parameter Name="propertyValues" Type="System.Collections.Generic.ICollection&lt;System.Workflow.Runtime.CorrelationProperty&gt;" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="propertyValues">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="activity">The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the correlation token.</param>
+        <param name="propertyValues">A collection of property values in the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</param>
+        <summary>Fires correlation initialized events.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="T:System.Workflow.Runtime.CorrelationToken" /> was already initialized.</exception>
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -100,9 +111,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> is initialized.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> is initialized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To initialize the correlation token, use <xref:System.Workflow.Runtime.CorrelationToken.Initialize%2A>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates accessing the Initialized property of a correlation token object.  
+  
+ [!code-csharp[WF_Samples#4](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#4)]
+ [!code-vb[WF_Samples#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -123,9 +150,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates accessing the Name property of a correlation token object.  This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file.  For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+  
+ [!code-csharp[WF_Samples#196](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#196)]
+ [!code-vb[WF_Samples#196](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#196)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OwnerActivityName">
@@ -146,9 +183,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the correlation token.</summary>
+        <value>The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the correlation token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates accessing the OwnerActivityName property of a correlation token object.  This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file.  For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+  
+ [!code-csharp[WF_Samples#197](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#197)]
+ [!code-vb[WF_Samples#197](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#197)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -172,9 +219,19 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Workflow.Runtime.CorrelationProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of <see cref="T:System.Workflow.Runtime.CorrelationProperty" /> objects in the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</summary>
+        <value>A collection of <see cref="T:System.Workflow.Runtime.CorrelationProperty" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates accessing the Properties property of a correlation token object.  
+  
+ [!code-csharp[WF_Samples#5](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#5)]
+ [!code-vb[WF_Samples#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SubscribeForCorrelationTokenInitializedEvent">
@@ -194,10 +251,12 @@
         <Parameter Name="dataChangeListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.Runtime.CorrelationTokenEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="dataChangeListener">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="activity">The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the correlation token.</param>
+        <param name="dataChangeListener">The <see cref="T:System.Workflow.Runtime.CorrelationTokenEventArgs" /> that is listening for a change in event data.</param>
+        <summary>Subscribes the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> to the initialized event.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activity" /> or <paramref name="dataChangeListener" /> are null references (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="UnsubscribeFromCorrelationTokenInitializedEvent">
@@ -217,10 +276,12 @@
         <Parameter Name="dataChangeListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.Runtime.CorrelationTokenEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="dataChangeListener">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="activity">The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the correlation token.</param>
+        <param name="dataChangeListener">The <see cref="T:System.Workflow.Runtime.CorrelationTokenEventArgs" /> that is listening for a change in event data.</param>
+        <summary>Unsubscribes the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> from the initialized event.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activity" /> or <paramref name="dataChangeListener" /> are null references (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
   </Members>

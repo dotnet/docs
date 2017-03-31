@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

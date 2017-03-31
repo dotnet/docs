@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.CompilerServices.CallConvStdcall
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.CallConvStdcall.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a client operation compat base.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,8 +41,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.ServiceModel.Dispatcher.IParameterInspector&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of parameter inspectors.</summary>
+        <value>A collection of parameter inspectors.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

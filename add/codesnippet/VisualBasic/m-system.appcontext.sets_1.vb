@@ -1,1 +1,0 @@
-      AppContext.SetSwitch("Switch.AmazingLib.ThrowOnException", True)

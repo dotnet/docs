@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.Windows.Themes.ScrollGlyph
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

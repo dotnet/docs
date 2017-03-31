@@ -1,19 +1,34 @@
 ---
 uid: System.Activities.WorkflowDataContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowDataContext.Dispose
-internalonly: False
----
-
----
-uid: System.Activities.WorkflowDataContext.PropertyChanged
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.WorkflowDataContext.GetProperties
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.WorkflowDataContext.PropertyChanged
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.WorkflowDataContext.GetProperties
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

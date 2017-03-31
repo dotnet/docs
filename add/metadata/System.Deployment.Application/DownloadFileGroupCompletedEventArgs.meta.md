@@ -1,9 +1,13 @@
 ---
 uid: System.Deployment.Application.DownloadFileGroupCompletedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.DownloadFileGroupCompletedEventArgs.Group
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

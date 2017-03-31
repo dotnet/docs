@@ -9,7 +9,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies implementation requirements for XML MTOM readers that derive from this interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,13 +35,13 @@
         <Parameter Name="onClose" Type="System.Xml.OnXmlDictionaryReaderClose" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="encodings">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <param name="maxBufferSize">To be added.</param>
-        <param name="onClose">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The stream from which to read.</param>
+        <param name="encodings">The possible character encodings of the stream.</param>
+        <param name="contentType">The Content-Type of the message. Can be <see langword="null" /> if the MIME type is present in the document being read.</param>
+        <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply to the reader.</param>
+        <param name="maxBufferSize">The maximum allowed size of the buffer.</param>
+        <param name="onClose">The delegate to use when an <see langword="onClose" /> event happens.</param>
+        <summary>Specifies initialization requirements for XML MTOM readers that read a stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,15 +69,15 @@
         <Parameter Name="onClose" Type="System.Xml.OnXmlDictionaryReaderClose" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="encodings">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <param name="maxBufferSize">To be added.</param>
-        <param name="onClose">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="encodings">The possible character encodings of the input.</param>
+        <param name="contentType">The Content-Type of the message. Can be <see langword="null" /> if the MIME type is present in the document being read.</param>
+        <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply to the reader.</param>
+        <param name="maxBufferSize">The maximum allowed size of the buffer.</param>
+        <param name="onClose">The delegate to use when an <see langword="onClose" /> event happens.</param>
+        <summary>Specifies initialization requirements for XML MTOM readers that read a buffer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

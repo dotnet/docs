@@ -26,9 +26,23 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">An <see cref="T:System.EventArgs" /> object that contains data about the event.</param>
+    <summary>References one or more methods to be called when the address of a network interface changes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate handles <xref:System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged> events raised by the <xref:System.Net.NetworkInformation.NetworkChange> class. For detailed information on receiving notification for network interface address change events, see the <xref:System.Net.NetworkInformation.NetworkChange> class overview documentation.  
+  
+ The <xref:System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged> event is supported on Windows 2000 and later.  
+  
+   
+  
+## Examples  
+ The following code example listens for address changes and displays the status of network interfaces when a <xref:System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged> event occurs.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

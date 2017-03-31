@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.GiveFeedbackEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.GiveFeedbackEventArgs.UseDefaultCursors
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.GiveFeedbackEventArgs.Effects
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

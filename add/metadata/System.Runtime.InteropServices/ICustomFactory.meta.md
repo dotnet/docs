@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.InteropServices.ICustomFactory
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ICustomFactory.CreateInstance(System.Type)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,24 +1,29 @@
 ---
 uid: System.Speech.Recognition.AudioSignalProblemOccurredEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.RecognizerAudioPosition
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioPosition
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioSignalProblem
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioLevel
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

@@ -1,49 +1,109 @@
 ---
 uid: System.Drawing.RectangleConverter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.RectangleConverter.GetCreateInstanceSupported
+manager: "ghogen"
 ---
 
 ---
 uid: System.Drawing.RectangleConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.RectangleConverter.ConvertFrom
+manager: "ghogen"
+---
+
+---
+uid: System.Drawing.RectangleConverter.CanConvertFrom
+manager: "ghogen"
 ---
 
 ---
 uid: System.Drawing.RectangleConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.RectangleConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.RectangleConverter.CanConvertTo
+manager: "ghogen"
+---
+
+---
+uid: System.Drawing.RectangleConverter.GetProperties
+manager: "ghogen"
+---
+
+---
+uid: System.Drawing.RectangleConverter.GetPropertiesSupported
+manager: "ghogen"
 ---
 
 ---
 uid: System.Drawing.RectangleConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.RectangleConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.RectangleConverter.CreateInstance
+manager: "ghogen"
 ---
 
 ---
 uid: System.Drawing.RectangleConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.RectangleConverter.ConvertTo
+manager: "ghogen"
 ---
 
 ---
 uid: System.Drawing.RectangleConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.RectangleConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.RectangleConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

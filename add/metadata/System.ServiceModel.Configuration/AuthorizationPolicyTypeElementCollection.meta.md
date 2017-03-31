@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Configuration.AuthorizationPolicyTypeElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.AuthorizationPolicyTypeElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

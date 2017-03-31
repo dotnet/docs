@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Discovery.DiscoveryEndpointProvider
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryEndpointProvider.GetDiscoveryEndpoint
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryEndpointProvider.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

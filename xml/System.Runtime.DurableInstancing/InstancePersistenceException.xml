@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Base class for all the persistence related exception classes. The <see cref="T:System.Runtime.DurableInstancing.InstanceOwnerException" /> and the <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceCommandException" /> are derived classes of this class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An InstancePersistenceException that is not an InstanceOwnerException nor an InstancePersistenceCommandException applies to the persistence provider itself and may indicate an unrecoverable failure condition of the provider.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">Error message that describes the current exception.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceException" /> class using the error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,8 @@
         <Parameter Name="commandName" Type="System.Xml.Linq.XName" />
       </Parameters>
       <Docs>
-        <param name="commandName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandName">The XName (the combination of namespace and name) of the command.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceException" /> class using the name of the command.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,9 +92,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The  information about the current exception.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceException" /> class using the serialized information and the context information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,9 +112,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The reason for the current exception.</param>
+        <param name="innerException">The exception that causes the current exception.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceException" /> class using the error message and inner exception information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +132,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="commandName">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandName">The XName (the combination of namespace and name) of the command.</param>
+        <param name="innerException">The exception that caused the current exception.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceException" /> class by using the name of the command and the inner exception information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,9 +152,9 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="commandName">To be added.</param>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandName">The XName (the combination of namespace and name) of the command.</param>
+        <param name="message">The error message that describes the exception.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceException" /> class using the name of the command and the error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,10 +173,10 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="commandName">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandName">The XName (the combination of namespace and name) of the command.</param>
+        <param name="message">The error message that describes the exception.</param>
+        <param name="innerException">The exception that caused the current exception.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceException" /> class using the name of the command, error message, and inner exception information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +193,8 @@
         <ReturnType>System.Xml.Linq.XName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the command.</summary>
+        <value>The name of the command. Returns null if the command is not known.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,9 +220,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The serialized object data about the exception being thrown.</param>
+        <param name="context">The contextual information about the source or destination</param>
+        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

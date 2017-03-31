@@ -11,8 +11,32 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the object element of an XML signature that holds data to be signed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.Xml.DataObject> class to store information or metadata directly in an XML signature.  For example, you can store the signature generation date or the signer's identity.  The <xref:System.Security.Cryptography.Xml.DataObject> class may or may not be covered by the XML signature.  
+  
+ The class corresponds to the `<Object>` element in the World Wide Web Consortium (W3C) specification for XML Signatures. For more information about the W3C specification, see [http://www.w3.org/TR/xmldsig-core/](http://www.w3.org/TR/xmldsig-core/).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to generate an enveloping XML signature.  
+  
+ [!code-cpp[XMLDSIG Signing#1](~/samples/snippets/cpp/VS_Snippets_CLR/XMLDSIG Signing/CPP/source.cpp#1)]
+ [!code-csharp[XMLDSIG Signing#1](~/samples/snippets/csharp/VS_Snippets_CLR/XMLDSIG Signing/CS/source.cs#1)]
+ [!code-vb[XMLDSIG Signing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/XMLDSIG Signing/VB/source.vb#1)]  
+  
+ The following code example demonstrates how to check an XML signature.  
+  
+ [!code-cpp[XMLDSIG Verification#1](~/samples/snippets/cpp/VS_Snippets_CLR/XMLDSIG Verification/CPP/source.cpp#1)]
+ [!code-csharp[XMLDSIG Verification#1](~/samples/snippets/csharp/VS_Snippets_CLR/XMLDSIG Verification/CS/source.cs#1)]
+ [!code-vb[XMLDSIG Verification#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/XMLDSIG Verification/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +50,30 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.DataObject" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Xml.DataObject> class is used with XML signatures. After you have initialized the <xref:System.Security.Cryptography.Xml.DataObject>, you can assign the <xref:System.Security.Cryptography.Xml.DataObject.Data%2A> and <xref:System.Security.Cryptography.Xml.DataObject.Id%2A> properties.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to generate an enveloping XML signature.  
+  
+ [!code-cpp[XMLDSIG Signing#1](~/samples/snippets/cpp/VS_Snippets_CLR/XMLDSIG Signing/CPP/source.cpp#1)]
+ [!code-csharp[XMLDSIG Signing#1](~/samples/snippets/csharp/VS_Snippets_CLR/XMLDSIG Signing/CS/source.cs#1)]
+ [!code-vb[XMLDSIG Signing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/XMLDSIG Signing/VB/source.vb#1)]  
+  
+ The following code example demonstrates how to check an XML signature.  
+  
+ [!code-cpp[XMLDSIG Verification#1](~/samples/snippets/cpp/VS_Snippets_CLR/XMLDSIG Verification/CPP/source.cpp#1)]
+ [!code-csharp[XMLDSIG Verification#1](~/samples/snippets/csharp/VS_Snippets_CLR/XMLDSIG Verification/CS/source.cs#1)]
+ [!code-vb[XMLDSIG Verification#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/XMLDSIG Verification/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -46,12 +92,20 @@
         <Parameter Name="data" Type="System.Xml.XmlElement" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <param name="mimeType">To be added.</param>
-        <param name="encoding">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="id">The identification to initialize the new instance of <see cref="T:System.Security.Cryptography.Xml.DataObject" /> with.</param>
+        <param name="mimeType">The MIME type of the data used to initialize the new instance of <see cref="T:System.Security.Cryptography.Xml.DataObject" />.</param>
+        <param name="encoding">The encoding of the data used to initialize the new instance of <see cref="T:System.Security.Cryptography.Xml.DataObject" />.</param>
+        <param name="data">The data to initialize the new instance of <see cref="T:System.Security.Cryptography.Xml.DataObject" /> with.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.DataObject" /> class with the specified identification, MIME type, encoding, and data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Xml.DataObject> class is used with XML signatures. The `id` parameter refers to the name of the element that contains the data to be used. The `data` parameter refers to the XML node list that contains the `id` parameter element.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="data" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -67,9 +121,32 @@
         <ReturnType>System.Xml.XmlNodeList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the data value of the current <see cref="T:System.Security.Cryptography.Xml.DataObject" /> object.</summary>
+        <value>The data of the current <see cref="T:System.Security.Cryptography.Xml.DataObject" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is the XML node list that contains the element described in the <xref:System.Security.Cryptography.Xml.DataObject.Id%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to generate an enveloping XML signature.  
+  
+ [!code-cpp[XMLDSIG Signing#1](~/samples/snippets/cpp/VS_Snippets_CLR/XMLDSIG Signing/CPP/source.cpp#1)]
+ [!code-csharp[XMLDSIG Signing#1](~/samples/snippets/csharp/VS_Snippets_CLR/XMLDSIG Signing/CS/source.cs#1)]
+ [!code-vb[XMLDSIG Signing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/XMLDSIG Signing/VB/source.vb#1)]  
+  
+ The following code example demonstrates how to check an XML signature.  
+  
+ [!code-cpp[XMLDSIG Verification#1](~/samples/snippets/cpp/VS_Snippets_CLR/XMLDSIG Verification/CPP/source.cpp#1)]
+ [!code-csharp[XMLDSIG Verification#1](~/samples/snippets/csharp/VS_Snippets_CLR/XMLDSIG Verification/CS/source.cs#1)]
+ [!code-vb[XMLDSIG Verification#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/XMLDSIG Verification/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value used to set the property is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -85,9 +162,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the encoding of the current <see cref="T:System.Security.Cryptography.Xml.DataObject" /> object.</summary>
+        <value>The type of encoding of the current <see cref="T:System.Security.Cryptography.Xml.DataObject" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is `null`, which indicates that no encoding is present.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetXml">
@@ -104,9 +188,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the XML representation of the <see cref="T:System.Security.Cryptography.Xml.DataObject" /> object.</summary>
+        <returns>The XML representation of the <see cref="T:System.Security.Cryptography.Xml.DataObject" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to output XML for a <xref:System.Security.Cryptography.Xml.DataObject>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -122,9 +213,31 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the identification of the current <see cref="T:System.Security.Cryptography.Xml.DataObject" /> object.</summary>
+        <value>The name of the element that contains data to be used.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identification is used to reference the <xref:System.Security.Cryptography.Xml.DataObject> from another location. The default value of this property is `null`, which implies that no identification is present. This property is commonly referenced by the <xref:System.Security.Cryptography.Xml.Signature.SignedInfo%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to generate an enveloping XML signature.  
+  
+ [!code-cpp[XMLDSIG Signing#1](~/samples/snippets/cpp/VS_Snippets_CLR/XMLDSIG Signing/CPP/source.cpp#1)]
+ [!code-csharp[XMLDSIG Signing#1](~/samples/snippets/csharp/VS_Snippets_CLR/XMLDSIG Signing/CS/source.cs#1)]
+ [!code-vb[XMLDSIG Signing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/XMLDSIG Signing/VB/source.vb#1)]  
+  
+ The following code example demonstrates how to check an XML signature.  
+  
+ [!code-cpp[XMLDSIG Verification#1](~/samples/snippets/cpp/VS_Snippets_CLR/XMLDSIG Verification/CPP/source.cpp#1)]
+ [!code-csharp[XMLDSIG Verification#1](~/samples/snippets/csharp/VS_Snippets_CLR/XMLDSIG Verification/CS/source.cs#1)]
+ [!code-vb[XMLDSIG Verification#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/XMLDSIG Verification/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadXml">
@@ -143,9 +256,17 @@
         <Parameter Name="value" Type="System.Xml.XmlElement" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The XML element to load the <see cref="T:System.Security.Cryptography.Xml.DataObject" /> state from.</param>
+        <summary>Loads a <see cref="T:System.Security.Cryptography.Xml.DataObject" /> state from an XML element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to add additional XML elements to a <xref:System.Security.Cryptography.Xml.DataObject> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value from the XML element is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="MimeType">
@@ -161,9 +282,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the MIME type of the current <see cref="T:System.Security.Cryptography.Xml.DataObject" /> object.</summary>
+        <value>The MIME type of the current <see cref="T:System.Security.Cryptography.Xml.DataObject" /> object. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The MIME type describes the data within the <xref:System.Security.Cryptography.Xml.DataObject>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

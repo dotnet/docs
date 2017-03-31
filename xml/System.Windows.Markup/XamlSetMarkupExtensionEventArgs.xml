@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for callbacks that are invoked when a XAML object writer sets a value using a markup extension.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although a class might indicate with <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> that it handles all attempts to set a value through a markup extension, it might also use more than one markup extension to do so. Thus each set operation ultimately resolves to a separate markup extension implementation in the supporting code. The <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> class reports the specifics of each attempted markup extension set operation so that the callback can branch accordingly for different <xref:System.Windows.Markup.MarkupExtension>cases.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,10 +37,10 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="member">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="member">XAML type system / schema information for the member being set.</param>
+        <param name="value">The markup extension reference to provide for the member being set.</param>
+        <param name="serviceProvider">Service provider information passed to the markup extension.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlSetMarkupExtensionEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +58,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides a way to invoke a callback as defined on a base class of the current acting type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +75,16 @@
         <ReturnType>System.Windows.Markup.MarkupExtension</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.Markup.MarkupExtension" /> reference that is relevant to this <see cref="T:System.Windows.Markup.XamlSetMarkupExtensionEventArgs" />.</summary>
+        <value>The markup extension reference that is relevant to this <see cref="T:System.Windows.Markup.XamlSetMarkupExtensionEventArgs" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property is the construction `value` cast to <xref:System.Windows.Markup.MarkupExtension>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceProvider">
@@ -86,9 +100,16 @@
         <ReturnType>System.IServiceProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets service provider information that was passed to the markup extension.</summary>
+        <value>Service provider information that was passed to the markup extension.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property is the `serviceProvider` constructor argument.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

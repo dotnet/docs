@@ -1,1 +1,0 @@
-            SyndicationLink link = SyndicationLink.CreateMediaEnclosureLink(new Uri("http://server/link"), "audio/mpeg", 100000);

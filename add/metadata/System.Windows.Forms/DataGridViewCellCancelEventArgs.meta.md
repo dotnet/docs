@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Forms.DataGridViewCellCancelEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCellCancelEventArgs.#ctor(System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCellCancelEventArgs.ColumnIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewCellCancelEventArgs.RowIndex
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -11,7 +11,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies that Always Encrypted functionality is enabled in a connection. Note that these settings cannot be used to bypass encryption and gain access to plaintext data. For details, see [Always Encrypted (Database Engine)](https://msdn.microsoft.com/library/mt163865.aspx).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
         <ReturnType>System.Data.SqlClient.SqlConnectionColumnEncryptionSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the connection does not use Always Encrypted. Should be used if no queries sent over the connection access encrypted columns.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -46,7 +46,7 @@
         <ReturnType>System.Data.SqlClient.SqlConnectionColumnEncryptionSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Enables Always Encrypted functionality for the connection. Query parameters that correspond to encrypted columns will be transparently encrypted and query results from encrypted columns will be transparently decrypted.</summary>
       </Docs>
     </Member>
   </Members>

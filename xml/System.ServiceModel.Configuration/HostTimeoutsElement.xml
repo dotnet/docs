@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that specifies the interval of time allowed for the service host to open or close. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.HostTimeoutsElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the interval of time allowed for the service host to close.</summary>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time allowed for the service host to close</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,8 +77,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the interval of time allowed for the service host to open.</summary>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time allowed for the service host to open.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

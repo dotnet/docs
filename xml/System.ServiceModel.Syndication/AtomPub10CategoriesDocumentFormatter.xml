@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A class that serializes a <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> instance to and from Atom 1.0 format.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <Parameter Name="documentToWrite" Type="System.ServiceModel.Syndication.CategoriesDocument" />
       </Parameters>
       <Docs>
-        <param name="documentToWrite">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="documentToWrite">The <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" /> to serialize.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter" /> class with the specified <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +87,9 @@
         <Parameter Name="referencedDocumentType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="inlineDocumentType">To be added.</param>
-        <param name="referencedDocumentType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="inlineDocumentType">An <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" /> that can be serialized into an &lt;<see langword="atom:categories" />&gt; element within a service document and the set of categories are specified within the element.</param>
+        <param name="referencedDocumentType">An <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" /> that can be serialized into an &lt;<see langword="atom:categories" />&gt; element within a service document and the set of categories are referenced using an URI.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter" /> class with the specified <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,9 +113,9 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <summary>Verifies whether the specified <see cref="T:System.Xml.XmlReader" /> contains a valid Atom 1.0 categories document.</summary>
+        <returns>A value that specifies whether the <see cref="T:System.Xml.XmlReader" /> contains a valid Atom 1.0 categories document.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,8 +137,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" /> that can be serialized into a &lt;<see langword="atom:categories" />&gt; element within a service document and contains the set of categories within the element.</summary>
+        <returns>Returns an <see cref="T:System.ServiceModel.Syndication.InlineCategoriesDocument" /> that can be serialized into a &lt;<see langword="atom:categories" />&gt; element within a service document.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +160,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" /> that can be serialized into a &lt;<see langword="atom:categories" />&gt; element within a service document and contains a URI reference to the set of categories within the element.</summary>
+        <returns>Returns a <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" /> that can be serialized into a &lt;<see langword="atom:categories" />&gt; element within a service document.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,8 +185,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <summary>Reads an Atom 1.0 &lt;<see langword="atom:categories" />&gt; element from the specified <see cref="T:System.Xml.XmlReader" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,9 +208,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Implements the <see cref="M:System.Xml.Serialization.IXmlSerializable.GetSchema" /> method.</summary>
+        <returns>
+          <see langword="Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override this method to return your own schema.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.ReadXml">
@@ -233,8 +241,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> use to read the XML document.</param>
+        <summary>Implements the <see cref="M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,8 +266,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the XML node.</param>
+        <summary>Implements the <see cref="M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,9 +288,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the syndication version used by the formatter.</summary>
+        <value>The syndication version used by the formatter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo1](~/includes/indigo1-md.md)] supports Atom 1.0 and RSS 2.0 syndication versions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -305,8 +320,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <summary>Writes the <see cref="T:System.ServiceModel.Syndication.CategoriesDocument" />associated with the <see cref="T:System.ServiceModel.Syndication.AtomPub10CategoriesDocumentFormatter" /> to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

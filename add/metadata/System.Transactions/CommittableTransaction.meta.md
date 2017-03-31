@@ -1,54 +1,59 @@
 ---
 uid: System.Transactions.CommittableTransaction
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.CommittableTransaction.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.CommittableTransaction.EndCommit(System.IAsyncResult)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.CommittableTransaction.System#IAsyncResult#AsyncWaitHandle
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Transactions.CommittableTransaction.Commit
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.CommittableTransaction.System#IAsyncResult#IsCompleted
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Transactions.CommittableTransaction.BeginCommit(System.AsyncCallback,System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.CommittableTransaction.#ctor(System.TimeSpan)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.CommittableTransaction.System#IAsyncResult#CompletedSynchronously
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Transactions.CommittableTransaction.System#IAsyncResult#AsyncState
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Transactions.CommittableTransaction.#ctor(System.Transactions.TransactionOptions)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.CommittableTransaction.#ctor
+manager: "ghogen"
 ---

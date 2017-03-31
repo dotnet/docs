@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Configuration.MachineKeyValidation
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

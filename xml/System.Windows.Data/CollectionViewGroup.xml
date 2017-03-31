@@ -15,8 +15,19 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a group created by a <see cref="T:System.Windows.Data.CollectionView" /> object based on the <see cref="P:System.Windows.Data.CollectionView.GroupDescriptions" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you define groups using the <xref:System.Windows.Data.CollectionView.GroupDescriptions%2A>, your view object (a <xref:System.Windows.Data.CollectionViewSource> object or an object that derives from <xref:System.Windows.Data.CollectionView>) wraps each group in a <xref:System.Windows.Data.CollectionViewGroup> object.  
+  
+<a name="xamlTextUsage_CollectionViewGroup"></a>   
+## XAML Text Usage  
+ You cannot use this class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,8 +43,8 @@
         <Parameter Name="name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of this group.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.CollectionViewGroup" /> class with the name of the group.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +61,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this group has any subgroups.</summary>
+        <value>
+          <see langword="true" /> if this group is at the bottom level and does not have any subgroups; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +80,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of items in the subtree under this group.</summary>
+        <value>The number of items (leaves) in the subtree under this group.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Subclasses use the <xref:System.Windows.Data.CollectionViewGroup.ProtectedItemCount%2A> property to change the count.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -86,9 +105,16 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the immediate items contained in this group.</summary>
+        <value>A read-only collection of the immediate items in this group. This is either a collection of subgroups or a collection of items if this group does not have any subgroups.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Subclasses use the <xref:System.Windows.Data.CollectionViewGroup.ProtectedItems%2A> property to add or remove items.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -104,8 +130,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of this group.</summary>
+        <value>The name of this group which is the common value of the property used to divide items into groups.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,8 +151,8 @@
         <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">Arguments of the event being raised.</param>
+        <summary>Raises the <see cref="E:System.Windows.Data.CollectionViewGroup.PropertyChanged" /> event using the provided arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +169,7 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a property value changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,9 +186,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the number of items in the subtree under this group.</summary>
+        <value>The number of items (leaves) in the subtree under this group</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Subclasses use this property to change the count; the changes are reflected in the <xref:System.Windows.Data.CollectionViewGroup.ItemCount%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectedItems">
@@ -178,9 +211,16 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the immediate items contained in this group.</summary>
+        <value>A collection of immediate items in this group. This is either a collection of subgroups or a collection of items if this group does not have any subgroups.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Subclasses use this property to add or remove items; the changes are reflected in the <xref:System.Windows.Data.CollectionViewGroup.Items%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

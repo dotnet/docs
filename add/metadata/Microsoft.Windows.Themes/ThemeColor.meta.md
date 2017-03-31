@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.Windows.Themes.ThemeColor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

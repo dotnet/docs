@@ -16,8 +16,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the format to view an email message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Net.Mail.AlternateView> class to specify copies of an e-mail message in different formats. For example, if you send a message in HTML, you might also want provide a plain text version in case some of the recipients use e-mail readers that cannot display HTML content.  
+  
+ This class has two properties <xref:System.Net.Mail.AlternateView.LinkedResources%2A> and <xref:System.Net.Mail.AlternateView.BaseUri%2A> that are used to resolve URLs within the content of the email. <xref:System.Net.Mail.AlternateView.LinkedResources%2A> is a collection of <xref:System.Net.Mail.LinkedResource> objects. When rendered, URLs within the e-mail's content are first matched against the URLs in the <xref:System.Net.Mail.LinkedResource.ContentLink%2A> of each <xref:System.Net.Mail.LinkedResource> object in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection, and resolved. <xref:System.Net.Mail.AlternateView.BaseUri%2A> is used by the mail reader to resolve relative URLs within the body, and also to resolve relative <xref:System.Net.Mail.LinkedResource.ContentLink%2A> URLs, in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,9 +47,18 @@
         <Parameter Name="contentStream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="contentStream">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contentStream">A stream that contains the content for this view.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" /> with the specified <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contentStream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -61,9 +79,21 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fileName">The name of the file that contains the content for this alternate view.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" /> with the specified file name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurred, such as a disk error.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The access requested is not permitted by the operating system for the specified file handle, such as when access is Write or ReadWrite and the file handle is set for read-only access.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -85,10 +115,21 @@
         <Parameter Name="contentType" Type="System.Net.Mime.ContentType" />
       </Parameters>
       <Docs>
-        <param name="contentStream">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contentStream">A stream that contains the content for this attachment.</param>
+        <param name="contentType">The type of the content.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" /> with the specified <see cref="T:System.IO.Stream" /> and <see cref="T:System.Net.Mime.ContentType" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contentStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="contentType" /> is not a valid value.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -110,10 +151,21 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contentStream">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contentStream">A stream that contains the content for this attachment.</param>
+        <param name="mediaType">The MIME media type of the content.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" /> with the specified <see cref="T:System.IO.Stream" /> and media type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contentStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="mediaType" /> is not a valid value.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -135,10 +187,24 @@
         <Parameter Name="contentType" Type="System.Net.Mime.ContentType" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fileName">The name of the file that contains the content for this alternate view.</param>
+        <param name="contentType">The type of the content.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" /> with the specified file name and content type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="contentType" /> is not a valid value.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurred, such as a disk error.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The access requested is not permitted by the operating system for the specified file handle, such as when access is Write or ReadWrite and the file handle is set for read-only access.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -160,10 +226,24 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fileName">The name of the file that contains the content for this alternate view.</param>
+        <param name="mediaType">The MIME media type of the content.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" /> with the specified file name and media type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="mediaType" /> is not a valid value.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurred, such as a disk error.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The access requested is not permitted by the operating system for the specified file handle, such as when access is Write or ReadWrite and the file handle is set for read-only access.</exception>
       </Docs>
     </Member>
     <Member MemberName="BaseUri">
@@ -184,8 +264,10 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the base URI to use for resolving relative URIs in the <see cref="T:System.Net.Mail.AlternateView" />.</summary>
+        <value>A <see cref="T:System.Uri" />.  
+  
+ The base <see cref="T:System.Uri" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +292,19 @@
         <Parameter Name="content" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="content">The <see cref="T:System.String" /> that contains the content of the email message.</param>
+        <summary>Creates a <see cref="T:System.Net.Mail.AlternateView" /> of an email message using the content specified in a <see cref="T:System.String" />.</summary>
+        <returns>An <see cref="T:System.Net.Mail.AlternateView" /> object that represents an alternate view of an email message.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default media type is plain text and the default encoding is ASCII.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateAlternateViewFromString">
@@ -238,11 +329,13 @@
         <Parameter Name="contentType" Type="System.Net.Mime.ContentType" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="content">A <see cref="T:System.String" /> that contains the content for this attachment.</param>
+        <param name="contentType">A <see cref="T:System.Net.Mime.ContentType" /> that describes the data in <c>string</c>.</param>
+        <summary>Creates an <see cref="T:System.Net.Mail.AlternateView" /> of an email message using the content specified in a <see cref="T:System.String" /> and the specified MIME media type of the content.</summary>
+        <returns>An <see cref="T:System.Net.Mail.AlternateView" /> object that represents an alternate view of an email message.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateAlternateViewFromString">
@@ -268,12 +361,14 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
+        <param name="content">A <see cref="T:System.String" /> that contains the content for this attachment.</param>
         <param name="encoding">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="mediaType">The MIME media type of the content.</param>
+        <summary>Creates an <see cref="T:System.Net.Mail.AlternateView" /> of an email message using the content specified in a <see cref="T:System.String" />, the specified text encoding, and MIME media type of the content.</summary>
+        <returns>An <see cref="T:System.Net.Mail.AlternateView" /> object that represents an alternate view of an email message.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="content" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -297,9 +392,25 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Mail.AlternateView" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Net.Mail.AlternateView> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="LinkedResources">
@@ -320,10 +431,29 @@
         <ReturnType>System.Net.Mail.LinkedResourceCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the set of embedded resources referred to by this attachment.</summary>
+        <value>A <see cref="T:System.Net.Mail.LinkedResourceCollection" /> object that stores the collection of linked resources to be sent as part of an e-mail message.</value>
         <remarks>To be added.</remarks>
+        <altCompliant cref="None." />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.AlternateView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new instance of the <xref:System.Net.Mail.AlternateView> class call also be initialized by calling one of the <xref:System.Net.Mail.AlternateView.CreateAlternateViewFromString%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

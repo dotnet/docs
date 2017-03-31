@@ -8,8 +8,17 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An interface that is implemented by classes which are responsible for generating [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] content on behalf of a host.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.ItemsControl> is the base class for containing and displaying one or more data items. <xref:System.Windows.Controls.ItemContainerGenerator> maintains an association between <xref:System.Windows.Controls.ItemsControl> and the list of items that are displayed by <xref:System.Windows.Controls.ItemsControl>. <xref:System.Windows.Controls.ItemContainerGenerator> is also responsible for generating the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] for those items on behalf of <xref:System.Windows.Controls.ItemsControl>. <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.VirtualizingPanel>, and <xref:System.Windows.Controls.VirtualizingStackPanel> also use <xref:System.Windows.Controls.ItemContainerGenerator> for the same reason.  
+  
+ <xref:System.Windows.Controls.ItemContainerGenerator> implements <xref:System.Windows.Controls.Primitives.IItemContainerGenerator> and is the interface through which each of the mentioned layout elements communicate with <xref:System.Windows.Controls.ItemContainerGenerator>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GenerateNext">
@@ -26,9 +35,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the container element used to display the next item.</summary>
+        <returns>A <see cref="T:System.Windows.DependencyObject" /> that is the container element which is used to display the next item.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext%2A> must be called within the scope of the <xref:System.IDisposable> reference that is returned by a previous call to the <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateNext">
@@ -47,10 +63,17 @@
         <Parameter Name="isNewlyRealized" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="isNewlyRealized">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="isNewlyRealized">Is <see langword="true" /> if the returned <see cref="T:System.Windows.DependencyObject" /> is newly generated (realized); otherwise, <see langword="false" />.</param>
+        <summary>Returns the container element used to display the next item, and whether the container element has been newly generated (realized).</summary>
+        <returns>A <see cref="T:System.Windows.DependencyObject" /> that is the container element which is used to display the next item.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the next item to be displayed has not already been generated (realized), <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext%2A> returns a new <xref:System.Windows.DependencyObject>, otherwise, the existing <xref:System.Windows.DependencyObject> is returned.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GeneratorPositionFromIndex">
@@ -69,9 +92,9 @@
         <Parameter Name="itemIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="itemIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="itemIndex">The index of desired item.</param>
+        <summary>Returns the <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" /> object that maps to the item at the specified index.</summary>
+        <returns>An <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" /> object that maps to the item at the specified index.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +114,9 @@
         <Parameter Name="panel" Type="System.Windows.Controls.Panel" />
       </Parameters>
       <Docs>
-        <param name="panel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="panel">The panel for which to return an appropriate <see cref="T:System.Windows.Controls.ItemContainerGenerator" />.</param>
+        <summary>Returns the <see cref="T:System.Windows.Controls.ItemContainerGenerator" /> appropriate for use by the specified panel.</summary>
+        <returns>An <see cref="T:System.Windows.Controls.ItemContainerGenerator" /> appropriate for use by the specified panel.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,9 +136,11 @@
         <Parameter Name="position" Type="System.Windows.Controls.Primitives.GeneratorPosition" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="position">The index of desired item.  
+  
+ The <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" /> for the desired index.</param>
+        <summary>Returns the index that maps to the specified <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" />.</summary>
+        <returns>An <see cref="T:System.Int32" /> that is the index which maps to the specified <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,9 +160,18 @@
         <Parameter Name="container" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="container">The container to prepare. Normally, <c>container</c> is the result of the previous call to <see cref="Overload:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext" />.</param>
+        <summary>Prepares the specified element as the container for the corresponding item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Preparing the specified element includes applying the container style, forwarding information from the host control, such as the <xref:System.Windows.DataTemplate> value of the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property, and other small adjustments.  
+  
+ <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.PrepareItemContainer%2A> must be called after the element has been added to the visual tree, so that resource references and inherited properties work correctly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -157,9 +191,9 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="position">The <see cref="T:System.Int32" /> index of the element to remove. <c>position</c> must refer to a previously generated (realized) item, which means its offset must be zero.</param>
+        <param name="count">The <see cref="T:System.Int32" /> number of elements to remove, starting at <c>position</c>.</param>
+        <summary>Removes one or more generated (realized) items.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,7 +211,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all generated (realized) items.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,11 +232,20 @@
         <Parameter Name="direction" Type="System.Windows.Controls.Primitives.GeneratorDirection" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="position">A <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" />, that specifies the position of the item to start generating items at.</param>
+        <param name="direction">A <see cref="T:System.Windows.Controls.Primitives.GeneratorDirection" /> that specifies the direction which to generate items.</param>
+        <summary>Prepares the generator to generate items, starting at the specified <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" />, and in the specified <see cref="T:System.Windows.Controls.Primitives.GeneratorDirection" />.</summary>
+        <returns>An <see cref="T:System.IDisposable" /> object that tracks the lifetime of the generation process.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A> must be called before <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext%2A> is called.  
+  
+ <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A> sets <xref:System.Windows.Controls.ItemContainerGenerator.Status%2A> to <xref:System.Windows.Controls.Primitives.GeneratorStatus>; when the <xref:System.IDisposable> is disposed, the status changes to <xref:System.Windows.Controls.Primitives.GeneratorStatus> or <xref:System.Windows.Controls.Primitives.GeneratorStatus>, as appropriate.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartAt">
@@ -223,12 +266,19 @@
         <Parameter Name="allowStartAtRealizedItem" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <param name="direction">To be added.</param>
-        <param name="allowStartAtRealizedItem">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="position">A <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" />, that specifies the position of the item to start generating items at.</param>
+        <param name="direction">Specifies the position of the item to start generating items at.</param>
+        <param name="allowStartAtRealizedItem">A <see cref="T:System.Boolean" /> that specifies whether to start at a generated (realized) item.</param>
+        <summary>Prepares the generator to generate items, starting at the specified <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" />, and in the specified <see cref="T:System.Windows.Controls.Primitives.GeneratorDirection" />, and controlling whether or not to start at a generated (realized) item.</summary>
+        <returns>An <see cref="T:System.IDisposable" /> object that tracks the lifetime of the generation process.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

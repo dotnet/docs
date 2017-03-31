@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods that correspond to [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] functions. Methods in the <see cref="T:System.Data.Linq.SqlClient.SqlMethods" /> class are only supported in LINQ to SQL queries.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,11 +32,18 @@
         <Parameter Name="endDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of day boundaries between two non-nullable dates.</summary>
+        <returns>The number of day boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `day` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffDay">
@@ -56,11 +63,18 @@
         <Parameter Name="endDate" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of day boundaries between two non-nullable dates.</summary>
+        <returns>The number of day boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `day` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffDay">
@@ -80,11 +94,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of day boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of day boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `day` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffDay">
@@ -104,11 +125,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of day boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of day boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `day` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffHour">
@@ -128,11 +156,18 @@
         <Parameter Name="endDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of hour boundaries between two non-nullable dates.</summary>
+        <returns>The number of hour boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `hour` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffHour">
@@ -152,11 +187,18 @@
         <Parameter Name="endDate" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of hour boundaries between two non-nullable dates.</summary>
+        <returns>The number of hour boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `hour` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffHour">
@@ -176,11 +218,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of hour boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of hour boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `hour` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffHour">
@@ -200,11 +249,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of hour boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of hour boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `hour` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMicrosecond">
@@ -224,11 +280,18 @@
         <Parameter Name="endDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of microsecond boundaries between two non-nullable dates.</summary>
+        <returns>The number of microsecond boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `microsecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMicrosecond">
@@ -248,11 +311,18 @@
         <Parameter Name="endDate" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of microsecond boundaries between two non-nullable dates.</summary>
+        <returns>The number of microsecond boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `microsecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMicrosecond">
@@ -272,11 +342,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of microsecond boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of microsecond boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `microsecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMicrosecond">
@@ -296,11 +373,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of microsecond boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of microsecond boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `microsecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMillisecond">
@@ -320,11 +404,18 @@
         <Parameter Name="endDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of millisecond boundaries between two non-nullable dates.</summary>
+        <returns>The number of millisecond boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `millisecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMillisecond">
@@ -344,11 +435,18 @@
         <Parameter Name="endDate" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of millisecond boundaries between two non-nullable dates.</summary>
+        <returns>The number of millisecond boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `millisecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMillisecond">
@@ -368,11 +466,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of millisecond boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of millisecond boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `millisecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMillisecond">
@@ -392,11 +497,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of millisecond boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of millisecond boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `millisecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMinute">
@@ -416,11 +528,18 @@
         <Parameter Name="endDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of minute boundaries between two non-nullable dates.</summary>
+        <returns>The number of minute boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `minute` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMinute">
@@ -440,11 +559,18 @@
         <Parameter Name="endDate" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of minute boundaries between two non-nullable dates.</summary>
+        <returns>The number of minute boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `minute` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMinute">
@@ -464,11 +590,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of minute boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of minute boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `minute` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMinute">
@@ -488,11 +621,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of minute boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of minute boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `minute` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMonth">
@@ -512,11 +652,18 @@
         <Parameter Name="endDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of month boundaries between two non-nullable dates.</summary>
+        <returns>The number of month boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `month` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMonth">
@@ -536,11 +683,18 @@
         <Parameter Name="endDate" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of month boundaries between two non-nullable dates.</summary>
+        <returns>The number of month boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `month` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMonth">
@@ -560,11 +714,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of month boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of month boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `month` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffMonth">
@@ -584,11 +745,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of month boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of month boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `month` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffNanosecond">
@@ -608,11 +776,18 @@
         <Parameter Name="endDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of nanosecond boundaries between two non-nullable dates.</summary>
+        <returns>The number of nanosecond boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `nanosecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffNanosecond">
@@ -632,11 +807,18 @@
         <Parameter Name="endDate" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of nanosecond boundaries between two non-nullable dates.</summary>
+        <returns>The number of nanosecond boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `nanosecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffNanosecond">
@@ -656,11 +838,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of nanosecond boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of nanosecond boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `nanosecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffNanosecond">
@@ -680,11 +869,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of nanosecond boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of nanosecond boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `nanosecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffSecond">
@@ -704,11 +900,18 @@
         <Parameter Name="endDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of second boundaries between two non-nullable dates.</summary>
+        <returns>The number of second boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `second` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffSecond">
@@ -728,11 +931,18 @@
         <Parameter Name="endDate" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of second boundaries between two non-nullable dates.</summary>
+        <returns>The number of second boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `second` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffSecond">
@@ -752,11 +962,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of second boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of second boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `second` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffSecond">
@@ -776,11 +993,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of second boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of second boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `second` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffYear">
@@ -800,11 +1024,18 @@
         <Parameter Name="endDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of year boundaries between two non-nullable dates.</summary>
+        <returns>The number of year boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `year` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffYear">
@@ -824,11 +1055,18 @@
         <Parameter Name="endDate" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of year boundaries between two non-nullable dates.</summary>
+        <returns>The number of year boundaries between the two specified dates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `year` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffYear">
@@ -848,11 +1086,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of year boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of year boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `year` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDiffYear">
@@ -872,11 +1117,18 @@
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="startDate">To be added.</param>
-        <param name="endDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startDate">The start date for the time period.</param>
+        <param name="endDate">The end date for the time period.</param>
+        <summary>Counts the number of year boundaries between two nullable dates.</summary>
+        <returns>When both parameters are not <see langword="null" />, returns the number of year boundaries between the two specified dates. When one or both parameters are <see langword="null" />, returns a <see langword="null" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `year` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Like">
@@ -896,11 +1148,19 @@
         <Parameter Name="pattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="matchExpression">To be added.</param>
-        <param name="pattern">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="matchExpression">The string to be searched for a match.</param>
+        <param name="pattern">The pattern, which may include wildcard characters, to match in <c>matchExpression</c>.</param>
+        <summary>Determines whether a specific character string matches a specified pattern. This method is currently only supported in LINQ to SQL queries.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="matchExpression" /> matches the pattern; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `LIKE` functionality cannot be exposed through translation of existing common language runtime (CLR) and .NET Framework constructs, and is unsupported outside of a LINQ to SQL context. The use of this method outside of LINQ to SQL will always throw an exception of type <xref:System.NotSupportedException>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Like">
@@ -921,13 +1181,174 @@
         <Parameter Name="escapeCharacter" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="matchExpression">To be added.</param>
-        <param name="pattern">To be added.</param>
-        <param name="escapeCharacter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="matchExpression">The string to be searched for a match.</param>
+        <param name="pattern">The pattern, which may include wildcard characters, to match in <c>matchExpression</c>.</param>
+        <param name="escapeCharacter">The character to put in front of a wildcard character to indicate that it should be interpreted as a regular character and not as a wildcard character.</param>
+        <summary>Determines whether a specific character string matches a specified pattern. This method is currently only supported in LINQ to SQL queries.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="matchExpression" /> matches the pattern; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `LIKE` functionality cannot be exposed through translation of existing common language runtime (CLR) and .NET Framework constructs, and is unsupported outside of a LINQ to SQL context. The use of this method outside of LINQ to SQL will always throw an exception of type <xref:System.NotSupportedException>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateDiffMinute">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of minute boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `minute` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DateDiffSecond">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of second boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `second` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DateDiffMonth">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of month boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `month` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Like">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a specific character string matches a specified pattern. This method is currently only supported in LINQ to SQL queries.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `LIKE` functionality cannot be exposed through translation of existing common language runtime (CLR) and .NET Framework constructs, and is unsupported outside of a LINQ to SQL context. The use of this method outside of LINQ to SQL will always throw an exception of type <xref:System.NotSupportedException>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DateDiffHour">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of hour boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `hour` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DateDiffDay">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of day boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `day` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DateDiffYear">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of year boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `year` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DateDiffMillisecond">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of millisecond boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `millisecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DateDiffMicrosecond">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of microsecond boundaries between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] `DATEDIFF` function; using `millisecond` to specify the type of time boundary crossed. For more about this [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] function, see [DATEDIFF](http://go.microsoft.com/fwlink/?LinkId=114010) in the Microsoft SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

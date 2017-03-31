@@ -1,149 +1,185 @@
 ---
 uid: System.Web.UI.WebControls.MenuItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.Target
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String,System.String,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.System#Web#UI#IStateManager#SaveViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.System#Web#UI#IStateManager#LoadViewState(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.Text
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.DataPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.Enabled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.Value
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.NavigateUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.System#Web#UI#IStateManager#TrackViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.Parent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.ToolTip
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.MenuItem.Selectable
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.MenuItem.Depth
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.MenuItem.ImageUrl
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String,System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.MenuItem.DataBound
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.MenuItem.Selectable
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.MenuItem.Depth
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.MenuItem.ImageUrl
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String,System.String,System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.MenuItem.DataBound
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.MenuItem.#ctor(System.String,System.String,System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.MenuItem.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.Selected
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.PopOutImageUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.SeparatorImageUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.DataItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.System#Web#UI#IStateManager#IsTrackingViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.System#ICloneable#Clone
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.ChildItems
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.MenuItem.ValuePath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

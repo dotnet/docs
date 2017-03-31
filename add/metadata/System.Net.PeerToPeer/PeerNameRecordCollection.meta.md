@@ -1,19 +1,23 @@
 ---
 uid: System.Net.PeerToPeer.PeerNameRecordCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameRecordCollection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameRecordCollection.SetItem(System.Int32,System.Net.PeerToPeer.PeerNameRecord)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.PeerNameRecordCollection.InsertItem(System.Int32,System.Net.PeerToPeer.PeerNameRecord)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

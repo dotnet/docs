@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the configuration settings for an XML element. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.XmlElementElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="element" Type="System.Xml.XmlElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Xml.XmlElement" /> from which this instance is initialized.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.XmlElementElement" /> class with the specified XML element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +64,12 @@
         <Parameter Name="source" Type="System.ServiceModel.Configuration.XmlElementElement" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The <see cref="T:System.Xml.XmlElement" /> to copy from.</param>
+        <summary>Copies the content of the specified <see cref="T:System.Xml.XmlElement" /> to this instance.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="DeserializeElement">
@@ -175,8 +178,8 @@
         <ReturnType>System.Xml.XmlElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Xml.XmlElement" /> that this class encapsulates.</summary>
+        <value>The <see cref="T:System.Xml.XmlElement" /> that this class encapsulates.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,29 +1,35 @@
 ---
 uid: System.Web.Configuration.ScriptingWebServicesSectionGroup
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingWebServicesSectionGroup.ProfileService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingWebServicesSectionGroup.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingWebServicesSectionGroup.AuthenticationService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingWebServicesSectionGroup.JsonSerialization
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingWebServicesSectionGroup.RoleService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

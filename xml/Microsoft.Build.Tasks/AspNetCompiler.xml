@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the <c>AspNetCompiler</c> task. Use the <c>AspNetCompiler</c> element in your project file to create and execute this task. For usage and parameter information, see [AspNetCompiler Task](../Topic/AspNetCompiler%20Task.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.AspNetCompiler" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="commandLine" Type="Microsoft.Build.Tasks.CommandLineBuilderExtension" />
       </Parameters>
       <Docs>
-        <param name="commandLine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandLine">Command line builder to add arguments to.</param>
+        <summary>Generates command line arguments for the AspNetCompiler tool.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +64,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether the <see cref="T:System.Security.AllowPartiallyTrustedCallersAttribute" />, which allows partially trusted callers access to an assembly, should be applied to the strongly named assembly that Aspnet_compiler.exe generates.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Security.AllowPartiallyTrustedCallersAttribute" /> should be applied to the strongly named assembly that Aspnet_compiler.exe generates; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must be combined with the <xref:Microsoft.Build.Tasks.AspNetCompiler.KeyFile%2A> or <xref:Microsoft.Build.Tasks.AspNetCompiler.KeyContainer%2A> properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clean">
@@ -82,9 +90,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether the precompiled application will be built clean.</summary>
+        <value>
+          <see langword="true" /> if the precompiled application will be built clean; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is `true`, any previously compiled components will be recompiled. The default value is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Debug">
@@ -100,9 +116,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether debug information (.PDB file) is emitted during compilation.</summary>
+        <value>
+          <see langword="true" /> if the debug information (.PDB file) is emitted during compilation; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DelaySign">
@@ -118,8 +142,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that indicates whether the <see cref="T:System.Reflection.AssemblyDelaySignAttribute" />, which indicates that an assembly should be signed only with the public key token rather than with the public/private key pair, should be applied to the generated assembly.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Reflection.AssemblyDelaySignAttribute" /> should be applied to the generated assembly; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,8 +162,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the <c>AspNetCompiler</c> task.</summary>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,9 +181,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether one assembly should be generated for each page in the application.</summary>
+        <value>
+          <see langword="true" /> if one assembly should be generated for each page in the application; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each assembly is named with the virtual path of the original page unless the name would exceed the operating system limit for file names, in which case a hash is generated and used for the assembly name.  
+  
+ You cannot use this property for in-place compilation; in-place compilation honors configuration settings for compilation batch mode.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Force">
@@ -173,8 +209,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether existing files in the <paramref name="targetDir" /> directory and its subdirectories should be overwritten.</summary>
+        <value>
+          <see langword="true" /> if existing files in the <paramref name="targetDir" /> directory and its subdirectories should be overwritten; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,8 +229,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the full file path of the AspNetCompiler tool.</summary>
+        <returns>The full file path of the AspNetCompiler tool.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,9 +247,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether the <see cref="T:System.Reflection.AssemblyKeyNameAttribute" />, which indicates the name of the container for the public/private key pair that is used to generate a strong name, should be applied to the compiled assembly.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Reflection.AssemblyKeyNameAttribute" /> should be applied to the compiled assembly; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must be combined with <xref:Microsoft.Build.Tasks.AspNetCompiler.AllowPartiallyTrustedCallers%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyFile">
@@ -228,9 +273,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether the <see cref="T:System.Reflection.AssemblyKeyFileAttribute" />, which indicates the name of the file containing the public/private key pair that is used to generate a strong name, should be applied to the compiled assembly.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Reflection.AssemblyKeyFileAttribute" /> should be applied to the compiled assembly; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must be combined with <xref:Microsoft.Build.Tasks.AspNetCompiler.AllowPartiallyTrustedCallers%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MetabasePath">
@@ -246,8 +299,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the full IIS metabase path of the application.</summary>
+        <value>The full IIS metabase path of the application.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,9 +317,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the physical path of the application to be compiled.</summary>
+        <value>The physical path of the application to be compiled.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is missing, the IIS metabase is used to locate the application.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkMoniker">
@@ -282,9 +342,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the TargetFrameworkMoniker indicating which .NET Framework version of aspnet_compiler.exe should be used.</summary>
+        <value>Returns the TargetFrameworkMoniker.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only accepts .NET Framework monikers.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetPath">
@@ -300,9 +367,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the physical path to which the application is compiled.</summary>
+        <value>The physical path to which the application is compiled.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If not specified, the application is precompiled in-place.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolName">
@@ -318,8 +392,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the AspNetCompiler tool (aspnet_compiler.exe).</summary>
+        <value>The name of the AspNetCompiler tool.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,9 +410,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether the precompiled application will be updateable.</summary>
+        <value>
+          <see langword="true" /> if the precompiled application will be updateable; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateParameters">
@@ -355,8 +437,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Validates input parameters and logs errors or warnings, if any. Returns a Boolean value that indicates whether task execution should proceed.</summary>
+        <returns>
+          <see langword="true" /> if task execution should proceed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,9 +456,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the virtual path of the application to be compiled.</summary>
+        <value>The virtual path of the application to be compiled.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `PhysicalPath` specified, the physical path is used to locate the application. Otherwise, the IIS metabase is used, and the application is assumed to be in the default site.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

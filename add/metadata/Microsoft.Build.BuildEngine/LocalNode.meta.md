@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.BuildEngine.LocalNode
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.LocalNode.StartLocalNodeServer(System.Int32)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

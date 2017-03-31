@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.ITokenEnumerator
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ITokenEnumerator.GetNext
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ITokenEnumerator.Reset
-internalonly: False
+ms.author: "mikejo"
 ---

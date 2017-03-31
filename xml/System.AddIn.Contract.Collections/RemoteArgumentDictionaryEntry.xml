@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a key/value pair in an <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="value" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> that contains the key in the new <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" />.</param>
+        <param name="value">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> that contains the value in the new <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" />.</param>
+        <summary>Initializes an instance of the <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" /> structure with the specified key and value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,7 +48,7 @@
         <ReturnType>System.AddIn.Contract.RemoteArgument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the key in the key/value pair that this <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" /> represents.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +65,7 @@
         <ReturnType>System.AddIn.Contract.RemoteArgument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the value in the key/value pair that this <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" /> represents.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

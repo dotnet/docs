@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.Design.XmlUrlEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XmlUrlEditor.Options
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XmlUrlEditor.Caption
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XmlUrlEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XmlUrlEditor.Filter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

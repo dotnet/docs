@@ -11,8 +11,32 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.GridView> control raises the <xref:System.Web.UI.WebControls.GridView.PageIndexChanging> event when a pager button (a button with its `CommandName` property set to "Page") within the control is clicked, but before the <xref:System.Web.UI.WebControls.GridView> control handles the paging operation. This allows you to provide an event-handling method that performs a custom routine, such as canceling the paging operation, whenever this event occurs.  
+  
+> [!NOTE]
+>  Pager buttons are usually located in the pager row of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ A <xref:System.Web.UI.WebControls.GridViewPageEventArgs> object is passed to the event-handling method, which allows you to determine the index of the page selected by the user and to indicate that the paging operation should be canceled. To cancel the paging operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=fullName> property of the <xref:System.Web.UI.WebControls.GridViewPageEventArgs> object to `true`.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewPageEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewPageEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewPageEventArgs> object passed to the event-handling method to determine the index of the page selected by the user and to cancel the paging operation.  
+  
+ [!code-csharp[GridViewPageIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageIndexChanging/CS/gridviewpageindexchangingcs.aspx#1)]
+ [!code-vb[GridViewPageIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageIndexChanging/VB/gridviewpageindexchangingvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +52,25 @@
         <Parameter Name="newPageIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="newPageIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="newPageIndex">The index of the new page to display.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.GridViewPageEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridViewPageEventArgs> class.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.WebControls.GridViewPageEventArgs>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.GridViewPageEventArgs.NewPageIndex%2A>|The value of the `newPageIndex` parameter.|  
+  
+> [!NOTE]
+>  This constructor is used primarily by control developers when raising events.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewPageIndex">
@@ -46,9 +86,30 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the index of the new page to display in the <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
+        <value>The index of the new page to display in the <see cref="T:System.Web.UI.WebControls.GridView" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.UI.WebControls.GridView.PageIndexChanging> event occurs before the <xref:System.Web.UI.WebControls.GridView> control performs the paging operation, the <xref:System.Web.UI.WebControls.GridView.PageIndex%2A> property of the control cannot be used to determine the index of the page selected by the user. Use the <xref:System.Web.UI.WebControls.GridViewPageEventArgs.NewPageIndex%2A> property to determine the index of the page selected by the user.  
+  
+> [!NOTE]
+>  During the <xref:System.Web.UI.WebControls.GridView.PageIndexChanging> event, the <xref:System.Web.UI.WebControls.GridView.PageIndex%2A> property still contains the index of the previously displayed page.  
+  
+ You can also use this property to programmatically override the page index selected by the user by setting it to another value.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewPageEventArgs.NewPageIndex%2A> property to determine the index of the page selected by the user.  
+  
+ [!code-csharp[GridViewPageIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageIndexChanging/CS/gridviewpageindexchangingcs.aspx#1)]
+ [!code-vb[GridViewPageIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageIndexChanging/VB/gridviewpageindexchangingvb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.GridViewPageEventArgs.NewPageIndex" /> property is less than zero.</exception>
       </Docs>
     </Member>
   </Members>

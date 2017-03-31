@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.Build.Tasks.UnregisterAssembly
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.UnregisterAssembly.TypeLibFiles
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.UnregisterAssembly.AssemblyListFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.UnregisterAssembly.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.UnregisterAssembly.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.UnregisterAssembly.Assemblies
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

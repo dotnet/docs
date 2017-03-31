@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the data sent to a tracking participant by the run-time tracking infrastructure when a workflow instance is aborted.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,10 +35,10 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="activityDefinitionId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The instance ID of the aborted workflow.</param>
+        <param name="activityDefinitionId">The display name of the root Workflow Activity.</param>
+        <param name="reason">The reason the workflow was aborted.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceAbortedRecord" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,11 +58,11 @@
         <Parameter Name="reason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="recordNumber">To be added.</param>
-        <param name="activityDefinitionId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The instance ID of the aborted workflow.</param>
+        <param name="recordNumber">A sequence that defines the order in which tracking records are generated.</param>
+        <param name="activityDefinitionId">The display name of the root workflow activity.</param>
+        <param name="reason">The reason the workflow was aborted.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceAbortedRecord" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,11 +82,11 @@
         <Parameter Name="workflowDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="activityDefinitionId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="workflowDefinitionIdentity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The instance ID of the aborted workflow.</param>
+        <param name="activityDefinitionId">The display name of the root workflow activity.</param>
+        <param name="reason">The reason the workflow was aborted.</param>
+        <param name="workflowDefinitionIdentity">The information about the workflow identity.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceAbortedRecord" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,12 +107,12 @@
         <Parameter Name="workflowDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="recordNumber">To be added.</param>
-        <param name="activityDefinitionId">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="workflowDefinitionIdentity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceId">The instance ID of the aborted workflow.</param>
+        <param name="recordNumber">A sequence that defines the order in which tracking records are generated.</param>
+        <param name="activityDefinitionId">The display name of the root workflow activity.</param>
+        <param name="reason">The reason the workflow was aborted.</param>
+        <param name="workflowDefinitionIdentity">The information about the workflow identity.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceAbortedRecord" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +148,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a string that describes why the workflow was aborted.</summary>
+        <value>The reason the workflow was aborted.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +167,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that contains the tracking record data.</summary>
+        <returns>The tracking record data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

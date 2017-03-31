@@ -1,49 +1,54 @@
 ---
 uid: System.Runtime.Remoting.Lifetime.ClientSponsor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Lifetime.ClientSponsor.Finalize
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Lifetime.ClientSponsor.#ctor(System.TimeSpan)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Lifetime.ClientSponsor.Register(System.MarshalByRefObject)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Lifetime.ClientSponsor.InitializeLifetimeService
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Lifetime.ClientSponsor.Close
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Lifetime.ClientSponsor.Unregister(System.MarshalByRefObject)
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Lifetime.ClientSponsor.RenewalTime
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Lifetime.ClientSponsor.Renewal(System.Runtime.Remoting.Lifetime.ILease)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Lifetime.ClientSponsor.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Lifetime.ClientSponsor.Close
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Lifetime.ClientSponsor.Unregister(System.MarshalByRefObject)
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Lifetime.ClientSponsor.RenewalTime
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Lifetime.ClientSponsor.Renewal(System.Runtime.Remoting.Lifetime.ILease)
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Lifetime.ClientSponsor.#ctor
+manager: "ghogen"
 ---

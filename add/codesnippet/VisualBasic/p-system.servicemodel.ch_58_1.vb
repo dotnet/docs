@@ -1,1 +1,0 @@
-        Dim msgVersion2 As MessageVersion = MessageVersion.None

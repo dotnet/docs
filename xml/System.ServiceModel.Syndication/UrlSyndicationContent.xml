@@ -15,8 +15,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents syndication content that consists of a URL to another resource.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.ServiceModel.Syndication.UrlSyndicationContent> class.  
+  
+ [!code-csharp[SyndicationContent#3](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcontent/cs/program.cs#3)]
+ [!code-vb[SyndicationContent#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcontent/vb/snippets.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +46,8 @@
         <Parameter Name="source" Type="System.ServiceModel.Syndication.UrlSyndicationContent" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" /> instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" /> class with the specified <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,10 +69,25 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="url">The <see cref="T:System.Uri" />.</param>
+        <param name="mediaType">The media type of the resource referenced by the <see cref="T:System.Uri" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" /> class with the specified <see cref="T:System.Uri" /> and media type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The media type parameter can be set to any known MIME type value as defined in [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95720).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to call this constructor.  
+  
+ [!code-csharp[SyndicationContent#3](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationcontent/cs/program.cs#3)]
+ [!code-vb[SyndicationContent#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationcontent/vb/snippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -83,8 +108,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a copy of the existing <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" /> instance.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> instance that contains the new copy of the <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,9 +130,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the content type of the <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" />.</summary>
+        <value>The content type of the <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The content type can be set to any known MIME type value as defined in [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95720).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -127,8 +159,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Uri" /> for the <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" />.</summary>
+        <value>A <see cref="T:System.Uri" /> instance that contains the URI for the <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +184,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <summary>Writes the contents of the <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" /> instance to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

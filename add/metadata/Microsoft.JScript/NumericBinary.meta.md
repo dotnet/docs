@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.NumericBinary
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumericBinary.DoOp(System.Object,System.Object,Microsoft.JScript.JSToken)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumericBinary.EvaluateNumericBinary(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumericBinary.#ctor(System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---

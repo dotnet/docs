@@ -17,9 +17,24 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle <see langword="FragmentNavigation" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event handler is used for the following events:  
+  
+-   <xref:System.Windows.Navigation.NavigationService.FragmentNavigation?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Navigation.NavigationWindow.FragmentNavigation?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Controls.Frame.FragmentNavigation?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Application.FragmentNavigation?displayProperty=fullName>  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

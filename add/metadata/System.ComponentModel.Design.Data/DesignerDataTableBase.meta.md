@@ -1,34 +1,55 @@
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataTableBase
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataTableBase.#ctor(System.String,System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataTableBase.Owner
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.Data.DesignerDataTableBase.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataTableBase.CreateColumns
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataTableBase.#ctor(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataTableBase.Columns
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.Data.DesignerDataTableBase.Name
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

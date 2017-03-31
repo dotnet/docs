@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.Statements.CompensationToken
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

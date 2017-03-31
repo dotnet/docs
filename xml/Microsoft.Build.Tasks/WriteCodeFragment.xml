@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Generates a temporary code file with the specified generated code fragment.  Does not delete the file.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a temporary code file with the specified generated code fragment.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +43,18 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the attributes to write.</summary>
+        <value>Returns an item whose value is the full type name of he attribute, for example, "System.AssemblyVersionAttribute".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each piece of metadata is the name-value pair of a parameter, which must be of type System.String.  
+  
+ Some attributes only allow positional constructor arguments, or the user may just prefer them.  To set those, use metadata names like "_Parameter1", "_Parameter2" etc. If a parameter index is skipped, it's an error.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -62,8 +71,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the WriteCodeFragment method.</summary>
+        <returns>Returns true if the code fragment was written.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,9 +94,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the language of code to generate.</summary>
+        <value>Returns the language of code to generate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Language name can be any language for which a CodeDom provider is available. For example, "C#", "VisualBasic". The file emitted is given the default extension for that language.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputDirectory">
@@ -103,8 +119,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the destination folder for the generated code, typically the intermediate folder.</summary>
+        <value>Returns the destination folder for the generated code.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,9 +142,20 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the path to the file that was generated.</summary>
+        <value>Returns the path to the file that was generated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If setting this property with a file name, the destination folder will be prepended.  
+  
+ If setting this property with a rooted value, the destination folder will be ignored.  
+  
+ If this property is not set, WriteCodeFragment uses the destination folder, an arbitrary file name, and the default extension for the language selected.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

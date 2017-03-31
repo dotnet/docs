@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains information needed to perform schema importation using the <see cref="T:System.Xml.Serialization.XmlSerializer" /> and <see cref="T:System.Web.Services.Description.ServiceDescriptionImporter" /> infrastructure.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.XmlSerializerImportOptions> is used by the <xref:System.ServiceModel.Description.XmlSerializerMessageContractImporter>. It is also used with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md) with the `/useXmlSerializer` (`/uxs)` switch.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.XmlSerializerImportOptions" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,8 +52,8 @@
         <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" />
       </Parameters>
       <Docs>
-        <param name="codeCompileUnit">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="codeCompileUnit">An object that provides a container for the <see cref="N:System.CodeDom" /> program graph.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.XmlSerializerImportOptions" /> class with the specified <see cref="T:System.CodeDom.CodeCompileUnit" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +70,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.ServiceModel.Channels.XmlSerializerImportOptions.ClrNamespace" /> property that contains the types being mapped to the XML namespace.</summary>
+        <value>An object that contains types being mapped.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +88,8 @@
         <ReturnType>System.CodeDom.CodeCompileUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.CodeDom.CodeCompileUnit" /> object that provides a container for the <see cref="N:System.CodeDom" /> program graph.</summary>
+        <value>An object that provides a container for a program graph.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +106,8 @@
         <ReturnType>System.CodeDom.Compiler.CodeDomProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> object that checks whether particular options for a target language are supported.</summary>
+        <value>An object that checks target language options.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +124,8 @@
         <ReturnType>System.Web.Services.Description.WebReferenceOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Web.Services.Description.WebReferenceOptions" /> object that contains the code generation options specified in the XML text file.</summary>
+        <value>An object containing code generation options.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

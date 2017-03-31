@@ -19,8 +19,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a collection of <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackPoint" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.Runtime.Tracking.ActivityTrackPointCollection> is used in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> to maintain a list of <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> objects to match.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,8 +45,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackPointCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes the <xref:System.Workflow.Runtime.Tracking.ActivityTrackPointCollection> to an empty list.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,9 +69,18 @@
         <Parameter Name="points" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.ActivityTrackPoint&gt;" />
       </Parameters>
       <Docs>
-        <param name="points">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="points">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> list of <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackPoint" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackPointCollection" /> class by using a list of activity track points.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.ActivityTrackPointCollection> is initialized to contain the <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> objects specified in `points`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="points" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
   </Members>

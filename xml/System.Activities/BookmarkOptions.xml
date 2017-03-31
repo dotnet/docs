@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the options for a <see cref="T:System.Activities.Bookmark" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,15 @@
         <ReturnType>System.Activities.BookmarkOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.Activities.Bookmark" /> that can be resumed multiple times.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the workflow runtime removes a pending bookmark from its bookmarks table when resuming the bookmark. However if the bookmark is specified as MultipleResume, then the bookmark is not removed from the table and the same bookmark can be resumed multiple times. An example usage of MultipleResume is by looping activities such as <xref:System.Activities.While>, <xref:System.Activities.ForEach%601>, and <xref:System.Activities.Flowchart>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NonBlocking">
@@ -48,7 +56,15 @@
         <ReturnType>System.Activities.BookmarkOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.Activities.Bookmark" /> that does not block the workflow.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the workflow runtime does not consider an activity to have completed execution if it has pending bookmarks. However, if a bookmark is specified as NonBlocking at creation time, the workflow runtime allows the activity to complete execution even if it has pending NonBlocking bookmarks,  provided it has no other pending work.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +80,7 @@
         <ReturnType>System.Activities.BookmarkOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default <see cref="T:System.Activities.Bookmark" /> options,</summary>
       </Docs>
     </Member>
   </Members>

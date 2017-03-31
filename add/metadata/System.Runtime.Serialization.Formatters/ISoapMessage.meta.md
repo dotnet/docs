@@ -1,34 +1,34 @@
 ---
 uid: System.Runtime.Serialization.Formatters.ISoapMessage
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.ISoapMessage.ParamValues
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.ISoapMessage.XmlNameSpace
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.ISoapMessage.ParamNames
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.ISoapMessage.Headers
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.ISoapMessage.MethodName
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.ISoapMessage.ParamTypes
-internalonly: False
+manager: "ghogen"
 ---

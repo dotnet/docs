@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.IChartStorageHandler
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.IChartStorageHandler.Load(System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.IChartStorageHandler.Exists(System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.IChartStorageHandler.Save(System.String,System.Byte[])
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.IChartStorageHandler.Delete(System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

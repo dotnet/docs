@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestClaimCollection
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestClaimCollection.Dialect
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Protocols.WSTrust.RequestClaimCollection.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

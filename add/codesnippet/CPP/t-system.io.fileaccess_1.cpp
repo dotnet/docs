@@ -1,1 +1,0 @@
-FileStream^ s2 = gcnew FileStream( name, FileMode::Open, FileAccess::Read, FileShare::Read );

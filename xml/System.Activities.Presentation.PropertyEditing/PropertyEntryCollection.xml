@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Maintains the collection of sub-properties of a given parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="parentValue" Type="System.Activities.Presentation.PropertyEditing.PropertyValue" />
       </Parameters>
       <Docs>
-        <param name="parentValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parentValue">The parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> instance used for the initialization.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntryCollection" /> class using the sub-properties of the specified <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyEntryCollection.ParentValue" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instances in this collection (typically the number of sub-properties for the parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" />).</summary>
+        <value>An integer that specifies the number of instances in this collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an <see cref="T:Systems.Collections.IEnumerator" /> object that iterates all the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instances in this collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection of <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instances.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +90,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="propertyName">The name of the property to get.</param>
+        <summary>Gets a <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instance with the specified name from this collection. It is used for sub-property retrieval.</summary>
+        <value>A property entry instance with the specified name; or <see langword="null" /> if it does not exist.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +109,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> from the host infrastructure.</summary>
+        <value>A <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +128,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an <see cref="T:Systems.Collections.IEnumerator" /> object that iterates all of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instances in this collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through collection of <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instances.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,29 +1,29 @@
 ---
 uid: System.Runtime.Remoting.Lifetime.LifetimeServices
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Lifetime.LifetimeServices.LeaseTime
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Lifetime.LifetimeServices.LeaseManagerPollTime
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Lifetime.LifetimeServices.SponsorshipTimeout
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Lifetime.LifetimeServices.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Lifetime.LifetimeServices.RenewOnCallTime
-internalonly: False
+manager: "ghogen"
 ---

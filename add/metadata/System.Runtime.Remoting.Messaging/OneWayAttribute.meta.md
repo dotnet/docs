@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.Messaging.OneWayAttribute
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.OneWayAttribute.#ctor
-internalonly: False
+manager: "ghogen"
 ---

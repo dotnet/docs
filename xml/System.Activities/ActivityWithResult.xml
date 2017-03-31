@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Retrieves the value or type of an activity <see langword="out" /> argument. This class is abstract and derives from <see cref="T:System.Activities.Activity" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <ReturnType>System.Activities.OutArgument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a derived class, gets or sets the value of an object of type <see cref="T:System.Activities.OutArgument" />.</summary>
+        <value>An <see langword="out" /> argument.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a derived class, gets the type of an activity <see cref="T:System.Activities.OutArgument" />.</summary>
+        <value>A type object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Evaluation.ToolsetDefinitionLocations
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

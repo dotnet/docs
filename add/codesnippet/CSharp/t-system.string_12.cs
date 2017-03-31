@@ -1,1 +1,0 @@
-      if (str == null || str.Equals(String.Empty) || str.Trim().Equals(String.Empty))

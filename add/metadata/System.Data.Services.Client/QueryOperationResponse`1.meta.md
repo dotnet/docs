@@ -1,19 +1,34 @@
 ---
 uid: System.Data.Services.Client.QueryOperationResponse`1
-internalonly: False
----
-
----
-uid: System.Data.Services.Client.QueryOperationResponse`1.GetEnumerator
-internalonly: False
----
-
----
-uid: System.Data.Services.Client.QueryOperationResponse`1.TotalCount
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Client.QueryOperationResponse`1.GetContinuation
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Client.QueryOperationResponse`1.GetEnumerator
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Client.QueryOperationResponse`1.TotalCount
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Client.QueryOperationResponse`1.GetContinuation
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

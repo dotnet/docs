@@ -1,9 +1,9 @@
 ---
 uid: System.Transactions.ITransactionPromoter
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.ITransactionPromoter.Promote
-internalonly: False
+manager: "ghogen"
 ---

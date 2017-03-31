@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods to access annotation attached properties.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
         <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The attachable property for annotation text.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,7 +45,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property name to access annotation in a ModelItem.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,9 +65,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">The instance to get annotation.</param>
+        <summary>Gets the annotation text of an object.</summary>
+        <returns>An annotation text of an object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,9 +88,9 @@
         <Parameter Name="annotationText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="annotationText">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">The instance to set annotation text.</param>
+        <param name="annotationText">The annotation text to be set.</param>
+        <summary>Sets an annotation of an object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

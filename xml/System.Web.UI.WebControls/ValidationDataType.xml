@@ -10,8 +10,21 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the validation data types used by the <see cref="T:System.Web.UI.WebControls.CompareValidator" /> and <see cref="T:System.Web.UI.WebControls.RangeValidator" /> controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ValidationDataType> enumeration represents the different data types that the <xref:System.Web.UI.WebControls.CompareValidator> and <xref:System.Web.UI.WebControls.RangeValidator> controls can validate. When you specify a data type for validation control and the input control being validated passes validation, the value of the input control can be parsed to the specified data type.  
+  
+   
+  
+## Examples  
+ [!code-csharp[Classic CompareValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CompareValidator Example/CS/sourcecs.aspx#1)]
+ [!code-vb[Classic CompareValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CompareValidator Example/VB/sourcevb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Currency">
@@ -27,7 +40,7 @@
         <ReturnType>System.Web.UI.WebControls.ValidationDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A monetary data type. The value is treated as a <see cref="T:System.Decimal" />. However, currency and grouping symbols are still allowed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -43,7 +56,7 @@
         <ReturnType>System.Web.UI.WebControls.ValidationDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A date data type. Only numeric dates are allowed. The time portion cannot be specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -59,7 +72,7 @@
         <ReturnType>System.Web.UI.WebControls.ValidationDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A double precision floating point number data type. The value is treated as a <see cref="T:System.Double" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Integer">
@@ -75,7 +88,7 @@
         <ReturnType>System.Web.UI.WebControls.ValidationDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A 32-bit signed integer data type. The value is treated as a <see cref="T:System.Int32" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -91,7 +104,7 @@
         <ReturnType>System.Web.UI.WebControls.ValidationDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A string data type. The value is treated as a <see cref="T:System.String" />.</summary>
       </Docs>
     </Member>
   </Members>

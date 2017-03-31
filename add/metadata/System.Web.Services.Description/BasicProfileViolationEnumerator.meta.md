@@ -1,34 +1,48 @@
 ---
 uid: System.Web.Services.Description.BasicProfileViolationEnumerator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Description.BasicProfileViolationEnumerator.System#Collections#IEnumerator#Current
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Description.BasicProfileViolationEnumerator.Dispose
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Description.BasicProfileViolationEnumerator.#ctor(System.Web.Services.Description.BasicProfileViolationCollection)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Description.BasicProfileViolationEnumerator.MoveNext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Description.BasicProfileViolationEnumerator.System#Collections#IEnumerator#Reset
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Description.BasicProfileViolationEnumerator.Current
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

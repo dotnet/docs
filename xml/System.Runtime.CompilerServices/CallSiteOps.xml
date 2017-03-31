@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Creates and caches binding rules.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -57,10 +57,10 @@
         <Parameter Name="rule" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="site">To be added.</param>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the delegate of the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</typeparam>
+        <param name="site">An instance of the dynamic call site.</param>
+        <param name="rule">An instance of the call site rule.</param>
+        <summary>Adds a rule to the cache maintained on the dynamic call site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,12 +98,12 @@
         <Parameter Name="args" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="binder">To be added.</param>
-        <param name="site">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the delegate of the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</typeparam>
+        <param name="binder">The call site binder.</param>
+        <param name="site">An instance of the dynamic call site.</param>
+        <param name="args">Arguments to the call site.</param>
+        <summary>Updates the call site target with a new rule based on the arguments.</summary>
+        <returns>The new call site target.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,8 +132,8 @@
         <Parameter Name="site" Type="System.Runtime.CompilerServices.CallSite" />
       </Parameters>
       <Docs>
-        <param name="site">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="site">An instance of the dynamic call site.</param>
+        <summary>Clears the match flag on the matchmaker call site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,10 +169,10 @@
         <Parameter Name="site" Type="System.Runtime.CompilerServices.CallSite&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="site">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the delegate of the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</typeparam>
+        <param name="site">An instance of the dynamic call site.</param>
+        <summary>Creates an instance of a dynamic call site used for cache lookup.</summary>
+        <returns>The new call site.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,10 +208,10 @@
         <Parameter Name="cache" Type="System.Runtime.CompilerServices.RuleCache&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="cache">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the delegate of the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</typeparam>
+        <param name="cache">The cache.</param>
+        <summary>Searches the dynamic rule cache for rules applicable to the dynamic operation.</summary>
+        <returns>The collection of applicable rules.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,9 +240,9 @@
         <Parameter Name="site" Type="System.Runtime.CompilerServices.CallSite" />
       </Parameters>
       <Docs>
-        <param name="site">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="site">An instance of the dynamic call site.</param>
+        <summary>Checks whether the executed rule matched</summary>
+        <returns>true if rule matched, false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,10 +278,10 @@
         <Parameter Name="site" Type="System.Runtime.CompilerServices.CallSite&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="site">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the delegate of the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</typeparam>
+        <param name="site">An instance of the dynamic call site.</param>
+        <summary>Retrieves binding rule cache.</summary>
+        <returns>The cache.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,10 +317,10 @@
         <Parameter Name="site" Type="System.Runtime.CompilerServices.CallSite&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="site">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the delegate of the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</typeparam>
+        <param name="site">An instance of the dynamic call site.</param>
+        <summary>Gets the dynamic binding rules from the call site.</summary>
+        <returns>An array of dynamic binding rules.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,11 +358,11 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="cache">To be added.</param>
-        <param name="rule">To be added.</param>
-        <param name="i">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the delegate of the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</typeparam>
+        <param name="cache">The call site rule cache.</param>
+        <param name="rule">An instance of the call site rule.</param>
+        <param name="i">An index of the call site rule.</param>
+        <summary>Moves the binding rule within the cache.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,9 +391,9 @@
         <Parameter Name="site" Type="System.Runtime.CompilerServices.CallSite" />
       </Parameters>
       <Docs>
-        <param name="site">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="site">An instance of the dynamic call site.</param>
+        <summary>Checks if a dynamic site requires an update.</summary>
+        <returns>true if rule does not need updating, false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -430,10 +430,10 @@
         <Parameter Name="matched" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="this">To be added.</param>
-        <param name="matched">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the delegate of the <see cref="T:System.Runtime.CompilerServices.CallSite" />.</typeparam>
+        <param name="this">An instance of the dynamic call site.</param>
+        <param name="matched">The matched rule index.</param>
+        <summary>Updates rules in the cache.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Creates an unsafe <see cref="T:System.Net.WebRequest" /> to a Uniform Resource Identifier (URI).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,9 +44,11 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">The URI of the requested resource.</param>
+        <summary>Initializes a new <see cref="T:System.Net.WebRequest" /> for the specified URI scheme.</summary>
+        <returns>Returns <see cref="T:System.Net.WebRequest" />.  
+  
+ A <see cref="T:System.Net.WebRequest" /> descendant for the specified URI scheme.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

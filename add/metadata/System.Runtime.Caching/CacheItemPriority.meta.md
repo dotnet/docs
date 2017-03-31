@@ -1,4 +1,5 @@
 ---
 uid: System.Runtime.Caching.CacheItemPriority
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---

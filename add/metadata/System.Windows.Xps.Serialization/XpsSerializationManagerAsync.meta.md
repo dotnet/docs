@@ -1,29 +1,29 @@
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManagerAsync
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManagerAsync.SaveAsXaml(System.Object)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManagerAsync.#ctor(System.Windows.Xps.Serialization.BasePackagingPolicy,System.Boolean)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManagerAsync.Commit
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManagerAsync.XpsSerializationCompleted
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationManagerAsync.CancelAsync
-internalonly: False
+manager: "leannef"
 ---

@@ -21,8 +21,46 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether a member is typically used for binding. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can specify this attribute for multiple members, typically properties, on a control.  
+  
+ If a property has been marked with the <xref:System.ComponentModel.BindableAttribute> set to `true`, then a property change notification should be raised for that property. This means that if the <xref:System.ComponentModel.BindableAttribute.Bindable%2A> property is <xref:System.ComponentModel.BindableAttribute.Yes>, then two-way data binding is supported. If <xref:System.ComponentModel.BindableAttribute.Bindable%2A> is <xref:System.ComponentModel.BindableAttribute.No>, you can still bind to the property, but it should not be shown in the default set of properties to bind to, because it might or might not raise a property change notification.  
+  
+> [!NOTE]
+>  When you mark a property with <xref:System.ComponentModel.BindableAttribute.%23ctor%2A> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.BindableAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.BindableAttribute.%23ctor%2A> set to `false`, the value is <xref:System.ComponentModel.BindableAttribute.No>. Therefore, to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.BindableAttribute.No?displayProperty=fullName>.  
+  
+> [!CAUTION]
+>  You can use this attribute at design time only. Nothing prevents you from binding to any property during run time.  
+  
+ For more information, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+   
+  
+## Examples  
+ The following code example marks a property as appropriate to bind data to.  
+  
+ [!code-cpp[Classic BindableAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindableAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindableAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindableAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic BindableAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindableAttribute Example/VB/source.vb#1)]  
+  
+ The next code example shows how to check the value of the <xref:System.ComponentModel.BindableAttribute> for `MyProperty`. First, the code gets a <xref:System.ComponentModel.PropertyDescriptorCollection> with all the properties for the object. Next, the code indexes into the <xref:System.ComponentModel.PropertyDescriptorCollection> to get `MyProperty`. Finally, the code returns the attributes for this property and saves them in the attributes variable. The code example presents two different ways to check the value of the <xref:System.ComponentModel.BindableAttribute>. In the second code fragment, the example calls the <xref:System.Object.Equals%2A> method. In the last code fragment, the example uses the <xref:System.ComponentModel.BindableAttribute.Bindable%2A> property to check the value.  
+  
+ [!code-cpp[Classic BindableAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindableAttribute Example/CPP/source.cpp#2)]
+ [!code-csharp[Classic BindableAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindableAttribute Example/CS/source.cs#2)]
+ [!code-vb[Classic BindableAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindableAttribute Example/VB/source.vb#2)]  
+  
+ If you marked a class with the <xref:System.ComponentModel.BindableAttribute>, use the following code example to check the value.  
+  
+ [!code-cpp[Classic BindableAttribute Example#3](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindableAttribute Example/CPP/source.cpp#3)]
+ [!code-csharp[Classic BindableAttribute Example#3](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindableAttribute Example/CS/source.cs#3)]
+ [!code-vb[Classic BindableAttribute Example#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindableAttribute Example/VB/source.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,9 +81,26 @@
         <Parameter Name="bindable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bindable">
+          <see langword="true" /> to use property for binding; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.BindableAttribute" /> class with a Boolean value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you mark a property with the <xref:System.ComponentModel.BindableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.BindableAttribute>. For a property marked with the <xref:System.ComponentModel.BindableAttribute> set to `false`, the value is <xref:System.ComponentModel.BindableAttribute.No>. Therefore, to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.BindableAttribute.No?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example marks a property as appropriate to bind data to. This code example creates a new <xref:System.ComponentModel.BindableAttribute>, sets its value to <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName>, and binds it to the property.  
+  
+ [!code-cpp[Classic BindableAttribute.BindableAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindableAttribute.BindableAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindableAttribute.BindableAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindableAttribute.BindableAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic BindableAttribute.BindableAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindableAttribute.BindableAttribute Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,9 +121,25 @@
         <Parameter Name="flags" Type="System.ComponentModel.BindableSupport" />
       </Parameters>
       <Docs>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="flags">One of the <see cref="T:System.ComponentModel.BindableSupport" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.BindableAttribute" /> class with one of the <see cref="T:System.ComponentModel.BindableSupport" /> values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you mark a property with the <xref:System.ComponentModel.BindableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.BindableAttribute>. For a property marked with the <xref:System.ComponentModel.BindableAttribute> set to `false`, the value is <xref:System.ComponentModel.BindableAttribute.No>. Therefore, to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.BindableAttribute.No?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example marks a property as appropriate to bind data to. This code example creates a new <xref:System.ComponentModel.BindableAttribute>, sets its value to <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName>, and binds it to the property.  
+  
+ [!code-cpp[Classic BindableAttribute.BindableAttribute1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindableAttribute.BindableAttribute1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindableAttribute.BindableAttribute1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindableAttribute.BindableAttribute1 Example/CS/source.cs#1)]
+ [!code-vb[Classic BindableAttribute.BindableAttribute1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindableAttribute.BindableAttribute1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,9 +161,10 @@
         <Parameter Name="direction" Type="System.ComponentModel.BindingDirection" />
       </Parameters>
       <Docs>
-        <param name="bindable">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindable">
+          <see langword="true" /> to use property for binding; otherwise, <see langword="false" />.</param>
+        <param name="direction">One of the <see cref="T:System.ComponentModel.BindingDirection" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.BindableAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +187,9 @@
         <Parameter Name="direction" Type="System.ComponentModel.BindingDirection" />
       </Parameters>
       <Docs>
-        <param name="flags">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="flags">One of the <see cref="T:System.ComponentModel.BindableSupport" /> values.</param>
+        <param name="direction">One of the <see cref="T:System.ComponentModel.BindingDirection" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.BindableAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,9 +211,33 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating that a property is typically used for binding.</summary>
+        <value>
+          <see langword="true" /> if the property is typically used for binding; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example checks to see whether `MyProperty` is bindable. First the code gets the attributes for `MyProperty` by doing the following:  
+  
+-   Retrieving a <xref:System.ComponentModel.PropertyDescriptorCollection> with all the properties for the object.  
+  
+-   Indexing into the <xref:System.ComponentModel.PropertyDescriptorCollection> to get `MyProperty`.  
+  
+-   Saving the attributes for this property in the attributes variable.  
+  
+ Then, the code sets `myAttribute` to the value of the <xref:System.ComponentModel.BindableAttribute> in the <xref:System.ComponentModel.AttributeCollection> and checks whether the property is bindable.  
+  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see  
+  
+ [Assembly Names](../Topic/Assembly%20Names.md).  
+  
+ [!code-cpp[Classic BindableAttribute.Bindable Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindableAttribute.Bindable Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindableAttribute.Bindable Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindableAttribute.Bindable Example/CS/source.cs#1)]
+ [!code-vb[Classic BindableAttribute.Bindable Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindableAttribute.Bindable Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -162,8 +258,15 @@
         <ReturnType>System.ComponentModel.BindableAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the default value for the <see cref="T:System.ComponentModel.BindableAttribute" />, which is <see cref="F:System.ComponentModel.BindableAttribute.No" />. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you mark a property with this value, the <xref:System.ComponentModel.BindableAttribute> is set to the constant member <xref:System.ComponentModel.BindableAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -184,8 +287,8 @@
         <ReturnType>System.ComponentModel.BindingDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating the direction or directions of this property's data binding.</summary>
+        <value>The direction of this property’s data binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,9 +313,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare.</param>
+        <summary>Determines whether two <see cref="T:System.ComponentModel.BindableAttribute" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.ComponentModel.BindableAttribute" /> is equal to the current <see cref="T:System.ComponentModel.BindableAttribute" />; <see langword="false" /> if it is not equal.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,8 +339,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Serves as a hash function for the <see cref="T:System.ComponentModel.BindableAttribute" /> class.</summary>
+        <returns>A hash code for the current <see cref="T:System.ComponentModel.BindableAttribute" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,8 +363,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines if this attribute is the default.</summary>
+        <returns>
+          <see langword="true" /> if the attribute is the default value for this attribute class; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,8 +387,17 @@
         <ReturnType>System.ComponentModel.BindableAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies that a property is not typically used for binding. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.BindableAttribute.No> field is the default setting for the <xref:System.ComponentModel.BindableAttribute>.  
+  
+ When you mark a property with the <xref:System.ComponentModel.BindableAttribute.%23ctor%2A> constructor of the value `false,` the value of this attribute is set to the constant member <xref:System.ComponentModel.BindableAttribute.No>. Therefore, to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.No?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -304,8 +418,15 @@
         <ReturnType>System.ComponentModel.BindableAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies that a property is typically used for binding. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you mark a property with the <xref:System.ComponentModel.BindableAttribute.%23ctor%2A> constructor of the value `true`, the value of the <xref:System.ComponentModel.BindableAttribute> is set to the constant member <xref:System.ComponentModel.BindableAttribute.Yes>. Therefore, to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

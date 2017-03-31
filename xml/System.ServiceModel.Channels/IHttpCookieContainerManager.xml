@@ -9,7 +9,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the cookie container manager.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,8 +27,8 @@
         <ReturnType>System.Net.CookieContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the cookie container.</summary>
+        <value>The cookie container.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

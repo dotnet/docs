@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a property for the <see cref="T:System.Data.Metadata.Edm.EntityType" /> in a conceptual model. An <see cref="T:System.Data.Metadata.Edm.EdmProperty" /> class derives from the <see cref="T:System.Data.Metadata.Edm.EdmMember" /> class and provides the <see cref="P:System.Data.Metadata.Edm.EdmProperty.Default" /> and the <see cref="P:System.Data.Metadata.Edm.EdmProperty.Nullable" /> facets for the type of this <see cref="T:System.Data.Metadata.Edm.EdmProperty" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.EdmProperty" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> object that represents the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.EdmProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default value for this <see cref="T:System.Data.Metadata.Edm.EdmProperty" />.</summary>
+        <value>The default value for this <see cref="T:System.Data.Metadata.Edm.EdmProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether this <see cref="T:System.Data.Metadata.Edm.EdmProperty" /> can have a null value.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Data.Metadata.Edm.EdmProperty" /> can have a null value; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

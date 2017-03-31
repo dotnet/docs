@@ -1,34 +1,34 @@
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializerFactory
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializerFactory.DisplayName
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializerFactory.ManufacturerWebsite
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializerFactory.DefaultFileExtension
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializerFactory.#ctor
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializerFactory.CreateSerializerWriter(System.IO.Stream)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializerFactory.ManufacturerName
-internalonly: False
+manager: "leannef"
 ---

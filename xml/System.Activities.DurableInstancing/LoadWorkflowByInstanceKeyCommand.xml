@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A persistence command that loads a workflow instance by using the instance key associated with the instance.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether to allow loading a workflow instance that is in an uninitialized state.</summary>
+        <value>
+          <see langword="true" /> if the workflow instance is allowed to be loaded when in an uninitialized state; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +62,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the instance identifier associated with an instance key.</summary>
+        <value>The instance identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +98,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the instance keys to be associated with an instance in the persistence store.</summary>
+        <value>The instance keys.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +134,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the instance key used to identify the instance to be loaded.</summary>
+        <value>The instance key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

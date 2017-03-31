@@ -1,9 +1,13 @@
 ---
 uid: System.Data.SqlTypes.TypeDecimalSchemaImporterExtension
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlTypes.TypeDecimalSchemaImporterExtension.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

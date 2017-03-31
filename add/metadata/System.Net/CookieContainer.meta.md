@@ -1,89 +1,119 @@
 ---
 uid: System.Net.CookieContainer
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CookieContainer.#ctor(System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CookieContainer.#ctor(System.Int32,System.Int32,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CookieContainer.DefaultPerDomainCookieLimit
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CookieContainer.Add(System.Uri,System.Net.Cookie)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CookieContainer.GetCookieHeader(System.Uri)
-internalonly: False
----
-
----
-uid: System.Net.CookieContainer.DefaultCookieLengthLimit
-internalonly: False
----
-
----
-uid: System.Net.CookieContainer.Count
-internalonly: False
----
-
----
-uid: System.Net.CookieContainer.SetCookies(System.Uri,System.String)
-internalonly: False
----
-
----
-uid: System.Net.CookieContainer.Add(System.Net.Cookie)
-internalonly: False
----
-
----
-uid: System.Net.CookieContainer.MaxCookieSize
-internalonly: False
----
-
----
-uid: System.Net.CookieContainer.Add(System.Net.CookieCollection)
-internalonly: False
----
-
----
-uid: System.Net.CookieContainer.Capacity
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CookieContainer.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.CookieContainer.Add
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.CookieContainer.DefaultCookieLengthLimit
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.CookieContainer.Count
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.CookieContainer.SetCookies(System.Uri,System.String)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.CookieContainer.Add(System.Net.Cookie)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.CookieContainer.MaxCookieSize
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.CookieContainer.Add(System.Net.CookieCollection)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.CookieContainer.Capacity
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.CookieContainer.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CookieContainer.GetCookies(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CookieContainer.Add(System.Uri,System.Net.CookieCollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CookieContainer.PerDomainCapacity
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CookieContainer.DefaultCookieLimit
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

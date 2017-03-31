@@ -1,4 +1,5 @@
 ---
 uid: System.IdentityModel.Tokens.SamlAccessDecision
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

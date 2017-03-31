@@ -11,8 +11,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains information about an area of a <see cref="T:System.Windows.Forms.MonthCalendar" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.MonthCalendar.HitTestInfo> objects are returned by <xref:System.Windows.Forms.MonthCalendar> controls in response to the <xref:System.Windows.Forms.MonthCalendar.HitTest%2A> method.  
+  
+> [!CAUTION]
+>  <xref:System.Windows.Forms.MonthCalendar.HitTestInfo> is for informational purposes only; you should not construct these objects and cannot modify any of the members.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="HitArea">
@@ -28,8 +38,8 @@
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Forms.MonthCalendar.HitArea" /> that represents the area of the calendar evaluated by the hit-test operation.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.MonthCalendar.HitArea" /> values. The default is <see cref="F:System.Windows.Forms.MonthCalendar.HitArea.Nowhere" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +56,8 @@
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the point that was hit-tested.</summary>
+        <value>A <see cref="T:System.Drawing.Point" /> containing the <see cref="P:System.Drawing.Point.X" /> and <see cref="P:System.Drawing.Point.Y" /> values tested.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +74,16 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the time information specific to the location that was hit-tested.</summary>
+        <value>The time information specific to the location that was hit-tested.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MonthCalendar.HitTestInfo.Time%2A> property contains a valid date when the <xref:System.Windows.Forms.MonthCalendar.HitArea> property is set to <xref:System.Windows.Forms.MonthCalendar.HitArea> or <xref:System.Windows.Forms.MonthCalendar.HitArea>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

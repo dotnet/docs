@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an implementation of the OLE DB <see langword="IRowset" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddRefRows">
@@ -42,12 +49,19 @@
         <Parameter Name="rowStatus" Type="System.Int32[]&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="cRows">To be added.</param>
-        <param name="hRows">To be added.</param>
-        <param name="refCounts">To be added.</param>
-        <param name="rowStatus">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cRows">The number of rows for which to increment the reference count.</param>
+        <param name="hRows">An array of row handles for which to increment the reference count. The reference count of row handles is incremented by one for each time they appear in the array.</param>
+        <param name="refCounts">An array with <c>cRows</c> elements in which to return the new reference count for each row handle. The consumer allocates memory for this array. If <c>refCounts</c> is a null pointer, no reference counts are returned.</param>
+        <param name="rowStatus">An array with <c>cRows</c> elements in which to return values indicating the status of each row specified in <c>hRows</c>.</param>
+        <summary>Adds a reference count to an existing row handle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -68,11 +82,18 @@
         <Parameter Name="pData" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="hRow">To be added.</param>
-        <param name="hAccessor">To be added.</param>
-        <param name="pData">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="hRow">The handle of the row from which to get the data.</param>
+        <param name="hAccessor">The handle of the accessor to use.</param>
+        <param name="pData">A pointer to a buffer in which to return the data.</param>
+        <summary>Retrieves data from the rowset's copy of the row.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNextRows">
@@ -95,13 +116,20 @@
         <Parameter Name="hRows" Type="System.Int32[]&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="hChapter">To be added.</param>
-        <param name="lRowsOffset">To be added.</param>
-        <param name="cRows">To be added.</param>
-        <param name="cRowsObtained">To be added.</param>
-        <param name="hRows">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="hChapter">The chapter handle designating the rows to fetch.</param>
+        <param name="lRowsOffset">The signed count of rows to skip before fetching rows. Deleted rows that the provider has removed from the rowset are not counted in the skip.</param>
+        <param name="cRows">The number of rows to fetch. A negative number means to fetch backward.</param>
+        <param name="cRowsObtained">A pointer to memory in which to return the actual number of fetched rows.</param>
+        <param name="hRows">A pointer to memory in which to return an array of handles of the fetched rows.</param>
+        <summary>Fetches rows sequentially, remembering the previous position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReleaseRows">
@@ -124,14 +152,21 @@
         <Parameter Name="rgRowStatus" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="cRows">To be added.</param>
-        <param name="hRows">To be added.</param>
-        <param name="rowOptions">To be added.</param>
-        <param name="rowRefCounts">To be added.</param>
-        <param name="rgRowStatus">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="cRows">The number of rows to release.</param>
+        <param name="hRows">An array of handles of the rows to be released. The row handles do not need to form a logical cluster; they may have been obtained at separate times and need not be for contiguous underlying rows. Row handles are decremented by one reference count for each time they appear in the array.</param>
+        <param name="rowOptions">An array of <c>cRows</c> elements containing bitmasks indicating additional options to be specified when a row is released.</param>
+        <param name="rowRefCounts">An array with <c>cRows</c> elements in which to return the new reference count of each row.</param>
+        <param name="rgRowStatus">An array with <c>cRows</c> elements in which to return values indicating the status of each row specified in <c>hRows</c>.</param>
+        <summary>Releases rows.</summary>
+        <returns>An <see langword="Integer" /> representing the result.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RestartPosition">
@@ -150,10 +185,17 @@
         <Parameter Name="hChapter" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="hChapter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="hChapter">The chapter handle designating the rows on which to reposition.</param>
+        <summary>Repositions the next fetch position to its initial position.</summary>
+        <returns>An <see langword="Integer" /> representing the result.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,11 @@
 ---
 uid: System.NetPipeStyleUriParser
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.NetPipeStyleUriParser.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

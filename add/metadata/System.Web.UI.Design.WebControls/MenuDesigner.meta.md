@@ -1,89 +1,111 @@
 ---
 uid: System.Web.UI.Design.WebControls.MenuDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MenuDesigner.GetErrorDesignTimeHtml(System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MenuDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MenuDesigner.GetEmptyDesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MenuDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#RefreshSchema(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.MenuDesigner.CanRefreshSchema
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.MenuDesigner.TemplateGroups
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.MenuDesigner.ActionLists
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.MenuDesigner.GetSampleDataSource
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.MenuDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#CanRefreshSchema
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.MenuDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.MenuDesigner.RefreshSchema(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.MenuDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#Schema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MenuDesigner.GetDesignTimeHtml
-internalonly: False
+---
+
+---
+uid: System.Web.UI.Design.WebControls.MenuDesigner.CanRefreshSchema
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.MenuDesigner.TemplateGroups
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.MenuDesigner.ActionLists
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.MenuDesigner.GetSampleDataSource
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.MenuDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#CanRefreshSchema
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.MenuDesigner.Initialize(System.ComponentModel.IComponent)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.MenuDesigner.RefreshSchema(System.Boolean)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.MenuDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#Schema
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.MenuDesigner.GetDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MenuDesigner.Schema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MenuDesigner.UsePreviewControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MenuDesigner.AutoFormats
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MenuDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

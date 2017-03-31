@@ -1,24 +1,29 @@
 ---
 uid: System.Xaml.XamlSchemaException
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlSchemaException.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlSchemaException.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlSchemaException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlSchemaException.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlSchemaException.#ctor(System.String,System.Exception)
-internalonly: False
+manager: "martinek"
 ---

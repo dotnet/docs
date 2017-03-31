@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Retrieves workflow child activities from an instance of an activity.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Validation.GetChildSubtree" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
         <ReturnType>System.Activities.InArgument&lt;System.Activities.Validation.ValidationContext&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the property that serves as an argument into an activity and provides the activity with the information required for its validation process.</summary>
+        <value>An argument to an activity that provides information for its validation process.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

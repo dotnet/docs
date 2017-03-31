@@ -1,9 +1,13 @@
 ---
 uid: System.Linq.OrderedParallelQuery`1
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.OrderedParallelQuery`1.GetEnumerator
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

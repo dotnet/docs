@@ -1,14 +1,20 @@
 ---
 uid: Accessibility.__MIDL_IWinTypes_0009
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Accessibility.__MIDL_IWinTypes_0009.hInproc
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Accessibility.__MIDL_IWinTypes_0009.hRemote
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,1 +1,0 @@
-            IssuedTokenClientCredential itcc = client.ClientCredentials.IssuedToken;

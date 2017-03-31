@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.SettingsLoadedEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsLoadedEventArgs.Provider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsLoadedEventArgs.#ctor(System.Configuration.SettingsProvider)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,1 +1,0 @@
-		long maxBufferPoolSize = binding.MaxBufferPoolSize;

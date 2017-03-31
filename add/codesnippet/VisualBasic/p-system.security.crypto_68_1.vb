@@ -1,1 +1,0 @@
-            If (cryptoTransform.CanTransformMultipleBlocks) Then

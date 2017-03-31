@@ -1,4 +1,6 @@
 ---
 uid: System.IO.RenamedEventHandler
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

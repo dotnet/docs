@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.SessionPageStatePersister
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.SessionPageStatePersister.Load
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.SessionPageStatePersister.#ctor(System.Web.UI.Page)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.SessionPageStatePersister.Save
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanging" /> cancelable event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs> class contains information for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanging> event. The <xref:System.Web.UI.WebControls.WebParts.WebPartEventArgs> class provides access to the display mode that will be applied to the Web Parts control. The display mode is accessed through the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs.NewDisplayMode%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +35,8 @@
         <Parameter Name="newDisplayMode" Type="System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
       </Parameters>
       <Docs>
-        <param name="newDisplayMode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="newDisplayMode">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> to apply to a Web Parts control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartDisplayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the display mode to apply to a Web Parts control.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> to apply to a Web Parts control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

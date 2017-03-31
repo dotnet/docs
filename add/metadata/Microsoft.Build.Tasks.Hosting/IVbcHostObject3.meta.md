@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObject3
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObject3.SetLanguageVersion(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

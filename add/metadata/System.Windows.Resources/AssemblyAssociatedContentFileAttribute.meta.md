@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Resources.AssemblyAssociatedContentFileAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Resources.AssemblyAssociatedContentFileAttribute.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Resources.AssemblyAssociatedContentFileAttribute.RelativeContentFilePath
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

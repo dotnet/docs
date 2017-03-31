@@ -1,19 +1,35 @@
 ---
 uid: System.UriTemplateEquivalenceComparer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.UriTemplateEquivalenceComparer.GetHashCode(System.UriTemplate)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.UriTemplateEquivalenceComparer.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.UriTemplateEquivalenceComparer.Equals
+---
+
+---
+uid: System.UriTemplateEquivalenceComparer.GetHashCode
 ---
 
 ---
 uid: System.UriTemplateEquivalenceComparer.Equals(System.UriTemplate,System.UriTemplate)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the position of the image on the control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The image is centered within the control's client rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The image is left-aligned at the top across the control's client rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stretch">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The image is streched across the control's client rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tile">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The image is tiled across the control's client rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="Zoom">
@@ -91,7 +91,7 @@
         <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The image is enlarged within the control's client rectangle.</summary>
       </Docs>
     </Member>
   </Members>

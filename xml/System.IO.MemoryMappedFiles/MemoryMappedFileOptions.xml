@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides memory allocation options for memory-mapped files.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Memory allocation is delayed until a view is created with either the <see cref="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewAccessor" /> or <see cref="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewStream" /> method.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -75,7 +75,7 @@
         <ReturnType>System.IO.MemoryMappedFiles.MemoryMappedFileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No memory allocation options are applied.</summary>
       </Docs>
     </Member>
   </Members>

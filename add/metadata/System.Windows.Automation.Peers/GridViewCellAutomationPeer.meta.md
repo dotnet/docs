@@ -1,59 +1,76 @@
 ---
 uid: System.Windows.Automation.Peers.GridViewCellAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridViewCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Row
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridViewCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#ContainingGrid
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridViewCellAutomationPeer.IsControlElementCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridViewCellAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridViewCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Column
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridViewCellAutomationPeer.System#Windows#Automation#Provider#ITableItemProvider#GetColumnHeaderItems
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridViewCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#RowSpan
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridViewCellAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridViewCellAutomationPeer.System#Windows#Automation#Provider#ITableItemProvider#GetRowHeaderItems
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridViewCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#ColumnSpan
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.GridViewCellAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

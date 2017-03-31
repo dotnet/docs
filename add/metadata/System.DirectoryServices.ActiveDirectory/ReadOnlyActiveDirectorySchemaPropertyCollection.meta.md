@@ -1,24 +1,34 @@
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection.Contains(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection.Item(System.Int32)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty[],System.Int32)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

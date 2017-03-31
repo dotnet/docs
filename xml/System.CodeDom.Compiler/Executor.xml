@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides command execution functions for invoking compilers. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides a collection of methods that can be used to invoke a compiler, typically from an <xref:System.CodeDom.Compiler.ICodeCompiler> implementation.  
+  
+> [!NOTE]
+>  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For more information, see [Link Demands](../Topic/Link%20Demands.md).  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
   </Docs>
   <Members>
     <Member MemberName="ExecWait">
@@ -32,10 +43,11 @@
         <Parameter Name="tempFiles" Type="System.CodeDom.Compiler.TempFileCollection" />
       </Parameters>
       <Docs>
-        <param name="cmd">To be added.</param>
-        <param name="tempFiles">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cmd">The command to execute.</param>
+        <param name="tempFiles">A <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> with which to manage and store references to intermediate files generated during compilation.</param>
+        <summary>Executes the command using the specified temporary files and waits for the call to return.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="ExecWaitWithCapture">
@@ -57,13 +69,14 @@
         <Parameter Name="errorName" Type="System.String&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="cmd">To be added.</param>
-        <param name="tempFiles">To be added.</param>
-        <param name="outputName">To be added.</param>
-        <param name="errorName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cmd">The command to execute.</param>
+        <param name="tempFiles">A <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> with which to manage and store references to intermediate files generated during compilation.</param>
+        <param name="outputName">A reference to a string that will store the compiler's message output.</param>
+        <param name="errorName">A reference to a string that will store the name of the error or errors encountered.</param>
+        <summary>Executes the specified command using the specified temporary files and waits for the call to return, storing output and error information from the compiler in the specified strings.</summary>
+        <returns>The return value from the compiler.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="ExecWaitWithCapture">
@@ -86,14 +99,22 @@
         <Parameter Name="errorName" Type="System.String&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="userToken">To be added.</param>
-        <param name="cmd">To be added.</param>
-        <param name="tempFiles">To be added.</param>
-        <param name="outputName">To be added.</param>
-        <param name="errorName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="userToken">The token to start the compiler process with.</param>
+        <param name="cmd">The command to execute.</param>
+        <param name="tempFiles">A <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> with which to manage and store references to intermediate files generated during compilation.</param>
+        <param name="outputName">A reference to a string that will store the compiler's message output.</param>
+        <param name="errorName">A reference to a string that will store the name of the error or errors encountered.</param>
+        <summary>Executes the specified command using the specified user token and temporary files, and waits for the call to return, storing output and error information from the compiler in the specified strings.</summary>
+        <returns>The return value from the compiler.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `userToken` parameter accepts a Win32 security access token that indicates the security context for the process to be started in. For more information, consult the Windows `CreateProcessAsUser` method documentation in the Platform SDK documentation in MSDN.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="ExecWaitWithCapture">
@@ -116,14 +137,15 @@
         <Parameter Name="errorName" Type="System.String&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="cmd">To be added.</param>
-        <param name="currentDir">To be added.</param>
-        <param name="tempFiles">To be added.</param>
-        <param name="outputName">To be added.</param>
-        <param name="errorName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cmd">The command to execute.</param>
+        <param name="currentDir">The current directory.</param>
+        <param name="tempFiles">A <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> with which to manage and store references to intermediate files generated during compilation.</param>
+        <param name="outputName">A reference to a string that will store the compiler's message output.</param>
+        <param name="errorName">A reference to a string that will store the name of the error or errors encountered.</param>
+        <summary>Executes the specified command using the specified current directory and temporary files, and waits for the call to return, storing output and error information from the compiler in the specified strings.</summary>
+        <returns>The return value from the compiler.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="ExecWaitWithCapture">
@@ -147,15 +169,16 @@
         <Parameter Name="errorName" Type="System.String&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="userToken">To be added.</param>
-        <param name="cmd">To be added.</param>
-        <param name="currentDir">To be added.</param>
-        <param name="tempFiles">To be added.</param>
-        <param name="outputName">To be added.</param>
-        <param name="errorName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="userToken">The token to start the compiler process with.</param>
+        <param name="cmd">The command to execute.</param>
+        <param name="currentDir">The directory to start the process in.</param>
+        <param name="tempFiles">A <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> with which to manage and store references to intermediate files generated during compilation.</param>
+        <param name="outputName">A reference to a string that will store the compiler's message output.</param>
+        <param name="errorName">A reference to a string that will store the name of the error or errors encountered.</param>
+        <summary>Executes the specified command using the specified user token, current directory, and temporary files; then waits for the call to return, storing output and error information from the compiler in the specified strings.</summary>
+        <returns>The return value from the compiler.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
   </Members>

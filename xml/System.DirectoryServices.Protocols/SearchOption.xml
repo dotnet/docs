@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SearchOption" /> enumeration specifies the search options which define how the search will behave.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.Protocols.SearchOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Prevents referrals from being generated when the search results are returned. The value is equal to 1.</summary>
       </Docs>
     </Member>
     <Member MemberName="PhantomRoot">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.Protocols.SearchOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Instructs the server to search all naming contexts that are subordinate to the search base. The value is equal to 2.</summary>
       </Docs>
     </Member>
   </Members>

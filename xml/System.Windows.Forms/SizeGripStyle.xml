@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the style of the sizing grip on a <see cref="T:System.Windows.Forms.Form" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.Form.SizeGripStyle%2A> property of the <xref:System.Windows.Forms.Form>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Auto">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.SizeGripStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The sizing grip is automatically displayed when needed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hide">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.SizeGripStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The sizing grip is hidden.</summary>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.SizeGripStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The sizing grip is always shown on the form.</summary>
       </Docs>
     </Member>
   </Members>

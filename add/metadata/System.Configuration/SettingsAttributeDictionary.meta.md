@@ -1,14 +1,23 @@
 ---
 uid: System.Configuration.SettingsAttributeDictionary
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsAttributeDictionary.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsAttributeDictionary.#ctor(System.Configuration.SettingsAttributeDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.SettingsAttributeDictionary.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---

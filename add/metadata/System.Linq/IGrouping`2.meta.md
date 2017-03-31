@@ -1,9 +1,12 @@
 ---
 uid: System.Linq.IGrouping`2
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.IGrouping`2.Key
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---

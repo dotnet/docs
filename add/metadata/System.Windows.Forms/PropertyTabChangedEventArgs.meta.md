@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Forms.PropertyTabChangedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.PropertyTabChangedEventArgs.#ctor(System.Windows.Forms.Design.PropertyTab,System.Windows.Forms.Design.PropertyTab)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.PropertyTabChangedEventArgs.OldTab
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.PropertyTabChangedEventArgs.NewTab
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

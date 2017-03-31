@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.Build.Tasks.AssignTargetPath
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AssignTargetPath.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AssignTargetPath.RootFolder
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AssignTargetPath.Files
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AssignTargetPath.AssignedFiles
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.AssignTargetPath.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

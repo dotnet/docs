@@ -1,74 +1,101 @@
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Add(`1)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.Count
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#IsReadOnly
-internalonly: False
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.#ctor(System.Collections.Generic.SortedDictionary{`0,`1})
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#IEnumerable{TValue}#GetEnumerator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Contains(`1)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#ICollection#SyncRoot
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.CopyTo(`1[],System.Int32)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Remove(`1)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Clear
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#ICollection#IsSynchronized
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.GetEnumerator
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

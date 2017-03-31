@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Script.Serialization
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

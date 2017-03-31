@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Objects.ObjectMaterializedEventArgs
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.ObjectMaterializedEventArgs.Entity
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

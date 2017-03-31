@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.CompiledTemplateBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.CompiledTemplateBuilder.#ctor(System.Web.UI.BuildTemplateMethod)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.CompiledTemplateBuilder.InstantiateIn(System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

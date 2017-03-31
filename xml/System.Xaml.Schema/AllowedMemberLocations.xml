@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the syntax restrictions enforced on a property when it is set in XAML, as reported by a <see cref="T:System.Xaml.XamlDirective" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Information reported by this property does not account for any possible markup extensions. Markup extensions are processed first and can potentially return objects from within an attribute usage, even for properties that are notated as MemberElement only.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Any">
@@ -32,7 +39,7 @@
         <ReturnType>System.Xaml.Schema.AllowedMemberLocations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Property can be set in either <see cref="F:System.Xaml.Schema.AllowedMemberLocations.Attribute" /> or <see cref="F:System.Xaml.Schema.AllowedMemberLocations.MemberElement" /> location. (This enumeration member is defined as the combination of those values.)</summary>
       </Docs>
     </Member>
     <Member MemberName="Attribute">
@@ -48,7 +55,7 @@
         <ReturnType>System.Xaml.Schema.AllowedMemberLocations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Property can be set in XAML attribute syntax.</summary>
       </Docs>
     </Member>
     <Member MemberName="MemberElement">
@@ -64,7 +71,7 @@
         <ReturnType>System.Xaml.Schema.AllowedMemberLocations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Property can be set in XAML property element syntax.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,7 +87,7 @@
         <ReturnType>System.Xaml.Schema.AllowedMemberLocations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Property cannot be set in XAML at all. This is the default.</summary>
       </Docs>
     </Member>
   </Members>

@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an embedded external resource in an email attachment, such as an image in an HTML attachment.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,9 +38,11 @@
         <Parameter Name="contentStream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="contentStream">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contentStream">A stream that contains the content for this embedded resource.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.LinkedResource" /> using the supplied <see cref="T:System.IO.Stream" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contentStream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -61,9 +63,11 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileName">The file name holding the content for this embedded resource.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.LinkedResource" /> using the specified file name.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -85,10 +89,14 @@
         <Parameter Name="contentType" Type="System.Net.Mime.ContentType" />
       </Parameters>
       <Docs>
-        <param name="contentStream">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contentStream">A stream that contains the content for this embedded resource.</param>
+        <param name="contentType">The type of the content.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.LinkedResource" /> with the values supplied by <see cref="T:System.IO.Stream" /> and <see cref="T:System.Net.Mime.ContentType" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contentStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="contentType" /> is not a valid value.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -110,10 +118,14 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contentStream">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contentStream">A stream that contains the content for this embedded resource.</param>
+        <param name="mediaType">The MIME media type of the content.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.LinkedResource" /> with the specified <see cref="T:System.IO.Stream" /> and media type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contentStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="mediaType" /> is not a valid value.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -135,10 +147,14 @@
         <Parameter Name="contentType" Type="System.Net.Mime.ContentType" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileName">The file name that holds the content for this embedded resource.</param>
+        <param name="contentType">The type of the content.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.LinkedResource" /> with the specified file name and content type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="contentType" /> is not a valid value.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -160,10 +176,14 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileName">The file name that holds the content for this embedded resource.</param>
+        <param name="mediaType">The MIME media type of the content.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Net.Mail.LinkedResource" /> with the specified file name and media type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="mediaType" /> is not a valid value.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContentLink">
@@ -184,8 +204,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a URI that the resource must match.</summary>
+        <value>If <see cref="P:System.Net.Mail.LinkedResource.ContentLink" /> is a relative URI, the recipient of the message must resolve it.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +230,11 @@
         <Parameter Name="content" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="content">A string that contains the embedded resource to be included in the email attachment.</param>
+        <summary>Creates a <see cref="T:System.Net.Mail.LinkedResource" /> object from a string to be included in an email attachment as an embedded resource. The default media type is plain text, and the default content type is ASCII.</summary>
+        <returns>A <see cref="T:System.Net.Mail.LinkedResource" /> object that contains the embedded resource to be included in the email attachment.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified content string is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateLinkedResourceFromString">
@@ -238,11 +259,12 @@
         <Parameter Name="contentType" Type="System.Net.Mime.ContentType" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="content">A string that contains the embedded resource to be included in the email attachment.</param>
+        <param name="contentType">The type of the content.</param>
+        <summary>Creates a <see cref="T:System.Net.Mail.LinkedResource" /> object from a string to be included in an email attachment as an embedded resource, with the specified content type, and media type as plain text.</summary>
+        <returns>A <see cref="T:System.Net.Mail.LinkedResource" /> object that contains the embedded resource to be included in the email attachment.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified content string is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateLinkedResourceFromString">
@@ -268,12 +290,13 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <param name="contentEncoding">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="content">A string that contains the embedded resource to be included in the email attachment.</param>
+        <param name="contentEncoding">The type of the content.</param>
+        <param name="mediaType">The MIME media type of the content.</param>
+        <summary>Creates a <see cref="T:System.Net.Mail.LinkedResource" /> object from a string to be included in an email attachment as an embedded resource, with the specified content type, and media type.</summary>
+        <returns>A <see cref="T:System.Net.Mail.LinkedResource" /> object that contains the embedded resource to be included in the email attachment.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified content string is null.</exception>
       </Docs>
     </Member>
   </Members>

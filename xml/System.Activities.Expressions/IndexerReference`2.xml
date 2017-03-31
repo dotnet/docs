@@ -23,10 +23,72 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TOperand">To be added.</typeparam>
-    <typeparam name="TItem">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TOperand">The type with the indexer.</typeparam>
+    <typeparam name="TItem">The type of the indexer array.</typeparam>
+    <summary>Represents an element referenced by an object indexer that can be used as an l-value in an expression.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses <xref:System.Activities.Expressions.IndexerReference%602> in an `Assign` activity to assign an integer value to the object item at index [1,2] and prints the item value to the console. The `Assign` activity is equivalent to the following statement when using an object that implements an indexer. `myObj[1,2] = 4;` .  
+  
+> [!NOTE]
+>  Instead of instantiating the <xref:System.Activities.Expressions.IndexerReference%602> l-value expression activity directly, it is strongly recommended that you call <xref:System.Activities.Expressions.ExpressionServices.ConvertReference%2A>, which provides a higher level of abstraction and enables you to implement your workflow more intuitively.  
+  
+```  
+  
+// Define a class with a multi-dimensional indexer.  
+public class ObjectWithIndexer  
+{  
+    private int[,] array = new int[10,10];  
+    public int this[int i, int j]  
+    {  
+        get { return array[i,j]; }  
+        set { array[i,j] = value; }  
+    }  
+}  
+  
+public static void IndexerReferenceSample()  
+{  
+    // Create a variable of type ObjectWithIndexer to store the object item.  
+    var oivar = new Variable<ObjectWithIndexer>("oivar", new ObjectWithIndexer());  
+  
+    Activity myActivity = new Sequence  
+    {  
+        Variables = { oivar },  
+        Activities =   
+        {                      
+            // Create an Assign activity with a reference for the object at index [1,2].  
+            new Assign<int>  
+            {  
+                To = new IndexerReference<ObjectWithIndexer, int>  
+                {  
+                    Operand = oivar,  
+                    Indices =  
+                    {  
+                        new InArgument<int>(1),  
+                        new InArgument<int>(2)  
+                    }  
+                },  
+                // Assign an integer value to the object at index [1,2].  
+                Value = 4,  
+            },  
+            // Print the new item value to the console.  
+            new WriteLine()  
+            {  
+                Text = ExpressionServices.Convert<string>(ctx => oivar.Get(ctx)[1, 2].ToString()),  
+            }  
+        }  
+    };  
+  
+    // Invoke the Sequence activity.  
+    WorkflowInvoker.Invoke(myActivity);  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,7 +102,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.IndexerReference`2" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +170,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.InArgument&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of arguments that represent the indices of the element in the indexer array.</summary>
+        <value>The indices of the element in the indexer array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Expressions.IndexerReference%602.Indices%2A> property is read-only, but the items in the collection can be modified and the indices can be changed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Operand">
@@ -134,8 +203,8 @@
         <ReturnType>System.Activities.InArgument&lt;TOperand&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the object that contains the indexer.</summary>
+        <value>The object that contains the indexer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

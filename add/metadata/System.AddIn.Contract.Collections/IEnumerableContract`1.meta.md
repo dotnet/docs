@@ -1,9 +1,13 @@
 ---
 uid: System.AddIn.Contract.Collections.IEnumerableContract`1
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Collections.IEnumerableContract`1.GetEnumeratorContract
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

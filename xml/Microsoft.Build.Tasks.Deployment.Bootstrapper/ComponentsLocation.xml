@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the way that required components will be published.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that products be located at a specific location.</summary>
       </Docs>
     </Member>
     <Member MemberName="HomeSite">
@@ -51,7 +51,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that products be found according to the redistributable vendor's designated URL.</summary>
       </Docs>
     </Member>
     <Member MemberName="Relative">
@@ -67,7 +67,7 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that products be located relative to the generated bootstrapper.</summary>
       </Docs>
     </Member>
   </Members>

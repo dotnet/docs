@@ -1,24 +1,24 @@
 ---
 uid: System.Runtime.Remoting.Channels.SinkProviderData
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.SinkProviderData.Properties
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.SinkProviderData.#ctor(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.SinkProviderData.Children
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.SinkProviderData.Name
-internalonly: False
+manager: "ghogen"
 ---

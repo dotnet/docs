@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.IAutoFieldGenerator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IAutoFieldGenerator.GenerateFields(System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

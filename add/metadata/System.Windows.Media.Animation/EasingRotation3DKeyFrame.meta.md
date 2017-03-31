@@ -1,44 +1,63 @@
 ---
 uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.EasingFunction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Rotation3D,System.Double)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.CreateInstanceCore
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.KeyTime)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.EasingFunctionProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.CreateInstanceCore
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.#ctor(System.Windows.Media.Media3D.Rotation3D,System.Windows.Media.Animation.KeyTime)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.EasingFunctionProperty
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingRotation3DKeyFrame.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---

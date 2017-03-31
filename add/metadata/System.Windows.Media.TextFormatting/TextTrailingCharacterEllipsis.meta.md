@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis.#ctor(System.Double,System.Windows.Media.TextFormatting.TextRunProperties)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis.Style
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis.Width
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis.Symbol
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

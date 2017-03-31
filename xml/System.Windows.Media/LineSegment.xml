@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates a line between two points in a <see cref="T:System.Windows.Media.PathFigure" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a <xref:System.Windows.Media.PathFigure> object to create composite shapes using <xref:System.Windows.Media.LineSegment> objects and other segments.  
+  
+ The <xref:System.Windows.Media.LineSegment> class does not contain a property for the starting point of the line. The starting point of the line is the end point of the previous segment, or the <xref:System.Windows.Media.PathFigure.StartPoint%2A> of the <xref:System.Windows.Media.PathFigure> if no other segments exist.  
+  
+ **Freezable Features:** Because <xref:System.Windows.Media.LineSegment> objects inherit from the <xref:System.Windows.Freezable> class, they provide several special features: they can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features that are provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LineSegment" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +55,10 @@
         <Parameter Name="isStroked" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <param name="isStroked">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="point">The end point of this <see cref="T:System.Windows.Media.LineSegment" />.</param>
+        <param name="isStroked">
+          <see langword="true" /> to stroke this <see cref="T:System.Windows.Media.LineSegment" />; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LineSegment" /> class that has the specified end <see cref="T:System.Windows.Point" /> and Boolean that determines whether this <see cref="T:System.Windows.Media.LineSegment" /> is stroked.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +76,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable copy of this <see cref="T:System.Windows.Media.LineSegment" /> by making deep copies of its values.</summary>
+        <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the cloned object returns <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ When this method copies dependency properties, it copies resource references and data bindings although they might no longer resolve. It does not copy animations or their current values.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -83,9 +106,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable copy of this <see cref="T:System.Windows.Media.LineSegment" /> object by making deep copies of its values. This method does not copy resource references, data bindings, or animations, although it does copy their current values.</summary>
+        <returns>A modifiable deep copy of the current object. The <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the <see cref="P:System.Windows.Freezable.IsFrozen" /> property of the source is <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to produce modifiable copies of read-only <xref:System.Windows.Freezable> objects. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -120,9 +152,24 @@
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the end point of the line segment.</summary>
+        <value>The end point of the line segment.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.LineSegment> class does not contain a property for the starting point of the line. The starting point of the line is the current point of the <xref:System.Windows.Media.PathFigure> object where you add the line.  
+  
+<a name="dependencyPropertyInfo_Point"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.LineSegment.PointProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PointProperty">
@@ -138,7 +185,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.LineSegment.Point" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Controls how the values from the data source will be applied to existing rows when using the <see cref="Overload:System.Data.DataTable.Load" /> or <see cref="Overload:System.Data.DataSet.Load" /> method.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.Data.LoadOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The incoming values for this row will be written to both the current value and the original value versions of the data for each column.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreserveChanges">
@@ -58,7 +58,7 @@
         <ReturnType>System.Data.LoadOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The incoming values for this row will be written to the original value version of each column. The current version of the data in each column will not be changed.  This is the default.</summary>
       </Docs>
     </Member>
     <Member MemberName="Upsert">
@@ -79,7 +79,7 @@
         <ReturnType>System.Data.LoadOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The incoming values for this row will be written to the current version of each column. The original version of each column's data will not be changed.</summary>
       </Docs>
     </Member>
   </Members>

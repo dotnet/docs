@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.JSError
-internalonly: False
+ms.author: "mikejo"
 ---

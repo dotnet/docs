@@ -31,8 +31,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Stores the value of a <see cref="T:System.Decimal" /> constant in metadata. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this attribute to specify at compile time that a decimal value is a constant value.  
+  
+ You can apply this attribute to fields or parameters.  
+  
+ For more information about constant attributes, see the <xref:System.Runtime.CompilerServices.CustomConstantAttribute> class.  
+  
+ The classes in <xref:System.Runtime.CompilerServices> are for compiler writers use only.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,12 +77,12 @@
         <Parameter Name="low" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="scale">To be added.</param>
-        <param name="sign">To be added.</param>
-        <param name="hi">To be added.</param>
-        <param name="mid">To be added.</param>
-        <param name="low">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="scale">The power of 10 scaling factor that indicates the number of digits to the right of the decimal point. Valid values are 0 through 28 inclusive.</param>
+        <param name="sign">A value of 0 indicates a positive value, and a value of 1 indicates a negative value.</param>
+        <param name="hi">The high 32 bits of the 96-bit <see cref="P:System.Runtime.CompilerServices.DecimalConstantAttribute.Value" />.</param>
+        <param name="mid">The middle 32 bits of the 96-bit <see cref="P:System.Runtime.CompilerServices.DecimalConstantAttribute.Value" />.</param>
+        <param name="low">The low 32 bits of the 96-bit <see cref="P:System.Runtime.CompilerServices.DecimalConstantAttribute.Value" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.DecimalConstantAttribute" /> class with the specified signed integer values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,13 +120,15 @@
         <Parameter Name="low" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="scale">To be added.</param>
-        <param name="sign">To be added.</param>
-        <param name="hi">To be added.</param>
-        <param name="mid">To be added.</param>
-        <param name="low">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="scale">The power of 10 scaling factor that indicates the number of digits to the right of the decimal point. Valid values are 0 through 28 inclusive.</param>
+        <param name="sign">A value of 0 indicates a positive value, and a value of 1 indicates a negative value.</param>
+        <param name="hi">The high 32 bits of the 96-bit <see cref="P:System.Runtime.CompilerServices.DecimalConstantAttribute.Value" />.</param>
+        <param name="mid">The middle 32 bits of the 96-bit <see cref="P:System.Runtime.CompilerServices.DecimalConstantAttribute.Value" />.</param>
+        <param name="low">The low 32 bits of the 96-bit <see cref="P:System.Runtime.CompilerServices.DecimalConstantAttribute.Value" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.DecimalConstantAttribute" /> class with the specified unsigned integer values.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="scale" /> &gt; 28.</exception>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -141,8 +156,8 @@
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the decimal constant stored in this attribute.</summary>
+        <value>The decimal constant stored in this attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,27 @@
 ---
 uid: System.ComponentModel.Design.DesignerActionHeaderItem
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.DesignerActionHeaderItem.#ctor(System.String,System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.DesignerActionHeaderItem.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.DesignerActionHeaderItem.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

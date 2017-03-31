@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines identifiers for power mode events reported by the operating system.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration defines identifiers that represent types of power mode changes or events. The values of this enumeration are used by a <xref:Microsoft.Win32.PowerModeChangedEventArgs> to indicate the type of a <xref:Microsoft.Win32.SystemEvents.PowerModeChanged> event.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Resume">
@@ -27,7 +34,7 @@
         <ReturnType>Microsoft.Win32.PowerModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operating system is about to resume from a suspended state.</summary>
       </Docs>
     </Member>
     <Member MemberName="StatusChange">
@@ -43,7 +50,7 @@
         <ReturnType>Microsoft.Win32.PowerModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A power mode status notification event has been raised by the operating system. This might indicate a weak or charging battery, a transition between AC power and battery, or another change in the status of the system power supply.</summary>
       </Docs>
     </Member>
     <Member MemberName="Suspend">
@@ -59,7 +66,7 @@
         <ReturnType>Microsoft.Win32.PowerModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operating system is about to be suspended.</summary>
       </Docs>
     </Member>
   </Members>

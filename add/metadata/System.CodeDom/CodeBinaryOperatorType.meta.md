@@ -1,4 +1,6 @@
 ---
 uid: System.CodeDom.CodeBinaryOperatorType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

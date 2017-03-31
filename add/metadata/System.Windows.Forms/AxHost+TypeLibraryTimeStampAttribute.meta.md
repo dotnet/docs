@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Forms.AxHost.TypeLibraryTimeStampAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.AxHost.TypeLibraryTimeStampAttribute.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.AxHost.TypeLibraryTimeStampAttribute.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,29 +1,41 @@
 ---
 uid: System.Web.UI.RootBuilder
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RootBuilder.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.RootBuilder.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RootBuilder.GetChildControlType(System.String,System.Collections.IDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RootBuilder.OnCodeGenerationComplete
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RootBuilder.BuiltObjects
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RootBuilder.#ctor(System.Web.UI.TemplateParser)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

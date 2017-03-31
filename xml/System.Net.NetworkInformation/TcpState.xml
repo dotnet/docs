@@ -19,8 +19,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the states of a Transmission Control Protocol (TCP) connection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration defines valid values for the <xref:System.Net.NetworkInformation.TcpConnectionInformation.State%2A> property. TCP is a transport layer protocol responsible for reliably sending and receiving data packets. The TCP states in this enumeration are defined in IETF RFC 793 available at [http://www.ietf.org](http://www.ietf.org/).  
+  
+   
+  
+## Examples  
+ The following code example counts the established TCP connections.  
+  
+ [!code-cpp[NCLNetInfo2#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#2)]
+ [!code-csharp[NCLNetInfo2#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#2)]
+ [!code-vb[NCLNetInfo2#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Closed">
@@ -45,7 +61,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The TCP connection is closed.</summary>
       </Docs>
     </Member>
     <Member MemberName="CloseWait">
@@ -70,7 +86,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The local endpoint of the TCP connection is waiting for a connection termination request from the local user.</summary>
       </Docs>
     </Member>
     <Member MemberName="Closing">
@@ -95,7 +111,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The local endpoint of the TCP connection is waiting for an acknowledgement of the connection termination request sent previously.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeleteTcb">
@@ -120,7 +136,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transmission control buffer (TCB) for the TCP connection is being deleted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Established">
@@ -145,7 +161,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The TCP handshake is complete. The connection has been established and data can be sent.</summary>
       </Docs>
     </Member>
     <Member MemberName="FinWait1">
@@ -170,7 +186,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The local endpoint of the TCP connection is waiting for a connection termination request from the remote endpoint or for an acknowledgement of the connection termination request sent previously.</summary>
       </Docs>
     </Member>
     <Member MemberName="FinWait2">
@@ -195,7 +211,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The local endpoint of the TCP connection is waiting for a connection termination request from the remote endpoint.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastAck">
@@ -220,7 +236,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The local endpoint of the TCP connection is waiting for the final acknowledgement of the connection termination request sent previously.</summary>
       </Docs>
     </Member>
     <Member MemberName="Listen">
@@ -245,7 +261,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The local endpoint of the TCP connection is listening for a connection request from any remote endpoint.</summary>
       </Docs>
     </Member>
     <Member MemberName="SynReceived">
@@ -270,7 +286,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The local endpoint of the TCP connection has sent and received a connection request and is waiting for an acknowledgment.</summary>
       </Docs>
     </Member>
     <Member MemberName="SynSent">
@@ -295,7 +311,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The local endpoint of the TCP connection has sent the remote endpoint a segment header with the synchronize (SYN) control bit set and is waiting for a matching connection request.</summary>
       </Docs>
     </Member>
     <Member MemberName="TimeWait">
@@ -320,7 +336,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The local endpoint of the TCP connection is waiting for enough time to pass to ensure that the remote endpoint received the acknowledgement of its connection termination request.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -345,7 +361,7 @@
         <ReturnType>System.Net.NetworkInformation.TcpState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The TCP connection state is unknown.</summary>
       </Docs>
     </Member>
   </Members>

@@ -23,8 +23,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines an ordered list of <see cref="T:System.Windows.Documents.DocumentReference" /> elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When associated with a <xref:System.Windows.Documents.FixedDocumentSequence>, the order of the elements that the <xref:System.Windows.Documents.DocumentReferenceCollection> contains should be the same as the document order that is defined in the <xref:System.Windows.Documents.FixedDocumentSequence>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -43,9 +50,16 @@
         <Parameter Name="item" Type="System.Windows.Documents.DocumentReference" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The element to add to the end of the collection.</param>
+        <summary>Adds an element to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Basic collection support. Implements <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionChanged">
@@ -61,7 +75,7 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an element is added or removed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,10 +96,17 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The destination array to which the elements from the collection should be copied.</param>
+        <param name="arrayIndex">The zero-based starting index within the array where the collection elements are to be copied.</param>
+        <summary>Copies the whole collection to an array that starts at a given array index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Basic collection support. Implements <xref:System.Collections.Generic.ICollection%601.CopyTo%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -101,8 +122,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements that are in the collection.</summary>
+        <value>The number of items that the collection contains.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +141,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator for iterating through the collection.</summary>
+        <returns>An enumerator that you can use to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,10 +162,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element in the collection to get.</param>
+        <summary>Gets the element that is at the specified index.</summary>
+        <value>The collection element that is at the specified <paramref name="index" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Basic collection support. Implements <xref:System.Collections.IList>.<xref:System.Collections.IList.Item%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -161,8 +189,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through a collection.  Use the type-safe <see cref="M:System.Windows.Documents.DocumentReferenceCollection.GetEnumerator" /> method instead.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -24,8 +24,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies socket send and receive behaviors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sends data and specifies None for <xref:System.Net.Sockets.SocketFlags>.  
+  
+ [!code-cpp[Socket_Sync_Send_Receive#3](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Sync_Send_Receive/CPP/source.cpp#3)]
+ [!code-csharp[Socket_Sync_Send_Receive#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Sync_Send_Receive/CS/source.cs#3)]
+ [!code-vb[Socket_Sync_Send_Receive#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Sync_Send_Receive/VB/source.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Broadcast">
@@ -50,7 +61,7 @@
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a broadcast packet.</summary>
       </Docs>
     </Member>
     <Member MemberName="ControlDataTruncated">
@@ -75,7 +86,7 @@
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the control data did not fit into an internal 64-KB buffer and was truncated.</summary>
       </Docs>
     </Member>
     <Member MemberName="DontRoute">
@@ -100,7 +111,7 @@
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Send without using routing tables.</summary>
       </Docs>
     </Member>
     <Member MemberName="MaxIOVectorLength">
@@ -117,7 +128,7 @@
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides a standard value for the number of WSABUF structures that are used to send and receive data. This value is not used or supported on [!INCLUDE[net_v45](~/includes/net-v45-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="Multicast">
@@ -142,7 +153,7 @@
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a multicast packet.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -167,7 +178,7 @@
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use no flags for this call.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfBand">
@@ -192,7 +203,7 @@
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Process out-of-band data.</summary>
       </Docs>
     </Member>
     <Member MemberName="Partial">
@@ -217,7 +228,7 @@
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Partial send or receive for message.</summary>
       </Docs>
     </Member>
     <Member MemberName="Peek">
@@ -242,7 +253,7 @@
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Peek at the incoming message.</summary>
       </Docs>
     </Member>
     <Member MemberName="Truncated">
@@ -267,7 +278,7 @@
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message was too large to fit into the specified buffer and was truncated.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,13 @@
 ---
 uid: System.Web.Util.IWebObjectFactory
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Util.IWebObjectFactory.CreateInstance
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

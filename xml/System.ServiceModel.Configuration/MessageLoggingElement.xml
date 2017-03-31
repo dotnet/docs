@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an XML element that defines the settings for the message-logging capabilities of [!INCLUDE[indigo1](~/includes/indigo1-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.MessageLoggingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +48,25 @@
         <ReturnType>System.ServiceModel.Configuration.XPathMessageFilterElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the XPathFilter objects that are used for message logging.</summary>
+        <value>A collection of XPathFilter objects that are used for message logging.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message filters are applied at the service and transport level. When one or more filters are defined, only messages that match at least one of the filters are logged. If no filter is defined, all messages pass through.  
+  
+ Filters support the full XPath syntax, and are applied in the order they appear in the configuration file. A syntactically incorrect filter results in a configuration exception.  
+  
+   
+  
+## Examples  
+ The following is an example in configuring a filter that records only messages that have a SOAP Header section.  
+  
+  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogEntireMessage">
@@ -71,9 +87,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether the entire message (message header and body) is logged.</summary>
+        <value>
+          <see langword="true" /> if the entire message (message header and body) is logged; otherwise, <see langword="false" />. The default is <see langword="false" />, which means that only the message header is logged.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This setting affects all message logging levels (service, transport, and malformed).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogKnownPii">
@@ -94,8 +118,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the known Pii identifier is logged.</summary>
+        <value>
+          <see langword="true" /> if the known Pii is logged; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +142,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether malformed messages are logged.</summary>
+        <value>
+          <see langword="true" /> if malformed messages are logged; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +166,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether messages are traced at the service level (before encryption and transport-related transforms).</summary>
+        <value>
+          <see langword="true" /> if messages are traced at the service level (before encryption and transport-related transforms); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +190,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether messages are traced at the transport level.</summary>
+        <value>
+          <see langword="true" /> if messages are traced at the transport level; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any filters specified in the configuration file are applied, and only messages that match the filters are traced.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxMessagesToLog">
@@ -189,8 +224,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies the maximum number of messages to log.</summary>
+        <value>The maximum number of messages to log. The default is 1000.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,8 +250,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies the maximum size, in bytes, of a message to log.</summary>
+        <value>The maximum size, in bytes, of a message to log. Messages larger than the limit are not logged. This setting affects all trace levels. The default is Int32.MaxValue.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

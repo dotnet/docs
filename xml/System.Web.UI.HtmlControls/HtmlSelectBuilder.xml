@@ -11,8 +11,31 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Interacts with the parser to build an <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlSelectBuilder> control interacts with the page parser to build an <xref:System.Web.UI.HtmlControls.HtmlSelect> control. Use the <xref:System.Web.UI.HtmlControls.HtmlSelectBuilder> control to customize the parsing of an <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlSelectBuilder.AllowWhitespaceLiterals%2A> property is set to `false` so that white space is always ignored. Use the <xref:System.Web.UI.HtmlControls.HtmlSelectBuilder.GetChildControlType%2A> method to determine the type of the <xref:System.Web.UI.HtmlControls.HtmlSelect> control's child controls.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a custom <xref:System.Web.UI.HtmlControls.HtmlSelectBuilder> control that defines two types of `<option>` child elements of a custom <xref:System.Web.UI.HtmlControls.HtmlSelect> control and then processes each type differently.  
+  
+ [!code-csharp[HtmlSelectBuilder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectBuilder/cs/source.aspx#1)]
+ [!code-vb[HtmlSelectBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectBuilder/vb/source.aspx#1)]  
+  
+ [!code-csharp[HtmlSelectBuilder#2](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectBuilder/cs/source.cs#2)]
+ [!code-vb[HtmlSelectBuilder#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectBuilder/vb/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>To create a custom control builder for an <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control, you need to inherit from this class.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +49,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlSelectBuilder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This constructor is used by ASP.NET when parsing the page and creating the control hierarchy. It is not intended for use in your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowWhitespaceLiterals">
@@ -44,9 +76,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Determines whether the white space literals in an <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control are to be processed or ignored.</summary>
+        <returns>This method always returns <see langword="false" />, indicating that white space in the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control is ignored.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> method to always ignore white space in the <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildControlType">
@@ -66,11 +105,26 @@
         <Parameter Name="attribs" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="tagName">To be added.</param>
-        <param name="attribs">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="tagName">The tag name of the child control.</param>
+        <param name="attribs">An array of attributes contained in the child control.</param>
+        <summary>Obtains the <see cref="T:System.Type" /> for the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control's child controls.</summary>
+        <returns>The <see cref="T:System.Type" /> of the <see cref="T:System.Web.UI.HtmlControls.HtmlSelect" /> control's specified child control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlSelectBuilder.GetChildControlType%2A> method to return the <xref:System.Type> of a specified child control in an <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlSelectBuilder.GetChildControlType%2A> method to check for custom child control types. For a complete, working code example, see the <xref:System.Web.UI.HtmlControls.HtmlSelectBuilder> class overview topic.  
+  
+ [!code-csharp[HtmlSelectBuilder#3](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlSelectBuilder/cs/source.cs#3)]
+ [!code-vb[HtmlSelectBuilder#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlSelectBuilder/vb/source.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

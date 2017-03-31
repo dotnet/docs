@@ -16,8 +16,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when the workflow runtime engine attempts to load a workflow instance that is currently loaded by another workflow runtime engine instance. Additionally, this exception is thrown when the workflow runtime engine attempts to save a workflow after the ownership timeout that was specified while loading the workflow has expired.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Runtime.WorkflowOwnershipException> is used by persistence services which support the capability for multiple applications to access the same database. In such an environment, an instance of the workflow runtime may try to load a workflow that is already loaded by another instance of the workflow runtime engine. For example, the <xref:System.Workflow.Runtime.Hosting.SQLWorkflowPersistenceService> class throws the <xref:System.Workflow.Runtime.WorkflowOwnershipException> when this situation occurs.  
+  
+ If you implement a persistence service that throws the <xref:System.Workflow.Runtime.WorkflowOwnershipException> you should provide the <xref:System.Guid> of the workflow instance for which the exception occurs by using an appropriate constructor for the class or setting the <xref:System.Workflow.Runtime.WorkflowOwnershipException.InstanceId%2A> property before you throw the exception.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +44,23 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.WorkflowOwnershipException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error and takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.WorkflowOwnershipException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic)|  
+|<xref:System.Exception.Message%2A>|A system-supplied localized description.|  
+|<xref:System.Workflow.Runtime.WorkflowOwnershipException.InstanceId%2A>|An empty <xref:System.Guid>.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -48,9 +76,24 @@
         <Parameter Name="instanceId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The <see cref="T:System.Guid" /> of the workflow instance for which this exception occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.WorkflowOwnershipException" /> class by using a specified workflow instance <see cref="T:System.Guid" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `instanceId` is equivalent to the <xref:System.Workflow.Runtime.WorkflowInstance.InstanceId%2A?displayProperty=fullName> property of the workflow instance. The <xref:System.Exception.Message%2A> property of the new instance is initialized to a system-supplied message that describes the error and takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.WorkflowOwnershipException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic)|  
+|<xref:System.Exception.Message%2A>|A system-supplied localized description.|  
+|<xref:System.Workflow.Runtime.WorkflowOwnershipException.InstanceId%2A>|The <xref:System.Guid> of the workflow instance, specified by `instanceId`, for which this exception occurred.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,9 +109,24 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.WorkflowOwnershipException" /> class by using a specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture. If you use this constructor you should explicitly set <xref:System.Workflow.Runtime.WorkflowOwnershipException.InstanceId%2A> before you throw the exception.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.WorkflowOwnershipException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+|<xref:System.Workflow.Runtime.WorkflowOwnershipException.InstanceId%2A>|An empty <xref:System.Guid>.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -85,10 +143,25 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The <see cref="T:System.Guid" /> of the workflow instance for which this exception occurred.</param>
+        <param name="message">The message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.WorkflowOwnershipException" /> class by using a specified workflow instance <see cref="T:System.Guid" /> and a specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `instanceId` is equivalent to the <xref:System.Workflow.Runtime.WorkflowInstance.InstanceId%2A?displayProperty=fullName> property of the workflow instance. The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.WorkflowOwnershipException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic)|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+|<xref:System.Workflow.Runtime.WorkflowOwnershipException.InstanceId%2A>|The <xref:System.Guid> of the workflow instance, specified by `instanceId`, for which this exception occurred.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -105,10 +178,19 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the WorkflowOwnershipException class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during serialization to reconstitute the exception object transmitted over a stream.  
+  
+ For more information see XML and SOAP Serialization.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -125,10 +207,25 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The message that describes the error.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a catch block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.WorkflowOwnershipException" /> class by using a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is supplied to the constructor or a null reference (Nothing in Visual Basic) if the `innerException` parameter does not supply the inner exception value to the constructor. The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture. If you use this constructor you should explicitly set <xref:System.Workflow.Runtime.WorkflowOwnershipException.InstanceId%2A> before you throw the exception.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.WorkflowOwnershipException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+|<xref:System.Workflow.Runtime.WorkflowOwnershipException.InstanceId%2A>|An empty <xref:System.Guid>.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -146,11 +243,28 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="instanceId">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instanceId">The <see cref="T:System.Guid" /> of the workflow instance for which this exception occurred.</param>
+        <param name="message">The message that describes the error.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a catch block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.WorkflowOwnershipException" /> class by using a specified workflow instance <see cref="T:System.Guid" />, a specified error message, and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is supplied to the constructor or a null reference (Nothing in Visual Basic) if the `innerException` parameter does not supply the inner exception value to the constructor.  
+  
+ `instanceId` is equivalent to the <xref:System.Workflow.Runtime.WorkflowInstance.InstanceId%2A?displayProperty=fullName> property of the workflow instance. The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.WorkflowOwnershipException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+|<xref:System.Workflow.Runtime.WorkflowOwnershipException.InstanceId%2A>|The <xref:System.Guid> of the workflow instance, specified by `instanceId`, for which this exception occurred.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -170,10 +284,21 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the <see cref="T:System.Guid" /> of the workflow instance associated with this exception, and additional exception information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.WorkflowOwnershipException.GetObjectData%2A> sets a <xref:System.Runtime.Serialization.SerializationInfo> with all the exception object data targeted for serialization. During deserialization the exception object is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
+  
+ For more information see XML and SOAP Serialization.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is a null reference (<see langword="Nothing" /> in Visual Basic)</exception>
       </Docs>
     </Member>
     <Member MemberName="InstanceId">
@@ -189,8 +314,9 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Guid" /> of the workflow instance for which this exception was thrown.</summary>
+        <value>
+          <see cref="P:System.Workflow.Runtime.WorkflowOwnershipException.InstanceId" /> is equivalent to the <see cref="P:System.Workflow.Runtime.WorkflowInstance.InstanceId" /> property of the workflow instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

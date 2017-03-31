@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A helper class to enable impersonation while serializing the body of the reply message.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a copy of the message property.</summary>
+        <returns>The copy of the message property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the message property.</summary>
+        <value>The name of the message property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,10 +79,10 @@
         <Parameter Name="isThreadPrincipalSet" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="impersonationContext">To be added.</param>
-        <param name="originalPrincipal">To be added.</param>
-        <param name="isThreadPrincipalSet">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="impersonationContext">When this method returns, contains the impersonated context. This parameter is treated as uninitialized.</param>
+        <param name="originalPrincipal">When this method returns, contains the original principal on the thread before invoking this method. This parameter is treated as uninitialized.</param>
+        <param name="isThreadPrincipalSet">When this method returns, contains a value that indicates whether the principal was set on the thread by this method. This parameter returns <see langword="false" /> if the operation context was not available to impersonate. This parameter is treated as uninitialized.</param>
+        <summary>Starts impersonating with the caller's context if impersonation is enabled on the service and sets the appropriate principal on the thread as per the service configuration.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,10 +109,10 @@
         <Parameter Name="isThreadPrincipalSet" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="impersonationContext">To be added.</param>
-        <param name="originalPrincipal">To be added.</param>
-        <param name="isThreadPrincipalSet">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="impersonationContext">The impersonation context to revert.</param>
+        <param name="originalPrincipal">The original principal to set on the thread.</param>
+        <param name="isThreadPrincipalSet">A value that indicates whether the thread principal was set during impersonation. <see langword="true" /> if the principal was set; otherwise, <see langword="false" />.</param>
+        <summary>Reverts impersonation and sets the specified original principal on the thread.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,10 +133,11 @@
         <Parameter Name="property" Type="System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The message from which to extract the property.</param>
+        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty" /> property extracted from the message.</param>
+        <summary>Gets the <see cref="T:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty" /> property from the specified message.</summary>
+        <returns>
+          <see langword="true" /> if the  property was found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,10 +158,11 @@
         <Parameter Name="property" Type="System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="properties">The message properties object from which to extract the property.</param>
+        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty" /> property extracted from the message.</param>
+        <summary>Gets the <see cref="T:System.ServiceModel.Security.ImpersonateOnSerializingReplyMessageProperty" /> property from the specified <see cref="T:System.ServiceModel.Channels.MessageProperties" /> object..</summary>
+        <returns>
+          <see langword="true" /> if the  property was found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

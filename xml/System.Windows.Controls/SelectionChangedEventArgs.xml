@@ -11,8 +11,20 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.Primitives.Selector.SelectionChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event. It uses the <xref:System.Windows.Controls.SelectionChangedEventArgs> to find the selected item in the <xref:System.Windows.Controls.ListBox>.  
+  
+ [!code-xml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
+  
+ [!code-csharp[ListBoxEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#9)]
+ [!code-vb[ListBoxEvent#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#9)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,11 +42,23 @@
         <Parameter Name="addedItems" Type="System.Collections.IList" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <param name="removedItems">To be added.</param>
-        <param name="addedItems">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="id">The event [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)].</param>
+        <param name="removedItems">The items that were unselected during this event.</param>
+        <param name="addedItems">The items that were selected during this event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.SelectionChangedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event. It uses the <xref:System.Windows.Controls.SelectionChangedEventArgs> to find the selected item in the <xref:System.Windows.Controls.ListBox>.  
+  
+ [!code-xml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
+  
+ [!code-csharp[ListBoxEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#9)]
+ [!code-vb[ListBoxEvent#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddedItems">
@@ -50,8 +74,8 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list that contains the items that were selected.</summary>
+        <value>The items that were selected since the last time the <see cref="E:System.Windows.Controls.Primitives.Selector.SelectionChanged" /> event occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,10 +96,22 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">To be added.</param>
-        <param name="genericTarget">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="genericHandler">The handler to invoke.</param>
+        <param name="genericTarget">The current object along the event's route.</param>
+        <summary>Performs the proper type casting to call the type-safe <see cref="T:System.Windows.Controls.SelectionChangedEventHandler" /> delegate for the <see cref="E:System.Windows.Controls.Primitives.Selector.SelectionChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event. It uses the <xref:System.Windows.Controls.SelectionChangedEventArgs> to find the selected item in the <xref:System.Windows.Controls.ListBox>.  
+  
+ [!code-xml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
+  
+ [!code-csharp[ListBoxEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#9)]
+ [!code-vb[ListBoxEvent#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemovedItems">
@@ -91,8 +127,8 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list that contains the items that were unselected.</summary>
+        <value>The items that were unselected since the last time the <see cref="E:System.Windows.Controls.Primitives.Selector.SelectionChanged" /> event occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

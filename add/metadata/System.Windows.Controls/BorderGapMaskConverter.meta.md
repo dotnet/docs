@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Controls.BorderGapMaskConverter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.BorderGapMaskConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.BorderGapMaskConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.BorderGapMaskConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,1 +1,0 @@
-        PropertyDescriptorCollection properties = TypeDescriptor.GetProperties(button1);

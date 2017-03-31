@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the sort order for uppercase and lowercase letters.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Xml.XPath.XmlCaseOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Lowercase letters are sorted before uppercase letters.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -70,7 +70,7 @@
         <ReturnType>System.Xml.XPath.XmlCaseOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ignore the case.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpperFirst">
@@ -95,7 +95,7 @@
         <ReturnType>System.Xml.XPath.XmlCaseOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Uppercase letters are sorted before lowercase letters.</summary>
       </Docs>
     </Member>
   </Members>

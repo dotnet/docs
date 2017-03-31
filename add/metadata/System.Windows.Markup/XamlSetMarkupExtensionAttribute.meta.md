@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.XamlSetMarkupExtensionAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetMarkupExtensionAttribute.XamlSetMarkupExtensionHandler
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetMarkupExtensionAttribute.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---

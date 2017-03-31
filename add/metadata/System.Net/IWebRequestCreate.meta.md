@@ -1,9 +1,11 @@
 ---
 uid: System.Net.IWebRequestCreate
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.IWebRequestCreate.Create(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

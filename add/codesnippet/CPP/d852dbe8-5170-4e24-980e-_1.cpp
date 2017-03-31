@@ -1,1 +1,0 @@
-    UrlIdentityPermission ^ permIdPerm2 = gcnew UrlIdentityPermission(PermissionState::None);

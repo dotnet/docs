@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.TableLayoutPanelCellBorderStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,3 +1,0 @@
-        For Each de In myOrderedDictionary
-            '...
-        Next

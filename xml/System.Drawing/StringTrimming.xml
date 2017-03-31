@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how to trim characters from a string that does not completely fit into a layout shape.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the <xref:System.Drawing.StringFormat.Trimming%2A> property and how to use the <xref:System.Drawing.StringTrimming> enumeration. This example is designed to be used with a Windows Form. Paste this code into a form and call the ShowStringTrimming method when handling the form's `Paint` event, passing e as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.Misc2#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Misc2/CPP/form1.cpp#6)]
+ [!code-csharp[System.Drawing.Misc2#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc2/CS/form1.cs#6)]
+ [!code-vb[System.Drawing.Misc2#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc2/VB/form1.vb#6)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Character">
@@ -27,7 +38,7 @@
         <ReturnType>System.Drawing.StringTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the text is trimmed to the nearest character.</summary>
       </Docs>
     </Member>
     <Member MemberName="EllipsisCharacter">
@@ -43,7 +54,7 @@
         <ReturnType>System.Drawing.StringTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the text is trimmed to the nearest character, and an ellipsis is inserted at the end of a trimmed line.</summary>
       </Docs>
     </Member>
     <Member MemberName="EllipsisPath">
@@ -59,7 +70,7 @@
         <ReturnType>System.Drawing.StringTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The center is removed from trimmed lines and replaced by an ellipsis. The algorithm keeps as much of the last slash-delimited segment of the line as possible.</summary>
       </Docs>
     </Member>
     <Member MemberName="EllipsisWord">
@@ -75,7 +86,7 @@
         <ReturnType>System.Drawing.StringTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that text is trimmed to the nearest word, and an ellipsis is inserted at the end of a trimmed line.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -91,7 +102,7 @@
         <ReturnType>System.Drawing.StringTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies no trimming.</summary>
       </Docs>
     </Member>
     <Member MemberName="Word">
@@ -107,7 +118,7 @@
         <ReturnType>System.Drawing.StringTrimming</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that text is trimmed to the nearest word.</summary>
       </Docs>
     </Member>
   </Members>

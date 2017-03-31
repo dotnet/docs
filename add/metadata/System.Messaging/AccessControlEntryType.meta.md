@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.AccessControlEntryType
-internalonly: False
+manager: "tyoung"
 ---

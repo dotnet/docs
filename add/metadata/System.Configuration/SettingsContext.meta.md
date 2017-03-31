@@ -1,9 +1,11 @@
 ---
 uid: System.Configuration.SettingsContext
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsContext.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

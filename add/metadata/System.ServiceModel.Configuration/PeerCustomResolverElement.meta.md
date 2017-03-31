@@ -1,39 +1,39 @@
 ---
 uid: System.ServiceModel.Configuration.PeerCustomResolverElement
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerCustomResolverElement.Address
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerCustomResolverElement.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerCustomResolverElement.ResolverType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerCustomResolverElement.BindingConfiguration
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerCustomResolverElement.Headers
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerCustomResolverElement.Identity
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerCustomResolverElement.Binding
-internalonly: False
+manager: "ghogen"
 ---

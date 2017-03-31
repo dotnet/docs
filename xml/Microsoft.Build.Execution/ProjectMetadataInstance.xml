@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Wraps an evaluated metadata for build purposes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Added and removed via methods on the <xref:Microsoft.Build.Execution.ProjectItemInstance> object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DeepClone">
@@ -38,8 +45,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Copies the metadata to create a deep clone.</summary>
+        <returns>Returns the new metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the evaluated value of the metadata.</summary>
+        <value>Returns the evaluated value of the metadata, which is never null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +94,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the metadata.</summary>
+        <value>Returns the name of the metadata.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This cannot be set, as it is used as the key into the item's metadata table.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IEquatable&lt;Microsoft.Build.Execution.ProjectMetadataInstance&gt;.Equals">
@@ -108,9 +122,9 @@
         <Parameter Name="other" Type="Microsoft.Build.Execution.ProjectMetadataInstance" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The project metadata to be compared to.</param>
+        <summary>Compares this project metadata with the given project metadata for equality.</summary>
+        <returns>Returns true if the project metadata are equal; false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +142,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a string representation of this metadata.</summary>
+        <returns>Returns a string representation of this metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

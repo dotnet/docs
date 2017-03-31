@@ -1,99 +1,103 @@
 ---
 uid: Microsoft.JScript.COMMethodInfo
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.GetCOMMemberInfo
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.ReflectedType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.GetMethodImplementationFlags
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.GetBaseDefinition
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo._name
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.ReturnType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.GetParameters
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.ReturnTypeCustomAttributes
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.MethodHandle
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.Attributes
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.COMMethodInfo.Invoke
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.DeclaringType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.Initialize(System.String,Microsoft.JScript.COMMemberInfo)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.EmptyParams
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.MemberType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.Name
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.ToString
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo._comObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.COMMethodInfo.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
-internalonly: False
+ms.author: "mikejo"
 ---

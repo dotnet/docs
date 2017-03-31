@@ -1,29 +1,41 @@
 ---
 uid: System.ServiceModel.Discovery.DiscoveryServiceExtension
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryServiceExtension.PublishedEndpoints
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryServiceExtension.GetDiscoveryService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryServiceExtension.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryServiceExtension.System#ServiceModel#IExtension{System#ServiceModel#ServiceHostBase}#Attach(System.ServiceModel.ServiceHostBase)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryServiceExtension.System#ServiceModel#IExtension{System#ServiceModel#ServiceHostBase}#Detach(System.ServiceModel.ServiceHostBase)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

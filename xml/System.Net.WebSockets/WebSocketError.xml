@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the list of possible WebSocket errors.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the connection was terminated unexpectedly.</summary>
       </Docs>
     </Member>
     <Member MemberName="Faulted">
@@ -70,7 +70,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a general error.</summary>
       </Docs>
     </Member>
     <Member MemberName="HeaderError">
@@ -95,7 +95,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates an error occurred when parsing the HTTP headers during the opening handshake.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidMessageType">
@@ -120,7 +120,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a WebSocket frame with an unknown opcode was received.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidState">
@@ -145,7 +145,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the WebSocket is an invalid state for the given operation (such as being closed or aborted).</summary>
       </Docs>
     </Member>
     <Member MemberName="NativeError">
@@ -170,7 +170,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an unknown native error occurred.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAWebSocket">
@@ -195,7 +195,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the incoming request was not a valid websocket request.</summary>
       </Docs>
     </Member>
     <Member MemberName="Success">
@@ -220,7 +220,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that there was no native error information for the exception.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedProtocol">
@@ -245,7 +245,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the client requested an unsupported WebSocket subprotocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedVersion">
@@ -270,7 +270,7 @@
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the client requested an unsupported version of the WebSocket protocol.</summary>
       </Docs>
     </Member>
   </Members>

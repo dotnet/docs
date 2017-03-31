@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.TextBox" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="owner" Type="System.Windows.Controls.TextBox" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The <see cref="T:System.Windows.Controls.TextBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBoxAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TextBoxAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.TextBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBoxAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Edit" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the name of the <see cref="T:System.Windows.Controls.TextBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBoxAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>A string that contains "TextBox".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,10 +91,24 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="patternInterface">A value from the enumeration.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.TextBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBoxAutomationPeer" />.</summary>
+        <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table describes what the <xref:System.Windows.Automation.Peers.FlowDocumentScrollViewerAutomationPeer.GetPattern%2A> method returns when depending on the value of `patternInterface`:  
+  
+|The value of `patternInterface`|The return value|  
+|-------------------------------------|----------------------|  
+|<xref:System.Windows.Automation.Peers.PatternInterface>|A reference to the current instance of the <xref:System.Windows.Automation.Peers.TextBoxAutomationPeer>.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface>|The <xref:System.Windows.Automation.Peers.ScrollViewerAutomationPeer> for this <xref:System.Windows.Automation.Peers.TextBoxAutomationPeer>.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface>|An object that implements the <xref:System.Windows.Automation.Provider.ITextProvider> interface.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface>|An object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IValueProvider.IsReadOnly">
@@ -110,8 +124,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>
+          <see langword="true" /> if the value is read-only; <see langword="false" /> if it can be modified.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +146,8 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The value of a control.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,8 +164,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>A string value of the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

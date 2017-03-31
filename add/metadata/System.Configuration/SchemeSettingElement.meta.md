@@ -1,19 +1,19 @@
 ---
 uid: System.Configuration.SchemeSettingElement
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SchemeSettingElement.Name
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SchemeSettingElement.GenericUriParserOptions
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SchemeSettingElement.#ctor
-internalonly: False
+manager: "wpickett"
 ---

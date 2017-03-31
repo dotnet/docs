@@ -22,8 +22,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a condition that guards/drives the execution of a certain activity within a workflow definition. It has an event of type <see cref="T:System.Workflow.Activities.ConditionalEventArgs" /> to return the result of the condition.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,8 +46,28 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CodeCondition" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the constructor to create a new instance of <xref:System.Workflow.Activities.CodeCondition>. The code also creates two <xref:System.Workflow.Activities.CodeActivity> class instances and an instance of <xref:System.Workflow.Activities.ConditionedActivityGroup>. This code example is part of the ConditionedActivityGroup SDK sample from the SimpleCAGWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using ConditionedActivityGroup](http://msdn.microsoft.com/en-us/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
+  
+```csharp  
+private ConditionedActivityGroup BookingCAG;  
+private CodeActivity Car;  
+private CodeActivity Airline;  
+  
+this.CanModifyActivities = true;  
+CodeCondition codecondition1 = new CodeCondition();  
+CodeCondition codecondition2 = new CodeCondition();  
+this.BookingCAG = new ConditionedActivityGroup();  
+this.Car = new CodeActivity();  
+this.Airline = new CodeActivity();  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Condition">
@@ -59,8 +88,18 @@
         <ReturnType>System.EventHandler&lt;System.Workflow.Activities.ConditionalEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the condition is evaluated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to attach a <xref:System.Workflow.Activities.CodeCondition.Condition> event handler for the current <xref:System.Workflow.Activities.CodeCondition> instance. This code example is part of the ConditionedActivityGroup SDK sample from the SimpleCAGWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using ConditionedActivityGroup](http://msdn.microsoft.com/en-us/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
+  
+ [!code-csharp[wf_samples#158](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#158)]
+ [!code-vb[wf_samples#158](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#158)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConditionEvent">
@@ -76,8 +115,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.Activities.CodeCondition.Condition" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -97,10 +143,11 @@
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="ownerActivity">To be added.</param>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ownerActivity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with this condition.</param>
+        <param name="provider">The <see cref="T:System.IServiceProvider" /> for this condition evaluation.</param>
+        <summary>Evaluates the underlying condition.</summary>
+        <returns>
+          <see langword="true" /> if the condition evaluates to true; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,11 +168,13 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="bind">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bind">The <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> of interest.</param>
+        <param name="targetType">The <see cref="T:System.Type" /> of the target of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</param>
+        <summary>Retrieves the <see cref="T:System.Object" /> that is the subject of a <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</summary>
+        <returns>The <see cref="T:System.Object" /> bound to the activity by the <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bind" /> or <paramref name="targetType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

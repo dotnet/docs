@@ -1,4 +1,5 @@
 ---
 uid: System.UriPartial
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

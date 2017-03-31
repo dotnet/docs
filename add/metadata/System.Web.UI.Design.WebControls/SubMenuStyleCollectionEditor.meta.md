@@ -1,29 +1,35 @@
 ---
 uid: System.Web.UI.Design.WebControls.SubMenuStyleCollectionEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SubMenuStyleCollectionEditor.CreateCollectionForm
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SubMenuStyleCollectionEditor.CreateNewItemTypes
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SubMenuStyleCollectionEditor.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SubMenuStyleCollectionEditor.CanSelectMultipleInstances
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.SubMenuStyleCollectionEditor.CreateInstance(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

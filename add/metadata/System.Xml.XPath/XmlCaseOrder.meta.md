@@ -1,4 +1,6 @@
 ---
 uid: System.Xml.XPath.XmlCaseOrder
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

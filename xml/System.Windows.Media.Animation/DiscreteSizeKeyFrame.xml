@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Animates from the <see cref="T:System.Windows.Size" /> value of the previous key frame to its own <see cref="P:System.Windows.Media.Animation.SizeKeyFrame.Value" /> using discrete interpolation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used as part of a <xref:System.Windows.Media.Animation.SizeKeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.SizeAnimationUsingKeyFrames> to animate a <xref:System.Windows.Size> property value along a set of key frames.  
+  
+ A key frame defines a segment of the <xref:System.Windows.Media.Animation.SizeAnimationUsingKeyFrames> to which it belongs. Each key frame has a target <xref:System.Windows.Media.Animation.SizeKeyFrame.Value%2A> and a <xref:System.Windows.Media.Animation.SizeKeyFrame.KeyTime%2A>. The <xref:System.Windows.Media.Animation.SizeKeyFrame.KeyTime%2A> specifies the time at which the key frame's <xref:System.Windows.Media.Animation.SizeKeyFrame.Value%2A> should be reached. A key frame animates from the target value of the previous key frame to its own target value. It starts when the previous key frame ends and ends when its own key time is reached.  
+  
+ Discrete key frames like <xref:System.Windows.Media.Animation.DiscreteSizeKeyFrame> create sudden "jumps" between values (no Interpolation). In other words, the animated property does not change until the key frame's key time is reached at which point the animated property goes suddenly to the target value.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteSizeKeyFrame" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +54,8 @@
         <Parameter Name="value" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">Ending value (also known as "target value") for the key frame.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteSizeKeyFrame" /> class with the specified ending value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +73,9 @@
         <Parameter Name="keyTime" Type="System.Windows.Media.Animation.KeyTime" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="keyTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">Ending value (also known as "target value") for the key frame.</param>
+        <param name="keyTime">Key time for the key frame. The key time determines when the target value is reached which is also when the key frame ends.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteSizeKeyFrame" /> class with the specified ending value and key time.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +93,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new instance of <see cref="T:System.Windows.Media.Animation.DiscreteSizeKeyFrame" />.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Media.Animation.DiscreteSizeKeyFrame" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,10 +115,10 @@
         <Parameter Name="keyFrameProgress" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="baseValue">To be added.</param>
-        <param name="keyFrameProgress">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="baseValue">The value to animate from.</param>
+        <param name="keyFrameProgress">A value between 0.0 and 1.0, inclusive, that specifies the percentage of time that has elapsed for this key frame.</param>
+        <summary>Uses discrete interpolation to transition between the previous key frame value and the value of the current key frame.</summary>
+        <returns>The output value of this key frame given the specified base value and progress.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

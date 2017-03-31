@@ -1,1 +1,0 @@
-	    int maxConnections = binding.MaxConnections;

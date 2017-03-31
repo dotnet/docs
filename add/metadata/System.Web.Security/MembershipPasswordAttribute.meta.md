@@ -1,59 +1,87 @@
 ---
 uid: System.Web.Security.MembershipPasswordAttribute
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.MembershipPasswordAttribute.MinPasswordLengthError
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.MembershipPasswordAttribute.FormatErrorMessage(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.MembershipPasswordAttribute.PasswordStrengthRegularExpression
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.MembershipPasswordAttribute.ResourceType
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.MembershipPasswordAttribute.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Security.MembershipPasswordAttribute.IsValid
 ---
 
 ---
 uid: System.Web.Security.MembershipPasswordAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.MembershipPasswordAttribute.MinRequiredNonAlphanumericCharacters
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.MembershipPasswordAttribute.MinRequiredPasswordLength
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.MembershipPasswordAttribute.PasswordStrengthRegexTimeout
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.MembershipPasswordAttribute.MinNonAlphanumericCharactersError
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Security.MembershipPasswordAttribute.PasswordStrengthError
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

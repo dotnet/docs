@@ -1,49 +1,76 @@
 ---
 uid: System.Workflow.Runtime.CorrelationToken
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.CorrelationToken.Properties
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.CorrelationToken.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.CorrelationToken.UnsubscribeFromCorrelationTokenInitializedEvent(System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.Runtime.CorrelationTokenEventArgs})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.CorrelationToken.OwnerActivityName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.CorrelationToken.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.CorrelationToken.SubscribeForCorrelationTokenInitializedEvent(System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.Runtime.CorrelationTokenEventArgs})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.CorrelationToken.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.CorrelationToken.Initialized
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.CorrelationToken.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.CorrelationToken.Initialize(System.Workflow.ComponentModel.Activity,System.Collections.Generic.ICollection{System.Workflow.Runtime.CorrelationProperty})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

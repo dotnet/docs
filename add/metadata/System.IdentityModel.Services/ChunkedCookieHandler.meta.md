@@ -1,29 +1,41 @@
 ---
 uid: System.IdentityModel.Services.ChunkedCookieHandler
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ChunkedCookieHandler.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ChunkedCookieHandler.ChunkSize
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ChunkedCookieHandler.#ctor(System.Int32)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Services.ChunkedCookieHandler.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ChunkedCookieHandler.DefaultChunkSize
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ChunkedCookieHandler.MinimumChunkSize
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

@@ -1,19 +1,27 @@
 ---
 uid: System.Workflow.Activities.OperationValidationEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.OperationValidationEventArgs.IsValid
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.OperationValidationEventArgs.ClaimSets
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.OperationValidationEventArgs.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Claims.ClaimSet})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

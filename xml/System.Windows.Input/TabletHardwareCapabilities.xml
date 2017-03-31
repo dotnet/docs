@@ -15,8 +15,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines values that specify the hardware capabilities of a tablet device, including desktop digitizers and mice.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration has a <xref:System.FlagsAttribute> attribute that allows a bitwise combination of its member values.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine the hardware capabilities of a tablet device.  
+  
+ [!code-csharp[HwCaps#26](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#26)]
+ [!code-vb[HwCaps#26](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#26)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="HardProximity">
@@ -32,7 +47,7 @@
         <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the tablet device can generate in-air packets when the stylus is in the physical detection range (proximity) of the tablet device.</summary>
       </Docs>
     </Member>
     <Member MemberName="Integrated">
@@ -48,7 +63,7 @@
         <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the digitizer is integrated with the display.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +79,7 @@
         <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the tablet device cannot provide this information.</summary>
       </Docs>
     </Member>
     <Member MemberName="StylusHasPhysicalIds">
@@ -80,7 +95,7 @@
         <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the tablet device can uniquely identify the active stylus.</summary>
       </Docs>
     </Member>
     <Member MemberName="StylusMustTouch">
@@ -96,7 +111,7 @@
         <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the stylus must be in physical contact with the tablet device to report its position.</summary>
       </Docs>
     </Member>
     <Member MemberName="SupportsPressure">
@@ -112,7 +127,7 @@
         <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the tablet device can detect the amount of pressure the user applies when using the stylus.</summary>
       </Docs>
     </Member>
   </Members>

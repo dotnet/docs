@@ -1,39 +1,44 @@
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNonNegativeInteger
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNonNegativeInteger.Parse(System.String)
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNonNegativeInteger.XsdType
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNonNegativeInteger.GetXsdType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNonNegativeInteger.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNonNegativeInteger.XsdType
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNonNegativeInteger.GetXsdType
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNonNegativeInteger.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNonNegativeInteger.ToString
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNonNegativeInteger.#ctor(System.Decimal)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNonNegativeInteger.Value
-internalonly: False
+manager: "ghogen"
 ---

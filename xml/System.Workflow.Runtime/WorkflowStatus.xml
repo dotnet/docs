@@ -15,8 +15,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the status of a workflow instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can use the <xref:System.Workflow.Runtime.WorkflowStatus> values to set the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> property. Each value constrains the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> in a different way.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#127](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#127)]
+ [!code-vb[WF_Samples#127](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#127)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Completed">
@@ -32,7 +51,7 @@
         <ReturnType>System.Workflow.Runtime.WorkflowStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The workflow instance has completed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Created">
@@ -48,7 +67,7 @@
         <ReturnType>System.Workflow.Runtime.WorkflowStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The workflow instance has been created by a call to one of the overloaded <see cref="M:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow(System.Type)" /> methods.</summary>
       </Docs>
     </Member>
     <Member MemberName="Running">
@@ -64,7 +83,7 @@
         <ReturnType>System.Workflow.Runtime.WorkflowStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The workflow instance is running.</summary>
       </Docs>
     </Member>
     <Member MemberName="Suspended">
@@ -80,7 +99,7 @@
         <ReturnType>System.Workflow.Runtime.WorkflowStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The workflow instance has been suspended by a <see cref="T:System.Workflow.ComponentModel.SuspendActivity" /> activity, by a call to <see cref="M:System.Workflow.Runtime.WorkflowInstance.Suspend(System.String)" />,or by the workflow runtime engine.</summary>
       </Docs>
     </Member>
     <Member MemberName="Terminated">
@@ -96,7 +115,15 @@
         <ReturnType>System.Workflow.Runtime.WorkflowStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The workflow instance has been terminated by a</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.TerminateActivity> activity, by a call to <xref:System.Workflow.Runtime.WorkflowInstance.Terminate%2A?displayProperty=fullName>, or by the workflow runtime engine.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,24 +1,29 @@
 ---
 uid: System.Web.HttpCacheVaryByContentEncodings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByContentEncodings.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByContentEncodings.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByContentEncodings.GetContentEncodings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByContentEncodings.SetContentEncodings(System.String[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

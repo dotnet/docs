@@ -1,34 +1,55 @@
 ---
 uid: System.ServiceModel.Discovery.VersionApril2005.ResolveCriteriaApril2005
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.VersionApril2005.ResolveCriteriaApril2005.GetSchema
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.VersionApril2005.ResolveCriteriaApril2005.ToResolveCriteria
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.VersionApril2005.ResolveCriteriaApril2005.WriteXml(System.Xml.XmlWriter)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.VersionApril2005.ResolveCriteriaApril2005.GetSchema(System.Xml.Schema.XmlSchemaSet)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Discovery.VersionApril2005.ResolveCriteriaApril2005.GetSchema
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.VersionApril2005.ResolveCriteriaApril2005.ReadXml(System.Xml.XmlReader)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.VersionApril2005.ResolveCriteriaApril2005.FromResolveCriteria(System.ServiceModel.Discovery.ResolveCriteria)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

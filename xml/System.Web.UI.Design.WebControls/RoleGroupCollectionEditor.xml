@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a design-time editor for the <see cref="T:System.Web.UI.WebControls.RoleGroupCollection" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of objects in the collection.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.RoleGroupCollectionEditor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,9 +47,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Provides a value indicating whether the editor allows selection of multiple items in the collection.</summary>
+        <returns>
+          <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.RoleGroupCollectionEditor.CanSelectMultipleInstances%2A> method is inherited from the <xref:System.ComponentModel.Design.CollectionEditor> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

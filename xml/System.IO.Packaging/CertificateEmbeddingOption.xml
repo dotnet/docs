@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the location where the X.509 certificate that is used in signing is stored.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the certificate is NotEmbedded in the package, an application that verifies signatures must provide a copy of the certificate in order to verify the signatures that are signed by it.  
+  
+ InSignaturePart adds two informational elements, `<KeyName>` and `<KeyValue>`, as part of the <xref:System.Security.Cryptography.Xml.Signature.KeyInfo%2A>field of the stored digital signature. The `<KeyName>` and `<KeyValue>` elements are not processed as part of signature validation and are therefore not secure from modification. Applications should not make any assumption regarding the validity of these two elements. To avoid undetected modification and possible confusion, applications should use the InCertificatePart option instead of InSignaturePart. The InCertificatePart option does not provide or expose either `<KeyName>` or `<KeyValue>`.  
+  
+   
+  
+## Examples  
+ The following example shows how to use <xref:System.IO.Packaging.CertificateEmbeddingOption> in order to set the <xref:System.IO.Packaging.PackageDigitalSignatureManager>.<xref:System.IO.Packaging.PackageDigitalSignatureManager.CertificateOption%2A> property. For the complete sample, see [Creating a Package with a Digital Signature Sample](http://go.microsoft.com/fwlink/?LinkID=159966).  
+  
+  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="InCertificatePart">
@@ -27,7 +43,7 @@
         <ReturnType>System.IO.Packaging.CertificateEmbeddingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate is embedded in its own <see cref="T:System.IO.Packaging.PackagePart" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="InSignaturePart">
@@ -43,7 +59,7 @@
         <ReturnType>System.IO.Packaging.CertificateEmbeddingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate is embedded in the <see cref="P:System.IO.Packaging.PackageDigitalSignature.SignaturePart" /> that is created for the signature being added.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotEmbedded">
@@ -59,7 +75,7 @@
         <ReturnType>System.IO.Packaging.CertificateEmbeddingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate in not embedded in the package.</summary>
       </Docs>
     </Member>
   </Members>

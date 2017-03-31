@@ -1,1 +1,0 @@
-            SyndicationCategory category = new SyndicationCategory("MyCategory", "http://contoso/MyCategory", "Contoso Category");

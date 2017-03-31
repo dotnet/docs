@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides design-time support in a visual designer for a class that is derived from the <see cref="T:System.Web.UI.HierarchicalDataSourceControl" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, when creating a new data source class for hierarchical data and an accompanying designer, you would inherit the <xref:System.Web.UI.Design.HierarchicalDataSourceDesigner> class rather than implement the <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner> interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CanConfigure">
@@ -25,9 +32,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method can be called.</summary>
+        <value>
+          <see langword="true" /> if the underlying data source has a configuration wizard that can be launched with <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" />, otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure%2A> property is used by a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], to determine whether to display a **Configure** command at design time.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface to create your own data source and you do not provide configuration functionality, the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure" /> property should always return <see langword="false" /> and the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method should raise a <see cref="T:System.NotSupportedException" />.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -43,9 +61,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called.</summary>
+        <value>
+          <see langword="true" /> if <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> can be called; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema%2A> property is used by a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], to determine whether to display a **Refresh Schema** command at design time.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface to create your own data source and the schema will never change, the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema" /> property should always return <see langword="false" /> and the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method should raise a <see cref="T:System.NotSupportedException" />.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Configure">
@@ -62,8 +91,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Launches the configuration wizard for the underlying data source.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>If you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface to create your own data source and you do not provide configuration functionality, the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure" /> property should always return <see langword="false" /> and the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method should raise a <see cref="T:System.NotSupportedException" />.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="DataSourceChanged">
@@ -79,8 +111,11 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a data source control has changed in some way that affects data-bound controls.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Typically, when you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface, the <see cref="E:System.Web.UI.Design.IHierarchicalDataSourceDesigner.DataSourceChanged" /> event handler calls the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method. If the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema" /> property is <see langword="true" />, recreate any sample data, and then raise the event again to allow each data-bound control to refresh its markup.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -99,9 +134,9 @@
         <Parameter Name="viewPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="viewPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="viewPath">The XPath for the part of the data source to retrieve.</param>
+        <summary>Gets the named data source view that is associated with the data source control.</summary>
+        <returns>The named data source view that is associated with the data source control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +156,15 @@
         <Parameter Name="preferSilent" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="preferSilent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="preferSilent">
+          <see langword="true" /> to suppress events raised while refreshing the schema; otherwise <see langword="false" />.</param>
+        <summary>Refreshes the schema of the underlying data source.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>If you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface to create your own data source and the schema will never change, the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema" /> property should always return <see langword="false" /> and the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method should raise a <see cref="T:System.NotSupportedException" />.  
+  
+ Typically, if the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> is called by the design host as a result of user action, the <paramref name="preferSilent" /> parameter would be <see langword="false" />, because the user would expect to be notified of any problems with refreshing the schema. But, if the schema is refreshed implicitly, such as after a call to the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method, or if the refreshing process involves a number of steps, <paramref name="preferSilent" /> should be set to <see langword="true" />.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="ResumeDataSourceEvents">
@@ -140,7 +181,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Restores events after calling the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SuppressDataSourceEvents" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,7 +198,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the fields or data of the underlying data source have changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +216,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Turns off events in the data source control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can restore events with the <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Typically, you would call the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SuppressDataSourceEvents" /> method when opening a dialog box, such as with the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method, or during a call to the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method, if building the schema requires multiple processes, any of which might create an exception. After processing is finished, call the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents" /> method.</para>
+        </block>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the text expression compiler.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="settings" Type="System.Activities.XamlIntegration.TextExpressionCompilerSettings" />
       </Parameters>
       <Docs>
-        <param name="settings">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="settings">The settings used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompiler" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Compiles the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompiler" />.</summary>
+        <returns>The result of the compiled <see cref="T:System.Activities.XamlIntegration.TextExpressionCompiler" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +68,10 @@
         <Parameter Name="textWriter" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="textWriter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="textWriter">The argument used.</param>
+        <summary>Indicated whether the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompiler" /> generates sources.</summary>
+        <returns>
+          <see langword="True" /> if the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompiler" /> generates sources; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

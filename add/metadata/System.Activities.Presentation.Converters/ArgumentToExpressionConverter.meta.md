@@ -1,19 +1,27 @@
 ---
 uid: System.Activities.Presentation.Converters.ArgumentToExpressionConverter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Converters.ArgumentToExpressionConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Converters.ArgumentToExpressionConverter.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Converters.ArgumentToExpressionConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

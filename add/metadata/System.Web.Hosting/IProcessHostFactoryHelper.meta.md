@@ -1,9 +1,11 @@
 ---
 uid: System.Web.Hosting.IProcessHostFactoryHelper
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IProcessHostFactoryHelper.GetProcessHost(System.Web.Hosting.IProcessHostSupportFunctions)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

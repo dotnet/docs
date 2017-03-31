@@ -21,8 +21,59 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables a .NET Framework enumeration to be mapped to a data column.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class lets you map the underlying value in a column to a corresponding enumeration constant name. This lets you define an enumeration that contains descriptive values that correspond to database values, and then use the enumeration constant names instead of the database values when data is displayed.  
+  
+   
+  
+## Examples  
+ The following example shows how to replace the numeric value of an enumeration with the corresponding declaration.  
+  
+```csharp  
+public enum eReorderLvl {  
+        zero = 0,  
+        five = 5,  
+        ten=10,  
+        fifteen=15,  
+        twenty=20,  
+        twenty_five=25,  
+        thirty=30  
+    }  
+    [MetadataType(typeof(Product_MD))]  
+    public partial class Product {  
+        public class Product_MD {  
+            [EnumDataType(typeof(eReorderLvl))]  
+            public object ReorderLevel { get; set; }  
+        }  
+    }  
+```  
+  
+```vb  
+Imports Public Enum eReorderLvl  
+    zero = 0  
+    five = 5  
+    ten = 10  
+    fifteen = 15  
+    twenty = 20  
+    twenty_five = 25  
+    thirty = 30  
+End Enum  
+<MetadataType(GetType(Product_MD))>  _  
+Public Class Product  
+    Public Class Product_MD  
+        <EnumDataType(GetType(eReorderLvl))>  _  
+        Public Property ReorderLevel As Object  
+        End Property  
+    End Class  
+End Class  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,8 +94,8 @@
         <Parameter Name="enumType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="enumType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="enumType">The type of the enumeration.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.EnumDataTypeAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +117,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the enumeration type.</summary>
+        <value>The enumeration type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +143,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The data field value to validate.</param>
+        <summary>Checks that the value of the data field is valid.</summary>
+        <returns>
+          <see langword="true" /> if the data field value is valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a persistence service configuration element that specifies the type of the persistence provider implementation to use, as well as the time-out to use for persistence operations. Additional attributes that appear in this element are passed into the constructor for the specified persistence provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Persistence provider configuration elements are typically defined in the application configuration file, under the `system.serviceModel` node, in the `serviceBehaviors` subsection of the `behaviors` section.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.PersistenceProviderElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +55,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of behavior.</summary>
+        <value>The type of behavior.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +74,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a custom behavior based on the settings of this configuration element.</summary>
+        <returns>A custom behavior based on the settings of this configuration element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +93,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Indicates whether this configuration element has been modified since it was last saved or loaded.</summary>
+        <returns>
+          <see langword="true" /> if the element has been modified; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,10 +116,11 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the unrecognized attribute.</param>
+        <param name="value">The value of the unrecognized attribute.</param>
+        <summary>Indicates whether an unknown attribute is encountered during deserialization.</summary>
+        <returns>
+          <see langword="true" /> if an unknown attribute is encountered while deserializing; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,9 +148,16 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the time-out used for persistence operations.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> that specifies the time-out used for persistence operations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 30 seconds.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PersistenceProviderArguments">
@@ -157,8 +173,8 @@
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets additional attributes of this <see cref="T:System.ServiceModel.Configuration.PersistenceProviderElement" />.</summary>
+        <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> object that contains additional attributes of this <see cref="T:System.ServiceModel.Configuration.PersistenceProviderElement" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,7 +192,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called after deserialization.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,10 +213,12 @@
         <Parameter Name="serializeCollectionKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="serializeCollectionKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> that is used to write to the configuration file.</param>
+        <param name="serializeCollectionKey">
+          <see langword="true" /> to serialize only the collection key properties; otherwise, <see langword="false" />.</param>
+        <summary>Writes the contents of this configuration element to the configuration file.</summary>
+        <returns>
+          <see langword="true" /> if any data was actually serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,8 +243,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of the persistence provider to be used by the service.</summary>
+        <value>The type of the persistence provider to be used by the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,10 +266,10 @@
         <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" />
       </Parameters>
       <Docs>
-        <param name="sourceElement">To be added.</param>
-        <param name="parentElement">To be added.</param>
-        <param name="saveMode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sourceElement">A <see cref="T:System.Configuration.ConfigurationElement" /> at the current level containing a merged view of the properties.</param>
+        <param name="parentElement">The parent <see cref="T:System.Configuration.ConfigurationElement" />, or <see langword="null" /> if this is the top level.</param>
+        <param name="saveMode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> that determines which property values to include.</param>
+        <summary>Modifies this configuration element object to remove all values that should not be saved.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

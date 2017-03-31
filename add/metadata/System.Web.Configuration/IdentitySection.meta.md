@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Configuration.IdentitySection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.IdentitySection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.IdentitySection.UserName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.IdentitySection.Password
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.IdentitySection.Impersonate
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

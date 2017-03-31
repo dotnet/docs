@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an <see langword="&lt;issuerNameRegistry&gt;" /> element in a configuration file. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `<issuerNameRegistry>` element configures the issuer name registry. The issuer name registry maps issuer tokens to a string name. The <xref:System.IdentityModel.Configuration.IssuerNameRegistryElement.Type%2A> property (which represents the `type` attribute of the element) can be set to register a custom type. By default, a type of <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> is assumed.  
+  
+ The `<issuerNameRegistry>` element can be specified at the service level under the `<identityConfiguration>` element or on a security token handler collection under the `<securityTokenHandlerConfiguration>` element. The `IssuerNameRegistry` property of the <xref:System.IdentityModel.Configuration.IdentityConfigurationElement> class and of the <xref:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement> class is an instance of <xref:System.IdentityModel.Configuration.IssuerNameRegistryElement>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.IssuerNameRegistryElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +78,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a string representation of the <see cref="T:System.Type" /> of the issuer name registry.</summary>
+        <value>The string representation of the <see cref="T:System.Type" /> of the issuer name registry. The type must derive from the <see cref="T:System.IdentityModel.Tokens.IssuerNameRegistry" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is optional. It corresponds to the `type` attribute of the `<issuerNameRegistry>` element. If it is not specified, the property is `null`, a type of <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> is assumed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,19 +1,23 @@
 ---
 uid: System.Configuration.PositiveTimeSpanValidator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.PositiveTimeSpanValidator.Validate(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.PositiveTimeSpanValidator.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.PositiveTimeSpanValidator.CanValidate(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

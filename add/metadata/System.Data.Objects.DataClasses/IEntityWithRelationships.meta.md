@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Objects.DataClasses.IEntityWithRelationships
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Objects.DataClasses.IEntityWithRelationships.RelationshipManager
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

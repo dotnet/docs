@@ -12,8 +12,26 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of instances of the <see cref="T:System.Web.Services.Description.MimePart" /> class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.Web.Services.Description.MimePart> within the collection represents an extensibility element added to a <xref:System.Web.Services.Description.MimeMultipartRelatedBinding>, and specifies the MIME type for a corresponding <xref:System.Web.Services.Description.MessagePart>.  
+  
+ For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the properties and methods exposed by the `MimePartCollection` class.  
+  
+ [!code-cpp[MimePartCollection_1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MimePartCollection_1/CPP/mimepartcollection_1.cpp#1)]
+ [!code-csharp[MimePartCollection_1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MimePartCollection_1/CS/mimepartcollection_1.cs#1)]
+ [!code-vb[MimePartCollection_1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimePartCollection_1/VB/mimepartcollection_1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,7 +46,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.MimePartCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,10 +67,21 @@
         <Parameter Name="mimePart" Type="System.Web.Services.Description.MimePart" />
       </Parameters>
       <Docs>
-        <param name="mimePart">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="mimePart">The <see cref="T:System.Web.Services.Description.MimePart" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.MimePart" /> to the end of the <see cref="T:System.Web.Services.Description.MimePartCollection" />.</summary>
+        <returns>The zero-based index where the <paramref name="mimePart" /> parameter has been added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of the `Add` method.  
+  
+ [!code-cpp[MimePartCollection_8#5](~/samples/snippets/cpp/VS_Snippets_Remoting/MimePartCollection_8/CPP/mimepartcollection_8.cpp#5)]
+ [!code-csharp[MimePartCollection_8#5](~/samples/snippets/csharp/VS_Snippets_Remoting/MimePartCollection_8/CS/mimepartcollection_8.cs#5)]
+ [!code-vb[MimePartCollection_8#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimePartCollection_8/VB/mimepartcollection_8.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -72,10 +101,22 @@
         <Parameter Name="mimePart" Type="System.Web.Services.Description.MimePart" />
       </Parameters>
       <Docs>
-        <param name="mimePart">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="mimePart">The <see cref="T:System.Web.Services.Description.MimePart" /> to check for collection membership.</param>
+        <summary>Returns a value indicating whether the specified <see cref="T:System.Web.Services.Description.MimePart" /> is a member of the <see cref="T:System.Web.Services.Description.MimePartCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="mimePart" /> parameter is a member of the <see langword="MimePartCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of the `Contains` method.  
+  
+ [!code-cpp[MimePartCollection_8#6](~/samples/snippets/cpp/VS_Snippets_Remoting/MimePartCollection_8/CPP/mimepartcollection_8.cpp#6)]
+ [!code-csharp[MimePartCollection_8#6](~/samples/snippets/csharp/VS_Snippets_Remoting/MimePartCollection_8/CS/mimepartcollection_8.cs#6)]
+ [!code-vb[MimePartCollection_8#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimePartCollection_8/VB/mimepartcollection_8.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -96,10 +137,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">An array of type <see cref="T:System.Web.Services.Description.MimePart" /> serving as the destination for the copy action.</param>
+        <param name="index">The zero-based index at which to start placing the copied collection.</param>
+        <summary>Copies the entire <see cref="T:System.Web.Services.Description.MimePartCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.MimePart" />, starting at the specified zero-based index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of the `CopyTo` method.  
+  
+ [!code-cpp[MimePartCollection_8#7](~/samples/snippets/cpp/VS_Snippets_Remoting/MimePartCollection_8/CPP/mimepartcollection_8.cpp#7)]
+ [!code-csharp[MimePartCollection_8#7](~/samples/snippets/csharp/VS_Snippets_Remoting/MimePartCollection_8/CS/mimepartcollection_8.cs#7)]
+ [!code-vb[MimePartCollection_8#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimePartCollection_8/VB/mimepartcollection_8.vb#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -119,10 +171,21 @@
         <Parameter Name="mimePart" Type="System.Web.Services.Description.MimePart" />
       </Parameters>
       <Docs>
-        <param name="mimePart">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="mimePart">The <see cref="T:System.Web.Services.Description.MimePart" /> for which to search the <see cref="T:System.Web.Services.Description.MimePartCollection" />.</param>
+        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.MimePart" /> and returns the zero-based index of the first occurrence within the collection.</summary>
+        <returns>A 32-bit signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of the `IndexOf` method.  
+  
+ [!code-cpp[MimePartCollection_8#4](~/samples/snippets/cpp/VS_Snippets_Remoting/MimePartCollection_8/CPP/mimepartcollection_8.cpp#4)]
+ [!code-csharp[MimePartCollection_8#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MimePartCollection_8/CS/mimepartcollection_8.cs#4)]
+ [!code-vb[MimePartCollection_8#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimePartCollection_8/VB/mimepartcollection_8.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -143,10 +206,35 @@
         <Parameter Name="mimePart" Type="System.Web.Services.Description.MimePart" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="mimePart">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which to insert the <c>mimePart</c> parameter.</param>
+        <param name="mimePart">The <see cref="T:System.Web.Services.Description.MimePart" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.MimePart" /> to the <see cref="T:System.Web.Services.Description.MimePartCollection" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+  
+ If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `mimePart` parameter is added to the end of the <xref:System.Web.Services.Description.MimePartCollection>.  
+  
+ The elements after the insertion point move down to accommodate the new element.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a typical use of the `Insert` method.  
+  
+ [!code-cpp[MimePartCollection_8#3](~/samples/snippets/cpp/VS_Snippets_Remoting/MimePartCollection_8/CPP/mimepartcollection_8.cpp#3)]
+ [!code-csharp[MimePartCollection_8#3](~/samples/snippets/csharp/VS_Snippets_Remoting/MimePartCollection_8/CS/mimepartcollection_8.cs#3)]
+ [!code-vb[MimePartCollection_8#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimePartCollection_8/VB/mimepartcollection_8.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than zero.  
+  
+ \- or -  
+  
+ The <paramref name="index" /> parameter is greater than <see cref="P:System.Collections.CollectionBase.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -166,10 +254,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.MimePart" /> whose value is modified or returned.</param>
+        <summary>Gets or sets the value of a <see cref="T:System.Web.Services.Description.MimePart" /> at the specified zero-based index.</summary>
+        <value>A <see langword="MimePart" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of a zero-based index to retrieve a member of the `MimePartCollection`.  
+  
+ [!code-cpp[MimePartCollection_8#2](~/samples/snippets/cpp/VS_Snippets_Remoting/MimePartCollection_8/CPP/mimepartcollection_8.cpp#2)]
+ [!code-csharp[MimePartCollection_8#2](~/samples/snippets/csharp/VS_Snippets_Remoting/MimePartCollection_8/CS/mimepartcollection_8.cs#2)]
+ [!code-vb[MimePartCollection_8#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimePartCollection_8/VB/mimepartcollection_8.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -189,9 +288,25 @@
         <Parameter Name="mimePart" Type="System.Web.Services.Description.MimePart" />
       </Parameters>
       <Docs>
-        <param name="mimePart">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="mimePart">The <see cref="T:System.Web.Services.Description.MimePart" /> to remove from the collection.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.MimePart" /> from the <see cref="T:System.Web.Services.Description.MimePartCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+  
+ The elements that follow the removed `MimePart` move up to occupy the vacated spot.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a typical use of the `Remove` method.  
+  
+ MimePartCollection_8#8  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides information about a property of a type that components can access across application domain and process boundaries.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AddIn.Contract.Automation.RemotePropertyData> structure provides information about a property of an object that implements the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract> interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Attributes">
@@ -28,8 +35,15 @@
         <ReturnType>System.Reflection.PropertyAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the attributes of the property that this <see cref="T:System.AddIn.Contract.Automation.RemotePropertyData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this field is <xref:System.Reflection.PropertyAttributes> if this <xref:System.AddIn.Contract.Automation.RemotePropertyData> describes a property of a COM object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -45,8 +59,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether this <see cref="T:System.AddIn.Contract.Automation.RemotePropertyData" /> describes a readable property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this field is `true` if this <xref:System.AddIn.Contract.Automation.RemotePropertyData> describes a readable property; otherwise, the value of this field is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanWrite">
@@ -62,8 +83,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether this <see cref="T:System.AddIn.Contract.Automation.RemotePropertyData" /> describes a writable property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this field is `true` if this <xref:System.AddIn.Contract.Automation.RemotePropertyData> describes a writeable property; otherwise, the value of this field is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexParameters">
@@ -79,7 +107,7 @@
         <ReturnType>System.AddIn.Contract.Automation.RemoteParameterData[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the index parameters for the property that this <see cref="T:System.AddIn.Contract.Automation.RemotePropertyData" /> describes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +124,15 @@
         <ReturnType>System.AddIn.Contract.Automation.RemoteMemberData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents member data for the property that this <see cref="T:System.AddIn.Contract.Automation.RemotePropertyData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The member data includes the name of the property and the type that declares the property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyType">
@@ -113,7 +148,7 @@
         <ReturnType>System.AddIn.Contract.Automation.IRemoteTypeContract</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the type of the property that this <see cref="T:System.AddIn.Contract.Automation.RemotePropertyData" /> describes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

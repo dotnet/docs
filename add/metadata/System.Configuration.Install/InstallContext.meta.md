@@ -1,34 +1,55 @@
 ---
 uid: System.Configuration.Install.InstallContext
-internalonly: False
----
-
----
-uid: System.Configuration.Install.InstallContext.IsParameterTrue(System.String)
-internalonly: False
----
-
----
-uid: System.Configuration.Install.InstallContext.ParseCommandLine(System.String[])
-internalonly: False
----
-
----
-uid: System.Configuration.Install.InstallContext.#ctor(System.String,System.String[])
-internalonly: False
----
-
----
-uid: System.Configuration.Install.InstallContext.LogMessage(System.String)
-internalonly: False
----
-
----
-uid: System.Configuration.Install.InstallContext.Parameters
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Install.InstallContext.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Install.InstallContext.IsParameterTrue(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Install.InstallContext.ParseCommandLine(System.String[])
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Install.InstallContext.#ctor(System.String,System.String[])
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Install.InstallContext.LogMessage(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Install.InstallContext.Parameters
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Install.InstallContext.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

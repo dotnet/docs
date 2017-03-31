@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies which algorithm is used to scale bitmap images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When animating the scale of any bitmap, the default high-quality image re-sampling algorithm can sometimes consume sufficient system resources to cause frame rate degradation. This frame rate degradation can cause animations to skip frames or stutter. By setting the <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A> property of the <xref:System.Windows.Media.RenderOptions> object to LowQuality you can create a smoother animation when scaling a bitmap.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Media.BitmapScalingMode> for an image object.  
+  
+ [!code-csharp[RenderOptions#RenderOptionsSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/RenderOptions/CSharp/Window1.xaml.cs#renderoptionssnippet2)]
+ [!code-vb[RenderOptions#RenderOptionsSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb#renderoptionssnippet2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Fant">
@@ -27,7 +42,7 @@
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use very high quality Fant bitmap scaling, which is slower than all other bitmap scaling modes, but produces higher quality output.</summary>
       </Docs>
     </Member>
     <Member MemberName="HighQuality">
@@ -43,7 +58,7 @@
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use high quality bitmap scaling, which is slower than <see cref="F:System.Windows.Media.BitmapScalingMode.LowQuality" /> mode, but produces higher quality output. The <see cref="F:System.Windows.Media.BitmapScalingMode.HighQuality" /> mode is the same as the <see cref="F:System.Windows.Media.BitmapScalingMode.Fant" /> mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Linear">
@@ -59,7 +74,7 @@
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use linear bitmap scaling, which is faster than <see cref="F:System.Windows.Media.BitmapScalingMode.HighQuality" /> mode, but produces lower quality output.</summary>
       </Docs>
     </Member>
     <Member MemberName="LowQuality">
@@ -75,7 +90,7 @@
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use bilinear bitmap scaling, which is faster than <see cref="F:System.Windows.Media.BitmapScalingMode.HighQuality" /> mode, but produces lower quality output. The <see cref="F:System.Windows.Media.BitmapScalingMode.LowQuality" /> mode is the same as the <see cref="F:System.Windows.Media.BitmapScalingMode.Linear" /> mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="NearestNeighbor">
@@ -91,7 +106,7 @@
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use nearest-neighbor bitmap scaling, which provides performance benefits over <see cref="F:System.Windows.Media.BitmapScalingMode.LowQuality" /> mode when the software rasterizer is used. This mode is often used to magnify a bitmap.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unspecified">
@@ -107,7 +122,7 @@
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use the default bitmap scaling mode, which is <see cref="F:System.Windows.Media.BitmapScalingMode.Linear" />.</summary>
       </Docs>
     </Member>
   </Members>

@@ -18,10 +18,17 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="context">To be added.</param>
-    <param name="completedInstance">To be added.</param>
-    <param name="outArguments">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="context">The execution environment of the activity handling the callback.</param>
+    <param name="completedInstance">The completed activity instance of the <see cref="T:System.Activities.ActivityDelegate" /> handler.</param>
+    <param name="outArguments">The output arguments of the completed <see cref="T:System.Activities.ActivityDelegate" />.</param>
+    <summary>Represents the method that is called when an <see cref="T:System.Activities.ActivityDelegate" /> completes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values in the `outArguments` dictionary are the <xref:System.Activities.ActivityDelegateParameter> values of the <xref:System.Activities.ActivityDelegate> that are assigned when the <xref:System.Activities.ActivityDelegate> is invoked, keyed by <xref:System.Activities.ActivityDelegateParameter.Name%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

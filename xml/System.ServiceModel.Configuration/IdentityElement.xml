@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that enables the authentication of an endpoint by other endpoints exchanging messages with it. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.IdentityElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.ServiceModel.Configuration.CertificateElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration settings of an X.509 certificate.</summary>
+        <value>The configuration settings of an X.509 certificate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +71,8 @@
         <ReturnType>System.ServiceModel.Configuration.CertificateReferenceElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration settings for X.509 certificate validation.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.CertificateReferenceElement" /> that defines configuration settings for X.509 certificate validation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +94,8 @@
         <ReturnType>System.ServiceModel.Configuration.DnsElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a DNS identity.</summary>
+        <value>A DNS identity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +115,11 @@
         <Parameter Name="identity" Type="System.ServiceModel.EndpointIdentity" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="identity">The endpoint identity.</param>
+        <summary>Initializes this configuration element with the content of the specified object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identity" /> is <see langword="null" /> or empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -156,8 +158,8 @@
         <ReturnType>System.ServiceModel.Configuration.RsaElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an RSA identity.</summary>
+        <value>An RSA identity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,8 +181,8 @@
         <ReturnType>System.ServiceModel.Configuration.ServicePrincipalNameElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a service principal name (SPN) identity.</summary>
+        <value>A service principal name (SPN) identity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,8 +204,8 @@
         <ReturnType>System.ServiceModel.Configuration.UserPrincipalNameElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a user principal name (UPN) identity.</summary>
+        <value>A user principal name (UPN) identity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

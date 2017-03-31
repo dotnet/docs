@@ -1,4 +1,5 @@
 ---
 uid: System.Net.PeerToPeer.PnrpScope
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

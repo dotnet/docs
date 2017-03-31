@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Activation.ServiceActivationBuildProviderAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activation.ServiceActivationBuildProviderAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

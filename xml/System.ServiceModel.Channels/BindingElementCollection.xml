@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the collection of binding elements used in a binding.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +49,11 @@
         <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Channels.BindingElement&gt;" />
       </Parameters>
       <Docs>
-        <param name="elements">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="elements">The <see cref="T:System.Collections.Generic.IEnumerable`1" /> of generic type <see cref="T:System.ServiceModel.Channels.BindingElement" /> used to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> class from an enumerable set of binding elements.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="elements" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,9 +70,11 @@
         <Parameter Name="elements" Type="System.ServiceModel.Channels.BindingElement[]" />
       </Parameters>
       <Docs>
-        <param name="elements">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="elements">The <see cref="T:System.Array" /> of type <see cref="T:System.ServiceModel.Channels.BindingElement" /> used to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> class from an array of binding elements.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="elements" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -96,9 +100,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="elements">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="elements">The <see cref="T:System.Array" /> of type <see cref="T:System.ServiceModel.Channels.BindingElement" /> to be added to the collection.</param>
+        <summary>Adds binding elements from an array to the collection of binding elements.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="elements" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -116,8 +122,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a copy of the binding element collection.</summary>
+        <returns>A copy of the <see cref="T:System.ServiceModel.Channels.BindingElementCollection" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,10 +144,13 @@
         <Parameter Name="bindingElementType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="bindingElementType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindingElementType">The type of binding element being tested for inclusion in the collection.</param>
+        <summary>Returns a value that indicates whether a specified type of binding element belongs to the collection of binding elements.</summary>
+        <returns>
+          <see langword="true" /> if the type of binding element specified is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bindingElementType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Find&lt;T&gt;">
@@ -162,9 +171,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The <see cref="T:System.Type" /> of item to find.</typeparam>
+        <summary>Returns the first item of a specified type from the collection of binding elements.</summary>
+        <returns>The item of type <see cref="T:System.Type" /> if found; if not found, 0 if <paramref name="T" /> is a value type and <see langword="null" /> if <paramref name="T" /> is a reference type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +195,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The <see cref="T:System.Type" /> of item to find.</typeparam>
+        <summary>Returns all of the items of a specified type from the collection of binding elements.</summary>
+        <returns>A <see cref="T:System.Collections.ObjectModel.Collection`1" /> of all of the items of type <see cref="T:System.Type" /> if found; if none are found, 0 if <paramref name="T" /> is a value type and <see langword="null" /> if <paramref name="T" /> is a reference type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +219,12 @@
         <Parameter Name="item" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The location at which to insert the binding element in the collection.</param>
+        <param name="item">The <see cref="T:System.ServiceModel.Channels.BindingElement" /> to be inserted.</param>
+        <summary>Inserts a binding element at a specified location within a collection of binding elements.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove&lt;T&gt;">
@@ -234,9 +245,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The <see cref="T:System.Type" /> of item to find.</typeparam>
+        <summary>Removes a binding element of a specified type from the collection of binding elements.</summary>
+        <returns>The item of type <see cref="T:System.Type" /> removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,9 +269,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The <see cref="T:System.Type" /> of item to find.</typeparam>
+        <summary>Removes all of the binding elements of a specified type from the collection of binding elements.</summary>
+        <returns>A <see cref="T:System.Collections.ObjectModel.Collection`1" /> of all of the items of type <see cref="T:System.Type" /> found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,10 +293,12 @@
         <Parameter Name="item" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the element to replace.</param>
+        <param name="item">The new value for <see cref="T:System.ServiceModel.Channels.BindingElement" /> item at the specified <c>index</c>.</param>
+        <summary>Replaces a binding element at the specified index in the collection of binding elements.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a reference to a categories document.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +55,8 @@
         <Parameter Name="link" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="link">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="link">The URL to the referenced categories document.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.ReferencedCategoriesDocument" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,8 +77,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the URI for the categories document.</summary>
+        <value>Returns <see cref="T:System.Uri" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

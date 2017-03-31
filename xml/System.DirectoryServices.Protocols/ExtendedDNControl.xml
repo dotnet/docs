@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.ExtendedDNControl" /> class requests an extended form of the distinguished name of an Active Directory Domain Services object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ExtendedDNControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ExtendedDNControl" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="flag" Type="System.DirectoryServices.Protocols.ExtendedDNFlag" />
       </Parameters>
       <Docs>
-        <param name="flag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="flag">A value of the <see cref="T:System.DirectoryServices.Protocols.ExtendedDNFlag" /> enumeration that specifies the format of the extended distinguished name.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ExtendedDNControl.#ctor(System.DirectoryServices.Protocols.ExtendedDNFlag)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ExtendedDNControl" /> class using the specified flag.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.DirectoryServices.Protocols.ExtendedDNFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ExtendedDNControl.Flag" /> property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.ExtendedDNFlag" /> that specifies the format of the extended distinguished name.</summary>
+        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.ExtendedDNFlag" /> that specifies the format of the extended distinguished name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +80,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ExtendedDNControl.GetValue" /> method returns the format of the extended distinguished name.</summary>
+        <returns>The format of the extended distinguished name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the set of supported WS-Security versions. This is an abstract class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,8 +46,8 @@
         <ReturnType>System.ServiceModel.Security.SecurityVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version 1.0 of WS-Security.</summary>
+        <value>The version 1.0 of WS-Security.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
         <ReturnType>System.ServiceModel.Security.SecurityVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version 1.1 of WS-Security.</summary>
+        <value>The version 1.1 of WS-Security.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

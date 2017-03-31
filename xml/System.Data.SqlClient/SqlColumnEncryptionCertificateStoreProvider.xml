@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The implementation of the key store provider for Windows Certificate Store. This class enables using certificates stored in the Windows Certificate Store as column master keys. For details, see [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Key store provider for Windows Certificate Store.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,11 +48,12 @@
         <Parameter Name="encryptedColumnEncryptionKey" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="masterKeyPath">To be added.</param>
-        <param name="encryptionAlgorithm">To be added.</param>
-        <param name="encryptedColumnEncryptionKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="masterKeyPath">The master key path.</param>
+        <param name="encryptionAlgorithm">The encryption algorithm. Currently, the only valid value is: <c>RSA_OAEP</c></param>
+        <param name="encryptedColumnEncryptionKey">The encrypted column encryption key.</param>
+        <summary>Decrypts the specified encrypted value of a column encryption key. The encrypted value is expected to be encrypted using the certificate with the specified key path and using the specified algorithm. The format of the key path should be “Local Machine/My/&lt;certificate_thumbrint&gt;” or “Current User/My/&lt;certificate_thumbprint&gt;”.</summary>
+        <returns>Returns <see cref="T:System.Byte" />.   
+The decrypted column encryption key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,11 +75,12 @@
         <Parameter Name="columnEncryptionKey" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="masterKeyPath">To be added.</param>
-        <param name="encryptionAlgorithm">To be added.</param>
-        <param name="columnEncryptionKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="masterKeyPath">The master key path.</param>
+        <param name="encryptionAlgorithm">The encryption algorithm. Currently, the only valid value is: <c>RSA_OAEP</c></param>
+        <param name="columnEncryptionKey">The encrypted column encryption key.</param>
+        <summary>Encrypts a column encryption key using the certificate with the specified key path and using the specified algorithm. The format of the key path should be “Local Machine/My/&lt;certificate_thumbrint&gt;” or “Current User/My/&lt;certificate_thumbprint&gt;”.</summary>
+        <returns>Returns <see cref="T:System.Byte" />.   
+The encrypted column encryption key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +97,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The provider name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

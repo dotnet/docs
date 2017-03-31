@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.IEditableTextControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IEditableTextControl.TextChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,4 +1,4 @@
 ---
 uid: System.Windows.Converters
-internalonly: False
+manager: "martinek"
 ---

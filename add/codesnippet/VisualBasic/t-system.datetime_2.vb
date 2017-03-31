@@ -1,1 +1,0 @@
-      Dim date1 As Date = #5/1/2008 8:30:52AM#

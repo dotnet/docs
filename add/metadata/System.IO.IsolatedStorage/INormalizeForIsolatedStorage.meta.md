@@ -1,9 +1,13 @@
 ---
 uid: System.IO.IsolatedStorage.INormalizeForIsolatedStorage
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.IsolatedStorage.INormalizeForIsolatedStorage.Normalize
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

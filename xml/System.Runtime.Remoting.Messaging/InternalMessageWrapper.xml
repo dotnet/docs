@@ -17,8 +17,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Wraps remoting data for passing between message sinks, either for requests from client to server or for the subsequent responses.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Messaging.InternalMessageWrapper> class is the base class for the <xref:System.Runtime.Remoting.Messaging.MethodCallMessageWrapper> and <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> classes, which wrap messages for method calls on remote objects.  
+  
+ <xref:System.Runtime.Remoting.Messaging.InternalMessageWrapper> is used by the infrastructure of the .NET Framework. You do not need to create instances of the <xref:System.Runtime.Remoting.Messaging.InternalMessageWrapper>, <xref:System.Runtime.Remoting.Messaging.MethodCallMessageWrapper>, and <xref:System.Runtime.Remoting.Messaging.MethodReturnMessageWrapper> classes directly.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,9 +44,18 @@
         <Parameter Name="msg" Type="System.Runtime.Remoting.Messaging.IMessage" />
       </Parameters>
       <Docs>
-        <param name="msg">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="msg">A message that acts either as an outgoing method call on a remote object, or as the subsequent response.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Messaging.InternalMessageWrapper" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Messaging.InternalMessageWrapper> class is used by the remoting infrastructure of the .NET Framework. You do not need to create an <xref:System.Runtime.Remoting.Messaging.InternalMessageWrapper> directly.  
+  
+ The <xref:System.Runtime.Remoting.Messaging.IMessage> parameter also implements the derived interface, <xref:System.Runtime.Remoting.Messaging.IMethodMessage>, which indicates that the message acts as a request or as a response on a remote method call. The <xref:System.Runtime.Remoting.Messaging.IMethodCallMessage> and <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage> interfaces, in turn, inherit from the <xref:System.Runtime.Remoting.Messaging.IMethodMessage> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WrappedMessage">
@@ -54,7 +72,7 @@
         <ReturnType>System.Runtime.Remoting.Messaging.IMessage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the request or response <see cref="T:System.Runtime.Remoting.Messaging.IMethodMessage" /> interface that is wrapped by the message wrapper.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,17 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs.PeerNearMe
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs.PeerChangeType
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

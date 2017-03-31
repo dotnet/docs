@@ -14,8 +14,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides envoy information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this interface to provide custom envoy information that is carried along with the <xref:System.Runtime.Remoting.ObjRef> objects.  
+  
+ Classes that implement the current interface hold a serialized chain of message sinks that is regenerated when a proxy is created to represent the object. Such functionality is used for <xref:System.Runtime.Remoting.Contexts.Context> bound object types only, and represents the groups of objects that provide run-time services such as transactions.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="EnvoySinks">
@@ -32,9 +41,10 @@
         <ReturnType>System.Runtime.Remoting.Messaging.IMessageSink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the list of envoys that were contributed by the server context and object chains when the object was marshaled.</summary>
+        <value>A chain of envoy sinks.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
   </Members>

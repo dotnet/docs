@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A context item published to the editing context that represents a collection of imported namespaces associated with the designer.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.View.ImportedNamespaceContextItem" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is used by the expression text box to provide a collection of namespaces to be used when validating an expression.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnsureInitialized">
@@ -46,8 +53,8 @@
         <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The <see cref="T:System.Activities.Presentation.EditingContext" /> associated with the collection of imported namespaces.</param>
+        <summary>Initializes the collection of imported namespaces with the editing context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +71,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of imported namespaces.</summary>
+        <value>The <see cref="T:System.Collections.ObjectModel.Collection`1" /> of imported namespaces.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +89,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the imported namespace context item.</summary>
+        <value>The <see cref="T:System.Type" /> of the <see cref="T:System.Activities.Presentation.View.ImportedNamespaceContextItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

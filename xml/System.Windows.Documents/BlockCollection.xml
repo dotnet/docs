@@ -14,8 +14,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Windows.Documents.Block" /> elements. <see cref="T:System.Windows.Documents.BlockCollection" /> defines the allowable child content of the <see cref="T:System.Windows.Documents.FlowDocument" />, <see cref="T:System.Windows.Documents.Section" />, <see cref="T:System.Windows.Documents.ListItem" />, <see cref="T:System.Windows.Documents.TableCell" />, <see cref="T:System.Windows.Documents.Floater" />, and <see cref="T:System.Windows.Documents.Figure" /> elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.BlockCollection> creation is only permitted inside an element that owns a <xref:System.Windows.Documents.BlockCollection>, such as a <xref:System.Windows.Documents.FlowDocument> or <xref:System.Windows.Documents.TextElement>. As such, a <xref:System.Windows.Documents.BlockCollection> cannot be instantiated directly and has no default or overloaded constructor.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FirstBlock">
@@ -31,8 +38,8 @@
         <ReturnType>System.Windows.Documents.Block</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the first <see cref="T:System.Windows.Documents.Block" /> element within this instance of <see cref="T:System.Windows.Documents.BlockCollection" />.</summary>
+        <value>The first <see cref="T:System.Windows.Documents.Block" /> element in the <see cref="T:System.Windows.Documents.BlockCollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +56,8 @@
         <ReturnType>System.Windows.Documents.Block</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the last <see cref="T:System.Windows.Documents.Block" /> element within this instance of <see cref="T:System.Windows.Documents.BlockCollection" />.</summary>
+        <value>The last <see cref="T:System.Windows.Documents.Block" /> element in the <see cref="T:System.Windows.Documents.BlockCollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

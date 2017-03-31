@@ -15,8 +15,39 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies constants that define a <see cref="T:System.Globalization.CultureAndRegionInfoBuilder" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify a bitwise combination of one or more <xref:System.Globalization.CultureAndRegionModifiers> values as an argument to the <xref:System.Globalization.CultureAndRegionInfoBuilder.%23ctor%28System.String%2CSystem.Globalization.CultureAndRegionModifiers%29?displayProperty=fullName> constructor. You use the resulting <xref:System.Globalization.CultureAndRegionInfoBuilder> object to create a custom culture.  
+  
+ A custom culture can have a combination of these characteristics:  
+  
+-   A custom culture can be a specific culture or a neutral culture.  
+  
+     A specific culture specifies a language and a region, while a neutral culture specifies a language but no region.  
+  
+-   A custom culture can be a replacement culture or a supplemental culture.  
+  
+     A replacement culture replaces a culture that ships with the .NET Framework or a locale that ships with Windows.  
+  
+     A supplemental culture is anything other than a replacement culture. A supplemental culture can be entirely new, or can extend an existing .NET Framework culture or Windows locale.  
+  
+> [!IMPORTANT]
+>  Note that the <xref:System.Globalization.CultureAndRegionModifiers> enumeration is found in an assembly named sysglobl.dll. Successfully compiling code that uses this type requires that you add a reference to sysglobl.dll.  
+  
+   
+  
+## Examples  
+ The following code example creates a custom culture with a private use prefix, then lists a set of its properties. The first property is the name of the culture.  
+  
+ [!code-cpp[sys.glob.carib1#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.glob.carib1/CPP/carib.cpp#1)]
+ [!code-csharp[sys.glob.carib1#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.carib1/CS/carib.cs#1)]
+ [!code-vb[sys.glob.carib1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.carib1/VB/carib.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Neutral">
@@ -32,7 +63,7 @@
         <ReturnType>System.Globalization.CultureAndRegionModifiers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A neutral custom culture.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +79,7 @@
         <ReturnType>System.Globalization.CultureAndRegionModifiers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A specific, supplemental custom culture.</summary>
       </Docs>
     </Member>
     <Member MemberName="Replacement">
@@ -64,7 +95,7 @@
         <ReturnType>System.Globalization.CultureAndRegionModifiers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A custom culture that replaces an existing .NET Framework culture or Windows locale.</summary>
       </Docs>
     </Member>
   </Members>

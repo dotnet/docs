@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of search in an instance of the <see cref="T:System.Web.UI.WebControls.Expressions.SearchExpression" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Expressions.SearchExpression> filter option uses the <xref:System.Web.UI.WebControls.Expressions.SearchType> enumeration when it performs a string comparison. You set the <xref:System.Web.UI.WebControls.Expressions.SearchExpression.SearchType%2A> property to one of the <xref:System.Web.UI.WebControls.Expressions.SearchType> enumeration values.  
+  
+   
+  
+## Examples  
+ The following example shows how to use markup to set the <xref:System.Web.UI.WebControls.Expressions.SearchExpression> filter option to the StartsWith value of the <xref:System.Web.UI.WebControls.Expressions.SearchType> enumeration.  
+  
+```  
+<asp:SearchExpression SearchType="StartsWith" DataFields="Name" >  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Contains">
@@ -27,7 +43,7 @@
         <ReturnType>System.Web.UI.WebControls.Expressions.SearchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a search should determine whether the search string matches a string anywhere in a field.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndsWith">
@@ -43,7 +59,7 @@
         <ReturnType>System.Web.UI.WebControls.Expressions.SearchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a search should determine whether the search string matches a string at the end of a field.</summary>
       </Docs>
     </Member>
     <Member MemberName="StartsWith">
@@ -59,7 +75,7 @@
         <ReturnType>System.Web.UI.WebControls.Expressions.SearchType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a search should determine whether the search string matches a string at the beginning of a field.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the SubjectConfirmation element specified in [Saml2Core, 2.4.1.1].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +35,20 @@
         <Parameter Name="method" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="method">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="method">The <see cref="T:System.Uri" /> that indicates the confirmation method.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmation" /> class with the specified confirmation method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2SubjectConfirmation.SubjectConfirmationData%2A> property is initialized to `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="method" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="method" /> is not an absolute URI.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,10 +65,14 @@
         <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2SubjectConfirmationData" />
       </Parameters>
       <Docs>
-        <param name="method">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="method">The <see cref="T:System.Uri" /> that indicates the confirmation method.</param>
+        <param name="data">The <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmationData" /> that contains the additional confirmation information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmation" /> class with the specified confirmation method and additional confirmation information.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="method" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="method" /> is not an absolute URI.</exception>
       </Docs>
     </Member>
     <Member MemberName="Method">
@@ -66,9 +88,18 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a URI reference that identifies a protocol or mechanism to be used to confirm the subject. [Saml2Core, 2.4.1.1]</summary>
+        <value>A <see cref="T:System.Uri" /> that represents the reference.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the required Method attribute.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
+        <exception cref="T:System.ArgumentException">An attempt to set a value that is not an absolute URI occurs.</exception>
       </Docs>
     </Member>
     <Member MemberName="NameIdentifier">
@@ -84,8 +115,8 @@
         <ReturnType>System.IdentityModel.Tokens.Saml2NameIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the identifier for the entity expected to satisfy the enclosing subject confirmation requirements. [Saml2Core, 2.4.1.1]</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> that specifies the entity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,9 +133,16 @@
         <ReturnType>System.IdentityModel.Tokens.Saml2SubjectConfirmationData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets additional confirmation information to be used by a specific confirmation method. [Saml2Core, 2.4.1.1]</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmationData" /> that contains information to be used with the confirmation method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the optional SubjectConfirmationData element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

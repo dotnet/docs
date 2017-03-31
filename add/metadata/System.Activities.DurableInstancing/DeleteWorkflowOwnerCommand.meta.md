@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.DurableInstancing.DeleteWorkflowOwnerCommand
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.DurableInstancing.DeleteWorkflowOwnerCommand.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

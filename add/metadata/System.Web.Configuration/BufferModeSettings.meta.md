@@ -1,44 +1,53 @@
 ---
 uid: System.Web.Configuration.BufferModeSettings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.BufferModeSettings.MaxFlushSize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.BufferModeSettings.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.BufferModeSettings.UrgentFlushInterval
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.BufferModeSettings.UrgentFlushThreshold
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.BufferModeSettings.RegularFlushInterval
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.BufferModeSettings.MaxBufferSize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.BufferModeSettings.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.TimeSpan,System.TimeSpan,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.BufferModeSettings.MaxBufferThreads
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

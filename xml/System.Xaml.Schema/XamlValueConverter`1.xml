@@ -22,9 +22,20 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TConverterBase">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TConverterBase">The CLR base class for the particular converter that this <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> represents. Typically this is one of the following: <see cref="T:System.ComponentModel.TypeConverter" />; <see cref="T:System.Windows.Markup.MarkupExtension" />; <see cref="T:System.Windows.Markup.ValueSerializer" />;</typeparam>
+    <summary>Provides a common API surface for techniques that generate initialization or serialization values for XAML based on input other than the eventual destination type. This includes markup extensions and type converters.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of this type are returned by methods of the XAML schema API such as <xref:System.Xaml.XamlType.LookupTypeConverter%2A>. The generic implementation of <xref:System.Xaml.Schema.XamlValueConverter%601> provides indirection for the System.Xaml assembly so that the basic XAML schema and type system does not have to take dependencies on different value conversion techniques that are typically implementations in other assemblies.  
+  
+ A <xref:System.Xaml.Schema.XamlValueConverter%601> can be constructed with a null implementation type, but such a <xref:System.Xaml.Schema.XamlValueConverter%601> will return `null` for <xref:System.Xaml.Schema.XamlValueConverter%601.CreateInstance%2A>.  
+  
+ Constructor signatures for <xref:System.Xaml.Schema.XamlValueConverter%601> use a `converterType` parameter that references the specific type that implements the conversion behavior. For a properly functioning <xref:System.Xaml.Schema.XamlValueConverter%601> (one that has a nonnull <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A>), the `converterType` type is expected to be castable to the `TConverterBase` constraint. A mismatch condition is not enforced by constructors, but might produce an <xref:System.InvalidCastException> at run time.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,9 +52,9 @@
         <Parameter Name="targetType" Type="System.Xaml.XamlType" />
       </Parameters>
       <Docs>
-        <param name="converterType">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="converterType">The <see cref="T:System.Type" /> that implements the converter behavior.</param>
+        <param name="targetType">The target/destination <see cref="T:System.Xaml.XamlType" /> of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> class, based on a converter implementing <see cref="T:System.Type" /> and the target/destination type of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,11 +73,19 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="converterType">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="converterType">The <see cref="T:System.Type" /> that implements the converter behavior.</param>
+        <param name="targetType">The target/destination <see cref="T:System.Xaml.XamlType" /> of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />.</param>
+        <param name="name">The string name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> class, based on a converter implementing <see cref="T:System.Type" /> the target/destination type of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />, and a string name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `name` is provided as `null`, a default name is generated based on either `converterType` or `targetType`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">All three parameters are <see langword="null" /> (at least one is required to be non-null).</exception>
       </Docs>
     </Member>
     <Member MemberName="ConverterInstance">
@@ -82,9 +101,18 @@
         <ReturnType>TConverterBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a created instance of the converter implementation.</summary>
+        <value>A created instance of the converter implementation, or <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A> calls the protected default implementation of <xref:System.Xaml.Schema.XamlValueConverter%601.CreateInstance%2A> to get its value (and might be accessing a stored value if <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A> was already called once on this <xref:System.Xaml.Schema.XamlValueConverter%601>.  
+  
+ A <xref:System.Xaml.Schema.XamlValueConverter%601> can be constructed with a null implementation type, but such a <xref:System.Xaml.Schema.XamlValueConverter%601> will return `null` for <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConverterType">
@@ -100,8 +128,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Type" /> for the class that implements the converter behavior.</summary>
+        <value>The <see cref="T:System.Type" /> for the class that implements the converter behavior.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +147,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an instance of the converter implementation.</summary>
+        <returns>An instance of the converter implementation, or <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xaml.Schema.XamlValueConverter%601.CreateInstance%2A> is protected. To get a converter instance with a public API, get the value of <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A>.  
+  
+ A <xref:System.Xaml.Schema.XamlValueConverter%601> can be constructed with a null implementation type, but such a <xref:System.Xaml.Schema.XamlValueConverter%601> will return `null` for <xref:System.Xaml.Schema.XamlValueConverter%601.CreateInstance%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xaml.XamlSchemaException">Converter did not implement the correct base type.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -140,9 +178,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare.</param>
+        <summary>Determines whether this instance of <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> and a specified object, which must also be a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> object, have the same value.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> and its value is the same as this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,9 +201,10 @@
         <Parameter Name="other" Type="System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> to compare.</param>
+        <summary>Determines whether this instance of <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> and another <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> object have the same value.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="other" /> is a <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> and its value is the same as this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,8 +222,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />.</summary>
+        <returns>An integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,9 +240,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a string name for this <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />.</summary>
+        <value>A string name for this <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property is established by one of the following:  
+  
+-   A constructor parameter (see <xref:System.Xaml.Schema.XamlValueConverter%601.%23ctor%2A?displayProperty=fullName>).  
+  
+-   Internal logic that processes other constructor inputs and forms a string.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -222,10 +273,11 @@
         <Parameter Name="converter2" Type="System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt;" />
       </Parameters>
       <Docs>
-        <param name="converter1">To be added.</param>
-        <param name="converter2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="converter1">A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />, or <see langword="null" />.</param>
+        <param name="converter2">A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />, or <see langword="null" />.</param>
+        <summary>Determines whether two specified <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> objects have the same value.</summary>
+        <returns>
+          <see langword="true" /> if the value of <paramref name="converter1" /> is the same as the value of <paramref name="converter2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,10 +298,11 @@
         <Parameter Name="converter2" Type="System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt;" />
       </Parameters>
       <Docs>
-        <param name="converter1">To be added.</param>
-        <param name="converter2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="converter1">A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />, or <see langword="null" />.</param>
+        <param name="converter2">A <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />, or <see langword="null" />.</param>
+        <summary>Determines whether two specified <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> objects have different values.</summary>
+        <returns>
+          <see langword="true" /> if the value of <paramref name="converter1" /> is different than the value of <paramref name="converter2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,8 +319,8 @@
         <ReturnType>System.Xaml.XamlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the target/destination <see cref="T:System.Xaml.XamlType" /> of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />.</summary>
+        <value>The target/destination <see cref="T:System.Xaml.XamlType" /> of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,9 +338,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a <see cref="T:System.String" /> that represents this <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />.</summary>
+        <returns>A <see cref="T:System.String" /> that represents this <see cref="T:System.Xaml.Schema.XamlValueConverter`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xaml.Schema.XamlValueConverter%601.ToString%2A> value is based on <xref:System.Xaml.Schema.XamlValueConverter%601.Name%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

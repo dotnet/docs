@@ -1,9 +1,11 @@
 ---
 uid: System.Speech.Synthesis.PromptEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.PromptEventArgs.Prompt
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

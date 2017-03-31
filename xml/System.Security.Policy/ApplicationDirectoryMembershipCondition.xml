@@ -21,8 +21,20 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines whether an assembly belongs to a code group by testing its application directory. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Policy.ApplicationDirectoryMembershipCondition> determines whether an <xref:System.Security.Policy.ApplicationDirectory><xref:System.Security.Policy.ApplicationDirectory.Directory%2A> property contains the assembly URL evidence path. For example, if the <xref:System.Security.Policy.ApplicationDirectory> is C:\app1, assemblies with URL evidence such as C:\app1, C:\app1\main.aspx, C:\app1\folder1, or C:\app1\folder1\main1.aspx match this membership condition. Code that is not in the C:\app1 directory or in one of its subdirectories fails this membership condition test.  
+  
+ Code without either <xref:System.Security.Policy.ApplicationDirectory> or <xref:System.Security.Policy.Url> evidence always fails this membership condition test.  
+  
+> [!NOTE]
+>  The membership condition is determined by the URL evidence for the application. You cannot configure the <xref:System.Security.Policy.ApplicationDirectoryMembershipCondition> object; it is predetermined by the location of the application.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,8 +49,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.ApplicationDirectoryMembershipCondition" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The membership condition tests whether the assembly URL evidence is a path within the directory specified by <xref:System.Security.Policy.ApplicationDirectory>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Check">
@@ -58,10 +77,18 @@
         <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
       </Parameters>
       <Docs>
-        <param name="evidence">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="evidence">The evidence set against which to make the test.</param>
+        <summary>Determines whether the membership condition is satisfied by the specified evidence.</summary>
+        <returns>
+          <see langword="true" /> if the specified evidence satisfies the membership condition; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `evidence` parameter must contain both <xref:System.Security.Policy.ApplicationDirectory> evidence that specifies the application directory of the running application and <xref:System.Security.Policy.Url> evidence that specifies the code base of the assembly. The code base specified by the <xref:System.Security.Policy.Url> evidence must represent a path in the directory tree of the application directory specified by the <xref:System.Security.Policy.ApplicationDirectory> evidence for this method to return `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -79,8 +106,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an equivalent copy of the membership condition.</summary>
+        <returns>A new, identical copy of the current membership condition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,9 +128,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="o">The object to compare to <see cref="T:System.Security.Policy.ApplicationDirectoryMembershipCondition" />.</param>
+        <summary>Determines whether the specified membership condition is an <see cref="T:System.Security.Policy.ApplicationDirectoryMembershipCondition" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified membership condition is an <see cref="T:System.Security.Policy.ApplicationDirectoryMembershipCondition" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,9 +152,11 @@
         <Parameter Name="e" Type="System.Security.SecurityElement" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The XML encoding to use to reconstruct the security object.</param>
+        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="e" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="e" /> parameter is not a valid application directory membership condition element.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -147,10 +177,12 @@
         <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="level">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The XML encoding to use to reconstruct the security object.</param>
+        <param name="level">The policy level context, used to resolve named permission set references.</param>
+        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="e" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="e" /> parameter is not a valid application directory membership condition element.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -168,8 +200,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the hash code for the current membership condition.</summary>
+        <returns>The hash code for the current membership condition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +220,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates and returns a string representation of the membership condition.</summary>
+        <returns>A string representation of the state of the membership condition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,8 +240,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an XML encoding of the security object and its current state.</summary>
+        <returns>An XML encoding of the security object, including any state information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,9 +262,9 @@
         <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
       </Parameters>
       <Docs>
-        <param name="level">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="level">The policy level context for resolving named permission set references.</param>
+        <summary>Creates an XML encoding of the security object and its current state with the specified <see cref="T:System.Security.Policy.PolicyLevel" />.</summary>
+        <returns>An XML encoding of the security object, including any state information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

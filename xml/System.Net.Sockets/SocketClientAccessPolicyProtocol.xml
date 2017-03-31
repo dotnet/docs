@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the method to download a client access policy file.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.Net.Sockets.SocketClientAccessPolicyProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The socket policy file is downloaded using the HTTP protocol running on TCP port 943.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tcp">
@@ -51,7 +51,7 @@
         <ReturnType>System.Net.Sockets.SocketClientAccessPolicyProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The socket policy file is downloaded using a custom TCP protocol running on TCP port 943.</summary>
       </Docs>
     </Member>
   </Members>

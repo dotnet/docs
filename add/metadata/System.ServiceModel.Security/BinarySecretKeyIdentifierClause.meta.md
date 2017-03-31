@@ -1,39 +1,67 @@
 ---
 uid: System.ServiceModel.Security.BinarySecretKeyIdentifierClause
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.BinarySecretKeyIdentifierClause.#ctor(System.Byte[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.BinarySecretKeyIdentifierClause.CreateKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.BinarySecretKeyIdentifierClause.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.BinarySecretKeyIdentifierClause.Matches
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.BinarySecretKeyIdentifierClause.CanCreateKey
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.BinarySecretKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.BinarySecretKeyIdentifierClause.#ctor(System.Byte[],System.Boolean,System.Byte[],System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.BinarySecretKeyIdentifierClause.GetKeyBytes
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.BinarySecretKeyIdentifierClause.#ctor(System.Byte[],System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

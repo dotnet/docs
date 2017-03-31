@@ -1,59 +1,77 @@
 ---
 uid: System.Net.HttpListenerPrefixCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerPrefixCollection.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerPrefixCollection.CopyTo(System.String[],System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerPrefixCollection.Clear
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.HttpListenerPrefixCollection.CopyTo
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerPrefixCollection.GetEnumerator
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerPrefixCollection.IsSynchronized
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerPrefixCollection.Contains(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerPrefixCollection.Add(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerPrefixCollection.CopyTo(System.Array,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerPrefixCollection.IsReadOnly
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerPrefixCollection.Count
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerPrefixCollection.Remove(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

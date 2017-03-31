@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides text manipulation methods that are used by several classes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,9 +47,10 @@
         <Parameter Name="doc" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <param name="doc">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="data">String that contains character data to be added to document.</param>
+        <param name="doc">
+          <see cref="T:System.Xml.XmlDocument" /> to contain character data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlCharacterData" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +79,19 @@
         <Parameter Name="strData" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strData">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="strData">The string to insert into the existing string.</param>
+        <summary>Appends the specified string to the end of the character data of the node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method raises the XmlNodeChangedAction.Change event.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see langword="AppendData" /> in a derived class, in order for events to be raised correctly, you must either raise the event yourself or call the base version of this method.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -105,9 +116,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Contains the data of the node.</summary>
+        <value>The data of the node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data returned is equivalent to the <xref:System.Xml.XmlCharacterData.Value%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteData">
@@ -136,10 +154,20 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="offset">The position within the string to start deleting.</param>
+        <param name="count">The number of characters to delete.</param>
+        <summary>Removes a range of characters from the node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method raises the XmlNodeChangedAction.Change event.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see langword="DeleteData" /> in a derived class, in order for events to be raised correctly, you must either raise the event yourself or call the base version of this method.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -160,9 +188,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the concatenated values of the node and all the children of the node.</summary>
+        <value>The concatenated values of the node and all the children of the node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is a Microsoft extension to the Document Object Model (DOM).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertData">
@@ -191,10 +226,20 @@
         <Parameter Name="strData" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <param name="strData">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="offset">The position within the string to insert the supplied string data.</param>
+        <param name="strData">The string data that is to be inserted into the existing string.</param>
+        <summary>Inserts the specified string at the specified character offset.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method raises the XmlNodeChangedAction.Change event.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see langword="InsertData" /> in a derived class, in order for events to be raised correctly, you must either raise the event yourself or call the base version of this method.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -219,8 +264,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the length of the data, in characters.</summary>
+        <value>The length, in characters, of the string in the <see cref="P:System.Xml.XmlCharacterData.Data" /> property. The length may be zero; that is, CharacterData nodes can be empty.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,11 +296,21 @@
         <Parameter Name="strData" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="strData">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="offset">The position within the string to start replacing.</param>
+        <param name="count">The number of characters to replace.</param>
+        <param name="strData">The new data that replaces the old string data.</param>
+        <summary>Replaces the specified number of characters starting at the specified offset with the specified string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method raises the XmlNodeChangedAction.Change event.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see langword="ReplaceData" /> in a derived class, in order for events to be raised correctly, you must either raise the event yourself or call the base version of this method.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Substring">
@@ -284,10 +339,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="offset">The position within the string to start retrieving. An offset of zero indicates the starting point is at the start of the data.</param>
+        <param name="count">The number of characters to retrieve.</param>
+        <summary>Retrieves a substring of the full string from the specified range.</summary>
+        <returns>The substring corresponding to the specified range.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,9 +368,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the node.</summary>
+        <value>The value of the node.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Node is read-only.</exception>
       </Docs>
     </Member>
   </Members>

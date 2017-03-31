@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Channels.ITransportTokenAssertionProvider
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ITransportTokenAssertionProvider.GetTransportTokenAssertion
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

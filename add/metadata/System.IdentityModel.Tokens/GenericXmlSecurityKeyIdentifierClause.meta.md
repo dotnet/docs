@@ -1,24 +1,35 @@
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.#ctor(System.Xml.XmlElement,System.Byte[],System.Int32)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.ReferenceXml
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.#ctor(System.Xml.XmlElement)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

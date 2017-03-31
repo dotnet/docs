@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides information about page execution listeners and instrumentation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Instrumentation.PageInstrumentationService" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +43,16 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Web.Instrumentation.PageExecutionListener&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a list of listeners that are subscribed to the page execution process.</summary>
+        <value>The list of listeners that are subscribed to the page execution process.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is guaranteed not to be `null`, but can be empty.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -61,9 +68,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether instrumentation is active for the entire application.</summary>
+        <value>
+          <see langword="true" /> to indicate that instrumentation is active for the entire application; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Page instrumentation is a per-request service, and it might not be active for a particular request. This flag must be set to `true` in order for any request to use page instrumentation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

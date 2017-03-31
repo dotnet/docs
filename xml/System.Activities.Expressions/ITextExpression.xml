@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a text expression.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,8 +25,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the expression text to be evaluated.</summary>
+        <value>The expression text to be evaluated.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,8 +44,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the expression tree.</summary>
+        <returns>The expression tree.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +62,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the language information that applies to interface text expression.</summary>
+        <value>The language information that applies to interface text expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +80,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the ITextExpression requires compilation.</summary>
+        <value>
+          <see langword="True" /> if the ITextExpression requires compilation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssembly
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssembly.PublicKey
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssembly.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.PartialTrustVisibleAssembly.AssemblyName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

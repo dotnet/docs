@@ -1,9 +1,11 @@
 ---
 uid: System.Web.MimeMapping
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.MimeMapping.GetMimeMapping(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

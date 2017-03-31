@@ -10,8 +10,25 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines how a control validates its data when it loses user input focus.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a user switches focus off of a Windows Forms control, the control will use <xref:System.Windows.Forms.AutoValidate> to determine how to validate its data. This type of validation is called implicit validation, because it occurs without the application developer having to make an explicit call to <xref:System.Windows.Forms.ContainerControl.Validate%2A> or <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A>.  
+  
+ The property corresponding to this value will have different defaults based on the type of control. For more information, see [User Input Validation in Windows Forms](../Topic/User%20Input%20Validation%20in%20Windows%20Forms.md).  
+  
+   
+  
+## Examples  
+ The following code example turns off implicit validation for a form and all of its contained controls, and instead manually performs validation of all of the form's children when a mouse button is clicked.  
+  
+ [!code-csharp[ValidateChildren#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ValidateChildren/CS/Form1.cs#1)]
+ [!code-vb[ValidateChildren#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ValidateChildren/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disable">
@@ -27,7 +44,7 @@
         <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Implicit validation will not occur. Setting this value will not interfere with explicit calls to <see cref="M:System.Windows.Forms.ContainerControl.Validate" /> or <see cref="M:System.Windows.Forms.ContainerControl.ValidateChildren" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableAllowFocusChange">
@@ -43,7 +60,7 @@
         <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Implicit validation occurs, but if validation fails, focus will still change to the new control. If validation fails, the <see cref="E:System.Windows.Forms.Control.Validated" /> event will not fire.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnablePreventFocusChange">
@@ -59,7 +76,7 @@
         <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Implicit validation occurs when the control loses focus.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inherit">
@@ -75,7 +92,7 @@
         <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The control inherits its <see cref="T:System.Windows.Forms.AutoValidate" /> behavior from its container (such as a form or another control). If there is no container control, it defaults to <see cref="F:System.Windows.Forms.AutoValidate.EnablePreventFocusChange" />.</summary>
       </Docs>
     </Member>
   </Members>

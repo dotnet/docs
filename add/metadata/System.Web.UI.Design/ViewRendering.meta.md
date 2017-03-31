@@ -1,29 +1,41 @@
 ---
 uid: System.Web.UI.Design.ViewRendering
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ViewRendering.#ctor(System.String,System.Web.UI.Design.DesignerRegionCollection,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ViewRendering.#ctor(System.String,System.Web.UI.Design.DesignerRegionCollection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ViewRendering.Visible
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ViewRendering.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ViewRendering.Content
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ViewRendering.Regions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

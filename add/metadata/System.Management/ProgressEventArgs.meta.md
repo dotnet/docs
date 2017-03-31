@@ -1,19 +1,19 @@
 ---
 uid: System.Management.ProgressEventArgs
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ProgressEventArgs.Message
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ProgressEventArgs.Current
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ProgressEventArgs.UpperBound
-internalonly: False
+manager: "jillfra"
 ---

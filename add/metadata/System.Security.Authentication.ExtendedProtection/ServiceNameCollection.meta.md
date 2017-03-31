@@ -1,24 +1,35 @@
 ---
 uid: System.Security.Authentication.ExtendedProtection.ServiceNameCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Security.Authentication.ExtendedProtection.ServiceNameCollection.Merge
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ServiceNameCollection.Merge(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ServiceNameCollection.Contains(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ServiceNameCollection.#ctor(System.Collections.ICollection)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ServiceNameCollection.Merge(System.Collections.IEnumerable)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

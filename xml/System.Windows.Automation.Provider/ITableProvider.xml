@@ -23,8 +23,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Exposes methods and properties to support UI Automation client access to controls that act as containers for a collection of child elements. The children of this element must implement <see cref="T:System.Windows.Automation.Provider.ITableItemProvider" /> and be organized in a two-dimensional logical coordinate system that can be traversed (that is, a UI Automation client can move to adjacent controls) by using the keyboard.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This control pattern is analogous to <xref:System.Windows.Automation.Provider.IGridProvider> with the distinction that any control that implements <xref:System.Windows.Automation.Provider.ITableProvider> must also expose a column and/or row header relationship for each child element.  
+  
+ Controls that implement <xref:System.Windows.Automation.Provider.ITableProvider> are also required to implement <xref:System.Windows.Automation.Provider.IGridProvider> so as to expose the inherent grid functionality of a table control.  
+  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TablePattern> and <xref:System.Windows.Automation.GridPattern>control patterns.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetColumnHeaders">
@@ -41,8 +52,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a collection of UI Automation providers that represents all the column headers in a table.</summary>
+        <returns>A collection of UI Automation providers.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +71,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves a collection of UI Automation providers that represents all row headers in the table.</summary>
+        <returns>A collection of UI Automation providers.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +89,8 @@
         <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Retrieves the primary direction of traversal for the table.</summary>
+        <value>The primary direction of traversal.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a single, named connection string in the connection strings configuration file section.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Configuration.ConnectionStringSettings> object represents a single entry in the `connectionStrings` configuration file section.  
+  
+   
+  
+## Examples  
+ The following example shows how to access a <xref:System.Configuration.ConnectionStringSettings> object at a given index in a <xref:System.Configuration.ConnectionStringSettingsCollection> collection.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#21](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConfigurationStringSettings.cs#21)]
+ [!code-vb[System.Configuration.ConnectionStrings#21](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConfigurationStringSettings.vb#21)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of a <see cref="T:System.Configuration.ConnectionStringSettings" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +59,9 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="connectionString">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the connection string.</param>
+        <param name="connectionString">The connection string.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Configuration.ConnectionStringSettings" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,11 +80,21 @@
         <Parameter Name="providerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="connectionString">To be added.</param>
-        <param name="providerName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the connection string.</param>
+        <param name="connectionString">The connection string.</param>
+        <param name="providerName">The name of the provider to use with the connection string.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Configuration.ConnectionStringSettings" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create a <xref:System.Configuration.ConnectionStringSettings> object and add it to a <xref:System.Configuration.ConnectionStringSettingsCollection> collection.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#8)]
+ [!code-vb[System.Configuration.ConnectionStrings#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectionString">
@@ -90,9 +115,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the connection string.</summary>
+        <value>The string value assigned to the <see cref="P:System.Configuration.ConnectionStringSettings.ConnectionString" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConnectionStringSettings.ConnectionString%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#4)]
+ [!code-vb[System.Configuration.ConnectionStrings#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -113,9 +148,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Configuration.ConnectionStringSettings" /> name.</summary>
+        <value>The string value assigned to the <see cref="P:System.Configuration.ConnectionStringSettings.Name" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConnectionStringSettings.Name%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#5)]
+ [!code-vb[System.Configuration.ConnectionStrings#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -154,9 +199,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the provider name property.</summary>
+        <value>Gets or sets the <see cref="P:System.Configuration.ConnectionStringSettings.ProviderName" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#6)]
+ [!code-vb[System.Configuration.ConnectionStrings#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -173,8 +228,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string representation of the object.</summary>
+        <returns>A string representation of the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

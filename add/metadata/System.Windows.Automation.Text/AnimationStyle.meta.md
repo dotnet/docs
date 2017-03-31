@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Automation.Text.AnimationStyle
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

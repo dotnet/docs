@@ -1,4 +1,4 @@
 ---
 uid: System.Runtime.Serialization.Configuration
-internalonly: False
+manager: "ghogen"
 ---

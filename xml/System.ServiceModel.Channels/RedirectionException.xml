@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an error that occurs in redirection processing.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The serialization information.</param>
+        <param name="context">The streaming context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.RedirectionException" /> class with the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,11 +57,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="scope">To be added.</param>
-        <param name="locations">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the redirection.</param>
+        <param name="duration">The duration of the redirection.</param>
+        <param name="scope">The scope of the redirection.</param>
+        <param name="locations">The locations for the redirection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.RedirectionException" /> class with the specified <see cref="T:System.ServiceModel.Channels.RedirectionType" />, <see cref="T:System.ServiceModel.Channels.RedirectionDuration" />, <see cref="T:System.ServiceModel.Channels.RedirectionScope" />, and array of <see cref="T:System.ServiceModel.Channels.RedirectionLocation" /> objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,12 +88,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="scope">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <param name="locations">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the redirection.</param>
+        <param name="duration">The duration of the redirection.</param>
+        <param name="scope">The scope of the redirection.</param>
+        <param name="innerException">The inner exception.</param>
+        <param name="locations">The locations for the redirection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.RedirectionException" /> with the specified <see cref="T:System.ServiceModel.Channels.RedirectionType" />, <see cref="T:System.ServiceModel.Channels.RedirectionDuration" />, <see cref="T:System.ServiceModel.Channels.RedirectionScope" />, inner exception, and array of <see cref="T:System.ServiceModel.Channels.RedirectionLocation" /> objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,12 +120,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="scope">To be added.</param>
-        <param name="locations">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message that describes the current exception.</param>
+        <param name="type">The type of the redirection.</param>
+        <param name="duration">The duration of the redirection.</param>
+        <param name="scope">The scope of the redirection.</param>
+        <param name="locations">The locations for the redirection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.RedirectionException" /> class with the specified message, <see cref="T:System.ServiceModel.Channels.RedirectionType" />, <see cref="T:System.ServiceModel.Channels.RedirectionDuration" />, <see cref="T:System.ServiceModel.Channels.RedirectionScope" />, and array of <see cref="T:System.ServiceModel.Channels.RedirectionLocation" /> objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,13 +153,13 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="scope">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <param name="locations">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The redirection message.</param>
+        <param name="type">The type of redirection.</param>
+        <param name="duration">The duration of the redirection.</param>
+        <param name="scope">The scope of the redirection.</param>
+        <param name="innerException">The inner exception.</param>
+        <param name="locations">The locations for the redirection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.RedirectionException" /> with the specified message string, <see cref="T:System.ServiceModel.Channels.RedirectionType" />, <see cref="T:System.ServiceModel.Channels.RedirectionDuration" />, <see cref="T:System.ServiceModel.Channels.RedirectionScope" />, inner exception, and array of <see cref="T:System.ServiceModel.Channels.RedirectionLocation" /> objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +176,8 @@
         <ReturnType>System.ServiceModel.Channels.RedirectionDuration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> associated with the current <see cref="T:System.ServiceModel.Channels.RedirectionException" />.</summary>
+        <value>The redirection duration associated with the exception.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,9 +203,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The serialization information.</param>
+        <param name="context">The streaming context.</param>
+        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,8 +222,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Channels.RedirectionLocation&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Channels.RedirectionLocation" /> objects associated with the current <see cref="T:System.ServiceModel.Channels.RedirectionException" />.</summary>
+        <value>A collection of redirection locations.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,8 +240,8 @@
         <ReturnType>System.ServiceModel.Channels.RedirectionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> associated with the <see cref="T:System.ServiceModel.Channels.RedirectionException" />.</summary>
+        <value>The redirection scope associated with the exception.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,8 +258,8 @@
         <ReturnType>System.ServiceModel.Channels.RedirectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.Channels.RedirectionType" /> associated with the <see cref="T:System.ServiceModel.Channels.RedirectionException" />.</summary>
+        <value>The redirection type associated with the exception.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

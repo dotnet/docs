@@ -1,19 +1,34 @@
 ---
 uid: System.ServiceModel.Configuration.AuthorizationPolicyTypeElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.AuthorizationPolicyTypeElement.PolicyType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.AuthorizationPolicyTypeElement.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.AuthorizationPolicyTypeElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.AuthorizationPolicyTypeElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

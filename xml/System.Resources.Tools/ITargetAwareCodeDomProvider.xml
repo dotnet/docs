@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface that enables the strongly typed resource builder (<see cref="T:System.Resources.Tools.StronglyTypedResourceBuilder" /> object) to determine which types and properties are available so it can emit the correct Code Document Object Model (CodeDOM) tree.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,11 +30,12 @@
         <Parameter Name="isWritable" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <param name="isWritable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type whose properties are to be queried.</param>
+        <param name="propertyName">The name of the property to find in <c>type</c>.</param>
+        <param name="isWritable">A flag that indicates whether the property must include a get accessor.</param>
+        <summary>Indicates whether the specified type on the project target framework has a specified named property.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="type" /> on the project target framework has a property named <paramref name="propertyname" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

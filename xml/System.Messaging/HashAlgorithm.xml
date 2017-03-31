@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the hash algorithm used by Message Queuing when authenticating messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message authentication provides two services. It provides a way to ensure message integrity and a way to verify who sent the message. To request authentication, the sending application must set the authentication level of the message to be authenticated and attach a security certificate to the message.  
+  
+ To authenticate messages, the Message Queuing run-time DLL on the source computer uses a hashing algorithm when creating a digital signature for a message. The target Queue Manager then uses the same hashing algorithm to authenticate the message when it is received.  
+  
+ For more information about the authentication process, see the Message Queuing authentication topics in the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Mac">
@@ -27,7 +38,7 @@
         <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>MAC keyed-hash algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="Md2">
@@ -43,7 +54,7 @@
         <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>MD2 hashing algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="Md4">
@@ -59,7 +70,7 @@
         <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>MD4 hashing algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="Md5">
@@ -75,7 +86,7 @@
         <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>MD5 hashing algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -91,7 +102,7 @@
         <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No hashing algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sha">
@@ -107,7 +118,7 @@
         <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>SHA hashing algorithm.</summary>
       </Docs>
     </Member>
   </Members>

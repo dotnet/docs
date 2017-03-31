@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an object formatted to serve as an event argument containing the information about the changed view state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ View state changes are changes made to a workflow that impact layout, such as positioning an element in a flowchart, or expanding and collapsing a container in a sequence.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,11 +38,11 @@
         <Parameter Name="oldValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="modelItem">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <param name="oldValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="modelItem">An item in the activity designer model that serves as a parent element in the XML view of the model.</param>
+        <param name="key">The name of an attribute in the specified parent element.</param>
+        <param name="newValue">The new value for the specified attribute key.</param>
+        <param name="oldValue">The old value of the specified attribute key.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.View.ViewStateChangedEventArgs" /> class with a specified parent model item and its key/value pair with the old and the new values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +59,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an attribute key name in a specified view element.</summary>
+        <value>A string that represents the name of a key in a view element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +77,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the new value for the key in the current attribute key/value pair.</summary>
+        <value>An object that contains a key value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +95,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the old value of the key in the current attribute key/value pair.</summary>
+        <value>An object that contains a key value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +113,8 @@
         <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an item in the activity designer model that serves as a parent item in the XAML view of the model.</summary>
+        <value>A parent element in an activity designer model.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

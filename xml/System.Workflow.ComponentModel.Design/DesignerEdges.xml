@@ -18,8 +18,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the edge or edges of an activity designer on a workflow design surface where design-time processing is performed, such as a <see cref="T:System.Workflow.ComponentModel.Design.Connector" /> location on the activity designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The enumeration value returned from <xref:System.Workflow.ComponentModel.Design.ConnectionPoint.ConnectionEdge%2A> that specifies where on the activity designer a <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> or a collection of <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> objects reside. The <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.GetConnectionPoints%2A> method can be used to retrieve this collection.  
+  
+ You can also use it to determine which edge or edges of an activity designer a user is resizing by observing the <xref:System.Workflow.ComponentModel.Design.DesignerEdges> enumeration value returned from <xref:System.Workflow.ComponentModel.Design.ActivityDesignerResizeEventArgs.SizingEdge%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -35,7 +48,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All edges of the activity designer.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bottom">
@@ -51,7 +64,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The bottom edge of the activity designer.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -67,7 +80,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The left edge of the activity designer.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -83,7 +96,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>None of the edges of the activity designer.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -99,7 +112,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The right edge of the activity designer.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -115,7 +128,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The top edge of the activity designer.</summary>
       </Docs>
     </Member>
   </Members>

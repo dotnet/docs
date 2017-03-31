@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the list of possible actions when the parent <see langword="End" /> of the <see cref="T:System.Data.Metadata.Edm.RelationshipType" /> is deleted.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Data.Metadata.Edm.OperationAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When a parent <see langword="End" /> is deleted, its associated child ends are deleted as well.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +43,7 @@
         <ReturnType>System.Data.Metadata.Edm.OperationAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only a parent <see langword="End" /> can be deleted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Restrict">
@@ -59,7 +59,7 @@
         <ReturnType>System.Data.Metadata.Edm.OperationAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A parent <see langword="End" /> cannot be deleted if it has one or more associated child ends.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,13 @@
 ---
 uid: System.Security.IEvidenceFactory
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.IEvidenceFactory.Evidence
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

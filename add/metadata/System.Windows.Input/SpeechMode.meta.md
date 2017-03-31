@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Input.SpeechMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

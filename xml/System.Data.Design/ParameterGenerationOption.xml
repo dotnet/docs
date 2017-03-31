@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Sets the type of parameters that are generated in a typed <see cref="T:System.Data.DataSet" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Design.ParameterGenerationOption> enumeration is used to tell the <xref:System.Data.Design.MethodSignatureGenerator> the type of parameters to generate in a typed dataset.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ClrTypes">
@@ -27,7 +34,7 @@
         <ReturnType>System.Data.Design.ParameterGenerationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Parameters in the typed dataset are CLR types.</summary>
       </Docs>
     </Member>
     <Member MemberName="Objects">
@@ -43,7 +50,7 @@
         <ReturnType>System.Data.Design.ParameterGenerationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Parameters in the typed dataset are all of <see cref="T:System.Object" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="SqlTypes">
@@ -59,7 +66,7 @@
         <ReturnType>System.Data.Design.ParameterGenerationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Parameters in the typed dataset are Sql types.</summary>
       </Docs>
     </Member>
   </Members>

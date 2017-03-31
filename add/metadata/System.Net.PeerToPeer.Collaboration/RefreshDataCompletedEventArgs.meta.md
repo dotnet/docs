@@ -1,9 +1,11 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs.PeerEndPoint
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

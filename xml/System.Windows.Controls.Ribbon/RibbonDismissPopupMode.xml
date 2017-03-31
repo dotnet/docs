@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines constants that specify whether the <see cref="E:System.Windows.Controls.Ribbon.RibbonControlService.DismissPopup" /> attached event closes all drop-downs in a chain of drop-downs or only drop-downs that the mouse pointer is not over.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonDismissPopupMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All drop-downs in a chain are closed.</summary>
       </Docs>
     </Member>
     <Member MemberName="MousePhysicallyNotOver">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonDismissPopupMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Drop-downs in a chain are closed up to the one that the mouse pointer is over.</summary>
       </Docs>
     </Member>
   </Members>

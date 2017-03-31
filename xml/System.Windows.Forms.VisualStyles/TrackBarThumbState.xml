@@ -10,8 +10,29 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the visual state of a track bar slider (also known as a thumb) that is drawn with visual styles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.TrackBarThumbState> values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the following classes:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.Thumb>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbBottom>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbLeft>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbRight>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbTop>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbVertical>  
+  
+ The <xref:System.Windows.Forms.VisualStyles.TrackBarThumbState> values are also used as an argument in the <xref:System.Windows.Forms.TrackBarRenderer?displayProperty=fullName> class methods that draw the track bar slider.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -27,7 +48,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TrackBarThumbState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The slider appears disabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hot">
@@ -43,7 +64,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TrackBarThumbState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The slider appears hot.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -59,7 +80,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TrackBarThumbState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The slider appears normal.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pressed">
@@ -75,7 +96,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TrackBarThumbState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The slider appears pressed.</summary>
       </Docs>
     </Member>
   </Members>

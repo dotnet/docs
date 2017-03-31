@@ -1,64 +1,81 @@
 ---
 uid: System.Web.DynamicData.FilterRepeater
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FilterRepeater.OnFilterItemCreated(System.Web.UI.WebControls.RepeaterItem)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FilterRepeater.GetWhereParameters(System.Web.DynamicData.IDynamicDataSource)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FilterRepeater.Table
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FilterRepeater.TableName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FilterRepeater.DataBind
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.DynamicData.FilterRepeater.DataBind
 ---
 
 ---
 uid: System.Web.DynamicData.FilterRepeater.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FilterRepeater.ContextTypeName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FilterRepeater.OnInit(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FilterRepeater.GetFilteredColumns
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FilterRepeater.Visible
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FilterRepeater.DynamicFilterContainerId
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FilterRepeater.OnItemCreated(System.Web.UI.WebControls.RepeaterItemEventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

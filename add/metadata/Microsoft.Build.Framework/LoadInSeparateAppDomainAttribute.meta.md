@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Framework.LoadInSeparateAppDomainAttribute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.LoadInSeparateAppDomainAttribute.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

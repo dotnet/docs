@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an interface to create filter repeaters.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,9 @@
         <Parameter Name="source" Type="System.Linq.IQueryable" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The data source query.</param>
+        <summary>Returns the filter repeater.</summary>
+        <returns>The filter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,8 @@
         <Parameter Name="dataSource" Type="System.Web.UI.WebControls.IQueryableDataSource" />
       </Parameters>
       <Docs>
-        <param name="dataSource">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dataSource">The data source.</param>
+        <summary>Initializes the data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

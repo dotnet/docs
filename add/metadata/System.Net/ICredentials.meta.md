@@ -1,9 +1,11 @@
 ---
 uid: System.Net.ICredentials
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ICredentials.GetCredential(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

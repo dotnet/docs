@@ -1,39 +1,47 @@
 ---
 uid: System.Web.UI.AsyncPostBackTrigger
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.AsyncPostBackTrigger.EventName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.AsyncPostBackTrigger.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.AsyncPostBackTrigger.OnEvent(System.Object,System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.AsyncPostBackTrigger.HasTriggered
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.AsyncPostBackTrigger.Initialize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.AsyncPostBackTrigger.ControlID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.AsyncPostBackTrigger.ToString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

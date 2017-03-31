@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.XslTransformFileEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XslTransformFileEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XslTransformFileEditor.Filter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.XslTransformFileEditor.Caption
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

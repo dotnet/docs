@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the type of SQL query to be used by the <see cref="T:System.Data.OleDb.OleDbRowUpdatedEventArgs" />, <see cref="T:System.Data.OleDb.OleDbRowUpdatingEventArgs" />, <see cref="T:System.Data.SqlClient.SqlRowUpdatedEventArgs" />, or <see cref="T:System.Data.SqlClient.SqlRowUpdatingEventArgs" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.Data.StatementType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A SQL query that is a batch statement.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -58,7 +58,7 @@
         <ReturnType>System.Data.StatementType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An SQL query that is a DELETE statement.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -79,7 +79,7 @@
         <ReturnType>System.Data.StatementType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An SQL query that is an INSERT statement.</summary>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -100,7 +100,7 @@
         <ReturnType>System.Data.StatementType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An SQL query that is a SELECT statement.</summary>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -121,7 +121,7 @@
         <ReturnType>System.Data.StatementType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An SQL query that is an UPDATE statement.</summary>
       </Docs>
     </Member>
   </Members>

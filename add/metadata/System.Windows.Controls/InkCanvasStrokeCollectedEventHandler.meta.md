@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Controls.InkCanvasStrokeCollectedEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

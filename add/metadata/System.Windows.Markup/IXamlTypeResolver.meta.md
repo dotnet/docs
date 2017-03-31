@@ -1,9 +1,9 @@
 ---
 uid: System.Windows.Markup.IXamlTypeResolver
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.IXamlTypeResolver.Resolve(System.String)
-internalonly: False
+manager: "martinek"
 ---

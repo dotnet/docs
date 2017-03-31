@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.Globals
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Globals.contextEngine
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Globals.ConstructArray(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Globals.ConstructArrayLiteral(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---

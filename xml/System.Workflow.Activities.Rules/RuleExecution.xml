@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Stores state information while executing <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> or <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> classes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +34,12 @@
         <Parameter Name="thisObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="validation">To be added.</param>
-        <param name="thisObject">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="validation">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> that guarantees that the expression is configured correctly.</param>
+        <param name="thisObject">The current object to be executed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleExecution" /> class by using the <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> and the object to be executed.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="validation" /> or <paramref name="thisObject" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,10 +62,10 @@
         <Parameter Name="activityExecutionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="validation">To be added.</param>
-        <param name="thisObject">To be added.</param>
-        <param name="activityExecutionContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="validation">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> that guarantees that the expression is configured correctly.</param>
+        <param name="thisObject">The current object to be executed.</param>
+        <param name="activityExecutionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for the current Activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleExecution" /> class by using the <see cref="T:System.Workflow.Activities.Rules.RuleValidation" />, the object to be executed, and the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for the current activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +82,8 @@
         <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Activity" /> in which the rule is being executed.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Activity" /> in which the rule is being executed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +100,8 @@
         <ReturnType>System.Workflow.ComponentModel.ActivityExecutionContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for the current Activity.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for the current Activity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,8 +118,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the rule execution was stopped.</summary>
+        <value>
+          <see langword="true" /> if the rule execution was stopped; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +137,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current object to be executed.</summary>
+        <value>The object to be executed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +155,8 @@
         <ReturnType>System.Workflow.Activities.Rules.RuleValidation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the validation instance for the expression to execute.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> for the expression to execute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

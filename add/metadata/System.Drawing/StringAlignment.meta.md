@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.StringAlignment
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

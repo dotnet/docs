@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the type of a contact.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An administrative contact.</summary>
       </Docs>
     </Member>
     <Member MemberName="Billing">
@@ -43,7 +43,7 @@
         <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A billing contact.</summary>
       </Docs>
     </Member>
     <Member MemberName="Other">
@@ -59,7 +59,7 @@
         <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A contact with a type other than administrative, billing, support, technical, or unspecified.</summary>
       </Docs>
     </Member>
     <Member MemberName="Support">
@@ -75,7 +75,7 @@
         <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A support contact.</summary>
       </Docs>
     </Member>
     <Member MemberName="Technical">
@@ -91,7 +91,7 @@
         <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A technical contact.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unspecified">
@@ -107,7 +107,7 @@
         <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A contact with a type that is not specified.</summary>
       </Docs>
     </Member>
   </Members>

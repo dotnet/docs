@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Documents.IDocumentPaginatorSource
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.IDocumentPaginatorSource.DocumentPaginator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -25,9 +25,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The access rights for the object.</typeparam>
+    <summary>Provides the ability to control access to objects without direct manipulation of Access Control Lists (ACLs); also grants the ability to type-cast access rights.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Access rights (permissions) are type T, which you can type-cast to or from an int. For example, you can cast a <xref:System.Security.AccessControl.FileSystemRights> as the access rights type, and then use the instance normally. In contrast, <xref:System.Security.AccessControl.ObjectSecurity> always takes access rights of type int.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,9 +56,10 @@
         <Parameter Name="resourceType" Type="System.Security.AccessControl.ResourceType" />
       </Parameters>
       <Docs>
-        <param name="isContainer">To be added.</param>
-        <param name="resourceType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isContainer">
+          <see langword="true" /> if the new <see cref="T:System.Security.AccessControl.ObjectSecurity`1" /> object is a container object.</param>
+        <param name="resourceType">The type of resource.</param>
+        <summary>Initializes a new instance of the ObjectSecurity`1 class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,11 +84,12 @@
         <Parameter Name="includeSections" Type="System.Security.AccessControl.AccessControlSections" />
       </Parameters>
       <Docs>
-        <param name="isContainer">To be added.</param>
-        <param name="resourceType">To be added.</param>
-        <param name="safeHandle">To be added.</param>
-        <param name="includeSections">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isContainer">
+          <see langword="true" /> if the new <see cref="T:System.Security.AccessControl.ObjectSecurity`1" /> object is a container object.</param>
+        <param name="resourceType">The type of resource.</param>
+        <param name="safeHandle">A handle.</param>
+        <param name="includeSections">The sections to include.</param>
+        <summary>Initializes a new instance of the ObjectSecurity`1 class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,11 +114,12 @@
         <Parameter Name="includeSections" Type="System.Security.AccessControl.AccessControlSections" />
       </Parameters>
       <Docs>
-        <param name="isContainer">To be added.</param>
-        <param name="resourceType">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="includeSections">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isContainer">
+          <see langword="true" /> if the new <see cref="T:System.Security.AccessControl.ObjectSecurity`1" /> object is a container object.</param>
+        <param name="resourceType">The type of resource.</param>
+        <param name="name">The name of the securable object with which the new <see cref="T:System.Security.AccessControl.ObjectSecurity`1" /> object is associated.</param>
+        <param name="includeSections">The sections to include.</param>
+        <summary>Initializes a new instance of the ObjectSecurity`1 class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,13 +146,14 @@
         <Parameter Name="exceptionContext" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="isContainer">To be added.</param>
-        <param name="resourceType">To be added.</param>
-        <param name="safeHandle">To be added.</param>
-        <param name="includeSections">To be added.</param>
-        <param name="exceptionFromErrorCode">To be added.</param>
-        <param name="exceptionContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isContainer">
+          <see langword="true" /> if the new <see cref="T:System.Security.AccessControl.ObjectSecurity`1" /> object is a container object.</param>
+        <param name="resourceType">The type of resource.</param>
+        <param name="safeHandle">A handle.</param>
+        <param name="includeSections">The sections to include.</param>
+        <param name="exceptionFromErrorCode">A delegate implemented by integrators that provides custom exceptions.</param>
+        <param name="exceptionContext">An object that contains contextual information about the source or destination of the exception.</param>
+        <summary>Initializes a new instance of the ObjectSecurity`1 class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,13 +180,14 @@
         <Parameter Name="exceptionContext" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="isContainer">To be added.</param>
-        <param name="resourceType">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="includeSections">To be added.</param>
-        <param name="exceptionFromErrorCode">To be added.</param>
-        <param name="exceptionContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isContainer">
+          <see langword="true" /> if the new <see cref="T:System.Security.AccessControl.ObjectSecurity`1" /> object is a container object.</param>
+        <param name="resourceType">The type of resource.</param>
+        <param name="name">The name of the securable object with which the new <see cref="T:System.Security.AccessControl.ObjectSecurity`1" /> object is associated.</param>
+        <param name="includeSections">The sections to include.</param>
+        <param name="exceptionFromErrorCode">A delegate implemented by integrators that provides custom exceptions.</param>
+        <param name="exceptionContext">An object that contains contextual information about the source or destination of the exception.</param>
+        <summary>Initializes a new instance of the ObjectSecurity`1 class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,8 +209,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Type of the securable object associated with this ObjectSecurity`1 object.</summary>
+        <value>The type of the securable object associated with the current instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,14 +240,15 @@
         <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
       </Parameters>
       <Docs>
-        <param name="identityReference">To be added.</param>
-        <param name="accessMask">To be added.</param>
-        <param name="isInherited">To be added.</param>
-        <param name="inheritanceFlags">To be added.</param>
-        <param name="propagationFlags">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="identityReference">Represents a user account.</param>
+        <param name="accessMask">The access type.</param>
+        <param name="isInherited">
+          <see langword="" /> <see langword="true" /> if the access rule is inherited; otherwise, <see langword="false" />.</param>
+        <param name="inheritanceFlags">Specifies how to propagate access masks to child objects.</param>
+        <param name="propagationFlags">Specifies how to propagate Access Control Entries (ACEs) to child objects.</param>
+        <param name="type">Specifies whether access is allowed or denied.</param>
+        <summary>Initializes a new instance of the ObjectAccessRule class that represents a new access control rule for the associated security object.</summary>
+        <returns>Represents a new access control rule for the specified user, with the specified access rights, access control, and flags.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,8 +270,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Type of the object associated with the access rules of this ObjectSecurity`1 object.</summary>
+        <value>The Type of the object associated with the access rules of the current instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,8 +296,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The rule to add.</param>
+        <summary>Adds the specified access rule to the Discretionary Access Control List (DACL) associated with this ObjectSecurity`1 object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -309,8 +322,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to add.</param>
+        <summary>Adds the specified audit rule to the System Access Control List (SACL) associated with this ObjectSecurity`1 object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,14 +353,15 @@
         <Parameter Name="flags" Type="System.Security.AccessControl.AuditFlags" />
       </Parameters>
       <Docs>
-        <param name="identityReference">To be added.</param>
-        <param name="accessMask">To be added.</param>
-        <param name="isInherited">To be added.</param>
-        <param name="inheritanceFlags">To be added.</param>
-        <param name="propagationFlags">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="identityReference">Represents a user account.</param>
+        <param name="accessMask">An integer that specifies an access type.</param>
+        <param name="isInherited">
+          <see langword="true" /> if the access rule is inherited; otherwise, <see langword="false" />.</param>
+        <param name="inheritanceFlags">Specifies how to propagate access masks to child objects.</param>
+        <param name="propagationFlags">Specifies how to propagate Access Control Entries (ACEs) to child objects.</param>
+        <param name="flags">Describes the type of auditing to perform.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.AuditRule" /> class representing the specified audit rule for the specified user.</summary>
+        <returns>Returns the specified audit rule for the specified user.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,8 +383,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Type object associated with the audit rules of this ObjectSecurity`1 object.</summary>
+        <value>The Type object associated with the audit rules of the current instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,8 +409,8 @@
         <Parameter Name="handle" Type="System.Runtime.InteropServices.SafeHandle" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handle">The handle of the securable object with which this ObjectSecurity`1 object is associated.</param>
+        <summary>Saves the security descriptor associated with this ObjectSecurity`1 object to permanent storage, using the specified handle.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,8 +435,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the securable object with which this ObjectSecurity`1 object is associated.</param>
+        <summary>Saves the security descriptor associated with this ObjectSecurity`1 object to permanent storage, using the specified name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -447,9 +461,9 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rule">The rule to remove.</param>
+        <summary>Removes access rules that contain the same security identifier and access mask as the specified access rule from the Discretionary Access Control List (DACL) associated with this ObjectSecurity`1 object.</summary>
+        <returns>Returns <see langword="true" /> if the access rule was successfully removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -474,8 +488,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The access rule to remove.</param>
+        <summary>Removes all access rules that have the same security identifier as the specified access rule from the Discretionary Access Control List (DACL) associated with this ObjectSecurity`1 object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,8 +514,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The access rule to remove.</param>
+        <summary>Removes all access rules that exactly match the specified access rule from the Discretionary Access Control List (DACL) associated with this ObjectSecurity`1 object</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -526,9 +540,9 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rule">The audit rule to remove</param>
+        <summary>Removes audit rules that contain the same security identifier and access mask as the specified audit rule from the System Access Control List (SACL) associated with this ObjectSecurity`1 object.</summary>
+        <returns>Returns <see langword="true" /> if the object was removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,8 +567,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to remove.</param>
+        <summary>Removes all audit rules that have the same security identifier as the specified audit rule from the System Access Control List (SACL) associated with this ObjectSecurity`1 object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -579,8 +593,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to remove.</param>
+        <summary>Removes all audit rules that exactly match the specified audit rule from the System Access Control List (SACL) associated with this ObjectSecurity`1 object</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,8 +619,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The access rule to reset.</param>
+        <summary>Removes all access rules in the Discretionary Access Control List (DACL) associated with this ObjectSecurity`1 object and then adds the specified access rule.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -631,8 +645,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The access rule to set.</param>
+        <summary>Removes all access rules that contain the same security identifier and qualifier as the specified access rule in the Discretionary Access Control List (DACL) associated with this ObjectSecurity`1 object and then adds the specified access rule.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -657,8 +671,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to set.</param>
+        <summary>Removes all audit rules that contain the same security identifier and qualifier as the specified audit rule in the System Access Control List (SACL) associated with this ObjectSecurity`1 object and then adds the specified audit rule.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

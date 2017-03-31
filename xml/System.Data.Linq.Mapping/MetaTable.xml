@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an abstraction of a database table or view.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.MetaTable" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Linq.DataContext" /> method that is used to perform delete operations.</summary>
+        <value>The <see cref="T:System.Reflection.MethodInfo" /> that corresponds to the method used for delete operations.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Linq.DataContext" /> method that is used to perform insert operations.</summary>
+        <value>The <see cref="T:System.Reflection.MethodInfo" /> that corresponds to the method used for insert operations.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.Data.Linq.Mapping.MetaModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Linq.Mapping.MetaModel" /> that contains this <see cref="T:System.Data.Linq.Mapping.MetaTable" />.</summary>
+        <value>The <see cref="T:System.Data.Linq.Mapping.MetaModel" /> that includes this MetaTable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <ReturnType>System.Data.Linq.Mapping.MetaType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Linq.Mapping.MetaType" /> that describes the type of the rows of the table.</summary>
+        <value>The type of rows in the table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +115,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the table as defined by the database.</summary>
+        <value>A <see langword="string" /> representing the name of the table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +133,8 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Linq.DataContext" /> method that is used to perform update operations.</summary>
+        <value>The <see cref="T:System.Reflection.MethodInfo" /> that corresponds to the method used for update operations.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

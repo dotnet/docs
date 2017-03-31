@@ -1,14 +1,20 @@
 ---
 uid: System.Web.ClientServices.Providers.UserValidatedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ClientServices.Providers.UserValidatedEventArgs.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ClientServices.Providers.UserValidatedEventArgs.UserName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

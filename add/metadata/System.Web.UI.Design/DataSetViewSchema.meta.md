@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.Design.DataSetViewSchema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataSetViewSchema.#ctor(System.Data.DataTable)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataSetViewSchema.GetChildren
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataSetViewSchema.GetFields
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataSetViewSchema.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how the Web method return-type is serialized.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.Script.Services.ResponseFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The return type is serialized as JavaScript Object Notation (JSON).</summary>
       </Docs>
     </Member>
     <Member MemberName="Xml">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.Script.Services.ResponseFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The return type is serialized as XML.</summary>
       </Docs>
     </Member>
   </Members>

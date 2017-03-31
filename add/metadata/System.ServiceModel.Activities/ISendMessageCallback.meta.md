@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Activities.ISendMessageCallback
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.ISendMessageCallback.OnSendMessage(System.ServiceModel.OperationContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

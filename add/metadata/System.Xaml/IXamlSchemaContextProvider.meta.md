@@ -1,9 +1,9 @@
 ---
 uid: System.Xaml.IXamlSchemaContextProvider
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlSchemaContextProvider.SchemaContext
-internalonly: False
+manager: "martinek"
 ---

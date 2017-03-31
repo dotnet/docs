@@ -1,1 +1,0 @@
-      String^ xmlCreationDate = xmlElement->Attribute(L"creationdate");

@@ -1,4 +1,4 @@
 ---
 uid: System.ServiceModel.Persistence
-internalonly: False
+manager: "ghogen"
 ---

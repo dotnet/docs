@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.DurableInstancing.InstanceValueOptions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

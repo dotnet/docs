@@ -1,1 +1,0 @@
-Controls.Add(new LiteralControl("<h3>Value: "));

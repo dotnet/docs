@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.SqlServer.Server.SqlFacetAttribute
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFacetAttribute.Precision
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFacetAttribute.#ctor
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFacetAttribute.MaxSize
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFacetAttribute.IsNullable
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFacetAttribute.IsFixedLength
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFacetAttribute.Scale
-internalonly: False
+manager: "mblythe"
 ---

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DereferenceAlias" /> enumeration specifies the process by which aliases are dereferenced.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.Protocols.DereferenceAlias</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Dereferences aliases when both searching subordinates and locating the base object of the search. The value is equal to 3.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindingBaseObject">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.Protocols.DereferenceAlias</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Dereferences aliases when locating the base object, but not when searching its subordinates. The value is equal to 2.</summary>
       </Docs>
     </Member>
     <Member MemberName="InSearching">
@@ -59,7 +59,7 @@
         <ReturnType>System.DirectoryServices.Protocols.DereferenceAlias</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Dereferences aliases when searching subordinates of the base object, but not when locating the base itself. The value is equal to 1.</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -75,7 +75,7 @@
         <ReturnType>System.DirectoryServices.Protocols.DereferenceAlias</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Does not dereference aliases. The value is equal to 0.</summary>
       </Docs>
     </Member>
   </Members>

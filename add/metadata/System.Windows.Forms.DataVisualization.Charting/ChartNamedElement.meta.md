@@ -1,19 +1,29 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartNamedElement
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartNamedElement.Name
-internalonly: False
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.ChartNamedElement.#ctor(System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ChartNamedElement.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.ChartNamedElement.#ctor(System.String)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.ChartNamedElement.#ctor
+ms.author: "mblythe"
+manager: "mblythe"
 ---

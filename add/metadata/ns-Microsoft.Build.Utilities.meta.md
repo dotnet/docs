@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Utilities
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

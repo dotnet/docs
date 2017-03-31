@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.Design.IDesignTimeResourceProviderFactoryService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IDesignTimeResourceProviderFactoryService.GetFactory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

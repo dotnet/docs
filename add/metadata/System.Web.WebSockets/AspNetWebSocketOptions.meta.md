@@ -1,19 +1,24 @@
 ---
 uid: System.Web.WebSockets.AspNetWebSocketOptions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketOptions.RequireSameOrigin
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketOptions.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.WebSockets.AspNetWebSocketOptions.SubProtocol
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

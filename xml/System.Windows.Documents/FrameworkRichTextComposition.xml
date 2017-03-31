@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a composition related to text input. You can use this class to find the text position of the composition or the result string.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used for parameters of text input events (i.e. <xref:System.Windows.Input.TextCompositionManager.TextInputStart>, <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate>, etc) on <xref:System.Windows.Controls.RichTextBox>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CompositionEnd">
@@ -28,8 +35,8 @@
         <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the end position of the current composition text.</summary>
+        <value>The end position of the current composition text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the start position of the current composition text.</summary>
+        <value>The start position of the current composition text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +71,8 @@
         <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the end position of the result text of the text input.</summary>
+        <value>The end position of the result text of the text input.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +89,8 @@
         <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the start position of the result text of the text input.</summary>
+        <value>The start position of the result text of the text input.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

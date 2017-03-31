@@ -1,24 +1,34 @@
 ---
 uid: System.IO.MemoryMappedFiles.MemoryMappedViewStream
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.MemoryMappedFiles.MemoryMappedViewStream.SetLength(System.Int64)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.MemoryMappedFiles.MemoryMappedViewStream.SafeMemoryMappedViewHandle
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.MemoryMappedFiles.MemoryMappedViewStream.Flush
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.MemoryMappedFiles.MemoryMappedViewStream.PointerOffset
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

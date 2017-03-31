@@ -14,7 +14,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a way to control asynchronous messages after they have dispatched using the <see cref="M:System.Runtime.Remoting.Messaging.IMessageSink.AsyncProcessMessage(System.Runtime.Remoting.Messaging.IMessage,System.Runtime.Remoting.Messaging.IMessageSink)" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,9 +35,11 @@
         <Parameter Name="msToCancel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="msToCancel">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="msToCancel">The number of milliseconds after which to cancel the message.</param>
+        <summary>Cancels an asynchronous call.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
   </Members>

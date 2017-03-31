@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Combines the specified paths into a single path.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.CombinePath" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the base path to combine with the other paths. Can be a relative path, absolute path, or blank.</summary>
+        <value>The base path to combine with the other paths.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the combined path that is created by the <c>CombinePath</c> task.</summary>
+        <value>The combined path that is created by the <c>CombinePath</c> task.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the <c>CombinePath</c> task.</summary>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +109,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a list of individual paths to combine with the <see cref="P:Microsoft.Build.Tasks.CombinePath.BasePath" /> to form the combined path. Paths can be relative or absolute.</summary>
+        <value>A list of individual paths to combine with the <see cref="P:Microsoft.Build.Tasks.CombinePath.BasePath" /> to form the combined path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

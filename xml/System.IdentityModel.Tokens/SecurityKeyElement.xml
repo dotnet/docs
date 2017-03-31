@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides delayed resolution of security keys by resolving the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> or <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> only when cryptographic functions are needed. This allows a key identifier clause or key identifier that is never used by an application to be serialized and deserialzied on and off the wire without issues.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,10 +29,12 @@
         <Parameter Name="securityTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="securityKeyIdentifier">To be added.</param>
-        <param name="securityTokenResolver">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityKeyIdentifier">A key identifier that represents a <see cref="T:System.IdentityModel.Tokens.SecurityKey" />.</param>
+        <param name="securityTokenResolver">A token resolver that can be resolved to a <see cref="T:System.IdentityModel.Tokens.SecurityKey" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyElement" /> class from the specified key identifier.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="securityKeyIdentifier" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -49,10 +51,12 @@
         <Parameter Name="securityTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="securityKeyIdentifierClause">To be added.</param>
-        <param name="securityTokenResolver">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityKeyIdentifierClause">A key identifier clause that represents a <see cref="T:System.IdentityModel.Tokens.SecurityKey" />.</param>
+        <param name="securityTokenResolver">A token resolver that can be resolved to a <see cref="T:System.IdentityModel.Tokens.SecurityKey" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyElement" /> class from the specified key identifier clause.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="securityKeyIdentifierClause" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DecryptKey">
@@ -72,10 +76,10 @@
         <Parameter Name="keyData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="keyData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The algorithm to use to decrypt the key.</param>
+        <param name="keyData">An array that contains the encrypted key.</param>
+        <summary>Decrypts the specified key by using the specified algorithm.</summary>
+        <returns>An array that contains the decrypted key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,10 +100,10 @@
         <Parameter Name="keyData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="keyData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The algorithm to use to decrypt the key.</param>
+        <param name="keyData">An array that contains the key to encrypt.</param>
+        <summary>Encrypts the specified key by using the specified algorithm.</summary>
+        <returns>An array that contains the encrypted key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +123,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The algorithm to check.</param>
+        <summary>Returns a value that indicates whether the specified algorithm is asymmetric.</summary>
+        <returns>
+          <see langword="true" /> if the algorithm will be processed by the runtime as asymmetric; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,9 +146,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The algorithm to check.</param>
+        <summary>Returns a value that indicates whether the specified algorithm is supported by this key.</summary>
+        <returns>
+          <see langword="true" /> if the algorithm is supported by this key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +169,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The algorithm to check.</param>
+        <summary>Returns a value that indicates whether the specified algorithm is symmetric.</summary>
+        <returns>
+          <see langword="true" /> if the algorithm will be processed by the runtime as symmetric; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,8 +189,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the key size, in bits.</summary>
+        <value>The key size, in bits.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

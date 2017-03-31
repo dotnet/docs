@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods used internally by the WPF XAML parser to attach events and event setters in compiled XAML.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Markup.IStyleConnector> class is not intended for use by anything other than the WPF XAML markup compiler. It is referenced by generated code that does event wiring for markup that involves templates or a similar factory model.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Connect">
@@ -29,10 +36,17 @@
         <Parameter Name="target" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="connectionId">To be added.</param>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="connectionId">The unique connection ID for event wiring purposes.</param>
+        <param name="target">The target for event wiring.</param>
+        <summary>Attaches events on event setters and templates in compiled content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Markup.IStyleConnector> class is not intended for use by anything other than the WPF XAML markup compiler.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

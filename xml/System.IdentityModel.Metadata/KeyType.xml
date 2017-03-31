@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the key types for the <see cref="P:System.IdentityModel.Metadata.KeyDescriptor.Use" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.IdentityModel.Metadata.KeyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key is used for encryption.</summary>
       </Docs>
     </Member>
     <Member MemberName="Signing">
@@ -43,7 +43,7 @@
         <ReturnType>System.IdentityModel.Metadata.KeyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key is used for signing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unspecified">
@@ -59,7 +59,7 @@
         <ReturnType>System.IdentityModel.Metadata.KeyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key type is not specified.</summary>
       </Docs>
     </Member>
   </Members>

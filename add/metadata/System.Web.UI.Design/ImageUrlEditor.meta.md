@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.ImageUrlEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ImageUrlEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ImageUrlEditor.Filter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ImageUrlEditor.Caption
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

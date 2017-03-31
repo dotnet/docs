@@ -22,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an internal interface for accessing the arguments of DynamicExpression tree nodes as well as CallSite and Rewriting functionality.  You should not use this API.  It is only public due to DLL refactoring and exists only for internal performance optimizations.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,8 +50,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Optionally creates the CallSite and returns the CallSite for the DynamicExpression’s polymorphic inline cache.  You should not use this type.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
+        <returns>The CallSite for the DynamicExpression’s polymorphic inline cache.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +78,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the delegate type used by the CallSite, which is the type of the rules used in the dynamic expression’s polymorhphic inline cache.</summary>
+        <value>The delegate type used by the CallSite.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +109,9 @@
         <Parameter Name="args" Type="System.Linq.Expressions.Expression[]" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">The arguments used to replace this node.</param>
+        <summary>Rewrites this node replacing the dynamic expression’s arguments with the provided values.  The number of <c>args</c> needs to match the number of the current expression.  You should not use this type.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.  This helper method allows re-writing of nodes to be independent of the specific implementation class deriving from DynamicExpression that is being used at the call site.</summary>
+        <returns>The rewritten node, but if no changes were made, then returns the same node.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

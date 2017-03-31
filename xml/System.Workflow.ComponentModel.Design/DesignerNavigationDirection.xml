@@ -15,8 +15,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies values for navigating among designer objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Designer navigation directions are spatial, allowing you to indicate which direction navigation should occur on a workflow design surface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Down">
@@ -32,7 +43,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerNavigationDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Navigates down to the next activity in sequence.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -48,7 +59,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerNavigationDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Navigates to the left in the workflow.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -64,7 +75,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerNavigationDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Navigates to the right in the workflow.</summary>
       </Docs>
     </Member>
     <Member MemberName="Up">
@@ -80,7 +91,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerNavigationDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Navigates up to the previous activity in sequence.</summary>
       </Docs>
     </Member>
   </Members>

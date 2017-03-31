@@ -1,9 +1,13 @@
 ---
 uid: System.IO.Ports.SerialErrorReceivedEventArgs
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Ports.SerialErrorReceivedEventArgs.EventType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

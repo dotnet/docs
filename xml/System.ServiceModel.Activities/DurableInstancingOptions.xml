@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Used mainly to associate a concrete implementation of the <see cref="T:System.Runtime.DurableInstancing.InstanceStore" /> such as <see cref="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" /> with a workflow service host. This class is also used to add instance owner metadata.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,8 +31,8 @@
         <Parameter Name="writeOnlyValues" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="writeOnlyValues">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writeOnlyValues">The write-only values. These values are optional when loading an instance.</param>
+        <summary>Adds write-only metadata for an instance to the host.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,9 @@
         <Parameter Name="writeOnlyValues" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="readWriteValues">To be added.</param>
-        <param name="writeOnlyValues">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="readWriteValues">The read-write metadata.</param>
+        <param name="writeOnlyValues">The write-only values. These values are optional when loading an instance.</param>
+        <summary>Adds metadata for an instance owner to the host. This method may   be called before the workflow host is opened.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +72,8 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceStore</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Refers to a concrete implementation of the <see cref="T:System.Runtime.DurableInstancing.InstanceStore" /> class such as <see cref="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" />.</summary>
+        <value>A concrete implementation of the <see cref="T:System.Runtime.DurableInstancing.InstanceStore" /> class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -19,8 +19,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an expression that creates a delegate.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeDelegateCreateExpression> represents code that creates a delegate. <xref:System.CodeDom.CodeDelegateCreateExpression> is often used with <xref:System.CodeDom.CodeAttachEventStatement> or <xref:System.CodeDom.CodeRemoveEventStatement> to represent an event handler to attach or remove from an event.  
+  
+ The <xref:System.CodeDom.CodeDelegateCreateExpression.DelegateType%2A> property specifies the type of delegate to create. The <xref:System.CodeDom.CodeDelegateCreateExpression.TargetObject%2A> property indicates the object that contains the event-handler method. The <xref:System.CodeDom.CodeDelegateCreateExpression.MethodName%2A> property indicates the name of the event-handler method whose method signature matches the method signature of the delegate.  
+  
+ In C#, a delegate creation expression is typically of the following form: `new EventHandler(this.HandleEventMethod)`. In Visual Basic, a delegate creation expression is typically of the following form: `AddressOf Me.HandleEventMethod`.  
+  
+   
+  
+## Examples  
+ The following example code uses a <xref:System.CodeDom.CodeDelegateCreateExpression> to create a delegate.  
+  
+ [!code-cpp[CodeAttachEventStatementExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeAttachEventStatementExample/CPP/codeattacheventstatementexample.cpp#3)]
+ [!code-csharp[CodeAttachEventStatementExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeAttachEventStatementExample/CS/codeattacheventstatementexample.cs#3)]
+ [!code-vb[CodeAttachEventStatementExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeAttachEventStatementExample/VB/codeattacheventstatementexample.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +54,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDelegateCreateExpression" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,10 +73,10 @@
         <Parameter Name="methodName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="delegateType">To be added.</param>
-        <param name="targetObject">To be added.</param>
-        <param name="methodName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="delegateType">A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the data type of the delegate.</param>
+        <param name="targetObject">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object containing the event-handler method.</param>
+        <param name="methodName">The name of the event-handler method.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDelegateCreateExpression" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +93,8 @@
         <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the data type of the delegate.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the data type of the delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +111,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the event handler method.</summary>
+        <value>The name of the event handler method.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +129,8 @@
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the object that contains the event-handler method.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object containing the event-handler method.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Generates results based on the correct context for the current node in the workflow tree.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Validation.ValidationContext> is generated and manipulated by the ActivityValidationServices class. <xref:System.Activities.Validation.ValidationContext> is used by the <xref:System.Activities.Validation.GetParentChain>, <xref:System.Activities.Validation.GetChildSubTree>, and <xref:System.Activities.Validation.GetWorkflowTree> activities.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

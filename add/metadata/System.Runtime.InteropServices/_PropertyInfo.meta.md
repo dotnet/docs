@@ -1,159 +1,265 @@
 ---
 uid: System.Runtime.InteropServices._PropertyInfo
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetValue
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices._PropertyInfo.IsDefined(System.Type,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices._PropertyInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices._PropertyInfo.GetType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices._PropertyInfo.GetSetMethod(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetValue(System.Object,System.Object[])
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.CanRead
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.PropertyType
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.ReflectedType
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.Name
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.IsSpecialName
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetHashCode
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetIndexParameters
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetCustomAttributes(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetValue(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetTypeInfoCount(System.UInt32@)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetAccessors(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetCustomAttributes(System.Type,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.DeclaringType
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetGetMethod(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetGetMethod
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.Attributes
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.CanWrite
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.SetValue(System.Object,System.Object,System.Object[])
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.ToString
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.MemberType
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.Equals(System.Object)
-internalonly: False
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetSetMethod
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices._PropertyInfo.GetAccessors
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetValue(System.Object,System.Object[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.CanRead
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.PropertyType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetCustomAttributes
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.ReflectedType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.Name
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.IsSpecialName
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetHashCode
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetIndexParameters
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetCustomAttributes(System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetValue(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetTypeInfoCount(System.UInt32@)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetAccessors(System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetCustomAttributes(System.Type,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.DeclaringType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetGetMethod(System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetGetMethod
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.SetValue
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.Attributes
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.CanWrite
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.SetValue(System.Object,System.Object,System.Object[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.ToString
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetGetMethod
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.MemberType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.Equals(System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetSetMethod
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetSetMethod
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices._PropertyInfo.GetAccessors
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

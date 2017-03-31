@@ -17,8 +17,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an extensibility element added to a <see cref="T:System.Web.Services.Description.MimeMultipartRelatedBinding" />, specifying the concrete MIME type for the <see cref="T:System.Web.Services.Description.MessagePart" /> to which the <see langword="MimePart" /> applies. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the methods and properties exposed by the `MimePart` class.  
+  
+ [!code-cpp[MimePart_3#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MimePart_3/CPP/mimepart_3.cpp#1)]
+ [!code-csharp[MimePart_3#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MimePart_3/CS/mimepart_3.cs#1)]
+ [!code-vb[MimePart_3#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MimePart_3/VB/mimepart_3.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +49,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.MimePart" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +72,29 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of MIME extensibility elements for the part of the <see cref="T:System.Web.Services.Description.MimeMultipartRelatedBinding" /> of which the <see cref="T:System.Web.Services.Description.MimePart" /> is a member.</summary>
+        <value>A collection of service description format extension.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection must have at least one member. If it has more than one member, the members are alternative MIME formats for the current <xref:System.Web.Services.Description.MimePart>. Members can be of the following types:  
+  
+-   <xref:System.Web.Services.Description.MimeContentBinding>  
+  
+-   <xref:System.Web.Services.Description.MimeXmlBinding>  
+  
+-   <xref:System.Web.Services.Description.SoapBodyBinding>  
+  
+ Each of these classes exposes a `Part` property specifying the <xref:System.Web.Services.Description.MessagePart> with which the `MimePart` is associated. If this collection has no members, the XML Web service will fail to generate a Web Services Description Language (WSDL) file when it is requested. For more information about how MIME extends WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ MimePart_3#3  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

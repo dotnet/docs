@@ -11,8 +11,41 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an elliptical arc between two points.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a <xref:System.Windows.Media.PathFigure> object to store <xref:System.Windows.Media.ArcSegment> objects and other segments.  
+  
+ An elliptical arc is defined by its start and end points, x- and y-radius, x-axis rotation factor, a value indicating whether the arc should be greater than 180 degrees, and a value describing the direction in which the arc is drawn. The <xref:System.Windows.Media.ArcSegment> class does not contain a property for the starting point of the arc; it only defines the destination point of the arc it represents. The beginning point of the arc is the current point of the <xref:System.Windows.Media.PathFigure> to which the <xref:System.Windows.Media.ArcSegment> is added.  
+  
+ The following illustrations demonstrate the different end point, <xref:System.Windows.Media.ArcSegment.Size%2A>, and <xref:System.Windows.Media.ArcSegment.RotationAngle%2A> settings.  
+  
+ ![ArcSegments with different Point settings](~/add/media/arcsegment-point.png "ArcSegments with different Point settings")  
+  
+ ![ArcSegments with different Size settings](~/add/media/arcsegment-size.png "ArcSegments with different Size settings")  
+  
+ ![ArcSegments with different RotationAngle settings](~/add/media/arcsegment-rotationangle.png "ArcSegments with different RotationAngle settings")  
+  
+## IsLargeArc and SweepDirection  
+ For most arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the  <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> and <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> properties indicate which arc to use.  
+  
+ Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> is **true**, then one of the two larger arc sweeps is chosen; otherwise, if  is **false**, one of the smaller arc sweeps is chosen. The remaining two arc candidates are each drawn in a different direction: <xref:System.Windows.Media.SweepDirection> or <xref:System.Windows.Media.SweepDirection>. The <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> property specifies which one to use.  
+  
+ The following illustrations show different <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> and <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> settings.  
+  
+ ![ArcSegments with different IsLargeArc settings](~/add/media/arcsegment-islargearc.png "ArcSegments with different IsLargeArc settings")  
+ArcSegment objects with different IsLargeArc settings  
+  
+ ![ArcSegments with different SweepDirection settings](~/add/media/arcsegment-sweepdirection.png "ArcSegments with different SweepDirection settings")  
+ArcSegment objects with different SweepDirection settings  
+  
+## Freezable Features  
+ An <xref:System.Windows.Media.ArcSegment> is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +59,21 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ArcSegment" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.ArcSegment> class defines only the destination point of the arc it represents; the beginning point of the arc is the current point of the <xref:System.Windows.Media.PathFigure>, to which the <xref:System.Windows.Media.ArcSegment> is added.  
+  
+ For most elliptical arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the `largeArc` and `sweepDirection` parameters indicate which arc to use.  
+  
+ Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If `largeArc` is **true**, then one of the two larger arc sweeps is chosen; otherwise, if `largeArc` is **false**, one of the smaller arc sweeps is chosen.  
+  
+ If `sweepDirection` is <xref:System.Windows.Media.SweepDirection>, the arc is drawn in a positive-angle direction. If `sweepDirection` is <xref:System.Windows.Media.SweepDirection>, the arc is drawn in a negative-angle direction.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -48,14 +94,27 @@
         <Parameter Name="isStroked" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <param name="size">To be added.</param>
-        <param name="rotationAngle">To be added.</param>
-        <param name="isLargeArc">To be added.</param>
-        <param name="sweepDirection">To be added.</param>
-        <param name="isStroked">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="point">The destination point of the arc; the start point of the arc is defined as the current point of the <see cref="T:System.Windows.Media.PathFigure" /> to which the <see cref="T:System.Windows.Media.ArcSegment" /> is added.</param>
+        <param name="size">The x- and y-radius of the arc. The x-radius is specified by the <see cref="T:System.Windows.Size" /> structure's <see cref="P:System.Windows.Size.Width" /> property, and the y-radius is specified by the <see cref="T:System.Windows.Size" /> structure's <see cref="P:System.Windows.Size.Height" /> property.</param>
+        <param name="rotationAngle">The x-axis rotation of the ellipse.</param>
+        <param name="isLargeArc">Whether the arc should be greater than 180 degrees.</param>
+        <param name="sweepDirection">Set to <see cref="F:System.Windows.Media.SweepDirection.Clockwise" /> to draw the arc in a positive angle direction; set to <see cref="F:System.Windows.Media.SweepDirection.Counterclockwise" /> to draw the arc in a negative angle direction.</param>
+        <param name="isStroked">Set to <c>true</c> to stroke the arc when a <see cref="T:System.Windows.Media.Pen" /> is used to render the segment; otherwise, <c>false</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ArcSegment" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.ArcSegment> class defines only the destination point of the arc it represents; the beginning point of the arc is the current point of the <xref:System.Windows.Media.PathFigure>, to which the <xref:System.Windows.Media.ArcSegment> is added.  
+  
+ For most elliptical arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the `largeArc` and `sweepDirection` parameters indicate which arc to use.  
+  
+ Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If `largeArc` is **true**, then one of the two larger arc sweeps is chosen; otherwise, if `largeArc` is **false**, one of the smaller arc sweeps is chosen.  
+  
+ If `sweepDirection` is <xref:System.Windows.Media.SweepDirection>, the arc is drawn in a positive-angle direction. If `sweepDirection` is <xref:System.Windows.Media.SweepDirection>, the arc is drawn in a negative-angle direction.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -72,9 +131,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.ArcSegment" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -91,9 +159,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.ArcSegment" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -128,9 +205,31 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the arc should be greater than 180 degrees.</summary>
+        <value>**true** if the arc should be greater than 180 degrees; otherwise, **false**. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For most arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the  <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> and <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> properties indicate which arc to use.  
+  
+ Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> is **true**, then one of the two larger arc sweeps is chosen; otherwise, if  is **false**, one of the smaller arc sweeps is chosen. The remaining two arc candidates are each drawn in a different direction: <xref:System.Windows.Media.SweepDirection> or <xref:System.Windows.Media.SweepDirection>. The <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> property specifies which one to use.  
+  
+ The following illustration shows two elliptical arcs that are identical except for their <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> settings.  
+  
+ ![ArcSegments with different IsLargeArc settings](~/add/media/arcsegment-islargearc.png "ArcSegments with different IsLargeArc settings")  
+ArcSegment objects with different IsLargeArc settings  
+  
+<a name="dependencyPropertyInfo_IsLargeArc"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.ArcSegment.IsLargeArcProperty>|  
+|Metadata properties set to **true**|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLargeArcProperty">
@@ -146,7 +245,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.ArcSegment.IsLargeArc" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +262,35 @@
         <ReturnType>System.Windows.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the endpoint of the elliptical arc.</summary>
+        <value>The point to which the arc is drawn. The default value is (0,0).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.ArcSegment> class defines only the destination point of the arc it represents; the beginning point of the arc is the current point of the <xref:System.Windows.Media.PathFigure> to which the <xref:System.Windows.Media.ArcSegment> is added.  
+  
+ If the arc segment's start point and end point are the same, no arc is drawn.  
+  
+ For most arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the  <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> and <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> properties indicate which arc to use.  
+  
+ Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> is **true**, then one of the two larger arc sweeps is chosen; otherwise, if  is **false**, one of the smaller arc sweeps is chosen. The remaining two arc candidates are each drawn in a different direction: <xref:System.Windows.Media.SweepDirection> or <xref:System.Windows.Media.SweepDirection>. The <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> property specifies which one to use.  
+  
+ The following illustration shows several elliptical arcs that are identical except for their <xref:System.Windows.Media.ArcSegment.Point%2A> settings.  
+  
+ ![ArcSegments with different Point settings](~/add/media/arcsegment-point.png "ArcSegments with different Point settings")  
+Several ArcSegment objects with different Point settings  
+  
+<a name="dependencyPropertyInfo_Point"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.ArcSegment.PointProperty>|  
+|Metadata properties set to **true**|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PointProperty">
@@ -181,7 +306,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.ArcSegment.Point" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,9 +323,29 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the amount (in degrees) by which the ellipse is rotated about the x-axis.</summary>
+        <value>The amount (in degrees) by which the ellipse is rotated about the x-axis. The default value is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration shows several elliptical arcs that are identical except for their <xref:System.Windows.Media.ArcSegment.RotationAngle%2A> settings.  
+  
+ ![ArcSegments with different RotationAngle settings](~/add/media/arcsegment-rotationangle.png "ArcSegments with different RotationAngle settings")  
+Several ArcSegment objects with different RotationAngle settings  
+  
+ Note that, if the arc's width and height are the same, setting this property has no effect.  
+  
+<a name="dependencyPropertyInfo_RotationAngle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.ArcSegment.RotationAngleProperty>|  
+|Metadata properties set to **true**|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RotationAngleProperty">
@@ -216,7 +361,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the  <see cref="P:System.Windows.Media.ArcSegment.RotationAngle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,9 +378,27 @@
         <ReturnType>System.Windows.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the x- and y-radius of the arc as a <see cref="T:System.Windows.Size" /> structure.</summary>
+        <value>A <see cref="T:System.Windows.Size" /> structure that describes the x- and y-radius of the elliptical arc. The <see cref="T:System.Windows.Size" /> structure's <see cref="P:System.Windows.Size.Width" /> property specifies the arc's x-radius; its <see cref="P:System.Windows.Size.Height" /> property specifies the arc's y-radius. The default value is 0,0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration shows several elliptical arcs that are identical except for their <xref:System.Windows.Media.ArcSegment.Size%2A> settings.  
+  
+ ![ArcSegments with different Size settings](~/add/media/arcsegment-size.png "ArcSegments with different Size settings")  
+Several ArcSegment objects with different Size settings  
+  
+<a name="dependencyPropertyInfo_Size"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.ArcSegment.SizeProperty>|  
+|Metadata properties set to **true**|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SizeProperty">
@@ -251,7 +414,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.ArcSegment.Size" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,9 +431,29 @@
         <ReturnType>System.Windows.Media.SweepDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether the arc is drawn in the <see cref="F:System.Windows.Media.SweepDirection.Clockwise" /> or <see cref="F:System.Windows.Media.SweepDirection.Counterclockwise" /> direction.</summary>
+        <value>A value that specifies the direction in which the arc is drawn. The default value is <see cref="F:System.Windows.Media.SweepDirection.Counterclockwise" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For an <xref:System.Windows.Media.ArcSegment> with a given <xref:System.Windows.Media.ArcSegment.Size%2A>, <xref:System.Windows.Media.ArcSegment.RotationAngle%2A>, start point, and end <xref:System.Windows.Media.ArcSegment.Point%2A>, four different arcs are possible. Specifying the <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> property reduces the number of possible arcs to two: an arc drawn from the start point to the end <xref:System.Windows.Media.ArcSegment.Point%2A> in a <xref:System.Windows.Media.SweepDirection> direction and an arc drawn from the start point to the end point in a <xref:System.Windows.Media.SweepDirection> direction.  
+  
+ The following illustration shows two elliptical arcs that are identical except for their <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> settings.  
+  
+ ![ArcSegments with different SweepDirection settings](~/add/media/arcsegment-sweepdirection.png "ArcSegments with different SweepDirection settings")  
+ArcSegment objects with different SweepDirection settings  
+  
+<a name="dependencyPropertyInfo_SweepDirection"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.ArcSegment.SweepDirectionProperty>|  
+|Metadata properties set to **true**|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SweepDirectionProperty">
@@ -286,9 +469,32 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.ArcSegment.SweepDirection" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ArcSegment" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.ArcSegment> class defines only the destination point of the arc it represents; the beginning point of the arc is the current point of the <xref:System.Windows.Media.PathFigure>, to which the <xref:System.Windows.Media.ArcSegment> is added.  
+  
+ For most elliptical arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the `largeArc` and `sweepDirection` parameters indicate which arc to use.  
+  
+ Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If `largeArc` is **true**, then one of the two larger arc sweeps is chosen; otherwise, if `largeArc` is **false**, one of the smaller arc sweeps is chosen.  
+  
+ If `sweepDirection` is <xref:System.Windows.Media.SweepDirection>, the arc is drawn in a positive-angle direction. If `sweepDirection` is <xref:System.Windows.Media.SweepDirection>, the arc is drawn in a negative-angle direction.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

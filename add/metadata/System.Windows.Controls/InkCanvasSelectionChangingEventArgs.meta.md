@@ -1,24 +1,34 @@
 ---
 uid: System.Windows.Controls.InkCanvasSelectionChangingEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasSelectionChangingEventArgs.SetSelectedElements(System.Collections.Generic.IEnumerable{System.Windows.UIElement})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasSelectionChangingEventArgs.GetSelectedStrokes
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasSelectionChangingEventArgs.SetSelectedStrokes(System.Windows.Ink.StrokeCollection)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasSelectionChangingEventArgs.GetSelectedElements
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

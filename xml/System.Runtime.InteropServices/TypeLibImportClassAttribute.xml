@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies which <see cref="T:System.Type" /> exclusively uses an interface. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.Runtime.InteropServices.TypeLibImportClassAttribute> attribute to a managed interface to specify which <xref:System.Type> object exclusively uses the interface.  This attribute allows COM interoperation to map the interface back to the original type when converting the interface from metadata to a type library and back again.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,9 +45,16 @@
         <Parameter Name="importClass" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="importClass">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="importClass">The <see cref="T:System.Type" /> object that exclusively uses an interface.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.TypeLibImportClassAttribute" /> class specifying the <see cref="T:System.Type" /> that exclusively uses an interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.Runtime.InteropServices.TypeLibImportClassAttribute> attribute to a managed interface to specify the <xref:System.Type> object that exclusively uses the interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -57,9 +71,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of a <see cref="T:System.Type" /> object that exclusively uses an interface.</summary>
+        <value>The name of a <see cref="T:System.Type" /> object that exclusively uses an interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.Runtime.InteropServices.TypeLibImportClassAttribute> attribute to a managed interface to specify the type that exclusively uses an interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

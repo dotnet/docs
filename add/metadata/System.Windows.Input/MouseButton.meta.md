@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Input.MouseButton
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

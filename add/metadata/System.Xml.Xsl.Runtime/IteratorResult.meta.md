@@ -1,4 +1,6 @@
 ---
 uid: System.Xml.Xsl.Runtime.IteratorResult
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

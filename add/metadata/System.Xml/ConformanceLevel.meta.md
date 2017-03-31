@@ -1,4 +1,6 @@
 ---
 uid: System.Xml.ConformanceLevel
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -17,8 +17,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the <see cref="T:System.Activities.Expressions.VariableValue`1" />.</typeparam>
+    <summary>Represents a <see cref="T:System.Activities.Variable" /> used as an r-value in an expression.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.VariableValue`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,8 @@
         <Parameter Name="variable" Type="System.Activities.Variable" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="variable">The value of the expression.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.VariableValue`1" /> class using the specified variable.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +89,8 @@
         <ReturnType>System.Activities.LocationReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location reference of <see cref="T:System.Activities.Expressions.VariableValue`1" />.</summary>
+        <value>The location reference.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +108,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a <see cref="T:System.String" /> representation of the <see cref="T:System.Activities.Expressions.VariableValue`1" />.</summary>
+        <returns>The value of the variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Activities.Expressions.VariableValue%601.Variable%2A> property has been set then the string representation consists of the variable’s name; otherwise, it consists of the activity ID and name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Variable">
@@ -126,8 +133,8 @@
         <ReturnType>System.Activities.Variable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Activities.Variable" /> represented by the <see cref="T:System.Activities.Expressions.VariableValue`1" />.</summary>
+        <value>The variable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

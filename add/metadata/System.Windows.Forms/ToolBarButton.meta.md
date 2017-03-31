@@ -1,94 +1,142 @@
 ---
 uid: System.Windows.Forms.ToolBarButton
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolBarButton.Text
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.Tag
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.DropDownMenu
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.ToString
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.Enabled
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.Pushed
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.Visible
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.Rectangle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.Style
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.Parent
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.PartialPush
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.ToolTipText
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.Name
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.ImageIndex
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolBarButton.ImageKey
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolBarButton.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.Tag
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.Dispose(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.DropDownMenu
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.#ctor(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.ToString
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.Enabled
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.Pushed
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.Dispose
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.Visible
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.Rectangle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.Style
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.Parent
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.PartialPush
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.ToolTipText
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.Name
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.ImageIndex
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.ImageKey
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolBarButton.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

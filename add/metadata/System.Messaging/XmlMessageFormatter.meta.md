@@ -1,49 +1,54 @@
 ---
 uid: System.Messaging.XmlMessageFormatter
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.XmlMessageFormatter.Write(System.Messaging.Message,System.Object)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.XmlMessageFormatter.Read(System.Messaging.Message)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.XmlMessageFormatter.#ctor
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.XmlMessageFormatter.CanRead(System.Messaging.Message)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.XmlMessageFormatter.Clone
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.XmlMessageFormatter.TargetTypeNames
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.XmlMessageFormatter.#ctor(System.String[])
-internalonly: False
+manager: "tyoung"
+---
+
+---
+uid: System.Messaging.XmlMessageFormatter.#ctor
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.XmlMessageFormatter.#ctor(System.Type[])
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.XmlMessageFormatter.TargetTypes
-internalonly: False
+manager: "tyoung"
 ---

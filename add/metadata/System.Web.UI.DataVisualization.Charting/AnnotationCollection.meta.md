@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.AnnotationCollection
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.AnnotationCollection.FindByName(System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

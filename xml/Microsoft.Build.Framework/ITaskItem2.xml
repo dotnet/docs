@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This interface adds escaping support to the ITaskItem interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,8 +38,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>ITaskItem2 implementation which returns a clone of the metadata on this object.  Values returned are in their original escaped form.</summary>
+        <returns>Returns the cloned metadata, with values' escaping preserved.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +56,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the item include value e.g. for disk-based items this would be the file path.</summary>
+        <value>Returns the item include value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,10 +77,17 @@
         <Parameter Name="metadataName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="metadataName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="metadataName">The metadata to be queried.</param>
+        <summary>Allows the values of metadata on the item to be queried.</summary>
+        <returns>Returns the escaped metadata value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Taking the opportunity to fix the property name, although this doesn't make it obvious it's an improvement on GetMetadata.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetMetadataValueLiteral">
@@ -100,10 +107,17 @@
         <Parameter Name="metadataValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="metadataName">To be added.</param>
-        <param name="metadataValue">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="metadataName">The metadata name.</param>
+        <param name="metadataValue">The metadata value.</param>
+        <summary>Allows a piece of custom metadata to be set on the item. Assumes that the value passed in is unescaped, and escapes the value as necessary in order to maintain its value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Taking the opportunity to fix the property name, although this doesn't make it obvious it's an improvement on SetMetadata.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

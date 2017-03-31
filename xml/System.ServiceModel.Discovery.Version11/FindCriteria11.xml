@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the criteria to use when searching for services using version 1.1 of the WS-Discovery protocol.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,9 +40,9 @@
         <Parameter Name="findCriteria" Type="System.ServiceModel.Discovery.FindCriteria" />
       </Parameters>
       <Docs>
-        <param name="findCriteria">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="findCriteria">The find criteria.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.Version11.FindCriteria11" /> using the specified <see cref="T:System.ServiceModel.Discovery.FindCriteria" /> instance.</summary>
+        <returns>A new<see cref="T:System.ServiceModel.Discovery.Version11.FindCriteria11" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the find criteria schema.</summary>
+        <returns>The find criteria schema.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,10 +81,17 @@
         <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" />
       </Parameters>
       <Docs>
-        <param name="schemaSet">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="schemaSet">The schema set.</param>
+        <summary>Gets the find criteria schema from the specified <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
+        <returns>The <see cref="T:System.Xml.XmlQualifiedName" /> of the schema.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the schema set does not contain the schema it is added to the schema set.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -103,8 +110,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The XML reader to read from.</param>
+        <summary>Reads a <see cref="T:System.ServiceModel.Discovery.Version11.FindCriteria11" /> instance from XML.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +129,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.FindCriteria" /> associated with this <see cref="T:System.ServiceModel.Discovery.Version11.FindCriteria11" /> instance.</summary>
+        <returns>The find criteria.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +150,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The XML writer to write to.</param>
+        <summary>Writes the <see cref="T:System.ServiceModel.Discovery.Version11.FindCriteria11" /> to XML.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

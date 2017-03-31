@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Class for serializing and deserializing WS-Trust Feb 2005 RequestSecurityTokenResponse (RSTR) messages.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,10 +46,13 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> object from which to read.</param>
+        <summary>Checks if the specified XML reader is positioned at a RequestSecurityTokenResponse element with namespace “http://schemas.xmlsoap.org/ws/2005/02/trust”.</summary>
+        <returns>
+          <see langword="true" /> if the reader is positioned at a RequestSecurityTokenResponse element with namespace “http://schemas.xmlsoap.org/ws/2005/02/trust”; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -69,11 +72,17 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The XML reader over the RSTR.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>Deserializes the RSTR from an <see cref="T:System.Xml.XmlReader" /> object to a <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object if the deserialization was successful.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadXmlElement">
@@ -94,11 +103,22 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="rstr">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> object positioned at an element to read inside the RSTR.</param>
+        <param name="rstr">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> element that is being populated from the reader.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>Override of the base class that Reads a specific child element inside the RSTR.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="rstr" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="context" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationException">Unable to deserialize the current parameter.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteKnownResponseElement">
@@ -119,11 +139,21 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="rstr">To be added.</param>
-        <param name="writer">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rstr">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object to serialize.</param>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> object to write to.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>Writes the supported elements on the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object to the outgoing stream.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rstr" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -144,11 +174,21 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <param name="writer">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object to serialize.</param>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> object to write to.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>Serializes the specified <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object into the <see cref="T:System.Xml.XmlWriter" /> object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="request" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteXmlElement">
@@ -171,13 +211,24 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="elementName">To be added.</param>
-        <param name="elementValue">To be added.</param>
-        <param name="rstr">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> object to which the RSTR is being serialized.</param>
+        <param name="elementName">The local name of the element to be written.</param>
+        <param name="elementValue">The value of the element.</param>
+        <param name="rstr">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object that is being serialized.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>Writes the specified RSTR element to the outgoing stream. Override of the base class method.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rstr" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="context" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">elementName is <see langword="null" /> or an empty string.</exception>
       </Docs>
     </Member>
   </Members>

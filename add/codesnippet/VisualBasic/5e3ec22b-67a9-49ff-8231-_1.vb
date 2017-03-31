@@ -1,1 +1,0 @@
-        sqlCdds.Remove("dataBaseElement")

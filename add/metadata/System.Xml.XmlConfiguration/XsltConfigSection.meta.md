@@ -1,14 +1,20 @@
 ---
 uid: System.Xml.XmlConfiguration.XsltConfigSection
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlConfiguration.XsltConfigSection.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.XmlConfiguration.XsltConfigSection.ProhibitDefaultResolverString
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

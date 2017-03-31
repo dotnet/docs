@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Query.Dynamic
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

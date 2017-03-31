@@ -1,1 +1,0 @@
-         if (  !SecurityElement::IsValidText( tagText ) )

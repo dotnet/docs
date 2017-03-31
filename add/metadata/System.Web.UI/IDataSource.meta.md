@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.IDataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDataSource.GetView(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDataSource.GetViewNames
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDataSource.DataSourceChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

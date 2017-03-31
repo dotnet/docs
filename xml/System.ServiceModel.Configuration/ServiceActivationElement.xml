@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Manages configuration element content in connection with the activation of a service application.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceActivationElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="relativeAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relativeAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="relativeAddress">A file directory location that requires being referenced from a base URL.</param>
+        <summary>Configures a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceActivationElement" /> class that includes a service activation file directory location that is relative to a base URL.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="service" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relativeAddress">To be added.</param>
-        <param name="service">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="relativeAddress">A URL location that requires being referenced from a base address.</param>
+        <param name="service">The service application that becomes activated.</param>
+        <summary>Configures a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceActivationElement" /> class that includes the specified service to be activated and its relative address.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +83,10 @@
         <Parameter Name="factory" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relativeAddress">To be added.</param>
-        <param name="service">To be added.</param>
-        <param name="factory">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="relativeAddress">A URL location that requires being reference from a base address.</param>
+        <param name="service">The service application being activated.</param>
+        <param name="factory">The CLR type name of the factory that generates a service activation element.</param>
+        <summary>Configures a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceActivationElement" /> class with the specified service to be activated, its relative address, and the system path name of a factory that generates a service activation element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +111,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a configuration string that contains the CLR type name of the factory that generates a service activation element.</summary>
+        <value>The configuration string that contains the CLR type name of the factory.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +152,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the relative address of a service activation file.</summary>
+        <value>The relative address of a service activation file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,8 +178,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the service application.</summary>
+        <value>The name of a service application.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

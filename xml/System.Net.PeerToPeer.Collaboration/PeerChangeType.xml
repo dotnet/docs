@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the type of change that occurred for a peer.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A peer object, endpoint or application has been added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Deleted">
@@ -43,7 +43,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A peer object, endpoint or application has been deleted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Updated">
@@ -59,7 +59,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerChangeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A peer object, endpoint or application has been updated.</summary>
       </Docs>
     </Member>
   </Members>

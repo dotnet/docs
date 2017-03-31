@@ -1,4 +1,4 @@
 ---
 uid: System.Management.ObjectPutEventHandler
-internalonly: False
+manager: "jillfra"
 ---

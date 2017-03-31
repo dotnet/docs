@@ -13,8 +13,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the interface implemented by the workflow expression evaluation component that provides a context frame for expression evaluation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateEvaluationFrame">
@@ -34,10 +43,17 @@
         <Parameter Name="callback" Type="System.Workflow.Runtime.DebugEngine.DebugEngineCallback" />
       </Parameters>
       <Docs>
-        <param name="instanceTable">To be added.</param>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instanceTable">An object that implements <see cref="T:System.Workflow.Runtime.DebugEngine.IInstanceTable" />. Not used.</param>
+        <param name="callback">The default <see cref="T:System.Workflow.Runtime.DebugEngine.DebugEngineCallback" /> implemented by the workflow runtime.</param>
+        <summary>Creates a stack frame for workflow expression evaluation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked by the <xref:System.Workflow.Runtime.DebugEngine.DebugController> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

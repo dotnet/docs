@@ -17,8 +17,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the concrete data format and protocols used in the XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Binding` class corresponds to the Web Services Description Language (WSDL) `<binding>` element enclosed by the root `<definitions>` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a typical use of the `Binding` class.  
+  
+ [!code-cpp[BindingCollectionsample1#3](~/samples/snippets/cpp/VS_Snippets_Remoting/BindingCollectionsample1/CPP/bindingcollectionsample1.cpp#3)]
+ [!code-csharp[BindingCollectionsample1#3](~/samples/snippets/csharp/VS_Snippets_Remoting/BindingCollectionsample1/CS/bindingcollectionsample1.cs#3)]
+ [!code-vb[BindingCollectionsample1#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/BindingCollectionsample1/VB/bindingcollectionsample1.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +49,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.Binding" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +72,20 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of extensibility elements used in the XML Web service.</summary>
+        <value>A <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> object that contains the collection of extensibility elements used in the XML Web service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of the `Extensions` property.  
+  
+ [!code-cpp[BindingCollectionSample2#4](~/samples/snippets/cpp/VS_Snippets_Remoting/BindingCollectionSample2/CPP/bindingcollectionsample2.cpp#4)]
+ [!code-csharp[BindingCollectionSample2#4](~/samples/snippets/csharp/VS_Snippets_Remoting/BindingCollectionSample2/CS/bindingcollectionsample2.cs#4)]
+ [!code-vb[BindingCollectionSample2#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/BindingCollectionSample2/VB/bindingcollectionsample2.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Operations">
@@ -80,9 +107,23 @@
         <ReturnType>System.Web.Services.Description.OperationBindingCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of specifications for data formats and message protocols used in the action supported by the XML Web service.</summary>
+        <value>An <see cref="T:System.Web.Services.Description.OperationBindingCollection" /> object that contains the collection of specifications for data formats and message protocols used in the action supported by the XML Web service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of the `Operations` property.  
+  
+ [!code-cpp[BindingCollectionSample2#5](~/samples/snippets/cpp/VS_Snippets_Remoting/BindingCollectionSample2/CPP/bindingcollectionsample2.cpp#5)]
+ [!code-csharp[BindingCollectionSample2#5](~/samples/snippets/csharp/VS_Snippets_Remoting/BindingCollectionSample2/CS/bindingcollectionsample2.cs#5)]
+ [!code-vb[BindingCollectionSample2#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/BindingCollectionSample2/VB/bindingcollectionsample2.vb#5)]  
+[!code-cpp[BindingCollectionSample2#8](~/samples/snippets/cpp/VS_Snippets_Remoting/BindingCollectionSample2/CPP/bindingcollectionsample2.cpp#8)]
+[!code-csharp[BindingCollectionSample2#8](~/samples/snippets/csharp/VS_Snippets_Remoting/BindingCollectionSample2/CS/bindingcollectionsample2.cs#8)]
+[!code-vb[BindingCollectionSample2#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/BindingCollectionSample2/VB/bindingcollectionsample2.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceDescription">
@@ -99,8 +140,8 @@
         <ReturnType>System.Web.Services.Description.ServiceDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.Services.Description.ServiceDescription" /> of which the <see cref="T:System.Web.Services.Description.Binding" /> is a member.</summary>
+        <value>A <see cref="T:System.Web.Services.Description.ServiceDescription" /> of which the <see cref="T:System.Web.Services.Description.Binding" /> is a member.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +164,25 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value representing the namespace-qualified name of the <see cref="T:System.Web.Services.Description.PortType" /> with which the <see langword="Binding" /> is associated.</summary>
+        <value>An <see cref="T:System.Xml.XmlQualifiedName" /> of the <see cref="T:System.Web.Services.Description.PortType" /> with which the <see langword="Binding" /> is associated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is an empty string ("").  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the `Type` property.  
+  
+ [!code-cpp[BindingCollectionSample2#3](~/samples/snippets/cpp/VS_Snippets_Remoting/BindingCollectionSample2/CPP/bindingcollectionsample2.cpp#3)]
+ [!code-csharp[BindingCollectionSample2#3](~/samples/snippets/csharp/VS_Snippets_Remoting/BindingCollectionSample2/CS/bindingcollectionsample2.cs#3)]
+ [!code-vb[BindingCollectionSample2#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/BindingCollectionSample2/VB/bindingcollectionsample2.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

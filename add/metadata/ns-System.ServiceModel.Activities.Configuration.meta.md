@@ -1,4 +1,4 @@
 ---
 uid: System.ServiceModel.Activities.Configuration
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,1 +1,0 @@
-        snIdPerm2 = new StrongNameIdentityPermission(PermissionState.None);

@@ -19,8 +19,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Lets users select a printer and choose which sections of the document to print from a Windows Forms application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create an instance of <xref:System.Windows.Forms.PrintDialog>, the read/write properties are set to initial values. For a list of these values, see the <xref:System.Windows.Forms.PrintDialog.%23ctor%2A> constructor. To get printer settings that are modified by the user with the <xref:System.Windows.Forms.PrintDialog>, use the <xref:System.Windows.Forms.PrintDialog.PrinterSettings%2A> property.  
+  
+ For more information about printing with Windows Forms, see the <xref:System.Drawing.Printing> namespace overview. If you want to print from a Windows Presentation Foundation application, see the <xref:System.Printing> namespace.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.PrintDialog> control to set the <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A>, <xref:System.Windows.Forms.PrintDialog.ShowHelp%2A>, and <xref:System.Windows.Forms.PrintDialog.Document%2A> properties. To run this example, paste the following code into a form that contains a <xref:System.Windows.Forms.PrintDialog> control named `PrintDialog1` and a button named `Button1`. This example requires that the button's <xref:System.Windows.Forms.Control.Click> event and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of `docToPrint` have been connected to the event-handling methods defined in this example.  
+  
+ [!code-cpp[System.Windows.Forms.PrintDialogExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintDialogExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.PrintDialogExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintDialogExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.PrintDialogExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintDialogExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,8 +52,28 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PrintDialog" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create an instance of <xref:System.Windows.Forms.PrintDialog>, the following read/write properties are set to initial values.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A>|`false`|  
+|<xref:System.Windows.Forms.PrintDialog.AllowPrintToFile%2A>|`true`|  
+|<xref:System.Windows.Forms.PrintDialog.AllowSelection%2A>|`false`|  
+|<xref:System.Windows.Forms.PrintDialog.Document%2A>|`null`|  
+|<xref:System.Windows.Forms.PrintDialog.PrinterSettings%2A>|`null`|  
+|<xref:System.Windows.Forms.PrintDialog.PrintToFile%2A>|`false`|  
+|<xref:System.Windows.Forms.PrintDialog.ShowHelp%2A>|`false`|  
+|<xref:System.Windows.Forms.PrintDialog.ShowNetwork%2A>|`true`|  
+  
+ You can change the value for any one of these properties through a separate call to the property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowCurrentPage">
@@ -56,9 +94,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the **Current Page** option button is displayed.</summary>
+        <value>
+          <see langword="true" /> if the **Current Page** option button is displayed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is valid for Windows 2000 and later versions of Windows operating systems. On operating systems earlier than Windows 2000, the <xref:System.Windows.Forms.PrintDialog.AllowCurrentPage%2A> property has no effect.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowPrintToFile">
@@ -79,8 +125,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the **Print to file** check box is enabled.</summary>
+        <value>
+          <see langword="true" /> if the **Print to file** check box is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +149,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the **Selection** option button is enabled.</summary>
+        <value>
+          <see langword="true" /> if the **Selection** option button is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +173,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the **Pages** option button is enabled.</summary>
+        <value>
+          <see langword="true" /> if the **Pages** option button is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.PrintDialog> control to set the <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A>, <xref:System.Windows.Forms.PrintDialog.ShowHelp%2A>, and <xref:System.Windows.Forms.PrintDialog.Document%2A> properties. To run this example, paste the following code into a form that contains a <xref:System.Windows.Forms.PrintDialog> control named `PrintDialog1` and a button named `Button1`. This example requires that the button's <xref:System.Windows.Forms.Control.Click> event and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of `docToPrint` have been connected to the event-handling methods defined in this example.  
+  
+ [!code-cpp[System.Windows.Forms.PrintDialogExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintDialogExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.PrintDialogExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintDialogExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.PrintDialogExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintDialogExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -148,9 +208,20 @@
         <ReturnType>System.Drawing.Printing.PrintDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating the <see cref="T:System.Drawing.Printing.PrintDocument" /> used to obtain <see cref="T:System.Drawing.Printing.PrinterSettings" />.</summary>
+        <value>The <see cref="T:System.Drawing.Printing.PrintDocument" /> used to obtain <see cref="T:System.Drawing.Printing.PrinterSettings" />. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.PrintDialog> control to set the <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A>, <xref:System.Windows.Forms.PrintDialog.ShowHelp%2A>, and <xref:System.Windows.Forms.PrintDialog.Document%2A> properties. To run this example, paste the following code into a form that contains a <xref:System.Windows.Forms.PrintDialog> control named `PrintDialog1` and a button named `Button1`. This example requires that the button's <xref:System.Windows.Forms.Control.Click> event and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of `docToPrint` have been connected to the event-handling methods defined in this example.  
+  
+ [!code-cpp[System.Windows.Forms.PrintDialogExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintDialogExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.PrintDialogExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintDialogExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.PrintDialogExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintDialogExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrinterSettings">
@@ -177,9 +248,16 @@
         <ReturnType>System.Drawing.Printing.PrinterSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the printer settings the dialog box modifies.</summary>
+        <value>The <see cref="T:System.Drawing.Printing.PrinterSettings" /> the dialog box modifies.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PrintDialog.PrinterSettings%2A> property must be set before you call <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> or an exception will occur.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintToFile">
@@ -200,8 +278,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the **Print to file** check box is selected.</summary>
+        <value>
+          <see langword="true" /> if the **Print to file** check box is selected; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,7 +298,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resets all options, the last selected printer, and the page settings to their default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,9 +342,26 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the **Help** button is displayed.</summary>
+        <value>
+          <see langword="true" /> if the **Help** button is displayed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property was marked obsolete in Windows 2000 and does not affect this and later versions of Windows.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.PrintDialog> control setting the <xref:System.Windows.Forms.PrintDialog.AllowSomePages%2A>, <xref:System.Windows.Forms.PrintDialog.ShowHelp%2A>, and <xref:System.Windows.Forms.PrintDialog.Document%2A> properties. To run this example paste the following code in a form that contains a <xref:System.Windows.Forms.PrintDialog> control named `PrintDialog1` and a button named `Button1`. This example requires that the button's <xref:System.Windows.Forms.Control.Click> event and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of `docToPrint` have been connected to the event handling methods defined in this example.  
+  
+ [!code-cpp[System.Windows.Forms.PrintDialogExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PrintDialogExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.PrintDialogExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PrintDialogExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.PrintDialogExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PrintDialogExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowNetwork">
@@ -286,9 +382,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the **Network** button is displayed.</summary>
+        <value>
+          <see langword="true" /> if the **Network** button is displayed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property was marked obsolete in Windows 2000 and does not affect this and later versions of Windows.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UseEXDialog">
@@ -309,9 +413,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the dialog should be shown in the Windows XP style for systems running [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] or later.</summary>
+        <value>
+          <see langword="true" /> to indicate the dialog should be shown with the Windows XP style, otherwise <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to `true`, <xref:System.Windows.Forms.PrintDialog.ShowHelp%2A> and <xref:System.Windows.Forms.PrintDialog.ShowNetwork%2A> will be ignored as these properties were made obsolete for Windows 2000 and later versions of Windows.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

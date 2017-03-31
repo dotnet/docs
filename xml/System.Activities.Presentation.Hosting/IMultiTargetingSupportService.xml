@@ -8,8 +8,17 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides multi-targeting for [!INCLUDE[wfd1](~/includes/wfd1-md.md)] hosts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ *Multi-targeting* is the ability to find the right version of the loaded assembly that corresponds to the target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version of the current workflow project in [!INCLUDE[vs2010](~/includes/vs2010-md.md)].  
+  
+ This interface is implemented and used internally by [!INCLUDE[wf1](~/includes/wf1-md.md)] designer components to resolve [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies in a multi-targeting aware fashion within the [!INCLUDE[vs2010](~/includes/vs2010-md.md)] hosting application. The [!INCLUDE[wf1](~/includes/wf1-md.md)] designer components use the implementation of this interface only when additional assemblies need to be loaded dynamically into the editing `AppDomain`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetReflectionAssembly">
@@ -28,9 +37,9 @@
         <Parameter Name="targetAssemblyName" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="targetAssemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="targetAssemblyName">The assembly name.</param>
+        <summary>Returns the currently loaded assembly given the assembly name.</summary>
+        <returns>The currently loaded assembly given the assembly name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +59,9 @@
         <Parameter Name="reflectionType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="reflectionType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reflectionType">The type to get the runtime type of.</param>
+        <summary>Gets the runtime type that corresponds to the specified type.</summary>
+        <returns>The runtime type that corresponds to the specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +81,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type to inspect.</param>
+        <summary>Returns a value that indicates whether the specified type is supported.</summary>
+        <returns>
+          <see langword="true" /> if the specified type is supported; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -27,8 +27,8 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of progress update value.</typeparam>
+    <summary>Defines a provider for progress updates.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -60,8 +60,8 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The value of the updated progress.</param>
+        <summary>Reports a progress update.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

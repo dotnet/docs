@@ -1,24 +1,34 @@
 ---
 uid: System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection.Item(System.Int32)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection.Contains(System.DirectoryServices.ActiveDirectory.GlobalCatalog)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection.CopyTo(System.DirectoryServices.ActiveDirectory.GlobalCatalog[],System.Int32)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection.IndexOf(System.DirectoryServices.ActiveDirectory.GlobalCatalog)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

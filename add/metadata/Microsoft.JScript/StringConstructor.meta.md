@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.JScript.StringConstructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.StringConstructor.Invoke(System.Object)
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.StringConstructor.Invoke
 ---
 
 ---
 uid: Microsoft.JScript.StringConstructor.fromCharCode(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.StringConstructor.CreateInstance(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Framework.IForwardingLogger
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.IForwardingLogger.NodeId
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.IForwardingLogger.BuildEventRedirector
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

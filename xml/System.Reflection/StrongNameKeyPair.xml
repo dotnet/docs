@@ -28,8 +28,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Encapsulates access to a public or private key pair used to sign strong name assemblies.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to open a Company.keys file (produced by running the [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md) with the **–k** switch), read the public key from the file, and display the key in the console window.  
+  
+ [!code-cpp[StrongNameKeyPairX#1](~/samples/snippets/cpp/VS_Snippets_CLR/StrongNameKeyPairX/cpp/strongnamekeypairx.cpp#1)]
+ [!code-csharp[StrongNameKeyPairX#1](~/samples/snippets/csharp/VS_Snippets_CLR/StrongNameKeyPairX/cs/strongnamekeypairx.cs#1)]
+ [!code-vb[StrongNameKeyPairX#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/StrongNameKeyPairX/VB/StrongNameKeyPairX.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,9 +61,13 @@
         <Parameter Name="keyPairArray" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="keyPairArray">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keyPairArray">An array of type <see langword="byte" /> containing the key pair.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.StrongNameKeyPair" /> class, building the key pair from a <see langword="byte" /> array.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyPairArray" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,9 +88,13 @@
         <Parameter Name="keyPairFile" Type="System.IO.FileStream" />
       </Parameters>
       <Docs>
-        <param name="keyPairFile">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keyPairFile">A <see langword="FileStream" /> containing the key pair.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.StrongNameKeyPair" /> class, building the key pair from a <see langword="FileStream" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyPairFile" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -96,9 +115,20 @@
         <Parameter Name="keyPairContainer" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="keyPairContainer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="keyPairContainer">A string containing the key pair.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.StrongNameKeyPair" /> class, building the key pair from a <see langword="String" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The key pair is in a named key container.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyPairContainer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -120,10 +150,18 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object that holds the serialized object data.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> object that contains contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.StrongNameKeyPair" /> class, building the key pair from serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](../Topic/XML%20and%20SOAP%20Serialization.md).  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="PublicKey">
@@ -144,8 +182,8 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the public part of the public key or public key token of the key pair.</summary>
+        <value>An array of type <see langword="byte" /> containing the public key or public key token of the key pair.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +208,8 @@
         <Parameter Name="sender" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The object that initiated the callback.</param>
+        <summary>Runs when the entire object graph has been deserialized.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,10 +235,13 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The object to be populated with serialization information.</param>
+        <param name="context">The destination context of the serialization.</param>
+        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with all the data required to reinstantiate the current <see cref="T:System.Reflection.StrongNameKeyPair" /> object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
   </Members>

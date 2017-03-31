@@ -1,14 +1,20 @@
 ---
 uid: System.Drawing.Design.ToolboxItemCreator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.ToolboxItemCreator.Format
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.ToolboxItemCreator.Create(System.Windows.Forms.IDataObject)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

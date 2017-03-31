@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a way for task authors to use a subset of the functionality of the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,13 +31,25 @@
         <Parameter Name="targetOutputs" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="projectFileName">To be added.</param>
-        <param name="targetNames">To be added.</param>
-        <param name="globalProperties">To be added.</param>
-        <param name="targetOutputs">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="projectFileName">The name of the project file to build.</param>
+        <param name="targetNames">The names of the target in the project to build. Separate multiple targets with a semicolon (;).</param>
+        <param name="globalProperties">An <see cref="T:System.Collections.IDictionary" /> of additional global properties to apply to the project. The key and value must be <see langword="String" /> data types.</param>
+        <param name="targetOutputs">The outputs of each specified target.</param>
+        <summary>Initiates a build of a project file. If the build is successful, the outputs, if any, of the specified targets are returned.</summary>
+        <returns>
+          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `targetNames`, `globalProperties`, and `targetOutputs` parameters can be `null`.  
+  
+ If no targets are specified, [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] builds the default targets of the project.  
+  
+ Target outputs are returned as <xref:Microsoft.Build.Framework.ITaskItem> arrays indexed by target name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnNumberOfTaskNode">
@@ -53,8 +65,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the line number of the task node within the project file that called it.</summary>
+        <value>The line number of the task node within the project file that called it.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +83,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns <see langword="true" /> if the ContinueOnError flag was set to <see langword="true" /> for this particular task in the project file.</summary>
+        <value>
+          <see langword="true" /> if the ContinueOnError flag was set to <see langword="true" /> for this particular task in the project file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +102,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the line number of the task node within the project file that called it.</summary>
+        <value>The line number of the task node within the project file that called it.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +123,8 @@
         <Parameter Name="e" Type="Microsoft.Build.Framework.CustomBuildEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Raises a custom event to all registered loggers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +144,8 @@
         <Parameter Name="e" Type="Microsoft.Build.Framework.BuildErrorEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Raises an error event to all registered loggers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +165,8 @@
         <Parameter Name="e" Type="Microsoft.Build.Framework.BuildMessageEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Raises a message event to all registered loggers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,8 +186,8 @@
         <Parameter Name="e" Type="Microsoft.Build.Framework.BuildWarningEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Raises a warning event to all registered loggers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,8 +204,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the full path to the project file that contained the call to this task.</summary>
+        <value>The full path to the project file that contained the call to this task.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

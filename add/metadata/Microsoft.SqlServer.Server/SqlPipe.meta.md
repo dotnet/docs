@@ -1,44 +1,49 @@
 ---
 uid: Microsoft.SqlServer.Server.SqlPipe
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlPipe.SendResultsRow(Microsoft.SqlServer.Server.SqlDataRecord)
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlPipe.Send(Microsoft.SqlServer.Server.SqlDataRecord)
-internalonly: False
+manager: "mblythe"
+---
+
+---
+uid: Microsoft.SqlServer.Server.SqlPipe.Send
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlPipe.ExecuteAndSend(System.Data.SqlClient.SqlCommand)
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlPipe.IsSendingResults
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlPipe.SendResultsStart(Microsoft.SqlServer.Server.SqlDataRecord)
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlPipe.SendResultsEnd
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlPipe.Send(System.Data.SqlClient.SqlDataReader)
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlPipe.Send(System.String)
-internalonly: False
+manager: "mblythe"
 ---

@@ -25,8 +25,156 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the name of the category in which to group the property or event when displayed in a <see cref="T:System.Windows.Forms.PropertyGrid" /> control set to Categorized mode.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.ComponentModel.CategoryAttribute> indicates the category to associate the associated property or event with, when listing properties or events in a <xref:System.Windows.Forms.PropertyGrid> control set to <xref:System.Windows.Forms.PropertySort> mode. If a <xref:System.ComponentModel.CategoryAttribute> has not been applied to a property or event, the <xref:System.Windows.Forms.PropertyGrid> associates it with the **Misc** category. A new category can be created for any name by specifying the name of the category in the constructor for the <xref:System.ComponentModel.CategoryAttribute>.  
+  
+ The <xref:System.ComponentModel.CategoryAttribute.Category%2A> property indicates the name of the category that the attribute represents. The <xref:System.ComponentModel.CategoryAttribute.Category%2A> property also provides transparent localization of category names.  
+  
+   
+  
+## Examples  
+ The following example creates the `MyImage` property. The property has two attributes: a <xref:System.ComponentModel.DescriptionAttribute> and a <xref:System.ComponentModel.CategoryAttribute>.  
+  
+ [!code-cpp[Classic CategoryAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CategoryAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CategoryAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CategoryAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic CategoryAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CategoryAttribute Example/VB/source.vb#1)]  
+  
+ The next example gets the category for `MyImage`. First, the code gets a <xref:System.ComponentModel.PropertyDescriptorCollection> with all the properties for the object. Next, the code indexes into the <xref:System.ComponentModel.PropertyDescriptorCollection> to get `MyImage`. Then it returns the attributes for this property and saves them in the variable `attributes`.  
+  
+ The example then prints the category by retrieving <xref:System.ComponentModel.CategoryAttribute> from the <xref:System.ComponentModel.AttributeCollection>, and writing it to the console screen.  
+  
+ [!code-cpp[Classic CategoryAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CategoryAttribute Example/CPP/source.cpp#2)]
+ [!code-csharp[Classic CategoryAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CategoryAttribute Example/CS/source.cs#2)]
+ [!code-vb[Classic CategoryAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CategoryAttribute Example/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>If you use category names other than the predefined names, and you want to localize your category names, you must override the <see cref="M:System.ComponentModel.CategoryAttribute.GetLocalizedString(System.String)" /> method.  
+  
+ The <see cref="T:System.ComponentModel.CategoryAttribute" /> class defines the following common categories:  
+  
+ <list type="table">  
+<listheader>  
+<term> Category  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.Action" />  
+  
+ </term>  
+<description> Properties related to available actions.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.Appearance" />  
+  
+ </term>  
+<description> Properties related to how an entity appears.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.Behavior" />  
+  
+ </term>  
+<description> Properties related to how an entity acts.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.Data" />  
+  
+ </term>  
+<description> Properties related to data and data source management.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.Default" />  
+  
+ </term>  
+<description> Properties that are grouped in a default category.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.Design" />  
+  
+ </term>  
+<description> Properties that are available only at design time.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.DragDrop" />  
+  
+ </term>  
+<description> Properties related to drag-and-drop operations.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.Focus" />  
+  
+ </term>  
+<description> Properties related to focus.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.Format" />  
+  
+ </term>  
+<description> Properties related to formatting.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.Key" />  
+  
+ </term>  
+<description> Properties related to the keyboard.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.Layout" />  
+  
+ </term>  
+<description> Properties related to layout.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.Mouse" />  
+  
+ </term>  
+<description> Properties related to the mouse.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see cref="P:System.ComponentModel.CategoryAttribute.WindowStyle" />  
+  
+ </term>  
+<description> Properties related to the window style of top-level forms.  
+  
+ </description>  
+</item>  
+</list>  
+  
+ For more information, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,7 +197,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CategoryAttribute" /> class using the category name Default.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +223,18 @@
         <Parameter Name="category" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="category">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="category">The name of the category.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CategoryAttribute" /> class using the specified category name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the name you provide for the `category` parameter is one of the predefined category names, the name will be automatically localized by the <xref:System.ComponentModel.CategoryAttribute.Category%2A> property.  
+  
+ If the name you provide is not a predefined category name, and you do not override the <xref:System.ComponentModel.CategoryAttribute.GetLocalizedString%2A> method to provide a localized name, the category name will not be localized.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -102,8 +259,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the Action category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the action category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +286,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the Appearance category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the appearance category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +313,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the Asynchronous category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the asynchronous category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,8 +340,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the Behavior category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the behavior category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,9 +367,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the category for the property or event that this attribute is applied to.</summary>
+        <value>The name of the category for the property or event that this attribute is applied to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property calls <xref:System.ComponentModel.CategoryAttribute.GetLocalizedString%2A> to get the localized name of the category the first time it is accessed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -237,8 +401,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the Data category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the data category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +428,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the Default category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the default category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,8 +455,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the Design category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the design category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,8 +482,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the DragDrop category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the drag-and-drop category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,9 +512,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to test the value equality of.</param>
+        <summary>Returns whether the value of the given object is equal to the current <see cref="T:System.ComponentModel.CategoryAttribute" />..</summary>
+        <returns>
+          <see langword="true" /> if the value of the given object is equal to that of the current; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,8 +541,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the Focus category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the focus category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,8 +568,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the Format category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the format category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,8 +596,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this attribute.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -461,10 +626,20 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The identifer for the category to look up.</param>
+        <summary>Looks up the localized name of the specified category.</summary>
+        <returns>The localized name of the category, or <see langword="null" /> if a localized name does not exist.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.CategoryAttribute.Category%2A> property calls this method the first time it is accessed to look up the localized name for the specified category.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override this method to add your own localized names to categories. If a localized string is available for the given value, the method should return it. Otherwise, call the base class's <see cref="M:System.ComponentModel.CategoryAttribute.GetLocalizedString(System.String)" /> method to let the base class localize the string.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -486,8 +661,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines if this attribute is the default.</summary>
+        <returns>
+          <see langword="true" /> if the attribute is the default value for this attribute class; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -513,8 +689,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the Key category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the key category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -540,8 +716,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the Layout category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the layout category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -567,8 +743,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the Mouse category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the mouse category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -594,8 +770,8 @@
         <ReturnType>System.ComponentModel.CategoryAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ComponentModel.CategoryAttribute" /> representing the WindowStyle category.</summary>
+        <value>A <see cref="T:System.ComponentModel.CategoryAttribute" /> for the window style category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

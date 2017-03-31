@@ -15,8 +15,25 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains all the localizable resources in a BAML record.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The dictionary contains a mapping from resource keys (specified as <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey> objects) to resource values (specified as <xref:System.Windows.Markup.Localizer.BamlLocalizableResource> objects).  
+  
+<a name="xamlTextUsage_BamlLocalizationDictionary"></a>   
+## XAML Text Usage  
+   
+  
+## Examples  
+ The following example demonstrates how to use a <xref:System.Windows.Markup.Localizer.BamlLocalizationDictionary>.  
+  
+ [!code-csharp[GrabBaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GrabBaml/CSharp/GrabBaml.cs#1)]
+ [!code-vb[GrabBaml#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GrabBaml/visualbasic/grabbaml.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,10 +68,13 @@
         <Parameter Name="value" Type="System.Windows.Markup.Localizer.BamlLocalizableResource" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">A key for the resource.</param>
+        <param name="value">An object that contains the resource.</param>
+        <summary>Adds an item with the provided key and value to the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An item with the same key already exists.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -71,7 +91,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Deletes all resources from the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,10 +111,12 @@
         <Parameter Name="key" Type="System.Windows.Markup.Localizer.BamlLocalizableResourceKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The resource key to find.</param>
+        <summary>Determines whether a <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" /> object contains a resource with a specified key.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" /> object contains a resource with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">key is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -114,10 +136,18 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">An array of objects to hold the data.</param>
+        <param name="arrayIndex">The starting index value.</param>
+        <summary>Copies the contents of a <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" /> object to a one-dimensional array of <see cref="T:System.Collections.DictionaryEntry" /> objects, starting at a specified index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="arrayIndex" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="arrayIndex" /> exceeds the destination array length.  
+  
+ -or-  
+  
+ Copy cannot fit in the remaining array space between <paramref name="arrayIndex" /> and the destination array length.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -133,8 +163,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of localizable resources in the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />.</summary>
+        <value>The number of localizable resources.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +182,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />.</summary>
+        <returns>A specialized <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator" /> that can iterate the contents of the dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +200,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" /> object has a fixed size.</summary>
+        <value>Always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +218,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" /> object is read-only.</summary>
+        <value>Always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +239,9 @@
         <Parameter Name="key" Type="System.Windows.Markup.Localizer.BamlLocalizableResourceKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The key value of the resource.</param>
+        <summary>Gets or sets a localizable resource specified by its key.</summary>
+        <value>The value of the resource.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +258,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection that contains all the keys in the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" /> object.</summary>
+        <value>A collection that contains all the keys in the object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,9 +279,10 @@
         <Parameter Name="key" Type="System.Windows.Markup.Localizer.BamlLocalizableResourceKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key for the resource to be removed.</param>
+        <summary>Removes a specified localizable resource from the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">key is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RootElementKey">
@@ -267,9 +298,16 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizableResourceKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the key of the root element, if it is localizable.</summary>
+        <value>The key of the root element, if it is localizable. Otherwise, the value is set to <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set some properties for the entire page by adding or modifying the properties of its root element, due to the effects of property inheritance for dependency properties. For example, changing the root element's <xref:System.Windows.FrameworkElement.FlowDirection%2A> property sets that property for every element on the page.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -289,9 +327,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">A zero-based <see cref="T:System.Array" /> that receives the copied items.</param>
+        <param name="index">The first position in the specified <see cref="T:System.Array" /> to receive the copied contents.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,8 +346,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.Count" />.</summary>
+        <value>The number of items in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,8 +364,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,8 +383,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.SyncRoot" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,9 +405,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of the element to add.</param>
+        <param name="value">The object value to add to the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,9 +427,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key  to locate in the dictionary.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IDictionary.Contains(System.Object)" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,8 +448,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IDictionary.GetEnumerator" />.</summary>
+        <returns>An enumerator object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,9 +469,9 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The key of the item to get or set.</param>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IDictionary.Item(System.Object)" />.</summary>
+        <value>The item with the specified key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,8 +491,8 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IDictionary.Remove(System.Object)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,8 +510,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -488,8 +528,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection that contains all the values in the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />.</summary>
+        <value>A collection that contains all the values in the object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

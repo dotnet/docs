@@ -8,8 +8,20 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Allows a designer to store and retrieve its state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Designer state is keyed by the component with which the designer is associated. The Web Forms design surface offers this service and component designers use the service. This is an optional host service, and control designers should not assume it will always be provided.  
+  
+ Designer state is represented as a set of name/value pairs, in the form of a dictionary. Values stored in the dictionary must be serializable. The specified component should be sited in the designer and should have a non-empty name.  
+  
+> [!CAUTION]
+>  Do not store sensitive information to the <xref:System.ComponentModel.Design.IComponentDesignerStateService>. Sensitive information includes password and authentication data, or any data you do not want to expose to an unwanted source.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetState">
@@ -29,10 +41,10 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="component">The component for which to retrieve the designer state item.</param>
+        <param name="key">The name of the designer state item.</param>
+        <summary>Gets a state item specified by the key for the given component.</summary>
+        <returns>The designer state for <paramref name="component" /> specified by <paramref name="key" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,10 +66,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="component">The component for which to set the designer state item.</param>
+        <param name="key">The name of the designer state item.</param>
+        <param name="value">The designer state item for <c>component</c>.</param>
+        <summary>Sets a state item specified by the key for the given component.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

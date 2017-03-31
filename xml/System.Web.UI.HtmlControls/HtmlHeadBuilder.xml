@@ -11,8 +11,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Interacts with the parser to build an <see cref="T:System.Web.UI.HtmlControls.HtmlHead" /> control.</summary>
     <remarks>To be added.</remarks>
+    <block subset="none" type="overrides">
+      <para>To create a custom control builder for an <see cref="T:System.Web.UI.HtmlControls.HtmlHead" />-derived control, you need to inherit from this class.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlHeadBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +47,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Determines whether the literal white space characters in the control must be processed or ignored.</summary>
+        <returns>
+          <see langword="false" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation of the <xref:System.Web.UI.HtmlControls.HtmlHeadBuilder.AllowWhitespaceLiterals%2A> method is overridden to always return `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildControlType">
@@ -66,11 +77,18 @@
         <Parameter Name="attribs" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="tagName">To be added.</param>
-        <param name="attribs">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="tagName">The tag name of the child control.</param>
+        <param name="attribs">An array of attributes contained in the child control.</param>
+        <summary>Obtains the <see cref="T:System.Type" /> for the <see cref="T:System.Web.UI.HtmlControls.HtmlHead" /> control's child controls.</summary>
+        <returns>The <see cref="T:System.Type" /> of the specified control's child control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlHeadBuilder.GetChildControlType%2A> method returns the control type for child HTML elements represented by <xref:System.Web.UI.HtmlControls.HtmlTitle>, <xref:System.Web.UI.HtmlControls.HtmlLink>, and <xref:System.Web.UI.HtmlControls.HtmlMeta> controls. This method returns a null reference (`Nothing` in Visual Basic) for all other child controls.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

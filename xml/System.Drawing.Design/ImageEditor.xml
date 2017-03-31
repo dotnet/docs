@@ -11,8 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a user interface for selecting an image for a property in a property grid.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Design.ImageEditor> is a <xref:System.Drawing.Design.UITypeEditor> that provides a user interface for the user to select an image for a property. When the user starts the editor, it displays an **Open File** dialog box that enables the user to navigate to a directory and select a file. The file list is initially filtered by the default file name extensions for the editor.  
+  
+   
+  
+## Examples  
+ The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the <xref:System.Drawing.Design.ImageEditor> with a property.  
+  
+ [!code-cpp[EditorAttributesExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/EditorAttributesExample/CPP/class1.cpp#3)]
+ [!code-csharp[EditorAttributesExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/EditorAttributesExample/CS/class1.cs#3)]
+ [!code-vb[EditorAttributesExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/EditorAttributesExample/VB/class1.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ImageEditor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,11 +64,18 @@
         <Parameter Name="sep" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="extensions">To be added.</param>
-        <param name="sep">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="extensions">The extensions to filter for.</param>
+        <param name="sep">The separator to use.</param>
+        <summary>Creates a string of file name extensions using the specified array of file extensions and the specified separator.</summary>
+        <returns>A string containing the specified file name extensions, each separated by the specified separator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The specified extensions indicate the file types for the open file dialog box to filter the file list for by default.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFilterEntry">
@@ -70,9 +94,9 @@
         <Parameter Name="e" Type="System.Drawing.Design.ImageEditor" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e">An <see cref="T:System.Drawing.Design.ImageEditor" /> to get the filter entry from.</param>
+        <summary>Creates a filter entry for a file dialog box's file list.</summary>
+        <returns>The new filter entry string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,12 +118,19 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="provider">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+        <param name="provider">An <see cref="T:System.IServiceProvider" /> through which editing services can be obtained.</param>
+        <param name="value">An <see cref="T:System.Object" /> being edited.</param>
+        <summary>Edits the specified object value using the edit style provided by the <see cref="M:System.Drawing.Design.ImageEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" /> method.</summary>
+        <returns>An <see cref="T:System.Object" /> representing the new value. If the value of the object has not changed, <see cref="M:System.Drawing.Design.ImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> returns the object that was passed to it.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This editor uses a service provider to obtain any necessary editing services.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -118,10 +149,17 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+        <summary>Gets the editing style of the <see cref="M:System.Drawing.Design.ImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method.</summary>
+        <returns>One of the <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> values indicating the supported editing style.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Drawing.Design.ImageEditor.EditValue%2A> method is not supported, this method will return <xref:System.Drawing.Design.UITypeEditorEditStyle>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExtensions">
@@ -138,8 +176,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the extensions for the file-list filter that this editor initially uses to filter the file list.</summary>
+        <returns>A set of file extensions used to filter the file list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,9 +195,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the description for the default file-list filter provided by this editor.</summary>
+        <returns>The description for the default file-list filter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The file dialog box description appears in the file-list filter drop-down list box.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetImageExtenders">
@@ -176,9 +221,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an array of supported image types.</summary>
+        <returns>An array of <see cref="T:System.Type" /> representing supported image types.</returns>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Derived classes can override this property to implement a different list of supported image types.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="GetPaintValueSupported">
@@ -197,9 +245,10 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+        <summary>Gets a value indicating whether this editor supports painting a representation of an object's value.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="M:System.Drawing.Design.ImageEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)" /> is implemented; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,9 +268,9 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> that contains the image to load.</param>
+        <summary>Loads an image from the specified stream.</summary>
+        <returns>The <see cref="T:System.Drawing.Image" /> that has been loaded.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,9 +290,16 @@
         <Parameter Name="e" Type="System.Drawing.Design.PaintValueEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Drawing.Design.PaintValueEventArgs" /> indicating what to paint and where to paint it.</param>
+        <summary>Paints a value indicated by the specified <see cref="T:System.Drawing.Design.PaintValueEventArgs" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To display the representation of the value in a typical property sheet format, paint within the boundaries of the <xref:System.Drawing.Rectangle> contained within the specified <xref:System.Drawing.Design.PaintValueEventArgs>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

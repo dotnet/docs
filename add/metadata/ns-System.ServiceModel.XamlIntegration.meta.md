@@ -1,4 +1,4 @@
 ---
 uid: System.ServiceModel.XamlIntegration
-internalonly: False
+manager: "ghogen"
 ---

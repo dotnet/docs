@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode.#ctor(System.String,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode.value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

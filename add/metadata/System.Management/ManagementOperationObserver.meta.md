@@ -1,34 +1,34 @@
 ---
 uid: System.Management.ManagementOperationObserver
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementOperationObserver.#ctor
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementOperationObserver.Progress
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementOperationObserver.ObjectReady
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementOperationObserver.ObjectPut
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementOperationObserver.Cancel
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementOperationObserver.Completed
-internalonly: False
+manager: "jillfra"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides helper methods for configuring the output cache.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,9 @@
         <Parameter Name="response" Type="System.Web.HttpResponse" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="response">The HTTP response.</param>
+        <summary>Creates a cache dependency for the response.</summary>
+        <returns>The dependency.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +53,8 @@
         <Parameter Name="cacheKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="cacheKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cacheKey">A  string that contains the URI to flush.</param>
+        <summary>Flushes the kernel cache for a specific Uniform Resource Identifier (URI).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +74,9 @@
         <Parameter Name="response" Type="System.Web.HttpResponse" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="response">The response.</param>
+        <summary>Gets the response content buffers.</summary>
+        <returns>The buffers.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,9 +96,9 @@
         <Parameter Name="response" Type="System.Web.HttpResponse" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="response">The response.</param>
+        <summary>Gets the cache policy validation callback information.</summary>
+        <returns>The cache policy validation callback information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +119,9 @@
         <Parameter Name="buffers" Type="System.Collections.ArrayList" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <param name="buffers">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="response">The HTTP response.</param>
+        <param name="buffers">The buffers.</param>
+        <summary>Sets the content buffers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,10 +142,10 @@
         <Parameter Name="response" Type="System.Web.HttpResponse" />
       </Parameters>
       <Docs>
-        <param name="originalCacheUrl">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="originalCacheUrl">The original cache URL.</param>
+        <param name="response">The HTTP response.</param>
+        <summary>Gets the kernel cache key.</summary>
+        <returns>The kernel cache key If the response can be kernel cached;         otherwise <see langword="null" /> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

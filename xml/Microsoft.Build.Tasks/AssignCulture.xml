@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the <c>AssignCulture</c> task. Use the <c>AssignCulture</c> element in your project file to create and execute this task. For usage and parameter information, see [AssignCulture Task](../Topic/AssignCulture%20Task.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.AssignCulture" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +48,18 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a list of <see cref="P:Microsoft.Build.Tasks.AssignCulture.Files" /> with a <c>Culture</c> metadata entry added to each item.</summary>
+        <value>The list of <see cref="P:Microsoft.Build.Tasks.AssignCulture.Files" />, with a <c>Culture</c> metadata entry added to each item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the incoming item from the <xref:Microsoft.Build.Tasks.AssignCulture.Files%2A> property already contains a `Culture` metadata entry, the original metadata entry is used.  
+  
+ The task only assigns a `Culture` metadata entry if the file name contains a valid culture identifier. The culture identifier must be between the last two dots in the filename.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AssignedFilesWithCulture">
@@ -71,8 +80,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a subset of <see cref="P:Microsoft.Build.Tasks.AssignCulture.AssignedFiles" /> that have a <c>Culture</c> metadata entry.</summary>
+        <value>A subset of <see cref="P:Microsoft.Build.Tasks.AssignCulture.AssignedFiles" /> that have a <c>Culture</c> metadata entry.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +103,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a subset of <see cref="P:Microsoft.Build.Tasks.AssignCulture.AssignedFiles" /> that do not have a <c>Culture</c> metadata entry.</summary>
+        <value>A subset of <see cref="P:Microsoft.Build.Tasks.AssignCulture.AssignedFiles" /> that do not have a <c>Culture</c> metadata entry.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +126,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a subset of <see cref="P:Microsoft.Build.Tasks.AssignCulture.AssignedFiles" /> that do not have a <c>Culture</c> metadata entry.</summary>
+        <value>A subset of <see cref="P:Microsoft.Build.Tasks.AssignCulture.AssignedFiles" /> that do not have a <c>Culture</c> metadata entry.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +145,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the <c>AssignCulture</c> task.</summary>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,8 +169,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a list of files with embedded culture names to assign a culture to.</summary>
+        <value>The list of files with embedded culture names to assign a culture to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

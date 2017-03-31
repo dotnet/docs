@@ -22,8 +22,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the basic functionality of a principal object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A principal object represents the security context of the user on whose behalf the code is running, including that user's identity (<xref:System.Security.Principal.IIdentity>) and any roles to which they belong.  
+  
+ All principal objects are required to implement the <xref:System.Security.Principal.IPrincipal> interface. For more information about <xref:System.Security.Principal.IPrincipal> implementations, see the <xref:System.Security.Claims.ClaimsPrincipal> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Identity">
@@ -48,8 +57,8 @@
         <ReturnType>System.Security.Principal.IIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the identity of the current principal.</summary>
+        <value>The <see cref="T:System.Security.Principal.IIdentity" /> object associated with the current principal.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +87,10 @@
         <Parameter Name="role" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="role">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="role">The name of the role for which to check membership.</param>
+        <summary>Determines whether the current principal belongs to the specified role.</summary>
+        <returns>
+          <see langword="true" /> if the current principal is a member of the specified role; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

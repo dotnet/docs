@@ -16,8 +16,53 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a pop-up menu that enables a control to expose functionality that is specific to the context of the control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.ContextMenu> is an <xref:System.Windows.Controls.ItemsControl>, which means it can contain a collection of objects of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.ItemsControl> class.  
+  
+ The properties of the <xref:System.Windows.Controls.ContextMenu> class are used to define the position and behavior of the <xref:System.Windows.Controls.ContextMenu>.  
+  
+ A <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> can have a <xref:System.Windows.Controls.ContextMenu>.  If you assign a <xref:System.Windows.Controls.ContextMenu> to the <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.ContextMenu%2A?displayProperty=fullName> property, the <xref:System.Windows.Controls.ContextMenuService> class handles context menu operations in response to user interaction. Part of the work the <xref:System.Windows.Controls.ContextMenuService> does is opening the <xref:System.Windows.Controls.ContextMenu> when the user clicks the right mouse button over the control.  
+  
+ The following properties are defined by the <xref:System.Windows.Controls.ContextMenu> and <xref:System.Windows.Controls.ContextMenuService> classes.  If any of these properties are set on both <xref:System.Windows.Controls.ContextMenu> and the <xref:System.Windows.Controls.ContextMenuService>, the property value from the <xref:System.Windows.Controls.ContextMenuService> is used.  
+  
+-   <xref:System.Windows.Controls.ContextMenu.Placement%2A>  
+  
+-   <xref:System.Windows.Controls.ContextMenu.PlacementRectangle%2A>  
+  
+-   <xref:System.Windows.Controls.ContextMenu.PlacementTargetProperty>  
+  
+-   <xref:System.Windows.Controls.ContextMenu.HorizontalOffset%2A>  
+  
+-   <xref:System.Windows.Controls.ContextMenu.VerticalOffsetProperty>  
+  
+-   <xref:System.Windows.Controls.ContextMenu.HasDropShadow%2A>  
+  
+ A <xref:System.Windows.Controls.ContextMenu> is automatically placed inside a <xref:System.Windows.Controls.Primitives.Popup> control. This behavior cannot be changed.  
+  
+## Customizing the ContextMenu Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.ContextMenu> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ContextMenu>, see [ContextMenu Styles and Templates](../Topic/ContextMenu%20Styles%20and%20Templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.ContextMenu> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.ContextMenu> that manipulates the text of a <xref:System.Windows.Controls.TextBox>.  The example demonstrates how to subscribe to and handle the events of <xref:System.Windows.Controls.MenuItem> objects in a <xref:System.Windows.Controls.ContextMenu>.  
+  
+ [!code-xml[ContextMenu#Events](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#events)]  
+  
+ [!code-csharp[MenuItemCommandsAndEvents#2](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[MenuItemCommandsAndEvents#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MenuItemCommandsAndEvents/VisualBasic/Window1.xaml.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +76,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ContextMenu" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +93,33 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a particular instance of a <see cref="T:System.Windows.Controls.ContextMenu" /> closes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_Closed"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.RoutedEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example shows how use the <xref:System.Windows.Controls.ContextMenu> events: <xref:System.Windows.Controls.ContextMenu.Opened> and <xref:System.Windows.Controls.ContextMenu.Closed>.  
+  
+ [!code-xml[ContextMenu#ContextMenuEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuevents)]  
+  
+ [!code-csharp[ContextMenu#ContextMenuEventHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml.cs#contextmenueventhandlers)]
+ [!code-vb[ContextMenu#ContextMenuEventHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContextMenu/VisualBasic/Pane1.xaml.vb#contextmenueventhandlers)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClosedEvent">
@@ -65,7 +135,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.ContextMenu.Closed" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +160,28 @@
         <ReturnType>System.Windows.Controls.Primitives.CustomPopupPlacementCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a callback that indicates where a <see cref="T:System.Windows.Controls.ContextMenu" /> should be placed on the screen.</summary>
+        <value>A callback that specifies the location of the <see cref="T:System.Windows.Controls.ContextMenu" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.ContextMenu.Placement%2A> property must be set to <xref:System.Windows.Controls.Primitives.PlacementMode> for the callback delegate to be used.  
+  
+ The <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback> delegate returns an array of possible points that are defined with respect to the <xref:System.Windows.Controls.ContextMenu.PlacementTarget%2A>. When the context menu is displayed, a point is chosen that maximizes the amount of the <xref:System.Windows.Controls.ToolTip> window that is visible.  
+  
+ The behavior is the same as it is for the popup.  For more information, see [How to: Specify a Custom Popup Position](../Topic/How%20to:%20Specify%20a%20Custom%20Popup%20Position.md) and [Popup Placement Sample](http://go.microsoft.com/fwlink/?LinkID=160032).  
+  
+<a name="dependencyPropertyInfo_CustomPopupPlacementCallback"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu.CustomPopupPlacementCallbackProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomPopupPlacementCallbackProperty">
@@ -108,7 +197,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenu.CustomPopupPlacementCallback" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +214,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the control supports scrolling.</summary>
+        <value>Always <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the control has a <xref:System.Windows.Controls.ScrollViewer> in its style and has a custom keyboard scrolling behavior, <xref:System.Windows.Controls.ListBox.HandlesScrolling%2A> should return `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDropShadow">
@@ -143,9 +239,32 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the context menu appears with a dropped shadow.</summary>
+        <value>
+          <see langword="true" /> if the context menu appears with a dropped shadow; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Controls.ContextMenu> opens, the value is set to the value of <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=fullName>. Setting this property to `true` has no effect if the <xref:System.Windows.SystemParameters.DropShadow%2A?displayProperty=fullName> property is `false`.  
+  
+<a name="dependencyPropertyInfo_"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu.HasDropShadowProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.ContextMenu.HasDropShadow%2A> property.  
+  
+ [!code-xml[ContextMenu#ContextMenuProps](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuprops)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDropShadowProperty">
@@ -161,7 +280,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenu.HasDropShadow" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,9 +308,62 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Get or sets the horizontal distance between the target origin and the popup alignment point.</summary>
+        <value>The horizontal distance between the target origin and the popup alignment point. For information about the target origin and popup alignment point, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md). The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can position a <xref:System.Windows.Controls.ContextMenu> by setting the <xref:System.Windows.Controls.ContextMenu.PlacementTarget%2A>, <xref:System.Windows.Controls.ContextMenu.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenu.Placement%2A>, <xref:System.Windows.Controls.ContextMenu.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+  
+<a name="dependencyPropertyInfo_HorizontalOffset"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu.HorizontalOffsetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+<a name="xamlAttributeUsage_HorizontalOffset"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object HorizontalOffset="double"/>  
+- or –  
+<object HorizontalOffset ="qualifiedDouble"/>  
+```  
+  
+<a name="xamlValues_HorizontalOffset"></a>   
+## XAML Values  
+ *double*  
+ <xref:System.Double>  
+  
+ String representation of a <xref:System.Double> value. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings need not explicitly include decimal points. For instance a value of `1` is acceptable.  
+  
+ The same <xref:System.Double> range restrictions as mentioned in the Property Value section apply.  
+  
+ *qualifiedDouble*  
+ A *double* value as described above, followed by one of the following unit declaration strings: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+ **Note** In many cases a double may be set to Auto but a <xref:System.Windows.Controls.ContextMenu> will not appear if the offsets are set to Auto.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.ContextMenu.HorizontalOffset%2A> property to cause a <xref:System.Windows.Controls.ContextMenu> to open at a specified location in relation to its button parent.  
+  
+ [!code-xml[ContextMenu#ContextMenuProps](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuprops)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalOffsetProperty">
@@ -207,7 +379,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenu.HorizontalOffset" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,9 +410,33 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.ContextMenu" /> is visible.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.ContextMenu" /> is visible; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Windows.Controls.ContextMenu.IsOpen%2A> is set to `true`, mouse capture is set to the <xref:System.Windows.Controls.ContextMenu> and its subtree.  
+  
+<a name="dependencyPropertyInfo_IsOpen"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+   
+  
+## Examples  
+ This example shows how to check to determine whether the <xref:System.Windows.Controls.ContextMenu.IsOpen%2A> property is set to `true`.  
+  
+ [!code-csharp[ContextMenu#ContextMenuIsOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml.cs#contextmenuisopen)]
+ [!code-vb[ContextMenu#ContextMenuIsOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContextMenu/VisualBasic/Pane1.xaml.vb#contextmenuisopen)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOpenProperty">
@@ -256,7 +452,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenu.IsOpen" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,8 +472,8 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for the <see cref="E:System.Windows.Controls.ContextMenu.Closed" /> event.</param>
+        <summary>Called when the <see cref="E:System.Windows.Controls.ContextMenu.Closed" /> event occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,8 +491,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates and returns a <see cref="T:System.Windows.Automation.Peers.ContextMenuAutomationPeer" /> object for this <see cref="T:System.Windows.Controls.ContextMenu" />.</summary>
+        <returns>A <see cref="T:System.Windows.Automation.Peers.ContextMenuAutomationPeer" /> object for this <see cref="T:System.Windows.Controls.ContextMenu" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,8 +512,8 @@
         <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for the <see cref="E:System.Windows.UIElement.IsKeyboardFocusWithinChanged" /> event.</param>
+        <summary>Reports that the <see cref="P:System.Windows.UIElement.IsKeyboardFocusWithin" /> property changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,8 +533,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for the <see cref="E:System.Windows.UIElement.KeyDown" /> event.</param>
+        <summary>Called when a <see cref="E:System.Windows.ContentElement.KeyDown" /> event is raised by an object inside the <see cref="T:System.Windows.Controls.ContextMenu" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,8 +554,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for the <see cref="E:System.Windows.UIElement.KeyUp" /> event.</param>
+        <summary>Responds to the <see cref="E:System.Windows.ContentElement.KeyUp" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -379,8 +575,8 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for the <see cref="E:System.Windows.Controls.ContextMenu.Opened" /> event.</param>
+        <summary>Called when the <see cref="E:System.Windows.Controls.ContextMenu.Opened" /> event occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -400,8 +596,8 @@
         <Parameter Name="oldParent" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="oldParent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldParent">The object that the context menu was previously attached to.</param>
+        <summary>Called when a context menu's visual parent changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,8 +614,33 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a particular instance of a context menu opens.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_Opened"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu.OpenedEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.RoutedEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example shows how use the <xref:System.Windows.Controls.ContextMenu> events: <xref:System.Windows.Controls.ContextMenu.Opened> and <xref:System.Windows.Controls.ContextMenu.Closed>.  
+  
+ [!code-xml[ContextMenu#ContextMenuEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuevents)]  
+  
+ [!code-csharp[ContextMenu#ContextMenuEventHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml.cs#contextmenueventhandlers)]
+ [!code-vb[ContextMenu#ContextMenuEventHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContextMenu/VisualBasic/Pane1.xaml.vb#contextmenueventhandlers)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenedEvent">
@@ -435,7 +656,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.ContextMenu.Opened" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -460,9 +681,33 @@
         <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="P:System.Windows.Controls.ContextMenu.Placement" /> property of a <see cref="T:System.Windows.Controls.ContextMenu" />.</summary>
+        <value>One of the <see cref="T:System.Windows.Controls.Primitives.PlacementMode" /> enumeration. The default is <see cref="F:System.Windows.Controls.Primitives.PlacementMode.MousePoint" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Controls.ContextMenu> is assigned to the <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.ContextMenu%2A?displayProperty=fullName> property, the <xref:System.Windows.Controls.ContextMenuService> changes this value of this property when the <xref:System.Windows.Controls.ContextMenu> opens. If the user opens the <xref:System.Windows.Controls.ContextMenu> by using the mouse, <xref:System.Windows.Controls.ContextMenu.Placement%2A> is set to <xref:System.Windows.Controls.Primitives.PlacementMode>.  If the user opens the <xref:System.Windows.Controls.ContextMenu> by using the keyboard, <xref:System.Windows.Controls.ContextMenu.Placement%2A> is set to <xref:System.Windows.Controls.Primitives.PlacementMode>.  If you want to change the position of the <xref:System.Windows.Controls.ContextMenu>, set the <xref:System.Windows.Controls.ContextMenuService.Placement%2A?displayProperty=fullName> property on the <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>.  
+  
+ You can position a <xref:System.Windows.Controls.ContextMenu> by setting the <xref:System.Windows.Controls.ContextMenu.PlacementTarget%2A>, <xref:System.Windows.Controls.ContextMenu.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenu.Placement%2A>, <xref:System.Windows.Controls.ContextMenu.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+  
+<a name="dependencyPropertyInfo_Placement"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu.PlacementProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.ContextMenu.Placement%2A> property and a placement mode to specify where the <xref:System.Windows.Controls.ContextMenu> is placed.  
+  
+ [!code-xml[ContextMenu#ContextMenuPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuplacement)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PlacementProperty">
@@ -478,7 +723,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenu.Placement" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -503,9 +748,31 @@
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the area relative to which the context menu is positioned when it opens.</summary>
+        <value>The area that defines the rectangle that is used to position the context menu. The default is <see cref="P:System.Windows.Rect.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can position a <xref:System.Windows.Controls.ContextMenu> by setting the <xref:System.Windows.Controls.ContextMenu.PlacementTarget%2A>, <xref:System.Windows.Controls.ContextMenu.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenu.Placement%2A>, <xref:System.Windows.Controls.ContextMenu.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+  
+<a name="dependencyPropertyInfo_PlacementRectangle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu.PlacementRectangleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.ContextMenu.PlacementRectangle%2A> property and specify where the <xref:System.Windows.Controls.ContextMenu> is placed.  
+  
+ [!code-xml[ContextMenu#ContextMenuPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuplacement)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PlacementRectangleProperty">
@@ -521,7 +788,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenu.PlacementRectangle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -549,9 +816,35 @@
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.UIElement" /> relative to which the <see cref="T:System.Windows.Controls.ContextMenu" /> is positioned when it opens.</summary>
+        <value>The element relative to which the <see cref="T:System.Windows.Controls.ContextMenu" /> is positioned when it opens. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Controls.ContextMenu> is assigned to the <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.ContextMenu%2A?displayProperty=fullName> property, the <xref:System.Windows.Controls.ContextMenuService> changes this value of this property to the owning <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> when the <xref:System.Windows.Controls.ContextMenu> opens. To use a different <xref:System.Windows.UIElement>, set the <xref:System.Windows.Controls.ContextMenuService.PlacementTarget%2A?displayProperty=fullName> property.  
+  
+<a name="dependencyPropertyInfo_PlacementTarget"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu.PlacementTargetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The target of a <xref:System.Windows.Controls.ContextMenu> is its parent. The following examples show how to use the <xref:System.Windows.Controls.ContextMenu.PlacementTarget%2A> property to find the parent of a <xref:System.Windows.Controls.ContextMenu>.  
+  
+ [!code-csharp[TabControlwithContextMenu#3](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlwithContextMenu/CSharp/Pane1.xaml.cs#3)]
+ [!code-vb[TabControlwithContextMenu#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TabControlwithContextMenu/visualbasic/pane1.xaml.vb#3)]  
+  
+ [!code-csharp[TabControlContextMenu_snip#FromItemContainer](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContextMenu_snip/CSharp/Pane1.xaml.cs#fromitemcontainer)]
+ [!code-vb[TabControlContextMenu_snip#FromItemContainer](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TabControlContextMenu_snip/visualbasic/pane1.xaml.vb#fromitemcontainer)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PlacementTargetProperty">
@@ -567,7 +860,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenu.PlacementTarget" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,10 +881,17 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">Element used to display the specified item.</param>
+        <param name="item">Specified item.</param>
+        <summary>Prepares the specified element to display the specified item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Preparing the element may involve applying styles, setting bindings, and so on.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StaysOpen">
@@ -615,9 +915,31 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.ContextMenu" /> should close automatically.</summary>
+        <value>
+          <see langword="true" /> if the menu should stay open until the <see cref="P:System.Windows.Controls.ContextMenu.IsOpen" /> property changes to <see langword="false" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_StaysOpen"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Controls.ContextMenu.StaysOpen%2A> property to make a context menu that will stay open until an event occurs that changes the <xref:System.Windows.Controls.ContextMenu.IsOpen%2A> property to `false`.  
+  
+ [!code-xml[ContextMenu#ContextMenuEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuevents)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StaysOpenProperty">
@@ -633,7 +955,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenu.StaysOpen" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,9 +983,61 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Get or sets the vertical distance between the target origin and the popup alignment point.</summary>
+        <value>The vertical distance between the target origin and the popup alignment point. For information about the target origin and popup alignment point, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md). The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can position a <xref:System.Windows.Controls.ContextMenu> by setting the <xref:System.Windows.Controls.ContextMenu.PlacementTarget%2A>, <xref:System.Windows.Controls.ContextMenu.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenu.Placement%2A>, <xref:System.Windows.Controls.ContextMenu.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+  
+<a name="dependencyPropertyInfo_VerticalOffset"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu.VerticalOffsetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+<a name="xamlAttributeUsage_VerticalOffset"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object VerticalOffset="double"/>  
+- or –  
+<object VerticalOffset ="qualifiedDouble"/>  
+```  
+  
+<a name="xamlValues_VerticalOffset"></a>   
+## XAML Values  
+ *double*  
+ <xref:System.Double>  
+  
+ String representation of a <xref:System.Double> value. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings need not explicitly include decimal points. For instance, a value of `1` is acceptable. The same <xref:System.Double> range restrictions as mentioned in the Property Value section apply.  
+  
+ *qualifiedDouble*  
+ A *double* value as described above, followed by one of the following unit declaration strings: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+> [!NOTE]
+>  In many cases a double may be set to Auto, but a <xref:System.Windows.Controls.ContextMenu> does not appear if the offsets are set to Auto.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.ContextMenu.VerticalOffset%2A> property to cause a <xref:System.Windows.Controls.ContextMenu> to open at a specified location in relation to its button parent.  
+  
+ [!code-xml[ContextMenu#ContextMenuProps](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuprops)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalOffsetProperty">
@@ -679,7 +1053,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ContextMenu.VerticalOffset" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

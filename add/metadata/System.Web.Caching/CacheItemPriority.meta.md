@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Caching.CacheItemPriority
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

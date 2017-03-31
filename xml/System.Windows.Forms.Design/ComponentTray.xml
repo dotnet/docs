@@ -29,8 +29,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides behavior for the component tray of a designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The component tray represents components that do not otherwise provide a visible surface at design time and provides a way for users to access and set the properties of those components.  
+  
+ Some types of components, such as a <xref:System.Timers.Timer>, may not have a user interface that can be viewed at design time. These components are usually represented by icons that are shown in the component tray.  
+  
+ The component tray is a rectangular region displayed at the bottom of the design view window while in design view mode, once it is active. The component tray becomes active in design view after a component that is displayed in the component tray has been added to or is part of the current document.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,10 +58,17 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="mainDesigner">To be added.</param>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="mainDesigner">The <see cref="T:System.ComponentModel.Design.IDesigner" /> that is the main or document designer for the current project.</param>
+        <param name="serviceProvider">An <see cref="T:System.IServiceProvider" /> that can be used to obtain design-time services.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ComponentTray" /> class using the specified designer and service provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The component tray monitors component additions and removals and displays appropriate user interface objects to represent the components it contains.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddComponent">
@@ -69,8 +87,8 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to add to the tray.</param>
+        <summary>Adds a component to the tray.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +105,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the tray items are automatically aligned.</summary>
+        <value>
+          <see langword="true" /> if the tray items are automatically arranged; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +127,10 @@
         <Parameter Name="tool" Type="System.Drawing.Design.ToolboxItem" />
       </Parameters>
       <Docs>
-        <param name="tool">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="tool">The <see cref="T:System.Drawing.Design.ToolboxItem" /> to test.</param>
+        <summary>Gets a value indicating whether the specified tool can be used to create a new component.</summary>
+        <returns>
+          <see langword="true" /> if the specified tool can be used to create a component; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,10 +150,18 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to test.</param>
+        <summary>Gets a value indicating whether the specified component can be displayed.</summary>
+        <returns>
+          <see langword="true" /> if the component can be displayed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method tests the specified component for the existence of a <xref:System.ComponentModel.DesignTimeVisibleAttribute>, which indicates whether the component has a user interface that can be displayed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ComponentCount">
@@ -149,8 +177,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of components contained in the tray.</summary>
+        <value>The number of components in the tray.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +198,16 @@
         <Parameter Name="tool" Type="System.Drawing.Design.ToolboxItem" />
       </Parameters>
       <Docs>
-        <param name="tool">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="tool">The <see cref="T:System.Drawing.Design.ToolboxItem" /> to create a component from.</param>
+        <summary>Creates a component from the specified toolbox item, adds the component to the current document, and displays a representation for the component in the component tray.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method checks the item for an appropriate <xref:System.ComponentModel.DesignTimeVisibleAttribute> before attempting to create the component and add it to the component tray.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayError">
@@ -191,8 +226,8 @@
         <Parameter Name="e" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The exception about which to display information.</param>
+        <summary>Displays an error message to the user with information about the specified exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,9 +247,25 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Design.ComponentTray" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.Design.ComponentTray> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="GetLocation">
@@ -250,10 +301,17 @@
         <Parameter Name="receiver" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="receiver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="receiver">The <see cref="T:System.ComponentModel.IComponent" /> to retrieve the location of.</param>
+        <summary>Gets the location of the specified component, relative to the upper-left corner of the component tray.</summary>
+        <returns>A <see cref="T:System.Drawing.Point" /> indicating the coordinates of the specified component, or an empty <see cref="T:System.Drawing.Point" /> if the specified component could not be found in the component tray. An empty <see cref="T:System.Drawing.Point" /> has an <see cref="P:System.Drawing.Point.IsEmpty" /> property equal to <see langword="true" /> and typically has <see cref="P:System.Drawing.Point.X" /> and <see cref="P:System.Drawing.Point.Y" /> properties that are each equal to zero.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.Design.ComponentTray.GetLocation%2A> is an accessor method for the location extender property that is added to each component in the component tray.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNextComponent">
@@ -273,10 +331,11 @@
         <Parameter Name="forward" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <param name="forward">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="component">The component from which to start enumerating.</param>
+        <param name="forward">
+          <see langword="true" /> to enumerate forward through the list; otherwise, <see langword="false" /> to enumerate backward.</param>
+        <summary>Similar to <see cref="M:System.Windows.Forms.Control.GetNextControl(System.Windows.Forms.Control,System.Boolean)" />, this method returns the next component in the tray, given a starting component.</summary>
+        <returns>The next component in the component tray, or <see langword="null" />, if the end of the list is encountered (or the beginning, if <paramref name="forward" /> is <see langword="false" />).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,9 +355,9 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceType">The type of the service to retrieve.</param>
+        <summary>Gets the requested service type.</summary>
+        <returns>An instance of the requested service, or <see langword="null" /> if the service could not be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,10 +391,17 @@
         <Parameter Name="receiver" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="receiver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="receiver">The <see cref="T:System.ComponentModel.IComponent" /> that receives the location extender property.</param>
+        <summary>Gets the value of the <see langword="Location" /> extender property.</summary>
+        <returns>A <see cref="T:System.Drawing.Point" /> representing the location of <paramref name="receiver" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Location` extender property is offered to all non-visual components. The returned value takes into account the value of <xref:System.Windows.Forms.ScrollableControl.AutoScrollPosition%2A>. If `receiver` does not have a component view, the returned value is an empty <xref:System.Drawing.Point>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTrayComponent">
@@ -354,9 +420,10 @@
         <Parameter Name="comp" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="comp">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="comp">The component to test for presence in the component tray.</param>
+        <summary>Tests a component for presence in the component tray.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="comp" /> is being shown on the tray; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,8 +443,8 @@
         <Parameter Name="de" Type="System.Windows.Forms.DragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="de">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="de">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
+        <summary>Called when an object that has been dragged is dropped on the component tray.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,8 +464,8 @@
         <Parameter Name="de" Type="System.Windows.Forms.DragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="de">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="de">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
+        <summary>Called when an object is dragged over, and has entered the area over, the component tray.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,8 +485,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An <see cref="T:System.EventArgs" /> that provides data for the event.</param>
+        <summary>Called when an object is dragged out of the area over the component tray.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -439,8 +506,8 @@
         <Parameter Name="de" Type="System.Windows.Forms.DragEventArgs" />
       </Parameters>
       <Docs>
-        <param name="de">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="de">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
+        <summary>Called when an object is dragged over the component tray.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -460,9 +527,12 @@
         <Parameter Name="gfevent" Type="System.Windows.Forms.GiveFeedbackEventArgs" />
       </Parameters>
       <Docs>
-        <param name="gfevent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="gfevent">A <see cref="T:System.Windows.Forms.GiveFeedbackEventArgs" /> that provides data for the event.</param>
+        <summary>Called during an OLE drag and drop operation to provide an opportunity for the component tray to give feedback to the user about the results of dropping the object at a specific point.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.Design.ComponentTray.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Design.ComponentTray.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -481,8 +551,8 @@
         <Parameter Name="levent" Type="System.Windows.Forms.LayoutEventArgs" />
       </Parameters>
       <Docs>
-        <param name="levent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="levent">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,7 +570,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when a mouse drag selection operation is canceled.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,8 +590,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An <see cref="T:System.EventArgs" /> that provides data for the event.</param>
+        <summary>Called when the mouse is double clicked over the component tray.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,9 +611,12 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that provides data for the event.</param>
+        <summary>Called when the mouse button is pressed.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -562,9 +635,12 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that provides data for the event.</param>
+        <summary>Called when the mouse cursor position has changed.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -583,9 +659,12 @@
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that provides data for the event.</param>
+        <summary>Called when the mouse button has been released.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -604,8 +683,8 @@
         <Parameter Name="pe" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="pe">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pe">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that provides data for the event.</param>
+        <summary>Called when the view for the component tray should be refreshed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -623,8 +702,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called to set the mouse cursor.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>You can override this method to set your own mouse cursor.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="RemoveComponent">
@@ -643,8 +725,8 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to remove from the tray.</param>
+        <summary>Removes the specified component from the tray.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -665,9 +747,9 @@
         <Parameter Name="location" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="receiver">To be added.</param>
-        <param name="location">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="receiver">The <see cref="T:System.ComponentModel.IComponent" /> to set the location of.</param>
+        <param name="location">A <see cref="T:System.Drawing.Point" /> indicating the new location for the specified component.</param>
+        <summary>Sets the location of the specified component to the specified location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -688,10 +770,17 @@
         <Parameter Name="location" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="receiver">To be added.</param>
-        <param name="location">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="receiver">The <see cref="T:System.ComponentModel.IComponent" /> that receives the location extender property.</param>
+        <param name="location">A <see cref="T:System.Drawing.Point" /> representing the location of <c>receiver</c>.</param>
+        <summary>Sets the value of the <see langword="Location" /> extender property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Location` extender property is offered to all non-visual components. The actual value takes into account the value of <xref:System.Windows.Forms.ScrollableControl.AutoScrollPosition%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowLargeIcons">
@@ -707,8 +796,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the tray displays a large icon to represent each component in the tray.</summary>
+        <value>
+          <see langword="true" /> if large icons are displayed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -728,10 +818,18 @@
         <Parameter Name="component" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="component">The <see cref="T:System.Object" /> to receive the extender properties.</param>
+        <summary>For a description of this member, see <see cref="M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)" />.</summary>
+        <returns>
+          <see langword="true" /> if this object can provide extender properties to the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.Design.ComponentTray> instance is cast to an <xref:System.ComponentModel.IExtenderProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -750,8 +848,8 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="m">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="m">The <see cref="T:System.Windows.Forms.Message" /> to process.</param>
+        <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

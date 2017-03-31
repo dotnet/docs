@@ -19,8 +19,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a group of methods that classes can use to create a type provider for an activity or workflow designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetLocalAssembly">
@@ -39,10 +48,17 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The <see cref="T:System.Object" /> for which to obtain the local assembly.</param>
+        <summary>Returns the local assembly associated with the specified object.</summary>
+        <returns>The <see cref="T:System.Reflection.Assembly" /> associated with <paramref name="obj" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GetLocalAssembly provides the assembly returned by the <xref:System.Workflow.ComponentModel.Compiler.ITypeProvider.LocalAssembly%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTransientAssembly">
@@ -61,9 +77,9 @@
         <Parameter Name="assemblyName" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemblyName">The <see cref="T:System.Reflection.AssemblyName" /> for which to retrieve the transient assembly.</param>
+        <summary>Returns the transient assembly associated with the specified assembly name.</summary>
+        <returns>The transient <see cref="T:System.Reflection.Assembly" /> associated with <paramref name="assemblyName" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,9 +99,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Object" /> for which to return the type provider.</param>
+        <summary>Returns the type provider associated with the specified object.</summary>
+        <returns>An <see cref="T:System.Workflow.ComponentModel.Compiler.ITypeProvider" /> to perform type provider tasks for <paramref name="obj" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,9 +121,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Object" /> for which to retrieve the type resolution service.</param>
+        <summary>Returns a service that can retrieve an assembly or type by name for the specified object.</summary>
+        <returns>The <see cref="T:System.ComponentModel.Design.ITypeResolutionService" /> to use to retrieve an assembly or type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

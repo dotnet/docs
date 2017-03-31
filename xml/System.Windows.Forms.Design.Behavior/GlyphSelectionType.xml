@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the designer selection state of a <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.Design.Behavior.GlyphSelectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is not selected.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.Design.Behavior.GlyphSelectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is selected.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectedPrimary">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.Design.Behavior.GlyphSelectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is the primary selection.</summary>
       </Docs>
     </Member>
   </Members>

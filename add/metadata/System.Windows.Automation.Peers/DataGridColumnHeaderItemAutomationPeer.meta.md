@@ -1,74 +1,97 @@
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanResize
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System#Windows#Automation#Provider#IVirtualizedItemProvider#Realize
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.GetClassNameCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System#Windows#Automation#Provider#IScrollItemProvider#ScrollIntoView
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanMove
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System#Windows#Automation#Provider#IInvokeProvider#Invoke
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.#ctor(System.Object,System.Windows.Controls.DataGridColumn,System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#Resize(System.Double,System.Double)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.IsContentElementCore
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#Rotate(System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.GetAutomationControlTypeCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#Move(System.Double,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanRotate
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---

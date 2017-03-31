@@ -1,4 +1,4 @@
 ---
 uid: System.Windows.Xps.XpsDocumentNotificationLevel
-internalonly: False
+manager: "leannef"
 ---

@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Processes ASP.NET Dynamic Data route patterns.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicDataRouteHandler" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,12 +52,19 @@
         <Parameter Name="action" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="route">To be added.</param>
-        <param name="table">To be added.</param>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="route">The matched route.</param>
+        <param name="table">The metadata table that is contained in the route.</param>
+        <param name="action">The action that is contained in the route.</param>
+        <summary>Creates a handler to process a request.</summary>
+        <returns>The handler that can process a request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ .  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomPageVirtualPath">
@@ -77,10 +84,10 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="table">To be added.</param>
-        <param name="viewName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="table">The data-model metadata table that the page is for.</param>
+        <param name="viewName">The name of the view action, which is the page name without the ".aspx" file-name extension.</param>
+        <summary>Creates the virtual path of a custom page.</summary>
+        <returns>The virtual path of the custom page.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,10 +107,19 @@
         <Parameter Name="httpContext" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="httpContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="httpContext">The context information that is associated with the Web request.</param>
+        <summary>Returns the <see cref="T:System.Web.Routing.RequestContext" /> instance for the current Web request.</summary>
+        <returns>The request context for the Web request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new context is created if it is required. This can occur if the current request is not a Dynamic Data request.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="httpContext" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRequestMetaTable">
@@ -122,10 +138,12 @@
         <Parameter Name="httpContext" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="httpContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="httpContext">The context information that is associated with the Web request.</param>
+        <summary>Returns a <see cref="T:System.Web.DynamicData.MetaTable" /> object from the <see cref="T:System.Web.HttpContext" /> object.</summary>
+        <returns>The data-model metadata table that is associated with the current Web request, or <see langword="null" /> if the request is not a Dynamic Data request</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="httpContext" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetScaffoldPageVirtualPath">
@@ -145,10 +163,10 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="table">To be added.</param>
-        <param name="viewName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="table">The metadata table that the page is for.</param>
+        <param name="viewName">The name of the view action, which is the page name without the ".aspx" file-name extension.</param>
+        <summary>Returns the virtual path of a page that is enabled for Dynamic Data.</summary>
+        <returns>The virtual path of the page.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,8 +183,8 @@
         <ReturnType>System.Web.DynamicData.MetaModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Web.DynamicData.MetaModel" /> object that the <see cref="T:System.Web.DynamicData.DynamicDataRouteHandler" /> class is associated with.</summary>
+        <value>The data model that the <see cref="T:System.Web.DynamicData.DynamicDataRouteHandler" /> class is associated with.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,10 +205,17 @@
         <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" />
       </Parameters>
       <Docs>
-        <param name="httpContext">To be added.</param>
-        <param name="table">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="httpContext">The context information that is associated with the Web request.</param>
+        <param name="table">The metatable that is associated with the current request.</param>
+        <summary>Sets the <see cref="T:System.Web.DynamicData.MetaTable" /> object that is associated with the current <see cref="T:System.Web.HttpRequest" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpRequest> object can be `null` for non-Dynamic Data requests.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.Routing.IRouteHandler.GetHttpHandler">
@@ -209,10 +234,17 @@
         <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="requestContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="requestContext">The context information that is associated with the Web request.</param>
+        <summary>Returns the handler that processes ASP.NET Dynamic Data route patterns.</summary>
+        <returns>The handler that processes ASP.NET Dynamic Data route patterns.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method implements the <xref:System.Web.Routing.IRouteHandler.GetHttpHandler%2A> interface method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

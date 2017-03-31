@@ -19,8 +19,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a declaration for an instance constructor of a type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeConstructor> can be used to represent a declaration of an instance constructor for a type. Use <xref:System.CodeDom.CodeTypeConstructor> to declare a static constructor for a type.  
+  
+ If the constructor calls a base class constructor, set the constructor arguments for the base class constructor in the <xref:System.CodeDom.CodeConstructor.BaseConstructorArgs%2A> property. If the constructor overloads another constuctor for the type, set the constructor arguments to pass to the overloaded type constructor in the <xref:System.CodeDom.CodeConstructor.ChainedConstructorArgs%2A> property.  
+  
+   
+  
+## Examples  
+ This example demonstrates using a <xref:System.CodeDom.CodeConstructor> to declare several types of constructors.  
+  
+ [!code-cpp[CodeConstructorExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeConstructorExample/CPP/codeconstructorexample.cpp#2)]
+ [!code-csharp[CodeConstructorExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeConstructorExample/CS/codeconstructorexample.cs#2)]
+ [!code-vb[CodeConstructorExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeConstructorExample/VB/codeconstructorexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeConstructor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +69,16 @@
         <ReturnType>System.CodeDom.CodeExpressionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of base constructor arguments.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpressionCollection" /> that contains the base constructor arguments.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.CodeDom.CodeConstructor> overloads a base class constructor, this collection contains any arguments to pass to a base class constructor. To call a base class constructor with no arguments, set a <xref:System.CodeDom.CodeSnippetExpression> containing an empty string ("") to this collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChainedConstructorArgs">
@@ -69,9 +94,16 @@
         <ReturnType>System.CodeDom.CodeExpressionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of chained constructor arguments.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpressionCollection" /> that contains the chained constructor arguments.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.CodeDom.CodeConstructor> overloads another constructor of the same type, this collection contains any arguments to pass to the overloaded type constructor. To call a constructor for the current type with no arguments, set a <xref:System.CodeDom.CodeSnippetExpression> containing an empty string ("") to this collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

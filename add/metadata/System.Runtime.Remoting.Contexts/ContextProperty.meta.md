@@ -1,14 +1,14 @@
 ---
 uid: System.Runtime.Remoting.Contexts.ContextProperty
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.ContextProperty.Name
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.ContextProperty.Property
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,29 +1,47 @@
 ---
 uid: System.Net.Http.MultipartFormDataContent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.MultipartFormDataContent.#ctor(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent,System.String)
-internalonly: False
----
-
----
-uid: System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.MultipartFormDataContent.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.MultipartFormDataContent.Add
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.MultipartFormDataContent.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent,System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

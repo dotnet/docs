@@ -1,1 +1,0 @@
-      Return DateTime.Compare(first.UtcDateTime, second.UtcDateTime)

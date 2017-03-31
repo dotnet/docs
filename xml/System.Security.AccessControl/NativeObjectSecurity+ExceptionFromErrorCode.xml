@@ -24,12 +24,12 @@
     <ReturnType>System.Exception</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="errorCode">To be added.</param>
-    <param name="name">To be added.</param>
-    <param name="handle">To be added.</param>
-    <param name="context">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
+    <param name="errorCode">The numeric error code.</param>
+    <param name="name">The name of the securable object with which the <see cref="T:System.Security.AccessControl.NativeObjectSecurity" /> object is associated.</param>
+    <param name="handle">The handle of the securable object with which the <see cref="T:System.Security.AccessControl.NativeObjectSecurity" /> object is associated.</param>
+    <param name="context">An object that contains contextual information about the source or destination of the exception.</param>
+    <summary>Provides a way for integrators to map numeric error codes to specific exceptions that they create.</summary>
+    <returns>The <see cref="T:System.Exception" /> this delegate creates.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

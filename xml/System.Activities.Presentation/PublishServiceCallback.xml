@@ -16,9 +16,9 @@
     <ReturnType>System.Object</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="serviceType">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
+    <param name="serviceType">The type of the service to publish.</param>
+    <summary>A delegate that references a method that publishes an instance of a service.</summary>
+    <returns>An instance of the published service.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents data returned from calling the <see cref="M:System.Windows.Documents.AdornerLayer.AdornerHitTest(System.Windows.Point)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In addition to the visual and point information provided by the base class <xref:System.Windows.Media.PointHitTestResult>, this class uses the value of the <xref:System.Windows.Media.AdornerHitTestResult.Adorner%2A?displayProperty=fullName> property to return the <xref:System.Windows.Documents.Adorner> that was hit (since there may be multiple Visuals in a single <xref:System.Windows.Documents.Adorner>).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Adorner">
@@ -28,9 +35,16 @@
         <ReturnType>System.Windows.Documents.Adorner</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the visual that was hit.</summary>
+        <value>The visual that was hit.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There may be multiple visuals in a single <xref:System.Windows.Documents.Adorner>. This property returns the visual that was actually hit.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

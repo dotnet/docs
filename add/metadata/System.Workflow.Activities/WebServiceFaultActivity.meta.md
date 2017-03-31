@@ -1,44 +1,69 @@
 ---
 uid: System.Workflow.Activities.WebServiceFaultActivity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.WebServiceFaultActivity.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.WebServiceFaultActivity.SendingFaultEvent
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.WebServiceFaultActivity.FaultProperty
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.WebServiceFaultActivity.InputActivityName
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.WebServiceFaultActivity.SendingFault
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.WebServiceFaultActivity.InputActivityNameProperty
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.WebServiceFaultActivity.Fault
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.WebServiceFaultActivity.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.WebServiceFaultActivity.FaultProperty
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.WebServiceFaultActivity.InputActivityName
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.WebServiceFaultActivity.SendingFault
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.WebServiceFaultActivity.InputActivityNameProperty
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.WebServiceFaultActivity.Fault
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.WebServiceFaultActivity.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

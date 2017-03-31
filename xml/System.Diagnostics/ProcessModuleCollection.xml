@@ -22,8 +22,15 @@
   <Interfaces>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a strongly typed collection of <see cref="T:System.Diagnostics.ProcessModule" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A module is an executable file or a dynamic link library (DLL). Each process consists of one or more modules. You can use this class to iterate over a collection of process modules on the system. A module is identified by its module name and fully qualified file path.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,7 +53,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.ProcessModuleCollection" /> class, with no associated <see cref="T:System.Diagnostics.ProcessModule" /> instances.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +79,8 @@
         <Parameter Name="processModules" Type="System.Diagnostics.ProcessModule[]" />
       </Parameters>
       <Docs>
-        <param name="processModules">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="processModules">An array of <see cref="T:System.Diagnostics.ProcessModule" /> instances with which to initialize this <see cref="T:System.Diagnostics.ProcessModuleCollection" /> instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.ProcessModuleCollection" /> class, using the specified array of <see cref="T:System.Diagnostics.ProcessModule" /> instances.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,10 +320,18 @@
         <Parameter Name="module" Type="System.Diagnostics.ProcessModule" />
       </Parameters>
       <Docs>
-        <param name="module">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="module">A <see cref="T:System.Diagnostics.ProcessModule" /> instance that indicates the module to find in this collection.</param>
+        <summary>Determines whether the specified process module exists in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the module exists in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A module is identified by its module name and its fully qualified file path.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertAll&lt;TOutput&gt;">
@@ -402,9 +417,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">An array of <see cref="T:System.Diagnostics.ProcessModule" /> instances to add to the collection.</param>
+        <param name="index">The location at which to add the new instances.</param>
+        <summary>Copies an array of <see cref="T:System.Diagnostics.ProcessModule" /> instances to the collection, at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -839,9 +854,9 @@
         <Parameter Name="module" Type="System.Diagnostics.ProcessModule" />
       </Parameters>
       <Docs>
-        <param name="module">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="module">The <see cref="T:System.Diagnostics.ProcessModule" /> whose index is retrieved.</param>
+        <summary>Provides the location of a specified module within the collection.</summary>
+        <returns>The zero-based index that defines the location of the module within the <see cref="T:System.Diagnostics.ProcessModuleCollection" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -986,9 +1001,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index value of the module in the collection.</param>
+        <summary>Gets an index for iterating over the set of process modules.</summary>
+        <value>A <see cref="T:System.Diagnostics.ProcessModule" /> that indexes the modules in the collection</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

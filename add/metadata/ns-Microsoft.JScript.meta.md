@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.JScript
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

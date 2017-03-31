@@ -1,4 +1,4 @@
 ---
 uid: System.Web.WebSockets
-internalonly: False
+manager: "wpickett"
 ---

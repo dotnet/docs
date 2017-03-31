@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the duration that a SOAP redirection is in effect.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,10 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="duration">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="duration">The redirection duration.</param>
+        <param name="ns">The redirection namespace.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> instance with the specified duration and namespace.</summary>
+        <returns>A redirection duration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,9 +55,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare to the current <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> instance.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> instance.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current <see cref="T:System.ServiceModel.Channels.RedirectionDuration" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +76,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +94,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the namespace of the <see cref="T:System.ServiceModel.Channels.RedirectionDuration" />.</summary>
+        <value>The namespace of the redirection duration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,10 +116,11 @@
         <Parameter Name="right" Type="System.ServiceModel.Channels.RedirectionDuration" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">A <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> instance.</param>
+        <param name="right">A <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> instance.</param>
+        <summary>Returns a value that indicates whether two instances of the <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> types are equal.</summary>
+        <returns>
+          <see langword="true" /> if the values of <paramref name="left" /> and <paramref name="right" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,10 +141,11 @@
         <Parameter Name="right" Type="System.ServiceModel.Channels.RedirectionDuration" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">A <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> instance.</param>
+        <param name="right">A <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> instance.</param>
+        <summary>Returns a value that indicates whether two instances of the <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> types are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the values of <paramref name="left" /> and <paramref name="right" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,9 +162,16 @@
         <ReturnType>System.ServiceModel.Channels.RedirectionDuration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> that represents a permanent redirection.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> that contains a value that represents a permanent redirection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A permanent redirection duration indicates the new location(s) specified should be used permanently for the given scope.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Temporary">
@@ -177,9 +187,16 @@
         <ReturnType>System.ServiceModel.Channels.RedirectionDuration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> that represents a temporary redirection.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> that contains a value that represents a temporary redirection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A temporary redirection duration indicates the new location(s) that are valid for a limited time frame for the given scope. This is the default value for <xref:System.ServiceModel.Channels.RedirectionDuration>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -196,8 +213,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts the current <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> to its equivalent string representation.</summary>
+        <returns>A string representation of the value of the current <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,8 +231,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the <see cref="T:System.ServiceModel.Channels.RedirectionDuration" /> instance.</summary>
+        <value>The value of the redirection duration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

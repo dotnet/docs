@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the size of the rendered text. This class cannot be inherited. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.FontSize> enumeration is a subset of <xref:System.Web.UI.WebControls.FontSize?displayProperty=fullName>, and represents the size of a font in a container. For example, if you have a <xref:System.Web.UI.MobileControls.List> control inside of a <xref:System.Web.UI.MobileControls.Panel> control, with the <xref:System.Web.UI.MobileControls.Panel> control's font size set to Normal, you can specify a small font size for the <xref:System.Web.UI.MobileControls.List> control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Large">
@@ -32,7 +39,7 @@
         <ReturnType>System.Web.UI.MobileControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Font is larger than <see langword="Normal" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -48,7 +55,7 @@
         <ReturnType>System.Web.UI.MobileControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default font size. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -64,7 +71,7 @@
         <ReturnType>System.Web.UI.MobileControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default value. If the value is <see cref="F:System.Web.UI.MobileControls.FontSize.NotSet" />, then the font's size is inherited from the control's style, or, if the style is not defined, from the control's parent control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
     </Member>
     <Member MemberName="Small">
@@ -80,7 +87,7 @@
         <ReturnType>System.Web.UI.MobileControls.FontSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Font is smaller than <see langword="Normal" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
     </Member>
   </Members>

@@ -18,8 +18,39 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of temporary files.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.Compiler.TempFileCollection> can be used to generate unique file names and to keep track of a list of files. This can be useful to <xref:System.CodeDom.Compiler.ICodeCompiler> implementers when managing a list of compiler-generated intermediate files, which are sometimes deleted after use.  
+  
+ To specify a directory to generate unique temporary file names in, use an appropriately overloaded constructor. You can also use a constructor overload to indicate whether files added to the collection should, if not specified otherwise when using the <xref:System.CodeDom.Compiler.TempFileCollection.AddFile%2A> or <xref:System.CodeDom.Compiler.TempFileCollection.AddExtension%2A> methods, be deleted when the collection is disposed or the <xref:System.CodeDom.Compiler.TempFileCollection.Delete%2A> method is called.  
+  
+ A file in any directory can be added to an instance of <xref:System.CodeDom.Compiler.TempFileCollection> using the <xref:System.CodeDom.Compiler.TempFileCollection.AddFile%2A> method.  
+  
+ To generate a unique name for a temporary file of a particular file extension, call <xref:System.CodeDom.Compiler.TempFileCollection.AddExtension%2A> and specifiy the extension of the file name to generate. The <xref:System.CodeDom.Compiler.TempFileCollection.AddExtension%2A> method will return a string consisting of a full path to a file name of the specified extension in the directory specified by the <xref:System.CodeDom.Compiler.TempFileCollection.TempDir%2A> property. The <xref:System.CodeDom.Compiler.TempFileCollection.AddExtension%2A> method will only return one unique file name per file name extension.  
+  
+ Both the <xref:System.CodeDom.Compiler.TempFileCollection.AddFile%2A> and <xref:System.CodeDom.Compiler.TempFileCollection.AddExtension%2A> methods have overloads that allow you to specify whether the files should be deleted when the collection is disposed or the <xref:System.CodeDom.Compiler.TempFileCollection.Delete%2A> method is called.  
+  
+ The <xref:System.CodeDom.Compiler.TempFileCollection.Delete%2A> method will delete all the files in the collection except those that are marked to be kept.  
+  
+ The <xref:System.CodeDom.Compiler.TempFileCollection.BasePath%2A> property indicates a full path to the base file name, without a file name extension, used to generate the file names returned by the <xref:System.CodeDom.Compiler.TempFileCollection.AddExtension%2A> method.  
+  
+> [!NOTE]
+>  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+  
+   
+  
+## Examples  
+ The following example shows the use of the <xref:System.CodeDom.Compiler.TempFileCollection> class and the <xref:System.CodeDom.Compiler.TempFileCollection.AddExtension%2A> and <xref:System.CodeDom.Compiler.TempFileCollection.AddFile%2A> methods.  
+  
+ [!code-csharp[System.CodeDom.Compiler.TempFileCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.Compiler.TempFileCollection/CS/program.cs#1)]
+ [!code-vb[System.CodeDom.Compiler.TempFileCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.Compiler.TempFileCollection/VB/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for deriving from the <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> class. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />;<see cref="T:System.Security.PermissionSet" />: <see langword="FullTrust" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +64,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> class with default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a default constructor that initializes the collection with default settings. By default, this temporary files collection will store the files in a default temporary directory and will delete the temporary files after they have been generated and used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -50,9 +88,10 @@
         <Parameter Name="tempDir" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tempDir">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="tempDir">A path to the temporary directory to use for storing the temporary files.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> class using the specified temporary directory that is set to delete the temporary files after their generation and use, by default.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -69,10 +108,19 @@
         <Parameter Name="keepFiles" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="tempDir">To be added.</param>
-        <param name="keepFiles">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="tempDir">A path to the temporary directory to use for storing the temporary files.</param>
+        <param name="keepFiles">
+          <see langword="true" /> if the temporary files should be kept after use; <see langword="false" /> if the temporary files should be deleted.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> class using the specified temporary directory and specified value indicating whether to keep or delete the temporary files after their generation and use, by default.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of `keepFiles` is used to set the <xref:System.CodeDom.Compiler.TempFileCollection.KeepFiles%2A> parameter. The temporary files in the collection are retained or deleted upon the completion of compiler activity based on the value of the <xref:System.CodeDom.Compiler.TempFileCollection.KeepFiles%2A> property in the collection. As each file is added to the collection, the current value of <xref:System.CodeDom.Compiler.TempFileCollection.KeepFiles%2A> is associated with it, unless it is added with a method that has a `keepFile` parameter, in which case that value is used for that specific file. When the <xref:System.CodeDom.Compiler.TempFileCollection.Delete%2A> method is called, if <xref:System.CodeDom.Compiler.TempFileCollection.KeepFiles%2A> is `true`, all files are deleted, including those added with a <xref:System.CodeDom.Compiler.TempFileCollection.KeepFiles%2A> value of `true`. This allows specific files, those identified as being keep files, to be temporarily retained after compilation for purposes such as error reporting, then deleted when they are no longer needed.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
     <Member MemberName="AddExtension">
@@ -91,10 +139,19 @@
         <Parameter Name="fileExtension" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileExtension">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="fileExtension">The file name extension for the auto-generated temporary file name to add to the collection.</param>
+        <summary>Adds a file name with the specified file name extension to the collection.</summary>
+        <returns>A file name with the specified extension that was just added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a file name with the specified extension that has been added to the temporary files collection. Other code must still create the file before it can be used.  
+  
+ This method can be called only once for each file name extension, because it will return the same name if it is called with the same extension.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddExtension">
@@ -114,11 +171,23 @@
         <Parameter Name="keepFile" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="fileExtension">To be added.</param>
-        <param name="keepFile">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="fileExtension">The file name extension for the auto-generated temporary file name to add to the collection.</param>
+        <param name="keepFile">
+          <see langword="true" /> if the file should be kept after use; <see langword="false" /> if the file should be deleted.</param>
+        <summary>Adds a file name with the specified file name extension to the collection, using the specified value indicating whether the file should be deleted or retained.</summary>
+        <returns>A file name with the specified extension that was just added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a file name with the specified extension that has been added to the temporary files collection. Other code must still create the file before it can be used.  
+  
+ This method can be called only once for each file name extension, because it will return the same name if it is called with the same extension.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="fileExtension" /> is <see langword="null" /> or an empty string.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddFile">
@@ -138,10 +207,27 @@
         <Parameter Name="keepFile" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="keepFile">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fileName">The name of the file to add to the collection.</param>
+        <param name="keepFile">
+          <see langword="true" /> if the file should be kept after use; <see langword="false" /> if the file should be deleted.</param>
+        <summary>Adds the specified file to the collection, using the specified value indicating whether to keep the file after the collection is disposed or when the <see cref="M:System.CodeDom.Compiler.TempFileCollection.Delete" /> method is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the use of the <xref:System.CodeDom.Compiler.TempFileCollection.AddFile%28System.String%2CSystem.Boolean%29> method to add a file that is to be kept to the collection. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.TempFileCollection> class.  
+  
+ [!code-csharp[System.CodeDom.Compiler.TempFileCollection#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CodeDom.Compiler.TempFileCollection/CS/program.cs#2)]
+ [!code-vb[System.CodeDom.Compiler.TempFileCollection#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CodeDom.Compiler.TempFileCollection/VB/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="fileName" /> is <see langword="null" /> or an empty string.  
+  
+ -or-  
+  
+ <paramref name="fileName" /> is a duplicate.</exception>
       </Docs>
     </Member>
     <Member MemberName="BasePath">
@@ -157,9 +243,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the full path to the base file name, without a file name extension, on the temporary directory path, that is used to generate temporary file names for the collection.</summary>
+        <value>The full path to the base file name, without a file name extension, on the temporary directory path, that is used to generate temporary file names for the collection.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">If the <see cref="P:System.CodeDom.Compiler.TempFileCollection.BasePath" /> property has not been set or is set to <see langword="null" />, and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.AllAccess" /> is not granted for the temporary directory indicated by the <see cref="P:System.CodeDom.Compiler.TempFileCollection.TempDir" /> property.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -179,9 +266,9 @@
         <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="fileNames">To be added.</param>
-        <param name="start">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileNames">The array of strings to copy to.</param>
+        <param name="start">The index of the array to begin copying to.</param>
+        <summary>Copies the members of the collection to the specified string, beginning at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +285,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of files in the collection.</summary>
+        <value>The number of files in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,8 +304,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Deletes the temporary files within this collection that were not marked to be kept.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.CodeDom.Compiler.TempFileCollection.Delete%2A> method examines each file in the collection to determine, on an individual basis, whether the file is to be kept or deleted. Files can be explicitly marked to be kept when added to the collection using add methods that take a `keepFile` parameter. When adding a file to the collection using the <xref:System.CodeDom.Compiler.TempFileCollection.AddExtension%2A> overload that does not have a `keepFile` parameter the value of the <xref:System.CodeDom.Compiler.TempFileCollection.KeepFiles%2A> property is used as the default keep file indicator.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -237,9 +331,25 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.CodeDom.Compiler.TempFileCollection> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -256,8 +366,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Attempts to delete the temporary files before this object is reclaimed by garbage collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Object.Finalize%2A?displayProperty=fullName> and cleans up resources by calling `Dispose(false)`. Override `Dispose(Boolean)` to customize the cleanup.  
+  
+ Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method.  
+  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -274,8 +395,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an enumerator that can enumerate the members of the collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that contains the collection's members.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,9 +413,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether to keep the files, by default, when the <see cref="M:System.CodeDom.Compiler.TempFileCollection.Delete" /> method is called or the collection is disposed.</summary>
+        <value>
+          <see langword="true" /> if the files should be kept; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.CodeDom.Compiler.TempFileCollection.KeepFiles%2A> property is used as the default value when the <xref:System.CodeDom.Compiler.TempFileCollection.AddExtension%2A> overload that does not have a `keepFile` parameter is called to add a temporary file to the collection. Each temporary file in the collection has an associated keep file flag that determines, on a per-file basis, whether that file is to be kept or deleted. Files are automatically kept or deleted on completion of the compilation based on their associated keep files value. However, after compilation is complete, files that were kept can be released by setting <xref:System.CodeDom.Compiler.TempFileCollection.KeepFiles%2A> false and calling the <xref:System.CodeDom.Compiler.TempFileCollection.Delete%2A> method.  This will result in all files being deleted.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -314,10 +443,17 @@
         <Parameter Name="start" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="start">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="start">The zero-based index in array at which copying begins.</param>
+        <summary>Copies the elements of the collection to an array, starting at the specified index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.TempFileCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -333,9 +469,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of elements contained in the collection.</summary>
+        <value>The number of elements contained in the <see cref="T:System.Collections.ICollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.TempFileCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -351,9 +494,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.TempFileCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -369,9 +520,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.TempFileCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -388,9 +546,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.TempFileCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -407,8 +572,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.CodeDom.Compiler.TempFileCollection> instance is cast to an <xref:System.IDisposable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TempDir">
@@ -424,8 +596,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the temporary directory to store the temporary files in.</summary>
+        <value>The temporary directory to store the temporary files in.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

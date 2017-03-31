@@ -1,49 +1,63 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartGraphics
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartGraphics.GetRelativeRectangle(System.Drawing.RectangleF)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartGraphics.Graphics
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint(System.Drawing.PointF)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartGraphics.Dispose(System.Boolean)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartGraphics.GetRelativeSize(System.Drawing.SizeF)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.ChartGraphics.Dispose
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartGraphics.GetRelativePoint(System.Drawing.PointF)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsoluteRectangle(System.Drawing.RectangleF)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsoluteSize(System.Drawing.SizeF)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartGraphics.GetPositionFromAxis(System.String,System.Web.UI.DataVisualization.Charting.AxisName,System.Double)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

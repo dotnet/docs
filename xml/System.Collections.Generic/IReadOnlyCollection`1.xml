@@ -31,8 +31,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the elements.</typeparam>
+    <summary>Represents a strongly-typed, read-only collection of elements.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -61,8 +61,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements in the collection.</summary>
+        <value>The number of elements in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -32,8 +32,42 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Holds the list of items that constitute the content of an <see cref="T:System.Windows.Controls.ItemsControl" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.ItemCollection> maintains a collection of items such as strings, objects, [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] nodes, elements, and other collections. An <xref:System.Windows.Controls.ItemsControl> uses the data in the <xref:System.Windows.Controls.ItemCollection> to generate its content. If you want to aggregate more than one collection, assign a <xref:System.Windows.Data.CompositeCollection> to the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property of your <xref:System.Windows.Controls.ItemsControl>.  
+  
+ Use either the <xref:System.Windows.Controls.ItemsControl.Items%2A> property or the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to specify the collection that should be used to generate the content of your <xref:System.Windows.Controls.ItemsControl>. When the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is set, the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection will be made read-only and fixed-size. This means that if you are using the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property, you cannot add, delete, or change items in the <xref:System.Windows.Controls.ItemCollection> directly.  
+  
+ <xref:System.Windows.Controls.ItemCollection> is a <xref:System.Windows.Data.CollectionView> and therefore provides collection view functionalities, such as sorting, grouping, and filtering. For more information, see <xref:System.Windows.Controls.ItemCollection.SortDescriptions%2A>, <xref:System.Windows.Controls.ItemCollection.Filter%2A>, and <xref:System.Windows.Controls.ItemCollection.GroupDescriptions%2A>.  
+  
+ For more information about collection views, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+  
+   
+  
+## Examples  
+ If you have an <xref:System.Windows.Controls.ItemsControl>, such as a <xref:System.Windows.Controls.ListBox> that has content, you can use the <xref:System.Windows.Controls.ItemsControl.Items%2A> property to access the <xref:System.Windows.Controls.ItemCollection>, which is a view. Because it is a view, you can then use the view-related functionalities such as sorting, filtering, and grouping. Note that when ItemsSource is set, the view operations delegate to the view over the ItemsSource collection. Therefore, the ItemCollection supports sorting, filtering, and grouping only if the delegated view supported them.  
+  
+ The following example shows how to sort the content of a <xref:System.Windows.Controls.ListBox> named `myListBox`. In this example, `Content` is the name of the property to sort by.  
+  
+ [!code-csharp[ListBoxSort_snip#Sort](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxSort_snip/CSharp/Window1.xaml.cs#sort)]
+ [!code-vb[ListBoxSort_snip#Sort](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxSort_snip/visualbasic/window1.xaml.vb#sort)]  
+  
+ When you do this, the view might or might not be the default view, depending on how the data is set up on your <xref:System.Windows.Controls.ItemsControl>. For example, when the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is bound to a <xref:System.Windows.Data.CollectionViewSource>, the view that you obtain using the <xref:System.Windows.Controls.ItemsControl.Items%2A> property is not the default view.  
+  
+ If your <xref:System.Windows.Controls.ItemsControl> is bound (you are using the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property), then you can do the following to get the default view:  
+  
+ [!code-csharp[GroupingSample#MyView](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml.cs#myview)]
+ [!code-vb[GroupingSample#MyView](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GroupingSample/visualbasic/window1.xaml.vb#myview)]  
+[!code-csharp[GroupingSample#GetView](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml.cs#getview)]
+[!code-vb[GroupingSample#GetView](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GroupingSample/visualbasic/window1.xaml.vb#getview)]  
+  
+ Alternately, you can specify filtering, sorting, and grouping criteria in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] using <xref:System.Windows.Data.CollectionViewSource>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -52,10 +86,11 @@
         <Parameter Name="newItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="newItem">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="newItem">The item to add to the collection.</param>
+        <summary>Adds an item to the <see cref="T:System.Windows.Controls.ItemCollection" />.</summary>
+        <returns>The zero-based index at which the object is added or -1 if the item cannot be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The collection is in ItemsSource mode.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanChangeLiveFiltering">
@@ -71,8 +106,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the collection view supports turning filtering data in real time on or off.</summary>
+        <value>
+          <see langword="true" /> if the collection view supports turning live filtering on or off; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +125,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the collection view supports turning grouping data in real time on or off.</summary>
+        <value>
+          <see langword="true" /> if the collection view supports turning live grouping on or off; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +144,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the collection view supports turning sorting data in real time on or off.</summary>
+        <value>
+          <see langword="true" /> if the collection view supports turning live sorting on or off; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +163,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this collection view supports filtering.</summary>
+        <value>
+          <see langword="true" /> if this view supports filtering; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to check whether this collection supports filtering before assigning a filter callback to the <xref:System.Windows.Controls.ItemCollection.Filter%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanGroup">
@@ -143,9 +189,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this collection view supports grouping.</summary>
+        <value>
+          <see langword="true" /> if the collection supports grouping; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to test whether the current implementation supports grouping before using the <xref:System.Windows.Controls.ItemCollection.GroupDescriptions%2A> property to add <xref:System.ComponentModel.GroupDescription> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanSort">
@@ -161,9 +215,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this collection view supports sorting.</summary>
+        <value>
+          <see langword="true" /> if this view support sorting; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to check whether this collection supports sorting before using the <xref:System.Windows.Controls.ItemCollection.SortDescriptions%2A> property to add <xref:System.ComponentModel.SortDescription> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -180,8 +242,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears the collection and releases the references on all items currently in the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method. In the example, `sbar` is a <xref:System.Windows.Controls.Primitives.StatusBar> control, which is an <xref:System.Windows.Controls.ItemsControl>.  
+  
+ [!code-csharp[StatusBar#MakeProgressBar](~/samples/snippets/csharp/VS_Snippets_Wpf/StatusBar/CSharp/Window1.xaml.cs#makeprogressbar)]
+ [!code-vb[StatusBar#MakeProgressBar](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StatusBar/visualbasic/window1.xaml.vb#makeprogressbar)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.ItemCollection" /> is in <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> mode. (When the <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> property is set, the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection will be made read-only and fixed-size.)</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -200,9 +273,10 @@
         <Parameter Name="containItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="containItem">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="containItem">The object to check.</param>
+        <summary>Returns a value that indicates whether the specified item is in this view.</summary>
+        <returns>
+          <see langword="true" /> to indicate that the item belongs to this collection and passes the active filter; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,10 +297,13 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The destination array to copy to.</param>
+        <param name="index">The zero-based index in the destination array.</param>
+        <summary>Copies the elements of the collection to an array, starting at a particular array index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The destination <paramref name="array" /> is multidimensional.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -242,8 +319,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of records in the collection.</summary>
+        <value>The number of items in the collection or 0 if the collection is uninitialized or if there is no collection in the <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> mode.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,8 +337,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current item in the view.</summary>
+        <value>The current object in the view or <see langword="null" /> if the collection is uninitialized or if there is no collection in the <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> mode.  
+  
+ By default, the first item of the collection starts as the current item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,8 +357,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ordinal position of the current item within the view.</summary>
+        <value>The ordinal position of the current item within the view or -1 if the collection is uninitialized or if there is no collection in the <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> mode.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,9 +376,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Enters a defer cycle that you can use to merge changes to the view and delay automatic refresh.</summary>
+        <returns>An <see cref="T:System.IDisposable" /> object that you can use to dispose of the calling object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is typically used to create a `using` scope and then place multiple view-changing calls within the scope. This delays automatic refresh until the defer cycle is exited.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -315,9 +401,22 @@
         <ReturnType>System.Predicate&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a callback used to determine if an item is suitable for inclusion in the view.</summary>
+        <value>A method used to determine if an item is suitable for inclusion in the view.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Controls.ItemCollection.CanFilter%2A> property to test whether the current implementation supports filtering before assigning this property with a non-null value.  
+  
+   
+  
+## Examples  
+ For a related example, see [How to: Filter Data in a View](../Topic/How%20to:%20Filter%20Data%20in%20a%20View.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Filtering is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -355,10 +454,20 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which the item is located.</param>
+        <summary>Returns the item at the specified zero-based index in this view.</summary>
+        <returns>The item at the specified zero-based index in this view.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method evaluates the index with any sorting, filtering, or grouping criteria that are set on the view using the <xref:System.Windows.Data.CollectionView.SortDescriptions%2A> or <xref:System.Windows.Data.CollectionView.Filter%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is out of range.</exception>
+        <exception cref="T:System.InvalidOperationException">The collection is uninitialized or the binding on <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> supplied a <see langword="null" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="GroupDescriptions">
@@ -374,9 +483,24 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.ComponentModel.GroupDescription&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see cref="T:System.ComponentModel.GroupDescription" /> objects that defines how to group the items.</summary>
+        <value>An <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> of <see cref="T:System.ComponentModel.GroupDescription" /> objects. The collection is indexed by the group levels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Controls.ItemCollection.CanGroup%2A> property to test whether the current implementation supports grouping before adding <xref:System.ComponentModel.GroupDescription> objects.  
+  
+> [!NOTE]
+>  This property can be set only by accessing the collection object and using its various methods, such as `Add`. The property to access the collection object is read-only, while the collection itself is read-write.  
+  
+   
+  
+## Examples  
+ For a related example, see <xref:System.Windows.Data.PropertyGroupDescription>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Groups">
@@ -392,8 +516,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the top-level groups that are constructed according to the <see cref="P:System.Windows.Controls.ItemCollection.GroupDescriptions" />.</summary>
+        <value>The top-level groups that are constructed according to the <see cref="P:System.Windows.Controls.ItemCollection.GroupDescriptions" />. The default value is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,9 +537,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The object to look for in the collection.</param>
+        <summary>Returns the index in this collection where the specified item is located.</summary>
+        <returns>The index of the item in the collection, or -1 if the item does not exist in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,10 +560,19 @@
         <Parameter Name="insertItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="insertIndex">To be added.</param>
-        <param name="insertItem">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="insertIndex">The zero-based index at which to insert the item.</param>
+        <param name="insertItem">The item to insert.</param>
+        <summary>Inserts an element into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All items after the specified position are moved down by one.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The collection is in ItemsSource mode.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The index is out of range.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsCurrentAfterLast">
@@ -455,8 +588,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the current item of the view is beyond the end of the collection.</summary>
+        <value>
+          <see langword="true" /> if the current item of the view is beyond the end of the collection; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,8 +607,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the current item of the view is beyond the beginning of the collection.</summary>
+        <value>
+          <see langword="true" /> if the current item of the view is beyond the beginning of the collection; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,8 +626,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the resulting (filtered) view is empty.</summary>
+        <value>
+          <see langword="true" /> if the resulting view is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -509,8 +645,9 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether filtering data in real time is enabled.</summary>
+        <value>
+          <see langword="true" /> if filtering data in real time is enabled; <see langword="false" /> if live filtering is not enabled; <see langword="null" /> if it cannot be determined whether the collection view implements live filtering.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,8 +664,9 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether grouping data in real time is enabled.</summary>
+        <value>
+          <see langword="true" /> if grouping data in real time is enabled; <see langword="false" /> if live grouping is not enabled; <see langword="null" /> if it cannot be determined whether the collection view implements live grouping.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -545,8 +683,9 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether sorting in real time is enabled.</summary>
+        <value>
+          <see langword="true" /> if sorting data in real time is enabled; <see langword="false" /> if live sorting is not enabled; <see langword="null" /> if it cannot be determined whether the collection view implements live sorting.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -566,10 +705,12 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the item.</param>
+        <summary>Gets or sets the item at the given zero-based index.</summary>
+        <value>The object retrieved or the object that is being set to the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The collection is uninitialized, or the item to set already has a different logical parent, or the collection is in <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> mode.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The index is out of range.</exception>
       </Docs>
     </Member>
     <Member MemberName="LiveFilteringProperties">
@@ -585,8 +726,8 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of strings that specify the properties that participate in filtering data in real time.</summary>
+        <value>A collection of strings that specify the properties that participate in filtering data in real time.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -603,8 +744,8 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of strings that specify the properties that participate in grouping data in real time.</summary>
+        <value>A collection of strings that specify the properties that participate in grouping data in real time.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -621,8 +762,8 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of strings that specify the properties that participate in sorting data in real time.</summary>
+        <value>A collection of strings that specify the properties that participate in sorting data in real time.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -642,9 +783,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to set as the <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" />.</param>
+        <summary>Sets the specified item in the collection as the <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" />.</summary>
+        <returns>
+          <see langword="true" /> to indicate that the resulting <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -662,8 +804,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sets the first item in the view as the <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" />.</summary>
+        <returns>
+          <see langword="true" /> to indicate that the resulting <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -681,8 +824,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sets the last item in the view as the <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" />.</summary>
+        <returns>
+          <see langword="true" /> to indicate that the resulting <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -700,8 +844,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sets the item after the <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> in the view as the <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" />.</summary>
+        <returns>
+          <see langword="true" /> to indicate that the resulting <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -721,9 +866,10 @@
         <Parameter Name="position" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="position">The zero-based index of the item to set as the <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" />.</param>
+        <summary>Sets the item at the specified index to be the <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> in the view.</summary>
+        <returns>
+          <see langword="true" /> to indicate that the resulting <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -741,8 +887,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sets the item before the <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> in the view as the <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" />.</summary>
+        <returns>
+          <see langword="true" /> to indicate that the resulting <see cref="P:System.Windows.Controls.ItemCollection.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -759,8 +906,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the collection needs to be refreshed.</summary>
+        <value>
+          <see langword="true" /> if the collection needs to be refreshed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -780,10 +928,18 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="item">The object to test.</param>
+        <summary>Returns a value that indicates whether the specified item belongs to this view.</summary>
+        <returns>
+          <see langword="true" /> to indicate that the specified item belongs to this view or there is no filter set on this collection view; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is typically used during collection-changed notifications to determine if the specified item belongs to this view.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshOverride">
@@ -820,9 +976,17 @@
         <Parameter Name="removeItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="removeItem">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="removeItem">The object to remove.</param>
+        <summary>Removes the specified item reference from the collection or view.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an item is removed from the collection, any remaining items with higher index values decrement their index by one as the size of the collection collapses.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.ItemCollection" /> is read-only because it is in <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> mode or if DeferRefresh is in effect.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -841,9 +1005,18 @@
         <Parameter Name="removeIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="removeIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="removeIndex">The zero-based index of the item to remove.</param>
+        <summary>Removes the item at the specified index of the collection or view.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an item is removed from the collection, any remaining items with higher index values decrement their index by one as the size of the collection collapses.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.ItemCollection" /> is read-only because it is in <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> mode or if DeferRefresh is in effect.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The index is out of range.</exception>
       </Docs>
     </Member>
     <Member MemberName="SortDescriptions">
@@ -859,9 +1032,19 @@
         <ReturnType>System.ComponentModel.SortDescriptionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see cref="T:System.ComponentModel.SortDescription" /> objects that describe how the items in the collection are sorted in the view.</summary>
+        <value>A collection of <see cref="T:System.ComponentModel.SortDescription" /> objects that describe how the items in the collection are sorted in the view.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Controls.ItemCollection.CanSort%2A> property to test whether the current implementation supports sorting before adding <xref:System.ComponentModel.SortDescription> objects to the <xref:System.ComponentModel.SortDescriptionCollection>.  
+  
+> [!NOTE]
+>  This property can be set only by accessing the collection object and using its various methods, such as `Add`. The property to access the collection object is read-only, while the collection itself is read-write.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceCollection">
@@ -877,8 +1060,8 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unsorted and unfiltered collection that underlies this collection view.</summary>
+        <value>An <see cref="T:System.Collections.IEnumerable" /> object that is the underlying collection or the user-provided <see cref="P:System.Windows.Controls.ItemsControl.ItemsSource" /> collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -895,8 +1078,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -913,8 +1097,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -931,8 +1115,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -949,8 +1134,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> is read only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -968,9 +1154,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Adds a new item to the collection.</summary>
+        <returns>The new item that is added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.CanAddNew">
@@ -986,9 +1179,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether a new item can be added to the collection.</summary>
+        <value>
+          <see langword="true" /> if a new item can be added to the collection; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.CanCancelEdit">
@@ -1004,9 +1205,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the collection view can discard pending changes and restore the original values of an edited object.</summary>
+        <value>
+          <see langword="true" /> if the collection view can discard pending changes and restore the original values of an edited object; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.CancelEdit">
@@ -1023,8 +1232,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Ends the edit transaction and, if possible, restores the original value to the item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.CancelNew">
@@ -1041,8 +1257,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Ends the add transaction and discards the pending new item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.CanRemove">
@@ -1058,9 +1281,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether an item can be removed from the collection.</summary>
+        <value>
+          <see langword="true" /> if an item can be removed from the collection; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.CommitEdit">
@@ -1077,8 +1308,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Ends the edit transaction and saves the pending changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.CommitNew">
@@ -1095,8 +1333,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Ends the add transaction and saves the pending new item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.CurrentAddItem">
@@ -1112,9 +1357,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the item that is being added during the current add transaction.</summary>
+        <value>The item that is being added if <see cref="P:System.ComponentModel.IEditableCollectionView.IsAddingNew" /> is <see langword="true" />; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.CurrentEditItem">
@@ -1130,9 +1382,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the item in the collection that is being edited.</summary>
+        <value>The item in the collection that is being edited if <see cref="P:System.ComponentModel.IEditableCollectionView.IsEditingItem" /> is <see langword="true" />; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.EditItem">
@@ -1151,9 +1410,16 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The item to edit.</param>
+        <summary>Begins an edit transaction of the specified item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.IsAddingNew">
@@ -1169,9 +1435,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether an add transaction is in progress.</summary>
+        <value>
+          <see langword="true" /> if an add transaction is in progress; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.IsEditingItem">
@@ -1187,9 +1461,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether an edit transaction is in progress.</summary>
+        <value>
+          <see langword="true" /> if an edit transaction is in progress; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition">
@@ -1205,9 +1487,16 @@
         <ReturnType>System.ComponentModel.NewItemPlaceholderPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the position of the new item placeholder in the collection view.</summary>
+        <value>One of the enumeration values that specifies the position of the new item placeholder in the collection view.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.Remove">
@@ -1226,9 +1515,16 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The item to remove.</param>
+        <summary>Removes the specified item from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionView.RemoveAt">
@@ -1247,9 +1543,16 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The position of the item to remove.</param>
+        <summary>Removes the item at the specified position from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionView> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionViewAddNewItem.AddNewItem">
@@ -1268,10 +1571,17 @@
         <Parameter Name="newItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="newItem">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="newItem">The object to add to the collection.</param>
+        <summary>Adds the specified object to the collection.</summary>
+        <returns>The object that was added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionViewAddNewItem> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IEditableCollectionViewAddNewItem.CanAddNewItem">
@@ -1287,9 +1597,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether a specified object can be added to the collection.</summary>
+        <value>
+          <see langword="true" /> if a specified object can be added to the collection; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IEditableCollectionViewAddNewItem> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IItemProperties.ItemProperties">
@@ -1305,9 +1623,16 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.ItemPropertyInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection that contains information about the properties that are available on the items in a collection.</summary>
+        <value>A collection that contains information about the properties that are available on the items in a collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.ComponentModel.IItemProperties> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.IWeakEventListener.ReceiveWeakEvent">
@@ -1328,12 +1653,20 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="managerType">To be added.</param>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="managerType">The type of the <see cref="T:System.Windows.WeakEventManager" /> calling this method.</param>
+        <param name="sender">Object that originated the event.</param>
+        <param name="e">Event data.</param>
+        <summary>Receives events from the centralized event manager.</summary>
+        <returns>
+          <see langword="true" /> if the listener handled the event; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.ItemCollection> instance is cast to an <xref:System.Windows.IWeakEventListener> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

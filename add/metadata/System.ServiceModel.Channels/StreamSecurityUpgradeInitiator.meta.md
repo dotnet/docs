@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Channels.StreamSecurityUpgradeInitiator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.StreamSecurityUpgradeInitiator.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.StreamSecurityUpgradeInitiator.GetRemoteSecurity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

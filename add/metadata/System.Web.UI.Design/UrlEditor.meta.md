@@ -1,34 +1,49 @@
 ---
 uid: System.Web.UI.Design.UrlEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UrlEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UrlEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UrlEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UrlEditor.Caption
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.UrlEditor.GetEditStyle
 ---
 
 ---
 uid: System.Web.UI.Design.UrlEditor.Filter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.UrlEditor.EditValue
 ---
 
 ---
 uid: System.Web.UI.Design.UrlEditor.Options
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

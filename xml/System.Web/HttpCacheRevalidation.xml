@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides enumerated values that are used to set revalidation-specific <see langword="Cache-Control" /> HTTP headers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpCacheRevalidation> enumeration is used to set revalidation-specific HTTP headers, and is set using the <xref:System.Web.HttpCachePolicy.SetRevalidation%2A> method. If the <xref:System.Web.HttpCachePolicy.SetRevalidation%2A> method is not called, no `Cache-Control` HTTP header is set.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllCaches">
@@ -27,7 +34,7 @@
         <ReturnType>System.Web.HttpCacheRevalidation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the HTTP header to <see langword="Cache-Control: must-revalidate" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +50,7 @@
         <ReturnType>System.Web.HttpCacheRevalidation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>If this value is set, no cache-revalidation directive is sent. The default value.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProxyCaches">
@@ -59,7 +66,7 @@
         <ReturnType>System.Web.HttpCacheRevalidation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the HTTP header to <see langword="Cache-Control: proxy-revalidate" />.</summary>
       </Docs>
     </Member>
   </Members>

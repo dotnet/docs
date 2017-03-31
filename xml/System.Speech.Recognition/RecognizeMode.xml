@@ -10,8 +10,58 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enumerates values of the recognition mode.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used as an argument to <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%28System.Speech.Recognition.RecognizeMode%29>.  
+  
+   
+  
+## Examples  
+ The following example shows the implementation of a start/stop button for an application that has a graphical user interface and uses <xref:System.Speech.Recognition.SpeechRecognitionEngine>. Depending on the state of the application, <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%28System.Speech.Recognition.RecognizeMode%29> is called with either Single or Multiple when the button is clicked.  
+  
+```  
+private void _startRecogButton_Click(object sender, EventArgs eventArgs)   
+{  
+  
+  // Toggle speech recognition on.  
+  if (_startRecogButton.Text == "Start Speech Recognition")   
+  {       
+    _startRecogButton.Text = "Stop Speech Recognition";  
+    if (_useMultiple)   
+    {  
+      _recognitionEngine.RecognizeAsync(RecognizeMode.Multiple);  
+    }   
+    else   
+    {  
+      _recognitionEngine.RecognizeAsync(RecognizeMode.Single);  
+    }  
+  }  
+  
+  // Toggle speech recognition off.   
+  else   
+  {                                                        
+    _startRecogButton.Text = "Start Speech Recognition";  
+  
+    // Stop after current phrase is finished.  
+    if (_friendlyStop)   
+    {       
+      _recognitionEngine.RecognizeAsyncStop();   
+    }  
+  
+    // Stop before current phrase is finished.  
+    else   
+    {        
+      _recognitionEngine.RecognizeAsyncCancel();   
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Multiple">
@@ -27,7 +77,7 @@
         <ReturnType>System.Speech.Recognition.RecognizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that recognition does not terminate after completion.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -43,7 +93,7 @@
         <ReturnType>System.Speech.Recognition.RecognizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that recognition terminates after completion.</summary>
       </Docs>
     </Member>
   </Members>

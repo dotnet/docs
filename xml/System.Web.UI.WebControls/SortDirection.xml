@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the direction in which to sort a list of items.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SortDirection> enumeration is used to represent the direction in which items are sorted. It is commonly used by properties (such as the <xref:System.Web.UI.WebControls.GridView.SortDirection%2A> property of the <xref:System.Web.UI.WebControls.GridView> class) to indicate the order in which items are displayed in a control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.SortDirection> enumeration to determine the direction in which the <xref:System.Web.UI.WebControls.GridView> control is displaying its items. The <xref:System.Web.UI.WebControls.GridView.SortDirection%2A> property of the <xref:System.Web.UI.WebControls.GridView> control is tested for its value to determine the sort direction.  
+  
+ [!code-csharp[SortDirection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SortDirection/CS/sortdirectioncs.aspx#1)]
+ [!code-vb[SortDirection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SortDirection/VB/sortdirectionvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ascending">
@@ -27,7 +42,7 @@
         <ReturnType>System.Web.UI.WebControls.SortDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sort from smallest to largest. For example, from A to Z.</summary>
       </Docs>
     </Member>
     <Member MemberName="Descending">
@@ -43,7 +58,7 @@
         <ReturnType>System.Web.UI.WebControls.SortDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sort from largest to smallest. For example, from Z to A.</summary>
       </Docs>
     </Member>
   </Members>

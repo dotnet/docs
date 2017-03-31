@@ -1,4 +1,6 @@
 ---
 uid: System.CrossAppDomainDelegate
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,1 +1,0 @@
-        My.Computer.Registry.PerformanceData.GetValue("MyCompany\ThisSoftware")

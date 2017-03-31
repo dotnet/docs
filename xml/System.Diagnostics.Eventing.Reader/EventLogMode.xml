@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Determines the behavior for the event log service handles an event log when the log reaches its maximum allowed size (when the event log is full).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.EventLogMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Archive the log when full, do not overwrite events. The log is automatically archived when necessary. No events are overwritten.</summary>
       </Docs>
     </Member>
     <Member MemberName="Circular">
@@ -43,7 +43,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.EventLogMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>New events continue to be stored when the log file is full. Each new incoming event replaces the oldest event in the log.</summary>
       </Docs>
     </Member>
     <Member MemberName="Retain">
@@ -59,7 +59,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.EventLogMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not overwrite events. Clear the log manually rather than automatically.</summary>
       </Docs>
     </Member>
   </Members>

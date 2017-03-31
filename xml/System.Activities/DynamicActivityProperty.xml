@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a property of a  <see cref="T:System.Activities.DynamicActivity" /> that is created at runtime and executes in the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.DynamicActivityProperty" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Attribute&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the attributes of the <see cref="T:System.Activities.DynamicActivityProperty" /> object.</summary>
+        <value>A collection of attributes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the <see cref="T:System.Activities.DynamicActivityProperty" /> object.</summary>
+        <value>The property name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string message that contains the type and the name of the <see cref="T:System.Activities.DynamicActivityProperty" /> instance.</summary>
+        <returns>A string message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +108,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of the <see cref="T:System.Activities.DynamicActivityProperty" /> object.</summary>
+        <value>An object of type <see cref="T:System.Type" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +131,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the <see cref="T:System.Activities.DynamicActivityProperty" /> object.</summary>
+        <value>An object of type <see cref="T:System.Object" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

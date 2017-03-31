@@ -27,9 +27,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TKey">To be added.</typeparam>
-    <typeparam name="TValue">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TKey">The type of the key component of an element in the controlled sequence.</typeparam>
+    <typeparam name="TValue">The type of the value component of an element in the controlled sequence.</typeparam>
+    <summary>Supports simple iteration over any STL/CLR object that implements the <see cref="T:Microsoft.VisualC.StlClr.ITree`2" /> interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,8 +46,8 @@
         <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.INode&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_First">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_First">The first node in the container over which to iterate.</param>
+        <summary>Allocates and initializes a new <see cref="T:Microsoft.VisualC.StlClr.TreeEnumeratorBase`2" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the current element in the collection.</summary>
+        <value>The current element in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +83,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Advances the enumerator to the next element in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +103,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the enumerator to its initial position, which is before the first element in the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

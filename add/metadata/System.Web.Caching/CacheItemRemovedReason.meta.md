@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Caching.CacheItemRemovedReason
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

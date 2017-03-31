@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Navigation.IProvideCustomContentState
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Navigation.IProvideCustomContentState.GetContentState
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

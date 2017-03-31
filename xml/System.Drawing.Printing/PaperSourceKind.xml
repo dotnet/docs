@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Standard paper sources.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Drawing.Printing.PaperSource.Kind%2A?displayProperty=fullName> property.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AutomaticFeed">
@@ -27,7 +36,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Automatically fed paper.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cassette">
@@ -43,7 +52,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A paper cassette.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -59,7 +68,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A printer-specific paper source.</summary>
       </Docs>
     </Member>
     <Member MemberName="Envelope">
@@ -75,7 +84,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An envelope.</summary>
       </Docs>
     </Member>
     <Member MemberName="FormSource">
@@ -91,7 +100,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer's default input bin.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeCapacity">
@@ -107,7 +116,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer's large-capacity bin.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeFormat">
@@ -123,7 +132,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Large-format paper.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lower">
@@ -139,7 +148,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The lower bin of a printer.</summary>
       </Docs>
     </Member>
     <Member MemberName="Manual">
@@ -155,7 +164,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Manually fed paper.</summary>
       </Docs>
     </Member>
     <Member MemberName="ManualFeed">
@@ -171,7 +180,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Manually fed envelope.</summary>
       </Docs>
     </Member>
     <Member MemberName="Middle">
@@ -187,7 +196,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The middle bin of a printer.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallFormat">
@@ -203,7 +212,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Small-format paper.</summary>
       </Docs>
     </Member>
     <Member MemberName="TractorFeed">
@@ -219,7 +228,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A tractor feed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Upper">
@@ -235,7 +244,7 @@
         <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The upper bin of a printer (or the default bin, if the printer only has one bin).</summary>
       </Docs>
     </Member>
   </Members>

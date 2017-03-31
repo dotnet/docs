@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies value types for various chart properties.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Property type is set automatically by the Chart control.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Date portion of a <see cref="T:System.DateTime" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.DateTime" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTimeOffset">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.DateTime" /> value with offset.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -91,7 +91,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.Double" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int32">
@@ -107,7 +107,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.Int32" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int64">
@@ -123,7 +123,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.Int64" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -139,7 +139,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.Single" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -155,7 +155,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.String" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -171,7 +171,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Time portion of the <see cref="T:System.DateTime" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt32">
@@ -187,7 +187,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.UInt32" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt64">
@@ -203,7 +203,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="T:System.UInt64" /> value.</summary>
       </Docs>
     </Member>
   </Members>

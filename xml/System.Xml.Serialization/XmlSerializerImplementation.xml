@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the reader, writer, and methods for pre-generated, typed serializers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To improve the performance of XML serialization, you can generate assemblies before serialization using the [XML Serializer Generator Tool (Sgen.exe)](../Topic/XML%20Serializer%20Generator%20Tool%20\(Sgen.exe\).md). When such an assembly is loaded, the <xref:System.Xml.Serialization.XmlSerializer> uses the properties of the <xref:System.Xml.Serialization.XmlSerializerImplementation> interface to query the contained serializer or serializers.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializerImplementation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +68,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The <see cref="T:System.Type" /> to be serialized.</param>
+        <summary>Gets a value that determines whether a type can be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the type can be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,9 +96,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The <see cref="T:System.Type" /> to be serialized.</param>
+        <summary>Returns a serializer for the specified type.</summary>
+        <returns>An instance of a type derived from the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +120,8 @@
         <ReturnType>System.Xml.Serialization.XmlSerializationReader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the XML reader object that is used by the serializer.</summary>
+        <value>An <see cref="T:System.Xml.Serialization.XmlSerializationReader" /> that is used to read an XML document or data stream.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +143,8 @@
         <ReturnType>System.Collections.Hashtable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of methods that is used to read a data stream.</summary>
+        <value>A <see cref="T:System.Collections.Hashtable" /> that contains the methods.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,8 +166,8 @@
         <ReturnType>System.Collections.Hashtable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of typed serializers that is found in the assembly.</summary>
+        <value>A <see cref="T:System.Collections.Hashtable" /> that contains the typed serializers.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,8 +189,8 @@
         <ReturnType>System.Collections.Hashtable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Get the collection of methods that is used to write to a data stream.</summary>
+        <value>A <see cref="T:System.Collections.Hashtable" /> that contains the methods.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +212,8 @@
         <ReturnType>System.Xml.Serialization.XmlSerializationWriter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the XML writer object for the serializer.</summary>
+        <value>An <see cref="T:System.Xml.Serialization.XmlSerializationWriter" /> that is used to write to an XML data stream or document.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,69 +1,83 @@
 ---
 uid: System.Net.WebRequestMethods.Ftp
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.Rename
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.GetFileSize
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.ListDirectoryDetails
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.DeleteFile
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.GetDateTimestamp
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.PrintWorkingDirectory
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.UploadFileWithUniqueName
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.UploadFile
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.AppendFile
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.ListDirectory
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.MakeDirectory
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.DownloadFile
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Ftp.RemoveDirectory
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

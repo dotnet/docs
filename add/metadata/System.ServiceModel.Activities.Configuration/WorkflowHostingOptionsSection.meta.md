@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection.OverrideSiteName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

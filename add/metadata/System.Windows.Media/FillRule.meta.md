@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Media.FillRule
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

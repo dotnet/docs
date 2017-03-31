@@ -20,8 +20,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> of type <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBinding" />. This class may not be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,9 +46,11 @@
         <Parameter Name="ownerActivity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="ownerActivity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ownerActivity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> that own this instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBindingCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="ownerActivity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="ClearItems">
@@ -76,9 +87,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key to match for this retrieval.</param>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBinding" /> from the collection having the specified key.</summary>
+        <returns>The <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBinding" /> from the collection having the specified key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

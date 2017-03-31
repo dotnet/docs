@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Configuration.IdentityConfigurationElementCollection
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.IdentityConfigurationElementCollection.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.IdentityConfigurationElementCollection.GetElement(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

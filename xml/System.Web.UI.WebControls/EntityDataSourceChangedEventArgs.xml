@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.EntityDataSource.Inserted" />, <see cref="E:System.Web.UI.WebControls.EntityDataSource.Updated" />, and <see cref="E:System.Web.UI.WebControls.EntityDataSource.Deleted" /> events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Data.Objects.ObjectContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Objects.ObjectContext" /> used by the data source.</summary>
+        <value>The context used by the data source.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the object that was added, modified, or updated.</summary>
+        <value>An <see cref="T:System.Object" /> that is the entity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the exception that was thrown during the insert, update, or delete operation.</summary>
+        <value>The exception, if an error occurred; otherwise, <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the exception was handled and that it should not be thrown again.</summary>
+        <value>
+          <see langword="true" /> if the exception was handled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

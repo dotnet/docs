@@ -9,8 +9,34 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a message inspector object that can be added to the <see cref="P:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors" /> collection to view or modify messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector> interface and add it to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> collection to inspect or modify messages as they pass through a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object. For details, see <xref:System.ServiceModel.Dispatcher.ClientRuntime>.  
+  
+   
+  
+## Examples  
+ The following code example shows an implementation that writes strings to the console when the implementation is called.  
+  
+ [!code-csharp[Interceptors#1](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#1)]
+ [!code-vb[Interceptors#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#1)]  
+  
+ The following code example shows how to use an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> to insert the client message inspector in the client endpoint.  
+  
+ [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
+ [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
+  
+ Finally, the following code example shows how to modify the client configuration file to use the endpoint behavior with a particular endpoint.  
+  
+ [!code[Interceptors#3](~/samples/snippets/common/VS_Snippets_CFX/interceptors/common/client.exe.config#3)]
+ [!code-csharp[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]
+ [!code-vb[Interceptors#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/client.exe.config#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AfterReceiveReply">
@@ -31,10 +57,38 @@
         <Parameter Name="correlationState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="reply">To be added.</param>
-        <param name="correlationState">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="reply">The message to be transformed into types and handed back to the client application.</param>
+        <param name="correlationState">Correlation state data.</param>
+        <summary>Enables inspection or modification of a message after a reply message is received but prior to passing it back to the client application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement <xref:System.ServiceModel.Dispatcher.IClientMessageInspector.AfterReceiveReply%2A> to inspect or modify a reply message after it has been received by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object but before it is deserialized into objects that are returned to the client application.  
+  
+ The `correlationState` is the object returned by the user when <xref:System.ServiceModel.Dispatcher.IClientMessageInspector.BeforeSendRequest%2A> is called for this message. The best practice is to make this a <xref:System.Guid?displayProperty=fullName> to ensure that no two `correlationState` objects are the same.  
+  
+   
+  
+## Examples  
+ The following code example shows an implementation that writes strings to the console when the implementation is called.  
+  
+ [!code-csharp[Interceptors#1](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#1)]
+ [!code-vb[Interceptors#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#1)]  
+  
+ The following code example shows how to use an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> to insert the client message inspector in the client endpoint.  
+  
+ [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
+ [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
+  
+ Finally, the following code example shows how to modify the client configuration file to use the endpoint behavior with a particular endpoint.  
+  
+ [!code[Interceptors#3](~/samples/snippets/common/VS_Snippets_CFX/interceptors/common/client.exe.config#3)]
+ [!code-csharp[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]
+ [!code-vb[Interceptors#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/client.exe.config#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeSendRequest">
@@ -55,11 +109,39 @@
         <Parameter Name="channel" Type="System.ServiceModel.IClientChannel" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="channel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="request">The message to be sent to the service.</param>
+        <param name="channel">The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object channel.</param>
+        <summary>Enables inspection or modification of a message before a request message is sent to a service.</summary>
+        <returns>The object that is returned as the <paramref name="correlationState " />argument of the <see cref="M:System.ServiceModel.Dispatcher.IClientMessageInspector.AfterReceiveReply(System.ServiceModel.Channels.Message@,System.Object)" /> method. This is <see langword="null" /> if no correlation state is used.  
+  
+ The best practice is to make this a <see cref="T:System.Guid" /> to ensure that no two <paramref name="correlationState" /> objects are the same.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector.BeforeSendRequest%2A> to inspect or modify a request message before it is sent.  
+  
+   
+  
+## Examples  
+ The following code example shows an implementation that writes strings to the console when the implementation is called.  
+  
+ [!code-csharp[Interceptors#1](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#1)]
+ [!code-vb[Interceptors#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#1)]  
+  
+ The following code example shows how to use an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName> to insert the client message inspector in the client endpoint.  
+  
+ [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
+ [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
+  
+ Finally, the following code example shows how to modify the client configuration file to use the endpoint behavior with a particular endpoint.  
+  
+ [!code[Interceptors#3](~/samples/snippets/common/VS_Snippets_CFX/interceptors/common/client.exe.config#3)]
+ [!code-csharp[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]
+ [!code-vb[Interceptors#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/client.exe.config#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

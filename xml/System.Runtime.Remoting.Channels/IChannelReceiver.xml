@@ -18,8 +18,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides required functions and properties for the receiver channels.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The receiving side of channels must expose the <xref:System.Runtime.Remoting.Channels.IChannelReceiver> interface.  
+  
+   
+  
+## Examples  
+ [!code-cpp[IChannelReceiver_StartListening_ChannelData#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/CPP/ichannelreceiver_channeldata_server.cpp#1)]
+ [!code-csharp[IChannelReceiver_StartListening_ChannelData#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/CS/ichannelreceiver_channeldata_server.cs#1)]
+ [!code-vb[IChannelReceiver_StartListening_ChannelData#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/VB/ichannelreceiver_channeldata_server.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ChannelData">
@@ -36,9 +50,18 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the channel-specific data.</summary>
+        <value>The channel data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used when <xref:System.Runtime.Remoting.RemotingServices.Marshal%2A?displayProperty=fullName> is called and a <xref:System.Runtime.Remoting.ObjRef> is created.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetUrlsForUri">
@@ -58,10 +81,26 @@
         <Parameter Name="objectURI" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="objectURI">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="objectURI">The URI for which URLs are required.</param>
+        <summary>Returns an array of all the URLs for a URI.</summary>
+        <returns>An array of the URLs.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used by the <xref:System.Runtime.Remoting.Channels.ChannelServices.GetUrlsForObject%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ [!code-cpp[IChannelReceiver_StartListening_ChannelData#3](~/samples/snippets/cpp/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/CPP/ichannelreceiver_channeldata_server.cpp#3)]
+ [!code-csharp[IChannelReceiver_StartListening_ChannelData#3](~/samples/snippets/csharp/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/CS/ichannelreceiver_channeldata_server.cs#3)]
+ [!code-vb[IChannelReceiver_StartListening_ChannelData#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/VB/ichannelreceiver_channeldata_server.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="StartListening">
@@ -81,9 +120,25 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="data">Optional initialization information.</param>
+        <summary>Instructs the current channel to start listening for requests.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data object can be used to pass specific initialization state to the channel.  
+  
+   
+  
+## Examples  
+ [!code-cpp[IChannelReceiver_StartListening_ChannelData#4](~/samples/snippets/cpp/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/CPP/ichannelreceiver_channeldata_server.cpp#4)]
+ [!code-csharp[IChannelReceiver_StartListening_ChannelData#4](~/samples/snippets/csharp/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/CS/ichannelreceiver_channeldata_server.cs#4)]
+ [!code-vb[IChannelReceiver_StartListening_ChannelData#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/VB/ichannelreceiver_channeldata_server.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="StopListening">
@@ -103,9 +158,25 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="data">Optional state information for the channel.</param>
+        <summary>Instructs the current channel to stop listening for requests.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data object can be used to pass the specific state to the channel.  
+  
+   
+  
+## Examples  
+ [!code-cpp[HttpServerChannel_Server_Client#3](~/samples/snippets/cpp/VS_Snippets_Remoting/HttpServerChannel_Server_Client/CPP/httpserverchannel_9_server.cpp#3)]
+ [!code-csharp[HttpServerChannel_Server_Client#3](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpServerChannel_Server_Client/CS/httpserverchannel_9_server.cs#3)]
+ [!code-vb[HttpServerChannel_Server_Client#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpServerChannel_Server_Client/VB/httpserverchannel_9_server.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
   </Members>

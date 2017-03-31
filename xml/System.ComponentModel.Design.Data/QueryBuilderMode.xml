@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of data-store query the design environment should construct.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.QueryBuilderMode> enumeration is used when you call the <xref:System.ComponentModel.Design.Data.IDataEnvironment.BuildQuery%2A?displayProperty=fullName> method to indicate the type of query desired.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Delete">
@@ -27,7 +34,7 @@
         <ReturnType>System.ComponentModel.Design.Data.QueryBuilderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The query being built is a Delete query.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -43,7 +50,7 @@
         <ReturnType>System.ComponentModel.Design.Data.QueryBuilderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The query being built is an Insert query.</summary>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -59,7 +66,7 @@
         <ReturnType>System.ComponentModel.Design.Data.QueryBuilderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The query being built is a Select query.</summary>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -75,7 +82,7 @@
         <ReturnType>System.ComponentModel.Design.Data.QueryBuilderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The query being built is an Update query.</summary>
       </Docs>
     </Member>
   </Members>

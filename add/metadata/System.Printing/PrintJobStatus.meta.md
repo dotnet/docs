@@ -1,4 +1,5 @@
 ---
 uid: System.Printing.PrintJobStatus
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

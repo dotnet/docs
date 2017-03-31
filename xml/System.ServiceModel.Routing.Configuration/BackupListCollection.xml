@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the configuration element that contains a collection of <see cref="T:System.ServiceModel.Routing.Configuration.BackupEndpointCollection" /> instances.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Routing.Configuration.BackupListCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <Parameter Name="element" Type="System.ServiceModel.Routing.Configuration.BackupEndpointCollection" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The backup endpoint to be added.</param>
+        <summary>Adds a new <see cref="T:System.ServiceModel.Routing.Configuration.BackupEndpointCollection" /> to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +70,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all elements from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Routing.Configuration.BackupEndpointCollection" />.</summary>
+        <returns>A new configuration element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +109,9 @@
         <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The configuration element to return the key for.</param>
+        <summary>Gets the element key for the specified configuration element.</summary>
+        <returns>The key for the specified configuration element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +131,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The key of the element to be accessed.</param>
+        <summary>Gets the <see cref="T:System.ServiceModel.Routing.Configuration.BackupEndpointCollection" /> with the specified index.</summary>
+        <value>A backup endpoint that matches the specified key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,8 +153,8 @@
         <Parameter Name="element" Type="System.ServiceModel.Routing.Configuration.BackupEndpointCollection" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The backup endpoint from the collection.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.ServiceModel.Routing.Configuration.BackupEndpointCollection" /> from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A type that represents the type of redirection.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,16 @@
         <ReturnType>System.ServiceModel.Channels.RedirectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.ServiceModel.Channels.RedirectionType" /> that represents the cache redirection type.</summary>
+        <value>The cache redirection type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A cache redirection indicates that the response from a previous request should be used. This corresponds with the HTTP status code 304 (Not Modified)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -50,10 +57,10 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The redirection type.</param>
+        <param name="ns">The redirection namespace.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.RedirectionType" /> class with the specified redirection type and redirection namespace.</summary>
+        <returns>A redirection type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +80,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare to the current <see cref="T:System.ServiceModel.Channels.RedirectionType" /> instance.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.ServiceModel.Channels.RedirectionType" /> instance.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current <see cref="T:System.ServiceModel.Channels.RedirectionType" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +101,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +119,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the namespace of the <see cref="T:System.ServiceModel.Channels.RedirectionType" />.</summary>
+        <value>The namespace of the redirection type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,10 +141,11 @@
         <Parameter Name="right" Type="System.ServiceModel.Channels.RedirectionType" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">A <see cref="T:System.ServiceModel.Channels.RedirectionType" /> instance.</param>
+        <param name="right">A <see cref="T:System.ServiceModel.Channels.RedirectionType" /> instance.</param>
+        <summary>Returns a value that indicates whether two instances of the <see cref="T:System.ServiceModel.Channels.RedirectionType" /> types are equal.</summary>
+        <returns>
+          <see langword="true" /> if the values of <paramref name="left" /> and <paramref name="right" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,10 +166,11 @@
         <Parameter Name="right" Type="System.ServiceModel.Channels.RedirectionType" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">A <see cref="T:System.ServiceModel.Channels.RedirectionType" /> instance.</param>
+        <param name="right">A <see cref="T:System.ServiceModel.Channels.RedirectionType" /> instance.</param>
+        <summary>Returns a value that indicates whether two instances of the <see cref="T:System.ServiceModel.Channels.RedirectionType" /> types are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the values of <paramref name="left" /> and <paramref name="right" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,9 +187,16 @@
         <ReturnType>System.ServiceModel.Channels.RedirectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.ServiceModel.Channels.RedirectionType" /> that represents the resource redirection type.</summary>
+        <value>The resource redirection type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resource redirection indicates the requested resource has been relocated to the specified location(s). If one location is specified, then this maps to HTTP status code 301 (Moved Permanently) or 307 (Temporary Redirect), depending on the <xref:System.ServiceModel.Channels.RedirectionDuration> selected. If multiple locations are provided, then this maps to the 300 (Multiple Choices) HTTP status code. This is the default value for <xref:System.ServiceModel.Channels.RedirectionType>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -196,8 +213,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts the current <see cref="T:System.ServiceModel.Channels.RedirectionType" /> to its equivalent string representation.</summary>
+        <returns>A string representation of the value of the current <see cref="T:System.ServiceModel.Channels.RedirectionType" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,9 +231,16 @@
         <ReturnType>System.ServiceModel.Channels.RedirectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.ServiceModel.Channels.RedirectionType" /> that represents the use intermediary redirection type.</summary>
+        <value>The resource redirection type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A use intermediary redirection indicates the requested resource must be accessed through an intermediate service, for example, an HTTP proxy server. This corresponds to the HTTP status code 305 (Use Proxy)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -232,8 +256,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the <see cref="T:System.ServiceModel.Channels.RedirectionType" />.</summary>
+        <value>The value of the redirection type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a configuration section that defines the type that the service hosting environment instantiates for a particular transport.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this section is empty, the default type is used.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +55,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that specifies whether ASP.NET compatibility mode has been enabled for the current application.</summary>
+        <value>
+          <see langword="true" /> if ASP.NET compatibility mode has been enabled for the current application; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to `true`, requests to [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services flow through the ASP.NET HTTP pipeline and communication over non-HTTP protocols is prohibited.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseAddressPrefixFilters">
@@ -71,8 +86,8 @@
         <ReturnType>System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of configuration elements that specifies prefix filters for the base addresses used by the service host.</summary>
+        <value>A collection of configuration elements that specifies prefix filters for the base addresses used by the service host.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +109,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether <see cref="T:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection" /> closes idle services at low memory.</summary>
+        <value>
+          <see langword="true" /> if <see cref="T:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection" /> closes idle services at low memory; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +136,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an integer that specifies the minimum amount of free memory that should be available to the system, before a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service can be activated.</summary>
+        <value>An integer that specifies the minimum amount of free memory that should be available to the system, before a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service can be activated.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,9 +159,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether multiple IIS bindings per site are enabled.</summary>
+        <value>
+          <see langword="true" /> if multiple IIS bindings per site are enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ IIS consists of web sites, which are containers for virtual applications containing virtual directories. The application in a site can be accessed through one or more IIS binding. An IIS binding provides two pieces of information: a binding protocol and binding information. Binding protocol defines the scheme over which communication occurs, and binding information is the information used to access the site. An example of a binding protocol can be HTTP, whereas binding information can contain an IP address, Port, host header, etc.  
+  
+ IIS supports specifying multiple IIS bindings per site, which results in multiple base addresses per scheme. However, a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service hosted under a site allows binding to only one baseAddress per scheme.  
+  
+ To enable multiple IIS bindings per site for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service, set this property to `true`. Notice that multiple site binding is supported only for the HTTP protocol. The address of endpoints in the configuration file needs to be a complete URI.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PostDeserialize">
@@ -202,8 +230,8 @@
         <ReturnType>System.ServiceModel.Configuration.ServiceActivationElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of configuration elements that activates a service and can be merged across a hierarchy of configuration files.</summary>
+        <value>A collection of configuration elements that activates a service and can be merged across a hierarchy of configuration files.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,8 +253,8 @@
         <ReturnType>System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of types that implement the specific transport.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection" /> that contains all the types that implement the specific transport.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

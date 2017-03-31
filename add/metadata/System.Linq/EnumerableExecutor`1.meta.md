@@ -1,9 +1,12 @@
 ---
 uid: System.Linq.EnumerableExecutor`1
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.EnumerableExecutor`1.#ctor(System.Linq.Expressions.Expression)
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---

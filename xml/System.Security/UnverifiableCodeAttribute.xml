@@ -24,8 +24,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Marks modules containing unverifiable code. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This custom attribute is only for use by compilers and not intended to be used directly by application developers.  
+  
+ Modules containing unverifiable code should be marked with this attribute. This attribute carries no internal state. Its presence in the module metadata indicates that the module contains unverifiable code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,8 +53,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.UnverifiableCodeAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes any fields to their default values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

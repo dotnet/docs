@@ -24,7 +24,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides access to an ordered, strongly typed collection of <see cref="T:System.Windows.Controls.RowDefinition" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,9 +44,21 @@
         <Parameter Name="value" Type="System.Windows.Controls.RowDefinition" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">Identifies the <see cref="T:System.Windows.Controls.RowDefinition" /> to add to the collection.</param>
+        <summary>Adds a <see cref="T:System.Windows.Controls.RowDefinition" /> element to a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Add%2A> method to add a <xref:System.Windows.Controls.RowDefinition> to a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+  
+ [!code-csharp[columndefinitionsgrid#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[columndefinitionsgrid#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#3)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](../Topic/How%20to:%20Manipulate%20Columns%20and%20Rows%20by%20Using%20ColumnDefinitionsCollections%20and%20RowDefinitionsCollections.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -63,8 +75,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears the content of the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Clear%2A> method to clear the content of a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+  
+ [!code-csharp[columndefinitionsgrid#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#4)]
+ [!code-vb[columndefinitionsgrid#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#4)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](../Topic/How%20to:%20Manipulate%20Columns%20and%20Rows%20by%20Using%20ColumnDefinitionsCollections%20and%20RowDefinitionsCollections.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -83,10 +107,23 @@
         <Parameter Name="value" Type="System.Windows.Controls.RowDefinition" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">Identifies the <see cref="T:System.Windows.Controls.RowDefinition" /> that is being tested.</param>
+        <summary>Determines whether a given <see cref="T:System.Windows.Controls.RowDefinition" /> exists within a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.RowDefinition" /> exists within the collection; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Contains%2A> method to determine whether a <xref:System.Windows.Controls.RowDefinition> exists in a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+  
+ [!code-csharp[columndefinitionsgrid#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#8)]
+ [!code-vb[columndefinitionsgrid#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#8)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](../Topic/How%20to:%20Manipulate%20Columns%20and%20Rows%20by%20Using%20ColumnDefinitionsCollections%20and%20RowDefinitionsCollections.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -106,10 +143,27 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">An array of <see cref="T:System.Windows.Controls.RowDefinition" /> objects.</param>
+        <param name="index">Identifies the index position within <c>array</c> to which the <see cref="T:System.Windows.Controls.RowDefinition" /> objects are copied.</param>
+        <summary>Copies an array of <see cref="T:System.Windows.Controls.RowDefinition" /> objects to a given index position within a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from index to the end of the destination array.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -125,9 +179,26 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the total number of items within this instance of <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <value>The total number of items in the collection. This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Count%2A> property.  
+  
+ [!code-csharp[columndefinitionsgrid#7](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#7)]
+ [!code-vb[columndefinitionsgrid#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#7)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](../Topic/How%20to:%20Manipulate%20Columns%20and%20Rows%20by%20Using%20ColumnDefinitionsCollections%20and%20RowDefinitionsCollections.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -146,10 +217,22 @@
         <Parameter Name="value" Type="System.Windows.Controls.RowDefinition" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Windows.Controls.RowDefinition" /> whose index position is desired.</param>
+        <summary>Returns the index position of a given <see cref="T:System.Windows.Controls.RowDefinition" /> within a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <returns>The index of <paramref name="value" /> if found in the collection; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.IndexOf%2A> method to determine the index position of a <xref:System.Windows.Controls.RowDefinition> within a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+  
+ [!code-csharp[columndefinitionsgrid#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#9)]
+ [!code-vb[columndefinitionsgrid#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#9)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](../Topic/How%20to:%20Manipulate%20Columns%20and%20Rows%20by%20Using%20ColumnDefinitionsCollections%20and%20RowDefinitionsCollections.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -169,10 +252,29 @@
         <Parameter Name="value" Type="System.Windows.Controls.RowDefinition" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The position within the collection where the item is inserted.</param>
+        <param name="value">The <see cref="T:System.Windows.Controls.RowDefinition" /> to insert.</param>
+        <summary>Inserts a <see cref="T:System.Windows.Controls.RowDefinition" /> at the specified index position within a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Insert%2A> method to insert a <xref:System.Windows.Controls.RowDefinition> to a specific `index` position within a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+  
+ [!code-csharp[columndefinitionsgrid#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#9)]
+ [!code-vb[columndefinitionsgrid#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#9)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](../Topic/How%20to:%20Manipulate%20Columns%20and%20Rows%20by%20Using%20ColumnDefinitionsCollections%20and%20RowDefinitionsCollections.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.IList" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -188,9 +290,22 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise <see langword="false" />. This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to get the value of the <xref:System.Windows.Controls.RowDefinitionCollection.IsReadOnly%2A> property.  
+  
+ [!code-csharp[columndefinitionsgrid#10](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#10)]
+ [!code-vb[columndefinitionsgrid#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#10)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](../Topic/How%20to:%20Manipulate%20Columns%20and%20Rows%20by%20Using%20ColumnDefinitionsCollections%20and%20RowDefinitionsCollections.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -206,9 +321,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether access to this <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> is synchronized (thread-safe).</summary>
+        <value>
+          <see langword="true" /> if access to this collection is synchronized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions that result from changes made by other threads.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -227,10 +350,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The current item in the collection.</param>
+        <summary>Gets a value that indicates the current item within a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index position in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -249,9 +381,10 @@
         <Parameter Name="value" Type="System.Windows.Controls.RowDefinition" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Windows.Controls.RowDefinition" /> to remove from the collection.</param>
+        <summary>Removes a <see cref="T:System.Windows.Controls.RowDefinition" /> from a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.RowDefinition" /> was found in the collection and removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,9 +404,26 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The position within the collection at which the <see cref="T:System.Windows.Controls.RowDefinition" /> is removed.</param>
+        <summary>Removes a <see cref="T:System.Windows.Controls.RowDefinition" /> from a <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> at the specified index position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.RemoveAt%2A> method to remove a <xref:System.Windows.Controls.RowDefinition> to a <xref:System.Windows.Controls.RowDefinitionCollection> at a specific `index` position.  
+  
+ [!code-csharp[columndefinitionsgrid#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#5)]
+ [!code-vb[columndefinitionsgrid#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#5)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](../Topic/How%20to:%20Manipulate%20Columns%20and%20Rows%20by%20Using%20ColumnDefinitionsCollections%20and%20RowDefinitionsCollections.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveRange">
@@ -293,10 +443,27 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The position within the collection at which the first <see cref="T:System.Windows.Controls.RowDefinition" /> is removed.</param>
+        <param name="count">The total number of <see cref="T:System.Windows.Controls.RowDefinition" /> objects to remove from the collection.</param>
+        <summary>Removes a range of <see cref="T:System.Windows.Controls.RowDefinition" /> objects from a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.RemoveRange%2A> method to remove a range of <xref:System.Windows.Controls.RowDefinition> elements from a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+  
+ [!code-csharp[columndefinitionsgrid#6](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#6)]
+ [!code-vb[columndefinitionsgrid#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#6)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](../Topic/How%20to:%20Manipulate%20Columns%20and%20Rows%20by%20Using%20ColumnDefinitionsCollections%20and%20RowDefinitionsCollections.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -312,9 +479,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions that result from changes made by other threads.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Controls.RowDefinition&gt;.GetEnumerator">
@@ -331,9 +505,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -353,10 +534,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">A zero-based <see cref="T:System.Array" /> that receives the copied items from the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</param>
+        <param name="index">The first position in the specified <see cref="T:System.Array" /> to receive the copied contents.</param>
+        <summary>Copies the elements of the collection to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -373,9 +561,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -394,10 +589,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to add to the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</param>
+        <summary>Adds an item to the collection.</summary>
+        <returns>The position into which the new element was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -416,10 +618,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</param>
+        <summary>Determines whether the collection contains a specific value.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -438,10 +648,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</param>
+        <summary>Determines the index of a specific item in the collection.</summary>
+        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -461,10 +678,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which to insert the <see cref="T:System.Object" />.</param>
+        <param name="value">The <see cref="T:System.Object" /> to insert into the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</param>
+        <summary>Inserts an item to the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -480,9 +704,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the collection has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the the <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -501,10 +733,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>Gets or sets the element at the specified index.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index position in the list.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -523,9 +766,16 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</param>
+        <summary>Removes the first occurrence of a specific object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

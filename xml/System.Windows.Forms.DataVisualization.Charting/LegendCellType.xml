@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies a legend cell type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendCellType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The legend cell contains an image.</summary>
       </Docs>
     </Member>
     <Member MemberName="SeriesSymbol">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendCellType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The legend cell contains a series symbol, such as a line or rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendCellType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The legend cell contains text.</summary>
       </Docs>
     </Member>
   </Members>

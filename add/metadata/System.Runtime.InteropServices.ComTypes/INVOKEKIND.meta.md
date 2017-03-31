@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.InteropServices.ComTypes.INVOKEKIND
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

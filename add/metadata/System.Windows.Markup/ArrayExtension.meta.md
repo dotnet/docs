@@ -1,44 +1,49 @@
 ---
 uid: System.Windows.Markup.ArrayExtension
-internalonly: False
----
-
----
-uid: System.Windows.Markup.ArrayExtension.AddText(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Markup.ArrayExtension.#ctor(System.Array)
-internalonly: False
----
-
----
-uid: System.Windows.Markup.ArrayExtension.Items
-internalonly: False
----
-
----
-uid: System.Windows.Markup.ArrayExtension.Type
-internalonly: False
----
-
----
-uid: System.Windows.Markup.ArrayExtension.AddChild(System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.Markup.ArrayExtension.#ctor(System.Type)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ArrayExtension.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ArrayExtension.AddText(System.String)
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ArrayExtension.#ctor(System.Array)
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ArrayExtension.Items
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ArrayExtension.Type
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ArrayExtension.AddChild(System.Object)
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ArrayExtension.#ctor(System.Type)
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ArrayExtension.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ArrayExtension.ProvideValue(System.IServiceProvider)
-internalonly: False
+manager: "martinek"
 ---

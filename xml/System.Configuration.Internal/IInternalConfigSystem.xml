@@ -13,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an interface used by the .NET Framework to initialize application configuration properties.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,10 +33,17 @@
         <Parameter Name="configKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="configKey">The configuration key value.</param>
+        <summary>Returns the configuration object based on the specified key.</summary>
+        <returns>A configuration object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by <xref:System.Configuration.ConfigurationSettings> class. The configuration key value is made up of the configuration group name and the configuration section name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshConfig">
@@ -55,9 +62,16 @@
         <Parameter Name="sectionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sectionName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sectionName">The name of the configuration section.</param>
+        <summary>Refreshes the configuration system based on the specified section name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by <xref:System.Configuration.ConfigurationSettings> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsUserConfig">
@@ -73,8 +87,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the user configuration is supported.</summary>
+        <value>
+          <see langword="true" /> if the user configuration is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

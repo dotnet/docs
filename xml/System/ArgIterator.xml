@@ -16,8 +16,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a variable-length argument list; that is, the parameters of a function that takes a variable number of arguments.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Developers who write compilers use the <xref:System.ArgIterator> structure to enumerate the mandatory and optional arguments in an argument list. The <xref:System.ArgIterator> structure is not generally useful for applications other than compilers.  
+  
+ The functionality in the <xref:System.ArgIterator> structure is typically hidden in the syntax of a specific programming language. For example, in the C++ programming language you declare a variable-length argument list by specifying an ellipsis ("...") at the end of the argument list. The <xref:System.ArgIterator> structure is useful primarily when a development language does not provide direct support for accessing variable-length parameters.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,9 +47,16 @@
         <Parameter Name="arglist" Type="System.RuntimeArgumentHandle" />
       </Parameters>
       <Docs>
-        <param name="arglist">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="arglist">An argument list consisting of mandatory and optional arguments.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ArgIterator" /> structure using the specified argument list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new <xref:System.ArgIterator> object enumerates the argument list starting from the first optional argument.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -67,10 +83,18 @@
         <Parameter Name="ptr" Type="System.Void*" />
       </Parameters>
       <Docs>
-        <param name="arglist">To be added.</param>
-        <param name="ptr">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="arglist">An argument list consisting of mandatory and optional arguments.</param>
+        <param name="ptr">A pointer to the argument in <c>arglist</c> to access first, or the first mandatory argument in <c>arglist</c> if <c>ptr</c> is <see langword="null" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ArgIterator" /> structure using the specified argument list and a pointer to an item in the list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new <xref:System.ArgIterator> object enumerates the argument list starting from the argument specified by `ptr`, or the first mandatory argument if `ptr` is `null`.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -92,8 +116,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Concludes processing of the variable-length argument list represented by this instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Conceptually, <xref:System.ArgIterator.End%2A> concludes the processing of a variable-length argument list. However, this method has no actual implementation; the <xref:System.ArgIterator.End%2A> method body is empty. You can use this method in your code as a marker to indicate where variable-length argument list processing logically ends.  
+  
+ The <xref:System.ArgIterator.End%2A> method corresponds to the `va_end` method in the C standard library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -117,10 +150,11 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="o">An object to be compared to this instance.</param>
+        <summary>This method is not supported, and always throws <see cref="T:System.NotSupportedException" />.</summary>
+        <returns>This comparison is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -142,8 +176,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code of this object.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,9 +205,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the next argument in a variable-length argument list.</summary>
+        <returns>The next argument as a <see cref="T:System.TypedReference" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The iterator is automatically advanced to the next argument.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to read beyond the end of the list.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNextArg">
@@ -202,10 +244,19 @@
         <Parameter Name="rth" Type="System.RuntimeTypeHandle" />
       </Parameters>
       <Docs>
-        <param name="rth">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rth">A runtime type handle that identifies the type of the argument to retrieve.</param>
+        <summary>Returns the next argument in a variable-length argument list that has a specified type.</summary>
+        <returns>The next argument as a <see cref="T:System.TypedReference" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The iterator is automatically advanced to the next argument.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to read beyond the end of the list.</exception>
+        <exception cref="T:System.ArgumentNullException">The pointer to the remaining arguments is zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNextArgType">
@@ -227,9 +278,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the type of the next argument.</summary>
+        <returns>The type of the next argument.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not advance the iterator to the next argument.  
+  
+ <xref:System.ArgIterator.GetNextArgType%2A> returns the type of the argument as specified in the calling function. For example, if an argument is type <xref:System.String>, but the calling function specifies the argument as type <xref:System.Object>, <xref:System.ArgIterator.GetNextArgType%2A> reports the argument as type <xref:System.Object>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRemainingCount">
@@ -251,8 +311,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the number of arguments remaining in the argument list.</summary>
+        <returns>The number of remaining arguments.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

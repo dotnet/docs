@@ -22,7 +22,7 @@
   <Interfaces>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a strongly typed collection of <see cref="T:System.Diagnostics.ProcessThread" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,7 +46,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.ProcessThreadCollection" /> class, with no associated <see cref="T:System.Diagnostics.ProcessThread" /> instances.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +72,8 @@
         <Parameter Name="processThreads" Type="System.Diagnostics.ProcessThread[]" />
       </Parameters>
       <Docs>
-        <param name="processThreads">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="processThreads">An array of <see cref="T:System.Diagnostics.ProcessThread" /> instances with which to initialize this <see cref="T:System.Diagnostics.ProcessThreadCollection" /> instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.ProcessThreadCollection" /> class, using the specified array of <see cref="T:System.Diagnostics.ProcessThread" /> instances.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,9 +102,9 @@
         <Parameter Name="thread" Type="System.Diagnostics.ProcessThread" />
       </Parameters>
       <Docs>
-        <param name="thread">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thread">The thread to add to the collection.</param>
+        <summary>Appends a process thread to the collection.</summary>
+        <returns>The zero-based index of the thread in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,10 +318,18 @@
         <Parameter Name="thread" Type="System.Diagnostics.ProcessThread" />
       </Parameters>
       <Docs>
-        <param name="thread">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="thread">A <see cref="T:System.Diagnostics.ProcessThread" /> instance that indicates the thread to find in this collection.</param>
+        <summary>Determines whether the specified process thread exists in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the thread exists in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A module is identified by its module name and its fully qualified file path.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertAll&lt;TOutput&gt;">
@@ -407,9 +415,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">An array of <see cref="T:System.Diagnostics.ProcessThread" /> instances to add to the collection.</param>
+        <param name="index">The location at which to add the new instances.</param>
+        <summary>Copies an array of <see cref="T:System.Diagnostics.ProcessThread" /> instances to the collection, at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -844,9 +852,9 @@
         <Parameter Name="thread" Type="System.Diagnostics.ProcessThread" />
       </Parameters>
       <Docs>
-        <param name="thread">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thread">The <see cref="T:System.Diagnostics.ProcessThread" /> whose index is retrieved.</param>
+        <summary>Provides the location of a specified thread within the collection.</summary>
+        <returns>The zero-based index that defines the location of the thread within the <see cref="T:System.Diagnostics.ProcessThreadCollection" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -936,9 +944,9 @@
         <Parameter Name="thread" Type="System.Diagnostics.ProcessThread" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="thread">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index indicating the location at which to insert the thread.</param>
+        <param name="thread">The thread to insert into the collection.</param>
+        <summary>Inserts a process thread at the specified location in the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -995,9 +1003,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index value of the thread in the collection.</param>
+        <summary>Gets an index for iterating over the set of process threads.</summary>
+        <value>A <see cref="T:System.Diagnostics.ProcessThread" /> that indexes the threads in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1113,8 +1121,8 @@
         <Parameter Name="thread" Type="System.Diagnostics.ProcessThread" />
       </Parameters>
       <Docs>
-        <param name="thread">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="thread">The thread to remove from the collection.</param>
+        <summary>Deletes a process thread from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

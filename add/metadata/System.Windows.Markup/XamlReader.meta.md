@@ -1,69 +1,84 @@
 ---
 uid: System.Windows.Markup.XamlReader
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.XamlReader.Parse
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.GetWpfSchemaContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.LoadAsync(System.Xml.XmlReader)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.XamlReader.Load
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.LoadAsync(System.IO.Stream,System.Windows.Markup.ParserContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.Parse(System.String,System.Windows.Markup.ParserContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.Load(System.Xaml.XamlReader)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.Load(System.IO.Stream)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.Load(System.IO.Stream,System.Windows.Markup.ParserContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.CancelAsync
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.Load(System.Xml.XmlReader)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.XamlReader.LoadAsync
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.Parse(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.LoadAsync(System.IO.Stream)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlReader.LoadCompleted
-internalonly: False
+manager: "martinek"
 ---

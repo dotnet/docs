@@ -20,8 +20,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a mechanism for routing the workflow instance ID to and from a <see cref="T:System.Workflow.Activities.WorkflowWebService" /> to a cookie in the Web client. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This functionality is required to reenter a workflow definition that is exposed as a Web service. Without this module, the first call to the workflow-exposed Web service works, but subsequent calls fail. Additionally, make sure that the client application has cookies enabled.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +46,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +64,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources used by the <see cref="T:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule.System.Web.IHttpModule.Dispose%2A> when you are finished using the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule>. The <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule.System.Web.IHttpModule.Dispose%2A> method leaves the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule> in an unusable state. After calling <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule.System.Web.IHttpModule.Dispose%2A>, you must release all references to the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule> so the garbage collector can reclaim the memory that the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule> occupied.  
+  
+> [!NOTE]
+>  Always call `Dispose` before you release your last reference to the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule>. Otherwise, the resources it is using are not freed until the garbage collector calls the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpModule.Init">
@@ -73,9 +94,16 @@
         <Parameter Name="application" Type="System.Web.HttpApplication" />
       </Parameters>
       <Docs>
-        <param name="application">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="application">An <see cref="T:System.Web.HttpApplication" /> that provides access to the methods, properties, and events common to all application objects within an ASP.NET application.</param>
+        <summary>Initializes the workflow Web hosting module and prepares the module to handle requests.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule.System.Web.IHttpModule.Init%2A> to register event handling methods with specific events.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

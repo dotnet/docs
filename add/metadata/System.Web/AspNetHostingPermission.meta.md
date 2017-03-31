@@ -1,54 +1,71 @@
 ---
 uid: System.Web.AspNetHostingPermission
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermission.#ctor(System.Security.Permissions.PermissionState)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermission.ToXml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermission.Level
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermission.Intersect(System.Security.IPermission)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermission.IsUnrestricted
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermission.IsSubsetOf(System.Security.IPermission)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.AspNetHostingPermission.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermission.Union(System.Security.IPermission)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermission.#ctor(System.Web.AspNetHostingPermissionLevel)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermission.FromXml(System.Security.SecurityElement)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermission.Copy
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

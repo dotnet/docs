@@ -1,19 +1,27 @@
 ---
 uid: System.Workflow.Activities.WorkflowSubscriptionService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.WorkflowSubscriptionService.DeleteSubscription(System.Guid)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.WorkflowSubscriptionService.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.WorkflowSubscriptionService.CreateSubscription(System.Workflow.Activities.MessageEventSubscription)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

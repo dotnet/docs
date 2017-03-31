@@ -1,1 +1,0 @@
-    public bool IsReadOnly { get { return false; } }

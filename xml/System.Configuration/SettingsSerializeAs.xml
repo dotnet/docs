@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines the serialization scheme used to store application settings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingsSerializeAs>enumeration is used to specify the serialization mechanism used by the application settings provider to persist the values of application settings properties. For example, the ttribute uses this enumeration in its constructor to request that a property or group of properties be persisted using the specified serialization mechanism.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Binary">
@@ -27,7 +34,7 @@
         <ReturnType>System.Configuration.SettingsSerializeAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The settings property is serialized using binary object serialization.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderSpecific">
@@ -43,7 +50,7 @@
         <ReturnType>System.Configuration.SettingsSerializeAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The settings provider has implicit knowledge of the property or its type and picks an appropriate serialization mechanism. Often used for custom serialization.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -59,7 +66,7 @@
         <ReturnType>System.Configuration.SettingsSerializeAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The settings property is serialized as plain text.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xml">
@@ -75,7 +82,7 @@
         <ReturnType>System.Configuration.SettingsSerializeAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The settings property is serialized as XML using XML serialization.</summary>
       </Docs>
     </Member>
   </Members>

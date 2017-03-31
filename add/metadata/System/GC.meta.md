@@ -1,139 +1,230 @@
 ---
 uid: System.GC
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.WaitForPendingFinalizers
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.Collect(System.Int32,System.GCCollectionMode)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.WaitForFullGCComplete
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.RegisterForFullGCNotification(System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.TryStartNoGCRegion(System.Int64,System.Int64,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.SuppressFinalize(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.GetGeneration(System.WeakReference)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.TryStartNoGCRegion(System.Int64)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.WaitForFullGCComplete(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.GetGeneration(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.WaitForFullGCComplete
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.EndNoGCRegion
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.ReRegisterForFinalize(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.CollectionCount(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.MaxGeneration
-internalonly: False
----
-
----
-uid: System.GC.TryStartNoGCRegion(System.Int64,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.Collect
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.TryStartNoGCRegion
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.TryStartNoGCRegion(System.Int64,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.Collect
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.GetGeneration
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.RemoveMemoryPressure(System.Int64)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.GetTotalMemory(System.Boolean)
-internalonly: False
----
-
----
-uid: System.GC.WaitForFullGCApproach(System.Int32)
-internalonly: False
----
-
----
-uid: System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean,System.Boolean)
-internalonly: False
----
-
----
-uid: System.GC.CancelFullGCNotification
-internalonly: False
----
-
----
-uid: System.GC.Collect(System.Int32)
-internalonly: False
----
-
----
-uid: System.GC.AddMemoryPressure(System.Int64)
-internalonly: False
----
-
----
-uid: System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean)
-internalonly: False
----
-
----
-uid: System.GC.TryStartNoGCRegion(System.Int64,System.Int64)
-internalonly: False
----
-
----
-uid: System.GC.KeepAlive(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.GC.WaitForFullGCApproach
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.WaitForFullGCApproach(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.CancelFullGCNotification
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.Collect(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.AddMemoryPressure(System.Int64)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.TryStartNoGCRegion(System.Int64,System.Int64)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.KeepAlive(System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.GC.WaitForFullGCApproach
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

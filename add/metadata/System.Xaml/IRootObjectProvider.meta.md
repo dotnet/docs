@@ -1,9 +1,9 @@
 ---
 uid: System.Xaml.IRootObjectProvider
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IRootObjectProvider.RootObject
-internalonly: False
+manager: "martinek"
 ---

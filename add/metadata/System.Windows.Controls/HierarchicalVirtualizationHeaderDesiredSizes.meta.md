@@ -1,44 +1,68 @@
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.Equals
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.#ctor(System.Windows.Size,System.Windows.Size)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.op_Inequality(System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes,System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.LogicalSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.Equals(System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.op_Equality(System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes,System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.PixelSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

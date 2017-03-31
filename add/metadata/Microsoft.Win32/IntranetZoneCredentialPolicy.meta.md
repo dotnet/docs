@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.Win32.IntranetZoneCredentialPolicy
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: Microsoft.Win32.IntranetZoneCredentialPolicy.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: Microsoft.Win32.IntranetZoneCredentialPolicy.ShouldSendCredential(System.Uri,System.Net.WebRequest,System.Net.NetworkCredential,System.Net.IAuthenticationModule)
-internalonly: False
+manager: "martinek"
 ---

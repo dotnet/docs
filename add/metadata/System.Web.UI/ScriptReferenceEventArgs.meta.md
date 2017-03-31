@@ -1,14 +1,20 @@
 ---
 uid: System.Web.UI.ScriptReferenceEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptReferenceEventArgs.#ctor(System.Web.UI.ScriptReference)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptReferenceEventArgs.Script
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

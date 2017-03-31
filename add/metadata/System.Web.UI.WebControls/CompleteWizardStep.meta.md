@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.CompleteWizardStep
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.CompleteWizardStep.StepType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.CompleteWizardStep.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.CompleteWizardStep.Title
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

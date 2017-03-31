@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Design.IRootDesigner
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IRootDesigner.SupportedTechnologies
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IRootDesigner.GetView(System.ComponentModel.Design.ViewTechnology)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

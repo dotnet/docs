@@ -28,7 +28,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the type of a COM member.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -58,7 +58,7 @@
         <ReturnType>System.Runtime.InteropServices.ComMemberType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The member is a normal method.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropGet">
@@ -87,7 +87,7 @@
         <ReturnType>System.Runtime.InteropServices.ComMemberType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The member gets properties.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropSet">
@@ -116,7 +116,7 @@
         <ReturnType>System.Runtime.InteropServices.ComMemberType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The member sets properties.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines protocol-agnostic URIs that are used in the token request (RST) or response (RSTR) to indicate the desired or required key type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A URI that represents the asymmetric key type; http://schemas.System.com/idfx/keytype/asymmetric.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,7 +45,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A URI that represents the bearer key type; http://schemas.System.com/idfx/keytype/bearer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +62,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A URI that represents the symmetric key type; http://schemas.System.com/idfx/keytype/symmetric.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

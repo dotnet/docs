@@ -1,2 +1,0 @@
-            SyndicationItem item = new SyndicationItem("Item Title", "Item Content", new Uri("http://Item/Alternate/Link"));
-            item.Links.Add(new SyndicationLink(new Uri("http://server/link"), "alternate", "Link Title", "text/html", 1000));

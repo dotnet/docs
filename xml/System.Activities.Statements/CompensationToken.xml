@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a means to explicitly confirm or compensate a <see cref="T:System.Activities.Statements.CompensableActivity" /> once the <see cref="P:System.Activities.Statements.CompensableActivity.Body" /> of the <see cref="T:System.Activities.Statements.CompensableActivity" /> has successfully completed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Compensation Programming Model](http://msdn.microsoft.com/en-us/29e5442c-1df7-401d-a6ca-746e617cbf9f).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

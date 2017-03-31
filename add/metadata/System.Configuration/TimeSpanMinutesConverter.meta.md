@@ -1,19 +1,31 @@
 ---
 uid: System.Configuration.TimeSpanMinutesConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.TimeSpanMinutesConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.TimeSpanMinutesConverter.ConvertTo
+---
+
+---
+uid: System.Configuration.TimeSpanMinutesConverter.ConvertFrom
 ---
 
 ---
 uid: System.Configuration.TimeSpanMinutesConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.TimeSpanMinutesConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

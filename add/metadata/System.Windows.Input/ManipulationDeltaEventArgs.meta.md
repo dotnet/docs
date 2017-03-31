@@ -1,59 +1,79 @@
 ---
 uid: System.Windows.Input.ManipulationDeltaEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationDeltaEventArgs.Velocities
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationDeltaEventArgs.IsInertial
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationDeltaEventArgs.StartInertia
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationDeltaEventArgs.ManipulationContainer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationDeltaEventArgs.Manipulators
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationDeltaEventArgs.ReportBoundaryFeedback(System.Windows.Input.ManipulationDelta)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationDeltaEventArgs.ManipulationOrigin
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationDeltaEventArgs.Cancel
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationDeltaEventArgs.CumulativeManipulation
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationDeltaEventArgs.Complete
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

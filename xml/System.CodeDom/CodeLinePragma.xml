@@ -19,8 +19,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a specific location within a specific file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeLinePragma> can be used to represent a specific location within a file. This type of object is often used after compilation by debugging tools to store locations of associated code elements, such as position references associated with compiler warnings and errors.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.CodeDom.CodeLinePragma> class to reference a specific line of a source file.  
+  
+ [!code-cpp[CodeDomSampleBatch#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#2)]
+ [!code-csharp[CodeDomSampleBatch#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#2)]
+ [!code-vb[CodeDomSampleBatch#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,8 +50,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeLinePragma" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you use this constructor you should also set the <xref:System.CodeDom.CodeLinePragma.LineNumber%2A> and <xref:System.CodeDom.CodeLinePragma.FileName%2A> properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -52,10 +75,21 @@
         <Parameter Name="lineNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="lineNumber">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fileName">The file name of the associated file.</param>
+        <param name="lineNumber">The line number to store a reference to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeLinePragma" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.CodeDom.CodeLinePragma> class to reference a specific line of a source file.  
+  
+ [!code-cpp[CodeDomSampleBatch#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeDomSampleBatch/CPP/class1.cpp#2)]
+ [!code-csharp[CodeDomSampleBatch#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDomSampleBatch/CS/class1.cs#2)]
+ [!code-vb[CodeDomSampleBatch#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomSampleBatch/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FileName">
@@ -71,8 +105,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the associated file.</summary>
+        <value>The file name of the associated file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +123,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the line number of the associated reference.</summary>
+        <value>The line number.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

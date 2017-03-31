@@ -1,69 +1,83 @@
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.DnsSuffix
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.DhcpServerAddresses
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.MulticastAddresses
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.WinsServersAddresses
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.GetIPv6Properties
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.UnicastAddresses
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.DnsAddresses
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.AnycastAddresses
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.IsDnsEnabled
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.GetIPv4Properties
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.GatewayAddresses
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPInterfaceProperties.IsDynamicDnsEnabled
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

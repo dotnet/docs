@@ -1,24 +1,41 @@
 ---
 uid: System.Linq.IQueryProvider
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.IQueryProvider.CreateQuery(System.Linq.Expressions.Expression)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.IQueryProvider.CreateQuery``1(System.Linq.Expressions.Expression)
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
+---
+
+---
+uid: System.Linq.IQueryProvider.Execute
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.IQueryProvider.Execute``1(System.Linq.Expressions.Expression)
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
+---
+
+---
+uid: System.Linq.IQueryProvider.CreateQuery
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.IQueryProvider.Execute(System.Linq.Expressions.Expression)
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

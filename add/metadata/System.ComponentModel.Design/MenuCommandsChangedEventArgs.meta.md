@@ -1,19 +1,27 @@
 ---
 uid: System.ComponentModel.Design.MenuCommandsChangedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.MenuCommandsChangedEventArgs.#ctor(System.ComponentModel.Design.MenuCommandsChangedType,System.ComponentModel.Design.MenuCommand)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.MenuCommandsChangedEventArgs.Command
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.MenuCommandsChangedEventArgs.ChangeType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

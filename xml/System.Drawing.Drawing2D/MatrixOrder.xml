@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the order for matrix transform operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Matrix transform operations are not necessarily commutative. The order in which they are applied is important.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Append">
@@ -27,7 +34,7 @@
         <ReturnType>System.Drawing.Drawing2D.MatrixOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The new operation is applied after the old operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Prepend">
@@ -43,7 +50,7 @@
         <ReturnType>System.Drawing.Drawing2D.MatrixOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The new operation is applied before the old operation.</summary>
       </Docs>
     </Member>
   </Members>

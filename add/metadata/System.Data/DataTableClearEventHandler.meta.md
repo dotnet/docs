@@ -1,4 +1,6 @@
 ---
 uid: System.Data.DataTableClearEventHandler
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

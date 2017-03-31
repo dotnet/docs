@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.Position
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.ChartGraphics
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.ChartElement
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.Chart
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

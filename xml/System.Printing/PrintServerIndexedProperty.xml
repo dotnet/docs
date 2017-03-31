@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the properties of a <see cref="T:System.Printing.PrintServer" /> object that are initialized when it is constructed.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Printing.PrintServerIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that specifies whether a printer error causes the print server to beep.</summary>
       </Docs>
     </Member>
     <Member MemberName="DefaultPortThreadPriority">
@@ -43,7 +43,7 @@
         <ReturnType>System.Printing.PrintServerIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that specifies the default priority for the thread that manages port I/0.</summary>
       </Docs>
     </Member>
     <Member MemberName="DefaultSchedulerPriority">
@@ -59,7 +59,7 @@
         <ReturnType>System.Printing.PrintServerIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that specifies the default thread priority for the scheduling of print jobs.</summary>
       </Docs>
     </Member>
     <Member MemberName="DefaultSpoolDirectory">
@@ -75,7 +75,7 @@
         <ReturnType>System.Printing.PrintServerIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that specifies the path to the folder where spool jobs are located as temporary files.</summary>
       </Docs>
     </Member>
     <Member MemberName="EventLog">
@@ -91,7 +91,7 @@
         <ReturnType>System.Printing.PrintServerIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that specifies the kind of event logging that is provided by the print server.</summary>
       </Docs>
     </Member>
     <Member MemberName="MajorVersion">
@@ -107,7 +107,7 @@
         <ReturnType>System.Printing.PrintServerIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that specifies the major version of the operating system.</summary>
       </Docs>
     </Member>
     <Member MemberName="MinorVersion">
@@ -123,7 +123,7 @@
         <ReturnType>System.Printing.PrintServerIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that specifies the minor version of the operating system.</summary>
       </Docs>
     </Member>
     <Member MemberName="NetPopup">
@@ -139,7 +139,7 @@
         <ReturnType>System.Printing.PrintServerIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that specifies whether the client computer or the print server receives notifications that a job is finished.</summary>
       </Docs>
     </Member>
     <Member MemberName="PortThreadPriority">
@@ -155,7 +155,7 @@
         <ReturnType>System.Printing.PrintServerIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that specifies the priority of the thread that manages port I/O.</summary>
       </Docs>
     </Member>
     <Member MemberName="RestartJobOnPoolEnabled">
@@ -171,7 +171,7 @@
         <ReturnType>System.Printing.PrintServerIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that specifies whether users can restart print jobs when printer pooling is being used.</summary>
       </Docs>
     </Member>
     <Member MemberName="RestartJobOnPoolTimeout">
@@ -187,7 +187,7 @@
         <ReturnType>System.Printing.PrintServerIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that specifies how long to wait before restarting a print job when printer pooling is being used.</summary>
       </Docs>
     </Member>
     <Member MemberName="SchedulerPriority">
@@ -203,7 +203,7 @@
         <ReturnType>System.Printing.PrintServerIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that specifies the priority of the scheduler.</summary>
       </Docs>
     </Member>
   </Members>

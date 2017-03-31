@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Web.UI.ScriptManager.Navigate" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `HistoryEventArgs` class provides data for the <xref:System.Web.UI.ScriptManager.Navigate> event, which is raised when the user has clicked the browser's **Back** button or **Forward** button.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +35,8 @@
         <Parameter Name="state" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="state">A collection of name/value pairs that represent the state of the Web page.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HistoryEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +53,16 @@
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of name/value pairs that represent the state of a Web page.</summary>
+        <value>A collection that represents the state of a Web page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HistoryEventArgs.State%2A> property to store the data that is required in order to restore a Web page to a specified application state.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

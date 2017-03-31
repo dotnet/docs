@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether a <see cref="T:System.Windows.Controls.Frame" /> displays its navigation chrome. <see cref="T:System.Windows.Navigation.NavigationUIVisibility" /> is used by the <see cref="P:System.Windows.Controls.Frame.NavigationUIVisibility" /> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how always show the navigation chrome of a <xref:System.Windows.Controls.Frame> by setting <xref:System.Windows.Navigation.NavigationUIVisibility> to <xref:System.Windows.Navigation.NavigationUIVisibility>.  
+  
+ [!code-csharp[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameNavigationUIVisibilitySnippets/CSharp/Window1.xaml.cs#setnavigationuivisibility)]
+ [!code-vb[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FrameNavigationUIVisibilitySnippets/visualbasic/window1.xaml.vb#setnavigationuivisibility)]
+ [!code-xml[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/samples/snippets/xaml/VS_Snippets_Wpf/FrameNavigationUIVisibilitySnippets/XAML/Window1.xaml#setnavigationuivisibility)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Automatic">
@@ -27,7 +38,7 @@
         <ReturnType>System.Windows.Navigation.NavigationUIVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The navigation chrome is visible when a <see cref="T:System.Windows.Controls.Frame" /> uses its own journal (see <see cref="P:System.Windows.Controls.Frame.JournalOwnership" />).</summary>
       </Docs>
     </Member>
     <Member MemberName="Hidden">
@@ -43,7 +54,7 @@
         <ReturnType>System.Windows.Navigation.NavigationUIVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The navigation chrome is not visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -59,7 +70,7 @@
         <ReturnType>System.Windows.Navigation.NavigationUIVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The navigation chrome is visible.</summary>
       </Docs>
     </Member>
   </Members>

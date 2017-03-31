@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Documents.LogicalDirection
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

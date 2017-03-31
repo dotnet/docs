@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Cryptography.Xml
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

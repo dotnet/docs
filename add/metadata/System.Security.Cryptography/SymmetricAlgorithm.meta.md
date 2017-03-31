@@ -1,159 +1,251 @@
 ---
 uid: System.Security.Cryptography.SymmetricAlgorithm
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SymmetricAlgorithm.KeySize
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SymmetricAlgorithm.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SymmetricAlgorithm.GenerateIV
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SymmetricAlgorithm.BlockSizeValue
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SymmetricAlgorithm.IV
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SymmetricAlgorithm.PaddingValue
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SymmetricAlgorithm.BlockSize
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor(System.Byte[],System.Byte[])
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor(System.Byte[],System.Byte[])
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizesValue
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.Key
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizesValue
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.ValidKeySize(System.Int32)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.GenerateKey
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.KeySizeValue
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.Create(System.String)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.IVValue
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.Padding
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.ModeValue
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.Mode
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.KeyValue
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.FeedbackSizeValue
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SymmetricAlgorithm.Create
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.SymmetricAlgorithm.Clear
-internalonly: False
+uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor(System.Byte[],System.Byte[])
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor
-internalonly: False
+uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor(System.Byte[],System.Byte[])
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizesValue
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.Key
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizesValue
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.ValidKeySize(System.Int32)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.GenerateKey
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.KeySizeValue
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.Create(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.Dispose(System.Boolean)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.SymmetricAlgorithm.Dispose
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.IVValue
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.Padding
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.ModeValue
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.Mode
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.KeyValue
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.FeedbackSizeValue
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.Create
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.Clear
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.SymmetricAlgorithm.Dispose
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

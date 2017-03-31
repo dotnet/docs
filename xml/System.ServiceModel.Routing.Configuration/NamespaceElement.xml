@@ -11,8 +11,26 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a configuration element that defines the namespace element. This contains namespaces to namespace prefix mappings that can then be used in XPath filters.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default namespaces and prefixes that are understood are shown in the following table.  
+  
+|||  
+|-|-|  
+|Prefix|Namespace|  
+|s11|http://schemas.xmlsoap.org/soap/envelope|  
+|s12|http://www.w3.org/2003/05/soap-envelope|  
+|wsaAugust2004|http://schemas.xmlsoap.org/ws/2004/08/addressing|  
+|wsa10|http://www.w3.org/2005/08/addressing|  
+|sm|http://schemas.microsoft.com/serviceModel/2004/05/xpathfunctions|  
+|tempuri|http://tempuri.org|  
+|ser|http://schemas.microsoft.com/2003/10/Serialization|  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +44,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Routing.Configuration.NamespaceElement" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +66,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the namespace for this configuration element.</summary>
+        <value>The namespace of this element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +89,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the namespace prefix for this configuration element.</summary>
+        <value>The namespace prefix of this element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

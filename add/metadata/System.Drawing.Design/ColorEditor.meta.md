@@ -1,29 +1,61 @@
 ---
 uid: System.Drawing.Design.ColorEditor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Design.ColorEditor.EditValue
+manager: "ghogen"
+---
+
+---
+uid: System.Drawing.Design.ColorEditor.GetPaintValueSupported
+manager: "ghogen"
 ---
 
 ---
 uid: System.Drawing.Design.ColorEditor.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.ColorEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.ColorEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Design.ColorEditor.GetEditStyle
+manager: "ghogen"
+---
+
+---
+uid: System.Drawing.Design.ColorEditor.PaintValue
+manager: "ghogen"
 ---
 
 ---
 uid: System.Drawing.Design.ColorEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.ColorEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

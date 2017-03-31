@@ -1,34 +1,34 @@
 ---
 uid: System.Management.ManagementObjectCollection.ManagementObjectEnumerator
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementObjectCollection.ManagementObjectEnumerator.Dispose
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementObjectCollection.ManagementObjectEnumerator.MoveNext
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementObjectCollection.ManagementObjectEnumerator.Reset
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementObjectCollection.ManagementObjectEnumerator.Current
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementObjectCollection.ManagementObjectEnumerator.Finalize
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementObjectCollection.ManagementObjectEnumerator.System#Collections#IEnumerator#Current
-internalonly: False
+manager: "jillfra"
 ---

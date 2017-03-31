@@ -1,4 +1,6 @@
 ---
 uid: System.Xml.Serialization.XmlNodeEventHandler
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

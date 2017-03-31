@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies where a chart element, such as a legend or title, will be docked on the chart.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.Docking> enumeration represents the location on the <xref:System.Web.UI.DataVisualization.Charting.Chart> control where a chart element will be docked.  
+  
+ Set the `IsDockedInsideChartArea` property of the relevant chart element to specify whether that element will be docked to the entire chart image or to a <xref:System.Web.UI.DataVisualization.Charting.ChartArea>object. The chart area is specified in the `DockedToChartArea` property of the chart element.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -27,7 +36,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.Docking</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Docked to the bottom of either the chart image or a <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea" /> object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -43,7 +52,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.Docking</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Docked to the left of either the chart image or a <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea" /> object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -59,7 +68,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.Docking</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Docked to the right of either the chart image or a <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea" /> object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -75,7 +84,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.Docking</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Docked to the top of either the chart image or a <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea" /> object.</summary>
       </Docs>
     </Member>
   </Members>

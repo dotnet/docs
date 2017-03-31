@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides programmatic access to the context of the incoming Web request.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see langword="Accept" /> header value from the incoming Web request.</summary>
+        <value>The <see langword="Accept" /> header from the incoming Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,8 @@
         <Parameter Name="lastModified" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="lastModified">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="lastModified">The time at which the resource was last modified.</param>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
         <Parameter Name="entityTag" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="entityTag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityTag">An entity tag.</param>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +91,8 @@
         <Parameter Name="entityTag" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="entityTag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityTag">An entity tag.</param>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +112,8 @@
         <Parameter Name="entityTag" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="entityTag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityTag">The entity tag.</param>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +133,8 @@
         <Parameter Name="entityTag" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="entityTag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityTag">The entity tag.</param>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +154,8 @@
         <Parameter Name="entityTag" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="entityTag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityTag">The entity tag.</param>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +175,8 @@
         <Parameter Name="entityTag" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="entityTag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityTag">The entity tag.</param>
+        <summary>Called when a conditional update request is made for a resource.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,8 +196,8 @@
         <Parameter Name="entityTag" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="entityTag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityTag">The entity tag.</param>
+        <summary>Called when a conditional update request is made for a resource.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,8 +217,8 @@
         <Parameter Name="entityTag" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="entityTag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityTag">The entity tag.</param>
+        <summary>Called when a conditional update request is made for a resource.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,8 +235,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see langword="ContentLength" /> header value of the incoming Web request.</summary>
+        <value>The  <see langword="ContentLength" /> header of the incoming Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,8 +253,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see langword="ContentType" /> header value from the incoming Web request.</summary>
+        <value>The <see langword="ContentType" /> header from the incoming Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,8 +272,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a collection of the <see langword="Accept" /> header elements.</summary>
+        <returns>A collection of the <see langword="Accept" /> header elements.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,8 +290,8 @@
         <ReturnType>System.Net.WebHeaderCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the headers for the incoming Web request.</summary>
+        <value>A <see cref="T:System.Net.WebHeaderCollection" /> instance that contains the headers of the incoming Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,8 +308,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of the items contained in the requests <see langword="If-Match" /> header.</summary>
+        <value>A collection of items contained in the requests <see langword="If-Match" /> header.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,8 +326,8 @@
         <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the request’s <see langword="If-Modified-Since" /> header.</summary>
+        <value>The request’s <see langword="If-Modified-Since" /> header value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,8 +344,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the values contained in the request’s <see langword="If-None-Match" /> header.</summary>
+        <value>The values contained in the request’s <see langword="If-None-Match" /> header.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,8 +362,8 @@
         <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the request’s <see langword="If-Unmatched-Since" /> header.</summary>
+        <value>The request’s <see langword="If-Unmatched-Since" /> header..</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,8 +380,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the HTTP method of the incoming Web request.</summary>
+        <value>The HTTP method of the incoming Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -398,8 +398,8 @@
         <ReturnType>System.UriTemplateMatch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the <see cref="T:System.UriTemplateMatch" /> instance created during the dispatch of the incoming Web request.</summary>
+        <value>A <see cref="T:System.UriTemplateMatch" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -416,8 +416,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see langword="UserAgent" /> header value from the incoming Web request.</summary>
+        <value>The <see langword="UserAgent" /> header from the incoming Web request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

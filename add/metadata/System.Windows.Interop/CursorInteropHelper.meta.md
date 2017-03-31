@@ -1,9 +1,11 @@
 ---
 uid: System.Windows.Interop.CursorInteropHelper
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Interop.CursorInteropHelper.Create(System.Runtime.InteropServices.SafeHandle)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

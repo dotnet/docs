@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="M:System.Data.DataTable.NewRow" /> method.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,8 +38,8 @@
         <Parameter Name="dataRow" Type="System.Data.DataRow" />
       </Parameters>
       <Docs>
-        <param name="dataRow">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dataRow">The <see cref="T:System.Data.DataRow" /> being added.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Data.DataTableNewRowEventArgs" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Data.DataRow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the row that is being added.</summary>
+        <value>The <see cref="T:System.Data.DataRow" /> that is being added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

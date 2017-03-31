@@ -1,4 +1,4 @@
 ---
 uid: XamlGeneratedNamespace
-internalonly: False
+manager: "ghogen"
 ---

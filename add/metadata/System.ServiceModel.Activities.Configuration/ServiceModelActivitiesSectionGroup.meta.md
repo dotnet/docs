@@ -1,19 +1,27 @@
 ---
 uid: System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup.WorkflowHostingOptionsSection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup.GetSectionGroup(System.Configuration.Configuration)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

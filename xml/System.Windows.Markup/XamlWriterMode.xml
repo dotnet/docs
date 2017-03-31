@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the XAML writer mode for serializing values that are expressions (such as binding declarations).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Markup.XamlWriterMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Expression" /> is serialized.</summary>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Markup.XamlWriterMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The evaluated value of the <see cref="T:System.Windows.Expression" /> is serialized.</summary>
       </Docs>
     </Member>
   </Members>

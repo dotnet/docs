@@ -1,4 +1,6 @@
 ---
 uid: System.Threading.ApartmentState
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

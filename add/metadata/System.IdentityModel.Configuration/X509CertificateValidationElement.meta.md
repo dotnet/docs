@@ -1,29 +1,35 @@
 ---
 uid: System.IdentityModel.Configuration.X509CertificateValidationElement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.X509CertificateValidationElement.CertificateValidator
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.X509CertificateValidationElement.RevocationMode
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.X509CertificateValidationElement.TrustedStoreLocation
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.X509CertificateValidationElement.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.X509CertificateValidationElement.CertificateValidationMode
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

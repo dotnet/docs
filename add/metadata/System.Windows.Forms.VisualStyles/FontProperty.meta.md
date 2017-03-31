@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.VisualStyles.FontProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

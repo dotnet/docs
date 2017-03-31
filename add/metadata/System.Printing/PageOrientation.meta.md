@@ -1,4 +1,5 @@
 ---
 uid: System.Printing.PageOrientation
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.IEditableCollectionViewAddNewItem
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.IEditableCollectionViewAddNewItem.AddNewItem(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.IEditableCollectionViewAddNewItem.CanAddNewItem
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

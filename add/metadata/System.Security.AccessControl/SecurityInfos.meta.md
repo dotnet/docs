@@ -1,4 +1,6 @@
 ---
 uid: System.Security.AccessControl.SecurityInfos
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.Build.Execution.ITargetResult
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ITargetResult.ResultCode
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ITargetResult.Exception
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ITargetResult.Items
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

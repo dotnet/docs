@@ -1,14 +1,17 @@
 ---
 uid: System.Web.IHttpAsyncHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.IHttpAsyncHandler.EndProcessRequest(System.IAsyncResult)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.IHttpAsyncHandler.BeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

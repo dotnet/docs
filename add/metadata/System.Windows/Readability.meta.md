@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Readability
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

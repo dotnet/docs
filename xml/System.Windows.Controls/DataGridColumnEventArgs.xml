@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGrid.ColumnDisplayIndexChanged" /> and <see cref="E:System.Windows.Controls.DataGrid.ColumnReordered" /> events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="column" Type="System.Windows.Controls.DataGridColumn" />
       </Parameters>
       <Docs>
-        <param name="column">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="column">The column related to the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridColumnEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Windows.Controls.DataGridColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the column related to the event.</summary>
+        <value>An object that represents the column related to the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

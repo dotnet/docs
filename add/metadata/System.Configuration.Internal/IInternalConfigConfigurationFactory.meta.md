@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.Internal.IInternalConfigConfigurationFactory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigConfigurationFactory.NormalizeLocationSubPath(System.String,System.Configuration.Internal.IConfigErrorInfo)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigConfigurationFactory.Create(System.Type,System.Object[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

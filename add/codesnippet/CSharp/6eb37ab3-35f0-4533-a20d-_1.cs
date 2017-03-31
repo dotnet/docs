@@ -1,1 +1,0 @@
-            SyndicationLink link = SyndicationLink.CreateAlternateLink(new Uri("http://server/link"), "text/html");

@@ -1,24 +1,34 @@
 ---
 uid: System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject.GetChildCount
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject.#ctor(System.Workflow.ComponentModel.Design.CompositeActivityDesigner)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject.GetChild(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.CompositeDesignerAccessibleObject.State
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

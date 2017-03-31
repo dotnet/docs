@@ -1,64 +1,77 @@
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext.User
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext.IsAuthenticated
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext.SecWebSocketKey
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext.WebSocket
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext.Origin
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext.RequestUri
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext.CookieCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext.Headers
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext.SecWebSocketVersion
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext.IsLocal
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext.SecWebSocketProtocols
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.HttpListenerWebSocketContext.IsSecureConnection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

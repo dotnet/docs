@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.SendMailErrorEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SendMailErrorEventArgs.#ctor(System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SendMailErrorEventArgs.Exception
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SendMailErrorEventArgs.Handled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

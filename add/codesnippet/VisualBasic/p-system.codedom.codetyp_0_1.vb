@@ -1,1 +1,0 @@
-        kType.HasConstructorConstraint = True

@@ -1,14 +1,18 @@
 ---
 uid: Microsoft.JScript.ActiveXObjectConstructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ActiveXObjectConstructor.Invoke
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.ActiveXObjectConstructor.Invoke
 ---
 
 ---
 uid: Microsoft.JScript.ActiveXObjectConstructor.CreateInstance(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---

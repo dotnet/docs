@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the appearance of a list item's bullet style.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.List.MarkerStyle%2A> property of a <xref:System.Windows.Documents.List> can be used to define the bullet style for each item in the list. The bullet style can be a graphic element or an alpha-numeric value.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create a <xref:System.Windows.TextMarkerStyle>.  
+  
+ [!code-csharp[TextMarkerStyleSnippets#TextMarkerStyleSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextMarkerStyleSnippets/csharp/window1.xaml.cs#textmarkerstylesnippet1)]
+ [!code-vb[TextMarkerStyleSnippets#TextMarkerStyleSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextMarkerStyleSnippets/visualbasic/window1.xaml.vb#textmarkerstylesnippet1)]
+ [!code-xml[TextMarkerStyleSnippets#TextMarkerStyleSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextMarkerStyleSnippets/csharp/window1.xaml#textmarkerstylesnippet1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Box">
@@ -27,7 +43,7 @@
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A solid square box is displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Circle">
@@ -43,7 +59,7 @@
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A hollow disc circle is displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Decimal">
@@ -59,7 +75,7 @@
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A decimal is displayed, starting with the number one, for example, 1, 2, and 3. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
       </Docs>
     </Member>
     <Member MemberName="Disc">
@@ -75,7 +91,7 @@
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A solid disc circle is displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="LowerLatin">
@@ -91,7 +107,7 @@
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A lowercase [!INCLUDE[TLA#tla_ascii](~/includes/tlasharptla-ascii-md.md)] character is displayed, starting with the letter a, for example, a, b, and c. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
       </Docs>
     </Member>
     <Member MemberName="LowerRoman">
@@ -107,7 +123,7 @@
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A lowercase Roman numeral is displayed, starting with the numeral i, for example, i, ii, iii, and iv. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -123,7 +139,7 @@
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No marker is displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Square">
@@ -139,7 +155,7 @@
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A hollow square shape is displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpperLatin">
@@ -155,7 +171,7 @@
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An uppercase [!INCLUDE[TLA2#tla_ascii](~/includes/tla2sharptla-ascii-md.md)] character is displayed, starting with the letter A, for example, A, B, and C. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpperRoman">
@@ -171,7 +187,7 @@
         <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An uppercase Roman numeral is displayed, starting with the numeral I, for example, I, II, III, and IV. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
       </Docs>
     </Member>
   </Members>

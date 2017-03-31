@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.Presentation.IActivityTemplateFactory
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.IActivityTemplateFactory.Create(System.Windows.DependencyObject)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

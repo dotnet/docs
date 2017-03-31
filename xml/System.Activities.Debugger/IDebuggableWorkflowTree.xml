@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an interface whose implementation enables the Workflow debugger to debug a serialized Workflow object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the root of the Workflow tree.</summary>
+        <returns>An activity that represents the root of the workflow tree.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

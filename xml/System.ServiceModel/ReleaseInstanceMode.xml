@@ -11,8 +11,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies when the system recycles the service object in the operation invocation process.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.ReleaseInstanceMode> with the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property to inform [!INCLUDE[indigo1](~/includes/indigo1-md.md)] that the current service object must be recycled at a particular point in the invocation process. The default behavior is to recycle a service object according to the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value.  
+  
+   
+  
+## Examples  
+ The following example code shows the use of <xref:System.ServiceModel.ReleaseInstanceMode> to recycle service objects both before and after a call.  
+  
+ [!code-csharp[OBA.ReleaseInstanceMode#1](~/samples/snippets/csharp/VS_Snippets_CFX/oba.releaseinstancemode/cs/services.cs#1)]
+ [!code-vb[OBA.ReleaseInstanceMode#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/oba.releaseinstancemode/vb/services.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AfterCall">
@@ -29,7 +44,7 @@
         <ReturnType>System.ServiceModel.ReleaseInstanceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Recycles the object subsequent to the completion of the operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="BeforeAndAfterCall">
@@ -46,7 +61,7 @@
         <ReturnType>System.ServiceModel.ReleaseInstanceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Recycles the object prior to calling the operation and subsequent to the completion of the operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="BeforeCall">
@@ -63,7 +78,7 @@
         <ReturnType>System.ServiceModel.ReleaseInstanceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Recycles the object prior to calling the operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,7 +95,7 @@
         <ReturnType>System.ServiceModel.ReleaseInstanceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Recycles the object according to the <see cref="P:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode" /> value.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a web service descriptor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.WebServiceDescriptor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.DisplayClaim&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.IdentityModel.Metadata.DisplayClaim" /> that represents the claim types offered.</summary>
+        <value>The collection of offered claim types.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.DisplayClaim&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.IdentityModel.Metadata.DisplayClaim" /> that represents the claim types requested.</summary>
+        <value>The collection of requested claim types.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the service description.</summary>
+        <value>The service description.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the service display name.</summary>
+        <value>The service display name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +115,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.EndpointAddress" /> that represents the target scopes.</summary>
+        <value>The collection of target scopes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +133,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Uri&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of token types offered.</summary>
+        <value>The collection of token types offered.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

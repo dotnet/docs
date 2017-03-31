@@ -1,9 +1,9 @@
 ---
 uid: System.Xaml.IXamlNameProvider
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlNameProvider.GetName(System.Object)
-internalonly: False
+manager: "martinek"
 ---

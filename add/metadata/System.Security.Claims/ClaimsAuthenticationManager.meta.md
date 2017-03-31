@@ -1,19 +1,23 @@
 ---
 uid: System.Security.Claims.ClaimsAuthenticationManager
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsAuthenticationManager.Authenticate(System.String,System.Security.Claims.ClaimsPrincipal)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsAuthenticationManager.LoadCustomConfiguration(System.Xml.XmlNodeList)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.Security.Claims.ClaimsAuthenticationManager.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

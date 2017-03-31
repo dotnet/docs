@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies most of the result codes for signature verification.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A successful verification returns the Valid result.  
+  
+ HRESULT values are generally returned by the unmanaged Microsoft Cryptographic API (CAPI); the other values are set by managed verification. This enumeration is not comprehensive of all possible HRESULT values and is subject to change.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AssemblyIdentityMismatch">
@@ -27,7 +36,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identity of the assembly specified in the /asm:assembly/asm:assemblyIdentity node of the manifest does not match the identity of the assembly in the Authenticode signature in the /asm:assembly/ds:signature/ds:KeyInfo/msrel:RelData/r:license/r:grant/as:ManifestInformation/as:assemblyIdentity node.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadDigest">
@@ -43,7 +52,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The digital signature of the object did not verify.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadSignatureFormat">
@@ -59,7 +68,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The signature format is invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="BasicConstraintsNotObserved">
@@ -75,7 +84,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The basic constraint extension of a certificate has not been observed.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateExpired">
@@ -91,7 +100,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate has expired.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateExplicitlyDistrusted">
@@ -107,7 +116,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate was explicitly marked as not trusted by the user.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateMalformed">
@@ -123,7 +132,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate is missing or has an empty value for an important field, such as a subject or issuer name.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateNotExplicitlyTrusted">
@@ -139,7 +148,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate is not trusted explicitly.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateRevoked">
@@ -155,7 +164,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate has been revoked.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateUsageNotAllowed">
@@ -171,7 +180,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate cannot be used for signing and verification.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContainingSignatureInvalid">
@@ -187,7 +196,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The strong name signature does not verify in the <see cref="T:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation" /> object. Because the strong name signature wraps the Authenticode signature, someone could replace the Authenticode signature with a signature of their choosing. To prevent this, this error code is returned if the strong name does not verify because substituting a part of the strong name signature will invalidate it.</summary>
       </Docs>
     </Member>
     <Member MemberName="CouldNotBuildChain">
@@ -203,7 +212,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The chain could not be built.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenericTrustFailure">
@@ -219,7 +228,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>There is a general trust failure with the certificate.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCertificateName">
@@ -235,7 +244,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate has an invalid name. The name is either not included in the permitted list or is explicitly excluded.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCertificatePolicy">
@@ -251,7 +260,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate has an invalid policy.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCertificateRole">
@@ -267,7 +276,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate has an invalid role.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCertificateSignature">
@@ -283,7 +292,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The signature of the certificate cannot be verified.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCertificateUsage">
@@ -299,7 +308,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate has an invalid usage.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCountersignature">
@@ -315,7 +324,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the counter signatures is invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidSignerCertificate">
@@ -331,7 +340,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate for the signer of the message is invalid or not found.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidTimePeriodNesting">
@@ -347,7 +356,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A certificate was issued after the issuing certificate has expired.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidTimestamp">
@@ -363,7 +372,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The time stamp signature or certificate could not be verified or is malformed.</summary>
       </Docs>
     </Member>
     <Member MemberName="IssuerChainingError">
@@ -379,7 +388,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A parent of a given certificate did not issue that child certificate.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingSignature">
@@ -395,7 +404,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The signature is missing.</summary>
       </Docs>
     </Member>
     <Member MemberName="PathLengthConstraintViolated">
@@ -411,7 +420,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A path length constraint in the certification chain has been violated.</summary>
       </Docs>
     </Member>
     <Member MemberName="PublicKeyTokenMismatch">
@@ -427,7 +436,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The public key token from the manifest identity in the /asm:assembly/asm:AssemblyIdentity node does not match the public key token of the key that is used to sign the manifest.</summary>
       </Docs>
     </Member>
     <Member MemberName="PublisherMismatch">
@@ -443,7 +452,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The publisher name from /asm:assembly/asmv2:publisherIdentity does not match the subject name of the signing certificate, or the issuer key hash from the same publisherIdentity node does not match the key hash of the signing certificate.</summary>
       </Docs>
     </Member>
     <Member MemberName="RevocationCheckFailure">
@@ -459,7 +468,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The revocation check failed.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemError">
@@ -475,7 +484,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A system-level error occurred while verifying trust.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownCriticalExtension">
@@ -491,7 +500,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A certificate contains an unknown extension that is marked critical.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownTrustProvider">
@@ -507,7 +516,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate has an unknown trust provider.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownVerificationAction">
@@ -523,7 +532,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate has an unknown verification action.</summary>
       </Docs>
     </Member>
     <Member MemberName="UntrustedCertificationAuthority">
@@ -539,7 +548,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certification chain processed correctly, but one of the CA certificates is not trusted by the policy provider.</summary>
       </Docs>
     </Member>
     <Member MemberName="UntrustedRootCertificate">
@@ -555,7 +564,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The root certificate is not trusted.</summary>
       </Docs>
     </Member>
     <Member MemberName="UntrustedTestRootCertificate">
@@ -571,7 +580,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The test root certificate is not trusted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Valid">
@@ -587,7 +596,7 @@
         <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The certificate verification result is valid.</summary>
       </Docs>
     </Member>
   </Members>

@@ -13,8 +13,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Establishes a <see cref="P:System.Xml.Serialization.IXmlTextParser.Normalized" /> property for use by the .NET Framework infrastructure.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement the <xref:System.Xml.Serialization.IXmlTextParser> interface in your code. Instead use the <xref:System.Xml.XmlTextReader.Normalization%2A> property of the <xref:System.Xml.XmlTextReader> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Normalized">
@@ -35,9 +42,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether white space and attribute values are normalized.</summary>
+        <value>
+          <see langword="true" /> if white space attributes values are normalized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement the <xref:System.Xml.Serialization.IXmlTextParser> interface and <xref:System.Xml.Serialization.IXmlTextParser.Normalized%2A> property in your code. Instead use the <xref:System.Xml.XmlTextReader.Normalization%2A> property of the <xref:System.Xml.XmlTextReader> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WhitespaceHandling">
@@ -58,9 +73,16 @@
         <ReturnType>System.Xml.WhitespaceHandling</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets how white space is handled when parsing XML.</summary>
+        <value>A member of the <see cref="T:System.Xml.WhitespaceHandling" /> enumeration that describes how whites pace is handled when parsing XML.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement the <xref:System.Xml.Serialization.IXmlTextParser> interface and <xref:System.Xml.Serialization.IXmlTextParser.Normalized%2A> property in your code. Instead use the <xref:System.Xml.XmlTextReader.Normalization%2A> property of the <xref:System.Xml.XmlTextReader> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

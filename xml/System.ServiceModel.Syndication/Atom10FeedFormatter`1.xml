@@ -28,9 +28,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TSyndicationFeed">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TSyndicationFeed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> -derived type to serialize.</typeparam>
+    <summary>A class that serializes <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" />-derived classes to and from Atom 1.0 format.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationFeed>-derived classes and to create instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> derived classes from XML documents that contain Atom 1.0 feeds. If you must serialize a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance, use the <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> formatter instead.  
+  
+> [!NOTE]
+>  The Atom 1.0 specification allows for fractional seconds to be specified in any of its date constructs. When serializing and deserializing, the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implementation ignores the fractional seconds.  
+  
+   
+  
+## Examples  
+ The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed>-derived class and serialize it to Atom 1.0.  
+  
+ [!code-csharp[AtomFormatter#2](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#2)]
+ [!code-vb[AtomFormatter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,8 +66,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10FeedFormatter`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed>-derived class and serialize it to Atom 1.0.  
+  
+ [!code-csharp[AtomFormatter#3](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#3)]
+ [!code-vb[AtomFormatter#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -69,9 +97,19 @@
         <Parameter Name="feedToWrite" Type="TSyndicationFeed" />
       </Parameters>
       <Docs>
-        <param name="feedToWrite">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="feedToWrite">The feed to serialize.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10FeedFormatter`1" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" />-derived instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed>-derived class and serialize it to Atom 1.0.  
+  
+ [!code-csharp[AtomFormatter#2](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#2)]
+ [!code-vb[AtomFormatter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFeedInstance">
@@ -92,8 +130,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> derived class.</summary>
+        <returns>A new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

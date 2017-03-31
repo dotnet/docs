@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the version of the [!INCLUDE[ssODataFull](~/includes/ssodatafull-md.md)] targeted by the generated code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Data.Services.Design.DataServiceCodeVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Generate code that targets version 1.0.</summary>
       </Docs>
     </Member>
     <Member MemberName="V2">
@@ -43,7 +43,7 @@
         <ReturnType>System.Data.Services.Design.DataServiceCodeVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Generate code that targets version 2.0.</summary>
       </Docs>
     </Member>
   </Members>

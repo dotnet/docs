@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the tracking record sent to a tracking participant by the run-time tracking infrastructure when a message is received by a workflow service instance.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="record" Type="System.ServiceModel.Activities.Tracking.ReceiveMessageRecord" />
       </Parameters>
       <Docs>
-        <param name="record">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="record">The tracking information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.ReceiveMessageRecord" /> class using the specified <see cref="T:System.ServiceModel.Activities.Tracking.ReceiveMessageRecord" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the tracking record.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.ReceiveMessageRecord" /> class using the specified name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a copy of the <see cref="T:System.ServiceModel.Activities.Tracking.ReceiveMessageRecord" />.</summary>
+        <returns>A copy of <see cref="T:System.ServiceModel.Activities.Tracking.ReceiveMessageRecord" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +83,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the receiving end-to-end activity ID associated with this record.</summary>
+        <value>The activity ID.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +101,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the message ID of the message associated with this record.</summary>
+        <value>The message ID.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

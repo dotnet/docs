@@ -1,29 +1,29 @@
 ---
 uid: System.Xaml.IAttachedPropertyStore
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IAttachedPropertyStore.CopyPropertiesTo(System.Collections.Generic.KeyValuePair{System.Xaml.AttachableMemberIdentifier,System.Object}[],System.Int32)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IAttachedPropertyStore.RemoveProperty(System.Xaml.AttachableMemberIdentifier)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IAttachedPropertyStore.SetProperty(System.Xaml.AttachableMemberIdentifier,System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IAttachedPropertyStore.TryGetProperty(System.Xaml.AttachableMemberIdentifier,System.Object@)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IAttachedPropertyStore.PropertyCount
-internalonly: False
+manager: "martinek"
 ---

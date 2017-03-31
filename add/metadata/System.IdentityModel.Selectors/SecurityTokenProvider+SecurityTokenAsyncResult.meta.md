@@ -1,34 +1,48 @@
 ---
 uid: System.IdentityModel.Selectors.SecurityTokenProvider.SecurityTokenAsyncResult
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SecurityTokenProvider.SecurityTokenAsyncResult.AsyncWaitHandle
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SecurityTokenProvider.SecurityTokenAsyncResult.End(System.IAsyncResult)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SecurityTokenProvider.SecurityTokenAsyncResult.#ctor(System.IdentityModel.Tokens.SecurityToken,System.AsyncCallback,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SecurityTokenProvider.SecurityTokenAsyncResult.CompletedSynchronously
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SecurityTokenProvider.SecurityTokenAsyncResult.IsCompleted
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.SecurityTokenProvider.SecurityTokenAsyncResult.AsyncState
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

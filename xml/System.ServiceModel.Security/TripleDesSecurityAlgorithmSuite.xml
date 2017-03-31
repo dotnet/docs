@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The triple-DES security algorithm suite.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates and initializes an instance of <see cref="T:System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default asymmetric key wrap algorithm, RsaOaepKeyWrap.</summary>
+        <value>The default asymmetric key wrap algorithm, RsaOaepKeyWrap.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default asymmetric signature algorithm, RsaSha1Signature.</summary>
+        <value>The default asymmetric signature algorithm, RsaSha1Signature.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default canonicalization algorithm, ExclusiveC14n.</summary>
+        <value>The default canonicalization algorithm, ExclusiveC14n.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default digest algorithm, Sha1Digest.</summary>
+        <value>The default digest algorithm, Sha1Digest.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +115,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default encryption algorithm, TripleDesEncryption.</summary>
+        <value>The default encryption algorithm, TripleDesEncryption.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +133,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default encryption key derivation length, 192.</summary>
+        <value>The default encryption key derivation length, 192.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +151,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default signature key derivation length, 192.</summary>
+        <value>The default signature key derivation length, 192.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +169,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default symmetric key length, 192.</summary>
+        <value>The default symmetric key length, 192.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,8 +187,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default symmetric key wrap algorithm, TripleDesKeyWrap.</summary>
+        <value>The default symmetric key wrap algorithm, TripleDesKeyWrap.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,8 +205,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default symmetric signature algorithm, HmacSha1Signature.</summary>
+        <value>The default symmetric signature algorithm, HmacSha1Signature.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,9 +226,10 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="length">The asymmetric key length.</param>
+        <summary>Returns <see langword="true" /> if the specified asymmetric key length is supported; otherwise, returns <see langword="false" />. Valid lengths range from 1024 to 4096.</summary>
+        <returns>
+          <see langword="true" /> if the specified asymmetric key length is supported; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,9 +249,10 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="length">The symmetric key length.</param>
+        <summary>Returns <see langword="true" /> if the specified symmetric key length is supported; otherwise, returns <see langword="false" />. Valid lengths range from 192 to 256.</summary>
+        <returns>
+          <see langword="true" /> if the specified symmetric key length is supported; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,8 +270,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the string representation of the <see cref="T:System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite" />.</summary>
+        <returns>The string representation of the <see cref="T:System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

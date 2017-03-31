@@ -1,9 +1,13 @@
 ---
 uid: System.AddIn.Contract.IServiceProviderContract
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.IServiceProviderContract.QueryService(System.String,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

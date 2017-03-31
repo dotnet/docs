@@ -1,59 +1,71 @@
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformationCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformationCollection.Contains(System.Net.NetworkInformation.GatewayIPAddressInformation)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformationCollection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformationCollection.Item(System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformationCollection.Count
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformationCollection.Add(System.Net.NetworkInformation.GatewayIPAddressInformation)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformationCollection.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformationCollection.CopyTo(System.Net.NetworkInformation.GatewayIPAddressInformation[],System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformationCollection.GetEnumerator
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformationCollection.Clear
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformationCollection.IsReadOnly
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.GatewayIPAddressInformationCollection.Remove(System.Net.NetworkInformation.GatewayIPAddressInformation)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

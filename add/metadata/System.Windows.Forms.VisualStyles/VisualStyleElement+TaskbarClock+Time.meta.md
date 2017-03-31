@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock.Time
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock.Time.Normal
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

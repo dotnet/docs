@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.ConfigurationLocation
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationLocation.OpenConfiguration
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationLocation.Path
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

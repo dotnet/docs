@@ -1,1 +1,0 @@
-            Dim xdrExtensions As XmlDictionaryReader = eab.GetReaderAtExtensions()

@@ -15,8 +15,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An enumeration used to define access rights to data that is deployed by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets read-only access to all data deployed by the `AccountingService`.  
+  
+```  
+namespace AccountingServiceWebApp  
+{  
+    public class AccountingService :  
+                DataService<DataModel>  
+    {  
+        config.SetResourceContainerAccessRule("*",   
+                                ResourceContainerRights.AllRead);  
+  
+    }  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -32,7 +53,7 @@
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authorization to create, read, update, and delete data.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllRead">
@@ -48,7 +69,7 @@
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authorization to read data.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllWrite">
@@ -64,7 +85,7 @@
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authorization to write data.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,7 +101,7 @@
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Denies all rights to access data.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadMultiple">
@@ -96,7 +117,7 @@
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authorization to read sets of data.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadSingle">
@@ -112,7 +133,7 @@
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authorization to read single data items.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteAppend">
@@ -128,7 +149,7 @@
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authorization to create new data items in data sets.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteDelete">
@@ -144,7 +165,7 @@
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authorization to delete data items from data sets.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteMerge">
@@ -160,7 +181,7 @@
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authorization to merge data.</summary>
       </Docs>
     </Member>
     <Member MemberName="WriteReplace">
@@ -176,7 +197,7 @@
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authorization to replace data.</summary>
       </Docs>
     </Member>
   </Members>

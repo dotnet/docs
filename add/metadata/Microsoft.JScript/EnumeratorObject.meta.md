@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.EnumeratorObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.EnumeratorObject.LoadObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.EnumeratorObject.enumerator
-internalonly: False
+ms.author: "mikejo"
 ---

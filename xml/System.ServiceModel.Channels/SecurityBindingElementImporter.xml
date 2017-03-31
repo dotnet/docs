@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an extensibility point for extending the standard security policy import.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.SecurityBindingElementImporter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,9 +47,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the maximum allowed number of policy redirections.</summary>
+        <value>The maximum allowed number of policy redirections.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This quota is useful when importing security policy that involves an issued token. The issued token policy may contain a link to the issuing party's policy, which may itself involve an issued token. So importing the security policy for a service that requires issued token authentication may involve importing policy from the token-issuing services. Services that are incorrectly configured could result in a cycle in these policy redirections. This setting prevents the client from getting into an infinite loop due to incorrectly configured services by limiting the maximum number of redirections (10) that the client's policy import does when obtaining issued token policy.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy">
@@ -69,9 +76,9 @@
         <Parameter Name="policyContext" Type="System.ServiceModel.Description.PolicyConversionContext" />
       </Parameters>
       <Docs>
-        <param name="importer">To be added.</param>
-        <param name="policyContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="importer">The <see cref="T:System.ServiceModel.Description.MetadataImporter" /> that you can use to modify the importing process.</param>
+        <param name="policyContext">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> that you can use to insert your custom policy assertion.</param>
+        <summary>Imports a custom policy assertion about bindings.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a way to filter a query based on a specified type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This expression filters out elements in the data source that are not of the specified type.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Expressions.OfTypeExpression" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type that the filter is based on.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Expressions.OfTypeExpression" /> class using a specified type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +71,9 @@
         <Parameter Name="query" Type="System.Linq.IQueryable" />
       </Parameters>
       <Docs>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="query">The query to use for the filter.</param>
+        <summary>Returns the query that the <see cref="T:System.Web.UI.WebControls.Expressions.OfTypeExpression" /> was performed on.</summary>
+        <returns>A query that contains elements of the specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +95,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type that the filter is based on.</summary>
+        <value>The type that the filter is based on. The default value is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

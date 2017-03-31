@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a set of members for derived classes to provide options for the masked text box UI type editor.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.MaskDescriptor> abstract class defines the common set of properties that all mask descriptors must implement. You can use mask descriptors to create predefined mask options for use in the UI type editor for the <xref:System.Windows.Forms.MaskedTextBox>. For example, [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] provides predefined masks for data such as the Postal Code, time, different date formats, and telephone number. All predefined masks will be associated with the <xref:System.ComponentModel.MaskedTextProvider> parsing engine.  
+  
+ You can discover <xref:System.Windows.Forms.Design.MaskDescriptor> types at design time by querying the <xref:System.ComponentModel.Design.ITypeDiscoveryService> service provider.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +35,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.MaskDescriptor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.Design.MaskDescriptor.%23ctor%2A> is a compiler-supplied default constructor. A default constructor is required by the <xref:System.ComponentModel.Design.ITypeDiscoveryService> service provider.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Culture">
@@ -43,8 +59,8 @@
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Globalization.CultureInfo" /> representing the locale the mask is authored for.</summary>
+        <value>A <see cref="T:System.Globalization.CultureInfo" /> representing the locale the mask is authored for.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,10 +80,27 @@
         <Parameter Name="maskDescriptor" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="maskDescriptor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="maskDescriptor">The <see cref="T:System.Windows.Forms.Design.MaskDescriptor" /> to compare with the current <see cref="T:System.Windows.Forms.Design.MaskDescriptor" />.</param>
+        <summary>Determines whether the specified <see cref="T:System.Windows.Forms.Design.MaskDescriptor" /> is equal to the current <see cref="T:System.Windows.Forms.Design.MaskDescriptor" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Windows.Forms.Design.MaskDescriptor" /> is equal to the current <see cref="T:System.Windows.Forms.Design.MaskDescriptor" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.MaskDescriptor.Equals%2A> method determines whether `maskDescriptor` and the current mask descriptor describe the same mask.  
+  
+ This method returns `true` if the following conditions are met in both mask descriptors.  
+  
+ 1. The <xref:System.Windows.Forms.Design.MaskDescriptor.Mask%2A> property is the same for both mask descriptors.  
+  
+ 2. The validating type is the same for both mask descriptors.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Design.MaskDescriptor.Name%2A> property is not considered, because the <xref:System.ComponentModel.MaskedTextProvider> and <xref:System.Windows.Forms.MaskedTextBox> classes do not use it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -84,8 +117,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Serves as a hash function for a particular type.</summary>
+        <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,10 +138,32 @@
         <Parameter Name="maskDescriptor" Type="System.Windows.Forms.Design.MaskDescriptor" />
       </Parameters>
       <Docs>
-        <param name="maskDescriptor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="maskDescriptor">The mask descriptor to test for validity.</param>
+        <summary>Returns a value indicating whether the specified mask descriptor is valid and can be added to the masks list.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="maskDescriptor" /> is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.MaskDescriptor.IsValidMaskDescriptor%2A> method determines whether `maskDescriptor` is valid and can be added to the masks list.  
+  
+ A valid <xref:System.Windows.Forms.Design.MaskDescriptor> must meet the following conditions.  
+  
+-   Not `null`.  
+  
+-   Not `null` or an empty mask.  
+  
+-   Not `null` or an empty name.  
+  
+-   Not `null` or an empty sample.  
+  
+-   The sample is correct based on the mask and all required edit characters have been provided. This means the mask is completed but not necessarily full.  
+  
+-   The sample is valid based on the <xref:System.Windows.Forms.Design.MaskDescriptor.ValidatingType%2A> object, if any.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsValidMaskDescriptor">
@@ -128,11 +183,33 @@
         <Parameter Name="validationErrorDescription" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="maskDescriptor">To be added.</param>
-        <param name="validationErrorDescription">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="maskDescriptor">The mask descriptor to test for validity.</param>
+        <param name="validationErrorDescription">A string representing a validation error. If no validation error occurred, the <c>validationErrorDescription</c> is <see cref="F:System.String.Empty" />.</param>
+        <summary>Returns a value indicating whether the specified mask descriptor is valid, and provides an error description if it is not valid.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="maskDescriptor" /> is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.MaskDescriptor.IsValidMaskDescriptor%2A> method determines whether `maskDescriptor` is valid and can be added to the masks list.  
+  
+ A valid <xref:System.Windows.Forms.Design.MaskDescriptor> must meet the following conditions.  
+  
+-   Not `null`.  
+  
+-   Not `null` or an empty mask.  
+  
+-   Not `null` or an empty name.  
+  
+-   Not `null` or an empty sample.  
+  
+-   The sample is correct based on the mask and all required edit characters have been provided. This means the mask is completed but not necessarily full.  
+  
+-   The sample is valid based on the <xref:System.Windows.Forms.Design.MaskDescriptor.ValidatingType%2A> object, if any.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Mask">
@@ -148,9 +225,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the mask being defined.</summary>
+        <value>A <see cref="T:System.String" /> containing the mask being defined.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The mask must contain only valid characters, as defined by the <xref:System.ComponentModel.MaskedTextProvider.IsValidMaskChar%2A> method of the <xref:System.ComponentModel.MaskedTextProvider> class. When a predefined mask is selected in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], its <xref:System.Windows.Forms.Design.MaskDescriptor.Mask%2A> property is displayed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -166,9 +250,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the user-friendly name of the mask.</summary>
+        <value>A <see cref="T:System.String" /> containing the name or brief description of the <see cref="P:System.Windows.Forms.Design.MaskDescriptor.Mask" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.MaskDescriptor.Name%2A> property is displayed in the **Mask Description** column in the visual editor for the <xref:System.Windows.Forms.MaskedTextBox> control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sample">
@@ -184,9 +275,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a sample of a formatted string for the mask.</summary>
+        <value>A <see cref="T:System.String" /> containing text that is formatted by using the <see cref="P:System.Windows.Forms.Design.MaskDescriptor.Mask" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.MaskDescriptor.Sample%2A> property is displayed in the **Data Format** column in the visual editor for the <xref:System.Windows.Forms.MaskedTextBox> control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -203,8 +301,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,9 +319,16 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type providing validation associated with the mask.</summary>
+        <value>The <see cref="T:System.Type" /> that the formatted string is validated against.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.MaskDescriptor.ValidatingType%2A> property is used to validate the input string after the mask has been applied to it. It directly corresponds to the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.MaskedTextBox> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

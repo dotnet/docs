@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Configuration.HttpCookiesSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCookiesSection.Domain
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCookiesSection.RequireSSL
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCookiesSection.HttpOnlyCookies
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCookiesSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

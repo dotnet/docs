@@ -20,8 +20,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the <see cref="T:System.Windows.Markup.ValueSerializer" /> class that a type or property should use when it is serialized.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a type, you apply the <xref:System.Windows.Markup.ValueSerializerAttribute> attribute at the type level. For a property, you apply the <xref:System.Windows.Markup.ValueSerializerAttribute> attribute at the property level. Application at the property level potentially overrides any previous declaration for that property's type as applied at the type level.  
+  
+ A <xref:System.Windows.Markup.ValueSerializer> can be associated with an attachable member by applying the <xref:System.Windows.Markup.ValueSerializerAttribute> attribute on the static `get` accessor method for the attachable member.  
+  
+ Value serialization is also applicable for enumerations, interfaces and structures, but not for delegates.  
+  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ValueSerializerAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,9 +51,16 @@
         <Parameter Name="valueSerializerTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="valueSerializerTypeName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="valueSerializerTypeName">The assembly qualified type name string for the <see cref="T:System.Windows.Markup.ValueSerializer" /> class to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ValueSerializerAttribute" /> class, using an assembly qualified type name string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The assembly qualified type name string is the value of <xref:System.Type.AssemblyQualifiedName%2A> for the requested <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -57,8 +77,8 @@
         <Parameter Name="valueSerializerType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="valueSerializerType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="valueSerializerType">A type that represents the type of the <see cref="T:System.Windows.Markup.ValueSerializer" /> class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ValueSerializerAttribute" /> class, using the specified type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +96,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the <see cref="T:System.Windows.Markup.ValueSerializer" /> class reported by this attribute.</summary>
+        <value>The type of the <see cref="T:System.Windows.Markup.ValueSerializer" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,8 +115,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the assembly qualified name of the <see cref="T:System.Windows.Markup.ValueSerializer" /> type for this type or property.</summary>
+        <value>The assembly qualified name of the type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

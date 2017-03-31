@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.JScript.ArrayConstructor
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.ArrayConstructor.Invoke
 ---
 
 ---
 uid: Microsoft.JScript.ArrayConstructor.ConstructArray(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ArrayConstructor.Invoke(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ArrayConstructor.CreateInstance(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -15,8 +15,24 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an ordered collection of <see cref="T:System.Windows.UIElement" /> child elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Panel> base class uses a <xref:System.Windows.Controls.UIElementCollection> to represent its collection of child elements. Methods and properties defined by the <xref:System.Windows.Controls.UIElementCollection> affect all objects derived from <xref:System.Windows.Controls.Panel> and define a common feature-set for the manipulation of <xref:System.Windows.Controls.Panel> child elements.  
+  
+ A <xref:System.Windows.Controls.UIElementCollection> has affinity to its own context (class). You must access the collection from the context of the owning <xref:System.Windows.Controls.Panel>.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Controls.UIElementCollection.Add%2A> method to add child content to a parent <xref:System.Windows.Controls.StackPanel>. You do this by using the <xref:System.Windows.Controls.Panel.Children%2A> property, which is of type <xref:System.Windows.Controls.UIElementCollection>.  
+  
+ [!code-csharp[UIElementCollection#1](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +49,9 @@
         <Parameter Name="logicalParent" Type="System.Windows.FrameworkElement" />
       </Parameters>
       <Docs>
-        <param name="visualParent">To be added.</param>
-        <param name="logicalParent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="visualParent">The <see cref="T:System.Windows.UIElement" /> parent of the collection.</param>
+        <param name="logicalParent">The logical parent of the elements in the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.UIElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,10 +71,19 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> to add.</param>
+        <summary>Adds the specified element to the <see cref="T:System.Windows.Controls.UIElementCollection" />.</summary>
+        <returns>The index position of the added element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Controls.UIElementCollection.Add%2A> method to add child content to a parent <xref:System.Windows.Controls.StackPanel>. You do this by using the <xref:System.Windows.Controls.Panel.Children%2A> property, which is of type <xref:System.Windows.Controls.UIElementCollection>.  
+  
+ [!code-csharp[UIElementCollection#1](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -74,8 +99,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the number of elements that the <see cref="T:System.Windows.Controls.UIElementCollection" /> can contain.</summary>
+        <value>The total number of elements the collection can contain.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +118,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all elements from a <see cref="T:System.Windows.Controls.UIElementCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Controls.UIElementCollection.Clear%2A> method to clear child content from a parent <xref:System.Windows.Controls.StackPanel>. You do this by using the <xref:System.Windows.Controls.Panel.Children%2A> property, which is of type <xref:System.Windows.Controls.UIElementCollection>.  
+  
+ [!code-csharp[UIElementCollection#1](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearLogicalParent">
@@ -113,8 +147,8 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> whose logical parent is being cleared.</param>
+        <summary>Clears the logical parent of an element when the element leaves a <see cref="T:System.Windows.Controls.UIElementCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,10 +168,21 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to find.</param>
+        <summary>Determines whether a specified element is in the <see cref="T:System.Windows.Controls.UIElementCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Windows.UIElement" /> is found in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Controls.UIElementCollection.Contains%2A> method to determine if a specific <xref:System.Windows.UIElement> exists within a <xref:System.Windows.Controls.UIElementCollection>.  
+  
+ [!code-csharp[UIElementCollection#10](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#10)]
+ [!code-vb[UIElementCollection#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIElementCollection/VisualBasic/Pane1.xaml.vb#10)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -157,9 +202,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">An array into which the collection is copied.</param>
+        <param name="index">The index position of the element where copying begins.</param>
+        <summary>Copies a <see cref="T:System.Windows.UIElement" /> from a <see cref="T:System.Windows.Controls.UIElementCollection" /> to an array, starting at a specified index position.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,9 +225,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">An array of <see cref="T:System.Windows.UIElement" /> objects.</param>
+        <param name="index">The index position of the element where copying begins.</param>
+        <summary>Copies a <see cref="T:System.Windows.UIElement" /> from a <see cref="T:System.Windows.Controls.UIElementCollection" /> to an array, starting at a specified index position.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,9 +244,18 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the actual number of elements in the collection.</summary>
+        <value>The actual number of elements in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Controls.UIElementCollection.Count%2A> property to count the number of child elements in a <xref:System.Windows.Controls.UIElementCollection>.  
+  
+ [!code-csharp[UIElementCollection#12](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#12)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -218,8 +272,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that can iterate the <see cref="T:System.Windows.Controls.UIElementCollection" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can list the members of this collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,10 +293,24 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">The element whose index position is required.</param>
+        <summary>Returns the index position of a specified element in a <see cref="T:System.Windows.Controls.UIElementCollection" />.</summary>
+        <returns>The index position of the element.  -1 if the element is not in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example finds the index position of a <xref:System.Windows.UIElement> within a <xref:System.Windows.Controls.UIElementCollection>.  
+  
+ [!code-xml[UIElementCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollectionIndexOf/CSharp/Default.xaml#1)]  
+  
+ ...  
+  
+ [!code-csharp[UIElementCollectionIndexOf#2](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollectionIndexOf/CSharp/default.xaml.cs#2)]
+ [!code-vb[UIElementCollectionIndexOf#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIElementCollectionIndexOf/VisualBasic/default.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -262,10 +330,19 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The index position where you want to insert the element.</param>
+        <param name="element">The element to insert into the <see cref="T:System.Windows.Controls.UIElementCollection" />.</param>
+        <summary>Inserts an element into a <see cref="T:System.Windows.Controls.UIElementCollection" /> at the specified index position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Controls.UIElementCollection.Insert%2A> method to insert child content at a specified index position.  
+  
+ [!code-csharp[UIElementCollection#5](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -281,8 +358,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether access to the <see cref="T:System.Collections.ICollection" /> interface is synchronized (thread-safe).</summary>
+        <value>
+          <see langword="true" /> if access to the collection is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,10 +380,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index position of the <see cref="T:System.Windows.UIElement" />.</param>
+        <summary>Gets or sets the <see cref="T:System.Windows.UIElement" /> stored at the zero-based index position of the <see cref="T:System.Windows.Controls.UIElementCollection" />.</summary>
+        <value>A <see cref="T:System.Windows.UIElement" /> at the specified <paramref name="index" /> position.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Controls.UIElementCollection.Item%2A> property to identify the child element at a specified index position.  
+  
+ [!code-csharp[UIElementCollection#11](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#11)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -324,8 +411,8 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element to remove from the collection.</param>
+        <summary>Removes the specified element from a <see cref="T:System.Windows.Controls.UIElementCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,9 +432,18 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the <see cref="T:System.Windows.UIElement" /> that you want to remove.</param>
+        <summary>Removes the <see cref="T:System.Windows.UIElement" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Controls.UIElementCollection.RemoveAt%2A> method to remove child content at a specified index position.  
+  
+ [!code-csharp[UIElementCollection#7](~/samples/snippets/csharp/VS_Snippets_Wpf/UIElementCollection/CSharp/Pane1.xaml.cs#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveRange">
@@ -367,9 +463,9 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index position of the element where removal begins.</param>
+        <param name="count">The number of elements to remove.</param>
+        <summary>Removes a range of elements from a <see cref="T:System.Windows.Controls.UIElementCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -389,8 +485,8 @@
         <Parameter Name="element" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> whose logical parent is set.</param>
+        <summary>Sets the logical parent of an element in a <see cref="T:System.Windows.Controls.UIElementCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -407,8 +503,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that you can use to synchronize access to the <see cref="T:System.Collections.ICollection" /> interface.</summary>
+        <value>
+          <see cref="T:System.Object" /> that you can use to synchronize access to the <see cref="T:System.Collections.ICollection" /> interface.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,9 +525,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to add.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+        <returns>The position into which the new element was inserted.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,9 +547,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to locate in the list.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="M:System.Collections.IList.Contains(System.Object)" />.</summary>
+        <returns>
+          <see langword="true" /> if the object was found in the list; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -472,9 +570,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to locate in the list.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
+        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -495,9 +593,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The object to insert to the list.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -514,8 +612,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
+        <value>
+          <see langword="true" /> if the list has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -532,8 +631,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</summary>
+        <value>
+          <see langword="true" /> if the list is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,9 +653,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="P:System.Collections.IList.Item(System.Int32)" />.</summary>
+        <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -575,8 +675,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The object to remove from the list.</param>
+        <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

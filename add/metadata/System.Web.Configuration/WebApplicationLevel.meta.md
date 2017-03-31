@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Configuration.WebApplicationLevel
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

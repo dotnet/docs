@@ -18,8 +18,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the sides of a rectangle to apply a three-dimensional border to.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration with the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A> method of the <xref:System.Windows.Forms.ControlPaint> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -35,7 +42,7 @@
         <ReturnType>System.Windows.Forms.Border3DSide</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A three-dimensional border on all four sides of the rectangle. The middle of the rectangle is filled with the color defined for three-dimensional controls.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bottom">
@@ -51,7 +58,7 @@
         <ReturnType>System.Windows.Forms.Border3DSide</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A three-dimensional border on the bottom side of the rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -67,7 +74,7 @@
         <ReturnType>System.Windows.Forms.Border3DSide</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A three-dimensional border on the left edge of the rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="Middle">
@@ -83,7 +90,7 @@
         <ReturnType>System.Windows.Forms.Border3DSide</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The interior of the rectangle is filled with the color defined for three-dimensional controls instead of the background color for the form.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -99,7 +106,7 @@
         <ReturnType>System.Windows.Forms.Border3DSide</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A three-dimensional border on the right side of the rectangle.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -115,7 +122,7 @@
         <ReturnType>System.Windows.Forms.Border3DSide</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A three-dimensional border on the top edge of the rectangle.</summary>
       </Docs>
     </Member>
   </Members>

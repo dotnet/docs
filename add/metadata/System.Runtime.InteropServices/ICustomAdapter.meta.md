@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.InteropServices.ICustomAdapter
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ICustomAdapter.GetUnderlyingObject
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

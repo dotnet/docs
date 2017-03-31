@@ -1,14 +1,20 @@
 ---
 uid: System.Drawing.Design.ToolboxComponentsCreatedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.ToolboxComponentsCreatedEventArgs.Components
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Design.ToolboxComponentsCreatedEventArgs.#ctor(System.ComponentModel.IComponent[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -16,8 +16,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of resource provider factory for design time. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute> class allows a <xref:System.Web.Compilation.ResourceProviderFactory> object to specify the type of the associated <xref:System.Web.UI.Design.DesignTimeResourceProviderFactory> object. The <xref:System.Web.UI.Design.DesignTimeResourceProviderFactory> class is used to create design-time providers for reading and writing resources. Within [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)], a developer can use the **Generate Local Resource** command on the **Tools** menu to create resources during design time.  
+  
+   
+  
+## Examples  
+ The following code example shows a customized resource provider factory that specifies a customized design-time resource provider factory through the <xref:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute> attribute. This example does not include the code necessary to implement a customized design-time resource provider factory.  
+  
+ [!code-csharp[System.Web.Compilation.ResourceProviderFactory#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/CS/source.cs#1)]
+ [!code-vb[System.Web.Compilation.ResourceProviderFactory#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +48,16 @@
         <Parameter Name="factoryTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="factoryTypeName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="factoryTypeName">The name of the resource provider factory type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute" /> class with the attribute set to the specified factory type name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute> attribute is set to `factoryTypeName`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,9 +73,16 @@
         <Parameter Name="factoryType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="factoryType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="factoryType">The type of the resource provider factory.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute" /> class with the attribute set to the qualified name of the specified factory type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute.FactoryTypeName%2A> property is set to the <xref:System.Type.AssemblyQualifiedName%2A> property value of the `factoryType` parameter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FactoryTypeName">
@@ -69,8 +98,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the factory type name.</summary>
+        <value>A <see cref="T:System.String" /> containing the name of the factory type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +117,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines whether the default provider is used.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="P:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute.FactoryTypeName" /> equals <see langword="null" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,24 +1,29 @@
 ---
 uid: System.Web.DynamicData.PageAction
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.PageAction.Edit
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.PageAction.List
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.PageAction.Details
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.PageAction.Insert
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

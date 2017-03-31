@@ -20,8 +20,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides functionality for [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] models.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Objects of this type include <xref:System.Windows.Media.Media3D.GeometryModel3D>, <xref:System.Windows.Media.Media3D.Light>, and <xref:System.Windows.Media.Media3D.Model3DGroup>.  
+  
+ Use the <xref:System.Windows.Media.Media3D.ModelVisual3D> class to render <xref:System.Windows.Media.Media3D.Model3D> objects. You can compose <xref:System.Windows.Media.Media3D.Model3D> objects by using a <xref:System.Windows.Media.Media3D.Model3DGroup> to form a single model. You can share <xref:System.Windows.Media.Media3D.Model3D> objects among <xref:System.Windows.Media.Media3D.ModelVisual3D> objects to make multiple instances in a scene.  
+  
+   
+  
+## Examples  
+ [!code-xml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bounds">
@@ -37,8 +51,8 @@
         <ReturnType>System.Windows.Media.Media3D.Rect3D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Windows.Media.Media3D.Rect3D" /> that specifies the axis-aligned bounding box of this <see cref="T:System.Windows.Media.Media3D.Model3D" />.</summary>
+        <value>A <see cref="T:System.Windows.Media.Media3D.Rect3D" /> bounding box for the model.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +70,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Media3D.Model3D" />, and makes deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (although they might no longer resolve) but does not copy animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects or of any <xref:System.Windows.Freezable> object. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -75,9 +98,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Media3D.Model3D" /> object, and makes deep copies of this object's current values. Resource references, data bindings, and animations are not copied; however, their current values are copied.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects or of any <xref:System.Windows.Freezable> object. For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -97,10 +129,18 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">The format to use.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="provider">The provider to use to format the value.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</param>
+        <summary>Formats the value of the current instance using the specified format.</summary>
+        <returns>The value of the current instance in the specified format.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +158,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a string representation of the Model3D.</summary>
+        <returns>A string representation of the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,9 +179,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">Culture-specific formatting information.</param>
+        <summary>Creates a string representation of the Model3D.</summary>
+        <returns>A string representation of the Model3D.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,9 +198,28 @@
         <ReturnType>System.Windows.Media.Media3D.Transform3D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Media3D.Transform3D" /> set on the model.</summary>
+        <value>A <see cref="T:System.Windows.Media.Media3D.Transform3D" /> set on the model. The default value is <see cref="T:System.Windows.Media.Media3D.MatrixTransform3D" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Transform"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Media3D.Model3D.TransformProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ [!code-xml[basic3d#Basic3DXAML3DN6](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransformProperty">
@@ -176,7 +235,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Media3D.Model3D.Transform" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

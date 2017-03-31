@@ -32,8 +32,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the class identifier of a coclass imported from a type library.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to coclass interfaces, although the [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) typically applies it for you when it imports a type library.  
+  
+ When Tlbimp.exe imports a coclass, it produces a managed class and an interface to represent the coclass. The coclass interface has the same interface identifier (IID) as the default interface of the original coclass. The imported coclass interface also retains the name of the coclass. Tlbimp.exe appends the original coclass name with "class" to identify the imported class.  
+  
+ You rarely apply this attribute. However, if plan to write source code that produces metadata that closely simulates metadata produced by Tlbimp.exe, you should create a coclass interface for each coclass. Use the name of the original coclass to name the coclass interface and derive it from the default interface. In addition to the <xref:System.Runtime.InteropServices.CoClassAttribute>, you must also apply the <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=fullName> and <xref:System.Runtime.InteropServices.GuidAttribute?displayProperty=fullName> to the coclass interface. For additional information about how Tlbimp.exe imports interfaces and coclasses from a type library, see [Imported Type Conversion](http://msdn.microsoft.com/en-us/cb1ee67d-8ef0-4e40-b2a5-13714b9f33c3).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,8 +73,8 @@
         <Parameter Name="coClass" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="coClass">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="coClass">A <see cref="T:System.Type" /> that contains the class identifier of the original coclass.</param>
+        <summary>Initializes new instance of the <see cref="T:System.Runtime.InteropServices.CoClassAttribute" /> with the class identifier of the original coclass.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +104,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the class identifier of the original coclass.</summary>
+        <value>A <see cref="T:System.Type" /> containing the class identifier of the original coclass.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

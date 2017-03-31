@@ -1,39 +1,55 @@
 ---
 uid: System.ComponentModel.CurrentChangingEventManager
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.CurrentChangingEventManager.NewListenerList
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.CurrentChangingEventManager.AddListener(System.ComponentModel.ICollectionView,System.Windows.IWeakEventListener)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.CurrentChangingEventManager.AddHandler(System.ComponentModel.ICollectionView,System.EventHandler{System.ComponentModel.CurrentChangingEventArgs})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.CurrentChangingEventManager.RemoveHandler(System.ComponentModel.ICollectionView,System.EventHandler{System.ComponentModel.CurrentChangingEventArgs})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.CurrentChangingEventManager.StopListening(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.CurrentChangingEventManager.StartListening(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.CurrentChangingEventManager.RemoveListener(System.ComponentModel.ICollectionView,System.Windows.IWeakEventListener)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

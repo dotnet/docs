@@ -11,8 +11,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts instances of other types to and from instances of <see cref="T:System.Windows.Thickness" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_ThicknessConverter"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.ThicknessConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +55,11 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeDescriptorContext">The context information of a type.</param>
+        <param name="sourceType">The source type that the type converter is evaluating for conversion.</param>
+        <summary>Determines whether the type converter can create an instance of <see cref="T:System.Windows.Thickness" /> from a specified type.</summary>
+        <returns>
+          <see langword="true" /> if the type converter can create an instance of <see cref="T:System.Windows.Thickness" /> from the specified type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +80,11 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeDescriptorContext">The context information of a type.</param>
+        <param name="destinationType">The type for which the type converter is evaluating this instance of <see cref="T:System.Windows.Thickness" /> for conversion.</param>
+        <summary>Determines whether the type converter can convert an instance of <see cref="T:System.Windows.Thickness" /> to a different type.</summary>
+        <returns>
+          <see langword="true" /> if the type converter can convert this instance of <see cref="T:System.Windows.Thickness" /> to the <paramref name="destinationType" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,12 +106,14 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeDescriptorContext">The context information for a type.</param>
+        <param name="cultureInfo">The <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
+        <param name="source">The <c>source</c><see cref="T:System.Object" /> being converted.</param>
+        <summary>Attempts to create an instance of <see cref="T:System.Windows.Thickness" /> from a specified object.</summary>
+        <returns>An instance of <see cref="T:System.Windows.Thickness" /> created from the converted <paramref name="source" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="source" /> object is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">The example object is not a null reference and is not a valid type that can be converted to a <see cref="T:System.Windows.Thickness" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -128,13 +140,15 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeDescriptorContext">The context information of a type.</param>
+        <param name="cultureInfo">The <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
+        <param name="value">The instance of <see cref="T:System.Windows.Thickness" /> to convert.</param>
+        <param name="destinationType">The type that this instance of <see cref="T:System.Windows.Thickness" /> is converted to.</param>
+        <summary>Attempts to convert an instance of <see cref="T:System.Windows.Thickness" /> to a specified type.</summary>
+        <returns>The type that is created when the type converter converts an instance of <see cref="T:System.Windows.Thickness" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> object is not a null reference (<see langword="Nothing" />) and is not a Brush, or the <paramref name="destinationType" /> is not one of the valid types for conversion.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="value" /> object is a null reference.</exception>
       </Docs>
     </Member>
   </Members>

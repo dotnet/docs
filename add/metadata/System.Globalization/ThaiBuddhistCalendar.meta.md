@@ -1,129 +1,221 @@
 ---
 uid: System.Globalization.ThaiBuddhistCalendar
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.GetYear(System.DateTime)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.GetLeapMonth(System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Globalization.ThaiBuddhistCalendar.IsLeapMonth
+manager: "ghogen"
+---
+
+---
+uid: System.Globalization.ThaiBuddhistCalendar.GetMonthsInYear
+manager: "ghogen"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.GetMonthsInYear(System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Globalization.ThaiBuddhistCalendar.GetDaysInMonth
+manager: "ghogen"
+---
+
+---
+uid: System.Globalization.ThaiBuddhistCalendar.IsLeapYear
+manager: "ghogen"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.ToFourDigitYear(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Globalization.ThaiBuddhistCalendar.GetDaysInYear
+manager: "ghogen"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.GetMonth(System.DateTime)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.MinSupportedDateTime
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.AlgorithmType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.GetEra(System.DateTime)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.MaxSupportedDateTime
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Globalization.ThaiBuddhistCalendar.GetLeapMonth
+manager: "ghogen"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.IsLeapYear(System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.GetDaysInYear(System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.Eras
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.AddYears(System.DateTime,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Globalization.ThaiBuddhistCalendar.ToDateTime
+manager: "ghogen"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.GetDayOfYear(System.DateTime)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.TwoDigitYearMax
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.GetDayOfMonth(System.DateTime)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.GetDayOfWeek(System.DateTime)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.ThaiBuddhistEra
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Globalization.ThaiBuddhistCalendar.IsLeapDay
+manager: "ghogen"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.AddMonths(System.DateTime,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

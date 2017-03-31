@@ -1,29 +1,35 @@
 ---
 uid: System.Speech.Recognition.RecognizeCompletedEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizeCompletedEventArgs.InputStreamEnded
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizeCompletedEventArgs.Result
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizeCompletedEventArgs.BabbleTimeout
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizeCompletedEventArgs.AudioPosition
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizeCompletedEventArgs.InitialSilenceTimeout
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

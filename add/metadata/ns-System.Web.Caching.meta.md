@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Caching
-internalonly: False
+ms.author: "rachelap"
+manager: "wpickett"
 ---

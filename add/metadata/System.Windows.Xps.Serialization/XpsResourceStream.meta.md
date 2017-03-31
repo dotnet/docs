@@ -1,24 +1,24 @@
 ---
 uid: System.Windows.Xps.Serialization.XpsResourceStream
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsResourceStream.Initialize
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsResourceStream.#ctor(System.IO.Stream,System.Uri)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsResourceStream.Uri
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsResourceStream.Stream
-internalonly: False
+manager: "leannef"
 ---

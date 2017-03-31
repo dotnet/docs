@@ -1,4 +1,4 @@
 ---
 uid: System.ServiceModel.MsmqIntegration
-internalonly: False
+manager: "ghogen"
 ---

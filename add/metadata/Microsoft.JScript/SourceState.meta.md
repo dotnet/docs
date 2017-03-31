@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.SourceState
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enumerates values that indicate the number of channels in the audio format.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.ChannelCount%2A> property gets a member of <xref:System.Speech.AudioFormat.AudioChannel> that indicates the number of channels for the audio format.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Mono">
@@ -27,7 +34,7 @@
         <ReturnType>System.Speech.AudioFormat.AudioChannel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The audio format has one channel.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stereo">
@@ -43,7 +50,7 @@
         <ReturnType>System.Speech.AudioFormat.AudioChannel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The audio format has two channels.</summary>
       </Docs>
     </Member>
   </Members>

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the kind of action to take if a match is found when combining menu items on a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.MergeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Appends the item to the end of the collection, ignoring match results.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.MergeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts the item to the target's collection immediately preceding the matched item. A match of the end of the list results in the item being appended to the list. If there is no match or the match is at the beginning of the list, the item is inserted at the beginning of the collection.</summary>
       </Docs>
     </Member>
     <Member MemberName="MatchOnly">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.MergeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A match is required, but no action is taken. Use this for tree creation and successful access to nested layouts.</summary>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Forms.MergeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes the matched item.</summary>
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -91,7 +91,7 @@
         <ReturnType>System.Windows.Forms.MergeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Replaces the matched item with the source item. The original item's drop-down items do not become children of the incoming item.</summary>
       </Docs>
     </Member>
   </Members>

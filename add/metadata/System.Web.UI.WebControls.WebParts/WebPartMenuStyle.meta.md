@@ -1,99 +1,160 @@
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.CopyFrom(System.Web.UI.WebControls.Style)
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetAttributes
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetComponentName
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetConverter
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetClassName
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetProperties(System.Attribute[])
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.HorizontalAlign
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.#ctor
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.Reset
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.#ctor(System.Web.UI.StateBag)
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEvents
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.MergeWith(System.Web.UI.WebControls.Style)
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetProperties
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetAttributes
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetComponentName
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetConverter
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetClassName
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetProperties(System.Attribute[])
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.HorizontalAlign
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.Reset
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEvents
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.#ctor(System.Web.UI.StateBag)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEvents
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.MergeWith(System.Web.UI.WebControls.Style)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetProperties
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

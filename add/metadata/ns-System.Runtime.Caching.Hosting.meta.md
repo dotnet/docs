@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.Caching.Hosting
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "ghogen"
 ---

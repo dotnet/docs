@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.SqlServer.Server.InvalidUdtException
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.InvalidUdtException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "mblythe"
 ---

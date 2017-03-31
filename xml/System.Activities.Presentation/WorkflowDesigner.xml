@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a designer canvas, which renders the visual representation of a workflow model as it is being designed.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.WorkflowDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +43,20 @@
         <ReturnType>System.Activities.Presentation.EditingContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an <see cref="T:System.Activities.Presentation.EditingContext" /> object that is a collection of services shared between all elements contained in the designer and used to interact between the host and the designer. Services are published and requested through the <see cref="T:System.Activities.Presentation.EditingContext" />.</summary>
+        <value>The editing context for the workflow designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Context is not guaranteed to be available during initialization, as the data binding may have not yet resolved. There are two ways to ensure that an editing context is available.  
+  
+-   Use <xref:System.Activities.Presentation.WorkflowDesigner.ModelChanged>, which executes whenever the model is assigned to, or when the value the property points to is updated.  
+  
+-   Subscribe to the <xref:System.Activities.Presentation.WorkflowDesigner.Context%2A> dependency property’s availability using <xref:System.Workflow.ComponentModel.DependencyProperty.Register%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContextMenu">
@@ -61,8 +72,8 @@
         <ReturnType>System.Windows.Controls.ContextMenu</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the context menu for this designer.</summary>
+        <value>The context menu for the designer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +90,8 @@
         <ReturnType>System.Activities.Presentation.Debug.IDesignerDebugView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Activities.Presentation.Debug.DebuggerService" /> that is used for run-time debugging.</summary>
+        <value>An object that implements <see cref="T:System.Activities.Presentation.Debug.IDesignerDebugView" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +109,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Saves the current state of the workflow to the <see cref="P:System.WorkflowModel.Design.WorkflowDesigner.Text" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,8 +127,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Indicates whether the [!INCLUDE[wfd1](~/includes/wfd1-md.md)] is in error state.</summary>
+        <returns>
+          <see langword="true" /> if the [!INCLUDE[wfd2](~/includes/wfd2-md.md)] is in error state; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,7 +147,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Loads a workflow from the XAML contained in the <see cref="P:System.Activities.Presentation.WorkflowDesigner.Text" /> property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +167,8 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">The root of the workflow to load.</param>
+        <summary>Loads a workflow with the specified instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +188,8 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileName">The file name of the XAML file.</param>
+        <summary>Loads a workflow from the XAML contained in the specified file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,7 +206,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the event handler that goes into effect when something in the workflow model changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +223,8 @@
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the outline view of the workflow designer.</summary>
+        <value>The outline view of the workflow designer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,9 +241,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Sets the font and color data for the property inspector in a serialized, dictionary format.</summary>
+        <value>The font and color data for the property inspector in a serialized, dictionary format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property inspector is commonly known as the property grid.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyInspectorView">
@@ -247,8 +266,8 @@
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the property inspector, which is commonly known as the property grid.</summary>
+        <value>The property inspector.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,8 +287,8 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileName">The file name of the XAML file.</param>
+        <summary>Saves the workflow to an XAML file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,9 +305,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the XAML string representation of the workflow.</summary>
+        <value>The XAML string representation of the workflow.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before getting this value, call <xref:System.Activities.Presentation.WorkflowDesigner.Flush%2A> to convert the current workflow to text. After setting this value, call <xref:System.Activities.Presentation.WorkflowDesigner.Load%2A> to load the XAML into the workflow.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -304,7 +330,7 @@
         <ReturnType>System.Windows.Controls.TextChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="P:System.Activities.Presentation.WorkflowDesigner.Text" /> property value changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,8 +347,8 @@
         <ReturnType>System.Windows.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a UI element that allows the user to view and edit the workflow visually. This UI element is commonly referred to as the workflow canvas.</summary>
+        <value>A UI element that allows the user to view and edit the workflow visually.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

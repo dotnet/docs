@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.Serialization.ISafeSerializationData
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.ISafeSerializationData.CompleteDeserialization(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

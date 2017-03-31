@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Generates debug information for lambda expressions in an expression tree.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.DebugInfoGenerator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +59,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a program database (PDB) symbol generator.</summary>
+        <returns>A PDB symbol generator.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,10 +87,10 @@
         <Parameter Name="sequencePoint" Type="System.Linq.Expressions.DebugInfoExpression" />
       </Parameters>
       <Docs>
-        <param name="method">To be added.</param>
-        <param name="ilOffset">To be added.</param>
-        <param name="sequencePoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="method">The lambda expression that is generated.</param>
+        <param name="ilOffset">The offset within MSIL code at which to mark the sequence point.</param>
+        <param name="sequencePoint">Debug information that corresponds to the sequence point.</param>
+        <summary>Marks a sequence point in Microsoft intermediate language (MSIL) code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

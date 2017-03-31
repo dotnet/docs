@@ -1,24 +1,41 @@
 ---
 uid: System.Activities.Hosting.WorkflowInstanceExtensionManager
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Hosting.WorkflowInstanceExtensionManager.MakeReadOnly
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Hosting.WorkflowInstanceExtensionManager.Add``1(System.Func{``0})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Hosting.WorkflowInstanceExtensionManager.Add(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Hosting.WorkflowInstanceExtensionManager.Add
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Hosting.WorkflowInstanceExtensionManager.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

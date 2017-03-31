@@ -15,8 +15,28 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the scrollbar of a chart axis.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar> class is exposed as the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ScrollBar%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> class.  
+  
+ Scrollbars allow the end user to scroll through data when a subset of data is being displayed. A subset of data is referred to as a view, and is represented by the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView> class.  
+  
+ Scrollbars are only shown when zooming occurs. In other words, even if a scrollbar is enabled, it will only be visible when a view is being displayed.  
+  
+> [!IMPORTANT]
+>  To fix the position of scrollbars, the plotting area position of a chart area must not be set to <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto%2A>. To explicitly set the plotting area position, use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.InnerPlotPosition%2A> property.  
+  
+ To display scrollbars when a chart is first displayed, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView> class properties and methods so that a view is initially displayed to end users.  
+  
+ The background color, button color and width of scrollbars can be set using this <xref:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar> class.  
+  
+ Note that there are two main types of scrolling: large scrolling, which occurs when the end user clicks in the background of a scrollbar—that is, that part of a scrollbar not covered by the thumb; and small scrolling, which occurs when the end user clicks a left/right or up/down button. To control the large scrolling size, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Size%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ScaleView%2A> object. To set the small scrolling size, use the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.SmallScrollSize%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +50,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +78,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.Axis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that uses the scrollbar.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +110,18 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the background color of a scrollbar.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that represents the background color of the scrollbar. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be set to any valid ARGB (alpha, red, green, blue) color.  
+  
+ If the value of this property is <xref:System.Drawing.Color>, the background color of the scrollbar will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackColor%2A> property value of the chart area the scrollbar is being used for.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ButtonColor">
@@ -122,9 +151,18 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the color of the scrollbar buttons.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that represents the color of the scrollbar buttons.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to get or set the color of the left/right, up/down, reset and thumb buttons of a scrollbar.  
+  
+ If the value of this property is <xref:System.Drawing.Color>, the color used for the buttons will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A> property value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ButtonStyle">
@@ -151,8 +189,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the style of the scrollbar button.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles" /> enumeration value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,8 +218,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the chart area that contains this scrollbar.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,7 +237,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +257,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="True" /> to release both unmanaged and managed resources;<see langword=" false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar" /> class and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,8 +284,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag that determines whether a scrollbar is enabled.</summary>
+        <value>
+          <see langword="True" /> if the scrollbar is enabled for an axis, <see langword="false" /> if the scrollbar is not enabled. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,8 +311,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag that indicates whether scroll bar is positioned inside or outside the chart area.</summary>
+        <value>
+          <see langword="True" /> if the scroll bar is positioned inside or outside the chart area; otherwise, <see langword="False" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,8 +335,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a flag that indicates whether the scrollbar is visible.</summary>
+        <value>
+          <see langword="True" /> if the scrollbar is visible; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,9 +368,18 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the line color of a scrollbar.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that represents the line color of the scrollbar. The default value is <see cref="F:System.Drawing.Color.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property represents the color used for the arrows in up/down and left/right buttons, the symbol inside the reset button, as well as the border of the entire scrollbar.  
+  
+ If the value of this property is <xref:System.Drawing.Color>, the line color used will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A> property value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -352,9 +403,21 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the width of a scrollbar, in pixels.</summary>
+        <value>The width of a scrollbar in pixels. The default value is 14 pixels. The value can range from 5 to 20 pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gets or sets the width of a scrollbar, which can be from 5 to 20 pixels.  
+  
+ Set this property to zero to disable a scrollbar.  
+  
+> [!IMPORTANT]
+>  To fix the position of scrollbars, the plotting area position of a chart area must not be set to <xref:System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto%2A>. To explicitly set the plotting area position, use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.InnerPlotPosition%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

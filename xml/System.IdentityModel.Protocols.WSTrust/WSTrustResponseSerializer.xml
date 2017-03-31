@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The abstract base class that defines methods for serializing and deserializing versions of WS-Trust response (RSTR) messages.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,10 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> object from which to read.</param>
+        <summary>When overridden in a derived class, checks if the specified XML reader is positioned at a WS-Trust RequestSecurityTokenResponse element.</summary>
+        <returns>
+          <see langword="true" /> if the reader is positioned at an RSTR element that this serializer can read; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +67,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> class that this class can serialize or deserialize.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +89,10 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The XML reader over the RSTR.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>When overridden in a derived class, deserializes the RSTR from an <see cref="T:System.Xml.XmlReader" /> object to a <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object if the deserialization was successful.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,10 +114,10 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="requestSecurityTokenResponse">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> object positioned at an element to read inside the RSTR.</param>
+        <param name="requestSecurityTokenResponse">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> element that is being populated from the reader.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>When overridden in the derived class reads a child element inside the RSTR.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,9 +137,11 @@
         <Parameter Name="requestSecurityTokenResponse" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" />
       </Parameters>
       <Docs>
-        <param name="requestSecurityTokenResponse">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="requestSecurityTokenResponse">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> object to validate.</param>
+        <summary>Validates the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object that has been deserialized.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="requestSecurityTokenResponse" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteKnownResponseElement">
@@ -159,10 +162,10 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="requestSecurityTokenResponse">To be added.</param>
-        <param name="writer">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="requestSecurityTokenResponse">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object to serialize.</param>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>When overridden in a derived class, writes the supported elements on the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object to the outgoing stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,10 +187,10 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <param name="writer">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object to serialize.</param>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>When overridden in a derived class, serializes the specified <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object into the <see cref="T:System.Xml.XmlWriter" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,12 +214,12 @@
         <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="elementName">To be added.</param>
-        <param name="elementValue">To be added.</param>
-        <param name="requestSecurityTokenResponse">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> object to which the RSTR is being serialized.</param>
+        <param name="elementName">The local name of the element to be written.</param>
+        <param name="elementValue">The value of the element.</param>
+        <param name="requestSecurityTokenResponse">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> object that is being serialized.</param>
+        <param name="context">A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> that contains the current serialization context.</param>
+        <summary>When overridden in a derived class, writes a child element inside the RSTR.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

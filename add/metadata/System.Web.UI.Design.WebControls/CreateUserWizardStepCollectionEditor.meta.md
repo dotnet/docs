@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.HelpTopic
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.CanRemoveInstance(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.CreateUserWizardStepCollectionEditor.CreateCollectionForm
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

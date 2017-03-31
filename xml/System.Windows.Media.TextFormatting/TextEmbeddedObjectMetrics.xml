@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies properties for a <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,10 +30,10 @@
         <Parameter Name="baseline" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <param name="baseline">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="width">A <see cref="T:System.Double" /> that represents the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" /> width.</param>
+        <param name="height">A <see cref="T:System.Double" /> that represents the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" /> height.</param>
+        <param name="baseline">A <see cref="T:System.Double" /> that represents the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObject" /> baseline relative to <c>height</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextEmbeddedObjectMetrics" /> class using specified width, height, and baseline values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the baseline of the text object.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the text object baseline relative to its height.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the height of the text object.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the text object height.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +86,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the width of the text object.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the text object width.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

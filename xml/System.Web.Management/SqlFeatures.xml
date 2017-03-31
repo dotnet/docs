@@ -15,8 +15,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the ASP.Net features to install or remove using the methods provided by the <see cref="T:System.Web.Management.SqlServices" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration has a <xref:System.FlagsAttribute>, which means you can select two or more features by combining them with the `&` (and) operator (the `And` operator in Visual Basic).  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.SqlFeatures> enumeration with the <xref:System.Web.Management.SqlServices.Install%28System.String%2CSystem.Web.Management.SqlFeatures%2CSystem.String%29> method of the <xref:System.Web.Management.SqlServices> class.  
+  
+ [!code-csharp[System.Web.Management.SqlServices#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#2)]
+ [!code-vb[System.Web.Management.SqlServices#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -32,7 +47,7 @@
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All features.</summary>
       </Docs>
     </Member>
     <Member MemberName="Membership">
@@ -48,7 +63,7 @@
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The membership feature.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +79,7 @@
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No features.</summary>
       </Docs>
     </Member>
     <Member MemberName="Personalization">
@@ -80,7 +95,7 @@
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The personalization feature.</summary>
       </Docs>
     </Member>
     <Member MemberName="Profile">
@@ -96,7 +111,7 @@
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The profile feature.</summary>
       </Docs>
     </Member>
     <Member MemberName="RoleManager">
@@ -112,7 +127,7 @@
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The role manager feature.</summary>
       </Docs>
     </Member>
     <Member MemberName="SqlWebEventProvider">
@@ -128,7 +143,7 @@
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Web event provider feature.</summary>
       </Docs>
     </Member>
   </Members>

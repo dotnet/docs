@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Declaratively instructs the .NET Framework to perform validation on a configuration property. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Configuration.IntegerValidatorAttribute> attribute to decorate a configuration property. This is to instruct the .NET Framework to validate the property using a <xref:System.Configuration.SubclassTypeValidatorAttribute> attribute, and pass to it the value of the decorating parameters.  
+  
+ You can apply <xref:System.Configuration.SubclassTypeValidatorAttribute> attributes to property types only.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +42,16 @@
         <Parameter Name="baseClass" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="baseClass">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="baseClass">The base class type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SubclassTypeValidatorAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use this constructor in the attributed model to ensure that the value assigned to the related property is a base class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseClass">
@@ -51,8 +67,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the base type of the object being validated.</summary>
+        <value>The base type of the object being validated.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +85,8 @@
         <ReturnType>System.Configuration.ConfigurationValidatorBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the validator attribute instance.</summary>
+        <value>The current <see cref="T:System.Configuration.ConfigurationValidatorBase" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

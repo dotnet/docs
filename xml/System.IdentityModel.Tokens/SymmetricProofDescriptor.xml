@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class can be used for issuing the symmetric key based token.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,16 @@
         <Parameter Name="targetWrappingCredentials" Type="System.IdentityModel.Tokens.EncryptingCredentials" />
       </Parameters>
       <Docs>
-        <param name="targetWrappingCredentials">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="targetWrappingCredentials">The <see cref="T:System.IdentityModel.Tokens.EncryptingCredentials" /> to be used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> class with the specified encrypting credentials.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if you want the STS to use the specified <xref:System.IdentityModel.Tokens.EncryptingCredentials>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,10 +54,19 @@
         <Parameter Name="targetWrappingCredentials" Type="System.IdentityModel.Tokens.EncryptingCredentials" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="targetWrappingCredentials">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The symmetric key that is used inside the issued token.</param>
+        <param name="targetWrappingCredentials">The key encrypting credentials for the relying party.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> class with the specified key material.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if you want the STS to use the specified key bytes. This happens when client sends the entropy, and the STS would just use that as the key for the issued token.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -67,10 +83,17 @@
         <Parameter Name="targetWrappingCredentials" Type="System.IdentityModel.Tokens.EncryptingCredentials" />
       </Parameters>
       <Docs>
-        <param name="keySizeInBits">To be added.</param>
-        <param name="targetWrappingCredentials">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="keySizeInBits">The size of the symmetric key.</param>
+        <param name="targetWrappingCredentials">The key encrypting credentials for the target of the request.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> class with an auto-generated key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if you want the STS to auto-generate the key using a random number generator and send it in the proof token as a binary secret.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -88,11 +111,24 @@
         <Parameter Name="requestorWrappingCredentials" Type="System.IdentityModel.Tokens.EncryptingCredentials" />
       </Parameters>
       <Docs>
-        <param name="keySizeInBits">To be added.</param>
-        <param name="targetWrappingCredentials">To be added.</param>
-        <param name="requestorWrappingCredentials">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="keySizeInBits">The size of the symmetric key.</param>
+        <param name="targetWrappingCredentials">The key encrypting credentials for the target of the request.</param>
+        <param name="requestorWrappingCredentials">The key encrypting credentials for the requestor.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> class with an auto-generated key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if you want the STS to auto-generate the key and send it in the proof token as encrypted key. Two cases can be covered by using this constructor:  
+  
+1.  The client sends the entropy, but the server rejects it.  
+  
+2.  The client does not send the entropy, so the server's entropy is used.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="keySizeInBits" /> is less than or equal to zero.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,12 +147,23 @@
         <Parameter Name="sourceEntropy" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="keySizeInBits">To be added.</param>
-        <param name="targetWrappingCredentials">To be added.</param>
-        <param name="requestorWrappingCredentials">To be added.</param>
-        <param name="sourceEntropy">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="keySizeInBits">The size of the symmetric key.</param>
+        <param name="targetWrappingCredentials">The key encrypting credentials for the target of the request.</param>
+        <param name="requestorWrappingCredentials">The encrypting credentials for the requestor used to encrypt the entropy or the proof token.</param>
+        <param name="sourceEntropy">The requestor's entropy.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> class to use for sending combined entropy.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if you want to send a combined entropy.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceEntropy" /> is <see langword="null" /> or an empty array.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="keySize" /> is less than zero.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -135,12 +182,27 @@
         <Parameter Name="encryptWith" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="keySizeInBits">To be added.</param>
-        <param name="targetWrappingCredentials">To be added.</param>
-        <param name="requestorWrappingCredentials">To be added.</param>
-        <param name="encryptWith">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="keySizeInBits">The size of the symmetric key.</param>
+        <param name="targetWrappingCredentials">The key encrypting credentials for the relying party.</param>
+        <param name="requestorWrappingCredentials">The key encrypting credentials for the requestor.</param>
+        <param name="encryptWith">The algorithm (URI) specified in the <see langword="&lt;EncryptWith&gt;" /> element of the RST.</param>
+        <summary>Use this constructor to have the STS autogenerate a key and send it in the proof token as encrypted key. Two cases are covered here 1. client sends the entropy, but server rejects it 2. client did not send a entropy, so just use server's entropy</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `encryptWith` is a DES algorithm, the key is guaranteed not to be a weak DES key.  
+  
+ Use this constructor if you want the STS to auto-generate the key and send it in the proof token as encrypted key. Two cases can be covered by using this constructor:  
+  
+1.  The client sends the entropy, but the server rejects it.  
+  
+2.  The client does not send the entropy, so the server's entropy is used.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="keySizeInBits" /> is less than or equal to zero.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -160,13 +222,24 @@
         <Parameter Name="encryptWith" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="keySizeInBits">To be added.</param>
-        <param name="targetWrappingCredentials">To be added.</param>
-        <param name="requestorWrappingCredentials">To be added.</param>
-        <param name="sourceEntropy">To be added.</param>
-        <param name="encryptWith">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="keySizeInBits">The size of the symmetric key.</param>
+        <param name="targetWrappingCredentials">The encrypting credentials for the relying party used to encrypt the key in the SecurityKeyIdentifier property.</param>
+        <param name="requestorWrappingCredentials">The encrypting credentials for the requestor used to encrypt the entropy or the proof token.</param>
+        <param name="sourceEntropy">The requestor's entropy.</param>
+        <param name="encryptWith">The URI of the algorithm to use to encrypt the proof key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> class to use for sending combined entropy.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to send combined entropy.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="keySizeInBits" /> is less than or equal to zero.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceEntropy" /> is <see langword="null" /> or an empty array.</exception>
       </Docs>
     </Member>
     <Member MemberName="ApplyTo">
@@ -185,9 +258,18 @@
         <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="response">The RSTR to which to apply the proof descriptor.</param>
+        <summary>Modifies the specified RSTR based on the settings in this proof descriptor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sets the appropriate artifacts, such as the requested proof token, inside the RSTR based on what is inside the proof descriptor instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="response" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetKeyBytes">
@@ -204,8 +286,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the key material.</summary>
+        <returns>A byte array that contains the key material.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,8 +305,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the source entropy in plain bytes.</summary>
+        <returns>A byte array that contains the source entropy.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,8 +324,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the target entropy in plain bytes</summary>
+        <returns>A byte array that contains the target entropy.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,8 +342,8 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the key identifier that can be used inside the issued token to define the key. It is usually the binary secret or the encrypted key;</summary>
+        <value>The key identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,8 +360,8 @@
         <ReturnType>System.IdentityModel.Tokens.EncryptingCredentials</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the requestor's encrypting credentials, which may be used to encrypt the requested proof token or the entropy in the response.</summary>
+        <value>The requestor’s encrypting credentials.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,8 +378,8 @@
         <ReturnType>System.IdentityModel.Tokens.EncryptingCredentials</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the relying party encrypting credentials, which may be used to encrypt the requested security token in the response.</summary>
+        <value>The relying party encrypting credentials.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

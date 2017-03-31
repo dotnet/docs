@@ -10,8 +10,25 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the different methods by which two geometries can be combined.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration shows the different geometry combine modes.  
+  
+ ![Different combine modes applied to two geometries](~/add/media/mmgraphics-geometrycombinemodes.png "Different combine modes applied to two geometries")  
+Geometry Combine Modes  
+  
+   
+  
+## Examples  
+ The following example shows how to combine two geometries using the Union combine mode.  
+  
+ [!code-xml[geometrysample#23](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/combininggeometriesexample.xaml#23)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Exclude">
@@ -27,7 +44,7 @@
         <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The second region is excluded from the first.  Given two geometries, <paramref name="A" /> and <paramref name="B" />, the area of geometry <paramref name="B" /> is removed from the area of geometry <paramref name="A" />, producing a region that is <paramref name="A-B" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -43,7 +60,7 @@
         <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The two regions are combined by taking their intersection.  The new area consists of the overlapping region between the two geometries.</summary>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -59,7 +76,7 @@
         <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The two regions are combined by taking the union of both.  The resulting geometry is geometry <paramref name="A" /> + geometry <paramref name="B" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xor">
@@ -75,7 +92,7 @@
         <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The two regions are combined by taking the area that exists in the first region but not the second and the area that exists in the second region but not the first.  The new region consists of <paramref name="(A-B)" /> + <paramref name="(B-A)" />, where <paramref name="A" /> and <paramref name="B" /> are geometries.</summary>
       </Docs>
     </Member>
   </Members>

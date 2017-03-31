@@ -20,8 +20,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables iteration over a collection of <see cref="T:System.Xml.Schema.XmlSchema" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Xml.Serialization.XmlSchemaEnumerator> to perform for-each iterations over a collection of <xref:System.Xml.Schema.XmlSchema> objects contained by an instance of the <xref:System.Xml.Serialization.XmlSchemas> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,8 +49,8 @@
         <Parameter Name="list" Type="System.Xml.Serialization.XmlSchemas" />
       </Parameters>
       <Docs>
-        <param name="list">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="list">The <see cref="T:System.Xml.Serialization.XmlSchemas" /> object you want to iterate over.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSchemaEnumerator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +72,8 @@
         <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current element in the collection.</summary>
+        <value>The current <see cref="T:System.Xml.Schema.XmlSchema" /> object in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +96,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all resources used by the <see cref="T:System.Xml.Serialization.XmlSchemaEnumerator" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +119,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Advances the enumerator to the next item in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the move is successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +143,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current element in the collection of <see cref="T:System.Xml.Schema.XmlSchema" /> objects.</summary>
+        <value>The current element in the collection of <see cref="T:System.Xml.Schema.XmlSchema" /> objects.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,7 +167,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the enumerator to its initial position, which is before the first element in the collection of <see cref="T:System.Xml.Schema.XmlSchema" /> objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

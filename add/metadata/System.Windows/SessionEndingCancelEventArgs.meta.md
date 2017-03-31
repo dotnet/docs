@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.SessionEndingCancelEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

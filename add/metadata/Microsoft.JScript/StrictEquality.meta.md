@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.StrictEquality
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.StrictEquality.JScriptStrictEquals(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

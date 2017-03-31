@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.MemberInfoList
-internalonly: False
+ms.author: "mikejo"
 ---

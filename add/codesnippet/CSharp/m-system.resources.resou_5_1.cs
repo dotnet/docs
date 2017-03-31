@@ -1,1 +1,0 @@
-      ResourceManager rm = new ResourceManager(typeof(Resource1));

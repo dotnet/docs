@@ -1,29 +1,29 @@
 ---
 uid: System.Runtime.Serialization.IFormatter
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.IFormatter.SurrogateSelector
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.IFormatter.Context
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.IFormatter.Binder
-internalonly: False
+manager: "ghogen"
 ---

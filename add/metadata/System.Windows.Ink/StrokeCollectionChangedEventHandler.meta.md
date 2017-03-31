@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Ink.StrokeCollectionChangedEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

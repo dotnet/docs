@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the control pattern that <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" /> returns.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IDockProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpandCollapse">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IExpandCollapseProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Grid">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IGridProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="GridItem">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IGridItemProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -91,7 +91,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IInvokeProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="ItemContainer">
@@ -107,7 +107,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IItemContainerProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultipleView">
@@ -123,7 +123,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IMultipleViewProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="RangeValue">
@@ -139,7 +139,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IRangeValueProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Scroll">
@@ -155,7 +155,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IScrollProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollItem">
@@ -171,7 +171,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IScrollItemProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -187,7 +187,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionItem">
@@ -203,7 +203,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ISelectionItemProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="SynchronizedInput">
@@ -219,7 +219,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ISynchronizedInputProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -235,7 +235,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ITableProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="TableItem">
@@ -251,7 +251,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ITableItemProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -267,7 +267,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ITextProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Toggle">
@@ -283,7 +283,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IToggleProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -299,7 +299,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ITransformProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -315,7 +315,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IValueProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="VirtualizedItem">
@@ -331,7 +331,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IVirtualizedItemProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Window">
@@ -347,7 +347,7 @@
         <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IWindowProvider" /> control pattern interface.</summary>
       </Docs>
     </Member>
   </Members>

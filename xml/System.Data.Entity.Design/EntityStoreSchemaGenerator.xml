@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Responsible for Loading Database Schema Information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No content here will be updated; please do not add material here.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,10 +37,10 @@
         <Parameter Name="namespaceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="providerInvariantName">To be added.</param>
-        <param name="connectionString">To be added.</param>
-        <param name="namespaceName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="providerInvariantName">The invariant name of a provider.</param>
+        <param name="connectionString">The connection used to open the database.</param>
+        <param name="namespaceName">The namespace name for the store schema definition language (SSDL).</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityStoreSchemaGenerator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,10 +61,10 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="providerInvariantName">To be added.</param>
-        <param name="connectionString">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="providerInvariantName">The invariant name of a provider.</param>
+        <param name="connectionString">The connection for the providers connection.</param>
+        <summary>Creates an EntityConnection loaded with the providers metadata for the store schema.</summary>
+        <returns>An EntityConnection that can query the ConceptualSchemaDefinition for the provider.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,11 +86,11 @@
         <Parameter Name="targetEntityFrameworkVersion" Type="System.Version" />
       </Parameters>
       <Docs>
-        <param name="providerInvariantName">To be added.</param>
-        <param name="connectionString">To be added.</param>
-        <param name="targetEntityFrameworkVersion">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="providerInvariantName">The provider invariant name.</param>
+        <param name="connectionString">The connection for the providers connection.</param>
+        <param name="targetEntityFrameworkVersion">The internal Entity Framework version that is being targeted.</param>
+        <summary>Creates an EntityConnection loaded with the providers metadata for the store schema. Note that the targetEntityFrameworkVersion parameter uses internal EntityFramework version numbers as described in the <see cref="T:System.Data.Entity.Design.EntityFrameworkVersions" /> class.</summary>
+        <returns>An EntityConnection that can query the ConceptualSchemaDefinition for the provider.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +107,8 @@
         <ReturnType>System.Data.Metadata.Edm.EntityContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the storage model EntityContainer that was created.</summary>
+        <value>The storage model EntityContainer that was created.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +125,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the flag for generating foreign key properties in a storage model.</summary>
+        <value>
+          <see langword="True" /> if foreign key properties are generated in the storage model; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,8 +145,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Generates store metadata and returns any schema errors.</summary>
+        <returns>The collection of schema error objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,9 +166,9 @@
         <Parameter Name="filters" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Entity.Design.EntityStoreSchemaFilterEntry&gt;" />
       </Parameters>
       <Docs>
-        <param name="filters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="filters">An EntityStoreSchemaFilterEntry that specifies which database objects to allow or exclude during generation.</param>
+        <summary>Generates store metadata and returns any schema errors.</summary>
+        <returns>The collection of schema error objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,10 +189,10 @@
         <Parameter Name="targetEntityFrameworkVersion" Type="System.Version" />
       </Parameters>
       <Docs>
-        <param name="filters">To be added.</param>
-        <param name="targetEntityFrameworkVersion">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="filters">An EntityStoreSchemaFilterEntry that specifies which database objects to allow or exclude during generation.</param>
+        <param name="targetEntityFrameworkVersion">The property of EntityFrameworkVersions that corresponds to the targeted version of the Entity Framework.</param>
+        <summary>Generates store schema definition language (SSDL) and returns any schema errors.</summary>
+        <returns>The collection of schema error objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +214,8 @@
         <ReturnType>System.Data.Metadata.Edm.StoreItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the StoreItemCollection that was created.</summary>
+        <value>The created <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,8 +235,8 @@
         <Parameter Name="outputFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="outputFileName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="outputFileName">The name of the output file.</param>
+        <summary>Writes the generated store schema definition language (SSDL) to a file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,8 +256,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The XmlWriter to which the SSDL is written.</param>
+        <summary>Writes the generated store schema definition language (SSDL) to an XmlWriter object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

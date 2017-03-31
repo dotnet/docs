@@ -18,8 +18,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a peer located by the "People Near Me" infrastructure.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of this class cannot be created directly.  Instead, a reference to the peers "near" the calling peer is obtained by using the static <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetPeersNearMe%2A> method to return a collection of nearby peers.  
+  
+ A peer represented by a <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> object is not necessarily in the calling peer's address book.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new default instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +60,9 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">To be added.</param>
-        <param name="streamingContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />.</param>
+        <param name="streamingContext">The serialization destination associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />.</param>
+        <summary>Initializes a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance with the associated parameters required for serialization.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +80,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Generates a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> from the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object and associates it with the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />.</summary>
+        <returns>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The Collaboration infrastructure has failed to create and associate a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> with the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddToContactManager">
@@ -94,12 +105,15 @@
         <Parameter Name="emailAddress" Type="System.Net.Mail.MailAddress" />
       </Parameters>
       <Docs>
-        <param name="displayName">To be added.</param>
-        <param name="nickname">To be added.</param>
-        <param name="emailAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="displayName">The display name assigned to the newly created contact.</param>
+        <param name="nickname">The <c>nickname</c> to assign to the newly created contact.</param>
+        <param name="emailAddress">
+          <see cref="T:System.Net.Mail.MailAddress" /> object that specifies the email address to assign to the newly created contact.</param>
+        <summary>Generates a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> with the associated descriptive parameters from the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object and associates it with the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />.</summary>
+        <returns>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object associated with a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> containing descriptive parameters.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The Collaboration infrastructure has failed to create or update a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> with the <see cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateFromPeerEndPoint">
@@ -123,10 +137,21 @@
         <Parameter Name="peerEndPoint" Type="System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Parameters>
       <Docs>
-        <param name="peerEndPoint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="peerEndPoint">
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object that specifies the endpoint associated with the peer.</param>
+        <summary>Generates a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object from the provided <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</summary>
+        <returns>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the provided <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> does not map to a signed-in peer on the same subnet, `null` is returned.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="peerEndPoint" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The referenced <see cref="P:System.Net.PeerToPeer.Collaboration.PeerEndPoint.EndPoint" /> specifies <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -145,8 +170,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">Set to <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,10 +191,11 @@
         <Parameter Name="other" Type="System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance to test for equality.</param>
+        <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> to the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance provided has matching data, else <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="other" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -188,10 +214,11 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to test for equality.</param>
+        <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance to the specified object.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance provided has matching data, else <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -211,10 +238,10 @@
         <Parameter Name="objB" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="objA">To be added.</param>
-        <param name="objB">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objA">The first <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> to compare.</param>
+        <param name="objB">The second <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instances are considered equal.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instances provided have matching data, else <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,9 +259,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance.</summary>
+        <returns>A 32-bit signed integer hash code used to compare instances of this type.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -259,9 +287,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="context">The destination for the serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data required to serialize the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />. A derived type must call the base type <see cref="M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,9 +314,20 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="state">Specifies the application, object, and presence data relevant to a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance.</param>
+        <summary>Initiates a network operation to retrieve the application, object and presence data specific to a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data retrieved is stored in a cache accessed by the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjects%2A> methods as well as the <xref:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.PresenceStatus%2A> property. The <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.InternalRefreshData%2A> method only needs to be used if the caller is not subscribed to the specified <xref:System.Net.PeerToPeer.Collaboration.Peer>, <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>, or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
+  
+ This method blocks additional calls until the network operation is complete and the cache has been updated.  
+  
+ The caller is not required to sign in with the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or via a user interface in to complete this operation successfully.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Invite">
@@ -310,9 +349,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sends an invitation to join a peer collaboration application to a remote peer.</summary>
+        <returns>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" /> object containing the relevant <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType" /> value specified by the remote peer.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">-   The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> specified by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> is <see langword="null" /> or has a value count of '0' associated endpoints.  
+  
+-   A <see cref="T:System.Guid" /> has not been associated with the current peer-to-peer application.</exception>
       </Docs>
     </Member>
     <Member MemberName="Invite">
@@ -338,12 +382,18 @@
         <Parameter Name="invitationData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="applicationToInvite">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="invitationData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="applicationToInvite">Specifies the relevant Peer Collaboration application represented by a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance.</param>
+        <param name="message">A message to send to the remote peer along with the application invitation.  The message can be no more than 255 Unicode characters.</param>
+        <param name="invitationData">A user defined data blob to associate with the invitation.  Size is limited to 16K (16,384 bytes).</param>
+        <summary>Sends an invitation to join a peer collaboration application to a remote peer that includes data that describes or specifies the application invite.</summary>
+        <returns>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" /> object containing the relevant <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType" /> value specified by the remote peer.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="applicationToInvite" /> argument specifies <see langword="null" />.</exception>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">-   The <paramref name="applicationToInvite" /> argument specifies an empty <see cref="T:System.Guid" />.  
+  
+-   The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> specified by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> is <see langword="null" /> or has a value count of '0' associated endpoints.</exception>
       </Docs>
     </Member>
     <Member MemberName="InviteAsync">
@@ -367,9 +417,12 @@
         <Parameter Name="userToken" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="userToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="userToken">User-defined object passed to the callback of the asynchronous operation for identification. This required parameter must be unique across all asynchronous invitation operations still in-progress.</param>
+        <summary>Receives an invitation response from a peer regarding joining a peer collaboration application.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="userToken" /> argument specifies <see langword="null" />.</exception>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object does not specify a valid <see cref="T:System.Guid" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="InviteAsync">
@@ -396,12 +449,18 @@
         <Parameter Name="userToken" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="applicationToInvite">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="invitationData">To be added.</param>
-        <param name="userToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="applicationToInvite">Specifies the relevant Peer Collaboration application information represented by a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object.</param>
+        <param name="message">A message to send to the remote peer along with the application invitation. The message can be no more than 255 Unicode characters.</param>
+        <param name="invitationData">A user defined data blob to associate with the invitation.  Size is limited to 16K.</param>
+        <param name="userToken">User-defined object passed to the callback of the asynchronous operation for identification. This required parameter must be unique across all asynchronous invitation operations still in-progress.</param>
+        <summary>Receives an invitation response from a peer regarding an invitation to a peer collaboration application.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="applicationToInvite" /> argument specifies <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="userToken" /> argument specifies <see langword="null" />.</exception>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">-   The endpoint specified by <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> was not found.  
+  
+-   The <paramref name="applicationToInvite" /> argument specifies an empty <see cref="T:System.Guid" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Nickname">
@@ -417,9 +476,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a <see cref="T:System.String" /> representing the Nickname of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object.</summary>
+        <value>
+          <see cref="T:System.String" /> that represents the Nickname of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a contact is generated from a <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> object, the associated contact Nickname is populated with this property value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnRefreshDataCompleted">
@@ -438,9 +506,21 @@
         <Parameter Name="e" Type="System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">Event data contained in a <see cref="T:System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs" /> instance.</param>
+        <summary>Signals the <see cref="E:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataCompleted" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that inherit from this class can override this method to perform additional tasks when the <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataCompleted> event occurs.  
+  
+ This method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>In a derived class, be sure to call the base class’s implementation of this method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="PeerNearMeChanged">
@@ -464,7 +544,7 @@
         <ReturnType>System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Signaled when a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance is found, no longer available, or the associated <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object information has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -487,8 +567,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initiates a network operation to retrieve the application, object and presence data specific to a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data retrieved is stored in a cache accessed by the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjects%2A> methods as well as the <xref:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.PresenceStatus%2A> property. This method only needs to be used if the caller is not subscribed to the specified <xref:System.Net.PeerToPeer.Collaboration.Peer>, <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>, or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
+  
+ This method blocks additional calls until the network operation is complete and cache has been updated.  
+  
+ The caller is not required to sign in with the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or via a user interface in to complete this operation successfully.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="RefreshDataAsync">
@@ -512,9 +604,23 @@
         <Parameter Name="userToken" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="userToken">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="userToken">User-specified state object that is passed to the delegate when this method completes the operation.</param>
+        <summary>Initiates a network operation to retrieve the application, object and presence data specific to a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data retrieved is stored in a cache accessed by the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjects%2A> methods as well as the <xref:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.PresenceStatus%2A> property.  The <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.InternalRefreshData%2A> method only needs to be used if the caller is not subscribed to the specified <xref:System.Net.PeerToPeer.Collaboration.Peer>, <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>, or <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
+  
+ This method blocks additional calls until the network operation is complete and cache has been updated.  
+  
+ The caller is not required to sign in with the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or via a user interface in to complete this operation successfully.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="userToken" /> argument specifies <see langword="null" />.</exception>
+        <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The prior <see cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataAsync(System.Object)" /> call has not yet completed.</exception>
       </Docs>
     </Member>
     <Member MemberName="RefreshDataCompleted">
@@ -530,8 +636,9 @@
         <ReturnType>System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Signaled when the <see cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData" /> or <see cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataAsync(System.Object)" /> operation for the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance is completed.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -556,9 +663,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="context">The destination for the serialization.</param>
+        <summary>Populates the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance with the data obtained from the serialized source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -576,9 +683,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns <see cref="T:System.String" /> that represents a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance.</summary>
+        <returns>
+          <see cref="T:System.String" /> representing the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

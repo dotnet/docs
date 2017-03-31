@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Data.CollectionRegisteringEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.CollectionRegisteringEventArgs.Collection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.CollectionRegisteringEventArgs.Parent
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

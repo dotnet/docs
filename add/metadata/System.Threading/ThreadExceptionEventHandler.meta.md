@@ -1,4 +1,6 @@
 ---
 uid: System.Threading.ThreadExceptionEventHandler
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

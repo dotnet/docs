@@ -1,9 +1,13 @@
 ---
 uid: System.Xml.IApplicationResourceStreamResolver
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.IApplicationResourceStreamResolver.GetApplicationResourceStream(System.Uri)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

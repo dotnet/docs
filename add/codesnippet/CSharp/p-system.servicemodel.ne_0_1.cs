@@ -1,2 +1,0 @@
-		XmlDictionaryReaderQuotas readerQuotas =
-			binding.ReaderQuotas;

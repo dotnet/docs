@@ -1,14 +1,17 @@
 ---
 uid: System.Net.Configuration.PerformanceCountersElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.PerformanceCountersElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.PerformanceCountersElement.Enabled
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

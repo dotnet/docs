@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies a chart type for a <see cref="T:System.Web.UI.DataVisualization.Charting.Series" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Area chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bar">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bar chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="BoxPlot">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Box plot chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bubble">
@@ -75,7 +75,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bubble chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Candlestick">
@@ -91,7 +91,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Candlestick chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -107,7 +107,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Column chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Doughnut">
@@ -123,7 +123,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Doughnut chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ErrorBar">
@@ -139,7 +139,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Error bar chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="FastLine">
@@ -155,7 +155,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>FastLine chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="FastPoint">
@@ -171,7 +171,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>FastPoint chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Funnel">
@@ -187,7 +187,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Funnel chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Kagi">
@@ -203,7 +203,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Kagi chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -219,7 +219,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Line chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pie">
@@ -235,7 +235,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pie chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Point">
@@ -251,7 +251,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Point chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="PointAndFigure">
@@ -267,7 +267,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>PointAndFigure chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Polar">
@@ -283,7 +283,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Polar chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pyramid">
@@ -299,7 +299,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pyramid chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Radar">
@@ -315,7 +315,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Radar chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -331,7 +331,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Range chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="RangeBar">
@@ -347,7 +347,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>RangeBar chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="RangeColumn">
@@ -363,7 +363,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Range column chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Renko">
@@ -379,7 +379,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Renko chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Spline">
@@ -395,7 +395,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Spline chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="SplineArea">
@@ -411,7 +411,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Spline area chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="SplineRange">
@@ -427,7 +427,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Spline range chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="StackedArea">
@@ -443,7 +443,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stacked area chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="StackedArea100">
@@ -459,7 +459,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Hundred-percent stacked area chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="StackedBar">
@@ -475,7 +475,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stacked bar chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="StackedBar100">
@@ -491,7 +491,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Hundred-percent stacked bar chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="StackedColumn">
@@ -507,7 +507,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stacked column chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="StackedColumn100">
@@ -523,7 +523,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Hundred-percent stacked column chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="StepLine">
@@ -539,7 +539,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>StepLine chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stock">
@@ -555,7 +555,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stock chart type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThreeLineBreak">
@@ -571,7 +571,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>ThreeLineBreak chart type.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that defines the SOAP processing endpoint behavior.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Routing.Configuration.SoapProcessingExtensionElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +43,16 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of the behavior.</summary>
+        <value>The type of the behavior.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property always returns a type of <xref:System.ServiceModel.Routing.SoapProcessingBehavior>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateBehavior">
@@ -62,8 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new SOAP processing behavior element based on the current configuration settings.</summary>
+        <returns>The behavior.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +92,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether messages should be marshaled between SOAP message versions.</summary>
+        <value>**true** if messages should be marshaled; otherwise, **false**. The default is **true**.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

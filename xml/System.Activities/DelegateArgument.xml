@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The abstract base class that represents a binding terminal that supports the flow of data into and out of an <see cref="T:System.Activities.ActivityDelegate" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Activities.ArgumentDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Activities.ArgumentDirection" /> that specifies whether the <see cref="T:System.Activities.DelegateArgument" /> represents the flow of data into an <see cref="T:System.Activities.ActivityDelegate" />, out of an <see cref="T:System.Activities.ActivityDelegate" />, or both into and out of an <see cref="T:System.Activities.ActivityDelegate" />.</summary>
+        <value>One of the enumeration values that specifies the direction of the flow of data through the <see cref="T:System.Activities.DelegateArgument" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +49,9 @@
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The current activity context.</param>
+        <summary>Returns the value of the argument using the specified activity context.</summary>
+        <returns>The value of the argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +71,9 @@
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The current activity context.</param>
+        <summary>Returns the <see cref="T:System.Activities.Location" /> of the value referenced by the <see cref="T:System.Activities.DelegateArgument" />.</summary>
+        <returns>The location of the value referenced by the <see cref="T:System.Activities.DelegateArgument" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,8 +95,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the <see cref="T:System.Activities.DelegateArgument" />.</summary>
+        <value>The name of the <see cref="T:System.Activities.DelegateArgument" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +113,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the string value used by <see cref="P:System.Activities.DelegateArgument.Name" />.</summary>
+        <value>The name of the <see cref="T:System.Activities.DelegateArgument" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

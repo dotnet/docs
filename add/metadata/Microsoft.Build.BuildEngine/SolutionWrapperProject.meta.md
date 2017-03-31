@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.BuildEngine.SolutionWrapperProject
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.BuildEngine.SolutionWrapperProject.Generate(System.String,System.String,Microsoft.Build.Framework.BuildEventContext)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

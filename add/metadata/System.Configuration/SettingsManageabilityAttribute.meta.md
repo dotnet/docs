@@ -1,14 +1,20 @@
 ---
 uid: System.Configuration.SettingsManageabilityAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsManageabilityAttribute.Manageability
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SettingsManageabilityAttribute.#ctor(System.Configuration.SettingsManageability)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

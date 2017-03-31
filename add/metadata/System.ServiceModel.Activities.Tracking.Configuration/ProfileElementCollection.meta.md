@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.ProfileElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Tracking.Configuration.ProfileElementCollection.CollectionType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

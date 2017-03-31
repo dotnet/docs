@@ -14,8 +14,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a read-only collection of <see cref="T:System.Security.Cryptography.ManifestSignatureInformation" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get a <xref:System.Security.Cryptography.ManifestSignatureInformationCollection> collection, call one of the <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature%2A> method overloads.  
+  
+ Each collection contains a <xref:System.Security.Cryptography.ManifestSignatureInformation> object for each manifest that was verified by the <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature%2A> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

@@ -1,44 +1,49 @@
 ---
 uid: System.Windows.Markup.ParserContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ParserContext.XamlTypeMapper
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ParserContext.BaseUri
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ParserContext.XmlnsDictionary
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ParserContext.#ctor(System.Xml.XmlParserContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ParserContext.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ParserContext.ToXmlParserContext(System.Windows.Markup.ParserContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ParserContext.XmlLang
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ParserContext.XmlSpace
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ParserContext.#ctor
+manager: "martinek"
 ---

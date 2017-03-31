@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents objects that support synchronized input events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,8 +29,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Stops listening for input.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the provider is currently listening for input, it reverts to normal operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InputDiscardedEvent">
@@ -46,8 +53,15 @@
         <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the event raised when WPF discards input.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. A UI Automation provider should use the equivalent field in <xref:System.Windows.Automation.SynchronizedInputPatternIdentifiers>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InputReachedOtherElementEvent">
@@ -63,8 +77,15 @@
         <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the event raised when the input was received by an element other than the one currently listening for the input.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. A UI Automation provider should use the equivalent field in <xref:System.Windows.Automation.SynchronizedInputPatternIdentifiers>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InputReachedTargetEvent">
@@ -80,8 +101,15 @@
         <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the event raised when the input was received by the element currently listening for the input.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. A UI Automation provider should use the equivalent field in <xref:System.Windows.Automation.SynchronizedInputPatternIdentifiers>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Pattern">
@@ -97,8 +125,17 @@
         <ReturnType>System.Windows.Automation.AutomationPattern</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="T:System.Windows.Automation.SynchronizedInputPattern" /> control pattern.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.SynchronizedInputPatternIdentifiers>.  
+  
+ The pattern identifier is passed to methods, such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A>, to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartListening">
@@ -117,9 +154,18 @@
         <Parameter Name="inputType" Type="System.Windows.Automation.SynchronizedInputType" />
       </Parameters>
       <Docs>
-        <param name="inputType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inputType">The type of input to listen for.</param>
+        <summary>Designates that the provider start listening for input of the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When WPF finds matching input, it checks the route of the incoming event. If the automation element that is listening for the input is not in the route, the input is discarded and the <xref:System.Windows.Automation.SynchronizedInputPattern.InputDiscardedEvent> event is raised. If the input is received by the automation element listening for that type, the <xref:System.Windows.Automation.SynchronizedInputPattern.InputReachedTargetEvent> event is raised; otherwise, the <xref:System.Windows.Automation.SynchronizedInputPattern.InputReachedOtherElementEvent> event is raised.  
+  
+ After receiving the input, the provider stops listening and continues normally.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.HttpModulesSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpModulesSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpModulesSection.Modules
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

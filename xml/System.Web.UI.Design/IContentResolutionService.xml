@@ -8,8 +8,11 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an interface for access to a master page from a content page at design time, if provided by a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].</summary>
     <remarks>To be added.</remarks>
+    <block subset="none" type="overrides">
+      <para>A control designer, or a class implementing the <see cref="T:System.Web.UI.Design.IContentResolutionService" /> interface, should not assume the availability of the <see cref="T:System.Web.UI.Design.IContentResolutionService" /> from a design host and, if it is not available, should fail gracefully.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName="ContentDefinitions">
@@ -25,8 +28,8 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.UI.Design.ContentDefinition" /> objects for the content placeholders that are identified in the master page.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> containing identifiers and <see cref="T:System.Web.UI.Design.ContentDefinition" /> objects.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +49,9 @@
         <Parameter Name="identifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifier">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="identifier">The identifier for a content place holder.</param>
+        <summary>Retrieves the current state of the identified content place holder.</summary>
+        <returns>The current state of the identified content placeholder.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +72,9 @@
         <Parameter Name="state" Type="System.Web.UI.Design.ContentDesignerState" />
       </Parameters>
       <Docs>
-        <param name="identifier">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="identifier">The identifier for a content place holder.</param>
+        <param name="state">A <see cref="T:System.Web.UI.Design.ContentDesignerState" />.</param>
+        <summary>Sets the current state of the identified content place holder.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -18,8 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TValue">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TValue">The type of the value.</typeparam>
+    <summary>Represents the base class for value providers whose values come from a collection that implements the <see cref="T:System.Collections.Generic.IDictionary`2" /> interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +37,11 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="dictionary">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dictionary">The dictionary.</param>
+        <param name="culture">The culture information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.DictionaryValueProvider`1" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="dictionary" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContainsPrefix">
@@ -59,9 +60,10 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">The prefix.</param>
+        <summary>Returns a value that indicates whether the dictionary contains the specified prefix.</summary>
+        <returns>
+          <see langword="true" /> if the dictionary contains the specified prefix; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,10 +83,11 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key.</param>
+        <summary>Retrieves a value object using the specified key.</summary>
+        <returns>The value object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

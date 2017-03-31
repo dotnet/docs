@@ -1,44 +1,49 @@
 ---
 uid: System.Messaging.MessageQueueEnumerator
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueueEnumerator.Reset
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueueEnumerator.LocatorHandle
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueueEnumerator.Current
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueueEnumerator.Dispose
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueueEnumerator.System#Collections#IEnumerator#Current
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueueEnumerator.MoveNext
-internalonly: False
+manager: "tyoung"
+---
+
+---
+uid: System.Messaging.MessageQueueEnumerator.Dispose
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueueEnumerator.Close
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueueEnumerator.Dispose(System.Boolean)
-internalonly: False
+manager: "tyoung"
 ---

@@ -15,8 +15,27 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Recognizes ink gestures.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Ink.GestureRecognizer> identifies an ink gesture. You can set the <xref:System.Windows.Ink.GestureRecognizer> to recognize all or a subset of application gestures. To set the <xref:System.Windows.Ink.GestureRecognizer> to recognize a subset of the available gestures, pass an <xref:System.Windows.Ink.ApplicationGesture> array to the constructor or use the <xref:System.Windows.Ink.GestureRecognizer.SetEnabledGestures%2A> method. To determine whether a <xref:System.Windows.Ink.StrokeCollection> contains a gesture, call the <xref:System.Windows.Ink.GestureRecognizer.Recognize%2A> method.  
+  
+<a name="xamlTextUsage_GestureRecognizer"></a>   
+## XAML Text Usage  
+ You cannot use this class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine whether a <xref:System.Windows.Ink.Stroke> is a <xref:System.Windows.Ink.ApplicationGesture> gesture.  
+  
+ [!code-csharp[GestureControl#8](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureControl/CSharp/Gesture.cs#8)]
+ [!code-vb[GestureControl#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureControl/VisualBasic/Gesture.vb#8)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,8 +49,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.GestureRecognizer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When it is created with this constructor, the <xref:System.Windows.Ink.GestureRecognizer> recognizes all application gestures.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,9 +73,24 @@
         <Parameter Name="enabledApplicationGestures" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Ink.ApplicationGesture&gt;" />
       </Parameters>
       <Docs>
-        <param name="enabledApplicationGestures">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="enabledApplicationGestures">An array of type <see cref="T:System.Windows.Ink.ApplicationGesture" /> that specifies the application gestures the <see cref="T:System.Windows.Ink.GestureRecognizer" /> will recognize.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.GestureRecognizer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Ink.GestureRecognizer.%23ctor%2A> constructor to create a <xref:System.Windows.Ink.GestureRecognizer> that recognizes a subset of the application gestures.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a <xref:System.Windows.Ink.GestureRecognizer> that recognizes only the <xref:System.Windows.Ink.ApplicationGesture>, <xref:System.Windows.Ink.ApplicationGesture>, and <xref:System.Windows.Ink.ApplicationGesture> gestures.  
+  
+ [!code-csharp[GestureControl#4](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureControl/CSharp/Gesture.cs#4)]
+ [!code-vb[GestureControl#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureControl/VisualBasic/Gesture.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -66,8 +107,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Windows.Ink.GestureRecognizer" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Windows.Ink.GestureRecognizer.Dispose%2A> when you finish using the <xref:System.Windows.Ink.GestureRecognizer>. The <xref:System.Windows.Ink.GestureRecognizer.Dispose%2A> method leaves the <xref:System.Windows.Ink.GestureRecognizer> in an unusable state. Therefore, after calling <xref:System.Windows.Ink.GestureRecognizer.Dispose%2A>, you must release all references to the <xref:System.Windows.Ink.GestureRecognizer> so the garbage collector can reclaim the memory that the <xref:System.Windows.Ink.GestureRecognizer> was occupying.  
+  
+> [!NOTE]
+>  Always call <xref:System.Windows.Ink.GestureRecognizer.Dispose%2A> before you release your last reference to the <xref:System.Windows.Ink.GestureRecognizer>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Windows.Ink.GestureRecognizer> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnabledGestures">
@@ -84,9 +135,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the gestures that the <see cref="T:System.Windows.Ink.GestureRecognizer" /> recognizes.</summary>
+        <returns>An array of type <see cref="T:System.Windows.Ink.ApplicationGesture" /> that contains gestures the <see cref="T:System.Windows.Ink.GestureRecognizer" /> is set to recognize.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to get the application gestures that a <xref:System.Windows.Ink.GestureRecognizer> recognizes.  
+  
+ [!code-csharp[GestureControl#6](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureControl/CSharp/Gesture.cs#6)]
+ [!code-vb[GestureControl#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureControl/VisualBasic/Gesture.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRecognizerAvailable">
@@ -102,9 +163,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a Boolean that indicates whether the gesture recognizer is available on the user's system.</summary>
+        <value>
+          <see langword="true" /> if the recognition component is available; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to determine whether the gesture recognizer is available before calling the <xref:System.Windows.Ink.GestureRecognizer.Recognize%2A> method.  
+  
+ [!code-csharp[GestureControl#8](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureControl/CSharp/Gesture.cs#8)]
+ [!code-vb[GestureControl#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureControl/VisualBasic/Gesture.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Recognize">
@@ -128,10 +200,37 @@
         <Parameter Name="strokes" Type="System.Windows.Ink.StrokeCollection" />
       </Parameters>
       <Docs>
-        <param name="strokes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strokes">The <see cref="T:System.Windows.Ink.StrokeCollection" /> to search for gestures.</param>
+        <summary>Looks for gestures in the specified <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <returns>An array of type <see cref="T:System.Windows.Ink.GestureRecognitionResult" /> that contains application gestures that the <see cref="T:System.Windows.Ink.GestureRecognizer" /> recognized.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The array returned by the <xref:System.Windows.Ink.GestureRecognizer.Recognize%2A> method is sorted by the <xref:System.Windows.Ink.GestureRecognitionResult.RecognitionConfidence%2A?displayProperty=fullName> property. For example, <xref:System.Windows.Ink.GestureRecognizer.Recognize%2A> may return a <xref:System.Windows.Ink.GestureRecognitionResult> array with the following values:  
+  
+|Index|ApplicationGesture|RecognitionConfidence|  
+|-----------|------------------------|---------------------------|  
+|0|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
+|1|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
+|2|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
+|3|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
+  
+ This means that the <xref:System.Windows.Ink.GestureRecognizer> recognizes that it is very likely that the <xref:System.Windows.Ink.Stroke> is a check mark, relatively likely that the <xref:System.Windows.Ink.Stroke> in not a gesture, and not at all likely that the <xref:System.Windows.Ink.Stroke> is a curlicue or a double curlicue.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Ink.GestureRecognizer.Recognize%2A> method can return an array with <xref:System.Windows.Ink.ApplicationGesture> at a higher <xref:System.Windows.Ink.RecognitionConfidence> than other application gestures. This means that it is more likely that the <xref:System.Windows.Ink.Stroke> is not a gesture, as opposed to a gesture that has a lower <xref:System.Windows.Ink.RecognitionConfidence>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine whether a <xref:System.Windows.Ink.Stroke> is a <xref:System.Windows.Ink.ApplicationGesture> gesture.  
+  
+ [!code-csharp[GestureControl#8](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureControl/CSharp/Gesture.cs#8)]
+ [!code-vb[GestureControl#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureControl/VisualBasic/Gesture.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetEnabledGestures">
@@ -150,9 +249,19 @@
         <Parameter Name="applicationGestures" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Ink.ApplicationGesture&gt;" />
       </Parameters>
       <Docs>
-        <param name="applicationGestures">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="applicationGestures">An array of type <see cref="T:System.Windows.Ink.ApplicationGesture" /> that specifies the application gestures you wish the <see cref="T:System.Windows.Ink.GestureRecognizer" /> to recognize.</param>
+        <summary>Sets the application gestures that the <see cref="T:System.Windows.Ink.GestureRecognizer" /> recognizes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create a <xref:System.Windows.Ink.GestureRecognizer> that recognizes only the <xref:System.Windows.Ink.ApplicationGesture>, <xref:System.Windows.Ink.ApplicationGesture>, and <xref:System.Windows.Ink.ApplicationGesture> gestures.  
+  
+ [!code-csharp[GestureControl#5](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureControl/CSharp/Gesture.cs#5)]
+ [!code-vb[GestureControl#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureControl/VisualBasic/Gesture.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

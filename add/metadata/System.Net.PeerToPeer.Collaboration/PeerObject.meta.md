@@ -1,94 +1,131 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObject
-internalonly: False
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.ToString
-internalonly: False
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.Id
-internalonly: False
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.Dispose
-internalonly: False
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.GetHashCode
-internalonly: False
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.Equals(System.Net.PeerToPeer.Collaboration.PeerObject)
-internalonly: False
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.SynchronizingObject
-internalonly: False
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.OnObjectChanged(System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs)
-internalonly: False
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.PeerScope
-internalonly: False
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.ObjectChanged
-internalonly: False
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.Dispose(System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObject.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.ToString
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.Id
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.Dispose
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.GetHashCode
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.Equals
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.Equals(System.Net.PeerToPeer.Collaboration.PeerObject)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.Dispose
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.SynchronizingObject
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.OnObjectChanged(System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.PeerScope
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.ObjectChanged
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.Dispose(System.Boolean)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.PeerObject.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObject.Equals(System.Object,System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObject.Equals(System.Object)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObject.#ctor(System.Guid,System.Byte[],System.Net.PeerToPeer.Collaboration.PeerScope)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObject.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObject.Data
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

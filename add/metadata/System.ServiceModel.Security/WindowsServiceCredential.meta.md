@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Security.WindowsServiceCredential
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.WindowsServiceCredential.AllowAnonymousLogons
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.WindowsServiceCredential.IncludeWindowsGroups
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the context type for an <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object represents an application partition.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConfigurationSet">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object represents an AD LDS configuration set.</summary>
       </Docs>
     </Member>
     <Member MemberName="DirectoryServer">
@@ -59,7 +59,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object represents a directory server.</summary>
       </Docs>
     </Member>
     <Member MemberName="Domain">
@@ -75,7 +75,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object represents a domain.</summary>
       </Docs>
     </Member>
     <Member MemberName="Forest">
@@ -91,7 +91,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object represents a forest.</summary>
       </Docs>
     </Member>
   </Members>

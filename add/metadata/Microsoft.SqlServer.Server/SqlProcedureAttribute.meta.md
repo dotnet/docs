@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.SqlServer.Server.SqlProcedureAttribute
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlProcedureAttribute.#ctor
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlProcedureAttribute.Name
-internalonly: False
+manager: "mblythe"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Entity.Design.MetadataExtensionMethods
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Entity.Design.MetadataExtensionMethods.GetPrimitiveTypes(System.Data.Metadata.Edm.EdmItemCollection,System.Version)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

@@ -10,8 +10,62 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enumerates values for intervals of prosodic separation (breaks) between word boundaries.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values in the <xref:System.Speech.Synthesis.PromptBreak> enumeration represent a range of separation intervals (pauses) between word boundaries. The speech synthesis engine determines the exact duration of the interval. When a break is requested, one of these values is passed to the text-to-speech (TTS) engine, which contains a mapping between these values and the corresponding millisecond break values.  
+  
+ The value `None` represents the absence of a pause between word boundaries and can be used to remove a break where one would normally occur. The remaining values are listed in order of increasing durations for breaks.  
+  
+   
+  
+## Examples  
+ The following example builds a prompt containing two sentences separated by a break and speaks the prompt to the default audio device on the computer.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Build a prompt with two sentences separated by a break.  
+        PromptBuilder builder = new PromptBuilder(  
+          new System.Globalization.CultureInfo("en-US"));  
+        builder.AppendText(  
+          "Tonight's movie showings in theater A are at 5:45, 7:15, and 8:45.");  
+        builder.AppendBreak(PromptBreak.Medium);  
+        builder.AppendText(  
+          "Tonight's movie showings in theater B are at 5:15, 7:30, and 9:15.");  
+  
+        // Speak the prompt.  
+        synth.Speak(builder);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ExtraLarge">
@@ -27,7 +81,7 @@
         <ReturnType>System.Speech.Synthesis.PromptBreak</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates an extra-large break.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExtraSmall">
@@ -43,7 +97,7 @@
         <ReturnType>System.Speech.Synthesis.PromptBreak</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates an extra-small break.</summary>
       </Docs>
     </Member>
     <Member MemberName="Large">
@@ -59,7 +113,7 @@
         <ReturnType>System.Speech.Synthesis.PromptBreak</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a large break.</summary>
       </Docs>
     </Member>
     <Member MemberName="Medium">
@@ -75,7 +129,7 @@
         <ReturnType>System.Speech.Synthesis.PromptBreak</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a medium break.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -91,7 +145,7 @@
         <ReturnType>System.Speech.Synthesis.PromptBreak</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates no break.</summary>
       </Docs>
     </Member>
     <Member MemberName="Small">
@@ -107,7 +161,7 @@
         <ReturnType>System.Speech.Synthesis.PromptBreak</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a small break.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.Hide
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Hide.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---

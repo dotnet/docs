@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.EvalErrorObject
-internalonly: False
+ms.author: "mikejo"
 ---

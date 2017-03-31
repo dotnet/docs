@@ -11,8 +11,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Passed to the <see cref="M:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract(System.ServiceModel.Description.ServiceContractGenerationContext)" /> method to enable the modification of a service contract and its context prior to generating code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%2A?displayProperty=fullName> method to modify the code document object model prior to the generation of code. Typically, the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=fullName> interface is implemented on a custom <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName> implementation that is used to import custom WSDL elements or otherwise modify the code at the service or operation level. To modify the code at the operation level, see <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example shows the use of the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
+  
+ [!code-csharp[C_CustomWSDLExtensions#12](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#12)]  
+  
+ The following code example shows the resulting code comments.  
+  
+ [!code-csharp[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#13)]
+ [!code-vb[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#13)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,10 +49,10 @@
         <Parameter Name="contractType" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="serviceContractGenerator">To be added.</param>
-        <param name="contract">To be added.</param>
-        <param name="contractType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceContractGenerator">The generator that generates the code for the contract.</param>
+        <param name="contract">The contract description for the contract to be generated.</param>
+        <param name="contractType">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> for the contract code to be generated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceContractGenerationContext" /> class using the specified contract generator, contract description, and contract code type declaration.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,11 +72,11 @@
         <Parameter Name="duplexCallbackType" Type="System.CodeDom.CodeTypeDeclaration" />
       </Parameters>
       <Docs>
-        <param name="serviceContractGenerator">To be added.</param>
-        <param name="contract">To be added.</param>
-        <param name="contractType">To be added.</param>
-        <param name="duplexCallbackType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceContractGenerator">The generator that generates the code for the contract.</param>
+        <param name="contract">The contract description for the contract to be generated.</param>
+        <param name="contractType">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> for the contract code to be generated.</param>
+        <param name="duplexCallbackType">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> for the duplex contract code to be generated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceContractGenerationContext" /> class using the specified contract generator, contract description, and contract code type declaration.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +93,16 @@
         <ReturnType>System.ServiceModel.Description.ContractDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the current contract.</summary>
+        <value>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the current contract.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.Contract%2A> property to examine the <xref:System.ServiceModel.Description.ContractDescription?displayProperty=fullName> for the current contract.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContractType">
@@ -92,9 +118,28 @@
         <ReturnType>System.CodeDom.CodeTypeDeclaration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.CodeDom.CodeTypeDeclaration" /> for the current contract.</summary>
+        <value>The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> for the current contract.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.ContractType%2A> property to examine or modify the <xref:System.CodeDom.CodeTypeDeclaration?displayProperty=fullName> for the current contract before the code is generated.  
+  
+   
+  
+## Examples  
+ The following example shows the use of the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> object passed to the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%2A?displayProperty=fullName> method to add code comments extracted from custom WSDL elements.  
+  
+ [!code-csharp[C_CustomWSDLExtensions#12](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#12)]  
+  
+ The following code example shows the resulting code comments.  
+  
+ [!code-csharp[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.cs#13)]
+ [!code-vb[C_CustomWSDLExtensions#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/newgeneratedcontract.vb#13)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DuplexCallbackType">
@@ -110,9 +155,16 @@
         <ReturnType>System.CodeDom.CodeTypeDeclaration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.CodeDom.CodeTypeDeclaration" /> for the duplex callback contract on the service contract.</summary>
+        <value>The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> for the duplex callback contract on the service contract.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.DuplexCallbackType%2A> property to examine or modify the <xref:System.CodeDom.CodeTypeDeclaration?displayProperty=fullName> for the duplex callback contract on the service contract prior to generating code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Operations">
@@ -128,9 +180,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.OperationContractGenerationContext&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Description.OperationContractGenerationContext" /> objects that represent the contract operations.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Description.OperationContractGenerationContext" /> objects that represent the contract operations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.Operations%2A> property to examine or modify the <xref:System.ServiceModel.Description.OperationContractGenerationContext?displayProperty=fullName> objects that represent the contract operations.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceContractGenerator">
@@ -146,9 +205,16 @@
         <ReturnType>System.ServiceModel.Description.ServiceContractGenerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.ServiceModel.Description.ServiceContractGenerator" /> that is to generate the contract.</summary>
+        <value>The <see cref="T:System.ServiceModel.Description.ServiceContractGenerator" /> that is to generate the contract.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext.ServiceContractGenerator%2A> property to examine or modify the code generator that is to create the contract code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

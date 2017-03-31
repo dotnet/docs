@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Wraps a writer and generates a signature automatically when the envelope has been completely written. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default the generated signature is inserted as the last element in the envelope. This can be modified by explicitly calling the <xref:System.IdentityModel.EnvelopedSignatureWriter.WriteSignature%2A> method to indicate the location inside the envelope where the signature should be inserted.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,12 +38,24 @@
         <Parameter Name="securityTokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
       </Parameters>
       <Docs>
-        <param name="innerWriter">To be added.</param>
-        <param name="signingCredentials">To be added.</param>
-        <param name="referenceId">To be added.</param>
-        <param name="securityTokenSerializer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="innerWriter">The writer to wrap.</param>
+        <param name="signingCredentials">The signing credentials to be used to generate the signature.</param>
+        <param name="referenceId">The reference ID of the envelope.</param>
+        <param name="securityTokenSerializer">The token serializer to use to serialize the signature KeyInfo.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.EnvelopedSignatureWriter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="referenceId" /> is <see langword="null" /> or empty.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="innerWriter" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="signingCredentials" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="securityTokenSerializer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -74,8 +93,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Closes one element and pops the corresponding namespace scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the last element of the envelope is written, the signature is automatically computed over the envelope. If the <xref:System.IdentityModel.EnvelopedSignatureWriter.WriteSignature%2A> method was explicitly called, the signature is inserted at the appropriate position inside the envelope; otherwise, it is inserted at the end of the envelope.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteFullEndElement">
@@ -92,8 +118,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Closes one element and pops the corresponding namespace scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the last element of the envelope is written, the signature is automatically computed over the envelope. If the <xref:System.IdentityModel.EnvelopedSignatureWriter.WriteSignature%2A> method was explicitly called, the signature is inserted at the appropriate position inside the envelope; otherwise, it is inserted at the end of the envelope.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteSignature">
@@ -110,7 +143,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the position of the signature within the envelope. Call this method while writing the envelope to indicate at which point the signature should be inserted.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,10 +165,10 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <param name="localName">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="prefix">The namespace prefix of the element.</param>
+        <param name="localName">The local name of the element. (The name of the element without the prefix.)</param>
+        <param name="ns">The namespace URI to associate with the element.</param>
+        <summary>Writes the specified start tag and associates it with the specified namespace.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

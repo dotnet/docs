@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the method a class must implement to return a control's type for a specified tag prefix and tag name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Page developers and control authors do not use the <xref:System.Web.UI.IUserControlTypeResolutionService> interface. The <xref:System.Web.UI.IUserControlTypeResolutionService> interface is implemented by tool developers to return the <xref:System.Type> of a control identified by a tag prefix and tag name.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetType">
@@ -29,11 +36,18 @@
         <Parameter Name="tagName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="tagPrefix">To be added.</param>
-        <param name="tagName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="tagPrefix">The parsed prefix of an ASP.NET tag.</param>
+        <param name="tagName">The name of the parsed ASP.NET tag.</param>
+        <summary>Retrieves a type based on a parsed ASP.NET tag prefix and the name of the tag.</summary>
+        <returns>A <see cref="T:System.Type" /> that represents the type of control the prefix and tag identify.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Designer environments implement this method to provide a way for ASP.NET parsers and designers to resolve user control types at design time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

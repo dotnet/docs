@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView.Glyph
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView.Glyph.Opened
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView.Glyph.Closed
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

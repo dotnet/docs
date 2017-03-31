@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the return value of a <see cref="T:System.ServiceProcess.Design.ServiceInstallerDialog" /> form.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Result%2A?displayProperty=fullName> property uses this enumeration to indicate the user response to the dialog box.  
+  
+   
+  
+## Examples  
+ The following example uses a <xref:System.ServiceProcess.Design.ServiceInstallerDialog> to prompt the user for a service installation account.  
+  
+ [!code-cpp[ServiceInstallConfig#1](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceInstallConfig/CPP/source.cpp#1)]
+ [!code-csharp[ServiceInstallConfig#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceInstallConfig/CS/source.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Canceled">
@@ -27,7 +42,7 @@
         <ReturnType>System.ServiceProcess.Design.ServiceInstallerDialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The dialog return value is <see langword="Canceled" />. This value typically indicates that the user canceled out of the dialog without setting the account fields.</summary>
       </Docs>
     </Member>
     <Member MemberName="OK">
@@ -43,7 +58,7 @@
         <ReturnType>System.ServiceProcess.Design.ServiceInstallerDialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The dialog return value is <see langword="OK" />. This value typically indicates that the user confirmed the account properties and pressed the <see langword="OK" /> button to close the dialog.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseSystem">
@@ -59,7 +74,7 @@
         <ReturnType>System.ServiceProcess.Design.ServiceInstallerDialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Install the service with a system account rather than a user account. This value typically indicates that the dialog was not displayed to the user. For example, the <see cref="P:System.ServiceProcess.ServiceProcessInstaller.Account" /> property is set to something other than <see langword="User" />.</summary>
       </Docs>
     </Member>
   </Members>

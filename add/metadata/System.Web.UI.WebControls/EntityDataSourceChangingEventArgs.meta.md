@@ -1,24 +1,34 @@
 ---
 uid: System.Web.UI.WebControls.EntityDataSourceChangingEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.UI.WebControls.EntityDataSourceChangingEventArgs.Entity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.UI.WebControls.EntityDataSourceChangingEventArgs.ExceptionHandled
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.UI.WebControls.EntityDataSourceChangingEventArgs.Exception
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.UI.WebControls.EntityDataSourceChangingEventArgs.Context
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -19,8 +19,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the addressing scheme that an instance of the <see cref="T:System.Net.Sockets.Socket" /> class can use.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Net.Sockets.AddressFamily> member specifies the addressing scheme that a <xref:System.Net.Sockets.Socket> will use to resolve an address. For example, InterNetwork indicates that an IP version 4 address is expected when a <xref:System.Net.Sockets.Socket> connects to an endpoint.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Net.Sockets.Socket> using the InterNetwork<xref:System.Net.Sockets.AddressFamily>.  
+  
+ [!code-cpp[Socket_Send_Recieve#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Send_Recieve/CPP/source.cpp#1)]
+ [!code-csharp[Socket_Send_Recieve#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Send_Recieve/CS/source.cs#1)]
+ [!code-vb[Socket_Send_Recieve#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Send_Recieve/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AppleTalk">
@@ -45,7 +61,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>AppleTalk address.</summary>
       </Docs>
     </Member>
     <Member MemberName="Atm">
@@ -70,7 +86,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Native ATM services address.</summary>
       </Docs>
     </Member>
     <Member MemberName="Banyan">
@@ -95,7 +111,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Banyan address.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ccitt">
@@ -120,7 +136,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Addresses for CCITT protocols, such as X.25.</summary>
       </Docs>
     </Member>
     <Member MemberName="Chaos">
@@ -145,7 +161,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Address for MIT CHAOS protocols.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cluster">
@@ -170,7 +186,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Address for Microsoft cluster products.</summary>
       </Docs>
     </Member>
     <Member MemberName="DataKit">
@@ -195,7 +211,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Address for Datakit protocols.</summary>
       </Docs>
     </Member>
     <Member MemberName="DataLink">
@@ -220,7 +236,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Direct data-link interface address.</summary>
       </Docs>
     </Member>
     <Member MemberName="DecNet">
@@ -245,7 +261,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>DECnet address.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ecma">
@@ -270,7 +286,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>European Computer Manufacturers Association (ECMA) address.</summary>
       </Docs>
     </Member>
     <Member MemberName="FireFox">
@@ -295,7 +311,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>FireFox address.</summary>
       </Docs>
     </Member>
     <Member MemberName="HyperChannel">
@@ -320,7 +336,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>NSC Hyperchannel address.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ieee12844">
@@ -345,7 +361,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>IEEE 1284.4 workgroup address.</summary>
       </Docs>
     </Member>
     <Member MemberName="ImpLink">
@@ -370,7 +386,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>ARPANET IMP address.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterNetwork">
@@ -395,7 +411,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Address for IP version 4.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterNetworkV6">
@@ -420,7 +436,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Address for IP version 6.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ipx">
@@ -445,7 +461,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>IPX or SPX address.</summary>
       </Docs>
     </Member>
     <Member MemberName="Irda">
@@ -470,7 +486,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>IrDA address.</summary>
       </Docs>
     </Member>
     <Member MemberName="Iso">
@@ -495,7 +511,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Address for ISO protocols.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lat">
@@ -520,7 +536,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>LAT address.</summary>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -541,7 +557,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>MAX address.</summary>
       </Docs>
     </Member>
     <Member MemberName="NetBios">
@@ -566,7 +582,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>NetBios address.</summary>
       </Docs>
     </Member>
     <Member MemberName="NetworkDesigners">
@@ -591,7 +607,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Address for Network Designers OSI gateway-enabled protocols.</summary>
       </Docs>
     </Member>
     <Member MemberName="NS">
@@ -616,7 +632,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Address for Xerox NS protocols.</summary>
       </Docs>
     </Member>
     <Member MemberName="Osi">
@@ -641,7 +657,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Address for OSI protocols.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pup">
@@ -666,7 +682,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Address for PUP protocols.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sna">
@@ -691,7 +707,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>IBM SNA address.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unix">
@@ -716,7 +732,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unix local to host address.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -741,7 +757,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unknown address family.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unspecified">
@@ -766,7 +782,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unspecified address family.</summary>
       </Docs>
     </Member>
     <Member MemberName="VoiceView">
@@ -791,7 +807,7 @@
         <ReturnType>System.Net.Sockets.AddressFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>VoiceView address.</summary>
       </Docs>
     </Member>
   </Members>

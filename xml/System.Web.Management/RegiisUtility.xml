@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides authorization utilities to support specific Web-application configuration, assembly registration, and assembly-key container manipulation. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.RegiisUtility> class provides utility functions that support the `system.web` assembly registration.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,8 +37,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.RegiisUtility" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.RegiisUtility.%23ctor%2A> constructor is not intended to be used directly from your code. It is based on the <xref:System.Web.Management.IRegiisUtility> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectedConfigAction">
@@ -58,17 +72,24 @@
         <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <param name="firstArgument">To be added.</param>
-        <param name="secondArgument">To be added.</param>
-        <param name="providerName">To be added.</param>
-        <param name="appPath">To be added.</param>
-        <param name="site">To be added.</param>
-        <param name="cspOrLocation">To be added.</param>
-        <param name="keySize">To be added.</param>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="options">The type of action to perform.</param>
+        <param name="firstArgument">A configuration section or assembly-key container name.</param>
+        <param name="secondArgument">The configuration file name or account name.</param>
+        <param name="providerName">The provider name.</param>
+        <param name="appPath">The application path.</param>
+        <param name="site">The site reference.</param>
+        <param name="cspOrLocation">The configuration location.</param>
+        <param name="keySize">The size of the key.</param>
+        <param name="exception">The exception to display.</param>
+        <summary>Allows specific manipulation of configuration sections and assembly-key containers based on the supplied parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The  <xref:System.Web.Management.RegiisUtility.ProtectedConfigAction%2A> method is used internally to protect and unprotect sections within the configuration. The <xref:System.Web.Management.RegiisUtility.ProtectedConfigAction%2A> method also supports assembly-key container manipulation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterAsnetMmcAssembly">
@@ -90,12 +111,19 @@
         <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="doReg">To be added.</param>
-        <param name="typeName">To be added.</param>
-        <param name="binaryDirectory">To be added.</param>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="doReg">0 indicates that the assembly should be unregistered; otherwise, the assembly should be registered.</param>
+        <param name="typeName">The type of the assembly.</param>
+        <param name="binaryDirectory">The path of the binary directory.</param>
+        <param name="exception">The exception to display.</param>
+        <summary>Allows the executing Microsoft Management Console (MMC) assembly to be registered or unregistered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used internally to register or unregister the executing MMC assembly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterSystemWebAssembly">
@@ -115,10 +143,17 @@
         <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="doReg">To be added.</param>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="doReg">0 indicates that the assembly should be unregistered; otherwise, the assembly should be registered.</param>
+        <param name="exception">The exception to display.</param>
+        <summary>Allows the executing Web assembly to be registered or unregistered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used to register or unregister the executing Web assembly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveBrowserCaps">
@@ -137,8 +172,8 @@
         <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exception">The exception to display.</param>
+        <summary>Allows the browser-capabilities code generator to be uninstalled.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains values that specify the type of UI Automation provider.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Windows.Automation.Provider.ProviderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The UI Automation provider is a client-side provider.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonClientAreaProvider">
@@ -48,7 +48,7 @@
         <ReturnType>System.Windows.Automation.Provider.ProviderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The UI Automation provider is a non-client-area provider.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverrideProvider">
@@ -64,7 +64,7 @@
         <ReturnType>System.Windows.Automation.Provider.ProviderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The UI Automation provider overrides another provider.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderOwnsSetFocus">
@@ -80,7 +80,7 @@
         <ReturnType>System.Windows.Automation.Provider.ProviderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The UI Automation provider handles its own focus, and does not want [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] to set focus to the nearest window on its behalf when <see cref="M:System.Windows.Automation.AutomationElement.SetFocus" /> is called. This option is typically used by providers for windows that appear to take focus without actually receiving [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] focus, such as menus and drop-down menus.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerSideProvider">
@@ -96,7 +96,7 @@
         <ReturnType>System.Windows.Automation.Provider.ProviderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The UI Automation provider is a server-side provider.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseComThreading">
@@ -112,7 +112,7 @@
         <ReturnType>System.Windows.Automation.Provider.ProviderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The UI Automation provider expects to be called according to COM threading rules. If the provider is in a Single-Threaded Apartment, it will be called only on the apartment thread. Only Server-side providers can use this option.</summary>
       </Docs>
     </Member>
   </Members>

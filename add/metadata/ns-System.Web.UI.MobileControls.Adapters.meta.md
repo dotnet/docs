@@ -1,4 +1,4 @@
 ---
 uid: System.Web.UI.MobileControls.Adapters
-internalonly: False
+manager: "wpickett"
 ---

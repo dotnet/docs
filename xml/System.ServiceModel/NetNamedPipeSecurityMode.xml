@@ -11,8 +11,20 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether transport-level security is used with named pipes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this enumeration to specify whether transport-level security is used with named pipes when using the <xref:System.ServiceModel.NetNamedPipeBinding>. The default value is Transport.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UENetNamedPipeSecurity#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenetnamedpipesecurity/cs/service.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -29,7 +41,7 @@
         <ReturnType>System.ServiceModel.NetNamedPipeSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates no security is used with the named pipe transport.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transport">
@@ -46,7 +58,7 @@
         <ReturnType>System.ServiceModel.NetNamedPipeSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that transport-level security is used with the named pipe transport.</summary>
       </Docs>
     </Member>
   </Members>

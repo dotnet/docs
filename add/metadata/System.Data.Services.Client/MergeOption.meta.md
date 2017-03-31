@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Services.Client.MergeOption
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Automation.RowOrColumnMajor
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

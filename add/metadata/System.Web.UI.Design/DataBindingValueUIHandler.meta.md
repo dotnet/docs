@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.Design.DataBindingValueUIHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataBindingValueUIHandler.OnGetUIValueItem(System.ComponentModel.ITypeDescriptorContext,System.ComponentModel.PropertyDescriptor,System.Collections.ArrayList)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataBindingValueUIHandler.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,6 +1,0 @@
- Public Sub GetRecords()
-     ' ...
-     ' create dataSet and adapter
-     ' ...
-     adapter.Fill(dataSet, "Categories")
- End Sub

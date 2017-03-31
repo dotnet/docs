@@ -1,19 +1,19 @@
 ---
 uid: System.Windows.Markup.DependsOnAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.DependsOnAttribute.TypeId
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.DependsOnAttribute.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.DependsOnAttribute.Name
-internalonly: False
+manager: "martinek"
 ---

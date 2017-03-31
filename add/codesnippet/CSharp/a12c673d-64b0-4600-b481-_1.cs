@@ -1,1 +1,0 @@
-            MessageVersion mv = be.GetProperty<MessageVersion>(context);

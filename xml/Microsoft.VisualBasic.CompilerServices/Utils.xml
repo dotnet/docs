@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains utilities that the Visual Basic compiler uses.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CopyArray">
@@ -37,11 +44,18 @@
         <Parameter Name="aryDest" Type="System.Array" />
       </Parameters>
       <Docs>
-        <param name="arySrc">To be added.</param>
-        <param name="aryDest">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="arySrc">The array to be copied.</param>
+        <param name="aryDest">The destination array.</param>
+        <summary>Used by the Visual Basic compiler as a helper for <see langword="Redim" />.</summary>
+        <returns>The copied array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetResourceString">
@@ -67,11 +81,18 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="ResourceKey">To be added.</param>
-        <param name="Args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="ResourceKey">The identifier of the string or error message to retrieve.</param>
+        <param name="Args">An array of parameters to replace placeholders in the string or error message.</param>
+        <summary>Retrieves and formats a localized resource string or error message.</summary>
+        <returns>A formatted resource string or error message.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MethodToString">
@@ -90,10 +111,17 @@
         <Parameter Name="Method" Type="System.Reflection.MethodBase" />
       </Parameters>
       <Docs>
-        <param name="Method">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Method">A <see cref="T:System.Reflection.MethodBase" /> object to return a Visual Basic method signature for.</param>
+        <summary>Returns a Visual Basic method signature.</summary>
+        <returns>The Visual Basic method signature for the supplied <see cref="T:System.Reflection.MethodBase" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCultureInfo">
@@ -112,10 +140,17 @@
         <Parameter Name="Culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="Culture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Culture">A <see cref="T:System.Globalization.CultureInfo" /> object to set as the culture of the current thread.</param>
+        <summary>Sets the culture of the current thread.</summary>
+        <returns>The previous value of the <see cref="P:System.Threading.Thread.CurrentCulture" /> property for the current thread.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThrowException">
@@ -134,9 +169,16 @@
         <Parameter Name="hr" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="hr">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="hr">The Visual Basic error identifier.</param>
+        <summary>Throws a localized Visual Basic exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

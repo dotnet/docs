@@ -13,8 +13,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods to add work to a work batch.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Services use this interface to add pending work to the <xref:System.Workflow.Runtime.WorkflowEnvironment.WorkBatch%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -34,10 +45,17 @@
         <Parameter Name="workItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="work">To be added.</param>
-        <param name="workItem">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="work">An <see cref="T:System.Workflow.Runtime.IPendingWork" /> object associated with the <c>workItem</c>.</param>
+        <param name="workItem">An object on which work is to be performed.</param>
+        <summary>Adds a pending work item to a work batch.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to add pending work items to a work batch. The `workItem` object added to the batch is associated with `work`, an object that implements the <xref:System.Workflow.Runtime.IPendingWork> interface. Methods provided by this <xref:System.Workflow.Runtime.IPendingWork> object will be called to handle the eventual commit of the `workItem`. Services use this method to add pending work to the <xref:System.Workflow.Runtime.WorkflowEnvironment.WorkBatch%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

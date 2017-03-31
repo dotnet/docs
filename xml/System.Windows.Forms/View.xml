@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how list items are displayed in a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.ListView.View%2A> property of the <xref:System.Windows.Forms.ListView> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates setting the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=fullName> property to one of the <xref:System.Windows.Forms.View> enumeration values. To run the example, paste the following code in a form and call the `InitializeListView` method in form's constructor or `Load` method.  
+  
+ [!code-cpp[System.Windows.Forms.ListViewItemStyle#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemStyle/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListViewItemStyle#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemStyle/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListViewItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemStyle/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Details">
@@ -27,7 +43,7 @@
         <ReturnType>System.Windows.Forms.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Each item appears on a separate line with further information about each item arranged in columns. The left-most column contains a small icon and label, and subsequent columns contain sub items as specified by the application. A column displays a header which can display a caption for the column. The user can resize each column at run time.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeIcon">
@@ -43,7 +59,7 @@
         <ReturnType>System.Windows.Forms.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Each item appears as a full-sized icon with a label below it.</summary>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -59,7 +75,7 @@
         <ReturnType>System.Windows.Forms.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Each item appears as a small icon with a label to its right. Items are arranged in columns with no column headers.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallIcon">
@@ -75,7 +91,7 @@
         <ReturnType>System.Windows.Forms.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Each item appears as a small icon with a label to its right.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tile">
@@ -91,7 +107,7 @@
         <ReturnType>System.Windows.Forms.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Each item appears as a full-sized icon with the item label and subitem information to the right of it. The subitem information that appears is specified by the application. This view is available only on Windows XP and the Windows Server 2003 family. On earlier operating systems, this value is ignored and the <see cref="T:System.Windows.Forms.ListView" /> control displays in the <see cref="F:System.Windows.Forms.View.LargeIcon" /> view.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class contains utility functions to assist with tracking dependencies</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,9 @@
         <Parameter Name="expand" Type="Microsoft.Build.Framework.ITaskItem[]" />
       </Parameters>
       <Docs>
-        <param name="expand">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expand">Array of items to be expanded.</param>
+        <summary>Expand wildcards in the item list.</summary>
+        <returns>Array of items expanded</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

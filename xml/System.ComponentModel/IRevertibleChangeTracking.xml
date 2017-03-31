@@ -21,8 +21,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides support for rolling back the changes</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.IRevertibleChangeTracking> extends <xref:System.ComponentModel.IChangeTracking> by adding support for rolling back the changes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="RejectChanges">
@@ -48,7 +55,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resets the object’s state to unchanged by rejecting the modifications.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

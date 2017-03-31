@@ -24,8 +24,19 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implements a dictionary used to optimize [!INCLUDE[indigo1](~/includes/indigo1-md.md)]'s XML reader/writer implementations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dictionaries establish a mapping between commonly appearing text strings, and integers, and provide an effective mechanism for compressing and decompressing XML. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] uses 2 kinds of dictionaries, static and dynamic.  
+  
+ With static dictionaries, both sides of the communication use a predefined dictionary.  
+  
+ With dynamic dictionaries, the sending side can add new strings and their mappings not already in the static dictionary. Dynamic dictionaries are sent out of band with the message. Dynamic dictionaries use the <xref:System.Xml.XmlBinaryWriterSession> and <xref:System.Xml.XmlBinaryReaderSession> classes to transmit messages and mappings.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an empty <see cref="T:System.Xml.XmlDictionary" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +85,16 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="capacity">The initial size of the dictionary.</param>
+        <summary>Creates a <see cref="T:System.Xml.XmlDictionary" /> with an initial capacity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The dictionary will resize itself as needed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -104,10 +122,19 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">String to add to the dictionary.</param>
+        <summary>Adds a string to the <see cref="T:System.Xml.XmlDictionary" />.</summary>
+        <returns>The <see cref="T:System.Xml.XmlDictionaryString" /> that was added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Xml.XmlDictionaryString> is built from `value`.  
+  
+ If the string value is already in the dictionary, the <xref:System.Xml.XmlDictionaryString> previously created for it is returned.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -132,9 +159,18 @@
         <ReturnType>System.Xml.IXmlDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see langword="static" /> empty <see cref="T:System.Xml.IXmlDictionary" />.</summary>
+        <value>A <see langword="static" /> empty <see cref="T:System.Xml.IXmlDictionary" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This instance should be used when an <xref:System.Xml.IXmlDictionary> is required but no <xref:System.Xml.XmlDictionaryString>s are needed.  
+  
+ The empty dictionary cannot be modified.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryLookup">
@@ -163,10 +199,11 @@
         <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">Key to look up.</param>
+        <param name="result">If <c>key</c> is defined, the <see cref="T:System.Xml.XmlDictionaryString" /> that is mapped to the key; otherwise <see langword="null" />.</param>
+        <summary>Attempts to look up an entry in the dictionary.</summary>
+        <returns>
+          <see langword="true" /> if key is in the dictionary, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,11 +233,14 @@
         <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">String value being checked for.</param>
+        <param name="result">The corresponding <see cref="T:System.Xml.XmlDictionaryString" />, if found; otherwise <see langword="null" />.</param>
+        <summary>Checks the dictionary for a specified string value.</summary>
+        <returns>
+          <see langword="true" /> if value is in the dictionary, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryLookup">
@@ -229,12 +269,32 @@
         <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Xml.XmlDictionaryString" /> being checked for.</param>
+        <param name="result">The matching <see cref="T:System.Xml.XmlDictionaryString" />, if found; otherwise <see langword="null" />.</param>
+        <summary>Checks the dictionary for a specified <see cref="T:System.Xml.XmlDictionaryString" />.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="T:System.Xml.XmlDictionaryString" /> is in the dictionary, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryLookup">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to look up an entry in the dictionary.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method avoids throwing an exception if the string is not currently in the dictionary.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

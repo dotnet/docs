@@ -1,44 +1,65 @@
 ---
 uid: System.Windows.Media.Animation.EasingVector3DKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.#ctor(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.#ctor(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.#ctor(System.Windows.Media.Media3D.Vector3D)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.EasingFunction
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.CreateInstanceCore
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Vector3D,System.Double)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.#ctor(System.Windows.Media.Media3D.Vector3D)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.EasingFunction
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.CreateInstanceCore
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Vector3D,System.Double)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.EasingFunctionProperty
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

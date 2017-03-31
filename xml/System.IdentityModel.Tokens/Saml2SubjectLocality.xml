@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the SubjectLocality element specified in [Saml2Core, 2.7.2.1].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This element should be considered entirely advisory as there is no guarantee of the validity of the properties. [Saml2Core, 2.7.2.1]  
+  
+ For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SubjectLocality" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +53,9 @@
         <Parameter Name="dnsName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <param name="dnsName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="address">A string that contains the address.</param>
+        <param name="dnsName">A string that contains the DNS name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SubjectLocality" /> class from an address and DNS name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +72,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the network address of the system from which the principal identified by the subject was authenticated. [Saml2Core, 2.7.2.1]</summary>
+        <value>A string that contains the address.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +90,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the DNS name of the system from which the principal identified by the subject was authenticated. [Saml2Core, 2.7.2.1]</summary>
+        <value>A string that contains the DNS name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

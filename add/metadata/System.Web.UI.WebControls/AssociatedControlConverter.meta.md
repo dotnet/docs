@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.AssociatedControlConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AssociatedControlConverter.FilterControl(System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AssociatedControlConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

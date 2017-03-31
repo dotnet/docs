@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Tasks.MakeDir
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.MakeDir.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.MakeDir.Directories
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.MakeDir.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.MakeDir.DirectoriesCreated
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

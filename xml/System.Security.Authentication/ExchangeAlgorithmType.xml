@@ -19,8 +19,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the algorithm used to create keys shared by the client and server.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration specifies valid values for the <xref:System.Net.Security.SslStream.KeyExchangeAlgorithm%2A?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of an <xref:System.Net.Security.SslStream>.  
+  
+ [!code-cpp[NCLSslClientAsync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#3)]
+ [!code-csharp[NCLSslClientAsync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DiffieHellman">
@@ -45,7 +60,7 @@
         <ReturnType>System.Security.Authentication.ExchangeAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Diffie Hellman ephemeral key exchange algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -70,7 +85,7 @@
         <ReturnType>System.Security.Authentication.ExchangeAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No key exchange algorithm is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="RsaKeyX">
@@ -95,7 +110,7 @@
         <ReturnType>System.Security.Authentication.ExchangeAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The RSA public-key exchange algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="RsaSign">
@@ -120,7 +135,7 @@
         <ReturnType>System.Security.Authentication.ExchangeAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The RSA public-key signature algorithm.</summary>
       </Docs>
     </Member>
   </Members>

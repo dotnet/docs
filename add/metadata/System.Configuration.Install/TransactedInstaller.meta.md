@@ -1,19 +1,27 @@
 ---
 uid: System.Configuration.Install.TransactedInstaller
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Install.TransactedInstaller.Uninstall(System.Collections.IDictionary)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Install.TransactedInstaller.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Install.TransactedInstaller.Install(System.Collections.IDictionary)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

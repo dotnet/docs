@@ -15,8 +15,28 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Sets the identity of the user for an ASP.NET application when Windows authentication is enabled. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode>, the <xref:System.Web.Security.WindowsAuthenticationModule> sets the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to an <xref:System.Security.Principal.IPrincipal> object that represents the Windows identity supplied by IIS for the current request. If IIS uses anonymous authentication, then the <xref:System.Web.Security.WindowsAuthenticationModule> uses the identity returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method.  
+  
+ The <xref:System.Web.Security.WindowsAuthenticationModule> exposes an <xref:System.Web.Security.WindowsAuthenticationModule.Authenticate> event that enables you to provide a custom <xref:System.Security.Principal.IPrincipal> object for the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext>. The <xref:System.Web.Security.WindowsAuthenticationModule.Authenticate> event is accessed by specifying a subroutine named **WindowsAuthentication_OnAuthenticate** in the Global.asax file for your ASP.NET application.  
+  
+> [!NOTE]
+>  In IIS 7.0, using the <xref:System.Web.Security.WindowsAuthenticationModule> class with the <xref:System.Web.Security.FormsAuthenticationModule> class is not supported. For more information about compatibility issues in Integrated mode, see [Moving an ASP.NET Application from IIS 6.0 to IIS 7.0](../Topic/Moving%20an%20ASP.NET%20Application%20from%20IIS%206.0%20to%20IIS%207.0.md).  
+  
+   
+  
+## Examples  
+ The following code example uses the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object.  
+  
+ [!code-csharp[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/CS/global.asax#1)]
+ [!code-vb[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/VB/global.asax#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,8 +50,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates an instance of the <see cref="T:System.Web.Security.WindowsAuthenticationModule" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is not intended to be called from application code.  
+  
+ ASP.NET calls this constructor to create an instance of the <xref:System.Web.Security.WindowsAuthenticationModule> class. After calling the constructor, it calls the <xref:System.Web.Security.WindowsAuthenticationModule.Init%2A> method to initialize the new <xref:System.Web.Security.WindowsAuthenticationModule> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Authenticate">
@@ -47,8 +76,32 @@
         <ReturnType>System.Web.Security.WindowsAuthenticationEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the application authenticates the current request.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.WindowsAuthenticationModule.Authenticate> event is raised during the <xref:System.Web.HttpApplication.AuthenticateRequest> event.  
+  
+ You can access the <xref:System.Web.Security.WindowsAuthenticationModule.Authenticate> event of the <xref:System.Web.Security.WindowsAuthenticationModule> class by specifying a subroutine named **WindowsAuthentication_OnAuthenticate** in the Global.asax file for your ASP.NET application.  
+  
+ You can use the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property of the <xref:System.Web.Security.WindowsAuthenticationEventArgs> object supplied to the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object. If you do not specify a value for the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property during the **WindowsAuthentication_OnAuthenticate** event, the Windows identity supplied by IIS is used as the identity for the current request. If IIS uses anonymous authentication, then the <xref:System.Web.Security.WindowsAuthenticationEventArgs.Identity%2A> property is set to the identity returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method.  
+  
+ The **WindowsAuthentication_OnAuthenticate** event is raised only when the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode> and the <xref:System.Web.Security.WindowsAuthenticationModule> is an active HTTP module for the application.  
+  
+> [!NOTE]
+>  In IIS 7.0 running in Integrated Mode, the <xref:System.Web.Security.WindowsAuthenticationModule.Authenticate> event of the <xref:System.Web.Security.WindowsAuthenticationModule> is not raised when both the ASP.NET <xref:System.Web.Security.WindowsAuthenticationModule> and the IIS `AnonymousAuthenticationModule` modules are enabled. In this scenario, to receive authentication notification, subscribe to the <xref:System.Web.HttpApplication.AuthenticateRequest> event of the <xref:System.Web.HttpApplication> instance. For more information about compatibility issues in Integrated modes, see [Moving an ASP.NET Application from IIS 6.0 to IIS 7.0](../Topic/Moving%20an%20ASP.NET%20Application%20from%20IIS%206.0%20to%20IIS%207.0.md).  
+  
+   
+  
+## Examples  
+ The following code example uses the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object.  
+  
+ [!code-csharp[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/CS/global.asax#1)]
+ [!code-vb[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/VB/global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -65,8 +118,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources, other than memory, used by the <see cref="T:System.Web.Security.WindowsAuthenticationModule" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended to be called from application code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -85,9 +145,18 @@
         <Parameter Name="app" Type="System.Web.HttpApplication" />
       </Parameters>
       <Docs>
-        <param name="app">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="app">The current <see cref="T:System.Web.HttpApplication" /> instance.</param>
+        <summary>Initializes the <see cref="T:System.Web.Security.WindowsAuthenticationModule" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended to be called from application code.  
+  
+ The <xref:System.Web.Security.WindowsAuthenticationModule.Init%2A> method ensures that the <xref:System.Web.Security.WindowsAuthenticationModule> is included in the processing of the <xref:System.Web.HttpApplication.AuthenticateRequest> event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,29 +1,41 @@
 ---
 uid: System.IdentityModel.Tokens.EncryptingCredentials
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.EncryptingCredentials.#ctor(System.IdentityModel.Tokens.SecurityKey,System.IdentityModel.Tokens.SecurityKeyIdentifier,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.EncryptingCredentials.SecurityKeyIdentifier
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.EncryptingCredentials.Algorithm
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.EncryptingCredentials.SecurityKey
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.EncryptingCredentials.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.EncryptingCredentials.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---

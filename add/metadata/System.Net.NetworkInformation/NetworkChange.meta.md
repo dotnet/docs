@@ -1,24 +1,29 @@
 ---
 uid: System.Net.NetworkInformation.NetworkChange
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.NetworkChange.RegisterNetworkChange(System.Net.NetworkInformation.NetworkChange)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.NetworkChange.NetworkAvailabilityChanged
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.NetworkChange.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

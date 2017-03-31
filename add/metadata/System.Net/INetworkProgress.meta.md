@@ -1,19 +1,23 @@
 ---
 uid: System.Net.INetworkProgress
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.INetworkProgress.ProgressChanged
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.INetworkProgress.ProgressFailed
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.INetworkProgress.ProgressCompleted
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

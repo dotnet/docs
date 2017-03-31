@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.MethodInvoker
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.MethodInvoker.Invoke(System.Object,System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.MethodInvoker.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---

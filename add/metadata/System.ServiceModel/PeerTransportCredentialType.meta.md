@@ -1,4 +1,4 @@
 ---
 uid: System.ServiceModel.PeerTransportCredentialType
-internalonly: False
+manager: "ghogen"
 ---

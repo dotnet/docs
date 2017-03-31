@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.CompilerServices.INotifyCompletion
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

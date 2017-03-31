@@ -10,8 +10,20 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a style for the border skin of a chart.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.BorderSkin> class represents the style of the border skin used for a chart image. If you set the <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.SkinStyle> property to None, no skin will be used. This is the default value for the <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.SkinStyle> property.  
+  
+> [!NOTE]
+>  The difference between the sets of border skin styles that use frames and follow either the naming convention [FrameThin*](assetId:///FrameThin*?qualifyHint=False&amp;autoUpgrade=True) or "[FrameTitle*](assetId:///FrameTitle*?qualifyHint=False&amp;autoUpgrade=True)—for example, FrameThin1 or FrameTitle1—is the shape and thickness of their frames.  
+  
+ In addition, if you use one of the "FrameThin" style border skins, the title of the chart will not be displayed. However, if you use one of the "FrameTitle" style border skins, the title of the chart will appear in the top-horizontal part of the frame.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Emboss">
@@ -27,7 +39,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use an embossed border skin.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameThin1">
@@ -43,7 +55,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a thin border skin with rounded corners.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameThin2">
@@ -59,7 +71,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a thin border skin with rounded top corners.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameThin3">
@@ -75,7 +87,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a thin border skin with square corners.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameThin4">
@@ -91,7 +103,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a thin border skin with square outside corners and rounded inside corners.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameThin5">
@@ -107,7 +119,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a thin border skin with rounded corners and screws.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameThin6">
@@ -123,7 +135,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a thin border skin with square inside corners and rounded outside corners.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameTitle1">
@@ -139,7 +151,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a border skin with rounded corners.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameTitle2">
@@ -155,7 +167,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a border skin with rounded top corners.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameTitle3">
@@ -171,7 +183,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a border skin with square corners.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameTitle4">
@@ -187,7 +199,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a border skin with rounded inside corners and square outside corners.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameTitle5">
@@ -203,7 +215,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a border skin with rounded corners and screws.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameTitle6">
@@ -219,7 +231,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a border skin with rounded outside corners and square inside corners.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameTitle7">
@@ -235,7 +247,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a border skin with rounded corners. No border on the right side.</summary>
       </Docs>
     </Member>
     <Member MemberName="FrameTitle8">
@@ -251,7 +263,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a border skin with rounded corners on top and bottom sides only.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -267,7 +279,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No border skin is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="Raised">
@@ -283,7 +295,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a raised border skin.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sunken">
@@ -299,7 +311,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.BorderSkinStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use a sunken border skin.</summary>
       </Docs>
     </Member>
   </Members>

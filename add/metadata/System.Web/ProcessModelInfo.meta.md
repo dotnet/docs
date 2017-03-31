@@ -1,19 +1,23 @@
 ---
 uid: System.Web.ProcessModelInfo
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ProcessModelInfo.GetHistory(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ProcessModelInfo.GetCurrentProcessInfo
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ProcessModelInfo.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

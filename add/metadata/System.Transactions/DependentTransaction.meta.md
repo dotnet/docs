@@ -1,9 +1,9 @@
 ---
 uid: System.Transactions.DependentTransaction
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.DependentTransaction.Complete
-internalonly: False
+manager: "ghogen"
 ---

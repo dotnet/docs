@@ -1,64 +1,97 @@
 ---
 uid: System.Workflow.Activities.InvokeWorkflowActivity
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.InvokeWorkflowActivity.System#Workflow#ComponentModel#Design#ITypeFilterProvider#CanFilterType(System.Type,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.InvokeWorkflowActivity.InvokingEvent
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.InvokeWorkflowActivity.System#Workflow#ComponentModel#Design#ITypeFilterProvider#FilterDescription
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.InvokeWorkflowActivity.ParameterBindingsProperty
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.InvokeWorkflowActivity.TargetWorkflowProperty
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.InvokeWorkflowActivity.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.InvokeWorkflowActivity.TargetWorkflow
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.InvokeWorkflowActivity.InstanceId
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.InvokeWorkflowActivity.InstanceIdProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.InvokeWorkflowActivity.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.InvokeWorkflowActivity.System#Workflow#ComponentModel#Design#ITypeFilterProvider#CanFilterType(System.Type,System.Boolean)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.InvokeWorkflowActivity.InvokingEvent
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.InvokeWorkflowActivity.System#Workflow#ComponentModel#Design#ITypeFilterProvider#FilterDescription
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.InvokeWorkflowActivity.ParameterBindingsProperty
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.InvokeWorkflowActivity.TargetWorkflowProperty
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.InvokeWorkflowActivity.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.InvokeWorkflowActivity.TargetWorkflow
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.InvokeWorkflowActivity.InstanceId
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.InvokeWorkflowActivity.InstanceIdProperty
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.InvokeWorkflowActivity.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.InvokeWorkflowActivity.ParameterBindings
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.InvokeWorkflowActivity.Invoking
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

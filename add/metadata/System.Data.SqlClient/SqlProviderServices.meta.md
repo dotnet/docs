@@ -1,9 +1,13 @@
 ---
 uid: System.Data.SqlClient.SqlProviderServices
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlProviderServices.SingletonInstance
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

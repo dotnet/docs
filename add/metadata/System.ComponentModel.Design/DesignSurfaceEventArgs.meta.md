@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Design.DesignSurfaceEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.DesignSurfaceEventArgs.Surface
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.DesignSurfaceEventArgs.#ctor(System.ComponentModel.Design.DesignSurface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -11,8 +11,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the status of a message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As the body of a <xref:System.ServiceModel.Channels.Message> object is a stream, it can only be read or written once. This is enforced by maintaining the current state of the <xref:System.ServiceModel.Channels.Message> object. A <xref:System.ServiceModel.Channels.Message> object can be read/written/copied when in the Created state. Other states are Read, Written and Copied, which means that the respective action has been performed already once.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Closed">
@@ -29,7 +36,7 @@
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message has been closed and can no longer be accessed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Copied">
@@ -46,7 +53,7 @@
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message has been copied.</summary>
       </Docs>
     </Member>
     <Member MemberName="Created">
@@ -63,7 +70,7 @@
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message has been created.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -80,7 +87,7 @@
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message is being read.</summary>
       </Docs>
     </Member>
     <Member MemberName="Written">
@@ -97,7 +104,7 @@
         <ReturnType>System.ServiceModel.Channels.MessageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message has been written.</summary>
       </Docs>
     </Member>
   </Members>

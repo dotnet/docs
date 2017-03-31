@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies additional options when performing a synchronization.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aborts the synchronization if any server cannot be contacted or if any server is unreachable.</summary>
       </Docs>
     </Member>
     <Member MemberName="CheckServerAlivenessOnly">
@@ -48,7 +48,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Disables all synchronization. The topology is analyzed and unavailable or unreachable servers are identified.</summary>
       </Docs>
     </Member>
     <Member MemberName="CrossSite">
@@ -64,7 +64,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Synchronizes across site boundaries. By default, this method attempts to synchronize only with domain controllers in the same site as the home system. Set this flag to attempt to synchronize with all domain controllers in the enterprise forest. However, the domain controllers can be synchronized only if connected by a synchronous (RPC) transport.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,7 +80,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No synchronization options.</summary>
       </Docs>
     </Member>
     <Member MemberName="PushChangeOutward">
@@ -96,7 +96,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pushes changes from the home server out to all partners using transitive replication. This reverses the direction of replication and the order of execution of the replication sets from the usual mode of execution.</summary>
       </Docs>
     </Member>
     <Member MemberName="SkipInitialCheck">
@@ -112,7 +112,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Assumes that all servers are responding. This will speed up the operation of this method, but if some servers are not responding, some transitive replications might be blocked.</summary>
       </Docs>
     </Member>
     <Member MemberName="SyncAdjacentServerOnly">
@@ -128,7 +128,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Disables transitive replication. Synchronization is performed only with adjacent servers.</summary>
       </Docs>
     </Member>
   </Members>

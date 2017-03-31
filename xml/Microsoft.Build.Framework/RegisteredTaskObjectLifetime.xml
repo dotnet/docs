@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the lifetime of a registered task object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Build.Framework.RegisteredTaskObjectLifetime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The registered object will be disposed when the <see langword="AppDomain" /> in which the build was launched is unloaded</summary>
       </Docs>
     </Member>
     <Member MemberName="Build">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Build.Framework.RegisteredTaskObjectLifetime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The registered object will be disposed when the build ends.</summary>
       </Docs>
     </Member>
   </Members>

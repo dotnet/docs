@@ -1,1 +1,0 @@
-      if (  !policyStatementCopy->Equals( policyStatement ) )

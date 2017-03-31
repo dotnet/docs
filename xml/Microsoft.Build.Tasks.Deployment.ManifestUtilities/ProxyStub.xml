@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a proxy in a ClickOnce application manifest. .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +53,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the IID of the interface from which the interface described by the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.IID" /> property is derived.</summary>
+        <value>The IID of the base interface.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,9 +76,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the IID of the interface for which the proxy is being declared.</summary>
+        <value>The IID of the interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The IID must have braces ({}) surrounding it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -99,8 +106,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the component.</summary>
+        <value>The name of the component.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +129,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of methods in the component.</summary>
+        <value>The number of methods in the component.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,8 +152,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the GUID for the type library for the component.</summary>
+        <value>The GUID for the type library.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,8 +181,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.BaseInterface" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.BaseInterface" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +210,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.IID" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.IID" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,8 +239,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.Name" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.Name" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,8 +268,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.NumMethods" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.NumMethods" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,8 +297,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.TlbId" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.TlbId" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

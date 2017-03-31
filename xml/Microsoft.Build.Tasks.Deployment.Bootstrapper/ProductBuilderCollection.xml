@@ -29,7 +29,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains a collection of <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,8 +49,8 @@
         <Parameter Name="builder" Type="Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="builder">The <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object to add to the collection.</param>
+        <summary>Adds a <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object to the product builder collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that can iterate through the product builder collection.</summary>
+        <returns>An enumerator that can iterate through the product builder collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

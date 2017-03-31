@@ -1,1 +1,0 @@
-			Dim rollover As TimeSpan = settings.SessionKeyRolloverInterval

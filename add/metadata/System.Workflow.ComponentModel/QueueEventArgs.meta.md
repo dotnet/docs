@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.QueueEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.QueueEventArgs.QueueName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.AssemblyTargetedPatchBandAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.AssemblyTargetedPatchBandAttribute.#ctor(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.AssemblyTargetedPatchBandAttribute.TargetedPatchBand
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

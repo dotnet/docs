@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.Design.IMultitargetHelperService
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IMultitargetHelperService.GetAssemblyQualifiedName(System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

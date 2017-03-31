@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.DataObjectCopyingEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

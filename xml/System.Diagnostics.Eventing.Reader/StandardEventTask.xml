@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the standard tasks that are attached to events by the event provider. For more information about tasks, see <see cref="T:System.Diagnostics.Eventing.Reader.EventTask" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventTask</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No task is used to identify a portion of an application that publishes an event.</summary>
       </Docs>
     </Member>
   </Members>

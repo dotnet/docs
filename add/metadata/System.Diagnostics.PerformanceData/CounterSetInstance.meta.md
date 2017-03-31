@@ -1,19 +1,23 @@
 ---
 uid: System.Diagnostics.PerformanceData.CounterSetInstance
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSetInstance.Counters
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSetInstance.Finalize
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceData.CounterSetInstance.Dispose
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the grouping area on a context menu or a workflow designer menu in which an activity designer verb is to appear.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Actions">
@@ -32,7 +41,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerVerbGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The actions designer verb group.</summary>
       </Docs>
     </Member>
     <Member MemberName="Edit">
@@ -48,7 +57,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerVerbGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The edit designer verb group.</summary>
       </Docs>
     </Member>
     <Member MemberName="General">
@@ -64,7 +73,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerVerbGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The general designer verb group.</summary>
       </Docs>
     </Member>
     <Member MemberName="Misc">
@@ -80,7 +89,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerVerbGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The miscellaneous designer verb group.</summary>
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -96,7 +105,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerVerbGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The options designer verb group.</summary>
       </Docs>
     </Member>
     <Member MemberName="View">
@@ -112,7 +121,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerVerbGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The view designer verb group.</summary>
       </Docs>
     </Member>
   </Members>

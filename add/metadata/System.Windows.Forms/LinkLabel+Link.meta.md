@@ -1,59 +1,89 @@
 ---
 uid: System.Windows.Forms.LinkLabel.Link
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkLabel.Link.Length
-internalonly: False
----
-
----
-uid: System.Windows.Forms.LinkLabel.Link.Start
-internalonly: False
----
-
----
-uid: System.Windows.Forms.LinkLabel.Link.#ctor(System.Int32,System.Int32,System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.LinkLabel.Link.Description
-internalonly: False
----
-
----
-uid: System.Windows.Forms.LinkLabel.Link.LinkData
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkLabel.Link.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.LinkLabel.Link.Start
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.LinkLabel.Link.#ctor(System.Int32,System.Int32,System.Object)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.LinkLabel.Link.Description
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.LinkLabel.Link.LinkData
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.LinkLabel.Link.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkLabel.Link.Name
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkLabel.Link.#ctor(System.Int32,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkLabel.Link.Tag
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkLabel.Link.Enabled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.LinkLabel.Link.Visited
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

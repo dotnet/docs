@@ -23,8 +23,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Stores linked resources to be sent as part of an e-mail message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of the <xref:System.Net.Mail.LinkedResourceCollection> class is returned by the <xref:System.Net.Mail.AlternateView.LinkedResources%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+    </remarks>
+    <altCompliant cref="None" />
   </Docs>
   <Members>
     <Member MemberName="ClearItems">
@@ -69,8 +77,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Net.Mail.LinkedResourceCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Net.Mail.LinkedResourceCollection.Dispose%2A> when you are finished using the <xref:System.Net.Mail.LinkedResourceCollection>. The <xref:System.Net.Mail.LinkedResourceCollection.Dispose%2A> method leaves the <xref:System.Net.Mail.LinkedResourceCollection> in an unusable state. After calling <xref:System.Net.Mail.LinkedResourceCollection.Dispose%2A>, you must release all references to the <xref:System.Net.Mail.LinkedResourceCollection> so the garbage collector can reclaim the memory that the <xref:System.Net.Mail.LinkedResourceCollection> occupied. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ This method invokes <xref:System.Net.Mail.AlternateView.Dispose%2A> on all views in this collection. This method is called by the <xref:System.Net.Mail.MailMessage.Dispose%2A> method. You do not need to call it in your application.  
+  
+> [!NOTE]
+>  Always call <xref:System.Net.Mail.LinkedResourceCollection.Dispose%2A> before you release your last reference to the <xref:System.Net.Mail.LinkedResourceCollection>. Otherwise, the resources it is using are not freed until the garbage collector calls the <xref:System.Net.Mail.LinkedResourceCollection> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertItem">

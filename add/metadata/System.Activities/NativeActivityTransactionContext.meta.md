@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.NativeActivityTransactionContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.NativeActivityTransactionContext.SetRuntimeTransaction(System.Transactions.Transaction)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

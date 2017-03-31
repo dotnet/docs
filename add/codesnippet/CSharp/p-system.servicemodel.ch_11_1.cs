@@ -1,1 +1,0 @@
-            EnvelopeVersion envVersion = msgVersion.Envelope;

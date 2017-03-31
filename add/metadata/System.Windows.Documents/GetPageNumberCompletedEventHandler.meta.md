@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Documents.GetPageNumberCompletedEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

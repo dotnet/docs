@@ -1,1 +1,0 @@
-            Dim ea As EndpointAddress = eab.ToEndpointAddress()

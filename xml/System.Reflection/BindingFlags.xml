@@ -27,8 +27,87 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies flags that control binding and the way in which the search for members and types is conducted by reflection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These `BindingFlags` control binding for a great many classes in the `System`, `System.Reflection`, and `System.Runtime` namespaces that invoke, create, get, set, and find members and types.  
+  
+ `BindingFlags` are used in the following <xref:System.Type> methods and other places such as <xref:System.Reflection.MethodBase.Invoke%2A?displayProperty=fullName> :  
+  
+-   <xref:System.Reflection.MethodBase.Invoke%2A?displayProperty=fullName>  
+  
+-   <xref:System.Type.GetMembers%2A>  
+  
+-   <xref:System.Type.GetEvents%2A>  
+  
+-   <xref:System.Type.InvokeMember%2A>  
+  
+-   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>  
+  
+-   <xref:System.Type.GetConstructor%2A>  
+  
+-   <xref:System.Type.GetConstructors%2A>  
+  
+-   <xref:System.Type.GetMethod%2A>  
+  
+-   <xref:System.Type.GetMethods%2A>  
+  
+-   <xref:System.Type.GetField%2A>  
+  
+-   <xref:System.Type.GetFields%2A>  
+  
+-   <xref:System.Type.GetEvent%2A>  
+  
+-   <xref:System.Type.GetProperty%2A>  
+  
+-   <xref:System.Type.GetProperties%2A>  
+  
+-   <xref:System.Type.GetMember%2A>  
+  
+-   <xref:System.Type.FindMembers%2A>  
+  
+ `InvokeMember` and `GetMethod` are especially important.  
+  
+ The binding flags can be categorized by how they identify a type member, as listed in the following table.  
+  
+|Identified by Accessibility|Identified by Binding Argument|Identified by Operation|  
+|---------------------------------|------------------------------------|-----------------------------|  
+|DeclaredOnly<br /><br /> FlattenHierarchy<br /><br /> IgnoreCase<br /><br /> IgnoreReturn<br /><br /> Instance<br /><br /> NonPublic<br /><br /> Public<br /><br /> Static|ExactBinding<br /><br /> OptionalParamBinding|CreateInstance<br /><br /> GetField<br /><br /> SetField<br /><br /> GetProperty<br /><br /> SetProperty<br /><br /> InvokeMethod<br /><br /> PutDispProperty<br /><br /> PutRefDispProperty|  
+  
+> [!NOTE]
+>  You must specify `Instance` or `Static` along with `Public` or `NonPublic` or no members will be returned.  
+  
+ The following table lists the coercions performed by the default <xref:System.Reflection.Binder.ChangeType%2A?displayProperty=fullName>. This table applies especially to the `ExactBinding` binding flag.  
+  
+|Source Type|Target Type|  
+|-----------------|-----------------|  
+|Any type|Its base type.|  
+|Any type|The interface it implements.|  
+|`Char`|`UInt16`, `UInt32`, `Int32`, `UInt64`, `Int64`, `Single`, `Double`|  
+|`Byte`|`Char`, `UInt16`, `Int16`, `UInt32`, `Int32`, `UInt64`, `Int64`, `Single`, `Double`|  
+|`SByte`|`Int16`, `Int32`, `Int64`, `Single`, `Double`|  
+|`UInt16`|`UInt32`, `Int32`, `UInt64`, `Int64`, `Single`, `Double`|  
+|`Int16`|`Int32`, `Int64`, `Single`, `Double`|  
+|`UInt32`|`UInt64`, `Int64`, `Single`, `Double`|  
+|`Int32`|`Int64`, `Single`, `Double`|  
+|`UInt64`|`Single`, `Double`|  
+|`Int64`|`Single`, `Double`|  
+|`Single`|`Double`|  
+|Non-reference|By-reference.|  
+  
+   
+  
+## Examples  
+ The following example demonstrates many of the binding flags.  
+  
+ [!code-cpp[BindingFlags#1](~/samples/snippets/cpp/VS_Snippets_CLR/BindingFlags/CPP/bindingflagssample.cpp#1)]
+ [!code-csharp[BindingFlags#1](~/samples/snippets/csharp/VS_Snippets_CLR/BindingFlags/CS/bindingflagssample.cs#1)]
+ [!code-vb[BindingFlags#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/BindingFlags/VB/bindingflagssample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
@@ -53,7 +132,9 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that reflection should create an instance of the specified type. Calls the constructor that matches the given arguments. The supplied member name is ignored. If the type of lookup is not specified, (Instance | Public) will apply. It is not possible to call a type initializer.  
+  
+ This flag is passed to an <see langword="InvokeMember" /> method to invoke a constructor.</summary>
       </Docs>
     </Member>
     <Member MemberName="DeclaredOnly">
@@ -78,7 +159,7 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that only members declared at the level of the supplied type's hierarchy should be considered. Inherited members are not considered.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -103,7 +184,7 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that no binding flags are defined.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExactBinding">
@@ -124,7 +205,19 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that types of the supplied arguments must exactly match the types of the corresponding formal parameters. Reflection throws an exception if the caller supplies a non-null <see langword="Binder" /> object, since that implies that the caller is supplying <see langword="BindToXXX" /> implementations that will pick the appropriate method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Reflection models the accessibility rules of the common type system. For example, if the caller is in the same assembly, the caller does not need special permissions for internal members. Otherwise, the caller needs <xref:System.Security.Permissions.ReflectionPermission>. This is consistent with lookup of members that are protected, private, and so on.  
+  
+ The general principle is that <xref:System.Reflection.Binder.ChangeType%2A> should perform only widening coercions, which never lose data. An example of a widening coercion is coercing a value that is a 32-bit signed integer to a value that is a 64-bit signed integer. This is distinguished from a narrowing coercion, which may lose data. An example of a narrowing coercion is coercing a 64-bit signed integer to a 32-bit signed integer.  
+  
+ The default binder ignores this flag, while custom binders can implement the semantics of this flag.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FlattenHierarchy">
@@ -149,7 +242,7 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that public and protected static members up the hierarchy should be returned. Private static members in inherited classes are not returned. Static members include fields, methods, events, and properties. Nested types are not returned.</summary>
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -174,7 +267,9 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the value of the specified field should be returned.  
+  
+ This flag is passed to an <see langword="InvokeMember" /> method to get a field value.</summary>
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -199,7 +294,9 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the value of the specified property should be returned.  
+  
+ This flag is passed to an <see langword="InvokeMember" /> method to invoke a property getter.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreCase">
@@ -224,7 +321,7 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the case of the member name should not be considered when binding.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreReturn">
@@ -245,7 +342,7 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used in COM interop to specify that the return value of the member can be ignored.</summary>
       </Docs>
     </Member>
     <Member MemberName="Instance">
@@ -270,7 +367,7 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that instance members are to be included in the search.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvokeMethod">
@@ -295,7 +392,9 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a method is to be invoked. This must not be a constructor or a type initializer.  
+  
+ This flag is passed to an <see langword="InvokeMember" /> method to invoke a method.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonPublic">
@@ -320,7 +419,7 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that non-public members are to be included in the search.</summary>
       </Docs>
     </Member>
     <Member MemberName="OptionalParamBinding">
@@ -341,7 +440,15 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the set of members whose parameter count matches the number of supplied arguments. This binding flag is used for methods with parameters that have default values and methods with variable arguments (varargs). This flag should only be used with <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Parameters with default values are used only in calls where trailing arguments are omitted. They must be the last arguments.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Public">
@@ -366,7 +473,7 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that public members are to be included in the search.</summary>
       </Docs>
     </Member>
     <Member MemberName="PutDispProperty">
@@ -387,7 +494,7 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see langword="PROPPUT" /> member on a COM object should be invoked. <see langword="PROPPUT" /> specifies a property-setting function that uses a value. Use <see langword="PutDispProperty" /> if a property has both <see langword="PROPPUT" /> and <see langword="PROPPUTREF" /> and you need to distinguish which one is called.</summary>
       </Docs>
     </Member>
     <Member MemberName="PutRefDispProperty">
@@ -408,7 +515,7 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see langword="PROPPUTREF" /> member on a COM object should be invoked. <see langword="PROPPUTREF" /> specifies a property-setting function that uses a reference instead of a value. Use <see langword="PutRefDispProperty" /> if a property has both <see langword="PROPPUT" /> and <see langword="PROPPUTREF" /> and you need to distinguish which one is called.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetField">
@@ -433,7 +540,9 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the value of the specified field should be set.  
+  
+ This flag is passed to an <see langword="InvokeMember" /> method to set a field value.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetProperty">
@@ -458,7 +567,9 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the value of the specified property should be set. For COM properties, specifying this binding flag is equivalent to specifying <see langword="PutDispProperty" /> and <see langword="PutRefDispProperty" />.  
+  
+ This flag is passed to an <see langword="InvokeMember" /> method to invoke a property setter.</summary>
       </Docs>
     </Member>
     <Member MemberName="Static">
@@ -483,7 +594,7 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that static members are to be included in the search.</summary>
       </Docs>
     </Member>
     <Member MemberName="SuppressChangeType">
@@ -504,7 +615,7 @@
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Not implemented.</summary>
       </Docs>
     </Member>
   </Members>

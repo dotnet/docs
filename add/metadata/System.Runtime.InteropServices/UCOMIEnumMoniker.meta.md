@@ -1,24 +1,34 @@
 ---
 uid: System.Runtime.InteropServices.UCOMIEnumMoniker
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIEnumMoniker.Clone(System.Runtime.InteropServices.UCOMIEnumMoniker@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIEnumMoniker.Reset
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIEnumMoniker.Next(System.Int32,System.Runtime.InteropServices.UCOMIMoniker[],System.Int32@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.UCOMIEnumMoniker.Skip(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

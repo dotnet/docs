@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit" /> event of a <see cref="T:System.Windows.Ink.IncrementalStrokeHitTester" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the strokes that are a result of the eraser path erasing a stroke.</summary>
+        <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains the strokes that are created after the eraser path erases part of <see cref="P:System.Windows.Ink.StrokeHitEventArgs.HitStroke" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeHitEventArgs.GetPointEraseResults%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains the strokes that result in the eraser path erasing the <xref:System.Windows.Ink.StrokeHitEventArgs.HitStroke%2A> where they intersect. If the eraser path intersects the middle of <xref:System.Windows.Ink.StrokeHitEventArgs.HitStroke%2A>, the <xref:System.Windows.Ink.StrokeHitEventArgs.GetPointEraseResults%2A> method returns a <xref:System.Windows.Ink.StrokeCollection> that contains two new strokes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HitStroke">
@@ -47,8 +54,8 @@
         <ReturnType>System.Windows.Ink.Stroke</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Ink.Stroke" /> that is intersected by the eraser path.</summary>
+        <value>The <see cref="T:System.Windows.Ink.Stroke" /> that is intersected by the eraser path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

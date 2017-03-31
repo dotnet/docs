@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the <see cref="T:System.Windows.Automation.ControlType" /> that is exposed to the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] client.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Button" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Calendar">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Calendar" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="CheckBox">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.CheckBox" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ComboBox">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.ComboBox" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -91,7 +91,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Custom" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="DataGrid">
@@ -107,7 +107,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.DataGrid" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -123,7 +123,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.DataItem" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -139,7 +139,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Document" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Edit">
@@ -155,7 +155,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An <see cref="F:System.Windows.Automation.ControlType.Edit" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Group">
@@ -171,7 +171,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Group" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -187,7 +187,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Header" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="HeaderItem">
@@ -203,7 +203,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.HeaderItem" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hyperlink">
@@ -219,7 +219,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Hyperlink" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -235,7 +235,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An <see cref="F:System.Windows.Automation.ControlType.Image" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -251,7 +251,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.List" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ListItem">
@@ -267,7 +267,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.ListItem" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Menu">
@@ -283,7 +283,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Menu" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="MenuBar">
@@ -299,7 +299,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.MenuBar" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="MenuItem">
@@ -315,7 +315,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.MenuItem" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pane">
@@ -331,7 +331,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Pane" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProgressBar">
@@ -347,7 +347,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.ProgressBar" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="RadioButton">
@@ -363,7 +363,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.RadioButton" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollBar">
@@ -379,7 +379,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.ScrollBar" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Separator">
@@ -395,7 +395,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Separator" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Slider">
@@ -411,7 +411,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Slider" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Spinner">
@@ -427,7 +427,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Spinner" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="SplitButton">
@@ -443,7 +443,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.SplitButton" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="StatusBar">
@@ -459,7 +459,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.StatusBar" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tab">
@@ -475,7 +475,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Tab" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="TabItem">
@@ -491,7 +491,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.TabItem" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -507,7 +507,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Table" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -523,7 +523,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Text" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Thumb">
@@ -539,7 +539,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Thumb" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="TitleBar">
@@ -555,7 +555,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.TitleBar" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ToolBar">
@@ -571,7 +571,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.ToolBar" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -587,7 +587,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.ToolTip" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tree">
@@ -603,7 +603,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Tree" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="TreeItem">
@@ -619,7 +619,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.TreeItem" /> control type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Window">
@@ -635,7 +635,7 @@
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Window" /> control type.</summary>
       </Docs>
     </Member>
   </Members>

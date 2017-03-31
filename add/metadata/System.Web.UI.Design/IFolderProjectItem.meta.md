@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.IFolderProjectItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IFolderProjectItem.AddDocument(System.String,System.Byte[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IFolderProjectItem.Children
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IFolderProjectItem.AddFolder(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

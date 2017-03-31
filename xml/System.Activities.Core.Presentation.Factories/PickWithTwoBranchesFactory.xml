@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates <see cref="T:System.Activities.Statements.Pick" /> activities that contain two branches each.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_PickWithTwoBranchesFactory#0](WFD_PickWithTwoBranchesFactory#0)]  -->  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Core.Presentation.Factories.PickWithTwoBranchesFactory" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +57,9 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The workflow UI element that is the visual container of the new activity. This parameter is ignored.</param>
+        <summary>Creates a new <see cref="T:System.Activities.Statements.Pick" /> activity that contains two branches.</summary>
+        <returns>A new <see cref="T:System.Activities.Statements.Pick" /> activity that contains two branches.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

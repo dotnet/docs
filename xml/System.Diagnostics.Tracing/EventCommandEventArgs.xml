@@ -23,7 +23,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the arguments for the <see cref="M:System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)" /> callback.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,8 +52,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the array of arguments for the callback.</summary>
+        <value>An array of callback arguments.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.Diagnostics.Tracing.EventCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the command for the callback.</summary>
+        <value>The callback command.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,10 +115,18 @@
         <Parameter Name="eventId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="eventId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="eventId">The identifier of the event to disable.</param>
+        <summary>Disables the event that have the specified identifier.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="eventId" /> is in range; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can turn off all events in an event listener by calling <xref:System.Diagnostics.Tracing.EventCommandEventArgs.DisableEvent%2A> starting with `eventID` = 1 and continuing until <xref:System.Diagnostics.Tracing.EventCommandEventArgs.DisableEvent%2A> returns `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableEvent">
@@ -149,10 +157,18 @@
         <Parameter Name="eventId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="eventId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="eventId">The identifier of the event to enable.</param>
+        <summary>Enables the event that has the specified identifier.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="eventId" /> is in range; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can turn on all events in an event listener by calling <xref:System.Diagnostics.Tracing.EventCommandEventArgs.EnableEvent%2A> starting with `eventID` = 1 and continuing until <xref:System.Diagnostics.Tracing.EventCommandEventArgs.EnableEvent%2A> returns `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

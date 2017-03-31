@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the default model metadata provider.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.DataAnnotationsModelMetadataProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,13 +50,13 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="attributes">To be added.</param>
-        <param name="containerType">To be added.</param>
-        <param name="modelAccessor">To be added.</param>
-        <param name="modelType">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attributes">The attributes.</param>
+        <param name="containerType">The type of the container, or <see langword="null" /> if there is no container.</param>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="modelType">The type of the model.</param>
+        <param name="propertyName">The name of the property, or <see langword="null" /> if the model is not a property.</param>
+        <summary>Creates metadata for a specified model.</summary>
+        <returns>Metadata for a model.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

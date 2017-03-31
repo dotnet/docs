@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A <see cref="T:System.Activities.Presentation.Model.ModelProperty" /> represents a property on a <see cref="T:System.Activities.Presentation.Model.ModelItem" />. Model properties are associated with an instance of an item, which allows them to have simple Value get/set properties instead of using the more cumbersome GetValue/SetValue mechanism of <see cref="T:System.ComponentModel.PropertyDescriptor" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of a <xref:System.Activities.Presentation.Model.ModelProperty> may come from a locally set value, or it may be inherited from somewhere higher up in the element hierarchy. Use the <xref:System.Activities.Design.Model.ModelItem.Source%2A> property of the value returned by <xref:System.Activities.Presentation.Model.ModelProperty.Value%2A> to determine the source of the property value.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelProperty" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the type that defines this property if <see cref="P:System.Activities.Presentation.Model.ModelProperty.IsAttached" /> returns <see langword="true" />; otherwise, returns <see langword="null" />.</summary>
+        <value>Returns a <see cref="T:System.Type" /> or <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,8 @@
         <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the attributes declared on this property.</summary>
+        <value>Returns the attributes as an <see cref="T:System.ComponentModel.AttributeCollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +87,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears the local value for the property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When there is no local value set for the property, a value may be inherited from higher in the property hierarchy. If you wish to set the value to `null`, call <xref:System.Activities.Presentation.Model.ModelProperty.SetValue%2A> instead.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Collection">
@@ -97,9 +111,16 @@
         <ReturnType>System.Activities.Presentation.Model.ModelItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns <see cref="P:System.Activities.Presentation.Model.ModelProperty.Value" /> cast as a <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
+        <value>Returns the property value as a <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />, or <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the property value is not a collection, this property will return `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ComputedValue">
@@ -115,8 +136,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the currently computed value for this property. Setting a value on this property is the same as calling <see cref="M:System.Activities.Presentation.Model.ModelProperty.SetValue(System.Object)" />, but can be used in data binding expressions.</summary>
+        <value>Returns the computed value as an <see cref="T:System.Object" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,9 +154,16 @@
         <ReturnType>System.ComponentModel.TypeConverter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the type converter to use with this property.</summary>
+        <value>Returns a <see cref="T:System.ComponentModel.TypeConverter" /> for use with this property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Underlying type converters are all wrapped so they accept <xref:System.Activities.Presentation.Model.ModelItem> objects. When performing a conversion to a particular value, the type converter’s return type is not wrapped. Type converters that return standard values also return values as <xref:System.Activities.Presentation.Model.ModelItem> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultValue">
@@ -151,8 +179,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the default value for this property. If the property does not define a default value, this will return <see langword="null" />.</summary>
+        <value>Returns an <see cref="T:System.Object" /> or <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +197,8 @@
         <ReturnType>System.Activities.Presentation.Model.ModelItemDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns <see cref="P:System.Activities.Presentation.Model.ModelProperty.Value" /> cast as a <see cref="T:System.Activities.Presentation.Model.ModelItemDictionary" />. If the property value is not a dictionary, this property will return <see langword="null" />.</summary>
+        <value>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItemDictionary" /> or <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,9 +218,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The property to compare with this property.</param>
+        <summary>Determines the equality for properties. Properties are equal if they have the same name and parent.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Activities.Presentation.Model.ModelProperty" /> that equals this property; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,8 +239,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Serves as a hash function for a <see cref="T:System.Activities.Presentation.Model.ModelProperty" />.</summary>
+        <returns>Returns a hashcode as an <see cref="T:System.Int32" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +257,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines whether the property represents an attached property from a different type.</summary>
+        <value>
+          <see langword="true" /> if the property represents an attached property from a different type; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,8 +276,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines whether the property can be shown in a property window.</summary>
+        <value>
+          <see langword="true" /> if the property can be shown in a property window; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +295,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines whether the value contained in the property is a <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
+        <value>
+          <see langword="true" /> if the value contained in the property is a <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,8 +314,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines whether the value contained in the property is a <see cref="T:System.Activities.Presentation.Model.ModelItemDictionary" />.</summary>
+        <value>
+          <see langword="true" /> if the value contained in the property is a <see cref="T:System.Activities.Design.Model.ModelItemDictionary" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,8 +333,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines whether the property is read only.</summary>
+        <value>
+          <see langword="true" /> if the property is read only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,8 +352,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines whether the value of the property is set locally.</summary>
+        <value>
+          <see langword="true" /> if the value of the property is set locally; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,8 +371,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of this property.</summary>
+        <value>The name of this property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,10 +393,11 @@
         <Parameter Name="second" Type="System.Activities.Presentation.Model.ModelProperty" />
       </Parameters>
       <Docs>
-        <param name="first">To be added.</param>
-        <param name="second">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="first">The first property.</param>
+        <param name="second">The second property.</param>
+        <summary>Determines whether the properties are equal. Properties are equal if they have the same name and parent.</summary>
+        <returns>
+          <see langword="true" /> if the first property equals the second property; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,10 +418,11 @@
         <Parameter Name="second" Type="System.Activities.Presentation.Model.ModelProperty" />
       </Parameters>
       <Docs>
-        <param name="first">To be added.</param>
-        <param name="second">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="first">The first property.</param>
+        <param name="second">The second property.</param>
+        <summary>Determines whether the properties are unequal. Properties are equal if they have the same name and parent.</summary>
+        <returns>
+          <see langword="false" /> if the first property equals the second property; otherwise, <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,8 +439,8 @@
         <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the parent of this property.</summary>
+        <value>Returns the parent of this property as a <see cref="T:System.Activities.Design.Model.ModelItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -420,8 +457,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the data type of the property.</summary>
+        <value>Returns the <see cref="T:System.Type" /> of the property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -441,10 +478,20 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The new value to set.</param>
+        <summary>Sets a local value on a property.</summary>
+        <returns>Returns <paramref name="value" /> as a <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `value` is not a <xref:System.Activities.Presentation.Model.ModelItem>, it is wrapped in a <xref:System.Activities.Design.Model.ModelItem>, which is returned to the caller. It is valid to set `value` to `null`, in which case <xref:System.Activities.Presentation.Model.ModelProperty.Value%2A> will be `null`. This is different from calling <xref:System.Activities.Presentation.Model.ModelProperty.ClearValue%2A>.  
+  
+> [!NOTE]
+>  Using this method, the value will not be set on the underlying property until the editing context completes. To update the underlying property immediately, use <xref:System.Activities.Presentation.ArgumentAccessor.Setter%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -460,9 +507,16 @@
         <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the value set into this property.</summary>
+        <value>Returns the property value as a <see cref="T:System.Activities.Presentation.Model.ModelItem" />, or <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A property may return a value that is inherited further up the element hierarchy, in which case this property will return a value whose <xref:System.Activities.Presentation.Model.ModelItem.Source%2A> is not `this`. If no value has ever been set for the property <xref:System.Activities.Presentation.Model.ModelProperty.Value%2A> will return `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.DeploymentSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.DeploymentSection.Retail
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.DeploymentSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

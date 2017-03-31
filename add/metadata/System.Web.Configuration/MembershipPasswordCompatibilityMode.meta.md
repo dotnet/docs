@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Configuration.MembershipPasswordCompatibilityMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

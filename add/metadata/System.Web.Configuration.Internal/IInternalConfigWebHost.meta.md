@@ -1,14 +1,20 @@
 ---
 uid: System.Web.Configuration.Internal.IInternalConfigWebHost
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.Internal.IInternalConfigWebHost.GetSiteIDAndVPathFromConfigPath(System.String,System.String@,System.String@)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.Internal.IInternalConfigWebHost.GetConfigPathFromSiteIDAndVPath(System.String,System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

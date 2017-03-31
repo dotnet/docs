@@ -32,21 +32,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T1">To be added.</typeparam>
-    <typeparam name="T2">To be added.</typeparam>
-    <typeparam name="T3">To be added.</typeparam>
-    <typeparam name="T4">To be added.</typeparam>
-    <typeparam name="T5">To be added.</typeparam>
-    <typeparam name="T6">To be added.</typeparam>
-    <typeparam name="T7">To be added.</typeparam>
-    <typeparam name="T8">To be added.</typeparam>
-    <typeparam name="T9">To be added.</typeparam>
-    <typeparam name="T10">To be added.</typeparam>
-    <typeparam name="T11">To be added.</typeparam>
-    <typeparam name="T12">To be added.</typeparam>
-    <typeparam name="T13">To be added.</typeparam>
-    <typeparam name="T14">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T1">The data type of the first <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <typeparam name="T2">The data type of the second <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <typeparam name="T3">The data type of the third <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <typeparam name="T4">The data type of the fourth <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <typeparam name="T5">The data type of the fifth <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <typeparam name="T6">The data type of the sixth <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <typeparam name="T7">The data type of the seventh <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <typeparam name="T8">The data type of the eighth <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <typeparam name="T9">The data type of the ninth <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <typeparam name="T10">The data type of the tenth <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`13" />.</typeparam>
+    <typeparam name="T11">The data type of the eleventh <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <typeparam name="T12">The data type of the twelfth <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <typeparam name="T13">The data type of the thirteenth <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <typeparam name="T14">The data type of the fourteenth <see cref="T:System.Activities.InArgument`1" /> passed to the <see cref="T:System.Activities.ActivityAction`14" />.</typeparam>
+    <summary>Invokes an activity’s <see cref="T:System.Activities.ActivityAction`14" /> handler.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -61,7 +61,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Statements.InvokeAction`14" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +83,8 @@
         <ReturnType>System.Activities.ActivityAction&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Activities.ActivityAction`14" /> invoked by this <see cref="T:System.Activities.Statements.InvokeAction`14" />.</summary>
+        <value>The activity action invoked by this <see cref="T:System.Activities.Statements.InvokeAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,8 @@
         <ReturnType>System.Activities.InArgument&lt;T1&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the first <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The first <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +129,8 @@
         <ReturnType>System.Activities.InArgument&lt;T10&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the tenth <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The tenth <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +152,8 @@
         <ReturnType>System.Activities.InArgument&lt;T11&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the eleventh <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The eleventh <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +175,8 @@
         <ReturnType>System.Activities.InArgument&lt;T12&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the twelfth <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The twelfth <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +198,8 @@
         <ReturnType>System.Activities.InArgument&lt;T13&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the thirteenth <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The thirteenth <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,8 +221,8 @@
         <ReturnType>System.Activities.InArgument&lt;T14&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fourteenth <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The fourteenth <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,8 +244,8 @@
         <ReturnType>System.Activities.InArgument&lt;T2&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the second <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The second <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,8 +267,8 @@
         <ReturnType>System.Activities.InArgument&lt;T3&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the third <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The third <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,8 +290,8 @@
         <ReturnType>System.Activities.InArgument&lt;T4&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fourth <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The fourth <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,8 +313,8 @@
         <ReturnType>System.Activities.InArgument&lt;T5&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fifth <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The fifth <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,8 +336,8 @@
         <ReturnType>System.Activities.InArgument&lt;T6&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the sixth <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The sixth <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,8 +359,8 @@
         <ReturnType>System.Activities.InArgument&lt;T7&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the seventh <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The seventh <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,8 +382,8 @@
         <ReturnType>System.Activities.InArgument&lt;T8&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the eighth <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The eighth <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,8 +405,8 @@
         <ReturnType>System.Activities.InArgument&lt;T9&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the ninth <see cref="T:System.Activities.InArgument`1" /> passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</summary>
+        <value>The ninth <see langword="In" /> argument passed to the associated <see cref="T:System.Activities.ActivityAction`14" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

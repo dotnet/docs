@@ -1,14 +1,17 @@
 ---
 uid: System.Net.WriteStreamClosedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WriteStreamClosedEventArgs.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WriteStreamClosedEventArgs.Error
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

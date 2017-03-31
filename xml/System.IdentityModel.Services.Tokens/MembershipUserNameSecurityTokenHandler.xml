@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A <see cref="T:System.IdentityModel.Tokens.UserNameSecurityTokenHandler" /> that validates a <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> by using a configured <see cref="T:System.Web.Security.MembershipProvider" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler" /> class that uses the default membership provider that is configured for the application.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">No default membership provider is configured for the application.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,8 +44,8 @@
         <Parameter Name="provider" Type="System.Web.Security.MembershipProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="provider">The membership provider to use to validate tokens.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler" /> class that uses the specified membership provider.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +62,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the current instance can validate security tokens of type <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" />. Always <see langword="true" />.</summary>
+        <value>
+          <see langword="true" /> if the token handler can validate user name security tokens; otherwise, <see langword="false" />. Always <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +84,8 @@
         <Parameter Name="customConfigElements" Type="System.Xml.XmlNodeList" />
       </Parameters>
       <Docs>
-        <param name="customConfigElements">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="customConfigElements">The custom XML elements.</param>
+        <summary>Loads custom configuration from XML.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +102,8 @@
         <ReturnType>System.Web.Security.MembershipProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.Security.MembershipProvider" /> that is configured for the current instance.</summary>
+        <value>The configured membership provider.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,10 +128,23 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="token">The security token to be validated.</param>
+        <summary>Validates the specified security token by using the configured <see cref="T:System.Web.Security.MembershipProvider" />.</summary>
+        <returns>The identities that are contained in the token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The configured membership provider is referenced through the <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.MembershipProvider%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="token" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="token" /> is not an instance of <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" />.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException">
+          <paramref name="token" /> failed validation with the configured <see cref="T:System.Web.Security.MembershipProvider" />.</exception>
       </Docs>
     </Member>
   </Members>

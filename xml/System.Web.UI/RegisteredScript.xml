@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides access to a client script that was previously registered with the <see cref="T:System.Web.UI.Page" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A client script is uniquely identified by its key and its type. Only one script with a given key/type pair can be registered with a page.  
+  
+ Client scripts are not guaranteed to be output in the order that they are registered in.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddScriptTags">
@@ -28,8 +37,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the script block should be rendered on the Web page enclosed in <see langword="&lt;script&gt;" /> tags.</summary>
+        <value>
+          <see langword="true" /> if the script should be rendered on the Web page enclosed in <see langword="&lt;script&gt;" /> tags; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +56,8 @@
         <ReturnType>System.Web.UI.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the control that registered the script.</summary>
+        <value>A reference to the control that registered the script.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +74,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the key that, together with the <see cref="P:System.Web.UI.RegisteredScript.Type" /> value, identifies the script.</summary>
+        <value>The value of the key. This value can be <see langword="null " />or empty.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A client script is uniquely identified by its key and its type. Only one script with a given key/type pair can be registered with a page.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Script">
@@ -82,8 +99,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the file name of the script.</summary>
+        <value>The file name of the script. This value can be <see langword="null " />or empty.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +117,8 @@
         <ReturnType>System.Web.UI.RegisteredScriptType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the script type that indicates when the script is intended to be executed.</summary>
+        <value>A value defined by the <see cref="T:System.Web.UI.RegisteredScriptType" /> enumeration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +135,18 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the client script type that, together with the <see cref="P:System.Web.UI.RegisteredScript.Key" /> value, identifies the script.</summary>
+        <value>The type of the script.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is usually specified by using the type of the control that registered the script.  
+  
+ A client script is uniquely identified by its key and its type. Only one script with a given key/type pair can be registered with a page.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -136,8 +162,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URL of the script file.</summary>
+        <value>The URL of the script file. This value can be <see langword="null" /> or empty.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

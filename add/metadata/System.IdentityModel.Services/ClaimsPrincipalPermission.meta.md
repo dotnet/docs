@@ -1,54 +1,65 @@
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermission
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermission.IsUnrestricted
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermission.FromXml(System.Security.SecurityElement)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermission.Demand
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermission.Copy
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermission.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermission.Intersect(System.Security.IPermission)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermission.CheckAccess(System.String,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermission.IsSubsetOf(System.Security.IPermission)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermission.ToXml
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermission.Union(System.Security.IPermission)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

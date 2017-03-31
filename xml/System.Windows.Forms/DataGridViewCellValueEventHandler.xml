@@ -17,9 +17,27 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellValueEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.DataGridView.CellValueNeeded" /> event or <see cref="E:System.Windows.Forms.DataGridView.CellValuePushed" /> event of a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this delegate to implement virtual mode in the <xref:System.Windows.Forms.DataGridView> control. For more information about virtual mode, see [Virtual Mode in the Windows Forms DataGridView Control](../Topic/Virtual%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+  
+ When you create a <xref:System.Windows.Forms.DataGridViewCellValueEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example handles the <xref:System.Windows.Forms.DataGridView.CellValuePushed> event to store updates and new entries in a data store object. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A?displayProperty=fullName> reference topic.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView._Virtual#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._Virtual/CPP/virtual.cpp#10)]
+ [!code-csharp[System.Windows.Forms.DataGridView._Virtual#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._Virtual/CS/virtual.cs#10)]
+ [!code-vb[System.Windows.Forms.DataGridView._Virtual#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._Virtual/VB/virtual.vb#10)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

@@ -15,8 +15,22 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a container that holds the contents of a templated menu item in a <see cref="T:System.Web.UI.WebControls.Menu" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.MenuItemTemplateContainer> class is used by the <xref:System.Web.UI.WebControls.Menu> control as a container for the contents of the menu items that are rendered using a custom template.  
+  
+> [!NOTE]
+>  This class is used by control developers primarily when extending the <xref:System.Web.UI.WebControls.Menu> class to create a container for a templated menu item.  
+  
+ You can define a custom template for the dynamic and static menu items of a <xref:System.Web.UI.WebControls.Menu> control by using the <xref:System.Web.UI.WebControls.Menu.DynamicItemTemplate%2A> and <xref:System.Web.UI.WebControls.Menu.StaticItemTemplate%2A> properties, respectively.  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.MenuItemTemplateContainer> class, see the <xref:System.Web.UI.WebControls.MenuItemTemplateContainer> constructor.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,10 +47,24 @@
         <Parameter Name="dataItem" Type="System.Web.UI.WebControls.MenuItem" />
       </Parameters>
       <Docs>
-        <param name="itemIndex">To be added.</param>
-        <param name="dataItem">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="itemIndex">The index of the menu item.</param>
+        <param name="dataItem">The <see cref="T:System.Web.UI.WebControls.MenuItem" /> object associated with the container.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MenuItemTemplateContainer" /> class using the specified menu item index and menu item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.MenuItemTemplateContainer> class using the specified menu item index and menu item.  
+  
+ The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.MenuItemTemplateContainer> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.MenuItemTemplateContainer.DataItem%2A>|The value of the `dataItem` parameter.|  
+|<xref:System.Web.UI.WebControls.MenuItemTemplateContainer.ItemIndex%2A>|The value of the `itemIndex` parameter.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -52,9 +80,19 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the menu item associated with the container.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.MenuItem" /> that represents the menu item associated with the container.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.MenuItemTemplateContainer.DataItem%2A> property to specify or determine the menu item associated with the container.  
+  
+> [!NOTE]
+>  This property is used primarily by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -70,9 +108,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the index of the menu item associated with the container.</summary>
+        <value>The index of the menu item associated with the container.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.MenuItemTemplateContainer.ItemIndex%2A> property to determine the index of the menu item associated with the container.  
+  
+> [!NOTE]
+>  This property is used primarily by control developers when extending the <xref:System.Web.UI.WebControls.Menu> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -112,8 +160,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the menu item associated with the container.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.MenuItem" /> object that represents the menu item associated with the container.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +178,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the index value of the <see cref="T:System.Web.UI.WebControls.MenuItem" /> object associated with the container.</summary>
+        <value>The index value of the <see cref="T:System.Web.UI.WebControls.MenuItem" /> object associated with the container.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +196,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the index value of the menu item for the container.</summary>
+        <value>The index value of the menu item for the container.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

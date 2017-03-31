@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enumerates values that describe the encoding format of audio.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.EncodingFormat%2A> property gets a member of <xref:System.Speech.AudioFormat.EncodingFormat> that indicates the encoding format of audio.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ALaw">
@@ -27,7 +34,7 @@
         <ReturnType>System.Speech.AudioFormat.EncodingFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The encoding format of the audio is ALaw.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pcm">
@@ -43,7 +50,7 @@
         <ReturnType>System.Speech.AudioFormat.EncodingFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The encoding format of the audio is Pulse Code Modulation (PCM).</summary>
       </Docs>
     </Member>
     <Member MemberName="ULaw">
@@ -59,7 +66,7 @@
         <ReturnType>System.Speech.AudioFormat.EncodingFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The encoding format of the audio is ULaw.</summary>
       </Docs>
     </Member>
   </Members>

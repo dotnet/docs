@@ -1,1 +1,0 @@
-                endpoint.Behaviors.Add(new TransactedBatchingBehavior(10));

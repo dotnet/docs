@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the results of the <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder" /> build operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,8 +41,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the file paths to the copied component installer files.</summary>
+        <value>Returns an array of strings containing the file paths to the copied component installer files.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the file path to the generated primary bootstrapper file.</summary>
+        <value>Returns a string representing the file path to the generated primary bootstrapper file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +87,8 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the build messages generated from a bootstrapper build.</summary>
+        <value>Returns an array of <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage" /> objects representing the build messages generated from a bootstrapper build.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +110,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates whether the bootstrapper build was successful.</summary>
+        <value>Returns a Boolean value indicating whether the bootstrapper build was successful. Returns <see langword="true" /> if the bootstrapper build was successful, <see langword="false" /> if not successful.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

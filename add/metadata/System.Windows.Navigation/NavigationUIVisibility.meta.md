@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Navigation.NavigationUIVisibility
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

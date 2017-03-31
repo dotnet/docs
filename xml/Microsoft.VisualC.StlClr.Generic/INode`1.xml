@@ -11,8 +11,8 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="TValue">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TValue">[!INCLUDE[cpp_iter_arg](~/includes/cpp-iter-arg-md.md)]</typeparam>
+    <summary>Interface for the node data structure. Containers that support bidirectional iteration contain nodes. A node consists of a value for the element at that position in the container and pointers to the next and previous elements in the container.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,8 +29,8 @@
         <ReturnType>TValue@</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the element for this node in the container.</summary>
+        <value>The value of the element for this node in the container.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the container that the current node is in.</summary>
+        <returns>The container that the current node is in.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines whether the current node is the first node of the container.</summary>
+        <returns>
+          <see langword="true" /> if the current node is the first node in the container; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +87,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the next node in the container past the current node.</summary>
+        <returns>The next node in the container past the current node.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,8 +106,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the node in the container immediately before the current node.</summary>
+        <returns>The node in the container immediately before the current node.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

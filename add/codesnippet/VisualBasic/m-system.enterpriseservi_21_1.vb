@@ -1,3 +1,0 @@
-<InterfaceQueuing(True)>  _
-Public Interface IInterfaceQueuingAttribute_Ctor_Bool
-End Interface 'IInterfaceQueuingAttribute_Ctor_Bool

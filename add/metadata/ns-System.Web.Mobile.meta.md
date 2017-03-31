@@ -1,4 +1,4 @@
 ---
 uid: System.Web.Mobile
-internalonly: False
+manager: "wpickett"
 ---

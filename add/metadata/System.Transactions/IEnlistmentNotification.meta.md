@@ -1,24 +1,24 @@
 ---
 uid: System.Transactions.IEnlistmentNotification
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.IEnlistmentNotification.InDoubt(System.Transactions.Enlistment)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.IEnlistmentNotification.Rollback(System.Transactions.Enlistment)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.IEnlistmentNotification.Commit(System.Transactions.Enlistment)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.IEnlistmentNotification.Prepare(System.Transactions.PreparingEnlistment)
-internalonly: False
+manager: "ghogen"
 ---

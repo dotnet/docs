@@ -1,1 +1,0 @@
-    MyParserError.ErrorText = "My Error Text";

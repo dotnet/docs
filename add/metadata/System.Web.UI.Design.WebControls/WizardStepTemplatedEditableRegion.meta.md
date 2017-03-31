@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion.#ctor(System.Web.UI.Design.TemplateDefinition,System.Web.UI.WebControls.WizardStepBase)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WizardStepTemplatedEditableRegion.Step
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

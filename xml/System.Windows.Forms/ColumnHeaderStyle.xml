@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the styles of the column headers in a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property of the <xref:System.Windows.Forms.ListView> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Windows.Forms.ColumnHeaderStyle> enumeration to set the <xref:System.Windows.Forms.ListView.HeaderStyle%2A?displayProperty=fullName> property of a <xref:System.Windows.Forms.ListView> control. To run this example paste the following code in a form and call the `InitializeListView` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+  
+ [!code-cpp[System.Windows.Forms.ListView1#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView1/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListView1#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView1/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListView1#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView1/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Clickable">
@@ -27,7 +43,7 @@
         <ReturnType>System.Windows.Forms.ColumnHeaderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The column headers function like buttons and can carry out an action, such as sorting, when clicked.</summary>
       </Docs>
     </Member>
     <Member MemberName="Nonclickable">
@@ -43,7 +59,7 @@
         <ReturnType>System.Windows.Forms.ColumnHeaderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The column headers do not respond to the click of a mouse.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +75,7 @@
         <ReturnType>System.Windows.Forms.ColumnHeaderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The column header is not displayed in report view.</summary>
       </Docs>
     </Member>
   </Members>

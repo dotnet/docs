@@ -1,1 +1,0 @@
-                NamedPipeTransportSecurity npts = nnpSecurity.Transport;

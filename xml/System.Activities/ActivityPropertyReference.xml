@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a property reference that is used in <see cref="T:System.Activities.ActivityBuilder" /> and that maps to a <see cref="T:System.Activities.XamlIntegration.PropertyReferenceExtension`1" /> in an <see langword="x:Class" /> activity when the <see langword="x:Class" /> activity is deserialized into an <see cref="T:System.Activities.ActivityBuilder" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.ActivityPropertyReference" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the source property name that corresponds to the property name in the <see langword="x:Class" /> activity definition.</summary>
+        <value>The source property name that corresponds to the property name in the <see langword="x:Class" /> activity definition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the property being set on the target object.</summary>
+        <value>The name of the property being set on the target object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

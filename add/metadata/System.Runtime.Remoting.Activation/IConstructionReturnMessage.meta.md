@@ -1,4 +1,4 @@
 ---
 uid: System.Runtime.Remoting.Activation.IConstructionReturnMessage
-internalonly: False
+manager: "ghogen"
 ---

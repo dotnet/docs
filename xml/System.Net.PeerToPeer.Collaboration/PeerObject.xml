@@ -21,8 +21,21 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a new instance of the PeerObject class with an auto-generated <see cref="T:System.Guid" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A PeerObject is run-time data, such as a picture, certificate, or a specific description that is associated with a particular application. The data element of each PeerObject instance must be less than or equal to 16KB in size. After an instance of PeerObject is constructed it is published with the Peer Collaboration Infrastructure via <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SetObject%2A>.  
+  
+ After constructing an instance of this class and setting the appropriate properties this object may be passed to the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration><xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SetObject%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.DeleteObject%2A> methods to enable/disable the publishing of this object for other peers to discover and view.  
+  
+ After registering an object with the collaboration infrastructure the registration information is not persisted in the registry, resulting in different behavior from <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> instances.  The object registration is only valid for the lifetime duration of the application which registered the object.  Applications should deregister objects when they are no longer required or prior to application exit.  By default, a PeerObject is automatically deregistered if the instance goes out of scope.  
+  
+ Changing the properties on a PeerObject instance after it has been registered using the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> registration methods will not update the registration for the PeerObject instance.  To effectively update the registration of a specific PeerObject instance, the PeerObject must be deleted and registered again with the new information.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +49,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new default instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After the <xref:System.Net.PeerToPeer.Collaboration.PeerObject> instance is constructed, the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SetObject%2A> method must be called to publish the <xref:System.Net.PeerToPeer.Collaboration.PeerObject> with the Peer Collaboration infrastructure.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -54,9 +74,9 @@
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="serializationInfo">To be added.</param>
-        <param name="streamingContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />.</param>
+        <param name="streamingContext">The serialization destination associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />.</param>
+        <summary>Initializes a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance with the associated parameters required for serialization.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,11 +95,19 @@
         <Parameter Name="peerScope" Type="System.Net.PeerToPeer.Collaboration.PeerScope" />
       </Parameters>
       <Docs>
-        <param name="Id">To be added.</param>
-        <param name="data">To be added.</param>
-        <param name="peerScope">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="Id">The user-defined identifier for the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />.</param>
+        <param name="data">A data blob that contains information about the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />. This parameter is limited a size that is less than or equal to 16K.</param>
+        <param name="peerScope">Specifies the scope in which the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> is to be registered.</param>
+        <summary>Initializes a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance with the associated scope and data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Id` parameter value utilized by this constructor is auto generated. After the <xref:System.Net.PeerToPeer.Collaboration.PeerObject> instance is constructed, the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SetObject%2A> method must be called to publish the <xref:System.Net.PeerToPeer.Collaboration.PeerObject> with the Peer Collaboration infrastructure.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">One of the arguments provided to this method is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -95,9 +123,11 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets descriptive data associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance for a Peer Collaboration application.</summary>
+        <value>Descriptive data (such as text or a small image) associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance has been disposed.</exception>
+        <exception cref="T:System.ArgumentException">One of the arguments provided to this method is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -119,7 +149,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all resources utilized by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +174,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">Set to <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,10 +195,11 @@
         <Parameter Name="other" Type="System.Net.PeerToPeer.Collaboration.PeerObject" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance to test for equality.</param>
+        <summary>Compares a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> to the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance provided has matching data, else <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance specified by <paramref name="other" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -187,10 +218,13 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to test for equality.</param>
+        <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> to the specified object.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />  
+  
+ instance provided has matching data, else <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object specified by <paramref name="obj" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -210,10 +244,10 @@
         <Parameter Name="objB" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="objA">To be added.</param>
-        <param name="objB">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objA">The first <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> to compare.</param>
+        <param name="objB">The second <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instances are considered equal.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instances provided have matching data, else <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,9 +265,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance.</summary>
+        <returns>A 32-bit signed integer hash code used to compare instances of this type.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -253,10 +288,17 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> instance to populate with data.</param>
+        <param name="context">The destination for the serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data required to serialize the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A derived type must call the base type <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -272,9 +314,13 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a <see cref="T:System.Guid" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance.</summary>
+        <value>
+          <see cref="T:System.Guid" /> associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />  
+  
+ .</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ObjectChanged">
@@ -298,8 +344,15 @@
         <ReturnType>System.EventHandler&lt;System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Signaled when a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before this event can be signaled by an object change, subscriptions must be made to the specified remote peer via the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnObjectChanged">
@@ -318,9 +371,10 @@
         <Parameter Name="objChangedArgs" Type="System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="objChangedArgs">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="objChangedArgs">Type of object change specified by <see cref="T:System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs" />.</param>
+        <summary>Signaled when a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance with the specified ID is added, updated or removed by a remote peer.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance associated with this change has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="PeerScope">
@@ -336,9 +390,10 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" /> in which the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance is registered.</summary>
+        <value>PeerScope that specifies the scope in which the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> is registered.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="SynchronizingObject">
@@ -365,9 +420,10 @@
         <ReturnType>System.ComponentModel.ISynchronizeInvoke</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the object used to marshal the event handler calls that are issued as a result of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance change.</summary>
+        <value>Object with an implementation of the <see cref="T:System.ComponentModel.ISynchronizeInvoke" /> interface. This object is used for event handler synchronization.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The calling object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -392,9 +448,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="context">The destination for the serialization.</param>
+        <summary>Populates the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance with the data obtained from the serialized source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -412,10 +468,28 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.String" /> that represents a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance.</summary>
+        <returns>A <see cref="T:System.String" /> representing the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance has been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After the <xref:System.Net.PeerToPeer.Collaboration.PeerObject> instance is constructed, the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SetObject%2A> method must be called to publish the object with the Peer Collaboration infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

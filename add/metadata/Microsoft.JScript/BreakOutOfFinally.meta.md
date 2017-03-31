@@ -1,29 +1,34 @@
 ---
 uid: Microsoft.JScript.BreakOutOfFinally
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.BreakOutOfFinally.#ctor
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BreakOutOfFinally.#ctor(System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BreakOutOfFinally.target
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BreakOutOfFinally.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BreakOutOfFinally.#ctor(System.String,System.Exception)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BreakOutOfFinally.#ctor(System.String)
-internalonly: False
+ms.author: "mikejo"
 ---

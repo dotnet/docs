@@ -1,24 +1,46 @@
 ---
 uid: System.Web.UI.Design.PostBackTriggerControlIDConverter
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.PostBackTriggerControlIDConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.PostBackTriggerControlIDConverter.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.PostBackTriggerControlIDConverter.GetStandardValues
 ---
 
 ---
 uid: System.Web.UI.Design.PostBackTriggerControlIDConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.PostBackTriggerControlIDConverter.GetStandardValuesSupported
+---
+
+---
+uid: System.Web.UI.Design.PostBackTriggerControlIDConverter.GetStandardValuesExclusive
 ---
 
 ---
 uid: System.Web.UI.Design.PostBackTriggerControlIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

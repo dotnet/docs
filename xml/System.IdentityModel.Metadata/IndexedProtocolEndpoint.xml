@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an indexed <see cref="T:System.IdentityModel.Metadata.ProtocolEndpoint" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpoint" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,10 +45,10 @@
         <Parameter Name="location" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="location">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index.</param>
+        <param name="binding">The binding.</param>
+        <param name="location">The location.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpoint" /> class that has the specified index, binding, and location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the index. This is a required element.</summary>
+        <value>The index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +83,9 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether this is the default endpoint. This is optional.</summary>
+        <value>
+          <see langword="true" /> if this is the default endpoint; otherwise, <see langword="false" />. Can be <see langword="null" />. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

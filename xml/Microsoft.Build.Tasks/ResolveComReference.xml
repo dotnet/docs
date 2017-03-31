@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implements the <c>ResolveComReference</c> task. Use the <c>ResolveComReference</c> element in your project file to create and execute this task. For usage and parameter information, see [ResolveComReference Task](../Topic/ResolveComReference%20Task.md).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ On a 64-bit machine, Framework64/\<version>/msbuild cannot resolve COM objects registered as 32-bit components. For example, if you register a COM object with regsvr32 and then try to build a project targeting the x86 platform with Framework64/\<version>/msbuild, the build is unable to resolve the COM object. If instead you build with Framework/\<version>/msbuild, the build is able to resolve the COM object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ResolveComReference" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether the <c>ResolveComReference</c> task places the public key in the assembly (<see langword="true" />) or fully signs the assembly (<see langword="false" />).</summary>
+        <value>
+          <see langword="true" /> if the <c>ResolveComReference</c> task places the public key in the assembly; <see langword="false" /> if the <c>ResolveComReference</c> task fully signs the assembly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +69,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an array of name-value pairs of environment variables that should be passed to the spawned tlbimp.exe and aximp.exe in addition to (or selectively overriding) the regular environment block.</summary>
+        <value>Returns an array of name-value pairs of environment variables.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +88,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the <c>ResolveComReference</c> task.</summary>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +107,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Property to allow multitargeting of ResolveComReferences: If true, tlbimp.exe and aximp.exe from the appropriate target framework will be run out-of-proc to generate the necessary wrapper assemblies.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,7 +125,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When set to true, the typelib version will be included in the wrapper name. Default is false.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,8 +143,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a container that holds a key pair.</summary>
+        <value>A container that holds a key pair.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +161,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an item that contains a key pair.</summary>
+        <value>An item that contains a key pair.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +179,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether to pass the <see cref="F:System.Runtime.InteropServices.TypeLibImporterFlags.PreventClassMembers" /> flag to .tlb wrapper generation.</summary>
+        <value>
+          <see langword="true" /> if the task should pass the <see cref="F:System.Runtime.InteropServices.TypeLibImporterFlags.PreventClassMembers" /> flag to .tlb wrapper generation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +198,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the resolved assembly references.</summary>
+        <value>The resolved assembly references.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +221,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fully qualified files on disk that correspond to the physical locations of the type libraries that were provided as input to this task.</summary>
+        <value>The fully qualified files on disk that correspond to the physical locations of the type libraries that were provided as input to this task.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,8 +244,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the paths to the modules that were found.</summary>
+        <value>The paths to the modules that were found.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,7 +262,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>If ExecuteAsTool is true, this must be set to the SDK tools path for the framework version being targeted.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,8 +280,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag specifying whether messages or warnings are logged. Default is <see langword="false" />, messages and warnings are logged.</summary>
+        <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,8 +298,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the cache file for COM component timestamps.</summary>
+        <value>The cache file for COM component timestamps.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,7 +316,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The project target framework version. Default is empty. which means there will be no filtering for the reference based on their target framework.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -324,8 +334,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the preferred target processor architecture, which is passed to the tlbimp.exe /machine flag after translation, for example x86, ia64, amd64 or msil.</summary>
+        <value>Returns the name of the preferred target processor architecture.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,9 +352,16 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type library file path to COM references.</summary>
+        <value>The type library file path to COM references.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property may contain item metadata. For more information, see the section "TypeLibFiles Item Metadata" in [ResolveComReference Task](../Topic/ResolveComReference%20Task.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeLibNames">
@@ -360,9 +377,16 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type library names to resolve.</summary>
+        <value>The type library names to resolve.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property may contain item metadata. For more information, see the section "TypeLibFiles Item Metadata" in [ResolveComReference Task](../Topic/ResolveComReference%20Task.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapperOutputDirectory">
@@ -378,8 +402,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the location on disk where the generated interop assembly is placed.</summary>
+        <value>The location on disk where the generated interop assembly is placed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

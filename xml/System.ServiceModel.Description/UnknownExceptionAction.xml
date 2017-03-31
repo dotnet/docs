@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how a durable service will handle an unknown exception.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, when a durable service is created, <xref:System.ServiceModel.Description.DurableServiceAttribute.UnknownExceptionAction%2A> is set to TerminateInstance.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AbortInstance">
@@ -32,7 +39,7 @@
         <ReturnType>System.ServiceModel.Description.UnknownExceptionAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The service will abruptly stop and leave existing state information in its persistence store. Any changes to instance state during the operation which threw the unknown exception will be lost.</summary>
       </Docs>
     </Member>
     <Member MemberName="TerminateInstance">
@@ -48,7 +55,7 @@
         <ReturnType>System.ServiceModel.Description.UnknownExceptionAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The service will close all channels and remove its state information from its persistence store.</summary>
       </Docs>
     </Member>
   </Members>

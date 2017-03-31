@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Activities.Configuration.WorkflowControlEndpointCollectionElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.Configuration.WorkflowControlEndpointCollectionElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

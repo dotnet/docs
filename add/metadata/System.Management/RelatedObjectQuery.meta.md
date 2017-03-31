@@ -1,89 +1,94 @@
 ---
 uid: System.Management.RelatedObjectQuery
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.ThisRole
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.RelationshipClass
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.IsSchemaQuery
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.RelatedQualifier
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.BuildQuery
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.#ctor
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.SourceObject
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.RelationshipQualifier
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.RelatedClass
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.ClassDefinitionsOnly
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.ParseQuery(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.#ctor(System.Boolean,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.#ctor(System.String,System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.RelatedRole
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.RelatedObjectQuery.#ctor(System.String)
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.RelatedObjectQuery.#ctor
+manager: "jillfra"
 ---

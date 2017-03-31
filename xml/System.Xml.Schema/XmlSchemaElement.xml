@@ -16,8 +16,32 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the <see langword="element" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class is the base class for all particle types and is used to describe an element in an XML document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  -   Do not use schemas from unknown or untrusted sources or locations. Doing so will compromise the security of your code.  
+> -   XML schemas (including inline schemas) are inherently vulnerable to denial of service attacks; do not accept them in untrusted scenarios.  
+> -   Schema validation error messages and exceptions may expose sensitive information about the content model or URI paths to the schema file. Be careful not to expose this information to untrusted callers.  
+  
+   
+  
+## Examples  
+ The following example creates the `element` element.  
+  
+ [!code-cpp[Classic WebData XmlSchemaElement Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic Webdata XmlSchemaElement Example/CPP/element.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaElement Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic Webdata XmlSchemaElement Example/CS/element.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaElement Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic Webdata XmlSchemaElement Example/VB/element.vb#1)]  
+  
+ The following XML file is used for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchemaElement Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic Webdata XmlSchemaElement Example/XML/example.xsd#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +60,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +90,29 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a <see langword="Block" /> derivation.</summary>
+        <value>The attribute used to block a type derivation. Default value is <see langword="XmlSchemaDerivationMethod.None" />.  
+  
+ Optional.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute can contain the following values:  
+  
+|Enum|Description|  
+|----------|-----------------|  
+|`None`|Use the derivation restriction defined by the `BlockDefault` property of the schema, if it exists.|  
+|`Empty`|There are no restrictions on replacements of this element.|  
+|`Substitution`|This element cannot be replaced by a type derived by Substitution.|  
+|`Extension`|This element cannot be replaced by a type derived by Extension.|  
+|`Restriction`|This element cannot be replaced by a type derived by Restriction.|  
+|`All`|`#all`. This element cannot be replaced by any type regardless of derivation method.|  
+  
+ This property does not prevent derivation, but prevents derivation from replacing the type in an instance. List and union values are not supported for the `block` property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BlockResolved">
@@ -94,9 +138,26 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the post-compilation value of the <see langword="Block" /> property.</summary>
+        <value>The post-compilation value of the <see langword="Block" /> property. The default is the <see langword="BlockDefault" /> value on the <see langword="schema" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value indicates how the type is enforced when `xsi:type` is used in the instance document. For example, if the value is restricted, only the specific defined type can be used, not types derived by restriction from the specific defined type.  
+  
+ This property can contain the values shown in the following table. The default is `None`. List and union derivation methods are not allowed on this property.  
+  
+|Enum|Description|  
+|----------|-----------------|  
+|`Empty`|There are no restrictions on replacements of this element.|  
+|`Substitution`|This element cannot be replaced by a type derived by Substitution.|  
+|`Extension`|This element cannot be replaced by a type derived by Extension.|  
+|`Restriction`|This element cannot be replaced by a type derived by Restriction.|  
+|`All`|`#all`. This element cannot be replaced by any type regardless of derivation method.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Constraints">
@@ -128,9 +189,16 @@
         <ReturnType>System.Xml.Schema.XmlSchemaObjectCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of constraints on the element.</summary>
+        <value>The collection of constraints.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns a collection of constraints on the element. Can be any of `XmlSchemaKey`, `XmlSchemaKeyref`, or `XmlSchemaUnique`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultValue">
@@ -159,9 +227,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the default value of the element if its content is a simple type or content of the element is <see langword="textOnly" />.</summary>
+        <value>The default value for the element. The default is a null reference.  
+  
+ Optional.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `fixed` and `default` attributes are mutually exclusive. If the element contains a simple type, this value must be a valid value of that type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementSchemaType">
@@ -187,9 +264,16 @@
         <ReturnType>System.Xml.Schema.XmlSchemaType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an <see cref="T:System.Xml.Schema.XmlSchemaType" /> object representing the type of the element based on the <see cref="P:System.Xml.Schema.XmlSchemaElement.SchemaType" /> or <see cref="P:System.Xml.Schema.XmlSchemaElement.SchemaTypeName" /> values of the element.</summary>
+        <value>An <see cref="T:System.Xml.Schema.XmlSchemaType" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is a post-schema-validation infoset property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementType">
@@ -218,9 +302,21 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a common language runtime (CLR) object based on the <see cref="T:System.Xml.Schema.XmlSchemaElement" /> or <see cref="T:System.Xml.Schema.XmlSchemaElement" /> of the element, which holds the post-compilation value of the <see langword="ElementType" /> property.</summary>
+        <value>The common language runtime object. The post-compilation value of the <see langword="ElementType" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object can be <xref:System.Xml.Schema.XmlSchemaDatatype> if the element has a built-in XML Schema type or <xref:System.Xml.Schema.XmlSchemaSimpleType> if the element has a user-defined type.  
+  
+ This property is a post-schema-validation infoset property.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaElement.ElementType%2A> property is obsolete in the 2.0 version of the .NET Framework and has been replaced by the <xref:System.Xml.Schema.XmlSchemaElement.ElementSchemaType%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Final">
@@ -249,9 +345,28 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see langword="Final" /> property to indicate that no further derivations are allowed.</summary>
+        <value>The <see langword="Final" /> property. The default is <see langword="XmlSchemaDerivationMethod.None" />.  
+  
+ Optional.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute can contain the values shown in the following table.  
+  
+|Enum|Description|  
+|----------|-----------------|  
+|`None`|Use the derivation restriction defined by the `FinalDefault` property of the schema, if it exists.|  
+|`Empty`|There are no restrictions on derivations of this element.|  
+|`Extension`|This element cannot be derived by Extension.|  
+|`Restriction`|This element cannot be derived by Restriction.|  
+|`All`|`#all`. This element cannot be derived by any derivation method.|  
+  
+ See also <xref:System.Xml.Schema.XmlSchemaElement>. `Substitution`, `List`, and `Union` derivation methods are not allowed for this property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FinalResolved">
@@ -277,9 +392,25 @@
         <ReturnType>System.Xml.Schema.XmlSchemaDerivationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the post-compilation value of the <see langword="Final" /> property.</summary>
+        <value>The post-compilation value of the <see langword="Final" /> property. Default value is the <see langword="FinalDefault" /> value on the <see langword="schema" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value indicates how the type is restricted when the type is extended through restriction. This property can contain the following values.  
+  
+|Enum|Description|  
+|----------|-----------------|  
+|`Empty`|There are no restrictions on derivations of this element.|  
+|`Extension`|This element cannot be derived by Extension.|  
+|`Restriction`|This element cannot be derived by Restriction.|  
+|`All`|`#all`. This element cannot be derived by any derivation method.|  
+  
+ Substitution, List, and Union derivation methods are not allowed for this property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FixedValue">
@@ -308,9 +439,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the fixed value.</summary>
+        <value>The fixed value that is predetermined and unchangeable. The default is a null reference.  
+  
+ Optional.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The content should be a simple type or `textOnly`. The `fixed` and `default` attributes are mutually exclusive.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Form">
@@ -339,9 +479,25 @@
         <ReturnType>System.Xml.Schema.XmlSchemaForm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the form for the element.</summary>
+        <value>The form for the element. The default is the <see cref="P:System.Xml.Schema.XmlSchema.ElementFormDefault" /> value.  
+  
+ Optional.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is the value of the `elementFormDefault` attribute for the `schema` element containing the element. The default is `Unqualified`.  
+  
+|Enum|Description|  
+|----------|-----------------|  
+|`Qualified`|Element must be qualified with the namespace prefix.|  
+|`Unqualified`|Element is not required to be qualified with the namespace prefix.|  
+  
+ The value cannot be set if the containing element is the `schema` element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAbstract">
@@ -370,8 +526,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets information to indicate if the element can be used in an instance document.</summary>
+        <value>If <see langword="true" />, the element cannot appear in the instance document. The default is <see langword="false" />.  
+  
+ Optional.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,9 +559,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets information that indicates if <see langword="xsi:nil" /> can occur in the instance data. Indicates if an explicit nil value can be assigned to the element.</summary>
+        <value>If nillable is <see langword="true" />, this enables an instance of the element to have the <see langword="nil" /> attribute set to <see langword="true" />. The <see langword="nil" /> attribute is defined as part of the XML Schema namespace for instances. The default is <see langword="false" />.  
+  
+ Optional.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This applies to element content and not the attributes of the element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -432,9 +599,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the element.</summary>
+        <value>The name of the element. The default is <see langword="String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name must be an NCName (no-colon name) as defined in the World Wide Web Consortium (W3C) XML Namespaces specification. `Name` and `RefName` attributes are mutually exclusive.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QualifiedName">
@@ -460,9 +634,16 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the actual qualified name for the given element.</summary>
+        <value>The qualified name of the element. The post-compilation value of the <see langword="QualifiedName" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xml.Schema.XmlSchemaElement.QualifiedName%2A> is the name that a `ref` attribute refers to. The qualified name consists of the NCName of the element. For example, element name = "NCName", and the prefix used to describe the `targetNamespace` of the schema. This property holds the post-compilation value of the `QualifiedName` property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefName">
@@ -488,9 +669,18 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the reference name of an element declared in this schema (or another schema indicated by the specified namespace).</summary>
+        <value>The reference name of the element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `RefName` must be a QName. The `RefName` can include a namespace prefix. If `RefName` attribute is present, all `complexType`, `simpleType`, `key`, `keyref`, `unique`, `nillable`, `default`, `fixed`, `form`, `block`, and `type` must be absent. If `RefName` is present, `minOccurs`, `maxOccurs`, and `id` are allowed. To declare an element using an existing element definition, use the `RefName` attribute to specify the existing element definition.  
+  
+ The value cannot be set if the containing element is the `schema` element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SchemaType">
@@ -519,9 +709,16 @@
         <ReturnType>System.Xml.Schema.XmlSchemaType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of the element. This can either be a complex type or a simple type.</summary>
+        <value>The type of the element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To declare an element using an existing `simpleType` or `complexType` definition, use the `SchemaType` property to specify the existing type. If `RefName` attribute is present, `complexType`, `simpleType`, `key`, `keyref`, and `unique` elements and `nillable`, `default`, `fixed`, `form`, `block`, and `SchemaType` attributes cannot be present.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SchemaTypeName">
@@ -547,8 +744,8 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of a built-in data type defined in this schema or another schema indicated by the specified namespace.</summary>
+        <value>The name of the built-in data type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -575,9 +772,20 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of an element that is being substituted by this element.</summary>
+        <value>The qualified name of an element that is being substituted by this element.  
+  
+ Optional.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This element must have the same type or a type derived from the type of the specified element. This value must be a QName.  
+  
+ The value cannot be set if the containing element is the `schema` element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

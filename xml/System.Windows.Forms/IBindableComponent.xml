@@ -15,8 +15,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables a non-control component to emulate the data-binding behavior of a Windows Forms control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.Binding> contains a reference to its <xref:System.Windows.Forms.IBindableComponent> owner through the <xref:System.Windows.Forms.Binding.BindableComponent%2A> property.  
+  
+ The <xref:System.Windows.Forms.Control> class implements this interface, so if your bindable component inherits from <xref:System.Windows.Forms.Control>, you do not need to implement this interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BindingContext">
@@ -32,8 +41,8 @@
         <ReturnType>System.Windows.Forms.BindingContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the collection of currency managers for the <see cref="T:System.Windows.Forms.IBindableComponent" />.</summary>
+        <value>The collection of <see cref="T:System.Windows.Forms.BindingManagerBase" /> objects for this <see cref="T:System.Windows.Forms.IBindableComponent" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +59,8 @@
         <ReturnType>System.Windows.Forms.ControlBindingsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of data-binding objects for this <see cref="T:System.Windows.Forms.IBindableComponent" />.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ControlBindingsCollection" /> for this <see cref="T:System.Windows.Forms.IBindableComponent" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

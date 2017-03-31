@@ -1,34 +1,55 @@
 ---
 uid: System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.#ctor(System.Collections.Specialized.NameValueCollection)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.CommitWorkBatch(System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.CommitWorkBatchCallback)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.EnableRetries
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.Start
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.OnStopped
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

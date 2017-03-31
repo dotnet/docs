@@ -1,4 +1,6 @@
 ---
 uid: System.Reflection.Emit.PEFileKinds
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

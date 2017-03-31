@@ -1,9 +1,13 @@
 ---
 uid: System.Web.UI.WebControls.EntityDataSourceContextDisposingEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.UI.WebControls.EntityDataSourceContextDisposingEventArgs.Context
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

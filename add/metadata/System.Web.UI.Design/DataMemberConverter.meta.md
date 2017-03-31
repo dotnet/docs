@@ -1,34 +1,61 @@
 ---
 uid: System.Web.UI.Design.DataMemberConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.DataMemberConverter.GetStandardValuesExclusive
 ---
 
 ---
 uid: System.Web.UI.Design.DataMemberConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.DataMemberConverter.ConvertFrom
+---
+
+---
+uid: System.Web.UI.Design.DataMemberConverter.CanConvertFrom
+---
+
+---
+uid: System.Web.UI.Design.DataMemberConverter.GetStandardValuesSupported
 ---
 
 ---
 uid: System.Web.UI.Design.DataMemberConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataMemberConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataMemberConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataMemberConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.DataMemberConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.DataMemberConverter.GetStandardValues
 ---

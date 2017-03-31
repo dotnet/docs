@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="sender">The source for the event.</param>
+    <param name="e">The data for the event.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Controls.DataGrid.InitializingNewItem" /> event of a <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

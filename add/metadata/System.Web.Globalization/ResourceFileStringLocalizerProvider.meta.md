@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Globalization.ResourceFileStringLocalizerProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Globalization.ResourceFileStringLocalizerProvider.GetLocalizedString(System.Globalization.CultureInfo,System.String,System.Object[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Globalization.ResourceFileStringLocalizerProvider.ResourceFileName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Globalization.ResourceFileStringLocalizerProvider.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Windows.Forms.Form" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.FormCollection> is used by the <xref:System.Windows.Forms.Application> object to list the currently open forms in an application through the <xref:System.Windows.Forms.Application.OpenForms%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FormCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +53,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The location of the <see cref="T:System.Windows.Forms.Form" /> within the collection.</param>
+        <summary>Gets or sets an element in the collection by its numeric index.</summary>
+        <value>The form at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +75,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The name of the <see cref="T:System.Windows.Forms.Form" />.</param>
+        <summary>Gets or sets an element in the collection by the name of the associated <see cref="T:System.Windows.Forms.Form" /> object.</summary>
+        <value>The form with the specified name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

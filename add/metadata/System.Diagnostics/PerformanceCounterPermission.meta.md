@@ -1,29 +1,48 @@
 ---
 uid: System.Diagnostics.PerformanceCounterPermission
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounterPermission.#ctor(System.Security.Permissions.PermissionState)
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounterPermission.#ctor(System.Diagnostics.PerformanceCounterPermissionAccess,System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounterPermission.PermissionEntries
-internalonly: False
----
-
----
-uid: System.Diagnostics.PerformanceCounterPermission.#ctor(System.Diagnostics.PerformanceCounterPermissionEntry[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.PerformanceCounterPermission.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterPermission.#ctor(System.Security.Permissions.PermissionState)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterPermission.#ctor(System.Diagnostics.PerformanceCounterPermissionAccess,System.String,System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterPermission.PermissionEntries
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterPermission.#ctor(System.Diagnostics.PerformanceCounterPermissionEntry[])
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterPermission.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

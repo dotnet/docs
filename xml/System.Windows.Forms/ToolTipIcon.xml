@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a set of standardized icons that can be associated with a ToolTip.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ToolTipIcon> enumeration defines a small set of standardized icons that can be displayed as part of a ToolTip. This is accomplished by setting the <xref:System.Windows.Forms.ToolTip.ToolTipIcon%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.ToolTip> class to one of the following values.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Error">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.ToolTipIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An error icon</summary>
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.ToolTipIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An information icon.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.ToolTipIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Not a standard icon.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.ToolTipIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A warning icon.</summary>
       </Docs>
     </Member>
   </Members>

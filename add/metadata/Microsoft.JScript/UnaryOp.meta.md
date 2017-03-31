@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.UnaryOp
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.UnaryOp.operand
-internalonly: False
+ms.author: "mikejo"
 ---

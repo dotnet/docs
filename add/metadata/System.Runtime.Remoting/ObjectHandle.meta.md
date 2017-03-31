@@ -1,19 +1,19 @@
 ---
 uid: System.Runtime.Remoting.ObjectHandle
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ObjectHandle.InitializeLifetimeService
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ObjectHandle.#ctor(System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ObjectHandle.Unwrap
-internalonly: False
+manager: "ghogen"
 ---

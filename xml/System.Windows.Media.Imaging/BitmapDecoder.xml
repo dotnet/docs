@@ -11,8 +11,32 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a container for bitmap frames. Each bitmap frame is a <see cref="T:System.Windows.Media.Imaging.BitmapSource" />. This abstract class provides a base set of functionality for all derived decoder objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapDecoder> is not a <xref:System.Windows.Media.Imaging.BitmapFrame> itself; rather, it is a container for <xref:System.Windows.Media.Imaging.BitmapFrame> objects. Each <xref:System.Windows.Media.Imaging.BitmapFrame> in the container can potentially have different attributes, including different sizes, resolutions, or palettes.  
+  
+ Unless a specific codec is selected, [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] uses automatic run-time discovery to identify the format of an image and match it with the appropriate codec. This discovery process allows a codec developed by an [!INCLUDE[TLA#tla_isv](~/includes/tlasharptla-isv-md.md)] to be automatically discoverable by the system. To select a specific codec, the derived <xref:System.Windows.Media.Imaging.BitmapDecoder> or <xref:System.Windows.Media.Imaging.BitmapEncoder>, such as the <xref:System.Windows.Media.Imaging.TiffBitmapDecoder> class, should be used.  
+  
+ [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] and [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] are the only implemented image formats that support multiple frames.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Media.Imaging.BitmapDecoder.Create%28System.Uri%2CSystem.Windows.Media.Imaging.BitmapCreateOptions%2CSystem.Windows.Media.Imaging.BitmapCacheOption%29> method to create a decoder for a given image. The first <xref:System.Windows.Media.Imaging.BitmapFrame> of the image is used as the source of an <xref:System.Windows.Controls.Image> control.  
+  
+ [!code-csharp[imagingsnippetgallery_procedural_snip#BitmapDecoderCreate](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/BitmapDecoderExample.cs#bitmapdecodercreate)]
+ [!code-vb[imagingsnippetgallery_procedural_snip#BitmapDecoderCreate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/BitmapDecoderExample.vb#bitmapdecodercreate)]  
+  
+ The following code example demonstrates how to use the built in <xref:System.Windows.Media.Imaging.TiffBitmapDecoder> to open and decode a [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] bitmap. The resulting <xref:System.Windows.Media.Imaging.BitmapSource> is used as the <xref:System.Windows.Controls.Image.Source%2A> of an <xref:System.Windows.Controls.Image> element.  
+  
+ [!code-csharp[bitmapframeexample#4](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#4)]
+ [!code-vb[bitmapframeexample#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +50,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +72,24 @@
         <ReturnType>System.Windows.Media.Imaging.BitmapCodecInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets information that describes this codec.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapCodecInfo" />. This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.Imaging.BitmapCodecInfo> implementation is required for every codec.  
+  
+   
+  
+## Examples  
+ The following code example shows how to read information from a <xref:System.Windows.Media.Imaging.BitmapCodecInfo> object and send it to a string.  
+  
+ [!code-csharp[bitmapframeexample#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#3)]
+ [!code-vb[bitmapframeexample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorContexts">
@@ -66,8 +105,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that represents the color profile associated with a bitmap, if one is defined.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.ColorContext" /> that represents the embedded color profile of the bitmap. If no color profile has been defined, this property returns <see langword="null" />. This property has no default value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,12 +128,27 @@
         <Parameter Name="cacheOption" Type="System.Windows.Media.Imaging.BitmapCacheOption" />
       </Parameters>
       <Docs>
-        <param name="bitmapStream">To be added.</param>
-        <param name="createOptions">To be added.</param>
-        <param name="cacheOption">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bitmapStream">The file stream that identifies the bitmap to decode.</param>
+        <param name="createOptions">Identifies the <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> for this decoder.</param>
+        <param name="cacheOption">Identifies the <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" /> for this decoder.</param>
+        <summary>Creates a <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> from a <see cref="T:System.IO.Stream" /> by using the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> and <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> from a <see cref="T:System.IO.Stream" /> by using the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> and <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option if you wish to close the `bitmapStream` after the decoder is created. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains access to the stream until the bitmap is needed, and cleanup is handled by the garbage collector.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Media.Imaging.BitmapDecoder.Create%2A> method to create a decoder for a given image. The first <xref:System.Windows.Media.Imaging.BitmapFrame> of the image is used as the source of an <xref:System.Windows.Controls.Image> control.  
+  
+ [!code-csharp[imagingsnippetgallery_procedural_snip#BitmapDecoderCreateStream](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/BitmapDecoderExample.cs#bitmapdecodercreatestream)]
+ [!code-vb[imagingsnippetgallery_procedural_snip#BitmapDecoderCreateStream](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/BitmapDecoderExample.vb#bitmapdecodercreatestream)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -115,12 +169,24 @@
         <Parameter Name="cacheOption" Type="System.Windows.Media.Imaging.BitmapCacheOption" />
       </Parameters>
       <Docs>
-        <param name="bitmapUri">To be added.</param>
-        <param name="createOptions">To be added.</param>
-        <param name="cacheOption">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bitmapUri">The <see cref="T:System.Uri" /> of the bitmap to decode.</param>
+        <param name="createOptions">Identifies the <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> for this decoder.</param>
+        <param name="cacheOption">Identifies the <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" /> for this decoder.</param>
+        <summary>Creates a <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> from a <see cref="T:System.Uri" /> by using the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> and <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> from a <see cref="T:System.Uri" /> by using the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" /> and <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Media.Imaging.BitmapDecoder.Create%28System.Uri%2CSystem.Windows.Media.Imaging.BitmapCreateOptions%2CSystem.Windows.Media.Imaging.BitmapCacheOption%29> method to create a decoder for a given image. The first <xref:System.Windows.Media.Imaging.BitmapFrame> of the image is used as the source of an <xref:System.Windows.Controls.Image> control.  
+  
+ [!code-csharp[imagingsnippetgallery_procedural_snip#BitmapDecoderCreate](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/BitmapDecoderExample.cs#bitmapdecodercreate)]
+ [!code-vb[imagingsnippetgallery_procedural_snip#BitmapDecoderCreate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/BitmapDecoderExample.vb#bitmapdecodercreate)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="bitmapUri" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.FileFormatException">The <paramref name="bitmapUri" /> specifies a class ID of an unsupported format type.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -142,13 +208,20 @@
         <Parameter Name="uriCachePolicy" Type="System.Net.Cache.RequestCachePolicy" />
       </Parameters>
       <Docs>
-        <param name="bitmapUri">To be added.</param>
-        <param name="createOptions">To be added.</param>
-        <param name="cacheOption">To be added.</param>
-        <param name="uriCachePolicy">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bitmapUri">The location of the bitmap from which the <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> is created.</param>
+        <param name="createOptions">The options that are used to create this <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" />.</param>
+        <param name="cacheOption">The cache option that is used to create this <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" />.</param>
+        <param name="uriCachePolicy">The caching requirements for this <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" />.</param>
+        <summary>Creates a <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> from a <see cref="T:System.Uri" /> by using the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" />, <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" /> and <see cref="T:System.Net.Cache.RequestCachePolicy" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> from a <see cref="T:System.Uri" /> by using the specified <see cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" />, <see cref="T:System.Windows.Media.Imaging.BitmapCacheOption" /> and <see cref="T:System.Net.Cache.RequestCachePolicy" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapDecoder.Create%28System.Uri%2CSystem.Windows.Media.Imaging.BitmapCreateOptions%2CSystem.Windows.Media.Imaging.BitmapCacheOption%2CSystem.Net.Cache.RequestCachePolicy%29> is introduced in the .NET Framework version 3.5.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInPlaceBitmapMetadataWriter">
@@ -165,9 +238,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates an instance of <see cref="T:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter" />, which can be used to update the metadata of a bitmap.</summary>
+        <returns>An instance of <see cref="T:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create an <xref:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter> in order to update the [metadata](GTMT) associated with a [bitmap](GTMT) image.  
+  
+ [!code-cpp[bitmapmetadata#SetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#setquery)]
+ [!code-csharp[bitmapmetadata#SetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#setquery)]
+ [!code-vb[bitmapmetadata#SetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#setquery)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The file original image stream is read only.</exception>
+        <exception cref="T:System.NotImplementedException">The decoder is not a built in decoder.</exception>
       </Docs>
     </Member>
     <Member MemberName="DownloadCompleted">
@@ -183,8 +269,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> has finished downloading bitmap content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event may not be raised for all types of bitmap content.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DownloadFailed">
@@ -200,8 +293,18 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Media.ExceptionEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when bitmap content failed to download.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_DownloadFailed"></a>   
+## XAML Text Usage  
+ \<*object* DownloadFailed="*EventHandler*" .../>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DownloadProgress">
@@ -217,8 +320,19 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Media.Imaging.DownloadProgressEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> has made progress downloading bitmap content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event may not be raised for all types of bitmap content.  
+  
+<a name="xamlTextUsage_DownloadProgress"></a>   
+## XAML Text Usage  
+ \<*object* DownloadProgress="*EventHandler*" .../>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -243,8 +357,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Frees resources and performs other cleanup operations before the <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> is reclaimed by garbage collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action:<see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Frames">
@@ -260,9 +384,26 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.Imaging.BitmapFrame&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the content of an individual frame within a bitmap.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapFrame" />. This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] and [!INCLUDE[TLA#tla_gif](~/includes/tlasharptla-gif-md.md)] images support more than one frame.  
+  
+ Any <xref:System.Windows.Media.Imaging.BitmapFrame> objects returned by this property are frozen.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a <xref:System.Windows.Media.Imaging.BitmapFrame> as a <xref:System.Windows.Media.Imaging.BitmapSource>.  
+  
+ [!code-csharp[bitmapframeexample#4](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#4)]
+ [!code-vb[bitmapframeexample#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDownloading">
@@ -278,8 +419,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates if the decoder is currently downloading content.</summary>
+        <value>
+          <see langword="true" /> if the decoder is downloading content; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,9 +443,16 @@
         <ReturnType>System.Windows.Media.Imaging.BitmapMetadata</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an instance of <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" /> that represents the global metadata associated with this bitmap, if metadata is defined.</summary>
+        <value>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapMetadata" /> that represents global metadata associated with a bitmap. If no metadata is defined, this property returns <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ None of the built-in derived <xref:System.Windows.Media.Imaging.BitmapDecoder> classes support global metadata. Metadata should be added to the individual frames of an image.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Palette">
@@ -324,8 +473,8 @@
         <ReturnType>System.Windows.Media.Imaging.BitmapPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Media.Imaging.BitmapPalette" /> associated with this decoder.</summary>
+        <value>The <see cref="T:System.Windows.Media.Imaging.BitmapPalette" /> associated with this decoder. If the bitmap has no palette, <see langword="null" /> is returned. This property has no default value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,9 +496,16 @@
         <ReturnType>System.Windows.Media.Imaging.BitmapSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that represents the global preview of this bitmap, if one is defined.</summary>
+        <value>A <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that represents the global preview of the bitmap. If no preview is defined, this property returns <see langword="null" />. This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Imaging.BitmapSource> returned by this property is frozen.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Thumbnail">
@@ -370,9 +526,18 @@
         <ReturnType>System.Windows.Media.Imaging.BitmapSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that represents the thumbnail of the bitmap, if one is defined.</summary>
+        <value>A <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that represents a thumbnail of the bitmap. If no thumbnail is defined, this property returns <see langword="null" />. This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ None of the native formats support global thumbnails. [!INCLUDE[TLA#tla_jpegorg](~/includes/tlasharptla-jpegorg-md.md)], [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)], and [!INCLUDE[TLA#tla_wdp](~/includes/tlasharptla-wdp-md.md)] support frame-level thumbnails that can be accessed using the <xref:System.Windows.Media.Imaging.BitmapFrame.Thumbnail%2A> property.  
+  
+ The <xref:System.Windows.Media.Imaging.BitmapSource> returned by this property is frozen.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -389,8 +554,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts the current value of a <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" /> to a <see cref="T:System.String" />.</summary>
+        <returns>A string representation of the <see cref="T:System.Windows.Media.Imaging.BitmapDecoder" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

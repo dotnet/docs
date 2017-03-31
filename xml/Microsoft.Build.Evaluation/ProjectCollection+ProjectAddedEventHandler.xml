@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Handler to receive which project got added to the project collection.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

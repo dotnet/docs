@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides information for the <see cref="E:System.Windows.Controls.Validation.Error" /> attached event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Windows.Controls.ValidationErrorEventAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the error is a new error or an existing error that has now been cleared.</summary>
+        <value>A <see cref="T:System.Windows.Controls.ValidationErrorEventAction" /> value that indicates whether the error is a new error or an existing error that has now been cleared.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Windows.Controls.ValidationError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the error that caused this <see cref="E:System.Windows.Controls.Validation.Error" /> event.</summary>
+        <value>The <see cref="T:System.Windows.Controls.ValidationError" /> object that caused this <see cref="E:System.Windows.Controls.Validation.Error" /> event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +68,9 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">To be added.</param>
-        <param name="genericTarget">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="genericHandler">The generic handler to call in a type-specific way.</param>
+        <param name="genericTarget">The object to invoke the handler on.</param>
+        <summary>Invokes the specified handler in a type-specific way on the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

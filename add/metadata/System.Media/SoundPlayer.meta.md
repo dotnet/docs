@@ -1,114 +1,167 @@
 ---
 uid: System.Media.SoundPlayer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Media.SoundPlayer.OnStreamChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Media.SoundPlayer.Play
-internalonly: False
----
-
----
-uid: System.Media.SoundPlayer.LoadTimeout
-internalonly: False
----
-
----
-uid: System.Media.SoundPlayer.#ctor(System.IO.Stream)
-internalonly: False
----
-
----
-uid: System.Media.SoundPlayer.IsLoadCompleted
-internalonly: False
----
-
----
-uid: System.Media.SoundPlayer.Tag
-internalonly: False
----
-
----
-uid: System.Media.SoundPlayer.OnSoundLocationChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Media.SoundPlayer.StreamChanged
-internalonly: False
----
-
----
-uid: System.Media.SoundPlayer.PlayLooping
-internalonly: False
----
-
----
-uid: System.Media.SoundPlayer.Load
-internalonly: False
----
-
----
-uid: System.Media.SoundPlayer.LoadAsync
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Media.SoundPlayer.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Media.SoundPlayer.Play
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Media.SoundPlayer.LoadTimeout
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Media.SoundPlayer.#ctor(System.IO.Stream)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Media.SoundPlayer.IsLoadCompleted
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Media.SoundPlayer.Tag
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Media.SoundPlayer.OnSoundLocationChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Media.SoundPlayer.StreamChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Media.SoundPlayer.PlayLooping
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Media.SoundPlayer.Load
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Media.SoundPlayer.LoadAsync
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Media.SoundPlayer.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Media.SoundPlayer.PlaySync
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Media.SoundPlayer.Stream
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Media.SoundPlayer.#ctor(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Media.SoundPlayer.SoundLocation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Media.SoundPlayer.SoundLocationChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Media.SoundPlayer.LoadCompleted
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Media.SoundPlayer.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Media.SoundPlayer.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Media.SoundPlayer.OnLoadCompleted(System.ComponentModel.AsyncCompletedEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Media.SoundPlayer.Stop
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

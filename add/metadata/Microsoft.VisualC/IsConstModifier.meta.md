@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.VisualC.IsConstModifier
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.IsConstModifier.#ctor
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

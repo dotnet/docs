@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="serviceType">To be added.</param>
-    <param name="serviceInstance">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="serviceType">The type of the service to subscribe to.</param>
+    <param name="serviceInstance">The instance of the service to subscribe to.</param>
+    <summary>Represents a delegate that is a callback for service subscriptions.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

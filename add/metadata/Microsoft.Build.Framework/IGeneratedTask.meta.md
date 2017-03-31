@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Framework.IGeneratedTask
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.IGeneratedTask.SetPropertyValue(Microsoft.Build.Framework.TaskPropertyInfo,System.Object)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.IGeneratedTask.GetPropertyValue(Microsoft.Build.Framework.TaskPropertyInfo)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Reflection.ResourceLocation
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

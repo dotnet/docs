@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods for converting <see cref="T:System.Web.Configuration.MachineKeyValidation" /> objects to and from strings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](../Topic/SQL%20Server%20Programming%20and%20Host%20Protection%20Attributes.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.MachineKeyValidationConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,12 +57,28 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ctx">To be added.</param>
-        <param name="ci">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="ctx">This parameter is not used.</param>
+        <param name="ci">This parameter is not used.</param>
+        <param name="data">The string to convert.</param>
+        <summary>Converts a string to the equivalent <see cref="T:System.Web.Configuration.MachineKeyValidation" /> value.</summary>
+        <returns>The equivalent <see cref="T:System.Web.Configuration.MachineKeyValidation" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method will throw an <xref:System.ArgumentException> exception if the `data` parameter does not refer to one of the following strings:  
+  
+-   SHA1  
+  
+-   MD5  
+  
+-   3DES  
+  
+-   AES  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The data is not one of the expected strings.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -75,13 +100,15 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="ctx">To be added.</param>
-        <param name="ci">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ctx">This parameter is not used.</param>
+        <param name="ci">This parameter is not used.</param>
+        <param name="value">The <see cref="T:System.Web.Configuration.MachineKeyValidation" /> to be converted.</param>
+        <param name="type">This parameter is not used.</param>
+        <summary>Converts a <see cref="T:System.Web.Configuration.MachineKeyValidation" /> value to the string representation of that value.</summary>
+        <returns>A string representing a <see cref="T:System.Web.Configuration.MachineKeyValidation" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="value" /> parameter is not one of the expected enumerated values.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="value" /> parameter is not a <see cref="T:System.Web.Configuration.MachineKeyValidation" /> object.</exception>
       </Docs>
     </Member>
   </Members>

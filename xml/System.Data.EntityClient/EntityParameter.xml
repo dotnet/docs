@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a parameter used in EntityCommand.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No content here will be updated; please do not add material here.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +51,9 @@
         <Parameter Name="dbType" Type="System.Data.DbType" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <param name="dbType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterName">The name of the parameter.</param>
+        <param name="dbType">One of the <see cref="T:System.Data.DbType" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the specified parameter name and data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,10 +72,10 @@
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <param name="dbType">To be added.</param>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterName">The name of the parameter.</param>
+        <param name="dbType">One of the <see cref="T:System.Data.DbType" /> values.</param>
+        <param name="size">The size of the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the specified parameter name, data type and size.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,11 +95,11 @@
         <Parameter Name="sourceColumn" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <param name="dbType">To be added.</param>
-        <param name="size">To be added.</param>
-        <param name="sourceColumn">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterName">The name of the parameter.</param>
+        <param name="dbType">One of the <see cref="T:System.Data.DbType" /> values.</param>
+        <param name="size">The size of the parameter.</param>
+        <param name="sourceColumn">The name of the source column.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the specified properties.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,17 +125,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <param name="dbType">To be added.</param>
-        <param name="size">To be added.</param>
-        <param name="direction">To be added.</param>
-        <param name="isNullable">To be added.</param>
-        <param name="precision">To be added.</param>
-        <param name="scale">To be added.</param>
-        <param name="sourceColumn">To be added.</param>
-        <param name="sourceVersion">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterName">The name of the parameter.</param>
+        <param name="dbType">One of the <see cref="T:System.Data.DbType" /> values.</param>
+        <param name="size">The size of the parameter.</param>
+        <param name="direction">One of the <see cref="T:System.Data.ParameterDirection" /> values.</param>
+        <param name="isNullable">
+          <see langword="true" /> to indicate that the parameter accepts null values; otherwise, <see langword="false" />.</param>
+        <param name="precision">The number of digits used to represent the value.</param>
+        <param name="scale">The number of decimal places to which value is resolved.</param>
+        <param name="sourceColumn">The name of the source column.</param>
+        <param name="sourceVersion">One of the <see cref="T:System.Data.DataRowVersion" /> values.</param>
+        <param name="value">The value of the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the specified properties.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,8 +153,8 @@
         <ReturnType>System.Data.DbType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Data.DbType" /> of the parameter.</summary>
+        <value>One of the <see cref="T:System.Data.DbType" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,8 +176,8 @@
         <ReturnType>System.Data.ParameterDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the direction of the parameter.</summary>
+        <value>One of the <see cref="T:System.Data.ParameterDirection" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +194,16 @@
         <ReturnType>System.Data.Metadata.Edm.EdmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of the parameter, expressed as an EdmType.</summary>
+        <value>The type of the parameter, expressed as an EdmType.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ May be null (which is what it will be if unset). This means that the DbType contains all the type information. Non-null values must not contradict DbType (only restate or specialize).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNullable">
@@ -204,8 +219,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the parameter accepts null values.</summary>
+        <value>
+          <see langword="true" /> if null values are accepted; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,8 +238,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the entity parameter.</summary>
+        <value>The name of the entity parameter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,8 +256,8 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the number of digits used to represent the <see cref="P:System.Data.EntityClient.EntityParameter.Value" /> property.</summary>
+        <value>The number of digits used to represent the value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,7 +275,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resets the type associated with the <see cref="T:System.Data.EntityClient.EntityParameter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,8 +292,8 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the number of decimal places to which <see cref="P:System.Data.EntityClient.EntityParameter.Value" /> is resolved.</summary>
+        <value>The number of decimal places to which value is resolved.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,8 +310,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum size of the data within the column.</summary>
+        <value>The maximum size of the data within the column.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,8 +328,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the source column mapped to the <see cref="T:System.Data.DataSet" /> and used for loading or returning the <see cref="P:System.Data.EntityClient.EntityParameter.Value" />.</summary>
+        <value>The name of the source column mapped to the dataset and used for loading or returning the value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,8 +346,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether source column is nullable.</summary>
+        <value>
+          <see langword="true" /> if source column is nullable; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,8 +365,8 @@
         <ReturnType>System.Data.DataRowVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Data.DataRowVersion" /> to use when loading the value.</summary>
+        <value>One of the <see cref="T:System.Data.DataRowVersion" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -367,8 +384,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string representation of the parameter.</summary>
+        <returns>A string representation of the parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,8 +402,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the parameter.</summary>
+        <value>The value of the parameter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

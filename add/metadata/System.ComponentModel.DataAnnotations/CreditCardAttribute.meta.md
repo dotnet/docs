@@ -1,14 +1,17 @@
 ---
 uid: System.ComponentModel.DataAnnotations.CreditCardAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.CreditCardAttribute.IsValid(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.CreditCardAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

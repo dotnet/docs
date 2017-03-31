@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.IDataSourceViewSchemaAccessor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDataSourceViewSchemaAccessor.DataSourceViewSchema
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Common.CommandTrees.DbModificationClause
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

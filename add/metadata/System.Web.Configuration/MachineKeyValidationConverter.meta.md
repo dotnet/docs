@@ -1,19 +1,31 @@
 ---
 uid: System.Web.Configuration.MachineKeyValidationConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.MachineKeyValidationConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.MachineKeyValidationConverter.ConvertTo
+---
+
+---
+uid: System.Web.Configuration.MachineKeyValidationConverter.ConvertFrom
 ---
 
 ---
 uid: System.Web.Configuration.MachineKeyValidationConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.MachineKeyValidationConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

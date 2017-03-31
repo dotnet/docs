@@ -1,4 +1,6 @@
 ---
 uid: System.DirectoryServices.Protocols.DsmlAuthResponse
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

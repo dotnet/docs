@@ -1,4 +1,4 @@
 ---
 uid: System.Web.Caching.CacheItemUpdateReason
-internalonly: False
+manager: "wpickett"
 ---

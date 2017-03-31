@@ -18,9 +18,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="sender">A reference to the Web service proxy.</param>
+    <param name="e">An <see cref="T:System.Web.Services.Protocols.InvokeCompletedEventArgs" /> containing the results of the method invocation.</param>
+    <summary>Represents an event handler that accepts the results of asynchronously invoked Web methods. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

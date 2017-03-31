@@ -1,19 +1,19 @@
 ---
 uid: System.Runtime.Serialization.Formatters.InternalRM
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.InternalRM.SoapCheckEnabled
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.InternalRM.InfoSoap(System.Object[])
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.InternalRM.#ctor
-internalonly: False
+manager: "ghogen"
 ---

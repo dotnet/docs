@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.IParserAccessor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

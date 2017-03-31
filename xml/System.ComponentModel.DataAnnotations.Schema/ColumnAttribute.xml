@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the database column that a property is mapped to.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.Schema.ColumnAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +63,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the column the property is mapped to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.Schema.ColumnAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +86,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the column the property is mapped to.</summary>
+        <value>The name of the column the property is mapped to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +109,29 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the zero-based order of the column the property is mapped to.</summary>
+        <value>The order of the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The specified order is relative to the order values specified on other properties in the class. For example, given the following definition, the column `Line1` appears before `Line2`, and `Line2` appears before `Country`.  
+  
+```  
+public class Address  
+{  
+[Column(Order = 1)]  
+public string Line1 { get; set; }  
+[Column(Order = 4)]  
+public string Line2 { get; set; }  
+[Column(Order = 17)]  
+public string Country { get; set; }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -132,8 +152,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the database provider specific data type of the column the property is mapped to.</summary>
+        <value>The database provider specific data type of the column the property is mapped to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

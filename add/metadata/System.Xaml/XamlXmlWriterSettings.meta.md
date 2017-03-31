@@ -1,24 +1,24 @@
 ---
 uid: System.Xaml.XamlXmlWriterSettings
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriterSettings.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriterSettings.CloseOutput
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriterSettings.AssumeValidInput
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriterSettings.Copy
-internalonly: False
+manager: "martinek"
 ---

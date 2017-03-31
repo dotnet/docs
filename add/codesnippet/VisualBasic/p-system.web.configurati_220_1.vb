@@ -1,1 +1,0 @@
-ruleSetting.MinInstances = 1

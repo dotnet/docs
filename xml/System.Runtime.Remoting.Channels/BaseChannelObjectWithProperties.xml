@@ -21,8 +21,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a base implementation of a channel object that exposes a dictionary interface to its properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties> is the base class for <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties> and <xref:System.Runtime.Remoting.Channels.BaseChannelSinkWithProperties>.  
+  
+ <xref:System.Runtime.Remoting.Channels.BaseChannelWithProperties> and <xref:System.Runtime.Remoting.Channels.BaseChannelSinkWithProperties> can be used as the base classes for channels and channel sinks that provide named properties.  
+  
+ <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties> handles the complex task of asking a channel object for its properties.  
+  
+ This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+  
+   
+  
+## Examples  
+ [!code-cpp[CommonTransportKeys#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CommonTransportKeys/CPP/commontransportkeys.cpp#1)]
+ [!code-csharp[CommonTransportKeys#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CommonTransportKeys/CS/commontransportkeys.cs#1)]
+ [!code-vb[CommonTransportKeys#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CommonTransportKeys/VB/commontransportkeys.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties" />, you must override the <see cref="P:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.Keys" /> property and the <see cref="P:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.Item(System.Object)" /> property.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,8 +61,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[CommonTransportKeys#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CommonTransportKeys/CPP/commontransportkeys.cpp#1)]
+ [!code-csharp[CommonTransportKeys#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CommonTransportKeys/CS/commontransportkeys.cs#1)]
+ [!code-vb[CommonTransportKeys#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CommonTransportKeys/VB/commontransportkeys.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -59,10 +92,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The key that is associated with the object in the <c>value</c> parameter.</param>
+        <param name="value">The value to add.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method must not be implemented because it does not apply to the way <xref:System.Collections.IDictionary> is being used in this case, and because <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsFixedSize%2A> returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The method is called.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -80,8 +121,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Throws a <see cref="T:System.NotSupportedException" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method must not be implemented because it does not apply to the way <xref:System.Collections.IDictionary> is being used in this case, and because <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsFixedSize%2A> returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The method is called.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -101,9 +150,10 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key of the property to look for.</param>
+        <summary>Returns a value that indicates whether the channel object contains a property that is associated with the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the channel object contains a property associated with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,10 +175,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array to copy the properties to.</param>
+        <param name="index">The index at which to begin copying.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The method is called.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -145,8 +196,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of properties associated with the channel object.</summary>
+        <value>The number of properties associated with the channel object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,8 +216,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.Collections.IDictionaryEnumerator" /> that enumerates over all the properties associated with the channel object.</summary>
+        <returns>A <see cref="T:System.Collections.IDictionaryEnumerator" /> that enumerates over all the properties associated with the channel object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,9 +235,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the number of properties that can be entered into the channel object is fixed.</summary>
+        <value>
+          <see langword="true" /> if the number of properties that can be entered into the channel object is fixed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current implementation of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsFixedSize%2A> always returns `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -203,9 +262,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the collection of properties in the channel object is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection of properties in the channel object is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current implementation of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsReadOnly%2A> always returns `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -222,9 +289,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the dictionary of channel object properties is synchronized.</summary>
+        <value>
+          <see langword="true" /> if the dictionary of channel object properties is synchronized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current implementation of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsSynchronized%2A> always returns `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -244,10 +319,14 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The key of the property to get or set.</param>
+        <summary>When overridden in a derived class, gets or sets the property that is associated with the specified key.</summary>
+        <value>The property that is associated with the specified key.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">The property is accessed.</exception>
+        <block subset="none" type="overrides">
+          <para>It is necessary to implement this property for a derived channel sink to function.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -264,9 +343,12 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a <see cref="T:System.Collections.ICollection" /> of keys that the channel object properties are associated with.</summary>
+        <value>A <see cref="T:System.Collections.ICollection" /> of keys that the channel object properties are associated with.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>It is necessary to implement this property for a derived channel sink to function.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -283,9 +365,18 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Collections.IDictionary" /> of the channel properties associated with the channel object.</summary>
+        <value>A <see cref="T:System.Collections.IDictionary" /> of the channel properties associated with the channel object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Channels properties are used to configure the channel at run time.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -305,9 +396,17 @@
         <Parameter Name="key" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The key of the object to be removed.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method must not be implemented because it does not apply to the way <xref:System.Collections.IDictionary> is being used in this case, and because <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.IsFixedSize%2A> returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The method is called.</exception>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -324,9 +423,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object that is used to synchronize access to the <see cref="T:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties" />.</summary>
+        <value>An object that is used to synchronize access to the <see cref="T:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current implementation of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties.SyncRoot%2A> returns a reference to the current instance of <xref:System.Runtime.Remoting.Channels.BaseChannelObjectWithProperties>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -344,8 +450,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.Collections.IEnumerator" /> that enumerates over all the properties that are associated with the channel object.</summary>
+        <returns>A <see cref="T:System.Collections.IEnumerator" /> that enumerates over all the properties that are associated with the channel object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -363,8 +469,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Collections.ICollection" /> of the values of the properties associated with the channel object.</summary>
+        <value>A <see cref="T:System.Collections.ICollection" /> of the values of the properties associated with the channel object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -19,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains a collection of <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> classes defined in a workflow.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSetCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +54,8 @@
         <Parameter Name="item" Type="System.Workflow.Activities.Rules.RuleSet" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to add to the <see cref="T:System.Workflow.Activities.Rules.RuleSetCollection" />.</param>
+        <summary>Overloaded. Adds a <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to the collection</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,10 +76,10 @@
         <Parameter Name="changedDefinition" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="originalDefinition">To be added.</param>
-        <param name="changedDefinition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="originalDefinition">The original definition of the <see cref="T:System.Workflow.Activities.Rules.RuleSetCollection" />.</param>
+        <param name="changedDefinition">The changed definition of the <see cref="T:System.Workflow.Activities.Rules.RuleSetCollection" />.</param>
+        <summary>Determines the difference between two <see cref="T:System.Workflow.Activities.Rules.RuleSetCollection" />.</summary>
+        <returns>A list of <see cref="T:System.Workflow.ComponentModel.WorkflowChangeAction" /> classes that differentiate the <paramref name="originalDefinition" /> from the <paramref name="changedDefinition" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

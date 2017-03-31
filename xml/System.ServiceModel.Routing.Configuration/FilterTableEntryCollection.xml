@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the configuration element that contains a collection of <see cref="T:System.ServiceModel.Routing.Configuration.FilterTableEntryElement" /> instances.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Routing.Configuration.FilterTableEntryCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <Parameter Name="element" Type="System.ServiceModel.Routing.Configuration.FilterTableEntryElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The filter table entry to be added.</param>
+        <summary>Adds a new <see cref="T:System.ServiceModel.Routing.Configuration.FilterTableEntryElement" /> to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +70,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all elements from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.Configuration.ConfigurationElement" />.</summary>
+        <returns>A new configuration element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +109,9 @@
         <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The configuration element to return the key for.</param>
+        <summary>Gets the element key for the specified configuration element.</summary>
+        <returns>The key for the specified configuration element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +133,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of this configuration element.</summary>
+        <value>The unique name of this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +154,8 @@
         <Parameter Name="element" Type="System.ServiceModel.Routing.Configuration.FilterTableEntryElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The filter table entry to remove from the collection.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.ServiceModel.Routing.Configuration.FilterTableEntryElement" /> from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains values that specify whether data in a table should be read primarily by row or by column.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that data in the table should be read column by column</summary>
       </Docs>
     </Member>
     <Member MemberName="Indeterminate">
@@ -51,7 +51,7 @@
         <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the best way to present the data is indeterminate.</summary>
       </Docs>
     </Member>
     <Member MemberName="RowMajor">
@@ -67,7 +67,7 @@
         <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that data in the table should be read row by row.</summary>
       </Docs>
     </Member>
   </Members>

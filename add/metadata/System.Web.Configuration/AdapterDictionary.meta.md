@@ -1,14 +1,21 @@
 ---
 uid: System.Web.Configuration.AdapterDictionary
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AdapterDictionary.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.AdapterDictionary.Item
 ---
 
 ---
 uid: System.Web.Configuration.AdapterDictionary.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

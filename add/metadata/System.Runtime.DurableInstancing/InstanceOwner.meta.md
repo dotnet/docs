@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.DurableInstancing.InstanceOwner
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.DurableInstancing.InstanceOwner.InstanceOwnerId
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

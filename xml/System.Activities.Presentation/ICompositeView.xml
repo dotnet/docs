@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods to copy, cut, move, delete, and paste objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,10 @@
         <Parameter Name="itemsToPaste" Type="System.Collections.Generic.List&lt;System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="itemsToPaste">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="itemsToPaste">A list of items to be pasted.</param>
+        <summary>Returns a value that indicates whether the specified objects can be pasted.</summary>
+        <returns>
+          <see langword="true" /> if the specified objects can be pasted; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +48,8 @@
         <ReturnType>System.Activities.Presentation.View.TypeResolvingOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the object for resolving types used by the <see cref="T:System.Activities.Presentation.View.TypePresenter" />.</summary>
+        <value>The object for resolving types used by the <see cref="T:System.Activities.Presentation.View.TypePresenter" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +66,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the current designer is the default container.</summary>
+        <value>
+          <see langword="true" /> if the current designer is the default container; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +88,8 @@
         <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
       </Parameters>
       <Docs>
-        <param name="modelItem">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="modelItem">The item to move.</param>
+        <summary>Invoked after the start of a move operation to complete the moving of the specified item.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +109,9 @@
         <Parameter Name="itemsToCopy" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="itemsToCopy">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="itemsToCopy">The items to copy.</param>
+        <summary>Invoked after the start of a copy operation to complete the copying of the specified items.</summary>
+        <returns>The items cloned from the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,9 +131,9 @@
         <Parameter Name="itemsToCut" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="itemsToCut">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="itemsToCut">The items to cut.</param>
+        <summary>Invoked after the start of a cut operation to complete the cutting of the specified items.</summary>
+        <returns>The items cloned from the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +153,8 @@
         <Parameter Name="itemsToDelete" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="itemsToDelete">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="itemsToDelete">The items to delete.</param>
+        <summary>Invoked after the start of a delete operation to complete the deletion of the specified items.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,11 +177,11 @@
         <Parameter Name="pastePointReference" Type="System.Activities.Presentation.WorkflowViewElement" />
       </Parameters>
       <Docs>
-        <param name="itemsToPaste">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <param name="pastePoint">To be added.</param>
-        <param name="pastePointReference">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="itemsToPaste">The items to paste.</param>
+        <param name="metadata">The metadata associated with the items to paste.</param>
+        <param name="pastePoint">The location where to paste the items.</param>
+        <param name="pastePointReference">A reference to the paste location.</param>
+        <summary>Invoked after the start of a paste operation to complete the pasting of the specified items.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

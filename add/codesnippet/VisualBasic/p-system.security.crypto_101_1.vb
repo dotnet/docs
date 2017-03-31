@@ -1,1 +1,0 @@
-        Dim validOutTypes As Type() = xmlTransform.OutputTypes

@@ -17,8 +17,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the specifications for error messages returned by the XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of this class are members of the <xref:System.Web.Services.Description.Operation.Faults%2A> property of the parent <xref:System.Web.Services.Description.Operation> instance.  
+  
+ The <xref:System.Web.Services.Description.OperationFault> class corresponds to the Web Services Description Language (WSDL) `fault` element enclosed by the `operation` element that is in turn enclosed by the `portType` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the properties and methods exposed by the <xref:System.Web.Services.Description.OperationFault> class.  
+  
+ [!code-cpp[OperationFault_OperationFault#1](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationFault_OperationFault/CPP/operationfault_operationfault.cpp#1)]
+ [!code-csharp[OperationFault_OperationFault#1](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationFault_OperationFault/CS/operationfault_operationfault.cs#1)]
+ [!code-vb[OperationFault_OperationFault#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationFault_OperationFault/VB/operationfault_operationfault.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.OperationFault" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +74,8 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> associated with this <see cref="T:System.Web.Services.Description.OperationFault" />.</summary>
+        <value>The <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> associated with this <see cref="T:System.Web.Services.Description.OperationFault" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,39 +1,62 @@
 ---
 uid: System.DirectoryServices.Protocols.ModifyDNRequest
-internalonly: False
----
-
----
-uid: System.DirectoryServices.Protocols.ModifyDNRequest.#ctor(System.String,System.String,System.String)
-internalonly: False
----
-
----
-uid: System.DirectoryServices.Protocols.ModifyDNRequest.NewName
-internalonly: False
----
-
----
-uid: System.DirectoryServices.Protocols.ModifyDNRequest.NewParentDistinguishedName
-internalonly: False
----
-
----
-uid: System.DirectoryServices.Protocols.ModifyDNRequest.DistinguishedName
-internalonly: False
----
-
----
-uid: System.DirectoryServices.Protocols.ModifyDNRequest.DeleteOldRdn
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.ModifyDNRequest.#ctor
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.ModifyDNRequest.#ctor(System.String,System.String,System.String)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.ModifyDNRequest.NewName
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.ModifyDNRequest.NewParentDistinguishedName
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.ModifyDNRequest.DistinguishedName
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.ModifyDNRequest.DeleteOldRdn
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.Protocols.ModifyDNRequest.#ctor
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---
 
 ---
 uid: System.DirectoryServices.Protocols.ModifyDNRequest.ToXmlNode(System.Xml.XmlDocument)
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

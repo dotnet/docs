@@ -1,49 +1,65 @@
 ---
 uid: System.Web.UI.NonVisualControlAttribute
-internalonly: False
----
-
----
-uid: System.Web.UI.NonVisualControlAttribute.#ctor(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Web.UI.NonVisualControlAttribute.Visual
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.NonVisualControlAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.NonVisualControlAttribute.#ctor(System.Boolean)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.NonVisualControlAttribute.Visual
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.NonVisualControlAttribute.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.NonVisualControlAttribute.IsDefaultAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.NonVisualControlAttribute.NonVisual
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.NonVisualControlAttribute.Default
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.NonVisualControlAttribute.GetHashCode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.NonVisualControlAttribute.Equals(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.NonVisualControlAttribute.IsNonVisual
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

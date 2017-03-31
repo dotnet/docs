@@ -1,19 +1,31 @@
 ---
 uid: System.Web.UI.WebControls.WebColorConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebColorConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebColorConverter.ConvertTo
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebColorConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebColorConverter.ConvertFrom
 ---
 
 ---
 uid: System.Web.UI.WebControls.WebColorConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

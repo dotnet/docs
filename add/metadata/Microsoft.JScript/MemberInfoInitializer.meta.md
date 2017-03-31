@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.MemberInfoInitializer
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.MemberInfoInitializer.Initialize(System.String,Microsoft.JScript.COMMemberInfo)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.MemberInfoInitializer.GetCOMMemberInfo
-internalonly: False
+ms.author: "mikejo"
 ---

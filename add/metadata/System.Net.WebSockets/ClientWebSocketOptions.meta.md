@@ -1,54 +1,71 @@
 ---
 uid: System.Net.WebSockets.ClientWebSocketOptions
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebSockets.ClientWebSocketOptions.SetBuffer
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.ClientWebSocketOptions.Cookies
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.ClientWebSocketOptions.SetBuffer(System.Int32,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.ClientWebSocketOptions.AddSubProtocol(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.ClientWebSocketOptions.ClientCertificates
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.ClientWebSocketOptions.Proxy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.ClientWebSocketOptions.SetBuffer(System.Int32,System.Int32,System.ArraySegment{System.Byte})
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.ClientWebSocketOptions.SetRequestHeader(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.ClientWebSocketOptions.UseDefaultCredentials
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.ClientWebSocketOptions.KeepAliveInterval
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebSockets.ClientWebSocketOptions.Credentials
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

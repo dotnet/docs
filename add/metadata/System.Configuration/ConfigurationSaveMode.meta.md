@@ -1,4 +1,5 @@
 ---
 uid: System.Configuration.ConfigurationSaveMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

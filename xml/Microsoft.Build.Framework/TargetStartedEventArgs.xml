@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.TargetStarted" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TargetStartedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,12 +47,12 @@
         <Parameter Name="targetFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="targetName">To be added.</param>
-        <param name="projectFile">To be added.</param>
-        <param name="targetFile">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The text of the event.</param>
+        <param name="helpKeyword">The Help keyword associated with the event.</param>
+        <param name="targetName">The name of the target associated with the event.</param>
+        <param name="projectFile">The name of the project file associated with the event.</param>
+        <param name="targetFile">The name of the target file.</param>
+        <summary>Initalizes a new instance of the <see cref="T:Microsoft.Build.Framework.TargetStartedEventArgs" /> class with the valudes provided.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,14 +75,14 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="targetName">To be added.</param>
-        <param name="projectFile">To be added.</param>
-        <param name="targetFile">To be added.</param>
-        <param name="parentTarget">To be added.</param>
-        <param name="eventTimestamp">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The text message.</param>
+        <param name="helpKeyword">The help keyword.</param>
+        <param name="targetName">The name of the target event.</param>
+        <param name="projectFile">The project file.</param>
+        <param name="targetFile">The target file.</param>
+        <param name="parentTarget">The parent target.</param>
+        <param name="eventTimestamp">The date and time the event was created.</param>
+        <summary>Represents the arguments for target started events.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +99,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the target which caused this target to build.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,8 +117,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the project file associated with the event.</summary>
+        <value>The name of the project file associated with the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +135,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the file that contains the implementation of this target.</summary>
+        <value>The name of the file that contains the implementation of this target.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,8 +153,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the target associated with the event.</summary>
+        <value>The name of the target associated with the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

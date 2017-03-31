@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serializes the view state for a Web Forms page. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The limited object serialization (LOS) formatter is designed for highly compact ASCII format serialization. This class supports serializing any object graph, but is optimized for those containing strings, arrays, and hash tables. It offers second order optimization for many of the .NET Framework primitive types.  
+  
+ This is a private format and remains consistent only for the lifetime of a Web request.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.LosFormatter" /> class using default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +53,10 @@
         <Parameter Name="macKeyModifier" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="enableMac">To be added.</param>
-        <param name="macKeyModifier">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="enableMac">
+          <see langword="true" /> to enable view-state MAC; otherwise, <see langword="false" />.</param>
+        <param name="macKeyModifier">The modifier for the MAC key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.LosFormatter" /> class using the specified enable flag and machine authentication code (MAC) key modifier.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +74,10 @@
         <Parameter Name="macKeyModifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="enableMac">To be added.</param>
-        <param name="macKeyModifier">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="enableMac">
+          <see langword="true" /> to enable view-state MAC; otherwise, <see langword="false" />.</param>
+        <param name="macKeyModifier">The modifier for the MAC key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.LosFormatter" /> class using the specified enable flag and machine authentication code (MAC) key modifier.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +97,20 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> that contains the view-state value to transform.</param>
+        <summary>Transforms the view-state value contained in a <see cref="T:System.IO.Stream" /> object to a limited object serialization (LOS)-formatted object.</summary>
+        <returns>A LOS-formatted object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the view-state value contained in a <xref:System.IO.Stream> object to a LOS-formatted object.  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deserialize">
@@ -108,10 +129,20 @@
         <Parameter Name="input" Type="System.IO.TextReader" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="input">A <see cref="T:System.IO.TextReader" /> that contains the view-state value to transform.</param>
+        <summary>Transforms the view-state value contained in a <see cref="T:System.IO.TextReader" /> object to a limited object serialization (LOS)-formatted object.</summary>
+        <returns>A LOS-formatted object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the view-state value contained in a <xref:System.IO.TextReader> object to a LOS-formatted object.  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Deserialize">
@@ -130,10 +161,21 @@
         <Parameter Name="input" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="input">The view-state value to transform.</param>
+        <summary>Transforms the specified view-state value to a limited object serialization (LOS)-formatted object.</summary>
+        <returns>A LOS-formatted object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the specified view-state value to a LOS-formatted object.  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The view state is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -153,10 +195,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> to receive the transformed value.</param>
+        <param name="value">The LOS-formatted object to transform into a view-state value.</param>
+        <summary>Transforms a limited object serialization (LOS)-formatted object into a view-state value and places the results into a <see cref="T:System.IO.Stream" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Web.UI.LosFormatter.Serialize%2A> method is used to transform a LOS-formatted object into a view-state value. The results are then placed into a <xref:System.IO.Stream> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Serialize">
@@ -176,11 +225,37 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="output">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="output">The <see cref="T:System.IO.TextWriter" /> to receive the transformed value.</param>
+        <param name="value">The LOS-formatted object to transform into a view-state value.</param>
+        <summary>Transforms a limited object serialization (LOS)-formatted object into a view-state value and places the results into a <see cref="T:System.IO.TextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Web.UI.LosFormatter.Serialize%2A> method is used to transform a LOS-formatted object into a view-state value. The results are then placed into a <xref:System.IO.TextWriter> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Deserialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms the specified view-state value to a limited object serialization (LOS)-formatted object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

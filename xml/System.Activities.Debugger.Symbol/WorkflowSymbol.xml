@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a workflow symbol.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.Symbol.WorkflowSymbol" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,8 +44,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Indicates whether the workflow symbol to calculate the checksum symbols.</summary>
+        <returns>
+          <see langword="True" /> if the workflow symbol to calculate the checksum symbols; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,9 +66,9 @@
         <Parameter Name="symbolString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="symbolString">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="symbolString">The symbol string.</param>
+        <summary>Converts the data encoding format into a data object for a specified type.</summary>
+        <returns>The data encoded format converts into a data object for a specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +86,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Specifies the encoding format for the symbol.</summary>
+        <returns>The encoding format for the symbol.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +104,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the file name for the workflow symbol.</summary>
+        <value>The file name for the workflow symbol.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +123,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the checksum for the workflow symbol.</summary>
+        <returns>The checksum for the workflow symbol.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +141,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Activities.Debugger.Symbol.ActivitySymbol&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the collection of symbols.</summary>
+        <value>The collection of symbols.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,8 +160,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents the workflow symbol.</summary>
+        <returns>A string that represents the workflow symbol.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

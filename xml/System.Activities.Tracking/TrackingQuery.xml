@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The base class for all tracking queries. Tracking queries are used to create a subscription definition for a <see cref="T:System.Activities.Tracking.TrackingProfile" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, creates a new instance of the derived class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>A collection of data in the form of name/value pairs that is included with data that is returned by this query.</summary>
+        <value>The collection of annotations.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

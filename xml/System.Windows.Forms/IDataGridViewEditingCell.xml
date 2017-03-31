@@ -8,8 +8,19 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines common functionality for a cell that allows the manipulation of its value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is implemented by classes such as <xref:System.Windows.Forms.DataGridViewCheckBoxCell> that derive from <xref:System.Windows.Forms.DataGridViewCell> and provide a user interface (UI) for specifying values without hosting an editing control. The UI in this case is displayed regardless of whether the cell is in edit mode.  
+  
+ Other cell types, such as <xref:System.Windows.Forms.DataGridViewButtonCell>, provide a UI but do not store user-specified values. In this case, the cell type does not implement <xref:System.Windows.Forms.IDataGridViewEditingCell> or host an editing control.  
+  
+ Cell types that display an editing control when the cell is in edit mode, such as <xref:System.Windows.Forms.DataGridViewTextBoxCell>, do not implement <xref:System.Windows.Forms.IDataGridViewEditingCell> but instead provide a companion class that implements <xref:System.Windows.Forms.IDataGridViewEditingControl>. For example, <xref:System.Windows.Forms.DataGridViewTextBoxCell> provides a <xref:System.Windows.Forms.DataGridViewTextBoxEditingControl> that derives from the <xref:System.Windows.Forms.TextBox> control and implements <xref:System.Windows.Forms.IDataGridViewEditingControl>. In this case, the cell <xref:System.Windows.Forms.DataGridViewCell.EditType%2A> property is set to a <xref:System.Type> object representing the editing control type. For information about implementing <xref:System.Windows.Forms.IDataGridViewEditingControl>, see [How to: Host Controls in Windows Forms DataGridView Cells](../Topic/How%20to:%20Host%20Controls%20in%20Windows%20Forms%20DataGridView%20Cells.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="EditingCellFormattedValue">
@@ -25,9 +36,18 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the formatted value of the cell.</summary>
+        <value>An <see cref="T:System.Object" /> that contains the cell's value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The formatted value represents the value as it is displayed in the cell's user interface. The formatted value may be different in absolute value and even data type than the actual value contained in the cell.  
+  
+ Implementations of this property typically return a value retrieved by calling the <xref:System.Windows.Forms.IDataGridViewEditingCell.GetEditingCellFormattedValue%2A> method and passing in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingCellValueChanged">
@@ -43,9 +63,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the value of the cell has changed.</summary>
+        <value>
+          <see langword="true" /> if the value of the cell has changed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is set to `true` to indicate that the cell value has been modified and that its user interface (UI) may need to be updated to reflect this change in value. The owning cell or table should reset this property to `false` after an update.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEditingCellFormattedValue">
@@ -64,10 +92,19 @@
         <Parameter Name="context" Type="System.Windows.Forms.DataGridViewDataErrorContexts" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewDataErrorContexts" /> values that specifies the context in which the data is needed.</param>
+        <summary>Retrieves the formatted value of the cell.</summary>
+        <returns>An <see cref="T:System.Object" /> that represents the formatted version of the cell contents.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The formatted value represents the value as it is displayed in the cell's user interface. The formatted value may be different in absolute value and even data type than the actual value contained in the cell.  
+  
+ To set the formatted value of the cell, use the <xref:System.Windows.Forms.IDataGridViewEditingCell.EditingCellFormattedValue%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrepareEditingCellForEdit">
@@ -86,9 +123,17 @@
         <Parameter Name="selectAll" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="selectAll">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="selectAll">
+          <see langword="true" /> to select the cell contents; otherwise, <see langword="false" />.</param>
+        <summary>Prepares the currently selected cell for editing</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The purpose of this method is to prepare the cell and its contents for editing. For example, you might want to put the insertion point at the end of the cell contents, or change how the contents are aligned.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

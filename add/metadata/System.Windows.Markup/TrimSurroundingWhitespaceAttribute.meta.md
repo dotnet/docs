@@ -1,9 +1,9 @@
 ---
 uid: System.Windows.Markup.TrimSurroundingWhitespaceAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.TrimSurroundingWhitespaceAttribute.#ctor
-internalonly: False
+manager: "martinek"
 ---

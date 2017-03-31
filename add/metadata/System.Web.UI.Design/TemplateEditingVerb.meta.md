@@ -1,34 +1,53 @@
 ---
 uid: System.Web.UI.Design.TemplateEditingVerb
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateEditingVerb.Finalize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.TemplateEditingVerb.Index
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.TemplateEditingVerb.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.TemplateEditingVerb.#ctor(System.String,System.Int32,System.Web.UI.Design.TemplatedControlDesigner)
-internalonly: False
+uid: System.Web.UI.Design.TemplateEditingVerb.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateEditingVerb.Dispose
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.TemplateEditingVerb.Index
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.TemplateEditingVerb.Dispose(System.Boolean)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.TemplateEditingVerb.#ctor(System.String,System.Int32,System.Web.UI.Design.TemplatedControlDesigner)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.TemplateEditingVerb.Dispose
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.TemplateEditingVerb.#ctor(System.String,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

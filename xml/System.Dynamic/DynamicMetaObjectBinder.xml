@@ -20,8 +20,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The dynamic call site binder that participates in the <see cref="T:System.Dynamic.DynamicMetaObject" /> binding protocol.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.CompilerServices.CallSiteBinder> performs the binding of the dynamic operation using the runtime values as input. On the other hand, the <xref:System.Dynamic.DynamicMetaObjectBinder> participates in the <xref:System.Dynamic.DynamicMetaObject> binding protocol.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Dynamic.DynamicMetaObjectBinder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,10 +81,10 @@
         <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic operation.</param>
+        <param name="args">An array of arguments of the dynamic operation.</param>
+        <summary>When overridden in the derived class, performs the binding of the dynamic operation.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,11 +115,11 @@
         <Parameter Name="returnLabel" Type="System.Linq.Expressions.LabelTarget" />
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <param name="returnLabel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">An array of arguments to the dynamic operation.</param>
+        <param name="parameters">The array of <see cref="T:System.Linq.Expressions.ParameterExpression" /> instances that represent the parameters of the call site in the binding process.</param>
+        <param name="returnLabel">A LabelTarget used to return the result of the dynamic binding.</param>
+        <summary>Performs the runtime binding of the dynamic operation on a set of arguments.</summary>
+        <returns>An Expression that performs tests on the dynamic operation arguments, and performs the dynamic operation if the tests are valid. If the tests fail on subsequent occurrences of the dynamic operation, Bind will be called again to produce a new <see cref="T:System.Linq.Expressions.Expression" /> for the new argument types.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,9 +154,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="args">An array of arguments of the dynamic operation.</param>
+        <summary>Defers the binding of the operation until later time when the runtime values of all dynamic operation arguments have been computed.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,10 +192,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The target of the dynamic operation.</param>
+        <param name="args">An array of arguments of the dynamic operation.</param>
+        <summary>Defers the binding of the operation until later time when the runtime values of all dynamic operation arguments have been computed.</summary>
+        <returns>The <see cref="T:System.Dynamic.DynamicMetaObject" /> representing the result of the binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,9 +224,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The <see cref="P:System.Linq.Expressions.Expression.Type" /> property of the resulting expression; any type is allowed.</param>
+        <summary>Gets an expression that will cause the binding to be updated. It indicates that the expression's binding is no longer valid. This is typically used when the "version" of a dynamic object has changed.</summary>
+        <returns>The update expression.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,8 +252,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The result type of the operation.</summary>
+        <value>The <see cref="T:System.Type" /> object representing the result type of the operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

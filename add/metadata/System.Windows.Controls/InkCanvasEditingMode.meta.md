@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Controls.InkCanvasEditingMode
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

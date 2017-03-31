@@ -1,19 +1,27 @@
 ---
 uid: System.Activities.XamlIntegration.TextExpressionCompiler
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.TextExpressionCompiler.GenerateSource(System.IO.TextWriter)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.TextExpressionCompiler.#ctor(System.Activities.XamlIntegration.TextExpressionCompilerSettings)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.TextExpressionCompiler.Compile
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

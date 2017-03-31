@@ -1,4 +1,5 @@
 ---
 uid: System.Net.NetworkInformation.PrefixOrigin
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

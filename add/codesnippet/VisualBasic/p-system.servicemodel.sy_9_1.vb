@@ -1,2 +1,0 @@
-        Dim item As New SyndicationItem("Item Title", "Item Content", New Uri("http:' Item/Alternate/Link"))
-        item.Content = New TextSyndicationContent("This is the content of the syndication item")

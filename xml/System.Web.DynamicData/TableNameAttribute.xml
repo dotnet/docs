@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an attribute to change the displayed name for a table.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,24 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name that the table will display.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.TableNameAttribute" /> class with the specified name for the table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.TableNameAttribute> attribute is used to change the entity name in the metadata when there are entity name conflicts from multiple contexts. The <xref:System.Web.DynamicData.TableNameAttribute> attribute should not be used to change the display name. Instead, use the <xref:System.ComponentModel.DisplayNameAttribute> attribute to change the display name.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the table name. In the example, the displayed table name is changed from "ProductModelProductDescriptions" to "Prod Model Desc".  
+  
+ [!code-csharp[System.Web.DynamicData.TableNameAttribute#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.TableNameAttribute/cs/ProductModelProductDescription.cs#11)]
+ [!code-vb[System.Web.DynamicData.TableNameAttribute#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.TableNameAttribute/vb/ProductModelProductDescription.vb#11)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -51,9 +66,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the table.</summary>
+        <value>The name that is associated with a table.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to map a table name to a unique name when another table in a different data context has the same name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

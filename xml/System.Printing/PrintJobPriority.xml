@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies a non-numerical priority for a print job relative to other print jobs in the print queue.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Printing.PrintJobPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A job that has the <see cref="P:System.Printing.PrintQueue.DefaultPriority" /> for the <see cref="T:System.Printing.PrintQueueStream" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -43,7 +43,7 @@
         <ReturnType>System.Printing.PrintJobPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A job that has the highest priority.</summary>
       </Docs>
     </Member>
     <Member MemberName="Minimum">
@@ -59,7 +59,7 @@
         <ReturnType>System.Printing.PrintJobPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A job that has the lowest priority.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -75,7 +75,7 @@
         <ReturnType>System.Printing.PrintJobPriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A job that has no non-numerical priority.</summary>
       </Docs>
     </Member>
   </Members>

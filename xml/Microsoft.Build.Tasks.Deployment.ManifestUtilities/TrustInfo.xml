@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class represents the application security trust information.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,7 +49,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resets the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo" /> object to its default state of full trust.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +66,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Determines whether the application has permission to call unmanaged code.</summary>
+        <value>A Boolean value indicating whether the application has permission to call unmanaged code.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ "Application" refers to the application for which the manifest is being read. You can read the deployment manifest using <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A> or <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFullTrust">
@@ -84,9 +91,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Determines whether the application is full trust or partial trust.</summary>
+        <value>A Boolean value indicating whether the application is full trust or partial trust.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ "Application" refers to the application for which the manifest is being read. You can read the deployment manifest using <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A> or <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PermissionSet">
@@ -102,8 +116,8 @@
         <ReturnType>System.Security.PermissionSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the permission set object for the application trust.</summary>
+        <value>A <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.PermissionSet" /> object for the application trust.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +134,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether to preserve partial trust permission when the full trust flag is set.</summary>
+        <value>A Boolean value indicating whether to preserve partial trust permission when the full trust flag is set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Normally when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.IsFullTrust%2A> is set to `True`, all permission settings are deleted. If you want to preserve these settings (typically during design time), you can call this method to persist the permission settings even when <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.IsFullTrust%2A> is set to `True`.  
+  
+ `PreserveFullTrustPermissionSet` should not be set to `True` for ClickOnce deployments because this violates ClickOnce schema requirements.  
+  
+ If this property is set to `False` with full trust specified, then any permissions defined in the permission set object will be dropped on save.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -141,9 +166,16 @@
         <Parameter Name="input" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="input">Specifies an input stream.</param>
+        <summary>Reads the application trust from an XML file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data stream must contain only a \<TrustInfo> section and no other data.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -162,9 +194,16 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The name of the input file.</param>
+        <summary>Reads the application trust from an XML file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The specified string must contain only a \<TrustInfo> section and no other data.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadManifest">
@@ -183,8 +222,8 @@
         <Parameter Name="input" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="input">Specifies an input stream.</param>
+        <summary>Reads the application trust from a ClickOnce application manifest.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +243,8 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path">The name of the input file.</param>
+        <summary>Reads the application trust from a ClickOnce application manifest.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,9 +261,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the level of same site access permitted, specifying whether the application has permission to communicate with the server from which it was deployed.</summary>
+        <value>A string indicating the level of same site access permitted. The values can be <see langword="site" /> or <see langword="none" />.  
+  
+ <see langword="site" /> specifies that the application can call Web services at the same URL from which it was deployed; if deployed from a share, the application has permission to read files from that share.  
+  
+ <see langword="none" /> specifies that the application can neither access Web services from the same URL from which it was deployed, nor access files from the share from which it was deployed.  
+  
+ "Application" refers to the application for which the manifest is being read (using <see cref="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest(System.IO.Stream)" />).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ "Application" refers to the application for which the manifest is being read. You can read the deployment manifest using <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A> or <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.ReadManifest%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -241,8 +293,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns all the information in the application security trust object as a string.</summary>
+        <returns>A string containing the information in the application security trust object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,9 +314,18 @@
         <Parameter Name="output" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="output">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="output">Specifies an output stream.</param>
+        <summary>Writes the application trust to an XML file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method updates only the \<TrustInfo> section in a file containing only the \<TrustInfo> section and nothing else.  
+  
+ The specified stream must contain only a \<TrustInfo> section and no other data.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -283,9 +344,18 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The name of the output file.</param>
+        <summary>Writes the application trust to an XML file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method updates only the \<TrustInfo> section in a file containing only the \<TrustInfo> section and nothing else.  
+  
+ The specified string must contain only a \<TrustInfo> section and no other data.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteManifest">
@@ -304,9 +374,16 @@
         <Parameter Name="output" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="output">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="output">Specifies an output stream to which to write the updated manifest file.</param>
+        <summary>Writes the application trust to a new template ClickOnce application manifest.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method updates only the \<TrustInfo> section in a file containing only the top-level manifest header, the \<TrustInfo> section, and nothing else.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteManifest">
@@ -325,9 +402,18 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The name of the output file.</param>
+        <summary>Writes the application trust to a ClickOnce application manifest.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method updates only the \<TrustInfo> section in a file containing only the top-level manifest header, the \<TrustInfo> section, and nothing else.  
+  
+ This overload of the method will update the file in place (that is, the input file is the same as the output file). If the file exists, the trust section will be updated. If the file does not exist, a new template manifest with the specified trust will be created.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteManifest">
@@ -347,10 +433,17 @@
         <Parameter Name="output" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <param name="output">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="input">Specifies an input stream containing the manifest to be updated.</param>
+        <param name="output">Specifies an output stream to which to write the updated manifest file.</param>
+        <summary>Updates an existing ClickOnce application manifest with the specified trust.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method updates only the \<TrustInfo> section in a file containing only the top-level manifest header, the \<TrustInfo> section, and nothing else.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

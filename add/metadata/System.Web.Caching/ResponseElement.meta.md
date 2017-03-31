@@ -1,9 +1,9 @@
 ---
 uid: System.Web.Caching.ResponseElement
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.ResponseElement.#ctor
-internalonly: False
+manager: "wpickett"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains the value of an event property that is specified by the event provider when the event is published.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class can be extended to contain more attributes of the property, such as the property name or output type.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Value">
@@ -28,8 +35,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the event property that is specified by the event provider when the event is published.</summary>
+        <value>Returns an object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

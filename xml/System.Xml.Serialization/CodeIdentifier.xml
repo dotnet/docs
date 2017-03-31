@@ -16,8 +16,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides static methods to convert input text into names for code entities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The methods of the <xref:System.Xml.Serialization.CodeIdentifier> class are used by the XML serialization infrastructure while producing .NET Framework types from XML element and data type definitions. XML element or attribute names typically provide the methods' input text.  
+  
+ You do not need to call the methods of the <xref:System.Xml.Serialization.CodeIdentifier> class directly from your code. Instead, use the various tools and APIs provided by the .NET Framework for XML serialization, such as the <xref:System.Xml.Serialization.XmlSerializer>, or the [XML Schema Definition Tool (Xsd.exe)](../Topic/XML%20Schema%20Definition%20Tool%20\(Xsd.exe\).md) tool.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +50,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.CodeIdentifier" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,10 +75,19 @@
         <Parameter Name="identifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifier">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="identifier">The name of a code entity, such as a method parameter, typically taken from an XML element or attribute name.</param>
+        <summary>Produces a camel-case string from an input string.</summary>
+        <returns>A camel-case version of the parameter string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.CodeIdentifier.MakeCamel%2A> method converts the initial character from an upper-case to lower-case letter, if necessary.  
+  
+ You do not need to call this method directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MakePascal">
@@ -93,10 +111,19 @@
         <Parameter Name="identifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifier">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="identifier">The name of a code entity, such as a method parameter, typically taken from an XML element or attribute name.</param>
+        <summary>Produces a Pascal-case string from an input string.</summary>
+        <returns>A Pascal-case version of the parameter string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.CodeIdentifier.MakePascal%2A> method converts the initial character from a lower-case to upper-case letter, if necessary.  
+  
+ You do not need to call this method directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeValid">
@@ -120,10 +147,19 @@
         <Parameter Name="identifier" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identifier">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="identifier">The name of a code entity, such as a method parameter, typically taken from an XML element or attribute name.</param>
+        <summary>Produces a valid code entity name from an input string.</summary>
+        <returns>A string that can be used as a code identifier, such as the name of a method parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.CodeIdentifier.MakeValid%2A> method removes any characters that cannot appear in a code identifier. It returns the string "Item" if no characters are valid. It prefixes the string "Item" to an input that begins with an invalid start character, for example, a digit, or a currency symbol.  
+  
+ You do not need to call this method directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

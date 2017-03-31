@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.CompositeScriptReferenceEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.CompositeScriptReferenceEventArgs.#ctor(System.Web.UI.CompositeScriptReference)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.CompositeScriptReferenceEventArgs.CompositeScript
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

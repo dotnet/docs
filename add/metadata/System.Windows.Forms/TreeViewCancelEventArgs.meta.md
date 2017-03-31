@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Forms.TreeViewCancelEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeViewCancelEventArgs.Node
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeViewCancelEventArgs.#ctor(System.Windows.Forms.TreeNode,System.Boolean,System.Windows.Forms.TreeViewAction)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.TreeViewCancelEventArgs.Action
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

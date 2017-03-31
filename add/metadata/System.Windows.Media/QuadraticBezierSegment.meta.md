@@ -1,44 +1,67 @@
 ---
 uid: System.Windows.Media.QuadraticBezierSegment
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.QuadraticBezierSegment.Point2
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.QuadraticBezierSegment.#ctor(System.Windows.Point,System.Windows.Point,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Media.QuadraticBezierSegment.Point2Property
-internalonly: False
----
-
----
-uid: System.Windows.Media.QuadraticBezierSegment.Point1
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.QuadraticBezierSegment.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.QuadraticBezierSegment.Point2Property
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.QuadraticBezierSegment.Point1
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.QuadraticBezierSegment.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.QuadraticBezierSegment.Point1Property
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.QuadraticBezierSegment.CloneCurrentValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.QuadraticBezierSegment.Clone
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

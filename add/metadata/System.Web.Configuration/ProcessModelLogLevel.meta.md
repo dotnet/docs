@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Configuration.ProcessModelLogLevel
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

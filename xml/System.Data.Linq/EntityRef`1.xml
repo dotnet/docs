@@ -18,9 +18,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TEntity">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TEntity">The type of the target entity.</typeparam>
+    <summary>Provides for deferred loading and relationship maintenance for the singleton side of a one-to-many relationship in a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used in combination with <xref:System.Data.Linq.EntitySet%601>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +43,8 @@
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TEntity&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The reference source.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.EntityRef`1" /> class by specifying the source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +61,8 @@
         <Parameter Name="entityRef" Type="System.Data.Linq.EntityRef&lt;TEntity&gt;" />
       </Parameters>
       <Docs>
-        <param name="entityRef">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entityRef">The target entity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.EntityRef`1" /> class by referencing the target entity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +79,8 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entity">The target entity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.EntityRef`1" /> class by specifying the target entity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +97,8 @@
         <ReturnType>TEntity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the target entity.</summary>
+        <value>The target entity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +115,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the target has been loaded or assigned.</summary>
+        <value>
+          <see langword="True" /> if the target has been loaded or assigned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `True` is returned even if the value in the target is `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

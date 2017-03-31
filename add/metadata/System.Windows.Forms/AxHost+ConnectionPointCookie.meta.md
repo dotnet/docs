@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Forms.AxHost.ConnectionPointCookie
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.AxHost.ConnectionPointCookie.Disconnect
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.AxHost.ConnectionPointCookie.Finalize
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.AxHost.ConnectionPointCookie.#ctor(System.Object,System.Object,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

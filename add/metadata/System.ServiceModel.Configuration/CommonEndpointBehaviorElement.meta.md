@@ -1,19 +1,27 @@
 ---
 uid: System.ServiceModel.Configuration.CommonEndpointBehaviorElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.CommonEndpointBehaviorElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.CommonEndpointBehaviorElement.CanAdd(System.ServiceModel.Configuration.BehaviorExtensionElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.CommonEndpointBehaviorElement.Add(System.ServiceModel.Configuration.BehaviorExtensionElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

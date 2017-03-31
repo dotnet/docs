@@ -27,8 +27,26 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates the theme-specific look for [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlObjectElementUsage_SC"></a>   
+## XAML Object Element Usage  
+  
+```  
+<theme:ScrollChrome .../>  
+```  
+  
+<a name="xamlValues_SC"></a>   
+## XAML Values  
+ `theme:`  
+ An xmlns prefix for the <xref:Microsoft.Windows.Themes> CLR namespace. Typically, xmlns prefixes and mappings are defined in a XAML root element (not shown).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,7 +76,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Windows.Themes.ScrollChrome" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,9 +150,9 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The dependency object to which the <see cref="T:Microsoft.Windows.Themes.ScrollGlyph" /> is attached.</param>
+        <summary>Gets the <see cref="T:Microsoft.Windows.Themes.ScrollGlyph" /> for the specified object.</summary>
+        <returns>One of the enumeration values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,9 +173,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> renders with a white outer border.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> renders with a white outer border; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property does not exist in the [!INCLUDE[TLA#tla_aero](~/includes/tlasharptla-aero-md.md)] theme.  
+  
+<a name="dependencyPropertyInfo_HasOuterBorder"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:Microsoft.Windows.Themes.ScrollChrome.HasOuterBorderProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasOuterBorderProperty">
@@ -177,7 +211,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:Microsoft.Windows.Themes.ScrollChrome.HasOuterBorder" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,9 +307,24 @@
         <ReturnType>System.Windows.Thickness</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that describes the amount of space between a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> and its child element.</summary>
+        <value>A <see cref="T:System.Windows.Thickness" /> value that describes the amount of space between a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> and its child element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property does not exist in the [!INCLUDE[TLA#tla_aero](~/includes/tlasharptla-aero-md.md)] theme.  
+  
+<a name="dependencyPropertyInfo_Padding"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:Microsoft.Windows.Themes.ScrollChrome.PaddingProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PaddingProperty">
@@ -295,7 +344,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:Microsoft.Windows.Themes.ScrollChrome.Padding" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,9 +377,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> appears as if the mouse is over it.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> appears as if the mouse is over it; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_RenderMouseOver"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:Microsoft.Windows.Themes.ScrollChrome.RenderMouseOverProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderMouseOverProperty">
@@ -362,7 +426,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:Microsoft.Windows.Themes.ScrollChrome.RenderMouseOver" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,9 +459,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> appears pressed.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> appears pressed; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_RenderPressed"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:Microsoft.Windows.Themes.ScrollChrome.RenderPressedProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderPressedProperty">
@@ -429,7 +508,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:Microsoft.Windows.Themes.ScrollChrome.RenderPressed" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,7 +541,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="T:Microsoft.Windows.Themes.ScrollGlyph" />attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,9 +578,9 @@
         <Parameter Name="value" Type="Microsoft.Windows.Themes.ScrollGlyph" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The dependency object to which the <see cref="T:Microsoft.Windows.Themes.ScrollGlyph" /> is attached.</param>
+        <param name="value">One of the enumeration values.</param>
+        <summary>Sets the <see cref="T:Microsoft.Windows.Themes.ScrollGlyph" /> on the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,9 +597,23 @@
         <ReturnType>Microsoft.Windows.Themes.ThemeColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the color of the theme.</summary>
+        <value>A value in the enumeration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_ScrollChrome"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:Microsoft.Windows.Themes.ScrollChrome.ThemeColorProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ThemeColorProperty">
@@ -536,7 +629,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:Microsoft.Windows.Themes.ScrollChrome.ThemeColor" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

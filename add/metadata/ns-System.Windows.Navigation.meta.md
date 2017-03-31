@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Navigation
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

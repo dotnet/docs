@@ -16,8 +16,36 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a selectable item in a <see cref="T:System.Windows.Controls.ListBox" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.ListBox> contains a collection of <xref:System.Windows.Controls.ListBoxItem> objects. To select a <xref:System.Windows.Controls.ListBoxItem> in a <xref:System.Windows.Controls.ListBox>, set the <xref:System.Windows.Controls.ListBoxItem.IsSelected%2A> property to `true`.  
+  
+ Bind a <xref:System.Windows.Controls.ListBoxItem> to data by binding the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property of a <xref:System.Windows.Controls.ListBox> to a data source. For more information, see [How to: Bind a ListBox to Data](../Topic/How%20to:%20Bind%20a%20ListBox%20to%20Data.md). You can customize the appearance of a <xref:System.Windows.Controls.ListBoxItem> by setting the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property of a <xref:System.Windows.Controls.ListBox> to a <xref:System.Windows.DataTemplate>.  For more information, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
+  
+ By default, the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> of a <xref:System.Windows.Controls.ListBoxItem> is set to <xref:System.Windows.HorizontalAlignment>. The default horizontal position of a <xref:System.Windows.Controls.StackPanel> is <xref:System.Windows.HorizontalAlignment>. If you set the <xref:System.Windows.FrameworkElement.Width%2A> property of a <xref:System.Windows.Controls.ListBoxItem> through a <xref:System.Windows.Controls.StackPanel>, the panel's default is applied and the item is centered.  
+  
+ A <xref:System.Windows.Controls.ListBoxItem> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
+  
+## Customizing the ListBoxItem Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.ListBoxItem> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ListBoxItem>, see [ListBox Styles and Templates](../Topic/ListBox%20Styles%20and%20Templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.ListBoxItem> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Controls.ListBox> that contains <xref:System.Windows.Controls.ListBoxItem> elements.  
+  
+ [!code-xml[ListBoxEvent#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ListBoxItem" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +84,32 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether a <see cref="T:System.Windows.Controls.ListBoxItem" /> is selected.</summary>
+        <value>
+          <see langword="true" /> if the item is selected; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To select a <xref:System.Windows.Controls.ListBoxItem> in a <xref:System.Windows.Controls.ListBox>, set this property to `true`.  
+  
+<a name="dependencyPropertyInfo_IsSelected"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ListBoxItem.IsSelectedProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set a list box item to be selected when the list box is created.  
+  
+ [!code-xml[ListBox_snip#ListBoxItemsIsSelected1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml#listboxitemsisselected1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelectedProperty">
@@ -74,7 +125,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ListBoxItem.IsSelected" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +143,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.ListBoxItemAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] automation infrastructure.</summary>
+        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +164,8 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Called when the mouse enters a <see cref="T:System.Windows.Controls.ListBoxItem" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +185,8 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Called when the mouse leaves a <see cref="T:System.Windows.Controls.ListBoxItem" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +206,8 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Called when the user presses the right mouse button over the <see cref="T:System.Windows.Controls.ListBoxItem" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +227,8 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data.</param>
+        <summary>Called when the user presses the right mouse button over a <see cref="T:System.Windows.Controls.ListBoxItem" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,9 +248,16 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Called when the <see cref="T:System.Windows.Controls.ListBoxItem" /> is selected in a <see cref="T:System.Windows.Controls.ListBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the <xref:System.Windows.Controls.ListBoxItem.IsSelected%2A> property changes to `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnUnselected">
@@ -218,9 +276,16 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Called when the <see cref="T:System.Windows.Controls.ListBoxItem" /> is unselected in a <see cref="T:System.Windows.Controls.ListBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the <xref:System.Windows.Controls.ListBoxItem.IsSelected%2A> property changes to `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnVisualParentChanged">
@@ -239,8 +304,8 @@
         <Parameter Name="oldParent" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="oldParent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldParent">The previous <see cref="P:System.Windows.FrameworkElement.Parent" /> property of the <see cref="T:System.Windows.Controls.ListBoxItem" />.</param>
+        <summary>Called when the visual parent of a list box item changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,8 +322,34 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a <see cref="T:System.Windows.Controls.ListBoxItem" /> is selected.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To know when the selection in a <xref:System.Windows.Controls.ListBox> changes, listen for the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event.  
+  
+<a name="routedEventInfo_Selected"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ListBoxItem.SelectedEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.RoutedEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example shows how to subscribe to and handle this event.  
+  
+ [!code-xml[ListBox_snip#ListBoxItemsEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml#listboxitemsevents)]  
+  
+ [!code-csharp[ListBox_snip#ListBoxItemsEventSelected](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml.cs#listboxitemseventselected)]
+ [!code-vb[ListBox_snip#ListBoxItemsEventSelected](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBox_snip/visualbasic/window1.xaml.vb#listboxitemseventselected)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedEvent">
@@ -274,7 +365,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.ListBoxItem.Selected" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,8 +382,34 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a <see cref="T:System.Windows.Controls.ListBoxItem" /> is unselected.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To know when the selection in a <xref:System.Windows.Controls.ListBox> changes, listen for the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event.  
+  
+<a name="routedEventInfo_Unselected"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ListBoxItem.UnselectedEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.RoutedEventHandler>|  
+  
+   
+  
+## Examples  
+ The following examples show how to subscribe to and handle this event.  
+  
+ [!code-xml[ListBox_snip#ListBoxItemsEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml#listboxitemsevents)]  
+  
+ [!code-csharp[ListBox_snip#ListBoxItemsEventUnselected](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml.cs#listboxitemseventunselected)]
+ [!code-vb[ListBox_snip#ListBoxItemsEventUnselected](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBox_snip/visualbasic/window1.xaml.vb#listboxitemseventunselected)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnselectedEvent">
@@ -308,7 +425,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.ListBoxItem.Unselected" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,20 @@
 ---
 uid: System.Data.SqlClient.SqlClientPermissionAttribute
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlClientPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlClientPermissionAttribute.CreatePermission
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

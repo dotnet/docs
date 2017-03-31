@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Common.DbProviderFactoriesConfigurationHandler
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbProviderFactoriesConfigurationHandler.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbProviderFactoriesConfigurationHandler.Create(System.Object,System.Object,System.Xml.XmlNode)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

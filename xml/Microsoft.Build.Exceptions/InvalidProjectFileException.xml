@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This exception is thrown whenever there is a problem with the user's XML project file. The problem might be semantic or syntactical. The latter would be of a type typically caught by XSD validation (if it was performed by the project writer).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ WARNING: marking a type [Serializable] without implementing ISerializable imposes a serialization contract -- it is a promise to never change the type's fields i.e. the type is immutable; adding new fields in the next version of the type without following certain special FX guidelines, can break both forward and backward compatibility  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +33,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor only exists to satisfy .NET coding guidelines. Use a rich constructor whenever possible.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,9 +57,16 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The error message.</param>
+        <summary>Creates an instance of this exception using the specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor only exists to satisfy .NET coding guidelines. Use a rich constructor whenever possible.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,10 +83,17 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The error message.</param>
+        <param name="innerException">The inner exception.</param>
+        <summary>Creates an instance of this exception using the specified error message and inner exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor only exists to satisfy .NET coding guidelines. Use a rich constructor whenever possible.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -89,17 +117,24 @@
         <Parameter Name="helpKeyword" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="projectFile">To be added.</param>
-        <param name="lineNumber">To be added.</param>
-        <param name="columnNumber">To be added.</param>
-        <param name="endLineNumber">To be added.</param>
-        <param name="endColumnNumber">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="errorSubcategory">To be added.</param>
-        <param name="errorCode">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="projectFile">The invalid project file (can be empty string).</param>
+        <param name="lineNumber">The invalid line number in the project (set to zero if not available).</param>
+        <param name="columnNumber">The invalid column number in the project (set to zero if not available).</param>
+        <param name="endLineNumber">The end of a range of invalid lines in the project (set to zero if not available).</param>
+        <param name="endColumnNumber">The end of a range of invalid columns in the project (set to zero if not available).</param>
+        <param name="message">Error message for exception.</param>
+        <param name="errorSubcategory">Error sub-category that describes the error (can be null).</param>
+        <param name="errorCode">The error code (can be null).</param>
+        <param name="helpKeyword">The F1-help keyword for the host IDE (can be null).</param>
+        <summary>Creates an instance of this exception using rich error information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is preferred over the basic constructors.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseMessage">
@@ -115,8 +150,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the exception message not including the project file.</summary>
+        <value>The error message string only.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +168,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the invalid column number (if any) in the project.</summary>
+        <value>The invalid column number, or zero.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +186,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the last column number (if any) of a range of invalid columns in the project.</summary>
+        <value>The last invalid column number, or zero.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +204,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the last line number (if any) of a range of invalid lines in the project.</summary>
+        <value>The last invalid line number, or zero.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,8 +222,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the error code (if any) associated with the exception message.</summary>
+        <value>Error code string, or null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,8 +240,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the error sub-category (if any) that describes the type of this error.</summary>
+        <value>The sub-category string, or null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,9 +262,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The error information.</param>
+        <param name="context">The error context.</param>
+        <summary>ISerializable method which we must override since Exception implements this interface If we ever add new members to this class, we'll need to update this.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,8 +281,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a flag that determines whether the exception has already been logged. Allows the exception to be logged at the most appropriate location, but continue to be propagated.</summary>
+        <value>Returns a flag that determines whether the exception has already been logged.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +299,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the F1-help keyword (if any) associated with this error, for the host IDE.</summary>
+        <value>The keyword string, or null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,8 +317,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the invalid line number (if any) in the project.</summary>
+        <value>The invalid line number, or zero.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,8 +335,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the exception message including the affected project file (if any).</summary>
+        <value>The complete message string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,9 +353,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the file (if any) associated with this exception. This may be an imported file.</summary>
+        <value>Project filename/path string, or null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name is poorly chosen as this may be a targets file, but the name has shipped now.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

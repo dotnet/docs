@@ -1,4 +1,4 @@
 ---
 uid: System.IO.Log
-internalonly: False
+manager: "ghogen"
 ---

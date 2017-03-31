@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Media.Imaging.BitmapCacheOption
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

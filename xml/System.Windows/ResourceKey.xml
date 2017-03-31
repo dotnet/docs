@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an abstract base class for various resource keys.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides no functionality except to supply a common base class for simple key detection in resource components.  
+  
+ Resource keys are either strings or instances of a type. This class provides support for classes that base key values on other object values, where the objects passed in assure uniqueness of the generated resource keys.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +40,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of a class derived from <see cref="T:System.Windows.ResourceKey" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that this is the protected constructor of an abstract base class. It can be called only from derived classes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Assembly">
@@ -48,8 +64,8 @@
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an assembly object that indicates which assembly's dictionary to look in for the value associated with this key.</summary>
+        <value>The retrieved assembly, as a reflection class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +85,9 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceProvider">A service implementation that provides the desired value.</param>
+        <summary>Returns this <see cref="T:System.Windows.ResourceKey" />. Instances of this class are typically used as a key in a dictionary.</summary>
+        <returns>Calling this method always returns the instance itself.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

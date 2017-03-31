@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.CryptographicProviderType
-internalonly: False
+manager: "tyoung"
 ---

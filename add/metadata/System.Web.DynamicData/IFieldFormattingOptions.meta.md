@@ -1,29 +1,35 @@
 ---
 uid: System.Web.DynamicData.IFieldFormattingOptions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IFieldFormattingOptions.ConvertEmptyStringToNull
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IFieldFormattingOptions.ApplyFormatInEditMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IFieldFormattingOptions.DataFormatString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IFieldFormattingOptions.NullDisplayText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IFieldFormattingOptions.HtmlEncode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

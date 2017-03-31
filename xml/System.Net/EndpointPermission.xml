@@ -12,8 +12,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines an endpoint that is authorized by a <see cref="T:System.Net.SocketPermission" /> instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.EndpointPermission> class defines a network endpoint, including host name, network port number, and transport type used to make the connection.  
+  
+> [!NOTE]
+>  Avoid creating EndPoint permissions using host names because these names will have to be resolved to IP address, which could block the stack.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -33,9 +43,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see langword="Object" />.</param>
+        <summary>Determines whether the specified <see langword="Object" /> is equal to the current <see langword="Object" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see langword="Object" /> is equal to the current <see langword="Object" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +65,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Serves as a hash function for a particular type.</summary>
+        <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +84,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the DNS host name or IP address of the server that is associated with this endpoint.</summary>
+        <value>A string that contains the DNS host name or IP address of the server.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +103,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the network port number that is associated with this endpoint.</summary>
+        <value>The network port number that is associated with this request, or <see cref="F:System.Net.SocketPermission.AllPorts" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +123,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string that represents the current <see cref="T:System.Net.EndpointPermission" /> instance.</summary>
+        <returns>A string that represents the current <see cref="T:System.Net.EndpointPermission" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.EndpointPermission.ToString%2A> method returns a string that represents the contents for the <xref:System.Net.EndpointPermission> instance. The string is in the form <xref:System.Net.EndpointPermission.Hostname%2A> # <xref:System.Net.EndpointPermission.Port%2A> # <xref:System.Net.EndpointPermission.Transport%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Transport">
@@ -131,8 +149,8 @@
         <ReturnType>System.Net.TransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the transport type that is associated with this endpoint.</summary>
+        <value>One of the <see cref="T:System.Net.TransportType" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

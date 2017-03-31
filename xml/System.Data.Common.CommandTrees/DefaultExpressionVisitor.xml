@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Visits each element of an expression tree from a given root expression. If any element changes, the tree is rebuilt back to the root and the new root expression is returned; otherwise the original root expression is returned.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.CommandTrees.DefaultExpressionVisitor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,8 @@
         <Parameter Name="scopeVariables" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Common.CommandTrees.DbVariableReferenceExpression&gt;" />
       </Parameters>
       <Docs>
-        <param name="scopeVariables">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="scopeVariables">The collection of scope variables.</param>
+        <summary>Represents an event when entering the scope for the expression visitor with specified scope variables.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,7 +68,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Exits the scope for the expression visitor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +89,9 @@
         <Parameter Name="newExpression" Type="System.Data.Common.CommandTrees.DbExpression" />
       </Parameters>
       <Docs>
-        <param name="oldExpression">To be added.</param>
-        <param name="newExpression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldExpression">The old expression.</param>
+        <param name="newExpression">The new expression.</param>
+        <summary>Replaces an old expression with a new one for the expression visitor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +112,9 @@
         <Parameter Name="toVarRef" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="fromVarRef">To be added.</param>
-        <param name="toVarRef">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fromVarRef">The location of the variable.</param>
+        <param name="toVarRef">The reference of the variable where it is rebounded.</param>
+        <summary>Represents an event when the variable is rebound for the expression visitor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,9 +134,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbAndExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The logical AND expression.</param>
+        <summary>Implements the visitor pattern for the logical AND expression.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,9 +156,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbApplyExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The APPLY expression.</param>
+        <summary>Implements the visitor pattern for the invocation of the specified function for each element in the specified input set.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,9 +178,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbArithmeticExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The arithmetic expression.</param>
+        <summary>Implements the visitor pattern for the arithmetic operation applied to numeric arguments.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,9 +200,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCaseExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The case expression.</param>
+        <summary>Implements the visitor pattern for the When, Then, and Else clauses.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,9 +222,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCastExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The cast expression.</param>
+        <summary>Implements the visitor pattern for the type conversion of a single argument to the specified type.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,9 +244,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbComparisonExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The cast expression.</param>
+        <summary>Implements the visitor pattern for the comparison operation applied to two arguments.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,9 +266,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbConstantExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The constant expression.</param>
+        <summary>Implements the visitor pattern for the different kinds of constants.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,9 +288,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCrossJoinExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The join expression.</param>
+        <summary>Implements the visitor pattern for the unconditional join operation between the given collection arguments.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,9 +310,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbDerefExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The DEREF expression.</param>
+        <summary>Implements the visitor pattern for the expression that retrieves an entity based on the specified reference.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,9 +332,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbDistinctExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The distinct expression.</param>
+        <summary>Implements the visitor pattern for the removed duplicate elements from the specified set argument.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -354,9 +354,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbElementExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The element expression.</param>
+        <summary>Implements the visitor pattern for the conversion of the specified set argument to a singleton the conversion of the specified set argument to a singleton.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,9 +376,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbEntityRefExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The entity reference expression.</param>
+        <summary>Implements the visitor pattern for the expression that extracts a reference from the underlying entity instance.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -398,9 +398,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExceptExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the set subtraction operation between the left and right operands.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -420,9 +420,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the basic functionality required by expression types.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,9 +442,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbFilterExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The filter expression.</param>
+        <summary>Implements the visitor pattern for a predicate applied to filter an input set.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -464,9 +464,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbFunctionExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The function expression.</param>
+        <summary>Implements the visitor pattern for an invocation of a function.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,9 +486,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbGroupByExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for a group by operation.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,9 +508,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIntersectExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the set intersection operation between the left and right operands.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,9 +530,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsEmptyExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for an empty set determination applied to a single set argument.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -552,9 +552,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsNullExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the null determination applied to a single argument.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -574,9 +574,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsOfExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the type comparison of a single argument against the specified type.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -596,9 +596,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbJoinExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for an inner, left outer, or full outer join operation between the given collection arguments on the specified join condition.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -618,9 +618,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLambdaExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the application of a lambda function to arguments represented by DbExpression objects.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -640,9 +640,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLikeExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for a string comparison against the specified pattern with an optional escape string.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -662,9 +662,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLimitExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the restriction of the number of elements in the argument collection to the specified limit value.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -684,9 +684,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNewInstanceExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the construction of a new instance of a given type, including set and record types.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -706,9 +706,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNotExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the logical NOT of a single Boolean argument.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -728,9 +728,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNullExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for a reference to a typed null literal.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -750,9 +750,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbOfTypeExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the retrieval of elements of the specified type from the given set argument.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -772,9 +772,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbOrExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the logical OR of two Boolean arguments.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -794,9 +794,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbParameterReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for a reference to a parameter declared on the command tree that contains this expression.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -816,9 +816,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbProjectExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the projection of a given input set over the specified expression.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -838,9 +838,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbPropertyExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for retrieving an instance property.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -860,9 +860,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbQuantifierExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for a quantifier operation of the specified kind over the elements of the specified input set.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -882,9 +882,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRefExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for a strongly typed reference to a specific instance within an entity set.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -904,9 +904,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRefKeyExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the retrieval of the key value from the underlying reference value.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -926,9 +926,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the navigation of a relationship.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -948,9 +948,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbScanExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for a scan over an entity set or relationship set, as indicated by the Target property.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -970,9 +970,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbSkipExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the skip expression.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -992,9 +992,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbSortExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for a sort key that can be used as part of the sort order.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1014,9 +1014,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbTreatExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for a type conversion operation applied to a polymorphic argument.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1036,9 +1036,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbUnionAllExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the set union operation between the left and right operands.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1058,9 +1058,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for a reference to a variable that is currently in scope.</summary>
+        <returns>The implemented visitor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1080,9 +1080,9 @@
         <Parameter Name="aggregate" Type="System.Data.Common.CommandTrees.DbAggregate" />
       </Parameters>
       <Docs>
-        <param name="aggregate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="aggregate">The aggregate.</param>
+        <summary>Implements the visitor pattern for the aggregate.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1102,9 +1102,9 @@
         <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySetBase" />
       </Parameters>
       <Docs>
-        <param name="entitySet">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entitySet">The entity set.</param>
+        <summary>Implements the visitor pattern for the entity set.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1124,9 +1124,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression.</param>
+        <summary>Implements the visitor pattern for the expression.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1146,9 +1146,9 @@
         <Parameter Name="binding" Type="System.Data.Common.CommandTrees.DbExpressionBinding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="binding">The expression binding.</param>
+        <summary>Implements the visitor pattern for expression binding.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1168,9 +1168,9 @@
         <Parameter Name="list" Type="System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpressionBinding&gt;" />
       </Parameters>
       <Docs>
-        <param name="list">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="list">The expression binding list.</param>
+        <summary>Implements the visitor pattern for the expression binding list.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1190,9 +1190,9 @@
         <Parameter Name="list" Type="System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpression&gt;" />
       </Parameters>
       <Docs>
-        <param name="list">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="list">The expression list.</param>
+        <summary>Implements the visitor pattern for the expression list.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1212,9 +1212,9 @@
         <Parameter Name="functionMetadata" Type="System.Data.Metadata.Edm.EdmFunction" />
       </Parameters>
       <Docs>
-        <param name="functionMetadata">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="functionMetadata">The function metadata.</param>
+        <summary>Implements the visitor pattern for the function.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1234,9 +1234,9 @@
         <Parameter Name="aggregate" Type="System.Data.Common.CommandTrees.DbFunctionAggregate" />
       </Parameters>
       <Docs>
-        <param name="aggregate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="aggregate">The aggregate.</param>
+        <summary>Implements the visitor pattern for the function aggregate.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1256,9 +1256,9 @@
         <Parameter Name="aggregate" Type="System.Data.Common.CommandTrees.DbGroupAggregate" />
       </Parameters>
       <Docs>
-        <param name="aggregate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="aggregate">The aggregate.</param>
+        <summary>Implements the visitor pattern for the group aggregate.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1278,9 +1278,9 @@
         <Parameter Name="binding" Type="System.Data.Common.CommandTrees.DbGroupExpressionBinding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="binding">The binding.</param>
+        <summary>Implements the visitor pattern for the group expression binding.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1300,9 +1300,9 @@
         <Parameter Name="lambda" Type="System.Data.Common.CommandTrees.DbLambda" />
       </Parameters>
       <Docs>
-        <param name="lambda">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lambda">The lambda function.</param>
+        <summary>Implements the visitor pattern for the Lambda function.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1322,9 +1322,9 @@
         <Parameter Name="clause" Type="System.Data.Common.CommandTrees.DbSortClause" />
       </Parameters>
       <Docs>
-        <param name="clause">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="clause">The sort clause.</param>
+        <summary>Implements the visitor pattern for the sort clause.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1344,9 +1344,9 @@
         <Parameter Name="sortOrder" Type="System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbSortClause&gt;" />
       </Parameters>
       <Docs>
-        <param name="sortOrder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sortOrder">The sort order.</param>
+        <summary>Implements the visitor pattern for the sort order.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1366,9 +1366,9 @@
         <Parameter Name="type" Type="System.Data.Metadata.Edm.EdmType" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type.</param>
+        <summary>Implements the visitor pattern for the type.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1388,9 +1388,9 @@
         <Parameter Name="type" Type="System.Data.Metadata.Edm.TypeUsage" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type.</param>
+        <summary>Implements the visitor pattern for the type usage.</summary>
+        <returns>The implemented visitor pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

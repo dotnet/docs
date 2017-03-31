@@ -1,24 +1,34 @@
 ---
 uid: Microsoft.VisualBasic.Activities.VisualBasic
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.VisualBasic.SetSettings(System.Object,Microsoft.VisualBasic.Activities.VisualBasicSettings)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.VisualBasic.SetSettingsForImplementation(System.Object,Microsoft.VisualBasic.Activities.VisualBasicSettings)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.VisualBasic.GetSettings(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.VisualBasic.ShouldSerializeSettings(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

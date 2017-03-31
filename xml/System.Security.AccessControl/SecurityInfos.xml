@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the section of a security descriptor to be queried or set.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +42,7 @@
         <ReturnType>System.Security.AccessControl.SecurityInfos</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the discretionary access control list (DACL).</summary>
       </Docs>
     </Member>
     <Member MemberName="Group">
@@ -63,7 +63,7 @@
         <ReturnType>System.Security.AccessControl.SecurityInfos</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the primary group identifier.</summary>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -84,7 +84,7 @@
         <ReturnType>System.Security.AccessControl.SecurityInfos</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the owner identifier.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemAcl">
@@ -105,7 +105,7 @@
         <ReturnType>System.Security.AccessControl.SecurityInfos</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the system access control list (SACL).</summary>
       </Docs>
     </Member>
   </Members>

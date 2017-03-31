@@ -1,24 +1,29 @@
 ---
 uid: System.Management.WqlObjectQuery
-internalonly: False
----
-
----
-uid: System.Management.WqlObjectQuery.QueryLanguage
-internalonly: False
----
-
----
-uid: System.Management.WqlObjectQuery.#ctor(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.WqlObjectQuery.#ctor
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.WqlObjectQuery.QueryLanguage
+manager: "jillfra"
+---
+
+---
+uid: System.Management.WqlObjectQuery.#ctor(System.String)
+manager: "jillfra"
+---
+
+---
+uid: System.Management.WqlObjectQuery.#ctor
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.WqlObjectQuery.Clone
-internalonly: False
+manager: "jillfra"
 ---

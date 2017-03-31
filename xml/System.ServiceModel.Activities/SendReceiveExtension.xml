@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>An abstract class that defines extension methods for the send/receive activities.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendReceiveExtension" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="bookmark" Type="System.Activities.Bookmark" />
       </Parameters>
       <Docs>
-        <param name="bookmark">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bookmark">A bookmark at which an activity instance is to be cancelled.</param>
+        <summary>Cancels the activity specified by the given bookmark.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.ServiceModel.Activities.HostSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the host settings of the send/receive activities.</summary>
+        <value>The host settings of the send/receive activities.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,10 +87,10 @@
         <Parameter Name="receiveBookmark" Type="System.Activities.Bookmark" />
       </Parameters>
       <Docs>
-        <param name="settings">To be added.</param>
-        <param name="correlatesWith">To be added.</param>
-        <param name="receiveBookmark">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="settings">The settings for the receive activity.</param>
+        <param name="correlatesWith">An instance key of the activity used to correlate with the message.</param>
+        <param name="receiveBookmark">A bookmark at which the receive activity waits to receive a message.</param>
+        <summary>Executes upon calling **RegisterReceive** method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +110,8 @@
         <Parameter Name="correlationKey" Type="System.Runtime.DurableInstancing.InstanceKey" />
       </Parameters>
       <Docs>
-        <param name="correlationKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="correlationKey">An instance key of the activity used to correlate with the message.</param>
+        <summary>Executes when correlation handle is marked as disposed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,10 +133,10 @@
         <Parameter Name="receiveBookmark" Type="System.Activities.Bookmark" />
       </Parameters>
       <Docs>
-        <param name="settings">To be added.</param>
-        <param name="correlatesWith">To be added.</param>
-        <param name="receiveBookmark">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="settings">The settings for the receive activity.</param>
+        <param name="correlatesWith">An instance key of the activity used to correlate with the message.</param>
+        <param name="receiveBookmark">A bookmark at which the receive activity waits to receive a message.</param>
+        <summary>Registers the received message activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,11 +159,11 @@
         <Parameter Name="sendCompleteBookmark" Type="System.Activities.Bookmark" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="settings">To be added.</param>
-        <param name="correlatesWith">To be added.</param>
-        <param name="sendCompleteBookmark">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message to send.</param>
+        <param name="settings">The settings for send activity.</param>
+        <param name="correlatesWith">An instance key of the activity used to correlate with the message.</param>
+        <param name="sendCompleteBookmark">A bookmark at which the send activity waits for the sending completion.</param>
+        <summary>Sends the given message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

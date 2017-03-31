@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the main configuration section for [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All [!INCLUDE[indigo2](~/includes/indigo2-md.md)] configuration elements are nested in the `system.serviceModel` element of the configuration file. [!INCLUDE[indigo2](~/includes/indigo2-md.md)] does not add elements to the configuration sections of other products.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceModelSectionGroup" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +50,16 @@
         <ReturnType>System.ServiceModel.Configuration.BehaviorsSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the configuration section that contains child entries that are behavior elements.</summary>
+        <value>The configuration section that contains child entries that are behavior elements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `behavior` section defines behavior elements. Each entry is identified by its unique `name`, which is used by services when linking to behaviors.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Bindings">
@@ -61,9 +75,16 @@
         <ReturnType>System.ServiceModel.Configuration.BindingsSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the configuration section that contains all the bindings.</summary>
+        <value>The configuration section that contains all the bindings.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This section holds a collection of standard and custom bindings. Each entry is identified by its unique name, which is used by services when linking to bindings.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Client">
@@ -79,8 +100,8 @@
         <ReturnType>System.ServiceModel.Configuration.ClientSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration section that contains a list of endpoints that a client uses to connect to a service.</summary>
+        <value>The configuration section that contains a list of endpoints that a client uses to connect to a service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +118,8 @@
         <ReturnType>System.ServiceModel.Configuration.ComContractsSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration section that defines the namespace and contract name for a service contract used in COM+ interoperability.</summary>
+        <value>The configuration section that defines the namespace and contract name for a service contract used in COM+ interoperability.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,9 +136,16 @@
         <ReturnType>System.ServiceModel.Configuration.CommonBehaviorsSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the configuration section that contains a list of behaviors that is applied to all [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services on the machine before the behaviors in the <see langword="behaviors" /> section are applied.</summary>
+        <value>The configuration section that contains a list of behaviors that is applied to all [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services on the machine before the behaviors in the <see langword="behaviors" /> section are applied.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This section is defined in the Machine.config file. It contains a list of behaviors that is applied to all [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services on the machine before the behaviors in the behaviors collection are applied. If a behavior is defined in both sections, the behavior in the behaviors sections is given preference.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Diagnostic">
@@ -133,9 +161,16 @@
         <ReturnType>System.ServiceModel.Configuration.DiagnosticSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the configuration section for the diagnostics features of [!INCLUDE[indigo2](~/includes/indigo2-md.md)].</summary>
+        <value>The configuration section for the diagnostics features of [!INCLUDE[indigo2](~/includes/indigo2-md.md)].</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `diagnostics` section contains settings for the diagnostics features of [!INCLUDE[indigo2](~/includes/indigo2-md.md)]. The user can enable/disable tracing, performance counters, and the WMI provider, and can add custom message filters.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Extensions">
@@ -151,8 +186,8 @@
         <ReturnType>System.ServiceModel.Configuration.ExtensionsSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a configuration section that defines all the extensions.</summary>
+        <value>A configuration section that defines all the extensions.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,10 +207,12 @@
         <Parameter Name="config" Type="System.Configuration.Configuration" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">A <see cref="T:System.Configuration.Configuration" /> that represents a configuration file.</param>
+        <summary>Gets the <see langword="system.ServiceModel" /> configuration section group from the specified configuration file.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Configuration.ServiceModelSectionGroup" /> that represents the <see langword="system.ServiceModel" /> settings in configuration.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="config" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ProtocolMapping">
@@ -191,8 +228,8 @@
         <ReturnType>System.ServiceModel.Configuration.ProtocolMappingSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an endpoint configuration section that defines the communications protocol.</summary>
+        <value>An endpoint configuration section that defines the communications protocol.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,8 +246,8 @@
         <ReturnType>System.ServiceModel.Configuration.ServiceHostingEnvironmentSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration section that defines what type the service hosting environment instantiates for a particular transport.</summary>
+        <value>The configuration section that defines what type the service hosting environment instantiates for a particular transport.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,9 +264,16 @@
         <ReturnType>System.ServiceModel.Configuration.ServicesSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the configuration section that defines a collection of services.</summary>
+        <value>The configuration section that defines a collection of services.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For each service defined in the assembly, this section contains a service element with the settings for the service.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StandardEndpoints">
@@ -245,8 +289,8 @@
         <ReturnType>System.ServiceModel.Configuration.StandardEndpointsSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a configuration section for the standard endpoints.</summary>
+        <value>A standard endpoint section element object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

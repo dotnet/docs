@@ -1,9 +1,9 @@
 ---
 uid: System.Xaml.INamespacePrefixLookup
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.INamespacePrefixLookup.LookupPrefix(System.String)
-internalonly: False
+manager: "martinek"
 ---

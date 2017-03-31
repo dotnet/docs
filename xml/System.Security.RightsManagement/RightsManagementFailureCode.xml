@@ -10,8 +10,18 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies error conditions that can occur when performing a rights management operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Aborted">
@@ -27,7 +37,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Asynchronous operation canceled, or a non-recoverable error has occurred.</summary>
       </Docs>
     </Member>
     <Member MemberName="ActivationFailed">
@@ -43,7 +53,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>License activation failed; rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="AdEntryNotFound">
@@ -59,7 +69,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current user was not found in the Active Directory (AD) for certification under Windows authentication.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlreadyInProgress">
@@ -75,7 +85,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The requested operation is already in progress.</summary>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationFailed">
@@ -91,7 +101,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Possible authentication error (HTTP error 401) returned by an Internet request. Or, the current user does not have valid domain credentials in a silent user activation attempt. Or, the certification server in silent user activation is not in the local intranet or trusted sites zone.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadGetInfoQuery">
@@ -107,7 +117,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An invalid constant was passed.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindAccessPrincipalNotEnabling">
@@ -123,7 +133,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The access condition is not matched to the enabling principal that is handed into the bind.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindAccessUnsatisfied">
@@ -139,7 +149,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current user does not satisfy the conditions defined in the End Use License (EUL).</summary>
       </Docs>
     </Member>
     <Member MemberName="BindContentNotInEndUseLicense">
@@ -155,7 +165,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified resource is not contained in any WORK node of the license.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindIndicatedPrincipalMissing">
@@ -171,7 +181,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The enabling principal does not match the issued principal of the End Use License (EUL).</summary>
       </Docs>
     </Member>
     <Member MemberName="BindIntervalTimeViolated">
@@ -187,7 +197,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The defined time period for the protected content has expired; access is no longer permitted.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindMachineNotFoundInGroupIdentity">
@@ -203,7 +213,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current machine is not defined within the rights managed group identity.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindNoApplicableRevocationList">
@@ -219,7 +229,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current user does not have rights to access the protected content.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindNoSatisfiedRightsGroup">
@@ -235,7 +245,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified rights group is not contained in the End Use License (EUL).</summary>
       </Docs>
     </Member>
     <Member MemberName="BindPolicyViolation">
@@ -251,7 +261,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current user does not have rights to access the protected content.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindRevocationListStale">
@@ -267,7 +277,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The license requires that a new revocation list must be acquired.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindRevokedIssuer">
@@ -283,7 +293,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current user does not have rights to access the protected content.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindRevokedLicense">
@@ -299,7 +309,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current user does not have rights to access the protected content.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindRevokedModule">
@@ -315,7 +325,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindRevokedPrincipal">
@@ -331,7 +341,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current user does not have rights to access the protected content.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindRevokedResource">
@@ -347,7 +357,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current user does not have rights to access the protected content.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindSpecifiedWorkMissing">
@@ -363,7 +373,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The End Use License (EUL) contains no WORK node.</summary>
       </Docs>
     </Member>
     <Member MemberName="BindValidityTimeViolated">
@@ -379,7 +389,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The defined time period for the protected content has expired; access is no longer permitted.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrokenCertChain">
@@ -395,7 +405,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The rights management certificate chain is broken.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClockRollbackDetected">
@@ -411,7 +421,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clock rollback has been detected. Protected content cannot be accessed.</summary>
       </Docs>
     </Member>
     <Member MemberName="CryptoOperationUnsupported">
@@ -427,7 +437,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cryptographic operation that was requested is not supported. For example, passing an RMS encrypting object for decrypting purposes.</summary>
       </Docs>
     </Member>
     <Member MemberName="DebuggerDetected">
@@ -443,7 +453,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Cannot open or publish content with restricted permissions because a debugger has been detected.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmailNotVerified">
@@ -459,7 +469,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user's email address cannot be verified.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnablingPrincipalFailure">
@@ -475,7 +485,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified principal cannot be enabled</summary>
       </Docs>
     </Member>
     <Member MemberName="EncryptionNotPermitted">
@@ -491,7 +501,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encryption is not permitted.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnvironmentCannotLoad">
@@ -507,7 +517,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Security.RightsManagement.SecureEnvironment" /> cannot load.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnvironmentNotLoaded">
@@ -523,7 +533,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Security.RightsManagement.SecureEnvironment" /> cannot load.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpiredOfficialIssuanceLicenseTemplate">
@@ -539,7 +549,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The authorized time period defined in the issuance license template has expired; access is no longer permitted.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlobalOptionAlreadySet">
@@ -555,7 +565,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The option specified has already been set.</summary>
       </Docs>
     </Member>
     <Member MemberName="GroupIdentityNotSet">
@@ -571,7 +581,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A user name was not specified for the client session</summary>
       </Docs>
     </Member>
     <Member MemberName="HidCorrupted">
@@ -587,7 +597,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Hardware ID (HID) used in a machine activation attempt is incorrectly formatted. Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="HidInvalid">
@@ -603,7 +613,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Hardware ID (HID) used in a machine activation attempt is invalid. Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="IdMismatch">
@@ -619,7 +629,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The content ID from the license does not match the content ID the license storage session</summary>
       </Docs>
     </Member>
     <Member MemberName="IncompatibleObjects">
@@ -635,7 +645,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An object type passed is incompatible with this operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="InfoNotInLicense">
@@ -651,7 +661,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When creating a bound license, an issuance license, not an end-use license, was specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="InfoNotPresent">
@@ -667,7 +677,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Some information is missing.</summary>
       </Docs>
     </Member>
     <Member MemberName="InstallationFailed">
@@ -683,7 +693,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An installation operation failed.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidAlgorithmType">
@@ -699,7 +709,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The algorithm type specified is invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidClientLicensorCertificate">
@@ -715,7 +725,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidEmail">
@@ -731,7 +741,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>RMS Server email address verification failed.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidEncodingType">
@@ -747,7 +757,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified encoding type is invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidHandle">
@@ -763,7 +773,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Either the environment or the enabling principal handle is invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidIssuanceLicenseTemplate">
@@ -779,7 +789,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Rights Management Services template contains one or more errors.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidKeyLength">
@@ -795,7 +805,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key length specified in a key/value pair is invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidLicense">
@@ -811,7 +821,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The license structure in one of the certificates is invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidLicenseSignature">
@@ -827,7 +837,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management signed digital certificate cannot be validated. (The signed certificate may have been tampered.)</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidLockboxPath">
@@ -843,7 +853,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidLockboxType">
@@ -859,7 +869,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidNumericalValue">
@@ -875,7 +885,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The numeric value specified is invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidRegistryPath">
@@ -891,7 +901,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified registry path is invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidServerResponse">
@@ -907,7 +917,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidTimeInfo">
@@ -923,7 +933,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The time information specified is invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidVersion">
@@ -939,7 +949,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The rights management version is incorrect.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeyTypeUnsupported">
@@ -955,7 +965,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key type specified in a key/value pair is not supported.</summary>
       </Docs>
     </Member>
     <Member MemberName="LibraryFail">
@@ -971,7 +981,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A library operation failed.</summary>
       </Docs>
     </Member>
     <Member MemberName="LibraryUnsupportedPlugIn">
@@ -987,7 +997,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified library plug-in is not supported.</summary>
       </Docs>
     </Member>
     <Member MemberName="LicenseAcquisitionFailed">
@@ -1003,7 +1013,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An End Use License (EUL) could not be acquired from the rights management server.</summary>
       </Docs>
     </Member>
     <Member MemberName="LicenseBindingToWindowsIdentityFailed">
@@ -1019,7 +1029,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current user credentials are not valid for acquiring a license.</summary>
       </Docs>
     </Member>
     <Member MemberName="ManifestPolicyViolation">
@@ -1035,7 +1045,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An operation is in violation of the rights management manifest policy.</summary>
       </Docs>
     </Member>
     <Member MemberName="MetadataNotSet">
@@ -1051,7 +1061,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified metadata could net be set.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeedsGroupIdentityActivation">
@@ -1067,7 +1077,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user is not activated, or no Rights Account Certificate (RAC) was submitted and none was found in the license store to match the license associated with this session.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeedsMachineActivation">
@@ -1083,7 +1093,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The computer must be activated before the user can be activated.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoAesCryptoProvider">
@@ -1099,7 +1109,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoConnect">
@@ -1115,7 +1125,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management cannot connect to the URI specified for the license server.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoDistributionPointUrlFound">
@@ -1131,7 +1141,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The protected content is corrupted.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoLicense">
@@ -1147,7 +1157,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A required license is not available.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoMoreData">
@@ -1163,7 +1173,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No license or certificate exists at the specified index.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAChain">
@@ -1179,7 +1189,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights managed content is corrupted.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -1195,7 +1205,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item requested to delete does not exist.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutdatedModule">
@@ -1211,7 +1221,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfQuota">
@@ -1227,7 +1237,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The license server's maximum quota of End Use Licenses (EULs) has been reached.</summary>
       </Docs>
     </Member>
     <Member MemberName="OwnerLicenseNotFound">
@@ -1243,7 +1253,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The document does not contain an Owner License.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueryReportsNoResults">
@@ -1259,7 +1269,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No instances of the requested attribute exist.</summary>
       </Docs>
     </Member>
     <Member MemberName="RecordNotFound">
@@ -1275,7 +1285,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified license was not found.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestDenied">
@@ -1291,7 +1301,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Rights Management server does not allow temporary certification of the current user.</summary>
       </Docs>
     </Member>
     <Member MemberName="RevocationInfoNotSet">
@@ -1307,7 +1317,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Certificate or license revocation information has not been set.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightNotGranted">
@@ -1323,7 +1333,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current user does not have rights to access the protected content.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightNotSet">
@@ -1339,7 +1349,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The requested right was not specified when the content was published with rights management.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerError">
@@ -1355,7 +1365,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerNotFound">
@@ -1371,7 +1381,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServiceGone">
@@ -1387,7 +1397,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServiceMoved">
@@ -1403,7 +1413,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServiceNotFound">
@@ -1419,7 +1429,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rights management services are not properly configured.</summary>
       </Docs>
     </Member>
     <Member MemberName="Success">
@@ -1435,7 +1445,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Operation has competed successfully.</summary>
       </Docs>
     </Member>
     <Member MemberName="TooManyCertificates">
@@ -1451,7 +1461,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The number of certificates has exceeded the maximum number allowed.</summary>
       </Docs>
     </Member>
     <Member MemberName="TooManyLoadedEnvironments">
@@ -1467,7 +1477,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Too many <see cref="T:System.Security.RightsManagement.SecureEnvironment" /> instance have been created.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnexpectedException">
@@ -1483,7 +1493,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unspecified error occurred.  Also thrown when an application runs in debug mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseDefault">
@@ -1499,7 +1509,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>If a request is made for computer activation or a rights account certificate, receiving <see cref="F:System.Security.RightsManagement.RightsManagementFailureCode.UseDefault" /> indicates that the application should pass <see langword="null" /> into the ActServInfo parameter</summary>
       </Docs>
     </Member>
     <Member MemberName="ValidityTimeViolation">
@@ -1515,7 +1525,7 @@
         <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The defined time period for the protected content has expired; access is no longer permitted.</summary>
       </Docs>
     </Member>
   </Members>

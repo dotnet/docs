@@ -1,69 +1,83 @@
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.SuiteName
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.RequiresMinimumFramework35SP1
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.DeploymentManifestEntryPoint
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.Assemblies
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.SigningManifests
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.EntryPoint
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.ErrorReportUrl
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.TargetFrameworkVersion
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.ReferencedAssemblies
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.CreateDesktopShortcut
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RequiresFramework35SP1Assembly.Files
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

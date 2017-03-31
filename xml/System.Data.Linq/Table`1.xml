@@ -34,9 +34,31 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TEntity">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TEntity">The type of the data in the table.</typeparam>
+    <summary>Represents a table for a particular type in the underlying database.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class enables you to query over the table and add, remove, and attach objects.  
+  
+ An application can access a <xref:System.Data.Linq.Table%601> instance via <xref:System.Data.Linq.DataContext.GetTable%2A> or by using a strongly typed property for the strongly typed <xref:System.Data.Linq.DataContext>. That is, when the designer generates a DataContext object, it generates properties to represent each Table. For example:  
+  
+```  
+[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="SignOffTool")]  
+public partial class DataClasses1DataContext : System.Data.Linq.DataContext {  
+   public System.Data.Linq.Table<User> Users {  
+      get {  
+         return this.GetTable<User>();  
+      }  
+   }  
+}  
+```  
+  
+ For this strongly typed DataContext, you can access the Users property to get `Table<User>`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Attach">
@@ -55,9 +77,22 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The original values of the entity to be attached.</param>
+        <summary>Attaches a disconnected or "detached" entity to a new <see cref="T:System.Data.Linq.DataContext" /> when original values are required for optimistic concurrency checks.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the `Attach` methods with entities that have been created in one <xref:System.Data.Linq.DataContext>, serialized to a client, and then deserialized back to perform an update or delete operation. Because the new <xref:System.Data.Linq.DataContext> has no way of tracking what the original values were for a disconnected entity, the client is responsible for supplying those values. In this version of <xref:System.Data.Linq.Table%601.Attach%2A>, the entity is assumed to be in its original value state. After calling this method, you can then update its fields, for example with additional data sent from the client.  
+  
+ When a new entity is attached, deferred loaders for any child collections (for example, `EntitySet` collections of entities from associated tables) are initialized. When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, members of the child collections are put into an `Unmodified` state. To update members of a child collection, you must explicitly call `Attach` and specify that entity.  
+  
+ For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ Do not try to `Attach` an entity that has not been detached through serialization. Entities that have not been serialized still maintain associations with deferred loaders that can cause unexpected results if the entity becomes tracked by a second data context.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Attach">
@@ -77,10 +112,18 @@
         <Parameter Name="asModified" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <param name="asModified">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to be attached.</param>
+        <param name="asModified">
+          <see langword="true" /> to attach the entity as modified; <see langword="false" /> to attach the entity as unmodified.</param>
+        <summary>Attaches an entity to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If attaching *as modified*, the entity must either declare a version member or must not participate in update conflict checking. When a new entity is attached, deferred loaders for any child collections (for example, `EntitySet` collections of entities from associated tables) are initialized. When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, members of the child collections are put into an `Unmodified` state. To update members of a child collection, you must explicitly call `Attach` and specify that entity.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Attach">
@@ -100,10 +143,25 @@
         <Parameter Name="original" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <param name="original">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to be attached.</param>
+        <param name="original">An instance of the same entity type with data members that contain the original values.</param>
+        <summary>Attaches an entity to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state by specifying both the entity and its original state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the following example, the `Customer` object is already correctly configured. You can call `Attach` without having to replay the updates.  
+  
+ When a new entity is attached, deferred loaders for any child collections (for example, `EntitySet` collections of entities from associated tables) are initialized. When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, members of the child collections are put into an `Unmodified` state. To update members of a child collection, you must explicitly call `Attach` and specify that entity.  
+  
+   
+  
+## Examples  
+ [!code-csharp[DLinqNTier#4](~/samples/snippets/csharp/VS_Snippets_Data/DLinqNTier/cs/Program.cs#4)]
+ [!code-vb[DLinqNTier#4](~/samples/snippets/visualbasic/VS_Snippets_Data/DLinqNTier/vb/Module1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AttachAll&lt;TSubEntity&gt;">
@@ -129,10 +187,19 @@
         <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;TSubEntity&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSubEntity">To be added.</typeparam>
-        <param name="entities">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="TSubEntity">The type of entities to attach.</typeparam>
+        <param name="entities">The collection of entities.</param>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method attaches all entities of a collection to a new <xref:System.Data.Linq.DataContext>. When a new entity is attached, deferred loaders for any child collections (for example, `EntitySet` collections of entities from associated tables) are initialized. When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, members of the child collections are put into an `Unmodified` state. To update members of a child collection, you must explicitly call `Attach` and specify that entity.  
+  
+ For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AttachAll&lt;TSubEntity&gt;">
@@ -159,11 +226,39 @@
         <Parameter Name="asModified" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <typeparam name="TSubEntity">To be added.</typeparam>
-        <param name="entities">To be added.</param>
-        <param name="asModified">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="TSubEntity">The type of entities to attach.</typeparam>
+        <param name="entities">The collection of entities.</param>
+        <param name="asModified">
+          <see langword="true" /> if the object has a timestamp or RowVersion member; <see langword="false" /> if original values are being used for the optimistic concurrency check.</param>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method attaches all entities of a collection to the <xref:System.Data.Linq.DataContext> in either a *modified* or *unmodified* state. If attaching as modified, the entity must either declare a version member or must not participate in update conflict checking. If attaching as unmodified, the entity is assumed to represent the original value. After calling this method, the entity's fields can be modified with other information from the client before <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called. For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ When a new entity is attached, deferred loaders for any child collections (for example, `EntitySet` collections of entities from associated tables) are initialized. When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, members of the child collections are put into an `Unmodified` state. To update members of a child collection, you must explicitly call `Attach` and specify that entity.  
+  
+   
+  
+## Examples  
+ The following example shows how you can update an `Order` object on a different <xref:System.Data.Linq.DataContext> instance. The example assumes that you have a connection to a database and have made a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] file for it (in this case, the Northwind sample database).  
+  
+ [!code-csharp[DLinqNTier#1](~/samples/snippets/csharp/VS_Snippets_Data/DLinqNTier/cs/Program.cs#1)]
+ [!code-vb[DLinqNTier#1](~/samples/snippets/visualbasic/VS_Snippets_Data/DLinqNTier/vb/Module1.vb#1)]  
+  
+ In the following example, an entity object to be attached has a foreign key relation with another object and is stored in the cache but not attached. When you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A>, the `ChangeProcessor` adds an `Insert` operation for all the foreign key objects. This is a side-effect when an entity instance is re-used in a different <xref:System.Data.Linq.DataContext> instance. For this reason, [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] does not support re-use of objects.  
+  
+ [!code-csharp[DlinqNTier#7](~/samples/snippets/csharp/VS_Snippets_Data/DLinqNTier/cs/Program.cs#7)]
+ [!code-vb[DlinqNTier#7](~/samples/snippets/visualbasic/VS_Snippets_Data/DLinqNTier/vb/Module1.vb#7)]  
+  
+ The following example shows a scenario in which Customer A has canceled all orders and Customer B has taken ownership of them. You can attach all orders of Customer A at the same time.  
+  
+ [!code-csharp[DlinqNTier#3](~/samples/snippets/csharp/VS_Snippets_Data/DLinqNTier/cs/Program.cs#3)]
+ [!code-vb[DlinqNTier#3](~/samples/snippets/visualbasic/VS_Snippets_Data/DLinqNTier/vb/Module1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -179,8 +274,8 @@
         <ReturnType>System.Data.Linq.DataContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Linq.DataContext" /> that has been used to retrieve this <see cref="T:System.Data.Linq.Table`1" />.</summary>
+        <value>The data context that has been used to retrieve this table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,10 +302,39 @@
         <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;TSubEntity&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSubEntity">To be added.</typeparam>
-        <param name="entities">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="TSubEntity">The type of the elements to delete.</typeparam>
+        <param name="entities">The entities to delete.</param>
+        <summary>Puts all entities from the collection into a <see langword="pending delete" /> state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Entities that are put into the pending delete state with this method do not disappear from query results until after <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called. Disconnected entities must be attached before they can be deleted. For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ The following C# snippet shows one use for this method:  
+  
+```  
+IEnumerable<Customer> customersWithoutOrders = (from c in db.Customers  
+   where c.Orders.Count == 0  
+   select c).ToList();  
+  
+db.Customers.DeleteAllOnSubmit(customersWithoutOrders);  
+db.SubmitChanges();  
+```  
+  
+ In Visual Basic:  
+  
+```  
+Dim customersWithoutOrders As IEnumerable(Of Customer) = (From c In db.Customers _   
+    Where c.Orders.Count = 0 _   
+    Select c).ToList()  
+  
+db.Customers.DeleteAllOnSubmit(customersWithoutOrders)  
+db.SubmitChanges()  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteOnSubmit">
@@ -229,9 +353,25 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to be deleted.</param>
+        <summary>Puts an entity from this table into a <see langword="pending delete" /> state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The removed entity does not disappear from the query results until after <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called. Disconnected entities must first be attached before they can be deleted. For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+> [!NOTE]
+>  [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] does not support or recognize cascade-delete operations. If you want to delete a row in a table that has constraints against it, you must either set the `ON DELETE CASCADE` rule in the foreign-key constraint in the database, or use your own code to first delete the child objects that prevent the parent object from being deleted. Otherwise, an exception is thrown.  
+  
+   
+  
+## Examples  
+ [!code-csharp[System.Data.Linq.Table#3](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.table/cs/program.cs#3)]
+ [!code-vb[System.Data.Linq.Table#3](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.table/vb/module1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -248,8 +388,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an enumerator that iterates through the collection.</summary>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,9 +409,9 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entity">The entity from which to get the array.</param>
+        <summary>Returns an array of modified members that contain their current and original values.</summary>
+        <returns>An array of modified members that contain their current and original values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,9 +429,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new list for binding to a data source.</summary>
+        <returns>A new <see cref="T:System.ComponentModel.IBindingList" /> for binding to a data source.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned list supports standard operations, such as additions, deletions, insertions, and updates, but saves must be explicitly managed by the programmer.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOriginalEntityState">
@@ -310,10 +457,17 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity whose original state is to be returned.</param>
+        <summary>Returns a <see cref="T:System.Data.Linq.Table`1" /> instance that contains the original state of the entity.</summary>
+        <returns>A <see cref="T:System.Data.Linq.Table`1" /> instance that contains the original state of the entity.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns the original state of an entity since it was either created or attached to the current <xref:System.Data.Linq.DataContext>. The original state of an entity that has been serialized and deserialized must be provided by an independent tracking mechanism and supplied when the entity is attached to a new <xref:System.Data.Linq.DataContext>. For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertAllOnSubmit&lt;TSubEntity&gt;">
@@ -339,10 +493,17 @@
         <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;TSubEntity&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSubEntity">To be added.</typeparam>
-        <param name="entities">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="TSubEntity">The type of the elements to insert.</typeparam>
+        <param name="entities">The entities to add.</param>
+        <summary>Adds all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in a <see langword="pending insert" /> state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The added entities will not be in query results until after <xref:System.Data.Linq.DataContext.SubmitChanges%2A> has been called.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertOnSubmit">
@@ -361,9 +522,22 @@
         <Parameter Name="entity" Type="TEntity" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to be added.</param>
+        <summary>Adds an entity in a <see langword="pending insert" /> state to this <see cref="T:System.Data.Linq.Table`1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The added entity will not appear in query results from this table until after <xref:System.Data.Linq.DataContext.SubmitChanges%2A> has been called.  
+  
+   
+  
+## Examples  
+ [!code-csharp[System.Data.Linq.Table#1](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.table/cs/program.cs#1)]
+ [!code-vb[System.Data.Linq.Table#1](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.table/vb/module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -379,8 +553,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the type of the entities contained in this <see cref="T:System.Data.Linq.Table`1" /> instance has a primary key.</summary>
+        <value>
+          <see langword="true" /> if the entity type does not have a primary key; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -398,8 +573,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -417,9 +592,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.ContainsListCollection">
@@ -435,9 +617,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the collection is a collection of <see cref="T:System.Collections.IList" /> objects.</summary>
+        <value>
+          <see langword="true" /> if the collection is a collection of <see cref="T:System.Collections.IList" /> objects; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IListSource.GetList">
@@ -454,9 +644,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an <see cref="T:System.Collections.IList" /> that can be bound to a data source from an object that does not implement an <see cref="T:System.Collections.IList" /> itself.</summary>
+        <returns>An <see cref="T:System.Collections.IList" /> that can be bound to a data source.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Linq.ITable.Attach">
@@ -475,9 +672,16 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to be attached.</param>
+        <summary>Attaches an entity to the <see cref="T:System.Data.Linq.DataContext" /> in an unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Data.Linq.ITable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Linq.ITable.Attach">
@@ -497,10 +701,18 @@
         <Parameter Name="asModified" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <param name="asModified">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to be attached.</param>
+        <param name="asModified">
+          <see langword="true" /> to attach the entity as modified; <see langword="false" /> to attached the entity as unmodified.</param>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Data.Linq.ITable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Linq.ITable.Attach">
@@ -520,10 +732,17 @@
         <Parameter Name="original" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <param name="original">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to be attached.</param>
+        <param name="original">An instance of the same entity type with data members that contain the original values.</param>
+        <summary>Attaches an entity to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state by specifying both the entity and its original state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Data.Linq.ITable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Linq.ITable.AttachAll">
@@ -542,9 +761,16 @@
         <Parameter Name="entities" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="entities">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entities">The collection of entities to be attached.</param>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Data.Linq.ITable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Linq.ITable.AttachAll">
@@ -564,10 +790,18 @@
         <Parameter Name="asModified" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="entities">To be added.</param>
-        <param name="asModified">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entities">The collection of entities to be attched.</param>
+        <param name="asModified">
+          <see langword="true" /> to attach the entities as modified; <see langword="false" /> to attach the entities as unmodified.</param>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Data.Linq.ITable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Linq.ITable.DeleteAllOnSubmit">
@@ -586,9 +820,16 @@
         <Parameter Name="entities" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="entities">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entities">The entities being removed.</param>
+        <summary>Puts all entities from the collection into a <see langword="pending delete" /> state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Data.Linq.ITable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Linq.ITable.DeleteOnSubmit">
@@ -607,9 +848,19 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to be removed.</param>
+        <summary>Puts an entity from this table into a <see langword="pending delete" /> state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Data.Linq.ITable> interface.  
+  
+> [!NOTE]
+>  [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] does not support or recognize cascade-delete operations. If you want to delete a row in a table that has constraints against it, you must either set the `ON DELETE CASCADE` rule in the foreign-key constraint in the database, or use your own code to first delete the child objects that prevent the parent object from being deleted. Otherwise, an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Linq.ITable.GetModifiedMembers">
@@ -633,10 +884,17 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity from which to obtain the modified members.</param>
+        <summary>Returns an array of modified members that contain their current and original values.</summary>
+        <returns>An array of modified members.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Data.Linq.ITable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Linq.ITable.GetOriginalEntityState">
@@ -660,10 +918,17 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity whose original state is to be accessed.</param>
+        <summary>Retrieves original values of a given entity.</summary>
+        <returns>A copy of the original entity.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Data.Linq.ITable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Linq.ITable.InsertAllOnSubmit">
@@ -682,9 +947,16 @@
         <Parameter Name="entities" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="entities">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entities">The collection of entities to be added.</param>
+        <summary>Adds all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in an <see langword="pending insert" /> state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Data.Linq.ITable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.Linq.ITable.InsertOnSubmit">
@@ -703,9 +975,16 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to add.</param>
+        <summary>Adds an entity in a <see langword="pending insert" /> state to this table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Data.Linq.ITable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Linq.IQueryable.ElementType">
@@ -721,9 +1000,16 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of the element(s) that are returned when the expression tree associated with this object is executed.</summary>
+        <value>The type of the element(s) that are returned when the expression tree associated with this object is executed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Linq.IQueryable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Linq.IQueryable.Expression">
@@ -739,9 +1025,16 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the expression tree that is associated with this instance of <see cref="T:System.Linq.IQueryable" />.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.Expression" /> that is associated with this instance of <see cref="T:System.Linq.IQueryable" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Linq.IQueryable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Linq.IQueryable.Provider">
@@ -757,9 +1050,16 @@
         <ReturnType>System.Linq.IQueryProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the query provider that is associated with this data source.</summary>
+        <value>The <see cref="T:System.Linq.IQueryProvider" /> that is associated with this data source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Linq.IQueryable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Linq.IQueryProvider.CreateQuery">
@@ -778,10 +1078,17 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="expression">The query expression from which the evaluation is performed.</param>
+        <summary>Constructs an <see cref="T:System.Linq.IQueryable" /> object that can evaluate the query represented by a specified expression tree.</summary>
+        <returns>An <see cref="T:System.Linq.IQueryable" /> that can evaluate the query represented by the specified expression tree.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Linq.IQueryProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Linq.IQueryProvider.CreateQuery&lt;TResult&gt;">
@@ -803,11 +1110,18 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the data in the table.</typeparam>
+        <param name="expression">The query expression from which the evaluation is performed.</param>
+        <summary>Constructs an <see cref="T:System.Linq.IQueryable`1" /> object that can evaluate the query represented by a specified expression tree.</summary>
+        <returns>An <see cref="T:System.Linq.IQueryable`1" /> that can evaluate the query represented by the specified expression tree.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Linq.IQueryProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Linq.IQueryProvider.Execute">
@@ -826,10 +1140,17 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="expression">The query expression to execute.</param>
+        <summary>Executes the query represented by a specified expression tree.</summary>
+        <returns>The value that results from executing the specified query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Linq.IQueryProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Linq.IQueryProvider.Execute&lt;TResult&gt;">
@@ -851,11 +1172,18 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TResult">The type of the data in the table.</typeparam>
+        <param name="expression">The query expression to execute.</param>
+        <summary>Executes the strongly-typed query represented by a specified expression tree.</summary>
+        <returns>The value that results from executing the specified query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.Table%601> instance is cast to an <xref:System.Linq.IQueryProvider> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -872,10 +1200,99 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents the table.</summary>
+        <returns>A string representation of the table.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AttachAll&lt;TSubEntity&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If attaching as modified, the entity must either declare a version member or must not participate in update conflict checking.  
+  
+ When a new entity is attached, deferred loaders for any child collections (for example, `EntitySet` collections of entities from associated tables) are initialized. When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, members of the child collections are put into an `Unmodified` state. To update members of a child collection, you must explicitly call `Attach` and specify that entity.  
+  
+ For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Attach">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attaches an entity to the <see cref="T:System.Data.Linq.DataContext" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the `Attach` methods with entities that have been created in one <xref:System.Data.Linq.DataContext>, serialized to a client, and then deserialized back (with the intention to perform an update or delete operation). For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ Do not try to `Attach` an entity that has not been detached through serialization. Entities that have not been serialized still maintain associations with deferred loaders that can cause unexpected results if the entity becomes tracked by a second data context.  
+  
+ When a new entity is attached, deferred loaders for any child collections (for example, `EntitySet` collections of entities from associated tables) are initialized. When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, members of the child collections are put into an `Unmodified` state. To update members of a child collection, you must explicitly call `Attach` and specify that entity.  
+  
+ `Attach` attaches all entities in the object graph of the provided object. For example, the following C# code:  
+  
+```  
+using (SampleDataContext db = new SampleDataContext()) {  
+    Employee employee = new Employee { employeeId = 1 };  
+  
+    Master master = new Master();  
+    master.Employee = employee;  
+  
+    Child child = new Child();  
+    child.Employee = employee;  
+  
+    db.Employees.Attach(employee);  
+  
+    master.Child = child;  
+  
+    db.Masters.InsertOnSubmit(master);  
+  
+    db.SubmitChanges();  
+}  
+  
+```  
+  
+ The equivalent Visual Basic code is:  
+  
+```  
+Using db As New SampleDataContext()    Dim employee As New Employee With { .employeeId = 1 }  
+  
+    Dim master As New Master()  
+    master.Employee = employee  
+  
+    Dim child As New Child()  
+    child.Employee = employee  
+  
+    db.Employees.Attach(employee)  
+  
+    master.Child = child  
+  
+    db.Masters.InsertOnSubmit(master)  
+  
+    db.SubmitChanges()  
+  
+End Using  
+```  
+  
+ Calling `Attach` on `Employee` attaches employee, master, and child, because the `Employee` has relationships to both master and child. You must explicitly call `InsertOnSubmit` to change the state from attached to inserted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

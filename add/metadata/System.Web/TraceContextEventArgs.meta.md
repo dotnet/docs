@@ -1,14 +1,17 @@
 ---
 uid: System.Web.TraceContextEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContextEventArgs.#ctor(System.Collections.ICollection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.TraceContextEventArgs.TraceRecords
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

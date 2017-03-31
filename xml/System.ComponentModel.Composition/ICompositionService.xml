@@ -9,7 +9,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods to satisfy imports on an existing part instance.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,8 +30,8 @@
         <Parameter Name="part" Type="System.ComponentModel.Composition.Primitives.ComposablePart" />
       </Parameters>
       <Docs>
-        <param name="part">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="part">The part to compose.</param>
+        <summary>Composes the specified part, with recomposition and validation disabled.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

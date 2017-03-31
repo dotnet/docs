@@ -1,4 +1,6 @@
 ---
 uid: System.CodeDom.Compiler.LanguageOptions
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

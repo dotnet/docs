@@ -1,4 +1,4 @@
 ---
 uid: System.Runtime.Remoting.Channels.Ipc
-internalonly: False
+manager: "ghogen"
 ---

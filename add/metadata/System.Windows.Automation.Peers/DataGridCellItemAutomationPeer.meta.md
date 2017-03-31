@@ -1,104 +1,132 @@
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#IsSelected
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IValueProvider#Value
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#Select
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#ColumnSpan
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IValueProvider#SetValue(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IScrollItemProvider#ScrollIntoView
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#SelectionContainer
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IValueProvider#IsReadOnly
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Column
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#ContainingGrid
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#ITableItemProvider#GetColumnHeaderItems
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IVirtualizedItemProvider#Realize
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#ITableItemProvider#GetRowHeaderItems
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#RemoveFromSelection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Row
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.#ctor(System.Object,System.Windows.Controls.DataGridColumn)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#AddToSelection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IInvokeProvider#Invoke
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridCellItemAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#RowSpan
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---

@@ -15,8 +15,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines values for specifying the parts of a <see cref="T:System.Windows.Forms.DataGridViewCell" /> that are to be painted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the protected <xref:System.Windows.Forms.DataGridViewCell.Paint%2A?displayProperty=fullName> method and by handlers for the <xref:System.Windows.Forms.DataGridView.CellPainting>, <xref:System.Windows.Forms.DataGridView.RowPrePaint>, and <xref:System.Windows.Forms.DataGridView.RowPostPaint> events of the <xref:System.Windows.Forms.DataGridView> control.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this type. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#20)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -32,7 +47,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All parts of the cell should be painted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Background">
@@ -48,7 +63,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The background of the cell should be painted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -64,7 +79,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The border of the cell should be painted.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentBackground">
@@ -80,7 +95,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The background of the cell content should be painted.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentForeground">
@@ -96,7 +111,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The foreground of the cell content should be painted.</summary>
       </Docs>
     </Member>
     <Member MemberName="ErrorIcon">
@@ -112,7 +127,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The cell error icon should be painted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -128,7 +143,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The focus rectangle should be painted around the cell.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -144,7 +159,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Nothing should be painted.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionBackground">
@@ -160,7 +175,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The background of the cell should be painted when the cell is selected.</summary>
       </Docs>
     </Member>
   </Members>

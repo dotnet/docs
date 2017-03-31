@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Expresses a relationship between an argument and a property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="PropertyRelation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,10 +45,11 @@
         <Parameter Name="required" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="argument">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="required">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="argument">The argument.</param>
+        <param name="value">The value of the property.</param>
+        <param name="required">
+          <see langword="true" /> if the property is required.</param>
+        <summary>Initializes a new instance of the <see cref="PropertyRelation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +66,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Contains the name of the argument.</summary>
+        <value>The name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +84,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates if the property is required.</summary>
+        <value>
+          <see langword="true" /> if the property is required.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +103,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Contains the value of the property.</summary>
+        <value>The value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

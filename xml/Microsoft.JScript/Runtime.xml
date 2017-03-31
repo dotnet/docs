@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides utility functions.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,10 @@
         <Parameter Name="val" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="val">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="val">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Double" /> value to an <see cref="T:System.Int64" />.</summary>
+        <returns>
+          <paramref name="val" /> converted to an <see cref="T:System.Int64" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,10 +55,11 @@
         <Parameter Name="v2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="v1">To be added.</param>
-        <param name="v2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="v1">The first operand.</param>
+        <param name="v2">The second operand.</param>
+        <summary>Determines whether two specified values are equal.</summary>
+        <returns>
+          <see langword="true" /> if the values are equal; <see langword="false" /> if the values are not equal.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +79,10 @@
         <Parameter Name="val" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="val">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="val">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Decimal" /> value to an <see cref="T:System.Int64" />.</summary>
+        <returns>
+          <paramref name="val" /> converted to an <see cref="T:System.Int64" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -17,9 +17,16 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event, typically a data container or data-bound collection.</param>
+    <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Configuration.ApplicationSettingsBase.SettingsSaving" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event occurs just before a group of application settings are persisted, typically during the execution of the <xref:System.Configuration.ApplicationSettingsBase.Save%2A> method of a wrapper class derived from <xref:System.Configuration.ApplicationSettingsBase>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

@@ -1,1 +1,0 @@
-eventMappingSetting.StartEventCode = 0;

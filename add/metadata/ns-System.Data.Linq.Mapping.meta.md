@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Linq.Mapping
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

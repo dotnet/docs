@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates whether text fields are delimited or fixed width.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Delimited">
@@ -27,7 +34,7 @@
         <ReturnType>Microsoft.VisualBasic.FileIO.FieldType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the fields are delimited.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedWidth">
@@ -43,7 +50,7 @@
         <ReturnType>Microsoft.VisualBasic.FileIO.FieldType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the fields are fixed width.</summary>
       </Docs>
     </Member>
   </Members>

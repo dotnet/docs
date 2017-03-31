@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.Versioning.ComponentGuaranteesOptions
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

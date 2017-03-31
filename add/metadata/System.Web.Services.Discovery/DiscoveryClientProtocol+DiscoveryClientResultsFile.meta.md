@@ -1,14 +1,20 @@
 ---
 uid: System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile.Results
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

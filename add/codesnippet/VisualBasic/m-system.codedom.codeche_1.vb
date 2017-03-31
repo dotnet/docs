@@ -1,1 +1,0 @@
-        Dim pragma1 As New CodeChecksumPragma()

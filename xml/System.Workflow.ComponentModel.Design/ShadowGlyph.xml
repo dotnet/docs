@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a drop shadow for display by <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ A <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> displays a <xref:System.Workflow.ComponentModel.Design.ShadowGlyph> if the <xref:System.Workflow.ComponentModel.Design.CompositeDesignerTheme.ShowDropShadow%2A> property is set to `true`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ShadowGlyph" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,10 +63,11 @@
         <Parameter Name="activated" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="designer">To be added.</param>
-        <param name="activated">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="designer">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> with which the glyph is associated.</param>
+        <param name="activated">
+          <see langword="true" /> to indicate whether the glyph appears on the activity designer surface; otherwise, <see langword="false" />.</param>
+        <summary>Returns the bounds for the glyph on the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds for the glyph.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +111,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the priority setting for the glyph on the activity designer surface.</summary>
+        <value>An integer value that represents the priority setting for the <see cref="T:System.Workflow.ComponentModel.Design.ShadowGlyph" /> on the activity designer surface.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

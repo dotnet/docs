@@ -1,104 +1,104 @@
 ---
 uid: System.Messaging.DefaultPropertiesToSend
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.TimeToBeReceived
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.AttachSenderId
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.Label
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.Recoverable
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.TimeToReachQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.AppSpecific
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.UseAuthentication
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.UseTracing
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.UseEncryption
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.EncryptionAlgorithm
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.Priority
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.TransactionStatusQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.UseDeadLetterQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.AcknowledgeType
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.UseJournalQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.AdministrationQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.HashAlgorithm
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.ResponseQueue
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.Extension
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.DefaultPropertiesToSend.#ctor
-internalonly: False
+manager: "tyoung"
 ---

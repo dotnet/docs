@@ -1,34 +1,47 @@
 ---
 uid: System.Net.Sockets.MulticastOption
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.MulticastOption.#ctor(System.Net.IPAddress,System.Net.IPAddress)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.MulticastOption.InterfaceIndex
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.MulticastOption.#ctor(System.Net.IPAddress,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.MulticastOption.LocalAddress
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.MulticastOption.#ctor(System.Net.IPAddress)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.MulticastOption.Group
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Sockets.MulticastOption.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---

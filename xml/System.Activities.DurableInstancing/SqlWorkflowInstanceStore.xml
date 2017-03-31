@@ -11,8 +11,22 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Derives from the abstract <see cref="T:System.Runtime.DurableInstancing.InstanceStore" /> class of the persistence functionality and provides implementation to allow saving instance state information to and loading instance state information from an SQL Server 2005 or SQL Server 2008 database.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> uses the <xref:System.Runtime.Serialization.NetDataContractSerializer> to serialize complex types; all types used in workflows to be persisted with this instance store must be serializable using <xref:System.Runtime.Serialization.NetDataContractSerializer>.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Persistence Participants](../Topic/Persistence%20Participants.md) sample.  
+  
+<!-- TODO: review snippet reference  [!CODE [wfs_PersistenceParticipant#2](wfs_PersistenceParticipant#2)]  -->  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +57,8 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="connectionString">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="connectionString">The connection string to a persistence database.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" /> class by using the <paramref name="connectionString" /> parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +105,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a connection string with parameters that are used to connect to an underlying persistence database.</summary>
+        <value>The connection string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +145,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or set a value that indicates whether Run commands are enqueued. This property is used internally by the SQL Workflow Instance Store and it should not be used in your applications.</summary>
+        <value>
+          <see langword="true" /> if the Run commands are enqueued; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,9 +164,23 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the time period within which the host renews its lock on a workflow service instance.</summary>
+        <value>The time period.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the host does not renew the lock (in other words, extend the lease) with this in this time period, the persistence provider unlocks the instance and another host may lock the instance. The value is a <xref:System.TimeSpan> of the form “hh:mm:ss”. The minimum permitted value is “00:00:01” (1 sec). The default value of this property is “00:00:30” (30 seconds).  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using HostLockRenewalPeriod in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](../Topic/Built-in%20Configuration.md) sample.  
+  
+ [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceCompletionAction">
@@ -167,9 +196,23 @@
         <ReturnType>System.Activities.DurableInstancing.InstanceCompletionAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the action to be taken after a workflow instance completes. Possible values are “DeleteNothing” and “DeleteAll”. The default value is “DeleteAll”. If the property is set to “DeleteNothing”, the persistence provider keeps all the instance data and metadata in the persistence database after the workflow instance completes. If the property is set to “DeleteAll”, the persistence provider deletes all the instance data and metadata after the workflow instance completes.</summary>
+        <value>The action to be taken after a workflow completes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible values are “DeleteNothing” and “DeleteAll”. The default value is “DeleteAll”. If the property is set to “DeleteNothing”, the persistence provider keeps all the instance data and metadata in the persistence database after the workflow instance completes. If the property is set to “DeleteAll”, the persistence provider deletes all the instance data and metadata after the workflow instance completes.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using InstanceCompletionAction in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](../Topic/Built-in%20Configuration.md) sample.  
+  
+ [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceEncodingOption">
@@ -185,9 +228,23 @@
         <ReturnType>System.Activities.DurableInstancing.InstanceEncodingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies a value that indicates whether the instance data must be compressed.</summary>
+        <value>The possible values are “None” and “GZip”. The default is “None”.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value is set to “GZip”, the instance data is compressed using the GZip algorithm.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using InstanceEncodingOption in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](../Topic/Built-in%20Configuration.md) sample.  
+  
+ [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceLockedExceptionAction">
@@ -203,9 +260,29 @@
         <ReturnType>System.Activities.DurableInstancing.InstanceLockedExceptionAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the action to be taken when the persistence provider catches an <see cref="T:System.Runtime.DurableInstancing.InstanceLockedException" />.</summary>
+        <value>The action to be taken when the persistence provider catches an <see cref="T:System.Runtime.DurableInstancing.InstanceLockedException" /></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify what action a service host should take when a workflow service instance experiences an <xref:System.Runtime.DurableInstancing.InstanceLockedException>. The service host receives an <xref:System.Runtime.DurableInstancing.InstanceLockedException> when it tries to lock an instance that is already locked by another owner. The possible values are in the following list:  
+  
+-   **None**. The service host does not attempt to lock the instance and passes the <xref:System.Runtime.DurableInstancing.InstanceLockedException> to the caller.  
+  
+-   **BasicRetry**. The service host reattempts to lock the instance with a linear retry interval and passes the exception to the caller at the end of the sequence.  
+  
+-   **AggressiveRetry**. The service host reattempts to lock the instance with an exponentially increasing delay and passes the <xref:System.Runtime.DurableInstancing.InstanceLockedException> to the caller at the end of the sequence. The intervals are short in the beginning in an attempt to acquire the lock as quickly as possible and the intervals gets bigger with every unsuccessful attempt.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using InstanceLockedExceptionAction in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](../Topic/Built-in%20Configuration.md) sample.  
+  
+ [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxConnectionRetries">
@@ -221,8 +298,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of SQL connection retries.  The default value is 4.</summary>
+        <value>An integer representing the maximum number of SQL connection retries.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,11 +366,20 @@
         <Parameter Name="promoteAsBinary" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XName&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="promoteAsVariant">To be added.</param>
-        <param name="promoteAsBinary">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the promotion itself.</param>
+        <param name="promoteAsVariant">The properties that must be promoted as variants.</param>
+        <param name="promoteAsBinary">The properties that must be promoted as a binary stream.</param>
+        <summary>Associates the specified properties with a workflow instance so that you can query for instances based on specific values for these properties. These properties that can be used in external queries can be of simple types (for example: Int64, String, and so on) or of a serialized binary type (byte[]). Binary properties are typically used to store tracking data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates using Promote in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [SQLStoreExtensibility](../Topic/SQLStoreExtensibility.md) sample.  
+  
+ [!code-csharp[wfs_SQLStoreExtensibility#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_sqlstoreextensibility/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RunnableInstancesDetectionPeriod">
@@ -309,9 +395,35 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the time period after which the SQL Workflow Instance Store runs a detection task to detect any runnable or activatable workflow instances in the persistence database after the previous detection cycle.</summary>
+        <value>Returns <see cref="T:System.TimeSpan" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> runs an internal task that periodically wakes up and checks if any runnable instances exist in the persistence database. An instance is *runnable*, if it is not in the suspended state or the completed state and satisfies the following conditions:  
+  
+-   The instance is unlocked and has a pending timer that has expired.  
+  
+-   The instance is unlocked and its status is **Executing**.  
+  
+-   The instance has an expired lock on it.  
+  
+ The SQL Workflow Instance Store raises the <xref:System.Activities.DurableInstancing.HasRunnableWorkflowEvent> when it finds a runnable instance in the database and also finds a workflow host capable of loading the instance running on the computer.  
+  
+ When a workflow host receives this event, it executes the <xref:System.Activities.DurableInstancing.TryLoadRunnableWorkflowCommand> against the instance store to load the instance into the memory.  
+  
+ The type of the property is TimeSpan and the value is of the form “hh:mm:ss”. The minimum value is “00:00:01” (1 sec). If omitted, defaults to “00:00:05” (5 secs). This parameter is an optional parameter.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using RunnableInstancesDetectionPeriod in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](../Topic/Built-in%20Configuration.md) sample.  
+  
+ [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

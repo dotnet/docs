@@ -20,8 +20,29 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a type converter to convert 8-bit unsigned integer objects to and from a string.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This converter can convert only an 8-bit unsigned integer object to and from a string.  
+  
+ The <xref:System.SByte> value type represents integers with values ranging from negative 128 to positive 127. This data type is not supported in Visual Basic.  
+  
+> [!NOTE]
+>  You should never create an instance of <xref:System.ComponentModel.SByteConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of <xref:System.ComponentModel.TypeDescriptor>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](../Topic/How%20to:%20Implement%20a%20Type%20Converter.md).  
+  
+   
+  
+## Examples  
+ The following sample converts a variable of type <xref:System.SByte> to a string, and vice versa.  
+  
+ [!code-cpp[Converters#18](~/samples/snippets/cpp/VS_Snippets_Winforms/Converters/CPP/converters.cpp#18)]
+ [!code-csharp[Converters#18](~/samples/snippets/csharp/VS_Snippets_Winforms/Converters/CS/converters.cs#18)]
+ [!code-vb[Converters#18](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Converters/VB/converters.vb#18)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +65,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.SByteConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

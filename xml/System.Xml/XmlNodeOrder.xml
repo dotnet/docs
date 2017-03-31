@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the document order of a node compared to a second node.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Xml.XmlNodeOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current node of this navigator is after the current node of the supplied navigator.</summary>
       </Docs>
     </Member>
     <Member MemberName="Before">
@@ -70,7 +70,7 @@
         <ReturnType>System.Xml.XmlNodeOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current node of this navigator is before the current node of the supplied navigator.</summary>
       </Docs>
     </Member>
     <Member MemberName="Same">
@@ -95,7 +95,7 @@
         <ReturnType>System.Xml.XmlNodeOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The two navigators are positioned on the same node.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -120,7 +120,7 @@
         <ReturnType>System.Xml.XmlNodeOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The node positions cannot be determined in document order, relative to each other. This could occur if the two nodes reside in different trees.</summary>
       </Docs>
     </Member>
   </Members>

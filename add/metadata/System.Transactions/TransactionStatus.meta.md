@@ -1,4 +1,4 @@
 ---
 uid: System.Transactions.TransactionStatus
-internalonly: False
+manager: "ghogen"
 ---

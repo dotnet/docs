@@ -1,29 +1,40 @@
 ---
 uid: System.Windows.Input.KeyValueSerializer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.KeyValueSerializer.CanConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.KeyValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.KeyValueSerializer.ConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.KeyValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.KeyValueSerializer.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

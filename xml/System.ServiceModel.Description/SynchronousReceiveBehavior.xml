@@ -15,8 +15,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Controls whether channels listen synchronously or asynchronously.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this behavior to instruct the channel listener to use a synchronous receive rather than the default, asynchronous. Using <xref:System.ServiceModel.Description.SynchronousReceiveBehavior> instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to issue a new thread to pump for each accepted channel. If there are a lot of channels there is the possibility of running out of threads.  
+  
+ You can also set this value using the [\&lt;synchronousReceive\&gt;](../Topic/%3CsynchronousReceive%3E%20element.md) in an application configuration file.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of the <see cref="T:System.ServiceModel.Description.SynchronousReceiveBehavior" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,10 +60,17 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceEndpoint">The endpoint to modify.</param>
+        <param name="parameters">The objects that binding elements require to support the behavior.</param>
+        <summary>Not implemented in this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.ServiceModel.Description.IEndpointBehavior.AddBindingParameters%28System.ServiceModel.Description.ServiceEndpoint%2CSystem.ServiceModel.Channels.BindingParameterCollection%29> for a description of the interface member that this class implements.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior">
@@ -74,10 +90,17 @@
         <Parameter Name="behavior" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">To be added.</param>
-        <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceEndpoint">The endpoint that is to be customized.</param>
+        <param name="behavior">The client runtime to be customized.</param>
+        <summary>Not implemented in this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%28System.ServiceModel.Description.ServiceEndpoint%2CSystem.ServiceModel.Dispatcher.ClientRuntime%29> for a description of the interface member this class implements.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior">
@@ -97,10 +120,17 @@
         <Parameter Name="endpointDispatcher" Type="System.ServiceModel.Dispatcher.EndpointDispatcher" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">To be added.</param>
-        <param name="endpointDispatcher">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceEndpoint">The endpoint that exposes the contract.</param>
+        <param name="endpointDispatcher">The endpoint dispatcher to be modified or extended.</param>
+        <summary>Sets the <see cref="P:System.ServiceModel.Dispatcher.ChannelDispatcher.ReceiveSynchronously" /> property to <see langword="true" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Throws an exception if the `endpointDispatcher` is `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IEndpointBehavior.Validate">
@@ -119,9 +149,16 @@
         <Parameter Name="serviceEndpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpoint">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceEndpoint">The endpoint to validate.</param>
+        <summary>Not implemented in this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.ServiceModel.Description.IEndpointBehavior.Validate%28System.ServiceModel.Description.ServiceEndpoint%29> for a description of the interface member this class implements.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

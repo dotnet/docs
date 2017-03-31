@@ -1,9 +1,13 @@
 ---
 uid: Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilder
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilder.Product
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

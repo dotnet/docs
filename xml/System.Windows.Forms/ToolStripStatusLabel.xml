@@ -16,8 +16,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a panel in a <see cref="T:System.Windows.Forms.StatusStrip" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ToolStripStatusLabel> is a version of <xref:System.Windows.Forms.ToolStripLabel> designed specifically for use in <xref:System.Windows.Forms.StatusStrip>. The special features include <xref:System.Windows.Forms.ToolStripStatusLabel.BorderStyle%2A>, <xref:System.Windows.Forms.ToolStripStatusLabel.BorderSides%2A>, and <xref:System.Windows.Forms.ToolStripStatusLabel.Spring%2A>.  
+  
+ A <xref:System.Windows.Forms.ToolStripStatusLabel> can contain text or an icon that reflects the status of an application. Use the <xref:System.Windows.Forms.ToolStripItemCollection> class to find, add, or remove <xref:System.Windows.Forms.ToolStripStatusLabel> objects.  
+  
+ Although <xref:System.Windows.Forms.ToolStripStatusLabel> replaces and adds functionality to the <xref:System.Windows.Forms.StatusBarPanel> control of previous versions, <xref:System.Windows.Forms.StatusBarPanel> is retained for both backward compatibility and future use if you choose.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a <xref:System.Windows.Forms.ToolStripStatusLabel> with various common properties set.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStripStatusLabel.CommonProps#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripStatusLabel.CommonProps/CS/form1.cs#0)]
+ [!code-vb[System.Windows.Forms.ToolStripStatusLabel.CommonProps#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripStatusLabel.CommonProps/VB/form1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +50,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +67,8 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
-        <param name="image">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="image">An <see cref="T:System.Drawing.Image" /> that is displayed on the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> class that displays the specified image.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +85,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">A <see cref="T:System.String" /> representing the text to be displayed on the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> class that displays the specified text.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,9 +104,9 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="image">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">A <see cref="T:System.String" /> representing the text to be displayed on the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</param>
+        <param name="image">An <see cref="T:System.Drawing.Image" /> that is displayed on the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> class that displays the specified image and text.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,10 +125,10 @@
         <Parameter Name="onClick" Type="System.EventHandler" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="image">To be added.</param>
-        <param name="onClick">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">A <see cref="T:System.String" /> representing the text to be displayed on the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</param>
+        <param name="image">An <see cref="T:System.Drawing.Image" /> that is displayed on the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</param>
+        <param name="onClick">Specifies the action to carry out when the control is clicked.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> class that displays the specified image and text, and that carries out the specified action when the user clicks the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,11 +148,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="image">To be added.</param>
-        <param name="onClick">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">A <see cref="T:System.String" /> representing the text to be displayed on the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</param>
+        <param name="image">An <see cref="T:System.Drawing.Image" /> that is displayed on the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</param>
+        <param name="onClick">Specifies the action to carry out when the control is clicked.</param>
+        <param name="name">The name of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> class with the specified name that displays the specified image and text, and that carries out the specified action when the user clicks the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,9 +177,24 @@
         <ReturnType>System.Windows.Forms.ToolStripItemAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that determines where the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> is aligned on the <see cref="T:System.Windows.Forms.StatusStrip" />.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.ToolStripItemAlignment" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The meaning of the <xref:System.Windows.Forms.ToolStripStatusLabel.Alignment%2A> property is affected by the setting of the <xref:System.Windows.Forms.ToolStripItem.RightToLeft%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the syntax for various <xref:System.Windows.Forms.ToolStripStatusLabel> common properties, including the <xref:System.Windows.Forms.ToolStripStatusLabel.Alignment%2A> property.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStripStatusLabel.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripStatusLabel.CommonProps/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ToolStripStatusLabel.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripStatusLabel.CommonProps/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderSides">
@@ -181,9 +215,19 @@
         <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates which sides of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> show borders.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.ToolStripStatusLabelBorderSides" /> values. The default is <see cref="F:System.Windows.Forms.ToolStripStatusLabelBorderSides.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the syntax for various <xref:System.Windows.Forms.ToolStripStatusLabel> common properties, including the <xref:System.Windows.Forms.ToolStripStatusLabel.BorderSides%2A> property.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStripStatusLabel.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripStatusLabel.CommonProps/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ToolStripStatusLabel.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripStatusLabel.CommonProps/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -204,9 +248,20 @@
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the border style of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.Border3DStyle" /> values. The default is <see cref="F:System.Windows.Forms.Border3DStyle.Flat" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the syntax for various <xref:System.Windows.Forms.ToolStripStatusLabel> common properties, including the <xref:System.Windows.Forms.ToolStripStatusLabel.BorderStyle%2A> property.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStripStatusLabel.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripStatusLabel.CommonProps/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ToolStripStatusLabel.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripStatusLabel.CommonProps/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value of <see cref="P:System.Windows.Forms.ToolStripStatusLabel.BorderStyle" /> is not one of the <see cref="T:System.Windows.Forms.Border3DStyle" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="DefaultMargin">
@@ -222,8 +277,8 @@
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default margin of an item.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Padding" /> representing the margin.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,9 +298,9 @@
         <Parameter Name="constrainingSize" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="constrainingSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="constrainingSize">The custom-sized area for a control.</param>
+        <summary>Retrieves the size of a rectangular area into which a <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> can be fitted.</summary>
+        <returns>An ordered pair of type <see cref="T:System.Drawing.Size" />, representing the width and height of a rectangle.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,8 +320,8 @@
         <Parameter Name="e" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.Paint" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,9 +343,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> automatically fills the available space on the <see cref="T:System.Windows.Forms.StatusStrip" /> as the form is resized.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> automatically fills the available space on the <see cref="T:System.Windows.Forms.StatusStrip" /> as the form is resized; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Forms.ToolStripStatusLabel.Spring%2A> property to `true` to enable the <xref:System.Windows.Forms.ToolStripStatusLabel> to smoothly resize along with its container.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the syntax for various <xref:System.Windows.Forms.ToolStripStatusLabel> common properties, including the <xref:System.Windows.Forms.ToolStripStatusLabel.Spring%2A> property.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStripStatusLabel.CommonProps#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripStatusLabel.CommonProps/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ToolStripStatusLabel.CommonProps#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripStatusLabel.CommonProps/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

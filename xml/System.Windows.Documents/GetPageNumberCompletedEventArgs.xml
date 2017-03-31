@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberCompleted" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,13 +32,21 @@
         <Parameter Name="userState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="contentPosition">To be added.</param>
-        <param name="pageNumber">To be added.</param>
-        <param name="error">To be added.</param>
-        <param name="cancelled">To be added.</param>
-        <param name="userState">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contentPosition">The <c>contentPosition</c> parameter passed to <see cref="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition)" />.</param>
+        <param name="pageNumber">The page number where the <c>contentPosition</c> appears.</param>
+        <param name="error">The exception that occurred during the asynchronous operation; or NULL if there were no errors.</param>
+        <param name="cancelled">
+          <see langword="true" /> if the asynchronous operation was canceled; otherwise, <see langword="false" />.</param>
+        <param name="userState">The unique <c>userState</c> parameter passed to <see cref="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition)" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.GetPageNumberCompletedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The asynchronous operation can be canceled by calling <xref:System.Windows.Documents.DocumentPaginator.CancelAsync%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentPosition">
@@ -54,9 +62,16 @@
         <ReturnType>System.Windows.Documents.ContentPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.Documents.ContentPosition" /> passed to <see cref="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition)" />.</summary>
+        <value>The content position passed to <see cref="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition)" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.GetPageNumberCompletedEventArgs.PageNumber%2A> property identifies the page number of the <xref:System.Windows.Documents.ContentPosition>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageNumber">
@@ -72,9 +87,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the page number for the <see cref="T:System.Windows.Documents.ContentPosition" /> passed to <see cref="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition)" />.</summary>
+        <value>The page number (zero-based) for the <see cref="T:System.Windows.Documents.ContentPosition" /> passed to <see cref="M:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync(System.Windows.Documents.ContentPosition)" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.ContentPosition> property contains the <xref:System.Windows.Documents.ContentPosition> passed to <xref:System.Windows.Documents.DynamicDocumentPaginator.GetPageNumberAsync%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

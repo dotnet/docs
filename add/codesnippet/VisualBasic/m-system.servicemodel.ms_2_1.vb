@@ -1,1 +1,0 @@
-            Dim message2 As New MsmqMessage(Of String)(message.Body)

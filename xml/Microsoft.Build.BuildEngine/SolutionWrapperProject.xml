@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class is used to generate an MSBuild wrapper project for a solution file or standalone VC project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,11 +33,11 @@
         <Parameter Name="projectBuildEventContext" Type="Microsoft.Build.Framework.BuildEventContext" />
       </Parameters>
       <Docs>
-        <param name="solutionPath">To be added.</param>
-        <param name="toolsVersionOverride">To be added.</param>
-        <param name="projectBuildEventContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="solutionPath">Full path to the solution we are wrapping</param>
+        <param name="toolsVersionOverride">May be null. If non-null, contains the ToolsVersion passed in on the command line</param>
+        <param name="projectBuildEventContext">An event context for logging purposes.</param>
+        <summary>Given the full path to a solution, returns a string containing the v3.5 MSBuild-format wrapper project for that solution.</summary>
+        <returns>A string containing the path to the solution.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,29 +1,41 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogQuery
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogQuery.#ctor
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogQuery.Session
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogQuery.#ctor(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogQuery.TolerateQueryErrors
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogQuery.ReverseDirection
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogQuery.#ctor(System.String,System.Diagnostics.Eventing.Reader.PathType)
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

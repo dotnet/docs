@@ -1,19 +1,23 @@
 ---
 uid: System.Net.GlobalProxySelection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.GlobalProxySelection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.GlobalProxySelection.GetEmptyWebProxy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.GlobalProxySelection.Select
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

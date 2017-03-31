@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.TYPEFLAGS" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `TYPEFLAGS`, see the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="TYPEFLAG_FAGGREGATABLE">
@@ -37,7 +44,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The class supports aggregation.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FAPPOBJECT">
@@ -54,7 +61,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type description that describes an Application object.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FCANCREATE">
@@ -71,7 +78,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Instances of the type can be created by <see langword="ITypeInfo::CreateInstance" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FCONTROL">
@@ -88,7 +95,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The type is a control from which other types will be derived, and should not be displayed to users.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FDISPATCHABLE">
@@ -105,7 +112,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the interface derives from <see langword="IDispatch" />, either directly or indirectly. This flag is computed, there is no Object Description Language for the flag.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FDUAL">
@@ -122,7 +129,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The interface supplies both <see langword="IDispatch" /> and VTBL binding.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FHIDDEN">
@@ -139,7 +146,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The type should not be displayed to browsers.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FLICENSED">
@@ -156,7 +163,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The type is licensed.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FNONEXTENSIBLE">
@@ -173,7 +180,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The interface cannot add members at run time.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FOLEAUTOMATION">
@@ -190,7 +197,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The types used in the interface are fully compatible with Automation, including VTBL binding support. Setting dual on an interface sets this flag in addition to <see cref="F:System.Runtime.InteropServices.TYPEFLAGS.TYPEFLAG_FDUAL" />. Not allowed on dispinterfaces.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FPREDECLID">
@@ -207,7 +214,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The type is predefined. The client application should automatically create a single instance of the object that has this attribute. The name of the variable that points to the object is the same as the class name of the object.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FPROXY">
@@ -224,7 +231,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the interface will be using a proxy/stub dynamic link library. This flag specifies that the type library proxy should not be unregistered when the type library is unregistered.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FREPLACEABLE">
@@ -241,7 +248,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The object supports <see langword="IConnectionPointWithDefault" />, and has default behaviors.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FRESTRICTED">
@@ -258,7 +265,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Should not be accessible from macro languages. This flag is intended for system-level types or types that type browsers should not display.</summary>
       </Docs>
     </Member>
     <Member MemberName="TYPEFLAG_FREVERSEBIND">
@@ -275,7 +282,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEFLAGS</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates base interfaces should be checked for name resolution before checking children, the reverse of the default behavior.</summary>
       </Docs>
     </Member>
   </Members>

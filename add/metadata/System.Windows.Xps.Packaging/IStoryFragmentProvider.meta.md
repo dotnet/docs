@@ -1,9 +1,9 @@
 ---
 uid: System.Windows.Xps.Packaging.IStoryFragmentProvider
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IStoryFragmentProvider.AddStoryFragment
-internalonly: False
+manager: "leannef"
 ---

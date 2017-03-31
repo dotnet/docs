@@ -1,4 +1,5 @@
 ---
 uid: System.Net.DownloadProgressChangedEventHandler
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

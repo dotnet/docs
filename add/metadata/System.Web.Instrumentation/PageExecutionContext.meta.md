@@ -1,34 +1,41 @@
 ---
 uid: System.Web.Instrumentation.PageExecutionContext
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Instrumentation.PageExecutionContext.TextWriter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Instrumentation.PageExecutionContext.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Instrumentation.PageExecutionContext.VirtualPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Instrumentation.PageExecutionContext.IsLiteral
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Instrumentation.PageExecutionContext.Length
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Instrumentation.PageExecutionContext.StartPosition
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

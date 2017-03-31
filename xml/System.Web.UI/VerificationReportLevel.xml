@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies reporting levels for an accessibility rule defined by an <see cref="T:System.Web.UI.VerificationAttribute" /> instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using extending a class, member or indexer with a <xref:System.Web.UI.VerificationAttribute>, you must define the level of reporting that the verification rule represents by specifying one of the <xref:System.Web.UI.VerificationReportLevel> values.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Error">
@@ -27,7 +34,7 @@
         <ReturnType>System.Web.UI.VerificationReportLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The verification rule represented by the <see cref="T:System.Web.UI.VerificationAttribute" /> instance is an error.</summary>
       </Docs>
     </Member>
     <Member MemberName="Guideline">
@@ -43,7 +50,7 @@
         <ReturnType>System.Web.UI.VerificationReportLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The verification rule represented by the <see cref="T:System.Web.UI.VerificationAttribute" /> instance is a guideline.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -59,7 +66,7 @@
         <ReturnType>System.Web.UI.VerificationReportLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The verification rule represented by the <see cref="T:System.Web.UI.VerificationAttribute" /> instance is a warning.</summary>
       </Docs>
     </Member>
   </Members>

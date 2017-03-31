@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the compiled data context.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="locations" Type="System.Collections.Generic.IList&lt;System.Activities.Location&gt;" />
       </Parameters>
       <Docs>
-        <param name="locations">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="locations">The locations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.CompiledDataContext" /> class using the locations.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="locationReferences" Type="System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt;" />
       </Parameters>
       <Docs>
-        <param name="locationReferences">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="locationReferences">The location references.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.CompiledDataContext" /> class using the location references.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,9 +65,9 @@
         <Parameter Name="activityContext" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="locationReferences">To be added.</param>
-        <param name="activityContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="locationReferences">The location references.</param>
+        <param name="activityContext">The activity context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.CompiledDataContext" /> class using the location references and activity context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,13 +91,14 @@
         <Parameter Name="compiledDataContextCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dataContextActivities">To be added.</param>
-        <param name="activityContext">To be added.</param>
-        <param name="compiledRoot">To be added.</param>
-        <param name="forImplementation">To be added.</param>
-        <param name="compiledDataContextCount">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataContextActivities">The data context activities.</param>
+        <param name="activityContext">The activity context.</param>
+        <param name="compiledRoot">The compiled root.</param>
+        <param name="forImplementation">
+          <see langword="True" /> if the compiled data context is for implementation; otherwise, <see langword="false" />.</param>
+        <param name="compiledDataContextCount">The number of compiled data context.</param>
+        <summary>Retrieves the cache used by the data context.</summary>
+        <returns>The data context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,10 +119,11 @@
         <Parameter Name="forImplementation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="compiledRoot">To be added.</param>
-        <param name="forImplementation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="compiledRoot">The compiled root.</param>
+        <param name="forImplementation">
+          <see langword="True" /> if the compiled data context is for implementation; otherwise, <see langword="false" />.</param>
+        <summary>Gets the activities for the compiled data using the specified compiled root and implementation.</summary>
+        <returns>The activities for the compiled data.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,11 +147,11 @@
         <Parameter Name="setMethod" Type="System.Action&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="getMethod">To be added.</param>
-        <param name="setMethod">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The function.</typeparam>
+        <param name="getMethod">The get method used.</param>
+        <param name="setMethod">The set method used.</param>
+        <summary>Retrieves the location of the compiled data context using the specified get and set methods.</summary>
+        <returns>The location of the compiled data context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,14 +178,14 @@
         <Parameter Name="activityContext" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="getMethod">To be added.</param>
-        <param name="setMethod">To be added.</param>
-        <param name="expressionId">To be added.</param>
-        <param name="compiledRootActivity">To be added.</param>
-        <param name="activityContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The function.</typeparam>
+        <param name="getMethod">The get method used.</param>
+        <param name="setMethod">The set method used.</param>
+        <param name="expressionId">The expression identifier.</param>
+        <param name="compiledRootActivity">The compiled root activity.</param>
+        <param name="activityContext">The activity context.</param>
+        <summary>Retrieves the location of the compiled data context.</summary>
+        <returns>The location of the compiled data context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,7 +203,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the value of the value type used by the data context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,9 +223,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The index of the variable</param>
+        <summary>Gets the value of the variable used by the data context.</summary>
+        <returns>The value of the variable used by the data context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,9 +245,9 @@
         <Parameter Name="originalExpression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="originalExpression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="originalExpression">The original expression to be rewritten.</param>
+        <summary>Rewrites the expression used by the data context.</summary>
+        <returns>The rewritten expression.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,7 +265,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the value of the value type used by the data context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,9 +286,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the variable.</param>
+        <param name="value">The value of the variable.</param>
+        <summary>Returns the value of the variable used by the data context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

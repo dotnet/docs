@@ -16,8 +16,57 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the duration of time that a <see cref="T:System.Windows.Media.Animation.Timeline" /> is active.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Duration"></a>   
+## XAML Attribute Usage  
+ \<*object* *property*="[*days*.]*hours*:*minutes*:*seconds*[.*fractionalSeconds*]"/>  
+  
+ \- or -  
+  
+ \<*object* *property*="[*days*.]*hours*:*minutes*"/>  
+  
+ \- or -  
+  
+ \<*object* *property*="<xref:System.Windows.Duration.Automatic%2A>"/>  
+  
+ \- or -  
+  
+ \<*object* *property*="<xref:System.Windows.Duration.Forever%2A>"/>  
+  
+<a name="xamlValues_MinWidth"></a>   
+## XAML Values  
+ *days*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value greater than or equal to 0 that describes the number of days spanned by this duration.  
+  
+ *hours*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value between 0 and 23 that represents the number of hours spanned by this duration.  
+  
+ *minutes*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value between 0 and 59 that represents the number of minutes spanned by this duration.  
+  
+ *seconds*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value between 0 and 59 that represents the number of seconds spanned by this duration  
+  
+ *fractionalSeconds*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value consisting of 1 to 7 digits that represents fractional seconds.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +82,10 @@
         <Parameter Name="timeSpan" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeSpan">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timeSpan">Represents the initial time interval of this duration.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Duration" /> structure with the supplied <see cref="T:System.TimeSpan" /> value.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Occurs when <paramref name="timeSpan" /> is initialized to a negative value.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -54,9 +104,9 @@
         <Parameter Name="duration" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="duration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="duration">An instance of <see cref="T:System.Windows.Duration" /> that represents the value of the current instance plus <c>duration</c>.</param>
+        <summary>Adds the value of the specified instance of <see cref="T:System.Windows.Duration" /> to the value of the current instance.</summary>
+        <returns>If both instances of <see cref="T:System.Windows.Duration" /> have values, an instance of <see cref="T:System.Windows.Duration" /> that represents the combined values. Otherwise this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +123,27 @@
         <ReturnType>System.Windows.Duration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Duration" /> value that is automatically determined.</summary>
+        <value>A <see cref="T:System.Windows.Duration" /> initialized to an automatic value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Automatic"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Automatic" />  
+```  
+  
+<a name="xamlValues_Automatic"></a>   
+## XAML Values  
+ *property*  
+ A property that accepts a <xref:System.Windows.Duration> value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -95,11 +163,24 @@
         <Parameter Name="t2" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="t1">To be added.</param>
-        <param name="t2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="t1">The first instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <param name="t2">The second instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <summary>Compares one <see cref="T:System.Windows.Duration" /> value to another.</summary>
+        <returns>If <paramref name="t1" /> is less than <paramref name="t2" />, a negative value that represents the difference. If <paramref name="t1" /> is equal to <paramref name="t2" />, zero. If <paramref name="t1" /> is greater than <paramref name="t2" />, a positive value that represents the difference.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Duration> instances with a property value of <xref:System.Windows.Duration.Automatic%2A> are a special case with the following return values.  
+  
+-   If `t1` is Automatic and `t2` is not, -1 is returned.  
+  
+-   If `t1` is Automatic and `t2` is also Automatic, 0 is returned.  
+  
+-   If `t1` is not Automatic and `t2` is Automatic, 1 is returned.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -118,9 +199,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">Object to check for equality.</param>
+        <summary>Determines whether a specified object is equal to an instance of <see cref="T:System.Windows.Duration" />.</summary>
+        <returns>
+          <see langword="true" /> if value is equal to the current instance of Duration; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,9 +222,10 @@
         <Parameter Name="duration" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="duration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="duration">Instance of <see cref="T:System.Windows.Duration" /> to check for equality.</param>
+        <summary>Determines whether a specified <see cref="T:System.Windows.Duration" /> is equal to this instance of <see cref="T:System.Windows.Duration" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="duration" /> is equal to the current instance of <see cref="T:System.Windows.Duration" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,10 +246,11 @@
         <Parameter Name="t2" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="t1">To be added.</param>
-        <param name="t2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="t1">First instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <param name="t2">Second instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <summary>Determines whether two instances of <see cref="T:System.Windows.Duration" /> are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="t1" /> is equal to <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,9 +267,27 @@
         <ReturnType>System.Windows.Duration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Duration" /> value that represents an infinite interval.</summary>
+        <value>A <see cref="T:System.Windows.Duration" /> initialized to a forever value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Forever"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Forever" />  
+```  
+  
+<a name="xamlValues_Forever"></a>   
+## XAML Values  
+ *property*  
+ A property that accepts a <xref:System.Windows.Duration> value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -202,8 +304,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a hash code for this instance.</summary>
+        <returns>A signed 32-bit integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +322,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates if this <see cref="T:System.Windows.Duration" /> represents a <see cref="T:System.TimeSpan" /> value.</summary>
+        <value>True if this Duration is a <see cref="T:System.TimeSpan" /> value; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,11 +344,15 @@
         <Parameter Name="t2" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="t1">To be added.</param>
-        <param name="t2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="t1">The first instance of <see cref="T:System.Windows.Duration" /> to add.</param>
+        <param name="t2">The second instance of <see cref="T:System.Windows.Duration" /> to add.</param>
+        <summary>Adds two instances of <see cref="T:System.Windows.Duration" /> together.</summary>
+        <returns>If both instances of <see cref="T:System.Windows.Duration" /> have <see cref="T:System.TimeSpan" /> values, this method returns the sum of those two values. If either value is set to <see cref="P:System.Windows.Duration.Automatic" />, the method returns <see cref="P:System.Windows.Duration.Automatic" />. If either value is set to <see cref="P:System.Windows.Duration.Forever" />, the method returns <see cref="P:System.Windows.Duration.Forever" />.  
+  
+ If either <paramref name="t1" /> or <paramref name="t2" /> has no value, this method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.Add%28System.Windows.Duration%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -266,11 +372,14 @@
         <Parameter Name="t2" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="t1">To be added.</param>
-        <param name="t2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="t1">The first instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <param name="t2">The second instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <summary>Determines whether two instances of <see cref="T:System.Windows.Duration" /> are equal.</summary>
+        <returns>
+          <see langword="true" /> if both instances of <see cref="T:System.Windows.Duration" /> have values and are equal, or if both instances of <see cref="T:System.Windows.Duration" /> are <see langword="null" />. Otherwise, this method returns <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.Equals%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -290,11 +399,19 @@
         <Parameter Name="t2" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="t1">To be added.</param>
-        <param name="t2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="t1">The first instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <param name="t2">The second instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <summary>Determines if one instance of <see cref="T:System.Windows.Duration" /> is greater than another.</summary>
+        <returns>
+          <see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is greater than <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Duration.Forever%2A> is considered greater than any finite value. Any comparison with an <xref:System.Windows.Duration.Automatic%2A> value returns `false`.  
+  
+ The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -314,11 +431,19 @@
         <Parameter Name="t2" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="t1">To be added.</param>
-        <param name="t2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="t1">The first instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <param name="t2">The second instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <summary>Determines whether an instance of <see cref="T:System.Windows.Duration" /> is greater than or equal to another instance.</summary>
+        <returns>
+          <see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is greater than or equal to <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Duration.Forever%2A> is considered greater than any finite value. Any comparison with an <xref:System.Windows.Duration.Automatic%2A> value returns `false`.  
+  
+ The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -360,11 +485,14 @@
         <Parameter Name="t2" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="t1">To be added.</param>
-        <param name="t2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="t1">The first instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <param name="t2">The second instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <summary>Determines if two instances of <see cref="T:System.Windows.Duration" /> are not equal.</summary>
+        <returns>
+          <see langword="true" /> if exactly one of <paramref name="t1" /> or <paramref name="t2" /> represent a value, or if they both represent values that are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -384,11 +512,19 @@
         <Parameter Name="t2" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="t1">To be added.</param>
-        <param name="t2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="t1">The first instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <param name="t2">The second instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <summary>Determines if the value of one instance of <see cref="T:System.Windows.Duration" /> is less than the value of another instance.</summary>
+        <returns>
+          <see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is less than <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Duration.Forever%2A> is considered greater than any finite value. Any comparison with an <xref:System.Windows.Duration.Automatic%2A> value returns `false`.  
+  
+ The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -408,11 +544,19 @@
         <Parameter Name="t2" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="t1">To be added.</param>
-        <param name="t2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="t1">The first instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <param name="t2">The second instance of <see cref="T:System.Windows.Duration" /> to compare.</param>
+        <summary>Determines if the value of one instance of <see cref="T:System.Windows.Duration" /> is less than or equal to the value of another instance.</summary>
+        <returns>
+          <see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is less than or equal to <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Duration.Forever%2A> is considered greater than any finite value. Any comparison with an <xref:System.Windows.Duration.Automatic%2A> value returns `false`.  
+  
+ The equivalent method for this operator is <xref:System.Windows.Duration.Compare%28System.Windows.Duration%2CSystem.Windows.Duration%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -432,11 +576,32 @@
         <Parameter Name="t2" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="t1">To be added.</param>
-        <param name="t2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="t1">The first instance of <see cref="T:System.Windows.Duration" />.</param>
+        <param name="t2">The instance of <see cref="T:System.Windows.Duration" /> to subtract.</param>
+        <summary>Subtracts the value of one instance of <see cref="T:System.Windows.Duration" /> from another.</summary>
+        <returns>If both instances of <see cref="T:System.Windows.Duration" /> have values, an instance of <see cref="T:System.Windows.Duration" /> that represents the value of <paramref name="t1" /> minus <paramref name="t2" />. If <paramref name="t1" /> has a value of <see cref="P:System.Windows.Duration.Forever" /> and <paramref name="t2" /> has a value of <see cref="P:System.Windows.Duration.TimeSpan" />, this method returns <see cref="P:System.Windows.Duration.Forever" />. Otherwise this method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following calculations all return a value of <xref:System.Windows.Duration.Automatic%2A>.  
+  
+-   <xref:System.Windows.Duration.Forever%2A> minus <xref:System.Windows.Duration.Forever%2A>.  
+  
+-   <xref:System.Windows.Duration.TimeSpan%2A> minus <xref:System.Windows.Duration.Forever%2A>.  
+  
+-   <xref:System.Windows.Duration.TimeSpan%2A> minus <xref:System.Windows.Duration.Automatic%2A>.  
+  
+-   <xref:System.Windows.Duration.Forever%2A> minus <xref:System.Windows.Duration.Automatic%2A>.  
+  
+-   <xref:System.Windows.Duration.Automatic%2A> minus <xref:System.Windows.Duration.Automatic%2A>.  
+  
+-   <xref:System.Windows.Duration.Automatic%2A> minus <xref:System.Windows.Duration.Forever%2A>.  
+  
+-   <xref:System.Windows.Duration.Automatic%2A> minus <xref:System.Windows.Duration.TimeSpan%2A>.  
+  
+ The equivalent method for this operator is <xref:System.Windows.Duration.Subtract%28System.Windows.Duration%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_UnaryPlus">
@@ -455,10 +620,12 @@
         <Parameter Name="duration" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="duration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="duration">The instance of <see cref="T:System.Windows.Duration" /> to get.</param>
+        <summary>Returns the specified instance of <see cref="T:System.Windows.Duration" />.</summary>
+        <returns>An instance of <see cref="T:System.Windows.Duration" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.Plus%28System.Windows.Duration%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Plus">
@@ -477,9 +644,9 @@
         <Parameter Name="duration" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="duration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="duration">The instance of <see cref="T:System.Windows.Duration" /> to get.</param>
+        <summary>Returns the specified instance of <see cref="T:System.Windows.Duration" />.</summary>
+        <returns>An instance of <see cref="T:System.Windows.Duration" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,9 +666,9 @@
         <Parameter Name="duration" Type="System.Windows.Duration" />
       </Parameters>
       <Docs>
-        <param name="duration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="duration">The instance of <see cref="T:System.Windows.Duration" /> to subtract from the current instance.</param>
+        <summary>Subtracts the value of the specified instance of <see cref="T:System.Windows.Duration" /> from this instance.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Duration" /> whose value is the result of this instance minus the value of <paramref name="duration" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,9 +685,10 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.TimeSpan" /> value that this <see cref="T:System.Windows.Duration" /> represents.</summary>
+        <value>The <see cref="T:System.TimeSpan" /> value that this <see cref="T:System.Windows.Duration" /> represents.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Occurs if <see cref="T:System.Windows.Duration" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -537,8 +705,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts an instance of <see cref="T:System.Windows.Duration" /> to a <see cref="T:System.String" /> representation.</summary>
+        <returns>A <see cref="T:System.String" /> representation of this instance of <see cref="T:System.Windows.Duration" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,19 +1,23 @@
 ---
 uid: System.Web.AspNetHostingPermissionAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermissionAttribute.Level
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermissionAttribute.CreatePermission
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.AspNetHostingPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

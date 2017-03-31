@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.Presentation.Toolbox
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

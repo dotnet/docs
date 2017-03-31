@@ -15,8 +15,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies values representing possible states for an accessible object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An accessible object can be associated with one or more of these states.  
+  
+ For more information about the accessibility application, see "Microsoft Active Accessibility" in the Microsoft Developer Network (MSDN) library at http://msdn.microsoft.com/library.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual control based on <xref:System.Windows.Forms.Control>, but instead is drawn by the chart control, it does not contain any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+  
+ This code excerpt demonstrates using the <xref:System.Windows.Forms.AccessibleStates> enumeration with the <xref:System.Windows.Forms.AccessibleObject.State%2A> property. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+  
+ [!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
+ [!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
+ [!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AlertHigh">
@@ -32,7 +52,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The important information that should be conveyed to the user immediately. For example, a battery-level indicator reaching a critical low level would transition to this state, in which case, a blind access utility would announce this information immediately to the user, and a screen magnification program would scroll the screen so that the battery indicator is in view. This state is also appropriate for any prompt or operation that must be completed before the user can continue.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlertLow">
@@ -48,7 +68,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The low-priority information that might not be important to the user.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlertMedium">
@@ -64,7 +84,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The important information that does not need to be conveyed to the user immediately. For example, when a battery-level indicator is starting to reach a low level, it could generate a medium-level alert. Blind access utilities could then generate a sound to let the user know that important information is available, without actually interrupting the user's work. Users can then query the alert information any time they choose.</summary>
       </Docs>
     </Member>
     <Member MemberName="Animated">
@@ -80,7 +100,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The object that rapidly or constantly changes appearance. Graphics that are occasionally animated, but not always, should be defined as <see cref="F:System.Windows.Forms.AccessibleRole.Graphic" /><see langword="OR" /><see langword="Animated" />. This state should not be used to indicate that the object's location is changing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Busy">
@@ -96,7 +116,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A control that cannot accept input in its current condition.</summary>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -112,7 +132,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An object with a selected check box.</summary>
       </Docs>
     </Member>
     <Member MemberName="Collapsed">
@@ -128,7 +148,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The hidden children of the object that are items in an outline or tree structure.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -144,7 +164,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default button or menu item.</summary>
       </Docs>
     </Member>
     <Member MemberName="Expanded">
@@ -160,7 +180,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The displayed children of the object that are items in an outline or tree structure.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExtSelectable">
@@ -176,7 +196,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The altered selection such that all objects between the selection anchor, which is the object with the keyboard focus, and this object take on the anchor object's selection state. If the anchor object is not selected, the objects are removed from the selection. If the anchor object is selected, the selection is extended to include this object and all objects in between. You can set the selection state by combining this with <see cref="F:System.Windows.Forms.AccessibleSelection.AddSelection" /> or <see cref="F:System.Windows.Forms.AccessibleSelection.RemoveSelection" />. This state does not change the focus or the selection anchor unless it is combined with <see cref="F:System.Windows.Forms.AccessibleSelection.TakeFocus" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Floating">
@@ -192,7 +212,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The object that is not fixed to the boundary of its parent object and that does not move automatically along with the parent.</summary>
       </Docs>
     </Member>
     <Member MemberName="Focusable">
@@ -208,7 +228,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The object on the active window that can receive keyboard focus.</summary>
       </Docs>
     </Member>
     <Member MemberName="Focused">
@@ -224,7 +244,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An object with the keyboard focus.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasPopup">
@@ -240,7 +260,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The object displays a pop-up menu or window when invoked.</summary>
       </Docs>
     </Member>
     <Member MemberName="HotTracked">
@@ -256,7 +276,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The object hot-tracked by the mouse, meaning its appearance is highlighted to indicate the mouse pointer is located over it.</summary>
       </Docs>
     </Member>
     <Member MemberName="Indeterminate">
@@ -272,7 +292,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A three-state check box or toolbar button whose state is indeterminate. The check box is neither checked nor unchecked, and it is in the third or mixed state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invisible">
@@ -288,7 +308,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An object without a visible user interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Linked">
@@ -304,7 +324,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A linked object that has not been previously selected.</summary>
       </Docs>
     </Member>
     <Member MemberName="Marqueed">
@@ -320,7 +340,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An object with scrolling or moving text or graphics.</summary>
       </Docs>
     </Member>
     <Member MemberName="Mixed">
@@ -336,7 +356,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A three-state check box or toolbar button whose state is indeterminate. The check box is neither checked nor unchecked, and it is in the third or mixed state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Moveable">
@@ -352,7 +372,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A movable object.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultiSelectable">
@@ -368,7 +388,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An object that accepts multiple selected items.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -384,7 +404,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Offscreen">
@@ -400,7 +420,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No on-screen representation. A sound or alert object would have this state, or a hidden window that is never made visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pressed">
@@ -416,7 +436,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A pressed object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Protected">
@@ -432,7 +452,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A password-protected edit control.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -448,7 +468,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A read-only object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selectable">
@@ -464,7 +484,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An object that can accept selection.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -480,7 +500,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A selected object.</summary>
       </Docs>
     </Member>
     <Member MemberName="SelfVoicing">
@@ -496,7 +516,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The object or child can use text-to-speech (TTS) to describe itself. A speech-based accessibility aid should not announce information when an object with this state has the focus, because the object automatically announces information about itself.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sizeable">
@@ -512,7 +532,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A sizable object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Traversed">
@@ -528,7 +548,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A linked object that has previously been selected.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unavailable">
@@ -544,7 +564,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unavailable object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Valid">
@@ -565,7 +585,7 @@
         <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A valid object. This property is deprecated in [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)].</summary>
       </Docs>
     </Member>
   </Members>

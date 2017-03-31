@@ -1,1 +1,0 @@
-            Console.WriteLine("The message type is {0}", message.MessageType)

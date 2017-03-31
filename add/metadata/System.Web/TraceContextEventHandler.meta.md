@@ -1,4 +1,5 @@
 ---
 uid: System.Web.TraceContextEventHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

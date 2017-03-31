@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.Windows.Themes
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

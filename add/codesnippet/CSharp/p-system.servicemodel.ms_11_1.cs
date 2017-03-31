@@ -1,1 +1,0 @@
-            string body = message.Body;

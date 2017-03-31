@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.InvokeCompletedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.InvokeCompletedEventArgs.Outputs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

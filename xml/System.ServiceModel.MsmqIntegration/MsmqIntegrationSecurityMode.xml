@@ -11,8 +11,16 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+      <see cref="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode" /> is an enumeration that specifies the security modes supported by the MSMQ integration channel.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration can be set within a configuration file in the [\&lt;security\&gt;](../Topic/%3Csecurity%3E%20of%20%3CmsmqIntegrationBinding%3E.md) section. It can also be set in code by passing the appropriate value into the constructor of the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -29,7 +37,7 @@
         <ReturnType>System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No security.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transport">
@@ -46,7 +54,7 @@
         <ReturnType>System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use the MSMQ transport security.</summary>
       </Docs>
     </Member>
   </Members>

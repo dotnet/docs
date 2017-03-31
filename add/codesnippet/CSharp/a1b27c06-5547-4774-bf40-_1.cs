@@ -1,1 +1,0 @@
-		NetMsmqBinding binding = new NetMsmqBinding(NetMsmqSecurityMode.Message);

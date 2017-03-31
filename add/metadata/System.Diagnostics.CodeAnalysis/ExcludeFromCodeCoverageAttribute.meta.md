@@ -1,9 +1,13 @@
 ---
 uid: System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

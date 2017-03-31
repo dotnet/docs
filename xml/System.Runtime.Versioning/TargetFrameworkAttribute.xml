@@ -28,8 +28,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the version of the .NET Framework that a particular assembly was compiled against.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Versioning.TargetFrameworkAttribute> class provides an attribute that you can apply to an assembly to indicate the version of the .NET Framework runtime against which the assembly was built. For example, the following example applies the `TargetFrameworkAttribute` to an assembly to indicate that it was built using [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)].  
+  
+ [!code-csharp[System.Runtime.Versioning.TargetFrameworkAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.versioning.targetframeworkattribute/cs/declare1.cs#1)]
+ [!code-vb[System.Runtime.Versioning.TargetFrameworkAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.versioning.targetframeworkattribute/vb/declare1.vb#1)]  
+  
+ The <xref:System.Runtime.Versioning.TargetFrameworkAttribute> class constructor has a single parameter, `frameworkName`, that specifies the .NET Framework version against which the assembly was built. This parameter maps to the <xref:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName%2A> property. In addition, the <xref:System.Runtime.Versioning.TargetFrameworkAttribute> attribute can specify a <xref:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkDisplayName%2A> property to provide a more descriptive .NET Framework version string that is suitable for displaying to clients of the assembly. The following example applies the `TargetFrameworkAttribute` to an assembly and assigns both property values to indicate that the assembly was built using [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)].  
+  
+ [!code-csharp[System.Runtime.Versioning.TargetFrameworkAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.versioning.targetframeworkattribute/cs/declare2.cs#2)]
+ [!code-vb[System.Runtime.Versioning.TargetFrameworkAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.versioning.targetframeworkattribute/vb/declare2.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,9 +72,18 @@
         <Parameter Name="frameworkName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="frameworkName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="frameworkName">The version of the .NET Framework against which the assembly was built.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.Versioning.TargetFrameworkAttribute" /> class by specifying the .NET Framework version against which an assembly was built.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string that is assigned to the `frameworkName` parameter generally takes the same form as the string that is returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="frameworkName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FrameworkDisplayName">
@@ -87,9 +111,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the display name of the .NET Framework version against which an assembly was built.</summary>
+        <value>The display name of the .NET Framework version.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkDisplayName%2A> property usually returns a relatively long descriptive string that is suitable for display to a user.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FrameworkName">
@@ -117,9 +148,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the .NET Framework version against which a particular assembly was compiled.</summary>
+        <value>The name of the .NET Framework version with which the assembly was compiled.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Versioning.TargetFrameworkAttribute.FrameworkName%2A> property maps to the `frameworkName` parameter of the <xref:System.Runtime.Versioning.TargetFrameworkAttribute.%23ctor%2A> constructor. It represents the .NET Framework version in a compact form and typically corresponds to the string that is returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

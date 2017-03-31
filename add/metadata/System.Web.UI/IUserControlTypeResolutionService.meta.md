@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.IUserControlTypeResolutionService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IUserControlTypeResolutionService.GetType(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

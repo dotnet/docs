@@ -13,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines interfaces used by internal .NET structures to support creation of new configuration records.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,8 +30,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a string representing a configuration file path.</summary>
+        <value>A string representing a configuration file path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,9 @@
         <Parameter Name="configKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="configKey">A string representing a key to a configuration section.</param>
+        <summary>Returns an object representing a section of a configuration from the last-known-good (LKG) configuration.</summary>
+        <returns>An <see cref="T:System.Object" /> instance representing the section of the last-known-good configuration specified by <paramref name="configKey" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +73,9 @@
         <Parameter Name="configKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="configKey">A string representing a key to a configuration section.</param>
+        <summary>Returns an <see cref="T:System.Object" /> instance representing a section of a configuration file.</summary>
+        <returns>An <see cref="T:System.Object" /> instance representing a section of a configuration file.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +92,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a value indicating whether an error occurred during initialization of a configuration object.</summary>
+        <value>
+          <see langword="true" /> if an error occurred during initialization of a configuration object; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +114,8 @@
         <Parameter Name="configKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="configKey">A string representing a key to a configuration section that is to be refreshed.</param>
+        <summary>Causes a specified section of the configuration object to be reinitialized.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +133,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes a configuration record.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,8 +150,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the name of a <see cref="T:System.IO.Stream" /> object performing I/O tasks on the configuration file.</summary>
+        <value>A string representing the name of a <see cref="T:System.IO.Stream" /> object performing I/O tasks on the configuration file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +169,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Grants the configuration object the permission to throw an exception if an error occurs during initialization.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

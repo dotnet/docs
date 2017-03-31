@@ -1,24 +1,34 @@
 ---
 uid: System.Xml.IFragmentCapableXmlDictionaryWriter
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.IFragmentCapableXmlDictionaryWriter.EndFragment
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.IFragmentCapableXmlDictionaryWriter.WriteFragment(System.Byte[],System.Int32,System.Int32)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.IFragmentCapableXmlDictionaryWriter.CanFragment
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.IFragmentCapableXmlDictionaryWriter.StartFragment(System.IO.Stream,System.Boolean)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

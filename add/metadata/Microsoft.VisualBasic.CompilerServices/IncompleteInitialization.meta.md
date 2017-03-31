@@ -1,19 +1,34 @@
 ---
 uid: Microsoft.VisualBasic.CompilerServices.IncompleteInitialization
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor(System.String)
-internalonly: False
----
-
----
-uid: Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor(System.String,System.Exception)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor(System.String,System.Exception)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

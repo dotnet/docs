@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Documents.DocumentStructures.BlockElement
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.BlockElement.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

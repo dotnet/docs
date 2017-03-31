@@ -1,19 +1,23 @@
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.OnBehalfOf
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.ActAs
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.Default
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

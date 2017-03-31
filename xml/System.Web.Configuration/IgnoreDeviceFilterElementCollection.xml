@@ -16,8 +16,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Web.Configuration.IgnoreDeviceFilterElement" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the `ignoreDeviceFilters` section in a configuration file to specify which tags ASP.NET should ignore when it renders a page.  
+  
+```  
+<system.web>  
+  
+  <pages>  
+    <ignoreDeviceFilters>  
+      <filter name="TagA"/>  
+      <filter name="TagB"/>  
+    </ignoreDeviceFilters>  
+  </pages>  
+  
+</system.web>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.IgnoreDeviceFilterElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +71,8 @@
         <Parameter Name="deviceFilter" Type="System.Web.Configuration.IgnoreDeviceFilterElement" />
       </Parameters>
       <Docs>
-        <param name="deviceFilter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="deviceFilter">The object to add to the collection.</param>
+        <summary>Adds a <see cref="T:System.Web.Configuration.IgnoreDeviceFilterElement" /> object to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +90,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all the <see cref="T:System.Web.Configuration.IgnoreDeviceFilterElement" /> objects from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +107,8 @@
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.Configuration.IgnoreDeviceFilterElementCollection" /> type.</summary>
+        <value>The type of the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,9 +187,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the filter object to get.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.IgnoreDeviceFilterElement" /> object from the collection at the specified index.</summary>
+        <value>The specified filter object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,9 +209,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The name of the filter object to get.</param>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.IgnoreDeviceFilterElement" /> object from the collection by using its name.</summary>
+        <value>The specified filter object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,8 +249,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the object to remove.</param>
+        <summary>Removes the specified <see cref="T:System.Web.Configuration.IgnoreDeviceFilterElement" /> object from the collection, by using its name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,8 +270,8 @@
         <Parameter Name="deviceFilter" Type="System.Web.Configuration.IgnoreDeviceFilterElement" />
       </Parameters>
       <Docs>
-        <param name="deviceFilter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="deviceFilter">The object to remove.</param>
+        <summary>Removes the specified <see cref="T:System.Web.Configuration.IgnoreDeviceFilterElement" /> object from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,8 +291,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the object to remove.</param>
+        <summary>Removes the <see cref="T:System.Web.Configuration.IgnoreDeviceFilterElement" /> object from the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

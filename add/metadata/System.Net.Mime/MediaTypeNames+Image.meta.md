@@ -1,19 +1,23 @@
 ---
 uid: System.Net.Mime.MediaTypeNames.Image
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.MediaTypeNames.Image.Gif
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.MediaTypeNames.Image.Tiff
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.MediaTypeNames.Image.Jpeg
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

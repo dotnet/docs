@@ -1,49 +1,76 @@
 ---
 uid: System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.#ctor(System.Reflection.MemberTypes,System.Reflection.MemberInfo[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.op_Inequality(System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo,System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.Equals(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.#ctor(System.Reflection.MemberInfo)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.GetHashCode
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.#ctor(System.Reflection.MemberTypes,System.Func{System.Reflection.MemberInfo[]})
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.MemberType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.op_Equality(System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo,System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo.GetAccessors
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

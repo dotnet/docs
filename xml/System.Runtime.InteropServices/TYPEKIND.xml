@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.TYPEKIND" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `TYPEKIND`, see the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="TKIND_ALIAS">
@@ -34,7 +41,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type that is an alias for another type.</summary>
       </Docs>
     </Member>
     <Member MemberName="TKIND_COCLASS">
@@ -51,7 +58,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A set of implemented components interfaces.</summary>
       </Docs>
     </Member>
     <Member MemberName="TKIND_DISPATCH">
@@ -68,7 +75,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A set of methods and properties that are accessible through <see langword="IDispatch::Invoke" />. By default, dual interfaces return <see langword="TKIND_DISPATCH" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="TKIND_ENUM">
@@ -85,7 +92,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A set of enumerators.</summary>
       </Docs>
     </Member>
     <Member MemberName="TKIND_INTERFACE">
@@ -102,7 +109,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type that has virtual functions, all of which are pure.</summary>
       </Docs>
     </Member>
     <Member MemberName="TKIND_MAX">
@@ -119,7 +126,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>End of enumeration marker.</summary>
       </Docs>
     </Member>
     <Member MemberName="TKIND_MODULE">
@@ -136,7 +143,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A module that can only have static functions and data (for example, a DLL).</summary>
       </Docs>
     </Member>
     <Member MemberName="TKIND_RECORD">
@@ -153,7 +160,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A structure with no methods.</summary>
       </Docs>
     </Member>
     <Member MemberName="TKIND_UNION">
@@ -170,7 +177,7 @@
         <ReturnType>System.Runtime.InteropServices.TYPEKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A union of all members that have an offset of zero.</summary>
       </Docs>
     </Member>
   </Members>

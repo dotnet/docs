@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.SyntaxErrorObject
-internalonly: False
+ms.author: "mikejo"
 ---

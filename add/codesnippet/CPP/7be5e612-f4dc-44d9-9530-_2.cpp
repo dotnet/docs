@@ -1,1 +1,0 @@
-        IPermission^ pp1 = gcnew PrincipalPermission("", "Administrator");

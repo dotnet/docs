@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Configuration.ScriptingJsonSerializationSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingJsonSerializationSection.RecursionLimit
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingJsonSerializationSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingJsonSerializationSection.Converters
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingJsonSerializationSection.MaxJsonLength
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

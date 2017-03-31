@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts instances of <see cref="T:System.String" /> to and from instances of <see cref="T:System.Windows.Media.Media3D.Point4D" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is only intended to be used by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.Converters.Point4DValueSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,11 +54,19 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">String to evaluate for conversion.</param>
+        <param name="context">Context information used for conversion.</param>
+        <summary>Determines if conversion from a given <see cref="T:System.String" /> to an instance of <see cref="T:System.Windows.Media.Media3D.Point4D" /> is possible.</summary>
+        <returns>
+          <see langword="true" /> if the value can be converted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method always returns `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertToString">
@@ -71,11 +86,13 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">Instance of <see cref="T:System.Windows.Media.Media3D.Point4D" /> to evaluate for conversion.</param>
+        <param name="context">Context information used for conversion.</param>
+        <summary>Determines if an instance of <see cref="T:System.Windows.Media.Media3D.Point4D" /> can be converted to a <see cref="T:System.String" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> can be converted into a <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Occurs when <paramref name="value" /> is not a <see cref="T:System.Windows.Media.Media3D.Point4D" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertFromString">
@@ -95,10 +112,11 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">
+          <see cref="T:System.String" /> value to convert into a <see cref="T:System.Windows.Media.Media3D.Point4D" />.</param>
+        <param name="context">Context information used for conversion.</param>
+        <summary>Converts a <see cref="T:System.String" /> into a <see cref="T:System.Windows.Media.Media3D.Point4D" />.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Media.Media3D.Point4D" /> based on the supplied <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,10 +137,10 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">Instance of <see cref="T:System.Windows.Media.Media3D.Point4D" /> to evaluate for conversion.</param>
+        <param name="context">Context information used for conversion.</param>
+        <summary>Converts an instance of <see cref="T:System.Windows.Media.Media3D.Point4D" /> to a <see cref="T:System.String" />.</summary>
+        <returns>A <see cref="T:System.String" /> representation of the supplied <see cref="T:System.Windows.Media.Media3D.Point4D" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

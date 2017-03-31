@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a basic configuration-section handler that exposes the configuration section's XML for both read and write access.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the type that is returned when the design-time API reads in a section that is not registered in the `<configSections>` section. This type is also returned when the type of registered section does not inherit from <xref:System.Configuration.ConfigurationSection>, as with sections that use the ASP.NET 1.0 or 1.1 <xref:System.Configuration.IConfigurationSectionHandler> type.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.DefaultSection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

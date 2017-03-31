@@ -11,8 +11,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of match semantics used by the dispatcher to route incoming messages to the correct endpoint.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.ServiceModel.AddressFilterMode> enumeration is set on the <xref:System.ServiceModel.ServiceBehaviorAttribute.AddressFilterMode%2A> property.  
+  
+ The longest prefix match criterion specified by Prefix requires that the destination address be matched by the largest number of leading address bits in the filter. The default value is Exact.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_AddressFilter#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_addressfilter/cs/service.cs#0)]
+ [!code-vb[S_UE_AddressFilter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_addressfilter/vb/service.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Any">
@@ -29,7 +44,15 @@
         <ReturnType>System.ServiceModel.AddressFilterMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a filter that matches on any address of an incoming message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using this value turns off the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] address filter check. Any message, no matter what its WS-Adressing:To identity is accepted.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Exact">
@@ -46,7 +69,7 @@
         <ReturnType>System.ServiceModel.AddressFilterMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a filter that does an exact match on the address of an incoming message.</summary>
       </Docs>
     </Member>
     <Member MemberName="Prefix">
@@ -63,7 +86,7 @@
         <ReturnType>System.ServiceModel.AddressFilterMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a filter does the longest prefix matches on the address of an incoming message.</summary>
       </Docs>
     </Member>
   </Members>

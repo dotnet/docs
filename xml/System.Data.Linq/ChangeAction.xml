@@ -10,8 +10,21 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the type of change the entity will undergo when changes are submitted to the database.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use with `OnValidate()` in [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] applications to specify or omit validation based on the type of change being submitted.  
+  
+   
+  
+## Examples  
+ [!code-csharp[System.Data.Linq.ChangeAction#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.ChangeAction/cs/Program.cs#1)]
+ [!code-vb[System.Data.Linq.ChangeAction#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.ChangeAction/vb/Module1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Delete">
@@ -27,7 +40,7 @@
         <ReturnType>System.Data.Linq.ChangeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The entity will be deleted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -43,7 +56,7 @@
         <ReturnType>System.Data.Linq.ChangeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The entity will be inserted.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +72,7 @@
         <ReturnType>System.Data.Linq.ChangeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The entity will not be submitted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -75,7 +88,7 @@
         <ReturnType>System.Data.Linq.ChangeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The entity will be updated.</summary>
       </Docs>
     </Member>
   </Members>

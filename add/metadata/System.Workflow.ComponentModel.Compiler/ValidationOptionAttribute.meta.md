@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute.ValidationOption
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute.#ctor(System.Workflow.ComponentModel.Compiler.ValidationOption)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

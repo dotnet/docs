@@ -1,29 +1,35 @@
 ---
 uid: System.Speech.Synthesis.TtsEngine.TextFragment
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.TextFragment.State
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.TextFragment.TextOffset
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.TextFragment.#ctor
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.TextFragment.TextLength
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.TextFragment.TextToSpeak
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

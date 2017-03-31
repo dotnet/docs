@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the rendering preference.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SoftwareOnly preference overrides the <xref:System.Windows.Interop.HwndTarget.RenderMode%2A> setting.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Interop.RenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] rendering is in hardware, if possible; software otherwise.</summary>
       </Docs>
     </Member>
     <Member MemberName="SoftwareOnly">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Interop.RenderMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] rendering is in software only.</summary>
       </Docs>
     </Member>
   </Members>

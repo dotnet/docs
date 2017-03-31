@@ -1,19 +1,34 @@
 ---
 uid: System.CodeDom.CodeSnippetExpression
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeSnippetExpression.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeSnippetExpression.Value
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeSnippetExpression.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeSnippetExpression.#ctor(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeSnippetExpression.Value
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeSnippetExpression.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -11,8 +11,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The class used for serializing and deserializing security tokens, security key identifiers, and security key identifier clauses defined in the WS-Security, WS-Trust, and WS-SecureConversation security specifications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates a custom override of this class.  
+  
+ [!code-csharp[c_CustomToken#3](~/samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#3)]
+ [!code-vb[c_CustomToken#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSSecurityTokenSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +53,8 @@
         <Parameter Name="emitBspRequiredAttributes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="emitBspRequiredAttributes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="emitBspRequiredAttributes">The value to use for the <see cref="P:System.ServiceModel.Security.WSSecurityTokenSerializer.EmitBspRequiredAttributes" /> property. When <see langword="true" />, this includes <see langword="ValueType" /> and <see langword="EncodingType" /> attributes where applicable during security token serialization.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSSecurityTokenSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +71,8 @@
         <Parameter Name="securityVersion" Type="System.ServiceModel.Security.SecurityVersion" />
       </Parameters>
       <Docs>
-        <param name="securityVersion">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityVersion">The security version.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSSecurityTokenSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +90,9 @@
         <Parameter Name="emitBspRequiredAttributes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="securityVersion">To be added.</param>
-        <param name="emitBspRequiredAttributes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityVersion">The security version.</param>
+        <param name="emitBspRequiredAttributes">The value to use for the <see cref="P:System.ServiceModel.Security.WSSecurityTokenSerializer.EmitBspRequiredAttributes" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSSecurityTokenSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,10 +111,10 @@
         <Parameter Name="samlSerializer" Type="System.IdentityModel.Tokens.SamlSerializer" />
       </Parameters>
       <Docs>
-        <param name="securityVersion">To be added.</param>
-        <param name="emitBspRequiredAttributes">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityVersion">The security version.</param>
+        <param name="emitBspRequiredAttributes">The value to use for the <see cref="P:System.ServiceModel.Security.WSSecurityTokenSerializer.EmitBspRequiredAttributes" /> property.</param>
+        <param name="samlSerializer">The extensibility point used for serializing and deserializing SAML tokens.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSSecurityTokenSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,13 +135,14 @@
         <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="securityVersion">To be added.</param>
-        <param name="emitBspRequiredAttributes">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
-        <param name="securityStateEncoder">To be added.</param>
-        <param name="knownTypes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityVersion">The security version.</param>
+        <param name="emitBspRequiredAttributes">The value to use for the <see cref="P:System.ServiceModel.Security.WSSecurityTokenSerializer.EmitBspRequiredAttributes" /> property.</param>
+        <param name="samlSerializer">The extensibility point used for serializing and deserializing SAML tokens.</param>
+        <param name="securityStateEncoder">The encoder used for encoding and decoding security state that is attached as a cookie to security context tokens.</param>
+        <param name="knownTypes">A collection of types. These known types must be declared to include custom claims as part of the security context token's cookie.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSSecurityTokenSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="securityVersion" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -153,14 +164,14 @@
         <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="securityVersion">To be added.</param>
-        <param name="trustVersion">To be added.</param>
-        <param name="secureConversationVersion">To be added.</param>
-        <param name="emitBspRequiredAttributes">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
-        <param name="securityStateEncoder">To be added.</param>
-        <param name="knownTypes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityVersion">The security version.</param>
+        <param name="trustVersion">The set of supported versions of the WS-Trust specification.</param>
+        <param name="secureConversationVersion">The set of supported versions of the WS-SecureConversation specification.</param>
+        <param name="emitBspRequiredAttributes">The value to use for the <see cref="P:System.ServiceModel.Security.WSSecurityTokenSerializer.EmitBspRequiredAttributes" /> property.</param>
+        <param name="samlSerializer">The extensibility point used for serializing and deserializing SAML tokens.</param>
+        <param name="securityStateEncoder">The encoder used for encoding and decoding security state that is attached as a cookie to security context tokens.</param>
+        <param name="knownTypes">A collection of known types. These known types must be declared to include custom claims as part of the security context token's cookie.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSSecurityTokenSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,16 +195,18 @@
         <Parameter Name="maximumKeyDerivationNonceLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="securityVersion">To be added.</param>
-        <param name="emitBspRequiredAttributes">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
-        <param name="securityStateEncoder">To be added.</param>
-        <param name="knownTypes">To be added.</param>
-        <param name="maximumKeyDerivationOffset">To be added.</param>
-        <param name="maximumKeyDerivationLabelLength">To be added.</param>
-        <param name="maximumKeyDerivationNonceLength">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityVersion">The security version.</param>
+        <param name="emitBspRequiredAttributes">The value to use for the <see cref="P:System.ServiceModel.Security.WSSecurityTokenSerializer.EmitBspRequiredAttributes" /> property.</param>
+        <param name="samlSerializer">The extensibility point used for serializing and deserializing SAML tokens.</param>
+        <param name="securityStateEncoder">The encoder used for encoding and decoding security state that is attached as a cookie to security context tokens.</param>
+        <param name="knownTypes">A collection of known types. These known types must be declared to include custom claims as part of the security context token's cookie.</param>
+        <param name="maximumKeyDerivationOffset">The maximum key derivation offset. This setting places a bound on the amount of processing the server does when deserializing Derived Key Tokens.</param>
+        <param name="maximumKeyDerivationLabelLength">The maximum key derivation label length. This setting places a bound on the amount of processing the server does when deserializing Derived Key Tokens.</param>
+        <param name="maximumKeyDerivationNonceLength">The maximum key derivation nonce length. This setting places a bound on the amount of processing the server does when deserializing Derived Key Tokens.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSSecurityTokenSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="securityVersion" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="maximumKeyDerivationOffset" /> is less than 0, <paramref name="maximumKeyDerivationLabelLength" /> is less than 0, or <paramref name="maximumKeyDerivationNonceLength" /> is less than or equal to 0.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -218,17 +231,17 @@
         <Parameter Name="maximumKeyDerivationNonceLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="securityVersion">To be added.</param>
-        <param name="trustVersion">To be added.</param>
-        <param name="secureConversationVersion">To be added.</param>
-        <param name="emitBspRequiredAttributes">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
-        <param name="securityStateEncoder">To be added.</param>
-        <param name="knownTypes">To be added.</param>
-        <param name="maximumKeyDerivationOffset">To be added.</param>
-        <param name="maximumKeyDerivationLabelLength">To be added.</param>
-        <param name="maximumKeyDerivationNonceLength">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityVersion">The security version.</param>
+        <param name="trustVersion">The set of supported versions of the WS-Trust specification.</param>
+        <param name="secureConversationVersion">The set of supported versions of the WS-SecureConversation specification.</param>
+        <param name="emitBspRequiredAttributes">The value to use for the <see cref="P:System.ServiceModel.Security.WSSecurityTokenSerializer.EmitBspRequiredAttributes" /> property.</param>
+        <param name="samlSerializer">The extensibility point used for serializing and deserializing SAML tokens.</param>
+        <param name="securityStateEncoder">The encoder used for encoding and decoding security state that is attached as a cookie to security context tokens.</param>
+        <param name="knownTypes">A collection of known types. These known types must be declared to include custom claims as part of the security context token's cookie.</param>
+        <param name="maximumKeyDerivationOffset">The maximum key derivation offset. This setting places a bound on the amount of processing the server does when deserializing Derived Key Tokens.</param>
+        <param name="maximumKeyDerivationLabelLength">The maximum key derivation label length. This setting places a bound on the amount of processing the server does when deserializing Derived Key Tokens.</param>
+        <param name="maximumKeyDerivationNonceLength">The maximum key derivation nonce length. This setting places a bound on the amount of processing the server does when deserializing Derived Key Tokens.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSSecurityTokenSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,9 +261,10 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The XmlReader.</param>
+        <summary>Gets a value that indicates whether the key identifier clause core can be read using the specified reader.</summary>
+        <returns>
+          <see langword="true" /> if the key identifier clause core can be read using the specified reader; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,9 +284,10 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The XmlReader.</param>
+        <summary>Gets a value that indicates whether the key identifier core can be read using the specified reader.</summary>
+        <returns>
+          <see langword="true" /> if the key identifier core can be read using the specified reader; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,9 +307,10 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The XmlReader.</param>
+        <summary>Gets a value that indicates whether the token core can be read using the specified reader.</summary>
+        <returns>
+          <see langword="true" /> if the token core can be read using the specified reader; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,9 +330,10 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifierClause">The security key identifier clause.</param>
+        <summary>Gets a value that indicates whether the key identifier clause core with a specified key identifier clause can be written.</summary>
+        <returns>
+          <see langword="true" /> if the key identifier clause core with the specified key identifier clause can be written; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,9 +353,10 @@
         <Parameter Name="keyIdentifier" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifier">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifier">The security key identifier.</param>
+        <summary>Gets a value that indicates whether the key identifier core with a specified key identifier clause can be written.</summary>
+        <returns>
+          <see langword="true" /> if the key identifier core with the specified key identifier clause can be written; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,9 +376,10 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="token">The security token.</param>
+        <summary>Gets a value that indicates whether the token core with a specified security token can be written.</summary>
+        <returns>
+          <see langword="true" /> if the token core with the specified security token can be written; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,11 +400,12 @@
         <Parameter Name="tokenReferenceStyle" Type="System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="tokenReferenceStyle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The security token.</param>
+        <param name="tokenReferenceStyle">The <see cref="T:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle" />.</param>
+        <summary>Creates a key identifier clause from a token expressed as XML.</summary>
+        <returns>The created security key identifier.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.XmlException">An error occurred when deserializing the key identifier clause or the key identifier clause could not be read.</exception>
       </Docs>
     </Member>
     <Member MemberName="DefaultInstance">
@@ -401,8 +421,8 @@
         <ReturnType>System.ServiceModel.Security.WSSecurityTokenSerializer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a default instance of this class.</summary>
+        <value>A default instance of this class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -419,8 +439,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether to emit BSP required attributes.</summary>
+        <value>
+          <see langword="true" /> if BSP required attributes are to be emitted; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -440,9 +461,9 @@
         <Parameter Name="tokenType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="tokenType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="tokenType">The type of the security token.</param>
+        <summary>Gets the URI of the security token of the specified type.</summary>
+        <returns>The URI of the security token of the specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,8 +480,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the maximum key derivation label length.</summary>
+        <value>The maximum key derivation label length.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,8 +498,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the maximum key derivation nonce length.</summary>
+        <value>The maximum key derivation nonce length.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -495,8 +516,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the maximum key derivation offset.</summary>
+        <value>The maximum key derivation offset.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -516,10 +537,11 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The specified XmlReader.</param>
+        <summary>Reads the key identifier clause core using the specified <see cref="T:System.Xml.XmlReader" />.</summary>
+        <returns>The security key identifier clause that was read.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.XmlException">An error occurred when deserializing the key identifier clause or the key identifier clause could not be read.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadKeyIdentifierCore">
@@ -538,10 +560,11 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The specified XmlReader.</param>
+        <summary>Reads the key identifier core using the specified <see cref="T:System.Xml.XmlReader" />.</summary>
+        <returns>The security key identifier that was read.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.XmlException">An error occurred when deserializing the key identifier or the key identifier could not be read.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadTokenCore">
@@ -561,11 +584,12 @@
         <Parameter Name="tokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="tokenResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The specified XmlReader.</param>
+        <param name="tokenResolver">The security token resolver.</param>
+        <summary>Reads the token core using the specified <see cref="T:System.Xml.XmlReader" />.</summary>
+        <returns>The security token that was read.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.XmlException">An error occurred when deserializing the token or the token could not be read.</exception>
       </Docs>
     </Member>
     <Member MemberName="SecurityVersion">
@@ -581,8 +605,8 @@
         <ReturnType>System.ServiceModel.Security.SecurityVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the security version.</summary>
+        <value>The security version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -604,11 +628,12 @@
         <Parameter Name="securityKeyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="tokenReferenceStyle">To be added.</param>
-        <param name="securityKeyIdentifierClause">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The security token.</param>
+        <param name="tokenReferenceStyle">The <see cref="T:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle" />.</param>
+        <param name="securityKeyIdentifierClause">A sub-unit of an element that contains a security key identifier token.</param>
+        <summary>Attempts to create a key identifier clause from a token expressed as XML.</summary>
+        <returns>
+          <see langword="true" /> if the key identifier clause was created; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -629,10 +654,12 @@
         <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="keyIdentifierClause">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The specified XmlWriter.</param>
+        <param name="keyIdentifierClause">The security key identifier clause.</param>
+        <summary>Writes the key identifier clause core with a specified key identifier clause using the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.XmlException">An error occurred when serializing the key identifier clause.</exception>
+        <exception cref="T:System.InvalidOperationException">The key identifier clause was not successfully written.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteKeyIdentifierCore">
@@ -652,10 +679,12 @@
         <Parameter Name="keyIdentifier" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="keyIdentifier">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The specified XmlWriter.</param>
+        <param name="keyIdentifier">The security key identifier clause.</param>
+        <summary>Writes the key identifier core with a specified key identifier clause using the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.XmlException">An error occurred when serializing the key identifier.</exception>
+        <exception cref="T:System.InvalidOperationException">The key identifier was not successfully written.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteTokenCore">
@@ -675,10 +704,12 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The specified XmlWriter.</param>
+        <param name="token">The security token.</param>
+        <summary>Writes the token core with a specified security token using the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.XmlException">An error occurred when serializing the security token.</exception>
+        <exception cref="T:System.InvalidOperationException">The token was not successfully written.</exception>
       </Docs>
     </Member>
   </Members>

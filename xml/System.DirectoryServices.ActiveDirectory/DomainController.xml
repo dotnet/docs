@@ -11,8 +11,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> class represents a domain controller in an Active Directory domain.</summary>
     <remarks>To be added.</remarks>
+    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +27,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,8 +45,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Uses the Knowledge Consistency Checker (KCC) to verify the replication topology for this domain controller.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="CurrentTime">
@@ -61,9 +67,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current date and time from this domain controller.</summary>
+        <value>A <see cref="T:System.DateTime" /> object that contains the current date and time from this domain controller.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -82,9 +89,16 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">Determines if the managed resources should be released. <see langword="true " />if the managed resources are released; otherwise, <see langword="false" />.</param>
+        <summary>Causes the object to release all managed and/or unmanaged resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `disposing` parameter affects only the release of the managed resources. The unmanaged resources are always released by this method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Domain">
@@ -100,9 +114,10 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.Domain</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the domain that this domain controller is a member of.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object that represents the domain that this domain controller is a member of.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="EnableGlobalCatalog">
@@ -119,9 +134,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Promotes this domain controller to a global catalog server.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalog" /> object that represents the global catalog server.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.ActiveDirectory.GlobalCatalog.DisableGlobalCatalog%2A?displayProperty=fullName> method is used to demote the domain controller from a global catalog server.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -138,7 +162,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Overrides the <see cref="M:System.Object.Finalize" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,10 +182,14 @@
         <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to use for the search. The target of this <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object is the name of the domain that will be searched for domain controllers.</param>
+        <summary>Finds all domain controllers in the specified context.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainControllerCollection" /> object that contains the domain controllers found by the search.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="context" /> is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -181,11 +209,13 @@
         <Parameter Name="siteName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="siteName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to use for the search.</param>
+        <param name="siteName">The name of the site to search for domain controllers.</param>
+        <summary>Finds all domain controllers in the specified context and site.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainControllerCollection" /> object that contains the domain controllers that were found by the search.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or <paramref name="siteName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -204,10 +234,13 @@
         <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to use for the search.</param>
+        <summary>Finds a single domain controller in the specified context.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> object that represents the domain controller that was found by the search.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">No domain controller was found.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -227,11 +260,16 @@
         <Parameter Name="flag" Type="System.DirectoryServices.ActiveDirectory.LocatorOptions" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="flag">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to use for the search.</param>
+        <param name="flag">A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectory.LocatorOptions" /> members that defines the type of domain controller to find.</param>
+        <summary>Finds a single domain controller in the specified context, allowing for additional search options.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> object that represents the domain controller that was found by the search.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">No domain controller was found.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="context" /> or <paramref name="flag" /> is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -251,11 +289,16 @@
         <Parameter Name="siteName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="siteName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to use for the search.</param>
+        <param name="siteName">The name of the site to search for a domain controller.</param>
+        <summary>Finds a single domain controller in the specified context and site.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> object that represents the domain controller that was found by the search.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">No domain controller was found.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="context" /> or <paramref name="siteName" /> is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or <paramref name="siteName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindOne">
@@ -276,12 +319,17 @@
         <Parameter Name="flag" Type="System.DirectoryServices.ActiveDirectory.LocatorOptions" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="siteName">To be added.</param>
-        <param name="flag">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to use for the search.</param>
+        <param name="siteName">The name of the site to search for a domain controller.</param>
+        <param name="flag">A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectory.LocatorOptions" /> members that defines the type of domain controller to find.</param>
+        <summary>Finds a single domain controller in the specified context and site, allowing for additional search options.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> object that represents the domain controller that was found by the search.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">No domain controller was found.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="context" />, <paramref name="siteName" />, or <paramref name="flag" /> is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or <paramref name="siteName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Forest">
@@ -297,9 +345,10 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.Forest</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the forest that this domain controller is a member of.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> object that represents the forest that this domain controller is a member of.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetAllReplicationNeighbors">
@@ -316,9 +365,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves the replication neighbors for this domain controller.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" /> object that contains the replication neighbors for this domain controller.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetDirectorySearcher">
@@ -335,9 +389,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves a <see cref="T:System.DirectoryServices.DirectorySearcher" /> object for the domain controller.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.DirectorySearcher" /> object for the domain controller.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetDomainController">
@@ -356,10 +412,15 @@
         <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to use to retrieve the object. The target of this context must be a domain controller.</param>
+        <summary>Retrieves a <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> object for the specified context.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> object that represents the domain controller that was found.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A connection to the target specified in <paramref name="context" /> could not be made.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="context" /> is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationConnectionFailures">
@@ -376,9 +437,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves a list of the replication connection failures recorded by this domain controller.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationFailureCollection" /> object that contains the replication connection failures that were recorded by this domain controller.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationCursors">
@@ -397,10 +463,19 @@
         <Parameter Name="partition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="partition">The distinguished name of the partition for which to retrieve the replication cursor information.</param>
+        <summary>Retrieves the replication cursor information for the specified partition.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection" /> that contains the replication cursor information.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="partition" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partition" /> is an empty string.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationMetadata">
@@ -419,10 +494,19 @@
         <Parameter Name="objectPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="objectPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objectPath">The path to the object for which to retrieve the replication metadata.</param>
+        <summary>Retrieves the replication metadata for a specific Active Directory Domain Services object.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata" /> object that contains the replication metadata for the specified object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="objectPath" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="objectPath" /> is not valid.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationNeighbors">
@@ -441,10 +525,19 @@
         <Parameter Name="partition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="partition">The distinguished name of the partition for which to retrieve the replication neighbors.</param>
+        <summary>Retrieves the replication neighbors for the specified partition.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" /> object that contains the replication neighbors for this object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="partition" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partition" /> is not valid.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationOperationInformation">
@@ -461,9 +554,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves the current and pending replication operations for this domain controller.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" /> object that contains the current and pending replication operations.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="HighestCommittedUsn">
@@ -479,9 +577,10 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the highest update sequence number that has been committed to this domain controller.</summary>
+        <value>The highest update sequence number (USN) that has been committed to this domain controller.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="InboundConnections">
@@ -497,9 +596,11 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the inbound replication connections for this domain controller.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" /> object that contains the inbound replication connections for this domain controller.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="IPAddress">
@@ -515,9 +616,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the IP address of this domain controller.</summary>
+        <value>The Internet protocol (IP) address of this domain controller in string form.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="IsGlobalCatalog">
@@ -534,9 +637,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines if this domain controller is a global catalog server.</summary>
+        <returns>
+          <see langword="true" /> if this domain controller is a global catalog server or <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="OSVersion">
@@ -552,9 +658,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the operating system version of this domain controller.</summary>
+        <value>The version of the operating system that is in use on this domain controller.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="OutboundConnections">
@@ -570,9 +677,11 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the outbound replication connections for this domain controller.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" /> object that contains the outbound replication connections for this domain controller.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Roles">
@@ -588,9 +697,10 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryRoleCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the roles that this domain controller serves.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRoleCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" /> members that indicate the roles that this domain controller serves.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="SeizeRoleOwnership">
@@ -609,9 +719,19 @@
         <Parameter Name="role" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" />
       </Parameters>
       <Docs>
-        <param name="role">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="role">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" /> members that specifies which role the domain controller should take ownership of.</param>
+        <summary>Causes this domain controller to take ownership of the specified role.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a destructive operation because it causes the role to be taken without the cooperation of the server that currently holds the role. The <xref:System.DirectoryServices.ActiveDirectory.DomainController.TransferRoleOwnership%2A?displayProperty=fullName> method should be used instead whenever possible.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="role" /> is not valid.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="SiteName">
@@ -627,9 +747,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the site that this domain controller belongs to.</summary>
+        <value>The name of the site that this domain controller belongs to.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">The site name was not found.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SyncFromAllServersCallback">
@@ -645,9 +768,11 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncUpdateCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the synchronization delegate for this domain controller.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.SyncUpdateCallback" /> delegate that will be used for synchronization notifications.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SyncReplicaFromAllServers">
@@ -667,10 +792,24 @@
         <Parameter Name="options" Type="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="partition">The distinguished name of the partition for the domain controller to synchronize.</param>
+        <param name="options">A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions" /> members.</param>
+        <summary>Causes this domain controller to synchronize the specified partition with all other domain controllers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the replication will only occur with the other domain controllers in the same site. If the `options` parameter contains the <xref:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions> value, then the replication will occur with all domain controllers in the forest.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="partition" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partition" /> is not valid.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException">An error occurred in the synchronization operation.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SyncReplicaFromServer">
@@ -690,10 +829,19 @@
         <Parameter Name="sourceServer" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <param name="sourceServer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="partition">The distinguished name of the partition with which to synchronize the domain controller.</param>
+        <param name="sourceServer">The name of the server with which to synchronize the partition.</param>
+        <summary>Causes this domain controller to synchronize the specified partition with the specified domain controller.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="partition" /> or <paramref name="sourceServer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partition" /> or <paramref name="sourceServer" /> is not valid.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="TransferRoleOwnership">
@@ -712,9 +860,12 @@
         <Parameter Name="role" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" />
       </Parameters>
       <Docs>
-        <param name="role">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="role">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" /> members that specifies which role will be transferred to this domain controller.</param>
+        <summary>Causes ownership of the specified role to be transferred to this domain controller.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="role" /> is not valid.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TriggerSyncReplicaFromNeighbors">
@@ -733,9 +884,18 @@
         <Parameter Name="partition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="partition">The distinguished name of the partition to synchronize.</param>
+        <summary>Begins a synchronization of the specified partition.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="partition" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partition" /> is not valid.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
   </Members>

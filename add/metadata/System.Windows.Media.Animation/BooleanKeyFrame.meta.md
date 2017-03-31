@@ -1,54 +1,81 @@
 ---
 uid: System.Windows.Media.Animation.BooleanKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.BooleanKeyFrame.#ctor(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.BooleanKeyFrame.#ctor(System.Boolean,System.Windows.Media.Animation.KeyTime)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.BooleanKeyFrame.KeyTimeProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.BooleanKeyFrame.InterpolateValueCore(System.Boolean,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.BooleanKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.BooleanKeyFrame.KeyTime
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.BooleanKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.BooleanKeyFrame.#ctor(System.Boolean,System.Windows.Media.Animation.KeyTime)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.BooleanKeyFrame.KeyTimeProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.BooleanKeyFrame.InterpolateValueCore(System.Boolean,System.Double)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.BooleanKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value
+ms.author: "jimwalk"
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Media.Animation.BooleanKeyFrame.KeyTime
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.BooleanKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.BooleanKeyFrame.ValueProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.BooleanKeyFrame.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.BooleanKeyFrame.InterpolateValue(System.Boolean,System.Double)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

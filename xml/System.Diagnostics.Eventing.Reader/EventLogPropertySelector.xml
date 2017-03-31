@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains an array of strings that represent XPath queries for elements in the XML representation of an event, which is based on the [Event Schema](http://go.microsoft.com/fwlink/?LinkID=81771). The queries in this object are used to extract values from the event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This object can keep the string to be used as required or preprocess the strings to prepare them for extraction. This preparation can be done before an event processing loop.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,9 +44,16 @@
         <Parameter Name="propertyQueries" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyQueries">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="propertyQueries">XPath queries used to extract values from the XML representation of the event.</param>
+        <summary>Initializes a new <see cref="T:System.Diagnostics.Eventing.Reader.EventLogPropertySelector" /> class instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The XML representation of an event is based on the [Event Schema](http://go.microsoft.com/fwlink/?LinkID=81771).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -56,7 +70,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all the resources used by this object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +95,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by this object, and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

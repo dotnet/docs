@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Identifies blocks of code to run in error handling scopes. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,10 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="engine">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e">The object that represents the exception.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Returns the specified object as an exception, converting it to a specific <see cref="T:Microsoft.JScript.JScriptException" /> if it can.</summary>
+        <returns>The exception <paramref name="e" />, converted to a specific <see cref="T:Microsoft.JScript.JScriptException" /> if that is possible.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,10 +57,10 @@
         <Parameter Name="scopeId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="engine">To be added.</param>
-        <param name="id">To be added.</param>
-        <param name="scopeId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="engine">A reference to the scripting engine.</param>
+        <param name="id">The name of the scope of the <see langword="try" /> block.</param>
+        <param name="scopeId">The ID of the scope of the <see langword="try" /> block.</param>
+        <summary>Creates a new <see cref="T:Microsoft.JScript.BlockScope" /> object for the <see langword="try" /> block and pushes it onto the global scope stack.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

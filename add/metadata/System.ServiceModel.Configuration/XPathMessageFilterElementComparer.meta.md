@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Configuration.XPathMessageFilterElementComparer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.XPathMessageFilterElementComparer.System#Collections#IComparer#Compare(System.Object,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.XPathMessageFilterElementComparer.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

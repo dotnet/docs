@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Framework.XamlTypes
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

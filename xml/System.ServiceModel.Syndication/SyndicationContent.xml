@@ -15,8 +15,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A base class that represents syndication content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an abstract class and cannot be instantiated directly. It is used as the base class for the following syndication content types:  
+  
+-   <xref:System.ServiceModel.Syndication.TextSyndicationContent>  
+  
+-   <xref:System.ServiceModel.Syndication.UrlSyndicationContent>  
+  
+-   <xref:System.ServiceModel.Syndication.XmlSyndicationContent>  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +68,8 @@
         <Parameter Name="source" Type="System.ServiceModel.Syndication.SyndicationContent" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> instance to use to initialize the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +90,25 @@
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the attribute extensions for this content.</summary>
+        <value>A dictionary that contains the attribute extensions for this object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. The syndication object model allows you to add custom attributes to a syndication content type (for example, <xref:System.ServiceModel.Syndication.TextSyndicationContent>). When serialized to Atom 1.0, these attributes appear within the `<content>` element. When serialized to RSS 2.0, these attribute are ignored.  
+  
+   
+  
+## Examples  
+ The following XML shows how a custom attribute added to a <xref:System.ServiceModel.Syndication.TextSyndicationContent> instance is serialized to Atom 1.0.  
+  
+```  
+<content type="text" customAttribute="value">Some text content</content>  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -100,8 +129,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a copy of the <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> instance.</summary>
+        <returns>A copy of the <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,10 +154,17 @@
         <Parameter Name="content" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="content">The text of the content.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> instance with the specified HTML content.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string passed into this method should contain HTML.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePlaintextContent">
@@ -151,9 +187,9 @@
         <Parameter Name="content" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="content">The plain text content.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> instance with the specified plain text content.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,11 +214,18 @@
         <Parameter Name="mediaType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <param name="mediaType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="url">The <see cref="T:System.Uri" /> of the content.</param>
+        <param name="mediaType">The media type of the content.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" /> instance with the specified <see cref="T:System.Uri" /> and media type.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The media type parameter can be set to any known MIME type value as defined in [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95720).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateXhtmlContent">
@@ -205,9 +248,9 @@
         <Parameter Name="content" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="content">The XHTML content.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> instance with the specified XHTML content.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,9 +274,9 @@
         <Parameter Name="dataContractObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="dataContractObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataContractObject">The data contract object.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> instance with the specified data contract object.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,8 +301,8 @@
       </Parameters>
       <Docs>
         <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates XML syndication content.</summary>
+        <returns>An instance of the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> class that contains the new content.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,10 +327,10 @@
         <Parameter Name="dataContractSerializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <param name="dataContractObject">To be added.</param>
-        <param name="dataContractSerializer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataContractObject">The data contract object.</param>
+        <param name="dataContractSerializer">The data contract serializer.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> instance with the specified data contract object and data contract serializer.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,10 +355,10 @@
         <Parameter Name="serializer" Type="System.Xml.Serialization.XmlSerializer" />
       </Parameters>
       <Docs>
-        <param name="xmlSerializerObject">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="xmlSerializerObject">The object.</param>
+        <param name="serializer">The XML serializer.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> instance with the specified object and XML serializer.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,9 +379,38 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the syndication content type.</summary>
+        <value>The name of the type of syndication content.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is abstract, so it must be accessed on an instance of a syndication content type (a class derived from <xref:System.ServiceModel.Syndication.SyndicationContent>). The .NET Framework defines the following syndication content types:  
+  
+-   <xref:System.ServiceModel.Syndication.TextSyndicationContent>  
+  
+-   <xref:System.ServiceModel.Syndication.UrlSyndicationContent>  
+  
+-   <xref:System.ServiceModel.Syndication.XmlSyndicationContent>  
+  
+-   This class contains a number of static helper methods for creating the various types of syndication content:  
+  
+-   <xref:System.ServiceModel.Syndication.SyndicationContent.CreateHtmlContent%28System.String%29>  
+  
+-   <xref:System.ServiceModel.Syndication.SyndicationContent.CreatePlaintextContent%28System.String%29>  
+  
+-   <xref:System.ServiceModel.Syndication.SyndicationContent.CreateUrlContent%28System.Uri%2CSystem.String%29>  
+  
+-   <xref:System.ServiceModel.Syndication.SyndicationContent.CreateXhtmlContent%28System.String%29>  
+  
+-   <xref:System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent%28System.Object%29>  
+  
+-   <xref:System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent%28System.Object%2CSystem.Runtime.Serialization.XmlObjectSerializer%29>  
+  
+-   <xref:System.ServiceModel.Syndication.SyndicationContent.CreateXmlContent%28System.Object%2CSystem.Xml.Serialization.XmlSerializer%29>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteContentsTo">
@@ -361,9 +433,16 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <summary>Writes the contents of this <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> object to the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method only writes the content contained in the <xref:System.ServiceModel.Syndication.SyndicationContent>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -388,11 +467,18 @@
         <Parameter Name="outerElementNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="outerElementName">To be added.</param>
-        <param name="outerElementNamespace">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <param name="outerElementName">The name of the element.</param>
+        <param name="outerElementNamespace">The namespace of the element.</param>
+        <summary>Writes the contents of this object to the specified <see cref="T:System.Xml.XmlWriter" /> within the specified element and element namespace.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The content contained in this object is written within the specified outer element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

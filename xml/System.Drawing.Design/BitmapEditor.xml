@@ -16,8 +16,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a user interface for selecting bitmap files in a property browser.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Design.BitmapEditor> class provides a simple way to select a bitmap image for a property. Starting the editor displays an **Open File** dialog box that allows directory navigation and selecting a file. The file list is initially filtered for bitmap (.bmp) files.  
+  
+   
+  
+## Examples  
+ The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the <xref:System.Drawing.Design.BitmapEditor> with a property.  
+  
+ [!code-cpp[BitmapEditorExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/BitmapEditorExample/CPP/usercontrol1.cpp#1)]
+ [!code-csharp[BitmapEditorExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/BitmapEditorExample/CS/usercontrol1.cs#1)]
+ [!code-vb[BitmapEditorExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BitmapEditorExample/VB/usercontrol1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +49,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.BitmapEditor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +67,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the extensions for the file list filter that the bitmap editor will initially use to filter the file list.</summary>
+        <returns>The default set of file extensions used to filter the file list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +86,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the description for the default file list filter provided by this editor.</summary>
+        <returns>The description for the default type of files to filter the file list for.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The description for the default type of files to filter for appears in the file list filter drop-down box.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadFromStream">
@@ -89,9 +114,9 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The stream from which to load the image.</param>
+        <summary>Loads an image from the specified stream.</summary>
+        <returns>The <see cref="T:System.Drawing.Image" /> loaded from the stream.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

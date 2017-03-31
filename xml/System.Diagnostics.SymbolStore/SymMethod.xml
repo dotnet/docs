@@ -23,8 +23,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a method within a symbol store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.SymbolStore.SymMethod> class provides access only to the symbol-related attributes of a method, such as sequence points, lexical scopes, and parameter information. Use the <xref:System.Reflection> classes to read the type-related attributes of a method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,7 +66,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymMethod" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +91,17 @@
         <Parameter Name="A_0" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="A_0">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="A_0">
+          <see langword="true" /> to release managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Called by the <see cref="M:System.Diagnostics.SymbolStore.SymMethod.Dispose" /> and <see cref="M:System.Diagnostics.SymbolStore.SymMethod.Finalize" /> methods to release the managed and unmanaged resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymMethod" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymMethod.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymMethod.Finalize%2A> methods; do not call this method directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -103,8 +118,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases unmanaged resources and performs other cleanup operations before the <see cref="T:System.Diagnostics.SymbolStore.SymMethod" /> is reclaimed by garbage collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNamespace">
@@ -121,9 +143,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
+        <returns>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetOffset">
@@ -144,11 +167,11 @@
         <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="document">To be added.</param>
-        <param name="line">To be added.</param>
-        <param name="column">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="document">The document for which the offset is requested.</param>
+        <param name="line">The document line for which the offset is requested.</param>
+        <param name="column">The document column for which the offset is requested.</param>
+        <summary>Gets the Microsoft intermediate language (MSIL) offset within the method that corresponds to the specified position.</summary>
+        <returns>The IL offset within the current method of the specified location in the document.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,9 +189,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the parameters for the current method.</summary>
+        <returns>The array of parameters for the current method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The parameters are returned in the order that they are defined within the signature of the method. The returned array is empty if the method does not have parameters.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRanges">
@@ -189,12 +219,19 @@
         <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="document">To be added.</param>
-        <param name="line">To be added.</param>
-        <param name="column">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="document">The document for which the IL offset ranges are requested.</param>
+        <param name="line">The document line for which the IL offset ranges are requested.</param>
+        <param name="column">The document column for which the IL offset ranges are requested.</param>
+        <summary>Gets an array of start and end offset pairs that correspond to the ranges of Microsoft intermediate language (MSIL) offsets that a given position covers within this method.</summary>
+        <returns>An array of start and end IL offset pairs.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The array is an array of integers in the format {{start1, end1}, {start2, end2}...}, where each pair represents an IL offset range within the method. The number of ranges is the length of the array divided by 2.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetScope">
@@ -213,10 +250,17 @@
         <Parameter Name="offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="offset">The IL offset within the method to look up.</param>
+        <summary>Returns the most enclosing lexical scope corresponding to an offset within a method.</summary>
+        <returns>The most enclosing lexical scope for the given IL offset within the method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Diagnostics.SymbolStore.ISymbolMethod.GetScope%2A> method to start local variable searches.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSequencePoints">
@@ -240,14 +284,21 @@
         <Parameter Name="endColumns" Type="System.Int32[]" />
       </Parameters>
       <Docs>
-        <param name="offsets">To be added.</param>
-        <param name="documents">To be added.</param>
-        <param name="lines">To be added.</param>
-        <param name="columns">To be added.</param>
-        <param name="endLines">To be added.</param>
-        <param name="endColumns">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="offsets">An array in which to store the IL offsets from the beginning of the method for the sequence points.</param>
+        <param name="documents">An array in which to store the  documents in which the sequence points are located.</param>
+        <param name="lines">An array in which to store the lines in the documents at which the sequence points are located.</param>
+        <param name="columns">An array in which to store the columns in the documents at which the sequence points are located.</param>
+        <param name="endLines">The array of lines in the documents at which the sequence points end.</param>
+        <param name="endColumns">The array of columns in the documents at which the sequence points end.</param>
+        <summary>Gets the sequence points for the current method and stores the information in the specified arrays.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sequence points are used to map between source file locations and IL offsets.  Each sequence point consists of an IL offset, and source file region specified by start and end line/column numbers relative to an <xref:System.Diagnostics.SymbolStore.ISymbolDocument> object.  Each element at a specific index of every array corresponds to a specific sequence point. The caller must supply pre-allocated arrays to hold the information to be returned. Any values in the arrays are overwritten. Use <xref:System.Diagnostics.SymbolStore.ISymbolMethod.SequencePointCount%2A> to retrieve the count of all sequence points and create arrays of the proper size. The sequence points are sorted by offset and are for all documents in the method. <xref:System.Diagnostics.SymbolStore.ISymbolMethod.GetSequencePoints%2A> verifies the size of each array and places the sequence point information into each. If any array is `null`, the data for that array is not returned.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSourceStartEnd">
@@ -268,12 +319,13 @@
         <Parameter Name="columns" Type="System.Int32[]" />
       </Parameters>
       <Docs>
-        <param name="docs">To be added.</param>
-        <param name="lines">To be added.</param>
-        <param name="columns">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="docs">This parameter is not used.</param>
+        <param name="lines">This parameter is not used.</param>
+        <param name="columns">This parameter is not used.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
+        <returns>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="RootScope">
@@ -289,8 +341,8 @@
         <ReturnType>System.Diagnostics.SymbolStore.ISymbolScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the root lexical scope for the current method. This scope encloses the entire method.</summary>
+        <value>The root lexical scope that encloses the entire method.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,8 +360,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the root lexical scope for the current method. This scope encloses the entire method.</summary>
+        <returns>The root lexical scope that encloses the entire method.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,8 +378,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a count of the sequence points in the method.</summary>
+        <value>The count of the sequence points in the method.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,8 +396,8 @@
         <ReturnType>System.Diagnostics.SymbolStore.SymbolToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Diagnostics.SymbolStore.SymbolToken" /> containing the metadata for the current method.</summary>
+        <value>The metadata token for the current method.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

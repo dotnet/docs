@@ -1,1 +1,0 @@
-	    long MaxReceivedMessageSize = binding.MaxReceivedMessageSize;

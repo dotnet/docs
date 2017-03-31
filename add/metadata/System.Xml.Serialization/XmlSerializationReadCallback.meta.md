@@ -1,4 +1,6 @@
 ---
 uid: System.Xml.Serialization.XmlSerializationReadCallback
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the character set of the font specified by a visual style for a particular element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet> enumeration specifies the possible values of the <xref:System.Windows.Forms.VisualStyles.TextMetrics.CharSet%2A> property of the <xref:System.Windows.Forms.VisualStyles.TextMetrics> structure.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ansi">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ANSI character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Arabic">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Arabic character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Baltic">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Baltic character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="ChineseBig5">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Traditional Chinese character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="EastEurope">
@@ -107,7 +114,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Eastern Europe character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Gb2312">
@@ -123,7 +130,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Gb2312 simplified Chinese character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Greek">
@@ -139,7 +146,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Greek character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hangul">
@@ -155,7 +162,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Hangul (Korean) character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hebrew">
@@ -171,7 +178,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Hebrew character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Johab">
@@ -187,7 +194,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Johab (Korean) character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Mac">
@@ -203,7 +210,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Macintosh character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Oem">
@@ -219,7 +226,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OEM character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Russian">
@@ -235,7 +242,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Russian character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftJis">
@@ -251,7 +258,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ShiftJis (Japanese) character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Symbol">
@@ -267,7 +274,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Symbol character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Thai">
@@ -283,7 +290,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Thai character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Turkish">
@@ -299,7 +306,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Turkish character set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vietnamese">
@@ -315,7 +322,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Vietnamese character set.</summary>
       </Docs>
     </Member>
   </Members>

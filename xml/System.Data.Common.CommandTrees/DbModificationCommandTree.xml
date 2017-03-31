@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a data manipulation language (DML) operation expressed as a command tree.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionBinding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> that specifies the target table for the data manipulation language (DML) operation.</summary>
+        <value>The <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> that specifies the target table for the DML operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

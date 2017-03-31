@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Entity.Design.TypeGeneratedEventHandler
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

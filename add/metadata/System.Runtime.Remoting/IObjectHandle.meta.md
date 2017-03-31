@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.IObjectHandle
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.IObjectHandle.Unwrap
-internalonly: False
+manager: "ghogen"
 ---

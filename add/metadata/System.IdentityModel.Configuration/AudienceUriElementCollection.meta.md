@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Configuration.AudienceUriElementCollection
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.AudienceUriElementCollection.Mode
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.AudienceUriElementCollection.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

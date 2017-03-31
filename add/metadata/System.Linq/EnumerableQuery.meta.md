@@ -1,9 +1,13 @@
 ---
 uid: System.Linq.EnumerableQuery
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.EnumerableQuery.#ctor
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

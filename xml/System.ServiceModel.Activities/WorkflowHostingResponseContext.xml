@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This class is used in conjunction with the <see cref="T:System.ServiceModel.Activities.WorkflowHostingEndpoint" /> class.  It is used for sending the response for a request/reply contract supported by a <see cref="T:System.ServiceModel.Activities.WorkflowHostingEndpoint" /> implementation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example illustrates how a <xref:System.ServiceModel.Activities.WorkflowHostingResponseContext> is provided to a workflow hosting endpoint.  
+  
+ [!code-csharp[CreationEndpoint#1](~/samples/snippets/csharp/VS_Snippets_CFX/creationendpoint/cs/creationendpoint.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="SendResponse">
@@ -32,9 +41,9 @@
         <Parameter Name="outputs" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="returnValue">To be added.</param>
-        <param name="outputs">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="returnValue">The return value of the operation.</param>
+        <param name="outputs">The out arguments of the operation.</param>
+        <summary>Sends response to a message sent to the <see cref="T:System.ServiceModel.Activities.WorkflowHostingEndpoint" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

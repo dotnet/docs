@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Automation.Peers.DataGridDetailsPresenterAutomationPeer
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.DataGridDetailsPresenterAutomationPeer.#ctor(System.Windows.Controls.Primitives.DataGridDetailsPresenter)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

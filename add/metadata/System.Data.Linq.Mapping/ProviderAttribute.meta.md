@@ -1,19 +1,34 @@
 ---
 uid: System.Data.Linq.Mapping.ProviderAttribute
-internalonly: False
----
-
----
-uid: System.Data.Linq.Mapping.ProviderAttribute.#ctor(System.Type)
-internalonly: False
----
-
----
-uid: System.Data.Linq.Mapping.ProviderAttribute.Type
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Linq.Mapping.ProviderAttribute.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Linq.Mapping.ProviderAttribute.#ctor(System.Type)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Linq.Mapping.ProviderAttribute.Type
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Linq.Mapping.ProviderAttribute.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

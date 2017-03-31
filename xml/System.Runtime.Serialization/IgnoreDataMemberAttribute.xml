@@ -25,8 +25,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>When applied to the member of a type, specifies that the member is not part of a data contract and is not serialized.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute> attribute to opt-out of the default <xref:System.Runtime.Serialization.DataContractSerializer> behavior. By default, the `DataContractSerializer` serializes all publicly visible types. All public read/write properties and fields of the type are serialized. You can change the default behavior by applying the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes to the types and members  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,7 +56,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.IgnoreDataMemberAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

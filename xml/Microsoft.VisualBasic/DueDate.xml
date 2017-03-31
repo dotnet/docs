@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates when payments are due when calling financial methods.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call financial functions, you can use enumeration members in your code in place of the actual values.  
+  
+ The `DueDate` enumeration defines constants used to identify when payments are due.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BegOfPeriod">
@@ -27,7 +36,7 @@
         <ReturnType>Microsoft.VisualBasic.DueDate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Falls at the beginning of the date interval</summary>
       </Docs>
     </Member>
     <Member MemberName="EndOfPeriod">
@@ -43,7 +52,7 @@
         <ReturnType>Microsoft.VisualBasic.DueDate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Falls at the end of the date interval</summary>
       </Docs>
     </Member>
   </Members>

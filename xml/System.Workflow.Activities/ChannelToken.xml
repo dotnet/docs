@@ -22,8 +22,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used by a <see cref="T:System.Workflow.Activities.SendActivity" /> to associate itself with a client-side channel.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,7 +46,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ChannelToken" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +68,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the custom address used to communicate with a service.</summary>
+        <value>A string representing the custom address used to communicate with a service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +94,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The name of this <see cref="T:System.Workflow.Activities.ChannelToken" /> instance.</summary>
+        <value>A string representing the name of this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +120,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with this instance.</summary>
+        <value>A string representing the name of the activity associated with this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

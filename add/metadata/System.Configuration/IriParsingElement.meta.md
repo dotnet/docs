@@ -1,14 +1,14 @@
 ---
 uid: System.Configuration.IriParsingElement
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IriParsingElement.#ctor
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IriParsingElement.Enabled
-internalonly: False
+manager: "wpickett"
 ---

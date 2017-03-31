@@ -1,254 +1,315 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.LegendStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.Docking
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.AutoFitMinFontSize
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.Dispose
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.BackImageWrapMode
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.Name
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.HeaderSeparator
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.TitleSeparatorColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.BackHatchStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.Position
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.BorderDashStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.Title
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.TitleBackColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.ItemColumnSeparator
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.Enabled
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.MaximumAutoSize
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.TitleSeparator
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.IsEquallySpacedItems
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.TitleAlignment
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.CustomItems
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.ShadowOffset
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.InsideChartArea
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.BackImageTransparentColor
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.ItemColumnSpacing
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.IsDockedInsideChartArea
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.TitleForeColor
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.CellColumns
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.InterlacedRowsColor
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.ItemColumnSeparatorColor
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.BackColor
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.DockedToChartArea
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.Alignment
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.BorderWidth
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.TableStyle
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.IsTextAutoFit
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.TextWrapThreshold
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.BackImage
-internalonly: False
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Legend.BackSecondaryColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.Enabled
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.MaximumAutoSize
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.TitleSeparator
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.IsEquallySpacedItems
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.TitleAlignment
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.CustomItems
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.ShadowOffset
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.InsideChartArea
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.#ctor(System.String)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.BackImageTransparentColor
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.ItemColumnSpacing
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.IsDockedInsideChartArea
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.TitleForeColor
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.CellColumns
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.InterlacedRowsColor
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.ItemColumnSeparatorColor
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.BackColor
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.DockedToChartArea
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.Alignment
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.BorderWidth
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.TableStyle
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.IsTextAutoFit
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.Dispose(System.Boolean)
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.TextWrapThreshold
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.BackImage
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.BackSecondaryColor
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.Legend.#ctor
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.ForeColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.BackGradientStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.LegendItemOrder
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.HeaderSeparatorColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.BackImageAlignment
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.Font
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.InterlacedRows
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.TitleFont
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.BorderColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Legend.ShadowColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

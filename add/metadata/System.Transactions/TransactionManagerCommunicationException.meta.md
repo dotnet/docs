@@ -1,24 +1,29 @@
 ---
 uid: System.Transactions.TransactionManagerCommunicationException
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionManagerCommunicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionManagerCommunicationException.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.TransactionManagerCommunicationException.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionManagerCommunicationException.#ctor(System.String,System.Exception)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionManagerCommunicationException.#ctor(System.String)
-internalonly: False
+manager: "ghogen"
 ---

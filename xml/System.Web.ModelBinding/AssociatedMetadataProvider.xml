@@ -11,8 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an abstract class to implement a metadata provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A metadata provider provides metadata for a model. Metadata providers must derive from <xref:System.Web.ModelBinding.ModelMetadataProvider>. You can inherit from this class if you want to use a custom validator or a third-party validator that uses attribute-based metadata.  
+  
+ This class implements the abstract methods of the <xref:System.Web.ModelBinding.ModelMetadataProvider> class and contains additional abstract methods. When you implement this class, use the <xref:System.Web.ModelBinding.AssociatedValidatorProvider> class to implement the validator.  
+  
+ Model provider classes and validator provider classes are loosely coupled. Therefore, they work independently and have no dependencies on each other.  
+  
+ However, the metadata provider exposes metadata that can be accessed and used by validation providers. For example, the default metadata provider (the <xref:System.Web.ModelBinding.DataAnnotationsModelMetadataProvider> class) reads the display name of an object. This display name is used by the <xref:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider> validation provider when it creates a validation error message.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When overridden in a derived class, initializes a new instance of the class that derives from the <see cref="T:System.Web.ModelBinding.AssociatedMetadataProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,13 +63,13 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="attributes">To be added.</param>
-        <param name="containerType">To be added.</param>
-        <param name="modelAccessor">To be added.</param>
-        <param name="modelType">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attributes">The attributes.</param>
+        <param name="containerType">The type of the container, or <see langword="null" /> if there is no container.</param>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="modelType">The type of the model.</param>
+        <param name="propertyName">The name of the property, or <see langword="null" /> if the model is not a property.</param>
+        <summary>When overridden in a derived class, creates metadata for a model.</summary>
+        <returns>Metadata for a model.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,12 +91,19 @@
         <Parameter Name="attributes" Type="System.Collections.Generic.IEnumerable&lt;System.Attribute&gt;" />
       </Parameters>
       <Docs>
-        <param name="containerType">To be added.</param>
-        <param name="propertyDescriptor">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="containerType">The type of the container.</param>
+        <param name="propertyDescriptor">The property descriptor.</param>
+        <param name="attributes">The attributes.</param>
+        <summary>Enables derived classes to filter the list of attributes.</summary>
+        <returns>A list of attributes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The code in the <xref:System.Web.ModelBinding.AssociatedMetadataProvider> base class returns all attributes. This method lets derived classes filter the attributes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMetadataForProperties">
@@ -103,11 +123,12 @@
         <Parameter Name="containerType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <param name="containerType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="container">The container.</param>
+        <param name="containerType">The type of the container.</param>
+        <summary>When overridden in a derived class, returns metadata for all properties.</summary>
+        <returns>Metadata for all properties.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="containerType" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMetadataForProperty">
@@ -128,11 +149,11 @@
         <Parameter Name="propertyDescriptor" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="modelAccessor">To be added.</param>
-        <param name="containerType">To be added.</param>
-        <param name="propertyDescriptor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="containerType">The type of the container.</param>
+        <param name="propertyDescriptor">The property descriptor.</param>
+        <summary>When overridden in a derived class, returns metadata for a property specified by a property descriptor object.</summary>
+        <returns>Metadata for the specified property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,12 +175,21 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="modelAccessor">To be added.</param>
-        <param name="containerType">To be added.</param>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="containerType">The type of the container.</param>
+        <param name="propertyName">The name of the property.</param>
+        <summary>When overridden in a derived class, returns metadata for a property specified by a property name.</summary>
+        <returns>Metadata for the specified property.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="containerType" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="propertyName" /> parameter is <see langword="null" /> or empty.  
+  
+ -or-  
+  
+ A property that has the name specified by <paramref name="propertyName" /> cannot be found in the <paramref name="containerType" /> type.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMetadataForType">
@@ -179,11 +209,12 @@
         <Parameter Name="modelType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="modelAccessor">To be added.</param>
-        <param name="modelType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="modelType">The type of the model.</param>
+        <summary>When overridden in a derived class, returns metadata for the model type.</summary>
+        <returns>Metadata for the model type.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="modelType" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetTypeDescriptor">
@@ -202,9 +233,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type.</param>
+        <summary>When overridden in a derived class, returns a descriptor object for a specified type.</summary>
+        <returns>The type descriptor object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

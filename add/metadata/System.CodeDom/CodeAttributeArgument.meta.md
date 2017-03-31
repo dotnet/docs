@@ -1,29 +1,48 @@
 ---
 uid: System.CodeDom.CodeAttributeArgument
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeAttributeArgument.Value
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeAttributeArgument.Name
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeAttributeArgument.#ctor(System.String,System.CodeDom.CodeExpression)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeAttributeArgument.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeAttributeArgument.Name
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeAttributeArgument.#ctor(System.String,System.CodeDom.CodeExpression)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeAttributeArgument.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeAttributeArgument.#ctor(System.CodeDom.CodeExpression)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

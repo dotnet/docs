@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Utilities.VisualStudioVersion
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

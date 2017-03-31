@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a command interface that is used for integration of [!INCLUDE[wfd1](~/includes/wfd1-md.md)] actions (for example, context menu), with custom-provided implementations, such as property browser service, debugging service, and so on.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,10 +28,12 @@
         <Parameter Name="commandId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="commandId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="commandId">The command identifier to be checked.</param>
+        <summary>Verifies whether the specified command can be executed.</summary>
+        <returns>
+          <see langword="true" /> if the specified command can be executed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The command is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExecuteCommand">
@@ -51,10 +53,11 @@
         <Parameter Name="parameters" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="commandId">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandId">The command identifier to be checked.</param>
+        <param name="parameters">The parameters of the command.</param>
+        <summary>Executes the command with the specified command identifier and parameters.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The command is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsCommandSupported">
@@ -73,9 +76,10 @@
         <Parameter Name="commandId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="commandId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="commandId">The command identifier to be checked.</param>
+        <summary>Returns a Boolean value that indicates whether the specified command identifier is supported.</summary>
+        <returns>
+          <see langword="true" /> if the specified command ID is supported; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

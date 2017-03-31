@@ -19,8 +19,26 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines socket option levels for the <see cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" /> and <see cref="M:System.Net.Sockets.Socket.GetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName)" /> methods.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Sockets.SocketOptionLevel> enumeration defines the socket option levels that can be passed to the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=fullName> and <xref:System.Net.Sockets.Socket.GetSocketOption%2A?displayProperty=fullName> methods. <xref:System.Net.Sockets.SocketOptionName> enumerated values are grouped by <xref:System.Net.Sockets.SocketOptionLevel>.  
+  
+ **Note** To use IPv6 on Windows XP, install Advance Networking Pack for Windows XP.  
+  
+   
+  
+## Examples  
+ The following example uses this enumeration to set socket options.  
+  
+ [!code-cpp[Socket_Socket_Options#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Socket_Options/CPP/source.cpp#1)]
+ [!code-csharp[Socket_Socket_Options#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Socket_Options/CS/source.cs#1)]
+ [!code-vb[Socket_Socket_Options#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Socket_Options/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="IP">
@@ -45,7 +63,8 @@
         <ReturnType>System.Net.Sockets.SocketOptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="T:System.Net.Sockets.Socket" /> options apply only to IP sockets.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPv6">
@@ -70,7 +89,8 @@
         <ReturnType>System.Net.Sockets.SocketOptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="T:System.Net.Sockets.Socket" /> options apply only to IPv6 sockets.</summary>
       </Docs>
     </Member>
     <Member MemberName="Socket">
@@ -95,7 +115,8 @@
         <ReturnType>System.Net.Sockets.SocketOptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="T:System.Net.Sockets.Socket" /> options apply to all sockets.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tcp">
@@ -120,7 +141,8 @@
         <ReturnType>System.Net.Sockets.SocketOptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="T:System.Net.Sockets.Socket" /> options apply only to TCP sockets.</summary>
       </Docs>
     </Member>
     <Member MemberName="Udp">
@@ -145,7 +167,8 @@
         <ReturnType>System.Net.Sockets.SocketOptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="T:System.Net.Sockets.Socket" /> options apply only to UDP sockets.</summary>
       </Docs>
     </Member>
   </Members>

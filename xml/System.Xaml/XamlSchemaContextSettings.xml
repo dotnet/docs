@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides optional settings for a <see cref="T:System.Xaml.XamlSchemaContext" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaContextSettings" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="settings" Type="System.Xaml.XamlSchemaContextSettings" />
       </Parameters>
       <Docs>
-        <param name="settings">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="settings">An existing <see cref="T:System.Xaml.XamlSchemaContextSettings" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaContextSettings" /> class by copying the values of an existing <see cref="T:System.Xaml.XamlSchemaContextSettings" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +61,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether a XAML schema and its context use fully qualified assembly names in the values that are returned by the lookup API.</summary>
+        <value>
+          <see langword="true" /> if a XAML schema and its context use fully qualified assembly names in the values that are returned by the lookup APIs; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property influences the strings that are returned by <xref:System.Xaml.XamlSchemaContext.GetAllXamlNamespaces%2A> in the constructed schema context. If <xref:System.Xaml.XamlSchemaContext.FullyQualifyAssemblyNamesInClrNamespaces%2A> is `true`, the assembly part of the string reports the equivalent of <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportMarkupExtensionsWithDuplicateArity">
@@ -79,9 +87,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether a XAML schema context allows for markup extensions that have two constructors with the same arity (number of input parameters).</summary>
+        <value>
+          <see langword="true" /> if the schema context allows for markup extensions that have duplicate arity; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ From a <xref:System.Xaml.XamlSchemaContext>, you cannot read the settings directly. Instead, you receive values from specific read-only properties, such as <xref:System.Xaml.XamlSchemaContext.SupportMarkupExtensionsWithDuplicateArity%2A>, which report the settings-based values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

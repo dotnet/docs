@@ -1,2 +1,0 @@
-MyCookie.Path = "/asp"
- 

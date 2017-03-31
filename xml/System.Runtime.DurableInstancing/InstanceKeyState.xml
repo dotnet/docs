@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains a list of valid states for instance keys.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceKeyState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The instance key is associated with a non-completed instance.</summary>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -43,7 +43,7 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceKeyState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The instance key was associated with an instance, which is no longer active.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -59,7 +59,7 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceKeyState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The instance key is not associated with any instance.</summary>
       </Docs>
     </Member>
   </Members>

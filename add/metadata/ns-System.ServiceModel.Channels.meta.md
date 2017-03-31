@@ -1,4 +1,4 @@
 ---
 uid: System.ServiceModel.Channels
-internalonly: False
+manager: "ghogen"
 ---

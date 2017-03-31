@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Exposes methods to facilitate UI Automation client access to controls that support synchronized input.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement this interface on a UI Automation provider that must support the <xref:System.Windows.Automation.SynchronizedInputPattern> control pattern.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Cancel">
@@ -37,8 +44,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Stops listening for input.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the provider is currently listening for input, it reverts to normal operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartListening">
@@ -57,9 +71,18 @@
         <Parameter Name="inputType" Type="System.Windows.Automation.SynchronizedInputType" />
       </Parameters>
       <Docs>
-        <param name="inputType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inputType">The type of input to listen for.</param>
+        <summary>Designates that the provider start listening for input of the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When WPF finds matching input, it checks the route of the incoming event. If the automation element that is listening for the input is not in the route, the input is discarded and the <xref:System.Windows.Automation.SynchronizedInputPattern.InputDiscardedEvent> event is raised. If the input is received by the automation element listening for that type, the <xref:System.Windows.Automation.SynchronizedInputPattern.InputReachedTargetEvent> event is raised; otherwise, the <xref:System.Windows.Automation.SynchronizedInputPattern.InputReachedOtherElementEvent> event is raised.  
+  
+ After receiving the input, the provider stops listening and continues normally.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

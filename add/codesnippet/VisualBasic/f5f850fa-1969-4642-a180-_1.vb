@@ -1,4 +1,0 @@
-        Dim rc As Boolean = sp2.IsSubsetOf(sp3)
-        Console.WriteLine("Is the permission with all flags set (AllFlags) " + "a subset of " + vbLf + " " + vbTab + "the permission with an Unrestricted " + "permission state? " + IIf(rc, "Yes", "No")) 'TODO: For performance reasons this should be changed to nested IF statements
-        rc = sp1.IsSubsetOf(sp2)
-        Console.WriteLine("Is the permission with ProtectData access a " + "subset of the permission with " + vbLf + vbTab + "AllFlags set? " + IIf(rc, "Yes", "No")) 'TODO: For performance reasons this should be changed to nested IF statements

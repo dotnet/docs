@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used within the template of a <see cref="T:System.Windows.Controls.DataGrid" /> to specify the location in the control's visual tree where the cells are to be added.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class generates the <xref:System.Windows.Controls.DataGridCell> instances that are added to the <xref:System.Windows.Controls.DataGrid> visual tree.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.DataGridCellsPresenter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +53,9 @@
         <Parameter Name="finalSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="finalSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="finalSize">The final area within the parent that this element should use to arrange itself and its children.</param>
+        <summary>Called to arrange and size the content of a <see cref="T:System.Windows.Controls.Control" /> object.</summary>
+        <returns>The size of the control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,10 +76,17 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The <see cref="T:System.Windows.Controls.DataGridCell" /> to clear.</param>
+        <param name="item">The data item. This value is not used.</param>
+        <summary>Clears the container reference for the specified cell.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method sets the row owner value for the <xref:System.Windows.Controls.DataGridCell> to null.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContainerForItemOverride">
@@ -89,8 +103,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a new <see cref="T:System.Windows.Controls.DataGridCell" /> instance to contain a cell value.</summary>
+        <returns>A new <see cref="T:System.Windows.Controls.DataGridCell" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,9 +124,10 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to check.</param>
+        <summary>Determines if the specified item is (or is eligible to be) its own container.</summary>
+        <returns>
+          <see langword="true" /> if the item is (or is eligible to be) its own container; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +144,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the data item that the row represents.</summary>
+        <value>The data item that the row represents.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,9 +165,9 @@
         <Parameter Name="availableSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="availableSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="availableSize">The available size that this element can give to child elements.</param>
+        <summary>Called to remeasure a control.</summary>
+        <returns>The size of the control, up to the maximum specified by constraint.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,7 +185,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>It's invoked whenever application code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,9 +206,9 @@
         <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="columns">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="columns">The <see cref="P:System.Windows.Controls.DataGrid.Columns" /> collection.</param>
+        <param name="e">The event data from the <see cref="E:System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged" /> event of the <see cref="P:System.Windows.Controls.DataGrid.Columns" /> collection.</param>
+        <summary>Updates the displayed cells when the <see cref="P:System.Windows.Controls.DataGrid.Columns" /> collection has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,9 +229,9 @@
         <Parameter Name="newItem" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="oldItem">To be added.</param>
-        <param name="newItem">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldItem">The previous value of the <see cref="P:System.Windows.Controls.Primitives.DataGridCellsPresenter.Item" /> property.</param>
+        <param name="newItem">The new value of the <see cref="P:System.Windows.Controls.Primitives.DataGridCellsPresenter.Item" /> property.</param>
+        <summary>Updates the displayed cells when the <see cref="P:System.Windows.Controls.Primitives.DataGridCellsPresenter.Item" /> property value has changed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,8 +251,8 @@
         <Parameter Name="drawingContext" Type="System.Windows.Media.DrawingContext" />
       </Parameters>
       <Docs>
-        <param name="drawingContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="drawingContext">The drawing instructions for the cells. This context is provided to the layout system.</param>
+        <summary>Called by the layout system to draw a horizontal line below the cells if horizontal grid lines are visible.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,10 +273,17 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The cell to prepare.</param>
+        <param name="item">The item to display.</param>
+        <summary>Prepares the cell to display the specified item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method prepares the <xref:System.Windows.Controls.DataGridCell> for use and updates the column reference.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

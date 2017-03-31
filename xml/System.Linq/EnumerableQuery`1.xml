@@ -36,8 +36,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the data in the collection.</typeparam>
+    <summary>Represents an <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection as an <see cref="T:System.Linq.IQueryable`1" /> data source.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -63,8 +63,8 @@
         <Parameter Name="enumerable" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="enumerable">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="enumerable">A collection to associate with the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Linq.EnumerableQuery`1" /> class and associates it with an <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,8 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">An expression tree to associate with the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Linq.EnumerableQuery`1" /> class and associates the instance with an expression tree.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +118,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that can iterate through the associated <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection, or, if it is null, through the collection that results from rewriting the associated expression tree as a query on an <see cref="T:System.Collections.Generic.IEnumerable`1" /> data source and executing it.</summary>
+        <returns>An enumerator that can be used to iterate through the associated data source.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +146,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that can iterate through the associated <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection, or, if it is null, through the collection that results from rewriting the associated expression tree as a query on an <see cref="T:System.Collections.Generic.IEnumerable`1" /> data source and executing it.</summary>
+        <returns>An enumerator that can be used to iterate through the associated data source.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,8 +173,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the data in the collection that this instance represents.</summary>
+        <value>The type of the data in the collection that this instance represents.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,8 +200,8 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the expression tree that is associated with or that represents this instance.</summary>
+        <value>The expression tree that is associated with or that represents this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,8 +227,8 @@
         <ReturnType>System.Linq.IQueryProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the query provider that is associated with this instance.</summary>
+        <value>The query provider that is associated with this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,9 +257,9 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">An expression tree that represents an <see cref="T:System.Linq.IQueryable" /> collection of data.</param>
+        <summary>Constructs a new <see cref="T:System.Linq.EnumerableQuery`1" /> object and associates it with a specified expression tree that represents an <see cref="T:System.Linq.IQueryable" /> collection of data.</summary>
+        <returns>An <see cref="T:System.Linq.EnumerableQuery`1" /> object that is associated with <paramref name="expression" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,10 +291,10 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <typeparam name="S">To be added.</typeparam>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="S">The type of the data in the collection that <c>expression</c> represents.</typeparam>
+        <param name="expression">An expression tree to execute.</param>
+        <summary>Constructs a new <see cref="T:System.Linq.EnumerableQuery`1" /> object and associates it with a specified expression tree that represents an <see cref="T:System.Linq.IQueryable`1" /> collection of data.</summary>
+        <returns>An EnumerableQuery object that is associated with <paramref name="expression" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -323,9 +323,9 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">An expression tree to execute.</param>
+        <summary>Executes an expression after rewriting it to call <see cref="T:System.Linq.Enumerable" /> methods instead of <see cref="T:System.Linq.Queryable" /> methods on any enumerable data sources that cannot be queried by <see cref="T:System.Linq.Queryable" /> methods.</summary>
+        <returns>The value that results from executing <paramref name="expression" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,10 +357,10 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <typeparam name="S">To be added.</typeparam>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="S">The type of the data in the collection that <c>expression</c> represents.</typeparam>
+        <param name="expression">An expression tree to execute.</param>
+        <summary>Executes an expression after rewriting it to call <see cref="T:System.Linq.Enumerable" /> methods instead of <see cref="T:System.Linq.Queryable" /> methods on any enumerable data sources that cannot be queried by <see cref="T:System.Linq.Queryable" /> methods.</summary>
+        <returns>The value that results from executing <paramref name="expression" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -387,8 +387,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a textual representation of the enumerable collection or, if it is null, of the expression tree that is associated with this instance.</summary>
+        <returns>A textual representation of the enumerable collection or, if it is null, of the expression tree that is associated with this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

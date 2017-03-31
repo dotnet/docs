@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.PowerLineStatus
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

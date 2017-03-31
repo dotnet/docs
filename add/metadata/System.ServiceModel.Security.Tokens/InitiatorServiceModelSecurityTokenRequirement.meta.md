@@ -1,24 +1,34 @@
 ---
 uid: System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.ToString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.Via
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.TargetAddress
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

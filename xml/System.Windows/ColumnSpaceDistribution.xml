@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes how to distribute space in columnated flow content.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.ColumnSpaceDistribution</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Space is distributed evenly between all columns.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.ColumnSpaceDistribution</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Space is distributed before the first column.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.ColumnSpaceDistribution</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Space is distributed after the last column.</summary>
       </Docs>
     </Member>
   </Members>

@@ -27,8 +27,48 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the standard parameters for the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.RSA> class exposes an <xref:System.Security.Cryptography.RSA.ExportParameters%2A> method that enables you to retrieve the raw RSA key in the form of an <xref:System.Security.Cryptography.RSAParameters> structure. Understanding the contents of this structure requires familiarity with how the <xref:System.Security.Cryptography.RSA> algorithm works. The next section discusses the algorithm briefly.  
+  
+## RSA Algorithm  
+ To generate a key pair, you start by creating two large prime numbers named p and q. These numbers are multiplied and the result is called n. Because p and q are both prime numbers, the only factors of n are 1, p, q, and n.  
+  
+ If we consider only numbers that are less than n, the count of numbers that are relatively prime to n, that is, have no factors in common with n, equals (p - 1)(q - 1).  
+  
+ Now you choose a number e, which is relatively prime to the value you calculated. The public key is now represented as {e, n}.  
+  
+ To create the private key, you must calculate d, which is a number such that (d)(e) mod (p - 1)(q - 1) = 1. In accordance with the Euclidean algorithm, the private key is now {d, n}.  
+  
+ Encryption of plaintext m to ciphertext c is defined as c = (m ^ e) mod n. Decryption would then be defined as m = (c ^ d) mod n.  
+  
+## Summary of Fields  
+ Section A.1.2 of the [PKCS #1: RSA Cryptography Standard](http://go.microsoft.com/fwlink/?LinkId=113155) on the RSA Laboratories Web site defines a format for RSA private keys.  
+  
+ The following table summarizes the fields of the <xref:System.Security.Cryptography.RSAParameters> structure. The third column provides the corresponding field in section A.1.2 of [PKCS #1: RSA Cryptography Standard](http://go.microsoft.com/fwlink/?LinkId=113155).  
+  
+|<xref:System.Security.Cryptography.RSAParameters> field|Contains|Corresponding PKCS #1 field|  
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------|  
+|<xref:System.Security.Cryptography.RSAParameters.D>|d, the private exponent|privateExponent|  
+|<xref:System.Security.Cryptography.RSAParameters.DP>|d mod (p - 1)|exponent1|  
+|<xref:System.Security.Cryptography.RSAParameters.DQ>|d mod (q - 1)|exponent2|  
+|<xref:System.Security.Cryptography.RSAParameters.Exponent>|e, the public exponent|publicExponent|  
+|<xref:System.Security.Cryptography.RSAParameters.InverseQ>|(InverseQ)(q) = 1 mod p|coefficient|  
+|<xref:System.Security.Cryptography.RSAParameters.Modulus>|n|modulus|  
+|<xref:System.Security.Cryptography.RSAParameters.P>|p|prime1|  
+|<xref:System.Security.Cryptography.RSAParameters.Q>|q|prime2|  
+  
+ The security of RSA derives from the fact that, given the public key { e, n }, it is computationally infeasible to calculate d, either directly or by factoring n into p and q. Therefore, any part of the key related to d, p, or q must be kept secret. If you call  
+  
+ <xref:System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters%2A> and ask for only the public key information, this is why you will receive only <xref:System.Security.Cryptography.RSAParameters.Exponent> and <xref:System.Security.Cryptography.RSAParameters.Modulus>. The other fields are available only if you have access to the private key, and you request it.  
+  
+ <xref:System.Security.Cryptography.RSAParameters> is not encrypted in any way, so you must be careful when you use it with the private key information. In fact, none of the fields that contain private key information can be serialized. If you try to serialize an <xref:System.Security.Cryptography.RSAParameters> structure with a remoting call or by using one of the serializers, you will receive only public key information. If you want to pass private key information, you will have to manually send that data. In all cases, if anyone can derive the parameters, the key that you transmit becomes useless.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="D">
@@ -55,7 +95,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the <see langword="D" /> parameter for the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +123,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the <see langword="DP" /> parameter for the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +151,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the <see langword="DQ" /> parameter for the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +179,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the <see langword="Exponent" /> parameter for the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,7 +207,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the <see langword="InverseQ" /> parameter for the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,7 +235,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the <see langword="Modulus" /> parameter for the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,7 +263,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the <see langword="P" /> parameter for the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,7 +291,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the <see langword="Q" /> parameter for the <see cref="T:System.Security.Cryptography.RSA" /> algorithm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

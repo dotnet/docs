@@ -1,59 +1,97 @@
 ---
 uid: System.Activities.RuntimeArgument
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.RuntimeArgument.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeArgument.#ctor(System.String,System.Type,System.Activities.ArgumentDirection)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeArgument.#ctor(System.String,System.Type,System.Activities.ArgumentDirection,System.Boolean,System.Collections.Generic.List{System.String})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeArgument.Set(System.Activities.ActivityContext,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeArgument.#ctor(System.String,System.Type,System.Activities.ArgumentDirection,System.Collections.Generic.List{System.String})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeArgument.#ctor(System.String,System.Type,System.Activities.ArgumentDirection,System.Boolean)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeArgument.Get``1(System.Activities.ActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeArgument.OverloadGroupNames
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeArgument.Direction
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.RuntimeArgument.Get
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeArgument.IsRequired
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeArgument.GetLocation(System.Activities.ActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.RuntimeArgument.Get(System.Activities.ActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

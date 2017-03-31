@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the configuration element that specifies the import of Web Services Description Language (WSDL) 1.1 metadata with WS-Policy attachments.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.ServiceModel.Description.WsdlImporter> is used to import metadata as well as convert that information into various classes that represent contract and endpoint information.  
+  
+ It can selectively import contract and endpoint information and properties that expose any import errors and accept type information relevant to the import and conversion process. It also supports importing binding information and properties that provide access to any policy documents, WSDL documents, WSDL extensions, and XML schema documents.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WsdlImporterElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +52,8 @@
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The specified type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WsdlImporterElement" /> class with the specified type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +70,8 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The specified type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WsdlImporterElement" /> class with the specified type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,8 +114,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of this configuration element.</summary>
+        <value>The type of this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.Forms.WebBrowserNavigatingEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.WebBrowserNavigatingEventArgs.#ctor(System.Uri,System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.WebBrowserNavigatingEventArgs.Url
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.WebBrowserNavigatingEventArgs.TargetFrameName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

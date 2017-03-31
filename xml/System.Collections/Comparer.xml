@@ -32,8 +32,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Compares two objects for equivalence, where string comparisons are case-sensitive.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is the default implementation of the <xref:System.Collections.IComparer> interface. The <xref:System.Collections.CaseInsensitiveComparer> class is the implementation of the <xref:System.Collections.IComparer> interface that performs case-insensitive string comparisons.  
+  
+ Comparison procedures use the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> of the current thread unless otherwise specified. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](../Topic/Globalizing%20and%20Localizing%20.NET%20Framework%20Applications.md).  
+  
+   
+  
+## Examples  
+ The following code example shows how <xref:System.Collections.Comparer.Compare%2A> returns different values depending on the culture associated with the <xref:System.Collections.Comparer>.  
+  
+ [!code-cpp[System.Collections.Comparer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Comparer/CPP/comparercultures.cpp#1)]
+ [!code-csharp[System.Collections.Comparer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Comparer/CS/comparercultures.cs#1)]
+ [!code-vb[System.Collections.Comparer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Comparer/VB/comparercultures.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,9 +76,27 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> to use for the new <see cref="T:System.Collections.Comparer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Comparer" /> class using the specified <see cref="T:System.Globalization.CultureInfo" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Comparison procedures use the specified <xref:System.Globalization.CultureInfo?displayProperty=fullName> to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](../Topic/Globalizing%20and%20Localizing%20.NET%20Framework%20Applications.md).  
+  
+   
+  
+## Examples  
+ The following code example shows how <xref:System.Collections.Comparer.Compare%2A> returns different values depending on the culture associated with the <xref:System.Collections.Comparer>.  
+  
+ [!code-cpp[System.Collections.Comparer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Comparer/CPP/comparercultures.cpp#1)]
+ [!code-csharp[System.Collections.Comparer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Comparer/CS/comparercultures.cs#1)]
+ [!code-vb[System.Collections.Comparer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Comparer/VB/comparercultures.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="culture" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -89,11 +125,71 @@
         <Parameter Name="b" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="a">The first object to compare.</param>
+        <param name="b">The second object to compare.</param>
+        <summary>Performs a case-sensitive comparison of two objects of the same type and returns a value indicating whether one is less than, equal to, or greater than the other.</summary>
+        <returns>A signed integer that indicates the relative values of <paramref name="a" /> and <paramref name="b" />, as shown in the following table.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Meaning  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> <paramref name="a" /> is less than <paramref name="b" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> <paramref name="a" /> equals <paramref name="b" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> <paramref name="a" /> is greater than <paramref name="b" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `a` implements <xref:System.IComparable>, then `a`. `CompareTo` (`b`) is returned; otherwise, if `b` implements <xref:System.IComparable>, then the negated result of `b`. `CompareTo` (`a`) is returned.  
+  
+ Comparing `null` with any type is allowed and does not generate an exception when using <xref:System.IComparable>. When sorting, `null` is considered to be less than any other object.  
+  
+ String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](../Topic/Globalizing%20and%20Localizing%20.NET%20Framework%20Applications.md).  
+  
+   
+  
+## Examples  
+ The following code example shows how <xref:System.Collections.Comparer.Compare%2A> returns different values depending on the culture associated with the <xref:System.Collections.Comparer>.  
+  
+ [!code-cpp[System.Collections.Comparer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Comparer/CPP/comparercultures.cpp#1)]
+ [!code-csharp[System.Collections.Comparer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Comparer/CS/comparercultures.cs#1)]
+ [!code-vb[System.Collections.Comparer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Comparer/VB/comparercultures.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Neither <paramref name="a" /> nor <paramref name="b" /> implements the <see cref="T:System.IComparable" /> interface.  
+  
+ -or-  
+  
+ <paramref name="a" /> and <paramref name="b" /> are of different types and neither one can handle comparisons with the other.</exception>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -118,8 +214,15 @@
         <ReturnType>System.Collections.Comparer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents an instance of <see cref="T:System.Collections.Comparer" /> that is associated with the <see cref="P:System.Threading.Thread.CurrentCulture" /> of the current thread. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Comparison procedures use the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> of the current thread to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](../Topic/Globalizing%20and%20Localizing%20.NET%20Framework%20Applications.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultInvariant">
@@ -144,8 +247,24 @@
         <ReturnType>System.Collections.Comparer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents an instance of <see cref="T:System.Collections.Comparer" /> that is associated with <see cref="P:System.Globalization.CultureInfo.InvariantCulture" />. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Comparison procedures use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](../Topic/Globalizing%20and%20Localizing%20.NET%20Framework%20Applications.md).  
+  
+   
+  
+## Examples  
+ The following code example shows how <xref:System.Collections.Comparer.Compare%2A> returns different values depending on the culture associated with the <xref:System.Collections.Comparer>.  
+  
+ [!code-cpp[System.Collections.Comparer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Comparer/CPP/comparercultures.cpp#1)]
+ [!code-csharp[System.Collections.Comparer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Comparer/CS/comparercultures.cs#1)]
+ [!code-vb[System.Collections.Comparer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Comparer/VB/comparercultures.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -175,10 +294,21 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The object to populate with data.</param>
+        <param name="context">The context information about the source or destination of the serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the data required for serialization.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ While the <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> method is not visible to COM clients by default, inheriting the <xref:System.Collections.Comparer> class can expose it and can cause undesirable behavior in COM clients.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to provide serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
   </Members>

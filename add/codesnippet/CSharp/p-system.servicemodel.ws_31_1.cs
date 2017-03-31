@@ -1,1 +1,0 @@
-	    string scheme = binding1.Scheme;

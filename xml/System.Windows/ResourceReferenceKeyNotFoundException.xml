@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The exception that is thrown when a resource reference key cannot be found during parsing or serialization of markup extension resources.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.ResourceReferenceKeyNotFoundException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +44,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">Specific information from the serialization process.</param>
+        <param name="context">The context at the time the exception was thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.ResourceReferenceKeyNotFoundException" /> class with the specified serialization information and streaming context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +64,9 @@
         <Parameter Name="resourceKey" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="resourceKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A possible descriptive message.</param>
+        <param name="resourceKey">The key that was not found.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.ResourceReferenceKeyNotFoundException" /> class with the specified error message and resource key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +92,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">Specific information from the serialization process.</param>
+        <param name="context">The context at the time the exception was thrown.</param>
+        <summary>Reports specifics of the exception to debuggers or dialogs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +111,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the key that was not found and caused the exception to be thrown.</summary>
+        <value>The resource key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

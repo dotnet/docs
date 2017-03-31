@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>You should not use this enumeration; it is not used by the .NET Framework remoting infrastructure.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute.XmlFieldOrder%2A> property of the <xref:System.Runtime.Remoting.Metadata.SoapTypeAttribute> class gets or sets a value of type <xref:System.Runtime.Remoting.Metadata.XmlFieldOrderOption>. However, the .NET Framework remoting infrastructure does not use the property's value.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -34,7 +41,7 @@
         <ReturnType>System.Runtime.Remoting.Metadata.XmlFieldOrderOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>You should not use the **XmlFieldOrderOption** enumeration; it is not used by the .NET Framework's remoting infrastructure.</summary>
       </Docs>
     </Member>
     <Member MemberName="Choice">
@@ -51,7 +58,7 @@
         <ReturnType>System.Runtime.Remoting.Metadata.XmlFieldOrderOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>You should not use the **XmlFieldOrderOption** enumeration; it is not used by the .NET Framework's remoting infrastructure.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sequence">
@@ -68,7 +75,7 @@
         <ReturnType>System.Runtime.Remoting.Metadata.XmlFieldOrderOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>You should not use the **XmlFieldOrderOption** enumeration; it is not used by the .NET Framework's remoting infrastructure.</summary>
       </Docs>
     </Member>
   </Members>

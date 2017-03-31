@@ -1,4 +1,6 @@
 ---
 uid: System.ServiceModel.Dispatcher.InstanceContextIdleCallback
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

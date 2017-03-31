@@ -26,8 +26,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Hosts one or more <see cref="T:System.Windows.Documents.DocumentReference" /> elements that define a sequence of fixed documents.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.FixedDocumentSequence> hosts an ordered sequence of one or more fixed documents that are organized as a single unit.  
+  
+ <xref:System.Windows.Documents.DocumentReference> is the only allowable child element in a <xref:System.Windows.Documents.FixedDocumentSequence>.  Each <xref:System.Windows.Documents.DocumentReference> refers to a single <xref:System.Windows.Documents.FixedDocument>. Document reference elements must be in sequential order, matching the order in which the fixed documents are processed.  
+  
+ A collection of the <xref:System.Windows.Documents.DocumentReference> elements contained in a <xref:System.Windows.Documents.FixedDocumentSequence> can be obtained using the <xref:System.Windows.Documents.FixedDocumentSequence.References%2A> property.  
+  
+   
+  
+## Examples  
+ The following example show how to obtain the <xref:System.Windows.Documents.FixedDocumentSequence> of an <xref:System.Windows.Xps.Packaging.XpsDocument> by use of the <xref:System.Windows.Xps.Packaging.XpsDocument.GetFixedDocumentSequence%2A> method.  
+  
+ [!code-csharp[XpsSave#XpsSaveLoadFixedContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/Window1.xaml.cs#xpssaveloadfixedcontent)]
+ [!code-vb[XpsSave#XpsSaveLoadFixedContent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/window1.xaml.vb#xpssaveloadfixedcontent)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +60,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +77,16 @@
         <ReturnType>System.Windows.Documents.DocumentPaginator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the paginator for the <see cref="T:System.Windows.Documents.FixedDocument" /> that provides page-oriented services such as getting a particular page and repaginating in response to changes.</summary>
+        <value>An object of a class derived from <see cref="T:System.Windows.Documents.DocumentPaginator" /> that provides pagination services</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you need a paginator with automatic repagination in responses to changes, such as adding content to the document, derive a class from <xref:System.Windows.Documents.DynamicDocumentPaginator> which itself inherits from <xref:System.Windows.Documents.DocumentPaginator>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -76,8 +102,8 @@
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an enumerator for accessing the document sequence's <see cref="T:System.Windows.Documents.DocumentReference" /> child elements.</summary>
+        <value>An enumerator for accessing the document sequence's <see cref="T:System.Windows.Documents.DocumentReference" /> child elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,9 +121,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an automation peer for the sequence.</summary>
+        <returns>A <see cref="T:System.Windows.Automation.Peers.DocumentAutomationPeer" /> that exposes the <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> to Microsoft UI Automation.</returns>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Your derived version can return any <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />, it does not have to be a <see cref="T:System.Windows.Automation.Peers.DocumentAutomationPeer" />.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="PrintTicket">
@@ -113,9 +142,26 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Printing.PrintTicket" /> that is associated with this document sequence.</summary>
+        <value>The <see cref="T:System.Printing.PrintTicket" /> for this sequence.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Printing.PrintTicket> contains printing information such as whether to print on both sides of each sheet.  
+  
+ Setting this <xref:System.Windows.Documents.FixedDocumentSequence.PrintTicket%2A> property does not validate or modify the specified <xref:System.Printing.PrintTicket> for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+  
+<a name="dependencyPropertyInfo_PrintTicket"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.FixedDocumentSequence.PrintTicketProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintTicketProperty">
@@ -131,7 +177,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.FixedDocumentSequence.PrintTicket" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +202,8 @@
         <ReturnType>System.Windows.Documents.DocumentReferenceCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of the document sequence's <see cref="T:System.Windows.Documents.DocumentReference" /> child elements.</summary>
+        <value>A collection of the document sequence's <see cref="T:System.Windows.Documents.DocumentReference" /> child elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,9 +223,13 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceType">An object that specifies the type of service object to get.</param>
+        <summary>Gets the service object of the specified type.</summary>
+        <returns>A service object of type <paramref name="serviceType" />.  
+  
+ -or-  
+  
+ <see langword="null" /> if there is no service object of type <paramref name="serviceType" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,8 +249,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The child object to add.</param>
+        <summary>Adds a child object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +270,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,8 +288,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the base URI of the current application context.</summary>
+        <value>The base URI of the application context.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

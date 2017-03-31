@@ -27,8 +27,33 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a try/catch/finally/fault block.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The body block is protected by the try block.  
+  
+ The handlers consist of a set of <xref:System.Linq.Expressions.CatchBlock> expressions that can be either catch statements or filters.  
+  
+ The fault block runs if an exception is thrown.  
+  
+ The finally block runs regardless of how control exits the body.  
+  
+ Only one of fault or finally blocks can be supplied.  
+  
+ The return type of the try block must match the return type of any associated catch statements.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a <xref:System.Linq.Expressions.TryExpression> object that contains a catch statement by using the <xref:System.Linq.Expressions.Expression.TryCatch%2A> method.  
+  
+ [!code-csharp[System.Linq.Expressions.ExpressionDev10#47](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/cs/program.cs#47)]
+ [!code-vb[System.Linq.Expressions.ExpressionDev10#47](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.linq.expressions.expressiondev10/vb/module1.vb#47)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -88,8 +113,8 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Linq.Expressions.Expression" /> representing the body of the try block.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.Expression" /> representing the body of the try block.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +142,8 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Linq.Expressions.Expression" /> representing the fault block.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.Expression" /> representing the fault block.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +171,8 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Linq.Expressions.Expression" /> representing the finally block.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.Expression" /> representing the finally block.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +200,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.CatchBlock&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of <see cref="T:System.Linq.Expressions.CatchBlock" /> expressions associated with the try block.</summary>
+        <value>The collection of <see cref="T:System.Linq.Expressions.CatchBlock" /> expressions associated with the try block.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +229,8 @@
         <ReturnType>System.Linq.Expressions.ExpressionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the node type of this <see cref="T:System.Linq.Expressions.Expression" />.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.ExpressionType" /> that represents this expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,8 +258,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the static type of the expression that this <see cref="T:System.Linq.Expressions.Expression" /> represents.</summary>
+        <value>The <see cref="P:System.Linq.Expressions.TryExpression.Type" /> that represents the static type of the expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,12 +293,12 @@
         <Parameter Name="fault" Type="System.Linq.Expressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="body">To be added.</param>
-        <param name="handlers">To be added.</param>
-        <param name="finally">To be added.</param>
-        <param name="fault">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="body">The <see cref="P:System.Linq.Expressions.TryExpression.Body" /> property of the result.</param>
+        <param name="handlers">The <see cref="P:System.Linq.Expressions.TryExpression.Handlers" /> property of the result.</param>
+        <param name="finally">The <see cref="P:System.Linq.Expressions.TryExpression.Finally" /> property of the result.</param>
+        <param name="fault">The <see cref="P:System.Linq.Expressions.TryExpression.Fault" /> property of the result.</param>
+        <summary>Creates a new expression that is like this one, but using the supplied children. If all of the children are the same, it will return this expression.</summary>
+        <returns>This expression if no children are changed or an expression with the updated children.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

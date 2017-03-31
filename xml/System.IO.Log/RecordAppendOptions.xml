@@ -15,8 +15,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how records are appended.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this enumeration with the <xref:System.IO.Log.LogRecordSequence.Append%2A> method to append a record to a log sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#5)]
+ [!code-vb[S_UELogRecordSequence#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#5)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ForceAppend">
@@ -32,7 +42,7 @@
         <ReturnType>System.IO.Log.RecordAppendOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The record sequence should begin the process of flushing internal buffers after this record is appended. This does not indicate that the record should be durably written before the Append operation completes. To get that behavior, specify the <see cref="F:System.IO.Log.RecordAppendOptions.ForceFlush" /> flag.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForceFlush">
@@ -48,7 +58,7 @@
         <ReturnType>System.IO.Log.RecordAppendOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The record sequence should flush any internal buffers after this record is appended. When the Append operation completes, the specified record has been durably written.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +74,7 @@
         <ReturnType>System.IO.Log.RecordAppendOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Data is written lazily.</summary>
       </Docs>
     </Member>
   </Members>

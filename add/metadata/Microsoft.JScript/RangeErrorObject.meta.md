@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.RangeErrorObject
-internalonly: False
+ms.author: "mikejo"
 ---

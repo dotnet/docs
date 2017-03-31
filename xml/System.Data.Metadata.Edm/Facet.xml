@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides additional information about members. In the [!INCLUDE[vstecado](~/includes/vstecado-md.md)] metadata type hierarchy, facets provide additional information about members through the declared type for the member.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about members and facets, see [Structural Types](http://msdn.microsoft.com/en-us/c0c54fe0-e0ba-4e1d-8572-dfd2fbf788fa).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BuiltInTypeKind">
@@ -33,8 +40,8 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.Facet" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> object that represents the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.Facet" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +58,8 @@
         <ReturnType>System.Data.Metadata.Edm.FacetDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the description of this <see cref="T:System.Data.Metadata.Edm.Facet" />.</summary>
+        <value>The <see cref="T:System.Data.Metadata.Edm.FacetDescription" /> object that represents the description of this <see cref="T:System.Data.Metadata.Edm.Facet" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +76,8 @@
         <ReturnType>System.Data.Metadata.Edm.EdmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of this <see cref="T:System.Data.Metadata.Edm.Facet" />.</summary>
+        <value>The <see cref="T:System.Data.Metadata.Edm.EdmType" /> object that represents the type of this <see cref="T:System.Data.Metadata.Edm.Facet" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +94,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the value of the facet is unbounded.</summary>
+        <value>
+          <see langword="true" /> if the value of the facet is unbounded; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Metadata.Edm.Facet.IsUnbounded%2A> indicates that the value of the property can have the maximum allowable limit in the underlying storage.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -105,8 +120,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of this <see cref="T:System.Data.Metadata.Edm.Facet" />.</summary>
+        <value>The name of this <see cref="T:System.Data.Metadata.Edm.Facet" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +139,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the name of this <see cref="T:System.Data.Metadata.Edm.Facet" />.</summary>
+        <returns>The name of this <see cref="T:System.Data.Metadata.Edm.Facet" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +157,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of this <see cref="T:System.Data.Metadata.Edm.Facet" />.</summary>
+        <value>The value of this <see cref="T:System.Data.Metadata.Edm.Facet" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

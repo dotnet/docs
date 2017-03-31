@@ -1,19 +1,23 @@
 ---
 uid: System.Configuration.SubclassTypeValidatorAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SubclassTypeValidatorAttribute.ValidatorInstance
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SubclassTypeValidatorAttribute.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SubclassTypeValidatorAttribute.BaseClass
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -16,8 +16,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a merged <see cref="T:System.Printing.PrintTicket" /> that is guaranteed to be viable, with a report of any settings that were changed to make it viable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the initial <xref:System.Printing.PrintTicket> asks for printing functionality that the printer does not support, the printer driver resolves all conflicts in order to produce a viable ticket.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the values of this type while merging two print tickets.  
+  
+ [!code-csharp[PrintTicketManagment#UsingMergeAndValidate](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintTicketManagment/CSharp/printticket.cs#usingmergeandvalidate)]
+ [!code-vb[PrintTicketManagment#UsingMergeAndValidate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintTicketManagment/visualbasic/printticket.vb#usingmergeandvalidate)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ConflictStatus">
@@ -33,8 +48,8 @@
         <ReturnType>System.Printing.ConflictStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether a conflict occurred between the functionality supported by the printer and the functionality requested in the initial merger of two source <see cref="T:System.Printing.PrintTicket" />s.</summary>
+        <value>One of the <see cref="T:System.Printing.ConflictStatus" /> values that indicates either that no conflict occurred or that at least one conflict occurred but was resolved. The default is <see cref="F:System.Printing.ConflictStatus.NoConflict" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +69,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="o">The <see cref="T:System.Printing.ValidationResult" /> to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Printing.ValidationResult" /> is equal to the current <see cref="T:System.Printing.ValidationResult" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Printing.ValidationResult" /> objects are equal; otherwise, <see langword="false" />. <see langword="false" /> is also returned if the object passed is not a <see cref="T:System.Printing.ValidationResult" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +90,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the hash code associated with the <see cref="T:System.Printing.ValidationResult" /> and its <see cref="T:System.Printing.PrintTicket" /> and print stream.</summary>
+        <returns>A hash code for the current <see cref="T:System.Printing.ValidationResult" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,10 +112,11 @@
         <Parameter Name="b" Type="System.Printing.ValidationResult" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="a">The first <see cref="T:System.Printing.ValidationResult" /> to compare.</param>
+        <param name="b">The second <see cref="T:System.Printing.ValidationResult" /> to compare.</param>
+        <summary>Determines if the specified <see cref="T:System.Printing.ValidationResult" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Printing.ValidationResult" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,10 +137,11 @@
         <Parameter Name="b" Type="System.Printing.ValidationResult" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="a">The first <see cref="T:System.Printing.ValidationResult" /> to compare.</param>
+        <param name="b">The second <see cref="T:System.Printing.ValidationResult" /> to compare.</param>
+        <summary>Determines if the specified <see cref="T:System.Printing.ValidationResult" /> objects are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Printing.ValidationResult" /> objects are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,9 +158,19 @@
         <ReturnType>System.Printing.PrintTicket</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Printing.PrintTicket" /> object that results from the merging of two <see cref="T:System.Printing.PrintTicket" /> objects, which might have been adjusted to ensure its viability.</summary>
+        <value>A valid and viable <see cref="T:System.Printing.PrintTicket" />. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this property while merging two print tickets.  
+  
+ [!code-csharp[PrintTicketManagment#UsingMergeAndValidate](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintTicketManagment/CSharp/printticket.cs#usingmergeandvalidate)]
+ [!code-vb[PrintTicketManagment#UsingMergeAndValidate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintTicketManagment/visualbasic/printticket.vb#usingmergeandvalidate)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

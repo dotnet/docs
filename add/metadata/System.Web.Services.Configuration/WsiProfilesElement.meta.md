@@ -1,19 +1,34 @@
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElement.Name
-internalonly: False
----
-
----
-uid: System.Web.Services.Configuration.WsiProfilesElement.#ctor(System.Web.Services.WsiProfiles)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Configuration.WsiProfilesElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Configuration.WsiProfilesElement.#ctor(System.Web.Services.WsiProfiles)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Configuration.WsiProfilesElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

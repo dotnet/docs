@@ -1,9 +1,11 @@
 ---
 uid: System.Web.Hosting.ISuspendibleRegisteredObject
-internalonly: False
+ms.author: "robmcm"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.ISuspendibleRegisteredObject.Suspend
-internalonly: False
+ms.author: "robmcm"
+manager: "wpickett"
 ---

@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.JSAuthor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSAuthor.GetColorizer
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSAuthor.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSAuthor.GetCodeSense
-internalonly: False
+ms.author: "mikejo"
 ---

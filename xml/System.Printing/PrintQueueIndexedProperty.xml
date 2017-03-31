@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the properties that are initialized when a <see cref="T:System.Printing.PrintQueue" /> object is constructed.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The speed of the print queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -43,7 +43,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A comment specific to the print queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="DefaultPrintTicket">
@@ -59,7 +59,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default print ticket object.</summary>
       </Docs>
     </Member>
     <Member MemberName="DefaultPriority">
@@ -75,7 +75,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default priority.</summary>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -91,7 +91,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The description of the queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="HostingPrintServer">
@@ -107,7 +107,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The host print server.</summary>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -123,7 +123,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The location of the physical printer.</summary>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -139,7 +139,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of the print queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="NumberOfJobs">
@@ -155,7 +155,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The number of jobs in the print queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -171,7 +171,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The priority of the print queue relative to other print queues serving the same printer.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueAttributes">
@@ -187,7 +187,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The attributes of the print queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueDriver">
@@ -203,7 +203,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer driver for the queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueuePort">
@@ -219,7 +219,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer port used by the print queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueuePrintProcessor">
@@ -235,7 +235,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print processor for the print queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueStatus">
@@ -251,7 +251,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current status of the queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="SeparatorFile">
@@ -267,7 +267,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The path to the separator file.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShareName">
@@ -283,7 +283,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The share name of the queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="StartTimeOfDay">
@@ -299,7 +299,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The time of day that the queue begins printing its jobs.</summary>
       </Docs>
     </Member>
     <Member MemberName="UntilTimeOfDay">
@@ -315,7 +315,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The time of day that the queue stops printing jobs.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserPrintTicket">
@@ -331,7 +331,7 @@
         <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print ticket for the user.</summary>
       </Docs>
     </Member>
   </Members>

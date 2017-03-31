@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Construction.ProjectItemDefinitionGroupElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectItemDefinitionGroupElement.ItemDefinitions
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectItemDefinitionGroupElement.AddItemDefinition(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

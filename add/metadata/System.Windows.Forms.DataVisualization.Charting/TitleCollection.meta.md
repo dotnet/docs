@@ -1,9 +1,15 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.TitleCollection
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.TitleCollection.Add(System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.TitleCollection.Add
 ---

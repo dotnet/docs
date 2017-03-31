@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the border type of a visual style element with a filled-border background.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.BorderType> values represent the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method when it is called with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ellipse">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.BorderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An elliptical border.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rectangle">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.BorderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A rectangular border.</summary>
       </Docs>
     </Member>
     <Member MemberName="RoundedRectangle">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.BorderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A rectangular border with rounded corners.</summary>
       </Docs>
     </Member>
   </Members>

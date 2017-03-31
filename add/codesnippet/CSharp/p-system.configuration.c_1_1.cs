@@ -1,1 +1,0 @@
-            indent("Is Group Declared?: " + sectionGroup.IsDeclared);

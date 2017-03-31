@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that defines an extension, which enables the user to create user-defined bindings, behaviors, etc.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ExtensionElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +43,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">A unique name of this configuration element.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ExtensionElement" /> class with a specified name.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" /> or empty.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,10 +64,16 @@
         <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">A unique name of this configuration element.</param>
+        <param name="type">The type of this configuration element.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ExtensionElement" /> class with a specified name and type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" /> or empty.  
+  
+ -or-  
+  
+ <paramref name="name" /> is <see langword="null" /> or empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -89,8 +97,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a unique name of this configuration element.</summary>
+        <value>A unique name of this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +115,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +141,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of this configuration element.</summary>
+        <value>The type of this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

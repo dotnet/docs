@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanging" /> event, <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosing" /> event, and <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleting" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs> class contains information for several different Web Parts events that can be canceled. These events include the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanging>, <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosing>, and <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleting> events. The <xref:System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs> class provides access to the Web Parts control involved in the event. The Web Parts control is accessed through the <xref:System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs.WebPart%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +35,8 @@
         <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
       </Parameters>
       <Docs>
-        <param name="webPart">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="webPart">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> (or server or user control) involved in the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Web Parts control involved in the cancelable event.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> involved in a <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanging" />, <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosing" />, or <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleting" /> event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents data that is sent with a **ManipulationProcessor2D.Completed** event or an **InertiaProcessor2D.Completed** event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This data applies to either a <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Completed?displayProperty=fullName> event or an <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Completed?displayProperty=fullName> event.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="OriginX">
@@ -28,9 +35,16 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the new x-coordinate of the composite position of the manipulation.</summary>
+        <value>The new x-coordinate of the composite position of the manipulation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The origin point represented by the <xref:System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs.OriginX%2A> and <xref:System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs.OriginY%2A> properties is the average position of all manipulators associated with an element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OriginY">
@@ -46,9 +60,16 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the new y-coordinate of the composite position of the manipulation.</summary>
+        <value>The new y-coordinate of the composite position of the manipulation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The origin point represented by the <xref:System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs.OriginX%2A> and <xref:System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs.OriginY%2A> properties is the average position of all manipulators associated with an element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Total">
@@ -64,8 +85,8 @@
         <ReturnType>System.Windows.Input.Manipulations.ManipulationDelta2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the total amount of change since the manipulation started.</summary>
+        <value>The total amount of change since the manipulation started.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +103,8 @@
         <ReturnType>System.Windows.Input.Manipulations.ManipulationVelocities2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current velocities of the manipulation.</summary>
+        <value>The current velocities of the manipulation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

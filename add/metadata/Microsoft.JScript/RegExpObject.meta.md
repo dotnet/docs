@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.JScript.RegExpObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpObject.global
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpObject.multiline
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpObject.ignoreCase
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpObject.lastIndex
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpObject.ToString
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.RegExpObject.source
-internalonly: False
+ms.author: "mikejo"
 ---

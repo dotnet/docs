@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Media.Animation.HandoffBehavior
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

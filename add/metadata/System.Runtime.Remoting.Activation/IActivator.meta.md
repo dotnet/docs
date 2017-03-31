@@ -1,19 +1,19 @@
 ---
 uid: System.Runtime.Remoting.Activation.IActivator
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Activation.IActivator.Level
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Activation.IActivator.Activate(System.Runtime.Remoting.Activation.IConstructionCallMessage)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Activation.IActivator.NextActivator
-internalonly: False
+manager: "ghogen"
 ---

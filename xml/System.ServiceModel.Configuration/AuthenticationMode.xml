@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the authentication setting used for message exchange.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,15 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator is anonymous, and that the responder is authenticated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The certificate of the responder is available out-of-band to the initiator.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AnonymousForSslNegotiated">
@@ -43,7 +51,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator is anonymous.</summary>
       </Docs>
     </Member>
     <Member MemberName="CertificateOverTransport">
@@ -59,7 +67,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator is authenticated by an X.509 version 3 certificate, and that the responder is authenticated by SSL over HTTPS.</summary>
       </Docs>
     </Member>
     <Member MemberName="IssuedToken">
@@ -75,7 +83,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator and responder are authenticated by XML symmetric key tokens.</summary>
       </Docs>
     </Member>
     <Member MemberName="IssuedTokenForCertificate">
@@ -91,7 +99,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator is authenticated by an XML symmetric key token, and that the responder is authenticated by an X.509 version 3 certificate.</summary>
       </Docs>
     </Member>
     <Member MemberName="IssuedTokenForSslNegotiated">
@@ -107,7 +115,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator is authenticated by an XML symmetric key token, and that the responder is authenticated by the SOAP implementation of SSL.</summary>
       </Docs>
     </Member>
     <Member MemberName="IssuedTokenOverTransport">
@@ -123,7 +131,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator is authenticated by an XML symmetric key token, and that the responder is authenticated by SSL over HTTPS.</summary>
       </Docs>
     </Member>
     <Member MemberName="Kerberos">
@@ -139,7 +147,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator and responder are authenticated using the Kerberos protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="KerberosOverTransport">
@@ -155,7 +163,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator is authenticated using the Kerberos protocol, and the responder is authenticated by SSL over HTTPS.</summary>
       </Docs>
     </Member>
     <Member MemberName="MutualCertificate">
@@ -171,7 +179,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator and responder are authenticated with X.509 version 3 certificates.</summary>
       </Docs>
     </Member>
     <Member MemberName="MutualCertificateDuplex">
@@ -187,7 +195,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator and responder are authenticated with X.509 version 3 certificates.</summary>
       </Docs>
     </Member>
     <Member MemberName="MutualSslNegotiated">
@@ -203,7 +211,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator and responder mutually authenticate each other using X509 version 3 certificates, and the responder's certificate is available from the SOAP SSL negotiation.</summary>
       </Docs>
     </Member>
     <Member MemberName="SecureConversation">
@@ -219,7 +227,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that WS-SecureConversation authentication is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="SspiNegotiated">
@@ -235,7 +243,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator and responder obtain a shared security context using the Security Service Provider Interface (SSPI).</summary>
       </Docs>
     </Member>
     <Member MemberName="SspiNegotiatedOverTransport">
@@ -251,7 +259,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator is authenticated by a security context using the Security Service Provider Interface (SSPI), and the responder is authenticated by SSL over HTTPS.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserNameForCertificate">
@@ -267,7 +275,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator is authenticated using a username token, and the responder's certificate is available to the initiator out-of-band.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserNameForSslNegotiated">
@@ -283,7 +291,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator is authenticated using a username token, and that the responder is authenticated by the SOAP implementation of SSL.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserNameOverTransport">
@@ -299,7 +307,7 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the initiator is authenticated using a username token, and that the responder is authenticated by SSL over HTTPS.</summary>
       </Docs>
     </Member>
   </Members>

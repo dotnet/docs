@@ -20,8 +20,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.IO.FileSystemWatcher.Renamed" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class inherits from <xref:System.IO.FileSystemEventArgs> and extends it by adding an old name field and an old full path field to specify the previous name and full path of the affected file or directory.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a FileSystemWatcher to monitor file changes (creates, deletes, renames, changes) occurring on a disk drive. The example also shows how to properly receive error notifications.  
+  
+ [!code-csharp[FileSystemWatcher#1](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#1)]
+ [!code-vb[FileSystemWatcher#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,12 +64,19 @@
         <Parameter Name="oldName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="changeType">To be added.</param>
-        <param name="directory">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="oldName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="changeType">One of the <see cref="T:System.IO.WatcherChangeTypes" /> values.</param>
+        <param name="directory">The name of the affected file or directory.</param>
+        <param name="name">The name of the affected file or directory.</param>
+        <param name="oldName">The old name of the affected file or directory.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.RenamedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class inherits from the <xref:System.IO.FileSystemEventArgs> class and extends it by adding an old name field to specify the previous name of the file or directory affected.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OldFullPath">
@@ -79,9 +101,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the previous fully qualified path of the affected file or directory.</summary>
+        <value>The previous fully qualified path of the affected file or directory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.IO.RenamedEventArgs.OldFullPath%2A> property. This code example is part of a larger example provided for the <xref:System.IO.RenamedEventArgs> class.  
+  
+ [!code-csharp[FileSystemWatcher#8](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#8)]
+ [!code-vb[FileSystemWatcher#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for reading files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
       </Docs>
     </Member>
     <Member MemberName="OldName">
@@ -106,8 +139,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the old name of the affected file or directory.</summary>
+        <value>The previous name of the affected file or directory.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,1 +1,0 @@
-   PC = gcnew PerformanceCounter( "AverageCounter64SampleCategory","AverageCounter64Sample",false );

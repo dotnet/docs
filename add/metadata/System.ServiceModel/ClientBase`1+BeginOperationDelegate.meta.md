@@ -1,4 +1,6 @@
 ---
 uid: System.ServiceModel.ClientBase`1.BeginOperationDelegate
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

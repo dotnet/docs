@@ -1,109 +1,167 @@
 ---
 uid: System.ComponentModel.Design.IDesignerHost
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IDesignerHost.Activated
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IDesignerHost.TransactionClosed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IDesignerHost.InTransaction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IDesignerHost.LoadComplete
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IDesignerHost.CreateTransaction(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IDesignerHost.Deactivated
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IDesignerHost.GetType(System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IDesignerHost.TransactionDescription
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type,System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IDesignerHost.Loading
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.RootComponentClassName
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.Activate
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.Container
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.GetDesigner(System.ComponentModel.IComponent)
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.DestroyComponent(System.ComponentModel.IComponent)
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.TransactionOpened
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.RootComponent
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.TransactionClosing
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type)
-internalonly: False
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.TransactionOpening
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IDesignerHost.CreateTransaction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.RootComponentClassName
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.Activate
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.Container
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.GetDesigner(System.ComponentModel.IComponent)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.DestroyComponent(System.ComponentModel.IComponent)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.TransactionOpened
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.CreateComponent
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.RootComponent
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.TransactionClosing
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.TransactionOpening
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.CreateTransaction
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

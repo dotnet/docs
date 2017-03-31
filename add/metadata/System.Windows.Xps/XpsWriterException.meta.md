@@ -1,24 +1,29 @@
 ---
 uid: System.Windows.Xps.XpsWriterException
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.XpsWriterException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.XpsWriterException.#ctor(System.String)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.XpsWriterException.#ctor
-internalonly: False
+manager: "leannef"
+---
+
+---
+uid: System.Windows.Xps.XpsWriterException.#ctor
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.XpsWriterException.#ctor(System.String,System.Exception)
-internalonly: False
+manager: "leannef"
 ---

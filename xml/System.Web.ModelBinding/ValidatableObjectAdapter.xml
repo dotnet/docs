@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an adapter for objects that implement the <see cref="T:System.ComponentModel.DataAnnotations.IValidatableObject" /> interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="context" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="metadata">The metadata.</param>
+        <param name="context">The execution context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ValidatableObjectAdapter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,9 @@
         <Parameter Name="container" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="container">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="container">The container for the object to be validated.</param>
+        <summary>Validates the specified object.</summary>
+        <returns>The validation results.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,9 +1,13 @@
 ---
 uid: System.Web.Services.Protocols.InvokeCompletedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.InvokeCompletedEventArgs.Results
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

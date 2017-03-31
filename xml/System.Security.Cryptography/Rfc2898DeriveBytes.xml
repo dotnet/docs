@@ -27,8 +27,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implements password-based key derivation functionality, PBKDF2, by using a pseudo-random number generator based on <see cref="T:System.Security.Cryptography.HMACSHA1" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Cryptography.Rfc2898DeriveBytes> takes a password, a salt, and an iteration count, and then generates keys through calls to the <xref:System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes%2A> method.  
+  
+ RFC 2898 includes methods for creating a key and initialization vector (IV) from a password and salt. You can use PBKDF2, a password-based key derivation function, to derive keys using a pseudo-random function that allows keys of virtually unlimited length to be generated. The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class can be used to produce a derived key from a base key and other parameters. In a password-based key derivation function, the base key is a password and the other parameters are a salt value and an iteration count.  
+  
+ For more information about PBKDF2, see RFC 2898, "PKCS #5: Password-Based Cryptography Specification Version 2.0," available on the [Request for Comments Web site](http://go.microsoft.com/fwlink/?LinkID=37119). See section 5.2, "PBKDF2," for complete details.  
+  
+> [!IMPORTANT]
+>  Never hard-code a password within your source code.  Hard-coded passwords can be retrieved from an assembly by using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), by using a hexadecimal editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class to create two identical keys for the <xref:System.Security.Cryptography.TripleDES> class.  It then encrypts and decrypts some data using the keys.  
+  
+ [!code-cpp[rfc28981#1](~/samples/snippets/cpp/VS_Snippets_CLR/rfc28981/CPP/rfc28981.cpp#1)]
+ [!code-csharp[rfc28981#1](~/samples/snippets/csharp/VS_Snippets_CLR/rfc28981/CS/rfc28981.cs#1)]
+ [!code-vb[rfc28981#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/rfc28981/vb/rfc28981.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,10 +79,35 @@
         <Parameter Name="salt" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="password">To be added.</param>
-        <param name="salt">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="password">The password used to derive the key.</param>
+        <param name="salt">The key salt used to derive the key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Rfc2898DeriveBytes" /> class using a password and salt to derive the key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The salt size must be 8 bytes or larger.  
+  
+ RFC 2898 includes methods for creating a key and initialization vector (IV) from a password and salt. You can use PBKDF2, a password-based key derivation function, to derive keys using a pseudo-random function that allows keys of virtually unlimited length to be generated. The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class can be used to produce a derived key from a base key and other parameters. In a password-based key derivation function, the base key is a password and the other parameters are a salt value and an iteration count.  
+  
+ For more information about PBKDF2, see RFC 2898, "PKCS #5: Password-Based Cryptography Specification Version 2.0," available on the [Request for Comments Web site](http://go.microsoft.com/fwlink/?LinkID=37119). See section 5.2, "PBKDF2," for complete details.  
+  
+> [!IMPORTANT]
+>  Never hard-code a password within your source code.  Hard-coded passwords can be retrieved from an assembly by using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), by using a hexadecimal editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class to create two identical keys for the <xref:System.Security.Cryptography.TripleDES> class.  It then encrypts and decrypts some data using the keys.  
+  
+ [!code-cpp[rfc28981#1](~/samples/snippets/cpp/VS_Snippets_CLR/rfc28981/CPP/rfc28981.cpp#1)]
+ [!code-csharp[rfc28981#1](~/samples/snippets/csharp/VS_Snippets_CLR/rfc28981/CS/rfc28981.cs#1)]
+ [!code-vb[rfc28981#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/rfc28981/vb/rfc28981.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified salt size is smaller than 8 bytes or the iteration count is less than 1.</exception>
+        <exception cref="T:System.ArgumentNullException">The password or salt is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -87,10 +135,26 @@
         <Parameter Name="saltSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="password">To be added.</param>
-        <param name="saltSize">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="password">The password used to derive the key.</param>
+        <param name="saltSize">The size of the random salt that you want the class to generate.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Rfc2898DeriveBytes" /> class using the password and salt size to derive the key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The salt size must be 8 bytes or larger.  
+  
+ RFC 2898 includes methods for creating a key and initialization vector (IV) from a password and salt. You can use PBKDF2, a password-based key derivation function, to derive keys using a pseudo-random function that allows keys of virtually unlimited length to be generated. The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class can be used to produce a derived key from a base key and other parameters. In a password-based key derivation function, the base key is a password and the other parameters are a salt value and an iteration count.  
+  
+ For more information about PBKDF2, see RFC 2898, "PKCS #5: Password-Based Cryptography Specification Version 2.0," available on the [Request for Comments Web site](http://go.microsoft.com/fwlink/?LinkID=37119). See section 5.2, "PBKDF2," for complete details.  
+  
+> [!IMPORTANT]
+>  Never hard-code a password within your source code.  Hard-coded passwords can be retrieved from an assembly by using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), by using a hexadecimal editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified salt size is smaller than 8 bytes.</exception>
+        <exception cref="T:System.ArgumentNullException">The password or salt is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,11 +188,27 @@
         <Parameter Name="iterations" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="password">To be added.</param>
-        <param name="salt">To be added.</param>
-        <param name="iterations">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="password">The password used to derive the key.</param>
+        <param name="salt">The key salt used to derive the key.</param>
+        <param name="iterations">The number of iterations for the operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Rfc2898DeriveBytes" /> class using a password, a salt, and number of iterations to derive the key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The salt size must be 8 bytes or larger and the iteration count must be greater than zero. The minimum recommended number of iterations is 1000.  
+  
+ RFC 2898 includes methods for creating a key and initialization vector (IV) from a password and salt. You can use PBKDF2, a password-based key derivation function, to derive keys using a pseudo-random function that allows keys of virtually unlimited length to be generated. The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class can be used to produce a derived key from a base key and other parameters. In a password-based key derivation function, the base key is a password and the other parameters are a salt value and an iteration count.  
+  
+ For more information about PBKDF2, see RFC 2898, "PKCS #5: Password-Based Cryptography Specification Version 2.0," available on the [Request for Comments Web site](http://go.microsoft.com/fwlink/?LinkID=37119). See section 5.2, "PBKDF2," for complete details.  
+  
+> [!IMPORTANT]
+>  Never hard-code a password within your source code.  Hard-coded passwords can be retrieved from an assembly by using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), by using a hexadecimal editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified salt size is smaller than 8 bytes or the iteration count is less than 1.</exception>
+        <exception cref="T:System.ArgumentNullException">The password or salt is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -157,11 +237,36 @@
         <Parameter Name="iterations" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="password">To be added.</param>
-        <param name="salt">To be added.</param>
-        <param name="iterations">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="password">The password used to derive the key.</param>
+        <param name="salt">The key salt used to derive the key.</param>
+        <param name="iterations">The number of iterations for the operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Rfc2898DeriveBytes" /> class using a password, a salt, and number of iterations to derive the key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The salt size must be 8 bytes or larger and the iteration count must be greater than zero. The minimum recommended number of iterations is 1000.  
+  
+ RFC 2898 includes methods for creating a key and initialization vector (IV) from a password and salt. You can use PBKDF2, a password-based key derivation function, to derive keys using a pseudo-random function that allows keys of virtually unlimited length to be generated. The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class can be used to produce a derived key from a base key and other parameters. In a password-based key derivation function, the base key is a password and the other parameters are a salt value and an iteration count.  
+  
+ For more information about PBKDF2, see RFC 2898, "PKCS #5: Password-Based Cryptography Specification Version 2.0," available on the [Request for Comments Web site](http://go.microsoft.com/fwlink/?LinkID=37119). See section 5.2, "PBKDF2," for complete details.  
+  
+> [!IMPORTANT]
+>  Never hard-code a password within your source code.  Hard-coded passwords can be retrieved from an assembly by using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), by using a hexadecimal editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class to create two identical keys for the <xref:System.Security.Cryptography.TripleDES> class.  It then encrypts and decrypts some data using the keys.  
+  
+ [!code-cpp[rfc28981#1](~/samples/snippets/cpp/VS_Snippets_CLR/rfc28981/CPP/rfc28981.cpp#1)]
+ [!code-csharp[rfc28981#1](~/samples/snippets/csharp/VS_Snippets_CLR/rfc28981/CS/rfc28981.cs#1)]
+ [!code-vb[rfc28981#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/rfc28981/vb/rfc28981.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified salt size is smaller than 8 bytes or the iteration count is less than 1.</exception>
+        <exception cref="T:System.ArgumentNullException">The password or salt is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -195,11 +300,29 @@
         <Parameter Name="iterations" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="password">To be added.</param>
-        <param name="saltSize">To be added.</param>
-        <param name="iterations">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="password">The password used to derive the key.</param>
+        <param name="saltSize">The size of the random salt that you want the class to generate.</param>
+        <param name="iterations">The number of iterations for the operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Rfc2898DeriveBytes" /> class using a password, a salt size, and number of iterations to derive the key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The salt size must be 8 bytes or larger and the iteration count must be greater than zero. The minimum recommended number of iterations is 1000.  
+  
+ RFC 2898 includes methods for creating a key and initialization vector (IV) from a password and salt. You can use PBKDF2, a password-based key derivation function, to derive keys using a pseudo-random function that allows keys of virtually unlimited length to be generated. The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class can be used to produce a derived key from a base key and other parameters. In a password-based key derivation function, the base key is a password and the other parameters are a salt value and an iteration count.  
+  
+ For more information on PBKDF2, see RFC 2898,"PKCS #5: Password-Based Cryptography Specification Version 2.0," available on the [Request for Comments Web site](http://go.microsoft.com/fwlink/?LinkID=37119). See section 5.2, "PBKDF2," for complete details.  
+  
+> [!IMPORTANT]
+>  Never hard-code a password within your source code.  Hard-coded passwords can be retrieved from an assembly by using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), by using a hexadecimal editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified salt size is smaller than 8 bytes or the iteration count is less than 1.</exception>
+        <exception cref="T:System.ArgumentNullException">The password or salt is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="iterations " />is out of range. This parameter requires a non-negative number.</exception>
       </Docs>
     </Member>
     <Member MemberName="CryptDeriveKey">
@@ -231,13 +354,35 @@
         <Parameter Name="rgbIV" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algname">To be added.</param>
-        <param name="alghashname">To be added.</param>
-        <param name="keySize">To be added.</param>
-        <param name="rgbIV">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="algname">The algorithm name for which to derive the key.</param>
+        <param name="alghashname">The hash algorithm name to use to derive the key.</param>
+        <param name="keySize">The size of the key, in bits, to derive.</param>
+        <param name="rgbIV">The initialization vector (IV) to use to derive the key.</param>
+        <summary>Derives a cryptographic key from the <see cref="T:System.Security.Cryptography.Rfc2898DeriveBytes" /> object.</summary>
+        <returns>The derived key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This function is a wrapper for the Crypto API function CryptDeriveKey(), and is intended to offer interoperability with applications using the Crypto API.  
+  
+ If the `keySize` parameter is set to 0 bits, the default key size for the specified algorithm is used.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The <paramref name="keySize" /> parameter is incorrect.  
+  
+ -or-  
+  
+ The cryptographic service provider (CSP) cannot be acquired.  
+  
+ -or-  
+  
+ The <paramref name="algname" /> parameter is not a valid algorithm name.  
+  
+ -or-  
+  
+ The <paramref name="alghashname" /> parameter is not a valid hash algorithm name.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -267,9 +412,25 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.Cryptography.Rfc2898DeriveBytes" /> class and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the `Finalize` method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. `Finalize` invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.Rfc2898DeriveBytes> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+ For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -299,10 +460,28 @@
         <Parameter Name="cb" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="cb">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="cb">The number of pseudo-random key bytes to generate.</param>
+        <summary>Returns the pseudo-random key for this object.</summary>
+        <returns>A byte array filled with pseudo-random key bytes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class implements PBKDF2 functionality by using a pseudorandom number generator based on <xref:System.Security.Cryptography.HMACSHA1>. The <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class takes a password, a salt, and an iteration count, and then generates keys through calls to the <xref:System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes%2A> method. Repeated calls to this method will not generate the same key; instead, appending two calls of the <xref:System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes%2A> method with a `cb` parameter value of `20` is the equivalent of calling the <xref:System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes%2A> method once with a `cb` parameter value of `40`.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes%2A> method to get the key for an instance of <xref:System.Security.Cryptography.Rfc2898DeriveBytes>. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class.  
+  
+ [!code-cpp[rfc28981#2](~/samples/snippets/cpp/VS_Snippets_CLR/rfc28981/CPP/rfc28981.cpp#2)]
+ [!code-csharp[rfc28981#2](~/samples/snippets/csharp/VS_Snippets_CLR/rfc28981/CS/rfc28981.cs#2)]
+ [!code-vb[rfc28981#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/rfc28981/vb/rfc28981.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="cb " />is out of range. This parameter requires a non-negative number.</exception>
       </Docs>
     </Member>
     <Member MemberName="IterationCount">
@@ -329,9 +508,26 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the number of iterations for the operation.</summary>
+        <value>The number of iterations for the operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Iteration count is the number of times an operation is performed. For this method, the count should be greater than zero. The minimum recommended number of iterations is 1000.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.Cryptography.Rfc2898DeriveBytes.IterationCount%2A> property to display the number of iterations used in the generation of the key. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class.  
+  
+ [!code-cpp[rfc28981#3](~/samples/snippets/cpp/VS_Snippets_CLR/rfc28981/CPP/rfc28981.cpp#3)]
+ [!code-csharp[rfc28981#3](~/samples/snippets/csharp/VS_Snippets_CLR/rfc28981/CS/rfc28981.cs#3)]
+ [!code-vb[rfc28981#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/rfc28981/vb/rfc28981.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The number of iterations is less than 1.</exception>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -359,8 +555,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Resets the state of the operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is automatically called if the salt or iteration count is modified.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Reset%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.Rfc2898DeriveBytes> class.  
+  
+ [!code-cpp[rfc28981#5](~/samples/snippets/cpp/VS_Snippets_CLR/rfc28981/CPP/rfc28981.cpp#5)]
+ [!code-csharp[rfc28981#5](~/samples/snippets/csharp/VS_Snippets_CLR/rfc28981/CS/rfc28981.cs#5)]
+ [!code-vb[rfc28981#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/rfc28981/vb/rfc28981.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Salt">
@@ -387,9 +599,18 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the key salt value for the operation.</summary>
+        <value>The key salt value for the operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Salt, a random set of bytes, is used to make unauthorized decrypting of a message more difficult. A dictionary attack is an attack in which the attacker attempts to decrypt an encrypted message by comparing the encrypted value with previously computed encrypted values for the most likely keys. This attack is made much more difficult by the introduction of salt, or random bytes, at the end of the password before the key derivation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified salt size is smaller than 8 bytes.</exception>
+        <exception cref="T:System.ArgumentNullException">The salt is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

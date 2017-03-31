@@ -11,8 +11,28 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods used to render a check box control with or without visual styles. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.CheckBoxRenderer> class provides a set of `static` methods that can be used to render a check box control. Rendering a control refers to drawing the user interface of a control. To draw a check box, use one of the <xref:System.Windows.Forms.CheckBoxRenderer.DrawCheckBox%2A> methods. These methods provide a variety of options, such as drawing text or an image with the check box.  
+  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, <xref:System.Windows.Forms.CheckBoxRenderer.DrawCheckBox%2A> will draw the check box with the current visual style. Otherwise, <xref:System.Windows.Forms.CheckBoxRenderer.DrawCheckBox%2A> will draw the check box with the classic Windows style. This is useful if you are drawing a custom control that should automatically match the current visual style setting of the operating system.  
+  
+ This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Button.CheckBox?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](../Topic/Rendering%20Controls%20with%20Visual%20Styles.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to write a custom control that uses the <xref:System.Windows.Forms.CheckBoxRenderer.DrawCheckBox%2A> method to draw a check box that responds to mouse clicks.  
+  
+ [!code-cpp[System.Windows.Forms.CheckBoxRenderer#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.CheckBoxRenderer/cpp/form1.cpp#0)]
+ [!code-csharp[System.Windows.Forms.CheckBoxRenderer#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CheckBoxRenderer/CS/form1.cs#0)]
+ [!code-vb[System.Windows.Forms.CheckBoxRenderer#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CheckBoxRenderer/VB/form1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DrawCheckBox">
@@ -33,11 +53,18 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.CheckBoxState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="glyphLocation">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the check box.</param>
+        <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the check box glyph at.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.CheckBoxState" /> values that specifies the visual state of the check box.</param>
+        <summary>Draws a check box control in the specified state and location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the check box with the current visual style. Otherwise, it will draw the check box with the classic Windows style.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawCheckBox">
@@ -62,15 +89,23 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.CheckBoxState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="glyphLocation">To be added.</param>
-        <param name="textBounds">To be added.</param>
-        <param name="checkBoxText">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="focused">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the check box.</param>
+        <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the check box glyph at.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>checkBoxText</c> in.</param>
+        <param name="checkBoxText">The <see cref="T:System.String" /> to draw with the check box.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>checkBoxText</c>.</param>
+        <param name="focused">
+          <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.CheckBoxState" /> values that specifies the visual state of the check box.</param>
+        <summary>Draws a check box control in the specified state and location, with the specified text, and with an optional focus rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the check box with the current visual style. Otherwise, it will draw the check box with the classic Windows style.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawCheckBox">
@@ -96,16 +131,33 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.CheckBoxState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="glyphLocation">To be added.</param>
-        <param name="textBounds">To be added.</param>
-        <param name="checkBoxText">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="flags">To be added.</param>
-        <param name="focused">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the check box.</param>
+        <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the check box glyph at.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>checkBoxText</c> in.</param>
+        <param name="checkBoxText">The <see cref="T:System.String" /> to draw with the check box.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>checkBoxText</c>.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
+        <param name="focused">
+          <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.CheckBoxState" /> values that specifies the visual state of the check box.</param>
+        <summary>Draws a check box control in the specified state and location, with the specified text and text formatting, and with an optional focus rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the check box with the current visual style. Otherwise, it will draw the check box with the classic Windows style.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.CheckBoxRenderer.DrawCheckBox%28System.Drawing.Graphics%2CSystem.Drawing.Point%2CSystem.Drawing.Rectangle%2CSystem.String%2CSystem.Drawing.Font%2CSystem.Windows.Forms.TextFormatFlags%2CSystem.Boolean%2CSystem.Windows.Forms.VisualStyles.CheckBoxState%29> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a check box in the state determined by the location of the mouse pointer. This code example is part of a larger example provided for the <xref:System.Windows.Forms.CheckBoxRenderer> class.  
+  
+ [!code-cpp[System.Windows.Forms.CheckBoxRenderer#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.CheckBoxRenderer/cpp/form1.cpp#4)]
+ [!code-csharp[System.Windows.Forms.CheckBoxRenderer#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CheckBoxRenderer/CS/form1.cs#4)]
+ [!code-vb[System.Windows.Forms.CheckBoxRenderer#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CheckBoxRenderer/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawCheckBox">
@@ -132,17 +184,25 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.CheckBoxState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="glyphLocation">To be added.</param>
-        <param name="textBounds">To be added.</param>
-        <param name="checkBoxText">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="image">To be added.</param>
-        <param name="imageBounds">To be added.</param>
-        <param name="focused">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the check box.</param>
+        <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the check box glyph at.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>checkBoxText</c> in.</param>
+        <param name="checkBoxText">The <see cref="T:System.String" /> to draw with the check box.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>checkBoxText</c>.</param>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> to draw with the check box.</param>
+        <param name="imageBounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of <c>image</c>.</param>
+        <param name="focused">
+          <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.CheckBoxState" /> values that specifies the visual state of the check box.</param>
+        <summary>Draws a check box control in the specified state and location, with the specified text and image, and with an optional focus rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the check box with the current visual style. Otherwise, it will draw the check box with the classic Windows style.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawCheckBox">
@@ -170,18 +230,26 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.CheckBoxState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="glyphLocation">To be added.</param>
-        <param name="textBounds">To be added.</param>
-        <param name="checkBoxText">To be added.</param>
-        <param name="font">To be added.</param>
-        <param name="flags">To be added.</param>
-        <param name="image">To be added.</param>
-        <param name="imageBounds">To be added.</param>
-        <param name="focused">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the check box.</param>
+        <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the check box glyph at.</param>
+        <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> to draw <c>checkBoxText</c> in.</param>
+        <param name="checkBoxText">The <see cref="T:System.String" /> to draw with the check box.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <c>checkBoxText</c>.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> to draw with the check box.</param>
+        <param name="imageBounds">The <see cref="T:System.Drawing.Rectangle" /> that represents the dimensions of <c>image</c>.</param>
+        <param name="focused">
+          <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.CheckBoxState" /> values that specifies the visual state of the check box.</param>
+        <summary>Draws a check box control in the specified state and location; with the specified text, text formatting, and image; and with an optional focus rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If visual styles are enabled in the operating system and visual styles are applied to the current application, this method will draw the check box with the current visual style. Otherwise, it will draw the check box with the classic Windows style.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawParentBackground">
@@ -202,10 +270,10 @@
         <Parameter Name="childControl" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="childControl">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the background of the parent of <c>childControl</c>.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which to draw the parent control's background. This rectangle should be inside the child control’s bounds.</param>
+        <param name="childControl">The control whose parent's background will be drawn.</param>
+        <summary>Draws the background of a control's parent in the specified area.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,11 +294,27 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.CheckBoxState" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.CheckBoxState" /> values that specifies the visual state of the check box.</param>
+        <summary>Returns the size of the check box glyph.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> that represents the size of the check box glyph.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of the check box glyph is determined by the current visual style of the operating system.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.CheckBoxRenderer.GetGlyphSize%2A> method to determine the bounds of the check box text. This code example is part of a larger example provided for the <xref:System.Windows.Forms.CheckBoxRenderer> class.  
+  
+ [!code-cpp[System.Windows.Forms.CheckBoxRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.CheckBoxRenderer/cpp/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.CheckBoxRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CheckBoxRenderer/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.CheckBoxRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CheckBoxRenderer/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsBackgroundPartiallyTransparent">
@@ -249,9 +333,10 @@
         <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.CheckBoxState" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.CheckBoxState" /> values that specifies the visual state of the check box.</param>
+        <summary>Indicates whether the background of the check box has semitransparent or alpha-blended pieces.</summary>
+        <returns>
+          <see langword="true" /> if the background of the check box has semitransparent or alpha-blended pieces; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,9 +353,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the renderer uses the application state to determine rendering style.</summary>
+        <value>
+          <see langword="true" /> if the application state is used to determine rendering style; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.CheckBoxRenderer.RenderMatchingApplicationState%2A> property is `true`, the <xref:System.Windows.Forms.CheckBoxRenderer> uses the setting from the <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> property to determine the rendering style. If <xref:System.Windows.Forms.CheckBoxRenderer.RenderMatchingApplicationState%2A> is `false`, the renderer will always render using visual styles.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

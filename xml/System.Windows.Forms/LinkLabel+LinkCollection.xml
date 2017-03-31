@@ -15,8 +15,19 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the collection of links within a <see cref="T:System.Windows.Forms.LinkLabel" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.LinkLabel.LinkCollection> class stores the link displayed in the <xref:System.Windows.Forms.LinkLabel> control. Each item in the collection is an instance of the <xref:System.Windows.Forms.LinkLabel.Link> class, which defines the information of the link.  
+  
+ The <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A> method provides the ability to add a single <xref:System.Windows.Forms.LinkLabel.Link> to the collection. To remove links, you can use either the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Remove%2A> method or the <xref:System.Windows.Forms.LinkLabel.LinkCollection.RemoveAt%2A> method if you know where the link is located within the collection. The <xref:System.Windows.Forms.LinkLabel.LinkCollection.Clear%2A> method enables you to remove all links from the collection instead of using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Remove%2A> method to remove a single link at a time.  
+  
+ In addition to methods and properties for adding and removing items, the <xref:System.Windows.Forms.LinkLabel.LinkCollection> also provides methods to find links within the collection. The <xref:System.Windows.Forms.LinkLabel.LinkCollection.Contains%2A> method enables you to determine whether a <xref:System.Windows.Forms.LinkLabel.Link> is a member of the collection. Once you know that the link is located within the collection, you can use the <xref:System.Windows.Forms.LinkLabel.LinkCollection.IndexOf%2A> method to determine where the link is located within the collection.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,9 +43,16 @@
         <Parameter Name="owner" Type="System.Windows.Forms.LinkLabel" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="owner">The <see cref="T:System.Windows.Forms.LinkLabel" /> control that owns the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LinkLabel.LinkCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of this class cannot be created without associating it with a <xref:System.Windows.Forms.LinkLabel> control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -53,9 +71,9 @@
         <Parameter Name="value" Type="System.Windows.Forms.LinkLabel+Link" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A <see cref="T:System.Windows.Forms.LinkLabel.Link" /> representing the link to add.</param>
+        <summary>Adds a link with the specified value to the collection.</summary>
+        <returns>The zero-based index where the link specified by the <paramref name="value" /> parameter is located in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,11 +94,30 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="start">The starting character within the text of the label where the link is created.</param>
+        <param name="length">The number of characters after the starting character to include in the link text.</param>
+        <summary>Adds a link to the collection.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.LinkLabel.Link" /> representing the link that was created and added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.LinkLabel> control can display multiple links within the text of the control. The <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A> method enables you to convert text within the <xref:System.Windows.Forms.LinkLabel> control to a link that can be clicked on by the user to perform tasks similar to a <xref:System.Windows.Forms.Button> control. This method adds the link that is created to the <xref:System.Windows.Forms.LinkLabel.LinkCollection> for the <xref:System.Windows.Forms.LinkLabel>. For example, if you want to set the word "quick" in the label text, "The quick brown fox", you call this method with the `start` parameter set to the value of four (4), and the `length` parameter to five (5). The word "quick" then changes to a link and the link is added to the collection. If you want to associate information with the link, such as the URL to display or a file to open when the user clicks on the link, use the other version of the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A> method.  
+  
+> [!NOTE]
+>  Two links cannot share the same text. If you create a link that uses text that is already used by another link, an exception is thrown.  
+  
+   
+  
+## Examples  
+ The following example demonstrates setting the <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A> property using the <xref:System.Windows.Forms.LinkBehavior> enumeration. It also demonstrates setting the <xref:System.Windows.Forms.LinkLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.Text%2A> and <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> properties and adding items to a <xref:System.Windows.Forms.LinkLabel.LinkCollection>. To run this example, paste it in a blank form and call `InitializeLinkLabel` from the form's constructor or `Load` method.  
+  
+ [!code-cpp[System.Windows.Forms.LinkLabelExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabelExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.LinkLabelExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabelExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.LinkLabelExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LinkLabelExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -101,12 +138,31 @@
         <Parameter Name="linkData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="linkData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="start">The starting character within the text of the label where the link is created.</param>
+        <param name="length">The number of characters after the starting character to include in the link text.</param>
+        <param name="linkData">The object containing the information to associate with the link.</param>
+        <summary>Adds a link to the collection with information to associate with the link.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.LinkLabel.Link" /> representing the link that was created and added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.LinkLabel> control can display multiple links within the text of the control. The <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A> method enables you to convert text within the <xref:System.Windows.Forms.LinkLabel> control to a link that can be clicked on by the user to perform tasks similar to a <xref:System.Windows.Forms.Button> control. This method adds the link that is created to the <xref:System.Windows.Forms.LinkLabel.LinkCollection> for the <xref:System.Windows.Forms.LinkLabel>. For example, if you want to set the word "quick" in the label text, "The quick brown fox", you call this method with the `start` parameter set to the value of four (4), and the `length` parameter to five (5). The word "quick" then changes to a link and the link is added to the collection. This version of the Add method enables you to provide additional information that can be associated with the link through the `linkData` parameter. For example, you can pass a <xref:System.String> to the `linkData` parameter that contains a URL to display when the link is clicked. You can then use this information in your handler for the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event of the <xref:System.Windows.Forms.LinkLabel> control to display the URL in Microsoft Internet Explorer.  
+  
+> [!NOTE]
+>  Two links cannot share the same text. If you create a link that uses text that is already used by another link, an exception is thrown.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.LinkLabel> control that displays a link, and displays the Microsoft Web site in the default browser when the link defined in the control's text is clicked. The example defines a method that initializes the <xref:System.Windows.Forms.LinkLabel> control as well as a method that will handle the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event of the control. The event handler of the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event uses the <xref:System.Windows.Forms.LinkLabel.Link.LinkData%2A> property of the <xref:System.Windows.Forms.LinkLabel.Link> class to determine the URL to display in the default browser. This example requires that it is located within a <xref:System.Windows.Forms.Form> class.  
+  
+ [!code-cpp[LinkLabel Overview#1](~/samples/snippets/cpp/VS_Snippets_Winforms/LinkLabel Overview/CPP/linklabelex.cpp#1)]
+ [!code-csharp[LinkLabel Overview#1](~/samples/snippets/csharp/VS_Snippets_Winforms/LinkLabel Overview/CS/linklabelex.cs#1)]
+ [!code-vb[LinkLabel Overview#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/LinkLabel Overview/VB/linklabelex.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -123,8 +179,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears all links from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you remove links from the collection, all information about the removed links is deleted. To remove a single link from the <xref:System.Windows.Forms.LinkLabel>, use the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Remove%2A> or <xref:System.Windows.Forms.LinkLabel.LinkCollection.RemoveAt%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -143,10 +206,18 @@
         <Parameter Name="link" Type="System.Windows.Forms.LinkLabel+Link" />
       </Parameters>
       <Docs>
-        <param name="link">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="link">A <see cref="T:System.Windows.Forms.LinkLabel.Link" /> representing the link to search for in the collection.</param>
+        <summary>Determines whether the specified link is within the collection.</summary>
+        <returns>
+          <see langword="true" /> if the specified link is within the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.LinkLabel.LinkCollection.Contains%2A> method enables you to determine whether a <xref:System.Windows.Forms.LinkLabel.Link> is a member of the collection. Once you know that the link is located within the collection, you can use the <xref:System.Windows.Forms.LinkLabel.LinkCollection.IndexOf%2A> method to determine where the link is located within the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -165,10 +236,18 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The link to search for in the collection.</param>
+        <summary>Returns a value indicating whether the collection contains a link with the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains an item with the specified key; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.LinkLabel.Link.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.LinkLabel.Link> in the <xref:System.Windows.Forms.LinkLabel.LinkCollection>. The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.LinkLabel.LinkCollection.ContainsKey%2A> returns `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -189,9 +268,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of links in the collection.</summary>
+        <value>The number of links in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to determine the number of links in the <xref:System.Windows.Forms.LinkLabel> control. You can then use this value when you are looping through the values of the collection and need to provide a number of iterations to perform the loop.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -208,8 +294,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator to use to iterate through the link collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that represents the link collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,10 +315,26 @@
         <Parameter Name="link" Type="System.Windows.Forms.LinkLabel+Link" />
       </Parameters>
       <Docs>
-        <param name="link">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="link">A <see cref="T:System.Windows.Forms.LinkLabel.Link" /> representing the link to search for in the collection.</param>
+        <summary>Returns the index of the specified link within the collection.</summary>
+        <returns>The zero-based index where the link is located within the collection; otherwise, negative one (-1).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.LinkLabel.LinkCollection.IndexOf%2A> method enables you to determine where a link is located within the collection. To determine if a link is located within the collection before calling this method, use the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Contains%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates setting the <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A> property using the <xref:System.Windows.Forms.LinkBehavior> enumeration. It also demonstrates setting the <xref:System.Windows.Forms.LinkLabel.ActiveLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.Text%2A> and <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> properties and adding and accessing links in a <xref:System.Windows.Forms.LinkLabel.LinkCollection>. To run this example, paste it in a blank form and call `InitializeLinkLabel` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+  
+ [!code-cpp[System.Windows.Forms.LinkLabelExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabelExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.LinkLabelExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabelExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.LinkLabelExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LinkLabelExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -251,10 +353,19 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The key to search the collection for.</param>
+        <summary>Retrieves the zero-based index of the first occurrence of the specified key within the entire collection.</summary>
+        <returns>The zero-based index of the first occurrence of value within the entire collection, if found; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Forms.LinkLabel.LinkCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
+  
+ The <xref:System.Windows.Forms.LinkLabel.Link.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.LinkLabel.Link> in the <xref:System.Windows.Forms.LinkLabel.LinkCollection>. The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.LinkLabel.LinkCollection.IndexOfKey%2A> returns -1.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -270,9 +381,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether this collection is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is always `false` for this collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -291,10 +410,18 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the link in the collection to get.</param>
+        <summary>Gets and sets the link at the specified index within the collection.</summary>
+        <value>An object representing the link located at the specified index within the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to obtain the link stored at a specific location within the collection. To determine the index of a specific item within the collection, use the <xref:System.Windows.Forms.LinkLabel.LinkCollection.IndexOf%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="index" /> is a negative value or greater than the number of items in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -313,10 +440,19 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="key">The name of the link to retrieve from the collection.</param>
+        <summary>Gets a link with the specified key from the collection.</summary>
+        <value>The <see cref="T:System.Windows.Forms.LinkLabel.Link" /> with the specified key within the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.LinkLabel.LinkCollection.Item%2A> returns `null.`  
+  
+ The <xref:System.Windows.Forms.LinkLabel.Link.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.LinkLabel.Link> in the <xref:System.Windows.Forms.LinkLabel.LinkCollection>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LinksAdded">
@@ -332,8 +468,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether links have been added to the <see cref="T:System.Windows.Forms.LinkLabel.LinkCollection" />.</summary>
+        <value>
+          <see langword="true" /> if links have been added to the <see cref="T:System.Windows.Forms.LinkLabel.LinkCollection" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,9 +490,16 @@
         <Parameter Name="value" Type="System.Windows.Forms.LinkLabel+Link" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">A <see cref="T:System.Windows.Forms.LinkLabel.Link" /> that represents the link to remove from the collection.</param>
+        <summary>Removes the specified link from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you remove a link from the collection, the indexes change for subsequent items in the collection. All information about the removed item is deleted. You can use this method to remove a specific link from the collection by specifying the actual item to remove from the collection. To specify the index of the link to remove instead of the link itself, use the <xref:System.Windows.Forms.LinkLabel.LinkCollection.RemoveAt%2A> method. To remove all links from the collection, use the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Clear%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -374,9 +518,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the item to remove from the collection.</param>
+        <summary>Removes a link at a specified location within the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you remove a link from the collection, the indexes change for subsequent items in the collection. All information about the deleted link is lost. You can use this method to remove a specific link from the collection by specifying the index of the link to remove from the collection. To specify the link to remove instead of the index to the link, use the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Remove%2A> method. To remove all links from the collection, use the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Clear%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="index" /> is a negative value or greater than the number of items in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -395,9 +547,16 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The key of the link to remove.</param>
+        <summary>Removes the link with the specified key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.LinkLabel.Link.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.LinkLabel.Link> in the <xref:System.Windows.Forms.LinkLabel.LinkCollection>. The key comparison is not case-sensitive.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -417,10 +576,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dest">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dest">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.LinkLabel.LinkCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -436,9 +602,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.LinkLabel.LinkCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -454,9 +628,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.SyncRoot" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.LinkLabel.LinkCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -475,10 +656,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to add to the <see cref="T:System.Collections.IList" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+        <returns>The position into which the new element was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.LinkLabel.LinkCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -497,10 +685,18 @@
         <Parameter Name="link" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="link">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="link">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Collections.IList" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Contains(System.Object)" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Collections.IList" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.LinkLabel.LinkCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -519,10 +715,17 @@
         <Parameter Name="link" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="link">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="link">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Collections.IList" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
+        <returns>The index of the <paramref name="link" /> parameter, if found in the list; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.LinkLabel.LinkCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -542,10 +745,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The <see cref="T:System.Object" /> to insert into the <see cref="T:System.Collections.IList" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.LinkLabel.LinkCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -561,9 +771,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see .<see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.LinkLabel.LinkCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -582,10 +800,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IList.Item(System.Int32)" />.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.LinkLabel.LinkCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -604,9 +829,16 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Collections.IList" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.LinkLabel.LinkCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

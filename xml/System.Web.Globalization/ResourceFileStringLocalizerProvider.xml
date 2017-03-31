@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A string localizer provider based on the resource file.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Globalization.ResourceFileStringLocalizerProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,11 +58,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="culture">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="culture">The culture.</param>
+        <param name="name">The key for the localized string.</param>
+        <param name="arguments">Parameters to pass to the string localizer.</param>
+        <summary>Gets the localized string.</summary>
+        <returns>The localized string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +79,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the resource file name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

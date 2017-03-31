@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables property entry for <see cref="T:System.Web.UI.ITemplate" /> class properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplatePropertyEntry> class is used during page parsing.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BindableTemplate">
@@ -28,8 +35,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating if the <see cref="T:System.Web.UI.ITemplate" /> property can have data bound to it.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.ITemplate" /> property is bindable; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

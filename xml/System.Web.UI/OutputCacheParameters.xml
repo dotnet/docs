@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Encapsulates the output cache initialization settings parsed from an [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.OutputCacheParameters> class is not used by ASP.NET page or control developers. It provides a data structure used to store cache settings parsed from an [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive by ASP.NET page and control parsers such as <xref:System.Web.UI.PageParser> and <xref:System.Web.UI.TemplateControlParser>. The <xref:System.Web.UI.OutputCacheParameters> object is used with the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=fullName> method to initialize the output cache for a page and its contents at run time.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.OutputCacheParameters" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +50,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an <see cref="T:System.Web.Configuration.OutputCacheProfile" /> name that is associated with the settings of the output cache entry.</summary>
+        <value>An <see cref="T:System.Web.Configuration.OutputCacheProfile" /> name that is associated with the settings of the output cache entry.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The profile identifies a set of cache settings in the `<outputCacheSettings>` configuration that is used as the base settings for the output cache entry.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Duration">
@@ -61,8 +75,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the amount of time that a cache entry is to remain in the output cache.</summary>
+        <value>The amount of time, in seconds, that a cache entry is to remain in the output cache. The default is 0, which indicates an infinite duration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +93,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether output caching is enabled for the current content.</summary>
+        <value>
+          <see langword="true" /> if output caching is enabled for the current content; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +112,8 @@
         <ReturnType>System.Web.UI.OutputCacheLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that determines the location of the cache entry.</summary>
+        <value>One of the <see cref="T:System.Web.UI.OutputCacheLocation" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +130,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that determines whether the HTTP <see langword="Cache-Control: no-store" /> directive is set.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="Cache-Control: no-store" /> directive is set on <see cref="T:System.Web.HttpResponse" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,9 +149,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a set of database and table name pairs that the cache entry depends on.</summary>
+        <value>A string that identifies a set of database and table name pairs that the cache entry depends on. The cache entry is expired when the table's data is updated or changes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.OutputCacheParameters.SqlDependency%2A> string identifies databases and tables according to the name of a SQL Server cache dependency in your configuration (typically added using the `<sqlcachedependency>` configuration elements). If you use SQL Server 2005, you can set the <xref:System.Web.UI.OutputCacheParameters.SqlDependency%2A> property to "CommandNotification", which instructs ASP.NET to create row-level dependencies for all SQL commands issued within the context of the current ASP.NET page.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VaryByContentEncoding">
@@ -151,9 +174,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a comma-delimited set of character sets (content encodings) used to vary the cache entry.</summary>
+        <value>A list of character sets by which to vary the content.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to multiple character sets, the output cache contains a different version of the requested document for each specified set.  
+  
+ <xref:System.Web.UI.OutputCacheParameters.VaryByContentEncoding%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VaryByControl">
@@ -169,8 +201,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a semicolon-delimited set of control identifiers contained within the current page or user control used to vary the current cache entry.</summary>
+        <value>A semicolon-separated list of strings used to vary an entry's output cache. The <see cref="P:System.Web.UI.OutputCacheParameters.VaryByControl" /> property is set to fully qualified control identifiers, where the identifier is a concatenation of control IDs starting from the top-level parent control and delimited with a dollar sign ($) character.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,9 +219,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a list of custom strings that the output cache uses to vary the cache entry.</summary>
+        <value>The list of custom strings.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you specify "browser" for this property, the cache entry will be varied by browser type and major version number. If a custom string is entered, you must override the <xref:System.Web.HttpApplication.GetVaryByCustomString%2A?displayProperty=fullName> method in your application's Global.asax file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VaryByHeader">
@@ -205,9 +244,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a comma-delimited set of header names used to vary the cache entry. The header names identify HTTP headers associated with the request.</summary>
+        <value>A list of headers by which to vary the content.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to multiple headers, the output cache contains a different version of the requested document for each specified header.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VaryByParam">
@@ -223,9 +269,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a semicolon-delimited list of query string or form POST parameters that the output cache uses to vary the cache entry.</summary>
+        <value>The list of query string or form POST parameters.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to multiple parameters, the output cache contains a different version of the requested document for each specified parameter. Possible values include "none", "*", and any valid query string or POST parameter name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

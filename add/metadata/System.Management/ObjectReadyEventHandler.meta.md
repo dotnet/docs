@@ -1,4 +1,4 @@
 ---
 uid: System.Management.ObjectReadyEventHandler
-internalonly: False
+manager: "jillfra"
 ---

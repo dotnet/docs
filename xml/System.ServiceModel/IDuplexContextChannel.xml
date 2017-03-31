@@ -16,8 +16,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the interface a client channel must implement to exchange messages in a duplex session.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A duplex contract requires a session, because a context must be established to correlate the set of messages being sent between the client and the service.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AutomaticInputSessionShutdown">
@@ -34,9 +41,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the input session is shutdown automatically.</summary>
+        <value>
+          <see langword="true" /> if the input session is shutdown automatically; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the remote side initiates shutdown, the channel is automatically closed for the user if <xref:System.ServiceModel.IDuplexContextChannel.AutomaticInputSessionShutdown%2A> is set to `true`. Setting it to `false` instead allow the user to send some final messages to the remote side on its output session before closing the channel.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginCloseOutputSession">
@@ -58,11 +73,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the close operation has to complete before timing out.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the asynchronous operation close completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous close operation.</param>
+        <summary>Begins an asynchronous operation to close an output session on the client that has a specified time out and state object associated with it.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous close operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +95,8 @@
         <ReturnType>System.ServiceModel.InstanceContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the instance context associated with the duplex message exchange.</summary>
+        <value>The <see cref="T:System.ServiceModel.InstanceContext" /> associated with the duplex message exchange.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +117,8 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the close operation has to complete before timing out.</param>
+        <summary>Closes the output session on the client associated with the duplex channel.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +139,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.IDuplexContextChannel.BeginCloseOutputSession(System.TimeSpan,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous operation to close an output session on the client.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

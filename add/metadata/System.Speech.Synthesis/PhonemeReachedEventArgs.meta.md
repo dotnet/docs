@@ -1,29 +1,35 @@
 ---
 uid: System.Speech.Synthesis.PhonemeReachedEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.PhonemeReachedEventArgs.NextPhoneme
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.PhonemeReachedEventArgs.AudioPosition
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.PhonemeReachedEventArgs.Duration
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.PhonemeReachedEventArgs.Emphasis
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.PhonemeReachedEventArgs.Phoneme
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

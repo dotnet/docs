@@ -15,10 +15,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the <see langword="in" /> argument of the activity delegate.</typeparam>
+    <typeparam name="TResult">The type of the <see langword="out" /> argument of the activity delegate.</typeparam>
+    <summary>Defines an activity delegate with one in argument of type <paramref name="T" /> and one <see langword="out" /> argument of type <paramref name="TResult" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.ActivityDelegate> enables activity authors to expose callbacks with specific signatures that users of the activity can provide activity-based handlers for. <xref:System.Activities.ActivityFunc%602> is an <xref:System.Activities.ActivityDelegate> that returns a value. The signature of the <xref:System.Activities.ActivityFunc%602> is specified as generic type arguments.  
+  
+ There are multiple generic versions of this type that take from 1 to 16 in arguments, plus the `out` argument, for the activity that is called. There are also **ActivityAction** types for activity delegates that do not return values.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.ActivityFunc`2" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +63,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +105,8 @@
         <ReturnType>System.Activities.DelegateOutArgument&lt;TResult&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the out argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

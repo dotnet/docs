@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.Build.Tasks.Windows
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

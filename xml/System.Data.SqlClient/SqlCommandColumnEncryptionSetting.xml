@@ -11,8 +11,18 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how data will be sent and received when reading and writing encrypted columns. Depending on your specific query, performance impact may be reduced by bypassing the Always Encrypted driver’s processing when non-encrypted columns are being used. Note that these settings cannot be used to bypass encryption and gain access to plaintext data. For details, see [Always Encrypted (Database Engine)](https://msdn.microsoft.com/library/mt163865.aspx)</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+-   If Always Encrypted is disabled for a query and the query has parameters that need to be encrypted (parameters that correspond to encrypted columns), the query will fail.  
+  
+-   If Always Encrypted is disabled for a query and the query returns results from encrypted columns, the query will return encrypted values. The encrypted values will have the varbinary datatype.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -29,7 +39,7 @@
         <ReturnType>System.Data.SqlClient.SqlCommandColumnEncryptionSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Disables Always Encrypted for the query.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -46,7 +56,7 @@
         <ReturnType>System.Data.SqlClient.SqlCommandColumnEncryptionSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Enables Always Encrypted for the query.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResultSetOnly">
@@ -63,7 +73,7 @@
         <ReturnType>System.Data.SqlClient.SqlCommandColumnEncryptionSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that only the results of the command should be processed by the Always Encrypted routine in the driver. Use this value when the command has no parameters that require encryption.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseConnectionSetting">
@@ -80,7 +90,7 @@
         <ReturnType>System.Data.SqlClient.SqlCommandColumnEncryptionSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the command should default to the Always Encrypted setting in the connection string.</summary>
       </Docs>
     </Member>
   </Members>

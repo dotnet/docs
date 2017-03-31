@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Automation.SelectionItemPattern.SelectionItemPatternInformation
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.SelectionItemPattern.SelectionItemPatternInformation.SelectionContainer
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.SelectionItemPattern.SelectionItemPatternInformation.IsSelected
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

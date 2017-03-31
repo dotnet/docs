@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.PropertyConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PropertyConverter.EnumToString(System.Type,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PropertyConverter.ObjectFromString(System.Type,System.Reflection.MemberInfo,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.PropertyConverter.EnumFromString(System.Type,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Deployment.Application.DownloadApplicationCompletedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.DownloadApplicationCompletedEventArgs.LogFilePath
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

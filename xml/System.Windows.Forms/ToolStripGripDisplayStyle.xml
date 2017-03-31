@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the orientation of the <see cref="T:System.Windows.Forms.ToolStrip" /> move handle (grip).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.ToolStripGripDisplayStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a horizontal orientation for the <see cref="T:System.Windows.Forms.ToolStrip" /> move handle (grip).</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.ToolStripGripDisplayStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a vertical orientation for the <see cref="T:System.Windows.Forms.ToolStrip" /> move handle (grip).</summary>
       </Docs>
     </Member>
   </Members>

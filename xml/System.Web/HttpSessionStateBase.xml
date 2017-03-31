@@ -20,8 +20,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serves as the base class for classes that provides access to session-state values, session-level settings, and lifetime management methods.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The HttpSessionStateBase class is an abstract class that contains the same members as the <xref:System.Web.SessionState.HttpSessionState> class. The HttpSessionStateBase class enables you to create derived classes that are like the <xref:System.Web.SessionState.HttpSessionState> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario you are testing.  
+  
+ The <xref:System.Web.HttpSessionStateWrapper> class derives from the HttpSessionStateBase class. The <xref:System.Web.HttpSessionStateWrapper> class serves as a wrapper for the <xref:System.Web.SessionState.HttpSessionState> class. At run time, you typically use an instance of the <xref:System.Web.HttpSessionStateWrapper> class to call members of the <xref:System.Web.SessionState.HttpSessionState> object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +44,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +62,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When overridden in a derived class, cancels the current session.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -74,10 +84,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the item to add to the session-state collection.</param>
+        <param name="value">The value of the item to add to the session-state collection.</param>
+        <summary>When overridden in a derived class, adds an item to the session-state collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -94,8 +105,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When overridden in a derived class, removes all keys and values from the session-state collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="CodePage">
@@ -111,9 +123,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets or sets the character-set identifier for the current session.</summary>
+        <value>The character-set identifier for the current session.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contents">
@@ -129,9 +142,10 @@
         <ReturnType>System.Web.HttpSessionStateBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a reference to the current session-state object.</summary>
+        <value>The current session-state object.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="CookieMode">
@@ -147,9 +161,10 @@
         <ReturnType>System.Web.HttpCookieMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a value that indicates whether the application is configured for cookieless sessions.</summary>
+        <value>One of the cookie-mode values that indicate whether the application is configured for cookieless sessions.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -169,10 +184,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array to copy session values to.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying starts.</param>
+        <summary>When overridden in a derived class, copies the collection of session-state values to a one-dimensional array, starting at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -188,9 +204,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the number of items in the session-state collection.</summary>
+        <value>The number of items in the collection.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -207,9 +224,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns an enumerator that can be used to read all the session-state variable names in the current session.</summary>
+        <returns>An enumerator that can iterate through the variable names in the session-state collection.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsCookieless">
@@ -225,9 +243,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a value that indicates whether the session ID is embedded in the URL.</summary>
+        <value>
+          <see langword="true" /> if the session ID is embedded in the URL; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsNewSession">
@@ -243,9 +263,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a value that indicates whether the session was created during the current request.</summary>
+        <value>
+          <see langword="true" /> if the session was created during the current request; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -261,9 +283,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a value that indicates whether the session is read-only.</summary>
+        <value>
+          <see langword="true" /> if the session is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -279,9 +303,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a value that indicates whether access to the collection of session-state values is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the collection is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -300,10 +326,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the session value.</param>
+        <summary>When overridden in a derived class, gets or sets a session value by using the specified index.</summary>
+        <value>The session-state value that is stored at the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -322,10 +349,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The key name of the session value.</param>
+        <summary>When overridden in a derived class, gets or sets a session value by using the specified name.</summary>
+        <value>The session-state value that has the specified name, or <see langword="null" /> if the item does not exist.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -341,9 +369,10 @@
         <ReturnType>System.Collections.Specialized.NameObjectCollectionBase+KeysCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a collection of the keys for all values that are stored in the session-state collection.</summary>
+        <value>The session keys.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="LCID">
@@ -359,9 +388,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets or sets the locale identifier (LCID) of the current session.</summary>
+        <value>The LCID (culture) of the current session.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -377,9 +407,10 @@
         <ReturnType>System.Web.SessionState.SessionStateMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the current session-state mode.</summary>
+        <value>The session-state mode.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -398,9 +429,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the item to delete from the session-state collection.</param>
+        <summary>When overridden in a derived class, deletes an item from the session-state collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -417,8 +449,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, removes all keys and values from the session-state collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs the same function as the <xref:System.Web.HttpSessionStateBase.Clear%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -437,9 +477,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the item to remove from the session-state collection.</param>
+        <summary>When overridden in a derived class, deletes the item at the specified index from the session-state collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="SessionID">
@@ -455,9 +496,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the unique identifier for the session.</summary>
+        <value>The unique session identifier.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="StaticObjects">
@@ -473,9 +515,10 @@
         <ReturnType>System.Web.HttpStaticObjectsCollectionBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a collection of objects that are declared by <see langword="object" /> elements that are marked as server controls and scoped to the current session in the application's Global.asax file.</summary>
+        <value>The objects that are declared in the Global.asax file.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -491,9 +534,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets an object that can be used to synchronize access to the collection of session-state values.</summary>
+        <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -509,9 +553,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets or sets the time, in minutes, that can elapse between requests before the session-state provider ends the session.</summary>
+        <value>The time-out period, in minutes.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
   </Members>

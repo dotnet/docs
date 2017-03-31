@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Data.FilterEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.FilterEventArgs.Item
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.FilterEventArgs.Accepted
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,44 +1,53 @@
 ---
 uid: System.Web.ApplicationServices.ProfilePropertyMetadata
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.ProfilePropertyMetadata.AllowAnonymousAccess
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.ProfilePropertyMetadata.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.ProfilePropertyMetadata.TypeName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.ProfilePropertyMetadata.DefaultValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.ProfilePropertyMetadata.ExtensionData
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.ProfilePropertyMetadata.IsReadOnly
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.ProfilePropertyMetadata.PropertyName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ApplicationServices.ProfilePropertyMetadata.SerializeAs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

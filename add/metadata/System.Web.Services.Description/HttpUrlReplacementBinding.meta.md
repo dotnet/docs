@@ -1,9 +1,13 @@
 ---
 uid: System.Web.Services.Description.HttpUrlReplacementBinding
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Description.HttpUrlReplacementBinding.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1.prev
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

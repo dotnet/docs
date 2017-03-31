@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.DataBoundControl.CreatingModelDataSource" /> and <see cref="E:System.Web.UI.WebControls.Repeater.CreatingModelDataSource" /> events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CreatingModelDataSourceEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Web.UI.WebControls.ModelDataSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Web.UI.WebControls.ModelDataSource" /> object.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.ModelDataSource" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

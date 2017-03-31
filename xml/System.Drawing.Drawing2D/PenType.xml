@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of fill a <see cref="T:System.Drawing.Pen" /> object uses to fill lines.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The pen type is determined by the <xref:System.Drawing.Brush> property of the <xref:System.Drawing.Pen> object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="HatchFill">
@@ -27,7 +34,7 @@
         <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a hatch fill.</summary>
       </Docs>
     </Member>
     <Member MemberName="LinearGradient">
@@ -43,7 +50,7 @@
         <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a linear gradient fill.</summary>
       </Docs>
     </Member>
     <Member MemberName="PathGradient">
@@ -59,7 +66,7 @@
         <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a path gradient fill.</summary>
       </Docs>
     </Member>
     <Member MemberName="SolidColor">
@@ -75,7 +82,7 @@
         <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a solid fill.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextureFill">
@@ -91,7 +98,7 @@
         <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a bitmap texture fill.</summary>
       </Docs>
     </Member>
   </Members>

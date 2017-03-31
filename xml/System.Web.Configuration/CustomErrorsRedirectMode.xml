@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies values for how the URL of the original request is handled when a custom error page is displayed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.Configuration.CustomErrorsRedirectMode> values when you set the <xref:System.Web.Configuration.CustomErrorsSection.RedirectMode%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ResponseRedirect">
@@ -27,7 +34,7 @@
         <ReturnType>System.Web.Configuration.CustomErrorsRedirectMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Display the error page and change the URL of the original request.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResponseRewrite">
@@ -43,7 +50,7 @@
         <ReturnType>System.Web.Configuration.CustomErrorsRedirectMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Display the error page without changing the original URL.</summary>
       </Docs>
     </Member>
   </Members>

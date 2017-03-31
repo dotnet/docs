@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Channels.HttpResponseMessageExtensionMethods
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.HttpResponseMessageExtensionMethods.ToMessage(System.Net.Http.HttpResponseMessage)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -27,8 +27,30 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Computes a Hash-based Message Authentication Code (HMAC) by using the <see cref="T:System.Security.Cryptography.MD5" /> hash function.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Cryptography.HMACMD5> is a type of keyed hash algorithm that is constructed from the Message Digest Algorithm 5 (MD5) hash function and used as a Hash-based Message Authentication Code (HMAC). The HMAC process mixes a secret key with the message data, hashes the result with the hash function, mixes that hash value with the secret key again, and then applies the hash function a second time. The output hash is 128 bits in length.  
+  
+ An HMAC can be used to determine whether a message sent over an insecure channel has been tampered with, provided that the sender and receiver share a secret key. The sender computes the hash value for the original data and sends both the original data and hash value as a single message. The receiver recalculates the hash value on the received message and checks that the computed HMAC matches the transmitted HMAC.  
+  
+ Any change to the data or the hash value results in a mismatch, because knowledge of the secret key is required to change the message and reproduce the correct hash value. Therefore, if the original and computed hash values match, the message is authenticated.  
+  
+ MD5 is a cryptographic hash algorithm developed at RSA Laboratories. <xref:System.Security.Cryptography.HMACMD5> accepts keys of any size, and produces a hash sequence that is 128 bits in length.  
+  
+   
+  
+## Examples  
+ The following example shows how to sign a file by using the <xref:System.Security.Cryptography.HMACMD5> object and then how to verify the file.  
+  
+ [!code-cpp[HMACMD5#1](~/samples/snippets/cpp/VS_Snippets_CLR/HMACMD5/CPP/hmacmd5.cpp#1)]
+ [!code-csharp[HMACMD5#1](~/samples/snippets/csharp/VS_Snippets_CLR/HMACMD5/CS/hmacmd5.cs#1)]
+ [!code-vb[HMACMD5#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/HMACMD5/vb/hmacmd5.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,8 +75,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.HMACMD5" /> class by using a randomly generated key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Cryptography.HMACMD5> is a type of keyed hash algorithm that is constructed from the MD5 hash function and used as a Hash-based Message Authentication Code (HMAC). The HMAC process mixes a secret key with the message data, hashes the result with the hash function, mixes that hash value with the secret key again, and then applies the hash function a second time. The output hash is 128 bits in length.  
+  
+ This constructor uses a 64-byte, randomly generated key.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -81,9 +112,24 @@
         <Parameter Name="key" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The secret key for <see cref="T:System.Security.Cryptography.HMACMD5" /> encryption. The key can be any length, but if it is more than 64 bytes long it will be hashed (using SHA-1) to derive a 64-byte key. Therefore, the recommended size of the secret key is 64 bytes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.HMACMD5" /> class by using the specified key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Cryptography.HMACMD5> is a type of keyed hash algorithm that is constructed from the MD5 hash function and used as a Hash-based Message Authentication Code (HMAC). The HMAC process mixes a secret key with the message data, hashes the result with the hash function, mixes that hash value with the secret key again, and then applies the hash function a second time. The output hash is 128 bits in length.  
+  
+ This constructor uses a key you provide to create the <xref:System.Security.Cryptography.HMACMD5> object.  
+  
+   
+  
+## Examples  
+ For an example of how to use this constructor, see the <xref:System.Security.Cryptography.HMACMD5> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">

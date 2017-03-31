@@ -1,1 +1,0 @@
-            UrlSyndicationContent urlContent = new UrlSyndicationContent(new Uri("http://localhost/content"), "text/html");

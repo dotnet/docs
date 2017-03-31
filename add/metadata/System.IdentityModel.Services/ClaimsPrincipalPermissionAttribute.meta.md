@@ -1,24 +1,29 @@
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute.CreatePermission
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute.Resource
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute.Operation
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

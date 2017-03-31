@@ -15,9 +15,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The message header type.</typeparam>
+    <summary>Represents the content of a SOAP header.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A message header contains optional metadata that describe a message, encapsulated by the <xref:System.ServiceModel.Channels.Message> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageHeader`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +57,8 @@
         <Parameter Name="content" Type="T" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="content">The content of the new header.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageHeader`1" /> class with the specified header content.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,11 +79,11 @@
         <Parameter Name="relay" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="content">To be added.</param>
-        <param name="mustUnderstand">To be added.</param>
-        <param name="actor">To be added.</param>
-        <param name="relay">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="content">The content of the new header.</param>
+        <param name="mustUnderstand">A value that indicates whether the header must be understood.</param>
+        <param name="actor">The targeted recipient of the message header.</param>
+        <param name="relay">A value that indicates whether the header should be relayed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageHeader`1" /> class with the specified header content and metadata.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,9 +101,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the targeted recipient of the message header.</summary>
+        <value>The targeted recipient of the message header. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is empty, the header is interpreted as targeted for the ultimate recipient of the message.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -113,8 +127,8 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the content of the header.</summary>
+        <value>The content of the header.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,10 +150,10 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The local name of the header XML element</param>
+        <param name="ns">The namespace URI of the header XML element.</param>
+        <summary>Gets the message header with the specified namespace and local name.</summary>
+        <returns>A message header with the specified namespace and local name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,9 +171,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the header must be understood, as stated in the SOAP 1.1/1.2 specification.</summary>
+        <value>
+          <see langword="true" /> if the header must be understood; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is `true` and the message receiver cannot interpret the message header, the message is not processed and an exception is thrown. If this property is `false`, the receiver can ignore the message header and continue processing.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Relay">
@@ -176,9 +198,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the header should be relayed.</summary>
+        <value>
+          <see langword="true" /> if the header should be relayed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As stated in the SOAP 1.1 spec, this value is always `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

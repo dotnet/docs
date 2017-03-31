@@ -16,9 +16,9 @@
     <ReturnType>System.Boolean</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="fullPath">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
+    <param name="fullPath">The full path to the dependency file about to be written to the compacted TLog</param>
+    <summary>Dependency filter delegate. Used during TLog saves in order for tasks to selectively remove dependencies from the written graph.</summary>
+    <returns>If the file should actually be written to the TLog (true) or not (false)</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

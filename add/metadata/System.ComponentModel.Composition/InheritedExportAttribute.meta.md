@@ -1,24 +1,41 @@
 ---
 uid: System.ComponentModel.Composition.InheritedExportAttribute
-internalonly: False
----
-
----
-uid: System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.String,System.Type)
-internalonly: False
----
-
----
-uid: System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.Type)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.InheritedExportAttribute.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.String,System.Type)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.Type)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.InheritedExportAttribute.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

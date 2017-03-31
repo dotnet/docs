@@ -1,4 +1,4 @@
 ---
 uid: System.Device.Location
-internalonly: False
+manager: "martinek"
 ---

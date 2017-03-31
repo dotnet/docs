@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the scrolling that will occur when the one of the <c>Scroll</c> methods in the <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisScaleView" /> class is called.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ScrollType> enumeration is used with one of the `Scroll` methods to specify the direction and amount of scrolling.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="First">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Data is scrolled to the first displayed view.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeDecrement">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data view is decreased by one large scrolling interval.</summary>
       </Docs>
     </Member>
     <Member MemberName="LargeIncrement">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data view is increased by one large scrolling interval.</summary>
       </Docs>
     </Member>
     <Member MemberName="Last">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Data is scrolled to the last displayed view.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallDecrement">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data view is decreased by one small scrolling interval.</summary>
       </Docs>
     </Member>
     <Member MemberName="SmallIncrement">
@@ -107,7 +114,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data view is increased by one small scrolling interval.</summary>
       </Docs>
     </Member>
   </Members>

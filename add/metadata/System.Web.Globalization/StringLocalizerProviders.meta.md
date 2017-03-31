@@ -1,9 +1,11 @@
 ---
 uid: System.Web.Globalization.StringLocalizerProviders
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Globalization.StringLocalizerProviders.DataAnnotationStringLocalizerProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

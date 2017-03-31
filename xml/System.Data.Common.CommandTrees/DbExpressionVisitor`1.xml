@@ -14,9 +14,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TResultType">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TResultType">The type of the result produced by the visitor.</typeparam>
+    <summary>Defines the basic functionality that should be implemented by visitors that return a result value of a specific type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Common.CommandTrees.DbExpressionVisitor%601> is an abstract class that describes expression traversal.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +57,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbAndExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbAndExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbAndExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +79,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbApplyExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbApplyExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbApplyExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,9 +101,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbArithmeticExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbArithmeticExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbArithmeticExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,9 +123,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCaseExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbCaseExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbCaseExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,9 +145,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCastExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbCastExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbCastExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,9 +167,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbComparisonExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbComparisonExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbComparisonExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,9 +189,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbConstantExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbConstantExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbConstantExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,9 +211,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbCrossJoinExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbCrossJoinExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbCrossJoinExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,9 +233,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbDerefExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbDerefExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbDerefExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,9 +255,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbDistinctExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbDistinctExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbDistinctExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,9 +277,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbElementExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbElementExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbElementExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,9 +299,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbEntityRefExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbEntityRefExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbEntityRefExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,9 +321,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExceptExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbExceptExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbExceptExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,10 +343,17 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, handles any expression of an unrecognized type.</summary>
+        <returns>A result value of a specific type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when an expression of an otherwise unrecognized type is encountered.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Visit">
@@ -358,9 +372,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbFilterExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbFilterExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbFilterExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,9 +394,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbFunctionExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,9 +416,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbGroupByExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbGroupByExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbGroupByExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,9 +438,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIntersectExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbIntersectExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbIntersectExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,9 +460,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsEmptyExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbIsEmptyExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbIsEmptyExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -468,9 +482,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsNullExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbIsNullExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbIsNullExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,9 +504,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbIsOfExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbIsOfExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbIsOfExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,9 +526,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbJoinExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,9 +548,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLambdaExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbLambdaExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern method for <see cref="T:System.Data.Common.CommandTrees.DbLambdaExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -556,9 +570,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLikeExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbLikeExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbLikeExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,9 +592,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbLimitExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbLimitExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbLimitExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -600,9 +614,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNewInstanceExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbNewInstanceExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbNewInstanceExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -622,9 +636,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNotExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbNotExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbNotExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -644,9 +658,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbNullExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbNullExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbNullExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -666,9 +680,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbOfTypeExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbOfTypeExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbOfTypeExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -688,9 +702,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbOrExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbOrExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbOrExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -710,9 +724,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbParameterReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbParameterReferenceExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbParameterReferenceExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -732,9 +746,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbProjectExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbProjectExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbProjectExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -754,9 +768,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbPropertyExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbPropertyExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbPropertyExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -776,9 +790,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbQuantifierExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbQuantifierExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbQuantifierExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -798,9 +812,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRefExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbRefExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbRefExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -820,9 +834,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRefKeyExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbRefKeyExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbRefKeyExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -842,9 +856,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbRelationshipNavigationExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -864,9 +878,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbScanExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbScanExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbScanExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -886,9 +900,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbSkipExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbSkipExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbSkipExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -908,9 +922,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbSortExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbSortExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -930,9 +944,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbTreatExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbTreatExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbTreatExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -952,9 +966,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbUnionAllExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbUnionAllExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbUnionAllExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -974,9 +988,9 @@
         <Parameter Name="expression" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The <see cref="T:System.Data.Common.CommandTrees.DbVariableReferenceExpression" /> that is being visited.</param>
+        <summary>When overridden in a derived class, implements the visitor pattern for <see cref="T:System.Data.Common.CommandTrees.DbVariableReferenceExpression" />.</summary>
+        <returns>A result value of a specific type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

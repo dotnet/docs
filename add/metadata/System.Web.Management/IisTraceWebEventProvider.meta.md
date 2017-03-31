@@ -1,29 +1,35 @@
 ---
 uid: System.Web.Management.IisTraceWebEventProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Management.IisTraceWebEventProvider.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Management.IisTraceWebEventProvider.Flush
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Management.IisTraceWebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Management.IisTraceWebEventProvider.Shutdown
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Management.IisTraceWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

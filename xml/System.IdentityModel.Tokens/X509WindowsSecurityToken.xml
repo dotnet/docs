@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a security token that is based upon an X.509 certificate and that the certificate is mapped to a Windows domain user or local computer user account.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, application developers do not need to use the <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken> class, unless a Web service must gain access to details about a X.509 certificate referenced in an incoming SOAP message or the domain or computer account that the certificate is mapped to. To get the details of the X.509 certificate, access the <xref:System.IdentityModel.Tokens.X509SecurityToken.Certificate%2A> property. To get the user identity, see the <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken.WindowsIdentity%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +38,15 @@
       <Docs>
         <param name="cert">To be added.</param>
         <param name="identity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509WindowsSecurityToken" /> class using the specified X.509 certificate and Windows domain or computer account.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a unique identifier for the <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken> security token and assigns that value to the <xref:System.IdentityModel.Tokens.X509SecurityToken.Id%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -52,8 +66,8 @@
       <Docs>
         <param name="cert">To be added.</param>
         <param name="identity">To be added.</param>
-        <param name="id">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="id">A unique identifier of the security token.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509WindowsSecurityToken" /> class using the specified X.509 certificate, Windows domain or computer account, and unique identifier.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,11 +87,11 @@
         <Parameter Name="id" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="certificate">To be added.</param>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="authenticationType">To be added.</param>
-        <param name="id">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="certificate">A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> that contains the X.509 certificate.</param>
+        <param name="windowsIdentity">Represents the identity of a Windows domain or computer account.</param>
+        <param name="authenticationType">The authentication type for the token.</param>
+        <param name="id">A unique identifier for the security token.</param>
+        <summary>Creates a new instance of <see cref="T:System.IdentityModel.Tokens.X509WindowsSecurityToken" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +108,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the authentication type for the token.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +127,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.IdentityModel.Tokens.X509WindowsSecurityToken" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken.Dispose%2A> method when you are finished using the <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken>. The <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken.Dispose%2A> method leaves the <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken> in an unusable state. After calling the <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken.Dispose%2A> method, you must release all references to the <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken> so the garbage collector can reclaim the memory that the <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken> was occupying.  
+  
+> [!NOTE]
+>  Always call the <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken.Dispose%2A> method before you release your last reference to the <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowsIdentity">
@@ -130,8 +154,8 @@
         <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the identity of a Windows domain or computer account.</summary>
+        <value>A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents the identity of a Windows domain or computer account.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

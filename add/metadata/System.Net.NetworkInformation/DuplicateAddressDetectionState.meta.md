@@ -1,4 +1,5 @@
 ---
 uid: System.Net.NetworkInformation.DuplicateAddressDetectionState
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

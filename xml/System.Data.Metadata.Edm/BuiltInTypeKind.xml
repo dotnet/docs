@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an enumeration that specifies the list of all built-in types in a conceptual model.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.AssociationEndMember" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="AssociationSet">
@@ -43,7 +43,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.AssociationSet" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="AssociationSetEnd">
@@ -59,7 +59,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="AssociationType">
@@ -75,7 +75,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.AssociationType" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="CollectionKind">
@@ -91,7 +91,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.CollectionKind" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="CollectionType">
@@ -107,7 +107,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.CollectionType" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ComplexType">
@@ -123,7 +123,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.ComplexType" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Documentation">
@@ -139,7 +139,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.Documentation" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="EdmFunction">
@@ -155,7 +155,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EdmFunction" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="EdmMember">
@@ -171,7 +171,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EdmMember" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="EdmProperty">
@@ -187,7 +187,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EdmProperty" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="EdmType">
@@ -203,7 +203,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EdmType" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="EntityContainer">
@@ -219,7 +219,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="EntitySet">
@@ -235,7 +235,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EntitySet" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="EntitySetBase">
@@ -251,7 +251,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EntitySetBase" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="EntityType">
@@ -267,7 +267,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EntityType" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="EntityTypeBase">
@@ -283,7 +283,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EntityTypeBase" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnumMember">
@@ -299,7 +299,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.EdmEnumMember" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnumType">
@@ -315,7 +315,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EnumType" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Facet">
@@ -331,7 +331,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.Facet" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="FunctionParameter">
@@ -347,7 +347,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.FunctionParameter" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="GlobalItem">
@@ -363,7 +363,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.GlobalItem" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="MetadataItem">
@@ -379,7 +379,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.MetadataItem" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="MetadataProperty">
@@ -395,7 +395,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.MetadataProperty" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="NavigationProperty">
@@ -411,7 +411,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.NavigationProperty" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="OperationAction">
@@ -427,7 +427,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.OperationAction" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ParameterMode">
@@ -443,7 +443,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.ParameterMode" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrimitiveType">
@@ -459,7 +459,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.PrimitiveType" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrimitiveTypeKind">
@@ -475,7 +475,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.PrimitiveTypeKind" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderManifest">
@@ -491,7 +491,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.ProviderManifest" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReferentialConstraint">
@@ -507,7 +507,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.ReferentialConstraint" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="RefType">
@@ -523,7 +523,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.RefType" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="RelationshipEndMember">
@@ -539,7 +539,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.RelationshipEndMember" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="RelationshipMultiplicity">
@@ -555,7 +555,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="RelationshipSet">
@@ -571,7 +571,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.RelationshipSet" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="RelationshipType">
@@ -587,7 +587,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.RelationshipType" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="RowType">
@@ -603,7 +603,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.RowType" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="SimpleType">
@@ -619,7 +619,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.SimpleType" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="StructuralType">
@@ -635,7 +635,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.StructuralType" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypeUsage">
@@ -651,7 +651,7 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> type.</summary>
       </Docs>
     </Member>
   </Members>

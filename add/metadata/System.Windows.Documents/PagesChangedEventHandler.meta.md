@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Documents.PagesChangedEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

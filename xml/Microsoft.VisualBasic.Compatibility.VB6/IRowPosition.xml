@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an implementation of the OLE DB <see langword="IRowPosition" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ClearRowPosition">
@@ -37,8 +44,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears the row position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRowPosition">
@@ -59,11 +73,18 @@
         <Parameter Name="dbPositionFlags" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="hChapter">To be added.</param>
-        <param name="hRow">To be added.</param>
-        <param name="dbPositionFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="hChapter">A pointer to memory in which to return the chapter associated with the current row. If the rowset is not chaptered, <c>hChapter</c> is set to <see langword="DB_NULL_HCHAPTER" />. If <c>hChapter</c> is a null pointer on input, no chapter value is returned.</param>
+        <param name="hRow">A pointer to memory in which to return the <see langword="hRow" /> of the current row position; or <see langword="DB_NULL_HROW" /> if there is no current row position.</param>
+        <param name="dbPositionFlags">A pointer to memory in which to return additional information about the row position.</param>
+        <summary>Retrieves the current row position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRowset">
@@ -83,10 +104,17 @@
         <Parameter Name="rowset" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="iid">To be added.</param>
-        <param name="rowset">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="iid">The requested IID for the rowset returned in <c>rowset</c>.</param>
+        <param name="rowset">A pointer to memory in which to return the interface pointer of the underlying rowset.</param>
+        <summary>Returns the current underlying <see langword="Rowset" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -105,9 +133,16 @@
         <Parameter Name="rowset" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="rowset">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rowset">Pointer to an interface on the source rowset.</param>
+        <summary>Initializes the row position object by setting the source rowset.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetRowPosition">
@@ -128,11 +163,18 @@
         <Parameter Name="dbPositionFlags" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="hChapter">To be added.</param>
-        <param name="hRow">To be added.</param>
-        <param name="dbPositionFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="hChapter">The chapter associated with the current row, or with <see langword="DB_NULL_HCHAPTER" /> if the rowset is not chaptered.</param>
+        <param name="hRow">The new current row.</param>
+        <param name="dbPositionFlags">A flag indicating additional information about the new row position.</param>
+        <summary>Sets the current row position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

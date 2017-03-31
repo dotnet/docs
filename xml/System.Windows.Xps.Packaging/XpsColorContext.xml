@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the color context for a bitmap image.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has no public constructors. Use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageReader.GetColorContext%2A?displayProperty=fullName> method to get a reference to an object of the class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

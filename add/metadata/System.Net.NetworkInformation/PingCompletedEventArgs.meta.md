@@ -1,9 +1,11 @@
 ---
 uid: System.Net.NetworkInformation.PingCompletedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.PingCompletedEventArgs.Reply
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

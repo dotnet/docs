@@ -1,1 +1,0 @@
-            if ( xmlElement->Equal( localXmlElement ) )

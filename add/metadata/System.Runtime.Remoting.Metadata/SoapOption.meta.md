@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.Remoting.Metadata.SoapOption
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

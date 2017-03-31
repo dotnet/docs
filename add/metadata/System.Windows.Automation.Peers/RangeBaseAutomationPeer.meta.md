@@ -1,49 +1,62 @@
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#LargeChange
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer.#ctor(System.Windows.Controls.Primitives.RangeBase)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#Minimum
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#SmallChange
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#Maximum
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#Value
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#IsReadOnly
-internalonly: False
+ms.author: "jimwalk"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#SetValue(System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

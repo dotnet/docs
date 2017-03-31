@@ -1,1 +1,0 @@
-        string sha1Oid = CryptoConfig.MapNameToOID("SHA1");

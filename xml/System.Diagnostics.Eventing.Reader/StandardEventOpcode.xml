@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the standard opcodes that are attached to events by the event provider. For more information about opcodes, see <see cref="T:System.Diagnostics.Eventing.Reader.EventOpcode" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An event with this opcode is a trace collection start event.</summary>
       </Docs>
     </Member>
     <Member MemberName="DataCollectionStop">
@@ -43,7 +43,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An event with this opcode is a trace collection stop event.</summary>
       </Docs>
     </Member>
     <Member MemberName="Extension">
@@ -59,7 +59,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An event with this opcode is an extension event.</summary>
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -75,7 +75,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An event with this opcode is an informational event.</summary>
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -91,7 +91,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An event with this opcode is published when one activity in an application receives data.</summary>
       </Docs>
     </Member>
     <Member MemberName="Reply">
@@ -107,7 +107,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An event with this opcode is published after an activity in an application replies to an event.</summary>
       </Docs>
     </Member>
     <Member MemberName="Resume">
@@ -123,7 +123,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An event with this opcode is published after an activity in an application resumes from a suspended state. The event should follow an event with the Suspend opcode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -139,7 +139,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An event with this opcode is published when one activity in an application transfers data or system resources to another activity.</summary>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -155,7 +155,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An event with this opcode is published when an application starts a new transaction or activity. This can be embedded into another transaction or activity when multiple events with the Start opcode follow each other without an event with a Stop opcode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -171,7 +171,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An event with this opcode is published when an activity or a transaction in an application ends. The event corresponds to the last unpaired event with a Start opcode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Suspend">
@@ -187,7 +187,7 @@
         <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An event with this opcode is published when an activity in an application is suspended.</summary>
       </Docs>
     </Member>
   </Members>

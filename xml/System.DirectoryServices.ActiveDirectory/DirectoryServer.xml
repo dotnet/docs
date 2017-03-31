@@ -15,8 +15,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> class is an abstract class that represents an Active Directory Domain Services server or AD LDS instance.</summary>
     <remarks>To be added.</remarks>
+    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +49,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Uses the Knowledge Consistency Checker (KCC) to verify and recalculate the replication topology for this server.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -66,7 +68,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all managed and unmanaged resources that are used by the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +88,16 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">Determines if the managed resources should be released. <see langword="true" /> if the managed resources are released; <see langword="false" /> if the managed resources are not released.</param>
+        <summary>Releases all unmanaged resources and, optionally, all managed resources that are used by the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `disposing` parameter affects only the release of the managed resources. The unmanaged resources are always released by this method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -105,7 +114,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Overrides the <see cref="M:System.Object.Finalize" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +132,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves all of the replication neighbors for this object.</summary>
+        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" /> object that contains the replication neighbors for this object.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -142,9 +152,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves a <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the directory server.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the directory server.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationConnectionFailures">
@@ -161,9 +172,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves a collection of the replication connection failures for this directory server.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationFailureCollection" /> object that contains the replication connection failures for this directory server.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationCursors">
@@ -182,10 +194,11 @@
         <Parameter Name="partition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="partition">The distinguished name of the partition for which to retrieve the replication cursor information.</param>
+        <summary>Retrieves the replication cursor information for the specified partition.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection" /> that contains the replication cursor information.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationMetadata">
@@ -204,10 +217,11 @@
         <Parameter Name="objectPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="objectPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objectPath">The path to the object for which to retrieve the replication metadata.</param>
+        <summary>Retrieves the replication metadata for a specific Active Directory Domain Services object.</summary>
+        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata" /> object that contains the replication metadata for the specified object.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationNeighbors">
@@ -226,10 +240,11 @@
         <Parameter Name="partition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="partition">The distinguished name of the partition for which to retrieve the replication.</param>
+        <summary>Retrieves the replication neighbors of this directory server for the specified partition.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" /> object that contains the replication neighbors for this object.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetReplicationOperationInformation">
@@ -246,9 +261,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves the current and pending replication operations for this directory server.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation" /> object that contains the current and pending replication operations.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="InboundConnections">
@@ -264,9 +280,10 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Retrieves the inbound replication connections for this directory server.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" /> object that contains the inbound replication connections for this directory server.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="IPAddress">
@@ -282,9 +299,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Retrieves the IP address of this directory server.</summary>
+        <value>The Internet protocol (IP) address of this directory server in string form.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="MoveToAnotherSite">
@@ -303,9 +321,22 @@
         <Parameter Name="siteName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="siteName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="siteName">The name of the site within the domain to which to move the directory server.</param>
+        <summary>Moves the directory server to another site within the forest or configuration set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the directory server is a domain controller, this method will move the domain controller to a different site in the forest. If the directory server is an AD LDS instance, this method will move the AD LDS instance to a different site in the configuration set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="siteName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -321,9 +352,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the directory server.</summary>
+        <value>The name of the directory server.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="OutboundConnections">
@@ -339,9 +371,10 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the outbound replication connections for this directory server.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection" /> object that contains the outbound replication connections for this directory server.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Partitions">
@@ -357,9 +390,10 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReadOnlyStringCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the partitions on this directory server.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyStringCollection" /> object that contains the distinguished names of the partitions on this directory server.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="SiteName">
@@ -375,9 +409,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the site that this directory server belongs to.</summary>
+        <value>The name of the site that this directory server belongs to.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SyncFromAllServersCallback">
@@ -393,9 +428,10 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncUpdateCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the synchronization delegate for this directory server.</summary>
+        <value>The delegate that this directory server will use for synchronization notifications.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SyncReplicaFromAllServers">
@@ -415,10 +451,11 @@
         <Parameter Name="options" Type="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="partition">The distinguished name of the partition to synchronize.</param>
+        <param name="options">A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions" /> members.</param>
+        <summary>Causes this directory server to synchronize the specified partition with all other directory servers in the same site that hosts the partition.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SyncReplicaFromServer">
@@ -438,10 +475,11 @@
         <Parameter Name="sourceServer" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <param name="sourceServer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="partition">The distinguished name of the partition to synchronize.</param>
+        <param name="sourceServer">The name of the server to synchronize the partition with.</param>
+        <summary>Causes this directory server to synchronize the specified partition with the specified directory server.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -458,8 +496,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves the name of the directory server.</summary>
+        <returns>The name of the server.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -479,9 +517,10 @@
         <Parameter Name="partition" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="partition">The distinguished name of the partition to synchronize.</param>
+        <summary>Begins a synchronization of the specified partition.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
   </Members>

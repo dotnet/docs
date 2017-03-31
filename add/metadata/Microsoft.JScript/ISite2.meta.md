@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.ISite2
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ISite2.GetParentChain(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

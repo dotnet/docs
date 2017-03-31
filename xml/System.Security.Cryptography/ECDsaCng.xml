@@ -20,8 +20,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a Cryptography Next Generation (CNG) implementation of the Elliptic Curve Digital Signature Algorithm (ECDSA).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class derives from the <xref:System.Security.Cryptography.ECDsa> abstract base class.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.Cryptography.ECDsaCng> class to sign a message and how to use the signature to verify that the message has not been altered.  
+  
+ [!code-csharp[ECDsaCng#1](~/samples/snippets/csharp/VS_Snippets_CLR/ecdsacng/cs/program.cs#1)]
+ [!code-vb[ECDsaCng#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ecdsacng/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,8 +59,16 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsaCng" /> class with a random key pair.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The random key pair has a public key length of 521 bits.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) classes are not supported on this system.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,9 +93,19 @@
         <Parameter Name="keySize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="keySize">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="keySize">The size of the key. Valid key sizes are 256, 384, and 521 bits.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsaCng" /> class with a random key pair, using the specified key size.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The random key pair will have the public key length defined by the `keySize` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) classes are not supported on this system.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="keySize" /> specifies an invalid length.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,9 +135,14 @@
         <Parameter Name="key" Type="System.Security.Cryptography.CngKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key that will be used as input to the cryptographic operations performed by the current object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsaCng" /> class by using the specified <see cref="T:System.Security.Cryptography.CngKey" /> object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="key" /> does not specify an Elliptic Curve Digital Signature Algorithm (ECDSA) group.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) classes are not supported on this system.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -129,9 +167,18 @@
         <Parameter Name="curve" Type="System.Security.Cryptography.ECCurve" />
       </Parameters>
       <Docs>
-        <param name="curve">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="curve">The curve used to generate the public/private key pair.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDsaCng" /> class whose public/private key pair is generated over the specified curve.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `curve` must validate (that is, it must return `true`) when passed to the <xref:System.Security.Cryptography.ECCurve.Validate%2A?displayProperty=fullName> method and must be either a named or explicit prime.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="curve" /> does not validate.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -192,10 +239,13 @@
         <Parameter Name="includePrivateParameters" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includePrivateParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+        <summary>Exports the key and explicit curve parameters used by the Elliptic curve cryptography (ECC) object into an <see cref="T:System.Security.Cryptography.ECParameters" /> object.</summary>
+        <returns>The key and explicit curve parameters used by the ECC object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while obtaining the curve values.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Explicit export is not supported by this platform. Windows 10 or higher is required.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportParameters">
@@ -227,10 +277,12 @@
         <Parameter Name="includePrivateParameters" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includePrivateParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+        <summary>Exports the key used by the Elliptic curve cryptography (ECC) object into an <see cref="T:System.Security.Cryptography.ECParameters" /> object. If the key was created as a named curve, the <see cref="F:System.Security.Cryptography.ECParameters.Curve" /> field contains named curve parameters; otherwise, it contains explicit parameters.</summary>
+        <returns>The key and named curve parameters used by the ECC object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while obtaining the curve values.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromXmlString">
@@ -249,9 +301,17 @@
         <Parameter Name="xmlString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xmlString">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="xmlString">The XML-based key information to be deserialized.</param>
+        <summary>This method is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To deserialize an XML key, use the <xref:System.Security.Cryptography.ECDsaCng.FromXmlString%28System.String%2CSystem.Security.Cryptography.ECKeyXmlFormat%29> overload instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">This method was not overridden for this instance.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromXmlString">
@@ -271,10 +331,15 @@
         <Parameter Name="format" Type="System.Security.Cryptography.ECKeyXmlFormat" />
       </Parameters>
       <Docs>
-        <param name="xml">To be added.</param>
-        <param name="format">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xml">The XML-based key information to be deserialized.</param>
+        <param name="format">One of the enumeration values that specifies the format of the XML string. The only currently accepted format is <see cref="F:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />.</param>
+        <summary>Deserializes the key information from an XML string by using the specified format.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xml" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="format" /> specifies an invalid format. The only accepted value is <see cref="F:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
       </Docs>
     </Member>
     <Member MemberName="GenerateKey">
@@ -306,9 +371,11 @@
         <Parameter Name="curve" Type="System.Security.Cryptography.ECCurve" />
       </Parameters>
       <Docs>
-        <param name="curve">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="curve">The curve to use to generate the key.</param>
+        <summary>Generates a key to use for the ECDsaCng algorithm.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="curve" /> does not validate.</exception>
       </Docs>
     </Member>
     <Member MemberName="HashAlgorithm">
@@ -324,9 +391,23 @@
         <ReturnType>System.Security.Cryptography.CngAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the hash algorithm to use when signing and verifying data.</summary>
+        <value>An object that specifies the hash algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property accepts the following algorithms: <xref:System.Security.Cryptography.CngAlgorithm.MD5%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha1%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha256%2A>, <xref:System.Security.Cryptography.CngAlgorithm.Sha384%2A>, and <xref:System.Security.Cryptography.CngAlgorithm.Sha512%2A>.  
+  
+ Other custom hash algorithms may also be used.  
+  
+ The default algorithm is <xref:System.Security.Cryptography.CngAlgorithm.Sha256%2A>.  
+  
+ This property is not used if you are signing or verifying data that is already hashed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HashData">
@@ -426,9 +507,22 @@
         <Parameter Name="parameters" Type="System.Security.Cryptography.ECParameters" />
       </Parameters>
       <Docs>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="parameters">The curve parameters.</param>
+        <summary>Replaces the existing key that the current instance is working with by creating a new <see cref="T:System.Security.Cryptography.CngKey" /> for the parameters structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `parameters` contains only <xref:System.Security.Cryptography.ECParameters>, only a public key is imported. If `parameters` also contains <xref:System.Security.Cryptography.ECParameters>, a full key pair is imported. The <xref:System.Security.Cryptography.ECParameters> field specifies the type of the curve to import.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="parameters" /> does not contain valid values.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="parameters" /> references a curve that cannot be imported.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">
+          <paramref name="parameters" /> references a curve that is not supported by this platform.</exception>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -453,8 +547,8 @@
         <ReturnType>System.Security.Cryptography.CngKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the key to use when signing and verifying data.</summary>
+        <value>An object that specifies the key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,10 +612,23 @@
         <Parameter Name="data" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="data">The message data to be signed.</param>
+        <summary>Generates a signature for the specified data.</summary>
+        <returns>A digital signature for the specified data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method generates a signature for the specified data by hashing the input data using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property, and then signing the result.  
+  
+ The <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName> flag is required if the Cryptography Next Generation (CNG) key is not randomly generated by the <xref:System.Security.Cryptography.ECDsaCng> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The key information that is associated with the instance does not have a private key.</exception>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermission">for permission to sign data. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Sign" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SignData">
@@ -545,10 +652,23 @@
         <Parameter Name="data" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="data">The data stream to be signed.</param>
+        <summary>Generates a signature for the specified data stream, reading to the end of the stream.</summary>
+        <returns>A digital signature for the specified data stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method generates a signature for the specified data stream by hashing the input data using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property, and then signing the result.  
+  
+ The <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName> flag is required if the Cryptography Next Generation (CNG) key is not randomly generated by the <xref:System.Security.Cryptography.ECDsaCng> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The key information that is associated with the instance does not have a private key.</exception>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermission">for permission to sign data. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Sign" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SignData">
@@ -574,12 +694,27 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="data">The message data to be signed.</param>
+        <param name="offset">The location in the string at which to start signing.</param>
+        <param name="count">The length of the string, in characters, following <c>offset</c> that will be signed.</param>
+        <summary>Generates a digital signature for the specified length of data, beginning at the specified offset.</summary>
+        <returns>A digital signature for the specified length of data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method generates a signature for the specified data by hashing the input data using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property, and then signing the result  
+  
+ The <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName> flag is required if the Cryptography Next Generation (CNG) key is not randomly generated by the <xref:System.Security.Cryptography.ECDsaCng> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> or <paramref name="offset" /> caused reading outside the bounds of the data string.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The key information that is associated with the instance does not have a private key.</exception>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermission">for permission to sign data. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Sign" /></permission>
       </Docs>
     </Member>
     <Member MemberName="SignHash">
@@ -607,10 +742,21 @@
         <Parameter Name="hash" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="hash">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="hash">The hash value of the data to be signed.</param>
+        <summary>Generates a signature for the specified hash value.</summary>
+        <returns>A digital signature for the specified hash value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName> flag is required if the Cryptography Next Generation (CNG) key is not randomly generated by the <xref:System.Security.Cryptography.ECDsaCng> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="hash" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The key information that is associated with the instance does not have a private key.</exception>
+        <permission cref="T:System.Security.Permissions.KeyContainerPermission">for permission to sign data. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Sign" /></permission>
       </Docs>
     </Member>
     <Member MemberName="ToXmlString">
@@ -629,10 +775,19 @@
         <Parameter Name="includePrivateParameters" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includePrivateParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+        <summary>This method is not implemented.</summary>
+        <returns>Not applicable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To convert the current key to an XML representation, use the <xref:System.Security.Cryptography.ECDsaCng.ToXmlString%28System.Security.Cryptography.ECKeyXmlFormat%29> overload instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">This method is not implemented.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToXmlString">
@@ -651,10 +806,13 @@
         <Parameter Name="format" Type="System.Security.Cryptography.ECKeyXmlFormat" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">One of the enumeration values that specifies the format of the XML string. The only currently accepted format is <see cref="F:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />.</param>
+        <summary>Serializes the key information to an XML string by using the specified format.</summary>
+        <returns>A string object that contains the key information, serialized to an XML string according to the requested format.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="format" /> specifies an invalid format. The only accepted value is <see cref="F:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
       </Docs>
     </Member>
     <Member MemberName="VerifyData">
@@ -674,11 +832,21 @@
         <Parameter Name="signature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <param name="signature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="data">The data that was signed.</param>
+        <param name="signature">The signature to be verified.</param>
+        <summary>Verifies the digital signature of the specified data.</summary>
+        <returns>
+          <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method generates a signature for the given data by hashing the input data using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property, and then signing the result.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> or <paramref name="signature" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="VerifyData">
@@ -703,11 +871,21 @@
         <Parameter Name="signature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <param name="signature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="data">The data stream that was signed.</param>
+        <param name="signature">The signature to be verified.</param>
+        <summary>Verifies the digital signature of the specified data stream, reading to the end of the stream.</summary>
+        <returns>
+          <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method hashes the input data by using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property before verification.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> or <paramref name="signature" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="VerifyData">
@@ -734,13 +912,29 @@
         <Parameter Name="signature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="signature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="data">The data that was signed.</param>
+        <param name="offset">The location in the data at which the signed data begins.</param>
+        <param name="count">The length of the data, in characters, following <c>offset</c> that will be signed.</param>
+        <param name="signature">The signature to be verified.</param>
+        <summary>Verifies a signature for the specified length of data, beginning at the specified offset.</summary>
+        <returns>
+          <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method hashes the input data by using the <xref:System.Security.Cryptography.ECDsaCng.HashAlgorithm%2A> property before verification.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="count" /> is less then zero.  
+  
+ -or-  
+  
+ <paramref name="offset" /> or <paramref name="count" /> is larger than the length of the byte array passed in the <paramref name="data" /> parameter.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> or <paramref name="signature" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="VerifyHash">
@@ -769,11 +963,14 @@
         <Parameter Name="signature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="hash">To be added.</param>
-        <param name="signature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hash">The hash value of the data to be verified.</param>
+        <param name="signature">The digital signature of the data to be verified against the hash value.</param>
+        <summary>Verifies the specified digital signature against a specified hash value.</summary>
+        <returns>
+          <see langword="true" /> if the signature is valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="hash" /> or <paramref name="signature" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

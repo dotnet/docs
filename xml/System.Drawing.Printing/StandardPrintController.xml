@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a print controller that sends information to a printer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Printing.PrintDocument> uses this class.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.StandardPrintController" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +56,23 @@
         <Parameter Name="e" Type="System.Drawing.Printing.PrintPageEventArgs" />
       </Parameters>
       <Docs>
-        <param name="document">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document being printed.</param>
+        <param name="e">A <see cref="T:System.Drawing.Printing.PrintPageEventArgs" /> that contains data about how to print a page in the document.</param>
+        <summary>Completes the control sequence that determines when and how to print a page of a document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. If an exception is thrown inside a <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of a <xref:System.Drawing.Printing.PrintDocument>, <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> is not called.  
+  
+ <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> method deallocates the object.  
+  
+ When <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> is called from a printing context of a <xref:System.Windows.Forms.PrintDialog> a <xref:System.Drawing.Printing.PrintingPermission> of <xref:System.Drawing.Printing.PrintingPermissionLevel> is required. Printing to the default printer requires a <xref:System.Drawing.Printing.PrintingPermission> of <xref:System.Drawing.Printing.PrintingPermissionLevel>. All other calls this method requires a <xref:System.Drawing.Printing.PrintingPermission> of <xref:System.Drawing.Printing.PrintingPermissionLevel>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">The native Win32 Application Programming Interface (API) could not finish writing to a page.</exception>
+        <permission cref="T:System.Drawing.Printing.PrintingPermission">for controlling access to printers. Related enumeration: <see cref="T:System.Drawing.Printing.PrintingPermissionLevel" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="OnEndPrint">
@@ -70,10 +92,25 @@
         <Parameter Name="e" Type="System.Drawing.Printing.PrintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="document">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document being printed.</param>
+        <param name="e">A <see cref="T:System.Drawing.Printing.PrintEventArgs" /> that contains data about how to print the document.</param>
+        <summary>Completes the control sequence that determines when and how to print a document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> is called immediately after <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event. Even if an uncaught exception was thrown during the printing process, <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> is called.  
+  
+ <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> method deallocates the object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">The native Win32 Application Programming Interface (API) could not complete the print job.  
+  
+ -or-  
+  
+ The native Win32 API could not delete the specified device context (DC).</exception>
+        <permission cref="T:System.Drawing.Printing.PrintingPermission">for controlling access to printers. Related enumeration: <see cref="T:System.Drawing.Printing.PrintingPermissionLevel" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="OnStartPage">
@@ -93,11 +130,26 @@
         <Parameter Name="e" Type="System.Drawing.Printing.PrintPageEventArgs" />
       </Parameters>
       <Docs>
-        <param name="document">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document being printed.</param>
+        <param name="e">A <see cref="T:System.Drawing.Printing.PrintPageEventArgs" /> that contains data about how to print a page in the document. Initially, the <see cref="P:System.Drawing.Printing.PrintPageEventArgs.Graphics" /> property of this parameter will be <see langword="null" />. The value returned from the <see cref="M:System.Drawing.Printing.StandardPrintController.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" /> method will be used to set this property.</param>
+        <summary>Begins the control sequence that determines when and how to print a page in a document.</summary>
+        <returns>A <see cref="T:System.Drawing.Graphics" /> object that represents a page from a <see cref="T:System.Drawing.Printing.PrintDocument" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> is called immediately before <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
+  
+ <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object used in printing. After <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> method deallocates the object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">The native Win32 Application Programming Interface (API) could not prepare the printer driver to accept data.  
+  
+ -or-  
+  
+ The native Win32 API could not update the specified printer or plotter device context (DC) using the specified information.</exception>
+        <permission cref="T:System.Drawing.Printing.PrintingPermission">for controlling access to printers. Related enumeration: <see cref="T:System.Drawing.Printing.PrintingPermissionLevel" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="OnStartPrint">
@@ -117,10 +169,24 @@
         <Parameter Name="e" Type="System.Drawing.Printing.PrintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="document">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document being printed.</param>
+        <param name="e">A <see cref="T:System.Drawing.Printing.PrintEventArgs" /> that contains data about how to print the document.</param>
+        <summary>Begins the control sequence that determines when and how to print a document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called immediately after <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> event.  
+  
+ <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object used in printing. After <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.StandardPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Drawing.Printing.StandardPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Drawing.Printing.StandardPrintController.OnEndPrint%2A> method deallocates the object.  
+  
+ <xref:System.Drawing.Printing.StandardPrintController.OnStartPrint%2A> verifies that the printer settings are valid.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer settings are not valid.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">The native Win32 Application Programming Interface (API) could not start a print job.</exception>
+        <permission cref="T:System.Drawing.Printing.PrintingPermission">for controlling access to printers. Related enumeration: <see cref="T:System.Drawing.Printing.PrintingPermissionLevel" /></permission>
       </Docs>
     </Member>
   </Members>

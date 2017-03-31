@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an organization.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.Organization" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Metadata.Organization.DisplayNames%2A>, <xref:System.IdentityModel.Metadata.Organization.Names%2A>, and <xref:System.IdentityModel.Metadata.Organization.Urls%2A> properties in the new instance are each initialized to an empty collection of the appropriate type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -45,11 +52,12 @@
         <Parameter Name="urls" Type="System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedUri&gt;" />
       </Parameters>
       <Docs>
-        <param name="names">To be added.</param>
-        <param name="displayNames">To be added.</param>
-        <param name="urls">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="names">A collection of <see cref="T:System.IdentityModel.Metadata.LocalizedName" /> that contains the names for this instance.</param>
+        <param name="displayNames">A collection of <see cref="T:System.IdentityModel.Metadata.LocalizedName" /> that contains the display names for this instance.</param>
+        <param name="urls">A collection of <see cref="T:System.IdentityModel.Metadata.LocalizedUri" /> that contains the URLs for this instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.Organization" /> class that has the specified collection of names, display names, and URIs.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If any of the input parameters is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="DisplayNames">
@@ -65,8 +73,10 @@
         <ReturnType>System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of display names associated with the organization.  
+  
+ This is a required element.</summary>
+        <value>The collection of display names.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +93,10 @@
         <ReturnType>System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of names associated with the organization.  
+  
+ This is a required element.</summary>
+        <value>The collection of names.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +113,10 @@
         <ReturnType>System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedUri&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of URLs associated with the organization.  
+  
+ This is required element.</summary>
+        <value>The collection of URL entries.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

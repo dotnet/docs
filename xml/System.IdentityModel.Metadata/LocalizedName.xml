@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a localized name.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.LocalizedName" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Metadata.LocalizedName.Name%2A> property is initialized to `null` in the new instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -44,9 +51,9 @@
         <Parameter Name="language" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="language">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name for this instance. Initializes the <see cref="P:System.IdentityModel.Metadata.LocalizedName.Name" /> property.</param>
+        <param name="language">The <see cref="T:System.Globalization.CultureInfo" /> that defines the language for this instance. Initializes the <see cref="P:System.IdentityModel.Metadata.LocalizedEntry.Language" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.LocalizedName" /> class that has the specified name and culture (language).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +70,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name.</summary>
+        <value>The name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

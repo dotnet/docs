@@ -1,9 +1,13 @@
 ---
 uid: System.Collections.IHashCodeProvider
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.IHashCodeProvider.GetHashCode(System.Object)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

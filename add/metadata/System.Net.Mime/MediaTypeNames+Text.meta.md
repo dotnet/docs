@@ -1,24 +1,29 @@
 ---
 uid: System.Net.Mime.MediaTypeNames.Text
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.MediaTypeNames.Text.Xml
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.MediaTypeNames.Text.Html
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.MediaTypeNames.Text.RichText
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.MediaTypeNames.Text.Plain
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

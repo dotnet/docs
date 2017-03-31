@@ -8,8 +8,22 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the basic functionality of an easing function.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface allows you to create your own easing functions by taking normalized time (a value from 0 through 1) and returning your desired value.  
+  
+ This interface represents a transformation of normalized time (progress). Animations use it to transform their progress. Classes that implement this interface can control the pace at which an animation is performed.  
+  
+ Derive from the <xref:System.Windows.Media.Animation.EasingFunctionBase> class to implement your own custom easing functions.  
+  
+> [!NOTE]
+>  The WPF implementation of easing functions is compatible with the Silverlight implementation. If you have XAML that uses easing functions in one technology, it is usable without modification in the other.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ease">
@@ -28,9 +42,9 @@
         <Parameter Name="normalizedTime" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="normalizedTime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="normalizedTime">Normalized time (progress) of the animation.</param>
+        <summary>Transforms normalized time to control the pace of an animation.</summary>
+        <returns>The transformed progress.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

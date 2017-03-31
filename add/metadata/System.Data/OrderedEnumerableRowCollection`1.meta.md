@@ -1,4 +1,6 @@
 ---
 uid: System.Data.OrderedEnumerableRowCollection`1
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

@@ -1,1 +1,0 @@
-            be.CanBuildChannelListener<IDuplexChannel>(context2);

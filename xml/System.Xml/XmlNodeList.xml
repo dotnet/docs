@@ -27,8 +27,23 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an ordered collection of nodes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changes to the children of the node object that the <xref:System.Xml.XmlNodeList> collection was created from are immediately reflected in the nodes returned by the `XmlNodeList` properties and methods. `XmlNodeList` supports iteration and indexed access.  
+  
+ `XmlNodeList` is returned by the following properties and methods.  
+  
+-   <xref:System.Xml.XmlNode.ChildNodes%2A?displayProperty=fullName> - Returns an `XmlNodeList` containing all the children of the node.  
+  
+-   <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> - Returns an `XmlNodeList` containing a collection of nodes matching the XPath query.  
+  
+-   `GetElementsByTagName` - Returns an `XmlNodeList` containing a list of all descendant elements that match the specified name. This method is available in both the <xref:System.Xml.XmlDocument> and <xref:System.Xml.XmlElement> classes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,7 +66,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlNodeList" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +92,24 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of nodes in the <see langword="XmlNodeList" />.</summary>
+        <value>The number of nodes in the <see langword="XmlNodeList" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Xml.XmlDocument> object and uses the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method and the resulting `XmlNodeList` to display all the book titles.  
+  
+ [!code-cpp[Classic WebData XmlElement.GetElementsByTagName Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlElement.GetElementsByTagName Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlElement.GetElementsByTagName Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlElement.GetElementsByTagName Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlElement.GetElementsByTagName Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlElement.GetElementsByTagName Example/VB/source.vb#1)]  
+  
+ The example uses the file `2books.xml` as input.  
+  
+ [!code-xml[Classic WebData XmlElement.GetElementsByTagName Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlElement.GetElementsByTagName Example/XML/source.xml#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -105,9 +135,29 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets an enumerator that iterates through the collection of nodes.</summary>
+        <returns>An enumerator used to iterate through the collection of nodes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Provides a simple "foreach" style iteration over the collection of nodes in the `XmlNodeList`.  
+  
+   
+  
+## Examples  
+ The following example displays all the book titles.  
+  
+ [!code-cpp[Classic WebData XmlNodeList.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeList.GetEnumerator Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlNodeList.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeList.GetEnumerator Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlNodeList.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeList.GetEnumerator Example/VB/source.vb#1)]  
+  
+ The example uses the file `2books.xml` as input.  
+  
+ [!code-xml[Classic WebData XmlNodeList.GetEnumerator Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlNodeList.GetEnumerator Example/XML/source.xml#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -135,10 +185,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index into the list of nodes.</param>
+        <summary>Retrieves a node at the given index.</summary>
+        <returns>The <see cref="T:System.Xml.XmlNode" /> with the specified index in the collection. If <paramref name="index" /> is greater than or equal to the number of nodes in the list, this returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example gets and displays the second node in the `XmlNodeList`.  
+  
+ [!code-cpp[Classic WebData XmlNodeList.Item Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNodeList.Item Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlNodeList.Item Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNodeList.Item Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlNodeList.Item Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlNodeList.Item Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemOf">
@@ -166,10 +227,25 @@
         <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="i">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="i">The zero-based index into the list of nodes.</param>
+        <summary>Gets a node at the given index.</summary>
+        <value>The <see cref="T:System.Xml.XmlNode" /> with the specified index in the collection. If index is greater than or equal to the number of nodes in the list, this returns <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an <xref:System.Xml.XmlDocument> object and uses the <xref:System.Xml.XmlDocument.GetElementsByTagName%2A> method and the resulting `XmlNodeList` to display all the book titles.  
+  
+ [!code-cpp[Classic WebData XmlElement.GetElementsByTagName Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlElement.GetElementsByTagName Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlElement.GetElementsByTagName Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlElement.GetElementsByTagName Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlElement.GetElementsByTagName Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlElement.GetElementsByTagName Example/VB/source.vb#1)]  
+  
+ The example uses the file `2books.xml` as input.  
+  
+ [!code-xml[Classic WebData XmlElement.GetElementsByTagName Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlElement.GetElementsByTagName Example/XML/source.xml#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrivateDisposeNodeList">
@@ -195,7 +271,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Disposes resources in the node list privately.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,7 +298,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all resources used by the <see cref="T:System.Xml.XmlNodeList" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

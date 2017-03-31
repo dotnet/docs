@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of <see cref="T:System.ComponentModel.SortDescription" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.SortDescriptionCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all items from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The base class calls this method when the list is being cleared. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+  
+ For more information, see the <xref:System.Collections.ObjectModel.Collection%601.ClearItems%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionChanged">
@@ -68,7 +77,7 @@
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an item is added or removed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +94,7 @@
         <ReturnType>System.ComponentModel.SortDescriptionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets an empty and non-modifiable instance of <see cref="T:System.ComponentModel.SortDescriptionCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,10 +115,19 @@
         <Parameter Name="item" Type="System.ComponentModel.SortDescription" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index where the <c>item</c> is inserted.</param>
+        <param name="item">The object to insert.</param>
+        <summary>Inserts an item into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The base class calls this method when an item is added to the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+  
+ For more information, see the <xref:System.Collections.ObjectModel.Collection%601.InsertItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -128,9 +146,18 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element to remove.</param>
+        <summary>Removes the item at the specified index in the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The base class calls this method when an item is removed from the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+  
+ For more information, see the <xref:System.Collections.ObjectModel.Collection%601.RemoveItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -150,10 +177,19 @@
         <Parameter Name="item" Type="System.ComponentModel.SortDescription" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element to replace.</param>
+        <param name="item">The new value for the element at the specified index.</param>
+        <summary>Replaces the element at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The base class calls this method when an item is set in the collection. This implementation raises the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event.  
+  
+ For more information, see the <xref:System.Collections.ObjectModel.Collection%601.SetItem%2A> method of the <xref:System.Collections.ObjectModel.Collection%601> base class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

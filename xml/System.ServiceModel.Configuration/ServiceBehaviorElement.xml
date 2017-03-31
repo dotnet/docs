@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration element that contains a list of service behaviors that is applied to all [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services on the machine.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceBehaviorElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">A unique name of the behavior element.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceBehaviorElement" /> class with the specified name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,9 +67,10 @@
         <Parameter Name="element" Type="System.ServiceModel.Configuration.BehaviorExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">A <see cref="T:System.ServiceModel.Configuration.BehaviorExtensionElement" /> to be added.</param>
+        <summary>Adds a new behavior element to this section.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The type specified by <paramref name="element" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanAdd">
@@ -88,10 +89,12 @@
         <Parameter Name="element" Type="System.ServiceModel.Configuration.BehaviorExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">A <see cref="T:System.ServiceModel.Configuration.BehaviorExtensionElement" /> to be added.</param>
+        <summary>Adds a new behavior element to this section and returns a value indicating if the operation is successful.</summary>
+        <returns>
+          <see langword="true" /> if the operation is successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The type specified by <paramref name="element" /> is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="DeserializeElement">
@@ -111,9 +114,10 @@
         <Parameter Name="serializeCollectionKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="serializeCollectionKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> that reads from the configuration file.</param>
+        <param name="serializeCollectionKey">
+          <see langword="true" /> to serialize only the collection key properties; otherwise, <see langword="false" />.</param>
+        <summary>Reads XML from the configuration file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

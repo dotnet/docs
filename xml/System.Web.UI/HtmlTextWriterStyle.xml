@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the HTML styles available to an <see cref="T:System.Web.UI.HtmlTextWriter" /> or <see cref="T:System.Web.UI.Html32TextWriter" /> object output stream.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.HtmlTextWriter> and <xref:System.Web.UI.Html32TextWriter> objects use these enumeration values to register HTML strings to the proper HTML style.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Web.UI.HtmlTextWriterStyle> enumeration with the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method to add a `color` style attribute to an HTML element and sets its value.  
+  
+ [!code-cpp[System.Web.UI.HtmlTextWriter#2](~/samples/snippets/cpp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CPP/htmltextwriter.cpp#2)]
+ [!code-csharp[System.Web.UI.HtmlTextWriter#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CS/htmltextwriter.cs#2)]
+ [!code-vb[System.Web.UI.HtmlTextWriter#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/VB/htmltextwriter.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BackgroundColor">
@@ -27,7 +43,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="backgroundcolor" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -43,7 +59,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="backgroundimage" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderCollapse">
@@ -59,7 +75,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="bordercollapse" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -75,7 +91,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="bordercolor" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -91,7 +107,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="borderstyle" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="BorderWidth">
@@ -107,7 +123,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="borderwidth" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -123,7 +139,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="color" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -139,7 +155,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="cursor" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -155,7 +171,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="direction" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -171,7 +187,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="display" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -187,7 +203,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="filter" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="FontFamily">
@@ -203,7 +219,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="fontfamily" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="FontSize">
@@ -219,7 +235,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="fontsize" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="FontStyle">
@@ -235,7 +251,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="fontstyle" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="FontVariant">
@@ -251,7 +267,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="fontvariant" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="FontWeight">
@@ -267,7 +283,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="fontheight" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -283,7 +299,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="height" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -299,7 +315,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="left" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="ListStyleImage">
@@ -315,7 +331,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="liststyleimage" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="ListStyleType">
@@ -331,7 +347,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="liststyletype" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Margin">
@@ -347,7 +363,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="margin" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarginBottom">
@@ -363,7 +379,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="marginbottom" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarginLeft">
@@ -379,7 +395,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="marginleft" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarginRight">
@@ -395,7 +411,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="marginright" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarginTop">
@@ -411,7 +427,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="margintop" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Overflow">
@@ -427,7 +443,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="overflow" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverflowX">
@@ -443,7 +459,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="overflowx" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverflowY">
@@ -459,7 +475,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="overflowy" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -475,7 +491,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="padding" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaddingBottom">
@@ -491,7 +507,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="paddingbottom" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaddingLeft">
@@ -507,7 +523,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="paddingleft" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaddingRight">
@@ -523,7 +539,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="paddingright" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaddingTop">
@@ -539,7 +555,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="paddingtop" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -555,7 +571,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="position" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -571,7 +587,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="textalign" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextDecoration">
@@ -587,7 +603,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="textdecoration" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextOverflow">
@@ -603,7 +619,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="textoverflow" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -619,7 +635,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="top" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="VerticalAlign">
@@ -635,7 +651,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="verticalalign" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Visibility">
@@ -651,7 +667,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="visibility" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="WhiteSpace">
@@ -667,7 +683,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="whitespace" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -683,7 +699,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="width" /> style.</summary>
       </Docs>
     </Member>
     <Member MemberName="ZIndex">
@@ -699,7 +715,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the HTML <see langword="zindex" /> style.</summary>
       </Docs>
     </Member>
   </Members>

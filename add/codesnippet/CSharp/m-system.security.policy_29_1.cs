@@ -1,1 +1,0 @@
-        FileCodeGroup copyCodeGroup = (FileCodeGroup)fileCodeGroup.Copy();

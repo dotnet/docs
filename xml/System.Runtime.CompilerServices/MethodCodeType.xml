@@ -20,8 +20,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines how a method is implemented.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used with <xref:System.Runtime.CompilerServices.MethodImplAttribute>.  
+  
+ The classes in System.Runtime.CompilerServices are for compiler writers use only.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="IL">
@@ -42,7 +51,7 @@
         <ReturnType>System.Runtime.CompilerServices.MethodCodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method implementation is in Microsoft intermediate language (MSIL).</summary>
       </Docs>
     </Member>
     <Member MemberName="Native">
@@ -63,7 +72,7 @@
         <ReturnType>System.Runtime.CompilerServices.MethodCodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method is implemented in native code.</summary>
       </Docs>
     </Member>
     <Member MemberName="OPTIL">
@@ -84,7 +93,7 @@
         <ReturnType>System.Runtime.CompilerServices.MethodCodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method implementation is in optimized intermediate language (OPTIL).</summary>
       </Docs>
     </Member>
     <Member MemberName="Runtime">
@@ -105,7 +114,7 @@
         <ReturnType>System.Runtime.CompilerServices.MethodCodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method implementation is provided by the runtime.</summary>
       </Docs>
     </Member>
   </Members>

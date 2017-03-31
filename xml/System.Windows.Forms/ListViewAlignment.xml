@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how items align in the <see cref="T:System.Windows.Forms.ListView" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.ListView.Alignment%2A> property and the <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method of the <xref:System.Windows.Forms.ListView> control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.ListViewAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When the user moves an item, it remains where it is dropped.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.ListViewAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Items are aligned to the left of the <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="SnapToGrid">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.ListViewAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Items are aligned to an invisible grid in the control. When the user moves an item, it moves to the closest juncture in the grid.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.ListViewAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Items are aligned to the top of the <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
       </Docs>
     </Member>
   </Members>

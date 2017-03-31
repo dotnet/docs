@@ -1,24 +1,29 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs.PeerContact
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs.PeerApplication
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs.PeerChangeType
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs.PeerEndPoint
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

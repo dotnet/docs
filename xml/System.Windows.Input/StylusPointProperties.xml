@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a <see cref="T:System.Windows.Input.StylusPointProperty" /> for each property that the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] supports.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] ships with pre-defined <xref:System.Windows.Input.StylusPointProperty> objects for properties that are commonly collected by a stylus and a digitizer. You can use these built-in properties to create a <xref:System.Windows.Input.StylusPointDescription>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a <xref:System.Windows.Input.StylusPointDescription> using the <xref:System.Windows.Input.StylusPointProperties> fields.  
+  
+ [!code-csharp[PacketSpy#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#5)]
+ [!code-vb[PacketSpy#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#5)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AltitudeOrientation">
@@ -28,8 +43,15 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the angle between the axis of the pen and the surface of the Tablet PC.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of <xref:System.Windows.Input.StylusPointProperties.AltitudeOrientation> is 0 when the pen is parallel to the surface and 90 when the pen is perpendicular to the surface. The values are negative when the pen is inverted.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AzimuthOrientation">
@@ -45,7 +67,7 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the clockwise rotation of the cursor, through a full circular range around the z-axis.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +84,7 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the barrel button of a stylus.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +101,7 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the pressure on a pressure-sensitive button.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +118,15 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the height of the contact point on the digitizer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The height of the contact point depends on the type of instrument that is used. The value of <xref:System.Windows.Input.StylusPointProperties.Height> can vary when Touch is used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NormalPressure">
@@ -113,7 +142,7 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the pressure of the pen tip perpendicular to the Tablet PC surface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +159,23 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the current status of the cursor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Windows.Input.StylusPointProperties.PacketStatus> field contains one or more of the following flag values in a bit field. Use bit operators to check the status of these values.  
+  
+-   The cursor is touching the drawing surface (Value = 1).  
+  
+-   The cursor is inverted. For example, the eraser end of the pen is pointing toward the surface (Value = 2).  
+  
+-   Not used (Value = 4).  
+  
+-   The barrel button is pressed (Value = 8).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PitchRotation">
@@ -147,8 +191,19 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents whether the tip is above or below a horizontal line that is perpendicular to the writing surface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This requires a three-dimensional digitizer.  
+  
+ The value is positive if the tip is above the line and negative if it is below the line. For example, if you hold the pen in front of you and write on an imaginary wall, the pitch is positive if the tip is above a line extending from you to the wall.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RollRotation">
@@ -164,8 +219,17 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the clockwise rotation of the pen around its own axis.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This requires a three-dimensional digitizer.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SecondaryTipButton">
@@ -181,7 +245,7 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the secondary tip button of a stylus.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +262,15 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="T:System.Windows.Input.StylusPoint" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this value to retrieve the <xref:System.Windows.Input.StylusPoint> from the packet queue.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SystemTouch">
@@ -215,7 +286,7 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the point of contact that generates the <see cref="T:System.Windows.Input.StylusPoint" />, whether initiated by a finger, palm, or any other touch.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,8 +303,15 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the pen tip pressure along the plane of the Tablet PC surface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.StylusPointProperties.TangentPressure> field represents pressure along the plane of the Tablet PC surface. The <xref:System.Windows.Input.StylusPointProperties.NormalPressure> field represents pressure perpendicular to the plane of the Tablet PC surface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TipButton">
@@ -249,7 +327,7 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the tip button of a stylus.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,7 +344,7 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the clockwise rotation of the cursor around its own axis.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,8 +361,15 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the width of the contact point on the digitizer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The width of the contact point depends on the type of instrument that is used.  The value of <xref:System.Windows.Input.StylusPointProperties.Width> can vary when touch is used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -300,7 +385,7 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the x-coordinate in the tablet coordinate space.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,7 +402,7 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the angle between the (<paramref name="y,z" />) plane and the pen and y-axis plane.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,7 +419,7 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the y-coordinate in the tablet coordinate space.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,8 +436,19 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the angle of the pen to the left or right around the center of its horizontal axis when the pen is horizontal.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This requires a three-dimensional digitizer.  
+  
+ If you hold the pen in front of you and write on an imaginary wall, zero yaw indicates that the pen is perpendicular to the wall. The value is negative if the tip is to the left of perpendicular and positive if the tip is to the right of perpendicular.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="YTiltOrientation">
@@ -368,8 +464,17 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the angle between the (x, z) plane and the pen and x-axis plane.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This applies to a pen cursor.  
+  
+ The value is 0 when the pen is perpendicular to the drawing surface. The value is positive when the pen is upward or away from the user.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Z">
@@ -385,7 +490,7 @@
         <ReturnType>System.Windows.Input.StylusPointProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the z-coordinate or distance of the pen tip from the tablet surface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

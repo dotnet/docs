@@ -1,19 +1,19 @@
 ---
 uid: System.Runtime.Remoting.Channels.ChannelDataStore
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.ChannelDataStore.Item(System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.ChannelDataStore.ChannelUris
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.ChannelDataStore.#ctor(System.String[])
-internalonly: False
+manager: "ghogen"
 ---

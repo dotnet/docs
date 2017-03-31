@@ -1,1 +1,0 @@
-      returnTime = DateTime.SpecifyKind(cal.AddMonths(time, months), time.Kind);

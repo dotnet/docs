@@ -1,4 +1,6 @@
 ---
 uid: System.Xml.XmlNamespaceScope
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

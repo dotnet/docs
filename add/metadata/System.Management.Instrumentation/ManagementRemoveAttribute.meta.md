@@ -1,14 +1,14 @@
 ---
 uid: System.Management.Instrumentation.ManagementRemoveAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementRemoveAttribute.Schema
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementRemoveAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---

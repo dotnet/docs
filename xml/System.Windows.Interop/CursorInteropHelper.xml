@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a static helper class for [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]/[!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] interoperation with one method, which is used to obtain a [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] <see cref="T:System.Windows.Input.Cursor" /> object based on a provided [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] cursor handle.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,10 +36,18 @@
         <Parameter Name="cursorHandle" Type="System.Runtime.InteropServices.SafeHandle" />
       </Parameters>
       <Docs>
-        <param name="cursorHandle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="cursorHandle">Cursor reference to use for interoperation.</param>
+        <summary>Returns a [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] <see cref="T:System.Windows.Input.Cursor" /> object based on a provided [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] cursor handle.</summary>
+        <returns>The [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] cursor object based on the provided [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] cursor handle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting a custom cursor image requires security permissions even if done in pure [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] programming. See <xref:System.Windows.Input.Cursor>.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
       </Docs>
     </Member>
   </Members>

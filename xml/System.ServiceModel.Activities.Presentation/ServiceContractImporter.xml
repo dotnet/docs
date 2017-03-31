@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a service contract importer.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the contract type view state key.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,9 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="contractType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contractType">The service contract type.</param>
+        <summary>Generates a service activity templates with a specified contract type.</summary>
+        <returns>A collection of service activity templates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +75,9 @@
         <Parameter Name="activityTemplate" Type="System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder" />
       </Parameters>
       <Docs>
-        <param name="activityTemplate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activityTemplate">The activity template to save.</param>
+        <summary>Saves an activity template from the service contract.</summary>
+        <returns>The activity template.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,11 +99,11 @@
         <Parameter Name="editingContext" Type="System.Activities.Presentation.EditingContext" />
       </Parameters>
       <Docs>
-        <param name="localAssemblyName">To be added.</param>
-        <param name="referencedAssemblies">To be added.</param>
-        <param name="editingContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localAssemblyName">The local assembly name.</param>
+        <param name="referencedAssemblies">The referenced assemblies.</param>
+        <param name="editingContext">The editing context.</param>
+        <summary>Retrieves a contract type with a specified local assembly name from the list of referenced assemblies.</summary>
+        <returns>The service contract type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

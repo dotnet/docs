@@ -11,8 +11,22 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see cref="T:System.ServiceModel.NetMsmqSecurityMode" /> enumeration specifies security modes that can be used by the MSMQ transport.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ MSMQ transport security secures messages using MSMQ. SOAP security secures messages using the WS-* security protocols. This property determines the mechanisms by which transfer security functions (such as integrity, confidentiality and authentication) are obtained.  
+  
+   
+  
+## Examples  
+ The following code shows how to specify the security mode for a <xref:System.ServiceModel.NetMsmqBinding> binding.  
+  
+ [!code-csharp[S_UENetMsmqBinding#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenetmsmqbinding/cs/snippets.cs#7)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Both">
@@ -29,7 +43,7 @@
         <ReturnType>System.ServiceModel.NetMsmqSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Enables both MSMQ transport security and SOAP security.</summary>
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -46,7 +60,7 @@
         <ReturnType>System.ServiceModel.NetMsmqSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Enables SOAP security.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -63,7 +77,7 @@
         <ReturnType>System.ServiceModel.NetMsmqSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Disables both MSMQ transport security and SOAP security.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transport">
@@ -80,7 +94,7 @@
         <ReturnType>System.ServiceModel.NetMsmqSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Enables MSMQ transport security.</summary>
       </Docs>
     </Member>
   </Members>

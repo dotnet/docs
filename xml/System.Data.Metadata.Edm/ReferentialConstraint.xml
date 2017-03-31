@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the referential constraints on the relationships in a conceptual model.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.ReferentialConstraint" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> object that represents the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.ReferentialConstraint" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the list of properties for the "from role" on which this <see cref="T:System.Data.Metadata.Edm.ReferentialConstraint" /> is defined.</summary>
+        <value>A collection of type <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" /> that contains the list of properties for "from role" on which this <see cref="T:System.Data.Metadata.Edm.ReferentialConstraint" /> is defined.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.Data.Metadata.Edm.RelationshipEndMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the "from role" that takes part in this <see cref="T:System.Data.Metadata.Edm.ReferentialConstraint" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.RelationshipEndMember" /> object that represents the "from role" that takes part in this <see cref="T:System.Data.Metadata.Edm.ReferentialConstraint" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the list of properties for the "to role" on which this <see cref="T:System.Data.Metadata.Edm.ReferentialConstraint" /> is defined.</summary>
+        <value>A collection of type <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" /> that contains the list of properties for the "to role" on which this <see cref="T:System.Data.Metadata.Edm.ReferentialConstraint" /> is defined.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
         <ReturnType>System.Data.Metadata.Edm.RelationshipEndMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the "to role" that takes part in this <see cref="T:System.Data.Metadata.Edm.ReferentialConstraint" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.RelationshipEndMember" /> object that represents the "to role" that takes part in this <see cref="T:System.Data.Metadata.Edm.ReferentialConstraint" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +119,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the combination of the names of the <see cref="P:System.Data.Metadata.Edm.ReferentialConstraint.FromRole" /> and the <see cref="P:System.Data.Metadata.Edm.ReferentialConstraint.ToRole" />.</summary>
+        <returns>The combination of the names of the <see cref="P:System.Data.Metadata.Edm.ReferentialConstraint.FromRole" /> and the <see cref="P:System.Data.Metadata.Edm.ReferentialConstraint.ToRole" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,19 +1,23 @@
 ---
 uid: System.Configuration.ConfigurationValidatorBase
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationValidatorBase.Validate(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationValidatorBase.CanValidate(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationValidatorBase.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

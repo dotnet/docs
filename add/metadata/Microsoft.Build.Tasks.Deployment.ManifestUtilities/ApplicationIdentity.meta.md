@@ -1,19 +1,34 @@
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity.#ctor(System.String,System.String,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity.ToString
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity.#ctor(System.String,Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity,Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,1 +1,0 @@
-            Dim trnsSecurity = security.Transport

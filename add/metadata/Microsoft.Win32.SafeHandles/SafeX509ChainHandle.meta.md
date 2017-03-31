@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.Win32.SafeHandles.SafeX509ChainHandle
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

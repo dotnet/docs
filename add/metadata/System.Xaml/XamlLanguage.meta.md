@@ -1,259 +1,261 @@
 ---
 uid: System.Xaml.XamlLanguage
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.SynchronousMode
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Shared
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.String
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.ClassModifier
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Class
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Decimal
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.FactoryMethod
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Space
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Subclass
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Members
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.UnknownContent
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.ClassAttributes
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Code
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Type
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Uri
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Xml1998Namespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Byte
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.AllDirectives
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Initialization
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Name
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.ConnectionId
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Double
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Int32
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Lang
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Single
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.AsyncRecords
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.FieldModifier
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Boolean
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.TimeSpan
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Base
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Member
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Array
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Xaml2006Namespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Items
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.PositionalParameters
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Reference
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Static
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.XmlNamespaces
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.TypeArguments
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Int16
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.XData
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Char
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Key
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.XamlNamespaces
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Object
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Arguments
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Uid
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Int64
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.AllTypes
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Property
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlLanguage.Null
-internalonly: False
+manager: "martinek"
 ---

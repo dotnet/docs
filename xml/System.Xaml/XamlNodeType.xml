@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the type of the node that is currently being processed by a XAML reader.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The reader is at the end of a member node.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndObject">
@@ -43,7 +43,7 @@
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The reader is at the end of an object node.</summary>
       </Docs>
     </Member>
     <Member MemberName="GetObject">
@@ -59,7 +59,7 @@
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The reader is within an object node and writing a default or implicit value, instead of being a specified object value.</summary>
       </Docs>
     </Member>
     <Member MemberName="NamespaceDeclaration">
@@ -75,7 +75,7 @@
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The reader is within an XML namespace declaration.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -91,7 +91,7 @@
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The reader is not positioned at a true node (for example, the reader might be at end-of-file).</summary>
       </Docs>
     </Member>
     <Member MemberName="StartMember">
@@ -107,7 +107,7 @@
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The reader is at the start of a member node.</summary>
       </Docs>
     </Member>
     <Member MemberName="StartObject">
@@ -123,7 +123,7 @@
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The reader is at the start of an object node.</summary>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -139,7 +139,7 @@
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The reader is within a node and processing a value.</summary>
       </Docs>
     </Member>
   </Members>

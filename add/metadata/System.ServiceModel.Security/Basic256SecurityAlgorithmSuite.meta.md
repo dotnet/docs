@@ -1,74 +1,104 @@
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.DefaultSymmetricKeyWrapAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.IsSymmetricKeyLengthSupported(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.DefaultEncryptionKeyDerivationLength
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.DefaultDigestAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.IsAsymmetricKeyLengthSupported(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.DefaultSymmetricSignatureAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.DefaultAsymmetricKeyWrapAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.DefaultSignatureKeyDerivationLength
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.DefaultEncryptionAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.ToString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.DefaultSymmetricKeyLength
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.DefaultAsymmetricSignatureAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Basic256SecurityAlgorithmSuite.DefaultCanonicalizationAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

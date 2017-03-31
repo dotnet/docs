@@ -33,8 +33,20 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines text properties and behaviors, such as casing, that are specific to a writing system.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A writing system is the collection of scripts and orthographic rules required to represent a language as text. The <xref:System.Globalization.TextInfo> class represents a writing system.  
+  
+ The application should use the <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=fullName> property to obtain the <xref:System.Globalization.TextInfo> object for a particular <xref:System.Globalization.CultureInfo> object. If a security decision depends on a string comparison or a case-change operation, the application should use the <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=fullName> property of the object returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> property to ensure that the behavior of the operation is consistent regardless of the operating system culture settings.  
+  
+## Overrides  
+ The user might use the regional and language options portion of Control Panel to override the values associated with the current culture of Windows. For example, the user might choose to display the date in a different format or to use a currency other than the default for the culture. If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=fullName> property is set to `true`, the property values of the objects returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName>, <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName>, and <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=fullName> properties are also retrieved from the user settings. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo>, for example, if the selected calendar is not one of the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A>, the results of the methods and the values of the properties are undefined.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ANSICodePage">
@@ -55,8 +67,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the American National Standards Institute (ANSI) code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</summary>
+        <value>The ANSI code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +96,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new object that is a copy of the current <see cref="T:System.Globalization.TextInfo" /> object.</summary>
+        <returns>A new instance of <see cref="T:System.Object" /> that is the memberwise clone of the current <see cref="T:System.Globalization.TextInfo" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new memberwise clone is not read-only.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Globalization.TextInfo.Clone%2A> and <xref:System.Globalization.TextInfo.ReadOnly%2A> methods.  
+  
+ [!code-csharp[sys.glob.textinfo.clone#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.textinfo.clone/cs/ro.cs#1)]
+ [!code-vb[sys.glob.textinfo.clone#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.textinfo.clone/vb/ro.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CultureName">
@@ -117,9 +144,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the culture associated with the current <see cref="T:System.Globalization.TextInfo" /> object.</summary>
+        <value>The name of a culture.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Globalization.TextInfo> object is created from a specific culture, and the <xref:System.Globalization.TextInfo.CultureName%2A> property returns the name of that culture.  
+  
+ The <xref:System.Globalization.TextInfo.CultureName%2A> property always reflects a specific culture rather than a neutral culture. If <xref:System.Globalization.CultureInfo.Name%2A?displayProperty=fullName> has a neutral culture as its value, then the corresponding <xref:System.Globalization.TextInfo.CultureName%2A> has as its value an arbitrary specific culture that uses the same language. For example, the <xref:System.Globalization.CultureInfo.Name%2A> property returns "en" for the English neutral culture, but the corresponding <xref:System.Globalization.TextInfo.CultureName%2A> property might return "en-US" for the English (United States) culture. If the<xref:System.Globalization.TextInfo> object is associated with a specific culture instead of a neutral culture, the value of its <xref:System.Globalization.TextInfo.CultureName%2A> property is always identical to the <xref:System.Globalization.CultureInfo.Name%2A> property value of its associated <xref:System.Globalization.CultureInfo> object.  
+  
+ Similarly, the <xref:System.Globalization.TextInfo.CultureName%2A> property never reflects a particular sort. It always corresponds to a default sort order. For example, the default sort order for Spanish (Spain) is the international sort order. If <xref:System.Globalization.CultureInfo.Name%2A?displayProperty=fullName> is es-ES_tradnl (Spanish with the traditional sort order) then the corresponding <xref:System.Globalization.TextInfo.CultureName%2A> is es-ES (Spanish with the default international sort order).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EBCDICCodePage">
@@ -140,8 +178,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Extended Binary Coded Decimal Interchange Code (EBCDIC) code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</summary>
+        <value>The EBCDIC code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,10 +209,18 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object to compare with the current <see cref="T:System.Globalization.TextInfo" />.</param>
+        <summary>Determines whether the specified object represents the same writing system as the current <see cref="T:System.Globalization.TextInfo" /> object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> represents the same writing system as the current <see cref="T:System.Globalization.TextInfo" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -201,9 +247,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Serves as a hash function for the current <see cref="T:System.Globalization.TextInfo" />, suitable for hashing algorithms and data structures, such as a hash table.</summary>
+        <returns>A hash code for the current <see cref="T:System.Globalization.TextInfo" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+  
+ This method generates the same hash code for two objects that are equal according to the <xref:System.Globalization.TextInfo.Equals%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -234,9 +289,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the current <see cref="T:System.Globalization.TextInfo" /> object is read-only.</summary>
+        <value>
+          <see langword="true" /> if the current <see cref="T:System.Globalization.TextInfo" /> object is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Globalization.TextInfo.IsReadOnly%2A> property is `true`, the application cannot change any of the properties of the current <xref:System.Globalization.TextInfo> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRightToLeft">
@@ -266,9 +329,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the current <see cref="T:System.Globalization.TextInfo" /> object represents a writing system where text flows from right to left.</summary>
+        <value>
+          <see langword="true" /> if text flows from right to left; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.TextInfo.IsRightToLeft%2A> property indicates the dominant direction of written text and the relative position of user interface elements such as buttons and scroll bars.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LCID">
@@ -294,9 +365,20 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the culture identifier for the culture associated with the current <see cref="T:System.Globalization.TextInfo" /> object.</summary>
+        <value>A number that identifies the culture from which the current <see cref="T:System.Globalization.TextInfo" /> object was created.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Certain predefined culture names and identifiers are used by this and other classes in the <xref:System.Globalization?displayProperty=fullName> namespace, as well as the Windows API. The detailed culture information is defined in the [National Language Support (NLS) API Reference topic at the Go Global Developer Center](http://msdn.microsoft.com/goglobal/bb896001.aspx).  
+  
+ The <xref:System.Globalization.TextInfo.LCID%2A> property always reflects a specific culture identifier instead of a neutral culture identifier. If <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=fullName> is set to a neutral culture identifier, the corresponding <xref:System.Globalization.TextInfo.LCID%2A> has as its value an arbitrary specific culture identifier that uses the same language. For example, the <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=fullName> property returns 0x0009 for the English neutral culture, named "en". However, the corresponding <xref:System.Globalization.TextInfo.LCID%2A> property might return 0x0409 for the English (United States) culture, named en-US.  
+  
+ Similarly, the <xref:System.Globalization.TextInfo.LCID%2A> property always corresponds to a default sort order, and never reflects a specific sort order. For example, the default sort order for Spanish (Spain) is the international sort order. If <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=fullName> is set to "0x040A" (Spanish with the traditional sort order), the corresponding <xref:System.Globalization.TextInfo.LCID%2A> value is "0x0C0A" (Spanish with the default international sort order).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListSeparator">
@@ -330,9 +412,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the string that separates items in a list.</summary>
+        <value>The string that separates items in a list.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The value in a set operation is null.</exception>
+        <exception cref="T:System.InvalidOperationException">In a set operation, the current <see cref="T:System.Globalization.TextInfo" /> object is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="MacCodePage">
@@ -353,8 +437,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Macintosh code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</summary>
+        <value>The Macintosh code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,8 +460,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the original equipment manufacturer (OEM) code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</summary>
+        <value>The OEM code page used by the writing system represented by the current <see cref="T:System.Globalization.TextInfo" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -407,10 +491,26 @@
         <Parameter Name="textInfo" Type="System.Globalization.TextInfo" />
       </Parameters>
       <Docs>
-        <param name="textInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="textInfo">A <see cref="T:System.Globalization.TextInfo" /> object.</param>
+        <summary>Returns a read-only version of the specified <see cref="T:System.Globalization.TextInfo" /> object.</summary>
+        <returns>The <see cref="T:System.Globalization.TextInfo" /> object specified by the <paramref name="textInfo" /> parameter, if <paramref name="textInfo" /> is read-only.  
+  
+ -or-  
+  
+ A read-only memberwise clone of the <see cref="T:System.Globalization.TextInfo" /> object specified by <paramref name="textInfo" />, if <paramref name="textInfo" /> is not read-only.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Globalization.TextInfo.Clone%2A> and <xref:System.Globalization.TextInfo.ReadOnly%2A> methods.  
+  
+ [!code-csharp[sys.glob.textinfo.clone#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.textinfo.clone/cs/ro.cs#1)]
+ [!code-vb[sys.glob.textinfo.clone#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.textinfo.clone/vb/ro.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="textInfo" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.IDeserializationCallback.OnDeserialization">
@@ -434,8 +534,8 @@
         <Parameter Name="sender" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The source of the deserialization event.</param>
+        <summary>Raises the deserialization event when deserialization is complete.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,10 +570,30 @@
         <Parameter Name="c" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="c">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="c">The character to convert to lowercase.</param>
+        <summary>Converts the specified character to lowercase.</summary>
+        <returns>The specified character converted to lowercase.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Casing semantics depend on the culture in use. For the invariant culture, the casing semantics are not culture-sensitive. For a specific culture, the casing semantics are sensitive to that culture.  
+  
+ If a security decision depends on a string comparison or a case-change operation, the application should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> to ensure that the behavior is consistent regardless of the culture settings of the system. However, the invariant culture must be used only by processes that require culture-independent results, such as system services. Otherwise, it produces results that might be linguistically incorrect or culturally inappropriate.  
+  
+ For more information on cultures, see <xref:System.Globalization.CultureInfo>.  
+  
+   
+  
+## Examples  
+ The following code example changes the casing of a string based on the English (United States) culture, with the culture name en-US.  
+  
+ [!code-cpp[System.Globalization.TextInfo_casing#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/CPP/textinfo_casing.cpp#1)]
+ [!code-csharp[System.Globalization.TextInfo_casing#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/CS/textinfo_casing.cs#1)]
+ [!code-vb[System.Globalization.TextInfo_casing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/VB/textinfo_casing.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToLower">
@@ -507,10 +627,34 @@
         <Parameter Name="str" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="str">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="str">The string to convert to lowercase.</param>
+        <summary>Converts the specified string to lowercase.</summary>
+        <returns>The specified string converted to lowercase.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned string might differ in length from the input string. For more information on casing, refer to the Unicode Technical Report #21 "Case Mappings," published by the Unicode Consortium (http://www.unicode.org). The current implementation preserves the length of the string. However, this behavior is not guaranteed and could change in future implementations.  
+  
+ Casing semantics depend on the culture in use. For the invariant culture, the casing semantics are not culture-sensitive. For a specific culture, the casing semantics are sensitive to that culture.  
+  
+ If a security decision depends on a string comparison or a case-change operation, the application should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> to ensure that the behavior is consistent regardless of the culture settings of the system. However, the invariant culture must be used only by processes that require culture-independent results, such as system services. Otherwise, it produces results that might be linguistically incorrect or culturally inappropriate.  
+  
+ For more information on cultures, see <xref:System.Globalization.CultureInfo>.  
+  
+   
+  
+## Examples  
+ The following code example changes the casing of a string based on the English (United States) culture, with the culture name en-US.  
+  
+ [!code-cpp[System.Globalization.TextInfo_casing#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/CPP/textinfo_casing.cpp#1)]
+ [!code-csharp[System.Globalization.TextInfo_casing#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/CS/textinfo_casing.cs#1)]
+ [!code-vb[System.Globalization.TextInfo_casing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/VB/textinfo_casing.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="str" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -537,9 +681,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string that represents the current <see cref="T:System.Globalization.TextInfo" />.</summary>
+        <returns>A string that represents the current <see cref="T:System.Globalization.TextInfo" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Object.ToString%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToTitleCase">
@@ -563,10 +714,43 @@
         <Parameter Name="str" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="str">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="str">The string to convert to title case.</param>
+        <summary>Converts the specified string to title case (except for words that are entirely in uppercase, which are considered to be acronyms).</summary>
+        <returns>The specified string converted to title case.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Generally, title casing converts the first character of a word to uppercase and the rest of the characters to lowercase. However, this method does not currently provide proper casing to convert a word that is entirely uppercase, such as an acronym. The following table shows the way the method renders several strings.  
+  
+|Input|Language|Expected result|Actual result|  
+|-----------|--------------|---------------------|-------------------|  
+|war and peace|English|War and Peace|War And Peace|  
+|Per anhalter durch die Galaxis|German|Per Anhalter durch die Galaxis|Per Anhalter Durch Die Galaxis|  
+|les naufragés d'ythaq|French|Les Naufragés d'Ythaq|Les Naufragés D'ythaq|  
+  
+ As illustrated above, the <xref:System.Globalization.TextInfo.ToTitleCase%2A> method provides an arbitrary casing behavior which is not necessarily linguistically correct. A linguistically correct solution would require additional rules, and the current algorithm is somewhat simpler and faster. We reserve the right to make this API slower in the future.  
+  
+ The current implementation of the <xref:System.Globalization.TextInfo.ToTitleCase%2A> method yields an output string that is the same length as the input string. However, this behavior is not guaranteed and could change in a future implementation.  
+  
+   
+  
+## Examples  
+ The following example changes the casing of a string based on the English (United States) culture, with the culture name en-US.  
+  
+ [!code-cpp[System.Globalization.TextInfo_casing#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/CPP/textinfo_casing.cpp#1)]
+ [!code-csharp[System.Globalization.TextInfo_casing#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/CS/textinfo_casing.cs#1)]
+ [!code-vb[System.Globalization.TextInfo_casing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/VB/textinfo_casing.vb#1)]  
+  
+ The following example passes each string in an array to the <xref:System.Globalization.TextInfo.ToTitleCase%2A> method. The strings include proper title strings as well as acronyms. The strings are converted to title case by using the conventions of the en-US culture.  
+  
+ [!code-csharp[System.Globalization.TextInfo.ToTitleCase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.textinfo.totitlecase/cs/totitlecase2.cs#1)]
+ [!code-vb[System.Globalization.TextInfo.ToTitleCase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.textinfo.totitlecase/vb/totitlecase2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="str" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToUpper">
@@ -600,10 +784,30 @@
         <Parameter Name="c" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="c">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="c">The character to convert to uppercase.</param>
+        <summary>Converts the specified character to uppercase.</summary>
+        <returns>The specified character converted to uppercase.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Casing semantics depend on the culture in use. For the invariant culture, the casing semantics are not culture-sensitive. For a specific culture, the casing semantics are sensitive to that culture.  
+  
+ If a security decision depends on a string comparison or a case-change operation, the application should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> to ensure that the behavior is consistent regardless of the culture settings of the system. However, the invariant culture must be used only by processes that require culture-independent results, such as system services. Otherwise, it produces results that might be linguistically incorrect or culturally inappropriate.  
+  
+ For more information on cultures, see <xref:System.Globalization.CultureInfo>.  
+  
+   
+  
+## Examples  
+ The following code example changes the casing of a string based on the English (United States) culture, with the culture name en-US.  
+  
+ [!code-cpp[System.Globalization.TextInfo_casing#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/CPP/textinfo_casing.cpp#1)]
+ [!code-csharp[System.Globalization.TextInfo_casing#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/CS/textinfo_casing.cs#1)]
+ [!code-vb[System.Globalization.TextInfo_casing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/VB/textinfo_casing.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToUpper">
@@ -637,10 +841,34 @@
         <Parameter Name="str" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="str">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="str">The string to convert to uppercase.</param>
+        <summary>Converts the specified string to uppercase.</summary>
+        <returns>The specified string converted to uppercase.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned string might differ in length from the input string. For more information on casing, refer to the Unicode Technical Report #21 "Case Mappings," published by the Unicode Consortium (http://www.unicode.org). The current implementation preserves the length of the string. However, this behavior is not guaranteed and could change in future implementations.  
+  
+ Casing semantics depend on the culture in use. For the invariant culture, the casing semantics are not culture-sensitive. For a specific culture, the casing semantics are sensitive to that culture.  
+  
+ If a security decision depends on a string comparison or a case-change operation, the application should use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> to ensure that the behavior is consistent regardless of the culture settings of the system. However, the invariant culture must be used only by processes that require culture-independent results, such as system services. Otherwise, it produces results that might be linguistically incorrect or culturally inappropriate.  
+  
+ For more information on cultures, see <xref:System.Globalization.CultureInfo>.  
+  
+   
+  
+## Examples  
+ The following code example changes the casing of a string based on the English (United States) culture, with the culture name en-US.  
+  
+ [!code-cpp[System.Globalization.TextInfo_casing#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/CPP/textinfo_casing.cpp#1)]
+ [!code-csharp[System.Globalization.TextInfo_casing#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/CS/textinfo_casing.cs#1)]
+ [!code-vb[System.Globalization.TextInfo_casing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TextInfo_casing/VB/textinfo_casing.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="str" /> is null.</exception>
       </Docs>
     </Member>
   </Members>

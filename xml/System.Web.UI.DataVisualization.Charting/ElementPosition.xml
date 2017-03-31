@@ -16,8 +16,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the base class for many visual elements of the chart such as the legend, title, and chart areas. Defines the position of the chart element in relative coordinates, which range from (0,0) to (100,100).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.ElementPosition> class is used to define the position of a chart element, and represents one rectangle using the <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.X%2A>, <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Y%2A>, <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Width%2A> and <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Height%2A> properties.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.ElementPosition> class is always exposed as a `Position` property, such as <xref:System.Web.UI.DataVisualization.Charting.ChartArea.Position%2A>, <xref:System.Web.UI.DataVisualization.Charting.Legend.Position%2A>, and so forth. It is also exposed in the <xref:System.Web.UI.DataVisualization.Charting.Chart.PrePaint> and <xref:System.Web.UI.DataVisualization.Charting.Chart.PostPaint> events of the <xref:System.Web.UI.DataVisualization.Charting.Chart> control as a property of the <xref:System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs> object.  
+  
+ The position of the applicable chart elements can be set automatically by setting the <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Auto%2A> property to `true`; chart elements can also be positioned at design time in the Design View.  
+  
+ There are two major differences between this class and a <xref:System.Drawing.RectangleF> structure:  
+  
+-   This class can use automatic positioning.  
+  
+-   This class only uses coordinates ranging from 0 to 100, otherwise an exception is thrown.  
+  
+ The position of chart elements is described using relative coordinates, with the top-left corner of an element having coordinates of (0,0) and the bottom-right corner of an element having coordinates of (100,100).  
+  
+ Elements that are plotted within a chart area use coordinates that are relative to the chart area, whereas elements outside a chart area use coordinates that are relative to the chart image.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.ElementPosition" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,11 +72,11 @@
         <Parameter Name="height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="width">To be added.</param>
-        <param name="height">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">The relative X-coordinate of the top-left corner of an applicable chart element.</param>
+        <param name="y">The relative Y-coordinate of the top-left corner of an applicable chart element.</param>
+        <param name="width">The width of the chart element.</param>
+        <param name="height">The height of the chart element.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.ElementPosition" /> class with the specified <paramref name="x" />, <paramref name="y" />, <paramref name="width" /> and <paramref name="height" /> parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +110,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a flag that determines whether an applicable chart element will be positioned automatically by the <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> control.</summary>
+        <value>
+          <see langword="true" /> if the chart element will be positioned automatically by the chart control; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to automatically position a chart element. For example, to position the legend automatically, set the <xref:System.Web.UI.DataVisualization.Charting.Legend.Position%2A> property to <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Auto%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Bottom">
@@ -112,9 +141,18 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the bottom position of a chart element, in relative coordinates.</summary>
+        <value>A <see langword="float" /> value that represents the bottom position of the chart element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The bottom of the chart element is always expressed in relative coordinates, and is either relative to a <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object if plotted within a chart area, or relative to the entire chart image if plotted outside of a chart area element.  
+  
+ Chart coordinates use (0,0) for a top-left corner, and (100,100) for a bottom-right corner.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromRectangleF">
@@ -133,8 +171,8 @@
         <Parameter Name="rect" Type="System.Drawing.RectangleF" />
       </Parameters>
       <Docs>
-        <param name="rect">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rect">A <see cref="T:System.Drawing.RectangleF" /> structure used to initialize the element position object.</param>
+        <summary>Initializes an <see cref="T:System.Web.UI.DataVisualization.Charting.ElementPosition" /> object from a <see cref="T:System.Drawing.RectangleF" /> structure.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,9 +206,16 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the height of a chart element.</summary>
+        <value>A <see langword="float" /> value that represents the height of the chart element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Always uses relative coordinates. If you set a value outside of the 0-100 pixel range, an exception will be thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -191,9 +236,20 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the position of the right side of a chart element, in relative coordinates.</summary>
+        <value>A <see langword="float" /> value that represents the position of the right side of a chart element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns a value that represents the relative position of the right side of an applicable chart element.  
+  
+ The right side position is always expressed in relative coordinates, and is either relative to a <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object if plotted within a chart area, or relative to the entire chart image if plotted outside of a chart area element.  
+  
+ Chart coordinates use (0,0) for a top-left corner, and (100,100) for a bottom-right corner.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -214,8 +270,8 @@
         <ReturnType>System.Drawing.SizeF</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the size of a chart element.</summary>
+        <value>A <see cref="T:System.Drawing.SizeF" /> value that represents the size of a chart element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,9 +289,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a <see cref="T:System.Drawing.RectangleF" /> object that represents the coordinates of an <see cref="T:System.Web.UI.DataVisualization.Charting.ElementPosition" /> object.</summary>
+        <returns>A <see cref="T:System.Drawing.RectangleF" /> structure that represents the coordinates of an element position object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method converts the position of an element to a <xref:System.Drawing.RectangleF> structure.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -268,9 +331,16 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the width of a chart element.</summary>
+        <value>A <see langword="float" /> value that represents the width of a chart element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property always uses relative coordinates; if you set a value outside the 0-100 pixel range, an exception will be thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -303,9 +373,18 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the relative X-coordinate of the top-left corner of an applicable chart element.</summary>
+        <value>A <see langword="float" /> value that represents the X-coordinate of the top-left corner of an applicable chart element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.X%2A> property is always expressed in relative coordinates, and is either relative to a <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object if plotted within a chart area, or relative to the entire chart image if plotted outside of a chart area element.  
+  
+ This property always uses relative coordinates; if you set a value outside the 0-100 pixel range, an exception will be thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -338,9 +417,18 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the relative Y-coordinate of the top-left corner of an applicable chart element.</summary>
+        <value>A <see langword="float" /> value that represents the Y-coordinate of the top-left corner of an applicable chart element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Y%2A> property is always expressed in relative coordinates, and is either relative to a <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object if plotted within a chart area, or relative to the entire chart image if plotted outside of a chart area element.  
+  
+ This property always uses relative coordinates; if you set a value outside the 0-100 pixel range, an exception will be thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

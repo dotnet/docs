@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.FigureUnitType
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

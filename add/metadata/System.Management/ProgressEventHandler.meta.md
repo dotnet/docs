@@ -1,4 +1,4 @@
 ---
 uid: System.Management.ProgressEventHandler
-internalonly: False
+manager: "jillfra"
 ---

@@ -1,1 +1,0 @@
-            If Not SecurityElement.IsValidText(tagText) Then

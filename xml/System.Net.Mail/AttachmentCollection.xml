@@ -23,8 +23,27 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Stores attachments to be sent as part of an e-mail message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of the <xref:System.Net.Mail.AttachmentCollection> class are returned by the <xref:System.Net.Mail.MailMessage.AlternateViews%2A?displayProperty=fullName> and <xref:System.Net.Mail.MailMessage.Attachments%2A?displayProperty=fullName> properties.  
+  
+ Use the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> property to specify copies of an e-mail message in different formats. For example, if you send a message in HTML, you might also want provide a plain text version in case some of the recipients use e-mail readers that cannot display HTML content.  
+  
+ Use the collection returned by the <xref:System.Net.Mail.MailMessage.Attachments%2A> property to add an attachment, such as a file or the contents of a <xref:System.IO.Stream> to this <xref:System.Net.Mail.MailMessage>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create and send an e-mail message with an attachment.  
+  
+ [!code-cpp[NclMailSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#6)]
+ [!code-csharp[NclMailSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#6)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ClearItems">
@@ -69,8 +88,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Net.Mail.AttachmentCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Net.Mail.MailMessage.Dispose%2A> method. You do not have to call it in your application.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertItem">

@@ -1,1 +1,0 @@
-                object outputObject = xmlTransform.GetOutput();

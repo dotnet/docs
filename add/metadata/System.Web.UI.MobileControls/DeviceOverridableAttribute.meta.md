@@ -1,19 +1,29 @@
 ---
 uid: System.Web.UI.MobileControls.DeviceOverridableAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.DeviceOverridableAttribute.#ctor(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.DeviceOverridableAttribute.Overridable
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.DeviceOverridableAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.DeviceOverridableAttribute.Overridable
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.DeviceOverridableAttribute.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -19,8 +19,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of a parameter within a query relative to the <see cref="T:System.Data.DataSet" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.ParameterDirection> values are used by the parameter direction properties of <xref:System.Data.OleDb.OleDbParameter> and <xref:System.Data.SqlClient.SqlParameter>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Input">
@@ -45,7 +52,7 @@
         <ReturnType>System.Data.ParameterDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parameter is an input parameter.</summary>
       </Docs>
     </Member>
     <Member MemberName="InputOutput">
@@ -70,7 +77,7 @@
         <ReturnType>System.Data.ParameterDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parameter is capable of both input and output.</summary>
       </Docs>
     </Member>
     <Member MemberName="Output">
@@ -95,7 +102,7 @@
         <ReturnType>System.Data.ParameterDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parameter is an output parameter.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReturnValue">
@@ -120,7 +127,7 @@
         <ReturnType>System.Data.ParameterDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parameter represents a return value from an operation such as a stored procedure, built-in function, or user-defined function.</summary>
       </Docs>
     </Member>
   </Members>

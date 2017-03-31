@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.ViewStateModeByIdAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ViewStateModeByIdAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

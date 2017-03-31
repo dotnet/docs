@@ -1,44 +1,49 @@
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizableResourceKey
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Equals(System.Object)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Equals
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Equals(System.Windows.Markup.Localizer.BamlLocalizableResourceKey)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizableResourceKey.#ctor(System.String,System.String,System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizableResourceKey.AssemblyName
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizableResourceKey.PropertyName
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizableResourceKey.GetHashCode
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizableResourceKey.ClassName
-internalonly: False
+manager: "martinek"
 ---

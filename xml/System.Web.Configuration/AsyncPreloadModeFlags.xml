@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the mode for asynchronous requests.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Asynchronous uploads of the request entity body will occur for all posts.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllFormTypes">
@@ -48,7 +48,7 @@
         <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Asynchronous uploads of the request entity body will occur only for form posts.</summary>
       </Docs>
     </Member>
     <Member MemberName="Form">
@@ -64,7 +64,7 @@
         <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Asynchronous uploads of the request entity body will occur only for form posts. This flag enables asynchronous preloading for MIME types that are specifically set to <c>application/x-www-form-urlencoded</c>.</summary>
       </Docs>
     </Member>
     <Member MemberName="FormMultiPart">
@@ -80,7 +80,7 @@
         <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Asynchronous uploads of the request entity body will occur only for multi-part form data. This flag enables asynchronous preloading for MIME types that are specifically set to <c>multipart/form-data</c>.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -96,7 +96,7 @@
         <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No asynchronous upload of the request entity body will occur.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonForm">
@@ -112,7 +112,7 @@
         <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Asynchronous uploads of the request entity body will occur only for non-form posts.</summary>
       </Docs>
     </Member>
   </Members>

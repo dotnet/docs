@@ -27,7 +27,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Stores a set of <see cref="T:System.Net.IPAddress" /> types.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.IPAddressCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +80,8 @@
         <Parameter Name="address" Type="System.Net.IPAddress" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="address">The object to be added to the collection.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> because this operation is not supported for this collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,7 +108,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> because this operation is not supported for this collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,9 +137,9 @@
         <Parameter Name="address" Type="System.Net.IPAddress" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="address">The <see cref="T:System.Net.IPAddress" /> object to be searched in the collection.</param>
+        <summary>Checks whether the collection contains the specified <see cref="T:System.Net.IPAddress" /> object.</summary>
+        <returns>**true** if the <see cref="T:System.Net.IPAddress" /> object exists in the collection; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,10 +169,27 @@
         <Parameter Name="offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">A one-dimensional array that receives a copy of the collection.</param>
+        <param name="offset">The zero-based index in <c>array</c> at which the copy begins.</param>
+        <summary>Copies the elements in this collection to a one-dimensional array of type <see cref="T:System.Net.IPAddress" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The array parameter must be one-dimensional with zero-based indexing.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">-   <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in this <see cref="T:System.Net.NetworkInformation.IPAddressCollection" /> is greater than the available space from <paramref name="offset" /> to the end of the destination <paramref name="array" />.</exception>
+        <exception cref="T:System.InvalidCastException">The elements in this <see cref="T:System.Net.NetworkInformation.IPAddressCollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -197,8 +214,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of <see cref="T:System.Net.IPAddress" /> types in this collection.</summary>
+        <value>An <see cref="T:System.Int32" /> value that contains the number of <see cref="T:System.Net.IPAddress" /> types in this collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,9 +242,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an object that can be used to iterate through this collection.</summary>
+        <returns>An object that implements the <see cref="T:System.Collections.IEnumerator" /> interface and provides access to the <see cref="T:System.Net.NetworkInformation.IPAddressCollection" /> types in this collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object that is returned by this method is initially positioned before the first element in this collection. You must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method before you can access the first element. To access the element at the current position, call the <xref:System.Collections.IEnumerator.Current%2A> property.  
+  
+ Do not modify the collection while using the enumerator. If the collection is modified while an enumerator is in use, an attempt to set the position by calling <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> causes an <xref:System.InvalidOperationException>.  
+  
+ For a detailed description of enumerators, see the documentation for the <xref:System.Collections.IEnumerator> class and the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -252,8 +280,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether access to this collection is read-only.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,9 +311,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of interest.</param>
+        <summary>Gets the <see cref="T:System.Net.IPAddress" /> at the specific index of the collection.</summary>
+        <value>The <see cref="T:System.Net.IPAddress" /> at the specific index in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,9 +342,9 @@
         <Parameter Name="address" Type="System.Net.IPAddress" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="address">The object to be removed.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> because this operation is not supported for this collection.</summary>
+        <returns>Always throws a <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,9 +371,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an object that can be used to iterate through this collection.</summary>
+        <returns>An object that implements the <see cref="T:System.Collections.IEnumerator" /> interface and provides access to the <see cref="T:System.Net.NetworkInformation.IPAddressCollection" /> types in this collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object that is returned by this method is initially positioned before the first element in this collection. You must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method before you can access the first element. To access the element at the current position, call the <xref:System.Collections.IEnumerator.Current%2A> property.  
+  
+ Do not modify the collection while using the enumerator. If the collection is modified while an enumerator is in use, an attempt to set the position by calling <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> causes an <xref:System.InvalidOperationException>.  
+  
+ For a detailed description of enumerators, see the documentation for the <xref:System.Collections.IEnumerator> class and the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

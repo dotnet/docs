@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a rule for decorating a set of matching types with Managed Extensibility Framework (MEF) attributes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,10 @@
         <Parameter Name="itemFunc" Type="System.Func&lt;System.Type,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="itemFunc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The metadata key.</param>
+        <param name="itemFunc">A function that returns the metadata value, given the target type.</param>
+        <summary>Adds metadata to the matching types.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,10 +56,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The metadata key.</param>
+        <param name="value">The metadata value.</param>
+        <summary>Adds metadata to the matching types.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,8 +77,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Specifies that matching types should be exported.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +98,9 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="exportConfiguration">An object that contains configuration information about the export. The default value is <see langword="null" />.</param>
+        <summary>Specifies that matching types should be exported, and provides configuration information for the resulting exports.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +121,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of contract.</typeparam>
+        <summary>Specifies that matching types should be exported by using the specified contract type.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,10 +146,10 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of contract.</typeparam>
+        <param name="exportConfiguration">An object that contains configuration information about the export. The default value is <see langword="null" />.</param>
+        <summary>Specifies that matching types should be exported by using the specified contract type, and provides configuration information for the resulting exports.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +167,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Specifies that all the interfaces of the matching types should be exported.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,10 +188,19 @@
         <Parameter Name="interfaceFilter" Type="System.Predicate&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="interfaceFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="interfaceFilter">A predicate that specifies a set of interfaces.</param>
+        <summary>Specifies a set of interfaces on the matching types that should be exported.</summary>
+        <returns>The current object, to allow chaining.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method will not export <xref:System.IDisposable> or <xref:System.ComponentModel.Composition.IPartImportsSatisfiedNotification> objects.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="interfaceFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportInterfaces">
@@ -211,11 +220,20 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Type,System.ComponentModel.Composition.Registration.ExportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="interfaceFilter">To be added.</param>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="interfaceFilter">A predicate that specifies a set of interfaces.</param>
+        <param name="exportConfiguration">An object that contains configuration information about the export. The default value is <see langword="null" />.</param>
+        <summary>Specifies a set of interfaces on the matching types that should be exported, and provides configuration information for the resulting exports.</summary>
+        <returns>The current object, to allow chaining.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method will not export <xref:System.IDisposable> or <xref:System.ComponentModel.Composition.IPartImportsSatisfiedNotification> objects.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="interfaceFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperties">
@@ -234,10 +252,12 @@
         <Parameter Name="propertyFilter" Type="System.Predicate&lt;System.Reflection.PropertyInfo&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propertyFilter">A predicate that specifies a set of properties.</param>
+        <summary>Specifies a set of properties that should be exported on the matching types.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperties">
@@ -257,11 +277,13 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ExportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyFilter">To be added.</param>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propertyFilter">A predicate that specifies a set of properties.</param>
+        <param name="exportConfiguration">An object that contains configuration information about the export. The default value is <see langword="null" />.</param>
+        <summary>Specifies a set of properties on the matching types that should be exported, and provides configuration information for those exports.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperties&lt;T&gt;">
@@ -283,11 +305,13 @@
         <Parameter Name="propertyFilter" Type="System.Predicate&lt;System.Reflection.PropertyInfo&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="propertyFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of contract.</typeparam>
+        <param name="propertyFilter">A predicate that specifies a set of properties.</param>
+        <summary>Specifies a set of properties on the matching types that should be exported, by using the specified contract type.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperties&lt;T&gt;">
@@ -310,12 +334,14 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ExportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="propertyFilter">To be added.</param>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of contract.</typeparam>
+        <param name="propertyFilter">A predicate that specifies a set of properties.</param>
+        <param name="exportConfiguration">An object that contains configuration information about the export. The default value is <see langword="null" />.</param>
+        <summary>Specifies a set of properties on the matching types that should be exported by using the specified contract type, and provides configuration information for the resulting exports.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportProperties">
@@ -334,10 +360,12 @@
         <Parameter Name="propertyFilter" Type="System.Predicate&lt;System.Reflection.PropertyInfo&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propertyFilter">A predicate that specifies a set of properties.</param>
+        <summary>Specifies a set of properties on the matching types that should be imported.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportProperties">
@@ -357,11 +385,13 @@
         <Parameter Name="importConfiguration" Type="System.Action&lt;System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ImportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyFilter">To be added.</param>
-        <param name="importConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propertyFilter">A predicate that specifies a set of properties.</param>
+        <param name="importConfiguration">An object that contains configuration information about the import. The default value is <see langword="null" />.</param>
+        <summary>Specifies a set of properties on the matching types that should be marked as imports, and provides configuration information for the resulting imports.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportProperties&lt;T&gt;">
@@ -383,11 +413,13 @@
         <Parameter Name="propertyFilter" Type="System.Predicate&lt;System.Reflection.PropertyInfo&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="propertyFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of contract.</typeparam>
+        <param name="propertyFilter">A predicate that specifies a set of properties.</param>
+        <summary>Specifies a set of properties on the matching types that should be marked as imports using the specified contract type.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportProperties&lt;T&gt;">
@@ -410,12 +442,14 @@
         <Parameter Name="importConfiguration" Type="System.Action&lt;System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ImportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="propertyFilter">To be added.</param>
-        <param name="importConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of contract.</typeparam>
+        <param name="propertyFilter">A predicate that specifies a set of properties.</param>
+        <param name="importConfiguration">An object that contains configuration information about the import. The default value is <see langword="null" />.</param>
+        <summary>Specifies a set of properties on the matching types that should be marked as imports by using the specified contract type, and provides configuration information for the resulting imports.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectConstructor">
@@ -434,10 +468,16 @@
         <Parameter Name="constructorFilter" Type="System.Func&lt;System.Reflection.ConstructorInfo[],System.Reflection.ConstructorInfo&gt;" />
       </Parameters>
       <Docs>
-        <param name="constructorFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="constructorFilter">A function that chooses one constructor from a set of constructors.</param>
+        <summary>Specifies the constructor that matching types should use as an importing constructor.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="constructorFilter" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="constructorFilter" /> returns <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="constructorFilter" /> returns a constructor that is not associated with the target type.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectConstructor">
@@ -457,11 +497,17 @@
         <Parameter Name="importConfiguration" Type="System.Action&lt;System.Reflection.ParameterInfo,System.ComponentModel.Composition.Registration.ImportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="constructorFilter">To be added.</param>
-        <param name="importConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="constructorFilter">A function that chooses one constructor from a set of constructors.</param>
+        <param name="importConfiguration">An object that contains configuration information for the importing constructor. The default is <see langword="null" />.</param>
+        <summary>Specifies the constructor that matching types should use as an importing constructor, and provides configuration information for the resulting import.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="constructorFilter" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="constructorFilter" /> returns <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="constructorFilter" /> returns a constructor that is not associated with the target type.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetCreationPolicy">
@@ -480,9 +526,9 @@
         <Parameter Name="creationPolicy" Type="System.ComponentModel.Composition.CreationPolicy" />
       </Parameters>
       <Docs>
-        <param name="creationPolicy">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="creationPolicy">The creation policy.</param>
+        <summary>Specifies the creation policy for matching types.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,8 +15,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines identifiers that indicate information about the context in which a request for Help information originated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.Design.HelpContextType> defines identifiers that are used by the Help system to determine the context in which a Help request was initiated.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ambient">
@@ -37,7 +44,7 @@
         <ReturnType>System.ComponentModel.Design.HelpContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A general context.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -58,7 +65,7 @@
         <ReturnType>System.ComponentModel.Design.HelpContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A selection.</summary>
       </Docs>
     </Member>
     <Member MemberName="ToolWindowSelection">
@@ -79,7 +86,7 @@
         <ReturnType>System.ComponentModel.Design.HelpContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A tool window selection.</summary>
       </Docs>
     </Member>
     <Member MemberName="Window">
@@ -100,7 +107,7 @@
         <ReturnType>System.ComponentModel.Design.HelpContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A window.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,79 +1,84 @@
 ---
 uid: System.Windows.Baml2006.Baml2006Reader
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.#ctor(System.IO.Stream,System.Xaml.XamlReaderSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.Value
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.#ctor(System.IO.Stream)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.System#Xaml#IXamlLineInfo#LinePosition
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.NodeType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.Type
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.IsEof
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.SchemaContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.Read
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.Member
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.Dispose(System.Boolean)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Baml2006.Baml2006Reader.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.System#Xaml#IXamlLineInfo#HasLineInfo
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.Namespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Baml2006.Baml2006Reader.System#Xaml#IXamlLineInfo#LineNumber
-internalonly: False
+manager: "martinek"
 ---

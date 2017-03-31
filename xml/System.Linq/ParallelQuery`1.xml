@@ -27,8 +27,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TSource">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TSource">The type of element in the source sequence.</typeparam>
+    <summary>Represents a parallel sequence.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -55,8 +55,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through the sequence.</summary>
+        <returns>An enumerator that iterates through the sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,54 +1,90 @@
 ---
 uid: System.Data.Services.Design.EntityClassGenerator
-internalonly: False
----
-
----
-uid: System.Data.Services.Design.EntityClassGenerator.OnTypeGenerated
-internalonly: False
----
-
----
-uid: System.Data.Services.Design.EntityClassGenerator.GenerateCode(System.Xml.XmlReader,System.IO.TextWriter,System.String)
-internalonly: False
----
-
----
-uid: System.Data.Services.Design.EntityClassGenerator.EdmToObjectNamespaceMap
-internalonly: False
----
-
----
-uid: System.Data.Services.Design.EntityClassGenerator.GenerateCode(System.Xml.XmlReader,System.String)
-internalonly: False
----
-
----
-uid: System.Data.Services.Design.EntityClassGenerator.OnPropertyGenerated
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Design.EntityClassGenerator.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Design.EntityClassGenerator.GenerateCode
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Design.EntityClassGenerator.OnTypeGenerated
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Design.EntityClassGenerator.GenerateCode(System.Xml.XmlReader,System.IO.TextWriter,System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Design.EntityClassGenerator.EdmToObjectNamespaceMap
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Design.EntityClassGenerator.GenerateCode(System.Xml.XmlReader,System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Design.EntityClassGenerator.OnPropertyGenerated
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Services.Design.EntityClassGenerator.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Design.EntityClassGenerator.Version
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Design.EntityClassGenerator.LanguageOption
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Design.EntityClassGenerator.UseDataServiceCollection
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Services.Design.EntityClassGenerator.#ctor(System.Data.Services.Design.LanguageOption)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

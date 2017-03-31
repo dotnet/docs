@@ -1,4 +1,5 @@
 ---
 uid: System.Net.Mime
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

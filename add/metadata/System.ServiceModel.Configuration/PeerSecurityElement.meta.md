@@ -1,19 +1,19 @@
 ---
 uid: System.ServiceModel.Configuration.PeerSecurityElement
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerSecurityElement.Mode
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerSecurityElement.Transport
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerSecurityElement.#ctor
-internalonly: False
+manager: "ghogen"
 ---

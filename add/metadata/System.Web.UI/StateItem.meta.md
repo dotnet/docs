@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.StateItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateItem.Value
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateItem.IsDirty
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

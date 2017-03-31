@@ -25,9 +25,62 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The data type of the <see cref="T:System.Activities.InOutArgument`1" />.</typeparam>
+    <summary>A binding terminal that represents the flow of data into and out of an activity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this example, a custom `Square` activity has an <xref:System.Activities.InOutArgument%601> of type <xref:System.Int32> named `N1`. This argument is used to receive the value to be operated on and is also used to pass the result of the operation back out.  
+  
+```csharp  
+class Square : CodeActivity  
+{  
+    public Square() : base() { }  
+  
+    public InOutArgument<int> N1  
+    {  
+        get;  
+  
+        set;  
+    }  
+  
+    protected override void Execute(CodeActivityContext context)  
+    {  
+        context.SetValue<int>(N1, N1.Get(context) * N1.Get(context));  
+    }  
+}  
+```  
+  
+ In the following example, the `Square` activity is hosted in a workflow. A value is passed into the activity and the result is then displayed to the console window by a <xref:System.Activities.Statements.WriteLine> activity.  
+  
+```csharp  
+Variable<int> n1 = new Variable<int>() { Default = 25 };  
+  
+Activity activity1 = new Sequence()  
+{  
+    Variables =   
+    {  
+        n1  
+    },  
+    Activities =   
+    {  
+        new Square()  
+        {  
+            N1 = new InOutArgument<int>(n1)  
+        },  
+        new WriteLine()  
+        {  
+            Text = new InArgument<string>(ctx => "Squared result: " + n1.Get(ctx))  
+        }  
+    }  
+};  
+  
+WorkflowInvoker.Invoke(activity1);  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +94,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.InOutArgument`1" /> class using default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +111,8 @@
         <Parameter Name="expression" Type="System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">The value of the argument.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.InOutArgument`1" /> class using the specified <see cref="T:System.Activities.Activity`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +129,8 @@
         <Parameter Name="variable" Type="System.Activities.Variable" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="variable">The value of the argument.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.InOutArgument`1" /> class using the specified <see cref="T:System.Activities.Variable" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +147,8 @@
         <Parameter Name="variable" Type="System.Activities.Variable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="variable">The value of the argument.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.InOutArgument`1" /> class using the specified <see cref="T:System.Activities.Variable`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +165,8 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">The value of the argument.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.InOutArgument`1" /> class using the specified expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +188,8 @@
         <ReturnType>System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Activities.Activity`1" /> that represents the value of this <see cref="T:System.Activities.InOutArgument`1" />.</summary>
+        <value>The value of the argument.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,9 +209,9 @@
         <Parameter Name="expression" Type="System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The value of the argument.</param>
+        <summary>Initializes and returns a new <see cref="T:System.Activities.InOutArgument`1" /> constructed using the specified <see cref="T:System.Activities.Activity`1" />.</summary>
+        <returns>The new argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,9 +231,9 @@
         <Parameter Name="variable" Type="System.Activities.Variable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="variable">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="variable">The value of the argument.</param>
+        <summary>Initializes and returns a new <see cref="T:System.Activities.InOutArgument`1" /> constructed by using the specified <see cref="T:System.Activities.Variable`1" />.</summary>
+        <returns>The new argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,9 +253,9 @@
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The activity context that contains the value of the argument.</param>
+        <summary>Gets the value of the <see cref="T:System.Activities.InOutArgument`1" /> using the specified <see cref="T:System.Activities.ActivityContext" />.</summary>
+        <returns>The value of the argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,9 +275,9 @@
         <Parameter Name="context" Type="System.Activities.ActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The activity context that contains the location of the argument value.</param>
+        <summary>Gets the location of the value for the <see cref="T:System.Activities.InOutArgument`1" />.</summary>
+        <returns>A reference to the location where the value of the argument is stored.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,9 +342,9 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The current activity context.</param>
+        <param name="value">The new value.</param>
+        <summary>Sets the value of the argument using the specified value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

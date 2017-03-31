@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged.Changing
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.INotifyComposablePartCatalogChanged.Changed
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

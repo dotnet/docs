@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.DataGridViewRowCancelEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

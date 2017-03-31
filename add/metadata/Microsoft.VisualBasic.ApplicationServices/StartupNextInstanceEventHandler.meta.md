@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

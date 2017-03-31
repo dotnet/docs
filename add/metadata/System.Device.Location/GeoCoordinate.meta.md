@@ -1,104 +1,114 @@
 ---
 uid: System.Device.Location.GeoCoordinate
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoCoordinate.ToString
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoCoordinate.Equals(System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoCoordinate.VerticalAccuracy
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoCoordinate.Altitude
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoCoordinate.#ctor(System.Double,System.Double)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoCoordinate.Speed
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoCoordinate.Longitude
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoCoordinate.GetDistanceTo(System.Device.Location.GeoCoordinate)
-internalonly: False
----
-
----
-uid: System.Device.Location.GeoCoordinate.HorizontalAccuracy
-internalonly: False
----
-
----
-uid: System.Device.Location.GeoCoordinate.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
-internalonly: False
----
-
----
-uid: System.Device.Location.GeoCoordinate.Equals(System.Device.Location.GeoCoordinate)
-internalonly: False
----
-
----
-uid: System.Device.Location.GeoCoordinate.Latitude
-internalonly: False
----
-
----
-uid: System.Device.Location.GeoCoordinate.#ctor(System.Double,System.Double,System.Double)
-internalonly: False
----
-
----
-uid: System.Device.Location.GeoCoordinate.Unknown
-internalonly: False
----
-
----
-uid: System.Device.Location.GeoCoordinate.IsUnknown
-internalonly: False
----
-
----
-uid: System.Device.Location.GeoCoordinate.Course
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoCoordinate.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.GeoCoordinate.HorizontalAccuracy
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.GeoCoordinate.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.GeoCoordinate.Equals
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.GeoCoordinate.Equals(System.Device.Location.GeoCoordinate)
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.GeoCoordinate.Latitude
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.GeoCoordinate.#ctor(System.Double,System.Double,System.Double)
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.GeoCoordinate.Unknown
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.GeoCoordinate.IsUnknown
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.GeoCoordinate.Course
+manager: "martinek"
+---
+
+---
+uid: System.Device.Location.GeoCoordinate.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoCoordinate.op_Equality(System.Device.Location.GeoCoordinate,System.Device.Location.GeoCoordinate)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoCoordinate.GetHashCode
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoCoordinate.op_Inequality(System.Device.Location.GeoCoordinate,System.Device.Location.GeoCoordinate)
-internalonly: False
+manager: "martinek"
 ---

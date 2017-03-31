@@ -1,1 +1,0 @@
-        printToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.P

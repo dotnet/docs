@@ -1,1 +1,0 @@
-            message.TimeToReachQueue = New TimeSpan(0, 10, 0)

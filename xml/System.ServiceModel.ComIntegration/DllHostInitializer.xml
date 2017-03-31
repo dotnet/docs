@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class provides the implementation of the <see cref="T:System.EnterpriseServices.IProcessInitializer" /> interface for the initialization of [!INCLUDE[indigo1](~/includes/indigo1-md.md)] COM+ integration services. It should not be used directly.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ComIntegration.DllHostInitializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +56,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Shuts down all the COM+ service hosts that were started by calls to the <see langword="Startup" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +76,8 @@
         <Parameter Name="punkProcessControl" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="punkProcessControl">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="punkProcessControl">Always pass <see langword="null" />.</param>
+        <summary>Starts a COM+ service host for the current COM+ application.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

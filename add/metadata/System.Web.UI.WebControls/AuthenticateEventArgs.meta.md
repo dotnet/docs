@@ -1,19 +1,29 @@
 ---
 uid: System.Web.UI.WebControls.AuthenticateEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AuthenticateEventArgs.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AuthenticateEventArgs.#ctor(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.AuthenticateEventArgs.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.AuthenticateEventArgs.Authenticated
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

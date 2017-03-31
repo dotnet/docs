@@ -1,1 +1,0 @@
- DataSet1.CaseSensitive = DataSet1.CaseSensitive Xor True

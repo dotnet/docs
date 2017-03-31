@@ -1,9 +1,13 @@
 ---
 uid: System.Configuration.ISettingsProviderService
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ISettingsProviderService.GetSettingsProvider(System.Configuration.SettingsProperty)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

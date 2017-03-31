@@ -1,9 +1,13 @@
 ---
 uid: Microsoft.Windows.Input.IPreviewCommandSource
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Windows.Input.IPreviewCommandSource.PreviewCommandParameter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

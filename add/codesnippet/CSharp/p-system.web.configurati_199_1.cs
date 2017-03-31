@@ -1,1 +1,0 @@
-profileSetting = healthMonitoringSection.Profiles[i];

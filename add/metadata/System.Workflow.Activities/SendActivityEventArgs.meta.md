@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.Activities.SendActivityEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.SendActivityEventArgs.SendActivity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.SendActivityEventArgs.#ctor(System.Workflow.Activities.SendActivity)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

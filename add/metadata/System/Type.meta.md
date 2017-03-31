@@ -1,904 +1,1413 @@
 ---
 uid: System.Type
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsNestedFamORAssem
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetMembers(System.Reflection.BindingFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetTypeFromProgID(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetTypeFromProgID(System.String,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetTypeFromCLSID(System.Guid)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetNestedType(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsValueType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.ToString
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsSecurityCritical
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMember
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsSecurityTransparent
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetArrayRank
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetEnumValues
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsAbstract
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetConstructorImpl(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsCOMObject
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsNestedFamANDAssem
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.TypeHandle
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetNestedType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetTypeCodeImpl
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetTypeFromHandle(System.RuntimeTypeHandle)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsVisible
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsContextfulImpl
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetType(System.String,System.Func{System.Reflection.AssemblyName,System.Reflection.Assembly},System.Func{System.Reflection.Assembly,System.String,System.Boolean,System.Type},System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetConstructor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetInterface
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetMembers
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsMarshalByRef
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsArray
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsGenericType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.MakeArrayType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.HasElementType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetElementType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsSealed
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsSpecialName
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsAutoClass
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsEnum
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetField(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetProperty(System.String,System.Type[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.System#Runtime#InteropServices#_Type#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetTypeFromCLSID(System.Guid,System.String,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsAssignableFrom(System.Type)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsPrimitiveImpl
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetTypeFromCLSID(System.Guid,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.Attributes
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.EmptyTypes
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsUnicodeClass
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetInterfaces
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsConstructedGenericType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsSerializable
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.Missing
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.System#Runtime#InteropServices#_Type#GetTypeInfoCount(System.UInt32@)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsInterface
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetMethod(System.String,System.Type[],System.Reflection.ParameterModifier[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsEnumDefined(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetTypeArray(System.Object[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.Module
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetFields
-internalonly: False
----
-
----
-uid: System.Type.IsAnsiClass
-internalonly: False
----
-
----
-uid: System.Type.GetMethods
-internalonly: False
----
-
----
-uid: System.Type.GetConstructors(System.Reflection.BindingFlags)
-internalonly: False
----
-
----
-uid: System.Type.GetGenericTypeDefinition
-internalonly: False
----
-
----
-uid: System.Type.GetType(System.String,System.Boolean,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Type.DeclaringMethod
-internalonly: False
----
-
----
-uid: System.Type.IsNested
-internalonly: False
----
-
----
-uid: System.Type.MemberType
-internalonly: False
----
-
----
-uid: System.Type.GetFields(System.Reflection.BindingFlags)
-internalonly: False
----
-
----
-uid: System.Type.GetConstructor(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
-internalonly: False
----
-
----
-uid: System.Type.GetType(System.String,System.Func{System.Reflection.AssemblyName,System.Reflection.Assembly},System.Func{System.Reflection.Assembly,System.String,System.Boolean,System.Type},System.Boolean,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Type.GetTypeHandle(System.Object)
-internalonly: False
----
-
----
-uid: System.Type.IsLayoutSequential
-internalonly: False
----
-
----
-uid: System.Type.GetAttributeFlagsImpl
-internalonly: False
----
-
----
-uid: System.Type.GetNestedTypes(System.Reflection.BindingFlags)
-internalonly: False
----
-
----
-uid: System.Type.GetMethod(System.String,System.Reflection.BindingFlags)
-internalonly: False
----
-
----
-uid: System.Type.GetProperties(System.Reflection.BindingFlags)
-internalonly: False
----
-
----
-uid: System.Type.GetConstructor(System.Reflection.BindingFlags,System.Reflection.Binder,System.Type[],System.Reflection.ParameterModifier[])
-internalonly: False
----
-
----
-uid: System.Type.GetTypeCode(System.Type)
-internalonly: False
----
-
----
-uid: System.Type.IsSubclassOf(System.Type)
-internalonly: False
----
-
----
-uid: System.Type.IsClass
-internalonly: False
----
-
----
-uid: System.Type.IsPointerImpl
-internalonly: False
----
-
----
-uid: System.Type.FullName
-internalonly: False
----
-
----
-uid: System.Type.IsContextful
-internalonly: False
----
-
----
-uid: System.Type.GetType(System.String,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Type.Delimiter
-internalonly: False
----
-
----
-uid: System.Type.GetEvent(System.String,System.Reflection.BindingFlags)
-internalonly: False
----
-
----
-uid: System.Type.IsValueTypeImpl
-internalonly: False
----
-
----
-uid: System.Type.GetType(System.String)
-internalonly: False
----
-
----
-uid: System.Type.IsGenericParameter
-internalonly: False
----
-
----
-uid: System.Type.IsMarshalByRefImpl
-internalonly: False
----
-
----
-uid: System.Type.IsByRef
-internalonly: False
----
-
----
-uid: System.Type.AssemblyQualifiedName
-internalonly: False
----
-
----
-uid: System.Type.GetMember(System.String,System.Reflection.BindingFlags)
-internalonly: False
----
-
----
-uid: System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[])
-internalonly: False
----
-
----
-uid: System.Type.GetGenericParameterConstraints
-internalonly: False
----
-
----
-uid: System.Type.System#Runtime#InteropServices#_Type#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)
-internalonly: False
----
-
----
-uid: System.Type.IsExplicitLayout
-internalonly: False
----
-
----
-uid: System.Type.IsInstanceOfType(System.Object)
-internalonly: False
----
-
----
-uid: System.Type.GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])
-internalonly: False
----
-
----
-uid: System.Type.IsNotPublic
-internalonly: False
----
-
----
-uid: System.Type.GetProperty(System.String)
-internalonly: False
----
-
----
-uid: System.Type.IsGenericTypeDefinition
-internalonly: False
----
-
----
-uid: System.Type.GetInterfaceMap(System.Type)
-internalonly: False
----
-
----
-uid: System.Type.DefaultBinder
-internalonly: False
----
-
----
-uid: System.Type.MakeArrayType(System.Int32)
-internalonly: False
----
-
----
-uid: System.Type.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
-internalonly: False
----
-
----
-uid: System.Type.Equals(System.Object)
-internalonly: False
----
-
----
-uid: System.Type.GetDefaultMembers
-internalonly: False
----
-
----
-uid: System.Type.MakeGenericType(System.Type[])
-internalonly: False
----
-
----
-uid: System.Type.UnderlyingSystemType
-internalonly: False
----
-
----
-uid: System.Type.GetProperty(System.String,System.Type,System.Type[],System.Reflection.ParameterModifier[])
-internalonly: False
----
-
----
-uid: System.Type.GetMember(System.String)
-internalonly: False
----
-
----
-uid: System.Type.IsPointer
-internalonly: False
----
-
----
-uid: System.Type.GetProperty(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])
-internalonly: False
----
-
----
-uid: System.Type.FindInterfaces(System.Reflection.TypeFilter,System.Object)
-internalonly: False
----
-
----
-uid: System.Type.GetTypeFromProgID(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Type.IsNestedPrivate
-internalonly: False
----
-
----
-uid: System.Type.IsImport
-internalonly: False
----
-
----
-uid: System.Type.op_Equality(System.Type,System.Type)
-internalonly: False
----
-
----
-uid: System.Type.GetMethod(System.String)
-internalonly: False
----
-
----
-uid: System.Type.IsByRefImpl
-internalonly: False
----
-
----
-uid: System.Type.GenericParameterAttributes
-internalonly: False
----
-
----
-uid: System.Type.GetTypeFromProgID(System.String,System.String,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Type.GetGenericArguments
-internalonly: False
----
-
----
-uid: System.Type.#ctor
-internalonly: False
----
-
----
-uid: System.Type.IsNestedPublic
-internalonly: False
----
-
----
-uid: System.Type.GetProperty(System.String,System.Type)
-internalonly: False
----
-
----
-uid: System.Type.TypeInitializer
-internalonly: False
----
-
----
-uid: System.Type.GetTypeFromCLSID(System.Guid,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Type.Equals(System.Type)
-internalonly: False
----
-
----
-uid: System.Type.GetEnumUnderlyingType
-internalonly: False
----
-
----
-uid: System.Type.GetConstructors
-internalonly: False
----
-
----
-uid: System.Type.Namespace
-internalonly: False
----
-
----
-uid: System.Type.GetNestedType(System.String,System.Reflection.BindingFlags)
-internalonly: False
----
-
----
-uid: System.Type.GetField(System.String,System.Reflection.BindingFlags)
-internalonly: False
----
-
----
-uid: System.Type.GetType
-internalonly: False
----
-
----
-uid: System.Type.IsPublic
-internalonly: False
----
-
----
-uid: System.Type.op_Inequality(System.Type,System.Type)
-internalonly: False
----
-
----
-uid: System.Type.IsSecuritySafeCritical
-internalonly: False
----
-
----
-uid: System.Type.GetConstructor(System.Type[])
-internalonly: False
----
-
----
-uid: System.Type.GetProperties
-internalonly: False
----
-
----
-uid: System.Type.IsCOMObjectImpl
-internalonly: False
----
-
----
-uid: System.Type.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
-internalonly: False
----
-
----
-uid: System.Type.GetMethod(System.String,System.Type[])
-internalonly: False
----
-
----
-uid: System.Type.IsEquivalentTo(System.Type)
-internalonly: False
----
-
----
-uid: System.Type.GetInterface(System.String,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Type.GetEnumNames
-internalonly: False
----
-
----
-uid: System.Type.IsNestedAssembly
-internalonly: False
----
-
----
-uid: System.Type.ReflectedType
-internalonly: False
----
-
----
-uid: System.Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)
-internalonly: False
----
-
----
-uid: System.Type.GetEvents(System.Reflection.BindingFlags)
-internalonly: False
----
-
----
-uid: System.Type.FilterAttribute
-internalonly: False
----
-
----
-uid: System.Type.IsNestedFamily
-internalonly: False
----
-
----
-uid: System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Globalization.CultureInfo)
-internalonly: False
----
-
----
-uid: System.Type.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type[],System.Reflection.ParameterModifier[])
-internalonly: False
----
-
----
-uid: System.Type.GetProperty(System.String,System.Reflection.BindingFlags)
-internalonly: False
----
-
----
-uid: System.Type.GenericParameterPosition
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetNestedTypes
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsAnsiClass
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMethods
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetConstructors(System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMethods
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetGenericTypeDefinition
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetType(System.String,System.Boolean,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.DeclaringMethod
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetTypeFromCLSID
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsNested
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.MemberType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetFields(System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetConstructor(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetType(System.String,System.Func{System.Reflection.AssemblyName,System.Reflection.Assembly},System.Func{System.Reflection.Assembly,System.String,System.Boolean,System.Type},System.Boolean,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetProperties
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetTypeHandle(System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsLayoutSequential
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetAttributeFlagsImpl
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.MakeArrayType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetNestedTypes(System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMethod(System.String,System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetProperties(System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetConstructor(System.Reflection.BindingFlags,System.Reflection.Binder,System.Type[],System.Reflection.ParameterModifier[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetTypeCode(System.Type)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsSubclassOf(System.Type)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsClass
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsPointerImpl
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetProperty
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.FullName
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsContextful
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.Equals
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetType(System.String,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.Delimiter
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetEvent(System.String,System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsValueTypeImpl
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetType(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsGenericParameter
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetConstructors
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsMarshalByRefImpl
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsByRef
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.AssemblyQualifiedName
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMember(System.String,System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetField
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.InvokeMember
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetGenericParameterConstraints
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.System#Runtime#InteropServices#_Type#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsExplicitLayout
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsInstanceOfType(System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsNotPublic
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetProperty(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsGenericTypeDefinition
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetInterfaceMap(System.Type)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.DefaultBinder
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.MakeArrayType(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.Equals(System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetDefaultMembers
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.MakeGenericType(System.Type[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.UnderlyingSystemType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetProperty(System.String,System.Type,System.Type[],System.Reflection.ParameterModifier[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMember(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsPointer
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMethod
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetProperty(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.FindInterfaces(System.Reflection.TypeFilter,System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetTypeFromProgID(System.String,System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsNestedPrivate
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsImport
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMembers
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.op_Equality(System.Type,System.Type)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMethod(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsByRefImpl
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GenericParameterAttributes
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetTypeFromProgID(System.String,System.String,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetGenericArguments
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsNestedPublic
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetProperty(System.String,System.Type)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.TypeInitializer
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetTypeFromCLSID(System.Guid,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.Equals(System.Type)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetEnumUnderlyingType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetTypeFromProgID
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetConstructors
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.Namespace
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetNestedType(System.String,System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetField(System.String,System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsPublic
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.op_Inequality(System.Type,System.Type)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsSecuritySafeCritical
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetConstructor(System.Type[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetProperties
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsCOMObjectImpl
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMethod(System.String,System.Type[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsEquivalentTo(System.Type)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetInterface(System.String,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetEnumNames
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsNestedAssembly
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.ReflectedType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetEvents(System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.FilterAttribute
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsNestedFamily
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Globalization.CultureInfo)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type[],System.Reflection.ParameterModifier[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetProperty(System.String,System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GenericParameterPosition
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetNestedTypes
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.FilterNameIgnoreCase
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GenericTypeArguments
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GUID
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.FilterName
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.System#Runtime#InteropServices#_Type#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.HasElementTypeImpl
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetFields
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetEnumName(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.ContainsGenericParameters
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.IsAutoLayout
-internalonly: False
----
-
----
-uid: System.Type.MakePointerType
-internalonly: False
----
-
----
-uid: System.Type.GetHashCode
-internalonly: False
----
-
----
-uid: System.Type.GetMethods(System.Reflection.BindingFlags)
-internalonly: False
----
-
----
-uid: System.Type.MakeByRefType
-internalonly: False
----
-
----
-uid: System.Type.GetEvent(System.String)
-internalonly: False
----
-
----
-uid: System.Type.GetInterface(System.String)
-internalonly: False
----
-
----
-uid: System.Type.IsArrayImpl
-internalonly: False
----
-
----
-uid: System.Type.IsPrimitive
-internalonly: False
----
-
----
-uid: System.Type.Assembly
-internalonly: False
----
-
----
-uid: System.Type.GetType(System.String,System.Func{System.Reflection.AssemblyName,System.Reflection.Assembly},System.Func{System.Reflection.Assembly,System.String,System.Boolean,System.Type})
-internalonly: False
----
-
----
-uid: System.Type.DeclaringType
-internalonly: False
----
-
----
-uid: System.Type.GetProperty(System.String,System.Type,System.Type[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetEvents
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.MakePointerType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetHashCode
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetMethods(System.Reflection.BindingFlags)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.MakeByRefType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetEvent(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetEvent
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetInterface(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsArrayImpl
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.IsPrimitive
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.Assembly
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetType(System.String,System.Func{System.Reflection.AssemblyName,System.Reflection.Assembly},System.Func{System.Reflection.Assembly,System.String,System.Boolean,System.Type})
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.DeclaringType
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetProperty(System.String,System.Type,System.Type[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Type.GetEvents
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.StructLayoutAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.BaseType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Type.GetMember(System.String,System.Reflection.MemberTypes,System.Reflection.BindingFlags)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

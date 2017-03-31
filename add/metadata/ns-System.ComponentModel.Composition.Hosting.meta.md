@@ -1,4 +1,6 @@
 ---
 uid: System.ComponentModel.Composition.Hosting
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

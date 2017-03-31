@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the behavior of the object context when the <see cref="M:System.Data.Objects.ObjectContext.SaveChanges(System.Data.Objects.SaveOptions)" /> method is called.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Data.Objects.SaveOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>After changes are saved, the <see cref="M:System.Data.Objects.ObjectContext.AcceptAllChangesAfterSave" /> method is called, which resets change tracking in the <see cref="T:System.Data.Objects.ObjectStateManager" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="DetectChangesBeforeSave">
@@ -48,7 +48,7 @@
         <ReturnType>System.Data.Objects.SaveOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Before changes are saved, the <see cref="M:System.Data.Objects.ObjectContext.DetectChanges" /> method is called to synchronize the property values of objects that are attached to the object context with data in the <see cref="T:System.Data.Objects.ObjectStateManager" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +64,7 @@
         <ReturnType>System.Data.Objects.SaveOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Changes are saved without the <see cref="M:System.Data.Objects.ObjectContext.DetectChanges" /> or the <see cref="M:System.Data.Objects.ObjectContext.AcceptAllChangesAfterSave" /> methods being called.</summary>
       </Docs>
     </Member>
   </Members>

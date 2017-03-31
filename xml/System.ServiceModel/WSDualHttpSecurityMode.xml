@@ -11,8 +11,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the different security modes for <see cref="T:System.ServiceModel.WSDualHttpBinding" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration defines the security modes that the <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=fullName> supports.  
+  
+   
+  
+## Examples  
+ The following code shows how to set <xref:System.ServiceModel.WSDualHttpSecurity.Mode%2A?displayProperty=fullName> to a member of this enumeration.  
+  
+ [!code-csharp[S_UEWSDualHttpSecurity#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_uewsdualhttpsecurity/cs/program.cs#30)]
+ [!code-vb[S_UEWSDualHttpSecurity#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uewsdualhttpsecurity/vb/module1.vb#30)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Message">
@@ -29,7 +44,7 @@
         <ReturnType>System.ServiceModel.WSDualHttpSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>SOAP message-level security is used and the settings in the <see cref="P:System.ServiceModel.WSDualHttpSecurity.Message" /> property become effective.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -46,7 +61,7 @@
         <ReturnType>System.ServiceModel.WSDualHttpSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No security is used.</summary>
       </Docs>
     </Member>
   </Members>

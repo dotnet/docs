@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Used by <see cref="T:System.Windows.Controls.ItemContainerGenerator" /> to indicate the status of its item generation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Controls.Primitives.GeneratorStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The generator has finished generating containers.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Controls.Primitives.GeneratorStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The generator has finished generating containers, but encountered one or more errors.</summary>
       </Docs>
     </Member>
     <Member MemberName="GeneratingContainers">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Controls.Primitives.GeneratorStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The generator is generating containers.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotStarted">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Controls.Primitives.GeneratorStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The generator has not tried to generate content.</summary>
       </Docs>
     </Member>
   </Members>

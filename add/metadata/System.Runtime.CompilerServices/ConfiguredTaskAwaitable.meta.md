@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.GetAwaiter
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.EntityDataSource.Selecting" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Web.UI.WebControls.EntityDataSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> instance that raised the <see cref="E:System.Web.UI.WebControls.EntityDataSource.Selecting" /> event.</summary>
+        <value>The data source that raised the <see cref="E:System.Web.UI.WebControls.EntityDataSource.Selecting" /> event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Web.UI.DataSourceSelectArguments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets values that determine how the data is returned.</summary>
+        <value>An object that contains values for determining how the data is returned.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

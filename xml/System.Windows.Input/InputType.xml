@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the possible types of input being reported.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Input.InputType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Input was provided by a command.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hid">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Input.InputType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Input was provided a Human Interface Device that was not a keyboard, a mouse, or a stylus.</summary>
       </Docs>
     </Member>
     <Member MemberName="Keyboard">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Input.InputType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Input was provided by a keyboard.</summary>
       </Docs>
     </Member>
     <Member MemberName="Mouse">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Input.InputType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Input was provided by a mouse.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stylus">
@@ -91,7 +91,7 @@
         <ReturnType>System.Windows.Input.InputType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Input was provided by a stylus.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -107,7 +107,7 @@
         <ReturnType>System.Windows.Input.InputType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Input was provided by text.</summary>
       </Docs>
     </Member>
   </Members>

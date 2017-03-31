@@ -19,8 +19,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a proposed change to a <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> within a running workflow instance. This class must be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This class is the base class for the canonical change actions which are added and removed and may be performed on a collection.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityChangeAction" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +62,11 @@
         <Parameter Name="compositeActivity" Type="System.Workflow.ComponentModel.CompositeActivity" />
       </Parameters>
       <Docs>
-        <param name="compositeActivity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="compositeActivity">The <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> associated with the change.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityChangeAction" /> class, initializing the associated <see cref="T:System.Workflow.ComponentModel.CompositeActivity" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="compositeActivity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="OwnerActivityDottedPath">
@@ -74,9 +87,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the <see cref="P:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath" /> of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> associated with this instance.</summary>
+        <value>The <see cref="P:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath" /> of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> associated with this instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This manipulates the <xref:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath%2A> member of the associated <xref:System.Workflow.ComponentModel.CompositeActivity>. Therefore, trying to set this without first initializing the associated <xref:System.Workflow.ComponentModel.CompositeActivity> will cause an exception to be thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateChanges">
@@ -95,10 +115,19 @@
         <Parameter Name="contextActivity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="contextActivity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="contextActivity">The activity to have its changes validated.</param>
+        <summary>Validates the changes pending on the target activity.</summary>
+        <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> that contains any <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> resulting from running each <see cref="T:System.Workflow.ComponentModel.Compiler.Validator" /> defined for the target activity.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `contextActivity` cannot be safely cast to a <xref:System.Workflow.ComponentModel.CompositeActivity> a null reference is returned.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contextActivity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
   </Members>

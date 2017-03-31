@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Assigns XML project configurations to project reference task items.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.AssignProjectConfiguration" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag determining whether to use the solution dependency information passed in the solution blob to add synthetic project references for the purposes of build ordering.</summary>
+        <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the list of resolved project reference paths while preserving the original project reference attributes.</summary>
+        <value>The list of resolved project reference paths.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the project’s full path.</summary>
+        <value>Returns the full path of the project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +102,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the current project's configuration.</summary>
+        <value>Returns the current project's configuration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +120,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the current project's platform.</summary>
+        <value>Returns the current project's platform.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,9 +138,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a semicolon-delimited list of mappings from the platform names used by most VS types to those used by .vcxprojs.</summary>
+        <value>Returns a semicolon-delimited list of mappings from the platform names used by most VS types to those used by .vcxprojs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ E.g. "AnyCPU=Win32"  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -157,8 +164,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the <c>AssignProjectConfiguration</c> task.</summary>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +183,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies whether references should be built, even if they were disabled in the project configuration.</summary>
+        <value>Returns <see langword="true" />. if references should be built; <see langword="false" /> otherwise. Defaults to <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,8 +201,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the output type for the project.</summary>
+        <value>Returns the output type for the project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +219,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a switch that specifies whether default mappings should be used to resolve the configuration/platform of the passed in project references.</summary>
+        <value>Returns true if default mappings should be used; false otherwise.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,8 +237,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a switch that determines whether to set the GlobalPropertiesToRemove metadata on the project reference such that on an MSBuild call, the Configuration and Platform metadata will be unset, allowing the child project to build in its default configuration / platform.</summary>
+        <value>Returns true if the Configuration and Platform metadata will be unset; false otherwise. The default is false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,8 +255,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an XML string that contains the project configuration.</summary>
+        <value>An XML string that contains the project configuration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,9 +278,16 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the list of project reference items that could not be resolved using the pre-resolved list of outputs.</summary>
+        <value>The list of project reference items that could not be resolved using the pre-resolved list of outputs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Since [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] only pre-resolves non-[!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] projects, this means that project references in this list are in the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] format.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VcxToDefaultPlatformMapping">
@@ -288,9 +303,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a semicolon-delimited list of mappings from .vcxproj platform names to the platform names use by most other VS project types.</summary>
+        <value>Returns the semicolon-delimited list of mappings.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ E.g. "Win32=AnyCPU"  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

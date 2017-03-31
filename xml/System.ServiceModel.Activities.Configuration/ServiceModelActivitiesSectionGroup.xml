@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration section that contains workflow hosting options.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,9 @@
         <Parameter Name="config" Type="System.Configuration.Configuration" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">The configuration from which to get the <see cref="T:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup" />.</param>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup" /> from the given configuration.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup" /> from the given configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +65,8 @@
         <ReturnType>System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection" />.</summary>
+        <value>The workflow hosting options section.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DirSyncRequestControl" /> class is a directory control that enables the application to search the directory for objects that have changed since a previous state.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirSyncRequestControl" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="cookie" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cookie">An opaque structure used by the server. It is updated by the directory during each <see cref="T:System.DirectoryServices.Protocols.SearchRequest" />, which enables the control to incrementally read changes from the directory.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor(System.Byte[])" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirSyncRequestControl" /> class using the specified parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="option" Type="System.DirectoryServices.Protocols.DirectorySynchronizationOptions" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <param name="option">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cookie">An opaque structure used by the server. It is updated by the directory during each <see cref="T:System.DirectoryServices.Protocols.SearchRequest" />, which enables the control to incrementally read changes from the directory.</param>
+        <param name="option">Specifies the behavior of the search. This parameter can be zero or a combination of one or more of the values of <see cref="T:System.DirectoryServices.Protocols.DirectorySynchronizationOptions" />.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor(System.Byte[],System.DirectoryServices.Protocols.DirectorySynchronizationOptions)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirSyncRequestControl" /> class using the specified parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +83,10 @@
         <Parameter Name="attributeCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <param name="option">To be added.</param>
-        <param name="attributeCount">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cookie">An opaque structure used by the server. It is updated by the directory during each <see cref="T:System.DirectoryServices.Protocols.SearchRequest" />, which enables the control to incrementally read changes from the directory.</param>
+        <param name="option">Specifies the behavior of the search. This parameter can be zero or a combination of one or more of the values of <see cref="T:System.DirectoryServices.Protocols.DirectorySynchronizationOptions" />.</param>
+        <param name="attributeCount">The maximum number of attributes to return. The default is 1048576.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor(System.Byte[],System.DirectoryServices.Protocols.DirectorySynchronizationOptions,System.Int32)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirSyncRequestControl" /> class using the specified parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,9 +103,17 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirSyncRequestControl.AttributeCount" /> property specifies the maximum number of attributes to return.</summary>
+        <value>The maximum number of attributes to return.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is 1048576.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">There was an attempt to set a value less than zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="Cookie">
@@ -121,9 +129,16 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirSyncRequestControl.Cookie" /> property contains an opaque structure used by the server.</summary>
+        <value>An opaque structure used by the server.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is updated by the directory during each <xref:System.DirectoryServices.Protocols.SearchRequest>, which enables the control to incrementally read changes from the directory.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -140,8 +155,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirSyncRequestControl.GetValue" /> method returns the data associated with this control.</summary>
+        <returns>The data associated with this control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,9 +173,16 @@
         <ReturnType>System.DirectoryServices.Protocols.DirectorySynchronizationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirSyncRequestControl.Option" /> property specifies the behavior of the search.</summary>
+        <value>The behavior of the search.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be zero or a combination of one or more of the values of <xref:System.DirectoryServices.Protocols.DirectorySynchronizationOptions>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

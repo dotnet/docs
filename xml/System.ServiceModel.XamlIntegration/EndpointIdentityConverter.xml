@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Converts an <see cref="T:System.ServiceModel.EndpointIdentity" /> instance to the specified type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.XamlIntegration.EndpointIdentityConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +47,11 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A type descriptor context that provides a format context.</param>
+        <param name="destinationType">The type you want to convert to.</param>
+        <summary>Gets a value that determines whether the converter can convert an <see cref="T:System.ServiceModel.EndpointIdentity" /> instance to the specified type.</summary>
+        <returns>
+          <see langword="true" /> if the converter can perform the conversion requested; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,12 +74,12 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <param name="culture">The culture information. If <see langword="null" /> is passed, the current culture is assumed.</param>
+        <param name="value">The object to convert.</param>
+        <param name="destinationType">The type to convert the <c>value</c> parameter to.</param>
+        <summary>Converts the given object to the specified type, using the specified context and culture information.</summary>
+        <returns>The converted value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

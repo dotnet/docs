@@ -1,4 +1,4 @@
 ---
 uid: System.Windows.Markup.XamlWriterMode
-internalonly: False
+manager: "martinek"
 ---

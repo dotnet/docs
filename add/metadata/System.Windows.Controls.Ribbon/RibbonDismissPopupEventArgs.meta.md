@@ -1,24 +1,40 @@
 ---
 uid: System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.#ctor(System.Windows.Controls.Ribbon.RibbonDismissPopupMode)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.DismissMode
-internalonly: False
----
-
----
-uid: System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.InvokeEventHandler(System.Delegate,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.DismissMode
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.InvokeEventHandler(System.Delegate,System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

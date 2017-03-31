@@ -1,54 +1,90 @@
 ---
 uid: System.Security.Policy.ApplicationDirectoryMembershipCondition
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.GetHashCode
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.FromXml
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.Equals(System.Object)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.ToString
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.Copy
-internalonly: False
----
-
----
-uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.Check(System.Security.Policy.Evidence)
-internalonly: False
----
-
----
-uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.FromXml(System.Security.SecurityElement)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.ToXml
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.Check(System.Security.Policy.Evidence)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.FromXml(System.Security.SecurityElement)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.ToXml
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.ToXml(System.Security.Policy.PolicyLevel)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

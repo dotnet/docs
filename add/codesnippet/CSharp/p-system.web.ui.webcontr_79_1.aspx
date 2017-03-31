@@ -1,1 +1,0 @@
-        md.From = sourceFrom.Text;

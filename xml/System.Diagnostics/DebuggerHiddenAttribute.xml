@@ -29,8 +29,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the <see cref="T:System.Diagnostics.DebuggerHiddenAttribute" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The common language runtime attaches no semantics to this attribute. It is provided for use by source code debuggers. For example, the [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] debugger does not stop in a method marked with this attribute and does not allow a breakpoint to be set in the method. Other debugger attributes recognized by the [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] debugger are the <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> and the <xref:System.Diagnostics.DebuggerStepThroughAttribute>.  
+  
+ For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,7 +63,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DebuggerHiddenAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

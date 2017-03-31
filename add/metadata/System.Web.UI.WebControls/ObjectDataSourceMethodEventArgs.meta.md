@@ -1,14 +1,20 @@
 ---
 uid: System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.#ctor(System.Collections.Specialized.IOrderedDictionary)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

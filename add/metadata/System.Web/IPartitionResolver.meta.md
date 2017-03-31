@@ -1,14 +1,17 @@
 ---
 uid: System.Web.IPartitionResolver
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.IPartitionResolver.Initialize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.IPartitionResolver.ResolvePartition(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

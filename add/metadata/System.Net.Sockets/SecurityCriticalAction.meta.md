@@ -1,4 +1,5 @@
 ---
 uid: System.Net.Sockets.SecurityCriticalAction
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

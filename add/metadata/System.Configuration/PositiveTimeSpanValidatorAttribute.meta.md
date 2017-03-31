@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.PositiveTimeSpanValidatorAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.PositiveTimeSpanValidatorAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.PositiveTimeSpanValidatorAttribute.ValidatorInstance
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

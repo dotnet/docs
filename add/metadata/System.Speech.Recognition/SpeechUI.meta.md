@@ -1,9 +1,11 @@
 ---
 uid: System.Speech.Recognition.SpeechUI
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechUI.SendTextFeedback(System.Speech.Recognition.RecognitionResult,System.String,System.Boolean)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

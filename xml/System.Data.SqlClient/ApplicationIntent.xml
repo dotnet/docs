@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies a value for <see cref="P:System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent" />. Possible values are <see langword="ReadWrite" /> and <see langword="ReadOnly" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Data.SqlClient.ApplicationIntent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The application workload type when connecting to a server is read only.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadWrite">
@@ -70,7 +70,7 @@
         <ReturnType>System.Data.SqlClient.ApplicationIntent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The application workload type when connecting to a server is read write.</summary>
       </Docs>
     </Member>
   </Members>

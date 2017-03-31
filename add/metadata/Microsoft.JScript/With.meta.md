@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.With
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.With.JScriptWith(System.Object,Microsoft.JScript.Vsa.VsaEngine)
-internalonly: False
+ms.author: "mikejo"
 ---

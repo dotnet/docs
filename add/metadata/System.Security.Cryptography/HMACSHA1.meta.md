@@ -1,19 +1,41 @@
 ---
 uid: System.Security.Cryptography.HMACSHA1
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.HMACSHA1.#ctor(System.Byte[],System.Boolean)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.HMACSHA1.#ctor(System.Byte[])
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.HMACSHA1.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.HMACSHA1.#ctor(System.Byte[],System.Boolean)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.HMACSHA1.#ctor(System.Byte[])
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.HMACSHA1.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.HMACSHA1.Dispose
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

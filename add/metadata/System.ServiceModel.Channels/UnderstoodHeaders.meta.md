@@ -1,29 +1,41 @@
 ---
 uid: System.ServiceModel.Channels.UnderstoodHeaders
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UnderstoodHeaders.Remove(System.ServiceModel.Channels.MessageHeaderInfo)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UnderstoodHeaders.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UnderstoodHeaders.GetEnumerator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UnderstoodHeaders.Add(System.ServiceModel.Channels.MessageHeaderInfo)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.UnderstoodHeaders.Contains(System.ServiceModel.Channels.MessageHeaderInfo)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.Ink.LassoSelectionChangedEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Ink.LassoSelectionChangedEventArgs.SelectedStrokes
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Ink.LassoSelectionChangedEventArgs.DeselectedStrokes
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

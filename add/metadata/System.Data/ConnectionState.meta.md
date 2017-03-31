@@ -1,4 +1,6 @@
 ---
 uid: System.Data.ConnectionState
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

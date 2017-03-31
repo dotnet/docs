@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.XamlInstanceCreator
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlInstanceCreator.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlInstanceCreator.CreateObject
-internalonly: False
+manager: "martinek"
 ---

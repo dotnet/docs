@@ -11,8 +11,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a static header item on a smart tag panel. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Like the <xref:System.ComponentModel.Design.DesignerActionTextItem> base class, <xref:System.ComponentModel.Design.DesignerActionHeaderItem> represents individual static text items in a smart tag panel. However, <xref:System.ComponentModel.Design.DesignerActionHeaderItem> entries are displayed using bold text. Typically, a header item is used to create a heading for a group of items in a panel. Clicking on a header item causes no action.  
+  
+ Individual panel items are associated together to form a panel by calling the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method of the <xref:System.ComponentModel.Design.DesignerActionList> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
+  
+ For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](../Topic/How%20to:%20Attach%20Smart%20Tags%20to%20a%20Windows%20Forms%20Component.md).  
+  
+ [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
+ [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +47,26 @@
         <Parameter Name="displayName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="displayName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="displayName">The text to be displayed in the header.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionHeaderItem" /> class using the provided name string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets both the <xref:System.ComponentModel.Design.DesignerActionItem.DisplayName%2A> and the <xref:System.ComponentModel.Design.DesignerActionItem.Category%2A> properties to the value of the `displayName` parameter and sets the <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> property to `null`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
+  
+ For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](../Topic/How%20to:%20Attach%20Smart%20Tags%20to%20a%20Windows%20Forms%20Component.md).  
+  
+ [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
+ [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,10 +83,17 @@
         <Parameter Name="category" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="displayName">To be added.</param>
-        <param name="category">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="displayName">The text to be displayed in the header.</param>
+        <param name="category">The case-sensitive <see cref="T:System.String" /> that defines the groupings of panel entries.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionHeaderItem" /> class using the provided name and category strings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> property to `null`. The <xref:System.ComponentModel.Design.DesignerActionItem.Category%2A> property is case-sensitive.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

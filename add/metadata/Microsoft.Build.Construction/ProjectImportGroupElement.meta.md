@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Construction.ProjectImportGroupElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectImportGroupElement.AddImport(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectImportGroupElement.Imports
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

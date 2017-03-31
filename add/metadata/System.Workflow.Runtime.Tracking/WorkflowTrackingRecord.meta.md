@@ -1,39 +1,62 @@
 ---
 uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventDateTime
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.Annotations
-internalonly: False
----
-
----
-uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.TrackingWorkflowEvent
-internalonly: False
----
-
----
-uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.#ctor(System.Workflow.Runtime.Tracking.TrackingWorkflowEvent,System.DateTime,System.Int32,System.EventArgs)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.TrackingWorkflowEvent
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.#ctor(System.Workflow.Runtime.Tracking.TrackingWorkflowEvent,System.DateTime,System.Int32,System.EventArgs)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventOrder
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

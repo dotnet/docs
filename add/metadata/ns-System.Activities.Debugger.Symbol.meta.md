@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.Debugger.Symbol
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

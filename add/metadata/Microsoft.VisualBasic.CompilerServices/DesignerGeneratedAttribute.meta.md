@@ -1,9 +1,13 @@
 ---
 uid: Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.CompilerServices.DesignerGeneratedAttribute.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

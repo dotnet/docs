@@ -1,9 +1,13 @@
 ---
 uid: System.CodeDom.Compiler.ICodeParser
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.Compiler.ICodeParser.Parse(System.IO.TextReader)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

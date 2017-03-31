@@ -20,7 +20,14 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the method that will handle the requests of execution of some code in another context.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Callbacks provide a facility to request execution of some code in another context. The <xref:System.Runtime.Remoting.Contexts.CrossContextDelegate> class is defined for context callbacks. Each context has a callback object that can be used to perform callbacks on the context. The delegate used to request a callback through the callback object must be of the <xref:System.Runtime.Remoting.Contexts.CrossContextDelegate> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

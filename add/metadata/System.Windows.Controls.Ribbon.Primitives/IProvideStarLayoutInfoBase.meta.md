@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase.OnInitializeLayout
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase.TargetElement
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

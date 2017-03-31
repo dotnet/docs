@@ -1,9 +1,11 @@
 ---
 uid: System.Net.Mail.LinkedResourceCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.LinkedResourceCollection.Dispose
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

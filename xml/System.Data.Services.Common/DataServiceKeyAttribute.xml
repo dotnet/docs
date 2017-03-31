@@ -17,8 +17,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Denotes the key property or properties of an entity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should only apply the <xref:System.Data.Services.Common.DataServiceKeyAttribute> attribute to a property that can be used to uniquely identify an instance of the entity type. This attribute is ignored when applied to a navigation property. For more information, see [Reflection Provider](../Topic/Reflection%20Provider%20\(WCF%20Data%20Services\).md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +42,8 @@
         <Parameter Name="keyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="keyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keyName">The string that contains name of the key attribute.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Common.DataServiceKeyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +67,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="keyNames">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keyNames">An array of string values that contain key attribute names.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Common.DataServiceKeyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +86,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the names of key attributes.</summary>
+        <value>String value that contains names of key attributes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

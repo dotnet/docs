@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serializes and deserializes <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> objects into and from XML documents.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XML serialization is the process of converting an object's public properties and fields to a serial format (in this case, XML) for storage or transport. Deserialization re-creates the object in its original state from the XML.  
+  
+ The <xref:System.IdentityModel.Tokens.SamlSerializer> class serializes and deserializes SAML security tokens, which have an extensible format. Unlike many other security tokens, <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens include XML elements and attributes that can be customized for an application's needs. Some of the extensibility points for a SAML assertion include the `<saml:Advice>`, `<saml:Condition>`, and `<saml:Statement>` elements. For more details about overriding how each of these elements are read, see the <xref:System.IdentityModel.Tokens.SamlSerializer.LoadAdvice%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29>, <xref:System.IdentityModel.Tokens.SamlSerializer.LoadCondition%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29>, and <xref:System.IdentityModel.Tokens.SamlSerializer.LoadStatement%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> methods.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,12 +57,21 @@
         <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the additional information provided by the SAML authority.</param>
         <param name="tokenSerializer">To be added.</param>
         <param name="tokenResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Reads the additional information provided by the SAML authority within a<see langword=" &lt;saml:Advice&gt;" /> element of a SAML assertion using the specified XML reader.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SamlAdvice" /> that contains additional information provided by the SAML authority within a<see langword=" &lt;saml:Advice&gt;" /> element of a SAML assertion.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `<saml:Advice>` element within a SAML assertion is an extension point for SAML tokens. To create a serializer that can read the custom attributes, derive a class from <xref:System.IdentityModel.Tokens.SamlSerializer> and override the <xref:System.IdentityModel.Tokens.SamlSerializer.LoadAdvice%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" /></exception>
       </Docs>
     </Member>
     <Member MemberName="LoadAssertion">
@@ -74,12 +92,23 @@
         <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML assertion.</param>
         <param name="tokenSerializer">To be added.</param>
         <param name="tokenResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Reads a SAML assertion from the specified XML reader.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> that represents the SAML assertion.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A SAML assertion is contained within a `<saml:Assertion>` element.  
+  
+ The <xref:System.IdentityModel.Tokens.SamlSerializer.ReadToken%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method calls the <xref:System.IdentityModel.Tokens.SamlSerializer.LoadAssertion%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method to read the SAML assertion.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" /></exception>
       </Docs>
     </Member>
     <Member MemberName="LoadAttribute">
@@ -100,12 +129,19 @@
         <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the attributes.</param>
         <param name="tokenSerializer">To be added.</param>
         <param name="tokenResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Reads an attribute of the subject of a SAML security token using the specified XML reader.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> that represents a claim that is an attribute of the subject of a SAML security token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application defines its own set of attributes, which is possible because SAML attributes is an extensibility point, a serializer that understands how to read those attributes is needed. A SAML attribute is different than an XML attribute. A SAML attribute is contained within a `<saml:Attribute>` element and can contain any well-formed XML, not just an attribute. To create a serializer that can read the custom attributes, derive a class from <xref:System.IdentityModel.Tokens.SamlSerializer> and override the <xref:System.IdentityModel.Tokens.SamlSerializer.LoadAttribute%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadCondition">
@@ -126,12 +162,21 @@
         <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML condition.</param>
         <param name="tokenSerializer">To be added.</param>
         <param name="tokenResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Reads a condition that must be taken into account when assessing the validity of a SAML assertion using the specified XML reader.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SamlCondition" /> that specifies a condition that must be taken into account when assessing the validity of a SAML assertion.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application defines its own set of conditions, which is possible because the `<saml:Condition>` element is an extensibility point, a serializer that understands how to read those conditions is needed. To create a serializer that can read the custom attributes, derive a class from <xref:System.IdentityModel.Tokens.SamlSerializer> and override the <xref:System.IdentityModel.Tokens.SamlSerializer.LoadCondition%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadConditions">
@@ -152,12 +197,21 @@
         <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML conditions.</param>
         <param name="tokenSerializer">To be added.</param>
         <param name="tokenResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Reads a set of conditions that must be taken into account when assessing the validity of a SAML assertion using the specified XML reader.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SamlConditions" /> that specifies a set of conditions that must be taken into account when assessing the validity of a SAML assertion.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlSerializer.LoadConditions%2A> method reads the contents of a `<saml:Conditions>` element.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadStatement">
@@ -178,12 +232,44 @@
         <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML statement.</param>
         <param name="tokenSerializer">To be added.</param>
         <param name="tokenResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Reads a SAML statement using the specified XML reader.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SamlStatement" /> that represents the SAML statement.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions where the details of the claims are specified in SAML statements. The SAML specification defines the following statement types:  
+  
+-   <xref:System.IdentityModel.Tokens.SamlAttributeStatement>  
+  
+-   <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>  
+  
+-   <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement>  
+  
+-   <xref:System.IdentityModel.Tokens.SamlSubjectStatement>  
+  
+ The <xref:System.IdentityModel.Tokens.SamlSerializer.LoadStatement%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method reads the SAML statements listed previously. When custom statements are defined and used by an application, create a serializer to read the contents of them. To create the custom serializer, derive a class from <xref:System.IdentityModel.Tokens.SamlSerializer> and override the <xref:System.IdentityModel.Tokens.SamlSerializer.LoadStatement%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method. Custom SAML statements are contained within a `<saml:Statement>` element.  
+  
+   
+  
+## Examples  
+ <xref:System.IdentityModel.Tokens.SamlAttributeStatement>  
+  
+ <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>  
+  
+ <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement>  
+  
+ <xref:System.IdentityModel.Tokens.SamlSubjectStatement>  
+  
+ <xref:System.IdentityModel.Tokens.SamlStatement>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="PopulateDictionary">
@@ -202,9 +288,16 @@
         <Parameter Name="dictionary" Type="System.Xml.IXmlDictionary" />
       </Parameters>
       <Docs>
-        <param name="dictionary">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dictionary">An <see cref="T:System.Xml.IXmlDictionary" /> that contains the set of XML elements and attributes.</param>
+        <summary>Replaces the default set of XML elements and attributes that are recognized by this serializer with the specified dictionary of elements and attributes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SamlSerializer.PopulateDictionary%2A> method when a custom set of XML elements is defined for one of the extensibility points of a SAML assertion. Extensibility points for a SAML assertion include the `<saml:Advice>`, `<saml:Condition>`, and `<saml:Statement>` elements. For more details about overriding how each of these elements are read, see the <xref:System.IdentityModel.Tokens.SamlSerializer.LoadAdvice%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29>, <xref:System.IdentityModel.Tokens.SamlSerializer.LoadCondition%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29>, and <xref:System.IdentityModel.Tokens.SamlSerializer.LoadStatement%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadToken">
@@ -225,12 +318,23 @@
         <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</param>
         <param name="tokenSerializer">To be added.</param>
         <param name="tokenResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Reads a SAML security token from the specified XML reader.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlSerializer.ReadToken%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method calls the <xref:System.IdentityModel.Tokens.SamlSerializer.LoadAssertion%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method to read the SAML assertion.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" /></exception>
+        <exception cref="T:System.Security.SecurityException">
+          <paramref name="reader" /> refers to an XML element that does not contain a digital signature.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteToken">
@@ -251,11 +355,24 @@
         <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <param name="writer">To be added.</param>
-        <param name="keyInfoSerializer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="token">The <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> to write.</param>
+        <param name="writer">An <see cref="T:System.Xml.XmlDictionaryWriter" /> to write the SAML authorization statement.</param>
+        <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that is capable of writing <see langword="KeyInfo" /> clauses.</param>
+        <summary>Writes the specified SAML security token into the specified XML serializer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SamlSerializer.WriteToken%28System.IdentityModel.Tokens.SamlSecurityToken%2CSystem.Xml.XmlWriter%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%29> method to serialize a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token. To deserialize a <xref:System.IdentityModel.Tokens.SamlSecurityToken> use the <xref:System.IdentityModel.Tokens.SamlSerializer.ReadToken%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="token" /> is <see langword="null" /></exception>
       </Docs>
     </Member>
   </Members>

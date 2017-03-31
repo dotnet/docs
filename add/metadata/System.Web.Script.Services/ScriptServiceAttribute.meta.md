@@ -1,9 +1,11 @@
 ---
 uid: System.Web.Script.Services.ScriptServiceAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Script.Services.ScriptServiceAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

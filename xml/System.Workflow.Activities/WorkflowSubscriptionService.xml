@@ -16,8 +16,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods for a subscription service to manage subscriptions for a workflow runtime.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.Activities.WorkflowSubscriptionService> is the base class for any subscription service classes used in the Workflow Foundation (WF).  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Workflow.Activities.WorkflowSubscriptionService" />, you must override the following members: <see cref="M:System.Workflow.Activities.WorkflowSubscriptionService.CreateSubscription(System.Workflow.Activities.MessageEventSubscription)" /> and <see cref="M:System.Workflow.Activities.WorkflowSubscriptionService.DeleteSubscription(System.Guid)" />.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Activities.WorkflowSubscriptionService" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +65,8 @@
         <Parameter Name="subscription" Type="System.Workflow.Activities.MessageEventSubscription" />
       </Parameters>
       <Docs>
-        <param name="subscription">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="subscription">The <see cref="T:System.Workflow.Activities.MessageEventSubscription" /> that the workflow runtime created.</param>
+        <summary>When overridden in a derived class, notifies the <see cref="T:System.Workflow.Activities.WorkflowSubscriptionService" /> that the workflow runtime created the specified <see cref="T:System.Workflow.Activities.MessageEventSubscription" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +86,8 @@
         <Parameter Name="subscriptionId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="subscriptionId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="subscriptionId">The GUID of the subscription that the workflow runtime deleted.</param>
+        <summary>When overridden in a derived class, notifies the <see cref="T:System.Workflow.Activities.WorkflowSubscriptionService" /> that the workflow runtime deleted the subscription associated with the specified GUID.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,39 +1,47 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.MousePositionX
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.MousePositionY
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.IsHandled
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.Axis,System.Int32,System.Int32,System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ButtonType
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ChartArea
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.Axis
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an ordered collection of <see cref="T:System.Windows.Media.Animation.Clock" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,8 +38,8 @@
         <Parameter Name="item" Type="System.Windows.Media.Animation.Clock" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The object to add.</param>
+        <summary>Adds a new <see cref="T:System.Windows.Media.Animation.Clock" /> object to the end of this <see cref="T:System.Windows.Media.Animation.ClockCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,7 +57,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all items from this <see cref="T:System.Windows.Media.Animation.ClockCollection" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +77,9 @@
         <Parameter Name="item" Type="System.Windows.Media.Animation.Clock" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The object to locate.</param>
+        <summary>Indicates whether the <see cref="T:System.Windows.Media.Animation.ClockCollection" /> contains the specified <see cref="T:System.Windows.Media.Animation.Clock" /> object.</summary>
+        <returns>**true** if <paramref name="item" /> is found; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,9 +100,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The destination array.</param>
+        <param name="index">The zero-based index position where copying begins.</param>
+        <summary>Copies the <see cref="T:System.Windows.Media.Animation.Clock" /> objects of this <see cref="T:System.Windows.Media.Animation.ClockCollection" /> to an array of Clocks, starting at the specified index position.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +119,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of items contained in this <see cref="T:System.Windows.Media.Animation.ClockCollection" />.</summary>
+        <value>The number of items contained in this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,9 +140,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare with this instance.</param>
+        <summary>Indicates whether this instance is equal to the specified object.</summary>
+        <returns>**true** if <paramref name="obj" /> is equal to this instance; otherwise **false**.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,10 +163,11 @@
         <Parameter Name="objB" Type="System.Windows.Media.Animation.ClockCollection" />
       </Parameters>
       <Docs>
-        <param name="objA">To be added.</param>
-        <param name="objB">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objA">The first value to compare.</param>
+        <param name="objB">The second value to compare.</param>
+        <summary>Indicates whether the two specified <see cref="T:System.Windows.Media.Animation.ClockCollection" /> collections are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="objA" /> and <paramref name="objB" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +185,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a 32-bit signed integer hash code representing this instance.</summary>
+        <returns>A 32-bit signed integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,8 +203,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Media.Animation.ClockCollection" /> is read-only.</summary>
+        <value>**true** if this instance is read-only; otherwise **false**.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,9 +224,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index position to access.</param>
+        <summary>Gets the <see cref="T:System.Windows.Media.Animation.Clock" /> at the specified index position.</summary>
+        <value>The <see cref="T:System.Windows.Media.Animation.Clock" /> object at the specified <paramref name="index" /> position.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,10 +247,10 @@
         <Parameter Name="objB" Type="System.Windows.Media.Animation.ClockCollection" />
       </Parameters>
       <Docs>
-        <param name="objA">To be added.</param>
-        <param name="objB">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objA">The first object to compare.</param>
+        <param name="objB">The second object to compare.</param>
+        <summary>Overloaded operator that compares two <see cref="T:System.Windows.Media.Animation.ClockCollection" /> collections for equality.</summary>
+        <returns>**true** if <paramref name="objA" /> and <paramref name="objB" /> are equal; otherwise **false**.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,10 +271,10 @@
         <Parameter Name="objB" Type="System.Windows.Media.Animation.ClockCollection" />
       </Parameters>
       <Docs>
-        <param name="objA">To be added.</param>
-        <param name="objB">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objA">The first object to compare.</param>
+        <param name="objB">The second object to compare.</param>
+        <summary>Overloaded operator that compares two <see cref="T:System.Windows.Media.Animation.ClockCollection" /> collections for inequality.</summary>
+        <returns>**true** if <paramref name="objA" /> and <paramref name="objB" /> are not equal; otherwise **false**.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,9 +294,9 @@
         <Parameter Name="item" Type="System.Windows.Media.Animation.Clock" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The object to remove.</param>
+        <summary>Removes the specified <see cref="T:System.Windows.Media.Animation.Clock" /> from the <see cref="T:System.Windows.Media.Animation.ClockCollection" />.</summary>
+        <returns>**true** if <paramref name="item" /> was successfully removed; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,9 +314,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Animation.ClockCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -332,9 +340,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Animation.ClockCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ Example  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

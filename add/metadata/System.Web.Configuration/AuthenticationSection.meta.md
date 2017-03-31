@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Configuration.AuthenticationSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AuthenticationSection.Forms
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AuthenticationSection.Passport
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AuthenticationSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.AuthenticationSection.Mode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

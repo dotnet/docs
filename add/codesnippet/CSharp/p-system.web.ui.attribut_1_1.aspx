@@ -1,1 +1,0 @@
-      Response.Write("Attribute Collection  count before PostBack = " + myAttributeCollection.Count);

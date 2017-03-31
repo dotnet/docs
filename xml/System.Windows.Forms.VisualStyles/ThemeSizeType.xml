@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the size of the visual style part to retrieve.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.ThemeSizeType> values are used as an argument for the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetPartSize%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Draw">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ThemeSizeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The size that the current visual style uses to draw the part.</summary>
       </Docs>
     </Member>
     <Member MemberName="Minimum">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ThemeSizeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The minimum size of the visual style part.</summary>
       </Docs>
     </Member>
     <Member MemberName="True">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.ThemeSizeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The size of the visual style part that will best fit the available space.</summary>
       </Docs>
     </Member>
   </Members>

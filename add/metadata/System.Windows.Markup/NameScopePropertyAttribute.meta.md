@@ -1,24 +1,29 @@
 ---
 uid: System.Windows.Markup.NameScopePropertyAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.NameScopePropertyAttribute.Type
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.NameScopePropertyAttribute.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.NameScopePropertyAttribute.Name
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.NameScopePropertyAttribute.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.NameScopePropertyAttribute.#ctor(System.String,System.Type)
-internalonly: False
+manager: "martinek"
 ---

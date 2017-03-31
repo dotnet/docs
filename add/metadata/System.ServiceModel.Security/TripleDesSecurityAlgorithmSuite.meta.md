@@ -1,74 +1,104 @@
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.DefaultCanonicalizationAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.DefaultAsymmetricSignatureAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.DefaultEncryptionKeyDerivationLength
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.DefaultSymmetricKeyLength
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.DefaultSymmetricKeyWrapAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.DefaultAsymmetricKeyWrapAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.DefaultSymmetricSignatureAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.IsAsymmetricKeyLengthSupported(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.DefaultSignatureKeyDerivationLength
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.DefaultDigestAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.ToString
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.DefaultEncryptionAlgorithm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.TripleDesSecurityAlgorithmSuite.IsSymmetricKeyLengthSupported(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

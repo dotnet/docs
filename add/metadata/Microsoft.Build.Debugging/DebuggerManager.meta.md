@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Debugging.DebuggerManager
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

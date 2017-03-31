@@ -1,4 +1,4 @@
 ---
 uid: System.ServiceModel.Routing
-internalonly: False
+manager: "ghogen"
 ---

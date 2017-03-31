@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.IDefineEvent
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IDefineEvent.AddEvent(System.String,System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Reasons for a node to shutdown.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Build.Execution.NodeEngineShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The BuildManager sent a command instructing the node to terminate.</summary>
       </Docs>
     </Member>
     <Member MemberName="BuildCompleteReuse">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Build.Execution.NodeEngineShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The BuildManager sent a command instructing the node to terminate, but to restart for reuse.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConnectionFailed">
@@ -59,7 +59,7 @@
         <ReturnType>Microsoft.Build.Execution.NodeEngineShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The communication link failed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -75,7 +75,7 @@
         <ReturnType>Microsoft.Build.Execution.NodeEngineShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The NodeEngine caught an exception which requires the Node to shut down.</summary>
       </Docs>
     </Member>
   </Members>

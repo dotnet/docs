@@ -1,14 +1,17 @@
 ---
 uid: System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement.PickupDirectoryLocation
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

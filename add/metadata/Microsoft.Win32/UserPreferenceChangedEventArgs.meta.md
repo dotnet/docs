@@ -1,14 +1,20 @@
 ---
 uid: Microsoft.Win32.UserPreferenceChangedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.UserPreferenceChangedEventArgs.#ctor(Microsoft.Win32.UserPreferenceCategory)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.UserPreferenceChangedEventArgs.Category
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

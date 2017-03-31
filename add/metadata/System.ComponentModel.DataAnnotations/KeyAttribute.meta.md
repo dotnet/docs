@@ -1,9 +1,11 @@
 ---
 uid: System.ComponentModel.DataAnnotations.KeyAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

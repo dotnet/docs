@@ -14,8 +14,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the target.</typeparam>
+    <summary>Extends the <see cref="T:System.ComponentModel.Composition.Registration.PartBuilder" /> class to allow the use of expressions to select members.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,10 +35,12 @@
         <Parameter Name="propertyFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <summary>Specifies a property that should be exported.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperty">
@@ -58,11 +60,13 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyFilter">To be added.</param>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <param name="exportConfiguration">An object that contains configuration information about the export. The default value is <see langword="null" />.</param>
+        <summary>Specifies a property that should be exported, and provides configuration information for the resulting export.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperty&lt;TContract&gt;">
@@ -84,11 +88,13 @@
         <Parameter Name="propertyFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">To be added.</typeparam>
-        <param name="propertyFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TContract">The type of the contract.</typeparam>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <summary>Specifies a property that should be exported as the specified contract type.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperty&lt;TContract&gt;">
@@ -111,12 +117,14 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">To be added.</typeparam>
-        <param name="propertyFilter">To be added.</param>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TContract">The type of the contract.</typeparam>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <param name="exportConfiguration">An object that contains configuration information about the export. The default value is <see langword="null" />.</param>
+        <summary>Specifies a property that should be exported as the specified contract type, and provides configuration information for the resulting export.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty">
@@ -135,10 +143,12 @@
         <Parameter Name="propertyFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <summary>Specifies that a property should be imported.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty">
@@ -158,11 +168,13 @@
         <Parameter Name="importConfiguration" Type="System.Action&lt;System.ComponentModel.Composition.Registration.ImportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyFilter">To be added.</param>
-        <param name="importConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <param name="importConfiguration">An object that contains configuration information about the import. The default value is <see langword="null" />.</param>
+        <summary>Specifies that a property should be imported, and provides configuration information for the resulting import.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty&lt;TContract&gt;">
@@ -184,11 +196,13 @@
         <Parameter Name="propertyFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">To be added.</typeparam>
-        <param name="propertyFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TContract">The contract type to use.</typeparam>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <summary>Specifies that a property should be imported using the specified contract name.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty&lt;TContract&gt;">
@@ -211,12 +225,14 @@
         <Parameter Name="importConfiguration" Type="System.Action&lt;System.ComponentModel.Composition.Registration.ImportBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">To be added.</typeparam>
-        <param name="propertyFilter">To be added.</param>
-        <param name="importConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TContract">The contract name to use.</typeparam>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <param name="importConfiguration">An object that contains configuration information about the import. The default value is <see langword="null" />.</param>
+        <summary>Specifies that a property should be imported using the specified contract name, and provides configuration information for the resulting import.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectConstructor">
@@ -235,9 +251,9 @@
         <Parameter Name="constructorFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.ComponentModel.Composition.Registration.ParameterImportBuilder,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="constructorFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="constructorFilter">An expression that constructs <c>T</c> by using the desired constructor. It is used only for reference, not actually invoked.</param>
+        <summary>Specifies the constructor that should be used as an importing constructor.</summary>
+        <returns>The current object, to allow chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

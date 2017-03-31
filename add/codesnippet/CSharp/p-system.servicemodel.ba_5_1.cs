@@ -1,1 +1,0 @@
-            HttpTransportSecurity transSec = security.Transport;

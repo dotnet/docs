@@ -1,29 +1,39 @@
 ---
 uid: System.Net.Mail.MailAddressCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailAddressCollection.SetItem(System.Int32,System.Net.Mail.MailAddress)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailAddressCollection.Add(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailAddressCollection.InsertItem(System.Int32,System.Net.Mail.MailAddress)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Mail.MailAddressCollection.Add
 ---
 
 ---
 uid: System.Net.Mail.MailAddressCollection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mail.MailAddressCollection.ToString
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

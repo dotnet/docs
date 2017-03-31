@@ -27,9 +27,25 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.ComponentModel.Design.ComponentEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentAdding" />, <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentAdded" />, <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRemoving" />, and <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRemoved" /> events raised for component-level events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.ComponentModel.Design.ComponentEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following example demonstrates registering a <xref:System.ComponentModel.Design.ComponentEventHandler> and handling the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentAdded>, <xref:System.ComponentModel.Design.IComponentChangeService.ComponentAdding>, <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRemoved> and <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRemoving> events.  
+  
+ [!code-cpp[ComponentEventHandlerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEventHandlerExample/CPP/componenteventhandlerexample.cpp#1)]
+ [!code-csharp[ComponentEventHandlerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEventHandlerExample/CS/componenteventhandlerexample.cs#1)]
+ [!code-vb[ComponentEventHandlerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEventHandlerExample/VB/componenteventhandlerexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

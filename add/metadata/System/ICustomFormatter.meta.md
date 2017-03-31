@@ -1,9 +1,13 @@
 ---
 uid: System.ICustomFormatter
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

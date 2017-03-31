@@ -20,8 +20,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the *MethodName*<see langword="Completed" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you are using a class that implements the [Event-based Asynchronous Pattern Overview](../Topic/Event-based%20Asynchronous%20Pattern%20Overview.md), the class provides a *MethodName*`Completed` event. *MethodName* is a placeholder for the first part of the method's name. <xref:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted%2A?displayProperty=fullName> is an example of the name of such a method. If you add an instance of the <xref:System.ComponentModel.RunWorkerCompletedEventArgs> delegate to the event, you will receive information about the outcome of asynchronous operations in the <xref:System.ComponentModel.RunWorkerCompletedEventArgs> parameter of the corresponding event handler.  
+  
+> [!NOTE]
+>  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](../Topic/SQL%20Server%20Programming%20and%20Host%20Protection%20Attributes.md).  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of <xref:System.ComponentModel.RunWorkerCompletedEventArgs>. This example is part of a larger sample for the <xref:System.ComponentModel.BackgroundWorker> class.  
+  
+ [!code-cpp[System.ComponentModel.BackgroundWorker#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#6)]
+ [!code-csharp[System.ComponentModel.BackgroundWorker#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#6)]
+ [!code-vb[System.ComponentModel.BackgroundWorker#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#6)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,10 +67,10 @@
         <Parameter Name="cancelled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="error">To be added.</param>
-        <param name="cancelled">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The result of an asynchronous operation.</param>
+        <param name="error">Any error that occurred during the asynchronous operation.</param>
+        <param name="cancelled">A value indicating whether the asynchronous operation was canceled.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.RunWorkerCompletedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +96,29 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that represents the result of an asynchronous operation.</summary>
+        <value>An <see cref="T:System.Object" /> representing the result of an asynchronous operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler should always check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> and <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> properties before accessing the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A> property. If an exception was raised or if the operation was canceled, accessing the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A> property raises an exception.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event to handle the result of an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
+  
+ [!code-cpp[System.ComponentModel.BackgroundWorker#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#6)]
+ [!code-csharp[System.ComponentModel.BackgroundWorker#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#6)]
+ [!code-vb[System.ComponentModel.BackgroundWorker#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Reflection.TargetInvocationException">
+          <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" /> is not <see langword="null" />. The <see cref="P:System.Exception.InnerException" /> property holds a reference to <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Cancelled" /> is <see langword="true" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="UserState">
@@ -112,8 +151,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that represents the user state.</summary>
+        <value>An <see cref="T:System.Object" /> representing the user state.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

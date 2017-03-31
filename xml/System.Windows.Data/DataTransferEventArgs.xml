@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Encapsulates arguments for data transfer events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Data.Binding.TargetUpdated> event occurs when a value is transferred from the binding source to the binding target, but only for bindings with the <xref:System.Windows.Data.Binding.NotifyOnTargetUpdated%2A> value set to `true`.  
+  
+ The <xref:System.Windows.Data.Binding.SourceUpdated> event occurs when a value is transferred from the target to the source, but only for bindings with the <xref:System.Windows.Data.Binding.NotifyOnSourceUpdated%2A> value set to `true`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="InvokeEventHandler">
@@ -32,9 +41,9 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">To be added.</param>
-        <param name="genericTarget">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="genericHandler">The generic handler to call in a type-specific way.</param>
+        <param name="genericTarget">The object to invoke the handler on.</param>
+        <summary>Invokes the specified handler in a type-specific way on the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +60,8 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the specific binding target property that is involved in the data transfer event.</summary>
+        <value>The property that changed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +78,8 @@
         <ReturnType>System.Windows.DependencyObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the binding target object of the binding that raised the event.</summary>
+        <value>The target object of the binding that raised the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,54 +1,65 @@
 ---
 uid: System.UriParser
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.UriParser.OnRegister(System.String,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.UriParser.Resolve(System.Uri,System.Uri,System.UriFormatException@)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.UriParser.GetComponents(System.Uri,System.UriComponents,System.UriFormat)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.UriParser.OnNewUri
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.UriParser.IsWellFormedOriginalString(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.UriParser.IsKnownScheme(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.UriParser.Register(System.UriParser,System.String,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.UriParser.InitializeAndValidate(System.Uri,System.UriFormatException@)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.UriParser.IsBaseOf(System.Uri,System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.UriParser.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

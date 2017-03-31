@@ -1,24 +1,29 @@
 ---
 uid: System.Management.Instrumentation.InstanceNotFoundException
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.InstanceNotFoundException.#ctor(System.String,System.Exception)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.InstanceNotFoundException.#ctor(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.InstanceNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.InstanceNotFoundException.#ctor
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.Instrumentation.InstanceNotFoundException.#ctor
+manager: "jillfra"
 ---

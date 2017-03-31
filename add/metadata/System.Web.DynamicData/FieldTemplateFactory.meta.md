@@ -1,44 +1,53 @@
 ---
 uid: System.Web.DynamicData.FieldTemplateFactory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FieldTemplateFactory.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FieldTemplateFactory.TemplateFolderVirtualPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FieldTemplateFactory.Initialize(System.Web.DynamicData.MetaModel)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FieldTemplateFactory.CreateFieldTemplate(System.Web.DynamicData.MetaColumn,System.Web.UI.WebControls.DataBoundControlMode,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FieldTemplateFactory.PreprocessMode(System.Web.DynamicData.MetaColumn,System.Web.UI.WebControls.DataBoundControlMode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FieldTemplateFactory.Model
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FieldTemplateFactory.GetFieldTemplateVirtualPath(System.Web.DynamicData.MetaColumn,System.Web.UI.WebControls.DataBoundControlMode,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.FieldTemplateFactory.BuildVirtualPath(System.String,System.Web.DynamicData.MetaColumn,System.Web.UI.WebControls.DataBoundControlMode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

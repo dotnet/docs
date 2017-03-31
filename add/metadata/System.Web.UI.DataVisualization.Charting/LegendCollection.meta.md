@@ -1,9 +1,15 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.LegendCollection
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LegendCollection.Add(System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.LegendCollection.Add
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Speech.Synthesis.BookmarkReachedEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.BookmarkReachedEventArgs.AudioPosition
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.BookmarkReachedEventArgs.Bookmark
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

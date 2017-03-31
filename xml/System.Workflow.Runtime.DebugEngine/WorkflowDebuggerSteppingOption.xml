@@ -15,8 +15,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how the workflow debugger will step through concurrently executing child activities of a composite activity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This enumeration is used with the <xref:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute> attribute to define the following two behaviors:  
+  
+-   **Concurrent stepping**. This mode of stepping enables you to step through and debug concurrently executing activities in the workflow. With this option, you will notice that a change in control occurs when concurrently executing activities run within the workflow.  
+  
+-   **Sequential stepping**. This mode of stepping enables you to step through and debug a particular branch of a composite activity, such as the <xref:System.Workflow.Activities.ParallelActivity> or the <xref:System.Workflow.Activities.ConditionedActivityGroup> activity. When you use this option to debug, you will not notice that a change in control occurs due to concurrent execution of other activities in the workflow. The debugger only steps through the activities in the currently selected branch while other activities in the workflow may be executing concurrently. For example, by default, the leftmost branch in a <xref:System.Workflow.Activities.ParallelActivity> activity and the first child activity of a <xref:System.Workflow.Activities.ConditionedActivityGroup> activity are used for stepping. If you are interested in debugging any other branch or child activity, an explicit breakpoint must be placed on that branch or child activity. Stepping continues in that branch when the breakpoint is triggered.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Concurrent">
@@ -32,7 +47,7 @@
         <ReturnType>System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The child activities will be debugged concurrently.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sequential">
@@ -48,7 +63,7 @@
         <ReturnType>System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The child activities will be debugged sequentially.</summary>
       </Docs>
     </Member>
   </Members>

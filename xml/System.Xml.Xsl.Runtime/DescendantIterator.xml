@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Iterates over all descendant nodes according to the <see cref="N:System.Xml.XPath" /> descendant axis rules.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,11 +46,20 @@
         <Parameter Name="orSelf" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="input">To be added.</param>
-        <param name="filter">To be added.</param>
-        <param name="orSelf">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="input">
+          <see cref="T:System.Xml.XPath.XPathNavigator" /> that identifies the node from which you start traversing descendants.</param>
+        <param name="filter">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlNavigatorFilter" /> class, which enables you to filter nodes based on the name. For more information, see <see cref="T:System.Xml.Xsl.Runtime.XmlNavigatorFilter" />.</param>
+        <param name="orSelf">
+          <see cref="T:System.Boolean" /> that indicates whether the current node is returned as part of the iteration or filtered out.</param>
+        <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.DescendantIterator" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Xsl.Runtime.DescendantIterator> cannot have duplicates.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -70,9 +79,16 @@
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns the current result navigator.</summary>
+        <value>The current result navigator.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The state of the navigator changes only if the <xref:System.Xml.Xsl.Runtime.DescendantIterator.MoveNext%2A> method has returned `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -93,9 +109,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Positions the iterator on the next descendant node.</summary>
+        <returns>
+          <see langword="true" /> if the next descendant node exists; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the next descendant node exists, the <xref:System.Xml.Xsl.Runtime.DescendantIterator.MoveNext%2A> method sets the <xref:System.Xml.Xsl.Runtime.DescendantIterator.Current%2A> property to the current result navigator; otherwise, the <xref:System.Xml.Xsl.Runtime.DescendantIterator.Current%2A> property remains unchanged.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

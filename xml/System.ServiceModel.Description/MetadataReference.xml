@@ -20,8 +20,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a reference to a metadata document returned from a metadata exchange endpoint.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using [!INCLUDE[indigo1](~/includes/indigo1-md.md)], a metadata endpoint can be created for any service. The endpoint can be queried for metadata that allows a client to communicate with the endpoint. For example, a metadata endpoint can return a Web Services Description Language (WSDL) document that describes the methods and data types of a service.  
+  
+ The <xref:System.ServiceModel.Description.MetadataReference> class is used with WS-MetadataExchange responses where references are directly encoded as `<mex:MetadataReference>` or `<mex:MetadataLocation``>`.  
+  
+ Metadata documents can reference many other documents that describe types and those documents can contain even more references. The <xref:System.ServiceModel.Description.MetadataReference> class represents a single endpoint that returns a document that can itself contain multiple WSDL or XSD items as well as other metadata references to other WS-MetadataExchange endpoints.  
+  
+ Instances of the <xref:System.ServiceModel.Description.MetadataReference> class are commonly used when processing a <xref:System.ServiceModel.Description.MetadataSet>, which represents the total metadata exchange point. The <xref:System.ServiceModel.Description.MetadataResolver> class is designed to resolve all references used to return the metadata. If, however, you need to examine each reference, use the <xref:System.ServiceModel.Description.MetadataReference> class to represent each endpoint.  
+  
+## Specifications  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implements the Web Services Metadata Exchange (WS-MetadataExchange) specification for returning metadata. That specification further uses the Web Services Transfer (WS-Transfer) specification to define the mechanism for retrieving XML-based data.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataReference" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +69,9 @@
         <Parameter Name="addressVersion" Type="System.ServiceModel.Channels.AddressingVersion" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <param name="addressVersion">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="address">An <see cref="T:System.ServiceModel.EndpointAddress" /> that contains the URI of the endpoint.</param>
+        <param name="addressVersion">An <see cref="T:System.ServiceModel.Channels.AddressingVersion" /> that contains the WS-Addressing version implemented by the endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataReference" /> class and specifies the network address and address version of the endpoint.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +88,8 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the network address of a service that returns metadata.</summary>
+        <value>An endpoint that returns metadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +106,8 @@
         <ReturnType>System.ServiceModel.Channels.AddressingVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the version implemented in, or used by the endpoint.</summary>
+        <value>An <see cref="T:System.ServiceModel.Channels.AddressingVersion" /> that represents the version implemented in, or used by the endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +125,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an XML schema document for the metadata reference endpoint.</summary>
+        <returns>An <see cref="T:System.Xml.Schema.XmlSchema" /> that represents the XML Schema Document (XSD) for the metadata endpoint reference.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +146,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> used to read with.</param>
+        <summary>Reads using the supplied reader object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +167,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">An <see cref="T:System.Xml.XmlWriter" /> used to write with.</param>
+        <summary>Writes an XML stream with the specified writer object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

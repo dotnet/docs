@@ -20,8 +20,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the context in which a validation check is performed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class describes the type or member on which validation is performed. It also enables custom validation to be added through any service that implements the <xref:System.IServiceProvider> interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,8 +49,8 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">The object instance to validate. It cannot be <see langword="null" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> class using the specified object instance</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,10 +73,17 @@
         <Parameter Name="items" Type="System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instance">The object instance to validate.  It cannot be <see langword="null" /></param>
+        <param name="items">An optional set of key/value pairs to make available to consumers.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> class using the specified object and an optional property bag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `items` is `null`, an empty dictionary is created. If `items` is not null, the set of key/value pairs is copied into a new dictionary, preventing consumers from modifying the original dictionary.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -92,11 +106,20 @@
         <Parameter Name="items" Type="System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="serviceProvider">To be added.</param>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instance">The object to validate. This parameter is required.</param>
+        <param name="serviceProvider">The object that implements the <see cref="T:System.IServiceProvider" /> interface. This parameter is optional.</param>
+        <param name="items">A dictionary of key/value pairs to make available to the service consumers. This parameter is optional.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> class using the service provider and dictionary of service consumers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `serviceProvider` parameter represents a service that can be used by the <xref:System.ComponentModel.DataAnnotations.ValidationContext.GetService%2A> method in order to perform custom validation.  
+  
+ If the `items` parameter is `null`, an empty dictionary is created. If the parameter is not `null`, the set of key/value pairs is copied into a new dictionary, which prevents the service consumers from modifying the original dictionary.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -117,9 +140,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the member to validate.</summary>
+        <value>The name of the member to validate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.DataAnnotations.ValidationContext.DisplayName%2A> value is the name that is shown to the user. If a display name is not explicitly set, this property uses the value that is assigned by the associated <xref:System.ComponentModel.DataAnnotations.DisplayAttribute> object. If that attribute does not exist, the property returns the value of the <xref:System.ComponentModel.DataAnnotations.ValidationContext.MemberName%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetService">
@@ -143,10 +173,19 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serviceType">The type of the service to use for validation.</param>
+        <summary>Returns the service that provides custom validation.</summary>
+        <returns>An instance of the service, or <see langword="null" /> if the service is not available.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ComponentModel.DataAnnotations.ValidationContext.ServiceContainer%2A> object is defined at the application level, the <xref:System.ComponentModel.DataAnnotations.ValidationContext.GetService%2A> method accesses it to retrieve the requested service.  
+  
+ If the <xref:System.ComponentModel.DataAnnotations.ValidationContext.ServiceContainer%2A> object is not defined or it does not return the service, the <xref:System.ComponentModel.DataAnnotations.ValidationContext.GetService%2A> method queries the <xref:System.IServiceProvider> object that is passed to the <xref:System.ComponentModel.DataAnnotations.ValidationContext.%23ctor%2A> method in order to obtain the service.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeServiceProvider">
@@ -170,8 +209,8 @@
         <Parameter Name="serviceProvider" Type="System.Func&lt;System.Type,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceProvider">The service provider.</param>
+        <summary>Initializes the <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> using a service provider that can return service instances by type when [GetService](http://msdn.microsoft.com/library/system.web.mvc.idependencyresolver.getservice\(VS.98\).aspx) is called.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,9 +232,16 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the dictionary of key/value pairs that is associated with this context.</summary>
+        <value>The dictionary of the key/value pairs for this context.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is never `null`, but the dictionary can be empty. Changes made to items in this dictionary are reflected in the original dictionary that is specified in the constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MemberName">
@@ -216,9 +262,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the member to validate.</summary>
+        <value>The name of the member to validate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property represents an entity member name, not the name of a corresponding data field. Therefore, this name is not a localized name. It should be set only for property or parameter contexts.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ObjectInstance">
@@ -239,9 +292,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the object to validate.</summary>
+        <value>The object to validate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During validation, especially during property-level validation, the object instance could be in an indeterminate state.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ObjectType">
@@ -262,8 +322,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the object to validate.</summary>
+        <value>The type of the object to validate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,9 +341,18 @@
         <ReturnType>System.ComponentModel.Design.IServiceContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the validation services container.</summary>
+        <value>The validation services container.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.DataAnnotations.ValidationContext.ServiceContainer%2A> property is used for getting services during validation.  
+  
+ If the <xref:System.IServiceProvider> provider that is specified in the constructor implements the <xref:System.ComponentModel.Design.IServiceContainer> interface, the provider is used to initialize the <xref:System.ComponentModel.DataAnnotations.ValidationContext.ServiceContainer%2A> property. Otherwise the <xref:System.ComponentModel.DataAnnotations.ValidationContext.ServiceContainer%2A> property is initialized to an empty container.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

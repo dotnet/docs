@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines constants that specify the level that a menu item is displayed at in the ribbon Application Menu.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem.Level%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Middle">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The menu item is displayed in the middle level.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sub">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The menu item is displayed in the lowest level.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The menu item is displayed in the top level.</summary>
       </Docs>
     </Member>
   </Members>

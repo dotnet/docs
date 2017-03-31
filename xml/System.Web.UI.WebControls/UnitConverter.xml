@@ -11,8 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts from a <see cref="T:System.Web.UI.WebControls.Unit" /> object to an object of another data type and from another type to a <see cref="T:System.Web.UI.WebControls.Unit" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.UnitConverter> class to convert a <xref:System.Web.UI.WebControls.Unit> to an object of another data type. You can also use the <xref:System.Web.UI.WebControls.UnitConverter> class to convert an object of another data type to a <xref:System.Web.UI.WebControls.Unit>.  
+  
+> [!NOTE]
+>  This converter can convert only a string to <xref:System.Web.UI.WebControls.Unit> and a <xref:System.Web.UI.WebControls.Unit> to a string.  
+  
+> [!CAUTION]
+>  You should never access a type converter directly. Instead, call the appropriate converter by using <xref:System.ComponentModel.TypeDescriptor?displayProperty=fullName>. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter?displayProperty=fullName> base class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.UnitConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +60,11 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> instance that specifies the context of the object to convert.</param>
+        <param name="sourceType">The type of the source.</param>
+        <summary>Returns a value indicating whether the unit converter can convert from the specified source type.</summary>
+        <returns>
+          <see langword="true" /> if the source type can be converted from; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +85,11 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that indicates the context of the object to convert.</param>
+        <param name="destinationType">The <see cref="T:System.Type" /> that represents the data type to convert to.</param>
+        <summary>Returns a value indicating whether the converter can convert a <see cref="T:System.Web.UI.WebControls.Unit" /> object to the specified type.</summary>
+        <returns>
+          <see langword="true" /> if the converter supports converting a <see cref="T:System.Web.UI.WebControls.Unit" /> object to the destination type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,11 +111,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> instance that indicates the context of the object to convert.</param>
+        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object that represents information about a culture such as language, calendar system, and so on. This parameter is not used in this method. It is reserved for future versions of this method. You can optionally pass <see langword="null" /> for this parameter.</param>
+        <param name="value">The object to convert.</param>
+        <summary>Performs type conversion from the specified context, object, and argument list.</summary>
+        <returns>The object resulting from conversion.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,12 +138,12 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> instance that indicates the context of the object to convert.</param>
+        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object that represents information about a culture such as language, calendar system, and so on. This parameter is not used in this method. It is reserved for future versions of this method. You can optionally pass <see langword="null" /> for this parameter.</param>
+        <param name="value">The object to convert.</param>
+        <param name="destinationType">The type to convert to.</param>
+        <summary>Performs type conversion to the specified destination type given the specified context, object and argument list.</summary>
+        <returns>The object resulting from conversion.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

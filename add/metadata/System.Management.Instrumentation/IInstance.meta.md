@@ -1,9 +1,9 @@
 ---
 uid: System.Management.Instrumentation.IInstance
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.IInstance.Published
-internalonly: False
+manager: "jillfra"
 ---

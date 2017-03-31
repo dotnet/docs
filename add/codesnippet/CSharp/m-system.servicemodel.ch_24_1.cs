@@ -1,2 +1,0 @@
-            LocalClientSecuritySettings settings =
-                new LocalClientSecuritySettings();

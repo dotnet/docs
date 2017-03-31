@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies information about a public environment accessor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Activities.CodeActivityMetadata</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the activity’s arguments, variables, child activities, and activity delegates.</summary>
+        <value>The activity’s arguments, variables, child activities, and activity delegates.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +49,9 @@
         <Parameter Name="metadata" Type="System.Activities.CodeActivityMetadata" />
       </Parameters>
       <Docs>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="metadata">The activity’s metadata that encapsulates the activity’s arguments, variables, child activities, and activity delegates.</param>
+        <summary>Creates the description of the arguments, child activities, variables, and activity delegates.</summary>
+        <returns>The description of the arguments, child activities, variables, and activity delegates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +71,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare.</param>
+        <summary>Determines whether the specified object is equal to the public environment accessor.</summary>
+        <returns>
+          <see langword="True" /> if the specified object is equal to the public environment accessor; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +92,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a unique identifier for this public environment accessor.</summary>
+        <returns>A unique identifier for this public environment accessor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,10 +114,11 @@
         <Parameter Name="right" Type="System.Activities.CodeActivityPublicEnvironmentAccessor" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first item to compare.</param>
+        <param name="right">The second item to compare.</param>
+        <summary>Returns a value that indicates whether the two specified metadata instances are equal.</summary>
+        <returns>
+          <see langword="True" /> if the two specified metadata instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,10 +139,11 @@
         <Parameter Name="right" Type="System.Activities.CodeActivityPublicEnvironmentAccessor" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first item to compare.</param>
+        <param name="right">The second item to compare.</param>
+        <summary>Returns a value that indicates whether the two specified metadata instances are not equal.</summary>
+        <returns>
+          <see langword="True" /> if the two specified metadata instances are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,11 +165,12 @@
         <Parameter Name="equivalentLocation" Type="System.Activities.LocationReference&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="publicLocation">To be added.</param>
-        <param name="accessDirection">To be added.</param>
-        <param name="equivalentLocation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="publicLocation">Public location reference.</param>
+        <param name="accessDirection">The access direction reference.</param>
+        <param name="equivalentLocation">The equivalent location reference.</param>
+        <summary>Returns a value that indicates whether the activity will try to get access to public location.</summary>
+        <returns>
+          <see langword="True" /> if the activity to try will get access to public location; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,10 +191,11 @@
         <Parameter Name="equivalentReference" Type="System.Activities.LocationReference&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="publicReference">To be added.</param>
-        <param name="equivalentReference">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="publicReference">Public reference location.</param>
+        <param name="equivalentReference">The equivalent reference location.</param>
+        <summary>Returns a value that indicates whether the activity will try to get reference for the public location.</summary>
+        <returns>
+          <see langword="True" /> if the activity will try to get reference for the public location; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

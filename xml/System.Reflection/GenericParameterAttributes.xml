@@ -24,8 +24,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the constraints on a generic type parameter of a generic type or method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The members of the <xref:System.Reflection.GenericParameterAttributes> enumeration are divided into two groups, the variance group and the special constraints group. To test a <xref:System.Reflection.GenericParameterAttributes> value for variance flags, first perform a bitwise AND operation with VarianceMask. If the result is None, there are no variance flags. Similarly, use SpecialConstraintMask to test for constraint flags.  
+  
+   
+  
+## Examples  
+ The following code example defines a generic type `Test` with two type parameters. The second type parameter has a base class constraint and a reference type constraint. When the program executes, the constraints are examined using the <xref:System.Type.GenericParameterAttributes%2A?displayProperty=fullName> property and the <xref:System.Type.GetGenericParameterConstraints%2A?displayProperty=fullName> method.  
+  
+ [!code-cpp[System.Type.GetGenericParameterConstraints#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Type.GetGenericParameterConstraints/CPP/source.cpp#1)]
+ [!code-csharp[System.Type.GetGenericParameterConstraints#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Type.GetGenericParameterConstraints/CS/source.cs#1)]
+ [!code-vb[System.Type.GetGenericParameterConstraints#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Type.GetGenericParameterConstraints/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Contravariant">
@@ -50,7 +66,7 @@
         <ReturnType>System.Reflection.GenericParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The generic type parameter is contravariant. A contravariant type parameter can appear as a parameter type in method signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Covariant">
@@ -75,7 +91,7 @@
         <ReturnType>System.Reflection.GenericParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The generic type parameter is covariant. A covariant type parameter can appear as the result type of a method, the type of a read-only field, a declared base type, or an implemented interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="DefaultConstructorConstraint">
@@ -100,7 +116,7 @@
         <ReturnType>System.Reflection.GenericParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type can be substituted for the generic type parameter only if it has a parameterless constructor.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -125,7 +141,7 @@
         <ReturnType>System.Reflection.GenericParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>There are no special flags.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotNullableValueTypeConstraint">
@@ -150,7 +166,7 @@
         <ReturnType>System.Reflection.GenericParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type can be substituted for the generic type parameter only if it is a value type and is not nullable.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReferenceTypeConstraint">
@@ -175,7 +191,7 @@
         <ReturnType>System.Reflection.GenericParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type can be substituted for the generic type parameter only if it is a reference type.</summary>
       </Docs>
     </Member>
     <Member MemberName="SpecialConstraintMask">
@@ -200,7 +216,7 @@
         <ReturnType>System.Reflection.GenericParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Selects the combination of all special constraint flags. This value is the result of using logical OR to combine the following flags: <see cref="F:System.Reflection.GenericParameterAttributes.DefaultConstructorConstraint" />, <see cref="F:System.Reflection.GenericParameterAttributes.ReferenceTypeConstraint" />, and <see cref="F:System.Reflection.GenericParameterAttributes.NotNullableValueTypeConstraint" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="VarianceMask">
@@ -225,7 +241,7 @@
         <ReturnType>System.Reflection.GenericParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Selects the combination of all variance flags. This value is the result of using logical OR to combine the following flags: <see cref="F:System.Reflection.GenericParameterAttributes.Contravariant" /> and <see cref="F:System.Reflection.GenericParameterAttributes.Covariant" />.</summary>
       </Docs>
     </Member>
   </Members>

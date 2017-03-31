@@ -1,59 +1,64 @@
 ---
 uid: System.Xaml.Schema.XamlTypeInvoker
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Schema.XamlTypeInvoker.CreateInstance(System.Object[])
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Schema.XamlTypeInvoker.AddToDictionary(System.Object,System.Object,System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Schema.XamlTypeInvoker.GetItems(System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Schema.XamlTypeInvoker.GetEnumeratorMethod
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Schema.XamlTypeInvoker.GetAddMethod(System.Xaml.XamlType)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Schema.XamlTypeInvoker.AddToCollection(System.Object,System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Schema.XamlTypeInvoker.SetMarkupExtensionHandler
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Schema.XamlTypeInvoker.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Schema.XamlTypeInvoker.UnknownInvoker
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Schema.XamlTypeInvoker.#ctor(System.Xaml.XamlType)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.Schema.XamlTypeInvoker.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Schema.XamlTypeInvoker.SetTypeConverterHandler
-internalonly: False
+manager: "martinek"
 ---

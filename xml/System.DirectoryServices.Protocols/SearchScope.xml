@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SearchScope" /> enumeration specifies the scope of a search.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.Protocols.SearchScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Search only the specified base object. The value is equal to 0.</summary>
       </Docs>
     </Member>
     <Member MemberName="OneLevel">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.Protocols.SearchScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Search the child objects of the base object, but not the base object itself. The value is equal to 1.</summary>
       </Docs>
     </Member>
     <Member MemberName="Subtree">
@@ -59,7 +59,7 @@
         <ReturnType>System.DirectoryServices.Protocols.SearchScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Search the base object and all child objects. The value is equal to 2.</summary>
       </Docs>
     </Member>
   </Members>

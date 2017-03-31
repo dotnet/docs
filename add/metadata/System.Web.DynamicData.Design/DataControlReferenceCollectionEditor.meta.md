@@ -1,14 +1,17 @@
 ---
 uid: System.Web.DynamicData.Design.DataControlReferenceCollectionEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.Design.DataControlReferenceCollectionEditor.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.Design.DataControlReferenceCollectionEditor.CreateCollectionItemType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

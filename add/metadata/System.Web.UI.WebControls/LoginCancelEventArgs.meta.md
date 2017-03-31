@@ -1,19 +1,29 @@
 ---
 uid: System.Web.UI.WebControls.LoginCancelEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.LoginCancelEventArgs.#ctor(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.LoginCancelEventArgs.Cancel
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.LoginCancelEventArgs.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.LoginCancelEventArgs.Cancel
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.LoginCancelEventArgs.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---

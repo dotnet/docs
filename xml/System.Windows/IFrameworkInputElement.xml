@@ -12,8 +12,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Declares a namescope contract for framework elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is not intended for implementation. Its purpose is to support the WPF framework-level infrastructure. To implement a namescope, see <xref:System.Windows.Markup.INameScope>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Name">
@@ -29,8 +36,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of an element.</summary>
+        <value>The element name, which is unique in the namescope and can be used as an identifier for certain operations.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

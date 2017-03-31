@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the enumeration of all WMI error codes that are currently defined.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current user does not have permission to perform the action.</summary>
       </Docs>
     </Member>
     <Member MemberName="AggregatingByObject">
@@ -43,7 +43,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A GROUP BY clause references a property that is an embedded object without using dot notation.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlreadyExists">
@@ -59,7 +59,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>In a put operation, the wbemChangeFlagCreateOnly flag was specified, but the instance already exists.</summary>
       </Docs>
     </Member>
     <Member MemberName="AmendedObject">
@@ -75,7 +75,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An amended object was used in a put operation without the WBEM_FLAG_USE_AMENDED_QUALIFIERS flag being specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="BackupRestoreWinmgmtRunning">
@@ -91,7 +91,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An request was made to back up or restore the repository while WinMgmt.exe was using it.</summary>
       </Docs>
     </Member>
     <Member MemberName="BufferTooSmall">
@@ -107,7 +107,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The supplied buffer was too small to hold all the objects in the enumerator or to read a string property.</summary>
       </Docs>
     </Member>
     <Member MemberName="CallCanceled">
@@ -123,7 +123,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An asynchronous process has been canceled internally or by the user. Note that because of the timing and nature of the asynchronous operation, the operation may not have been truly canceled.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotBeAbstract">
@@ -139,7 +139,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The class was made abstract when its superclass is not abstract.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotBeKey">
@@ -155,7 +155,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>There was an illegal attempt to specify a key qualifier on a property that cannot be a key. The keys are specified in the class definition for an object and cannot be altered on a per-instance basis.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotBeSingleton">
@@ -171,7 +171,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An illegal attempt was made to make a class singleton, such as when the class is derived from a non-singleton class.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotChangeIndexInheritance">
@@ -187,7 +187,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An attempt was made to change an index when instances or derived classes are already using the index.</summary>
       </Docs>
     </Member>
     <Member MemberName="CannotChangeKeyInheritance">
@@ -203,7 +203,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An attempt was made to change a key when instances or derived classes are already using the key.</summary>
       </Docs>
     </Member>
     <Member MemberName="CircularReference">
@@ -219,7 +219,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An attempt has been made to create a reference that is circular (for example, deriving a class from itself).</summary>
       </Docs>
     </Member>
     <Member MemberName="ClassHasChildren">
@@ -235,7 +235,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An attempt was made to make a change that would invalidate a derived class.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClassHasInstances">
@@ -251,7 +251,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An attempt has been made to delete or modify a class that has instances.</summary>
       </Docs>
     </Member>
     <Member MemberName="ClientTooSlow">
@@ -267,7 +267,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The client was not retrieving objects quickly enough from an enumeration.</summary>
       </Docs>
     </Member>
     <Member MemberName="CriticalError">
@@ -283,7 +283,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An internal, critical, and unexpected error occurred. Report this error to Microsoft Technical Support.</summary>
       </Docs>
     </Member>
     <Member MemberName="Different">
@@ -299,7 +299,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The compared items (such as objects and classes) are not identical.</summary>
       </Docs>
     </Member>
     <Member MemberName="DuplicateObjects">
@@ -315,7 +315,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>More than one copy of the same object was detected in the result set of an enumeration.</summary>
       </Docs>
     </Member>
     <Member MemberName="Failed">
@@ -331,7 +331,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The call failed.</summary>
       </Docs>
     </Member>
     <Member MemberName="False">
@@ -347,7 +347,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This value is returned when no more objects are available, the number of objects returned is less than the number requested, or at the end of an enumeration. It is also returned when the method is called with a value of 0 for the parameter.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalNull">
@@ -363,7 +363,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value of null was specified for a property that may not be null, such as one that is marked by a Key, Indexed, or Not_Null qualifier.</summary>
       </Docs>
     </Member>
     <Member MemberName="IllegalOperation">
@@ -379,7 +379,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user requested an illegal operation, such as spawning a class from an instance.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncompleteClass">
@@ -395,7 +395,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current object is not a valid class definition. Either it is incomplete, or it has not been registered with WMI using <see cref="M:System.Management.ManagementObject.Put" />().</summary>
       </Docs>
     </Member>
     <Member MemberName="InitializationFailure">
@@ -411,7 +411,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A component, such as a provider, failed to initialize for internal reasons.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCimType">
@@ -427,7 +427,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The CIM type specified is not valid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidClass">
@@ -443,7 +443,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified class is not valid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidContext">
@@ -459,7 +459,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The context object is not valid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidDuplicateParameter">
@@ -475,7 +475,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A duplicate parameter has been declared in a CIM method.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidFlavor">
@@ -491,7 +491,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified flavor was invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidMethod">
@@ -507,7 +507,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The requested method is not available.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidMethodParameters">
@@ -523,7 +523,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parameters provided for the method are not valid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidNamespace">
@@ -539,7 +539,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified namespace could not be found.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidObject">
@@ -555,7 +555,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified instance is not valid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidObjectPath">
@@ -571,7 +571,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified object path was invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidOperation">
@@ -587,7 +587,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The requested operation is not valid. This error usually applies to invalid attempts to delete classes or properties.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidOperator">
@@ -603,7 +603,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operator is not valid for this property type.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidParameter">
@@ -619,7 +619,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One of the parameters to the call is not correct.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidParameterID">
@@ -635,7 +635,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A method parameter has an invalid ID qualifier.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidProperty">
@@ -651,7 +651,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property type is not recognized.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidPropertyType">
@@ -667,7 +667,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The CIM type specified for a property is not valid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidProviderRegistration">
@@ -683,7 +683,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A provider referenced in the schema has an incorrect or incomplete registration.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidQualifier">
@@ -699,7 +699,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An attempt has been made to mismatch qualifiers, such as putting [ManagementKey] on an object instead of a property.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidQualifierType">
@@ -715,7 +715,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The value provided for a qualifier was not a legal qualifier type.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidQuery">
@@ -731,7 +731,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The query was not syntactically valid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidQueryType">
@@ -747,7 +747,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The requested query language is not supported.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidStream">
@@ -763,7 +763,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One or more network packets were corrupted during a remote session.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidSuperclass">
@@ -779,7 +779,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified superclass is not valid.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidSyntax">
@@ -795,7 +795,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reserved for future use.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalCredentials">
@@ -811,7 +811,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user specified a user name, password, or authority on a local connection. The user must use an empty user name and password and rely on default security.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarshalInvalidSignature">
@@ -827,7 +827,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The packet is corrupted.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarshalVersionMismatch">
@@ -843,7 +843,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The packet has an unsupported version.</summary>
       </Docs>
     </Member>
     <Member MemberName="MethodDisabled">
@@ -859,7 +859,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An attempt was made to execute a method marked with [disabled].</summary>
       </Docs>
     </Member>
     <Member MemberName="MethodNotImplemented">
@@ -875,7 +875,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An attempt was made to execute a method not marked with [implemented] in any relevant class.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingAggregationList">
@@ -891,7 +891,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A GROUP BY clause was used. Aggregation on all properties is not supported.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingGroupWithin">
@@ -907,7 +907,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A GROUP BY clause was used without the corresponding GROUP WITHIN clause.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingParameterID">
@@ -923,7 +923,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A parameter was missing from the method call.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoError">
@@ -939,7 +939,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation was successful.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoMoreData">
@@ -955,7 +955,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No more data is available from the enumeration; the user should terminate the enumeration.</summary>
       </Docs>
     </Member>
     <Member MemberName="NonconsecutiveParameterIDs">
@@ -971,7 +971,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One or more of the method parameters have ID qualifiers that are out of sequence.</summary>
       </Docs>
     </Member>
     <Member MemberName="NondecoratedObject">
@@ -987,7 +987,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reserved for future use.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAvailable">
@@ -1003,7 +1003,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The resource, typically a remote server, is not currently available.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotEventClass">
@@ -1019,7 +1019,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The FROM clause of a filtering query references a class that is not an event class.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotFound">
@@ -1035,7 +1035,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The object could not be found.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSupported">
@@ -1051,7 +1051,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The feature or operation is not supported.</summary>
       </Docs>
     </Member>
     <Member MemberName="OperationCanceled">
@@ -1067,7 +1067,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation was canceled.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfDiskSpace">
@@ -1083,7 +1083,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>There is not enough free disk space to continue the operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfMemory">
@@ -1099,7 +1099,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>There was not enough memory for the operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverrideNotAllowed">
@@ -1115,7 +1115,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The add operation cannot be performed on the qualifier because the owning object does not permit overrides.</summary>
       </Docs>
     </Member>
     <Member MemberName="ParameterIDOnRetval">
@@ -1131,7 +1131,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The return value for a method has an ID qualifier.</summary>
       </Docs>
     </Member>
     <Member MemberName="PartialResults">
@@ -1147,7 +1147,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user did not receive all of the requested objects because of inaccessible resources (other than security violations).</summary>
       </Docs>
     </Member>
     <Member MemberName="Pending">
@@ -1163,7 +1163,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A request is still in progress; however, the results are not yet available.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrivilegeNotHeld">
@@ -1179,7 +1179,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation failed because the client did not have the necessary security privilege.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropagatedMethod">
@@ -1195,7 +1195,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An attempt was made to reuse an existing method name from a superclass, and the signatures did not match.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropagatedProperty">
@@ -1211,7 +1211,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user attempted to delete a property that was not owned. The property was inherited from a parent class.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropagatedQualifier">
@@ -1227,7 +1227,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user attempted to delete a qualifier that was not owned. The qualifier was inherited from a parent class.</summary>
       </Docs>
     </Member>
     <Member MemberName="PropertyNotAnObject">
@@ -1243,7 +1243,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Dot notation was used on a property that is not an embedded object.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderFailure">
@@ -1259,7 +1259,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The provider failed after initialization.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderLoadFailure">
@@ -1275,7 +1275,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>COM cannot locate a provider referenced in the schema.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderNotCapable">
@@ -1291,7 +1291,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The provider cannot perform the requested operation, such as requesting a query that is too complex, retrieving an instance, creating or updating a class, deleting a class, or enumerating a class.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProviderNotFound">
@@ -1307,7 +1307,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A provider referenced in the schema does not have a corresponding registration.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueryNotImplemented">
@@ -1323,7 +1323,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reserved for future use.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueOverflow">
@@ -1339,7 +1339,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The asynchronous delivery queue overflowed from the *event consumer* being too slow.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -1355,7 +1355,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property that you are attempting to modify is read-only.</summary>
       </Docs>
     </Member>
     <Member MemberName="RefresherBusy">
@@ -1371,7 +1371,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The refresher is busy with another operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegistrationTooBroad">
@@ -1387,7 +1387,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The provider registration overlaps with the system event domain.</summary>
       </Docs>
     </Member>
     <Member MemberName="RegistrationTooPrecise">
@@ -1403,7 +1403,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A WITHIN clause was not used in this query.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResetToDefault">
@@ -1419,7 +1419,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An overridden property was deleted. This value is returned to signal that the original, non-overridden value has been restored as a result of the deletion.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerTooBusy">
@@ -1435,7 +1435,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The delivery of an event has failed. The provider may choose to re-raise the event.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShuttingDown">
@@ -1451,7 +1451,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user has requested an operation while WMI is in the process of closing.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemProperty">
@@ -1467,7 +1467,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>There was an attempt to get qualifiers on a system property.</summary>
       </Docs>
     </Member>
     <Member MemberName="Timedout">
@@ -1483,7 +1483,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A call timed out. This is not an error condition; therefore, some results may have been returned.</summary>
       </Docs>
     </Member>
     <Member MemberName="TooManyProperties">
@@ -1499,7 +1499,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An attempt was made to create more properties than the current version of the class supports.</summary>
       </Docs>
     </Member>
     <Member MemberName="TooMuchData">
@@ -1515,7 +1515,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reserved for future use.</summary>
       </Docs>
     </Member>
     <Member MemberName="TransportFailure">
@@ -1531,7 +1531,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A networking error that prevents normal operation has occurred.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypeMismatch">
@@ -1547,7 +1547,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A type mismatch occurred.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unexpected">
@@ -1563,7 +1563,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The client made an unexpected and illegal sequence of calls.</summary>
       </Docs>
     </Member>
     <Member MemberName="UninterpretableProviderQuery">
@@ -1579,7 +1579,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An *event provider* registration query (**__EventProviderRegistration**) did not specify the classes for which events were provided.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownObjectType">
@@ -1595,7 +1595,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An object with an incorrect type or version was encountered during marshaling.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownPacketType">
@@ -1611,7 +1611,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A packet with an incorrect type or version was encountered during marshaling.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnparsableQuery">
@@ -1627,7 +1627,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The filtering query is syntactically invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedClassUpdate">
@@ -1643,7 +1643,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified class is not supported.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedParameter">
@@ -1659,7 +1659,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>One or more parameter values, such as a query text, is too complex or unsupported. WMI is requested to retry the operation with simpler parameters.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedPutExtension">
@@ -1675,7 +1675,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The provider does not support the requested put operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdateOverrideNotAllowed">
@@ -1691,7 +1691,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An attempt was made in a derived class to override a non-overrideable qualifier.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdatePropagatedMethod">
@@ -1707,7 +1707,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A method was redeclared with a conflicting signature in a derived class.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpdateTypeMismatch">
@@ -1723,7 +1723,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A property was redefined with a conflicting type in a derived class.</summary>
       </Docs>
     </Member>
     <Member MemberName="ValueOutOfRange">
@@ -1739,7 +1739,7 @@
         <ReturnType>System.Management.ManagementStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The request was made with an out-of-range value, or is incompatible with the type.</summary>
       </Docs>
     </Member>
   </Members>

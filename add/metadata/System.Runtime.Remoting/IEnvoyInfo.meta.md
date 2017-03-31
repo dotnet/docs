@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.IEnvoyInfo
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.IEnvoyInfo.EnvoySinks
-internalonly: False
+manager: "ghogen"
 ---

@@ -15,8 +15,20 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates an instance of the logical counters defined in the <see cref="T:System.Diagnostics.PerformanceData.CounterSet" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance%2A?displayProperty=fullName> method returns an instance of this class.  
+  
+   
+  
+## Examples  
+ For an example, see <xref:System.Diagnostics.PerformanceData>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Counters">
@@ -32,9 +44,21 @@
         <ReturnType>System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves the collection of counter data for the counter set instance.</summary>
+        <value>A collection of the counter data contained in the counter set instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to index the counters in the counter set instance.  
+  
+   
+  
+## Examples  
+ For an example, see <xref:System.Diagnostics.PerformanceData>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -56,7 +80,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all unmanaged resources used by this object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +103,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases unmanaged resources and performs other cleanup operations.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -34,9 +34,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of elements in the read-only list.</typeparam>
+    <summary>Represents a read-only collection of elements that can be accessed by index.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.Generic.IReadOnlyList%601> represents a list in which the number and order of list elements is read-only. The content of list elements is not guaranteed to be read-only.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Item">
@@ -67,9 +74,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the element to get.</param>
+        <summary>Gets the element at the specified index in the read-only list.</summary>
+        <value>The element at the specified index in the read-only list.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

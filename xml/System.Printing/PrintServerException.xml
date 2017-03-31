@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that occurs when an error condition prevents the accessing or creation of a <see cref="T:System.Printing.PrintServer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+  
+ If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintServerException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +54,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A <see cref="T:System.String" /> that describes the error condition.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintServerException" /> class that provides a specific error condition.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +73,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The data that is required to serialize or deserialize an object.</param>
+        <param name="context">The context, including source and destination, of the serialized stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintServerException" /> class that provides specific <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" />. This constructor is protected.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +93,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A <see cref="T:System.String" /> that describes the error condition.</param>
+        <param name="innerException">The underlying error condition that caused the <see cref="T:System.Printing.PrintServerException" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintServerException" /> class that provides a specific error condition, including the underlying cause of the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,10 +114,10 @@
         <Parameter Name="serverName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="errorCode">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="serverName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="errorCode">An <see cref="T:System.Int32" /> that is interpreted as an HRESULT, a coded numerical value that is assigned to a specific exception.</param>
+        <param name="message">A <see cref="T:System.String" /> that describes the error condition.</param>
+        <param name="serverName">The name of the print server that was being accessed when the error condition occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintServerException" /> class that provides a specific error code, error condition, and print server name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,11 +137,11 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="errorCode">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="serverName">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="errorCode">An <see cref="T:System.Int32" /> that is interpreted as an HRESULT, a coded numerical value that is assigned to a specific exception.</param>
+        <param name="message">A <see cref="T:System.String" /> that describes the error condition.</param>
+        <param name="serverName">The name of the print server that was being accessed when the error condition occurred.</param>
+        <param name="innerException">The underlying condition that caused the <see cref="T:System.Printing.PrintServerException" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintServerException" /> class that provides a specific print server name, error code, and error condition, including the underlying cause of the exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,9 +167,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The data that is used to serialize the object.</param>
+        <param name="context">The context, including source and destination, of the serialized stream.</param>
+        <summary>Gets the data that is used to serialize the object and gets the context of the serialized stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +186,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the print server that was being accessed when the exception was thrown.</summary>
+        <value>A <see cref="T:System.String" /> that names the print server.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

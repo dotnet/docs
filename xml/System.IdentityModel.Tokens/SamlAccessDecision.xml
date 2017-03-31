@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether the subject of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token is granted access to a given resource.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SamlAccessDecision> to express access permissions to a resource in a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> within a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Deny">
@@ -37,7 +44,7 @@
         <ReturnType>System.IdentityModel.Tokens.SamlAccessDecision</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that access to a resource is denied.</summary>
       </Docs>
     </Member>
     <Member MemberName="Indeterminate">
@@ -58,7 +65,7 @@
         <ReturnType>System.IdentityModel.Tokens.SamlAccessDecision</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the security token service that issued the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token does not have enough information to determine the access permissions for a particular resource. A recipient of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token must use other means to determine the user's access permissions.</summary>
       </Docs>
     </Member>
     <Member MemberName="Permit">
@@ -79,7 +86,7 @@
         <ReturnType>System.IdentityModel.Tokens.SamlAccessDecision</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that access to a resource is granted.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.BaseParser
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.BaseParser.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

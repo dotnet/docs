@@ -22,8 +22,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TResult">The type of the instance being created.</typeparam>
+    <summary>Creates a new instance of the type specified by the <paramref name="TResult" /> type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.New`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +55,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Argument&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the arguments required by the constructor.</summary>
+        <value>The arguments required by the constructor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.Presentation.View.OutlineView.ShowInOutlineViewAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.OutlineView.ShowInOutlineViewAttribute.PromotedProperty
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.OutlineView.ShowInOutlineViewAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

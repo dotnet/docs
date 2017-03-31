@@ -1,19 +1,23 @@
 ---
 uid: System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.#ctor(System.IdentityModel.Tokens.SessionSecurityToken)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.ReissueCookie
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.SessionToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

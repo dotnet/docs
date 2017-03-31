@@ -1,34 +1,34 @@
 ---
 uid: System.Runtime.Remoting.InternalRemotingServices
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.InternalRemotingServices.SetServerIdentity(System.Runtime.Remoting.Messaging.MethodCall,System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.InternalRemotingServices.RemotingAssert(System.Boolean,System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.InternalRemotingServices.RemotingTrace(System.Object[])
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.InternalRemotingServices.DebugOutChnl(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.InternalRemotingServices.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.InternalRemotingServices.GetCachedSoapAttribute(System.Object)
-internalonly: False
+manager: "ghogen"
 ---

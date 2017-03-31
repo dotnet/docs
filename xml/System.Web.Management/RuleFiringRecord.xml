@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the firing record for an event that derives from the <see cref="T:System.Web.Management.WebManagementEvent" /> class and implements the <see cref="T:System.Web.Management.IWebEventCustomEvaluator" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.RuleFiringRecord> class provides information that could be used to determine whether the firing of the event should be recorded.  
+  
+   
+  
+## Examples  
+ The following code example shows how the <xref:System.Web.Management.RuleFiringRecord> is used when passed to the <xref:System.Web.Management.IWebEventCustomEvaluator.CanFire%2A> method.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEvent#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/CS/webbaseevent.cs#22)]
+ [!code-vb[System.Web.Management.WebBaseEvent#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/VB/webbaseevent.vb#22)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="LastFired">
@@ -28,8 +43,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the last time that the event was last fired.</summary>
+        <value>A <see cref="T:System.DateTime" /> object representing when the event was last fired.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +61,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the total number of times that the event has been raised.</summary>
+        <value>The total number of times the event has been raised.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

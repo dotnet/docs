@@ -1,24 +1,34 @@
 ---
 uid: System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.Implementation
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.TargetType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

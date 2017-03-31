@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines constants that specify whether editing is enabled on a cell level or on a row level.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Controls.DataGrid.CancelEdit%28System.Windows.Controls.DataGridEditingUnit%29?displayProperty=fullName> and <xref:System.Windows.Controls.DataGrid.CommitEdit%28System.Windows.Controls.DataGridEditingUnit%2CSystem.Boolean%29?displayProperty=fullName> methods.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Cell">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Controls.DataGridEditingUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Cell editing is enabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Controls.DataGridEditingUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Row editing is enabled.</summary>
       </Docs>
     </Member>
   </Members>

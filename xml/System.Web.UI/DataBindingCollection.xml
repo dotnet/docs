@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a collection of <see cref="T:System.Web.UI.DataBinding" /> objects for an ASP.NET server control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection is a dictionary containing all the <xref:System.Web.UI.DataBinding> objects on an ASP.NET server control. You can access the objects contained in this collection through the <xref:System.Web.UI.Control> class implementation of the <xref:System.Web.UI.IDataBindingsAccessor> interface. Any <xref:System.Web.UI.DataBinding> or <xref:System.Web.UI.DataBindingCollection> objects associated with a server control exist only at design time. They do not exist at run time and, therefore, are not accessible during run time.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataBindingCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +57,8 @@
         <Parameter Name="binding" Type="System.Web.UI.DataBinding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">The data-binding object to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.UI.DataBinding" /> object to the <see cref="T:System.Web.UI.DataBindingCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +75,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the collection of <see cref="T:System.Web.UI.DataBinding" /> objects is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The changed event occurs when the <xref:System.Web.UI.DataBindingCollection.Add%2A> method, the <xref:System.Web.UI.DataBindingCollection.Clear%2A> method, or the <xref:System.Web.UI.DataBindingCollection.Remove%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -86,7 +100,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all <see cref="T:System.Web.UI.DataBinding" /> objects from the <see cref="T:System.Web.UI.DataBindingCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,9 +120,10 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="propertyName">The name of the object to locate in the collection.</param>
+        <summary>Determines whether the data-binding collection contains a specific <see cref="T:System.Web.UI.DataBinding" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.DataBindingCollection" /> contains an element with the specified name; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,9 +144,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from <see cref="T:System.Web.UI.DataBindingCollection" />.</param>
+        <param name="index">The index in the array, specified by the <c>array</c> parameter, where copying begins.</param>
+        <summary>Copies the <see cref="T:System.Web.UI.DataBindingCollection" /> values to a one-dimensional <see cref="T:System.Array" />, beginning at the <see cref="T:System.Array" /> object's specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +163,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of <see cref="T:System.Web.UI.DataBinding" /> objects in the <see cref="T:System.Web.UI.DataBindingCollection" /> object.</summary>
+        <value>The number of <see cref="T:System.Web.UI.DataBinding" /> objects in the <see cref="T:System.Web.UI.DataBindingCollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +182,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator to iterate through the <see cref="T:System.Web.UI.DataBindingCollection" /> object.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that contains the collection's members.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,8 +200,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.DataBindingCollection" /> collection is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +219,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.DataBindingCollection" /> collection is synchronized (thread safe).</summary>
+        <value>Always <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,9 +240,9 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="propertyName">The name of the property to be found.</param>
+        <summary>Gets the <see cref="T:System.Web.UI.DataBinding" /> object with the specified property name.</summary>
+        <value>The <see cref="T:System.Web.UI.DataBinding" /> with the specified property name. If no object with the specified name exists, this value is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,8 +262,8 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The property name associated with the <see cref="T:System.Web.UI.DataBinding" /> to be removed.</param>
+        <summary>Removes the <see cref="T:System.Web.UI.DataBinding" /> object associated with the specified property name from the <see cref="T:System.Web.UI.DataBindingCollection" /> collection and adds it to the <see cref="P:System.Web.UI.DataBindingCollection.RemovedBindings" /> collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,9 +283,20 @@
         <Parameter Name="binding" Type="System.Web.UI.DataBinding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="binding">The <see cref="T:System.Web.UI.DataBinding" /> to be removed from the <see cref="T:System.Web.UI.DataBindingCollection" />.</param>
+        <summary>Removes the specified <see cref="T:System.Web.UI.DataBinding" /> object from the <see cref="T:System.Web.UI.DataBindingCollection" /> collection and adds it to the <see cref="P:System.Web.UI.DataBindingCollection.RemovedBindings" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example removes a <xref:System.Web.UI.DataBinding> object from the <xref:System.Web.UI.DataBindingCollection> collection by using this version of the <xref:System.Web.UI.DataBindingCollection.Remove%2A> method and specifying an instance of the <xref:System.Web.UI.DataBinding> class, named `myDataBinding1`.  
+  
+ [!code-cpp[DataBinding#18](~/samples/snippets/cpp/VS_Snippets_CLR/DataBinding/CPP/webcustomcontrol1.cpp#18)]
+ [!code-csharp[DataBinding#18](~/samples/snippets/csharp/VS_Snippets_CLR/DataBinding/CS/webcustomcontrol1.cs#18)]
+ [!code-vb[DataBinding#18](~/samples/snippets/visualbasic/VS_Snippets_CLR/DataBinding/VB/webcustomcontrol1.vb#18)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -289,9 +316,9 @@
         <Parameter Name="addToRemovedList" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <param name="addToRemovedList">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The property associated with the <see cref="T:System.Web.UI.DataBinding" /> to be removed.</param>
+        <param name="addToRemovedList">A Boolean value that indicates whether to add the property name to the <see cref="P:System.Web.UI.DataBindingCollection.RemovedBindings" /> list. <see langword="true" /> indicates that the <c>propertyName</c> parameter will be added to the <see cref="P:System.Web.UI.DataBindingCollection.RemovedBindings" /> property, and <see langword="false" /> indicates that <c>propertyName</c> will not be added to the <see cref="P:System.Web.UI.DataBindingCollection.RemovedBindings" /> property.</param>
+        <summary>Removes the <see cref="T:System.Web.UI.DataBinding" /> object, associated with the specified property name, from the <see cref="T:System.Web.UI.DataBindingCollection" /> collection and controls whether to add the binding to the <see cref="P:System.Web.UI.DataBindingCollection.RemovedBindings" /> list.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,8 +335,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an array of the names of the <see cref="T:System.Web.UI.DataBinding" /> objects removed from the collection.</summary>
+        <value>The array of names of the <see cref="T:System.Web.UI.DataBinding" /> objects removed from the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,8 +353,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Web.UI.DataBindingCollection" /> collection.</summary>
+        <value>The <see cref="T:System.Object" /> to be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

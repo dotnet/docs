@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Abstract class that represents an object that can be used to navigate a tree of objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To instantiate a <xref:System.Windows.Markup.Primitives.MarkupObject>, see <xref:System.Windows.Markup.Primitives.MarkupWriter.GetMarkupObjectFor%2A> method on the <xref:System.Windows.Markup.Primitives.MarkupWriter> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AssignRootContext">
@@ -31,8 +38,8 @@
         <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The <see cref="T:System.Windows.Markup.IValueSerializerContext" /> to assign a root context for.</param>
+        <summary>When overridden in a derived class, assigns a root context for <see cref="T:System.Windows.Markup.ValueSerializer" /> classes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +56,8 @@
         <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the attributes associated with this <see cref="T:System.Windows.Markup.Primitives.MarkupObject" />.</summary>
+        <value>The collection of attributes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,9 +74,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, gets the instance of the object represented by this <see cref="T:System.Windows.Markup.Primitives.MarkupObject" />.</summary>
+        <value>The instance of the object</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of the object may not be equal to <xref:System.Windows.Markup.Primitives.MarkupObject.ObjectType%2A> if the instance represents a factory which creates instances of type <xref:System.Windows.Markup.Primitives.MarkupObject.ObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ObjectType">
@@ -85,9 +99,16 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, gets the type of the <see cref="T:System.Windows.Markup.Primitives.MarkupObject" /> instance.</summary>
+        <value>The type of the object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.Primitives.MarkupObject.ObjectType%2A> returns the type of the <xref:System.Windows.Markup.Primitives.MarkupObject>.  For example, an item representing a <xref:System.Windows.Controls.Button> would return the equivalent of **typeof(System.Windows.Button)**.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -103,8 +124,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Markup.Primitives.MarkupProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the properties of this <see cref="T:System.Windows.Markup.Primitives.MarkupObject" /> instance that should be written to [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].</summary>
+        <value>The properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

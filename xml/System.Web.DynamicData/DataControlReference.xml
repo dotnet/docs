@@ -11,8 +11,39 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> to declaratively define data controls that it manages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the markup from a Dynamic Data page template that connects the <xref:System.Web.DynamicData.DynamicDataManager> to a <xref:System.Web.UI.WebControls.FormView> control.  
+  
+> [!NOTE]
+>  Some markup is removed for clarity.  
+  
+```  
+<asp:DynamicDataManager ID="DynamicDataManager1" runat="server"   
+    AutoLoadForeignKeys="true">  
+  <DataControls>  
+    <asp:DataControlReference ControlID="FormView1" />  
+  </DataControls>  
+</asp:DynamicDataManager>  
+  
+<asp:UpdatePanel ID="UpdatePanel1" runat="server">  
+  <ContentTemplate>  
+    <!-- Items ommited for clarity. -->  
+    <asp:FormView runat="server" ID="FormView1"   
+        DataSourceID="DetailsDataSource" DefaultMode="Edit"  
+        OnDataBound="FormView1_DataBound">  
+        <!-- Items ommited for clarity. -->  
+    </asp:FormView>  
+  
+  </ContentTemplate>  
+</asp:UpdatePanel>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +57,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DataControlReference" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [ASP.NET Dynamic Data Infrastructure](../Topic/ASP.NET%20Dynamic%20Data%20Infrastructure.md)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlID">
@@ -57,9 +95,41 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the ID of the data-bound control that is managed by the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</summary>
+        <value>The ID of the data-bound control that is managed by the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the markup from a Dynamic Data page template that connects the <xref:System.Web.DynamicData.DynamicDataManager> control to a <xref:System.Web.UI.WebControls.FormView> control. The <xref:System.Web.DynamicData.DataControlReference.ControlID%2A> property is set to "FormView1".  
+  
+> [!NOTE]
+>  Some markup is removed for clarity.  
+  
+```  
+<asp:DynamicDataManager ID="DynamicDataManager1" runat="server"   
+    AutoLoadForeignKeys="true">  
+  <DataControls>  
+    <asp:DataControlReference ControlID="FormView1" />  
+  </DataControls>  
+</asp:DynamicDataManager>  
+  
+<asp:UpdatePanel ID="UpdatePanel1" runat="server">  
+  <ContentTemplate>  
+  <!-- Items ommited for clarity. -->  
+    <asp:FormView runat="server" ID="FormView1"   
+        DataSourceID="DetailsDataSource" DefaultMode="Edit"  
+        OnDataBound="FormView1_DataBound">  
+        <!-- Items ommited for clarity. -->  
+    </asp:FormView>  
+  
+  </ContentTemplate>  
+</asp:UpdatePanel>  
+  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -80,8 +150,8 @@
         <ReturnType>System.Web.DynamicData.DynamicDataManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control that contains the data control.</summary>
+        <value>The <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control that contains the data control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,9 +169,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the literal string <c>DataControl</c><c>:</c> that has the value of the <see cref="P:System.Web.DynamicData.DataControlReference.ControlID" /> control appended to it.</summary>
+        <returns>The literal string <c>DataControl:</c> that has the value of the <see cref="P:System.Web.DynamicData.DataControlReference.ControlID" /> property appended to it.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.DynamicData.DataControlReference.ControlID%2A> property is empty or `null`, the literal string `DataControl` is returned.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

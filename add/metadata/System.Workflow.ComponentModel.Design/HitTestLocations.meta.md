@@ -1,4 +1,6 @@
 ---
 uid: System.Workflow.ComponentModel.Design.HitTestLocations
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,34 +1,44 @@
 ---
 uid: System.Xaml.Permissions.XamlAccessLevel
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Permissions.XamlAccessLevel.PrivateAccessToTypeName
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Permissions.XamlAccessLevel.AssemblyAccessToAssemblyName
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Permissions.XamlAccessLevel.AssemblyAccessTo(System.Reflection.Assembly)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.Permissions.XamlAccessLevel.PrivateAccessTo
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.Permissions.XamlAccessLevel.AssemblyAccessTo
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Permissions.XamlAccessLevel.PrivateAccessTo(System.Type)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Permissions.XamlAccessLevel.PrivateAccessTo(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Permissions.XamlAccessLevel.AssemblyAccessTo(System.Reflection.AssemblyName)
-internalonly: False
+manager: "martinek"
 ---

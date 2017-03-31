@@ -24,8 +24,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that a class should be treated as if it has global scope.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to classes.  
+  
+ This class is used only for communication with debugger tools.  
+  
+ The classes in <xref:System.Runtime.CompilerServices> are for compiler writers use only.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.CompilerGlobalScopeAttribute>.  
+  
+ [!code-csharp[Runtime.CompilerServices.CompilerGlobalScopeAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.CompilerServices.CompilerGlobalScopeAttribute/cs/example.cs#1)]
+ [!code-vb[Runtime.CompilerServices.CompilerGlobalScopeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.CompilerServices.CompilerGlobalScopeAttribute/vb/example.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,8 +63,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.CompilerGlobalScopeAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.CompilerGlobalScopeAttribute>.  
+  
+ [!code-csharp[Runtime.CompilerServices.CompilerGlobalScopeAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.CompilerServices.CompilerGlobalScopeAttribute/cs/example.cs#1)]
+ [!code-vb[Runtime.CompilerServices.CompilerGlobalScopeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.CompilerServices.CompilerGlobalScopeAttribute/vb/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

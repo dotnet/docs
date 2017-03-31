@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This class helps resolve proxy types that were created for [persistence-ignorant](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3) data classes to the actual types of persistence-ignorant objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Objects.ProxyDataContractResolver> class is used with the <xref:System.Runtime.Serialization.DataContractSerializer>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.ProxyDataContractResolver" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,13 +56,20 @@
         <Parameter Name="knownTypeResolver" Type="System.Runtime.Serialization.DataContractResolver" />
       </Parameters>
       <Docs>
-        <param name="typeName">To be added.</param>
-        <param name="typeNamespace">To be added.</param>
-        <param name="declaredType">To be added.</param>
-        <param name="knownTypeResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeName">The <see langword="xsi:type" /> information to map.</param>
+        <param name="typeNamespace">The namespace of the <see langword="xsi:type" />.</param>
+        <param name="declaredType">The declared type.</param>
+        <param name="knownTypeResolver">An instance of <see cref="T:System.Data.Objects.ProxyDataContractResolver" />.</param>
+        <summary>During deserialization, maps any <see langword="xsi:type" /> information to the actual type of the [persistence-ignorant](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3) object.</summary>
+        <returns>Returns the type that the <see langword="xsi:type" /> is mapped to. Returns <see langword="null" /> if no known type was found that matches the <see langword="xsi:type" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see: [Working with POCO Entities](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryResolveType">
@@ -78,14 +92,22 @@
         <Parameter Name="typeNamespace" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="dataContractType">To be added.</param>
-        <param name="declaredType">To be added.</param>
-        <param name="knownTypeResolver">To be added.</param>
-        <param name="typeName">To be added.</param>
-        <param name="typeNamespace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dataContractType">The actual type of the persistence-ignorant object.</param>
+        <param name="declaredType">The declared type.</param>
+        <param name="knownTypeResolver">An instance of <see cref="T:System.Data.Objects.ProxyDataContractResolver" />.</param>
+        <param name="typeName">When this method returns, contains a list of <see langword="xsi:type" /> declarations.</param>
+        <param name="typeNamespace">When this method returns, contains a list of namespaces used.</param>
+        <summary>During serialization, maps actual types to <see langword="xsi:type" /> information.</summary>
+        <returns>
+          <see langword="true" /> if the type was resolved; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see: [Working with POCO Entities](http://msdn.microsoft.com/en-us/5e0fb82a-b6d1-41a1-b37b-c12db61629d3).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

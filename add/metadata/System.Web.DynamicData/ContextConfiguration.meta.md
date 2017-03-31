@@ -1,19 +1,23 @@
 ---
 uid: System.Web.DynamicData.ContextConfiguration
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ContextConfiguration.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ContextConfiguration.MetadataProviderFactory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.ContextConfiguration.ScaffoldAllTables
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

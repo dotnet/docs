@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines extra functionality that is needed by an active script host.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +37,10 @@
         <Parameter Name="startLine" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="code">To be added.</param>
-        <param name="startLine">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="code">The code that contains the event.</param>
+        <param name="startLine">The line number where the code starts.</param>
+        <summary>Used by an active script host to define an event.</summary>
+        <returns>The event, if it was successfully added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

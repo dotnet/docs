@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.TickMarkStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

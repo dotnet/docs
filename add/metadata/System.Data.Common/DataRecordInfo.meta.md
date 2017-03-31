@@ -1,19 +1,27 @@
 ---
 uid: System.Data.Common.DataRecordInfo
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DataRecordInfo.FieldMetadata
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DataRecordInfo.RecordType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DataRecordInfo.#ctor(System.Data.Metadata.Edm.TypeUsage,System.Collections.Generic.IEnumerable{System.Data.Metadata.Edm.EdmMember})
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

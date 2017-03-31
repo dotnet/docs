@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies named pipe settings.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.ServiceModel.Channels.ApplicationContainerSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the application container settings for the named pipe settings.</summary>
+        <value>The application container settings for the named pipe settings.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,2 +1,0 @@
-      CryptographicException^ cryptographicException = gcnew CryptographicException;
-      

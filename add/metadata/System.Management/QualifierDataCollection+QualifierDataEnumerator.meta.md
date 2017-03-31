@@ -1,24 +1,24 @@
 ---
 uid: System.Management.QualifierDataCollection.QualifierDataEnumerator
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.QualifierDataCollection.QualifierDataEnumerator.MoveNext
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.QualifierDataCollection.QualifierDataEnumerator.Reset
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.QualifierDataCollection.QualifierDataEnumerator.System#Collections#IEnumerator#Current
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.QualifierDataCollection.QualifierDataEnumerator.Current
-internalonly: False
+manager: "jillfra"
 ---

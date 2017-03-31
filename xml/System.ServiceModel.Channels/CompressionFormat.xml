@@ -11,7 +11,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the channels compression format.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
         <ReturnType>System.ServiceModel.Channels.CompressionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Deflate compression format.</summary>
       </Docs>
     </Member>
     <Member MemberName="GZip">
@@ -46,7 +46,7 @@
         <ReturnType>System.ServiceModel.Channels.CompressionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The GZip compression format.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -63,7 +63,7 @@
         <ReturnType>System.ServiceModel.Channels.CompressionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The none compression format.</summary>
       </Docs>
     </Member>
   </Members>

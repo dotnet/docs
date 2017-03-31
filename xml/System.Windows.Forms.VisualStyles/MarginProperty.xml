@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the margin properties of a visual style element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.MarginProperty> enumeration represents a set of margin properties that describe the placement of visual style elements. The <xref:System.Windows.Forms.VisualStyles.MarginProperty> values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetMargins%2A?displayProperty=fullName> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CaptionMargins">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.MarginProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies where caption text can be placed.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentMargins">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.MarginProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies where content can be placed.</summary>
       </Docs>
     </Member>
     <Member MemberName="SizingMargins">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.MarginProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a margin used for nine-grid sizing.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a property structure that defines Web content at design time.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,10 +30,10 @@
         <Parameter Name="designTimeHtml" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <param name="content">To be added.</param>
-        <param name="designTimeHtml">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="id">A string identifier for the content.</param>
+        <param name="content">The default HTML markup content.</param>
+        <param name="designTimeHtml">The design-time HTML markup content.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.ContentDefinition" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +50,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ID of the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder" /> control that is associated with the current content.</summary>
+        <value>The ID of the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder" /> associated with the current content.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default HTML markup for the content.</summary>
+        <value>A string containing HTML markup.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +86,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the HTML markup to represent the content at design time.</summary>
+        <value>A string containing HTML markup.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

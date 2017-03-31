@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the options for displaying a grid line or a tick mark for a custom label.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.GridTickTypes> enumeration is used in conjunction with the <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel.GridTicks%2A> property to display a grid line and/or a tick mark for a custom label.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -32,7 +39,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GridTickTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A tick mark and a grid line are shown.</summary>
       </Docs>
     </Member>
     <Member MemberName="Gridline">
@@ -48,7 +55,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GridTickTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A grid line is shown.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +71,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GridTickTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No tick mark or grid line is shown.</summary>
       </Docs>
     </Member>
     <Member MemberName="TickMark">
@@ -80,7 +87,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GridTickTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A tick mark is shown.</summary>
       </Docs>
     </Member>
   </Members>

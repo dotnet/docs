@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.IDataBindingsAccessor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDataBindingsAccessor.DataBindings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDataBindingsAccessor.HasDataBindings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

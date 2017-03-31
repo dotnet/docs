@@ -1,1 +1,0 @@
-            eab.Identity = EndpointIdentity.CreateUpnIdentity("foo")

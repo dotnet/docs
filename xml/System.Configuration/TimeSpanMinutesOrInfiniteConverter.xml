@@ -11,8 +11,24 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts a <see cref="T:System.TimeSpan" /> expressed in minutes or as a standard infinite time span.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type, like all the other configuration converter types, converts strings found in the configuration file to and from the related strongly typed properties.  
+  
+ In particular, the <xref:System.Configuration.TimeSpanMinutesOrInfiniteConverter> class converts <xref:System.String> minutes, assigned to a configuration property, to <xref:System.TimeSpan> minutes and vice versa. If the configuration property has a <xref:System.String> value of "infinite", it converts this value to <xref:System.TimeSpan> and vice versa.  
+  
+ The infinite <xref:System.TimeSpan> value is represented by the <xref:System.TimeSpan.MaxValue> enumeration value.  
+  
+   
+  
+## Examples  
+ Refer to the code examples in the <xref:System.Configuration.InfiniteTimeSpanConverter> and <xref:System.Configuration.TimeSpanMinutesConverter> classes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +42,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.TimeSpanMinutesOrInfiniteConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Normally, you use the converter types provided by the system. The only time you need to use the <xref:System.Configuration.TimeSpanMinutesOrInfiniteConverter.%23ctor%2A> constructor is when you create your own conversion type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -48,12 +71,24 @@
         <Parameter Name="data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ctx">To be added.</param>
-        <param name="ci">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="ctx">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object used for type conversions.</param>
+        <param name="ci">The <see cref="T:System.Globalization.CultureInfo" /> object used during conversion.</param>
+        <param name="data">The <see cref="T:System.String" /> object to convert.</param>
+        <summary>Converts a <see cref="T:System.String" /> to a <see cref="T:System.TimeSpan" />.</summary>
+        <returns>The <see cref="F:System.TimeSpan.MaxValue" />, if the <paramref name="data" /> parameter is the <see cref="T:System.String" /> "infinite"; otherwise, the <see cref="T:System.TimeSpan" /> representing the <paramref name="data" /> parameter in minutes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system uses the <xref:System.Configuration.TimeSpanMinutesOrInfiniteConverter.ConvertFrom%2A> method when reading from a configuration file to convert a <xref:System.String> value to <xref:System.TimeSpan>, or the <xref:System.String> "infinite" to <xref:System.TimeSpan.MaxValue>.  
+  
+   
+  
+## Examples  
+ Refer to the code examples in the <xref:System.Configuration.InfiniteTimeSpanConverter> and <xref:System.Configuration.TimeSpanMinutesConverter> classes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -75,13 +110,25 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="ctx">To be added.</param>
-        <param name="ci">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="ctx">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object used for type conversions.</param>
+        <param name="ci">The <see cref="T:System.Globalization.CultureInfo" /> object used during conversion.</param>
+        <param name="value">The value to convert.</param>
+        <param name="type">The conversion type.</param>
+        <summary>Converts a <see cref="T:System.TimeSpan" /> to a <see cref="T:System.String" />.</summary>
+        <returns>The <see cref="T:System.String" /> "infinite", if the <paramref name="value" /> parameter is <see cref="F:System.TimeSpan.MaxValue" />; otherwise, the <see cref="T:System.String" /> representing the <paramref name="value" /> parameter in minutes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system uses the <xref:System.Configuration.TimeSpanMinutesOrInfiniteConverter.ConvertTo%2A> method when writing to a configuration file to convert a <xref:System.TimeSpan> value or <xref:System.TimeSpan.MaxValue> to a <xref:System.String>.  
+  
+   
+  
+## Examples  
+ Refer to the code examples in the <xref:System.Configuration.InfiniteTimeSpanConverter> and <xref:System.Configuration.TimeSpanMinutesConverter> classes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,39 +1,47 @@
 ---
 uid: System.IdentityModel.Metadata.WebServiceDescriptor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.WebServiceDescriptor.ServiceDescription
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.WebServiceDescriptor.ServiceDisplayName
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.WebServiceDescriptor.ClaimTypesRequested
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.WebServiceDescriptor.TargetScopes
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.WebServiceDescriptor.TokenTypesOffered
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.WebServiceDescriptor.ClaimTypesOffered
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.WebServiceDescriptor.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

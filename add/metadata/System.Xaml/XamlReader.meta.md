@@ -1,79 +1,79 @@
 ---
 uid: System.Xaml.XamlReader
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.ReadSubtree
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.Read
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.Close
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.Dispose(System.Boolean)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.Namespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.IsDisposed
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.Type
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.Skip
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.NodeType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.Member
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.IsEof
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.SchemaContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.Value
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlReader.System#IDisposable#Dispose
-internalonly: False
+manager: "martinek"
 ---

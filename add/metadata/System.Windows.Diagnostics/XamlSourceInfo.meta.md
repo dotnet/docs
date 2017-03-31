@@ -1,24 +1,24 @@
 ---
 uid: System.Windows.Diagnostics.XamlSourceInfo
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.XamlSourceInfo.#ctor(System.Uri,System.Int32,System.Int32)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.XamlSourceInfo.SourceUri
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.XamlSourceInfo.LineNumber
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.XamlSourceInfo.LinePosition
-internalonly: False
+manager: "ghogen"
 ---

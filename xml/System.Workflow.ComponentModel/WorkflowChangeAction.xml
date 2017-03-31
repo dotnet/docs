@@ -19,8 +19,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An abstract base class from which all classes that represent proposed changes to a running workflow instance must derive.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.WorkflowChangeAction" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +63,10 @@
         <Parameter Name="rootActivity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="rootActivity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rootActivity">The root <see cref="T:System.Workflow.ComponentModel.Activity" /> of the workflow.</param>
+        <summary>When overridden in a derived class, applies the changes to the root <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <returns>
+          <see langword="true" /> if the root <see cref="T:System.Workflow.ComponentModel.Activity" /> was updated with the added <see cref="T:System.Workflow.ComponentModel.Activity" />, <see langword="false" /> if the root <see cref="T:System.Workflow.ComponentModel.Activity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,10 +86,12 @@
         <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> upon which to validate the changes.</param>
+        <summary>When overridden in a derived class, validates the changes and returns a <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> that contains any errors.</summary>
+        <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> that contains any errors.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activityInstance" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
   </Members>

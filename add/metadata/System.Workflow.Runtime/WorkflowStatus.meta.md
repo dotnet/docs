@@ -1,4 +1,6 @@
 ---
 uid: System.Workflow.Runtime.WorkflowStatus
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

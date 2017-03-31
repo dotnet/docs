@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.ServiceModel.Description.MessagePropertyDescription" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enables you to find <xref:System.ServiceModel.Description.MessagePropertyDescription?displayProperty=fullName> objects by name.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetKeyForItem">
@@ -37,9 +44,9 @@
         <Parameter Name="item" Type="System.ServiceModel.Description.MessagePropertyDescription" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The <see cref="T:System.ServiceModel.Description.MessagePropertyDescription" /> to locate.</param>
+        <summary>Returns an <see cref="T:System.Xml.XmlQualifiedName" /> for a <see cref="T:System.ServiceModel.Description.MessagePropertyDescription" />.</summary>
+        <returns>The <see cref="T:System.Xml.XmlQualifiedName" /> of the <see cref="T:System.ServiceModel.Description.MessagePropertyDescription" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

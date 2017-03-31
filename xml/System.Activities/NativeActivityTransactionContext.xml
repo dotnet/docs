@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The execution context for a <see cref="T:System.Activities.NativeActivity" /> that needs to provide the runtime with a transaction.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is sealed.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="SetRuntimeTransaction">
@@ -31,8 +38,8 @@
         <Parameter Name="transaction" Type="System.Transactions.Transaction" />
       </Parameters>
       <Docs>
-        <param name="transaction">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="transaction">The transaction.</param>
+        <summary>Provides the runtime with the specified transaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

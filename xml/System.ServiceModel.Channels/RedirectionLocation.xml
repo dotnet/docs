@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the address where the subsequent requests should be redirected.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="address" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="address">The URI of the redirection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.RedirectionLocation" /> with the specified <see cref="T:System.Uri" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Uri" /> of the redirection.</summary>
+        <value>The address where subsequent requests should be redirected.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

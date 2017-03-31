@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.Design.UserControlFileEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UserControlFileEditor.Caption
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UserControlFileEditor.Filter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.UserControlFileEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

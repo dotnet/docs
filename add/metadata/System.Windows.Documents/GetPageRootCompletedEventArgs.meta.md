@@ -1,9 +1,11 @@
 ---
 uid: System.Windows.Documents.GetPageRootCompletedEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Documents.GetPageRootCompletedEventArgs.Result
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

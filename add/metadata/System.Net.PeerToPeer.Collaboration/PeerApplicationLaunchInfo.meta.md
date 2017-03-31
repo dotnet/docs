@@ -1,29 +1,35 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.Data
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.PeerContact
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.Message
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.PeerEndPoint
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.PeerApplication
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -1,19 +1,23 @@
 ---
 uid: System.Configuration.AppSettingsSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.AppSettingsSection.Settings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.AppSettingsSection.File
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.AppSettingsSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

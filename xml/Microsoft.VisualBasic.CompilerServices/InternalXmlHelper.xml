@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides properties and methods that support Visual Basic XML literals. This class is not intended to be used directly from your code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,10 +40,10 @@
         <Parameter Name="name" Type="System.Xml.Linq.XName" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="source">A collection of XML elements to get an attribute value from or set an attribute value for.</param>
+        <param name="name">The name of the XML attribute to get a value from or set a value for.</param>
+        <summary>Gets or sets the value of an XML attribute. This property is not intended to be used from your code.</summary>
+        <value>The value of the XML attribute identified by the <paramref name="name" /> parameter from the first element in the supplied collection of XML elements. If the collection is empty, returns <see langword="Nothing" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,10 +64,10 @@
         <Parameter Name="name" Type="System.Xml.Linq.XName" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="source">An XML element to get an attribute value from or set an attribute value for.</param>
+        <param name="name">The name of the XML attribute to get a value from or set a value for.</param>
+        <summary>Gets or sets the value of an XML attribute. This property is not intended to be used from your code.</summary>
+        <value>The value of the XML attribute identified by the <paramref name="name" /> parameter in the supplied XML element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,10 +93,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the XML attribute to create.</param>
+        <param name="value">The value to assign to the created XML attribute. If <c>value</c> is <see langword="Nothing" />, this method returns <see langword="Nothing" />.</param>
+        <summary>Creates an XML attribute that has the supplied name and value. This method is not intended to be used from your code.</summary>
+        <returns>An <see cref="T:System.Xml.Linq.XAttribute" /> object that has the supplied name and value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +122,10 @@
         <Parameter Name="ns" Type="System.Xml.Linq.XNamespace" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the XML attribute to create.</param>
+        <param name="ns">The namespace value to assign to the created XML attribute.</param>
+        <summary>Creates an XML attribute that has the supplied name and namespace value. This method is not intended to be used from your code.</summary>
+        <returns>An <see cref="T:System.Xml.Linq.XAttribute" /> object that has the supplied name and namespace value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,12 +153,12 @@
         <Parameter Name="obj" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="inScopePrefixes">To be added.</param>
-        <param name="inScopeNs">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="inScopePrefixes">The list of XML namespace prefixes for XML elements in the current scope.</param>
+        <param name="inScopeNs">The list of XML namespaces for XML elements in the current scope.</param>
+        <param name="attributes">The list of namespace attributes to remove from the XML element.</param>
+        <param name="obj">The XML element to remove XML namespace attributes from.</param>
+        <summary>Removes XML namespace attributes from an XML element. This method is not intended to be used from your code.</summary>
+        <returns>The supplied XML element with the specified XML namespace attributes removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,12 +186,12 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="inScopePrefixes">To be added.</param>
-        <param name="inScopeNs">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="inScopePrefixes">The list of XML namespace prefixes for XML elements in the current scope.</param>
+        <param name="inScopeNs">The list of XML namespaces for XML elements in the current scope.</param>
+        <param name="attributes">The list of namespace attributes to remove from the XML element.</param>
+        <param name="obj">The XML element to remove XML namespace attributes from.</param>
+        <summary>Removes XML namespace attributes from an XML element. This method is not intended to be used from your code.</summary>
+        <returns>The supplied XML element with the specified XML namespace attributes removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,12 +219,12 @@
         <Parameter Name="e" Type="System.Xml.Linq.XElement" />
       </Parameters>
       <Docs>
-        <param name="inScopePrefixes">To be added.</param>
-        <param name="inScopeNs">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="inScopePrefixes">The list of XML namespace prefixes for XML elements in the current scope.</param>
+        <param name="inScopeNs">The list of XML namespaces for XML elements in the current scope.</param>
+        <param name="attributes">The list of namespace attributes to remove from the XML element.</param>
+        <param name="e">The XML element to remove XML namespace attributes from.</param>
+        <summary>Removes XML namespace attributes from an XML element. This method is not intended to be used from your code.</summary>
+        <returns>The supplied XML element with the specified XML namespace attributes removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,9 +244,9 @@
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="source">A collection of XML elements to get a value from or set a value for.</param>
+        <summary>Gets or sets the value of an XML element. This property is not intended to be used from your code.</summary>
+        <value>The value of the first XML element in the supplied collection. If the collection is empty, returns <see langword="Nothing" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

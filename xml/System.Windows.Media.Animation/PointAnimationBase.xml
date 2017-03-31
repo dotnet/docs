@@ -11,8 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Abstract class that, when implemented, animates a <see cref="T:System.Windows.Point" /> value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the derived <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames> class in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+  
+ [!code-xml[keyframes_ovw_snip#PointAnimationUsingKeyFramesWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/PointAnimationUsingKeyFramesExample.xaml#pointanimationusingkeyframeswholepage)]
+ [!code-xml[keyframes_ovw_snip#PointAnimationUsingKeyFramesWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/PointAnimationUsingKeyFramesExample.xaml#pointanimationusingkeyframeswholepage)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>See the [Custom Animations Overview](../Topic/Custom%20Animations%20Overview.md) for information about extending animation classes.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.PointAnimationBase" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +57,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Animation.PointAnimationBase" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValue">
@@ -67,12 +89,33 @@
         <Parameter Name="animationClock" Type="System.Windows.Media.Animation.AnimationClock" />
       </Parameters>
       <Docs>
-        <param name="defaultOriginValue">To be added.</param>
-        <param name="defaultDestinationValue">To be added.</param>
-        <param name="animationClock">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="defaultOriginValue">The origin value provided to the animation if the animation does not have its own start value.</param>
+        <param name="defaultDestinationValue">The destination value provided to the animation if the animation does not have its own destination value.</param>
+        <param name="animationClock">The <see cref="T:System.Windows.Media.Animation.AnimationClock" /> which can generate the <see cref="P:System.Windows.Media.Animation.Clock.CurrentTime" /> or <see cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" /> value to be used by the animation to generate its output value.</param>
+        <summary>Gets the current value of the animation.</summary>
+        <returns>The value this animation believes should be the current value for the property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the `defaultOriginValue` parameter depends on the animation’s position in the composition chain:  
+  
+-   If the animation is in the first position in a composition chain and it replaces another animation, `defaultOriginValue` is the output of that animation at the time it was replaced.  
+  
+-   If the animation is in the first position in a composition chain and no animation exists to replace, `defaultOriginValue` is the base value of the animated property.  
+  
+-   If this animation is not in the first position of a composition chain, then `defaultOriginValue` is the value that is returned by the previous animation in the composition chain that has an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+  
+ The value of the `defaultDestinationValue` parameter depends on whether there is a previous property <xref:System.Windows.Trigger> composition layer.  
+  
+-   If there is a previous property <xref:System.Windows.Trigger> composition layer, `defaultDestinationValue` is the output from that layer.  
+  
+-   If there is no previous composition layer, `defaultDestinationValue` is the base value of the property that you are animating.  
+  
+ For more information about animation composition, see the [Animation and Timing System Overview](../Topic/Animation%20and%20Timing%20System%20Overview.md). For more information about creating custom animation types, see the [Custom Animations Overview](../Topic/Custom%20Animations%20Overview.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValue">
@@ -93,12 +136,33 @@
         <Parameter Name="animationClock" Type="System.Windows.Media.Animation.AnimationClock" />
       </Parameters>
       <Docs>
-        <param name="defaultOriginValue">To be added.</param>
-        <param name="defaultDestinationValue">To be added.</param>
-        <param name="animationClock">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="defaultOriginValue">The origin value provided to the animation if the animation does not have its own start value.</param>
+        <param name="defaultDestinationValue">The destination value provided to the animation if the animation does not have its own destination value.</param>
+        <param name="animationClock">The <see cref="T:System.Windows.Media.Animation.AnimationClock" /> which can generate the <see cref="P:System.Windows.Media.Animation.Clock.CurrentTime" /> or <see cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" /> value to be used by the animation to generate its output value.</param>
+        <summary>Gets the current value of the animation.</summary>
+        <returns>The value this animation believes should be the current value for the property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the `defaultOriginValue` parameter depends on the animation’s position in the composition chain:  
+  
+-   If the animation is in the first position in a composition chain and it replaces another animation, `defaultOriginValue` is the output of that animation at the time it was replaced.  
+  
+-   If the animation is in the first position in a composition chain and no animation exists to replace, `defaultOriginValue` is the base value of the animated property.  
+  
+-   If this animation is not in the first position of a composition chain, then `defaultOriginValue` is the value that is returned by the previous animation in the composition chain that has an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+  
+ The value of the `defaultDestinationValue` parameter depends on whether there is a previous property <xref:System.Windows.Trigger> composition layer.  
+  
+-   If there is a previous property <xref:System.Windows.Trigger> composition layer, `defaultDestinationValue` is the output from that layer.  
+  
+-   If there is no previous composition layer, `defaultDestinationValue` is the base value of the property that you are animating.  
+  
+ For more information about animation composition, see the [Animation and Timing System Overview](../Topic/Animation%20and%20Timing%20System%20Overview.md). For more information about creating custom animation types, see the [Custom Animations Overview](../Topic/Custom%20Animations%20Overview.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueCore">
@@ -119,12 +183,33 @@
         <Parameter Name="animationClock" Type="System.Windows.Media.Animation.AnimationClock" />
       </Parameters>
       <Docs>
-        <param name="defaultOriginValue">To be added.</param>
-        <param name="defaultDestinationValue">To be added.</param>
-        <param name="animationClock">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="defaultOriginValue">The suggested origin value, used if the animation does not have its own explicitly set start value.</param>
+        <param name="defaultDestinationValue">The suggested destination value, used if the animation does not have its own explicitly set end value.</param>
+        <param name="animationClock">An <see cref="T:System.Windows.Media.Animation.AnimationClock" /> that generates the <see cref="P:System.Windows.Media.Animation.Clock.CurrentTime" /> or <see cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" /> used by the host animation.</param>
+        <summary>Calculates a value that represents the current value of the property being animated, as determined by the host animation.</summary>
+        <returns>The current value of this animation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the `defaultOriginValue` parameter depends on the animation’s position in the composition chain:  
+  
+-   If the animation is in the first position in a composition chain and it replaces another animation, `defaultOriginValue` is the output of that animation at the time it was replaced.  
+  
+-   If the animation is in the first position in a composition chain and no animation exists to replace, `defaultOriginValue` is the base value of the animated property.  
+  
+-   If this animation is not in the first position of a composition chain, then `defaultOriginValue` is the value that is returned by the previous animation in the composition chain that has an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+  
+ The value of the `defaultDestinationValue` parameter depends on whether there is a previous property <xref:System.Windows.Trigger> composition layer.  
+  
+-   If there is a previous property <xref:System.Windows.Trigger> composition layer, `defaultDestinationValue` is the output from that layer.  
+  
+-   If there is no previous composition layer, `defaultDestinationValue` is the base value of the property that you are animating.  
+  
+ For more information about animation composition, see the [Animation and Timing System Overview](../Topic/Animation%20and%20Timing%20System%20Overview.md). For more information about creating custom animation types, see the [Custom Animations Overview](../Topic/Custom%20Animations%20Overview.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetPropertyType">
@@ -140,8 +225,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of value this animation generates.</summary>
+        <value>The type of value produced by this animation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

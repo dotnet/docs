@@ -32,8 +32,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies a list of interfaces that are exposed as COM event sources for the attributed class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to classes.  
+  
+ You apply this attribute to a managed class to identify the event interfaces that the class exposes as COM connection points. An event interface contains methods that map to the event members of the class. The class event name and the interface method name must be the same. This attribute can accommodate up to four source interfaces for a class by passing the type of the source interface to the appropriate constructor, which take between one and four type arguments. For classes that want to expose more than four source interfaces, the string version of the constructor can be used. For additional information about exposing.NET events to COM clients, see [How to: Raise Events Handled by a COM Sink](http://msdn.microsoft.com/en-us/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd).  
+  
+   
+  
+## Examples  
+ The following example shows how to apply the <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> to connect the event sink interface to a class by passing the namespace and event sink interface.  
+  
+ [!code-cpp[Classic ComSourceInterfacesAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ComSourceInterfacesAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ComSourceInterfacesAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ComSourceInterfacesAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic ComSourceInterfacesAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ComSourceInterfacesAttribute Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,9 +80,16 @@
         <Parameter Name="sourceInterfaces" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sourceInterfaces">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceInterfaces">A null-delimited list of fully qualified event source interface names.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComSourceInterfacesAttribute" /> class with the name of the event source interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to expose more than four event source interfaces to COM clients.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,9 +118,16 @@
         <Parameter Name="sourceInterface" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="sourceInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceInterface">The <see cref="T:System.Type" /> of the source interface.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComSourceInterfacesAttribute" /> class with the type to use as a source interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to expose a single event source interface to COM clients.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -125,10 +157,17 @@
         <Parameter Name="sourceInterface2" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="sourceInterface1">To be added.</param>
-        <param name="sourceInterface2">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceInterface1">The <see cref="T:System.Type" /> of the default source interface.</param>
+        <param name="sourceInterface2">The <see cref="T:System.Type" /> of a source interface.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComSourceInterfacesAttribute" /> class with the types to use as source interfaces.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to expose two event source interfaces to COM clients.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -159,11 +198,18 @@
         <Parameter Name="sourceInterface3" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="sourceInterface1">To be added.</param>
-        <param name="sourceInterface2">To be added.</param>
-        <param name="sourceInterface3">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceInterface1">The <see cref="T:System.Type" /> of the default source interface.</param>
+        <param name="sourceInterface2">The <see cref="T:System.Type" /> of a source interface.</param>
+        <param name="sourceInterface3">The <see cref="T:System.Type" /> of a source interface.</param>
+        <summary>Initializes a new instance of the <see langword="ComSourceInterfacesAttribute" /> class with the types to use as source interfaces.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to expose three event source interfaces to COM clients.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -195,12 +241,19 @@
         <Parameter Name="sourceInterface4" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="sourceInterface1">To be added.</param>
-        <param name="sourceInterface2">To be added.</param>
-        <param name="sourceInterface3">To be added.</param>
-        <param name="sourceInterface4">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sourceInterface1">The <see cref="T:System.Type" /> of the default source interface.</param>
+        <param name="sourceInterface2">The <see cref="T:System.Type" /> of a source interface.</param>
+        <param name="sourceInterface3">The <see cref="T:System.Type" /> of a source interface.</param>
+        <param name="sourceInterface4">The <see cref="T:System.Type" /> of a source interface.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComSourceInterfacesAttribute" /> class with the types to use as source interfaces.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to expose four event source interfaces to COM clients.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -229,9 +282,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the fully qualified name of the event source interface.</summary>
+        <value>The fully qualified name of the event source interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you specify more than one source interface, the value returned is a null-delimited list of fully qualified event source interface names.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

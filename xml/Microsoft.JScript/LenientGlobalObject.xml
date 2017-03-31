@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Stores constructor function objects, data type information, and objects that represent the static methods of the <see cref="T:Microsoft.JScript.GlobalObject" /> class. The <see cref="T:Microsoft.JScript.LenientGlobalObject" /> class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ActiveXObjectConstructor" /> constructor function object.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ActiveXObjectConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ArrayConstructor" /> constructor function object.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ArrayConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +64,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="boolean" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +81,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.BooleanConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.BooleanConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +99,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="byte" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +116,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="char" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +133,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.LenientDateConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.LenientDateConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +151,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="decimal" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +168,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.decodeURI(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,7 +185,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.decodeURIComponent(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,7 +202,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="double" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,7 +219,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.encodeURI(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,7 +236,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.encodeURIComponent(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,8 +253,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> constructor function object.</summary>
+        <value>An <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,8 +271,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,7 +294,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.escape(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -311,7 +311,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.eval(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,8 +328,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as an <see cref="F:Microsoft.JScript.ErrorType.EvalError" />.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,7 +346,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="float" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -363,8 +363,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.FunctionConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.FunctionConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,7 +381,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.GetObject(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -398,7 +398,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents positive infinity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,7 +415,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="int" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,7 +432,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.isFinite(System.Double)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -449,7 +449,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.isNaN(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,7 +466,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="long" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,8 +483,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a <see cref="T:Microsoft.JScript.LenientMathObject" /> object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.LenientMathObject" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,7 +501,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a value that is not a number (NaN).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,8 +518,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.NumberConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.NumberConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -536,8 +536,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ObjectConstructor" /> constructor function object.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ObjectConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -554,7 +554,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.parseFloat(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -571,7 +571,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.parseInt(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,8 +588,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.RangeError" />.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -606,8 +606,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.ReferenceError" />.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -624,8 +624,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.RegExpConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.RegExpConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -642,7 +642,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="sbyte" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -659,7 +659,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngine" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -676,7 +676,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineBuildVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -693,7 +693,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineMajorVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -710,7 +710,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineMinorVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -727,7 +727,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="short" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -744,8 +744,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.LenientStringConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.LenientStringConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -762,8 +762,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.SyntaxError" />.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -780,8 +780,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.TypeError" />.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -798,7 +798,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="uint" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -815,7 +815,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="ulong" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -832,7 +832,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a value that is null.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -854,7 +854,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.unescape(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -871,8 +871,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.URIError" />.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -889,7 +889,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="ushort" /> data type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -906,8 +906,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.VBArrayConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.VBArrayConstructor" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -924,7 +924,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stores the managed type that corresponds to the return value of a function that does not return a value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

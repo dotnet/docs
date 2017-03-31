@@ -25,12 +25,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TExpandedElement">To be added.</typeparam>
-    <typeparam name="TProperty0">To be added.</typeparam>
-    <typeparam name="TProperty1">To be added.</typeparam>
-    <typeparam name="TProperty2">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TExpandedElement">The type of the expanded element.</typeparam>
+    <typeparam name="TProperty0">The type of the property to expand.</typeparam>
+    <typeparam name="TProperty1">The type of the property to expand.</typeparam>
+    <typeparam name="TProperty2">The type of the property to expand.</typeparam>
+    <summary>This class is used internally by the system to implement support for queries with eager loading of related entities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The namespace includes a number of variations of the `ExpandedWrapper` class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Data.Services.Internal.ExpandedWrapper`4" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +90,8 @@
         <ReturnType>TProperty0</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Get or sets the property to expand.</summary>
+        <value>The property to expand.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +108,8 @@
         <ReturnType>TProperty1</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Get or sets the property to expand.</summary>
+        <value>The property to expand.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +126,8 @@
         <ReturnType>TProperty2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Get or sets the property to expand.</summary>
+        <value>The property to expand.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

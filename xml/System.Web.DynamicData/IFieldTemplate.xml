@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines members that a class must implement in order to be recognized as a field template.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="host" Type="System.Web.DynamicData.IFieldTemplateHost" />
       </Parameters>
       <Docs>
-        <param name="host">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="host">The object that controls the use of the field template.</param>
+        <summary>Associates the field template with the object that controls its use.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,8 +15,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a configuration section that holds a collection of <see cref="T:System.ServiceModel.Configuration.NetMsmqBindingElement" /> instances.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection of <xref:System.ServiceModel.Configuration.NetMsmqBindingElement> objects contains all of the settings required for the <xref:System.ServiceModel.NetMsmqBinding> binding to function. The <xref:System.ServiceModel.NetMsmqBinding> binding provides support for queuing by leveraging Microsoft Message Queuing (MSMQ) as a transport and enables support for loosely coupled applications, failure isolation, load leveling, and disconnected operations.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetMsmqBindingCollectionElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

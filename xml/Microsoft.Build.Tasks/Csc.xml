@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the <c>Csc</c> task. Use the <c>Csc</c> element in your project file to create and execute this task. For usage and parameter information, see [Csc Task](../Topic/Csc%20Task.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Csc" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="commandLine" Type="Microsoft.Build.Tasks.CommandLineBuilderExtension" />
       </Parameters>
       <Docs>
-        <param name="commandLine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandLine">Command line builder to add arguments to.</param>
+        <summary>Fills the specified <paramref name="commandLine" /> parameter with switches and other information that can go into a response file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +64,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether to compile code that uses the [unsafe](../Topic/unsafe%20\(C%23%20Reference\).md) keyword.</summary>
+        <value>
+          <see langword="true" /> if will compile code that uses the [unsafe](../Topic/unsafe%20\(C%23%20Reference\).md) keyword; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [/unsafe (C# Compiler Options)](../Topic/-unsafe%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplicationConfiguration">
@@ -82,7 +90,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns configuration information.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,9 +108,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the preferred base address at which to load a DLL.</summary>
+        <value>The preferred base address at which to load a DLL.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default base address for a DLL is set by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] common language runtime. For more information, see [/baseaddress (C# Compiler Options)](../Topic/-baseaddress%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CallHostObjectToExecute">
@@ -119,9 +134,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Compiles the project through the host object.</summary>
+        <returns>
+          <see langword="true" /> if compilation succeeded; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method will get called during execution if a host object was passed to the `Csc` task.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckForOverflowUnderflow">
@@ -137,9 +160,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether the <c>Csc</c> task should cause an exception at run time for integer arithmetic that overflows the bounds of the data type.</summary>
+        <value>Gets or sets a Boolean value that indicates whether true if the <c>Csc</c> task should cause an exception at run time for integer arithmetic that overflows the bounds of the data type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [/checked (C# Compiler Options)](../Topic/-checked%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisabledWarnings">
@@ -155,9 +185,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the list of warnings to be disabled.</summary>
+        <value>The list of warnings to be disabled.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [/nowarn (C# Compiler Options)](../Topic/-nowarn%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentationFile">
@@ -173,9 +210,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the XML file to hold the documentation comments.</summary>
+        <value>The XML file to hold the documentation comments.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [/doc (C# Compiler Options)](../Topic/-doc%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorEndLocation">
@@ -191,8 +235,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>If true, outputs the line and column of the end location of each error.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +253,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the method to report a C# internal compiler error to Microsoft.</summary>
+        <value>The method to report a C# internal compiler error to Microsoft.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can have a value of `prompt`, `send`, or `none`. If the property is set to `prompt`, you will receive a prompt when an internal compiler error occurs. The prompt lets you send a bug report electronically to Microsoft. If the property is set to `send`, a bug report is sent automatically. If the property is set to `none`, the error is reported only in the text output of the compiler. Default is `none`. For more information, see [/errorreport (C# Compiler Options)](../Topic/-errorreport%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateFullPaths">
@@ -227,9 +278,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether to generate the absolute path to the file in the compiler output (<see langword="true" />) or to generate the name of the file in the compiler output (<see langword="false" />).</summary>
+        <value>
+          <see langword="true" /> if the <c>Csc</c> task should generate the absolute path to the file in the compiler output; <see langword="false" /> if the <c>Csc</c> task should generate the name of the file in the compiler output.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default is `false`. For more information, see [/fullpaths (C# Compiler Options)](../Topic/-fullpaths%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateFullPathToTool">
@@ -246,8 +305,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the full file path of the Csc tool.</summary>
+        <returns>The full file path of the Csc tool.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,9 +324,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a host object initialization status value that indicates what the next action should be.</summary>
+        <returns>A host object initialization status value that indicates what the next action should be.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method will get called during execution of this task if a host object was passed to the `Csc` task.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LangVersion">
@@ -283,9 +349,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the version of the language to use.</summary>
+        <value>The version of the language to use.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [/langversion (C# Compiler Options)](../Topic/-langversion%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ModuleAssemblyName">
@@ -301,9 +374,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an assembly whose non-public types a .netmodule can access.</summary>
+        <value>An assembly whose non-public types a .netmodule can access.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [/moduleassemblyname (C# Compiler Option)](../Topic/-moduleassemblyname%20\(C%23%20Compiler%20Option\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NoStandardLib">
@@ -319,9 +399,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether the <c>Csc</c> task should prevent the import of mscorlib.dll, which defines the entire System namespace.</summary>
+        <value>
+          <see langword="true" /> if the <c>Csc</c> task should prevent the import of mscorlib.dll; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property if you want to define or create your own System namespace and objects. For more information, see [/nostdlib (C# Compiler Options)](../Topic/-nostdlib%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PdbFile">
@@ -337,9 +425,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the path of the .pdb file.</summary>
+        <value>The path of the .pdb file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [/pdb (C# Compiler Options)](../Topic/-pdb%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredUILang">
@@ -355,9 +450,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The name of the language passed to the “/preferreduilang” compiler option.</summary>
+        <value>Returns the name of the language.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If set to null, “/preferreduilang” is omitted and the compiler uses its default setting.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolName">
@@ -373,8 +475,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the name of the Csc tool (csc.exe).</summary>
+        <value>The name of the Csc tool (csc.exe).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,9 +493,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether the <c>Csc</c> task should use the in-process compiler object, if available.</summary>
+        <value>
+          <see langword="true" /> if the <c>Csc</c> task should use the in-process compiler object, if available; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used only by [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WarningLevel">
@@ -409,9 +519,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the warning level for the compiler to display.</summary>
+        <value>The warning level for the compiler to display.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [/warn (C# Compiler Options)](../Topic/-warn%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WarningsAsErrors">
@@ -427,9 +544,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a list of warnings to treat as errors.</summary>
+        <value>The list of warnings to treat as errors.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [/warnaserror (C# Compiler Options)](../Topic/-warnaserror%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WarningsNotAsErrors">
@@ -445,9 +569,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a list of warnings that are not treated as errors.</summary>
+        <value>The list of warnings that are not treated as errors.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [/warnaserror (C# Compiler Options)](../Topic/-warnaserror%20\(C%23%20Compiler%20Options\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

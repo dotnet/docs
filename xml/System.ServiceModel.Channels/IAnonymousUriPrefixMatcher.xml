@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implement this interface to register custom, anonymous URI prefixes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="anonymousUriPrefix" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="anonymousUriPrefix">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="anonymousUriPrefix">The URI prefix to register.</param>
+        <summary>Registers a custom, anonymous URI prefix.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

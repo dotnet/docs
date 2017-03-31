@@ -11,8 +11,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an abstract base for classes that present content from another technology as part of an interoperation scenario. In addition, this class provides static methods for working with these sources, as well as the basic visual-layer presentation architecture.</summary>
     <remarks>To be added.</remarks>
+    <permission cref="T:System.Security.Permissions.UIPermission">to derive from this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +27,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides initialization for base class values when called by the constructor of a derived class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,8 +45,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Adds a <see cref="T:System.Windows.PresentationSource" /> derived class instance to the list of known presentation sources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method should be called by derived classes to indicate that they need to be tracked.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSourceChangedHandler">
@@ -70,10 +78,28 @@
         <Parameter Name="handler" Type="System.Windows.SourceChangedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">The element to add the handler to.</param>
+        <param name="handler">The hander implementation to add.</param>
+        <summary>Adds a handler for the <see langword="SourceChanged" /> event to the provided element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Despite what the syntax block for this event states, there is no legitimate [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] attached property usage. You should not attempt to add handlers in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], and handlers in code should only be placed on objects that serve as hosts for presentation (<xref:System.Windows.PresentationSource> ) content. Such handlers should only be attached during object initialization, and should be explicitly removed in a Dispose method or equivalent object cleanup.  
+  
+ Even though this is a routed event, there are special restrictions placed on this event that differ from normal routed event behavior, due to the relatively small number of elements in a typical application scenario that would concern themselves with handling this event.  
+  
+-   You cannot use the <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> <xref:System.Windows.UIElement.AddHandler%2A> methods to add handlers. You must use <xref:System.Windows.PresentationSource.AddSourceChangedHandler%2A>.  
+  
+-   The [!INCLUDE[TLA#tla_cshrp](~/includes/tlasharptla-cshrp-md.md)] `+=` and `-=` event handler syntaxes, and related language specific handler syntaxes, are not supported, because the event itself is not exposed as public. Only the <xref:System.Windows.PresentationSource> utility methods for adding and removing the handlers directly are supported.  
+  
+-   Class handlers are not allowed. Specifically, you cannot call <xref:System.Windows.EventManager.RegisterClassHandler%2A> against this event in a class constructor because although an identifier field exists for SourceChanged, the identifier is not public.  
+  
+-   All registered handlers will receive the SourceChanged event even if one of the handlers attempts to mark the arguments as handled.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to call or implement this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="ClearContentRenderedListeners">
@@ -90,7 +116,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the list of listeners for the <see cref="E:System.Windows.PresentationSource.ContentRendered" /> event to <see langword="null" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +138,19 @@
         <ReturnType>System.Windows.Media.CompositionTarget</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the visual target for the visuals being presented in the source.</summary>
+        <value>A visual target (instance of a <see cref="T:System.Windows.Media.CompositionTarget" /> derived class).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return of this property relies on an implementation of <xref:System.Windows.PresentationSource.GetCompositionTargetCore%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Derived classes can choose to shadow this property to offer a type-specific value.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="ContentRendered">
@@ -130,7 +166,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when content is rendered and ready for user interaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,9 +188,19 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns a list of sources.</summary>
+        <value>A list of weak references.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned list supports an enumerator over a read-only, thread-safe copy of the list of sources as added with <xref:System.Windows.PresentationSource.AddSource%2A>.  
+  
+ The enumerator skips any dead weak references in the list.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to get sources. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="FromDependencyObject">
@@ -178,10 +224,11 @@
         <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="dependencyObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dependencyObject">The <see cref="T:System.Windows.DependencyObject" /> to find the source for.</param>
+        <summary>Returns the source in which a provided <see cref="T:System.Windows.DependencyObject" /> is presented.</summary>
+        <returns>The <see cref="T:System.Windows.PresentationSource" /> in which the dependency object is being presented.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to call or implement this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="FromVisual">
@@ -205,10 +252,13 @@
         <Parameter Name="visual" Type="System.Windows.Media.Visual" />
       </Parameters>
       <Docs>
-        <param name="visual">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> to find the source for.</param>
+        <summary>Returns the source in which a provided <see cref="T:System.Windows.Media.Visual" /> is presented.</summary>
+        <returns>The <see cref="T:System.Windows.PresentationSource" /> in which the visual is being presented, or <see langword="null" /> if <paramref name="visual" /> is disposed.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="visual" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">to call or implement this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="GetCompositionTargetCore">
@@ -225,9 +275,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns a visual target for the given source.</summary>
+        <returns>Returns a <see cref="T:System.Windows.Media.CompositionTarget" /> that is target for rendering the visual.</returns>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Override this method to declare the value that the <see cref="P:System.Windows.PresentationSource.CompositionTarget" /> read-only property will return.  
+  
+ Your override should return type-specific instances of the <see cref="T:System.Windows.Media.CompositionTarget" /> derived class type that is used for your interoperation scenario.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="IsDisposed">
@@ -243,9 +298,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a value that declares whether the object is disposed.</summary>
+        <value>
+          <see langword="true" /> if the object is disposed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Derived classes are expected to implement <see cref="T:System.IDisposable" /> or provide equivalent behavior.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="RemoveSource">
@@ -262,7 +321,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes a <see cref="T:System.Windows.PresentationSource" /> derived class instance from the list of known presentation sources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,10 +342,21 @@
         <Parameter Name="handler" Type="System.Windows.SourceChangedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The element to remove the handler from.</param>
+        <param name="handler">The handler implementation to remove.</param>
+        <summary>Removes a handler for the <see langword="SourceChanged" /> event from the provided element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Even though this is a routed event, there are special restrictions placed on this event that differ from normal routed event behavior, due to the relatively small number of elements in a typical application scenario that would concern themselves with handling this event.  
+  
+-   You cannot use the <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> <xref:System.Windows.UIElement.RemoveHandler%2A> methods to remove handlers. You must use <xref:System.Windows.PresentationSource.RemoveSourceChangedHandler%2A>.  
+  
+-   The [!INCLUDE[TLA#tla_cshrp](~/includes/tlasharptla-cshrp-md.md)] `+=` and `-=` event handler syntaxes, and other language specific handler syntaxes, are not supported, because the event itself is not exposed as public. Only the <xref:System.Windows.PresentationSource> utility methods for adding and removing the handlers directly are supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RootChanged">
@@ -314,10 +384,23 @@
         <Parameter Name="newRoot" Type="System.Windows.Media.Visual" />
       </Parameters>
       <Docs>
-        <param name="oldRoot">To be added.</param>
-        <param name="newRoot">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="oldRoot">The old root <see cref="T:System.Windows.Media.Visual" />.</param>
+        <param name="newRoot">The new root <see cref="T:System.Windows.Media.Visual" />.</param>
+        <summary>Provides notification that the root <see cref="T:System.Windows.Media.Visual" /> has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived classes should call this method to indicate that their root <xref:System.Windows.Media.Visual> has changed.  
+  
+ Calling this method causes two object lifetime events to be raised on the specified root visuals, if and only if those root visuals are <xref:System.Windows.FrameworkElement> derived classes.  
+  
+-   The old root visual will raise the <xref:System.Windows.FrameworkElement.Unloaded> event, and will process its tree of elements downward, broadcasting this event to each child element.  
+  
+-   The new root visual will raise the <xref:System.Windows.FrameworkElement.Loaded> event, and will process its tree of elements downward, broadcasting this event to each child element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RootVisual">
@@ -338,9 +421,10 @@
         <ReturnType>System.Windows.Media.Visual</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets or sets the root visual being presented in the source.</summary>
+        <value>The root visual.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to override the property (<see langword="InheritanceDemand" />). Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
       </Docs>
     </Member>
   </Members>

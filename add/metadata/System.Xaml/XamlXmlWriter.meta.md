@@ -1,89 +1,94 @@
 ---
 uid: System.Xaml.XamlXmlWriter
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.WriteStartObject(System.Xaml.XamlType)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.WriteGetObject
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlXmlWriter.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.Dispose(System.Boolean)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.#ctor(System.IO.Stream,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlWriterSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.WriteValue(System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.Settings
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.#ctor(System.Xml.XmlWriter,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlWriterSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.#ctor(System.IO.Stream,System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.WriteEndObject
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.WriteStartMember(System.Xaml.XamlMember)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.#ctor(System.IO.TextWriter,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlWriterSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.Flush
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.WriteEndMember
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.SchemaContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.WriteNamespace(System.Xaml.NamespaceDeclaration)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.#ctor(System.IO.TextWriter,System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlXmlWriter.#ctor(System.Xml.XmlWriter,System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---

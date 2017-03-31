@@ -12,8 +12,22 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Web.Services.Description.OperationInput" /> and <see cref="T:System.Web.Services.Description.OperationOutput" /> messages related to an XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of this class will be returned by the <xref:System.Web.Services.Description.Operation.Messages%2A> property of the parent <xref:System.Web.Services.Description.Operation>. As such, it can have exactly two members, one an <xref:System.Web.Services.Description.OperationInput> and the other an <xref:System.Web.Services.Description.OperationOutput>.  
+  
+   
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#1)]
+ [!code-csharp[OperationMessageCollection_Sample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#1)]
+ [!code-vb[OperationMessageCollection_Sample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -33,10 +47,19 @@
         <Parameter Name="operationMessage" Type="System.Web.Services.Description.OperationMessage" />
       </Parameters>
       <Docs>
-        <param name="operationMessage">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="operationMessage">The <see cref="T:System.Web.Services.Description.OperationMessage" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.OperationMessage" /> to the end of the <see cref="T:System.Web.Services.Description.OperationMessageCollection" />.</summary>
+        <returns>The zero-based index where the <paramref name="operationMessage" /> parameter has been added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#4](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#4)]
+ [!code-csharp[OperationMessageCollection_Sample#4](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#4)]
+ [!code-vb[OperationMessageCollection_Sample#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -56,10 +79,20 @@
         <Parameter Name="operationMessage" Type="System.Web.Services.Description.OperationMessage" />
       </Parameters>
       <Docs>
-        <param name="operationMessage">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="operationMessage">The <see cref="T:System.Web.Services.Description.OperationMessage" /> for which to check collection membership.</param>
+        <summary>Determines whether the specified <see cref="T:System.Web.Services.Description.OperationMessage" /> is a member of the <see cref="T:System.Web.Services.Description.OperationMessageCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="operationMessage" /> parameter is a member of the <see cref="T:System.Web.Services.Description.OperationMessageCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#5](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#5)]
+ [!code-csharp[OperationMessageCollection_Sample#5](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#5)]
+ [!code-vb[OperationMessageCollection_Sample#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -80,10 +113,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">An array of type <see cref="T:System.Web.Services.Description.OperationMessage" /> serving as the destination for the copy action.</param>
+        <param name="index">The zero-based index at which to start placing the copied collection.</param>
+        <summary>Copies the entire <see cref="T:System.Web.Services.Description.OperationMessageCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.OperationMessage" />, starting at the specified zero-based index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#3](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#3)]
+ [!code-csharp[OperationMessageCollection_Sample#3](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#3)]
+ [!code-vb[OperationMessageCollection_Sample#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Flow">
@@ -100,9 +142,18 @@
         <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of transmission supported by the <see cref="T:System.Web.Services.Description.OperationMessageCollection" />.</summary>
+        <value>One of the <see cref="T:System.Web.Services.Description.OperationFlow" /> values. The default is <see langword="SolicitResponse" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#9](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#9)]
+ [!code-csharp[OperationMessageCollection_Sample#9](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#9)]
+ [!code-vb[OperationMessageCollection_Sample#9](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -122,10 +173,19 @@
         <Parameter Name="operationMessage" Type="System.Web.Services.Description.OperationMessage" />
       </Parameters>
       <Docs>
-        <param name="operationMessage">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="operationMessage">The <see cref="T:System.Web.Services.Description.OperationMessage" /> for which to search in the collection.</param>
+        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.OperationMessage" /> and returns the zero-based index of the first occurrence within the collection.</summary>
+        <returns>The zero-based index of the specified operation message, or -1 if the element was not found in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#6](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#6)]
+ [!code-csharp[OperationMessageCollection_Sample#6](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#6)]
+ [!code-vb[OperationMessageCollection_Sample#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -142,9 +202,18 @@
         <ReturnType>System.Web.Services.Description.OperationInput</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the first occurrence of an <see cref="T:System.Web.Services.Description.OperationInput" /> within the collection.</summary>
+        <value>An <see cref="T:System.Web.Services.Description.OperationInput" /> within the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#10](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#10)]
+ [!code-csharp[OperationMessageCollection_Sample#10](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#10)]
+ [!code-vb[OperationMessageCollection_Sample#10](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#10)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -165,10 +234,28 @@
         <Parameter Name="operationMessage" Type="System.Web.Services.Description.OperationMessage" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="operationMessage">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which to insert the <c>operationMessage</c> parameter.</param>
+        <param name="operationMessage">The <see cref="T:System.Web.Services.Description.OperationMessage" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.OperationMessage" /> to the <see cref="T:System.Web.Services.Description.OperationMessageCollection" /> at the specified zero-based index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+  
+ If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `operationMessage` parameter is added to the end of the collection.  
+  
+ The elements after the insertion point move down to accommodate the new element.  
+  
+   
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#8](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#8)]
+ [!code-csharp[OperationMessageCollection_Sample#8](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#8)]
+ [!code-vb[OperationMessageCollection_Sample#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -188,10 +275,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.OperationMessage" /> whose value is modified or returned.</param>
+        <summary>Gets or sets the value of an <see cref="T:System.Web.Services.Description.OperationMessage" /> at the specified zero-based index.</summary>
+        <value>An <see langword="OperationMessage" /> at the specified zero-based index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#2](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#2)]
+ [!code-csharp[OperationMessageCollection_Sample#2](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#2)]
+ [!code-vb[OperationMessageCollection_Sample#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -280,9 +376,18 @@
         <ReturnType>System.Web.Services.Description.OperationOutput</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the first occurrence of an <see cref="T:System.Web.Services.Description.OperationOutput" /> within the collection.</summary>
+        <value>An <see cref="T:System.Web.Services.Description.OperationOutput" /> within the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#11](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#11)]
+ [!code-csharp[OperationMessageCollection_Sample#11](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#11)]
+ [!code-vb[OperationMessageCollection_Sample#11](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#11)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -302,9 +407,25 @@
         <Parameter Name="operationMessage" Type="System.Web.Services.Description.OperationMessage" />
       </Parameters>
       <Docs>
-        <param name="operationMessage">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="operationMessage">The <see cref="T:System.Web.Services.Description.OperationMessage" /> to remove from the collection.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.OperationMessage" /> from the <see cref="T:System.Web.Services.Description.OperationMessageCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+  
+ The elements that follow the removed <xref:System.Web.Services.Description.OperationMessage> move up to occupy the vacated spot.  
+  
+   
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#7](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#7)]
+ [!code-csharp[OperationMessageCollection_Sample#7](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#7)]
+ [!code-vb[OperationMessageCollection_Sample#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParent">

@@ -1,1 +1,0 @@
-        Calendar1.CalendarEntryText = "Your birthdate"

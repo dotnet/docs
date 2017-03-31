@@ -1,1 +1,0 @@
-            Console.WriteLine("Location Path: {0}", myLocation.Path);

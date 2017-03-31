@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An instance of this class is returned by the <see cref="M:System.Workflow.Activities.Rules.IRuleExpression.Validate(System.Workflow.Activities.Rules.RuleValidation,System.Boolean)" /> method of an <see cref="T:System.Workflow.Activities.Rules.IRuleExpression" /> expression.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.Rules.RuleExpressionInfo.ExpressionType%2A> property on <xref:System.Workflow.Activities.Rules.RuleExpressionInfo> provides the return type of the expression. For example, a binary expression, when evaluated, has a return type of Boolean; or, an expression that accesses a property might return an integer type.  
+  
+ The information in the <xref:System.Workflow.Activities.Rules.RuleExpressionInfo> can be used to validate the use of the expression. For example, a greater-than test cannot be used to compare two expressions if either returns a Boolean.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +37,8 @@
         <Parameter Name="expressionType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="expressionType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expressionType">The <see cref="T:System.Type" /> of the expression.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleExpressionInfo" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +55,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the expression.</summary>
+        <value>The <see cref="T:System.Type" /> of the expression.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

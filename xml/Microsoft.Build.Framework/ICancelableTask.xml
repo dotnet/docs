@@ -12,7 +12,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Interface for tasks which can be cancelled.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,8 +30,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Instructs the task to exit as soon as possible, or to immediately exit if Execute is invoked after this method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Cancel() may be called at any time after the task has been instantiated, even before <xref:Microsoft.Build.Framework.ITask.Execute%2A> is called.  
+  
+ Cancel calls may come in from any thread. The implementation of this method should not block indefinitely.  
+  
+ To cancel the build, both `Cancel` and `Execute` must return in any order.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

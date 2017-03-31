@@ -18,9 +18,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TOperand">To be added.</typeparam>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TOperand">The type of the operand.</typeparam>
+    <typeparam name="TResult">The type of the result.</typeparam>
+    <summary>A field value.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.FieldValue`2" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the field name.</summary>
+        <value>The field name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +123,8 @@
         <ReturnType>System.Activities.InArgument&lt;TOperand&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the field.</summary>
+        <value>The field value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

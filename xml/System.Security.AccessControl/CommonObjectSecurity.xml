@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Controls access to objects without direct manipulation of access control lists (ACLs). This class is the abstract base class for the <see cref="T:System.Security.AccessControl.NativeObjectSecurity" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,8 +38,9 @@
         <Parameter Name="isContainer" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isContainer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isContainer">
+          <see langword="true" /> if the new object is a container object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +65,18 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rule">The access rule to add.</param>
+        <summary>Adds the specified access rule to the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adding an access rule might cause existing access rules in the DACL to be merged.  
+  
+ To avoid unintentionally allowing access to principals, applications should check for the existence of an allow everyone full access (AEFA) access control entry (ACE) and remove it before modifying a DACL.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAuditRule">
@@ -90,9 +100,16 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rule">The audit rule to add.</param>
+        <summary>Adds the specified audit rule to the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adding an audit rule might cause existing access rules in the SACL to be merged.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAccessRules">
@@ -118,11 +135,13 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="includeExplicit">To be added.</param>
-        <param name="includeInherited">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="includeExplicit">
+          <see langword="true" /> to include access rules explicitly set for the object.</param>
+        <param name="includeInherited">
+          <see langword="true" /> to include inherited access rules.</param>
+        <param name="targetType">Specifies whether the security identifier for which to retrieve access rules is of type T:System.Security.Principal.SecurityIdentifier or type T:System.Security.Principal.NTAccount. The value of this parameter must be a type that can be translated to  the <see cref="T:System.Security.Principal.SecurityIdentifier" /> type.</param>
+        <summary>Gets a collection of the access rules associated with the specified security identifier.</summary>
+        <returns>The collection of access rules associated with the specified <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,11 +168,13 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="includeExplicit">To be added.</param>
-        <param name="includeInherited">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="includeExplicit">
+          <see langword="true" /> to include audit rules explicitly set for the object.</param>
+        <param name="includeInherited">
+          <see langword="true" /> to include inherited audit rules.</param>
+        <param name="targetType">The security identifier for which to retrieve audit rules. This must be an object that can be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</param>
+        <summary>Gets a collection of the audit rules associated with the specified security identifier.</summary>
+        <returns>The collection of audit rules associated with the specified <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,12 +201,21 @@
         <Parameter Name="modified" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="modification">To be added.</param>
-        <param name="rule">To be added.</param>
-        <param name="modified">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="modification">The modification to apply to the DACL.</param>
+        <param name="rule">The access rule to modify.</param>
+        <param name="modified">
+          <see langword="true" /> if the DACL is successfully modified; otherwise, <see langword="false" />.</param>
+        <summary>Applies the specified modification to the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the DACL is successfully modified; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To avoid unintentionally allowing access to principals, applications should check for the existence of an allow everyone full access (AEFA) access control entry (ACE) and remove it before modifying a DACL.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifyAudit">
@@ -211,11 +241,13 @@
         <Parameter Name="modified" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="modification">To be added.</param>
-        <param name="rule">To be added.</param>
-        <param name="modified">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modification">The modification to apply to the SACL.</param>
+        <param name="rule">The audit rule to modify.</param>
+        <param name="modified">
+          <see langword="true" /> if the SACL is successfully modified; otherwise, <see langword="false" />.</param>
+        <summary>Applies the specified modification to the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the SACL is successfully modified; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,10 +272,22 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rule">The access rule to remove.</param>
+        <summary>Removes access rules that contain the same security identifier and access mask as the specified access rule from the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the access rule was successfully removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Access removal is accomplished by using a complex algorithm that might add access control rules in addition to removing them.  
+  
+ This method fails to remove the access rule and returns `false` if the inheritance rules associated with the access rule are too complex for the removal algorithm to succeed.  
+  
+ To avoid unintentionally allowing access to principals, applications should check for the existence of an allow everyone full access (AEFA) access control entry (ACE) and remove it before modifying a DACL.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAccessRuleAll">
@@ -267,9 +311,16 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rule">The access rule to remove.</param>
+        <summary>Removes all access rules that have the same security identifier as the specified access rule from the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To avoid unintentionally allowing access to principals, applications should check for the existence of an allow everyone full access (AEFA) access control entry (ACE) and remove it before modifying a DACL.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAccessRuleSpecific">
@@ -293,9 +344,16 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rule">The access rule to remove.</param>
+        <summary>Removes all access rules that exactly match the specified access rule from the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To avoid unintentionally allowing access to principals, applications should check for the existence of an allow everyone full access (AEFA) access control entry (ACE) and remove it before modifying a DACL.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAuditRule">
@@ -319,10 +377,20 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rule">The audit rule to remove.</param>
+        <summary>Removes audit rules that contain the same security identifier and access mask as the specified audit rule from the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the audit rule was successfully removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Audit removal is accomplished by using a complex algorithm that might add audit control rules in addition to removing them.  
+  
+ This method fails to remove the audit rule and returns `false` if the inheritance rules associated with the audit rule are too complex for the removal algorithm to succeed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAuditRuleAll">
@@ -346,8 +414,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to remove.</param>
+        <summary>Removes all audit rules that have the same security identifier as the specified audit rule from the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,8 +440,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to remove.</param>
+        <summary>Removes all audit rules that exactly match the specified audit rule from the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -398,9 +466,16 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rule">The access rule to reset.</param>
+        <summary>Removes all access rules in the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object and then adds the specified access rule.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To avoid unintentionally allowing access to principals, applications should check for the existence of an allow everyone full access (AEFA) access control entry (ACE) and remove it before modifying a DACL.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAccessRule">
@@ -424,9 +499,16 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rule">The access rule to set.</param>
+        <summary>Removes all access rules that contain the same security identifier and qualifier as the specified access rule in the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object and then adds the specified access rule.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To avoid unintentionally allowing access to principals, applications should check for the existence of an allow everyone full access (AEFA) access control entry (ACE) and remove it before modifying a DACL.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAuditRule">
@@ -450,8 +532,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to set.</param>
+        <summary>Removes all audit rules that contain the same security identifier and qualifier as the specified audit rule in the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object and then adds the specified audit rule.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

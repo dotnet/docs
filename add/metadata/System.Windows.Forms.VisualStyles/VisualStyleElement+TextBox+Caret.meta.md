@@ -1,9 +1,11 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.Caret
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.Caret.Normal
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,29 +1,29 @@
 ---
 uid: System.ServiceModel.Configuration.PeerCredentialElement
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerCredentialElement.Certificate
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerCredentialElement.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerCredentialElement.PeerAuthentication
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerCredentialElement.Copy(System.ServiceModel.Configuration.PeerCredentialElement)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication
-internalonly: False
+manager: "ghogen"
 ---

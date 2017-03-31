@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides key/value pair configuration information from a configuration section.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class implements the `IConfigSectionHandler` interface. The <xref:System.Configuration.DictionarySectionHandler> defines rules for manipulating XML configuration sections.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.DictionarySectionHandler" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,12 +59,19 @@
         <Parameter Name="section" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="section">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="parent">Parent object.</param>
+        <param name="context">Configuration context object.</param>
+        <param name="section">Section XML node.</param>
+        <summary>Creates a new configuration handler and adds it to the section-handler collection based on the specified parameters.</summary>
+        <returns>A configuration object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `parent` object parameter acts as the configuration settings in the corresponding parent configuration section. The `context` object parameter is the virtual path for which the configuration section handler computes configuration values. Normally this parameter is reserved and is `null`.  The `section` parameter is the <xref:System.Xml.XmlNode> that contains the configuration information to be handled. The `section` parameter provides direct access to the XML contents of the configuration section.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyAttributeName">
@@ -73,8 +87,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the XML attribute name to use as the key in a key/value pair.</summary>
+        <value>A string value containing the name of the key attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +105,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the XML attribute name to use as the value in a key/value pair.</summary>
+        <value>A string value containing the name of the value attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

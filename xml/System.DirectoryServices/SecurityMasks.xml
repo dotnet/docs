@@ -15,8 +15,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the available options for examining security information of a directory object. This enumeration is used with the <see cref="P:System.DirectoryServices.DirectorySearcher.SecurityMasks" /> and <see cref="P:System.DirectoryServices.DirectoryEntryConfiguration.SecurityMasks" /> properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+  
+```  
+using System.DirectoryServices;  
+...  
+DirectorySearcher src = new DirectorySearcher("…");  
+src.PropertiesToLoad = new string[] {ntSecurityDescriptor,…};  
+src.SecurityMasks = SecurityMasks.Dacl | SecurityMasks.Owner;  
+SearchResultCollection res = src.FindAll();  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Dacl">
@@ -32,7 +48,7 @@
         <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reads or writes the discretionary access-control list (DACL) data.</summary>
       </Docs>
     </Member>
     <Member MemberName="Group">
@@ -48,7 +64,7 @@
         <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reads or writes the group data.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +80,7 @@
         <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Does not read or write security data.</summary>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -80,7 +96,7 @@
         <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reads or writes the owner data.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sacl">
@@ -96,7 +112,7 @@
         <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reads or writes the system access-control list (SACL) data.</summary>
       </Docs>
     </Member>
   </Members>

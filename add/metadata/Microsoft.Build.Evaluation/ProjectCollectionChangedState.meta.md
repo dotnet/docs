@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Evaluation.ProjectCollectionChangedState
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

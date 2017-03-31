@@ -17,9 +17,25 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Drawing.Design.ToolboxComponentsCreatingEventArgs" /> that provides data for the event.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Drawing.Design.ToolboxItem.ComponentsCreating" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Drawing.Design.ToolboxComponentsCreatingEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following example code provides a method that attaches an event handler for the <xref:System.Drawing.Design.ToolboxItem.ComponentsCreating> event of a <xref:System.Drawing.Design.ToolboxItem>, and a <xref:System.Drawing.Design.ToolboxComponentsCreatingEventHandler> event handler method that writes the name of the type of the component that is to receive the new component or components to the <xref:System.Console> when the event handler is raised by a <xref:System.Drawing.Design.ToolboxItem.ComponentsCreating> event.  
+  
+ [!code-cpp[MoreEventHandlerExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/MoreEventHandlerExamples/CPP/form1.cpp#3)]
+ [!code-csharp[MoreEventHandlerExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/MoreEventHandlerExamples/CS/form1.cs#3)]
+ [!code-vb[MoreEventHandlerExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MoreEventHandlerExamples/VB/form1.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

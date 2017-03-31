@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Text.HotkeyPrefix
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

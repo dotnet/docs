@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the built in cursor types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Input.CursorType> is mostly used in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] to specify the cursor.  In code, you should use the <xref:System.Windows.Input.Cursors> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AppStarting">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A standard arrow with small hourglass cursor.</summary>
       </Docs>
     </Member>
     <Member MemberName="Arrow">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A standard arrow cursor.</summary>
       </Docs>
     </Member>
     <Member MemberName="ArrowCD">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An arrow cd cursor.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cross">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A crosshair cursor.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hand">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A hand cursor.</summary>
       </Docs>
     </Member>
     <Member MemberName="Help">
@@ -107,7 +114,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A help cursor.</summary>
       </Docs>
     </Member>
     <Member MemberName="IBeam">
@@ -123,7 +130,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A text I-Beam cursor.</summary>
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -139,7 +146,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No cursor.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -155,7 +162,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value indicating that no cursor should be displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pen">
@@ -171,7 +178,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A pen cursor.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollAll">
@@ -187,7 +194,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A scrolling cursor with arrows pointing north, south, east, and west.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollE">
@@ -203,7 +210,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A scrolling cursor with an arrow pointing east.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollN">
@@ -219,7 +226,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A scrolling cursor with an arrow pointing north.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollNE">
@@ -235,7 +242,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A scrolling cursor with arrows pointing north and east.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollNS">
@@ -251,7 +258,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A scrolling cursor with arrows pointing north and south.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollNW">
@@ -267,7 +274,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A scrolling cursor with arrows pointing north and west.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollS">
@@ -283,7 +290,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A scrolling cursor with an arrow pointing south.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollSE">
@@ -299,7 +306,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A scrolling cursor with arrows pointing south and east.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollSW">
@@ -315,7 +322,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A scrolling cursor with arrows pointing south and west.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollW">
@@ -331,7 +338,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A scrolling cursor with an arrow pointing west.</summary>
       </Docs>
     </Member>
     <Member MemberName="ScrollWE">
@@ -347,7 +354,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A scrolling cursor with arrows pointing west and east.</summary>
       </Docs>
     </Member>
     <Member MemberName="SizeAll">
@@ -363,7 +370,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cursor with arrows pointing north, south, east, and west.</summary>
       </Docs>
     </Member>
     <Member MemberName="SizeNESW">
@@ -379,7 +386,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cursor with arrows pointing northeast and southwest.</summary>
       </Docs>
     </Member>
     <Member MemberName="SizeNS">
@@ -395,7 +402,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cursor with arrows pointing north and south.</summary>
       </Docs>
     </Member>
     <Member MemberName="SizeNWSE">
@@ -411,7 +418,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cursor with arrows pointing northwest and southeast.</summary>
       </Docs>
     </Member>
     <Member MemberName="SizeWE">
@@ -427,7 +434,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cursor with arrows pointing west and east.</summary>
       </Docs>
     </Member>
     <Member MemberName="UpArrow">
@@ -443,7 +450,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A vertical arrow cursor.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -459,7 +466,7 @@
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An hourglass cursor.</summary>
       </Docs>
     </Member>
   </Members>

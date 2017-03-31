@@ -1,1 +1,0 @@
-      Throw New FaultException(Of Integer)(4)

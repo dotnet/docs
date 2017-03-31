@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The .NET Framework uses classes that are derived from the <see cref="T:System.Web.Services.Protocols.ServerProtocolFactory" /> class to process XML Web service requests.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The constructor for <see cref="T:System.Web.Services.Protocols.ServerProtocolFactory" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,9 @@
         <Parameter Name="request" Type="System.Web.HttpRequest" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.Web.HttpRequest" /> that represents the Web service request.</param>
+        <summary>Returns a <see cref="T:System.Web.Services.Protocols.ServerProtocol" /> that can be used to process the XML Web service request specified by the <paramref name="request" /> parameter.</summary>
+        <returns>A <see cref="T:System.Web.Services.Protocols.ServerProtocol" /> that can be used to process the XML Web service request specified by the <paramref name="request" /> parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

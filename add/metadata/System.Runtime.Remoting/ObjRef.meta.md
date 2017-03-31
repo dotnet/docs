@@ -1,59 +1,64 @@
 ---
 uid: System.Runtime.Remoting.ObjRef
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ObjRef.URI
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ObjRef.TypeInfo
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.ObjRef.IsFromThisProcess
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.ObjRef.#ctor(System.MarshalByRefObject,System.Type)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ObjRef.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.ObjRef.IsFromThisProcess
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.ObjRef.#ctor(System.MarshalByRefObject,System.Type)
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.ObjRef.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ObjRef.IsFromThisAppDomain
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ObjRef.GetRealObject(System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ObjRef.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ObjRef.EnvoyInfo
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ObjRef.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ObjRef.ChannelInfo
-internalonly: False
+manager: "ghogen"
 ---

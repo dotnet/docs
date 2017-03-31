@@ -15,8 +15,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the access permissions for encrypting data and memory.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Security.Permissions.DataProtectionPermission> and <xref:System.Security.Permissions.DataProtectionPermissionAttribute> classes to protect access to encrypted data and memory using the <xref:System.Security.Cryptography.ProtectedData> and <xref:System.Security.Cryptography.ProtectedMemory> classes.  
+  
+> [!CAUTION]
+>  Many of these flags can have powerful effects and should be granted only to highly trusted code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllFlags">
@@ -32,7 +42,7 @@
         <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ability to encrypt data, encrypt memory, unencrypt data, and unencrypt memory.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoFlags">
@@ -48,7 +58,7 @@
         <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No protection abilities.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProtectData">
@@ -64,7 +74,7 @@
         <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ability to encrypt data.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProtectMemory">
@@ -80,7 +90,7 @@
         <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ability to encrypt memory.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnprotectData">
@@ -96,7 +106,7 @@
         <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ability to unencrypt data.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnprotectMemory">
@@ -112,7 +122,7 @@
         <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ability to unencrypt memory.</summary>
       </Docs>
     </Member>
   </Members>

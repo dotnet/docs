@@ -1,4 +1,6 @@
 ---
 uid: System.IdentityModel.Claims
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

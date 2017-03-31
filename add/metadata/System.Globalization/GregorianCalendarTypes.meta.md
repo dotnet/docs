@@ -1,4 +1,6 @@
 ---
 uid: System.Globalization.GregorianCalendarTypes
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

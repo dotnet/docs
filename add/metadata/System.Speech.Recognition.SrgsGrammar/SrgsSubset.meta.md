@@ -1,24 +1,35 @@
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsSubset
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SrgsGrammar.SrgsSubset.#ctor
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsSubset.MatchingMode
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsSubset.Text
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsSubset.#ctor(System.String,System.Speech.Recognition.SubsetMatchingMode)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsSubset.#ctor(System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

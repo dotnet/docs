@@ -1,189 +1,263 @@
 ---
 uid: System.Windows.Data.Binding
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.ShouldSerializePath
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.NotifyOnValidationError
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.ValidatesOnNotifyDataErrors
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.UpdateSourceExceptionFilter
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.UpdateSourceTrigger
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.RemoveTargetUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.Converter
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.TargetUpdatedEvent
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.RemoveSourceUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.AsyncState
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.IsAsync
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.BindsDirectlyToSource
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.XmlNamespaceManagerProperty
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.SetXmlNamespaceManager(System.Windows.DependencyObject,System.Xml.XmlNamespaceManager)
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.ConverterCulture
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.Mode
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.NotifyOnSourceUpdated
-internalonly: False
----
-
----
-uid: System.Windows.Data.Binding.AddTargetUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.NotifyOnValidationError
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.ValidatesOnNotifyDataErrors
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Data.Binding.#ctor(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.UpdateSourceExceptionFilter
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.UpdateSourceTrigger
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Data.Binding.RemoveTargetUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Data.Binding.Converter
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.TargetUpdatedEvent
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.RemoveSourceUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.AsyncState
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.IsAsync
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.BindsDirectlyToSource
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.XmlNamespaceManagerProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.SetXmlNamespaceManager(System.Windows.DependencyObject,System.Xml.XmlNamespaceManager)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.ConverterCulture
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.Mode
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.NotifyOnSourceUpdated
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.AddTargetUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Data.Binding.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.DoNothing
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Data.Binding.ShouldSerializeSource
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Data.Binding.SourceUpdatedEvent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.Path
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.ConverterParameter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.AddSourceUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Data.Binding.IndexerName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.NotifyOnTargetUpdated
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.ValidatesOnDataErrors
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Data.Binding.GetXmlNamespaceManager(System.Windows.DependencyObject)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Data.Binding.ShouldSerializeValidationRules
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.ElementName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.Source
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.ValidatesOnExceptions
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.XPath
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Data.Binding.RelativeSource
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Data.Binding.ValidationRules
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

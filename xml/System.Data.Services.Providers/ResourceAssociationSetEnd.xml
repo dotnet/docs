@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes an end point of a resource association set.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,10 +35,10 @@
         <Parameter Name="resourceProperty" Type="System.Data.Services.Providers.ResourceProperty" />
       </Parameters>
       <Docs>
-        <param name="resourceSet">To be added.</param>
-        <param name="resourceType">To be added.</param>
-        <param name="resourceProperty">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="resourceSet">Resource set to which the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> end belongs.</param>
+        <param name="resourceType">Resource type to which the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> end belongs.</param>
+        <param name="resourceProperty">Resource property that returns the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> end.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
         <ReturnType>System.Data.Services.Providers.ResourceProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the resource property that returns the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" />.</summary>
+        <value>The resource property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +83,8 @@
         <ReturnType>System.Data.Services.Providers.ResourceSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the resource set for the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" />.</summary>
+        <value>The resource set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,8 @@
         <ReturnType>System.Data.Services.Providers.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the resource type for the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" />.</summary>
+        <value>The resource type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

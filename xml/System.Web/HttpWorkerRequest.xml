@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This abstract class defines the base worker methods and enumerations used by ASP.NET managed code to process requests.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In most cases, your code will not deal with <xref:System.Web.HttpWorkerRequest> directly because request and response data are exposed through the <xref:System.Web.HttpRequest> and <xref:System.Web.HttpResponse> classes. Some internal ASP.NET classes extend this class. If your code implements its own hosting environment, it will need to extend this class to call the <xref:System.Web.HttpRuntime.ProcessRequest%2A> method. In addition, your code could create a derived class for the purpose of child-request execution within a given application in order to pass its instance to <xref:System.Web.HttpRuntime.ProcessRequest%2A>. In this case, the derived class should keep a reference to the current <xref:System.Web.HttpWorkerRequest> and delegate most of the methods to it.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +38,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpWorkerRequest" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpWorkerRequest.%23ctor%2A> constructor is the default constructor for the <xref:System.Web.HttpWorkerRequest> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginFlush">
@@ -52,10 +66,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callback">The method to call when a corresponding asynchronous operation completes.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous flush operation from other requests.</param>
+        <summary>Sends the currently buffered response to the client.</summary>
+        <returns>The worker request buffers the status, headers, and response body until an asynchronous flush operation is initiated. If the underlying <see cref="T:System.Web.HttpWorkerRequest" /> object supports asynchronous flush and this method is called from an asynchronous module event or asynchronous handler, the send operation is performed asynchronously. Otherwise, the implementation performs a synchronous flush operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,12 +93,12 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="buffer">The buffer to read the data into.</param>
+        <param name="offset">The byte offset in the buffer at which to begin writing data.</param>
+        <param name="count">The maximum number of bytes to read.</param>
+        <param name="callback">The method to call when a corresponding asynchronous operation completes.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous read from other requests.</param>
+        <summary>Begins an asynchronous read operation of the request entity body.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,7 +117,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Terminates the connection with the client.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +137,8 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="asyncResult">A reference to the pending asynchronous request.</param>
+        <summary>Waits for the pending asynchronous flush operation to complete.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +156,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used by the runtime to notify the <see cref="T:System.Web.HttpWorkerRequest" /> that request processing for the current request is complete.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,9 +176,9 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="asyncResult">A reference to the pending asynchronous request.</param>
+        <summary>Waits for the pending asynchronous read operation to complete.</summary>
+        <returns>The number of bytes that have been read from the stream.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +198,9 @@
         <Parameter Name="finalFlush" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="finalFlush">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="finalFlush">
+          <see langword="true" /> if this is the last time response data will be flushed; otherwise, <see langword="false" />.</param>
+        <summary>Sends all pending response data to the client.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +218,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the virtual path to the currently executing server application.</summary>
+        <returns>The virtual path of the current application.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,8 +237,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the physical path to the currently executing server application.</summary>
+        <returns>The physical path of the current application.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,8 +256,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the application pool ID for the current URL.</summary>
+        <returns>Always returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,8 +275,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the number of bytes read in from the client.</summary>
+        <returns>A <see langword="Long" /> containing the number of bytes read.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,9 +294,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, gets the certification fields (specified in the X.509 standard) from a request issued by the client.</summary>
+        <returns>A byte array containing the stream of the entire certificate content.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no certificate is sent, the <xref:System.Web.HttpRequest.ClientCertificate%2A> collection returns empty.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClientCertificateBinaryIssuer">
@@ -298,8 +320,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the certificate issuer, in binary format.</summary>
+        <returns>A byte array containing the certificate issuer expressed in binary format.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,8 +339,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the <see cref="T:System.Text.Encoding" /> object in which the client certificate was encoded.</summary>
+        <returns>The certificate encoding, expressed as an integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,8 +358,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, gets a <see langword="PublicKey" /> object associated with the client certificate.</summary>
+        <returns>A <see langword="PublicKey" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,8 +377,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, gets the date when the certificate becomes valid. The date varies with international settings.</summary>
+        <returns>A <see cref="T:System.DateTime" /> object representing when the certificate becomes valid.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,8 +396,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the certificate expiration date.</summary>
+        <returns>A <see cref="T:System.DateTime" /> object representing the date that the certificate expires.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -393,8 +415,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the ID of the current connection.</summary>
+        <returns>Always returns 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -412,8 +434,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the virtual path to the requested URI.</summary>
+        <returns>The path to the requested URI.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,8 +453,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the physical file path to the requested URI (and translates it from virtual path to physical path: for example, "/proj1/page.aspx" to "c:\dir\page.aspx")</summary>
+        <returns>The translated physical file path to the requested URI.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,8 +472,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the specified member of the request header.</summary>
+        <returns>The HTTP verb returned in the request header.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,8 +491,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides access to the HTTP version of the request (for example, "HTTP/1.1").</summary>
+        <returns>The HTTP version returned in the request header.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,9 +512,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The index of the header. For example, the <see cref="F:System.Web.HttpWorkerRequest.HeaderAllow" /> field.</param>
+        <summary>Returns the standard HTTP request header that corresponds to the specified index.</summary>
+        <returns>The HTTP request header.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,9 +534,9 @@
         <Parameter Name="header" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="header">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="header">The name of the header.</param>
+        <summary>Returns the index number of the specified HTTP request header.</summary>
+        <returns>The index number of the HTTP request header specified in the <paramref name="header" /> parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,9 +556,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The index number of the header.</param>
+        <summary>Returns the name of the specified HTTP request header.</summary>
+        <returns>The name of the HTTP request header specified in the <paramref name="index" /> parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -556,9 +578,9 @@
         <Parameter Name="header" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="header">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="header">The name of the HTTP header.</param>
+        <summary>Returns the index number of the specified HTTP response header.</summary>
+        <returns>The index number of the HTTP response header specified in the <paramref name="header" /> parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,9 +600,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The index number of the header.</param>
+        <summary>Returns the name of the specified HTTP response header.</summary>
+        <returns>The name of the HTTP response header specified in the <paramref name="index" /> parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -598,8 +620,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides access to the specified member of the request header.</summary>
+        <returns>The server IP address returned in the request header.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -617,8 +639,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides access to the specified member of the request header.</summary>
+        <returns>The server port number returned in the request header.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -636,8 +658,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns additional path information for a resource with a URL extension. That is, for the path /virdir/page.html/tail, the <see langword="GetPathInfo" /> value is /tail.</summary>
+        <returns>Additional path information for a resource.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -655,8 +677,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the portion of the HTTP request body that has already been read.</summary>
+        <returns>The portion of the HTTP request body that has been read.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -677,10 +699,10 @@
         <Parameter Name="offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="buffer">The data to read.</param>
+        <param name="offset">The byte offset at which to begin reading.</param>
+        <summary>Gets the portion of the HTTP request body that has currently been read by using the specified buffer data and byte offset.</summary>
+        <returns>The portion of the HTTP request body that has been read.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -698,8 +720,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the length of the portion of the HTTP request body that has currently been read.</summary>
+        <returns>An integer containing the length of the currently read HTTP request body.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -717,8 +739,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the HTTP protocol (HTTP or HTTPS).</summary>
+        <returns>HTTPS if the <see cref="M:System.Web.HttpWorkerRequest.IsSecure" /> method is <see langword="true" />, otherwise HTTP.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -736,8 +758,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the query string specified in the request URL.</summary>
+        <returns>The request query string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -755,8 +777,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the response query string as an array of bytes.</summary>
+        <returns>An array of bytes containing the response.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -774,8 +796,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the URL path contained in the request header with the query string appended.</summary>
+        <returns>The raw URL path of the request header.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -793,8 +815,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides access to the specified member of the request header.</summary>
+        <returns>The client's IP address.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -812,8 +834,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the name of the client computer.</summary>
+        <returns>The name of the client computer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -831,8 +853,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides access to the specified member of the request header.</summary>
+        <returns>The client's HTTP port number.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -850,8 +872,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the reason for the request.</summary>
+        <returns>Reason code. The default is <see langword="ReasonResponseCacheMiss" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -869,8 +891,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the name of the local server.</summary>
+        <returns>The name of the local server.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -890,9 +912,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the requested server variable.</param>
+        <summary>Returns a single server variable from a dictionary of server variables associated with the request.</summary>
+        <returns>The requested server variable.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -912,9 +934,9 @@
         <Parameter Name="code" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="code">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="code">The HTTP status code.</param>
+        <summary>Returns a string that describes the name of the specified HTTP status code.</summary>
+        <returns>The status description. For example, <see cref="M:System.Web.HttpWorkerRequest.GetStatusDescription(System.Int32)" /> (404) returns "Not Found".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -932,8 +954,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the length of the entire HTTP request body.</summary>
+        <returns>An integer containing the length of the entire HTTP request body.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -953,9 +975,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The header name.</param>
+        <summary>Returns a nonstandard HTTP request header value.</summary>
+        <returns>The header value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -978,8 +1000,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Get all nonstandard HTTP header name-value pairs.</summary>
+        <returns>An array of header name-value pairs.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -997,8 +1019,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the virtual path to the requested URI.</summary>
+        <returns>The path to the requested URI.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1016,8 +1038,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the context ID of the current connection.</summary>
+        <returns>Always returns 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1035,8 +1057,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When overridden in a derived class, returns the client's impersonation token.</summary>
+        <returns>A value representing the client's impersonation token. The default is 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1054,8 +1076,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the impersonation token for the request virtual path.</summary>
+        <returns>An unmanaged memory pointer for the token for the request virtual path.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1073,8 +1095,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a value indicating whether the request contains body data.</summary>
+        <returns>
+          <see langword="true" /> if the request contains body data; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1092,8 +1115,15 @@
       </ReturnValue>
       <MemberValue>20</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Accept" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderAcceptCharset">
@@ -1110,8 +1140,15 @@
       </ReturnValue>
       <MemberValue>21</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Accept-Charset" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderAcceptEncoding">
@@ -1128,8 +1165,15 @@
       </ReturnValue>
       <MemberValue>22</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Accept-Encoding" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderAcceptLanguage">
@@ -1146,8 +1190,15 @@
       </ReturnValue>
       <MemberValue>23</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Accept-Language" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderAcceptRanges">
@@ -1164,8 +1215,15 @@
       </ReturnValue>
       <MemberValue>20</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Accept-Ranges" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderAge">
@@ -1182,8 +1240,15 @@
       </ReturnValue>
       <MemberValue>21</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Age" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderAllow">
@@ -1200,8 +1265,15 @@
       </ReturnValue>
       <MemberValue>10</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Allow" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderAuthorization">
@@ -1218,8 +1290,15 @@
       </ReturnValue>
       <MemberValue>24</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Authorization" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderCacheControl">
@@ -1236,8 +1315,15 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The index that represents the HTTP <see langword="Cache-Control" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderConnection">
@@ -1254,8 +1340,15 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Connection" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderContentEncoding">
@@ -1272,8 +1365,15 @@
       </ReturnValue>
       <MemberValue>13</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Content-Encoding" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderContentLanguage">
@@ -1290,8 +1390,15 @@
       </ReturnValue>
       <MemberValue>14</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Content-Language" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderContentLength">
@@ -1308,8 +1415,15 @@
       </ReturnValue>
       <MemberValue>11</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Content-Length" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderContentLocation">
@@ -1326,8 +1440,15 @@
       </ReturnValue>
       <MemberValue>15</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Content-Location" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderContentMd5">
@@ -1344,8 +1465,15 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Content-MD5" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderContentRange">
@@ -1362,8 +1490,15 @@
       </ReturnValue>
       <MemberValue>17</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Content-Range" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderContentType">
@@ -1380,8 +1515,15 @@
       </ReturnValue>
       <MemberValue>12</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Content-Type" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderCookie">
@@ -1398,8 +1540,15 @@
       </ReturnValue>
       <MemberValue>25</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Cookie" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderDate">
@@ -1416,8 +1565,15 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Date" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderEtag">
@@ -1434,8 +1590,15 @@
       </ReturnValue>
       <MemberValue>22</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="ETag" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderExpect">
@@ -1452,8 +1615,15 @@
       </ReturnValue>
       <MemberValue>26</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Except" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderExpires">
@@ -1470,8 +1640,15 @@
       </ReturnValue>
       <MemberValue>18</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Expires" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderFrom">
@@ -1488,8 +1665,15 @@
       </ReturnValue>
       <MemberValue>27</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="From" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderHost">
@@ -1506,8 +1690,15 @@
       </ReturnValue>
       <MemberValue>28</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Host" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderIfMatch">
@@ -1524,8 +1715,15 @@
       </ReturnValue>
       <MemberValue>29</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="If-Match" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderIfModifiedSince">
@@ -1542,8 +1740,15 @@
       </ReturnValue>
       <MemberValue>30</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="If-Modified-Since" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderIfNoneMatch">
@@ -1560,8 +1765,15 @@
       </ReturnValue>
       <MemberValue>31</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="If-None-Match" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderIfRange">
@@ -1578,8 +1790,15 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="If-Range" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderIfUnmodifiedSince">
@@ -1596,8 +1815,15 @@
       </ReturnValue>
       <MemberValue>33</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="If-Unmodified-Since" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderKeepAlive">
@@ -1614,8 +1840,15 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Keep-Alive" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderLastModified">
@@ -1632,8 +1865,15 @@
       </ReturnValue>
       <MemberValue>19</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Last-Modified" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderLocation">
@@ -1650,8 +1890,15 @@
       </ReturnValue>
       <MemberValue>23</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Location" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderMaxForwards">
@@ -1668,8 +1915,15 @@
       </ReturnValue>
       <MemberValue>34</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Max-Forwards" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderPragma">
@@ -1686,8 +1940,15 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Pragma" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderProxyAuthenticate">
@@ -1704,8 +1965,15 @@
       </ReturnValue>
       <MemberValue>24</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Proxy-Authenticate" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderProxyAuthorization">
@@ -1722,8 +1990,15 @@
       </ReturnValue>
       <MemberValue>35</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Proxy-Authorization" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderRange">
@@ -1740,8 +2015,15 @@
       </ReturnValue>
       <MemberValue>37</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Range" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderReferer">
@@ -1758,8 +2040,15 @@
       </ReturnValue>
       <MemberValue>36</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Referer" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderRetryAfter">
@@ -1776,8 +2065,15 @@
       </ReturnValue>
       <MemberValue>25</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Retry-After" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderServer">
@@ -1794,8 +2090,15 @@
       </ReturnValue>
       <MemberValue>26</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Server" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderSetCookie">
@@ -1812,8 +2115,15 @@
       </ReturnValue>
       <MemberValue>27</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Set-Cookie" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeadersSent">
@@ -1830,8 +2140,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a value indicating whether HTTP response headers have been sent to the client for the current request.</summary>
+        <returns>
+          <see langword="true" /> if HTTP response headers have been sent to the client; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1849,8 +2160,15 @@
       </ReturnValue>
       <MemberValue>38</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="TE" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderTrailer">
@@ -1867,8 +2185,15 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Trailer" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderTransferEncoding">
@@ -1885,8 +2210,15 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Transfer-Encoding" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderUpgrade">
@@ -1903,8 +2235,15 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Upgrade" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderUserAgent">
@@ -1921,8 +2260,15 @@
       </ReturnValue>
       <MemberValue>39</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="User-Agent" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderVary">
@@ -1939,8 +2285,15 @@
       </ReturnValue>
       <MemberValue>28</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Vary" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderVia">
@@ -1957,8 +2310,15 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Via" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderWarning">
@@ -1975,8 +2335,15 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Warning" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderWwwAuthenticate">
@@ -1993,8 +2360,15 @@
       </ReturnValue>
       <MemberValue>29</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="WWW-Authenticate" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsClientConnected">
@@ -2011,8 +2385,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a value indicating whether the client connection is still active.</summary>
+        <returns>
+          <see langword="true" /> if the client connection is still active; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2030,8 +2405,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a value indicating whether all request data is available and no further reads from the client are required.</summary>
+        <returns>
+          <see langword="true" /> if all request data is available; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2049,8 +2425,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a value indicating whether the connection uses SSL.</summary>
+        <returns>
+          <see langword="true" /> if the connection is an SSL connection; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2067,8 +2444,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the full physical path to the Machine.config file.</summary>
+        <value>The physical path to the Machine.config file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2085,8 +2462,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the physical path to the directory where the ASP.NET binaries are installed.</summary>
+        <value>The physical directory to the ASP.NET binary files.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2106,9 +2483,9 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="virtualPath">The virtual path.</param>
+        <summary>Returns the physical path corresponding to the specified virtual path.</summary>
+        <returns>The physical path that corresponds to the virtual path specified in the <paramref name="virtualPath" /> parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2129,11 +2506,20 @@
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The byte array to read data into.</param>
+        <param name="size">The maximum number of bytes to read.</param>
+        <summary>Reads request data from the client (when not preloaded).</summary>
+        <returns>The number of bytes read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
+  
+ Use this overload to specify the response for message bodies greater than 2 GB.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadEntityBody">
@@ -2154,12 +2540,21 @@
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The byte array to read data into.</param>
+        <param name="offset">The byte offset at which to begin reading.</param>
+        <param name="size">The maximum number of bytes to read.</param>
+        <summary>Reads request data from the client (when not preloaded) by using the specified buffer to read from, byte offset, and maximum bytes.</summary>
+        <returns>The number of bytes read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
+  
+ Use this overload to specify the response for message bodies greater than 2 GB.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReasonCachePolicy">
@@ -2176,7 +2571,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a reason for the request.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2194,7 +2589,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a reason for the request.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2212,7 +2607,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a reason for the request.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2230,7 +2625,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a reason for the request. The default value is <see cref="F:System.Web.HttpWorkerRequest.ReasonResponseCacheMiss" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2248,7 +2643,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a reason for the request.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2266,7 +2661,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a reason for the request.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2284,8 +2679,15 @@
       </ReturnValue>
       <MemberValue>40</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Maximum" /> HTTP request header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestTraceIdentifier">
@@ -2301,9 +2703,16 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the corresponding Event Tracking for Windows trace ID for the current request.</summary>
+        <value>A trace ID for the current ASP.NET request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET requests execute with the same trace ID as the corresponding IIS request. This facilitates tracking a request throughout its lifetime, starting with the HTTP.SYS kernel-mode HTTP listener, through the IIS service, and into the ASP.NET system. The IDs provided by IIS differ based on the platform and service pack level.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResponseHeaderMaximum">
@@ -2320,8 +2729,15 @@
       </ReturnValue>
       <MemberValue>30</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies the index number for the <see langword="Maximum" /> HTTP response header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RootWebConfigPath">
@@ -2337,9 +2753,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the full physical path to the root Web.config file.</summary>
+        <value>The physical path to the root Web.config file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you are implementing your own hosting environment, you may to override this property to return the location of your environment's root configuration file. An example of this is the <xref:System.Web.Hosting.SimpleWorkerRequest> class which provides a simple implementation of the <xref:System.Web.HttpWorkerRequest>. The <xref:System.Web.Hosting.SimpleWorkerRequest.RootWebConfigPath%2A?displayProperty=fullName> property of <xref:System.Web.Hosting.SimpleWorkerRequest> class overrides the <xref:System.Web.HttpWorkerRequest.RootWebConfigPath%2A> property of <xref:System.Web.HttpWorkerRequest> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendCalculatedContentLength">
@@ -2358,9 +2781,18 @@
         <Parameter Name="contentLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="contentLength">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contentLength">The length of the response, in bytes.</param>
+        <summary>Adds a <see langword="Content-Length" /> HTTP header to the response for message bodies that are less than or equal to 2 GB.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the content length is not explicitly set, this method enables the <xref:System.Web.HttpWorkerRequest> instance to add a `Content-Length` HTTP header to the response.  
+  
+ Use this overload to set the `Content-Length` header when the length of the response message body is less than or equal to 2 GB.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendCalculatedContentLength">
@@ -2379,9 +2811,18 @@
         <Parameter Name="contentLength" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="contentLength">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contentLength">The length of the response, in bytes.</param>
+        <summary>Adds a <see langword="Content-Length" /> HTTP header to the response for message bodies that are greater than 2 GB.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the content length is not explicitly set, this method enables the <xref:System.Web.HttpWorkerRequest> instance to add a `Content-Length` HTTP header to the response. The default implementation calls the overload that takes a `contentLength` parameter of type <xref:System.Int32>.  
+  
+ Use this overload to specify the response for message bodies greater than 2 GB.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendKnownResponseHeader">
@@ -2401,9 +2842,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The header index. For example, <see cref="F:System.Web.HttpWorkerRequest.HeaderContentLength" />.</param>
+        <param name="value">The value of the header.</param>
+        <summary>Adds a standard HTTP header to the response.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2425,10 +2866,10 @@
         <Parameter Name="length" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handle">The handle of the file to send.</param>
+        <param name="offset">The starting position in the file.</param>
+        <param name="length">The number of bytes to send.</param>
+        <summary>Adds the contents of the specified file to the response and specifies the starting position in the file and the number of bytes to send.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2450,10 +2891,10 @@
         <Parameter Name="length" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filename">The name of the file to send.</param>
+        <param name="offset">The starting position in the file.</param>
+        <param name="length">The number of bytes to send.</param>
+        <summary>Adds the contents of the specified file to the response and specifies the starting position in the file and the number of bytes to send.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2474,9 +2915,9 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="data">The byte array to send.</param>
+        <param name="length">The number of bytes to send, starting at the first byte.</param>
+        <summary>Adds the specified number of bytes from a byte array to the response.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2497,9 +2938,9 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="data">An unmanaged pointer to the block of memory.</param>
+        <param name="length">The number of bytes to send.</param>
+        <summary>Adds the specified number of bytes from a block of memory to the response.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2520,9 +2961,9 @@
         <Parameter Name="statusDescription" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="statusCode">To be added.</param>
-        <param name="statusDescription">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="statusCode">The status code to send</param>
+        <param name="statusDescription">The status description to send.</param>
+        <summary>Specifies the HTTP status code and status description of the response, such as <c>SendStatus(200, "Ok")</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2543,9 +2984,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the header to send.</param>
+        <param name="value">The value of the header.</param>
+        <summary>Adds a nonstandard HTTP header to the response.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2566,10 +3007,17 @@
         <Parameter Name="extraData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="extraData">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callback">The notification callback that is called when all data is sent (out-of-band).</param>
+        <param name="extraData">An additional parameter to the callback.</param>
+        <summary>Registers for an optional notification when all the response data is sent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method might be helpful when you implement buffer recycling.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsAsyncFlush">
@@ -2585,8 +3033,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether asynchronous flush operations are supported.</summary>
+        <value>
+          <see langword="true" /> if asynchronous flush operations are supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2603,10 +3052,30 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether asynchronous read operations are supported.</summary>
+        <value>
+          <see langword="true" /> if asynchronous read operations are supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadEntityBody">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Overloaded. Reads request data from the client (when not preloaded).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
+  
+ Use this overload to specify the response for message bodies greater than 2 GB.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

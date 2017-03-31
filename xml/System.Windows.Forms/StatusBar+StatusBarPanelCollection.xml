@@ -20,8 +20,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the collection of panels in a <see cref="T:System.Windows.Forms.StatusBar" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class stores the panels displayed in the <xref:System.Windows.Forms.StatusBar>. Each object in the collection is an instance of the <xref:System.Windows.Forms.StatusBarPanel> class which defines the display characteristics and behaviors of a panel displayed in a <xref:System.Windows.Forms.StatusBar>.  
+  
+ There are a number of ways to add panels to the collection. The <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method provides the ability to add a single panel to the collection. To add a number of panels to the collection, you create an array of <xref:System.Windows.Forms.StatusBarPanel> objects and assign it to the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.AddRange%2A> method. If you want to insert a panel at a specific location within the collection, you can use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Insert%2A> method. To remove panels, you can use either the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Remove%2A> method or the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.RemoveAt%2A> method if you know where the panel is located within the collection. The <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Clear%2A> method enables you to remove all panels from the collection instead of using the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Remove%2A> method to remove a single panel at a time.  
+  
+ In addition to methods and properties for adding and removing panels, the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> also provides methods to find panels within the collection. The <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Contains%2A> method enables you to determine whether a panel is a member of the collection. Once you know that the panel is located within the collection, you can use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.IndexOf%2A> method to determine where the panel is located within the collection.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.StatusBar> control on a form and adds two <xref:System.Windows.Forms.StatusBarPanel> objects. One of the <xref:System.Windows.Forms.StatusBarPanel>, named `panel1`, displays status text for an application. The second <xref:System.Windows.Forms.StatusBarPanel>, named `panel2`, displays the current date and uses the <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> class to display the current time. The example uses the <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property to ensure that the panels are displayed instead of a standard panel, and it uses and the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to access the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> to add the panels to the <xref:System.Windows.Forms.StatusBar>. The example also uses the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>, <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Text%2A> properties to initialize the <xref:System.Windows.Forms.StatusBarPanel> objects. This example assumes that the method defined in the example is defined and called from the constructor of a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CPP/form1.cpp#1)]
+ [!code-csharp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CS/form1.cs#1)]
+ [!code-vb[StatusBar and StatusBarPanel Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,9 +57,16 @@
         <Parameter Name="owner" Type="System.Windows.Forms.StatusBar" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="owner">The <see cref="T:System.Windows.Forms.StatusBar" /> control that contains this collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.StatusBar> control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -58,10 +85,17 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="text">The text for the <see cref="T:System.Windows.Forms.StatusBarPanel" /> that is being added.</param>
+        <summary>Adds a <see cref="T:System.Windows.Forms.StatusBarPanel" /> with the specified text to the collection.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.StatusBarPanel" /> that represents the panel that was added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add panels to a <xref:System.Windows.Forms.StatusBar> control to display more than one type of information. This version of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method creates a new <xref:System.Windows.Forms.StatusBarPanel> with the text specified in the `text` parameter and adds it to collection. The order in which panels are located in the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> represents the order that panels are displayed within the <xref:System.Windows.Forms.StatusBar> control. Panels are displayed from left to right starting with the first panel in the collection. The <xref:System.Windows.Forms.Control.RightToLeft%2A> property of the <xref:System.Windows.Forms.StatusBar> control does not change the order in which panels are displayed in the <xref:System.Windows.Forms.StatusBar>. To insert a panel at a specific position in the collection, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Insert%2A> method. To add a set of panels to the collection in a single operation, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.AddRange%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -80,10 +114,28 @@
         <Parameter Name="value" Type="System.Windows.Forms.StatusBarPanel" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">A <see cref="T:System.Windows.Forms.StatusBarPanel" /> that represents the panel to add to the collection.</param>
+        <summary>Adds a <see cref="T:System.Windows.Forms.StatusBarPanel" /> to the collection.</summary>
+        <returns>The zero-based index of the item in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add panels to a <xref:System.Windows.Forms.StatusBar> control to display more than one type of information. This version of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method adds the <xref:System.Windows.Forms.StatusBarPanel> specified in the `value` parameter to the collection. The order in which panels are located in the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> represents the order that panels are displayed within the <xref:System.Windows.Forms.StatusBar> control. Panels are displayed from left to right starting with the first panel in the collection. The <xref:System.Windows.Forms.Control.RightToLeft%2A> property of the <xref:System.Windows.Forms.StatusBar> control does not change the order in which panels are displayed in the <xref:System.Windows.Forms.StatusBar>. To insert a panel at a specific position in the collection, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Insert%2A> method. To add a set of panels to the collection in a single operation, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.AddRange%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.StatusBar> control on a form and adds two <xref:System.Windows.Forms.StatusBarPanel> objects. One of the <xref:System.Windows.Forms.StatusBarPanel> objects, named `panel1`, displays status text for an application. The second <xref:System.Windows.Forms.StatusBarPanel>, named `panel2`, displays the current date and uses the <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> class to display the current time. The example uses the <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property to ensure that the panels are displayed instead of a standard panel, and it uses and the <xref:System.Windows.Forms.StatusBar.Panels%2A> property to access the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method of the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> to add the panels to the <xref:System.Windows.Forms.StatusBar>. The example also uses the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>, <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>, <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A>, and <xref:System.Windows.Forms.StatusBarPanel.Text%2A> properties to initialize the <xref:System.Windows.Forms.StatusBarPanel> objects. This example assumes that the method defined in the example is defined and called from the constructor of a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CPP/form1.cpp#1)]
+ [!code-csharp[StatusBar and StatusBarPanel Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/CS/form1.cs#1)]
+ [!code-vb[StatusBar and StatusBarPanel Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/StatusBar and StatusBarPanel Example/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> being added to the collection was <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The parent of the <see cref="T:System.Windows.Forms.StatusBarPanel" /> specified in the <paramref name="value" /> parameter is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -102,9 +154,17 @@
         <Parameter Name="panels" Type="System.Windows.Forms.StatusBarPanel[]" />
       </Parameters>
       <Docs>
-        <param name="panels">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="panels">An array of <see cref="T:System.Windows.Forms.StatusBarPanel" /> objects to add.</param>
+        <summary>Adds an array of <see cref="T:System.Windows.Forms.StatusBarPanel" /> objects to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add panels to a <xref:System.Windows.Forms.StatusBar> control to display more than one type of information. The <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.AddRange%2A> method adds an array of <xref:System.Windows.Forms.StatusBarPanel> objects specified in the `panels` parameter to the collection. All existing panels in the collection are removed from the collection before inserting new panels. The order in which panels are located in the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> represents the order that panels are displayed within the <xref:System.Windows.Forms.StatusBar> control. Panels are displayed from left to right starting with the first panel in the collection. The <xref:System.Windows.Forms.Control.RightToLeft%2A> property of the <xref:System.Windows.Forms.StatusBar> control does not change the order in which panels are displayed in the <xref:System.Windows.Forms.StatusBar>. To add a single <xref:System.Windows.Forms.StatusBarPanel> to the collection, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method. To insert a panel at a specific position in the <xref:System.Windows.Forms.StatusBar> control (and in this collection), use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Insert%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The array of <see cref="T:System.Windows.Forms.StatusBarPanel" /> objects being added to the collection was <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -121,8 +181,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all items from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you remove panels from the collection, all information about the deleted panels is lost. To remove a single panel from the <xref:System.Windows.Forms.StatusBar>, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Remove%2A> or <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.RemoveAt%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -141,10 +208,18 @@
         <Parameter Name="panel" Type="System.Windows.Forms.StatusBarPanel" />
       </Parameters>
       <Docs>
-        <param name="panel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="panel">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> to locate in the collection.</param>
+        <summary>Determines whether the specified panel is located within the collection.</summary>
+        <returns>
+          <see langword="true" /> if the panel is located within the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Contains%2A> method enables you to determine whether a panel is a member of the collection. Once you know that the item is located within the collection, you can use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.IndexOf%2A> method to determine where the panel is located within the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -163,10 +238,20 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The name of the item to find in the collection.</param>
+        <summary>Determines whether the collection contains a <see cref="T:System.Windows.Forms.StatusBarPanel" /> with the specified key.</summary>
+        <returns>
+          <see langword="true" /> to indicate the collection contains a <see cref="T:System.Windows.Forms.StatusBarPanel" /> with the specified key; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.StatusBarPanel.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.StatusBarPanel> in the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection>.  
+  
+ The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.ContainsKey%2A> returns `false.`  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -190,9 +275,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of items in the collection.</summary>
+        <value>The number of <see cref="T:System.Windows.Forms.StatusBarPanel" /> objects in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to determine the number of panels in the <xref:System.Windows.Forms.StatusBar>. You can then use this value when you are looping through the values of the collection and you need to provide a number of iterations to perform the loop.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -209,8 +301,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator to use to iterate through the item collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that represents the item collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,10 +322,17 @@
         <Parameter Name="panel" Type="System.Windows.Forms.StatusBarPanel" />
       </Parameters>
       <Docs>
-        <param name="panel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="panel">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> to locate in the collection.</param>
+        <summary>Returns the index within the collection of the specified panel.</summary>
+        <returns>The zero-based index where the panel is located within the collection; otherwise, negative one (-1).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.IndexOf%2A> method enables you to determine where a panel is located within the collection. To determine whether an item is located within the collection before calling this method, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Contains%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -252,10 +351,21 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The name of the <see cref="T:System.Windows.Forms.StatusBarPanel" /> to find in the collection.</param>
+        <summary>Returns the index of the first occurrence of a <see cref="T:System.Windows.Forms.StatusBarPanel" /> with the specified key.</summary>
+        <returns>The zero-based index of the first occurrence of the <see cref="T:System.Windows.Forms.StatusBarPanel" /> with the specified key, if found; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
+  
+ The <xref:System.Windows.Forms.StatusBarPanel.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.StatusBarPanel> in the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection>. The key comparison is not case-sensitive.  
+  
+ If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.IndexOfKey%2A> returns -1.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -275,10 +385,21 @@
         <Parameter Name="value" Type="System.Windows.Forms.StatusBarPanel" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index location where the panel is inserted.</param>
+        <param name="value">A <see cref="T:System.Windows.Forms.StatusBarPanel" /> representing the panel to insert.</param>
+        <summary>Inserts the specified <see cref="T:System.Windows.Forms.StatusBarPanel" /> into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add panels to a <xref:System.Windows.Forms.StatusBar> control to display more than one type of information. The <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Insert%2A> method enables you to create a new <xref:System.Windows.Forms.StatusBarPanel> and insert it at a specific location within the collection. The order in which panels are located in the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> represents the order that panels are displayed within the <xref:System.Windows.Forms.StatusBar> control. Panels are displayed from left to right starting with the first panel in the collection. The <xref:System.Windows.Forms.Control.RightToLeft%2A> property of the <xref:System.Windows.Forms.StatusBar> control does not change the order in which panels are displayed in the <xref:System.Windows.Forms.StatusBar>. To add a panel to the end of the collection, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Add%2A> method. To add a set of panels to the collection in a single operation, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.AddRange%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="value" /> parameter's parent is not <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than the value of the <see cref="P:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Count" /> property of the <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> class.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <see cref="P:System.Windows.Forms.StatusBarPanel.AutoSize" /> property of the <paramref name="value" /> parameter's panel is not a valid <see cref="T:System.Windows.Forms.StatusBarPanelAutoSize" /> value.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -294,9 +415,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether this collection is read-only.</summary>
+        <value>
+          <see langword="true" /> if this collection is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is always `false` for this collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -315,10 +444,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the panel in the collection to get or set.</param>
+        <summary>Gets or sets the <see cref="T:System.Windows.Forms.StatusBarPanel" /> at the specified index.</summary>
+        <value>A <see cref="T:System.Windows.Forms.StatusBarPanel" /> representing the panel located at the specified index within the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to obtain the <xref:System.Windows.Forms.StatusBarPanel> stored at a specific location within the collection. To determine the index of a specific panel within the collection, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.IndexOf%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Count" /> property of the <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> class.</exception>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> assigned to the collection was <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -337,10 +475,19 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="key">The name of the item to retrieve from the collection.</param>
+        <summary>Gets an item with the specified key from the collection.</summary>
+        <value>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> with the specified key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.StatusBarPanel.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.StatusBarPanel> in the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection>.  
+  
+ The key comparison is not case-sensitive. If the `key` parameter is `null` or an empty string, <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Item%2A> returns `null.`  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -359,9 +506,17 @@
         <Parameter Name="value" Type="System.Windows.Forms.StatusBarPanel" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> representing the panel to remove from the collection.</param>
+        <summary>Removes the specified <see cref="T:System.Windows.Forms.StatusBarPanel" /> from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you remove a panel from the list, the indexes change for subsequent items in the collection. All information about the removed panel is deleted. You can use this method to remove a specific panel from the <xref:System.Windows.Forms.StatusBar> by specifying the actual <xref:System.Windows.Forms.StatusBarPanel> to remove from the collection. To specify the index of the panel to remove instead of the panel itself, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.RemoveAt%2A> method. To remove all panels from the collection, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Clear%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> assigned to the <paramref name="value" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -380,9 +535,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>Removes the <see cref="T:System.Windows.Forms.StatusBarPanel" /> located at the specified index within the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you remove a panel from the collection, the indexes change for subsequent panels in the collection. All information about the removed panel is deleted. You can use this method to remove a specific panel from the list by specifying the index of the panel to remove from the collection. To specify the panel to remove instead of the index to the panel, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Remove%2A> method. To remove all panels from the <xref:System.Windows.Forms.StatusBar> control, use the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Clear%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.StatusBar.StatusBarPanelCollection.Count" /> property of the <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> class.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -401,9 +564,18 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The name of the <see cref="T:System.Windows.Forms.StatusBarPanel" /> to remove from the collection.</param>
+        <summary>Removes the <see cref="T:System.Windows.Forms.StatusBarPanel" /> with the specified key from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.StatusBarPanel.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.StatusBarPanel> in the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection>.  
+  
+ The key comparison is not case-sensitive.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -423,10 +595,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dest">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dest">The one-dimensional array that is the destination of the elements copied from the collection. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in the array at which copying begins.</param>
+        <summary>Copies the <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> is greater than the available space from index to the end of <paramref name="array" />.</exception>
+        <exception cref="T:System.InvalidCastException">The type in the collection cannot be cast automatically to the type of <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -442,8 +625,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -460,8 +644,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>The object used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -481,10 +665,16 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A <see cref="T:System.Windows.Forms.StatusBarPanel" /> that represents the panel to add to the collection.</param>
+        <summary>Adds a <see cref="T:System.Windows.Forms.StatusBarPanel" /> to the collection.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not a <see cref="T:System.Windows.Forms.StatusBarPanel" />.  
+  
+ -or-  
+  
+ The parent of value is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -503,9 +693,10 @@
         <Parameter Name="panel" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="panel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="panel">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> to locate in the collection.</param>
+        <summary>Determines whether the specified panel is located within the collection.</summary>
+        <returns>
+          <see langword="true" /> if panel is a <see cref="T:System.Windows.Forms.StatusBarPanel" /> located within the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -525,9 +716,9 @@
         <Parameter Name="panel" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="panel">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="panel">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> to locate in the collection.</param>
+        <summary>Returns the index of the specified panel within the collection.</summary>
+        <returns>The zero-based index of panel, if found, within the entire collection; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -548,10 +739,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index location where the panel is inserted.</param>
+        <param name="value">A <see cref="T:System.Windows.Forms.StatusBarPanel" /> that represents the panel to insert.</param>
+        <summary>Inserts the specified <see cref="T:System.Windows.Forms.StatusBarPanel" /> into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The index parameter is less than zero or greater than the value of the <see langword="Count" /> property.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not a <see cref="T:System.Windows.Forms.StatusBarPanel" />.  
+  
+ -or-  
+  
+ The parent of value is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -567,8 +765,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the collection has a fixed size.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,10 +787,12 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>Gets or sets the element at the specified index.</summary>
+        <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not a <see cref="T:System.Windows.Forms.StatusBarPanel" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -610,8 +811,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The <see cref="T:System.Windows.Forms.StatusBarPanel" /> that represents the panel to remove from the collection.</param>
+        <summary>Removes the specified <see cref="T:System.Windows.Forms.StatusBarPanel" /> from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

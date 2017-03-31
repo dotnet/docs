@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.TabAlignment
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

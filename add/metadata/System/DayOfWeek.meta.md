@@ -1,4 +1,6 @@
 ---
 uid: System.DayOfWeek
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

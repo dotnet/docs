@@ -1,14 +1,14 @@
 ---
 uid: System.Transactions.TransactionEventArgs
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionEventArgs.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.TransactionEventArgs.Transaction
-internalonly: False
+manager: "ghogen"
 ---

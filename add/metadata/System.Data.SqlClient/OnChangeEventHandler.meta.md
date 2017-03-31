@@ -1,4 +1,6 @@
 ---
 uid: System.Data.SqlClient.OnChangeEventHandler
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

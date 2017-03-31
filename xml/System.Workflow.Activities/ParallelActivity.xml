@@ -35,8 +35,35 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Runs a set of child activities at the same time. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The order in which child activities are run is non-deterministic.  
+  
+ The <xref:System.Workflow.Activities.ParallelActivity> is a <xref:System.Workflow.ComponentModel.CompositeActivity>, which means the <xref:System.Workflow.Activities.ParallelActivity> can contain other activities. The <xref:System.Workflow.Activities.SequenceActivity> activity is the only activity that can be the child of a <xref:System.Workflow.Activities.ParallelActivity>.  
+  
+ Only one activity can run at a time.  
+  
+ The <xref:System.Workflow.Activities.ParallelActivity> only finishes when all children are complete.  
+  
+ The <xref:System.Workflow.Activities.ParallelActivity> is especially useful when there are one or more blocking activities, such as the <xref:System.Workflow.Activities.DelayActivity> activity, in one or more of the branches. In this scenario, the <xref:System.Workflow.Activities.ParallelActivity> actually switches to a different branch when the <xref:System.Workflow.Activities.DelayActivity> is blocked. If there are no blocking activities in any one of the <xref:System.Workflow.Activities.ParallelActivity> branches then the activity uses a non-deterministic sequence.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.ParallelActivity> class, add the <xref:System.Workflow.Activities.ParallelActivity> class to the <xref:System.Workflow.Activities.WhileActivity> class, and add two <xref:System.Workflow.Activities.SequenceActivity> classes to the <xref:System.Workflow.Activities.ParallelActivity> class.  This code example is part of the WhileAndParallel SDK sample from the WhileAndParallelWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
+  
+ [!code-csharp[wf_samples#276](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#276)]
+ [!code-vb[wf_samples#276](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#276)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,8 +77,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ParallelActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.ParallelActivity> class, add the <xref:System.Workflow.Activities.ParallelActivity> class to the <xref:System.Workflow.Activities.WhileActivity> class, and add two <xref:System.Workflow.Activities.SequenceActivity> classes to the <xref:System.Workflow.Activities.ParallelActivity> class.  This code example is part of the WhileAndParallel SDK Sample from the WhileAndParallelWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using While and Parallel](http://msdn.microsoft.com/en-us/776a25cc-6aed-4754-b680-996213831b84).  
+  
+ [!code-csharp[wf_samples#276](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#276)]
+ [!code-vb[wf_samples#276](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#276)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -67,8 +104,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ParallelActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,9 +258,9 @@
         <Parameter Name="e" Type="System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The object that raised the event.</param>
+        <param name="e">The previously-typed event arguments.</param>
+        <summary>Defines the processing procedure when the subscribed-to event occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

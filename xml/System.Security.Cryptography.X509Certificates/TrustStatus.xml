@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Identifies the level of trustworthiness that is assigned to the signature for a manifest.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.TrustStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identity is known and the signature is valid. A valid Authenticode signature provides an identity.</summary>
       </Docs>
     </Member>
     <Member MemberName="Trusted">
@@ -43,7 +43,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.TrustStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The signature is valid and was created by an explicitly trusted publisher.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownIdentity">
@@ -59,7 +59,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.TrustStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The identity is not known and the signature is invalid. Because there is no verified signature, an identity cannot be determined.</summary>
       </Docs>
     </Member>
     <Member MemberName="Untrusted">
@@ -75,7 +75,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.TrustStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The signature was created by an explicitly distrusted publisher.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains arguments for critical message events. These always have high importance.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default constructor</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,17 +52,17 @@
         <Parameter Name="senderName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="subcategory">To be added.</param>
-        <param name="code">To be added.</param>
-        <param name="file">To be added.</param>
-        <param name="lineNumber">To be added.</param>
-        <param name="columnNumber">To be added.</param>
-        <param name="endLineNumber">To be added.</param>
-        <param name="endColumnNumber">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="senderName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="subcategory">event subcategory</param>
+        <param name="code">event code</param>
+        <param name="file">file associated with the event</param>
+        <param name="lineNumber">line number (0 if not applicable)</param>
+        <param name="columnNumber">column number (0 if not applicable)</param>
+        <param name="endLineNumber">end line number (0 if not applicable)</param>
+        <param name="endColumnNumber">end column number (0 if not applicable)</param>
+        <param name="message">text message</param>
+        <param name="helpKeyword">help keyword</param>
+        <param name="senderName">name of event sender</param>
+        <summary>This constructor allows all event data to be initialized</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,18 +89,18 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="subcategory">To be added.</param>
-        <param name="code">To be added.</param>
-        <param name="file">To be added.</param>
-        <param name="lineNumber">To be added.</param>
-        <param name="columnNumber">To be added.</param>
-        <param name="endLineNumber">To be added.</param>
-        <param name="endColumnNumber">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="senderName">To be added.</param>
-        <param name="eventTimestamp">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="subcategory">event subcategory</param>
+        <param name="code">event code</param>
+        <param name="file">file associated with the event</param>
+        <param name="lineNumber">line number (0 if not applicable)</param>
+        <param name="columnNumber">column number (0 if not applicable)</param>
+        <param name="endLineNumber">end line number (0 if not applicable)</param>
+        <param name="endColumnNumber">end column number (0 if not applicable)</param>
+        <param name="message">text message</param>
+        <param name="helpKeyword">help keyword</param>
+        <param name="senderName">name of event sender</param>
+        <param name="eventTimestamp">custom timestamp for the event</param>
+        <summary>This constructor allows timestamp to be set</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,19 +134,19 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="subcategory">To be added.</param>
-        <param name="code">To be added.</param>
-        <param name="file">To be added.</param>
-        <param name="lineNumber">To be added.</param>
-        <param name="columnNumber">To be added.</param>
-        <param name="endLineNumber">To be added.</param>
-        <param name="endColumnNumber">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="senderName">To be added.</param>
-        <param name="eventTimestamp">To be added.</param>
-        <param name="messageArgs">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="subcategory">event subcategory</param>
+        <param name="code">event code</param>
+        <param name="file">file associated with the event</param>
+        <param name="lineNumber">line number (0 if not applicable)</param>
+        <param name="columnNumber">column number (0 if not applicable)</param>
+        <param name="endLineNumber">end line number (0 if not applicable)</param>
+        <param name="endColumnNumber">end column number (0 if not applicable)</param>
+        <param name="message">text message</param>
+        <param name="helpKeyword">help keyword</param>
+        <param name="senderName">name of event sender</param>
+        <param name="eventTimestamp">custom timestamp for the event</param>
+        <param name="messageArgs">message arguments</param>
+        <summary>This constructor allows timestamp to be set</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

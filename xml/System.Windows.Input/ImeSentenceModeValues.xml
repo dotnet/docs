@@ -15,8 +15,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the mode of sentence conversion performed by an input method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.ImeSentenceMode%2A> property.  
+  
+ [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Automatic">
@@ -32,7 +42,7 @@
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses the sentence conversion method automatically.</summary>
       </Docs>
     </Member>
     <Member MemberName="Conversation">
@@ -48,7 +58,7 @@
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses conversation-style sentence conversion.</summary>
       </Docs>
     </Member>
     <Member MemberName="DoNotCare">
@@ -64,7 +74,7 @@
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method does not care what sentence conversion method is used; the actual sentence conversion mode is indeterminate.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,7 +90,7 @@
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method does not perform any sentence conversion.</summary>
       </Docs>
     </Member>
     <Member MemberName="PhrasePrediction">
@@ -96,7 +106,7 @@
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses phrase prediction sentence conversion.</summary>
       </Docs>
     </Member>
     <Member MemberName="PluralClause">
@@ -112,7 +122,7 @@
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses plural clause sentence conversion.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleConversion">
@@ -128,7 +138,7 @@
         <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The input method uses single Kanji/Hanja sentence conversion.</summary>
       </Docs>
     </Member>
   </Members>

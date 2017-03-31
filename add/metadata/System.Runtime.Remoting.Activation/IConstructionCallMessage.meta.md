@@ -1,29 +1,29 @@
 ---
 uid: System.Runtime.Remoting.Activation.IConstructionCallMessage
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Activation.IConstructionCallMessage.ActivationTypeName
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Activation.IConstructionCallMessage.ContextProperties
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Activation.IConstructionCallMessage.ActivationType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Activation.IConstructionCallMessage.CallSiteActivationAttributes
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Activation.IConstructionCallMessage.Activator
-internalonly: False
+manager: "ghogen"
 ---

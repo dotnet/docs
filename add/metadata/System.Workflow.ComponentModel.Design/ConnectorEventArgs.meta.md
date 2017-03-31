@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.Design.ConnectorEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.ConnectorEventArgs.Connector
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

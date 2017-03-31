@@ -8,8 +8,23 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the method ASP.NET server controls must implement to handle postback events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create a server control that captures form submission information from the browser, you must implement this interface. For more information on how to use this interface, see [Server Event Handling in ASP.NET Web Forms Pages](../Topic/Server%20Event%20Handling%20in%20ASP.NET%20Web%20Forms%20Pages.md).  
+  
+   
+  
+## Examples  
+ The following code example defines a custom button server control that causes postback, captures the postback event using the <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A> method, and raises a `Click` event on the server.  
+  
+ [!code-csharp[Classic IPostBackEventHandler Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic IPostBackEventHandler Example/CS/source.cs#1)]
+ [!code-vb[Classic IPostBackEventHandler Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic IPostBackEventHandler Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="RaisePostBackEvent">
@@ -28,9 +43,26 @@
         <Parameter Name="eventArgument" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventArgument">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="eventArgument">A <see cref="T:System.String" /> that represents an optional event argument to be passed to the event handler.</param>
+        <summary>When implemented by a class, enables a server control to process an event raised when a form is posted to the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The page passes the value of the `eventArgument` parameter to the `RaisePostBackEvent` method of the control that implements the <xref:System.Web.UI.IPostBackEventHandler> interface. This control also renders the HTML element that causes the postback to occur. If the control renders client-side script for postback, the argument from the script is passed in the `eventArgument` parameter. If the postback is caused by a simple submit operation, the `eventArgument` parameter is `null`.  
+  
+ This method provides the functionality for many events implemented by HTML and Web server controls.  
+  
+   
+  
+## Examples  
+ The following code example defines a custom button server control that causes postback, captures the postback event using the <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A> method, and raises a `Click` event on the server.  
+  
+ [!code-csharp[Classic IPostBackEventHandler Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic IPostBackEventHandler Example/CS/source.cs#1)]
+ [!code-vb[Classic IPostBackEventHandler Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic IPostBackEventHandler Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

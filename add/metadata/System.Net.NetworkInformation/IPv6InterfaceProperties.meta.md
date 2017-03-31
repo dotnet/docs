@@ -1,24 +1,29 @@
 ---
 uid: System.Net.NetworkInformation.IPv6InterfaceProperties
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv6InterfaceProperties.GetScopeId(System.Net.NetworkInformation.ScopeLevel)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv6InterfaceProperties.Mtu
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv6InterfaceProperties.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.IPv6InterfaceProperties.Index
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

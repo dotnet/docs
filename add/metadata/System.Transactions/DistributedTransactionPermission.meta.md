@@ -1,44 +1,44 @@
 ---
 uid: System.Transactions.DistributedTransactionPermission
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.DistributedTransactionPermission.Copy
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.DistributedTransactionPermission.#ctor(System.Security.Permissions.PermissionState)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.DistributedTransactionPermission.FromXml(System.Security.SecurityElement)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.DistributedTransactionPermission.Union(System.Security.IPermission)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.DistributedTransactionPermission.Intersect(System.Security.IPermission)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.DistributedTransactionPermission.IsSubsetOf(System.Security.IPermission)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.DistributedTransactionPermission.IsUnrestricted
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.DistributedTransactionPermission.ToXml
-internalonly: False
+manager: "ghogen"
 ---

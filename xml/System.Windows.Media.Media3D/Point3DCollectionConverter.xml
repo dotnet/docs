@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Converts instances of other types to and from <see cref="T:System.Windows.Media.Media3D.Point3DCollection" /> instances.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.Point3DCollectionConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +47,11 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The type descriptor context for this call.</param>
+        <param name="sourceType">The type being queried for support.</param>
+        <summary>Returns a value that indicates whether the type converter can convert from a specified type.</summary>
+        <returns>
+          <see langword="true" /> if the converter can convert from the provided type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +72,11 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The type descriptor context for this call.</param>
+        <param name="destinationType">The type being queried for support.</param>
+        <summary>Returns a value that indicates whether the type converter can convert to the specified type.</summary>
+        <returns>
+          <see langword="true" /> if the converter can convert to the provided type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,12 +98,14 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The type descriptor context for this call.</param>
+        <param name="culture">The culture information that is respected when converting.</param>
+        <param name="value">The object to convert to an instance of <see cref="T:System.Windows.Media.Media3D.Point3DCollection" />.</param>
+        <summary>Attempts to convert to a <see cref="T:System.Windows.Media.Media3D.Point3DCollection" /> from the given object.</summary>
+        <returns>The <see cref="T:System.Windows.Media.Media3D.Point3DCollection" /> that was constructed.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="value" /> is <see langword="null" /> or is not a valid type that can be converted to a <see cref="T:System.Windows.Media.Media3D.Point3DCollection" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -123,13 +127,19 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The type descriptor context for this call.</param>
+        <param name="culture">The culture information that is respected when converting.</param>
+        <param name="value">The object to convert to an instance of <c>destinationType</c>.</param>
+        <param name="destinationType">Type to which this method will convert the <see cref="T:System.Windows.Media.Media3D.Point3DCollection" /> instance.</param>
+        <summary>Attempts to convert an instance of <see cref="T:System.Windows.Media.Media3D.Point3DCollection" /> to the specified type</summary>
+        <returns>The object that was constructed.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="value" /> is <see langword="null" /> or is not a <see cref="T:System.Windows.Media.Media3D.Point3DCollection" />.  
+  
+ -or-  
+  
+ <paramref name="destinationType" /> is not one of the valid destination types.</exception>
       </Docs>
     </Member>
   </Members>

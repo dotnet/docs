@@ -1,14 +1,14 @@
 ---
 uid: System.ServiceModel.Configuration.ServiceModelConfigurationElement
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.ServiceModelConfigurationElement.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.ServiceModelConfigurationElement.SetPropertyValueIfNotDefaultValue``1(System.String,``0)
-internalonly: False
+manager: "ghogen"
 ---

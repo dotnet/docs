@@ -1,9 +1,13 @@
 ---
 uid: Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

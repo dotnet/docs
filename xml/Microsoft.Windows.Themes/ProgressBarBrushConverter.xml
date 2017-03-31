@@ -27,8 +27,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates the <see cref="T:System.Windows.Media.Brush" /> used to draw the <see cref="T:System.Windows.Controls.ProgressBar" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_ProgressBarBrushConverter"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,7 +62,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Windows.Themes.ProgressBarBrushConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,12 +97,14 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="values">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="values">ForegroundBrush, IsIndeterminate, Indicator Width, Indicator Height, Track Width  
+  
+ The <see cref="T:System.Windows.Media.Brush" /> used for the <see cref="P:System.Windows.Controls.Control.Foreground" /> of the <see cref="T:System.Windows.Controls.ProgressBar" />, the Boolean indicating whether the <see cref="P:System.Windows.Controls.ProgressBar.IsIndeterminate" /> is <see langword="true" />, the <see cref="T:System.Double" /> defining the <see cref="P:System.Windows.FrameworkElement.Width" /> of the indicator, and the <see cref="T:System.Double" /> defining the <see cref="P:System.Windows.FrameworkElement.Height" /> of the indicator, and the <see cref="T:System.Double" /> defining the width of the <see cref="T:System.Windows.Controls.Primitives.Track" />.</param>
+        <param name="targetType">This parameter is not used.</param>
+        <param name="parameter">This parameter is not used.</param>
+        <param name="culture">This parameter is not used.</param>
+        <summary>Creates the <see cref="T:System.Windows.Media.DrawingBrush" /> for the <see cref="T:System.Windows.Controls.ProgressBar" />.</summary>
+        <returns>The <see cref="T:System.Windows.Media.DrawingBrush" /> for the <see cref="T:System.Windows.Controls.ProgressBar" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,12 +139,13 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="targetTypes">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">This parameter is not used.</param>
+        <param name="targetTypes">This parameter is not used.</param>
+        <param name="parameter">This parameter is not used.</param>
+        <param name="culture">This parameter is not used.</param>
+        <summary>Not implemented.</summary>
+        <returns>
+          <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

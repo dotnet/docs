@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the starting position that the system uses to arrange minimized windows.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.SystemInformation.ArrangeStartingPosition%2A> property of the <xref:System.Windows.Forms.SystemInformation> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BottomLeft">
@@ -32,7 +39,7 @@
         <ReturnType>System.Windows.Forms.ArrangeStartingPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Starts at the lower-left corner of the screen, which is the default position.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -48,7 +55,7 @@
         <ReturnType>System.Windows.Forms.ArrangeStartingPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Starts at the lower-right corner of the screen.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hide">
@@ -64,7 +71,7 @@
         <ReturnType>System.Windows.Forms.ArrangeStartingPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Hides minimized windows by moving them off the visible area of the screen.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -80,7 +87,7 @@
         <ReturnType>System.Windows.Forms.ArrangeStartingPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Starts at the upper-left corner of the screen.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopRight">
@@ -96,7 +103,7 @@
         <ReturnType>System.Windows.Forms.ArrangeStartingPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Starts at the upper-right corner of the screen.</summary>
       </Docs>
     </Member>
   </Members>

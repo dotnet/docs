@@ -23,8 +23,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Emulates a Visual Basic 6.0 <see langword="Data Environment" /> in applications that have been upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In Visual Basic 6.0, data-bound forms were automatically created when you dragged database elements from a `Data Environment` onto a form. The `Data Environment` handled all the mapping between Visual Basic 6.0 and the ADO data layer. When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +47,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="addDataSourceListener">
@@ -63,9 +81,18 @@
         <Parameter Name="ds" Type="msdatasrc.DataSourceListener" />
       </Parameters>
       <Docs>
-        <param name="ds">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ds">None.</param>
+        <summary>This method is not implemented in the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not implemented in the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment> class.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Commands">
@@ -81,9 +108,18 @@
         <ReturnType>Microsoft.VisualBasic.Collection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see langword="ADODB.Command" /> objects for use in an application upgraded from Visual Basic 6.0.</summary>
+        <value>A collection of <see langword="ADODB.Command" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Commands">
@@ -107,10 +143,19 @@
         <Parameter Name="lpVar" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="lpVar">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="lpVar">A Visual Basic 6.0 <see langword="Variant" /> that contains the <see langword="ADODB.Command" /> objects.</param>
+        <summary>Gets a collection of <see langword="ADODB.Command" /> objects for use in an application upgraded from Visual Basic 6.0.</summary>
+        <value>A collection of <see langword="ADODB.Command" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Connections">
@@ -126,9 +171,18 @@
         <ReturnType>Microsoft.VisualBasic.Collection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see langword="ADODB.Connection" /> objects for use in an application upgraded from Visual Basic 6.0.</summary>
+        <value>A collection of <see langword="ADODB.Connection" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Connections">
@@ -152,10 +206,19 @@
         <Parameter Name="lpVar" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="lpVar">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="lpVar">A Visual Basic 6.0 <see langword="Variant" /> that contains the <see langword="ADODB.Connection" /> objects.</param>
+        <summary>Gets a collection of <see langword="ADODB.Connection" /> objects for use in an application upgraded from Visual Basic 6.0.</summary>
+        <value>A collection of <see langword="ADODB.Connection" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -172,8 +235,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the unmanaged resources that are used by a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -192,9 +264,21 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources that are used by a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment" />, and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the disposing parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with the disposing parameter set to `false`.  
+  
+ When the disposing parameter is `true`, this method releases all resources held by any managed objects that this control references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -211,8 +295,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Overrides the <see cref="M:System.Object.Finalize" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="getDataMember">
@@ -232,11 +325,20 @@
         <Parameter Name="Id" Type="System.Guid&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="strDataMember">To be added.</param>
-        <param name="Id">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="strDataMember">A <see langword="String" /> that contains an <see langword="ADODB.Command" /> object.</param>
+        <param name="Id">A GUID representing an <see langword="ADODB.Recordset" /> object.</param>
+        <summary>Invokes a method based on an <see langword="ADODB.Command" /> object.</summary>
+        <returns>An <see cref="T:System.Object" /> that contains the <see langword="ADODB.Command" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDataMemberCount">
@@ -253,9 +355,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a count of <see langword="ADODB.Command" /> objects.</summary>
+        <returns>An <see langword="Integer" /> that contains the count.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only `ADODB.Command` objects that do not return an `ADODB.Recordset` are counted.  
+  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDataMemberName">
@@ -274,10 +387,22 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Index">Not applicable.</param>
+        <summary>This method is not implemented in the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment" /> class.</summary>
+        <returns>
+          <see langword="Nothing" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not implemented in the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment> class.  
+  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="m_Commands">
@@ -293,8 +418,15 @@
         <ReturnType>Microsoft.VisualBasic.Collection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Contains the <see cref="Overload:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Commands" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="m_Connections">
@@ -310,8 +442,15 @@
         <ReturnType>Microsoft.VisualBasic.Collection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Contains the <see cref="Overload:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Connections" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="m_NonRSReturningCommands">
@@ -327,8 +466,15 @@
         <ReturnType>Microsoft.VisualBasic.Collection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Contains a collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="m_Recordsets">
@@ -344,8 +490,15 @@
         <ReturnType>Microsoft.VisualBasic.Collection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Contains the <see cref="Overload:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Recordsets" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -361,9 +514,18 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment" /> object.</summary>
+        <value>A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Recordsets">
@@ -379,9 +541,18 @@
         <ReturnType>Microsoft.VisualBasic.Collection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of <see langword="ADODB.Recordset" /> objects for use in an application upgraded from Visual Basic 6.0.</summary>
+        <value>A collection of <see langword="ADODB.Recordset" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Recordsets">
@@ -405,10 +576,19 @@
         <Parameter Name="lpVar" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="lpVar">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="lpVar">A Visual Basic 6.0 <see langword="Variant" /> that contains the <see langword="ADODB.Recordset" /> objects.</param>
+        <summary>Gets a collection of <see langword="ADODB.Recordset" /> objects for use in an application upgraded from Visual Basic 6.0.</summary>
+        <value>A collection of <see langword="ADODB.Recordset" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="removeDataSourceListener">
@@ -432,9 +612,20 @@
         <Parameter Name="ds" Type="msdatasrc.DataSourceListener" />
       </Parameters>
       <Docs>
-        <param name="ds">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ds">Not applicable.</param>
+        <summary>This method is not implemented in the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not implemented in the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment> class.  
+  
+ When an application is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], a `BaseDataEnvironment` is created to enable the ADO-related code.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

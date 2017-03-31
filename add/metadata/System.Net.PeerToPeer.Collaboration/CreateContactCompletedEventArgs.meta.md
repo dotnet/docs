@@ -1,9 +1,11 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.CreateContactCompletedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.CreateContactCompletedEventArgs.PeerContact
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

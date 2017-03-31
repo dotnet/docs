@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An attribute that stores miscellaneous information about a type in metadata.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is used to determine if a type is a native class and whether it was defined with the `struct` or `class` keyword.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +43,8 @@
         <Parameter Name="miscellaneousBits" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="miscellaneousBits">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="miscellaneousBits">A bit mask containing information about a type.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualC.MiscellaneousBitsAttribute" /> class using the specified bit mask.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,7 +61,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A bit mask containing information about a type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

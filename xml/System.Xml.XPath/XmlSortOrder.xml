@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the sort order.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Xml.XPath.XmlSortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Nodes are sorted in ascending order. For example, if the numbers 1,2,3, and 4 are sorted in ascending order, they appear as 1,2,3,4.</summary>
       </Docs>
     </Member>
     <Member MemberName="Descending">
@@ -70,7 +70,7 @@
         <ReturnType>System.Xml.XPath.XmlSortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Nodes are sorted in descending order. For example, if the numbers 1,2,3, and 4 are sorted in descending order, they appear as, 4,3,2,1.</summary>
       </Docs>
     </Member>
   </Members>

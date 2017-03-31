@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates how a Visual Basic application authenticates the user for the <see langword="My.User" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set the authentication mode for an application by passing one of this enumeration's values to the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.%23ctor%2A> constructor. For more information, see [Extending the Visual Basic Application Model](../Topic/Extending%20the%20Visual%20Basic%20Application%20Model.md).  
+  
+ A Visual Basic application that uses the Visual Basic Application Model can specify whether it uses Windows authentication or custom authentication. You can also configure the authentication mode in the Visual Studio Integrated Development Environment. For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ApplicationDefined">
@@ -27,7 +36,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.#ctor(Microsoft.VisualBasic.ApplicationServices.AuthenticationMode)" /> constructor does not initialize the principal for the application's main thread. The application needs to initialize the principal for the application's main thread.</summary>
       </Docs>
     </Member>
     <Member MemberName="Windows">
@@ -43,7 +52,7 @@
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.#ctor(Microsoft.VisualBasic.ApplicationServices.AuthenticationMode)" /> constructor initializes the principal for the application's main thread with the current user's Windows user information.</summary>
       </Docs>
     </Member>
   </Members>

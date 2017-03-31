@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.Serialization.IExtensibleDataObject
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

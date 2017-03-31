@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Input.MouseEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

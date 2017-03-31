@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.SqlServer.Server.SqlContext
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlContext.IsAvailable
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlContext.TriggerContext
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlContext.Pipe
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlContext.WindowsIdentity
-internalonly: False
+manager: "mblythe"
 ---

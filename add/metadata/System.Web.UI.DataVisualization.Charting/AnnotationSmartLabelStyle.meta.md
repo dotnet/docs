@@ -1,44 +1,59 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineDashStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor(System.Object)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineAnchorCapStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineWidth
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutBackColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineColor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

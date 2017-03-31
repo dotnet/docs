@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Discovery.FindProgressChangedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.FindProgressChangedEventArgs.MessageSequence
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Discovery.FindProgressChangedEventArgs.EndpointDiscoveryMetadata
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

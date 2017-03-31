@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A T:System.Handle used to manage the lifetime of a <see cref="T:System.Activities.BookmarkScope" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.BookmarkScopeHandle" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Activities.BookmarkScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="T:System.Activities.BookmarkScope" /> associated with this <see cref="T:System.Activities.BookmarkScopeHandle" />.</summary>
+        <value>A <see cref="T:System.Activities.BookmarkScope" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +69,8 @@
         <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The activity context.</param>
+        <summary>Creates a new <see cref="P:System.Activities.BookmarkScopeHandle.BookmarkScope" /></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +91,9 @@
         <Parameter Name="scopeId" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="scopeId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The activity context.</param>
+        <param name="scopeId">A unique global identifier associated with the <see cref="T:System.Activities.BookmarkScope" />.</param>
+        <summary>Creates a new <see cref="T:System.Activities.BookmarkScope" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +110,8 @@
         <ReturnType>System.Activities.BookmarkScopeHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The default <see cref="T:System.Activities.BookmarkScopeHandle" />.</summary>
+        <value>A <see cref="T:System.Activities.BookmarkScopeHandle" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,9 +132,9 @@
         <Parameter Name="scope" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="scope">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The activity context.</param>
+        <param name="scope">A GUID identifier that is associated with <see cref="P:System.Activities.BookmarkScopeHandle.BookmarkScope" />.</param>
+        <summary>Initializes the <see cref="P:System.Activities.BookmarkScopeHandle.BookmarkScope" />, usingthe specified activity context and GUID identifier.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

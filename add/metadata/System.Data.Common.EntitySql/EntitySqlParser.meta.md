@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Common.EntitySql.EntitySqlParser
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.EntitySql.EntitySqlParser.Parse(System.String,System.Data.Common.CommandTrees.DbParameterReferenceExpression[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.EntitySql.EntitySqlParser.ParseLambda(System.String,System.Data.Common.CommandTrees.DbVariableReferenceExpression[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

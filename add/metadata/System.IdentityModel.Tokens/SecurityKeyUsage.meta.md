@@ -1,4 +1,5 @@
 ---
 uid: System.IdentityModel.Tokens.SecurityKeyUsage
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

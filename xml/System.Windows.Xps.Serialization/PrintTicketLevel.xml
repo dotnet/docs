@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies whether a <see cref="T:System.Printing.PrintTicket" /> applies to an entire sequence of documents, to just one document, or to just one page.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Xps.Serialization.PrintTicketLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A document.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedDocumentSequencePrintTicket">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Xps.Serialization.PrintTicketLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A sequence of documents.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedPagePrintTicket">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Xps.Serialization.PrintTicketLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A page.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Xps.Serialization.PrintTicketLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unknown or unspecified level.</summary>
       </Docs>
     </Member>
   </Members>

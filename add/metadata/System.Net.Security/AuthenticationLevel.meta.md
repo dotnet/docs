@@ -1,4 +1,5 @@
 ---
 uid: System.Net.Security.AuthenticationLevel
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

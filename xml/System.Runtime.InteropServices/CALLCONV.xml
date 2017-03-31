@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.CALLCONV" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `CALLCONV`, see the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CC_CDECL">
@@ -34,7 +41,7 @@
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the Cdecl calling convention is used for a method.</summary>
       </Docs>
     </Member>
     <Member MemberName="CC_MACPASCAL">
@@ -51,7 +58,7 @@
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the Macpascal calling convention is used for a method.</summary>
       </Docs>
     </Member>
     <Member MemberName="CC_MAX">
@@ -68,7 +75,7 @@
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the end of the <see cref="T:System.Runtime.InteropServices.CALLCONV" /> enumeration.</summary>
       </Docs>
     </Member>
     <Member MemberName="CC_MPWCDECL">
@@ -85,7 +92,7 @@
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the Mpwcdecl calling convention is used for a method.</summary>
       </Docs>
     </Member>
     <Member MemberName="CC_MPWPASCAL">
@@ -102,7 +109,7 @@
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the Mpwpascal calling convention is used for a method.</summary>
       </Docs>
     </Member>
     <Member MemberName="CC_MSCPASCAL">
@@ -119,7 +126,7 @@
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the Mscpascal calling convention is used for a method.</summary>
       </Docs>
     </Member>
     <Member MemberName="CC_PASCAL">
@@ -136,7 +143,7 @@
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the Pascal calling convention is used for a method.</summary>
       </Docs>
     </Member>
     <Member MemberName="CC_RESERVED">
@@ -153,7 +160,7 @@
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This value is reserved for future use.</summary>
       </Docs>
     </Member>
     <Member MemberName="CC_STDCALL">
@@ -170,7 +177,7 @@
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the Stdcall calling convention is used for a method.</summary>
       </Docs>
     </Member>
     <Member MemberName="CC_SYSCALL">
@@ -187,7 +194,7 @@
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the Syscall calling convention is used for a method.</summary>
       </Docs>
     </Member>
   </Members>

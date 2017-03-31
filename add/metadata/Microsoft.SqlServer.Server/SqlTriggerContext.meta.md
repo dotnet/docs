@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.SqlServer.Server.SqlTriggerContext
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlTriggerContext.TriggerAction
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlTriggerContext.IsUpdatedColumn(System.Int32)
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlTriggerContext.ColumnCount
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlTriggerContext.EventData
-internalonly: False
+manager: "mblythe"
 ---

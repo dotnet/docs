@@ -1,29 +1,41 @@
 ---
 uid: Microsoft.Build.Construction.UsingTaskParameterGroupElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.UsingTaskParameterGroupElement.AddParameter(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.UsingTaskParameterGroupElement.Condition
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.UsingTaskParameterGroupElement.AddParameter(System.String,System.String,System.String,System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.UsingTaskParameterGroupElement.ConditionLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Construction.UsingTaskParameterGroupElement.AddParameter
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.UsingTaskParameterGroupElement.Parameters
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

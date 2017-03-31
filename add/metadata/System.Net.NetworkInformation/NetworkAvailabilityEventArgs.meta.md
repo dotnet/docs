@@ -1,9 +1,11 @@
 ---
 uid: System.Net.NetworkInformation.NetworkAvailabilityEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.NetworkAvailabilityEventArgs.IsAvailable
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

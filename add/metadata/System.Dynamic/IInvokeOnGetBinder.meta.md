@@ -1,9 +1,12 @@
 ---
 uid: System.Dynamic.IInvokeOnGetBinder
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.IInvokeOnGetBinder.InvokeOnGet
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---

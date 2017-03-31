@@ -1,19 +1,27 @@
 ---
 uid: System.Web.DynamicData.Design.DynamicDataManagerDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.Design.DynamicDataManagerDesigner.ActionLists
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.Design.DynamicDataManagerDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.Design.DynamicDataManagerDesigner.GetDesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.DynamicData.Design.DynamicDataManagerDesigner.GetDesignTimeHtml
 ---

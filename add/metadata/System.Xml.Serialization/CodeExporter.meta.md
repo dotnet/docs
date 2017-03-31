@@ -1,9 +1,13 @@
 ---
 uid: System.Xml.Serialization.CodeExporter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.CodeExporter.IncludeMetadata
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

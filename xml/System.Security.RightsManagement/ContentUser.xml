@@ -16,8 +16,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a user or user-group for granting access to rights managed content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As with other <xref:System.Security.RightsManagement> types, <xref:System.Security.RightsManagement.ContentUser> is only usable in full trust applications.  
+  
+   
+  
+## Examples  
+ The following example shows how to use <xref:System.Security.RightsManagement.UnsignedPublishLicense.Owner%2A> property to assign a variable of this type.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubUnPubLic](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubunpublic)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubUnPubLic](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubunpublic)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,10 +49,25 @@
         <Parameter Name="authenticationType" Type="System.Security.RightsManagement.AuthenticationType" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="authenticationType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The user or group name.</param>
+        <param name="authenticationType">The method for authentication.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.ContentUser" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The user or group `name` is often in the form of an individual e-mail address (such as johndoe@contoso.com) or an e-mail distribution list (such as marketing@contoso.com).  
+  
+   
+  
+## Examples  
+ The following example shows how to use this constructor to create a secure environment.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AnyoneUser">
@@ -53,9 +83,18 @@
         <ReturnType>System.Security.RightsManagement.ContentUser</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an instance of the "Anyone" <see cref="T:System.Security.RightsManagement.ContentUser" /> persona.</summary>
+        <value>An instance of the "Anyone" <see cref="T:System.Security.RightsManagement.ContentUser" /> persona.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.ContentUser.AnyoneUser%2A> has <xref:System.Security.RightsManagement.ContentUser.AuthenticationType%2A> "Internal" and <xref:System.Security.RightsManagement.ContentUser.Name%2A> "Anyone".  
+  
+ If <xref:System.Security.RightsManagement.ContentUser.AuthenticationType%2A> "Internal" with <xref:System.Security.RightsManagement.ContentUser.Name%2A> "Anyone" is granted rights during publishing, the authentication server will issue a <xref:System.Security.RightsManagement.UseLicense> to any request and will attach the license to the requesting user.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuthenticationType">
@@ -71,8 +110,8 @@
         <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Security.RightsManagement.AuthenticationType" /> specified to the <see cref="M:System.Security.RightsManagement.ContentUser.#ctor(System.String,System.Security.RightsManagement.AuthenticationType)" /> constructor.</summary>
+        <value>The <see cref="T:System.Security.RightsManagement.AuthenticationType" /> specified to the <see cref="M:System.Security.RightsManagement.ContentUser.#ctor(System.String,System.Security.RightsManagement.AuthenticationType)" /> constructor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +131,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The user instance to compare for equality.</param>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Security.RightsManagement.ContentUser" /> is equivalent to another given instance.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="P:System.Security.RightsManagement.ContentUser.Name" /> and <see cref="P:System.Security.RightsManagement.ContentUser.AuthenticationType" /> are the same for both this user and the given user; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +152,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a computed hash code based on the user <see cref="P:System.Security.RightsManagement.ContentUser.Name" /> and <see cref="P:System.Security.RightsManagement.ContentUser.AuthenticationType" />.</summary>
+        <returns>A hash code computed from the user <see cref="P:System.Security.RightsManagement.ContentUser.Name" /> and <see cref="P:System.Security.RightsManagement.ContentUser.AuthenticationType" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +171,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a value that indicates whether the user is currently authenticated.</summary>
+        <returns>
+          <see langword="true" /> if the user is currently authenticated; otherwise, <see langword="false" />.  The default is <see langword="false" /> until authenticated.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The given user <xref:System.Security.RightsManagement.ContentUser.Name%2A> is authenticated based on the given <xref:System.Security.RightsManagement.ContentUser.AuthenticationType%2A>.  
+  
+ After a user has been authenticated and <xref:System.Security.RightsManagement.ContentUser.IsAuthenticated%2A> is `true`, the user dialog and prompt to confirm authentication is no longer displayed when creating a <xref:System.Security.RightsManagement.SecureEnvironment>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -149,8 +199,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the user or group name specified to the <see cref="M:System.Security.RightsManagement.ContentUser.#ctor(System.String,System.Security.RightsManagement.AuthenticationType)" /> constructor.</summary>
+        <value>The user or group name specified to the <see cref="M:System.Security.RightsManagement.ContentUser.#ctor(System.String,System.Security.RightsManagement.AuthenticationType)" /> constructor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,9 +217,18 @@
         <ReturnType>System.Security.RightsManagement.ContentUser</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an instance of the "Owner" <see cref="T:System.Security.RightsManagement.ContentUser" /> persona.</summary>
+        <value>An instance of the "Owner" <see cref="T:System.Security.RightsManagement.ContentUser" /> persona.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.ContentUser.OwnerUser%2A> has <xref:System.Security.RightsManagement.ContentUser.AuthenticationType%2A> "Internal" and <xref:System.Security.RightsManagement.ContentUser.Name%2A> "Owner".  
+  
+ <xref:System.Security.RightsManagement.ContentUser.OwnerUser%2A> is used by the server-side templates to give special rights to the content author or publisher when the protected document is created.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,13 @@
 ---
 uid: System.Xml.Schema.XmlSchemaMaxInclusiveFacet
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Schema.XmlSchemaMaxInclusiveFacet.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

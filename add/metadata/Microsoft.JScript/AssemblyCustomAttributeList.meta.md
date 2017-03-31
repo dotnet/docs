@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.AssemblyCustomAttributeList
-internalonly: False
+ms.author: "mikejo"
 ---

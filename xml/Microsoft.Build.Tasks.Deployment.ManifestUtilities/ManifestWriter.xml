@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Writes an object representation of a manifest to XML.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,9 +36,16 @@
         <Parameter Name="manifest" Type="Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" />
       </Parameters>
       <Docs>
-        <param name="manifest">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="manifest">The manifest object.</param>
+        <summary>Writes the specified manifest object to XML.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Writes the specified object representation of a manifest to XML. The name of the output file is inferred from the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.SourcePath%2A> property of the manifest.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteManifest">
@@ -58,10 +65,17 @@
         <Parameter Name="output" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="manifest">To be added.</param>
-        <param name="output">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="manifest">The manifest object.</param>
+        <param name="output">Specifies an output stream.</param>
+        <summary>Writes the specified manifest object to XML.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Writes the specified object representation of a manifest to XML.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteManifest">
@@ -81,10 +95,17 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="manifest">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="manifest">The manifest object.</param>
+        <param name="path">The path name of the output file.</param>
+        <summary>Writes the specified manifest object to XML.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Writes the specified object representation of a manifest to XML.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteManifest">
@@ -105,10 +126,10 @@
         <Parameter Name="targetframeWorkVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="manifest">To be added.</param>
-        <param name="path">To be added.</param>
-        <param name="targetframeWorkVersion">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="manifest">The manifest object.</param>
+        <param name="path">The path name of the output file.</param>
+        <param name="targetframeWorkVersion">The target framework version.</param>
+        <summary>Writes the specified manifest object to XML.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

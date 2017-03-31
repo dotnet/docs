@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how a texture or gradient is tiled when it is smaller than the area being filled.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Brushes use this enumeration to determine how shapes are filled. To see examples of the effects the <xref:System.Drawing.Drawing2D.WrapMode> enumeration values have on a tiled image, see [How to: Tile a Shape with an Image](../Topic/How%20to:%20Tile%20a%20Shape%20with%20an%20Image.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to obtain a new bitmap using the <xref:System.Drawing.Image.FromFile%2A> method. It also demonstrates a <xref:System.Drawing.TextureBrush> and the <xref:System.Drawing.Drawing2D.WrapMode> enumeration. This example is designed to be used with Windows Forms. Create a form containing a button named `Button2`. Paste the code into the form and associate the `Button2_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
+  
+ [!code-cpp[System.Drawing.ImageExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#2)]
+ [!code-csharp[System.Drawing.ImageExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#2)]
+ [!code-vb[System.Drawing.ImageExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Clamp">
@@ -27,7 +43,7 @@
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The texture or gradient is not tiled.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tile">
@@ -43,7 +59,7 @@
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tiles the gradient or texture.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileFlipX">
@@ -59,7 +75,7 @@
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reverses the texture or gradient horizontally and then tiles the texture or gradient.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileFlipXY">
@@ -75,7 +91,7 @@
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reverses the texture or gradient horizontally and vertically and then tiles the texture or gradient.</summary>
       </Docs>
     </Member>
     <Member MemberName="TileFlipY">
@@ -91,7 +107,7 @@
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reverses the texture or gradient vertically and then tiles the texture or gradient.</summary>
       </Docs>
     </Member>
   </Members>

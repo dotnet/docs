@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the available system gestures.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the operating system recognizes system gestures, the <xref:System.Windows.UIElement.StylusSystemGesture> event occurs. Many of the gestures map to traditional mouse events. For example, the Tap system gesture mimics a single left-click on a mouse.  
+  
+   
+  
+## Examples  
+ The following example determines which type of system gesture that raised the <xref:System.Windows.Input.SystemGesture> event. This example assumes that there is a <xref:System.Windows.Controls.InkCanvas> called `inkcanvas1` and that <xref:System.Windows.Input.SystemGesture> is connected to the event handler below.  
+  
+ [!code-csharp[PacketSpy#15](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#15)]
+ [!code-vb[PacketSpy#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#15)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Drag">
@@ -27,7 +42,7 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Maps to a left drag on a mouse.</summary>
       </Docs>
     </Member>
     <Member MemberName="Flick">
@@ -43,7 +58,7 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs with a short, quick stroke that translates into a specific command. The action taken by a flick is set system-wide. An application can listen for a <see cref="F:System.Windows.Input.SystemGesture.Flick" /> and prevent it from becoming one of the standard <see cref="T:System.Windows.Input.ApplicationCommands" /> by setting the <see cref="P:System.Windows.RoutedEventArgs.Handled" /> property to true in the <see cref="E:System.Windows.UIElement.StylusSystemGesture" /> event. Only Windows Vista supports flicks.</summary>
       </Docs>
     </Member>
     <Member MemberName="HoldEnter">
@@ -59,7 +74,7 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that press and hold has occurred.</summary>
       </Docs>
     </Member>
     <Member MemberName="HoldLeave">
@@ -75,7 +90,7 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Not implemented.</summary>
       </Docs>
     </Member>
     <Member MemberName="HoverEnter">
@@ -91,7 +106,7 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Maps to a mouse hover. This can be used to show ToolTip rollover effects, or other mouse hover behaviors.</summary>
       </Docs>
     </Member>
     <Member MemberName="HoverLeave">
@@ -107,7 +122,7 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Maps to a mouse leaving a hover. This can be used to end ToolTip rollover effects or other mouse hover behaviors.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -123,7 +138,7 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No system gesture.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightDrag">
@@ -139,7 +154,7 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Maps to a right drag on a mouse. This can be used to drag an object or selection to a different area and is followed by the appearance of the shortcut menu which provides options for moving the object.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightTap">
@@ -155,7 +170,7 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Maps to a right-click on a mouse. This can be used to show a shortcut menu.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tap">
@@ -171,7 +186,7 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Maps to a left-click on a mouse. This can be used to choose a command from the menu or toolbar, take action if a command is chosen, set an insertion point, or show selection feedback.</summary>
       </Docs>
     </Member>
     <Member MemberName="TwoFingerTap">
@@ -187,7 +202,7 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Maps to a double-click of a mouse.</summary>
       </Docs>
     </Member>
   </Members>

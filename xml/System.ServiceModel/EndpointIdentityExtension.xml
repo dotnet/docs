@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A markup extension for the <see cref="T:System.ServiceModel.EndpointIdentity" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointIdentityExtension" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <Parameter Name="identity" Type="System.ServiceModel.EndpointIdentity" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="identity">The endpoint identity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointIdentityExtension" /> class with the specified <see cref="T:System.ServiceModel.EndpointIdentity" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the claim resource.</summary>
+        <value>An <see cref="T:System.Object" /> containing the claim resource.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the claim right.</summary>
+        <value>A <see cref="T:System.String" /> containing the claim right.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +102,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the claim type.</summary>
+        <value>A <see cref="T:System.String" /> containing the claim type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +123,9 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceProvider">This parameter is currently ignored.</param>
+        <summary>Provides an <see cref="T:System.ServiceModel.EndpointIdentity" /> for the specified <see cref="T:System.IdentityModel.Claims.Claim" />.</summary>
+        <returns>An <see cref="T:System.Object" /> containing the value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

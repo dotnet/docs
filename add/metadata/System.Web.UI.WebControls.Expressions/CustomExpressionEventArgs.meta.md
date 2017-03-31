@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs.Query
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs.#ctor(System.Linq.IQueryable,System.Collections.Generic.IDictionary{System.String,System.Object})
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs.Values
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

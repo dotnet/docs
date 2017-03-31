@@ -1,14 +1,14 @@
 ---
 uid: System.Transactions.Configuration.MachineSettingsSection
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Configuration.MachineSettingsSection.MaxTimeout
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.Configuration.MachineSettingsSection.#ctor
-internalonly: False
+manager: "ghogen"
 ---

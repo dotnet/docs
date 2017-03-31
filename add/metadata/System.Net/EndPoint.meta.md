@@ -1,24 +1,29 @@
 ---
 uid: System.Net.EndPoint
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.EndPoint.Create(System.Net.SocketAddress)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.EndPoint.AddressFamily
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.EndPoint.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.EndPoint.Serialize
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

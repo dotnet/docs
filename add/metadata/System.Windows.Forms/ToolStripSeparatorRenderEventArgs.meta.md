@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Forms.ToolStripSeparatorRenderEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSeparatorRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripSeparator,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSeparatorRenderEventArgs.Vertical
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

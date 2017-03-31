@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Threading.DispatcherOperationCallback
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

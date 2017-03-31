@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines collections of HTTP header and response elements that together make up one kind of output-cached data that ASP.NET can pass to a provider.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,8 +25,8 @@
         <ReturnType>System.Collections.Generic.List&lt;System.Web.Caching.HeaderElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of HTTP header elements in an output-cache entry.</summary>
+        <value>A list of HTTP header elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Collections.Generic.List&lt;System.Web.Caching.ResponseElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of HTTP response elements in an output-cache entry.</summary>
+        <value>A list of HTTP response elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

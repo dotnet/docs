@@ -1,2 +1,0 @@
-                    String^ classDescription = 
-                        secondTransform->ToString();

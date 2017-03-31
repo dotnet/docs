@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an assembly reference and the namespace imported from that assembly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> and <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> to provide assembly references and namespaces required for expression compilation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +54,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the full name of the assembly referenced by this <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />.</summary>
+        <value>The full name of the assembly referenced by this <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +75,10 @@
         <Parameter Name="other" Type="Microsoft.VisualBasic.Activities.VisualBasicImportReference" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> to compare with the current <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />.</param>
+        <summary>Determines whether the specified <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> is equal to the current <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> is equal to the current <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +96,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> instance.</summary>
+        <returns>The hash code for the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +114,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the imported namespace referenced by this <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />.</summary>
+        <value>The imported namespace referenced by this <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

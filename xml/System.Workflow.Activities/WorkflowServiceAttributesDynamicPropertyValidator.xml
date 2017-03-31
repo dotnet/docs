@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The property validator used by the <see cref="F:System.Workflow.Activities.ReceiveActivity.WorkflowServiceAttributesProperty" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WorkflowServiceAttributesDynamicPropertyValidator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,10 +61,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="manager">To be added.</param>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="manager">The validation manager linked to the validation.</param>
+        <param name="obj">The parameter to validate.</param>
+        <summary>Validates the <see cref="F:System.Workflow.Activities.ReceiveActivity.WorkflowServiceAttributesProperty" /> property and returns a collection of <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> objects.</summary>
+        <returns>A collection of <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> objects representing the results of the validation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

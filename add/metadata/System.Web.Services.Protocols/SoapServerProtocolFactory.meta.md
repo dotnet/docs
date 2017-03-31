@@ -1,14 +1,20 @@
 ---
 uid: System.Web.Services.Protocols.SoapServerProtocolFactory
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapServerProtocolFactory.CreateIfRequestCompatible(System.Web.HttpRequest)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Web.Services.Protocols.SoapServerProtocolFactory.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

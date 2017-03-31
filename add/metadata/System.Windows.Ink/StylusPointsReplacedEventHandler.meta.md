@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Ink.StylusPointsReplacedEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,24 +1,24 @@
 ---
 uid: System.Windows.Xps.Packaging.SpotLocation
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.SpotLocation.StartX
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.SpotLocation.#ctor
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.SpotLocation.StartY
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.SpotLocation.PageUri
-internalonly: False
+manager: "leannef"
 ---

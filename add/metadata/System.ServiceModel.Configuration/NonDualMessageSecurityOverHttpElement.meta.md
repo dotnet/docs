@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement.EstablishSecurityContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

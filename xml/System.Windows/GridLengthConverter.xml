@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Converts instances of other types to and from <see cref="T:System.Windows.GridLength" /> instances.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.GridLengthConverter> supports conversion to and from the following types: <xref:System.String>, <xref:System.Decimal>, <xref:System.Single>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>.  
+  
+<a name="XAMLTextUsage_GridLengthConverter"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.GridLengthConverter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,11 +56,19 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeDescriptorContext">Describes the context information of a type.</param>
+        <param name="sourceType">The type of the source that is being evaluated for conversion.</param>
+        <summary>Determines whether a class can be converted from a given type to an instance of <see cref="T:System.Windows.GridLength" />.</summary>
+        <returns>
+          <see langword="true" /> if the converter can convert from the specified type to an instance of <see cref="T:System.Windows.GridLength" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.GridLengthConverter> supports conversion to and from the following types: <xref:System.String>, <xref:System.Decimal>, <xref:System.Single>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -71,11 +88,19 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeDescriptorContext">Describes the context information of a type.</param>
+        <param name="destinationType">The desired type that this instance of <see cref="T:System.Windows.GridLength" /> is being evaluated for conversion.</param>
+        <summary>Determines whether an instance of <see cref="T:System.Windows.GridLength" /> can be converted to a different type.</summary>
+        <returns>
+          <see langword="true" /> if the converter can convert this instance of <see cref="T:System.Windows.GridLength" /> to the specified type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.GridLengthConverter> supports conversion to and from the following types: <xref:System.String>, <xref:System.Decimal>, <xref:System.Single>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -96,12 +121,23 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeDescriptorContext">Describes the context information of a type.</param>
+        <param name="cultureInfo">Cultural specific information that should be respected during conversion.</param>
+        <param name="source">The object being converted.</param>
+        <summary>Attempts to convert a specified object to an instance of <see cref="T:System.Windows.GridLength" />.</summary>
+        <returns>The instance of <see cref="T:System.Windows.GridLength" /> that is created from the converted <paramref name="source" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.GridLengthConverter> supports conversion to and from the following types: <xref:System.String>, <xref:System.Decimal>, <xref:System.Single>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> object is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="source" /> object is not <see langword="null" /> and is not a valid type that can be converted to a <see cref="T:System.Windows.GridLength" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -128,13 +164,24 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeDescriptorContext">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeDescriptorContext">Describes the context information of a type.</param>
+        <param name="cultureInfo">Cultural specific information that should be respected during conversion.</param>
+        <param name="value">The instance of <see cref="T:System.Windows.GridLength" /> to convert.</param>
+        <param name="destinationType">The type that this instance of <see cref="T:System.Windows.GridLength" /> is converted to.</param>
+        <summary>Attempts to convert an instance of <see cref="T:System.Windows.GridLength" /> to a specified type.</summary>
+        <returns>The object that is created from the converted instance of <see cref="T:System.Windows.GridLength" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.GridLengthConverter> supports conversion to and from the following types: <xref:System.String>, <xref:System.Decimal>, <xref:System.Single>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationType" /> is not one of the valid types for conversion.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

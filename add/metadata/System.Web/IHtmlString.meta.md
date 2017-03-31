@@ -1,9 +1,11 @@
 ---
 uid: System.Web.IHtmlString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.IHtmlString.ToHtmlString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

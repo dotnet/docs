@@ -1,74 +1,107 @@
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSizeAfterViewport
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.op_Equality(System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes,System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSizeAfterViewport
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSizeInViewport
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.#ctor(System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.Equals
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSizeBeforeViewport
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSizeInViewport
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.Equals(System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.op_Inequality(System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes,System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSizeBeforeViewport
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

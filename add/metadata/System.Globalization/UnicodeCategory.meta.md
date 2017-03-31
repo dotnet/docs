@@ -1,4 +1,6 @@
 ---
 uid: System.Globalization.UnicodeCategory
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

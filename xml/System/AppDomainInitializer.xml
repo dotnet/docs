@@ -22,8 +22,15 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="args">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="args">An array of strings to pass as arguments to the callback method.</param>
+    <summary>Represents the callback method to invoke when the application domain is initialized.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use an <xref:System.AppDomainInitializer> delegate to specify the callback method to invoke when an instance of the <xref:System.AppDomain> class is initialized.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

@@ -1,2 +1,0 @@
-        rc = sp3.IsUnrestricted()
-        Console.WriteLine("Is the third permission unrestricted? " + IIf(rc, "Yes", "No")) 'TODO: For performance reasons this should be changed to nested IF statements

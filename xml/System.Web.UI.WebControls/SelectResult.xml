@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the select result. This type is designed to be used when you use the async model binding feature, which is introduced in 4.6, and want to enable custom paging.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="results" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="totalRowCount">To be added.</param>
-        <param name="results">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="totalRowCount">The total number of rows in the result.</param>
+        <param name="results">The list of results.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SelectResult" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list of results.</summary>
+        <value>A list of results.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the total number of rows in the result.</summary>
+        <value>The total number of rows in the result.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

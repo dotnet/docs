@@ -8,8 +8,17 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An interface that implements a callback that is called just before a message is sent on the wire by the <see cref="T:System.ServiceModel.Activities.Send" /> or <see cref="T:System.ServiceModel.Activities.SendParametersContent" /> activities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to implement the <xref:System.ServiceModel.Activities.ISendMessageCallback> interface to a a new header to a message before it is sent out on the wire.  
+  
+ [!code-csharp[AccessingOperationContext#0](~/samples/snippets/csharp/VS_Snippets_CFX/accessingoperationcontext/cs/sendinstanceidcallback.cs#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="OnSendMessage">
@@ -28,9 +37,18 @@
         <Parameter Name="operationContext" Type="System.ServiceModel.OperationContext" />
       </Parameters>
       <Docs>
-        <param name="operationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="operationContext">The operation’s context under which the message is being sent.</param>
+        <summary>Executed when a service message is sent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to implement the <xref:System.ServiceModel.Activities.ISendMessageCallback> interface to a a new header to a message before it is sent out on the wire.  
+  
+ [!code-csharp[AccessingOperationContext#0](~/samples/snippets/csharp/VS_Snippets_CFX/accessingoperationcontext/cs/sendinstanceidcallback.cs#0)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

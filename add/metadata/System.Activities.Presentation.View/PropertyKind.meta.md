@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.Presentation.View.PropertyKind
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

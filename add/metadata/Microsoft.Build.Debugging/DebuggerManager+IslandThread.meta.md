@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Debugging.DebuggerManager.IslandThread
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Debugging.DebuggerManager.IslandThread.System#IDisposable#Dispose
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Debugging.DebuggerManager.IslandThread.IslandWorker(Microsoft.Build.Debugging.DebuggerManager.IslandThread)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a label alignment when <see cref="T:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle" /> is used.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles> enumeration represents the alignment of a label; it is set by the <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.MovingDirection%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -32,7 +39,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Label is aligned to the bottom of the data point.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomLeft">
@@ -48,7 +55,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Label is aligned to the bottom-left of the data point.</summary>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -64,7 +71,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Label is aligned to the bottom-right of the data point.</summary>
       </Docs>
     </Member>
     <Member MemberName="Center">
@@ -80,7 +87,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Label is aligned to the center of the data point.</summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -96,7 +103,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Label is aligned to the left of the data point.</summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -112,7 +119,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Label is aligned to the right of the data point.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -128,7 +135,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Label is aligned to the top of the data point.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -144,7 +151,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Label is aligned to the top-left corner of the data point.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopRight">
@@ -160,7 +167,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Label is aligned to the top-right corner of the data point.</summary>
       </Docs>
     </Member>
   </Members>

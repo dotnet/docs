@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Threading.DispatcherUnhandledExceptionEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherUnhandledExceptionEventArgs.Handled
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Threading.DispatcherUnhandledExceptionEventArgs.Exception
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

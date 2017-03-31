@@ -1,9 +1,11 @@
 ---
 uid: System.Speech.Recognition.SpeechDetectedEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechDetectedEventArgs.AudioPosition
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

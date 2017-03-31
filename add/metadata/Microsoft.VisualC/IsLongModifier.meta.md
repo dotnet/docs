@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.VisualC.IsLongModifier
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.IsLongModifier.#ctor
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

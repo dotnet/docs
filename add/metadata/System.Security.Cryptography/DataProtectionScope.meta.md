@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Cryptography.DataProtectionScope
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

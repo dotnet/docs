@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a security token provider that provides <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security tokens for a SOAP message sender.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In most instances the <xref:System.IdentityModel.Selectors.KerberosSecurityTokenProvider> class doesn't need to be called directly, as it is called when a client sends a SOAP message that requires a <xref:System.IdentityModel.Tokens.KerberosRequestorSecurityToken> security token. Specifically, a client specifies the type of security token needed using the <xref:System.ServiceModel.Description.ClientCredentials> class and the <xref:System.ServiceModel.Description.ClientCredentials> class calls the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method to get a security token. When the security token needed is a <xref:System.IdentityModel.Tokens.KerberosRequestorSecurityToken> security token, the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method calls the <xref:System.IdentityModel.Selectors.KerberosSecurityTokenProvider.GetTokenCore%28System.TimeSpan%29> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +35,18 @@
         <Parameter Name="servicePrincipalName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="servicePrincipalName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="servicePrincipalName">The service principal name to get a <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token for.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.KerberosSecurityTokenProvider" /> class using the specified service principal name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the impersonation level that is allowed by a client to <xref:System.Security.Principal.TokenImpersonationLevel>`Identification`. The current context of the calling thread (<xref:System.Net.CredentialCache.DefaultNetworkCredentials%2A>) is used as a client identity.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="servicePrincipalName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,10 +63,21 @@
         <Parameter Name="tokenImpersonationLevel" Type="System.Security.Principal.TokenImpersonationLevel" />
       </Parameters>
       <Docs>
-        <param name="servicePrincipalName">To be added.</param>
-        <param name="tokenImpersonationLevel">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="servicePrincipalName">The service principal name to get a <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token for.</param>
+        <param name="tokenImpersonationLevel">A <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> that specifies the degree to which a recipient of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token can act on behalf of the client.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.KerberosSecurityTokenProvider" /> class using the specified service principal name and whether a client allows a recipient of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token to impersonate the client's credentials.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current context of the calling thread (<xref:System.Net.CredentialCache.DefaultNetworkCredentials%2A>) is used as a client identity.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="tokenImpersonationLevel" /> is not <see langword="Identification" /> or <see langword="Impersonation" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="servicePrincipalName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -68,11 +95,15 @@
         <Parameter Name="networkCredential" Type="System.Net.NetworkCredential" />
       </Parameters>
       <Docs>
-        <param name="servicePrincipalName">To be added.</param>
-        <param name="tokenImpersonationLevel">To be added.</param>
+        <param name="servicePrincipalName">The service principal name to get a <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token for.</param>
+        <param name="tokenImpersonationLevel">A <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> that specifies the degree to which a recipient of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token can act on behalf of the client process.</param>
         <param name="credential">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.KerberosSecurityTokenProvider" /> class using the specified service principal name, client identity, and whether a client allows a recipient of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token to impersonate the client's credentials.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="tokenImpersonationLevel" /> is not <see langword="Identification" /> or <see langword="Impersonation" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="servicePrincipalName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetTokenCore">
@@ -91,10 +122,19 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that specifies the timeout value for the message that gets the security token.</param>
+        <summary>Gets a <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the security token to get.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method is called by the <xref:System.ServiceModel.Description.ClientCredentials> class when a client sends a SOAP message and a <xref:System.IdentityModel.Tokens.KerberosRequestorSecurityToken> security token is needed.  
+  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetToken%2A> method calls the <xref:System.IdentityModel.Selectors.KerberosSecurityTokenProvider.GetTokenCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NetworkCredential">
@@ -110,9 +150,16 @@
         <ReturnType>System.Net.NetworkCredential</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the identity of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token.</summary>
+        <value>A <see cref="T:System.Net.NetworkCredential" /> that represents the identity of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the value of the <xref:System.IdentityModel.Selectors.KerberosSecurityTokenProvider.NetworkCredential%2A> property is `null` and the <xref:System.IdentityModel.Selectors.KerberosSecurityTokenProvider.GetTokenCore%2A> method is called, the current context of the calling thread (<xref:System.Net.CredentialCache.DefaultNetworkCredentials%2A>) is used as a client identity.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServicePrincipalName">
@@ -128,8 +175,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the service principal name of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token to get.</summary>
+        <value>The service principal name of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token to get.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,9 +193,16 @@
         <ReturnType>System.Security.Principal.TokenImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that specifies the degree to which a recipient of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token can act on behalf of the client.</summary>
+        <value>A <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> that specifies the degree to which a recipient of the <see cref="T:System.IdentityModel.Tokens.KerberosRequestorSecurityToken" /> security token can act on behalf of the client.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Selectors.KerberosSecurityTokenProvider.TokenImpersonationLevel%2A> property must be either `Identification` or `Impersonation`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

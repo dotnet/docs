@@ -1,279 +1,459 @@
 ---
 uid: System.Xml.Linq.XElement
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XElement.Save(System.Xml.XmlWriter)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XName,System.Object)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Save(System.IO.Stream)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XStreamingElement)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.ReplaceAll(System.Object[])
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.GetPrefixOfNamespace(System.Xml.Linq.XNamespace)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XName)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.EmptySequence
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.DescendantNodesAndSelf
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Load(System.Xml.XmlReader)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.ReplaceAttributes(System.Object)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Load(System.String,System.Xml.Linq.LoadOptions)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Save(System.IO.TextWriter)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.HasAttributes
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Save(System.String,System.Xml.Linq.SaveOptions)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Save(System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.AncestorsAndSelf(System.Xml.Linq.XName)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Parse(System.String,System.Xml.Linq.LoadOptions)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Load(System.IO.TextReader)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Parse(System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.SetAttributeValue(System.Xml.Linq.XName,System.Object)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Load(System.IO.TextReader,System.Xml.Linq.LoadOptions)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.NodeType
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.RemoveAll
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.HasElements
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Load(System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Name
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Save(System.IO.Stream,System.Xml.Linq.SaveOptions)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Load(System.Xml.XmlReader,System.Xml.Linq.LoadOptions)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.GetDefaultNamespace
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.LastAttribute
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XElement)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.DescendantsAndSelf
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.System#Xml#Serialization#IXmlSerializable#GetSchema
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Value
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.RemoveAttributes
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.DescendantsAndSelf(System.Xml.Linq.XName)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Attribute(System.Xml.Linq.XName)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.GetNamespaceOfPrefix(System.String)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Attributes(System.Xml.Linq.XName)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.WriteTo(System.Xml.XmlWriter)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.IsEmpty
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XName,System.Object[])
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Load(System.IO.Stream,System.Xml.Linq.LoadOptions)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.SetElementValue(System.Xml.Linq.XName,System.Object)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.Attributes
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.ReplaceAttributes(System.Object[])
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.SetValue(System.Object)
-internalonly: False
----
-
----
-uid: System.Xml.Linq.XElement.FirstAttribute
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XElement.AncestorsAndSelf
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XName,System.Object)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Save(System.IO.Stream)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XStreamingElement)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.ReplaceAll(System.Object[])
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.GetPrefixOfNamespace(System.Xml.Linq.XNamespace)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XName)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.EmptySequence
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.DescendantNodesAndSelf
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Parse
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Load(System.Xml.XmlReader)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.ReplaceAttributes(System.Object)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Load(System.String,System.Xml.Linq.LoadOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Save(System.IO.TextWriter)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.DescendantsAndSelf
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.HasAttributes
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Save(System.String,System.Xml.Linq.SaveOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.ReplaceAll
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Save(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.AncestorsAndSelf(System.Xml.Linq.XName)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Parse(System.String,System.Xml.Linq.LoadOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Load(System.IO.TextReader)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Parse(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.SetAttributeValue(System.Xml.Linq.XName,System.Object)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Load(System.IO.TextReader,System.Xml.Linq.LoadOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.NodeType
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.RemoveAll
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.HasElements
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Load(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Name
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Save(System.IO.Stream,System.Xml.Linq.SaveOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Load(System.Xml.XmlReader,System.Xml.Linq.LoadOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.GetDefaultNamespace
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.LastAttribute
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Load
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Save
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XElement)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.ReplaceAttributes
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.DescendantsAndSelf
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.System#Xml#Serialization#IXmlSerializable#GetSchema
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Value
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.RemoveAttributes
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.DescendantsAndSelf(System.Xml.Linq.XName)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Attribute(System.Xml.Linq.XName)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.GetNamespaceOfPrefix(System.String)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Attributes(System.Xml.Linq.XName)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.WriteTo(System.Xml.XmlWriter)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.IsEmpty
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.#ctor(System.Xml.Linq.XName,System.Object[])
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Load(System.IO.Stream,System.Xml.Linq.LoadOptions)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.SetElementValue(System.Xml.Linq.XName,System.Object)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.op_Explicit
+manager: "ghogen"
+---
+
+---
+uid: System.Xml.Linq.XElement.Attributes
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.ReplaceAttributes(System.Object[])
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.SetValue(System.Object)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.FirstAttribute
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.AncestorsAndSelf
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XElement.Attributes
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XElement.ReplaceAll(System.Object)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Xml.Linq.XElement.Load(System.IO.Stream)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

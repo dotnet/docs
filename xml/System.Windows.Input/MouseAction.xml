@@ -18,8 +18,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies constants that define actions performed by the mouse.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.MouseAction> enumeration specifies constants which correspond to actions performed by the mouse, such as RightClick and RightDoubleClick.  
+  
+ <xref:System.Windows.Input.MouseAction> can be used with a <xref:System.Windows.Input.MouseGesture> to create a input gesture which can be bound to a command using a <xref:System.Windows.Input.MouseBinding>.  For more information about commanding, see the [Commanding Overview](../Topic/Commanding%20Overview.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to construct a <xref:System.Windows.Input.MouseGesture> using a <xref:System.Windows.Input.MouseAction> and how to bind the gesture to a <xref:System.Windows.Input.RoutedCommand> using a <xref:System.Windows.Input.MouseBinding>.  
+  
+ [!code-xml[commandlibrarysnippets#MouseBindingMouseActionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindingmouseactionxaml)]  
+  
+ [!code-csharp[commandlibrarysnippets#MouseBindingMouseAction](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#mousebindingmouseaction)]
+ [!code-vb[commandlibrarysnippets#MouseBindingMouseAction](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#mousebindingmouseaction)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="LeftClick">
@@ -35,7 +54,7 @@
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A left mouse button click.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeftDoubleClick">
@@ -51,7 +70,7 @@
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A left mouse button double-click.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleClick">
@@ -67,7 +86,7 @@
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A middle mouse button click.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleDoubleClick">
@@ -83,7 +102,7 @@
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A middle mouse button double-click.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -99,7 +118,7 @@
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No action.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightClick">
@@ -115,7 +134,7 @@
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A right mouse button click.</summary>
       </Docs>
     </Member>
     <Member MemberName="RightDoubleClick">
@@ -131,7 +150,7 @@
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A right mouse button double-click.</summary>
       </Docs>
     </Member>
     <Member MemberName="WheelClick">
@@ -147,7 +166,7 @@
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A mouse wheel rotation.</summary>
       </Docs>
     </Member>
   </Members>

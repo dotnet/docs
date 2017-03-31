@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs.Error
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

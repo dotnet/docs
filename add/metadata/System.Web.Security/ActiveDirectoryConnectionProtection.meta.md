@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Security.ActiveDirectoryConnectionProtection
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

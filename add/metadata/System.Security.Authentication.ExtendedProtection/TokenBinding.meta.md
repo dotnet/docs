@@ -1,14 +1,17 @@
 ---
 uid: System.Security.Authentication.ExtendedProtection.TokenBinding
-internalonly: False
+ms.author: "alkoren"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.TokenBinding.GetRawTokenBindingId
-internalonly: False
+ms.author: "alkoren"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.TokenBinding.BindingType
-internalonly: False
+ms.author: "alkoren"
+manager: "markl"
 ---

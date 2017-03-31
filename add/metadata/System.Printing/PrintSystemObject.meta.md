@@ -1,74 +1,115 @@
 ---
 uid: System.Printing.PrintSystemObject
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintSystemObject.BaseAttributeNames
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintSystemObject.Initialize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintSystemObject.Parent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintSystemObject.InternalDispose(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintSystemObject.#ctor(System.Printing.PrintSystemObjectLoadMode)
-internalonly: False
----
-
----
-uid: System.Printing.PrintSystemObject.Refresh
-internalonly: False
----
-
----
-uid: System.Printing.PrintSystemObject.IsDisposed
-internalonly: False
----
-
----
-uid: System.Printing.PrintSystemObject.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Printing.PrintSystemObject.PropertiesCollection
-internalonly: False
----
-
----
-uid: System.Printing.PrintSystemObject.Name
-internalonly: False
----
-
----
-uid: System.Printing.PrintSystemObject.Commit
-internalonly: False
----
-
----
-uid: System.Printing.PrintSystemObject.Finalize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintSystemObject.Dispose
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintSystemObject.Refresh
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintSystemObject.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintSystemObject.IsDisposed
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintSystemObject.Dispose(System.Boolean)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintSystemObject.PropertiesCollection
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintSystemObject.Name
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintSystemObject.Commit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintSystemObject.Finalize
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintSystemObject.Dispose
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintSystemObject.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---

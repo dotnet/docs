@@ -1,1 +1,0 @@
-            ContractDescription cd0 = new ContractDescription("ICalculator");

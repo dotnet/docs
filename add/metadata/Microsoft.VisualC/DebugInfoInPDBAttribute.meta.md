@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.VisualC.DebugInfoInPDBAttribute
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.DebugInfoInPDBAttribute.#ctor
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

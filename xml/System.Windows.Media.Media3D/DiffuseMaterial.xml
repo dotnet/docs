@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Allows the application of a [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] brush, like a <see cref="T:System.Windows.Media.SolidColorBrush" /> or <see cref="T:System.Windows.Media.TileBrush" />, to a diffusely-lit [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] model.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Constructs a DiffuseMaterial.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="brush" Type="System.Windows.Media.Brush" />
       </Parameters>
       <Docs>
-        <param name="brush">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="brush">The new material's brush.</param>
+        <summary>Constructs a DiffuseMaterial with the specified Brush property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +61,26 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a color that represents how the material reflects <see cref="T:System.Windows.Media.Media3D.AmbientLight" />.</summary>
+        <value>The color of the ambient light reflected by the 3D object. The default value is <c>#FFFFFF</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An ambient light is lighting not attributable to the direct rays from a specific light source. In the physical world, ambient light comes from the reflection of light from surfaces in the environment. Without ambient light, objects in shadow would be completely black.  
+  
+ All other lights are controlled by the <xref:System.Windows.Media.Media3D.DiffuseMaterial.Color%2A> property.  
+  
+<a name="dependencyPropertyInfo_AmbientColor"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Media3D.DiffuseMaterial.AmbientColorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AmbientColorProperty">
@@ -79,7 +96,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Media3D.DiffuseMaterial.AmbientColor" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,9 +113,18 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <see cref="T:System.Windows.Media.Brush" /> to be applied as a <see cref="T:System.Windows.Media.Media3D.Material" /> to a [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] model.</summary>
+        <value>
+          <see cref="T:System.Windows.Media.Brush" /> to apply.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no texture coordinates are specified for a <xref:System.Windows.Media.Media3D.MeshGeometry3D>, its Material might not render as expected.  The only exception is when the Material's Brush property specifies a SolidColorBrush; in this case, the Material will be rendered using a default set of texture coordinates.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BrushProperty">
@@ -114,7 +140,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Media3D.DiffuseMaterial.Brush" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,9 +158,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Media3D.DiffuseMaterial" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -151,9 +186,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Media3D.DiffuseMaterial" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -169,9 +213,26 @@
         <ReturnType>System.Windows.Media.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the color filter for the material's texture.</summary>
+        <value>The color filter for the <see cref="T:System.Windows.Media.Media3D.Material" />. The default value is <c>#FFFFFF</c>. Since all colors make up white, all colors are visible by default.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Media3D.DiffuseMaterial.Color%2A> property is a filter on the texture.  
+  
+ Set the <xref:System.Windows.Media.Media3D.DiffuseMaterial.AmbientColor%2A> property to control how the material reflects ambient light.  
+  
+<a name="dependencyPropertyInfo_Color"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Media3D.DiffuseMaterial.ColorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorProperty">
@@ -187,7 +248,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Media3D.DiffuseMaterial.Color" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

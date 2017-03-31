@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.AttachedPropertyBrowsableAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.AttachedPropertyBrowsableAttribute.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

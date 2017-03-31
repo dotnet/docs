@@ -1,24 +1,34 @@
 ---
 uid: System.Data.SqlClient.SqlColumnEncryptionCngProvider
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlColumnEncryptionCngProvider.DecryptColumnEncryptionKey(System.String,System.String,System.Byte[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlColumnEncryptionCngProvider.ProviderName
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlColumnEncryptionCngProvider.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlColumnEncryptionCngProvider.EncryptColumnEncryptionKey(System.String,System.String,System.Byte[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

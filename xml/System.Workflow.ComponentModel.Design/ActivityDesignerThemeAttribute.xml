@@ -19,8 +19,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the theme class an activity designer uses on the workflow design surface. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Theme classes specify a set of properties that determine the appearance of an activity when it is placed on a workflow design surface. Activity-designer developers can associate a theme class to a designer by declaring a Theme attribute for the designer. The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> class defines the declarative Theme attribute, including the argument that must be passed in the attribute, and all of its properties.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +47,8 @@
         <Parameter Name="designerThemeType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="designerThemeType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="designerThemeType">A <see cref="T:System.Type" /> that represents the designer theme to be associated with the designer class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute" /> class by using the specified designer theme type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +65,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the theme class that encapsulates the designer theme settings to apply to the activity designer.</summary>
+        <value>A <see cref="T:System.Type" /> that encapsulates the designer theme settings.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +83,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an XML string that defines default property settings for the activity designer.</summary>
+        <value>A string that contains the default theme property settings in XML format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An activity designer can pass an XML string that contains any of its default theme property values to the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute.Xml%2A> property by declaring the property in the Theme attribute.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

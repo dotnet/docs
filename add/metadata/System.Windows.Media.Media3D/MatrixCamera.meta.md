@@ -1,44 +1,67 @@
 ---
 uid: System.Windows.Media.Media3D.MatrixCamera
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.MatrixCamera.ViewMatrix
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.MatrixCamera.CloneCurrentValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.MatrixCamera.#ctor(System.Windows.Media.Media3D.Matrix3D,System.Windows.Media.Media3D.Matrix3D)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Media3D.MatrixCamera.ProjectionMatrixProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Media3D.MatrixCamera.Clone
-internalonly: False
----
-
----
-uid: System.Windows.Media.Media3D.MatrixCamera.ProjectionMatrix
-internalonly: False
----
-
----
-uid: System.Windows.Media.Media3D.MatrixCamera.ViewMatrixProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Media3D.MatrixCamera.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Media3D.MatrixCamera.ProjectionMatrixProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.MatrixCamera.Clone
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.MatrixCamera.ProjectionMatrix
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.MatrixCamera.ViewMatrixProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.MatrixCamera.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

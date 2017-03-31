@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Configuration.HttpCapabilitiesSectionHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCapabilitiesSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCapabilitiesSectionHandler.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

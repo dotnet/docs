@@ -16,8 +16,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides expanded support for application startup.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+-   There is no guarantee of the order in which the assembly-defined application start methods are called. As a result, each registered start method should be coded to run in isolation and should not depend on side effects from other registered start methods.  
+  
+ For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,10 +44,17 @@
         <Parameter Name="methodName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="methodName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">An object that describes the type of the startup method..</param>
+        <param name="methodName">An empty parameter signature that has no return value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.PreApplicationStartMethodAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method referenced by the `methodName` parameter must be public and can be either an instance method or static method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MethodName">
@@ -53,8 +70,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the associated startup method.</summary>
+        <value>A string that contains the name of the associated startup method.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +88,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type that is returned by the associated startup method.</summary>
+        <value>An object that describes the type of the startup method.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

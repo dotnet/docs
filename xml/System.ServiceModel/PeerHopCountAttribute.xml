@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the peer hop count member of a SOAP message header block.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerHopCountAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URI that indicates the node at which this header is targeted.</summary>
+        <value>
+          <see cref="T:System.String" /> value that contains the name of the actor node at which this header value is targeted.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +65,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies whether the node acting in the <see cref="P:System.ServiceModel.PeerHopCountAttribute.Actor" /> role must understand this header.</summary>
+        <value>True if the node acting in the <see cref="P:System.ServiceModel.PeerHopCountAttribute.Actor" /> role must understand this header; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +83,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the name of the element that corresponds to the peer hop count member.</summary>
+        <value>
+          <see cref="T:System.String" /> value that contains the names of the XML element in the SOAP message that corresponds to the peer hop count.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +102,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the namespace of the element that corresponds to the peer hop count member.</summary>
+        <value>
+          <see cref="T:System.String" /> value that contains the namespace of the XML element in the SOAP message that corresponds to the peer hop count.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +121,9 @@
         <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether the peer hop count member is to be transmitted as-is, signed, or signed and encrypted.</summary>
+        <value>
+          <see cref="T:System.Net.Security.ProtectionLevel" /> enumeration value that indicates the security protection level. The default value is <see cref="F:System.Net.Security.ProtectionLevel.None" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +140,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether this peer hop count is relayed to downstream nodes.</summary>
+        <value>True if the peer hop count is relayed to downstream nodes; false if it is not.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

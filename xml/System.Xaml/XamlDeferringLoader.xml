@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a XAML reader behavior that loads and returns deferred content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is not used as a base class by other XAML readers that are implemented by .NET Framework XAML Services. Instead, it is used internally for value-passing by readers such as <xref:System.Xaml.XamlObjectReader>; or it is used as a base class for a technology-specific implementation, such as <xref:System.Windows.TemplateContentLoader> from PresentationFramework.dll.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlDeferringLoader" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +54,10 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="xamlReader">To be added.</param>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="xamlReader">The initiating reader that is returned on calls to <see cref="M:System.Xaml.XamlDeferringLoader.Save(System.Object,System.IServiceProvider)" />.</param>
+        <param name="serviceProvider">The service provider for the required services.</param>
+        <summary>Loads XAML content in a deferred mode, which is based on a <see cref="T:System.Xaml.XamlReader" /> and certain required services from a service provider.</summary>
+        <returns>The root object that is produced by the input <see cref="T:System.Xaml.XamlReader" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +78,10 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="serviceProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The input value to commit for deferred loading.</param>
+        <param name="serviceProvider">The service provider for the required services.</param>
+        <summary>Commits a value for deferred loading.</summary>
+        <returns>A XAML reader that can be used to obtain the deferred value as XAML node information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

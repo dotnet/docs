@@ -1,24 +1,29 @@
 ---
 uid: System.Configuration.DictionarySectionHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.DictionarySectionHandler.KeyAttributeName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.DictionarySectionHandler.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.DictionarySectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.DictionarySectionHandler.ValueAttributeName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

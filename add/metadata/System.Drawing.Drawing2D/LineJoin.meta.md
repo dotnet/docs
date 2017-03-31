@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Drawing2D.LineJoin
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

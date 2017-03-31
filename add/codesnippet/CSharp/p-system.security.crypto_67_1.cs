@@ -1,1 +1,0 @@
-            int maxKeySize = firstKeySize.MaxSize;

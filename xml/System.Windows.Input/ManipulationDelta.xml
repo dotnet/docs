@@ -11,8 +11,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains transformation data that is accumulated when manipulation events occur.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.ManipulationDelta> class contains information about the changes in the position of a manipulation.  [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] interprets the changes as a <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Expansion%2A>, or <xref:System.Windows.Input.ManipulationDelta.Rotation%2A>. When the <xref:System.Windows.UIElement.ManipulationDelta> event occurs on a <xref:System.Windows.UIElement>, use the properties on a <xref:System.Windows.Input.ManipulationDelta> object to transform the object that should be manipulated.  The <xref:System.Windows.Input.ManipulationDeltaEventArgs> class provides two properties of type <xref:System.Windows.Input.ManipulationDelta>: <xref:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation%2A> and <xref:System.Windows.Input.ManipulationDeltaEventArgs.CumulativeManipulation%2A>.  
+  
+ For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event.  The example applies the <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Scale%2A>, and <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> properties to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+  
+ [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
+ [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,11 +48,11 @@
         <Parameter Name="expansion" Type="System.Windows.Vector" />
       </Parameters>
       <Docs>
-        <param name="translation">To be added.</param>
-        <param name="rotation">To be added.</param>
-        <param name="scale">To be added.</param>
-        <param name="expansion">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="translation">The linear motion of the manipulation in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</param>
+        <param name="rotation">The rotation of the manipulation in degrees.</param>
+        <param name="scale">The amount the manipulation has resized as a multiplier.</param>
+        <param name="expansion">The amount the manipulation has resized in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.ManipulationDelta" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +69,16 @@
         <ReturnType>System.Windows.Vector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the amount the manipulation has resized in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <value>The amount the manipulation has resized in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.ManipulationDelta.Scale%2A> and <xref:System.Windows.Input.ManipulationDelta.Expansion%2A> properties both report a resizing manipulation.  The difference between the two is the way in which the value is reported.  The <xref:System.Windows.Input.ManipulationDelta.Expansion%2A> property reports the resizing manipulation in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. The <xref:System.Windows.Input.ManipulationDelta.Scale%2A> property reports the value as a multiplier.  If <xref:System.Windows.Input.ManipulationDelta.Scale%2A> is 0.5, the manipulation is interpreted as decreasing the size by 50 percent.  If <xref:System.Windows.Input.ManipulationDelta.Scale%2A> is 2, the manipulation is interpreted as increasing the size by 100 percent.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -70,9 +94,24 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the rotation of the manipulation in degrees.</summary>
+        <value>The rotation of the manipulation in degrees.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> property reports the way a manipulation is interpreted as rotating around an axis.  The axis is usually the point between the two points of contact that initiated the manipulation.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event.  The example applies the <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Scale%2A>, and <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> properties to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+  
+ [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
+ [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -88,9 +127,24 @@
         <ReturnType>System.Windows.Vector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the amount the manipulation has resized as a multiplier.</summary>
+        <value>The amount the manipulation has resized.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.ManipulationDelta.Scale%2A> and <xref:System.Windows.Input.ManipulationDelta.Expansion%2A> properties both report a resizing manipulation.  The difference between the two is the way in which the value is reported.  The <xref:System.Windows.Input.ManipulationDelta.Scale%2A> property reports the value as a multiplier.  If <xref:System.Windows.Input.ManipulationDelta.Scale%2A> is 0.5, the manipulation is interpreted as decreasing the size by 50 percent.  If <xref:System.Windows.Input.ManipulationDelta.Scale%2A> is 2, the manipulation is interpreted as increasing the size by 100 percent. The <xref:System.Windows.Input.ManipulationDelta.Expansion%2A> property reports the resizing manipulation in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event.  The example applies the <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Scale%2A>, and <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> properties to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+  
+ [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
+ [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Translation">
@@ -106,9 +160,24 @@
         <ReturnType>System.Windows.Vector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the linear motion of the manipulation.</summary>
+        <value>The linear motion of the manipulation in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.ManipulationDelta.Translation%2A> property reports the way a manipulation is interpreted as moving horizontally and vertically on the screen.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event.  The example applies the <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Scale%2A>, and <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> properties to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+  
+ [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
+ [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

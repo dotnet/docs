@@ -1,14 +1,17 @@
 ---
 uid: System.ComponentModel.DataAnnotations.EmailAddressAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.EmailAddressAttribute.IsValid(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.EmailAddressAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

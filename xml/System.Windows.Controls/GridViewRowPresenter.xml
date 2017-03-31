@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an object that specifies the layout of a row of data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.GridViewRowPresenter> and <xref:System.Windows.Controls.GridViewHeaderRowPresenter> classes support the <xref:System.Windows.Controls.GridView> view mode for a <xref:System.Windows.Controls.ListView> control.  
+  
+   
+  
+## Examples  
+ The following example shows how to use a <xref:System.Windows.Controls.GridViewRowPresenter> to style rows in a <xref:System.Windows.Controls.ListView> control.  
+  
+ [!code-xml[ListViewItemStyle#GridViewRowPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyle/CS/Window1.xaml#gridviewrowpresenter)]
+ [!code-xml[ListViewItemStyle#GridViewRowPresenter](~/samples/snippets/xaml/VS_Snippets_Wpf/ListViewItemStyle/XAML/Window1.xaml#gridviewrowpresenter)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.GridViewRowPresenter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +61,9 @@
         <Parameter Name="arrangeSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="arrangeSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="arrangeSize">The area to use to display the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" />.</param>
+        <summary>Positions the content of a row according to the size of the corresponding <see cref="T:System.Windows.Controls.GridViewColumn" /> objects.</summary>
+        <returns>The actual <see cref="T:System.Windows.Size" /> that is used to display the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,9 +80,31 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the data content to display in a row.</summary>
+        <value>The object that represents the content of a row.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The typical usage of the <xref:System.Windows.Controls.GridViewRowPresenter> in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] is to place it in a <xref:System.Windows.Controls.ControlTemplate> of a control. The template binds the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> property to a property of the control by using [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md). The following example shows how to bind the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> property of a <xref:System.Windows.Controls.GridViewRowPresenter> to the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.ListViewItem> control.  
+  
+ [!code-xml[ListViewItemStyle#ControlTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyle/CS/Window1.xaml#controltemplate)]
+ [!code-xml[ListViewItemStyle#ControlTemplate](~/samples/snippets/xaml/VS_Snippets_Wpf/ListViewItemStyle/XAML/Window1.xaml#controltemplate)]  
+  
+<a name="xamlTextUsage_Content"></a>   
+## XAML Text Usage  
+ See Remarks.  
+  
+<a name="dependencyPropertyInfo_Content"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewRowPresenter.ContentProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentProperty">
@@ -83,8 +120,20 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> dependency property.  
+  
+   
+  
+## Examples  
+ [Dependency Properties Overview](../Topic/Dependency%20Properties%20Overview.md)  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MeasureOverride">
@@ -103,9 +152,9 @@
         <Parameter Name="constraint" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="constraint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="constraint">The maximum area to use to display the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" />.</param>
+        <summary>Determines the area that is required to display the row.</summary>
+        <returns>The actual <see cref="T:System.Windows.Size" /> of the area that displays the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +172,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string representation of the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" />.</summary>
+        <returns>A string that shows the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

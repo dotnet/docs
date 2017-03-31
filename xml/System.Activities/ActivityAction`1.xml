@@ -14,9 +14,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the in argument of the activity delegate.</typeparam>
+    <summary>Defines an activity delegate that has one in argument and does not return a value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An activity delegate allows a developer to define the required signature of an activity that will be specified by a third party.  
+  
+ There are multiple generic versions of this type that take from 1 to 16 arguments for the activity that is called.  There are also **ActivityFunc** types for activity delegates that return values.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.ActivityAction`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +61,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

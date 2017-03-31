@@ -1,39 +1,53 @@
 ---
 uid: System.IdentityModel.Metadata.EntitiesDescriptor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.EntitiesDescriptor.#ctor(System.Collections.ObjectModel.Collection{System.IdentityModel.Metadata.EntityDescriptor},System.Collections.ObjectModel.Collection{System.IdentityModel.Metadata.EntitiesDescriptor})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.EntitiesDescriptor.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.EntitiesDescriptor.#ctor(System.Collections.ObjectModel.Collection{System.IdentityModel.Metadata.EntitiesDescriptor})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntities
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.EntitiesDescriptor.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntityGroups
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.EntitiesDescriptor.#ctor(System.Collections.ObjectModel.Collection{System.IdentityModel.Metadata.EntityDescriptor})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.EntitiesDescriptor.Name
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

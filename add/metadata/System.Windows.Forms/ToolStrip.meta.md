@@ -1,619 +1,876 @@
 ---
 uid: System.Windows.Forms.ToolStrip
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.DefaultSize
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.CursorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.Font
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.CreateAccessibilityInstance
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.Dock
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.Dispose
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.DefaultGripMargin
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.OnItemClicked(System.Windows.Forms.ToolStripItemClickedEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.OnInvalidated(System.Windows.Forms.InvalidateEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.OnDockChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.CausesValidationChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.OnMouseDown(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.TextDirection
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.PaintGrip
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.MaxItemSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.ForeColorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.CreateControlsInstance
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.OnLostFocus(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.SetVisibleCore(System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.IsCurrentlyDragging
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.LayoutStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.ToString
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.Items
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnItemRemoved(System.Windows.Forms.ToolStripItemEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.AutoScrollPosition
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.DisplayedItems
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnRendererChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnHandleCreated(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.AllowDrop
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnMouseCaptureChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnFontChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.AutoScroll
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.AutoScrollMargin
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.ProcessDialogKey(System.Windows.Forms.Keys)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.AutoSizeChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.ItemClicked
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnMouseMove(System.Windows.Forms.MouseEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.GetNextItem(System.Windows.Forms.ToolStripItem,System.Windows.Forms.ArrowDirection)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.TabStop
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.RenderMode
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.EndDrag
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnHandleDestroyed(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.CanOverflow
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.IsDropDown
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnPaint(System.Windows.Forms.PaintEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.GetItemAt(System.Drawing.Point)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnBeginDrag(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.ForeColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.GetChildAtPoint(System.Drawing.Point)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.BeginDrag
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.Orientation
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.LayoutStyleChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.RestoreFocus
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.ItemAdded
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.ResetMinimumSize
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.CausesValidation
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnEndDrag(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.GripStyle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.AllowMerge
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnEnabledChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnPaintGrip(System.Windows.Forms.PaintEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.BackColor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.RendererChanged
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.VerticalScroll
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.BindingContext
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.DefaultDock
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.HorizontalScroll
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.DisplayRectangle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.Select(System.Boolean,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.SetDisplayedItems
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.Stretch
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.LayoutSettings
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnVisibleChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.AutoScrollMinSize
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.Anchor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.Cursor
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.WndProc(System.Windows.Forms.Message@)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.GripRectangle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.ControlAdded
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnLayout(System.Windows.Forms.LayoutEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.#ctor(System.Windows.Forms.ToolStripItem[])
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnLayoutCompleted(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnScroll(System.Windows.Forms.ScrollEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.GetItemAt(System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnLeave(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.ImageScalingSize
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.SetAutoScrollMargin(System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.GripMargin
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnTabStopChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.LayoutEngine
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.ImageList
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.OnMouseLeave(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStrip.AutoSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnItemRemoved(System.Windows.Forms.ToolStripItemEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.AutoScrollPosition
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.DisplayedItems
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnRendererChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnHandleCreated(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.AllowDrop
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnMouseCaptureChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnFontChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.AutoScroll
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.AutoScrollMargin
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.ProcessDialogKey(System.Windows.Forms.Keys)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.AutoSizeChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.ItemClicked
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnMouseMove(System.Windows.Forms.MouseEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.GetNextItem(System.Windows.Forms.ToolStripItem,System.Windows.Forms.ArrowDirection)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.TabStop
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.RenderMode
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.EndDrag
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnHandleDestroyed(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.CanOverflow
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.IsDropDown
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnPaint(System.Windows.Forms.PaintEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.GetItemAt(System.Drawing.Point)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnBeginDrag(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.ForeColor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.GetChildAtPoint(System.Drawing.Point)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.BeginDrag
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.Orientation
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.LayoutStyleChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.RestoreFocus
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.ItemAdded
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.ResetMinimumSize
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.CausesValidation
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnEndDrag(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.GripStyle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.AllowMerge
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnEnabledChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnPaintGrip(System.Windows.Forms.PaintEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.BackColor
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.RendererChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.VerticalScroll
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.BindingContext
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.DefaultDock
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.HorizontalScroll
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.DisplayRectangle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.GetItemAt
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.Select(System.Boolean,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.SetDisplayedItems
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.Stretch
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.LayoutSettings
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnVisibleChanged(System.EventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.AutoScrollMinSize
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.Anchor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.Cursor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.WndProc(System.Windows.Forms.Message@)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.GripRectangle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.ControlAdded
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnLayout(System.Windows.Forms.LayoutEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.#ctor(System.Windows.Forms.ToolStripItem[])
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnLayoutCompleted(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnScroll(System.Windows.Forms.ScrollEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.GetItemAt(System.Int32,System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.Dispose(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnLeave(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.ImageScalingSize
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.SetAutoScrollMargin(System.Int32,System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.GripMargin
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnTabStopChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.GetChildAtPoint
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.LayoutEngine
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.ImageList
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.OnMouseLeave(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.AutoSize
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.DefaultDropDownDirection
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.ItemRemoved
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.ControlRemoved
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStrip.Select
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.IsInputKey(System.Windows.Forms.Keys)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.ShowItemToolTips
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.SetItemParent(System.Windows.Forms.ToolStripItem,System.Windows.Forms.ToolStrip)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.DefaultPadding
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.CreateDefaultItem(System.String,System.Drawing.Image,System.EventHandler)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.ProcessMnemonic(System.Char)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.DefaultShowItemToolTips
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.Controls
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.IsInputChar(System.Char)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.OnLayoutStyleChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.OverflowButton
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.OnPaintBackground(System.Windows.Forms.PaintEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.Renderer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.OnRightToLeftChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.OnItemAdded(System.Windows.Forms.ToolStripItemEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.LayoutCompleted
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.GetChildAtPoint(System.Drawing.Point,System.Windows.Forms.GetChildAtPointSkip)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.HasChildren
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.SetItemLocation(System.Windows.Forms.ToolStripItem,System.Drawing.Point)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.OnMouseUp(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.AllowItemReorder
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.CreateLayoutSettings(System.Windows.Forms.ToolStripLayoutStyle)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.GripDisplayStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStrip.DefaultMargin
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

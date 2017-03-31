@@ -23,8 +23,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the base class for all <see cref="T:System.Windows.Controls.Button" /> controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event to respond when the user clicks a <xref:System.Windows.Controls.Primitives.ButtonBase>. The user can raise the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event by using an <xref:System.Windows.Controls.AccessText> or by pressing ENTER or the SPACEBAR when the control has focus.  When the user presses the SPACEBAR, the control sets <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> to `true` and captures the mouse.  As a result, the control will raise mouse events such as <xref:System.Windows.UIElement.MouseEnter> and <xref:System.Windows.UIElement.IsMouseDirectlyOverChanged>. Note that using the <xref:System.Windows.Controls.AccessText> or ENTER does not change <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> or capture the mouse, but it does raise the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+  
+ The <xref:System.Windows.Controls.Primitives.ButtonBase> sets the <xref:System.Windows.Input.KeyboardNavigation.AcceptsReturn%2A> attached property to `true`.  
+  
+ The <xref:System.Windows.Controls.Primitives.ButtonBase> sets the <xref:System.Windows.UIElement.IsInputMethodEnabled%2A> property to `false`.  
+  
+ A <xref:System.Windows.Controls.Primitives.ButtonBase> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.ButtonBase" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +73,42 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a <see cref="T:System.Windows.Controls.Button" /> is clicked.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The user can raise the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event by using an <xref:System.Windows.Controls.AccessText> or by pressing ENTER or the SPACEBAR when the control has focus.  When the user presses the SPACEBAR, the control sets <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> to `true` and captures the mouse.  As a result, the control will raise mouse events such as <xref:System.Windows.UIElement.MouseEnter> and <xref:System.Windows.UIElement.IsMouseDirectlyOverChanged>. Note that using the <xref:System.Windows.Controls.AccessText> or ENTER does not change <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> or capture the mouse, but it does raise the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+  
+ The <xref:System.Windows.Controls.Primitives.ButtonBase> marks the <xref:System.Windows.UIElement.MouseLeftButtonDown> event as handled in the <xref:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonDown%2A> method and raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event. Hence, the <xref:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonDown%2A> event will never occur for a control that inherits from <xref:System.Windows.Controls.Primitives.ButtonBase>. Instead, attach an event handler to the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> event, or call <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
+  
+<a name="routedEventInfo_Click"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ButtonBase.ClickEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.RoutedEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example shows three buttons that respond to clicks in three different ways.  
+  
+-   Hover - the first button changes colors when the user hovers with the mouse over the button  
+  
+-   Press - the second button requires that the mouse be pressed while the mouse pointer is in the button.  
+  
+-   Release - the third does not reset the background color of the buttons until the mouse is pressed and released in the button.  
+  
+ [!code-xml[ClickModes_snip#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ClickModes_snip/CSharp/Pane1.xaml#1)]  
+  
+ [!code-csharp[ClickModes_snip#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ClickModes_snip/CSharp/Pane1.xaml.cs#2)]
+ [!code-vb[ClickModes_snip#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClickModes_snip/VisualBasic/Window1.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClickEvent">
@@ -77,8 +124,15 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> routed event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event corresponds to a left mouse button click.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClickMode">
@@ -102,9 +156,23 @@
         <ReturnType>System.Windows.Controls.ClickMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets when the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event occurs.</summary>
+        <value>When the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event occurs. The default value is <see cref="F:System.Windows.Controls.ClickMode.Release" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_ClickMode"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ButtonBase.ClickModeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClickModeProperty">
@@ -120,7 +188,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.ButtonBase.ClickMode" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,9 +216,38 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the command to invoke when this button is pressed.</summary>
+        <value>A command to invoke when this button is pressed. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to associate a command with a particular button instance.  
+  
+ In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], this property is most often set to be a static command value from one of the existing command libraries, such as <xref:System.Windows.Input.ApplicationCommands> or <xref:System.Windows.Input.NavigationCommands>. For details, see [Commanding Overview](../Topic/Commanding%20Overview.md) or <xref:System.Windows.Input.ICommand>.  
+  
+<a name="xamlAttributeUsage_Command"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object Command="commandName"/>  
+```  
+  
+<a name="xamlValues_Command"></a>   
+## XAML Values  
+ *commandName*  
+ The command to invoke when this button is pressed.  
+  
+<a name="dependencyPropertyInfo_Command"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ButtonBase.CommandProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandParameter">
@@ -177,9 +274,36 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the parameter to pass to the <see cref="P:System.Windows.Controls.Primitives.ButtonBase.Command" /> property.</summary>
+        <value>Parameter to pass to the <see cref="P:System.Windows.Controls.Primitives.ButtonBase.Command" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Most existing commands from the command libraries do not use a command parameter. Of the commands that do use a command parameter, most of these take a parameter with some primitive type value, such as an integer or a string. However, it is possible to create a custom command where that command expects a nonprimitive type as its command parameter. For a custom command case like this, setting <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> in code might require a new or existing object instance. Setting <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> in markup might require property element syntax, where the object element filling the property element syntax is a new element of the type expected by that command. Alternatively, setting in markup might require a reference through a markup extension to an existing object (typically these references are made with [Binding Markup Extension](../Topic/Binding%20Markup%20Extension.md) or [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md)).  
+  
+<a name="xamlAttributeUsage_CommandParameter"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object CommandParameter="commandParameter" />  
+```  
+  
+<a name="xamlValues_CommandParameter"></a>   
+## XAML Values  
+ *commandParameter*  
+ A value of the same type as the particular command specified in the <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> property expects. If you use an existing command library command, see that command library's documentation for [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage information, including which type of <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> the command expects. If you use a custom command, see Remarks.  
+  
+<a name="dependencyPropertyInfo_CommandParameter"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameterProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandParameterProperty">
@@ -195,7 +319,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.ButtonBase.CommandParameter" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,7 +336,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the routed <see cref="P:System.Windows.Controls.Primitives.ButtonBase.Command" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,9 +361,36 @@
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the element on which to raise the specified command.</summary>
+        <value>Element on which to raise a command.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Primitives.ButtonBase.CommandTarget%2A> property cannot be used to define a <xref:System.Windows.UIElement>. The <xref:System.Windows.Controls.Primitives.ButtonBase.CommandTarget%2A> property provides a reference to an element that is already defined somewhere in your application.  
+  
+<a name="xamlAttributeUsage_Target"></a>   
+## XAML Attribute Usage  
+  
+```  
+<ButtonBase CommandTarget="{Binding ElementName= elementName }"/>  
+```  
+  
+<a name="xamlValues_CommandTarget"></a>   
+## XAML Values  
+ *elementName*  
+ The name of <xref:System.Windows.IInputElement> that receives the command.  
+  
+<a name="dependencyPropertyInfo_CommandTarget"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ButtonBase.CommandTargetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandTargetProperty">
@@ -255,7 +406,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.ButtonBase.CommandTarget" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,9 +423,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the <see cref="P:System.Windows.ContentElement.IsEnabled" /> property.</summary>
+        <value>
+          <see langword="true" /> if the control is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you choose to override this implementation, make certain that you call the base method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPressed">
@@ -301,9 +460,34 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Windows.Controls.Primitives.ButtonBase" /> is currently activated.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Primitives.ButtonBase" /> is activated; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is the state of a button that indicates the left mouse button or SPACEBAR is pressed over the button. When <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is `true`, the control captures the mouse.  As a result, the control will raise mouse events such as <xref:System.Windows.UIElement.MouseEnter> and <xref:System.Windows.UIElement.IsMouseDirectlyOverChanged>. Note that using the <xref:System.Windows.Controls.AccessText> or ENTER does not change <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> or capture the mouse, but is does raise the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+  
+ Starting with the .NET Framework version 3.0 Service Pack 1, <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> has a protected setter. To use this functionality, your application should target the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+<a name="dependencyPropertyInfo_IsPressed"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ButtonBase.IsPressedProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ This example shows how to use the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property in a trigger style.  
+  
+ [!code-xml[BtnColor#9](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnColor/CSharp/Pane1.xaml#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPressedProperty">
@@ -319,7 +503,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.ButtonBase.IsPressed" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,9 +523,16 @@
         <Parameter Name="e" Type="System.Windows.Input.AccessKeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data for the <see cref="E:System.Windows.Input.AccessKeyManager.AccessKeyPressed" /> event.</param>
+        <summary>Responds when the <see cref="P:System.Windows.Controls.AccessText.AccessKey" /> for this control is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Input.AccessKeyEventArgs.IsMultiple%2A> is `true`, this method calls the base implementation, which gives this control focus.  Otherwise, this method raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -358,8 +549,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Raises the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> routed event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The control raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnClick" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnClick" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnIsPressedChanged">
@@ -378,8 +579,8 @@
         <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The data for <see cref="T:System.Windows.DependencyPropertyChangedEventArgs" />.</param>
+        <summary>Called when the <see cref="P:System.Windows.Controls.Primitives.ButtonBase.IsPressed" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -399,9 +600,25 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyDown" /> routed event that occurs when the user presses a key while this control has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation marks the <xref:System.Windows.UIElement.KeyDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is not set to <xref:System.Windows.Controls.ClickMode> and one of the following cases are true:  
+  
+-   The user presses the SPACEBAR.  
+  
+-   The user presses ENTER and <xref:System.Windows.Input.KeyboardNavigation.AcceptsReturn%2A> is `true` for this control.  
+  
+ In all other cases, this implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.KeyDown> event data.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you override <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnKeyDown(System.Windows.Input.KeyEventArgs)" />, always call the base implementation in your <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnKeyDown(System.Windows.Input.KeyEventArgs)" /> implementation. Failure to call the base implementation prevents base classes from handling the event with a class handler, which might change the run-time behavior of the final class. You can call the base implementation either before or after your special handling, depending on your requirements.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -420,9 +637,19 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data for the <see cref="E:System.Windows.UIElement.KeyUp" /> event.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.KeyUp" /> routed event that occurs when the user releases a key while this control has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation marks the <xref:System.Windows.UIElement.KeyUp> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when the user releases the SPACEBAR. Otherwise, this implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.KeyUp> event data.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you override <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnKeyUp(System.Windows.Input.KeyEventArgs)" />, always call the base implementation in your <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnKeyUp(System.Windows.Input.KeyEventArgs)" /> implementation. Failure to call the base implementation prevents base classes from handling the event with a class handler, which might change the run-time behavior of the final class. You can call the base implementation either before or after your special handling, depending on your requirements.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnLostKeyboardFocus">
@@ -441,8 +668,8 @@
         <Parameter Name="e" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for the <see cref="E:System.Windows.IInputElement.LostKeyboardFocus" /> event.</param>
+        <summary>Called when an element loses keyboard focus.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,9 +689,19 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data for the <see cref="E:System.Windows.Input.Mouse.LostMouseCapture" /> event.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.LostMouseCapture" /> routed event that occurs when this control is no longer receiving mouse event messages.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation does not change the handled state (the <xref:System.Windows.RoutedEventArgs.Handled%2A> property) of the <xref:System.Windows.UIElement.LostMouseCapture> event data.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you override <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)" />, always call the base implementation in your <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)" /> implementation. Failure to call the base implementation prevents base classes from handling the event with a class handler, which might change the run-time behavior of the final class. You can call the base implementation either before or after your special handling, depending on your requirements.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -483,9 +720,19 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data for the <see cref="E:System.Windows.Input.Mouse.MouseEnter" /> event.</param>
+        <summary>Provides class handling for the <see cref="P:System.Windows.Controls.Primitives.ButtonBase.ClickMode" /> routed event that occurs when the mouse enters this control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is set to <xref:System.Windows.Controls.ClickMode>, this implementation marks the <xref:System.Windows.UIElement.MouseEnter> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` and raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you override <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseEnter(System.Windows.Input.MouseEventArgs)" />, always call the base implementation in your <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseEnter(System.Windows.Input.MouseEventArgs)" /> implementation. Failure to call the base implementation prevents base classes from handling the event with a class handler, which might change the run-time behavior of the final class. You can call the base implementation either before or after your special handling, depending on your requirements.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -504,9 +751,19 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data for the <see cref="E:System.Windows.Input.Mouse.MouseLeave" /> event.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeave" /> routed event that occurs when the mouse leaves an element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation marks the <xref:System.Windows.UIElement.MouseLeave> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is set to <xref:System.Windows.Controls.ClickMode>.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you override <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeave(System.Windows.Input.MouseEventArgs)" />, always call the base implementation in your <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeave(System.Windows.Input.MouseEventArgs)" /> implementation. Failure to call the base implementation prevents base classes from handling the event with a class handler, which might change the run-time behavior of the final class. You can call the base implementation either before or after your special handling, depending on your requirements.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeftButtonDown">
@@ -525,9 +782,21 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> routed event that occurs when the left mouse button is pressed while the mouse pointer is over this control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation marks the <xref:System.Windows.UIElement.MouseLeftButtonDown> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is not set to <xref:System.Windows.Controls.ClickMode>. To respond to the <xref:System.Windows.UIElement.MouseLeftButtonDown> event, attach an event handler to the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonDown> event, or call <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
+  
+ When <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is set to <xref:System.Windows.Controls.ClickMode>, this method raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you override <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />, always call the base implementation in your <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" /> implementation. Failure to call the base implementation prevents base classes from handling the event with a class handler, which might change the run-time behavior of the final class. You can call the base implementation either before or after your special handling, depending on your requirements.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeftButtonUp">
@@ -546,9 +815,21 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeftButtonUp" /> routed event that occurs when the left mouse button is released while the mouse pointer is over this control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation marks the <xref:System.Windows.UIElement.MouseLeftButtonUp> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is not set to <xref:System.Windows.Controls.ClickMode>. To respond to the <xref:System.Windows.UIElement.MouseLeftButtonUp> event, attach an event handler to the <xref:System.Windows.ContentElement.PreviewMouseLeftButtonUp> event, or call <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
+  
+ When <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is set to <xref:System.Windows.Controls.ClickMode> is <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is `true`, this method raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you override <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" />, always call the base implementation in your <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" /> implementation. Failure to call the base implementation prevents base classes from handling the event with a class handler, which might change the run-time behavior of the final class. You can call the base implementation either before or after your special handling, depending on your requirements.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -567,9 +848,19 @@
         <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseMove" /> routed event that occurs when the mouse pointer moves while over this element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation marks the <xref:System.Windows.UIElement.MouseMove> event as handled by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the event data to `true` when <xref:System.Windows.Controls.Primitives.ButtonBase.ClickMode%2A> is not set to <xref:System.Windows.Controls.ClickMode> and <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is `true`. To respond to the <xref:System.Windows.UIElement.MouseMove> event, attach an event handler to the <xref:System.Windows.ContentElement.PreviewMouseMove> event, or call <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you override <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseMove(System.Windows.Input.MouseEventArgs)" />, always call the base implementation in your <see cref="M:System.Windows.Controls.Primitives.ButtonBase.OnMouseMove(System.Windows.Input.MouseEventArgs)" /> implementation. Failure to call the base implementation prevents base classes from handling the event with a class handler, which might change the run-time behavior of the final class. You can call the base implementation either before or after your special handling, depending on your requirements.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnRenderSizeChanged">
@@ -588,9 +879,16 @@
         <Parameter Name="sizeInfo" Type="System.Windows.SizeChangedInfo" />
       </Parameters>
       <Docs>
-        <param name="sizeInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sizeInfo">Specifies the size changes.</param>
+        <summary>Called when the rendered size of a control changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Overrides the <xref:System.Windows.Controls.Primitives.ButtonBase.OnRenderSizeChanged%2A> method of the <xref:System.Windows.UIElement>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

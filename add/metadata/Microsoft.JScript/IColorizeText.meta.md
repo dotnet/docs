@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.IColorizeText
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IColorizeText.GetStateForText(System.String,Microsoft.JScript.SourceState)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IColorizeText.Colorize(System.String,Microsoft.JScript.SourceState)
-internalonly: False
+ms.author: "mikejo"
 ---

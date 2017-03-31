@@ -1,19 +1,34 @@
 ---
 uid: System.Data.ProviderIncompatibleException
-internalonly: False
----
-
----
-uid: System.Data.ProviderIncompatibleException.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Data.ProviderIncompatibleException.#ctor(System.String,System.Exception)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.ProviderIncompatibleException.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.ProviderIncompatibleException.#ctor(System.String)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.ProviderIncompatibleException.#ctor(System.String,System.Exception)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.ProviderIncompatibleException.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A standard endpoint that is pre-configured for discovery operations over a UDP multicast binding. This endpoint inherits from <see cref="T:System.ServiceModel.Discovery.DiscoveryEndpoint" /> and similarly has a fixed contract and supports two WS-Discovery protocol versions. In addition, it has a fixed UDP binding and a default address as specified in the WS-Discovery specifications (WS-Discovery April 2005 or WS-Discovery V1.1).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.UdpDiscoveryEndpoint" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +43,16 @@
         <Parameter Name="discoveryVersion" Type="System.ServiceModel.Discovery.DiscoveryVersion" />
       </Parameters>
       <Docs>
-        <param name="discoveryVersion">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="discoveryVersion">The <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> to use.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.UdpDiscoveryEndpoint" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two versions of the WS-Discovery protocol are currently supported: WS-Discovery April 2005 and WS-Discovery V1.1, which correspond to the <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005%2A> and <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11%2A> enumeration values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -61,8 +68,8 @@
         <Parameter Name="multicastAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="multicastAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="multicastAddress">The multicast address.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.UdpDiscoveryEndpoint" /> class with the specified multicast address.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +86,8 @@
         <Parameter Name="multicastAddress" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="multicastAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="multicastAddress">The multicast address.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.UdpDiscoveryEndpoint" /> class with the specified multicast address.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,10 +105,17 @@
         <Parameter Name="multicastAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="discoveryVersion">To be added.</param>
-        <param name="multicastAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="discoveryVersion">The <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> to use.</param>
+        <param name="multicastAddress">The multicast address for the UDP discovery endpoint.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.UdpDiscoveryEndpoint" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> and multicast address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two versions of the WS-Discovery protocol are currently supported: WS-Discovery April 2005 and WS-Discovery V1.1, which correspond to the <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005%2A> and <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11%2A> enumeration values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -118,10 +132,17 @@
         <Parameter Name="multicastAddress" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="discoveryVersion">To be added.</param>
-        <param name="multicastAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="discoveryVersion">The <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> to use.</param>
+        <param name="multicastAddress">A <see cref="T:System.Uri" /> with the multicast address.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.UdpDiscoveryEndpoint" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> and multicast address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two versions of the WS-Discovery protocol are currently supported: WS-Discovery April 2005 and WS-Discovery V1.1, which correspond to the <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005%2A> and <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11%2A> enumeration values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultIPv4MulticastAddress">
@@ -137,7 +158,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default UDP multicast address for IPv4.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,7 +175,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default UDP multicast address for IPv6.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,9 +192,16 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the multicast address.</summary>
+        <value>A <see cref="T:System.Uri" /> instance that contains the multicast address.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint.DefaultIPv4MulticastAddress>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransportSettings">
@@ -194,9 +222,16 @@
         <ReturnType>System.ServiceModel.Discovery.UdpTransportSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.UdpTransportSettings" /> instance associated with the <see cref="T:System.ServiceModel.Discovery.UdpDiscoveryEndpoint" />.</summary>
+        <value>The UDP transport settings for the endpoint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Discovery.UdpTransportSettings> to change UDP transport settings for the UDP endpoint.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

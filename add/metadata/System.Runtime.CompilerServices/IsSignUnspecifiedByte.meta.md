@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.CompilerServices.IsSignUnspecifiedByte
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

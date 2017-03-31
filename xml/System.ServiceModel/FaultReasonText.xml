@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the text of the reason of a SOAP fault.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.FaultReasonText> class to specify the text of the SOAP fault reason.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,8 +37,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text that is the SOAP fault reason.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultReasonText" /> class that uses the specified fault text.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +57,9 @@
         <Parameter Name="cultureInfo" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="cultureInfo">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text that is the reason of the SOAP fault.</param>
+        <param name="cultureInfo">The <see cref="T:System.Globalization.CultureInfo" /> describing the language of the description.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultReasonText" /> class that uses the specified SOAP fault text and the specified <see cref="T:System.Globalization.CultureInfo" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +78,9 @@
         <Parameter Name="xmlLang" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="xmlLang">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text of the fault reason.</param>
+        <param name="xmlLang">The language of the fault.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultReasonText" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,9 +101,10 @@
         <Parameter Name="cultureInfo" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="cultureInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cultureInfo">The <see cref="T:System.Globalization.CultureInfo" /> object to compare with the language of the description.</param>
+        <summary>Returns a value that indicates whether the language of the description matches provided <see cref="T:System.Globalization.CultureInfo" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Globalization.CultureInfo" /> matches; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,8 +122,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the text of the SOAP fault reason.</summary>
+        <value>The text of the SOAP fault reason.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +141,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the language of the SOAP fault reason.</summary>
+        <value>The language of the SOAP fault reason.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

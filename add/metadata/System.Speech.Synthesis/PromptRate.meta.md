@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Synthesis.PromptRate
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

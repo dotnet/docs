@@ -24,8 +24,49 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies trace data options to be written to the trace output.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by trace listeners to determine which options, or elements, should be included in the trace output. Trace listeners store the trace options in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.  
+  
+ The following example shows the use of the `traceOutputOptions` attribute to specify the trace output options for a <xref:System.Diagnostics.ConsoleTraceListener> that is enabled using a configuration file.  
+  
+```  
+<configuration>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="4">  
+      <listeners>  
+        <add name="consoleListener"  
+          type="System.Diagnostics.ConsoleTraceListener"   
+          traceOutputOptions="ProcessId, DateTime" />  
+      </listeners>  
+    </trace>  
+  </system.diagnostics>  
+</configuration>  
+```  
+  
+ For details about adding trace listeners to the application configuration file, see [\&lt;listeners\&gt;](../Topic/%3Clisteners%3E%20Element%20for%20%3Ctrace%3E.md).  
+  
+ The <xref:System.Diagnostics.TraceOptions> enumeration is not used by the following classes and methods:  
+  
+-   The <xref:System.Diagnostics.EventLogTraceListener> class, because it can cause a large volume of data to be written to the log.  
+  
+-   The `Write` and `WriteLine` methods of the <xref:System.Diagnostics.ConsoleTraceListener>, <xref:System.Diagnostics.DefaultTraceListener>, and <xref:System.Diagnostics.TextWriterTraceListener> classes.  
+  
+-   The <xref:System.Diagnostics.TraceListener.Write%2A> and <xref:System.Diagnostics.TraceListener.WriteLine%2A> methods of the <xref:System.Diagnostics.TraceListener> class when they are not overridden in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Diagnostics.TraceOptions> enumeration to programmatically set the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for a console trace listener. The console trace listener is one of the listeners enumerated in the <xref:System.Diagnostics.TraceSource.Listeners%2A> property of a trace source. This code example is part of a larger example provided for the <xref:System.Diagnostics.TraceSource> class.  
+  
+ [!code-csharp[System.Diagnostics.TraceSource2#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.TraceSource2/CS/program.cs#16)]
+ [!code-vb[System.Diagnostics.TraceSource2#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.TraceSource2/VB/program.vb#16)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Callstack">
@@ -46,7 +87,7 @@
         <ReturnType>System.Diagnostics.TraceOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Write the call stack, which is represented by the return value of the <see cref="P:System.Environment.StackTrace" /> property.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -71,7 +112,7 @@
         <ReturnType>System.Diagnostics.TraceOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Write the date and time.</summary>
       </Docs>
     </Member>
     <Member MemberName="LogicalOperationStack">
@@ -92,7 +133,7 @@
         <ReturnType>System.Diagnostics.TraceOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Write the logical operation stack, which is represented by the return value of the <see cref="P:System.Diagnostics.CorrelationManager.LogicalOperationStack" /> property.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -117,7 +158,7 @@
         <ReturnType>System.Diagnostics.TraceOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not write any elements.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProcessId">
@@ -142,7 +183,7 @@
         <ReturnType>System.Diagnostics.TraceOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Write the process identity, which is represented by the return value of the <see cref="P:System.Diagnostics.Process.Id" /> property.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThreadId">
@@ -167,7 +208,7 @@
         <ReturnType>System.Diagnostics.TraceOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Write the thread identity, which is represented by the return value of the <see cref="P:System.Threading.Thread.ManagedThreadId" /> property for the current thread.</summary>
       </Docs>
     </Member>
     <Member MemberName="Timestamp">
@@ -192,7 +233,7 @@
         <ReturnType>System.Diagnostics.TraceOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Write the timestamp, which is represented by the return value of the <see cref="M:System.Diagnostics.Stopwatch.GetTimestamp" /> method.</summary>
       </Docs>
     </Member>
   </Members>

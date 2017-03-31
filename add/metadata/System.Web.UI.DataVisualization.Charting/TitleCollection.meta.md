@@ -1,9 +1,15 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.TitleCollection
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TitleCollection.Add(System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.TitleCollection.Add
 ---

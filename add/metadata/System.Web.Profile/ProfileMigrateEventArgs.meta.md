@@ -1,19 +1,24 @@
 ---
 uid: System.Web.Profile.ProfileMigrateEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileMigrateEventArgs.Context
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileMigrateEventArgs.AnonymousID
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.ProfileMigrateEventArgs.#ctor(System.Web.HttpContext,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

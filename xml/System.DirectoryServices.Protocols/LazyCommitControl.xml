@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.LazyCommitControl" /> class instructs the server to return the results of a DS modification command, such as add, delete, or replace, after it has been completed in memory, but before it has been committed to disk.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LazyCommitControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.LazyCommitControl" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

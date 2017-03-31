@@ -1,49 +1,59 @@
 ---
 uid: Microsoft.JScript.VsaItems
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.VsaItems.Item(System.String)
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.VsaItems.Remove
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.VsaItems.GetEnumerator
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.VsaItems.#ctor(Microsoft.JScript.Vsa.VsaEngine)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.VsaItems.Close
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.VsaItems.Remove(System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.VsaItems.CreateItem(System.String,Microsoft.JScript.Vsa.JSVsaItemType,Microsoft.JScript.Vsa.JSVsaItemFlag)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.VsaItems.Item(System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.VsaItems.Remove(System.String)
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.VsaItems.Item
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.VsaItems.Count
-internalonly: False
+ms.author: "mikejo"
 ---

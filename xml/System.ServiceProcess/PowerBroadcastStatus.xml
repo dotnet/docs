@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the system's power status.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceProcess.PowerBroadcastStatus> is used by the <xref:System.ServiceProcess.ServiceBase> class to indicate a change in the system's power status. You can design your application to react to any power status change.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BatteryLow">
@@ -27,7 +34,7 @@
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Battery power is low.</summary>
       </Docs>
     </Member>
     <Member MemberName="OemEvent">
@@ -43,7 +50,7 @@
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An Advanced Power Management (APM) BIOS signaled an APM OEM event.</summary>
       </Docs>
     </Member>
     <Member MemberName="PowerStatusChange">
@@ -59,7 +66,7 @@
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A change in the power status of the computer is detected, such as a switch from battery power to A/C. The system also broadcasts this event when remaining battery power slips below the threshold specified by the user or if the battery power changes by a specified percentage.</summary>
       </Docs>
     </Member>
     <Member MemberName="QuerySuspend">
@@ -75,7 +82,7 @@
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The system has requested permission to suspend the computer. An application that grants permission should carry out preparations for the suspension before returning.</summary>
       </Docs>
     </Member>
     <Member MemberName="QuerySuspendFailed">
@@ -91,7 +98,7 @@
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The system was denied permission to suspend the computer. This status is broadcast if any application or driver denied a previous <see langword="QuerySuspend" /> status.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResumeAutomatic">
@@ -107,7 +114,17 @@
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The computer has woken up automatically to handle an event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  If the system detects any user activity after broadcasting `ResumeAutomatic`, it will broadcast a `ResumeSuspend` event to let applications know they can resume full interaction with the user.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResumeCritical">
@@ -123,7 +140,17 @@
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The system has resumed operation after a critical suspension caused by a failing battery.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Because a critical suspension occurs without prior notification, resources and data previously available may not be present when the application receives this event. The application should attempt to restore its state to the best of its ability.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResumeSuspend">
@@ -139,7 +166,7 @@
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The system has resumed operation after being suspended.</summary>
       </Docs>
     </Member>
     <Member MemberName="Suspend">
@@ -155,7 +182,7 @@
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The computer is about to enter a suspended state. This event is typically broadcast when all applications and installable drivers have returned <see langword="true" /> to a previous <see langword="QuerySuspend" /> state.</summary>
       </Docs>
     </Member>
   </Members>

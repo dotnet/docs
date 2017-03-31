@@ -1,1 +1,0 @@
-      Color c =  (Color)(TypeDescriptor::GetConverter( Color::typeid )->ConvertFromString( "Red" ));

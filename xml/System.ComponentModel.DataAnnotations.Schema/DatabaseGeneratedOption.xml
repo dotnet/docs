@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the pattern used to generate values for a property in the database.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The database generates a value when a row is inserted or updated.</summary>
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -58,7 +58,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The database generates a value when a row is inserted.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -79,7 +79,7 @@
         <ReturnType>System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The database does not generate values.</summary>
       </Docs>
     </Member>
   </Members>

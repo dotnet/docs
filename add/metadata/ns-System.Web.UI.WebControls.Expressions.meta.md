@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.WebControls.Expressions
-internalonly: False
+ms.author: "rachelap"
+manager: "wpickett"
 ---

@@ -1,24 +1,29 @@
 ---
 uid: System.Configuration.NameValueSectionHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.NameValueSectionHandler.KeyAttributeName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.NameValueSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.NameValueSectionHandler.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.NameValueSectionHandler.ValueAttributeName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

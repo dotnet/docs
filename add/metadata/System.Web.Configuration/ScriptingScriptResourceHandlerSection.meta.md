@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Configuration.ScriptingScriptResourceHandlerSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCompression
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCaching
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingScriptResourceHandlerSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

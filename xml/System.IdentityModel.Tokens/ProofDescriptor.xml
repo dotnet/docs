@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The base class for the <see cref="T:System.IdentityModel.Tokens.SymmetricProofDescriptor" /> and <see cref="T:System.IdentityModel.Tokens.AsymmetricProofDescriptor" /> classes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called from constructors in derived classes to initialize the <see cref="T:System.IdentityModel.Tokens.ProofDescriptor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="response">The RSTR object to be modified by this proof descriptor.</param>
+        <summary>Sets the appropriate properties inside the RSTR according to the properties of the current proof descriptor instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +64,16 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When implemented in a derived class, gets the key identifier that can be used inside issued tokens to define the key.</summary>
+        <value>The key identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The key can be either symmetric or asymmetric. If the key is symmetric, the identifier is usually the binary secret or encrypted key. If the key is asymmetric, the identifier is usually the key identifier from the `<wst:UseKey>` element inside of a `wst:RequestSecurityToken` message (RST); the public key.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

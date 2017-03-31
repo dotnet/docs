@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implements the basic functionality required by expressions that accept a single expression argument.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is a helper base class on which many of the subsequent classes are built.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Argument">
@@ -28,9 +35,18 @@
         <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the argument.</summary>
+        <value>The <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the argument.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived expression types might perform stricter type checks when the <xref:System.Data.Common.CommandTrees.DbUnaryExpression.Argument%2A> property is set. For example, <xref:System.Data.Common.CommandTrees.DbDistinctExpression> requires that its argument expression has a collection result type. Typically, derived expression types will not allow <xref:System.Data.Common.CommandTrees.DbUnaryExpression.Argument%2A> to be set to an expression with a result type that is not equal or promotable to the result type of the current value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The expression is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The expression is not associated with the command tree of a <see cref="T:System.Data.Common.CommandTrees.DbUnaryExpression" />, or its result type is not equal or promotable to the required type for the argument.</exception>
       </Docs>
     </Member>
   </Members>

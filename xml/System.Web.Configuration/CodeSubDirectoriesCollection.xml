@@ -16,8 +16,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Web.Configuration.CodeSubDirectory" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.CodeSubDirectoriesCollection> defines an ordered collection of subdirectories containing files compiled at run time. You can have any number of subdirectories. This collection refers to the `codeSubDirectories` element of the `compilation` section of the configuration file. The collection will only provide the items defined in the root Web.config or higher. This collection is a construct that allows easy access to the compilation information it contains.  
+  
+   
+  
+## Examples  
+ The following configuration-file example defines an ordered collection of assembly subdirectories. This example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.CodeSubDirectoriesCollection> class. The subdirectories are listed in the order in which the code must be compiled to meet its dependencies.  
+  
+```  
+<system.web>  
+  <compilation>   
+    <codeSubDirectories>  
+      <add directoryName="mySubDir1"/>  
+      <add directoryName="mySubDir2"/>  
+      <add codeSubDirectory directoryName="mySubDir3"/>  
+    </codeSubDirectories>  
+  </compilation>  
+</system.web>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +55,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.CodeSubDirectoriesCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +75,16 @@
         <Parameter Name="codeSubDirectory" Type="System.Web.Configuration.CodeSubDirectory" />
       </Parameters>
       <Docs>
-        <param name="codeSubDirectory">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="codeSubDirectory">A string value specifying the <see cref="T:System.Web.Configuration.CodeSubDirectory" /> reference.</param>
+        <summary>Adds a <see cref="T:System.Web.Configuration.CodeSubDirectory" /> object to the <see cref="T:System.Web.Configuration.CodeSubDirectoriesCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adds a <xref:System.Web.Configuration.CodeSubDirectory> object to the collection. If the assembly object is not initialized with assembly information, an exception is thrown. If the assembly object already exists in the collection, the statement is ignored.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -70,7 +101,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all items from the collection</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +118,8 @@
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the configuration collection.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> object of the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,9 +198,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">An integer value specifying a specific <see cref="T:System.Web.Configuration.CodeSubDirectory" /> object within the <see cref="T:System.Web.Configuration.CodeSubDirectoriesCollection" /> collection.</param>
+        <summary>Gets or sets the <see cref="T:System.Web.Configuration.CodeSubDirectory" /> at the specified index in the <see cref="T:System.Web.Configuration.CodeSubDirectoriesCollection" /> collection.</summary>
+        <value>A <see cref="T:System.Web.Configuration.CodeSubDirectory" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,8 +238,8 @@
         <Parameter Name="directoryName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="directoryName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="directoryName">The name of the directory to remove.</param>
+        <summary>Removes the specified item from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +259,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index position of the item to be removed.</param>
+        <summary>Removes the item at the specified index in the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

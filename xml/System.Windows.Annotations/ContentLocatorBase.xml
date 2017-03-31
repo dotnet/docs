@@ -15,8 +15,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an object that identifies an item of content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived from <xref:System.Windows.Annotations.ContentLocatorBase>, a <xref:System.Windows.Annotations.ContentLocator> identifies a data item through an ordered list of <xref:System.Windows.Annotations.ContentLocatorPart> elements.  
+  
+ Derived from <xref:System.Windows.Annotations.ContentLocatorBase>, a <xref:System.Windows.Annotations.ContentLocatorGroup> identifies a data item through a set of <xref:System.Windows.Annotations.ContentLocator> elements.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -33,9 +42,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable deep copy clone of this <see cref="T:System.Windows.Annotations.ContentLocatorBase" />.</summary>
+        <returns>A modifiable deep copy clone of this <see cref="T:System.Windows.Annotations.ContentLocatorBase" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Windows.Annotations.ContentLocatorBase.Clone%2A> method creates modifiable copies of frozen <xref:System.Windows.Freezable> objects.  For convenience, <xref:System.Windows.Annotations.ContentLocatorBase.Clone%2A> shadows the inherited version with a strongly typed implementation.  For more details, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ The cloned <xref:System.Windows.Annotations.ContentLocatorBase>'s <xref:System.Windows.Freezable.IsFrozen%2A> property will be `false` even if this source <xref:System.Windows.Annotations.ContentLocatorBase>'s <xref:System.Windows.Freezable.IsFrozen%2A> property is `true.`  
+  
+ When copying dependency properties, <xref:System.Windows.Annotations.ContentLocatorBase.Clone%2A> copies resource references and data bindings (although they might no longer resolve) but does not copy not animations or current animation values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

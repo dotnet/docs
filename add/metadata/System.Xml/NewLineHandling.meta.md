@@ -1,4 +1,6 @@
 ---
 uid: System.Xml.NewLineHandling
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

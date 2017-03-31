@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Synthesis.SynthesizerState
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Encapsulates all of the information that is external to the model binding system that the model binding system needs.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,10 +29,11 @@
         <Parameter Name="modelState" Type="System.Web.ModelBinding.ModelStateDictionary" />
       </Parameters>
       <Docs>
-        <param name="httpContext">To be added.</param>
-        <param name="modelState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="httpContext">The HTTP context.</param>
+        <param name="modelState">The model state.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelBindingExecutionContext" /> class, using the HTTP context and the model state.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="httpContext" /> or <paramref name="modelState" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetService&lt;TService&gt;">
@@ -52,9 +53,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TService">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TService">The type of the object that contains values that are used for model binding.</typeparam>
+        <summary>Gets an object that contains values that are used for model binding and that have been stored by using the <see cref="M:System.Web.ModelBinding.ModelBindingExecutionContext.PublishService``1(``0)" /> method.</summary>
+        <returns>The object that contains values that are used for model binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +72,8 @@
         <ReturnType>System.Web.HttpContextBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the HTTP context.</summary>
+        <value>The HTTP context.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +90,8 @@
         <ReturnType>System.Web.ModelBinding.ModelStateDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the model state.</summary>
+        <value>The model state.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,9 +114,9 @@
         <Parameter Name="service" Type="TService" />
       </Parameters>
       <Docs>
-        <typeparam name="TService">To be added.</typeparam>
-        <param name="service">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TService">The type of the object that contains values to store.</typeparam>
+        <param name="service">The object that contains values to store.</param>
+        <summary>Stores an object that contains values that are used for model binding and that will be accessed by using the <see cref="M:System.Web.ModelBinding.ModelBindingExecutionContext.GetService``1" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,9 +137,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TService">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TService">The type of the object that contains values that are used for model binding.</typeparam>
+        <summary>Gets an object that contains values that are used for model binding and that have been stored by using the <see cref="M:System.Web.ModelBinding.ModelBindingExecutionContext.PublishService``1(``0)" /> method.</summary>
+        <returns>The object that contains values that are used for model binding, or the default value of <paramref name="TService" /> if the requested object is not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

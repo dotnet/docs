@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.Activities.ExternalDataExchangeAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.ExternalDataExchangeAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

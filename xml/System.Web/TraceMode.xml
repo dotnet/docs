@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies in what order trace messages are emitted into the HTML output of a page.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.TraceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the default value of the <see cref="P:System.Web.TraceContext.TraceMode" /> enumeration, which is <see cref="F:System.Web.TraceMode.SortByTime" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="SortByCategory">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.TraceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Emit trace messages alphabetically by category.</summary>
       </Docs>
     </Member>
     <Member MemberName="SortByTime">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.TraceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Emit trace messages in the order they were processed.</summary>
       </Docs>
     </Member>
   </Members>

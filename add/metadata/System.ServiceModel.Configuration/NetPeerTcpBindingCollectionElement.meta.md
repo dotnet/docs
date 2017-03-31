@@ -1,9 +1,9 @@
 ---
 uid: System.ServiceModel.Configuration.NetPeerTcpBindingCollectionElement
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetPeerTcpBindingCollectionElement.#ctor
-internalonly: False
+manager: "ghogen"
 ---

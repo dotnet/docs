@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.CSharp.Activities
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

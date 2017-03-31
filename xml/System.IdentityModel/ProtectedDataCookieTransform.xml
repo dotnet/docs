@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides cookie integrity and confidentiality by using the <see cref="T:System.Security.Cryptography.ProtectedData" /> class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Due to the nature of the <xref:System.Security.Cryptography.ProtectedData> class, cookies which use this transform can only be read by the same computer that wrote them. As such, this transform is not appropriate for use in applications that run on a web server farm.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.IdentityModel.ProtectedDataCookieTransform" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,10 +53,14 @@
         <Parameter Name="encoded" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="encoded">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="encoded">Data previously returned from the <see cref="M:System.IdentityModel.ProtectedDataCookieTransform.Encode(System.Byte[])" /> method.</param>
+        <summary>Verifies data protection and returns the decrypted data.</summary>
+        <returns>The decrypted data that was originally protected.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="encoded" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="encoded" /> contains zero bytes.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encode">
@@ -68,10 +79,14 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The data to be protected (encrypted).</param>
+        <summary>Protects (encrypts) the specified data.</summary>
+        <returns>The protected (encrypted) data.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> contains zero bytes.</exception>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,6 @@
 ---
 uid: System.Base64FormattingOptions
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

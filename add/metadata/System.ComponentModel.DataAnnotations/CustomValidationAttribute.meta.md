@@ -1,29 +1,35 @@
 ---
 uid: System.ComponentModel.DataAnnotations.CustomValidationAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.CustomValidationAttribute.ValidatorType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.CustomValidationAttribute.FormatErrorMessage(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.CustomValidationAttribute.#ctor(System.Type,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.CustomValidationAttribute.TypeId
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.CustomValidationAttribute.Method
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

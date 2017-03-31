@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an enumeration that specifies three options indicating whether the column in the  store schema definition language (SSDL) (.ssdl) needs a value during insert and update operations. [!INCLUDE[vstecado](~/includes/vstecado-md.md)] reads the value of the column and then stores it in-memory cache.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Data.Metadata.Edm.StoreGeneratedPattern</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value is generated on both insert and update.</summary>
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -43,7 +43,7 @@
         <ReturnType>System.Data.Metadata.Edm.StoreGeneratedPattern</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value is generated on insert and remains unchanged on update.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +59,7 @@
         <ReturnType>System.Data.Metadata.Edm.StoreGeneratedPattern</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value indicating that it is not a server generated property. This is the default value.</summary>
       </Docs>
     </Member>
   </Members>

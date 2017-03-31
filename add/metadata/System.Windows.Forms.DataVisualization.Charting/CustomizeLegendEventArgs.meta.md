@@ -1,24 +1,35 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.#ctor
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendItems
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendName
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection,System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

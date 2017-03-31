@@ -11,8 +11,20 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides access to add attributes for one specific type to one specific <see cref="T:System.Activities.Presentation.Metadata.AttributeTable" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The first time an <xref:System.Activities.Presentation.Metadata.AttributeTable> is queried for attributes for a type, if the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> was populated using <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> for that type, the delegate is passed a <xref:System.Activities.Presentation.Metadata.AttributeCallbackBuilder>. The <xref:System.Activities.Presentation.Metadata.AttributeTable> removes the callback reference and adds any attribute information provided by calls to <xref:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes%2A>.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_AttributeCallbackBuilder#0](WFD_AttributeCallbackBuilder#0)]  -->  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddCustomAttributes">
@@ -37,9 +49,20 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attributes">The attributes that are added to the table.</param>
+        <summary>Adds the contents of the provided attributes to the attribute table that created this builder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an attribute conflicts with another attribute already included in the table, the last attribute added replaces previous attributes.  
+  
+ Attributes can be added only to the type specified by <xref:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.CallbackType%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attributes" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddCustomAttributes">
@@ -65,10 +88,21 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="descriptor">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="descriptor">The member to which the attributes are added.</param>
+        <param name="attributes">The attributes that are added to the table.</param>
+        <summary>Adds the contents of the provided attributes to the attribute table that created this builder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an attribute conflicts with another attribute already included in the table, the last attribute added replaces previous attributes.  
+  
+ Attributes can be added only to the type specified by <xref:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.CallbackType%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="descriptor" /> or <paramref name="attributes" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddCustomAttributes">
@@ -94,10 +128,21 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="member">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="member">The member to which the attributes are added.</param>
+        <param name="attributes">The attributes that are added to the table.</param>
+        <summary>Adds the contents of the provided attributes to the attribute table that created this builder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an attribute conflicts with another attribute already included in the table, the last attribute added replaces previous attributes.  
+  
+ Attributes can be added only to the type specified by <xref:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.CallbackType%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="member" /> or <paramref name="attributes" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddCustomAttributes">
@@ -123,10 +168,21 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="memberName">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="memberName">The name of the member to which the attributes are added.</param>
+        <param name="attributes">The attributes that are added to the table.</param>
+        <summary>Adds the contents of the provided attributes to the attribute table that created this builder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an attribute conflicts with another attribute already included in the table, the last attribute added replaces previous attributes.  
+  
+ Attributes can be added only to the type specified by <xref:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.CallbackType%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="memberName" /> or <paramref name="attributes" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddCustomAttributes">
@@ -152,10 +208,21 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="dp">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dp">The dependency to which the attributes are added.</param>
+        <param name="attributes">The attributes that are added to the table.</param>
+        <summary>Adds the contents of the provided attributes to the attribute table that created this builder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an attribute conflicts with another attribute already included in the table, the last attribute added replaces previous attributes.  
+  
+ Attributes can be added only to the type specified by <xref:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.CallbackType%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dp" /> or <paramref name="attributes" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CallbackType">
@@ -171,10 +238,36 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The type to which attributes will be added.</summary>
+        <value>The type to which attributes will be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type is set in the constructor and cannot be changed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the contents of the provided attributes to the attribute table that created this builder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an attribute conflicts with another attribute already included in the table, the last attribute added replaces previous attributes.  
+  
+ Attributes can be added only to the type specified by <xref:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.CallbackType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

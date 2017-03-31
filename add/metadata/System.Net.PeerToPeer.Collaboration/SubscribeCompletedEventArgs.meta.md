@@ -1,14 +1,17 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs.PeerNearMe
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs.PeerContact
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

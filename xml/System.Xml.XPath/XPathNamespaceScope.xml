@@ -19,8 +19,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the namespace scope.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XPath.XPathNamespaceScope> enumeration can be passed to the <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToNextNamespace%2A> methods of the <xref:System.Xml.XPath.XPathNavigator> class to specify the type of namespace node to move to.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -45,7 +52,7 @@
         <ReturnType>System.Xml.XPath.XPathNamespaceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns all namespaces defined in the scope of the current node. This includes the <c>xmlns:xml</c> namespace which is always declared implicitly. The order of the namespaces returned is not defined.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExcludeXml">
@@ -70,7 +77,7 @@
         <ReturnType>System.Xml.XPath.XPathNamespaceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns all namespaces defined in the scope of the current node, excluding the <c>xmlns:xml</c> namespace. The <c>xmlns:xml</c> namespace is always declared implicitly. The order of the namespaces returned is not defined.</summary>
       </Docs>
     </Member>
     <Member MemberName="Local">
@@ -95,7 +102,7 @@
         <ReturnType>System.Xml.XPath.XPathNamespaceScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns all namespaces that are defined locally at the current node.</summary>
       </Docs>
     </Member>
   </Members>

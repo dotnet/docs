@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.WebControls.GridViewSortEventHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

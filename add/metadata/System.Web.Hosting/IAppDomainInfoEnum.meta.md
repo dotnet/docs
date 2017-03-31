@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Hosting.IAppDomainInfoEnum
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAppDomainInfoEnum.GetData
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAppDomainInfoEnum.MoveNext
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAppDomainInfoEnum.Reset
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAppDomainInfoEnum.Count
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.IResourceUrlGenerator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IResourceUrlGenerator.GetResourceUrl(System.Type,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,9 +1,9 @@
 ---
 uid: System.Windows.Markup.AmbientAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.AmbientAttribute.#ctor
-internalonly: False
+manager: "martinek"
 ---

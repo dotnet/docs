@@ -1,4 +1,5 @@
 ---
 uid: System.Web.DynamicData.ModelProviders
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

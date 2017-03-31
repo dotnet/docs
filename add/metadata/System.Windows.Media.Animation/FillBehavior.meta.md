@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Media.Animation.FillBehavior
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

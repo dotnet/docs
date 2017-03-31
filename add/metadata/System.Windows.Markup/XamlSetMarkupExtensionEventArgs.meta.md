@@ -1,24 +1,24 @@
 ---
 uid: System.Windows.Markup.XamlSetMarkupExtensionEventArgs
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetMarkupExtensionEventArgs.#ctor(System.Xaml.XamlMember,System.Windows.Markup.MarkupExtension,System.IServiceProvider)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetMarkupExtensionEventArgs.CallBase
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetMarkupExtensionEventArgs.MarkupExtension
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetMarkupExtensionEventArgs.ServiceProvider
-internalonly: False
+manager: "martinek"
 ---

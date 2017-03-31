@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Identifies the type of code item as Class, Module, or None.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used when the code item is generic or when the item type does not accept flags. In such cases, no special flags are required to create the item.</summary>
       </Docs>
     </Member>
     <Member MemberName="Module">
@@ -54,7 +54,7 @@
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used when the code item is a module.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -70,7 +70,7 @@
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used when the code item is a class.</summary>
       </Docs>
     </Member>
   </Members>

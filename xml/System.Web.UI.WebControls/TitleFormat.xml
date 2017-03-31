@@ -10,8 +10,26 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the title format for the displayed month in the <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TitleFormat> enumeration represents the different title formats for the <xref:System.Web.UI.WebControls.Calendar> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to change the calendar title from the default format (`MonthYear`) to the `Month` format. To run the example, create a Web Forms page named `WebForm1`, and replace the `Page_load` method with the example code.  
+  
+ [!code-csharp[TitleFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TitleFormat/CS/titleformat.cs#1)]
+ [!code-vb[TitleFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TitleFormat/VB/titleformat.vb#1)]  
+  
+ [!code-csharp[CalendarTitleFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarTitleFormat/CS/calendartitleformatcs.aspx#1)]
+ [!code-vb[CalendarTitleFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarTitleFormat/VB/calendartitleformatvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Month">
@@ -27,7 +45,7 @@
         <ReturnType>System.Web.UI.WebControls.TitleFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the title with the month but not the year (for example, "January").</summary>
       </Docs>
     </Member>
     <Member MemberName="MonthYear">
@@ -43,7 +61,7 @@
         <ReturnType>System.Web.UI.WebControls.TitleFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the title with both the month and the year (for example, "January 2000").</summary>
       </Docs>
     </Member>
   </Members>

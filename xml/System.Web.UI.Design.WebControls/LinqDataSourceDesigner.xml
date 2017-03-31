@@ -11,8 +11,22 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a visual designer, when you switch to a designer view (such as **Design** view in [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)]), the <xref:System.Web.UI.WebControls.LinqDataSource> control markup is parsed. A design-time version of the control is then created on the design surface. When you switch to source view, the design-time control is persisted as the markup for the Web page.  
+  
+ The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner> class provides design-time support for the <xref:System.Web.UI.WebControls.LinqDataSource> control in a visual designer.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>To provide commands in a derived class for the action list menu at design time, you must override the <see cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" /> property. For this property, return a custom <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object that contains items that derive from the <see cref="T:System.ComponentModel.Design.DesignerActionList" /> object.  
+  
+ For more information, see the <see cref="T:System.Web.UI.Design.DataSourceDesigner" /> class.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.LinqDataSourceDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +57,8 @@
         <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list of items that are used to create an action list menu at design time.</summary>
+        <value>A collection that contains the action list items.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +75,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure" /> method can be called by the design host.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure" /> method can be called; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure%2A> method can be called if the <xref:System.Web.UI.Control.Site%2A?displayProperty=fullName> property of the associated <xref:System.Web.UI.WebControls.LinqDataSource> control implements the <xref:System.ComponentModel.Design.ITypeDiscoveryService?displayProperty=fullName> interface. In that case, the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure%2A> property value is `true`.  
+  
+ If the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure%2A> property is `true`, the **Configure Data Source** menu item is displayed in the **LinqDataSource Tasks** menu of the associated control on the visual designer surface. When this item is selected, the **Configure Data Source** wizard is started.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanRefreshSchema">
@@ -79,9 +103,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the <see cref="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called by the design host.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="M:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.RefreshSchema%2A> method can be called if all the following conditions are true:  
+  
+-   The <xref:System.Web.UI.Control.Site%2A?displayProperty=fullName> property of the associated <xref:System.Web.UI.WebControls.LinqDataSource> control implements the <xref:System.ComponentModel.Design.ITypeDiscoveryService?displayProperty=fullName> interface.  
+  
+-   The <xref:System.Web.UI.WebControls.LinqDataSourceView.ContextTypeName%2A> property contains a value.  
+  
+ If these conditions are true, the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanRefreshSchema%2A> property value is `true`.  
+  
+ If the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanRefreshSchema%2A> is `true`, the **Refresh Schema** menu item is displayed in the **LinqDataSource Tasks** menu of the associated control on the visual designer surface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Configure">
@@ -98,8 +138,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Launches the data source configuration wizard in the design host.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure%2A> method starts the **Configure Data Source** wizard on the visual designer surface.  
+  
+ The <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.Configure%2A> method is called when the **Configure Data Source** menu item is selected on the **LinqDataSource Tasks** menu of the associated <xref:System.Web.UI.WebControls.LinqDataSource> control. The **Configure Data Source** menu item appears on the **LinqDataSource Tasks** menu when the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanConfigure%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContextTypeName">
@@ -132,8 +181,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the type that contains the property whose value has the data that you want to retrieve.</summary>
+        <value>The name of the class to retrieve data from.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,9 +222,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value for the delete operation.</summary>
+        <value>
+          <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a <xref:System.Web.UI.WebControls.LinqDataSource> instance, setting this property has no effect. This property shadows a property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableDelete">
@@ -191,8 +248,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether rows can be deleted from the data source at run time.</summary>
+        <value>
+          <see langword="true" /> if the delete operation is enabled for users of the associated <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> instance; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,8 +267,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether rows can be inserted into the data source at run time.</summary>
+        <value>
+          <see langword="true" /> if the insert operation is enabled for users of the associated <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> instance; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,8 +286,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether rows in the data source can be updated at run time.</summary>
+        <value>
+          <see langword="true" /> if the update operation is enabled for users of the associated <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> instance; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,9 +308,9 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="viewName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="viewName">The name of the view to return.</param>
+        <summary>Returns a data source view that has the specified name.</summary>
+        <returns>An object whose name is specified by <paramref name="viewName" />; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,8 +328,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a list of available views.</summary>
+        <returns>A collection with one element that contains the name "DefaultView".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,8 +363,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value that is used when the Group By clause is being created.</summary>
+        <value>A string that contains the properties that are used for grouping data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,8 +384,8 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="component">The object to initialize.</param>
+        <summary>Initializes the control designer and loads the specified component.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,9 +425,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value for the delete operation.</summary>
+        <value>
+          <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a <xref:System.Web.UI.WebControls.LinqDataSource> instance, setting this property has no effect. This property shadows a property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OrderBy">
@@ -400,8 +468,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value that is used when the Order By clause is being created.</summary>
+        <value>A string that contains the properties that are used for sorting the data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -435,8 +503,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value that is used when the Order Groups By clause is being created.</summary>
+        <value>A string that contains the properties that are used for sorting grouped data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -456,8 +524,8 @@
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="properties">The properties to be filtered.</param>
+        <summary>Used by the designer to add properties or remove properties in the properties grid.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,9 +545,17 @@
         <Parameter Name="preferSilent" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="preferSilent">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="preferSilent">
+          <see langword="true" /> to suppress all data source events until the schema is refreshed.</param>
+        <summary>Refreshes the schema from the underlying data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The design host calls the <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.RefreshSchema%2A> method only if <xref:System.Web.UI.Design.WebControls.LinqDataSourceDesigner.CanRefreshSchema%2A> is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -512,8 +588,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the string that contains values for the select operation.</summary>
+        <value>A string that is used when the Select clause is being created.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,8 +606,8 @@
         <ReturnType>System.IServiceProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the service provider that is associated with the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> instance.</summary>
+        <value>An object that represents the service provider.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -565,8 +641,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.LinqDataSource.TableName" /> property of the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> instance.</summary>
+        <value>The name of the class that contains the data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -606,9 +682,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value for the Update operation.</summary>
+        <value>
+          <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a <xref:System.Web.UI.WebControls.LinqDataSource> instance, setting this property has no effect. This property shadows a property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Where">
@@ -641,8 +725,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.LinqDataSource.Where" /> property of the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</summary>
+        <value>The value of the <see cref="P:System.Web.UI.WebControls.LinqDataSource.Where" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

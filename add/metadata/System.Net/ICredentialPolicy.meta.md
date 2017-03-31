@@ -1,9 +1,11 @@
 ---
 uid: System.Net.ICredentialPolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ICredentialPolicy.ShouldSendCredential(System.Uri,System.Net.WebRequest,System.Net.NetworkCredential,System.Net.IAuthenticationModule)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -1,34 +1,41 @@
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayFormatAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayFormatAttribute.HtmlEncode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayFormatAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayFormatAttribute.NullDisplayText
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ConvertEmptyStringToNull
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ApplyFormatInEditMode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

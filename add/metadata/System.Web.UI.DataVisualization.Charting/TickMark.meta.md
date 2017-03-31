@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.TickMark
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TickMark.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.TickMark.Size
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

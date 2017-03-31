@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Recognition.SrgsGrammar
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

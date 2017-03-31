@@ -1,9 +1,11 @@
 ---
 uid: System.Web.DynamicData.IWhereParametersProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.IWhereParametersProvider.GetWhereParameters(System.Web.DynamicData.IDynamicDataSource)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

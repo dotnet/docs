@@ -1,1 +1,0 @@
-            Console.WriteLine("SenderID is {0}", message.SenderId)

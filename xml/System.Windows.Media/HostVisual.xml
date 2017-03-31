@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a <see cref="T:System.Windows.Media.Visual" /> object that can be connected anywhere to a parent visual tree.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.HostVisual" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,10 +46,17 @@
         <Parameter Name="hitTestParameters" Type="System.Windows.Media.GeometryHitTestParameters" />
       </Parameters>
       <Docs>
-        <param name="hitTestParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="hitTestParameters">A value of type <see cref="T:System.Windows.Media.GeometryHitTestParameters" />.</param>
+        <summary>Implements <see cref="M:System.Windows.Media.HostVisual.HitTestCore(System.Windows.Media.GeometryHitTestParameters)" /> to supply base hit testing behavior (returning <see cref="T:System.Windows.Media.GeometryHitTestParameters" />).</summary>
+        <returns>Returns a value of type <see cref="T:System.Windows.Media.GeometryHitTestResult" />. The <see cref="P:System.Windows.Media.GeometryHitTestResult.VisualHit" /> property contains the visual that was hit.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.HostVisual> never reports itself as being hit. To change this behavior, create a class derived from <xref:System.Windows.Media.HostVisual> and override the <xref:System.Windows.Media.HostVisual.HitTestCore%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HitTestCore">
@@ -68,10 +75,17 @@
         <Parameter Name="hitTestParameters" Type="System.Windows.Media.PointHitTestParameters" />
       </Parameters>
       <Docs>
-        <param name="hitTestParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="hitTestParameters">A value of type <see cref="T:System.Windows.Media.PointHitTestParameters" />.</param>
+        <summary>Implements <see cref="M:System.Windows.Media.HostVisual.HitTestCore(System.Windows.Media.PointHitTestParameters)" /> to supply base hit testing behavior (returning <see cref="T:System.Windows.Media.PointHitTestParameters" />).</summary>
+        <returns>Returns a value of type <see cref="T:System.Windows.Media.HitTestResult" />. The <see cref="P:System.Windows.Media.HitTestResult.VisualHit" /> property contains the visual object that was hit.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.HostVisual> never reports itself as being hit. To change this behavior, create a class derived from <xref:System.Windows.Media.HostVisual> and override the <xref:System.Windows.Media.HostVisual.HitTestCore%2A> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

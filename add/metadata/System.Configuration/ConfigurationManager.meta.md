@@ -1,54 +1,77 @@
 ---
 uid: System.Configuration.ConfigurationManager
-internalonly: False
+ms.author: "tomfitz"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationManager.AppSettings
-internalonly: False
+ms.author: "tomfitz"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationManager.OpenMappedExeConfiguration(System.Configuration.ExeConfigurationFileMap,System.Configuration.ConfigurationUserLevel,System.Boolean)
-internalonly: False
+ms.author: "tomfitz"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationManager.GetSection(System.String)
-internalonly: False
+ms.author: "tomfitz"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationManager.ConnectionStrings
-internalonly: False
+ms.author: "tomfitz"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationManager.OpenMappedMachineConfiguration(System.Configuration.ConfigurationFileMap)
-internalonly: False
+ms.author: "tomfitz"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationManager.OpenExeConfiguration
+ms.author: "tomfitz"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationManager.OpenExeConfiguration(System.String)
-internalonly: False
+ms.author: "tomfitz"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationManager.OpenMachineConfiguration
-internalonly: False
+ms.author: "tomfitz"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationManager.RefreshSection(System.String)
-internalonly: False
+ms.author: "tomfitz"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationManager.OpenExeConfiguration(System.Configuration.ConfigurationUserLevel)
-internalonly: False
+ms.author: "tomfitz"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConfigurationManager.OpenMappedExeConfiguration(System.Configuration.ExeConfigurationFileMap,System.Configuration.ConfigurationUserLevel)
-internalonly: False
+ms.author: "tomfitz"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationManager.OpenMappedExeConfiguration
+ms.author: "tomfitz"
+manager: "wpickett"
 ---

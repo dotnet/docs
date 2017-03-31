@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains response information returned as a result of a peer endpoint resolution operation on the peer resolver.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Resolve%28System.ServiceModel.PeerResolvers.ResolveInfo%29> or an implementation of <xref:System.ServiceModel.PeerResolvers.IPeerResolverContract.Resolve%28System.ServiceModel.PeerResolvers.ResolveInfo%29> is called, this object is returned to the client. It contains the endpoints registered to the peer specified in a previous corresponding <xref:System.ServiceModel.PeerResolvers.ResolveInfo> instance sent to the peer resolver.  
+  
+ Instances of this class are primarily used to pass information from the resolver service to a network client of that service.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.PeerResolvers.ResolveResponseInfo" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +57,8 @@
         <Parameter Name="addresses" Type="System.ServiceModel.PeerNodeAddress[]" />
       </Parameters>
       <Docs>
-        <param name="addresses">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="addresses">Array of <see cref="T:System.ServiceModel.PeerNodeAddress" /> objects that contain the endpoint addresses registered to the peer whose endpoints were requested in a previous resolution operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerResolvers.ResolveResponseInfo" /> class with the provided set of peer endpoint addresses.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +75,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.ServiceModel.PeerNodeAddress&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a collection of peer node addresses.</summary>
+        <value>Generic list &lt;IList&gt; of <see cref="T:System.ServiceModel.PeerNodeAddress" /> objects that contain the endpoint addresses registered to the peer whose endpoints were requested in a previous resolution operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +94,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Indicates whether the body of the message containing a serialized instance of this type is correctly formed.</summary>
+        <returns>True if the resolution response information body is correctly-formed by the sender; false if it is not.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

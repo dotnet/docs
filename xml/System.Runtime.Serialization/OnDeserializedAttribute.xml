@@ -28,8 +28,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>When applied to a method, specifies that the method is called immediately after deserialization of an object in an object graph. The order of deserialization relative to other objects in the graph is non-deterministic.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.Serialization.OnDeserializedAttribute> when you need to fix values on a deserialized object after it has been deserialized and before the graph is returned. This attribute can be used instead of the  <xref:System.Runtime.Serialization.IDeserializationCallback> interface.  
+  
+ To use the <xref:System.Runtime.Serialization.OnDeserializedAttribute>, the method must contain a <xref:System.Runtime.Serialization.StreamingContext> parameter. The attribute marks the method to be called by the serialization infrastructure and the <xref:System.Runtime.Serialization.StreamingContext> provides additional data about the type of serialization taking place.  The usage is shown in the following code:  
+  
+ [!code-csharp[System.Runtime.Serialization.OnSerialization#5](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Serialization.OnSerialization/CS/OnSerializationOnDeserializationExample.cs#5)]
+ [!code-vb[System.Runtime.Serialization.OnSerialization#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Runtime.Serialization.OnSerialization/VB/OnSerializationOnDeserializationExample.vb#5)]  
+  
+> [!NOTE]
+>  In your code, you can use the word `OnDeserialized` instead of the longer <xref:System.Runtime.Serialization.OnDeserializedAttribute>.  
+  
+   
+  
+## Examples  
+ The following example applies the <xref:System.Runtime.Serialization.OnDeserializedAttribute>, <xref:System.Runtime.Serialization.OnSerializingAttribute>, <xref:System.Runtime.Serialization.OnSerializedAttribute>, and <xref:System.Runtime.Serialization.OnDeserializingAttribute> attributes to methods in a class.  
+  
+ [!code-csharp[System.Runtime.Serialization.OnSerialization#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Serialization.OnSerialization/CS/OnSerializationOnDeserializationExample.cs#1)]
+ [!code-vb[System.Runtime.Serialization.OnSerialization#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Runtime.Serialization.OnSerialization/VB/OnSerializationOnDeserializationExample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,7 +75,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.OnDeserializedAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

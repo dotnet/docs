@@ -1,19 +1,27 @@
 ---
 uid: Microsoft.Build.Framework.IBuildEngine3
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.IBuildEngine3.Reacquire
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.IBuildEngine3.BuildProjectFilesInParallel(System.String[],System.String[],System.Collections.IDictionary[],System.Collections.Generic.IList{System.String}[],System.String[],System.Boolean)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.IBuildEngine3.BuildProjectFilesInParallel
 ---
 
 ---
 uid: Microsoft.Build.Framework.IBuildEngine3.Yield
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

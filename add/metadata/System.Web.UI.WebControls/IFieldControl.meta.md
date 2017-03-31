@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.WebControls.IFieldControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.IFieldControl.FieldsGenerator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

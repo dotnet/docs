@@ -1,54 +1,79 @@
 ---
 uid: System.Windows.Media.Animation.Int16KeyFrame
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Int16KeyFrame.KeyTimeProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Int16KeyFrame.KeyTime
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Int16KeyFrame.#ctor(System.Int16)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Int16KeyFrame.System#Windows#Media#Animation#IKeyFrame#Value
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Int16KeyFrame.ValueProperty
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Int16KeyFrame.InterpolateValueCore(System.Int16,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.Int16KeyFrame.InterpolateValue(System.Int16,System.Double)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Int16KeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Int16KeyFrame.KeyTimeProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Int16KeyFrame.KeyTime
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Int16KeyFrame.#ctor(System.Int16)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.Int16KeyFrame.System#Windows#Media#Animation#IKeyFrame#Value
+ms.author: "jimwalk"
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Media.Animation.Int16KeyFrame.ValueProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Int16KeyFrame.InterpolateValueCore(System.Int16,System.Double)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.Int16KeyFrame.InterpolateValue(System.Int16,System.Double)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.Int16KeyFrame.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Int16KeyFrame.#ctor(System.Int16,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.Int16KeyFrame.Value
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

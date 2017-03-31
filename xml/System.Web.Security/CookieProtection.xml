@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes how information in a cookie is protected.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.Security.CookieProtection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use both <see cref="F:System.Web.Security.CookieProtection.Validation" /> and <see cref="F:System.Web.Security.CookieProtection.Encryption" /> to protect the information in the cookie.</summary>
       </Docs>
     </Member>
     <Member MemberName="Encryption">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.Security.CookieProtection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encrypt the information in the cookie.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.Security.CookieProtection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not protect information in the cookie. Information in the cookie is stored in clear text and not validated when sent back to the server.</summary>
       </Docs>
     </Member>
     <Member MemberName="Validation">
@@ -75,7 +75,7 @@
         <ReturnType>System.Web.Security.CookieProtection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ensure that the information in the cookie has not been altered before being sent back to the server.</summary>
       </Docs>
     </Member>
   </Members>

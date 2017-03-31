@@ -1,24 +1,38 @@
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner.UsePreviewControl
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner.Initialize(System.ComponentModel.IComponent)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner.GetDesignTimeHtml
-internalonly: False
+---
+
+---
+uid: System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner.Initialize(System.ComponentModel.IComponent)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner.GetDesignTimeHtml
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

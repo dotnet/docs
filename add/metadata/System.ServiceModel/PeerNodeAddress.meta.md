@@ -1,19 +1,19 @@
 ---
 uid: System.ServiceModel.PeerNodeAddress
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerNodeAddress.#ctor(System.ServiceModel.EndpointAddress,System.Collections.ObjectModel.ReadOnlyCollection{System.Net.IPAddress})
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerNodeAddress.IPAddresses
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerNodeAddress.EndpointAddress
-internalonly: False
+manager: "ghogen"
 ---

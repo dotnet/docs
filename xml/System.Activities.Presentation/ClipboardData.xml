@@ -11,8 +11,26 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the data passed around with the clipboard.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.ClipboardData> contains three types of data:  
+  
+-   The data itself, accessed through the <xref:System.Activities.Presentation.ClipboardData.Data%2A> property.  
+  
+-   The metadata, accessed through the <xref:System.Activities.Presentation.ClipboardData.Metadata%2A> property.  
+  
+-   The version information, accessed through the <xref:System.Activities.Presentation.ClipboardData.Version%2A> property.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ClipboardData#0](WFD_ClipboardData#0)]  -->  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +44,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.ClipboardData" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +61,8 @@
         <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the data passed around on the clipboard.</summary>
+        <value>A <see cref="T:System.Collections.Generic.List`1" /> of type <see cref="T:System.Object" /> that contains the data passed around on the clipboard.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +79,8 @@
         <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the metadata passed around on the clipboard.</summary>
+        <value>A <see cref="T:System.Collections.Generic.List`1" /> of type <see cref="T:System.Object" /> that contains the metadata passed around on the clipboard.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +97,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the version information passed around on the clipboard.</summary>
+        <value>The version information passed around on the clipboard.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

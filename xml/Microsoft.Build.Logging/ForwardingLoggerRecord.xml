@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a central/forwarding logger pair used in multiprocessor logging.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="forwardingLoggerDescription" Type="Microsoft.Build.Logging.LoggerDescription" />
       </Parameters>
       <Docs>
-        <param name="centralLogger">To be added.</param>
-        <param name="forwardingLoggerDescription">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="centralLogger">The central logger.</param>
+        <param name="forwardingLoggerDescription">The description for the forwarding logger.</param>
+        <summary>Creates a forwarding logger.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>Microsoft.Build.Framework.ILogger</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the central logger.</summary>
+        <value>Returns the central logger.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>Microsoft.Build.Logging.LoggerDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the forwarding logger description.</summary>
+        <value>Returns the forwarding logger description.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

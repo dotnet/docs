@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.ReferenceErrorObject
-internalonly: False
+ms.author: "mikejo"
 ---

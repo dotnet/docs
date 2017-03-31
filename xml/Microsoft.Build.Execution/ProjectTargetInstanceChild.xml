@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Abstracts the <see cref="T:Microsoft.Build.Execution.ProjectTaskInstance" />, <see cref="T:Microsoft.Build.Execution.ProjectPropertyGroupTaskInstance" /> and <see cref="T:Microsoft.Build.Execution.ProjectItemGroupTaskInstance" /> classes. This allows these types to be used in a single collection of target children</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Abstract classes cannot be instantiated.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the Condition attribute of this target.</summary>
+        <value>Returns the Condition attribute value. Returns an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location of the Condition attribute.</summary>
+        <value>Returns the Condition attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the full path to the file from which this task originated.</summary>
+        <value>Returns the full path to the file from which this task originated. Returns an empty string if the task originated in a project that was not loaded and has never been given a path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location of the element itself.</summary>
+        <value>Returns the element location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

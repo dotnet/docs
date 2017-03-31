@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.IHierarchicalEnumerable
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IHierarchicalEnumerable.GetHierarchyData(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

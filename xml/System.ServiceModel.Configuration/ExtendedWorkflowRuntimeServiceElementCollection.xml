@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the collection of configuration elements that represents extended services to be added to the workflow runtime engine.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +54,8 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of the configuration element to be removed.</param>
+        <summary>Removes the configuration element with the specified key from this collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +75,8 @@
         <Parameter Name="serviceSettings" Type="System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" />
       </Parameters>
       <Docs>
-        <param name="serviceSettings">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceSettings">The service configuration element to be removed.</param>
+        <summary>Removes the first occurrence of a specific configuration element from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

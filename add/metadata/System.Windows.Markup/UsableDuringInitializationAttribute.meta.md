@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.UsableDuringInitializationAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.UsableDuringInitializationAttribute.Usable
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.UsableDuringInitializationAttribute.#ctor(System.Boolean)
-internalonly: False
+manager: "martinek"
 ---

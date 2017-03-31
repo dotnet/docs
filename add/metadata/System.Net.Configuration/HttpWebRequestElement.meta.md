@@ -1,29 +1,35 @@
 ---
 uid: System.Net.Configuration.HttpWebRequestElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpWebRequestElement.MaximumErrorResponseLength
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpWebRequestElement.MaximumResponseHeadersLength
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpWebRequestElement.MaximumUnauthorizedUploadLength
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpWebRequestElement.UseUnsafeHeaderParsing
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.HttpWebRequestElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

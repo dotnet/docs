@@ -1,4 +1,4 @@
 ---
 uid: System.Management.TextFormat
-internalonly: False
+manager: "jillfra"
 ---

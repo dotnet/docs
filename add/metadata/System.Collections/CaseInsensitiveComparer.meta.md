@@ -1,29 +1,48 @@
 ---
 uid: System.Collections.CaseInsensitiveComparer
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.CaseInsensitiveComparer.Default
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.CaseInsensitiveComparer.Compare(System.Object,System.Object)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.CaseInsensitiveComparer.#ctor(System.Globalization.CultureInfo)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.CaseInsensitiveComparer.DefaultInvariant
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.CaseInsensitiveComparer.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Collections.CaseInsensitiveComparer.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

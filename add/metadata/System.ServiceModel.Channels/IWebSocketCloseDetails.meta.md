@@ -1,19 +1,27 @@
 ---
 uid: System.ServiceModel.Channels.IWebSocketCloseDetails
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IWebSocketCloseDetails.SetOutputCloseStatus(System.Net.WebSockets.WebSocketCloseStatus,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IWebSocketCloseDetails.InputCloseStatusDescription
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IWebSocketCloseDetails.InputCloseStatus
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

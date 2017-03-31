@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Stores members from base classes and interfaces.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Members that have the same name are contiguous, and members from more derived classes precede members from less derived classes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.InteropServices.Expando
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

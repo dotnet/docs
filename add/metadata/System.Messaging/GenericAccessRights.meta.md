@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.GenericAccessRights
-internalonly: False
+manager: "tyoung"
 ---

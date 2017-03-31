@@ -18,7 +18,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtension" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,8 +42,8 @@
         <Parameter Name="extension" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="extension">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="extension">The <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtension" /> object to add.</param>
+        <summary>Adds the specified <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtension" /> object to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
         <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="xmlReader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xmlReader">The <see cref="T:System.Xml.XmlReader" /> to read the syndication element extension from.</param>
+        <summary>Adds a new syndication element extension to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +93,9 @@
         <Parameter Name="serializer" Type="System.Runtime.Serialization.DataContractSerializer" />
       </Parameters>
       <Docs>
-        <param name="dataContractExtension">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dataContractExtension">The object to add to the collection.</param>
+        <param name="serializer">The serializer to use.</param>
+        <summary>Adds the specified object to the collection using the specified data contract serializer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +120,9 @@
         <Parameter Name="serializer" Type="System.Xml.Serialization.XmlSerializer" />
       </Parameters>
       <Docs>
-        <param name="xmlSerializerExtension">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xmlSerializerExtension">The object to add to the collection.</param>
+        <param name="serializer">The XML serializer to use.</param>
+        <summary>Adds the specified object to the collection using the specified XML serializer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,10 +148,10 @@
         <Parameter Name="dataContractExtension" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="outerName">To be added.</param>
-        <param name="outerNamespace">To be added.</param>
-        <param name="dataContractExtension">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="outerName">The outer name.</param>
+        <param name="outerNamespace">The outer namespace.</param>
+        <param name="dataContractExtension">The object to add to the collection.</param>
+        <summary>Adds the specified object to the collection with the specified outer name and outer namespace.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,11 +178,11 @@
         <Parameter Name="dataContractSerializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <param name="outerName">To be added.</param>
-        <param name="outerNamespace">To be added.</param>
-        <param name="dataContractExtension">To be added.</param>
-        <param name="dataContractSerializer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="outerName">The outer name.</param>
+        <param name="outerNamespace">The outer namespace.</param>
+        <param name="dataContractExtension">The object to add to the collection.</param>
+        <param name="dataContractSerializer">The serializer to use.</param>
+        <summary>Adds the specified object to the collection with the specified outer name and outer namespace using the specified data contract serializer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,8 +226,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an <see cref="T:System.Xml.XmlReader" /> with the element extensions.</summary>
+        <returns>An <see cref="T:System.Xml.XmlReader" /> that contains the element extensions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,12 +282,14 @@
         <Parameter Name="extensionNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="TExtension">To be added.</typeparam>
-        <param name="extensionName">To be added.</param>
-        <param name="extensionNamespace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TExtension">The type of the extension to read.</typeparam>
+        <param name="extensionName">The name of the element extension.</param>
+        <param name="extensionNamespace">The namespace of the element extension.</param>
+        <summary>Reads the element extensions with the specified name and namespace.</summary>
+        <returns>A collection of element extension objects.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type is not a valid data contract.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">The input XML cannot be deserialized into the requested type.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementExtensions&lt;TExtension&gt;">
@@ -315,13 +317,15 @@
         <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="TExtension">To be added.</typeparam>
-        <param name="extensionName">To be added.</param>
-        <param name="extensionNamespace">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TExtension">The type of the extension to read.</typeparam>
+        <param name="extensionName">The name of the element extension.</param>
+        <param name="extensionNamespace">The namespace of the element extension.</param>
+        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> to use.</param>
+        <summary>Reads the element extensions with the specified name and namespace.</summary>
+        <returns>A collection of element extension objects.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type is not a valid data contract.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">The input XML cannot be deserialized into the requested type.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementExtensions&lt;TExtension&gt;">
@@ -349,13 +353,14 @@
         <Parameter Name="serializer" Type="System.Xml.Serialization.XmlSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="TExtension">To be added.</typeparam>
-        <param name="extensionName">To be added.</param>
-        <param name="extensionNamespace">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TExtension">The type of the extension to read.</typeparam>
+        <param name="extensionName">The name of the element extension.</param>
+        <param name="extensionNamespace">The namespace of the element extension.</param>
+        <param name="serializer">The <see cref="T:System.Xml.Serialization.XmlSerializer" /> to use.</param>
+        <summary>Reads the element extensions with the specified name and namespace.</summary>
+        <returns>A collection of element extension objects.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The input XML cannot be deserialized into the requested type.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">

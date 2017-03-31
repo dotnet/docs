@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when multiple filters match, but only one was expected.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The list of filters includes the filters that caused the exception to be thrown.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,7 +51,7 @@
       </Parameters>
       <Docs>
         <param name="msg">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException" /> class with a specified error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +69,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains all the data required to serialize the exception.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that specifies the source and destination of the stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException" /> class with serialization information and streaming context specified.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +90,8 @@
       </Parameters>
       <Docs>
         <param name="msg">To be added.</param>
-        <param name="filters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filters">A collection of message filters.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException" /> class with a specified error message and a collection of filters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +111,7 @@
       <Docs>
         <param name="msg">To be added.</param>
         <param name="inner">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,8 +132,8 @@
       <Docs>
         <param name="msg">To be added.</param>
         <param name="inner">To be added.</param>
-        <param name="filters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filters">A collection of message filters.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException" /> class with a specified error message, an exception, and a collection of filters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +150,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of filters that caused the exception to be thrown.</summary>
+        <value>The <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> that contains the filters that caused the exception to be thrown.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

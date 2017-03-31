@@ -1,4 +1,6 @@
 ---
 uid: System.Xml.Schema.XmlTypeCode
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

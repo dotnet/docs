@@ -28,23 +28,32 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T1">To be added.</typeparam>
-    <typeparam name="T2">To be added.</typeparam>
-    <typeparam name="T3">To be added.</typeparam>
-    <typeparam name="T4">To be added.</typeparam>
-    <typeparam name="T5">To be added.</typeparam>
-    <typeparam name="T6">To be added.</typeparam>
-    <typeparam name="T7">To be added.</typeparam>
-    <typeparam name="T8">To be added.</typeparam>
-    <typeparam name="T9">To be added.</typeparam>
-    <typeparam name="T10">To be added.</typeparam>
-    <typeparam name="T11">To be added.</typeparam>
-    <typeparam name="T12">To be added.</typeparam>
-    <typeparam name="T13">To be added.</typeparam>
-    <typeparam name="T14">To be added.</typeparam>
-    <typeparam name="T15">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T1">The type of the first in argument of the activity delegate.</typeparam>
+    <typeparam name="T2">The type of the second in argument of the activity delegate.</typeparam>
+    <typeparam name="T3">The type of the third in argument of the activity delegate.</typeparam>
+    <typeparam name="T4">The type of the fourth in argument of the activity delegate.</typeparam>
+    <typeparam name="T5">The type of the fifth in argument of the activity delegate.</typeparam>
+    <typeparam name="T6">The type of the sixth in argument of the activity delegate.</typeparam>
+    <typeparam name="T7">The type of the seventh in argument of the activity delegate.</typeparam>
+    <typeparam name="T8">The type of the eighth in argument of the activity delegate.</typeparam>
+    <typeparam name="T9">The type of the ninth in argument of the activity delegate.</typeparam>
+    <typeparam name="T10">The type of the tenth in argument of the activity delegate.</typeparam>
+    <typeparam name="T11">The type of the eleventh in argument of the activity delegate.</typeparam>
+    <typeparam name="T12">The type of the twelfth in argument of the activity delegate.</typeparam>
+    <typeparam name="T13">The type of the thirteenth in argument of the activity delegate.</typeparam>
+    <typeparam name="T14">The The type of the fourteenth in argument of the activity delegate.</typeparam>
+    <typeparam name="T15">The type of the fifteenth in argument of the activity delegate.</typeparam>
+    <summary>Defines an activity delegate that has fifteen in arguments and does not return a value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An activity delegate allows a developer to define the required signature of an activity that will be specified by a third party.  
+  
+ There are multiple generic versions of this type that take from 1 to 16 arguments for the activity that is called.  There are also **ActivityFunc** types for activity delegates that return values.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,7 +67,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.ActivityAction`15" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +89,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T1&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the first in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +112,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T10&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the tenth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,8 +135,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T11&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the eleventh in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,8 +158,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T12&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the twelfth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,8 +181,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T13&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the thirteenth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,8 +204,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T14&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fourteenth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +227,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T15&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fifteenth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,8 +250,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T2&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the second in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +273,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T3&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the third in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,8 +296,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T4&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fourth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,8 +319,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T5&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fifth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,8 +342,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T6&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the sixth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,8 +365,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T7&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the seventh in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -379,8 +388,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T8&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the eighth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,8 +411,8 @@
         <ReturnType>System.Activities.DelegateInArgument&lt;T9&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the ninth in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

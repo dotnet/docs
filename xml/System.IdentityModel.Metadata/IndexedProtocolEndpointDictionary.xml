@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A sorted list of <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpoint" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
         <ReturnType>System.IdentityModel.Metadata.IndexedProtocolEndpoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpoint" />.</summary>
+        <value>The default <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpoint" />. <see langword="null" /> if no default exists.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

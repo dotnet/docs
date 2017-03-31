@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how to retrieve additional information about the subject of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding> class to specify how to retrieve additional information about an authenticated subject within a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token. <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify when the subject was authenticated. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement>. An <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement> asserts that the statement's subject was authenticated by a particular means at a particular time. An <xref:System.IdentityModel.Tokens.SamlAuthenticationStatement> also has an optional <xref:System.IdentityModel.Tokens.SamlAuthorityBinding>, which specifies how to retrieve additional information about an authenticated subject.  
+  
+ Use the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.Location%2A>, <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.AuthorityKind%2A>, and <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.Binding%2A> properties to retrieve additional information about an authenticated subject.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorityBinding" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +60,9 @@
       </Parameters>
       <Docs>
         <param name="kind">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="location">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">A URI reference that identifies the SAML protocol binding to use when communicating with the SAML authority that has additional information about the subject.</param>
+        <param name="location">A URI reference that describes how to locate and communicate with the SAML authority that has additional information about the subject.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorityBinding" /> class using the specified query types, protocol binding, and SAML authority location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +84,18 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of queries that the SAML authority that has additional information about the subject, responds to.</summary>
+        <value>An <see cref="T:System.Xml.XmlQualifiedName" /> that represents the type of queries that the SAML authority that has additional information about the subject, responds to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.AuthorityKind%2A> property corresponds to the `AuthorityKind` attribute of the `<AuthorityBinding>` element, as defined in the Assertions and Protocol for the OASIS SAML specification.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.AuthorityKind" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.IsReadOnly" /> property is <see langword="true" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.AuthorityKind" /> property is set to <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Binding">
@@ -98,9 +116,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the SAML protocol binding to use when communicating with the SAML authority that has additional information that has additional information about the subject.</summary>
+        <value>A URI reference that identifies the SAML protocol binding to use when communicating with the SAML authority that has additional information that has additional information about the subject.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.Binding%2A> property corresponds to the `Binding` attribute of the `<AuthorityBinding>` element defined in the Assertions and Protocol for the OASIS SAML specification.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.Binding" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.IsReadOnly" /> property is <see langword="true" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.Binding" /> property is set to <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -116,9 +143,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the properties of this instance are read-only.</summary>
+        <value>
+          <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To make this instance of the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.MakeReadOnly%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -139,9 +174,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets how to locate and communicate with the SAML authority that has additional information that has additional information about the subject.</summary>
+        <value>A URI reference that describes how to locate and communicate with the SAML authority that has additional information about the subject.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.Location%2A> property corresponds to the `Location` attribute of the `<AuthorityBinding>` element defined in the Assertions and Protocol for the OASIS SAML specification.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.Location" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.IsReadOnly" /> property is <see langword="true" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.IdentityModel.Tokens.SamlAuthorityBinding.Location" /> property is set to <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="MakeReadOnly">
@@ -158,8 +202,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Causes this instance to be read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAuthorityBinding.IsReadOnly%2A> property is set to `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -181,12 +232,19 @@
         <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
-        <param name="keyInfoSerializer">To be added.</param>
-        <param name="outOfBandTokenResolver">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">A <see cref="T:System.Xml.XmlDictionaryReader" /> to read the <see langword="&lt;AuthorityBinding&gt;" /> element.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of reading XML elements in the SAML assertion that are defined in the SAML specification.</param>
+        <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that reads the <see langword="KeyInfo" /> clause of the digital signature.</param>
+        <param name="outOfBandTokenResolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that created the digital signature.</param>
+        <summary>Reads the <see langword="&lt;AuthorityBinding&gt;" /> element from the specified XML reader.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="samlSerializer" /> is <see langword="null" /></exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">The <see langword="&lt;AuthorityBinding&gt;" /> element does not have one of the <see langword="AuthorityKind" />, <see langword="Location" />, or <see langword="Binding" /> attributes.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -207,11 +265,17 @@
         <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="samlSerializer">To be added.</param>
-        <param name="keyInfoSerializer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">A <see cref="T:System.Xml.XmlDictionaryWriter" /> to write the <see langword="&lt;AuthorityBinding&gt;" /> element.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of writing XML elements in the SAML assertion that is defined in the SAML specification.</param>
+        <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that is capable of writing <see langword="KeyInfo" /> clauses.</param>
+        <summary>Writes the <see langword="&lt;AuthorityBinding&gt;" /> element into the specified XML serializer.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="samlSerializer" /> is <see langword="null" /></exception>
       </Docs>
     </Member>
   </Members>

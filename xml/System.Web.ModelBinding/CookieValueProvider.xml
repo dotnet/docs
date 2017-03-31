@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a value provider for cookie values.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="modelBindingExecutionContext" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.CookieValueProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,10 @@
         <Parameter Name="prefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="prefix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="prefix">The prefix.</param>
+        <summary>Returns a value that indicates whether the cookie collection contains the specified prefix.</summary>
+        <returns>
+          <see langword="true" /> if the cookie collection contains the specified prefix; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +76,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key.</param>
+        <summary>Retrieves a value object using the specified key.</summary>
+        <returns>The value object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,10 +99,11 @@
         <Parameter Name="skipValidation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="skipValidation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key.</param>
+        <param name="skipValidation">
+          <see langword="true" /> to skip validation; otherwise, <see langword="false" />.</param>
+        <summary>Retrieves a value object using the specified key and a parameter that specifies whether validation should be skipped.</summary>
+        <returns>The value object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

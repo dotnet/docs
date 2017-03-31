@@ -22,8 +22,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides functions to render a collection of categorized tools, as well as notify users about tool selection and creation events. This class is <see langword="sealed" />, so it cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides support for representing the toolbox controls when re-hosting the [!INCLUDE[wfd1](~/includes/wfd1-md.md)] outside of Visual Studio. It implements <xref:System.Windows.Controls.Control>. The <xref:System.Activities.Presentation.Toolbox.ToolboxControl> contains a collection of toolbox categories that hold various categories of tools that can be accessed with the <xref:System.Activities.Presentation.Toolbox.ToolboxControl.Categories%2A> property. It also is able to retrieve the <xref:System.Activities.Presentation.WorkflowDesigner> with which it is associated using the <xref:System.Activities.Presentation.Toolbox.ToolboxControl.AssociatedDesigner%2A> property.  
+  
+> [!WARNING]
+>  For activities to load properly in the toolbox, the assembly that contains the activities must be loaded first. Use <xref:System.Reflection.Assembly.LoadFrom%2A> to load the activity type if it is contained in a different assembly; using <xref:System.Object.GetType%2A> instead will cause an exception to be thrown.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ToolboxControl#0](WFD_ToolboxControl#0)]  -->  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxControl" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +69,8 @@
         <ReturnType>System.Activities.Presentation.WorkflowDesigner</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the [!INCLUDE[wfd1](~/includes/wfd1-md.md)] with which this toolbox control is associated.</summary>
+        <value>The <see cref="T:System.Activities.Presentation.Toolbox.WorkflowDesigner" /> instance with which this toolbox control is associated.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +92,16 @@
         <ReturnType>System.Activities.Presentation.Toolbox.ToolboxCategoryItems</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the collection of toolbox categories associated with this control.</summary>
+        <value>The <see cref="T:System.Activities.Design.Toolbox.ToolboxCategoryItems" /> that contains the collection of <see cref="T:System.Activities.Design.Toolbox.ToolboxCategory" /> objects associated with this <see cref="T:System.Activities.Presentation.Toolbox.ToolboxControl" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value set is `null`, the categories in the <xref:System.Activities.Design.Toolbox.ToolboxCategoryItems> will be cleared.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CategoryItemStyle">
@@ -95,8 +117,8 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the style used for each category item.</summary>
+        <value>The <see cref="T:System.Windows.Style" /> object that contains the style applied to each of the categories.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +135,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.Toolbox.ToolboxControl.CategoryItemStyle" /> dependency property. This field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +152,8 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the data template used for the category.</summary>
+        <value>The <see cref="T:System.Windows.DataTemplate" /> for the category.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,7 +170,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.Toolbox.ToolboxControl.CategoryTemplate" /> dependency property. This field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +188,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Builds the visual tree for this toolbox control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.Toolbox.ToolboxControl.OnApplyTemplate%2A> method is invoked by the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method. <xref:System.Activities.Presentation.Toolbox.ToolboxControl> implements <xref:System.Windows.Controls.Control>, which, in turn, implements <xref:System.Windows.FrameworkElement>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreviewKeyDown">
@@ -204,8 +233,8 @@
         <ReturnType>System.Drawing.Design.ToolboxItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the tool being selected in the toolbox.</summary>
+        <value>The <see cref="T:System.Drawing.Design.ToolboxItem" /> object selected.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,7 +251,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.Toolbox.ToolboxControl.SelectedTool" /> dependency property. This field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,8 +268,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the toolbox file.</summary>
+        <value>The name of the toolbox file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,7 +286,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.Toolbox.ToolboxControl.ToolboxFile" /> dependency property. This field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,7 +303,7 @@
         <ReturnType>System.Activities.Presentation.Toolbox.ToolCreatedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a tool is created in the toolbox control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +320,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Activities.Presentation.Toolbox.ToolboxControl.ToolCreated" /> event. This field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,8 +337,8 @@
         <ReturnType>System.Windows.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the style used for the tool items.</summary>
+        <value>The <see cref="T:System.Windows.Style" /> for the tool items.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,7 +355,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.Toolbox.ToolboxControl.ToolItemStyle" /> dependency property. This field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,7 +372,7 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a tool is selected in the toolbox control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,7 +389,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Activities.Presentation.Toolbox.ToolboxControl.ToolSelected" /> event. This field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,8 +406,8 @@
         <ReturnType>System.Windows.DataTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the data template used for the tools.</summary>
+        <value>The <see cref="T:System.Windows.DataTemplate" /> used for the tools.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,7 +424,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.Toolbox.ToolboxControl.ToolTemplate" /> dependency property. This field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

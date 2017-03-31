@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.ListView
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

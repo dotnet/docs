@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies date-time format options.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,8 +46,8 @@
         <Parameter Name="formatString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="formatString">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="formatString">The format string.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DateTimeFormat" /> class using the format string.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +74,9 @@
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="formatString">To be added.</param>
-        <param name="formatProvider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="formatString">The format sting.</param>
+        <param name="formatProvider">The format provider.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DateTimeFormat" /> class using the format string and format provider.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +102,8 @@
         <ReturnType>System.Globalization.DateTimeStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the formatting options that customize string parsing for some date and time parsing methods.</summary>
+        <value>The formatting options that customize string parsing for some date and time parsing methods.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +129,7 @@
         <ReturnType>System.IFormatProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets an object that controls formatting.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,8 +156,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the format strings to control the formatting produced when a date or time is represented as a string.</summary>
+        <value>The format strings to control the formatting produced when a date or time is represented as a string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

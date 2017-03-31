@@ -1,4 +1,6 @@
 ---
 uid: System.Security.RightsManagement.ContentRight
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

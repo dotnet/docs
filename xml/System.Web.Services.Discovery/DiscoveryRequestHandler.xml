@@ -15,8 +15,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An ASP.NET HTTP handler that processes a request for a Web services discovery document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class, via its <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, processes an HTTP request for a discovery document. A discovery document is represented by the <xref:System.Web.Services.Discovery.DiscoveryDocument> class and is usually serialized as a file using a .disco extension. Web services discovery provides a mechanism for determining the Web services that are available at a given location.  
+  
+ The <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class normally does not need to be used directly by a developer.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryRequestHandler" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +56,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value of <see langword="true" />, indicates whether the instance of <see cref="T:System.Web.Services.Discovery.DiscoveryRequestHandler" /> (or a derived class) is reusable.</summary>
+        <value>This property always returns <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +77,18 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">The <see cref="P:System.Web.HttpContext.Request" /> and <see cref="P:System.Web.HttpContext.Response" /> properties of the <see cref="T:System.Web.HttpContext" /> class are used for input and output, respectively.</param>
+        <summary>Handles an HTTP request for a discovery document, which is serialized to the HTTP response.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method searches for applicable files within the file system path corresponding to the HTTP request's Uniform Resource Locator (URL). The search may extend to subdirectories and switch target file extensions depending on what it finds in the root search directory.  
+  
+ The search process populates the <xref:System.Web.Services.Discovery.DiscoveryDocument> object's <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property with files that are found.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

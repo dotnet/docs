@@ -1,34 +1,55 @@
 ---
 uid: System.Activities.XamlIntegration.ICompiledExpressionRoot
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.ICompiledExpressionRoot.GetExpressionTreeForExpression(System.Int32,System.Collections.Generic.IList{System.Activities.LocationReference})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.ICompiledExpressionRoot.GetLanguage
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.ICompiledExpressionRoot.CanExecuteExpression(System.String,System.Boolean,System.Collections.Generic.IList{System.Activities.LocationReference},System.Int32@)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.ICompiledExpressionRoot.InvokeExpression(System.Int32,System.Collections.Generic.IList{System.Activities.LocationReference},System.Activities.ActivityContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.ICompiledExpressionRoot.InvokeExpression(System.Int32,System.Collections.Generic.IList{System.Activities.Location})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.XamlIntegration.ICompiledExpressionRoot.GetRequiredLocations(System.Int32)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.XamlIntegration.ICompiledExpressionRoot.InvokeExpression
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

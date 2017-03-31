@@ -19,8 +19,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serves as the base class for controls that bind to data using an ASP.NET data source control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET supports a controls architecture that enables Web server controls to bind to data in a consistent fashion. Web server controls that bind to data are referred to as data-bound controls, and the classes that facilitate that binding are called data source controls. Data-bound controls that are designed to use ASP.NET data source controls derive from the <xref:System.Web.UI.WebControls.BaseDataBoundControl> control class, which defines the base data-bound control functionality.  
+  
+ You can use the data-bound controls that are provided with ASP.NET, including <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.TreeView>, to perform most Web development tasks that involve displaying data. In scenarios in which these controls do not provide the functionality you need, you can inherit from the base <xref:System.Web.UI.WebControls.DataBoundControl> and <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> classes to implement your own custom data source control.  
+  
+ While any class that supports the `DataSource` and `DataSourceID` properties and the `DataBind` method is a data-bound control, most ASP.NET data-bound controls extend the abstract <xref:System.Web.UI.WebControls.BaseDataBoundControl> and <xref:System.Web.UI.WebControls.DataBoundControl> classes. Notable exceptions include <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Repeater>, and the <xref:System.Web.UI.WebControls.DropDownList> controls. For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,8 +45,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.BaseDataBoundControl" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.UI.WebControls.BaseDataBoundControl> class is abstract, you cannot create a <xref:System.Web.UI.WebControls.BaseDataBoundControl> object directly. This constructor is commonly called by the constructor of a derived class to initialize the properties defined in the <xref:System.Web.UI.WebControls.BaseDataBoundControl> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConfirmInitState">
@@ -52,8 +70,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Sets the initialized state of the data-bound control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataBoundControl.ConfirmInitState%2A> method sets the initialized state of the data-bound control. The method is called by the <xref:System.Web.UI.WebControls.DataBoundControl> class in its <xref:System.Web.UI.WebControls.DataBoundControl.OnLoad%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -70,8 +95,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Binds a data source to the invoked server control and all its child controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataBoundControl> class overrides the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method to identify the data source that the data-bound control binds to and builds the appropriate control trees. When resolving the data source, the data source identified by the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property takes precedence. If <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> is not set, the object identified by the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property is used.  
+  
+ The `DataBind` method is sealed on all ASP.NET data-bound controls derived from <xref:System.Web.UI.WebControls.BaseDataBoundControl>. Data-bound controls derived from the <xref:System.Web.UI.WebControls.DataBoundControl> and <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> classes should override the `PerformDataBinding` method instead of the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method to bind data. If <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> is overridden, the <xref:System.Web.UI.Control.OnDataBinding%2A> and <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound%2A> events are raised out of order.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBound">
@@ -87,8 +121,17 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs after the server control binds to a data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event notifies the server control that any data binding logic written for it has completed.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -118,9 +161,26 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the object from which the data-bound control retrieves its list of data items.</summary>
+        <value>An object that represents the data source from which the data-bound control retrieves its data. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.ValidateDataSource%2A> method is called. In addition, if the data-bound control has already been initialized, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataPropertyChanged%2A> method is called to set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property to `true`.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of a data-bound control is used. In this example, the <xref:System.Web.UI.WebControls.GridView> control is bound to a <xref:System.Data.DataSet> object. After the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property is set, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method is called explicitly.  
+  
+ [!code-csharp[GridViewDataBind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDataBind/CS/gridviewdatabindcs.aspx#1)]
+ [!code-vb[GridViewDataBind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDataBind/VB/gridviewdatabindvb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSourceID">
@@ -144,9 +204,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the ID of the control from which the data-bound control retrieves its list of data items.</summary>
+        <value>The ID of a control that represents the data source from which the data-bound control retrieves its data. The default is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the data-bound control has already been initialized (the <xref:System.Web.UI.WebControls.BaseDataBoundControl.ConfirmInitState%2A> method is called or <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnPagePreLoad%2A> event is handled) when you set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataPropertyChanged%2A> method is called, which sets the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property to `true`.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](../Topic/ASP.NET%20Themes%20and%20Skins.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property of a data-bound control is used. The <xref:System.Web.UI.WebControls.GridView> control is associated to the <xref:System.Web.UI.WebControls.SqlDataSource> control by setting its <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property to "AuthorsSqlDataSource", the ID of the <xref:System.Web.UI.WebControls.SqlDataSource> control. When the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property is set (instead of the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property), the data-bound control automatically binds to the data source control at run time.  
+  
+ [!code-csharp[GridViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSimple/CS/displaycustomers.aspx#1)]
+ [!code-vb[GridViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSimple/VB/displaycustomers.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnsureDataBound">
@@ -163,8 +240,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Calls the <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" /> method if the <see cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" /> property is set and the data-bound control is marked to require binding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound%2A> method is called during the <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnPreRender%2A> method, to call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method if the data-bound control is not yet bound.  
+  
+ This is the same behavior pattern that the <xref:System.Web.UI.WebControls.BaseDataList> (from which classes such as <xref:System.Web.UI.WebControls.DataGrid> are derived) and <xref:System.Web.UI.WebControls.Repeater> classes follow. The `EnsureDataBound` method might also be called during calls to `CreateChildControls` and `LoadPostData` methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -180,9 +266,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the data-bound control has been initialized.</summary>
+        <value>
+          <see langword="true" /> if the data-bound control has been initialized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataBoundControl.ConfirmInitState%2A> and <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnPagePreLoad%2A> methods both explicitly set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.Initialized%2A> property to `true`. The <xref:System.Web.UI.WebControls.BaseDataBoundControl.ConfirmInitState%2A> method is called by the <xref:System.Web.UI.WebControls.DataBoundControl.OnLoad%2A?displayProperty=fullName> method, while <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnPagePreLoad%2A> is called when the <xref:System.Web.UI.Page.PreLoad> event is raised.  
+  
+   
+  
+## Examples  
+ The following code example shows a property that belongs to a derived data-bound control class. The example demonstrates how a data-bound control can call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataPropertyChanged%2A> method if a property that identifies a data source is changed after the data-bound control is initialized. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.DataBoundControl> class.  
+  
+ [!code-csharp[Samples.AspNet.TextBoxSet#7](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/CS/textboxset.cs#7)]
+ [!code-vb[Samples.AspNet.TextBoxSet#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/VB/textboxset.vb#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsBoundUsingDataSourceID">
@@ -198,9 +300,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the <see cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" /> property is set.</summary>
+        <value>The value<see langword=" true" /> is returned if the <see cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" /> property is set to value other than <see cref="F:System.String.Empty" />; otherwise, the value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Controls such as <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, <xref:System.Web.UI.WebControls.FormView>, and <xref:System.Web.UI.WebControls.Menu> use the <xref:System.Web.UI.WebControls.BaseDataBoundControl.IsBoundUsingDataSourceID%2A> property to determine whether the data-bound control is bound to an ASP.NET 2.0 data source control, such as an <xref:System.Web.UI.WebControls.ObjectDataSource> or <xref:System.Web.UI.WebControls.SqlDataSource>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the <xref:System.Web.UI.WebControls.BaseDataBoundControl.IsBoundUsingDataSourceID%2A> property is used by a derived data-bound control class. The <xref:System.Web.UI.WebControls.BaseDataBoundControl.IsBoundUsingDataSourceID%2A> property is used in the <xref:System.Web.UI.WebControls.BaseDataBoundControl.PerformSelect%2A> method implementation to determine whether the <xref:System.Web.UI.Control.DataBinding> event should be raised. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.DataBoundControl> class.  
+  
+ [!code-csharp[Samples.AspNet.TextBoxSet#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/CS/textboxset.cs#3)]
+ [!code-vb[Samples.AspNet.TextBoxSet#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/VB/textboxset.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDataBindingAutomatic">
@@ -216,9 +333,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether data binding is automatic.</summary>
+        <value>
+          <see langword="true" /> if data binding is automatic; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data binding is automatic if the control uses the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property or if the control uses `SelectMethod`, `UpdateMethod`, `DeleteMethod`, or `InsertMethod` properties for data binding.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsUsingModelBinders">
@@ -234,8 +359,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a derived class, gets a value that indicates whether the control is using model binders.</summary>
+        <value>
+          <see langword="true" /> if the control is using model binders; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,9 +381,34 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.BaseDataBoundControl.DataBound" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method notifies a server control that any data binding logic associated with the control has completed.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method is sealed on all controls derived from <xref:System.Web.UI.WebControls.BaseDataBoundControl>. Data-bound controls should override `PerformDataBinding` instead of the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method to bind data. If <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> is overridden, the <xref:System.Web.UI.Control.OnDataBinding%2A> and <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound%2A> events are raised out of order.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound%2A> method is used to raise the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBound> event by a derived data-bound control class. After using the <xref:System.Web.UI.WebControls.DataBoundControl.GetData%2A> and <xref:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding%2A> methods to bind data to the control, the data-bound control raises the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBound> event to signal that data binding is complete. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.DataBoundControl> class.  
+  
+ [!code-csharp[Samples.AspNet.TextBoxSet#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/CS/textboxset.cs#3)]
+ [!code-vb[Samples.AspNet.TextBoxSet#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/VB/textboxset.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OnDataPropertyChanged">
@@ -274,8 +425,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Rebinds the data-bound control to its data after one of the base data source identification properties changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataPropertyChanged%2A> method is called when the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A>, <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A>, or `DataMember` property value changes any time after the page's <xref:System.Web.UI.Control.PreRender> event has occurred.  
+  
+   
+  
+## Examples  
+ The following code example shows a property that belongs to a derived data-bound control class. The example demonstrates how a data-bound control can call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataPropertyChanged%2A> method if a property that identifies a data source is changed after the data-bound control is initialized. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.DataBoundControl> class.  
+  
+ [!code-csharp[Samples.AspNet.TextBoxSet#7](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/CS/textboxset.cs#7)]
+ [!code-vb[Samples.AspNet.TextBoxSet#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/VB/textboxset.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">An attempt was made to change the property value during the data-binding phase of the control.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -294,9 +461,16 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Handles the <see cref="E:System.Web.UI.Control.Init" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnInit%2A> method first calls the base class <xref:System.Web.UI.Control.OnInit%2A> method, and then calls the <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnPagePreLoad%2A> method to handle the <xref:System.Web.UI.Page.PreLoad?displayProperty=fullName> event. Additionally, if the HTTP request to the page is a post back and view state is enabled, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnInit%2A> method sets the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property to `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPagePreLoad">
@@ -316,10 +490,17 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sender">The <see cref="T:System.Web.UI.Page" /> that raised the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Sets the initialized state of the data-bound control before the control is loaded.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnPagePreLoad%2A> event handler is used to control when data binding occurs within the life cycle of the page. It does this by setting the internal initialized state of the data-bound control. Because the control's initialized state is set during the <xref:System.Web.UI.Page.PreLoad> phase of the page's lifecycle, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataPropertyChanged%2A> event handler is called any time a data property of the control is changed after that phase, to signal that the control must re-bind to its data before rendering.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -338,9 +519,16 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Handles the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataBoundControl> class overrides the <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=fullName> event handler to call <xref:System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound%2A> before calling the base class <xref:System.Web.UI.Control.OnPreRender%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformSelect">
@@ -357,8 +545,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>When overridden in a derived class, controls how data is retrieved and bound to the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived types override this method to retrieve data from a data source.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiresDataBinding">
@@ -374,9 +569,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" /> method should be called.</summary>
+        <value>The returned value is<see langword=" true" /> if the data-bound control's <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" /> method should be called before the control is rendered; otherwise, the value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property to `true` when the data-bound control has already begun to render its output to the page, the current HTTP request is not a callback, and you are using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property to identify the data source control to bind to, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method is called immediately. In this case, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property is not actually set to `true`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property is used by a derived data-bound control class. After data is retrieved by the <xref:System.Web.UI.WebControls.DataBoundControl.GetData%2A> method and bound to the control with the <xref:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding%2A> method, the <xref:System.Web.UI.WebControls.BaseDataBoundControl.RequiresDataBinding%2A> property is set to `false` and the <xref:System.Web.UI.WebControls.DataBoundControl.MarkAsDataBound%2A> method is called to signal that the control has completed binding and no longer requires this property during the current page's lifecycle. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.DataBoundControl> class.  
+  
+ [!code-csharp[Samples.AspNet.TextBoxSet#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/CS/textboxset.cs#3)]
+ [!code-vb[Samples.AspNet.TextBoxSet#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.TextBoxSet/VB/textboxset.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -392,9 +602,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the control should set the <see langword="disabled" /> attribute of the rendered HTML element to "disabled" when the control's <see cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" /> property is <see langword="false" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Web.UI.Control.RenderingCompatibility" /> property indicates an ASP.NET version lower than <c>4.0</c>; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateDataSource">
@@ -413,9 +631,12 @@
         <Parameter Name="dataSource" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="dataSource">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dataSource">The object to verify. Typically an instance of <see cref="T:System.Collections.IEnumerable" />, <see cref="T:System.ComponentModel.IListSource" />, <see cref="T:System.Web.UI.IDataSource" />, or <see cref="T:System.Web.UI.IHierarchicalDataSource" />.</param>
+        <summary>When overridden in a derived class, verifies that the object a data-bound control binds to is one it can work with.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>The <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.ValidateDataSource(System.Object)" /> method is only called in the <see cref="T:System.Web.UI.WebControls.BaseDataBoundControl" /> class's mutator (setter) for the <see cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" /> property. Derived classes implement the method to check the type of the object that is set for the <see cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" /> property, to ensure that the data-bound control can work with the type. If the type is not recognized, derived type implementations throw an exception.</para>
+        </block>
       </Docs>
     </Member>
   </Members>

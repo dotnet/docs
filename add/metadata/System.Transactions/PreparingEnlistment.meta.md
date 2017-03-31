@@ -1,24 +1,29 @@
 ---
 uid: System.Transactions.PreparingEnlistment
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.PreparingEnlistment.ForceRollback
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.PreparingEnlistment.ForceRollback
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.PreparingEnlistment.Prepared
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.PreparingEnlistment.ForceRollback(System.Exception)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.PreparingEnlistment.RecoveryInformation
-internalonly: False
+manager: "ghogen"
 ---

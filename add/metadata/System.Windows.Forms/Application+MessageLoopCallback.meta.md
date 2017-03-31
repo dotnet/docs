@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.Application.MessageLoopCallback
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

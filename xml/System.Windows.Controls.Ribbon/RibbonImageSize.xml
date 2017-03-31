@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines constants that specify how images are shown on <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Ribbon.Ribbon> control can display a Large image, a Small image, or the image can be Collapsed. If the control does not specify an image of the size that corresponds to the <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSize%2A> setting, no image is displayed.  
+  
+ A Small image is typically 16x16 pixels at 96 dpi. A Large image is typically 32x32 pixels at 96 dpi.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Collapsed">
@@ -27,7 +36,7 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonImageSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The image is collapsed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Large">
@@ -43,7 +52,7 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonImageSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The large image is shown.</summary>
       </Docs>
     </Member>
     <Member MemberName="Small">
@@ -59,7 +68,7 @@
         <ReturnType>System.Windows.Controls.Ribbon.RibbonImageSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The small image is shown.</summary>
       </Docs>
     </Member>
   </Members>

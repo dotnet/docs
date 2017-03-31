@@ -1,1 +1,0 @@
-                MsmqTransportBindingElement transportBindingElement = new MsmqTransportBindingElement();

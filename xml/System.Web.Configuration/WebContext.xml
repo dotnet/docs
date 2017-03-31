@@ -11,8 +11,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Manages the path context for the current Web application. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.Configuration.WebContext> class.  
+  
+ [!code-csharp[System.Web.Configuration.WebContext#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebContext/CS/WebContext.cs#1)]
+ [!code-vb[System.Web.Configuration.WebContext#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebContext/VB/WebContext.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,14 +43,24 @@
         <Parameter Name="appConfigPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pathLevel">To be added.</param>
-        <param name="site">To be added.</param>
-        <param name="applicationPath">To be added.</param>
-        <param name="path">To be added.</param>
-        <param name="locationSubPath">To be added.</param>
-        <param name="appConfigPath">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pathLevel">A <see cref="T:System.Web.Configuration.WebApplicationLevel" /> object.</param>
+        <param name="site">The name of the Web site.</param>
+        <param name="applicationPath">The virtual path of the root level of the current Web application.</param>
+        <param name="path">The virtual path of the Web.config file that the current configuration object represents.</param>
+        <param name="locationSubPath">The path value of the <see langword="location" /> element that is currently being edited.</param>
+        <param name="appConfigPath">The current Web application's configuration path.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.WebContext" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this constructor. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebContext> class.  
+  
+ [!code-csharp[System.Web.Configuration.WebContext#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebContext/CS/WebContext.cs#2)]
+ [!code-vb[System.Web.Configuration.WebContext#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebContext/VB/WebContext.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplicationLevel">
@@ -56,9 +76,19 @@
         <ReturnType>System.Web.Configuration.WebApplicationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Web.Configuration.WebApplicationLevel" /> object that represents the path level of the current Web application.</summary>
+        <value>A <see cref="T:System.Web.Configuration.WebApplicationLevel" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.Configuration.WebContext.ApplicationLevel%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebContext> class.  
+  
+ [!code-csharp[System.Web.Configuration.WebContext#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebContext/CS/WebContext.cs#3)]
+ [!code-vb[System.Web.Configuration.WebContext#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebContext/VB/WebContext.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplicationPath">
@@ -74,9 +104,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the application path of the current Web application.</summary>
+        <value>The application path of the current Web application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.Configuration.WebContext.ApplicationPath%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebContext> class.  
+  
+ [!code-csharp[System.Web.Configuration.WebContext#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebContext/CS/WebContext.cs#4)]
+ [!code-vb[System.Web.Configuration.WebContext#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebContext/VB/WebContext.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LocationSubPath">
@@ -92,8 +132,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location subpath of the Web application.</summary>
+        <value>The location subpath of the current Web application.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,9 +150,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the current virtual path of the Web application.</summary>
+        <value>The current virtual path of the Web application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.Configuration.WebContext.Path%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebContext> class.  
+  
+ [!code-csharp[System.Web.Configuration.WebContext#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebContext/CS/WebContext.cs#6)]
+ [!code-vb[System.Web.Configuration.WebContext#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebContext/VB/WebContext.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -128,9 +178,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the current Web application.</summary>
+        <value>The name of the current Web application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.Configuration.WebContext.Site%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.WebContext> class.  
+  
+ [!code-csharp[System.Web.Configuration.WebContext#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.WebContext/CS/WebContext.cs#7)]
+ [!code-vb[System.Web.Configuration.WebContext#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.WebContext/VB/WebContext.vb#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -147,8 +207,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents the application's configuration path.</summary>
+        <returns>The application's configuration path.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

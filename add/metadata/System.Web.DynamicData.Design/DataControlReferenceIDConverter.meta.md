@@ -1,24 +1,41 @@
 ---
 uid: System.Web.DynamicData.Design.DataControlReferenceIDConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.DynamicData.Design.DataControlReferenceIDConverter.GetStandardValuesSupported
+---
+
+---
+uid: System.Web.DynamicData.Design.DataControlReferenceIDConverter.GetStandardValuesExclusive
 ---
 
 ---
 uid: System.Web.DynamicData.Design.DataControlReferenceIDConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.Design.DataControlReferenceIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.Design.DataControlReferenceIDConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.DynamicData.Design.DataControlReferenceIDConverter.GetStandardValues
 ---
 
 ---
 uid: System.Web.DynamicData.Design.DataControlReferenceIDConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,1 +1,0 @@
-   Uri^ baseUri = gcnew Uri( "http://www.contoso.com/" );

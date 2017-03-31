@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies error conditions that may be encountered by the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizer" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The localized BAML  contains more than one reference to the same element.</summary>
       </Docs>
     </Member>
     <Member MemberName="DuplicateUid">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>More than one element has the same <see cref="P:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncompleteElementPlaceholder">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The element's substitution contains incomplete child placeholders.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidCommentingXml">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>XML comments do not have the correct format.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidLocalizationAttributes">
@@ -91,7 +91,7 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The localization commenting text contains invalid attributes.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidLocalizationComments">
@@ -107,7 +107,7 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The localization commenting text contains invalid comments.</summary>
       </Docs>
     </Member>
     <Member MemberName="InvalidUid">
@@ -123,7 +123,7 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="P:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid" /> does not correspond to any element in the BAML source.</summary>
       </Docs>
     </Member>
     <Member MemberName="MismatchedElements">
@@ -139,7 +139,7 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a mismatch between substitution and source. The substitution must contain all the element placeholders in the source.</summary>
       </Docs>
     </Member>
     <Member MemberName="SubstitutionAsPlaintext">
@@ -155,7 +155,7 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The substitution of an element's content cannot be parsed as XML, therefore any formatting tags in the substitution are not recognized. The substitution is instead applied as plain text.</summary>
       </Docs>
     </Member>
     <Member MemberName="UidMissingOnChildElement">
@@ -171,7 +171,7 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A child element does not have a <see cref="P:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid" />. As a result, it cannot be represented as a placeholder in the parent's content string.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnknownFormattingTag">
@@ -187,7 +187,7 @@
         <ReturnType>System.Windows.Markup.Localizer.BamlLocalizerError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A formatting tag in the substitution is not recognized.</summary>
       </Docs>
     </Member>
   </Members>

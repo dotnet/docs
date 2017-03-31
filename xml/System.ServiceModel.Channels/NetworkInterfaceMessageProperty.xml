@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a network interface message property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="interfaceIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="interfaceIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="interfaceIndex">The specified interface index.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.NetworkInterfaceMessageProperty" /> class using a specified interfaceIndex.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,8 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message to add.</param>
+        <summary>Specifies a message to add into the message properties.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
         <Parameter Name="properties" Type="System.ServiceModel.Channels.MessageProperties" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="properties">The properties to add.</param>
+        <summary>Specifies a property to add into the message properties.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value that specifies the interface index for the message property.</summary>
+        <value>The value that specifies the interface index for the message property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the specified name for the network interface message property.</summary>
+        <value>The specified name for the network interface message property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,10 +128,11 @@
         <Parameter Name="property" Type="System.ServiceModel.Channels.NetworkInterfaceMessageProperty&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The message from which the network interface message properties are to be retrieved.</param>
+        <param name="property">The method returns true, networkInterfaceMessageProperty contains a NetworkInterfaceMessageProperty that is associated with the message.</param>
+        <summary>Attempts to get the NetworkInterfaceMessageProperty from the properties of a specified message.</summary>
+        <returns>
+          <see langword="True" /> when a value for the NetworkInterfaceMessageproperty is obtained from the message; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,10 +153,11 @@
         <Parameter Name="property" Type="System.ServiceModel.Channels.NetworkInterfaceMessageProperty&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="properties">The MessageProperties from which the network interfaces message properties are to be retrieved.</param>
+        <param name="property">The method returns true, networkInterfaceMessageProperty contains a NetworkInterfaceMessageProperty that is associated with the properties.</param>
+        <summary>Attempts to get the NetworkInterfaceMessageProperty from a specified collection of message properties.</summary>
+        <returns>
+          <see langword="True" /> when a value for the NetworkInterfaceMessageProperty is obtained from the properties; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

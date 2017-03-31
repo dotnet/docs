@@ -1,34 +1,39 @@
 ---
 uid: System.Runtime.Remoting.ActivatedClientTypeEntry
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ActivatedClientTypeEntry.#ctor(System.Type,System.String)
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.ActivatedClientTypeEntry.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ActivatedClientTypeEntry.ObjectType
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ActivatedClientTypeEntry.ContextAttributes
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ActivatedClientTypeEntry.ApplicationUrl
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ActivatedClientTypeEntry.ToString
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.ActivatedClientTypeEntry.#ctor(System.String,System.String,System.String)
-internalonly: False
+manager: "ghogen"
 ---

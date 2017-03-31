@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an enumeration whose members represent the outcome of bookmark scheduling requests.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Activities.BookmarkResumptionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The bookmark resumption was not scheduled because the bookmark could not be found.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotReady">
@@ -43,7 +43,7 @@
         <ReturnType>System.Activities.BookmarkResumptionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The bookmark resumption was not scheduled because the runtime has not yet created the bookmark. The host should wait until another idle point to try resumption again.</summary>
       </Docs>
     </Member>
     <Member MemberName="Success">
@@ -59,7 +59,7 @@
         <ReturnType>System.Activities.BookmarkResumptionResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The bookmark resumption was successfully scheduled.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.Presentation.Validation.IValidationErrorService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Validation.IValidationErrorService.ShowValidationErrors(System.Collections.Generic.IList{System.Activities.Presentation.Validation.ValidationErrorInfo})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

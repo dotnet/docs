@@ -1,19 +1,23 @@
 ---
 uid: System.Speech.Synthesis.TtsEngine.SkipInfo
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.SkipInfo.#ctor
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.SkipInfo.Type
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.TtsEngine.SkipInfo.Count
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

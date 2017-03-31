@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Determines how the colors in a gradient are interpolated.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Media.ColorInterpolationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Colors are interpolated in the scRGB color space</summary>
       </Docs>
     </Member>
     <Member MemberName="SRgbLinearInterpolation">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Media.ColorInterpolationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Colors are interpolated in the sRGB color space</summary>
       </Docs>
     </Member>
   </Members>

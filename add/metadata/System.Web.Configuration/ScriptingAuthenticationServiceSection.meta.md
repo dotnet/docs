@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Configuration.ScriptingAuthenticationServiceSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingAuthenticationServiceSection.RequireSSL
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingAuthenticationServiceSection.Enabled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingAuthenticationServiceSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

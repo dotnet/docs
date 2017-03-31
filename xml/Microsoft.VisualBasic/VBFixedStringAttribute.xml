@@ -16,8 +16,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that a string should be treated as if it were fixed length.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Visual Basic strings are of variable length by default. This attribute is useful when using Visual Basic file input and output functions such as `FileGet` and `FilePut` that require fixed length strings.  
+  
+   
+  
+## Examples  
+ [!code-vb[VbCnAttributes#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbCnAttributes/VB/Class2.vb#23)]  
+  
+> [!NOTE]
+>  The `VBFixedStringAttribute` is informational and cannot be used to convert a variable length string to a fixed string. The purpose of this attribute is to modify how strings in structures and non-local variables are used by methods or API calls that recognize the `VBFixedStringAttribute`. Keep in mind that this attribute does not change the actual length of the string itself.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +48,16 @@
         <Parameter Name="Length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Length">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="Length">The length of the fixed string.</param>
+        <summary>Initializes the value of the <see langword="SizeConst" /> field.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor runs when the `VBFixedStringAttribute` attribute is applied to a string.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -51,9 +73,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the length of the string.</summary>
+        <value>Returns the length of the string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor for this attribute sets this property when the `VBFixedStringAttribute` is applied to a string.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

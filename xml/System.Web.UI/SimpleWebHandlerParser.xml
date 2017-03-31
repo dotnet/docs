@@ -11,8 +11,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides base functionality for parsing Web handler files.</summary>
     <remarks>To be added.</remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Web.UI.SimpleWebHandlerParser" />, you must override the <see cref="P:System.Web.UI.SimpleWebHandlerParser.DefaultDirectiveName" /> property.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,10 +33,10 @@
         <Parameter Name="physicalPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="virtualPath">To be added.</param>
-        <param name="physicalPath">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">Pass <see langword="null" />. Parameter is now obsolete.</param>
+        <param name="virtualPath">The path of the current virtual directory.</param>
+        <param name="physicalPath">Pass <see langword="null" />. Parameter is now obsolete.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.SimpleWebHandlerParser" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,8 +53,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the name of the main directive from a &lt;%@ %&gt; block.</summary>
+        <value>A <see cref="T:System.String" /> that contains the default directive name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +72,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the type for the compiled object from the virtual path.</summary>
+        <returns>The <see cref="T:System.Type" /> assigned to the virtual path.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

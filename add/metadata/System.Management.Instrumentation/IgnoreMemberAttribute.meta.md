@@ -1,9 +1,9 @@
 ---
 uid: System.Management.Instrumentation.IgnoreMemberAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.IgnoreMemberAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides properties that specify the appearance of <see cref="T:System.Windows.Forms.Button" /> controls whose <see cref="T:System.Windows.Forms.FlatStyle" /> is <see cref="F:System.Windows.Forms.FlatStyle.Flat" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,8 +47,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the color of the border around the button.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure representing the color of the border around the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies the size, in pixels, of the border around the button.</summary>
+        <value>An <see cref="T:System.Int32" /> representing the size, in pixels, of the border around the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +111,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the color of the client area of the button when the button is checked and the mouse pointer is outside the bounds of the control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure representing the color of the client area of the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +143,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the color of the client area of the button when the mouse is pressed within the bounds of the control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure representing the color of the client area of the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +175,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the color of the client area of the button when the mouse pointer is within the bounds of the control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure representing the color of the client area of the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

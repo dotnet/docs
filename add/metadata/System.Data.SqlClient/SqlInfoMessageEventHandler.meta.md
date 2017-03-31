@@ -1,4 +1,6 @@
 ---
 uid: System.Data.SqlClient.SqlInfoMessageEventHandler
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

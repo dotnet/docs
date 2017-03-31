@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a UDP transport binding element.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.UdpTransportBindingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,10 +56,10 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TChannel">The type of channel the factory builds.</typeparam>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> that provides context for the binding element.</param>
+        <summary>Initializes a channel factory for producing channels of a specified type from the binding context.</summary>
+        <returns>The<see cref="T:System.ServiceModel.Channels.IChannelFactory`1" /> of type <paramref name="TChannel" /> initialized from the context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,10 +87,10 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TChannel">The type of channel the listener is built to accept.</typeparam>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> that provides context for the binding element.</param>
+        <summary>Initializes a channel listener to accept channels of a specified type from the binding context.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.IChannelListener`1" /> of type <paramref name="TChannel" /> initialized from the context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,10 +113,11 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TChannel">The type of channel the channel factory produces.</typeparam>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> the provides context for the binding element.</param>
+        <summary>Returns a value that indicates whether the binding element can build a channel factory for a specific type of channel.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.IChannelFactory`1" /> of type <paramref name="TChannel" /> can be built by the binding element; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,10 +145,11 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TChannel">The type of channel the listener accepts.</typeparam>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> the provides context for the binding element.</param>
+        <summary>Returns a value that indicates whether the binding element can build a listener for a specific type of channel.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.IChannelListener`1" /> of type <paramref name="TChannel" /> can be built by the binding element; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,8 +167,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a copy of the binding element object.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.BindingElement" /> object that is a deep clone of the original.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +190,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of message hashes used by the binding to identify duplicate messages.</summary>
+        <value>The maximum number of message hashes used by the binding to identify duplicate messages.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,10 +218,10 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the property to get.</typeparam>
+        <param name="context">A binding context.</param>
+        <summary>Returns a property from the specified binding context.</summary>
+        <returns>The property from the specified binding context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,8 +243,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of messages that are received but not yet removed from the input queue for an individual channel instance.</summary>
+        <value>The maximum number of messages that are received but not yet removed from the input queue for an individual channel instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +266,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the network adapter that is used when sending and receiving multicast traffic on multi-honed machines.</summary>
+        <value>The network adapter that is used when sending and receiving multicast traffic on multi-honed machines.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,8 +284,8 @@
         <ReturnType>System.ServiceModel.Channels.UdpRetransmissionSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the UDP retransmission settings.</summary>
+        <value>The UDP retransmission settings.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,8 +302,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URI scheme for the transport.</summary>
+        <value>The URI scheme for the transport.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,8 +326,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Indicates whether the retransmission settings from the binding element should serialize.</summary>
+        <returns>
+          <see langword="true" /> if the retransmission settings from the binding element should serialize; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,8 +350,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the receive buffer size on the underlying socket.</summary>
+        <value>The receive buffer size on the underlying socket.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,9 +372,9 @@
         <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exporter">The object that exports the metadata information.</param>
+        <param name="context">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> that you can use to insert the custom policy assertion.</param>
+        <summary>Writes the custom policy assertions into the context of the binding element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,9 +395,9 @@
         <Parameter Name="context" Type="System.ServiceModel.Description.WsdlContractConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exporter">The object that exports the contract information.</param>
+        <param name="context">The context that provides mappings from exported WSDL elements to the contract description.</param>
+        <summary>Writes the custom Web Services Description Language (WSDL) elements into the generated WSDL for a contract.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,9 +418,9 @@
         <Parameter Name="context" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exporter">The object that exports the contract information.</param>
+        <param name="context">The context that provides mappings from exported WSDL elements to the endpoint description.</param>
+        <summary>Writes the custom Web Services Description Language (WSDL) elements into the generated WSDL for an endpoint.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -439,8 +442,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the number of network segment hops.</summary>
+        <value>The number of network segment hops.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateContainer
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateContainer.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateContainer.Template
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateContainer.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

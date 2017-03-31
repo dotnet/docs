@@ -21,8 +21,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartNamedElement" /> object.</typeparam>
+    <summary>Represents the base class for all collections of named chart elements. Performs name management and enforces the uniqueness of the names.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,9 +42,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the chart element.</param>
+        <summary>Finds the chart element by the specified name.</summary>
+        <returns>The <see cref="T:System.Web.UI.DataVisualization.Charting.ChartNamedElement" /> object of the specified name in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +64,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the chart element.</param>
+        <summary>Finds the index of the chart element with the specified name.</summary>
+        <returns>An <see langword="integer" /> value that represents the position of the chart element in the zero-based index.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +87,9 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index where the item is to be inserted.</param>
+        <param name="item">The object to insert.</param>
+        <summary>Inserts the specified item in the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +109,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The new chart element name.</param>
+        <summary>Determines whether the chart element with the specified name already exists in the collection.</summary>
+        <returns>
+          <see langword="True" /> if the new chart element name is unique, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +132,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The name of the chart element.</param>
+        <summary>Gets or sets the chart element with the specified name.</summary>
+        <value>The <see cref="T:System.Web.UI.DataVisualization.Charting.ChartNamedElement" /> object of the specified name in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,8 +151,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name prefix that is used to create unique chart element names.</summary>
+        <value>A <see langword="string" /> value that represents the default name prefix of the chart elements stored in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +170,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Finds the unique name for the new element to be added to the collection.</summary>
+        <returns>A <see langword="string" /> value that represents the next unique chart element name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,8 +191,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the chart element to remove.</param>
+        <summary>Removes the chart element at the specified index of the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,9 +213,9 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the chart element to replace.</param>
+        <param name="item">The new chart element to insert at the specified index.</param>
+        <summary>Replaces the chart element at the specified index with a new chart element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

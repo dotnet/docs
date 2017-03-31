@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.TokenColor
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -19,8 +19,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how query command results are applied to the row being updated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.UpdateRowSource> values are used by the <xref:System.Data.IDbCommand.UpdatedRowSource%2A> property of <xref:System.Data.IDbCommand> and any classes derived from it.  
+  
+ For more information property, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Both">
@@ -45,7 +54,7 @@
         <ReturnType>System.Data.UpdateRowSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Both the output parameters and the first returned row are mapped to the changed row in the <see cref="T:System.Data.DataSet" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="FirstReturnedRecord">
@@ -70,7 +79,7 @@
         <ReturnType>System.Data.UpdateRowSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data in the first returned row is mapped to the changed row in the <see cref="T:System.Data.DataSet" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -95,7 +104,7 @@
         <ReturnType>System.Data.UpdateRowSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Any returned parameters or rows are ignored.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutputParameters">
@@ -120,7 +129,7 @@
         <ReturnType>System.Data.UpdateRowSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Output parameters are mapped to the changed row in the <see cref="T:System.Data.DataSet" />.</summary>
       </Docs>
     </Member>
   </Members>

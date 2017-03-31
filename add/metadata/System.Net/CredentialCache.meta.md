@@ -1,54 +1,83 @@
 ---
 uid: System.Net.CredentialCache
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CredentialCache.GetEnumerator
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.CredentialCache.Remove
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CredentialCache.GetCredential(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CredentialCache.Add(System.String,System.Int32,System.String,System.Net.NetworkCredential)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CredentialCache.GetCredential(System.String,System.Int32,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CredentialCache.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CredentialCache.DefaultCredentials
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.CredentialCache.GetCredential
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CredentialCache.Remove(System.String,System.Int32,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.CredentialCache.Add
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CredentialCache.DefaultNetworkCredentials
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CredentialCache.Add(System.Uri,System.String,System.Net.NetworkCredential)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.CredentialCache.Remove(System.Uri,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

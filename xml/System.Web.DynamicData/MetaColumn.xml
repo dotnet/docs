@@ -15,8 +15,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a database column that is used by Dynamic Data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In ASP.NET Dynamic Data applications, the <xref:System.Web.DynamicData.MetaColumn> class represents a database field. The <xref:System.Web.DynamicData.MetaColumn> class lets you retrieve information about the data field such as type and metadata information.  
+  
+ You can retrieve the table that the data field belongs to by using the <xref:System.Web.DynamicData.MetaColumn.Table%2A> property. You can also retrieve the data model by using the <xref:System.Web.DynamicData.MetaColumn.Model%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +42,9 @@
         <Parameter Name="columnProvider" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" />
       </Parameters>
       <Docs>
-        <param name="table">To be added.</param>
-        <param name="columnProvider">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="table">The meta table that contains the column.</param>
+        <param name="columnProvider">The column provider.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.MetaColumn" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +61,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether a column enables a value to be inserted.</summary>
+        <value>
+          <see langword="true" /> if the column enables a value to be inserted; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false` when the column is read-only and `true` when the column is not read-only. The default value can be overridden by using the <xref:System.ComponentModel.DataAnnotations.EditableAttribute> attribute.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyFormatInEditMode">
@@ -70,9 +87,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the formatting string specified by the <see cref="P:System.Web.DynamicData.MetaColumn.DataFormatString" /> property is applied to field values when the data-bound control that contains the data field that is represented by the <see cref="T:System.Web.DynamicData.MetaColumn" /> object is in edit mode.</summary>
+        <value>
+          <see langword="true" /> if the formatting string specified by the <see cref="P:System.Web.DynamicData.MetaColumn.DataFormatString" /> property is applied to field values when the data-bound control that contains the data field that is represented by the <see cref="T:System.Web.DynamicData.MetaColumn" /> object is in edit mode; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.ApplyFormatInEditMode%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ApplyFormatInEditMode%2A?displayProperty=fullName> property. If a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is not found, this property verifies if a <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute is applied to retrieve formatting information.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -88,8 +113,8 @@
         <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of metadata attributes that apply to the data field represented by the <see cref="T:System.Web.DynamicData.MetaColumn" /> object.</summary>
+        <value>The collection of metadata attributes that apply to the data field represented by the <see cref="T:System.Web.DynamicData.MetaColumn" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,9 +132,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the attribute collection.</summary>
+        <returns>The attribute collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must call the <xref:System.Web.DynamicData.MetaColumn.BuildAttributeCollection%2A> method before you access the <xref:System.Web.DynamicData.MetaColumn.Attributes%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnType">
@@ -125,9 +157,16 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the data field type.</summary>
+        <value>The data field type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.ColumnType%2A> property returns the common language runtime (CLR) type of the data field.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertEmptyStringToNull">
@@ -143,9 +182,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether empty string values ("") are automatically converted to <see langword="null" /> values when the data field is updated in the data source.</summary>
+        <value>
+          <see langword="true" /> if empty string values are automatically converted to <see langword="null" /> values when the data field is updated in the data source; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.ConvertEmptyStringToNull%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ConvertEmptyStringToNull%2A?displayProperty=fullName> property. If a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is not found, this property verifies if a <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute is applied to retrieve formatting information.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFormatString">
@@ -161,9 +208,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the string that specifies the display format for the field value.</summary>
+        <value>The string that specifies the display format for the field value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.DataFormatString%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString%2A?displayProperty=fullName> property. If a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is not found, this property verifies if a <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute is applied to retrieve formatting information.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataTypeAttribute">
@@ -179,8 +233,8 @@
         <ReturnType>System.ComponentModel.DataAnnotations.DataTypeAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" /> attribute that is applied to the data field.</summary>
+        <value>The <see cref="T:System.ComponentModel.DataAnnotations.DataTypeAttribute" /> attribute that is applied to the data field.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,9 +251,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the default value for the data field.</summary>
+        <value>The default value for the data field.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.DefaultValue%2A> property is typically used to pre-populate the field value when a new entry is created. This property verifies if a <xref:System.ComponentModel.DefaultValueAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DefaultValueAttribute.Value%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -215,9 +276,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the description for the data field.</summary>
+        <value>The description for the data field.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.Description%2A> property verifies if a <xref:System.ComponentModel.DescriptionAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DescriptionAttribute.Description%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -233,9 +301,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the display name for the data field.</summary>
+        <value>The display name for the data field.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.DisplayName%2A> property returns the friendly display name for the data field if one has been set, or the field name if no display name has been specified. The <xref:System.Web.DynamicData.MetaColumn.DisplayName%2A> property verifies if a friendly display name has been set by checking if a <xref:System.ComponentModel.DisplayNameAttribute> attribute is applied to the data field.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EntityTypeProperty">
@@ -251,8 +326,8 @@
         <ReturnType>System.Reflection.PropertyInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that contains attributes of the property that represents the data field in the entity type.</summary>
+        <value>An object that contains attributes of the property that represents the data field in the entity type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,8 +344,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="P:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.FilterUIHint" /> value that is used for the column.</summary>
+        <value>The <see cref="P:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.FilterUIHint" /> value that is used for the column.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,8 +362,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether field values are HTML-encoded before they are displayed in a data-bound control.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,8 +382,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes data that might not be available when the constructor is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method cannot be called directly. To customize initialization, you can derive from this class and override the `Initialize` method. If you override this method, call the base control's `Initialize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsBinaryData">
@@ -323,8 +406,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the data field contains binary data.</summary>
+        <value>
+          <see langword="true" /> if the data field contains binary data; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,9 +425,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the data field exists in the database.</summary>
+        <value>
+          <see langword="true" /> if the data field does not exist in the database; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.DynamicData.MetaColumn.IsCustomProperty%2A> property to determine whether a data field is in the database or if it is an extra property that was added to the data context object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFloatingPoint">
@@ -359,9 +451,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the data field is a floating-point type.</summary>
+        <value>
+          <see langword="true" /> if the data field is a floating-point type; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The types `float`, `double`, and `decimal` are floating point types.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsForeignKeyComponent">
@@ -377,8 +477,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the data field is part of a foreign key.</summary>
+        <value>
+          <see langword="true" /> if the data field is part of a foreign key; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,8 +496,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the data field value is automatically generated in the database.</summary>
+        <value>
+          <see langword="true" /> if the data field value is automatically generated in the database; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,9 +515,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the data field type is an integer type.</summary>
+        <value>
+          <see langword="true" /> if the data field type is an integer type; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The types `byte`, `short`, `int`, and `long` are integer types.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLongString">
@@ -431,9 +541,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the data field type can contain long strings.</summary>
+        <value>
+          <see langword="true" /> if the data field type can contain long strings; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SQL types `text`, `ntext`, `varchar`, and `nvarchar` can contain long strings. The value of the <xref:System.Web.DynamicData.MetaColumn.IsLongString%2A> property is used to determine whether the TextBox or TextArea field template is displayed to enable users to modify the field value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPrimaryKey">
@@ -449,8 +567,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the data field is part of the table's primary key.</summary>
+        <value>
+          <see langword="true" /> if the data field is part of the table's primary key; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,8 +586,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the data field is read-only.</summary>
+        <value>
+          <see langword="true" /> if the data field is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,9 +605,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the data field requires a value.</summary>
+        <value>
+          <see langword="true" /> if the data field requires a value; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.Description%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> attribute is applied to the data field or if the database schema contains information about the data field being required in the database to determine whether the data field requires a value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsString">
@@ -503,8 +631,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the data field type is a string type.</summary>
+        <value>
+          <see langword="true" /> if the data field type is a string type; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -521,9 +650,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates the maximum length of data that can be stored in the data field.</summary>
+        <value>The maximum length of data that can be stored in the data field.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.MaxLength%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.StringLengthAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.StringLengthAttribute.MaximumLength%2A> property. If a <xref:System.ComponentModel.DataAnnotations.StringLengthAttribute> attribute is not applied to the data field, the <xref:System.Web.DynamicData.MetaColumn.MaxLength%2A> property uses the database type to retrieve the maximum length allowed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Model">
@@ -539,8 +675,8 @@
         <ReturnType>System.Web.DynamicData.MetaModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.DynamicData.MetaModel" /> object that represents the data model that this data field belongs to.</summary>
+        <value>An object that represents the data model that this data field belongs to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -557,8 +693,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the data field.</summary>
+        <value>The name of the data field.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -575,9 +711,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the caption that is displayed for a field when the field's value is <see langword="null" />.</summary>
+        <value>The caption that is displayed for a field when the field's value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.NullDisplayText%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.NullDisplayText%2A?displayProperty=fullName> property. If a <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> attribute is not found, this property verifies if a <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute is applied to retrieve formatting information.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Prompt">
@@ -593,9 +736,21 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that can be used as a watermark in the UI that is bound to data in the column.</summary>
+        <value>A value that can be used as a watermark in the UI that is bound to data in the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` or empty string can be returned.  
+  
+   
+  
+## Examples  
+ This property is set by the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute> attribute in the column's definition in the meta class for the data entity.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -611,8 +766,8 @@
         <ReturnType>System.Web.DynamicData.ModelProviders.ColumnProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the abstraction provider object that is used to generate the <see cref="T:System.Web.DynamicData.MetaColumn" /> object.</summary>
+        <value>The abstraction provider object that is used to generate the <see cref="T:System.Web.DynamicData.MetaColumn" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -629,8 +784,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the error message that is displayed when the data field requires a value but its value is empty.</summary>
+        <value>The error message that is displayed when the data field requires a value but its value is empty.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -648,8 +803,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears cached column metadata.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The column metadata is information that is derived from attributes and that is cached for performance. Calling this method clears the metadata cache for this column. The metadata cache is rebuilt the next time any information that is derived from metadata is requested.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Scaffold">
@@ -665,9 +827,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the data field should be displayed.</summary>
+        <value>
+          <see langword="true" /> if the data field should be displayed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.Scaffold%2A> property indicates whether a data field should be displayed when it is automatically generated by ASP.NET Dynamic Data. This property verifies if a <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute> attribute is applied to the data field and returns the value of the <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute.Scaffold%2A?displayProperty=fullName> property. If a <xref:System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute> attribute is not applied to the data field, Dynamic Data uses the following rules to determine whether to display the column:  
+  
+-   If a <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute is applied to the data field, the data field is displayed. This rule overrides all the other rules.  
+  
+-   If the value of the <xref:System.Web.DynamicData.MetaColumn.IsForeignKeyComponent%2A> property is `true`, the data field is not displayed. This occurs because Dynamic Data handles foreign-key fields in a different way and will not typically display the foreign-key field value.  
+  
+-   If the value of the <xref:System.Web.DynamicData.MetaColumn.IsGenerated%2A> property is `true`, the data field is not displayed. Typically fields that are automatically generated in the database do not contain relevant information. Make sure that you apply the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute to the data field, if the data field must be displayed.  
+  
+-   If the value of the <xref:System.Web.DynamicData.MetaColumn.IsCustomProperty%2A> property is `true`, the data field is not displayed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShortDisplayName">
@@ -683,9 +861,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the short name for the column.</summary>
+        <value>The short name for the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is provided for <xref:System.Web.UI.WebControls.GridView> control and other controls where a short name is needed because of limited column-header space.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SortExpression">
@@ -701,8 +886,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the expression that is used to determine the sort order for the data field.</summary>
+        <value>The expression that is used to determine the sort order for the data field.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -719,8 +904,8 @@
         <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Web.DynamicData.MetaTable" /> object that represents the table that the data field belongs to.</summary>
+        <value>An object that represents the table that the data field belongs to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -738,8 +923,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the data field name.</summary>
+        <returns>The data field name, which is the string representation of the column.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -756,9 +941,16 @@
         <ReturnType>System.TypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of the data field.</summary>
+        <value>The type of the data field.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.TypeCode%2A> property value is derived from the value of the <xref:System.Web.DynamicData.MetaColumn.ColumnType%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UIHint">
@@ -774,9 +966,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the field template specified for the data field.</summary>
+        <value>The name of the field template specified for the data field.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaColumn.UIHint%2A> property verifies if a <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute is applied to the data field and retrieves the value of the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A?displayProperty=fullName> property. If a <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> attribute is not applied to the data field, the <xref:System.Web.DynamicData.MetaColumn.UIHint%2A> property returns an empty string.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

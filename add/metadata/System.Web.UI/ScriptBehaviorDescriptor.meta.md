@@ -1,29 +1,35 @@
 ---
 uid: System.Web.UI.ScriptBehaviorDescriptor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptBehaviorDescriptor.ClientID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptBehaviorDescriptor.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptBehaviorDescriptor.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptBehaviorDescriptor.GetScript
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ScriptBehaviorDescriptor.ElementID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

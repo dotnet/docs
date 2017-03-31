@@ -1,19 +1,27 @@
 ---
 uid: Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

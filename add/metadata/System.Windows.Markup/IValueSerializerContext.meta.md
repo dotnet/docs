@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Markup.IValueSerializerContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor(System.ComponentModel.PropertyDescriptor)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor(System.Type)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor
+manager: "martinek"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Design.UITypeEditorEditStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

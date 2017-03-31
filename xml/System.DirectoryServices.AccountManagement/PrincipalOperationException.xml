@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Thrown when ADSI returns an error during an operation to update the store.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes a new instance of the <xref:System.DirectoryServices.AccountManagement.PrincipalOperationException> class. The <xref:System.Exception.Message%2A> property is initialized to a system-supplied message that describes the error. This message takes into account the current system culture. The <xref:System.Exception.InnerException%2A> property is initialized to `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,9 +50,16 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The text of the error message.</param>
+        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException" /> class with the specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalOperationException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,9 +76,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains the information required to serialize the new <see cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException" /></param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains the source of the serialized stream that is associated with the new <see cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException" /></param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException" /> class from the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> instances.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,10 +96,17 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The text of the error message.</param>
+        <param name="innerException">A nested exception.</param>
+        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException" /> class with the specified error message and specified nested exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalOperationException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.Exception.InnerException%2A> property set to the value of `innerException`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> is initialized to `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,10 +123,17 @@
         <Parameter Name="errorCode" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="errorCode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The text of the message.</param>
+        <param name="errorCode">An error code.</param>
+        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException" /> class with the specified error message and specified error code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalOperationException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.DirectoryServices.AccountManagement.PrincipalOperationException.ErrorCode%2A> property set to the value of `errorCode`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,11 +151,18 @@
         <Parameter Name="errorCode" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <param name="errorCode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">The text of the message.</param>
+        <param name="innerException">A nested exception.</param>
+        <param name="errorCode">An error code.</param>
+        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException" /> class with the specified error message, the specified nested exception, and the specified error code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalOperationException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.Exception.InnerException%2A> property set to the value of `innerException`, and the <xref:System.DirectoryServices.AccountManagement.PrincipalOperationException.ErrorCode%2A> is set to `errorCode`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> is initialized to `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorCode">
@@ -143,8 +178,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns an integer error code.</summary>
+        <value>Returns an <see langword="integer" />.  
+  
+ The system will return 0 (zero) in the exception error code property if no underlying error was received from a win32 API. Callers need to distinguish between 0 (zero) and a valid win32 error code.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,10 +207,17 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The object that holds the serialized object data.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException" /> class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](../Topic/XML%20and%20SOAP%20Serialization.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

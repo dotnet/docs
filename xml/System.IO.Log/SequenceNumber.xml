@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a sequence number assigned to a log record in a record sequence.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each log record in a sequence is assigned a sequence number greater than the sequence numbers of the records appended before it. A sequence number can be compared, but not otherwise manipulated.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,9 +39,11 @@
         <Parameter Name="sequenceNumber" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="sequenceNumber">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sequenceNumber">Bytes that make up the sequence number.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.SequenceNumber" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sequenceNumber" /> is of the wrong length, or does not represent a valid sequence number.</exception>
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -53,9 +62,44 @@
         <Parameter Name="other" Type="System.IO.Log.SequenceNumber" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">An object that evaluates to the current sequence number.</param>
+        <summary>Compares this sequence number with a specified object.</summary>
+        <returns>A 32-bit signed integer indicating the lexical relationship between the two comparands.  
+  
+ <list type="table">  
+<item>  
+<term> Value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</item>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> This instance is less than <paramref name="other" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance is equal to <paramref name="other" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> This instance is greater than <paramref name="other" />.  
+  
+ </description>  
+</item>  
+</list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +119,10 @@
         <Parameter Name="other" Type="System.IO.Log.SequenceNumber" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">Another <see cref="T:System.IO.Log.SequenceNumber" /> to compare to.</param>
+        <summary>Indicates whether this instance and a specified sequence number are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="other" /> and this instance represent the same value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,9 +142,10 @@
         <Parameter Name="other" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">Another object to compare to.</param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="other" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +163,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Encodes all or part of the current sequence number into a byte array.</summary>
+        <returns>A byte array containing all or part of the current sequence number.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +182,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +200,8 @@
         <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a sequence number that serves as a default value for representing an invalid sequence number.</summary>
+        <value>A <see cref="T:System.IO.Log.SequenceNumber" /> initialized to UInt64.<see cref="F:System.UInt64.MaxValue" /> that serves as a default value for representing an invalid sequence number.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,11 +222,14 @@
         <Parameter Name="c2" Type="System.IO.Log.SequenceNumber" />
       </Parameters>
       <Docs>
-        <param name="c1">To be added.</param>
-        <param name="c2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="c1">The <see cref="T:System.IO.Log.SequenceNumber" /> on the left side of the operator.</param>
+        <param name="c2">The <see cref="T:System.IO.Log.SequenceNumber" /> on the right side of the operator.</param>
+        <summary>Compares two <see cref="T:System.IO.Log.SequenceNumber" /> instances to determine whether they are equal.</summary>
+        <returns>
+          <see langword="true" /> if both <see cref="T:System.IO.Log.SequenceNumber" /> instances are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Equals%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -200,11 +249,14 @@
         <Parameter Name="c2" Type="System.IO.Log.SequenceNumber" />
       </Parameters>
       <Docs>
-        <param name="c1">To be added.</param>
-        <param name="c2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="c1">The <see cref="T:System.IO.Log.SequenceNumber" /> on the left side of the operator.</param>
+        <param name="c2">The <see cref="T:System.IO.Log.SequenceNumber" /> on the right side of the operator.</param>
+        <summary>Performs a logical comparison of two <see cref="T:System.IO.Log.SequenceNumber" /> instances to determine whether the first is greater than the second.</summary>
+        <returns>
+          <see langword="true" /> if the first instance is greater than the second instance, otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
@@ -224,11 +276,14 @@
         <Parameter Name="c2" Type="System.IO.Log.SequenceNumber" />
       </Parameters>
       <Docs>
-        <param name="c1">To be added.</param>
-        <param name="c2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="c1">The <see cref="T:System.IO.Log.SequenceNumber" /> on the left side of the operator.</param>
+        <param name="c2">The <see cref="T:System.IO.Log.SequenceNumber" /> on the right side of the operator.</param>
+        <summary>Performs a logical comparison of two <see cref="T:System.IO.Log.SequenceNumber" /> instances to determine whether the first is greater than or equal to the second.</summary>
+        <returns>
+          <see langword="true" /> if the first instance is greater than or equal to the second instance, otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -248,11 +303,14 @@
         <Parameter Name="c2" Type="System.IO.Log.SequenceNumber" />
       </Parameters>
       <Docs>
-        <param name="c1">To be added.</param>
-        <param name="c2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="c1">The <see cref="T:System.IO.Log.SequenceNumber" /> on the left side of the operator.</param>
+        <param name="c2">The <see cref="T:System.IO.Log.SequenceNumber" /> on the right side of the operator.</param>
+        <summary>Compares two <see cref="T:System.IO.Log.SequenceNumber" /> instances to determine whether they are not equal.</summary>
+        <returns>
+          <see langword="true" /> if both <see cref="T:System.IO.Log.SequenceNumber" /> instances are not equal, otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
@@ -272,11 +330,14 @@
         <Parameter Name="c2" Type="System.IO.Log.SequenceNumber" />
       </Parameters>
       <Docs>
-        <param name="c1">To be added.</param>
-        <param name="c2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="c1">The <see cref="T:System.IO.Log.SequenceNumber" /> on the left side of the operator.</param>
+        <param name="c2">The <see cref="T:System.IO.Log.SequenceNumber" /> on the right side of the operator.</param>
+        <summary>Performs a logical comparison of the two <see cref="T:System.IO.Log.SequenceNumber" /> parameters to determine whether the first is less than the second.</summary>
+        <returns>
+          <see langword="true" /> if the first instance is less than the second instance, otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
@@ -296,11 +357,14 @@
         <Parameter Name="c2" Type="System.IO.Log.SequenceNumber" />
       </Parameters>
       <Docs>
-        <param name="c1">To be added.</param>
-        <param name="c2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="c1">The <see cref="T:System.IO.Log.SequenceNumber" /> on the left side of the operator.</param>
+        <param name="c2">The <see cref="T:System.IO.Log.SequenceNumber" /> on the right side of the operator.</param>
+        <summary>Performs a logical comparison of the two <see cref="T:System.IO.Log.SequenceNumber" /> parameters to determine whether the first is less than or equal to the second.</summary>
+        <returns>
+          <see langword="true" /> if the first instance is less than or equal to the second instance, otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

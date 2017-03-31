@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the <c>GenerateDeploymentManifest</c> task. Use the <c>GenerateDeploymentManifest</c> element in the project file to create and execute this task. For usage and parameter information, see [GenerateDeploymentManifest Task](../Topic/GenerateDeploymentManifest%20Task.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.GenerateDeploymentManifest" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether an icon is created on the desktop during ClickOnce application installation.</summary>
+        <value>
+          <see langword="true" /> if an icon is created on the desktop during installation; <see langword="false" /> otherwise.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +62,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the update location for the application.</summary>
+        <value>The update location for the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not specified, no update location is defined for the application. However, if the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled%2A> property is `true`, an update location must be specified. The specified value should be a fully qualified URL or UNC path.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisallowUrlActivation">
@@ -79,9 +87,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether the application should be run automatically when it is opened through a URL.</summary>
+        <value>
+          <see langword="true" /> if the application can only be started from the **Start** menu; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`. This property applies only when the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> property value is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorReportUrl">
@@ -97,9 +113,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the URL of the Web page that is displayed in dialog boxes during ClickOnce installations.</summary>
+        <value>A string that represents the URL of a Web page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifies a Web page to be displayed in dialog boxes that are displayed during ClickOnce installations.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectType">
@@ -134,9 +157,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean that indicates whether the application is an installed application or an online-only application.</summary>
+        <value>
+          <see langword="true" /> if the application is to be installed on the local computer and can be removed by using the **Add or Remove Programs** dialog box; <see langword="false" /> if the application is for online use from a Web page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MapFileExtensions">
@@ -152,9 +183,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether the .deploy file name extension mapping is used.</summary>
+        <value>
+          <see langword="true" /> if every program file is published with a .deploy file name extension; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this option for Web server security to limit the number of file name extensions that must be unblocked to enable [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application deployment. The default value is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumRequiredVersion">
@@ -170,9 +209,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether the user can skip the update.</summary>
+        <value>
+          <see langword="true" /> if the user can skip the update; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a user has a version that is earlier than the minimum requirement, he cannot skip the update. This input only applies when the value of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnManifestLoaded">
@@ -232,9 +279,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the application.</summary>
+        <value>The name of the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not specified, the name is inferred from the identity of the generated manifest. This name is used for the shortcut name on the **Start** menu and is part of the name that appears in the **Add or Remove Programs** dialog box.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Publisher">
@@ -250,9 +304,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the publisher of the application.</summary>
+        <value>The publisher of the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not specified, the name is inferred from the registered user, or the identity of the generated manifest. This name is used for the folder name on the **Start** menu and is part of the name that appears in the **Uninstall or change a program** dialog box.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SuiteName">
@@ -268,8 +329,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the folder on the **Start** menu where the application is located after ClickOnce deployment.</summary>
+        <value>A string that represents the name of a **Start** menu folder.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,8 +347,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the link that appears in the **Uninstall or change a program** dialog box for the application. The specified value should be a fully qualified URL or UNC path.</summary>
+        <value>The link that appears in the **Uninstall or change a program** dialog box for the application.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,9 +365,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether URL query-string parameters should be made available to the application.</summary>
+        <value>
+          <see langword="true" /> if URL query-string parameters should be made available to the application; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`, which indicates that parameters will not be available to the application.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateEnabled">
@@ -322,9 +391,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether the application is enabled for updates.</summary>
+        <value>
+          <see langword="true" /> if the application is enabled for updates; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`. This property only applies when the value of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateInterval">
@@ -340,9 +417,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the update interval for the application.</summary>
+        <value>The update interval for the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is zero. This property only applies when the values of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> and <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled%2A> properties are both `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateMode">
@@ -358,9 +442,23 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that indicates whether updates should be checked. Updates can be checked before the application is started (in the foreground), or when the application is running (in the background).</summary>
+        <value>
+          <see langword="true" /> if updates should be checked; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can have the following values:  
+  
+-   `Foreground` (before the application is started)  
+  
+-   `Background` (when the application is running)  
+  
+ The default value is `Background`. This property only applies when the values of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> and <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled%2A> properties are both `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateUnit">
@@ -376,9 +474,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the time unit for the <see cref="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateInterval" /> property.</summary>
+        <value>The time unit for the <see cref="P:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateInterval" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This parameter can have the following values:  
+  
+-   `Hours`  
+  
+-   `Days`  
+  
+-   `Weeks`  
+  
+ This property only applies when the values of the <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.Install%2A> and <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest.UpdateEnabled%2A> properties are both `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateInputs">

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes an association between two resource sets.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,10 +35,12 @@
         <Parameter Name="end2" Type="System.Data.Services.Providers.ResourceAssociationSetEnd" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="end1">To be added.</param>
-        <param name="end2">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">Name of the association set.</param>
+        <param name="end1">
+          <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> that is at the source end of the association set.</param>
+        <param name="end2">
+          <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> that is at the target end of the association set.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Services.Providers.ResourceAssociationSet" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +62,9 @@
         <ReturnType>System.Data.Services.Providers.ResourceAssociationSetEnd</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the source end of the association set.</summary>
+        <value>
+          <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> that is at the source end of the association set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +86,9 @@
         <ReturnType>System.Data.Services.Providers.ResourceAssociationSetEnd</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the target end of the association set.</summary>
+        <value>
+          <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> that is at the target end of the association set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +110,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the association set.</summary>
+        <value>The name of the association set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

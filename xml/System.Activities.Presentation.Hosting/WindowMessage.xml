@@ -18,10 +18,10 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="msgId">To be added.</param>
-    <param name="parameter1">To be added.</param>
-    <param name="parameter2">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="msgId">The message identifier.</param>
+    <param name="parameter1">A pointer to the first message parameter. The value of this parameter depends on the message.</param>
+    <param name="parameter2">A pointer to the second message parameter. The value of this parameter depends on the message.</param>
+    <summary>Represents a delegate that is used to reference the method that will handle window messages.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

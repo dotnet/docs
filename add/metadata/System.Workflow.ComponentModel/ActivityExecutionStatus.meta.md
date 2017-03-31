@@ -1,4 +1,6 @@
 ---
 uid: System.Workflow.ComponentModel.ActivityExecutionStatus
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

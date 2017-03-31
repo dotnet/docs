@@ -28,8 +28,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that an importing compiler must fully understand the semantics of a type definition, or refuse to use it.  This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to classes, structures, enumerations, and interfaces.  
+  
+ For example, you can use this attribute to mark a C++ class that has a copy constructor. Any compiler that uses such a class must understand every constraint on its use, such as never creating an object of that class in the garbage collected heap, because a relocation does not call its copy constructor.  
+  
+ The classes in <xref:System.Runtime.CompilerServices> are for compiler writers use only.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,8 +65,10 @@
         <Parameter Name="requiredContract" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="requiredContract">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="requiredContract">A type that an importing compiler must fully understand.  
+  
+ This parameter is not supported in the .NET Framework version 2.0 and later.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.RequiredAttributeAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,9 +94,16 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a type that an importing compiler must fully understand.</summary>
+        <value>A type that an importing compiler must fully understand.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not supported in the .NET Framework version 2.0 and later.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

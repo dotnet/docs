@@ -1,9 +1,9 @@
 ---
 uid: System.Transactions.SubordinateTransaction
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.SubordinateTransaction.#ctor(System.Transactions.IsolationLevel,System.Transactions.ISimpleTransactionSuperior)
-internalonly: False
+manager: "ghogen"
 ---

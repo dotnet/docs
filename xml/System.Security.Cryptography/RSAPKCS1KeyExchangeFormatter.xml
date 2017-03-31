@@ -21,8 +21,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates the PKCS#1 key exchange data using <see cref="T:System.Security.Cryptography.RSA" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Key exchange allows a sender to create secret information (such as random data that can be used as a key in a symmetric encryption algorithm) and use encryption to send it to the intended recipient.  
+  
+ Use <xref:System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter> to receive the key exchange and extract the secret information from it.  
+  
+> [!CAUTION]
+>  We recommend that you do not attempt to create your own key exchange method from the basic functionality provided, because many details of the operation must be performed carefully in order for the key exchange to be successful.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter> class to create an exchange key for a message recipient.  
+  
+ [!code-csharp[System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.cryptography.rsapkcs1keyexchangeformatter2/cs/program.cs#1)]
+ [!code-vb[System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.cryptography.rsapkcs1keyexchangeformatter2/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,8 +61,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.SetKey%2A> method to set the key to be used for key exchange before calling <xref:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.CreateKeyExchange%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -63,9 +90,11 @@
         <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The instance of the <see cref="T:System.Security.Cryptography.RSA" /> algorithm that holds the public key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter" /> class with the specified key.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key " />is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateKeyExchange">
@@ -89,10 +118,20 @@
         <Parameter Name="rgbData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rgbData">The secret information to be passed in the key exchange.</param>
+        <summary>Creates the encrypted key exchange data from the specified input data.</summary>
+        <returns>The encrypted key exchange data to be sent to the intended recipient.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This data can be interpreted only by the holder of the private key corresponding to the public key used to encrypt the data. This helps to ensure that only the intended recipient can access the secret information.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="rgbData " />is too big.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException">The key is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateKeyExchange">
@@ -117,11 +156,26 @@
         <Parameter Name="symAlgType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="rgbData">To be added.</param>
-        <param name="symAlgType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rgbData">The secret information to be passed in the key exchange.</param>
+        <param name="symAlgType">This parameter is not used in the current version.</param>
+        <summary>Creates the encrypted key exchange data from the specified input data.</summary>
+        <returns>The encrypted key exchange data to be sent to the intended recipient.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This data can be interpreted only by the holder of the private key corresponding to the public key used to encrypt the data. This helps to ensure that only the intended recipient can access the secret information.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the [CreateKeyExchange Method (Byte\<xref:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.CreateKeyExchange%2A?displayProperty=fullName> method to create an exchange key for a message recipient. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter> class.  
+  
+ [!code-csharp[System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.cryptography.rsapkcs1keyexchangeformatter2/cs/program.cs#2)]
+ [!code-vb[System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.cryptography.rsapkcs1keyexchangeformatter2/vb/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -142,9 +196,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the parameters for the PKCS #1 key exchange.</summary>
+        <value>An XML string containing the parameters of the PKCS #1 key exchange operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.Parameters%2A> property returns an XML string that contains Uniform Resource Identifiers (URIs) that describe the parameters of the PKCS #1 key exchange operation.  Note that the URIs are not guaranteed to point to active addresses.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Rng">
@@ -165,9 +226,16 @@
         <ReturnType>System.Security.Cryptography.RandomNumberGenerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the random number generator algorithm to use in the creation of the key exchange.</summary>
+        <value>The instance of a random number generator algorithm to use.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is `null`, the default random number generator algorithm is used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetKey">
@@ -191,9 +259,18 @@
         <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The instance of the <see cref="T:System.Security.Cryptography.RSA" /> algorithm that holds the public key.</param>
+        <summary>Sets the public key to use for encrypting the key exchange data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must set the key before calling <xref:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.CreateKeyExchange%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key " />is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

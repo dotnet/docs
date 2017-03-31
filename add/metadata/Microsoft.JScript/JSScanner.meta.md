@@ -1,74 +1,79 @@
 ---
 uid: Microsoft.JScript.JSScanner
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSScanner.IsOperator(Microsoft.JScript.JSToken)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSScanner.GotEndOfLine
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSScanner.GetSourceCode
-internalonly: False
----
-
----
-uid: Microsoft.JScript.JSScanner.SetAuthoringMode(System.Boolean)
-internalonly: False
----
-
----
-uid: Microsoft.JScript.JSScanner.#ctor(Microsoft.JScript.Context)
-internalonly: False
----
-
----
-uid: Microsoft.JScript.JSScanner.SkipMultiLineComment
-internalonly: False
----
-
----
-uid: Microsoft.JScript.JSScanner.GetCurrentLine
-internalonly: False
----
-
----
-uid: Microsoft.JScript.JSScanner.IsKeyword(Microsoft.JScript.JSToken)
-internalonly: False
----
-
----
-uid: Microsoft.JScript.JSScanner.SetSource(Microsoft.JScript.Context)
-internalonly: False
----
-
----
-uid: Microsoft.JScript.JSScanner.GetStringLiteral
-internalonly: False
----
-
----
-uid: Microsoft.JScript.JSScanner.GetStartLinePosition
-internalonly: False
----
-
----
-uid: Microsoft.JScript.JSScanner.GetNextToken
-internalonly: False
----
-
----
-uid: Microsoft.JScript.JSScanner.GetCurrentPosition(System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSScanner.#ctor
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.SetAuthoringMode(System.Boolean)
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.#ctor(Microsoft.JScript.Context)
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.SkipMultiLineComment
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.GetCurrentLine
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.IsKeyword(Microsoft.JScript.JSToken)
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.SetSource(Microsoft.JScript.Context)
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.GetStringLiteral
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.GetStartLinePosition
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.GetNextToken
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.GetCurrentPosition(System.Boolean)
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.#ctor
+ms.author: "mikejo"
 ---

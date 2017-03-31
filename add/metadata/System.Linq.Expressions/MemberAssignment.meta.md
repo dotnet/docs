@@ -1,14 +1,18 @@
 ---
 uid: System.Linq.Expressions.MemberAssignment
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.MemberAssignment.Update(System.Linq.Expressions.Expression)
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Linq.Expressions.MemberAssignment.Expression
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---

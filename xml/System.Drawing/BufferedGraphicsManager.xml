@@ -11,8 +11,30 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides access to the main buffered graphics context object for the application domain.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.BufferedGraphicsManager> class allows you to implement custom double buffering for your graphics. Graphics that use double buffering can reduce or eliminate flicker that is caused by redrawing a display surface.  
+  
+ This class has one static property, <xref:System.Drawing.BufferedGraphicsManager.Current%2A>, which returns the main <xref:System.Drawing.BufferedGraphicsContext> for the current application domain. The <xref:System.Drawing.BufferedGraphicsContext> class creates <xref:System.Drawing.BufferedGraphics> instances that can be used to draw buffered graphics.  
+  
+ The <xref:System.Drawing.BufferedGraphics> class has no public constructor and must be created by the <xref:System.Drawing.BufferedGraphicsContext> object for an application domain using its <xref:System.Drawing.BufferedGraphicsContext.Allocate%2A> method. You can retrieve the <xref:System.Drawing.BufferedGraphicsContext> object for the current application domain from the static <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=fullName> property.  
+  
+ For more information on double buffering, see [Double Buffered Graphics](../Topic/Double%20Buffered%20Graphics.md), <xref:System.Drawing.BufferedGraphics>, and <xref:System.Drawing.BufferedGraphicsContext>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates acquiring the <xref:System.Drawing.BufferedGraphicsContext> for the current application domain.  
+  
+ [!code-cpp[BufferingExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/BufferingExamples/CPP/bufferingexamples.cpp#1)]
+ [!code-csharp[BufferingExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/BufferingExamples/CS/bufferingexamples.cs#1)]
+ [!code-vb[BufferingExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BufferingExamples/VB/bufferingexamples.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -28,9 +50,25 @@
         <ReturnType>System.Drawing.BufferedGraphicsContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Drawing.BufferedGraphicsContext" /> for the current application domain.</summary>
+        <value>The <see cref="T:System.Drawing.BufferedGraphicsContext" /> for the current application domain.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Within an application the <xref:System.Drawing.BufferedGraphicsManager.Current%2A> property always returns the same <xref:System.Drawing.BufferedGraphicsContext> object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates acquiring the <xref:System.Drawing.BufferedGraphicsContext> for the current application domain.  
+  
+ [!code-cpp[BufferingExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/BufferingExamples/CPP/bufferingexamples.cpp#1)]
+ [!code-csharp[BufferingExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/BufferingExamples/CS/bufferingexamples.cs#1)]
+ [!code-vb[BufferingExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BufferingExamples/VB/bufferingexamples.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

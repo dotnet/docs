@@ -1,24 +1,29 @@
 ---
 uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.#ctor(System.Type,System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.IsReusable
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.ProcessRequest(System.Web.HttpContext)
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Forms.ImeModeConversion
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ImeModeConversion.ImeModeConversionBits
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ImeModeConversion.IsCurrentConversionTableSupported
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Input.CaptureMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

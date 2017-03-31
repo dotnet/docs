@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Remoting.Contexts.IContributeClientContextSink
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Contexts.IContributeClientContextSink.GetClientContextSink(System.Runtime.Remoting.Messaging.IMessageSink)
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,4 +1,4 @@
 ---
 uid: System.Management.CimType
-internalonly: False
+manager: "jillfra"
 ---

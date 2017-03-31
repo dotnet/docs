@@ -1,29 +1,41 @@
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Enumerator
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Enumerator.System#Collections#IEnumerator#Current
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Enumerator.MoveNext
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Enumerator.Reset
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Enumerator.Dispose
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Enumerator.Current
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

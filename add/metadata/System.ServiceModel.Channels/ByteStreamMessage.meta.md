@@ -1,19 +1,34 @@
 ---
 uid: System.ServiceModel.Channels.ByteStreamMessage
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ByteStreamMessage.CreateMessage(System.ArraySegment{System.Byte})
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ByteStreamMessage.CreateMessage(System.ArraySegment{System.Byte},System.ServiceModel.Channels.BufferManager)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.ByteStreamMessage.CreateMessage
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.ByteStreamMessage.CreateMessage(System.IO.Stream)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

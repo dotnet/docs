@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.WorkflowPageSetupDialog.#ctor(System.IServiceProvider)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

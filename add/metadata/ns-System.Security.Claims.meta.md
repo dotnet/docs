@@ -1,4 +1,5 @@
 ---
 uid: System.Security.Claims
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

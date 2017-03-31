@@ -1,24 +1,29 @@
 ---
 uid: System.Windows.Markup.Reference
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Reference.Name
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Reference.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Reference.ProvideValue(System.IServiceProvider)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.Reference.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Reference.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---

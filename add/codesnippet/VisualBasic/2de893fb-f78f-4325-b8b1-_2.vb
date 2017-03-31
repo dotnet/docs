@@ -1,1 +1,0 @@
-        Cache.Insert("DSN", connectionString, Nothing, Cache.NoAbsoluteExpiration, TimeSpan.FromSeconds(10))

@@ -1,4 +1,5 @@
 ---
 uid: System.Web.RequestNotificationStatus
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

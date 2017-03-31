@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceProcess.ServiceProcessDescriptionAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceProcess.ServiceProcessDescriptionAttribute.Description
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceProcess.ServiceProcessDescriptionAttribute.#ctor(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

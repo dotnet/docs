@@ -15,8 +15,27 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the Content-Transfer-Encoding header information for an e-mail message attachment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values in the <xref:System.Net.Mime.TransferEncoding> enumeration are used with the <xref:System.Net.Mail.AttachmentBase.TransferEncoding?displayProperty=fullName> property.  
+  
+ The Content-Transfer-Encoding header specifies the encoding of the associated message body so that it meets SMTP requirements. SMTP requires data for transport to be in 7-bit US-ASCII characters with lines no longer than 1000 characters.  
+  
+ Content-Transfer-Encoding values are described in detail in RFC 2045 Section 6, available at [http://www.ietf.org](http://www.ietf.org/).  
+  
+   
+  
+## Examples  
+ The following code example displays <xref:System.Net.Mime.TransferEncoding> used by an attachment.  
+  
+ [!code-cpp[NclMailSync#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#21)]
+ [!code-csharp[NclMailSync#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#21)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Base64">
@@ -37,7 +56,7 @@
         <ReturnType>System.Net.Mime.TransferEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes stream-based data. See RFC 2406 Section 6.8.</summary>
       </Docs>
     </Member>
     <Member MemberName="EightBit">
@@ -58,7 +77,7 @@
         <ReturnType>System.Net.Mime.TransferEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The data is in 8-bit characters that may represent international characters with a total line length of no longer than 1000 8-bit characters. For more information about this 8-bit MIME transport extension, see IETF RFC 6152.</summary>
       </Docs>
     </Member>
     <Member MemberName="QuotedPrintable">
@@ -79,7 +98,7 @@
         <ReturnType>System.Net.Mime.TransferEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes data that consists of printable characters in the US-ASCII character set. See RFC 2406 Section 6.7.</summary>
       </Docs>
     </Member>
     <Member MemberName="SevenBit">
@@ -100,7 +119,7 @@
         <ReturnType>System.Net.Mime.TransferEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used for data that is not encoded. The data is in 7-bit US-ASCII characters with a total line length of no longer than 1000 characters. See RFC2406 Section 2.7.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -121,7 +140,7 @@
         <ReturnType>System.Net.Mime.TransferEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the transfer encoding is unknown.</summary>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a container for data that is stored by the <see cref="T:System.Web.ModelBinding.ComplexModel" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="validationNode" Type="System.Web.ModelBinding.ModelValidationNode" />
       </Parameters>
       <Docs>
-        <param name="model">To be added.</param>
-        <param name="validationNode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="model">The model.</param>
+        <param name="validationNode">The validation node.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ComplexModelResult" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the model.</summary>
+        <value>The model.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Web.ModelBinding.ModelValidationNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the validation node.</summary>
+        <value>The validation node.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

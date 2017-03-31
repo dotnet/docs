@@ -1,4 +1,4 @@
 ---
 uid: System.Xaml.Schema
-internalonly: False
+manager: "martinek"
 ---

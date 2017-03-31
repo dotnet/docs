@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.JSParser
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSParser.Parse
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSParser.ParseEvalBody
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSParser.#ctor(Microsoft.JScript.Context)
-internalonly: False
+ms.author: "mikejo"
 ---

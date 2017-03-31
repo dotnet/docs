@@ -1,34 +1,47 @@
 ---
 uid: System.Web.Configuration.VirtualDirectoryMapping
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMapping.PhysicalDirectory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMapping.#ctor(System.String,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMapping.ConfigFileBaseName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMapping.VirtualDirectory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMapping.IsAppRoot
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.VirtualDirectoryMapping.#ctor(System.String,System.Boolean,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.VirtualDirectoryMapping.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---

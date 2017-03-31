@@ -1,1 +1,0 @@
-    UrlIdentityPermission ^ permIdPerm1 = gcnew UrlIdentityPermission("http://www.fourthcoffee.com/process/");

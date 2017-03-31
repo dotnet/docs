@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Validates file name extensions.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.FileExtensionsAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +63,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the file name extensions.</summary>
+        <value>The file name extensions, or the default file extensions (".png", ".jpg", ".jpeg", and ".gif") if the property is not set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +89,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the field that caused the validation failure.</param>
+        <summary>Applies formatting to an error message, based on the data field where the error occurred.</summary>
+        <returns>The formatted error message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,9 +116,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A comma delimited list of valid file extensions.</param>
+        <summary>Checks that the specified file name extension or extensions is valid.</summary>
+        <returns>
+          <see langword="true" /> if the file name extension is valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -10,8 +10,27 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the state of a control, such as a check box, that can be checked, unchecked, or set to an indeterminate state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multiple methods in <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.CheckedListBox>, and <xref:System.Windows.Forms.ItemCheckEventArgs> use this enumeration.  
+  
+> [!NOTE]
+>  Use an indeterminately checked control when you do not want to set a default value.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.CheckState> enumeration.  
+  
+ [!code-cpp[Classic CheckedListBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckedListBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CheckedListBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckedListBox Example/CS/source.cs#1)]
+ [!code-vb[Classic CheckedListBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CheckedListBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Checked">
@@ -27,7 +46,7 @@
         <ReturnType>System.Windows.Forms.CheckState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The control is checked.</summary>
       </Docs>
     </Member>
     <Member MemberName="Indeterminate">
@@ -43,7 +62,7 @@
         <ReturnType>System.Windows.Forms.CheckState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The control is indeterminate. An indeterminate control generally has a shaded appearance.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unchecked">
@@ -59,7 +78,7 @@
         <ReturnType>System.Windows.Forms.CheckState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The control is unchecked.</summary>
       </Docs>
     </Member>
   </Members>

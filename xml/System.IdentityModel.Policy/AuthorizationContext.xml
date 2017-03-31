@@ -15,8 +15,25 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The result of evaluating all authorization policies available from the tokens in the sent message and by calling the <see cref="M:System.ServiceModel.ServiceAuthorizationManager.GetAuthorizationPolicies(System.ServiceModel.OperationContext)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Evaluating all of the authorization policies in an authorization manager results in a set of <xref:System.IdentityModel.Claims.ClaimSet> objects. These objects make up an authorization context.  
+  
+ An authorization context contains a set of claim set objects, an expiration time that specifies the span of time during which the authorization context is valid, and a unique identifier.  
+  
+ The <xref:System.IdentityModel.Policy.AuthorizationContext> for the current operation can be accessed via the <xref:System.ServiceModel.ServiceSecurityContext.AuthorizationContext%2A> property.  
+  
+   
+  
+## Examples  
+ [!code-csharp[C_IAuthorizationPolicy#4](~/samples/snippets/csharp/VS_Snippets_CFX/c_iauthorizationpolicy/cs/service.cs#4)]
+ [!code-vb[C_IAuthorizationPolicy#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_iauthorizationpolicy/vb/myauthorizationpolicy.vb#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,8 +47,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor does nothing.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClaimSets">
@@ -47,9 +71,22 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Claims.ClaimSet&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the set of claims associated with an authorization policy.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Claims.ClaimSet" /> that contains the set of claims.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Policy.AuthorizationContext.ClaimSets%2A> property to get the set of claims that were added by the authorization policy. A class deriving from <xref:System.ServiceModel.ServiceAuthorizationManager> can use the claims to make authorization decisions.  
+  
+   
+  
+## Examples  
+ [!code-csharp[C_IAuthorizationPolicy#5](~/samples/snippets/csharp/VS_Snippets_CFX/c_iauthorizationpolicy/cs/service.cs#5)]
+ [!code-vb[C_IAuthorizationPolicy#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_iauthorizationpolicy/vb/myauthorizationpolicy.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateDefaultAuthorizationContext">
@@ -69,9 +106,16 @@
       </Parameters>
       <Docs>
         <param name="policies">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Evaluate all of the specified authorization policies and create an <see cref="T:System.IdentityModel.Policy.AuthorizationContext" />.</summary>
+        <returns>An <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> that contains the result of evaluating all the specified authorization policies.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Policy.AuthorizationContext.CreateDefaultAuthorizationContext%2A> method is typically only used by the infrastructure.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpirationTime">
@@ -87,9 +131,19 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the date and time at which this <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> object is no longer valid.</summary>
+        <value>A <see cref="T:System.DateTime" /> value that indicates the date and time when this <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> object is no longer valid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Policy.AuthorizationContext.ExpirationTime%2A> property is in Universal Coordinated Time (UTC).  
+  
+> [!NOTE]
+>  The service model in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] does not check the value of the <xref:System.IdentityModel.Policy.AuthorizationContext.ExpirationTime%2A> property. This property is set by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] using the <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> property of the security token on which the authorization context is based. The <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> property is checked by [!INCLUDE[indigo2](~/includes/indigo2-md.md)], however. The authorization context's expiration time is meant for scenarios such as an authorization policy which has to take some action upon expiration.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -105,9 +159,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a unique identifier for this <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> object.</summary>
+        <value>A <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, the <xref:System.IdentityModel.Policy.AuthorizationContext.Id%2A> property is a GUID.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -123,9 +184,16 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of non-claim properties associated with this <see cref="T:System.IdentityModel.Policy.AuthorizationContext" /> object.</summary>
+        <value>A <see cref="T:System.Collections.Generic.Dictionary`2" /> that specifies a collection of non-claim properties.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] reserves two properties: `Identities` and `Principal`. The `Identities` property is used by an <xref:System.IdentityModel.Policy.IAuthorizationPolicy> to specify the <xref:System.Collections.Generic.IList%601> of one or more identities that are related to the <xref:System.IdentityModel.Policy.AuthorizationContext>. The `Principal` property is used by an <xref:System.IdentityModel.Policy.IAuthorizationPolicy> to specify the <xref:System.Security.Principal.IPrincipal> that is associated with an <xref:System.IdentityModel.Policy.AuthorizationContext>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

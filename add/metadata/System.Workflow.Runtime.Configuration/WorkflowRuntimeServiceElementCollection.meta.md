@@ -1,24 +1,38 @@
 ---
 uid: System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.GetElementKey(System.Configuration.ConfigurationElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.#ctor
-internalonly: False
----
-
----
-uid: System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.Add(System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.CreateNewElement
-internalonly: False
+---
+
+---
+uid: System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.Add(System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.CreateNewElement
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

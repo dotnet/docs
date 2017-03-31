@@ -1,429 +1,439 @@
 ---
 uid: System.Xaml.XamlType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.CanAssignTo(System.Xaml.XamlType)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupAllMembers
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.Invoker
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.GetAllMembers
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.Equals(System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsDictionary
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupTrimSurroundingWhitespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsArray
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.ContentWrappers
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupDeferringLoader
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.GetAttachableMember(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsAmbient
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsUnknown
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.ValueSerializer
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupConstructionRequiresArguments
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsNameValid
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsNameScope
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupCollectionKind
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.DeferringLoader
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.#ctor(System.Type,System.Xaml.XamlSchemaContext,System.Xaml.Schema.XamlTypeInvoker)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupIsMarkupExtension
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsXData
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupContentWrappers
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.GetMember(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupIsConstructible
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupIsAmbient
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlType.Equals
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.Name
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.GetAllAttachableMembers
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.GetPositionalParameters(System.Int32)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.SchemaContext
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.#ctor(System.String,System.Collections.Generic.IList{System.Xaml.XamlType},System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.BaseType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.GetAliasedProperty(System.Xaml.XamlDirective)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupIsNullable
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.GetXamlNamespaces
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupCustomAttributeProvider
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.GetHashCode
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsNullable
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupIsPublic
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.Equals(System.Xaml.XamlType)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupBaseType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.op_Equality(System.Xaml.XamlType,System.Xaml.XamlType)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsConstructible
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.UnderlyingType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupPositionalParameters(System.Int32)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupIsNameScope
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsGeneric
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsWhitespaceSignificantCollection
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupMarkupExtensionReturnType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupAttachableMember(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupIsWhitespaceSignificantCollection
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupSetTypeConverterHandler
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.#ctor(System.Type,System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupTypeConverter
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.AllowedContentTypes
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupIsUnknown
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlType.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupAliasedProperty(System.Xaml.XamlDirective)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupKeyType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.KeyType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.ConstructionRequiresArguments
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.#ctor(System.String,System.String,System.Collections.Generic.IList{System.Xaml.XamlType},System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupAllAttachableMembers
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.ToString
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.TypeConverter
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.TypeArguments
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.op_Inequality(System.Xaml.XamlType,System.Xaml.XamlType)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupInvoker
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsCollection
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupSetMarkupExtensionHandler
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupValueSerializer
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupUsableDuringInitialization
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupItemType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsUsableDuringInitialization
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupMember(System.String,System.Boolean)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.ContentProperty
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupAllowedContentTypes
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupUnderlyingType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.PreferredXamlNamespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.ItemType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.MarkupExtensionReturnType
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsPublic
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupContentProperty
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.LookupIsXData
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.TrimSurroundingWhitespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlType.IsMarkupExtension
-internalonly: False
+manager: "martinek"
 ---

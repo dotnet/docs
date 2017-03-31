@@ -1,4 +1,5 @@
 ---
 uid: System.Configuration.Internal.StreamChangeCallback
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

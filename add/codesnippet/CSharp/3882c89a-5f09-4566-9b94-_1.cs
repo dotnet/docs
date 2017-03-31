@@ -1,2 +1,0 @@
-            SendActivity sendActivity1 = new SendActivity();
-            Dictionary<String, String> Context = (Dictionary<String, String>)SendActivity.GetContext(sendActivity1, endpointName, ownerActivityName, contractType);

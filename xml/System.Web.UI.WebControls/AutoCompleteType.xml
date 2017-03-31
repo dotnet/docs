@@ -10,8 +10,37 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the values that control the behavior of the AutoComplete feature in a <see cref="T:System.Web.UI.WebControls.TextBox" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To assist with data entry, Internet Explorer 5 and later and some other browsers support a feature named AutoComplete. AutoComplete monitors a text box and stores a list of the values that the user has entered. When the user returns to the text box another time, the list of values is displayed. Instead of retyping a value, the user can simply select the value from this list.  
+  
+> [!NOTE]
+>  Not all browsers support the AutoComplete feature. Check with your browser to determine compatibility.  
+  
+ To control the behavior of the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control, you use the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property. The <xref:System.Web.UI.WebControls.AutoCompleteType> enumeration is used to represent the values that you can apply to the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property.  
+  
+ By default, the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property for a <xref:System.Web.UI.WebControls.TextBox> control is set to `AutoCompleteType.None`. With this setting, the <xref:System.Web.UI.WebControls.TextBox> control shares the list with other <xref:System.Web.UI.WebControls.TextBox> controls with the same <xref:System.Web.UI.Control.ID%2A> across different pages. You can also share a list among <xref:System.Web.UI.WebControls.TextBox> controls based on a category instead of based on an <xref:System.Web.UI.Control.ID%2A>. When you set the <xref:System.Web.UI.WebControls.AutoCompleteType> property to one of the category values (such as `AutoCompleteType.FirstName` or `AutoCompleteType.LastName`), all <xref:System.Web.UI.WebControls.TextBox> controls with the same category share the same list. You can disable the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control by setting the <xref:System.Web.UI.WebControls.AutoCompleteType> property to `AutoCompleteType.Disabled`.  
+  
+ Refer to your browser documentation for details on configuring and enabling the AutoComplete feature. For example, to enable the AutoComplete feature in Internet Explorer version 5 or later, from the **Tools** menu, choose **Internet Options**. Then choose the **Content** tab. Choose the **AutoComplete** button to view and modify options for the AutoComplete feature.  
+  
+ For more information on the AutoComplete feature in Internet Explorer, search for [Using AutoComplete in HTML Forms](http://msdn.microsoft.com/library/default.asp?url=/workshop/author/forms/autocomplete_ovr.asp) in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.AutoCompleteType> enumeration to specify the AutoComplete category for a <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+  
+ [!code-csharp[AutoCompleteType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AutoCompleteType/CS/AutoCompleteTypecs.aspx#1)]
+ [!code-vb[AutoCompleteType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AutoCompleteType/VB/AutoCompleteTypevb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BusinessCity">
@@ -27,7 +56,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The city for a business address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="BusinessCountryRegion">
@@ -43,7 +72,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The country/region for a business address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="BusinessFax">
@@ -59,7 +88,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The fax number for a business address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="BusinessPhone">
@@ -75,7 +104,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The phone number for a business address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="BusinessState">
@@ -91,7 +120,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The state for a business address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="BusinessStreetAddress">
@@ -107,7 +136,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The street for a business address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="BusinessUrl">
@@ -123,7 +152,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The URL to a business Web site category.</summary>
       </Docs>
     </Member>
     <Member MemberName="BusinessZipCode">
@@ -139,7 +168,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ZIP code for a business address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cellular">
@@ -155,7 +184,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The phone number for a mobile-phone category.</summary>
       </Docs>
     </Member>
     <Member MemberName="Company">
@@ -171,7 +200,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of a business category.</summary>
       </Docs>
     </Member>
     <Member MemberName="Department">
@@ -187,7 +216,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A department within a business category.</summary>
       </Docs>
     </Member>
     <Member MemberName="Disabled">
@@ -203,7 +232,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The AutoComplete feature is disabled for the <see cref="T:System.Web.UI.WebControls.TextBox" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -219,7 +248,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name to display for the user category.</summary>
       </Docs>
     </Member>
     <Member MemberName="Email">
@@ -235,7 +264,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user's e-mail address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -251,7 +280,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The AutoComplete feature is enabled for the <see cref="T:System.Web.UI.WebControls.TextBox" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="FirstName">
@@ -267,7 +296,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The first name category.</summary>
       </Docs>
     </Member>
     <Member MemberName="Gender">
@@ -283,7 +312,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The gender of the user category.</summary>
       </Docs>
     </Member>
     <Member MemberName="HomeCity">
@@ -299,7 +328,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The city for a home address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="HomeCountryRegion">
@@ -315,7 +344,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The country/region for a home address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="HomeFax">
@@ -331,7 +360,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The fax number for a home address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="Homepage">
@@ -347,7 +376,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The URL to a Web site category.</summary>
       </Docs>
     </Member>
     <Member MemberName="HomePhone">
@@ -363,7 +392,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The phone number for a home address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="HomeState">
@@ -379,7 +408,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The state for a home address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="HomeStreetAddress">
@@ -395,7 +424,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The street for a home address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="HomeZipCode">
@@ -411,7 +440,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ZIP code for a home address category.</summary>
       </Docs>
     </Member>
     <Member MemberName="JobTitle">
@@ -427,7 +456,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user's job title category.</summary>
       </Docs>
     </Member>
     <Member MemberName="LastName">
@@ -443,7 +472,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The last name category.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleName">
@@ -459,7 +488,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user's middle name category.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -475,7 +504,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No category is associated with the <see cref="T:System.Web.UI.WebControls.TextBox" /> control. All <see cref="T:System.Web.UI.WebControls.TextBox" /> controls with the same <see cref="P:System.Web.UI.Control.ID" /> share the same value list.</summary>
       </Docs>
     </Member>
     <Member MemberName="Notes">
@@ -491,7 +520,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Any supplemental information to include in the form category.</summary>
       </Docs>
     </Member>
     <Member MemberName="Office">
@@ -507,7 +536,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The location of the business office category.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pager">
@@ -523,7 +552,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The phone number for a pager category.</summary>
       </Docs>
     </Member>
     <Member MemberName="Search">
@@ -539,7 +568,7 @@
         <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The keyword or keywords with which to search a Web page or Web site category.</summary>
       </Docs>
     </Member>
   </Members>

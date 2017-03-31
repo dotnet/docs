@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class represents an implementation of an out-of-proc build node.  This class is deprecated and has no alternative.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Constructor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,9 @@
         <Parameter Name="shutdownException" Type="System.Exception&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="shutdownException">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="shutdownException">The exception which caused shutdown, if any.</param>
+        <summary>Starts up the node and processes messages until the node is requested to shut down.</summary>
+        <returns>The reason for shutting down.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

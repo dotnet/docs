@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.Plus
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Plus.DoOp(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Plus.EvaluatePlus(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Plus.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---

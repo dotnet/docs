@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines an editable region of content within the design-time markup for the associated control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="templateDefinition" Type="System.Web.UI.Design.TemplateDefinition" />
       </Parameters>
       <Docs>
-        <param name="templateDefinition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="templateDefinition">A <see cref="T:System.Web.UI.Design.TemplateDefinition" /> instance for the template to edit.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" /> class using the provided template definition.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether the template occurs only once per instance of the containing control, such as a h<see langword="eader" /> template, or can appear many times according to available data, such as an i<see langword="tem" /> template.</summary>
+        <value>
+          <see langword="true" /> if the template appears only once; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +65,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the template can be bound to a data source.</summary>
+        <value>
+          <see langword="true" /> if the template represented by the region can be bound to a data source; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to set this property.</exception>
       </Docs>
     </Member>
     <Member MemberName="TemplateDefinition">
@@ -82,8 +85,8 @@
         <ReturnType>System.Web.UI.Design.TemplateDefinition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Web.UI.Design.TemplateDefinition" /> object describing the template that is referenced by the region.</summary>
+        <value>A <see cref="T:System.Web.UI.Design.TemplateDefinition" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

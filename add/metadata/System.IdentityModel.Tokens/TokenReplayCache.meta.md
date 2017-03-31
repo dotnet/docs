@@ -1,34 +1,41 @@
 ---
 uid: System.IdentityModel.Tokens.TokenReplayCache
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.TokenReplayCache.Remove(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.TokenReplayCache.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.TokenReplayCache.AddOrUpdate(System.String,System.IdentityModel.Tokens.SecurityToken,System.DateTime)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.TokenReplayCache.Contains(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.TokenReplayCache.LoadCustomConfiguration(System.Xml.XmlNodeList)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.TokenReplayCache.Get(System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

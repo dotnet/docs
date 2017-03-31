@@ -1,44 +1,62 @@
 ---
 uid: System.ServiceModel.Description.WsdlContractConversionContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.WsdlContractConversionContext.GetOperation(System.ServiceModel.Description.OperationDescription)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.WsdlContractConversionContext.GetFaultDescription(System.Web.Services.Description.OperationFault)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.WsdlContractConversionContext.GetOperationMessage(System.ServiceModel.Description.MessageDescription)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.WsdlContractConversionContext.GetMessageDescription(System.Web.Services.Description.OperationMessage)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.WsdlContractConversionContext.Contract
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.WsdlContractConversionContext.WsdlPortType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.WsdlContractConversionContext.GetOperationDescription(System.Web.Services.Description.Operation)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.WsdlContractConversionContext.GetOperationFault(System.ServiceModel.Description.FaultDescription)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents field information. This class is used to return fields of expando classes and script arrays to the debugger.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the field.</param>
+        <param name="value">The value of the field.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.DynamicFieldInfo" /> class, using the specified name and value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,10 +50,10 @@
         <Parameter Name="fieldTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="fieldTypeName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the field.</param>
+        <param name="value">The value of the field.</param>
+        <param name="fieldTypeName">The type of the field.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.DynamicFieldInfo" /> class, using the specified name, value, and type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +70,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The type of the field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +87,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of the field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +104,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The value of the field.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

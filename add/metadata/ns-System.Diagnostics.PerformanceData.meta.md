@@ -1,4 +1,5 @@
 ---
 uid: System.Diagnostics.PerformanceData
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

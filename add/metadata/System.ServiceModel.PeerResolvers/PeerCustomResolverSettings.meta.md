@@ -1,29 +1,35 @@
 ---
 uid: System.ServiceModel.PeerResolvers.PeerCustomResolverSettings
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Address
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.IsBindingSpecified
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Resolver
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Binding
-internalonly: False
+ms.author: "bobdel"
+manager: "ghogen"
 ---

@@ -1,99 +1,125 @@
 ---
 uid: System.Net.ServicePointManager
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.ReusePort
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.FindServicePoint(System.Uri,System.Net.IWebProxy)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.ServicePointManager.FindServicePoint
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.SetTcpKeepAlive(System.Boolean,System.Int32,System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.MaxServicePointIdleTime
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.DefaultConnectionLimit
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.MaxServicePoints
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.SecurityProtocol
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.Expect100Continue
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.CheckCertificateRevocationList
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.FindServicePoint(System.Uri)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.CertificatePolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.DefaultPersistentConnectionLimit
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.EnableDnsRoundRobin
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.DefaultNonPersistentConnectionLimit
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.FindServicePoint(System.String,System.Net.IWebProxy)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.ServerCertificateValidationCallback
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.UseNagleAlgorithm
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.EncryptionPolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.ServicePointManager.DnsRefreshTimeout
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

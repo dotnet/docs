@@ -31,8 +31,90 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a cell in a <see cref="T:System.Web.UI.WebControls.Table" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ The <xref:System.Web.UI.WebControls.TableCell> class represents a cell in a <xref:System.Web.UI.WebControls.Table> control. You can use the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property to specify or determine the contents of the cell.  
+  
+ The <xref:System.Web.UI.WebControls.TableCell> class allows you to control how the contents of the cell are displayed. The alignment of the contents in the cell are specified by setting the <xref:System.Web.UI.WebControls.TableCell.HorizontalAlign%2A> and <xref:System.Web.UI.WebControls.TableCell.VerticalAlign%2A> properties. You can use the <xref:System.Web.UI.WebControls.TableCell.Wrap%2A> property to specify whether the contents of the cell wrap in the cell.  
+  
+ You can also specify how many rows or columns in the table, represented by a <xref:System.Web.UI.WebControls.Table> control, are occupied by an individual cell. The <xref:System.Web.UI.WebControls.TableCell.RowSpan%2A> and <xref:System.Web.UI.WebControls.TableCell.ColumnSpan%2A> properties control how many rows and columns are used, respectively.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Securing Standard Controls](../Topic/Securing%20Standard%20Controls.md), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](../Topic/How%20to:%20Protect%20Against%20Script%20Exploits%20in%20a%20Web%20Application%20by%20Applying%20HTML%20Encoding%20to%20Strings.md), and [Validating User Input in ASP.NET Web Pages](../Topic/Validating%20User%20Input%20in%20ASP.NET%20Web%20Pages.md).  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:TableCell  
+    AccessKey="string"  
+    AssociatedHeaderCellID="string"  
+    BackColor="color name|#dddddd"  
+    BorderColor="color name|#dddddd"  
+    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
+        Inset|Outset"  
+    BorderWidth="size"  
+    ColumnSpan="integer"  
+    CssClass="string"  
+    Enabled="True|False"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    Font-Bold="True|False"  
+    Font-Italic="True|False"  
+    Font-Names="string"  
+    Font-Overline="True|False"  
+    Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
+        Large|X-Large|XX-Large"  
+    Font-Strikeout="True|False"  
+    Font-Underline="True|False"  
+    ForeColor="color name|#dddddd"  
+    Height="size"  
+    HorizontalAlign="NotSet|Left|Center|Right|Justify"  
+    ID="string"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    RowSpan="integer"  
+    runat="server"  
+    SkinID="string"  
+    Style="string"  
+    TabIndex="integer"  
+    Text="string"  
+    ToolTip="string"  
+    VerticalAlign="NotSet|Top|Middle|Bottom"  
+    Visible="True|False"  
+    Width="size"  
+    Wrap="True|False"  
+/></asp:TableCell>  
+```  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a table, add elements to the table programmatically, and display the table on the Web page. Note how <xref:System.Web.UI.WebControls.TableCell> controls are instantiated and their property values are set.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
+  
+ [!code-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]
+ [!code-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,8 +128,23 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TableCell" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TableCell> is created using the <xref:System.Web.UI.HtmlTextWriterTag> tag.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to programmatically create a new instance of a <xref:System.Web.UI.WebControls.TableCell> control.  
+  
+ [!code-csharp[TableCell#5](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#5)]
+ [!code-vb[TableCell#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -66,9 +163,33 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The output stream that renders HTML content to the client.</param>
+        <summary>Adds properties specific to the <see cref="T:System.Web.UI.WebControls.TableCell" /> control to the list of attributes to render.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TableCell.AddAttributesToRender%2A> method overrides the base class's <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A> method and first calls the base method and then adds the <xref:System.Web.UI.WebControls.TableCell> attributes corresponding to the <xref:System.Web.UI.WebControls.TableCell.RowSpan%2A> property, the <xref:System.Web.UI.WebControls.TableCell.ColumnSpan%2A> property and the <xref:System.Web.UI.WebControls.TableCell.AssociatedHeaderCellID%2A> property. If the <xref:System.Web.UI.WebControls.TableCell.AssociatedHeaderCellID%2A> property refers to a <xref:System.Web.UI.WebControls.TableHeaderCell> that can not be found, an <xref:System.Web.HttpException> is thrown.  
+  
+ The <xref:System.Web.UI.WebControls.TableCell.AddAttributesToRender%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.WebControls.TableCell> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TableCell.AddAttributesToRender%2A> method in a custom server control so that a custom title attribute is rendered for each cell.  
+  
+ [!code-csharp[CustomTableCellAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/CS/custom_tablecell_addattributestorendercs.aspx#1)]
+ [!code-vb[CustomTableCellAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/VB/custom_tablecell_addattributestorendervb.aspx#1)]  
+  
+ [!code-csharp[CustomTableCellAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/CS/custom_tablecell_addattributestorender.cs#2)]
+ [!code-vb[CustomTableCellAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellAddAttributesToRender/VB/custom_tablecell_addattributestorender.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">A cell listed as an associated header cell was not found.</exception>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.TableCell.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.TableCell.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method of the base class so that the <see cref="T:System.Web.UI.WebControls.TableCell" /> control attributes are properly rendered.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -87,9 +208,21 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="obj">An <see cref="T:System.Object" /> that represents the parsed element</param>
+        <summary>Adds a parsed child control to the <see cref="T:System.Web.UI.WebControls.TableCell" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.WebControls.TableCell> control contains child controls then the base class's <xref:System.Web.UI.WebControls.TableCell.AddParsedSubObject%2A> method is called; otherwise, the <xref:System.Web.UI.WebControls.TableCell> control's <xref:System.Web.UI.WebControls.TableCell.Text%2A> property value is added as a <xref:System.Web.UI.LiteralControl> object to the <xref:System.Web.UI.WebControls.TableCell> control's <xref:System.Web.UI.ControlCollection>.  
+  
+ The <xref:System.Web.UI.WebControls.TableCell.AddParsedSubObject%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.WebControls.TableCell> control.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.TableCell.AddParsedSubObject(System.Object)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.TableCell.AddParsedSubObject(System.Object)" /> method so that objects are properly added to the <see cref="T:System.Web.UI.WebControls.TableCell" /> control <see cref="T:System.Web.UI.ControlCollection" />.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="AssociatedHeaderCellID">
@@ -113,9 +246,37 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a space-separated list of table header cells associated with the <see cref="T:System.Web.UI.WebControls.TableCell" /> control.</summary>
+        <value>An array of strings containing the identifiers of the associated table header cells.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TableCell.AssociatedHeaderCellID%2A> property contains a list of header cell programmatic identifiers that provide header information of the <xref:System.Web.UI.WebControls.TableCell> control. The list of header cell identifiers is rendered as a comma delimited list into the HTML `<td>` element's `header` attribute.  
+  
+ When setting the <xref:System.Web.UI.WebControls.TableCell.AssociatedHeaderCellID%2A> property use a comma delimited list of strings. If an element of the list is not recognized as a valid table header cell an <xref:System.Web.HttpException> is thrown when the <xref:System.Web.UI.WebControls.TableCell.AddAttributesToRender%2A> is invoked.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively specify the <xref:System.Web.UI.WebControls.TableCell.AssociatedHeaderCellID%2A> property of a <xref:System.Web.UI.WebControls.TableCell> control. In particular, note how the cell in the last row is associated to three header cells. For a complete, working code example, see the <xref:System.Web.UI.WebControls.TableHeaderCell> class overview topic.  
+  
+```csharp  
+<asp:TableCell AssociatedHeaderCellID="Column1Header Column2Header Column3Header"  
+ColumnSpan="3"  
+HorizontalAlign="Left">(2,0)  
+</asp:TableCell>  
+```  
+  
+```vb  
+<asp:TableCell AssociatedHeaderCellID="Column1Header Column2Header Column3Header"  
+ColumnSpan="3"  
+HorizontalAlign="Left">(2,0)  
+</asp:TableCell>  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnSpan">
@@ -136,9 +297,36 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the number of columns in the <see cref="T:System.Web.UI.WebControls.Table" /> control that the cell spans.</summary>
+        <value>The number of columns in the rendered table that the cell spans. The default value is <see langword="0" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TableCell.ColumnSpan%2A> property to specify or determine the number of columns in the rendered table that the cell spans. For example, if you set this property to `2`, the cell takes up two columns in the <xref:System.Web.UI.WebControls.Table> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively specify the <xref:System.Web.UI.WebControls.TableCell.ColumnSpan%2A> of a <xref:System.Web.UI.WebControls.TableCell> control. In particular, note how the last row's single cell spans three columns. For a complete, working code example, see the <xref:System.Web.UI.WebControls.TableHeaderCell> class overview topic.  
+  
+```csharp  
+<asp:TableCell AssociatedHeaderCellID="Column1Header Column2Header Column3Header"  
+ColumnSpan="3"  
+HorizontalAlign="Left">(2,0)  
+</asp:TableCell>  
+```  
+  
+```vb  
+<asp:TableCell AssociatedHeaderCellID="Column1Header Column2Header Column3Header"  
+ColumnSpan="3"  
+HorizontalAlign="Left">(2,0)  
+</asp:TableCell>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see langword="0" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -155,9 +343,29 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> for the <see cref="T:System.Web.UI.WebControls.TableCell" /> control.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.Style" /> that represents the <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> for the <see cref="T:System.Web.UI.WebControls.TableCell" /> control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TableItemStyle> created by the <xref:System.Web.UI.WebControls.TableCell.CreateControlStyle%2A> method is used with the <xref:System.Web.UI.WebControls.TableCell.Wrap%2A>, <xref:System.Web.UI.WebControls.TableCell.HorizontalAlign%2A>, and <xref:System.Web.UI.WebControls.TableCell.VerticalAlign%2A> properties.  
+  
+ The <xref:System.Web.UI.WebControls.TableCell.CreateControlStyle%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.WebControls.TableCell> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TableCell.CreateControlStyle%2A> method in a custom server control so that it always returns a new instance of the <xref:System.Web.UI.WebControls.TableStyle> class for the <xref:System.Web.UI.WebControls.TableCell>.  
+  
+ [!code-csharp[CustomTableCellCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/CS/custom_tablecell_createcontrolstylecs.aspx#1)]
+ [!code-vb[CustomTableCellCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/VB/custom_tablecell_createcontrolstylevb.aspx#1)]  
+  
+ [!code-csharp[CustomTableCellCreateControlStyle#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/CS/custom_tablecell_createcontrolstyle.cs#2)]
+ [!code-vb[CustomTableCellCreateControlStyle#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellCreateControlStyle/VB/custom_tablecell_createcontrolstyle.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -178,9 +386,35 @@
         <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the horizontal alignment of the contents in the cell.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.HorizontalAlign" /> enumeration values. The default is <see langword="NotSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TableCell.HorizontalAlign%2A> property to specify the horizontal alignment of the contents of the cell. The possible values for use are specified in the <xref:System.Web.UI.WebControls.HorizontalAlign> enumeration.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively specify the <xref:System.Web.UI.WebControls.TableCell.HorizontalAlign%2A> property of a <xref:System.Web.UI.WebControls.TableCell> control. In particular, note how the cell in the last row is left justified. For a complete, working code example, see the <xref:System.Web.UI.WebControls.TableHeaderCell> class overview topic.  
+  
+```csharp  
+<asp:TableCell AssociatedHeaderCellID="Column1Header,Column2Header,Column3Header"  
+ColumnSpan="3"  
+HorizontalAlign="Left">(2,0)  
+</asp:TableCell>  
+```  
+  
+```vb  
+<asp:TableCell AssociatedHeaderCellID="Column1Header,Column2Header,Column3Header"  
+ColumnSpan="3"  
+HorizontalAlign="Left">(2,0)  
+</asp:TableCell>  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -199,9 +433,29 @@
         <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The output stream that renders HTML content to the client.</param>
+        <summary>Renders the <see cref="T:System.Web.UI.WebControls.TableCell" /> contents to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.WebControls.TableCell> control has child controls or is overridden in a derived class the base class's <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A> method is called; otherwise, the value of the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property is written to the <xref:System.Web.UI.HtmlTextWriter> object.  
+  
+ The <xref:System.Web.UI.WebControls.TableCell.RenderContents%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.WebControls.TableCell> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TableCell.RenderContents%2A> method in a custom <xref:System.Web.UI.WebControls.TableCell> control so that it custom text is inserted in the cell's contents.  
+  
+ [!code-csharp[CustomTableCellRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellRenderContents/CS/custom_tablecell_rendercontentscs.aspx#1)]
+ [!code-vb[CustomTableCellRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellRenderContents/VB/custom_tablecell_rendercontentsvb.aspx#1)]  
+  
+ [!code-csharp[CustomTableCellRenderContents#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTableCellRenderContents/CS/custom_tablecell_rendercontents.cs#2)]
+ [!code-vb[CustomTableCellRenderContents#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTableCellRenderContents/VB/custom_tablecell_rendercontents.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RowSpan">
@@ -222,9 +476,17 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the number of rows in the <see cref="T:System.Web.UI.WebControls.Table" /> control that the cell spans.</summary>
+        <value>The number of rows in the rendered table that the cell spans. The default value is <see langword="0" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TableCell.RowSpan%2A> property to specify or determine the number of rows in the rendered table that the cell spans. For example, if you set this property to `2`, the cell takes up two rows in the <xref:System.Web.UI.WebControls.Table> control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see langword="0" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -240,9 +502,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the control should set the <see langword="disabled" /> attribute of the rendered HTML element to "disabled" when the control's <see cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" /> property is <see langword="false" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Web.UI.Control.RenderingCompatibility" /> property indicates an ASP.NET version lower than <c>4.0</c>; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -269,9 +539,34 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text contents of the cell.</summary>
+        <value>The text contents of the cell. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property to specify or determine the text contents of the cell. This property is commonly used to programmatically update the contents of a cell.  
+  
+> [!NOTE]
+>  Setting the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property will clear any other controls contained in the <xref:System.Web.UI.WebControls.TableCell>.  
+  
+> [!CAUTION]
+>  The <xref:System.Web.UI.WebControls.TableCell.Text%2A> control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Securing Standard Controls](../Topic/Securing%20Standard%20Controls.md), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](../Topic/How%20to:%20Protect%20Against%20Script%20Exploits%20in%20a%20Web%20Application%20by%20Applying%20HTML%20Encoding%20to%20Strings.md), and [Validating User Input in ASP.NET Web Pages](../Topic/Validating%20User%20Input%20in%20ASP.NET%20Web%20Pages.md).  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of a <xref:System.Web.UI.WebControls.TableCell> control programmatically. In particular, note how the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property is used for setting the contents of the <xref:System.Web.UI.WebControls.TableCell> control.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.TableCell> class.  
+  
+ [!code-csharp[TableCell#5](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#5)]
+ [!code-vb[TableCell#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalAlign">
@@ -292,9 +587,16 @@
         <ReturnType>System.Web.UI.WebControls.VerticalAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the vertical alignment of the contents in the cell.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.VerticalAlign" /> enumeration values. The default is <see langword="NotSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TableCell.VerticalAlign%2A> property to specify the vertical alignment of the contents of the cell. The possible values for use are specified in the <xref:System.Web.UI.WebControls.VerticalAlign> enumeration.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -315,9 +617,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicating whether the contents of the cell wrap.</summary>
+        <value>
+          <see langword="true" /> if the contents of the cell wrap in the cell; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TableCell.Wrap%2A> property to specify or determine whether the content of the cell wrap in the cell.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

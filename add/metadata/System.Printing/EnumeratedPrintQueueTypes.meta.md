@@ -1,4 +1,5 @@
 ---
 uid: System.Printing.EnumeratedPrintQueueTypes
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

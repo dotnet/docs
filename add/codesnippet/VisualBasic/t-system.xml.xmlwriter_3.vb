@@ -1,5 +1,0 @@
-writer.WriteStartElement("x", "root", "123")
-writer.WriteStartElement("item")
-writer.WriteAttributeString("xmlns", "x", Nothing, "abc")
-writer.WriteEndElement()
-writer.WriteEndElement()

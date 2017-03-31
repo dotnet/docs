@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents WebSocketTransportSettingsElement for WebSocketTransportSettings.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WebSocketTransportSettingsElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="settings" Type="System.ServiceModel.Channels.WebSocketTransportSettings" />
       </Parameters>
       <Docs>
-        <param name="settings">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="settings">The web socket transport settings.</param>
+        <summary>Applies a new configuration for this element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +69,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether to create notification on connection.</summary>
+        <value>
+          <see langword="true" /> if notification is created; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +93,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether to disable payload masking.</summary>
+        <value>
+          <see langword="true" /> is payload masking is disabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +115,8 @@
         <Parameter Name="settings" Type="System.ServiceModel.Channels.WebSocketTransportSettings" />
       </Parameters>
       <Docs>
-        <param name="settings">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="settings">The web socket transport settings.</param>
+        <summary>Initializes the web socket from a specified settings.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,8 +141,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the keep alive interval.</summary>
+        <value>The keep alive interval.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +167,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the maximum number of pending connections for this setting.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,8 +185,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of configuration properties.</summary>
+        <value>The configuration properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,8 +211,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the web socket sub protocol.</summary>
+        <value>The web socket sub protocol.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,8 +234,8 @@
         <ReturnType>System.ServiceModel.Channels.WebSocketTransportUsage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the web socket transport usage.</summary>
+        <value>The web socket transport usage.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

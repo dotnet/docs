@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.Documents.Hyperlink.RequestNavigate" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised by <xref:System.Windows.Documents.Hyperlink> when clicked. The event is processed by the navigator (<xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame>) whose content contains the <xref:System.Windows.Documents.Hyperlink>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Navigation.RequestNavigateEventArgs" /> class. This constructor is protected.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +51,9 @@
         <Parameter Name="target" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="uri">The target [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</param>
+        <param name="target">The target name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Navigation.RequestNavigateEventArgs" /> class with a [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] and target name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,9 +74,9 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">To be added.</param>
-        <param name="genericTarget">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="genericHandler">The name of the handler.</param>
+        <param name="genericTarget">The object that is raising the event.</param>
+        <summary>Invokes a specified event handler from a specified sender.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +93,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The navigator that will host the content that is navigated to.</summary>
+        <value>The navigator (<see cref="T:System.Windows.Navigation.NavigationWindow" /> or <see cref="T:System.Windows.Controls.Frame" />) that will host the content that is navigated to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +111,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the content that is being navigated to.</summary>
+        <value>The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] for the content that is being navigated to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

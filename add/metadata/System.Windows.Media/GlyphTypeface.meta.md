@@ -1,249 +1,348 @@
 ---
 uid: System.Windows.Media.GlyphTypeface
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.CharacterToGlyphMap
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.Symbol
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.AdvanceWidths
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.Weight
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.FamilyNames
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.GetHashCode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.ComputeSubset(System.Collections.Generic.ICollection{System.UInt16})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.AdvanceHeights
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.VendorUrls
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.GetFontStream
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.UnderlineThickness
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.Copyrights
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.VersionStrings
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.Style
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.DistancesFromHorizontalBaselineToBlackBoxBottom
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.Equals(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.DesignerUrls
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.LicenseDescriptions
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.Win32FaceNames
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.CapsHeight
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.System#ComponentModel#ISupportInitialize#BeginInit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.Trademarks
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.StrikethroughPosition
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.GlyphCount
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.FontUri
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.System#ComponentModel#ISupportInitialize#EndInit
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.FaceNames
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.Stretch
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.Win32FamilyNames
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.Height
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.GetGlyphOutline(System.UInt16,System.Double,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.EmbeddingRights
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.ManufacturerNames
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.Baseline
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.TopSideBearings
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.SampleTexts
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.LeftSideBearings
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.StyleSimulations
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.#ctor(System.Uri,System.Windows.Media.StyleSimulations)
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.BottomSideBearings
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.Version
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.#ctor(System.Uri)
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.RightSideBearings
-internalonly: False
----
-
----
-uid: System.Windows.Media.GlyphTypeface.StrikethroughThickness
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.FontUri
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.System#ComponentModel#ISupportInitialize#EndInit
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.FaceNames
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.Stretch
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.Win32FamilyNames
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.Height
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.GetGlyphOutline(System.UInt16,System.Double,System.Double)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.EmbeddingRights
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.ManufacturerNames
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.Baseline
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.TopSideBearings
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.SampleTexts
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.LeftSideBearings
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.StyleSimulations
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.#ctor(System.Uri,System.Windows.Media.StyleSimulations)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.BottomSideBearings
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.Version
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.#ctor(System.Uri)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.RightSideBearings
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.StrikethroughThickness
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GlyphTypeface.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.Descriptions
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.UnderlinePosition
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.DesignerNames
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.GlyphTypeface.XHeight
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.IO.Ports.Parity
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

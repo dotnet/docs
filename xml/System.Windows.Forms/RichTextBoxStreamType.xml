@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the types of input and output streams used to load and save data in the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration when calling the <xref:System.Windows.Forms.RichTextBox.LoadFile%2A> and <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> methods of the <xref:System.Windows.Forms.RichTextBox> control.  
+  
+   
+  
+## Examples  
+ The following example saves the contents of the <xref:System.Windows.Forms.RichTextBox> into an ASCII text file. The example uses the <xref:System.Windows.Forms.SaveFileDialog> class to display a dialog to request the path and file name from the user. The code then saves the contents of the control to that file. The example uses this version of the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> method to specify that the file be saved as an ASCII text file instead of the standard Rich Text Format. This example assumes that the code is placed in a <xref:System.Windows.Forms.Form> class that has a <xref:System.Windows.Forms.RichTextBox> control named `richTextBox1`.  
+  
+ [!code-cpp[Classic RichTextBox.SaveFile1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RichTextBox.SaveFile1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic RichTextBox.SaveFile1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RichTextBox.SaveFile1 Example/CS/source.cs#1)]
+ [!code-vb[Classic RichTextBox.SaveFile1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic RichTextBox.SaveFile1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="PlainText">
@@ -27,7 +43,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A plain text stream that includes spaces in places of Object Linking and Embedding (OLE) objects.</summary>
       </Docs>
     </Member>
     <Member MemberName="RichNoOleObjs">
@@ -43,7 +59,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Rich Text Format (RTF) stream with spaces in place of OLE objects. This value is only valid for use with the <see cref="M:System.Windows.Forms.RichTextBox.SaveFile(System.String)" /> method of the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="RichText">
@@ -59,7 +75,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Rich Text Format (RTF) stream.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextTextOleObjs">
@@ -75,7 +91,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A plain text stream with a textual representation of OLE objects. This value is only valid for use with the <see cref="M:System.Windows.Forms.RichTextBox.SaveFile(System.String)" /> method of the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnicodePlainText">
@@ -91,7 +107,7 @@
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A text stream that contains spaces in place of Object Linking and Embedding (OLE) objects. The text is encoded in Unicode.</summary>
       </Docs>
     </Member>
   </Members>

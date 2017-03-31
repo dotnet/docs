@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.TaskStarted" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to write a basic logger that responds to build events.  
+  
+ [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskStartedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,12 +56,12 @@
         <Parameter Name="taskName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="projectFile">To be added.</param>
-        <param name="taskFile">To be added.</param>
-        <param name="taskName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The text of the event.</param>
+        <param name="helpKeyword">The Help keyword associated with the event.</param>
+        <param name="projectFile">The name of the project file associated with the event.</param>
+        <param name="taskFile">The file in which the task is defined.</param>
+        <param name="taskName">The name of the task.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskStartedEventArgs" /> class with the specified values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,13 +83,13 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="projectFile">To be added.</param>
-        <param name="taskFile">To be added.</param>
-        <param name="taskName">To be added.</param>
-        <param name="eventTimestamp">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The text message about the event.</param>
+        <param name="helpKeyword">The help keyword.</param>
+        <param name="projectFile">The project file.</param>
+        <param name="taskFile">The file that defines the task.</param>
+        <param name="taskName">The name of the task.</param>
+        <param name="eventTimestamp">The date and time the task was created.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskStartedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +106,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the project file associated with the event.</summary>
+        <value>The name of the project file associated with the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +124,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] file where the task was defined.</summary>
+        <value>The [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] file where the task was defined.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +142,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the task associated with the event.</summary>
+        <value>The name of the task associated with the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the position of the pager for accessing various pages within a paginated control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Controls that support pagination often provide a set of controls called the pager that allows the user to navigate the pages within the control. The <xref:System.Web.UI.WebControls.PagerPosition> enumeration represents the different locations where the pager can be displayed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerPosition> enumeration to specify that the pager should be displayed at the bottom of a <xref:System.Web.UI.WebControls.FormView> control.  
+  
+ [!code-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]
+ [!code-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bottom">
@@ -27,7 +42,7 @@
         <ReturnType>System.Web.UI.WebControls.PagerPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A pager positioned at the bottom of the control.</summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -43,7 +58,7 @@
         <ReturnType>System.Web.UI.WebControls.PagerPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A pager positioned at the top of the control.</summary>
       </Docs>
     </Member>
     <Member MemberName="TopAndBottom">
@@ -59,7 +74,7 @@
         <ReturnType>System.Web.UI.WebControls.PagerPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pagers positioned at both the top and the bottom of the control.</summary>
       </Docs>
     </Member>
   </Members>

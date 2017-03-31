@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the layout event for the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The layout event occurs when the size or position of the designer or its contained components change. The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs> contains the graphics used to make layout changes and the designer theme to use for look and feel.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,9 +45,9 @@
         <Parameter Name="designerTheme" Type="System.Workflow.ComponentModel.Design.ActivityDesignerTheme" />
       </Parameters>
       <Docs>
-        <param name="graphics">To be added.</param>
-        <param name="designerTheme">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> used the layout the designer.</param>
+        <param name="designerTheme">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> to use for look and feel.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> class with the specified graphics and designer theme.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +64,16 @@
         <ReturnType>System.Workflow.ComponentModel.Design.AmbientTheme</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> associated with the root workflow.</summary>
+        <value>An <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> that contains theme information for the designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.AmbientTheme> is used to describe designer look and feel properties, such as colors, styles, and backgrounds.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DesignerTheme">
@@ -71,9 +89,16 @@
         <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesignerTheme</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> associated with the designer.</summary>
+        <value>An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> that describes the designer look and feel.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a designer has an <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> associated with it, the designer will use the look and feel properties described by the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> to paint itself. If no <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> is associated with the designer, the designer will use the <xref:System.Workflow.ComponentModel.Design.AmbientTheme> to repaint its look and feel properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -89,9 +114,16 @@
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> used to lay out the designer.</summary>
+        <value>The <see cref="T:System.Drawing.Graphics" /> object used to lay out the designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Graphics> object provides methods for drawing objects on the display device.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -18,8 +18,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a container for elements of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object. An instance of this type is returned by the <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[NCLPNRPContacts#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -38,9 +45,9 @@
         <Parameter Name="other" Type="System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The object to compare against.</param>
+        <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> to the specified object.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> is equal to the object specified.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,10 +68,18 @@
         <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element to replace</param>
+        <param name="item">The new value for the element at the specified index</param>
+        <summary>Inserts a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> element into the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> at the specified index or key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` value elements are not allowed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -84,10 +99,18 @@
         <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element to replace</param>
+        <param name="item">The new value for the element at the specified index</param>
+        <summary>Replaces the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> element at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` value elements are not allowed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -104,8 +127,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.String" /> representing the current value for each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />, separated by commas.</summary>
+        <returns>Unicode <see cref="T:System.String" /> representing the current value of each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

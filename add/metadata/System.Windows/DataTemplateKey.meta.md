@@ -1,14 +1,26 @@
 ---
 uid: System.Windows.DataTemplateKey
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.DataTemplateKey.#ctor(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.DataTemplateKey.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.DataTemplateKey.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---

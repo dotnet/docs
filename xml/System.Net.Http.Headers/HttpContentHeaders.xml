@@ -17,7 +17,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the collection of Content Headers as defined in RFC 2616.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,8 +40,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the <see langword="Allow" /> content header on an HTTP response.</summary>
+        <value>The value of the <see langword="Allow" /> header on an HTTP response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.Net.Http.Headers.ContentDispositionHeaderValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the <see langword="Content-Disposition" /> content header on an HTTP response.</summary>
+        <value>The value of the <see langword="Content-Disposition" /> content header on an HTTP response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the <see langword="Content-Encoding" /> content header on an HTTP response.</summary>
+        <value>The value of the <see langword="Content-Encoding" /> content header on an HTTP response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +112,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the value of the <see langword="Content-Language" /> content header on an HTTP response.</summary>
+        <value>The value of the <see langword="Content-Language" /> content header on an HTTP response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +136,8 @@
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the <see langword="Content-Length" /> content header on an HTTP response.</summary>
+        <value>The value of the <see langword="Content-Length" /> content header on an HTTP response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +160,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the <see langword="Content-Location" /> content header on an HTTP response.</summary>
+        <value>The value of the <see langword="Content-Location" /> content header on an HTTP response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +184,8 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the <see langword="Content-MD5" /> content header on an HTTP response.</summary>
+        <value>The value of the <see langword="Content-MD5" /> content header on an HTTP response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,8 +208,8 @@
         <ReturnType>System.Net.Http.Headers.ContentRangeHeaderValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the <see langword="Content-Range" /> content header on an HTTP response.</summary>
+        <value>The value of the <see langword="Content-Range" /> content header on an HTTP response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,8 +232,8 @@
         <ReturnType>System.Net.Http.Headers.MediaTypeHeaderValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the <see langword="Content-Type" /> content header on an HTTP response.</summary>
+        <value>The value of the <see langword="Content-Type" /> content header on an HTTP response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,8 +256,8 @@
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the <see langword="Expires" /> content header on an HTTP response.</summary>
+        <value>The value of the <see langword="Expires" /> content header on an HTTP response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,8 +280,8 @@
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the <see langword="Last-Modified" /> content header on an HTTP response.</summary>
+        <value>The value of the <see langword="Last-Modified" /> content header on an HTTP response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

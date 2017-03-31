@@ -1,29 +1,41 @@
 ---
 uid: System.Configuration.LongValidator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.LongValidator.#ctor(System.Int64,System.Int64,System.Boolean,System.Int64)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.LongValidator.CanValidate(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.LongValidator.Validate(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.LongValidator.#ctor(System.Int64,System.Int64)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.LongValidator.#ctor(System.Int64,System.Int64,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.LongValidator.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---

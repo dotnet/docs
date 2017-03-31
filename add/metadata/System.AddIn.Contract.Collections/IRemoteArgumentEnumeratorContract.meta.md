@@ -1,19 +1,27 @@
 ---
 uid: System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.GetCurrent
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.Reset
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Collections.IRemoteArgumentEnumeratorContract.MoveNext
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

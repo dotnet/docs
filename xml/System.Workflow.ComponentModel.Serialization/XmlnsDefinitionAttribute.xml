@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Can be optionally applied to a workflow assembly. It defines a mapping between a common language runtime namespace that is defined in the current assembly and an XML namespace. This information is used in extensible Application Markup Language (XAML) serialization/deserialization when activities or workflows that are defined in the assembly decorated with this attribute are used. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,10 +43,12 @@
         <Parameter Name="clrNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xmlNamespace">To be added.</param>
-        <param name="clrNamespace">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="xmlNamespace">A <see cref="T:System.String" /> that contains the value for <see cref="P:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.XmlNamespace" />.</param>
+        <param name="clrNamespace">A <see cref="T:System.String" /> that contains the value for <see cref="P:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.ClrNamespace" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute" /> class, initializing <see cref="P:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.XmlNamespace" /> and <see cref="P:System.Workflow.ComponentModel.Serialization.XmlnsDefinitionAttribute.ClrNamespace" /> properties.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="clrNamespace" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="AssemblyName">
@@ -53,8 +64,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a <see cref="T:System.String" /> that represents the <see cref="P:System.Type.Assembly" /> name of the decorated class.</summary>
+        <value>A <see cref="T:System.String" /> that represents the <see cref="P:System.Type.Assembly" /> name of the decorated class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +82,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.String" /> that represents the name of the CLR namespace of the decorated class.</summary>
+        <value>A <see cref="T:System.String" /> that represents the name of the CLR namespace of the decorated class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +100,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.String" /> that represents the name of the XML namespace of the decorated class.</summary>
+        <value>A <see cref="T:System.String" /> that represents the name of the XML namespace of the decorated class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

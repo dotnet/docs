@@ -1,4 +1,5 @@
 ---
 uid: System.Net.HttpResponseHeader
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

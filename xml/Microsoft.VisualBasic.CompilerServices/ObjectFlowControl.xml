@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The Visual Basic compiler uses this class for object flow control; it is not meant to be called directly from your code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,8 +36,8 @@
         <Parameter Name="Expression" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="Expression">The data type for which to check for synchronization lock.</param>
+        <summary>Checks for a synchronization lock on the specified type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

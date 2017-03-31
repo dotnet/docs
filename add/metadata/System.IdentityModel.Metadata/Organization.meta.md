@@ -1,29 +1,41 @@
 ---
 uid: System.IdentityModel.Metadata.Organization
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.Organization.Names
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.Organization.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.Organization.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.Organization.#ctor(System.IdentityModel.Metadata.LocalizedEntryCollection{System.IdentityModel.Metadata.LocalizedName},System.IdentityModel.Metadata.LocalizedEntryCollection{System.IdentityModel.Metadata.LocalizedName},System.IdentityModel.Metadata.LocalizedEntryCollection{System.IdentityModel.Metadata.LocalizedUri})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.Organization.DisplayNames
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.Organization.Urls
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

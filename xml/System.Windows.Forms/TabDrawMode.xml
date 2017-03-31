@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether the tabs in a tab control are owner-drawn (drawn by the parent window), or drawn by the operating system.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by members such as <xref:System.Windows.Forms.TabControl.DrawMode%2A?displayProperty=fullName>.  
+  
+ The <xref:System.Windows.Forms.TabControl> class and its derived classes support owner-draw functionality, but only one type, in which you can draw the tabs individually.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Normal">
@@ -27,7 +36,7 @@
         <ReturnType>System.Windows.Forms.TabDrawMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The tabs are drawn by the operating system, and are of the same size.</summary>
       </Docs>
     </Member>
     <Member MemberName="OwnerDrawFixed">
@@ -43,7 +52,7 @@
         <ReturnType>System.Windows.Forms.TabDrawMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The tabs are drawn by the parent window, and are of the same size.</summary>
       </Docs>
     </Member>
   </Members>

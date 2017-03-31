@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.IStateFormatter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IStateFormatter.Serialize(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IStateFormatter.Deserialize(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

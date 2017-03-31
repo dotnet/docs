@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a HttpMessageHandlerFactoryElement for HttpMessageHandlerFactory.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.HttpMessageHandlerFactoryElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.ServiceModel.Configuration.DelegatingHandlerElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a collection of handlers from the configuration.</summary>
+        <value>a collection of handlers from the configuration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +92,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of the <see cref="T:System.ServiceModel.Configuration.HttpMessageHandlerFactoryElement" /> object.</summary>
+        <value>The type of the <see cref="T:System.ServiceModel.Configuration.HttpMessageHandlerFactoryElement" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

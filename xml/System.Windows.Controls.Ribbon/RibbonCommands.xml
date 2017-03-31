@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides static access to standard ribbon commands.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to the AddToQuickAccessToolBar command.</summary>
+        <value>A reference to the AddToQuickAccessToolBar command.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to the MaximizeRibbon command.</summary>
+        <value>A reference to the MaximizeRibbon command.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to the MinimizeRibbon command.</summary>
+        <value>A reference to the MinimizeRibbon command.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to the RemoveFromQuickAccessToolbar command.</summary>
+        <value>A reference to the RemoveFromQuickAccessToolbar command.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to the ShowQuickAccessToolBarAboveRibbon command.</summary>
+        <value>A reference to the ShowQuickAccessToolBarAboveRibbon command.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +118,8 @@
         <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to the ShowQuickAccessToolBarBelowRibbon command.</summary>
+        <value>A reference to the ShowQuickAccessToolBarBelowRibbon command.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -20,8 +20,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies common roles to be used with <see cref="M:System.Security.Principal.WindowsPrincipal.IsInRole(System.String)" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These roles represent the local Windows groups common to most installations of Windows NT, Windows 2000 and Windows XP.  
+  
+> [!NOTE]
+>  In Windows Vista, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. When you attempt to perform a task that requires administrative privileges, you can dynamically elevate your role by using the Consent dialog box. The code that executes the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> method does not display the Consent dialog box. The code returns false if you are in the standard user role, even if you are in the Built-in Administrators group. You can elevate your privileges before you execute the code by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following example shows the use of the <xref:System.Security.Principal.WindowsBuiltInRole> enumeration.  
+  
+ [!code-cpp[System.Security.Principal.WindowsBuiltInRole Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Security.Principal.WindowsBuiltInRole Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CS/source.cs#1)]
+ [!code-vb[System.Security.Principal.WindowsBuiltInRole Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AccountOperator">
@@ -42,7 +61,7 @@
         <ReturnType>System.Security.Principal.WindowsBuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Account operators manage the user accounts on a computer or domain.</summary>
       </Docs>
     </Member>
     <Member MemberName="Administrator">
@@ -63,7 +82,7 @@
         <ReturnType>System.Security.Principal.WindowsBuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Administrators have complete and unrestricted access to the computer or domain.</summary>
       </Docs>
     </Member>
     <Member MemberName="BackupOperator">
@@ -84,7 +103,7 @@
         <ReturnType>System.Security.Principal.WindowsBuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Backup operators can override security restrictions for the sole purpose of backing up or restoring files.</summary>
       </Docs>
     </Member>
     <Member MemberName="Guest">
@@ -105,7 +124,7 @@
         <ReturnType>System.Security.Principal.WindowsBuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Guests are more restricted than users.</summary>
       </Docs>
     </Member>
     <Member MemberName="PowerUser">
@@ -126,7 +145,7 @@
         <ReturnType>System.Security.Principal.WindowsBuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Power users possess most administrative permissions with some restrictions. Thus, power users can run legacy applications, in addition to certified applications.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrintOperator">
@@ -147,7 +166,7 @@
         <ReturnType>System.Security.Principal.WindowsBuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Print operators can take control of a printer.</summary>
       </Docs>
     </Member>
     <Member MemberName="Replicator">
@@ -168,7 +187,7 @@
         <ReturnType>System.Security.Principal.WindowsBuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Replicators support file replication in a domain.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemOperator">
@@ -189,7 +208,7 @@
         <ReturnType>System.Security.Principal.WindowsBuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>System operators manage a particular computer.</summary>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -210,7 +229,7 @@
         <ReturnType>System.Security.Principal.WindowsBuiltInRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Users are prevented from making accidental or intentional system-wide changes. Thus, users can run certified applications, but not most legacy applications.</summary>
       </Docs>
     </Member>
   </Members>

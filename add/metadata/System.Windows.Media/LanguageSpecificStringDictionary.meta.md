@@ -1,139 +1,200 @@
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.System#Collections#IDictionary#GetEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.Add(System.Collections.Generic.KeyValuePair{System.Windows.Markup.XmlLanguage,System.String})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.Add(System.Windows.Markup.XmlLanguage,System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.System#Collections#IDictionary#Keys
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.TryGetValue(System.Windows.Markup.XmlLanguage,System.String@)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.Values
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.LanguageSpecificStringDictionary.Remove
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.LanguageSpecificStringDictionary.Add
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.System#Collections#ICollection#IsSynchronized
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.Item(System.Windows.Markup.XmlLanguage)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.System#Collections#IDictionary#Add(System.Object,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.Remove(System.Collections.Generic.KeyValuePair{System.Windows.Markup.XmlLanguage,System.String})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.ContainsKey(System.Windows.Markup.XmlLanguage)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.IsReadOnly
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.System#Collections#IDictionary#Contains(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.Keys
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.System#Collections#IDictionary#Remove(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.Remove(System.Windows.Markup.XmlLanguage)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.System#Collections#IDictionary#IsFixedSize
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.System#Collections#IDictionary#Item(System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.Clear
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.System#Collections#IDictionary#Values
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.Windows.Markup.XmlLanguage,System.String}[],System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.GetEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.Contains(System.Collections.Generic.KeyValuePair{System.Windows.Markup.XmlLanguage,System.String})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.System#Collections#ICollection#SyncRoot
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.Count
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.LanguageSpecificStringDictionary.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

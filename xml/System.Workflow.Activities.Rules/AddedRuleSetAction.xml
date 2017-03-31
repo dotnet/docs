@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the addition of a <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> during dynamic update. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class can be used by a tracking service to determine which <xref:System.Workflow.Activities.Rules.RuleSet>s have been added during a dynamic update. An instance of this object is generated for every <xref:System.Workflow.Activities.Rules.RuleSet> that is added (that is, that did not exist in the workflow prior to this dynamic update).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.AddedRuleSetAction" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <Parameter Name="addedRuleSetDefinition" Type="System.Workflow.Activities.Rules.RuleSet" />
       </Parameters>
       <Docs>
-        <param name="addedRuleSetDefinition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="addedRuleSetDefinition">The new <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.AddedRuleSetAction" /> class by using the new <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,9 +95,10 @@
         <ReturnType>System.Workflow.Activities.Rules.RuleSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the new <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
+        <value>The new <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="RuleSetName">
@@ -106,8 +114,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the new <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
+        <value>The name of the new <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

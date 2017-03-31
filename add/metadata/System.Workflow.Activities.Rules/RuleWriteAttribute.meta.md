@@ -1,14 +1,24 @@
 ---
 uid: System.Workflow.Activities.Rules.RuleWriteAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.RuleWriteAttribute.#ctor
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleWriteAttribute.#ctor(System.String,System.Workflow.Activities.Rules.RuleAttributeTarget)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.Rules.RuleWriteAttribute.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

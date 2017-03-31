@@ -20,8 +20,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how principal and identity objects should be created for an application domain. The default is <see langword="UnauthenticatedPrincipal" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For performance reasons, the default principal and identity objects are not created until they are needed. If a principal is explicitly added to the current thread, a default principal is not created and the principal policy setting is ignored.  
+  
+ A trusted host can override the default principal policy by specifying another of these values using the <xref:System.AppDomain.SetPrincipalPolicy%2A> method of an <xref:System.AppDomain>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="NoPrincipal">
@@ -42,7 +51,7 @@
         <ReturnType>System.Security.Principal.PrincipalPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No principal or identity objects should be created.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnauthenticatedPrincipal">
@@ -63,7 +72,7 @@
         <ReturnType>System.Security.Principal.PrincipalPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Principal and identity objects for the unauthenticated entity should be created. An unauthenticated entity has <see cref="P:System.Security.Principal.GenericIdentity.Name" /> set to the empty string ("") and <see cref="P:System.Security.Principal.GenericIdentity.IsAuthenticated" /> set to <see langword="false" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsPrincipal">
@@ -84,7 +93,7 @@
         <ReturnType>System.Security.Principal.PrincipalPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Principal and identity objects that reflect the operating system token associated with the current execution thread should be created, and the associated operating system groups should be mapped into roles.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,24 +1,29 @@
 ---
 uid: System.IdentityModel.Tokens.Saml2Advice
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Advice.AssertionUriReferences
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Advice.Assertions
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Advice.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Advice.AssertionIdReferences
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

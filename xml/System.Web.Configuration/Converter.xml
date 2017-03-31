@@ -11,8 +11,41 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a configuration element in a configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.Converter> class enables you to programmatically access and modify the configuration settings related to converters that are used by AJAX-enabled ASP.NET applications.  
+  
+ To create custom conversion functionality, you can create a class that inherits from the <xref:System.Web.Script.Serialization.JavaScriptConverter> class. After the converter has been created, you can register it for use in the configuration file of your Web application.  
+  
+   
+  
+## Examples  
+ The following configuration file excerpt shows how to declaratively specify values for properties of the <xref:System.Web.Configuration.Converter> class.  
+  
+```  
+<system.web.extensions>  
+  <scripting>  
+    <webServices>  
+      <jsonSerialization>  
+        <converters>  
+          <add name="ConvertMe" type="Acme.SubAcme.ConvertMeTypeConverter" />  
+        </converters>  
+      </jsonSerialization>  
+    </webServices>  
+  </scripting>  
+</system.web.extensions>  
+```  
+  
+ The following example demonstrates how to access <xref:System.Web.Configuration.Converter> programmatically.  
+  
+ [!code-csharp[System.Web.Configuration#3](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Configuration/CS/App_Code/ConfigSectionSample.cs#3)]
+ [!code-vb[System.Web.Configuration#3](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Configuration/VB/App_Code/ConfigSectionSample.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.Converter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +84,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the unique identifier for the converter.</summary>
+        <value>The unique identifier for the converter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +102,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of configuration-element properties.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,8 +128,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the fully qualified type name of the <see cref="T:System.Web.Script.Serialization.JavaScriptConverter" /> object.</summary>
+        <value>The fully qualified type name of the <see cref="T:System.Web.Script.Serialization.JavaScriptConverter" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

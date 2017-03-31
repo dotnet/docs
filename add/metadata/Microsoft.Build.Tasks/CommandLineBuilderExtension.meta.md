@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Tasks.CommandLineBuilderExtension
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CommandLineBuilderExtension.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CommandLineBuilderExtension.GetQuotedText(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

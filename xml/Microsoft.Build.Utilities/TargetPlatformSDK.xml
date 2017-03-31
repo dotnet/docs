@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a target platform SDK.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,10 +34,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetPlatformIdentifier">To be added.</param>
-        <param name="targetPlatformVersion">To be added.</param>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="targetPlatformIdentifier">The identifier of the target platform.</param>
+        <param name="targetPlatformVersion">The version of the target platform.</param>
+        <param name="path">The path to the target platform SDK.</param>
+        <summary>Creates a new instance of a target platform SDK class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,9 +57,9 @@
         <Parameter Name="other" Type="Microsoft.Build.Utilities.TargetPlatformSDK" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">Target platform SDK to compare to this element.</param>
+        <summary>Ensures equality between target platform SDKs.</summary>
+        <returns>Returns <see langword="true" /> if items are equal, otherwise, returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,9 +79,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">Object to compare to this element.</param>
+        <summary>Ensures equality between target platform SDK and object.</summary>
+        <returns>Returns <see langword="true" /> if items are equal, otherwise, returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +99,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Get hash code for the target platform SDK.</summary>
+        <returns>Returns a hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +117,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the Path to the target platform SDK.</summary>
+        <value>Returns the path to the target platform SDK.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +135,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the target platform SDK identifier.</summary>
+        <value>Returns the target platform SDK identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,8 +153,8 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the version of the target platform.</summary>
+        <value>Returns the target platform version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

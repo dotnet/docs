@@ -1,24 +1,35 @@
 ---
 uid: System.Web.UI.WebControls.GridViewCommandEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewCommandEventArgs.Handled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewCommandEventArgs.#ctor(System.Web.UI.WebControls.GridViewRow,System.Object,System.Web.UI.WebControls.CommandEventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.GridViewCommandEventArgs.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewCommandEventArgs.#ctor(System.Object,System.Web.UI.WebControls.CommandEventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the bounding rectangle of a text run.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the character length of bounded text run.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the character length.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the bounding rectangle for the text run.</summary>
+        <value>A <see cref="T:System.Windows.Rect" /> value that represents the bounding rectangle of the text run.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.Windows.Media.TextFormatting.TextRun</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextFormatting.TextRun" /> object that represents the text run.</summary>
+        <value>A <see cref="T:System.Windows.Media.TextFormatting.TextRun" /> value that represents the text run.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the character index of the first character in the bounded text run.</summary>
+        <value>The index representing the first character of the bounded text run.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

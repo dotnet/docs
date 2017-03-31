@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Security
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

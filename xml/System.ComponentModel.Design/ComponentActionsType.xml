@@ -10,8 +10,22 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of object-bound smart tag with respect to how it was associated with the component.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table describes the two options for associating an object-bound smart tag to a component.  
+  
+|Smart-tag model|Description|  
+|----------------------|-----------------|  
+|Pull|The class derived from <xref:System.ComponentModel.Design.ComponentDesigner> that is associated with the component overrides the <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> property to return the collection of smart tags for that component.|  
+|Push|A call to the <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> method explicitly associates the specified smart tags with the specified component.|  
+  
+ For more information about these smart-tag models, see the <xref:System.ComponentModel.Design.DesignerActionService> and <xref:System.ComponentModel.Design.DesignerActionListCollection> classes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -27,7 +41,7 @@
         <ReturnType>System.ComponentModel.Design.ComponentActionsType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Both types of smart tags.</summary>
       </Docs>
     </Member>
     <Member MemberName="Component">
@@ -43,7 +57,7 @@
         <ReturnType>System.ComponentModel.Design.ComponentActionsType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pull model smart tags only.</summary>
       </Docs>
     </Member>
     <Member MemberName="Service">
@@ -59,7 +73,7 @@
         <ReturnType>System.ComponentModel.Design.ComponentActionsType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Push model smart tags only.</summary>
       </Docs>
     </Member>
   </Members>

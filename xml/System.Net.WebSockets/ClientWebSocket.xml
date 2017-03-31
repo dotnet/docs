@@ -24,8 +24,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a client for connecting to WebSocket services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some of the classes and class elements in the <xref:System.Net.WebSockets> namespace are supported on Windows 7, Windows Vista SP2, and Windows Server 2008. However, the only public implementations of client and server WebSockets are supported on Windows 8 and Windows Server 2012. The class elements in the <xref:System.Net.WebSockets> namespace that are supported on Windows 7, Windows Vista SP2, and Windows Server 2008 are abstract class elements. This allows an application developer to inherit and extend these abstract class classes and class elements with an actual implementation of client WebSockets.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,7 +55,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +87,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aborts the connection and cancels any pending IO operations.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,12 +126,21 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="closeStatus">To be added.</param>
-        <param name="statusDescription">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="closeStatus">The WebSocket close status.</param>
+        <param name="statusDescription">A description of the close status.</param>
+        <param name="cancellationToken">A cancellation token used to propagate notification that this  operation should be canceled.</param>
+        <summary>Close the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
+  
+ The task object representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the <xref:System.Net.WebSockets.ClientWebSocket> instance is closed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseOutputAsync">
@@ -162,12 +178,21 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="closeStatus">To be added.</param>
-        <param name="statusDescription">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="closeStatus">The WebSocket close status.</param>
+        <param name="statusDescription">A description of the close status.</param>
+        <param name="cancellationToken">A cancellation token used to propagate notification that this  operation should be canceled.</param>
+        <summary>Close the output for the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
+  
+ The task object representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the output on the <xref:System.Net.WebSockets.ClientWebSocket> instance is closed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseStatus">
@@ -192,8 +217,10 @@
         <ReturnType>System.Nullable&lt;System.Net.WebSockets.WebSocketCloseStatus&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the reason why the close handshake was initiated on <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</summary>
+        <value>Returns <see cref="T:System.Net.WebSockets.WebSocketCloseStatus" />.  
+  
+ The reason why the close handshake was initiated.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +246,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a description of the reason why the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance was closed.</summary>
+        <value>Returns <see cref="T:System.String" />.  
+  
+ The description of the reason why the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance was closed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,11 +287,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="uri">The URI of the WebSocket server to connect to.</param>
+        <param name="cancellationToken">A cancellation token used to propagate notification that the  operation should be canceled.</param>
+        <summary>Connect to a WebSocket server as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.  
+  
+ The task object representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.WebSockets.ClientWebSocket.ConnectAsync%2A> method initiates the WebSocket handshake with a remote network destination, and then negotiates the sub-protocol.  
+  
+ For plain WebSocket connections, use the `ws://` scheme in the uri. For secure WebSocket connections over TLS/SSL, use the `wss://` scheme.  
+  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the connect request on the <xref:System.Net.WebSockets.ClientWebSocket> instance has completed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -288,7 +330,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,8 +356,10 @@
         <ReturnType>System.Net.WebSockets.ClientWebSocketOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the WebSocket options for the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</summary>
+        <value>Returns <see cref="T:System.Net.WebSockets.ClientWebSocketOptions" />.  
+  
+ The WebSocket options for the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,11 +389,22 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer to receive the response.</param>
+        <param name="cancellationToken">A cancellation token used to propagate notification that this  operation should be canceled.</param>
+        <summary>Receive data on <see cref="T:System.Net.WebSockets.ClientWebSocket" /> as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.  
+  
+ The task object representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the receive request on the <xref:System.Net.WebSockets.ClientWebSocket> instance has completed.  
+  
+ Exactly one send and one receive is supported on each <xref:System.Net.WebSockets.ClientWebSocket> object in parallel.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
@@ -380,13 +435,22 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="messageType">To be added.</param>
-        <param name="endOfMessage">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer containing the message to be sent.</param>
+        <param name="messageType">Specifies whether the buffer is clear text or in a binary format.</param>
+        <param name="endOfMessage">Specifies whether this is the final asynchronous send. Set to <see langword="true" /> if this is the final send; <see langword="false" /> otherwise.</param>
+        <param name="cancellationToken">A cancellation token used to propagate notification that this  operation should be canceled.</param>
+        <summary>Send data on <see cref="T:System.Net.WebSockets.ClientWebSocket" /> as an asynchronous operation.</summary>
+        <returns>The task object representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task> object will complete after the send request on the <xref:System.Net.WebSockets.ClientWebSocket> instance has completed.  
+  
+ Exactly one send and one receive is supported on each <xref:System.Net.WebSockets.ClientWebSocket> object in parallel.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -411,8 +475,10 @@
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Get the WebSocket state of the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</summary>
+        <value>Returns <see cref="T:System.Net.WebSockets.WebSocketState" />.  
+  
+ The WebSocket state of the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -438,8 +504,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the supported WebSocket sub-protocol for the <see cref="T:System.Net.WebSockets.ClientWebSocket" /> instance.</summary>
+        <value>Returns <see cref="T:System.String" />.  
+  
+ The supported WebSocket sub-protocol.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

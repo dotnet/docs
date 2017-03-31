@@ -11,8 +11,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the layout of the security header.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is Strict.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Lax">
@@ -29,7 +36,7 @@
         <ReturnType>System.ServiceModel.Channels.SecurityHeaderLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Items are added to the security header in any order that confirms to WSS: SOAP Message security.</summary>
       </Docs>
     </Member>
     <Member MemberName="LaxTimestampFirst">
@@ -46,7 +53,7 @@
         <ReturnType>System.ServiceModel.Channels.SecurityHeaderLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Items are added to the security header in any order that confirms to WSS: SOAP Message security except that the first element in the security header must be a wsse:Timestamp element.</summary>
       </Docs>
     </Member>
     <Member MemberName="LaxTimestampLast">
@@ -63,7 +70,7 @@
         <ReturnType>System.ServiceModel.Channels.SecurityHeaderLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Items are added to the security header in any order that confirms to WSS: SOAP Message security except that the last element in the security header must be a wsse:Timestamp element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Strict">
@@ -80,7 +87,7 @@
         <ReturnType>System.ServiceModel.Channels.SecurityHeaderLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Items are added to the security header according to the general principle of “declare before use”.</summary>
       </Docs>
     </Member>
   </Members>

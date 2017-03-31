@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains information about changes made to the activity associated with the designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ When changes are made to an activity associated with a designer, the <xref:System.Workflow.ComponentModel.Design.ActivityChangedEventArgs> will contain information about the change.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,11 +47,11 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="member">To be added.</param>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="activity">The Activity associated with the designer that has changed.</param>
+        <param name="member">The member of the Activity that has changed.</param>
+        <param name="oldValue">The value of the member before the change.</param>
+        <param name="newValue">The value of the member after the change.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Workflow.ComponentModel.Design.ActivityChangedEventArgs" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,9 +68,16 @@
         <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Activity" /> that has changed.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Activity" /> that has changed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gets the Activity that has changed in the designer.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Member">
@@ -75,9 +93,16 @@
         <ReturnType>System.ComponentModel.MemberDescriptor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The member of the <see cref="T:System.Workflow.ComponentModel.Activity" /> being changed.</summary>
+        <value>A <see cref="T:System.ComponentModel.MemberDescriptor" /> that describes the member that has changed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.MemberDescriptor> contains information about the member of the Activity that has changed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewValue">
@@ -93,9 +118,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The new value of the member of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that has changed.</summary>
+        <value>The new value of the member that has changed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ NewValue is an object that contains information about the new value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OldValue">
@@ -111,9 +143,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The old value of the member of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that has changed.</summary>
+        <value>The old value of the member that has changed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ OldValue is an object that contains information about the old value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

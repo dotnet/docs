@@ -1,34 +1,41 @@
 ---
 uid: Microsoft.Build.Tasks.WriteCodeFragment
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.WriteCodeFragment.OutputDirectory
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.WriteCodeFragment.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.WriteCodeFragment.AssemblyAttributes
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.WriteCodeFragment.OutputFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.WriteCodeFragment.Language
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.WriteCodeFragment.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

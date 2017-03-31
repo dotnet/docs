@@ -1,44 +1,59 @@
 ---
 uid: System.ServiceModel.Security.WSTrustServiceHost
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustServiceHost.#ctor(System.ServiceModel.Security.WSTrustServiceContract,System.Uri[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustServiceHost.SecurityTokenServiceConfiguration
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustServiceHost.ConfigureMetadata
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Security.WSTrustServiceHost.#ctor
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustServiceHost.ApplyConfiguration
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustServiceHost.#ctor(System.IdentityModel.Configuration.SecurityTokenServiceConfiguration,System.Uri[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustServiceHost.UpdateServiceConfiguration
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustServiceHost.ServiceContract
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustServiceHost.InitializeRuntime
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---

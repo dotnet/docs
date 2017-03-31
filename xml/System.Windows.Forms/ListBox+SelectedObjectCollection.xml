@@ -15,8 +15,35 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the collection of selected items in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> class stores the selected items in the <xref:System.Windows.Forms.ListBox>. The items stored in the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> are items contained within the <xref:System.Windows.Forms.ListBox.ObjectCollection> class. The <xref:System.Windows.Forms.ListBox.ObjectCollection> class stores all items displayed in the <xref:System.Windows.Forms.ListBox>.  
+  
+ The following table is an example of how the <xref:System.Windows.Forms.ListBox.ObjectCollection> stores the items of the <xref:System.Windows.Forms.ListBox> as well as their selection states within an example <xref:System.Windows.Forms.ListBox>.  
+  
+|Index|Item|Selection state within the ListBox|  
+|-----------|----------|----------------------------------------|  
+|0|object1|Unselected|  
+|1|object2|Selected|  
+|2|object3|Unselected|  
+|3|object4|Selected|  
+|4|object5|Selected|  
+  
+ Based on the <xref:System.Windows.Forms.ListBox.ObjectCollection> demonstrated in the previous table, the following table demonstrates how the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> would appear.  
+  
+|Index|Selected item from ObjectCollection|  
+|-----------|-----------------------------------------|  
+|0|object2|  
+|1|object4|  
+|2|object5|  
+  
+ You can use the properties and methods of this class to perform a variety of tasks with the collection. The <xref:System.Windows.Forms.ListBox.SelectedObjectCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListBox.ObjectCollection> class is a member of the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>. Once you know that the item is located within the collection, you can use the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection.IndexOf%2A> method to determine where a specific item within the <xref:System.Windows.Forms.ListBox.ObjectCollection> for the <xref:System.Windows.Forms.ListBox> is stored within the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,9 +59,16 @@
         <Parameter Name="owner" Type="System.Windows.Forms.ListBox" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="owner">A <see cref="T:System.Windows.Forms.ListBox" /> representing the owner of the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListBox.SelectedObjectCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of this class cannot be created without associating it with a <xref:System.Windows.Forms.ListBox> control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -53,8 +87,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">An object representing the item to add to the collection of selected items.</param>
+        <summary>Adds an item to the list of selected items for a <see cref="T:System.Windows.Forms.ListBox" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +106,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all items from the collection of selected items.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,10 +126,18 @@
         <Parameter Name="selectedObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="selectedObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="selectedObject">An object representing the item to locate in the collection.</param>
+        <summary>Determines whether the specified item is located within the collection.</summary>
+        <returns>
+          <see langword="true" /> if the specified item is located in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListBox.SelectedObjectCollection.Contains%2A> method enables you to determine whether an item from the <xref:System.Windows.Forms.ListBox.ObjectCollection> class is a member of the selected items stored in the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>. You can use this to determine if a specific item in a multiple-selection <xref:System.Windows.Forms.ListBox> is selected.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -115,10 +157,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="destination">An <see cref="T:System.Array" /> representing the array to copy the contents of the collection to.</param>
+        <param name="index">The location within the destination array to copy the items from the collection to.</param>
+        <summary>Copies the entire collection into an existing array at a specified location within the array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to combine the selected items from multiple collections into a single array.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -134,9 +183,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of items in the collection.</summary>
+        <value>The number of items in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to determine the number of selected items in the <xref:System.Windows.Forms.ListBox>. You can then use this value when looping through the values of the collection and you need to provide a number of iterations to perform the loop. Unless the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property of the <xref:System.Windows.Forms.ListBox> is set to `SelectionMode.MultiSimple` or `SelectionMode.MultiExtended`, this property always returns a value of zero (0) or one (1) depending on whether you have a selected item.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -153,8 +209,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that can be used to iterate through the selected item collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that represents the item collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,10 +230,17 @@
         <Parameter Name="selectedObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="selectedObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="selectedObject">An object representing the item to locate in the collection.</param>
+        <summary>Returns the index within the collection of the specified item.</summary>
+        <returns>The zero-based index of the item in the collection; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once you know that an item is located within the collection (using the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection.Contains%2A> method), you can use the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection.IndexOf%2A> method to determine where a specific item within the <xref:System.Windows.Forms.ListBox.ObjectCollection> for the <xref:System.Windows.Forms.ListBox> is stored within the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -193,9 +256,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether the collection is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is always `true` for this collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -222,10 +293,18 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the item in the collection to retrieve.</param>
+        <summary>Gets the item at the specified index within the collection.</summary>
+        <value>An object representing the item located at the specified index within the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This indexer enables you to get a specific item from the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>. The item stored in this collection is an item within the <xref:System.Windows.Forms.ListBox.ObjectCollection> of the <xref:System.Windows.Forms.ListBox> that represents a selected item in the <xref:System.Windows.Forms.ListBox>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListBox.ObjectCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListBox.SelectedObjectCollection" /> class.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -244,8 +323,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">An object representing the item to remove from the collection.</param>
+        <summary>Removes the specified object from the collection of selected items.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,9 +341,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
+        <value>
+          <see langword="true" /> if the list is synchronized; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -280,9 +367,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.SyncRoot" />.</summary>
+        <value>An object that can be used to synchronize access to the underlying list.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -301,10 +395,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to add to the collection.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+        <returns>The position into which the object was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -321,8 +422,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Clear" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -342,10 +450,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which the object should be inserted.</param>
+        <param name="value">The object to insert into the <see cref="T:System.Windows.Forms.ListBox.SelectedObjectCollection" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -361,9 +476,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
+        <value>
+          <see langword="true" /> if the underlying list has a fixed size; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -382,9 +505,16 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to remove.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -403,9 +533,16 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the object to remove from the <see cref="T:System.Windows.Forms.ListBox.SelectedObjectCollection" />.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.LenientStringConstructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientStringConstructor.fromCharCode
-internalonly: False
+ms.author: "mikejo"
 ---

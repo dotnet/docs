@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebServiceParser
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebServiceParser.GetCompiledType(System.String,System.Web.HttpContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebServiceParser.DefaultDirectiveName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -24,7 +24,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>ASP.NET default implementation of memory monitor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
         <ReturnType>System.IObserver&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the default low-memory observer. Setting this property unsubscribes the 'default' observer that was there before. There can only be one 'default.' To provide additional observers, use the <see cref="Overload:System.Web.Hosting.AspNetMemoryMonitor.Subscribe" /> method.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,7 +59,7 @@
         <ReturnType>System.IObserver&lt;System.Web.Hosting.RecycleLimitInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the default recycle limit observer. Setting this property unsubscribes the 'default' observer that was there before. There can only be one 'default.' To provide additional observers, use the <see cref="Overload:System.Web.Hosting.AspNetMemoryMonitor.Subscribe" /> method.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,7 +78,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all resources used by the memory monitor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,7 +96,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Start monitoring and firing notifications.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +114,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stop monitoring and firing notifications.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +134,8 @@
         <Parameter Name="observer" Type="System.IObserver&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt;" />
       </Parameters>
       <Docs>
-        <param name="observer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="observer">The low-memory observer to subscribe to.</param>
+        <summary>Subscribes a low-memory observer in addition to the default low-memory observer.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,8 +156,8 @@
         <Parameter Name="observer" Type="System.IObserver&lt;System.Web.Hosting.RecycleLimitInfo&gt;" />
       </Parameters>
       <Docs>
-        <param name="observer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="observer">The recycle limit observer to subscribe to.</param>
+        <summary>Subscribes a recycle limit observer in addition to the default recycle limit observer.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.VBArrayObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.VBArrayObject.#ctor(Microsoft.JScript.VBArrayPrototype,System.Array)
-internalonly: False
+ms.author: "mikejo"
 ---

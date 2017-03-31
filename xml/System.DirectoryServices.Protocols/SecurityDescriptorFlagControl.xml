@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl" /> class is used to pass flags to the server to control various security descriptor behaviors.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl.#ctor" /> constructor creates a new instance of the <see cref="T:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="masks" Type="System.DirectoryServices.Protocols.SecurityMasks" />
       </Parameters>
       <Docs>
-        <param name="masks">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="masks">A combination of <see cref="T:System.DirectoryServices.Protocols.SecurityMasks" /> values that specify security descriptor options.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl.#ctor(System.DirectoryServices.Protocols.SecurityMasks)" /> constructor creates a new instance of the <see cref="T:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl" /> class using the specified security masks.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +62,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl.GetValue" /> method returns the security descriptor options specified for this control.</summary>
+        <returns>The security descriptor options specified for this control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +80,8 @@
         <ReturnType>System.DirectoryServices.Protocols.SecurityMasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl.SecurityMasks" /> property contains a combination of <see cref="T:System.DirectoryServices.Protocols.SecurityMasks" /> values that specify security descriptor options.</summary>
+        <value>A combination of <see cref="T:System.DirectoryServices.Protocols.SecurityMasks" /> values that specify security descriptor options.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

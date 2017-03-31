@@ -1,104 +1,153 @@
 ---
 uid: System.DBNull
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.DBNull.System#IConvertible#ToUInt64(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.DBNull.System#IConvertible#ToDateTime(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.DBNull.System#IConvertible#ToDouble(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.DBNull.Value
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.DBNull.System#IConvertible#ToDecimal(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.DBNull.GetTypeCode
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.DBNull.System#IConvertible#ToBoolean(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.DBNull.System#IConvertible#ToUInt16(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.DBNull.System#IConvertible#ToInt16(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.DBNull.System#IConvertible#ToSingle(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.DBNull.ToString(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.DBNull.System#IConvertible#ToByte(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.DBNull.System#IConvertible#ToInt64(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.DBNull.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.DBNull.System#IConvertible#ToUInt32(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.DBNull.System#IConvertible#ToInt32(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.DBNull.System#IConvertible#ToChar(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.DBNull.ToString
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.DBNull.System#IConvertible#ToInt16(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.DBNull.System#IConvertible#ToSingle(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.DBNull.ToString(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.DBNull.System#IConvertible#ToByte(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.DBNull.System#IConvertible#ToInt64(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.DBNull.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.DBNull.System#IConvertible#ToUInt32(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.DBNull.System#IConvertible#ToInt32(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.DBNull.System#IConvertible#ToChar(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.DBNull.ToString
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.DBNull.System#IConvertible#ToType(System.Type,System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.DBNull.System#IConvertible#ToSByte(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

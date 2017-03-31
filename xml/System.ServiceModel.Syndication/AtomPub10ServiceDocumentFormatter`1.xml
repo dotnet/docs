@@ -28,9 +28,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TServiceDocument">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TServiceDocument">The class derived from a <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance that is to be serialized to XML or deserialized from XML using Atom 1.0 formatting.</typeparam>
+    <summary>A formatter that serializes classes derived from a <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance to and from XML using Atom 1.0 formats.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you want to serialize or deserialized a <xref:System.ServiceModel.Syndication.ServiceDocument> instance instead of an object derived from this an instance of <xref:System.ServiceModel.Syndication.ServiceDocument>, use the <xref:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter> formatter instead.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,7 +55,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.ServiceDocumentFormatter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +76,18 @@
         <Parameter Name="documentToWrite" Type="TServiceDocument" />
       </Parameters>
       <Docs>
-        <param name="documentToWrite">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="documentToWrite">The <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> associated with the Atom 1.0 formatter.</param>
+        <summary>Creates a new instance of the Atom 1.0-based <see cref="T:System.ServiceModel.Syndication.ServiceDocumentFormatter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `documentToWrite` can be serialized to an XML representation or deserialized from an XML representation by the formatter using Atom 1.0 formats.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="documentToWrite" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateDocumentInstance">
@@ -92,8 +108,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance associated with the Atom 1.0 formatter.</summary>
+        <returns>Returns an instance of <see cref="T:System.ServiceModel.Syndication.ServiceDocument" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

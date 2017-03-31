@@ -1,19 +1,34 @@
 ---
 uid: System.ServiceModel.Configuration.WS2007HttpBindingElement
-internalonly: False
----
-
----
-uid: System.ServiceModel.Configuration.WS2007HttpBindingElement.BindingElementType
-internalonly: False
----
-
----
-uid: System.ServiceModel.Configuration.WS2007HttpBindingElement.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.WS2007HttpBindingElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.WS2007HttpBindingElement.BindingElementType
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.WS2007HttpBindingElement.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.WS2007HttpBindingElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.Build.Execution.ProjectTaskInstanceChild
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskInstanceChild.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskInstanceChild.Location
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskInstanceChild.TaskParameterLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskInstanceChild.Condition
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectTaskInstanceChild.ConditionLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

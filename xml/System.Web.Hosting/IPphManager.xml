@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides stop and start control of listener channels.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.IPphManager> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="StartProcessProtocolListenerChannel">
@@ -37,10 +44,17 @@
         <Parameter Name="listenerChannelCallback" Type="System.Web.Hosting.IListenerChannelCallback" />
       </Parameters>
       <Docs>
-        <param name="protocolId">To be added.</param>
-        <param name="listenerChannelCallback">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="protocolId">The protocol ID.</param>
+        <param name="listenerChannelCallback">The <see cref="T:System.Web.Hosting.IListenerChannelCallback" /> interface.</param>
+        <summary>Starts the specified process protocol listener channel.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.IPphManager.StartProcessProtocolListenerChannel%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StopProcessProtocol">
@@ -60,10 +74,18 @@
         <Parameter Name="immediate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="protocolId">To be added.</param>
-        <param name="immediate">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="protocolId">The protocol ID of the listener channel to stop.</param>
+        <param name="immediate">
+          <see langword="true" /> to notify the process protocol manager to stop all listener channels synchronously; <see langword="false" /> to stop all listener channels asynchronously.</param>
+        <summary>Stops all protocol listener channels.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.IPphManager.StopProcessProtocol%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StopProcessProtocolListenerChannel">
@@ -84,11 +106,19 @@
         <Parameter Name="immediate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="protocolId">To be added.</param>
-        <param name="listenerChannelId">To be added.</param>
-        <param name="immediate">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="protocolId">The protocol ID for the listener channel.</param>
+        <param name="listenerChannelId">The listener channel ID.</param>
+        <param name="immediate">
+          <see langword="true" /> to notify the process protocol manager to stop all listener channels synchronously; <see langword="false" /> to stop all listener channels asynchronously.</param>
+        <summary>Stops the specified process protocol listener channel.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.IPphManager.StopProcessProtocolListenerChannel%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

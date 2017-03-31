@@ -16,8 +16,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Supplies the strings used to specify the disposition type for an e-mail attachment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values in this enumeration can be used to set the <xref:System.Net.Mime.ContentDisposition.DispositionType%2A> property for an e-mail attachment. The information in the <xref:System.Net.Mime.ContentDisposition> class represents the MIME Content-Disposition header. This header is described in RFC 2183 available at [http://www.ietf.org](http://www.ietf.org/).  
+  
+   
+  
+## Examples  
+ The following code example sets the disposition type for an attachment.  
+  
+ [!code-cpp[NclMailSync#26](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#26)]
+ [!code-csharp[NclMailSync#26](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#26)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Attachment">
@@ -38,8 +53,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies that the attachment is to be displayed as a file attached to the e-mail message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example sets the disposition type for an attachment.  
+  
+ [!code-cpp[NclMailSync#24](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#24)]
+ [!code-csharp[NclMailSync#24](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#24)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Inline">
@@ -60,8 +85,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Specifies that the attachment is to be displayed as part of the e-mail message body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example sets the disposition type for an attachment.  
+  
+ [!code-cpp[NclMailSync#26](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#26)]
+ [!code-csharp[NclMailSync#26](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#26)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines identifiers used to represent the type of a session switch event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.Win32.SessionSwitchEventArgs> class uses the <xref:Microsoft.Win32.SessionSwitchReason> class to represent the type of a session switch event.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ConsoleConnect">
@@ -27,7 +34,7 @@
         <ReturnType>Microsoft.Win32.SessionSwitchReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A session has been connected from the console.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConsoleDisconnect">
@@ -43,7 +50,7 @@
         <ReturnType>Microsoft.Win32.SessionSwitchReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A session has been disconnected from the console.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoteConnect">
@@ -59,7 +66,7 @@
         <ReturnType>Microsoft.Win32.SessionSwitchReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A session has been connected from a remote connection.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoteDisconnect">
@@ -75,7 +82,7 @@
         <ReturnType>Microsoft.Win32.SessionSwitchReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A session has been disconnected from a remote connection.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionLock">
@@ -91,7 +98,7 @@
         <ReturnType>Microsoft.Win32.SessionSwitchReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A session has been locked.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionLogoff">
@@ -107,7 +114,7 @@
         <ReturnType>Microsoft.Win32.SessionSwitchReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A user has logged off from a session.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionLogon">
@@ -123,7 +130,7 @@
         <ReturnType>Microsoft.Win32.SessionSwitchReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A user has logged on to a session.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionRemoteControl">
@@ -139,7 +146,7 @@
         <ReturnType>Microsoft.Win32.SessionSwitchReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A session has changed its status to or from remote controlled mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="SessionUnlock">
@@ -155,7 +162,7 @@
         <ReturnType>Microsoft.Win32.SessionSwitchReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A session has been unlocked.</summary>
       </Docs>
     </Member>
   </Members>

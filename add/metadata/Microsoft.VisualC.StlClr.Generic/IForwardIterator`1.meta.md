@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.VisualC.StlClr.Generic.IForwardIterator`1
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the literal result of a custom expression written using <see cref="T:System.Workflow.Activities.Rules.IRuleExpression" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="literal" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="literal">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="literal">The literal result of the expression.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleLiteralResult" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +46,18 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the result of the expression.</summary>
+        <value>The result of the expression.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.InvalidOperationException> is thrown every time an attempt to set <xref:System.Workflow.Activities.Rules.RuleLiteralResult.Value%2A> occurs.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Workflow.Activities.Rules.RuleLiteralResult.Value" /> is set.</exception>
       </Docs>
     </Member>
   </Members>

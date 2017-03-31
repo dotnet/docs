@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Controls.InkCanvasStrokeCollectedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasStrokeCollectedEventArgs.InvokeEventHandler(System.Delegate,System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasStrokeCollectedEventArgs.Stroke
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.InkCanvasStrokeCollectedEventArgs.#ctor(System.Windows.Ink.Stroke)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

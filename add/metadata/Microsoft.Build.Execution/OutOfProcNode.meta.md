@@ -1,14 +1,17 @@
 ---
 uid: Microsoft.Build.Execution.OutOfProcNode
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.OutOfProcNode.Run(System.Exception@)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.OutOfProcNode.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

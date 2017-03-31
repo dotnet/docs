@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Synthesis.SynthesisMediaType
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides options for configuring contract, binding, and address properties of the channel endpoint, which are used by clients to connect to service endpoints on the server. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +44,9 @@
         <Parameter Name="contractType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <param name="contractType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="address">Specifies the address of the endpoint. The default is an empty string. The address must be an absolute URI.</param>
+        <param name="contractType">A string that indicates which contract this endpoint is exposing. The assembly must implement the contract type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> class with the specified endpoint address and contract type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the address of the endpoint.</summary>
+        <value>A URI that contains the address of the endpoint. The address must be an absolute URI.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +94,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the behavior name of the behavior to be used to instantiate the endpoint.</summary>
+        <value>The behavior name of the behavior to be used to instantiate the endpoint. The behavior name must be in scope at the point the service is defined. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +120,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of binding to use.</summary>
+        <value>The type of binding to use. The type must have a registered configuration section in order to be referenced. The type is the registered by section name, rather than by the type name of the binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +146,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the binding name of the binding to use when the endpoint is instantiated.</summary>
+        <value>The binding name of the binding to use when the endpoint is instantiated. The binding name must be in scope at the point the endpoint is defined. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,8 +172,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the contract that this endpoint is exposing.</summary>
+        <value>The contract this endpoint is exposing. The assembly must implement the contract type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +198,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the standard endpoint that is set by the <see cref="P:System.ServiceModel.Configuration.ChannelEndpointElement.Kind" /> property, which references to the additional configuration information of this standard endpoint. The same name must be defined in the <see cref="T:System.ServiceModel.Configuration.StandardEndpointsSection" />.</summary>
+        <value>A string that specifies the name of the standard endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,8 +221,8 @@
         <ReturnType>System.ServiceModel.Configuration.AddressHeaderCollectionElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of address headers.</summary>
+        <value>An <see cref="T:System.ServiceModel.Configuration.AddressHeaderCollectionElement" /> that contains a collection of address headers.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,8 +244,8 @@
         <ReturnType>System.ServiceModel.Configuration.IdentityElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an identity that enables the authentication of an endpoint by other endpoints that are exchanging messages with it.</summary>
+        <value>An <see cref="T:System.ServiceModel.Configuration.IdentityElement" /> that contains configuration settings for enabling the authentication of an endpoint by other endpoints exchanging messages with it.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,8 +270,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the type of standard endpoint applied. The type must be registered in the <see langword="&lt;extensions&gt;" /> section or in machine.config. If nothing is specified, a common channel endpoint is created.</summary>
+        <value>A string that denotes the type of standard endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,9 +296,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a unique identifier of an endpoint for a given contract.</summary>
+        <value>An endpoint for a given contract. The default is an empty string. The service model allows the user to define multiple clients for a given contract type. Each definition must be differentiated by a unique configuration name. If this property is omitted, the corresponding endpoint is used as the default endpoint associated with the specified contract type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The service model allows the user to define multiple clients for a given contract type. Each definition must be differentiated by a unique configuration name. If this property is omitted, the corresponding endpoint is used as the default endpoint associated with the specified contract type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">

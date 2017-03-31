@@ -19,8 +19,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines custom properties that are common to data points, series and empty points.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class defines custom properties such as colors, the use of background images, hatching, and so forth.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Series> class, <xref:System.Windows.Forms.DataVisualization.Charting.DataPoint> class and the <xref:System.Windows.Forms.DataVisualization.Charting.Series.EmptyPointStyle%2A> property are all derived from this class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +43,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +61,9 @@
         <Parameter Name="pointProperties" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="series">To be added.</param>
-        <param name="pointProperties">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="series">The series that the data point belongs to.</param>
+        <param name="pointProperties">A flag that indicates whether this is a data point custom property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties" /> class with the specified series and custom properties flag.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,9 +88,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text of the X-axis label for the data point, series or an empty point. This property is only used if a custom label has not been specified for the relevant <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object.</summary>
+        <value>A <see langword="string" /> value that represents the text of the X-axis label.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property sets the axis label for a data point, series or an empty point.  
+  
+ This property can only be set at run time for a <xref:System.Windows.Forms.DataVisualization.Charting.Series> object. If you set this property or a <xref:System.Windows.Forms.DataVisualization.Charting.Series> object, all of its data points will use this label.  
+  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.AxisLabel%2A> property is not set and a custom label has not been specified, an axis label will be generated automatically using the axis scale.  
+  
+ Empty point labels are set using the <xref:System.Windows.Forms.DataVisualization.Charting.Series.EmptyPointStyle%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackGradientStyle">
@@ -105,8 +127,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the background gradient style.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> enumeration value that is used to draw  the background gradient style.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +153,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the background hatching style.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> enumeration value that is used to draw the background hatching style.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,8 +179,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the background image of the data point.</summary>
+        <value>A <see langword="string" /> value that represents the name of the background image file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,8 +205,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the alignment of the background image, which is used with the <see cref="F:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Unscaled" /> drawing mode.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle" /> enumeration value that specifies the alignment of the background image.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,8 +237,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a color that will be replaced with a transparent color when the background image is drawn.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that will be replaced with a transparent color when the image is drawn.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,8 +260,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the drawing mode of the background image.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode" /> enumeration value that defines the drawing mode of the image.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,8 +289,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the secondary background color.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that specifies the secondary background color.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,8 +318,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the border color of the data point.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that specifies the border color of the data point.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,8 +341,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the border style of the data point.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> enumeration value that specifies the border style of the data point.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,8 +364,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the border width of the data point.</summary>
+        <value>An <see langword="integer" /> value that specifies the border width of the data point.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,8 +393,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the color of the data point.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that is used to draw the color of the data point.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -400,8 +422,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the custom properties of the data point. Custom properties can be specified in the following format: AttrName1=Value1, AttrName2=Value2 …</summary>
+        <value>A <see langword="string" /> value that represents the custom properties of the data point.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -444,8 +466,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.CustomProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the extended custom properties of the data point. Extended custom properties can be specified in the following format: AttrName1=Value1, AttrName2=Value2...</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomProperties" /> object that represents the extended custom properties of the data point.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -465,8 +487,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the property to delete.</param>
+        <summary>Deletes the data point custom property with the specified name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -488,8 +510,8 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the font of the data point.</summary>
+        <value>A <see cref="T:System.Drawing.Font" /> value that represents the font of the data point.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -509,9 +531,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the property to return.</param>
+        <summary>Returns the data point custom property with the specified name.</summary>
+        <returns>A <see langword="string" /> value that represents the data point custom property with the specified name. If the requested property is not set, the default custom property of the data series will be returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -531,9 +553,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the custom property to check.</param>
+        <summary>Determines whether a custom property with the specified name was set.</summary>
+        <returns>
+          <see langword="true" /> if the custom property was set; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -555,8 +578,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag that indicates whether to show the value of the data point on the label.</summary>
+        <value>
+          <see langword="true" /> if the value of the data point is shown on the label; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,8 +602,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag that indicates whether the item is shown in the legend.</summary>
+        <value>
+          <see langword="true" /> if the item is shown in the legend; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -599,9 +624,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the custom property.</param>
+        <summary>Gets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties" /> object by its position in the index.</summary>
+        <value>A <see langword="string" /> value that represents the custom properties of the data point.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -621,9 +646,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The name of the custom property.</param>
+        <summary>Gets or sets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties" /> object by name.</summary>
+        <value>A <see langword="string" /> value that represents the custom properties of the data point.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -648,8 +673,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the text of the data point label.</summary>
+        <value>A <see langword="string" /> value that represents the text of the data point label.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -671,8 +696,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the angle of the data point label.</summary>
+        <value>An <see langword="integer" /> value that represents the angle of the label.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -703,8 +728,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the background color of the data point label.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that represents the background color of the data point label.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -735,8 +760,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the border color of the data point label.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that represents the border color of the data point label.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -758,8 +783,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the border style of the label.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> enumeration value that specifies the border style of the label.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -781,8 +806,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the border width of the label.</summary>
+        <value>An <see langword="integer" /> value that represents the width of the border.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -810,8 +835,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the text color of the label.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that represents the text color of the label.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -833,8 +858,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the format of the data point label.</summary>
+        <value>A <see langword="string" /> value that represents the format of the label.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -859,8 +884,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the tooltip for the data point label.</summary>
+        <value>A <see langword="string" /> value that represents the tooltip for the data point label.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -885,8 +910,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the text of the item in the legend.</summary>
+        <value>A <see langword="string" /> value that represents the text of the item in the legend.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -911,8 +936,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the tooltip of the item in the legend.</summary>
+        <value>A <see langword="string" /> value that represents the tooltip of the item in the legend.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -943,8 +968,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the border color of the marker.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that represents the border color of the marker.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -966,8 +991,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the border width of the marker.</summary>
+        <value>An <see langword="integer" /> value that specifies the border width of the marker.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -998,8 +1023,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the marker color.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that is used to draw the marker color.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1027,8 +1052,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the marker image.</summary>
+        <value>A <see langword="string" /> value that represents the name of the marker image file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1059,8 +1084,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the color that will be replaced with a transparent color when the marker image is drawn.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that specifies the color that will be replaced with a transparent color when the marker image is drawn.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1085,8 +1110,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the size of the marker.</summary>
+        <value>An <see langword="integer" /> value that specifies the size of the marker.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1114,8 +1139,8 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.MarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the marker style.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.MarkerStyle" /> enumeration value that specifies the marker style.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1133,7 +1158,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resets a custom property to its default value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1151,7 +1176,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resets a custom property to its default value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1172,9 +1197,9 @@
         <Parameter Name="propertyValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="propertyValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the property to set.</param>
+        <param name="propertyValue">The value of the property to set.</param>
+        <summary>Sets a custom property of the data point.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1194,9 +1219,16 @@
         <Parameter Name="clearAll" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="clearAll">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="clearAll">A flag that indicates whether to clear previous property values.</param>
+        <summary>Sets the default properties of the data point. Indicates whether the previous property values must be cleared.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `clearAll` parameter is set to `true`, all previous property values are cleared, otherwise they are not.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -1220,8 +1252,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the tooltip.</summary>
+        <value>A <see langword="string" /> value that represents the tooltip.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,29 +1,34 @@
 ---
 uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute.#ctor(System.Type)
-internalonly: False
----
-
----
-uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute.ExpressionType
-internalonly: False
----
-
----
-uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute.#ctor(System.Type,System.Type)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute.ExpressionType
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute.#ctor(System.Type,System.Type)
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute.ReturnType
-internalonly: False
+manager: "martinek"
 ---

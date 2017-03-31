@@ -1,29 +1,47 @@
 ---
 uid: System.Windows.RoutedPropertyChangedEventArgs`1
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.RoutedPropertyChangedEventArgs`1.OldValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.RoutedPropertyChangedEventArgs`1.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.RoutedPropertyChangedEventArgs`1.#ctor(`0,`0)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.RoutedPropertyChangedEventArgs`1.NewValue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.RoutedPropertyChangedEventArgs`1.#ctor(`0,`0,System.Windows.RoutedEvent)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.RoutedPropertyChangedEventArgs`1.InvokeEventHandler(System.Delegate,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

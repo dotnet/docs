@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the scope of a <see cref="E:System.Windows.Documents.Serialization.SerializerWriter.WritingProgressChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.Serialization.WritingProgressChangeLevel> enumeration is used to specify <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel%2A> property of the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FixedDocumentSequenceWritingProgress">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The output progress of a multiple document sequence.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedDocumentWritingProgress">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The output progress of a single document.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedPageWritingProgress">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The output progress of a single page.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The output progress is unspecified.</summary>
       </Docs>
     </Member>
   </Members>

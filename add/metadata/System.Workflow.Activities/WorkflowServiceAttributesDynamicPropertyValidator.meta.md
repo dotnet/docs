@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.Activities.WorkflowServiceAttributesDynamicPropertyValidator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.WorkflowServiceAttributesDynamicPropertyValidator.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.WorkflowServiceAttributesDynamicPropertyValidator.Validate(System.Workflow.ComponentModel.Compiler.ValidationManager,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

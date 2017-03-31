@@ -1,14 +1,21 @@
 ---
 uid: System.Web.UI.Design.ExpressionsCollectionConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ExpressionsCollectionConverter.ConvertTo
 ---
 
 ---
 uid: System.Web.UI.Design.ExpressionsCollectionConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ExpressionsCollectionConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

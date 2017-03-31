@@ -1,14 +1,17 @@
 ---
 uid: System.Net.Configuration.FtpCachePolicyElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.FtpCachePolicyElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.FtpCachePolicyElement.PolicyLevel
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

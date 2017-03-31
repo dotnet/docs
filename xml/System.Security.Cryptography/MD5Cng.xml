@@ -11,8 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a CNG (Cryptography Next Generation) implementation of the MD5 (Message Digest 5) 128-bit hashing algorithm.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This algorithm is for hashing only and does not provide any encryption or decryption. It uses the BCrypt (BestCrypt) layer CNG.  
+  
+> [!NOTE]
+>  Newer hashing algorithms such as the Secure Hash Algorithms SHA-256 and SHA-512 are available. Consider using either the <xref:System.Security.Cryptography.SHA256Cng> class or the <xref:System.Security.Cryptography.SHA512Cng> class instead of the <xref:System.Security.Cryptography.MD5Cng> class. Use <xref:System.Security.Cryptography.MD5Cng> only for compatibility with legacy applications and data.  
+  
+> [!NOTE]
+>  Using the MD5 algorithm with the FIPS Windows security setting enabled throws a <xref:System.Security.Cryptography.CryptographicException> exception.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +44,9 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.MD5Cng" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">This implementation is not part of the Windows Platform FIPS-validated cryptographic algorithms.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -134,7 +148,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes, or re-initializes, the instance of the hash algorithm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

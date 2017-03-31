@@ -25,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the tracking of activity start and stop events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventActivityOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allow overlapping activities. By default, activity starts and stops must be property nested. That is, a sequence of Start A, Start B, Stop A, Stop B is not allowed will result in B stopping at the same time as A.</summary>
       </Docs>
     </Member>
     <Member MemberName="Disable">
@@ -78,7 +78,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventActivityOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Turn off start and stop tracking.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -104,7 +104,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventActivityOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use the default behavior for start and stop tracking.</summary>
       </Docs>
     </Member>
     <Member MemberName="Recursive">
@@ -130,7 +130,7 @@
         <ReturnType>System.Diagnostics.Tracing.EventActivityOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allow recursive activity starts. By default, an activity cannot be recursive. That is, a sequence of Start A, Start A, Stop A, Stop A is not allowed. Unintentional recursive activities can occur if the app executes and for some the stop is not reached before another start is called.</summary>
       </Docs>
     </Member>
   </Members>

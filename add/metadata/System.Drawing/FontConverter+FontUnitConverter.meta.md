@@ -1,14 +1,25 @@
 ---
 uid: System.Drawing.FontConverter.FontUnitConverter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.FontConverter.FontUnitConverter.GetStandardValues
+manager: "ghogen"
 ---
 
 ---
 uid: System.Drawing.FontConverter.FontUnitConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.FontConverter.FontUnitConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

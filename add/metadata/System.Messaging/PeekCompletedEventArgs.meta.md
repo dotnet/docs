@@ -1,14 +1,14 @@
 ---
 uid: System.Messaging.PeekCompletedEventArgs
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.PeekCompletedEventArgs.AsyncResult
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.PeekCompletedEventArgs.Message
-internalonly: False
+manager: "tyoung"
 ---

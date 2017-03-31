@@ -10,8 +10,28 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the name of an axis.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.AxisName> enumeration represents the four different axes that can be used for a chart.  
+  
+ Bar and stacked bar charts have their axes rotated 90 degrees clockwise. For example, the primary X-axis for these two charts is the left-vertical axis.  
+  
+ For all charts except bar, stacked bar, pie and doughnut charts, the primary and secondary axes are as follows:  
+  
+|Axis Type|Description|  
+|---------------|-----------------|  
+|Primary X-Axis|Bottom horizontal axis.|  
+|Secondary X-Axis|Top horizontal axis.|  
+|Primary Y-Axis|Left vertical axis.|  
+|Secondary Y-Axis|Right vertical axis.|  
+  
+ Bar and stacked bar charts have their axes rotated 90 degrees clockwise. For example, the primary X-axis for these two charts is the left-vertical axis.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="X">
@@ -27,7 +47,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Primary X-axis.</summary>
       </Docs>
     </Member>
     <Member MemberName="X2">
@@ -43,7 +63,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Secondary X-axis.</summary>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -59,7 +79,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Primary Y-axis.</summary>
       </Docs>
     </Member>
     <Member MemberName="Y2">
@@ -75,7 +95,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Secondary Y-axis.</summary>
       </Docs>
     </Member>
   </Members>

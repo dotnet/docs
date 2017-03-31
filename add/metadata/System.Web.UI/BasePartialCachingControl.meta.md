@@ -1,29 +1,35 @@
 ---
 uid: System.Web.UI.BasePartialCachingControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.BasePartialCachingControl.Dependency
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.BasePartialCachingControl.Render(System.Web.UI.HtmlTextWriter)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.BasePartialCachingControl.CachePolicy
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.BasePartialCachingControl.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.BasePartialCachingControl.Dispose
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

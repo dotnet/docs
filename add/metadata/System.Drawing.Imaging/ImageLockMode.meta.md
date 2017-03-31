@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Imaging.ImageLockMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,29 +1,29 @@
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader.Thumbnail
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader.GetFixedDocument(System.Uri)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader.Uri
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader.PrintTicket
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader.FixedDocuments
-internalonly: False
+manager: "leannef"
 ---

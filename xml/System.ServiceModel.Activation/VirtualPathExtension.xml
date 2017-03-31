@@ -15,8 +15,29 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains the service's virtual path when the service is hosted in Internet Information Services (IIS) or Windows Process Activation Service (WAS).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This extension is present only for services hosted in IIS or WAS. Services can determine whether they are hosted in IIS or WAS by retrieving this extension from their <xref:System.ServiceModel.ServiceHostBase>, as shown in the following example.  
+  
+   
+  
+## Examples  
+ The following example shows how to recover the <xref:System.ServiceModel.Activation.VirtualPathExtension> from the service host and return a value that it is hosted in IIS or WAS.  
+  
+```csharp  
+bool isHosted = false;  
+ServiceHostBase host = OperationContext.Current.Host;  
+VirtualPathExtension vpe = host.Extentions.Find<VirtualPathExtension>();  
+  
+if( vpe != null )  
+Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPath);  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ApplicationVirtualPath">
@@ -32,8 +53,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the virtual path of the IIS or WAS application that hosts the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.</summary>
+        <value>The virtual path of the IIS or WAS application that hosts the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +74,16 @@
         <Parameter Name="owner" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="owner">The <see cref="T:System.ServiceModel.ServiceHostBase" /> using the virtual path.</param>
+        <summary>This method is provided to support the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be called directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Detach">
@@ -74,9 +102,16 @@
         <Parameter Name="owner" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="owner">The <see cref="T:System.ServiceModel.ServiceHostBase" /> using the virtual path.</param>
+        <summary>This method is provided to support the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be called directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SiteName">
@@ -92,8 +127,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the site name of the IIS or WAS application that hosts the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.</summary>
+        <value>The site name of the IIS or WAS application that hosts the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +145,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the virtual path used by a service.</summary>
+        <value>The virtual path used by a service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the alignment orientation of a chart area.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations> enumeration represents the physical orientation, such as vertical or horizontal, of a chart area.  
+  
+ In contrast, the <xref:System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles> enumeration represents the chart elements, such as the cursor or inner plot position, which can be used to align a chart area.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -32,7 +41,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart areas are aligned horizontally and vertically.</summary>
       </Docs>
     </Member>
     <Member MemberName="Horizontal">
@@ -48,7 +57,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart areas are aligned horizontally.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +73,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart areas are not automatically aligned.</summary>
       </Docs>
     </Member>
     <Member MemberName="Vertical">
@@ -80,7 +89,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart areas are aligned vertically.</summary>
       </Docs>
     </Member>
   </Members>

@@ -23,9 +23,26 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the ambient data.</typeparam>
+    <summary>Represents ambient data that is local to a given asynchronous control flow, such as an asynchronous method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the task-based asynchronous programming model tends to abstract the use of threads, <xref:System.Threading.AsyncLocal%601> instances can be used to persist data across threads.  
+  
+ The <xref:System.Threading.AsyncLocal%601> class also provides optional notifications when the value associated with the current thread changes, either because it was explicitly changed by setting the <xref:System.Threading.AsyncLocal%601.Value%2A> property, or implicitly changed when the thread encountered an `await` or other context transition.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Threading.AsyncLocal%601> class to persist a string value across an asynchronous flow. It also contrasts the use of  <xref:System.Threading.AsyncLocal%601> with <xref:System.Threading.ThreadLocal%601>.  
+  
+ [!code-csharp[System.Threading.AsyncLocal#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.asynclocal/cs/Example1.cs#1)]
+ [!code-vb[System.Threading.AsyncLocal#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.asynclocal/vb/Example1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,7 +65,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Instantiates an <see cref="T:System.Threading.AsyncLocal`1" /> instance that does not receive change notifications.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,9 +96,16 @@
         <Parameter Name="valueChangedHandler" Type="System.Action&lt;System.Threading.AsyncLocalValueChangedArgs&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="valueChangedHandler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="valueChangedHandler">The delegate that is called whenever the current value changes on any thread.</param>
+        <summary>Instantiates an <see cref="T:System.Threading.AsyncLocal`1" /> local instance that receives change notifications.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The delegate's signature is `Action<ASyncLocalValueChangedArgs<T>`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -114,8 +138,8 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the ambient data.</summary>
+        <value>The value of the ambient data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

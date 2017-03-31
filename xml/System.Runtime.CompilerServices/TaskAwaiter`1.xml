@@ -28,9 +28,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TResult">The result for the task.</typeparam>
+    <summary>Represents an object that waits for the completion of an asynchronous task and provides a parameter for the result.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type and its members are intended for use by the compiler.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetResult">
@@ -57,9 +64,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Ends the wait for the completion of the asynchronous task.</summary>
+        <returns>The result of the completed task.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type and its members are intended for use by the compiler.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NullReferenceException">The <see cref="T:System.Runtime.CompilerServices.TaskAwaiter`1" /> object was not properly initialized.</exception>
+        <exception cref="T:System.Threading.Tasks.TaskCanceledException">The task was canceled.</exception>
+        <exception cref="T:System.Exception">The task completed in a <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsCompleted">
@@ -85,9 +102,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the asynchronous task has completed.</summary>
+        <value>
+          <see langword="true" /> if the task has completed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type and its members are intended for use by the compiler.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NullReferenceException">The <see cref="T:System.Runtime.CompilerServices.TaskAwaiter`1" /> object was not properly initialized.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnCompleted">
@@ -121,9 +147,19 @@
         <Parameter Name="continuation" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="continuation">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="continuation">The action to perform when the wait operation completes.</param>
+        <summary>Sets the action to perform when the <see cref="T:System.Runtime.CompilerServices.TaskAwaiter`1" /> object stops waiting for the asynchronous task to complete.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type and its members are intended for use by the compiler.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="continuation" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NullReferenceException">The <see cref="T:System.Runtime.CompilerServices.TaskAwaiter`1" /> object was not properly initialized.</exception>
       </Docs>
     </Member>
     <Member MemberName="UnsafeOnCompleted">
@@ -157,9 +193,12 @@
         <Parameter Name="continuation" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="continuation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="continuation">The action to invoke when the await operation completes.</param>
+        <summary>Schedules the continuation action for the asynchronous task associated with this awaiter.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="continuation" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The awaiter was not properly initialized.</exception>
       </Docs>
     </Member>
   </Members>

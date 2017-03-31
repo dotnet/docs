@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.VisualBasic.ApplicationServices.StartupEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

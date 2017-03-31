@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies whether the print job uses [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Printing.PrintJobType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A non-XPS print job.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +43,7 @@
         <ReturnType>System.Printing.PrintJobType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Not specified whether the print job is [!INCLUDE[TLA2#tla_metro](~/includes/tla2sharptla-metro-md.md)].</summary>
       </Docs>
     </Member>
     <Member MemberName="Xps">
@@ -59,7 +59,7 @@
         <ReturnType>System.Printing.PrintJobType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An [!INCLUDE[TLA2#tla_metro](~/includes/tla2sharptla-metro-md.md)] print job.</summary>
       </Docs>
     </Member>
   </Members>

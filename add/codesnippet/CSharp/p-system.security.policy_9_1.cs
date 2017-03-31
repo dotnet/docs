@@ -1,1 +1,0 @@
-        if (codeGroup.MergeLogic.Equals("First Match"))

@@ -19,9 +19,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the values provided in the <see cref="P:System.Activities.Statements.Switch`1.Cases" /> collection.</typeparam>
+    <summary>Selects one choice from a number of activities to execute, based on the value of a given expression of the type specified in this object’s type specifier.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each case in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary consists of a value (serving as the key for the dictionary) and an activity (serving as the value for the dictionary). The <xref:System.Activities.Statements.Switch.Expression%2A> is evaluated and compared against the keys in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary. If a match is found, the corresponding activity is executed. Every key in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary must be unique according to the dictionary’s equality comparer.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](../Topic/Using%20Procedural%20Activities.md) sample.  
+  
+ [!code-csharp[wfs_Procedurals#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +49,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Switch`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](../Topic/Using%20Procedural%20Activities.md) sample.  
+  
+ [!code-csharp[wfs_Procedurals#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -52,8 +75,8 @@
         <Parameter Name="expression" Type="System.Activities.Activity&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">The expression to evaluate and compare against the values in the <see cref="P:System.Activities.Statements.Switch`1.Cases" /> dictionary.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Switch`1" /> class with the specified expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +93,8 @@
         <Parameter Name="expression" Type="System.Activities.InArgument&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">The expression to evaluate and compare against the values in the <see cref="P:System.Activities.Statements.Switch`1.Cases" /> dictionary.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Switch`1" /> class with the specified expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +111,8 @@
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">The expression to evaluate and compare against the values in the <see cref="P:System.Activities.Statements.Switch`1.Cases" /> dictionary.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Switch`1" /> class with the specified expression.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,9 +150,23 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;T,System.Activities.Activity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Represents the dictionary of potential execution paths. Each entry contains a key and an activity that is executed when the result of the expression matches the key.</summary>
+        <value>The execution paths.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the activity executes, the case that is executed is the first case whose key matches the <xref:System.Activities.Statements.Switch.Expression%2A> property.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates setting the Cases property of a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](../Topic/Using%20Procedural%20Activities.md) sample.  
+  
+ [!code-csharp[wfs_Procedurals#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -150,8 +187,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Represents the activity that is executed if no keys of entries in the <see cref="P:System.Activities.Statements.Switch.Cases" /> collection match the <see cref="P:System.Activities.Statements.Switch.Expression" /> property.</summary>
+        <value>The default activity to execute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,9 +234,23 @@
         <ReturnType>System.Activities.InArgument&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the object to compare to the keys in the <see cref="P:System.Activities.Statements.Switch.Cases" /> collection.</summary>
+        <value>The object to compare to the keys in the <see cref="P:System.Activities.Statements.Switch.Cases" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The comparison occurs after the expression is evaluated.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates setting the Expression property of a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](../Topic/Using%20Procedural%20Activities.md) sample.  
+  
+ [!code-csharp[wfs_Procedurals#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateDynamicUpdateMap">
@@ -225,5 +276,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Switch`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](../Topic/Using%20Procedural%20Activities.md) sample.  
+  
+ [!code-csharp[wfs_Procedurals#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

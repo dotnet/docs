@@ -11,8 +11,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the properties and methods common to managed compiler tasks.</summary>
     <remarks>To be added.</remarks>
+    <block subset="none" type="overrides">
+      <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +29,11 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ManagedCompiler" /> class.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="AddCommandLineCommands">
@@ -46,9 +52,12 @@
         <Parameter Name="commandLine" Type="Microsoft.Build.Tasks.CommandLineBuilderExtension" />
       </Parameters>
       <Docs>
-        <param name="commandLine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandLine">Command line builder to add arguments to.</param>
+        <summary>Generates command line arguments that the command line tool must run directly from the command line and not from a response file.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="AdditionalLibPaths">
@@ -64,9 +73,12 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the additional folders in which to look for assemblies.</summary>
+        <value>The additional folders in which to look for assemblies.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="AddModules">
@@ -82,9 +94,12 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the modules for the compiler to make available to the project you are currently compiling.</summary>
+        <value>The modules for the compiler to make available to the project you are currently compiling.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="AddResponseFileCommands">
@@ -103,9 +118,12 @@
         <Parameter Name="commandLine" Type="Microsoft.Build.Tasks.CommandLineBuilderExtension" />
       </Parameters>
       <Docs>
-        <param name="commandLine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandLine">Command line builder to add arguments to.</param>
+        <summary>Fills the specified <paramref name="commandLine" /> parameter with the switches and other information that can go into a response file.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="CheckAllReferencesExistOnDisk">
@@ -122,9 +140,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Verifies that all specified references exist on disk.</summary>
+        <returns>
+          <see langword="true" /> if all references exist on disk; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="CheckHostObjectSupport">
@@ -144,10 +166,14 @@
         <Parameter Name="resultFromHostObjectSetOperation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <param name="resultFromHostObjectSetOperation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterName">The parameter name to set on the host compiler.</param>
+        <param name="resultFromHostObjectSetOperation">
+          <see langword="true" /> if the host compiler supports <c>parameterName</c>; otherwise, <see langword="false" /></param>
+        <summary>Logs a message if the specified parameter is not supported by the host compiler.</summary>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="CodePage">
@@ -163,9 +189,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the code page to use for all source code files in the compilation.</summary>
+        <value>The code page to use for all source code files in the compilation.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="DebugType">
@@ -181,9 +210,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the debug type.</summary>
+        <value>The debug type.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="DefineConstants">
@@ -199,9 +231,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the conditional compiler constants.</summary>
+        <value>The conditional compiler constants.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="DelaySign">
@@ -217,9 +252,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the public key is placed in the assembly.</summary>
+        <value>
+          <see langword="true" /> if the public key is placed in the assembly; <see langword="false" /> if the assembly is fully signed.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="EmitDebugInformation">
@@ -235,9 +274,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the compiler generates debugging information.</summary>
+        <value>
+          <see langword="true" /> if debugging information is generated; otherwise, <see langword="false" />;</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="FileAlignment">
@@ -253,9 +296,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating where to align the sections of the output file.</summary>
+        <value>A value indicating where to align the sections of the output file.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="HandleTaskExecutionErrors">
@@ -272,9 +318,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Handles the return code from the compiler.</summary>
+        <returns>
+          <see langword="true" /> if the return code was handled successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method always returns `false`.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="HighEntropyVA">
@@ -290,8 +347,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the HighEntropyVA attribute.</summary>
+        <value>Returns the HighEntropyVA attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,9 +365,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating wheter the host compilter supports all task parameters.</summary>
+        <value>
+          <see langword="true" /> if the host compiler supports all task parameters; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="KeyContainer">
@@ -326,9 +387,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the cryptographic key container.</summary>
+        <value>The name of the cryptographic key container.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="KeyFile">
@@ -344,9 +408,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the file name containing the cryptographic key.</summary>
+        <value>The file name containing the cryptographic key.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="LinkResources">
@@ -362,9 +429,12 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] resource files to link to the output file.</summary>
+        <value>The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] resource files to link to the output file.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="ListHasNoDuplicateItems">
@@ -384,11 +454,15 @@
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="itemList">To be added.</param>
-        <param name="parameterName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="itemList">The list of items to examine for duplicates.</param>
+        <param name="parameterName">The name of the parameter that contains the <c>itemList</c>.</param>
+        <summary>Determines if any duplicate items exist in the specified task parameter.</summary>
+        <returns>
+          <see langword="true" /> if the item list contains no duplicates; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="MainEntryPoint">
@@ -404,9 +478,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the class or module that contains the main entry point.</summary>
+        <value>The class or module that contains the main entry point.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="NoConfig">
@@ -422,9 +499,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the compiler should use the default response file.</summary>
+        <value>
+          <see langword="true" /> if the compiler is not using the default response file; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="NoLogo">
@@ -440,9 +521,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether to suppress the compiler banner information.</summary>
+        <value>
+          <see langword="true" /> to suppress the compiler banner information; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="NoWin32Manifest">
@@ -458,8 +543,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether an external UAC manifest is generated for the application.</summary>
+        <value>
+          <see langword="true" /> if an external UAC manifest is generated for the application; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,9 +562,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether to enable compiler optimizations.</summary>
+        <value>
+          <see langword="true" /> to enable compiler optimizations; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="OutputAssembly">
@@ -499,9 +589,12 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the output file.</summary>
+        <value>The name of the output file.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Platform">
@@ -517,8 +610,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the Platform attribute.</summary>
+        <value>Returns the Platform attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -535,8 +628,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the Prefer32Bit attribute.</summary>
+        <value>Returns the Prefer32Bit attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,9 +646,12 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the items from which the compiler will import public type information.</summary>
+        <value>The items from which the compiler will import public type information.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Resources">
@@ -571,9 +667,12 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] resources to embed in the output file.</summary>
+        <value>The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] resources to embed in the output file.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="ResponseFiles">
@@ -589,9 +688,12 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the response files that contain commands for the task.</summary>
+        <value>The response files that contain commands for the task.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Sources">
@@ -607,9 +709,12 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the source files to compile.</summary>
+        <value>The source files to compile.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="StandardOutputEncoding">
@@ -625,9 +730,12 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the encoding of the captured task standard output stream.</summary>
+        <value>The encoding of the captured task standard output stream.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="SubsystemVersion">
@@ -643,8 +751,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the SubsystemVersion attribute value.</summary>
+        <value>Returns the subsystem version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,9 +769,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the file format of the output file.</summary>
+        <value>The file format of the output file.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="TreatWarningsAsErrors">
@@ -679,9 +790,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether warnings are treated as errors.</summary>
+        <value>
+          <see langword="true" /> if warnings are treated as errors; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="UseAlternateCommandLineToolToExecute">
@@ -698,8 +813,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>If an alternate tool name or tool path was specified in the project file, then that tool is used rather than the host compiler for integrated development environment (IDE) builds.</summary>
+        <returns>
+          <see langword="false" /> if the host compiler should be used; otherwise, <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -716,7 +832,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Whether the command line compiler was invoked, instead of the host object compiler.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -734,9 +850,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether compiler output is logged using UTF-8 encoding.</summary>
+        <value>
+          <see langword="true" /> if compiler output is logged using UTF-8 encoding; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="ValidateParameters">
@@ -753,9 +873,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Validates the task parameters.</summary>
+        <returns>
+          <see langword="true" /> if all parameters are valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Win32Icon">
@@ -771,9 +895,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the icon file name.</summary>
+        <value>The icon file name.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Win32Manifest">
@@ -789,8 +916,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the Win32 manifest.</summary>
+        <value>The Win32 manifest.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -807,9 +934,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Win32 resource (.res) file to insert in the output file.</summary>
+        <value>The Win32 resource (.res) file to insert in the output file.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This class uses the <see cref="T:System.Security.Permissions.StrongNameIdentityPermissionAttribute" /> attribute and cannot be inherited.</para>
+        </block>
       </Docs>
     </Member>
   </Members>

@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Diagnostics.VisualDiagnostics
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.VisualDiagnostics.VisualTreeChanged
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Diagnostics.VisualDiagnostics.GetXamlSourceInfo(System.Object)
-internalonly: False
+manager: "ghogen"
 ---

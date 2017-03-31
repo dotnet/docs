@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the <see cref="T:System.Exception" /> that is raised when a workflow is terminated. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.WorkflowTerminatedException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +57,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.WorkflowTerminatedException" /> class, with a specified error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,9 +76,9 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message that describes the error.</param>
+        <param name="exception">The inner <see cref="T:System.Exception" /> reference.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.WorkflowTerminatedException" /> class, with a specified error message and a reference to the inner <see cref="T:System.Exception" /> that is the cause of this <see cref="T:System.Exception" /> .</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

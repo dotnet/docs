@@ -10,8 +10,27 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines values for specifying how the height of the column headers is adjusted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, users can resize the height of the column headers. You can disable this ability to set a fixed height or you can use the automatic sizing mode to fit the height to the header contents. Automatic sizing also disables user resizing.  
+  
+ This enumeration is used by the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeMode%2A> property and <xref:System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight%2A> method.  
+  
+ For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this enumeration in a display-only, non-interactive <xref:System.Windows.Forms.DataGridView> control.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewStyleDemo#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewStyleDemo/CS/form1.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridViewStyleDemo#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewStyleDemo/VB/form1.vb#20)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AutoSize">
@@ -27,7 +46,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The column header height adjusts to fit the contents of all the column header cells.</summary>
       </Docs>
     </Member>
     <Member MemberName="DisableResizing">
@@ -43,7 +62,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Users cannot adjust the column header height with the mouse.</summary>
       </Docs>
     </Member>
     <Member MemberName="EnableResizing">
@@ -59,7 +78,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Users can adjust the column header height with the mouse.</summary>
       </Docs>
     </Member>
   </Members>

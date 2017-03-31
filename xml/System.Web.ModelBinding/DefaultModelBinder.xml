@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Maps a browser request to a data object. This class provides a concrete implementation of a model binder.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.DefaultModelBinder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,10 +51,11 @@
         <Parameter Name="bindingContext" Type="System.Web.ModelBinding.ModelBindingContext" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">To be added.</param>
-        <param name="bindingContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <param name="bindingContext">The binding context.</param>
+        <summary>Binds the model using the specified execution context and binding context.</summary>
+        <returns>
+          <see langword="true" /> if model binding is successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +72,8 @@
         <ReturnType>System.Web.ModelBinding.ModelBinderProviderCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the collection of model binder providers.</summary>
+        <value>A collection of model binder providers.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

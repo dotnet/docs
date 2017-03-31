@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Manages HTTP modules for AJAX functionality in ASP.NET.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Handlers.ScriptModule" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the resources (other than memory) that are used by the module.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Handlers.ScriptModule.Dispose%2A> method performs any final cleanup work before the module is removed from the execution pipeline.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -68,9 +75,16 @@
         <Parameter Name="app" Type="System.Web.HttpApplication" />
       </Parameters>
       <Docs>
-        <param name="app">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="app">An <see cref="T:System.Web.HttpApplication" /> object that provides access to the methods, properties, and events that are common to all applications in an ASP.NET application.</param>
+        <summary>Initializes a module and prepares it to handle requests.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Handlers.ScriptModule.Init%2A> method to register event-handling methods with specific events.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpModule.Dispose">
@@ -87,7 +101,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs application-defined tasks that are associated with freeing, releasing, or resetting unmanaged resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +121,8 @@
         <Parameter Name="context" Type="System.Web.HttpApplication" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">An <see cref="T:System.Web.HttpApplication" /> that provides access to the methods, properties, and events that are common to all application objects in an ASP.NET application.</param>
+        <summary>Initializes the module and prepares it to handle requests.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

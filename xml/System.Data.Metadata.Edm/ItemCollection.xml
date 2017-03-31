@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A base class for <see cref="T:System.Data.Metadata.Edm.ObjectItemCollection" />, <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" />, and <see cref="T:System.Data.Mapping.StorageMappingItemCollection" /> classes. An <see cref="T:System.Data.Metadata.Edm.ItemCollection" /> class is an abstract class and provides the core API for loading and holding the in-memory metadata. This class is derived from the <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Item Collections (Metadata)](http://msdn.microsoft.com/en-us/3051a40a-ff45-42f8-8f93-7545e427a404).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DataSpace">
@@ -36,9 +43,16 @@
         <ReturnType>System.Data.Metadata.Edm.DataSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the data model associated with this item collection.</summary>
+        <value>The data model associated with this item collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns <xref:System.Data.Metadata.Edm.DataSpace> for <xref:System.Data.Metadata.Edm.ObjectItemCollection>; <xref:System.Data.Metadata.Edm.DataSpace> for <xref:System.Data.Metadata.Edm.EdmItemCollection>; and <xref:System.Data.Metadata.Edm.DataSpace> for <xref:System.Data.Mapping.StorageMappingItemCollection>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEntityContainer">
@@ -57,9 +71,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the entity container.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name.</summary>
+        <returns>If there is no entity container, this method returns null; otherwise, it returns the first one.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,10 +94,11 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the entity container.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name.</summary>
+        <returns>If there is no entity container, this method returns null; otherwise, it returns the first entity container.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,9 +118,9 @@
         <Parameter Name="functionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="functionName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="functionName">The full name of the function.</param>
+        <summary>Returns all the overloads of the functions by using the specified name from this item collection.</summary>
+        <returns>A collection of type <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains all the functions that have the specified name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,10 +141,11 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="functionName">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="functionName">The full name of the function.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <summary>Returns all the overloads of the functions by using the specified name from this item collection.</summary>
+        <returns>A collection of type <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains all the functions that have the specified name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,11 +167,12 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="functionCollection">To be added.</param>
-        <param name="functionName">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="functionCollection">A dictionary of functions.</param>
+        <param name="functionName">The full name of the function.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <summary>Returns all the overloads of the functions by using the specified name from this item collection.</summary>
+        <returns>A collection of type ReadOnlyCollection that contains all the functions that have the specified name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,10 +199,10 @@
         <Parameter Name="identity" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="identity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type returned by the method.</typeparam>
+        <param name="identity">The identity of the item.</param>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Metadata.Edm.GlobalItem" /> object by using the specified identity.</summary>
+        <returns>The item that is specified by the identity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,11 +230,12 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="identity">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type returned by the method.</typeparam>
+        <param name="identity">The identity of the item.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Metadata.Edm.GlobalItem" /> object by using the specified identity with either case-sensitive or case-insensitive search.</summary>
+        <returns>The item that is specified by the identity.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,9 +260,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type returned by the method.</typeparam>
+        <summary>Returns all the items of the specified type from this item collection.</summary>
+        <returns>A collection of type <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains all the items of the specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,10 +283,10 @@
         <Parameter Name="namespaceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the type.</param>
+        <param name="namespaceName">The namespace of the type.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name and the namespace name in this item collection.</summary>
+        <returns>An <see cref="T:System.Data.Metadata.Edm.EdmType" /> object that represents the type that matches the specified type name and the namespace name in this item collection. If there is no matched type, this method returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,11 +308,12 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceName">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the type.</param>
+        <param name="namespaceName">The namespace of the type.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name and the namespace name from this item collection.</summary>
+        <returns>An <see cref="T:System.Data.Metadata.Edm.EdmType" /> object that represents the type that matches the specified type name and the namespace name in this item collection. If there is no matched type, this method returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,10 +334,11 @@
         <Parameter Name="entityContainer" Type="System.Data.Metadata.Edm.EntityContainer&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="entityContainer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the entity container.</param>
+        <param name="entityContainer">When this method returns, it contains an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object. If there is no entity container, this output parameter contains null; otherwise, it contains the first entity container.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name. If there is no entity container, the output parameter contains null; otherwise, it contains the first entity container.</summary>
+        <returns>
+          <see langword="true" /> if there is an entity container that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,11 +360,13 @@
         <Parameter Name="entityContainer" Type="System.Data.Metadata.Edm.EntityContainer&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <param name="entityContainer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the entity container.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <param name="entityContainer">When this method returns, it contains an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object. If there is no entity container, this output parameter contains null; otherwise, it contains the first entity container.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name. If there is no entity container, this output parameter contains null; otherwise, it contains the first entity container.</summary>
+        <returns>
+          <see langword="true" /> if there is an entity container that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,11 +394,12 @@
         <Parameter Name="item" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="identity">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type returned by the method.</typeparam>
+        <param name="identity">The identity of the item.</param>
+        <param name="item">When this method returns, the output parameter contains a <see cref="T:System.Data.Metadata.Edm.GlobalItem" /> object. If there is no global item with the specified identity in the item collection, this output parameter contains null.</param>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Metadata.Edm.GlobalItem" /> object by using the specified identity from this item collection.</summary>
+        <returns>
+          <see langword="true" /> if there is an item that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,12 +428,14 @@
         <Parameter Name="item" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="identity">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type returned by the method.</typeparam>
+        <param name="identity">The identity of the item.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <param name="item">When this method returns, the output parameter contains a <see cref="T:System.Data.Metadata.Edm.GlobalItem" /> object. If there is no global item with the specified identity in the item collection, this output parameter contains null.</param>
+        <summary>Returns a strongly typed <see cref="T:System.Data.Metadata.Edm.GlobalItem" /> object by using the specified identity from this item collection.</summary>
+        <returns>
+          <see langword="true" /> if there is an item that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,11 +457,12 @@
         <Parameter Name="type" Type="System.Data.Metadata.Edm.EdmType&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceName">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the type.</param>
+        <param name="namespaceName">The namespace of the type.</param>
+        <param name="type">When this method returns, this output parameter contains an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object. If there is no type with the specified name and namespace name in this item collection, this output parameter contains null.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name and the namespace name from this item collection.</summary>
+        <returns>
+          <see langword="true" /> if there is a type that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,12 +485,14 @@
         <Parameter Name="type" Type="System.Data.Metadata.Edm.EdmType&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="namespaceName">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the type.</param>
+        <param name="namespaceName">The namespace of the type.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <param name="type">When this method returns, this output parameter contains an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object. If there is no type with the specified name and namespace name in this item collection, this output parameter contains null.</param>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name and the namespace name from this item collection.</summary>
+        <returns>
+          <see langword="true" /> if there is a type that matches the search criteria; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

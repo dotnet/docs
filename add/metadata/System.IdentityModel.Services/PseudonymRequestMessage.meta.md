@@ -1,44 +1,53 @@
 ---
 uid: System.IdentityModel.Services.PseudonymRequestMessage
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.PseudonymRequestMessage.#ctor(System.Uri)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.PseudonymRequestMessage.Write(System.IO.TextWriter)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.PseudonymRequestMessage.ResultPtr
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.PseudonymRequestMessage.Pseudonym
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.PseudonymRequestMessage.PseudonymPtr
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.PseudonymRequestMessage.Result
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.PseudonymRequestMessage.Reply
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.PseudonymRequestMessage.Validate
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

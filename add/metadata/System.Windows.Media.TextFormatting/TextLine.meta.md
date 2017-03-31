@@ -1,184 +1,259 @@
 ---
 uid: System.Windows.Media.TextFormatting.TextLine
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.MarkerBaseline
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.DependentLength
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.GetIndexedGlyphRuns
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.OverhangLeading
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.OverhangAfter
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.PixelsPerDip
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.Dispose
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.Collapse(System.Windows.Media.TextFormatting.TextCollapsingProperties[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.WidthIncludingTrailingWhitespace
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.Extent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.MarkerHeight
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.Width
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.GetBackspaceCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.Baseline
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.IsTruncated
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.TextHeight
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.#ctor(System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.GetNextCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.NewlineLength
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.OverhangTrailing
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.GetTextLineBreak
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.HasOverflowed
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.GetDistanceFromCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.GetTextCollapsedRanges
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.GetCharacterHitFromDistance(System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.GetTextBounds(System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.Draw(System.Windows.Media.DrawingContext,System.Windows.Point,System.Windows.Media.TextFormatting.InvertAxes)
-internalonly: False
----
-
----
-uid: System.Windows.Media.TextFormatting.TextLine.HasCollapsed
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.Baseline
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.IsTruncated
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.TextHeight
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.#ctor(System.Double)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.GetNextCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.NewlineLength
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.OverhangTrailing
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.GetTextLineBreak
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.HasOverflowed
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.GetDistanceFromCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.GetTextCollapsedRanges
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.GetCharacterHitFromDistance(System.Double)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.GetTextBounds(System.Int32,System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.Draw(System.Windows.Media.DrawingContext,System.Windows.Point,System.Windows.Media.TextFormatting.InvertAxes)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.HasCollapsed
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.TextFormatting.TextLine.#ctor
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.Start
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.Length
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.TrailingWhitespaceLength
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.GetPreviousCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.TextBaseline
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.GetTextRunSpans
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextLine.Height
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

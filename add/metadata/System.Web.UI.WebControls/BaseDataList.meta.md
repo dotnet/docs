@@ -1,194 +1,276 @@
 ---
 uid: System.Web.UI.WebControls.BaseDataList
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.OnLoad(System.EventArgs)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.IsBoundUsingDataSourceID
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.CellSpacing
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.DataKeys
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.OnDataPropertyChanged
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.GetData
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged(System.Object,System.EventArgs)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.GridLines
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.Render(System.Web.UI.HtmlTextWriter)
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.UseAccessibleHeader
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.IsBindableType(System.Type)
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.CreateChildControls
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.CellPadding
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.CaptionAlign
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.CreateControlHierarchy(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.Controls
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.HorizontalAlign
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.EnsureDataBound
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.Initialized
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.#ctor
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.DataSourceID
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.RequiresDataBinding
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.Caption
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.CreateDataSourceSelectArguments
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.SupportsDisabledAttribute
-internalonly: False
----
-
----
-uid: System.Web.UI.WebControls.BaseDataList.OnDataBinding(System.EventArgs)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.DataBind
-internalonly: False
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.Render(System.Web.UI.HtmlTextWriter)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.UseAccessibleHeader
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.IsBindableType(System.Type)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.CreateChildControls
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.CellPadding
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.CaptionAlign
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.CreateControlHierarchy(System.Boolean)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.Controls
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.HorizontalAlign
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.EnsureDataBound
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.Initialized
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.DataSourceID
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.RequiresDataBinding
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.Caption
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.CreateDataSourceSelectArguments
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.SupportsDisabledAttribute
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.OnDataBinding(System.EventArgs)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.BaseDataList.DataBind
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.DataSource
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.DataMember
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.PrepareControlHierarchy
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.OnPreRender(System.EventArgs)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.OnInit(System.EventArgs)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.AddParsedSubObject(System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.DataKeysArray
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.SelectArguments
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged(System.EventArgs)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.BaseDataList.DataKeyField
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

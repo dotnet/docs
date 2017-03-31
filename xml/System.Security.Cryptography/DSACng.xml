@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a Cryptography Next Generation (CNG) implementation of the Digital Signature Algorithm (DSA).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSACng" /> class with a random 2,048-bit key pair.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +43,18 @@
         <Parameter Name="keySize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="keySize">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="keySize">The size of the key to generate in bits.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSACng" /> class with a randomly generated key of the specified size.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Valid key sizes range from 512 to 3,072 bits, in increments of 64. We recommend that a minimum size of 2,048 bits be used for all keys.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="keySize" /> is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,9 +75,22 @@
         <Parameter Name="key" Type="System.Security.Cryptography.CngKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The key to use for DSA operations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSACng" /> class with the specified key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.CngKey.AlgorithmGroup%2A?displayProperty=fullName> of `key` must be <xref:System.Security.Cryptography.CngAlgorithmGroup.Dsa%2A?displayProperty=fullName>.  
+  
+ This constructor creates a copy of the key. Even if `key` is disposed, the copy of this key object in DSA remains alive.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="key" /> is not a valid DSA key.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateSignature">
@@ -92,10 +114,14 @@
         <Parameter Name="rgbHash" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbHash">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rgbHash">The data to be signed.</param>
+        <summary>Creates the digital signature for the specified data.</summary>
+        <returns>The digital signature for the specified data.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rgbHash" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">
+          <paramref name="rgbHash" /> is shorter in length than the Q value of the DSA key .</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -135,10 +161,12 @@
         <Parameter Name="includePrivateParameters" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includePrivateParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+        <summary>Exports the DSA algorithm parameters.</summary>
+        <returns>The DSA algorithm parameters.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">DSA key is not a valid public or private key.</exception>
       </Docs>
     </Member>
     <Member MemberName="HashData">
@@ -209,9 +237,10 @@
         <Parameter Name="parameters" Type="System.Security.Cryptography.DSAParameters" />
       </Parameters>
       <Docs>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameters">The DSA parameters.</param>
+        <summary>Replaces the existing key that the current instance is working with by creating a new <see cref="T:System.Security.Cryptography.CngKey" /> for the parameters structure.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The specified DSA parameters are not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -232,9 +261,18 @@
         <ReturnType>System.Security.Cryptography.CngKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the key that will be used by the <see cref="T:System.Security.Cryptography.DSACng" /> object for any cryptographic operation that it performs.</summary>
+        <value>The key used by the <see cref="T:System.Security.Cryptography.DSACng" /> object to perform cryptographic operations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The  <xref:System.Security.Cryptography.CngKey> object is disposed if the key is reset, for instance by changing the <xref:System.Security.Cryptography.CngKey.KeySize%2A?displayProperty=fullName> property, by using the <xref:System.Security.Cryptography.DSACng.ImportParameters%2A?displayProperty=fullName> method to create a new key, or by disposing the parent <xref:System.Security.Cryptography.DSACng> object. Therefore, you should ensure that the key object is no longer used in these cases.  
+  
+ This <xref:System.Security.Cryptography.CngKey> object is not the same as the <xref:System.Security.Cryptography.CngKey> object passed to the <xref:System.Security.Cryptography.DSACng.%23ctor%2A> constructor, if that constructor was used. However, it will point to the same CNG key.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyExchangeAlgorithm">
@@ -250,8 +288,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the key exchange algorithm.</summary>
+        <value>Always <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,8 +306,8 @@
         <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the key sizes, in bits, that are supported by the DSA algorithm.</summary>
+        <value>An array that contains the key sizes supported by the algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,8 +324,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the signature algorithm.</summary>
+        <value>The string "DSA".</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,11 +351,19 @@
         <Parameter Name="rgbSignature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbHash">To be added.</param>
-        <param name="rgbSignature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="rgbHash">The signed data.</param>
+        <param name="rgbSignature">The digital signature to be verified.</param>
+        <summary>Verifies if the specified digital signature matches the specified data.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="rgbSignature" /> matches the signature computed using the specified data; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rgbHash" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="rgbSignature" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">
+          <paramref name="rgbHash" /> is shorter in length than the Q value of the DSA key .</exception>
       </Docs>
     </Member>
   </Members>

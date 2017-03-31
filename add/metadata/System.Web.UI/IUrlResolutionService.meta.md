@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.IUrlResolutionService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IUrlResolutionService.ResolveClientUrl(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

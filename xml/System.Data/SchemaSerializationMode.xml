@@ -15,8 +15,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the schema serialization mode for a typed <see cref="T:System.Data.DataSet" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Data.DataSet.SchemaSerializationMode%2A> property of a typed <xref:System.Data.DataSet> to ExcludeSchema provides the option of omitting schema information from the serialization payload.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ExcludeSchema">
@@ -37,7 +44,7 @@
         <ReturnType>System.Data.SchemaSerializationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Skips schema serialization for a typed <see cref="T:System.Data.DataSet" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncludeSchema">
@@ -58,7 +65,7 @@
         <ReturnType>System.Data.SchemaSerializationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Includes schema serialization for a typed <see cref="T:System.Data.DataSet" />. The default.</summary>
       </Docs>
     </Member>
   </Members>

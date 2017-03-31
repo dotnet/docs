@@ -13,8 +13,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines an interface that enables the extension of specific behaviors of an HTML control designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.IHtmlControlDesignerBehavior> interface is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag> and <xref:System.Web.UI.Design.IControlDesignerView> interfaces for equivalent control designer functionality.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Designer">
@@ -30,8 +39,15 @@
         <ReturnType>System.Web.UI.Design.HtmlControlDesigner</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the designer that the behavior is associated with.</summary>
+        <value>The <see cref="T:System.Web.UI.Design.HtmlControlDesigner" /> that the behavior is associated with.  
+  
+ <block subset="none" type="note">  
+<para>  
+ The <see cref="T:System.Web.UI.Design.IHtmlControlDesignerBehavior" /> interface is obsolete. Use the <see cref="T:System.Web.UI.Design.IControlDesignerTag" /> and <see cref="T:System.Web.UI.Design.IControlDesignerView" /> interfaces for equivalent control designer functionality.  
+  
+</para>  
+</block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +64,15 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the element that the designer is associated with.</summary>
+        <value>The object that the designer is associated with.  
+  
+ <block subset="none" type="note">  
+<para>  
+ The <see cref="T:System.Web.UI.Design.IHtmlControlDesignerBehavior" /> interface is obsolete. Use the <see cref="T:System.Web.UI.Design.IControlDesignerTag" /> and <see cref="T:System.Web.UI.Design.IControlDesignerView" /> interfaces for equivalent control designer functionality.  
+  
+</para>  
+</block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,11 +93,21 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attribute">The attribute to retrieve.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> if the attribute syntax is case-insensitive; otherwise, <see langword="false" />.</param>
+        <summary>Gets the specified attribute.</summary>
+        <returns>The attribute that was retrieved.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.IHtmlControlDesignerBehavior.GetAttribute%2A> method is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> method on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A> property of the <xref:System.Web.UI.Design.ControlDesigner> class for equivalent control designer functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStyleAttribute">
@@ -95,12 +128,23 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <param name="designTimeOnly">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attribute">The style attribute to retrieve.</param>
+        <param name="designTimeOnly">
+          <see langword="true" /> if the attribute is only active at design time; otherwise, <see langword="false" />.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> if the attribute syntax is case-insensitive; otherwise, <see langword="false" />.</param>
+        <summary>Gets the specified style attribute.</summary>
+        <returns>The style attribute that was retrieved.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.IHtmlControlDesignerBehavior.GetStyleAttribute%2A> method is obsolete. Use the <xref:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes%2A> method on the <xref:System.Web.UI.Design.ContainerControlDesigner> class for equivalent control designer functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAttribute">
@@ -120,10 +164,20 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attribute">The attribute to remove.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> if the attribute syntax is case-insensitive; otherwise, <see langword="false" />.</param>
+        <summary>Removes the specified attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.IHtmlControlDesignerBehavior.RemoveAttribute%2A> method is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.RemoveAttribute%2A> method on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A> property of the <xref:System.Web.UI.Design.ControlDesigner> class for equivalent control designer functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveStyleAttribute">
@@ -144,10 +198,12 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <param name="designTimeOnly">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="attribute">The style attribute to remove.</param>
+        <param name="designTimeOnly">
+          <see langword="true" /> if the attribute is only active at design time; otherwise, <see langword="false" />.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> if the attribute syntax is case-insensitive; otherwise, <see langword="false" />.</param>
+        <summary>Removes the specified style attribute.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,11 +225,21 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attribute">The attribute to set.</param>
+        <param name="value">The object on which to set the attribute.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> if the attribute syntax is case-insensitive; otherwise, <see langword="false" />.</param>
+        <summary>Sets the specified attribute to the specified object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.IHtmlControlDesignerBehavior.SetAttribute%2A> method is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> method on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A> property of the <xref:System.Web.UI.Design.ControlDesigner> class for equivalent control designer functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetStyleAttribute">
@@ -195,12 +261,23 @@
         <Parameter Name="ignoreCase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <param name="designTimeOnly">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="ignoreCase">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attribute">The attribute to set.</param>
+        <param name="designTimeOnly">
+          <see langword="true" /> if the attribute is only active at design-time; otherwise, <see langword="false" />.</param>
+        <param name="value">The object to set the attribute on.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> if the attribute syntax is case-insensitive; otherwise, <see langword="false" />.</param>
+        <summary>Sets the specified style attribute to the specified object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.IHtmlControlDesignerBehavior.SetStyleAttribute%2A> method is obsolete. Use the <xref:System.Web.UI.Design.ContainerControlDesigner.AddDesignTimeCssAttributes%2A> method on the <xref:System.Web.UI.Design.ContainerControlDesigner> class for equivalent control designer functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

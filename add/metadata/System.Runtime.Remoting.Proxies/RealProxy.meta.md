@@ -1,89 +1,94 @@
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy.GetTransparentProxy
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy.GetStubData(System.Runtime.Remoting.Proxies.RealProxy)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy.DetachServer
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy.GetUnwrappedServer
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy.SetStubData(System.Runtime.Remoting.Proxies.RealProxy,System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy.GetCOMIUnknown(System.Boolean)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy.#ctor(System.Type,System.IntPtr,System.Object)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy.AttachServer(System.MarshalByRefObject)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy.SetCOMIUnknown(System.IntPtr)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy.SupportsInterface(System.Guid@)
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Proxies.RealProxy.InitializeServerObject(System.Runtime.Remoting.Activation.IConstructionCallMessage)
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Proxies.RealProxy.#ctor(System.Type)
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Proxies.RealProxy.CreateObjRef(System.Type)
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Proxies.RealProxy.GetProxiedType
-internalonly: False
----
-
----
-uid: System.Runtime.Remoting.Proxies.RealProxy.Invoke(System.Runtime.Remoting.Messaging.IMessage)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Proxies.RealProxy.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Proxies.RealProxy.InitializeServerObject(System.Runtime.Remoting.Activation.IConstructionCallMessage)
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Proxies.RealProxy.#ctor(System.Type)
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Proxies.RealProxy.CreateObjRef(System.Type)
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Proxies.RealProxy.GetProxiedType
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Proxies.RealProxy.Invoke(System.Runtime.Remoting.Messaging.IMessage)
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Proxies.RealProxy.#ctor
+manager: "ghogen"
 ---

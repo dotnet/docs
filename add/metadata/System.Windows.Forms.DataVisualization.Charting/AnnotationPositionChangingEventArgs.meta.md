@@ -1,54 +1,65 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewPosition
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewSizeHeight
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocationY
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.Annotation
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewLocationY
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocationX
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewSizeWidth
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewLocationX
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocation
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

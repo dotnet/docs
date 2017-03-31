@@ -1,24 +1,41 @@
 ---
 uid: System.IdentityModel.Selectors.ServiceBusyException
-internalonly: False
----
-
----
-uid: System.IdentityModel.Selectors.ServiceBusyException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.IdentityModel.Selectors.ServiceBusyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.IdentityModel.Selectors.ServiceBusyException.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.ServiceBusyException.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.IdentityModel.Selectors.ServiceBusyException.#ctor(System.String,System.Exception)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.IdentityModel.Selectors.ServiceBusyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.IdentityModel.Selectors.ServiceBusyException.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.IdentityModel.Selectors.ServiceBusyException.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

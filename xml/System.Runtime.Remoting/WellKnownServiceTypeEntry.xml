@@ -17,8 +17,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Holds values for an object type registered on the service end as a server-activated type object (single call or singleton).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Server-activated object types can be either single call or singleton. If an object type is single call, a new instance of it is created each time a call from the client comes in. All calls to a singleton object are handled by one instance of that object.  
+  
+ Any client that knows the URI of this object can obtain a proxy for this object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices> and activating the object by calling `new` or <xref:System.Activator.GetObject%2A?displayProperty=fullName>.  
+  
+ It is important to note that the remote object itself is not created by the registration process. This only happens when a client attempts to call a method on the object or activates the object from the client side.  
+  
+ For a more detailed description of server-activated objects and remote object activation, see [&#91;\<topic://cpconActivation>&#93;](http://msdn.microsoft.com/en-us/e90d0c64-00da-4080-ae78-a6c558825c25).  
+  
+   
+  
+## Examples  
+ [!code-cpp[WellKnownServiceTypeEntry_Server#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WellKnownServiceTypeEntry_Server/CPP/wellknownservicetypeentry_server.cpp#1)]
+ [!code-csharp[WellKnownServiceTypeEntry_Server#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WellKnownServiceTypeEntry_Server/CS/wellknownservicetypeentry_server.cs#1)]
+ [!code-vb[WellKnownServiceTypeEntry_Server#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WellKnownServiceTypeEntry_Server/VB/wellknownservicetypeentry_server.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,10 +57,10 @@
         <Parameter Name="mode" Type="System.Runtime.Remoting.WellKnownObjectMode" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="objectUri">To be added.</param>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The <see cref="T:System.Type" /> of the server-activated service type object.</param>
+        <param name="objectUri">The URI of the server-activated type.</param>
+        <param name="mode">The <see cref="T:System.Runtime.Remoting.WellKnownObjectMode" /> of the type, which defines how the object is activated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" /> class with the given <see cref="T:System.Type" />, object URI, and <see cref="T:System.Runtime.Remoting.WellKnownObjectMode" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,11 +81,11 @@
         <Parameter Name="mode" Type="System.Runtime.Remoting.WellKnownObjectMode" />
       </Parameters>
       <Docs>
-        <param name="typeName">To be added.</param>
-        <param name="assemblyName">To be added.</param>
-        <param name="objectUri">To be added.</param>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="typeName">The full type name of the server-activated service type.</param>
+        <param name="assemblyName">The assembly name of the server-activated service type.</param>
+        <param name="objectUri">The URI of the server-activated object.</param>
+        <param name="mode">The <see cref="T:System.Runtime.Remoting.WellKnownObjectMode" /> of the type, which defines how the object is activated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" /> class with the given type name, assembly name, object URI, and <see cref="T:System.Runtime.Remoting.WellKnownObjectMode" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,9 +103,18 @@
         <ReturnType>System.Runtime.Remoting.Contexts.IContextAttribute[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the context attributes for the server-activated service type.</summary>
+        <value>Gets or sets the context attributes for the server-activated service type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Currently, this indexer is not implemented and operations on it will not produce any results.  
+  
+ Context attributes provide context properties that, when added to a context, can enforce policies such as synchronization and transactions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -102,8 +131,8 @@
         <ReturnType>System.Runtime.Remoting.WellKnownObjectMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Runtime.Remoting.WellKnownObjectMode" /> of the server-activated service type.</summary>
+        <value>The <see cref="T:System.Runtime.Remoting.WellKnownObjectMode" /> of the server-activated service type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +150,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Type" /> of the server-activated service type.</summary>
+        <value>The <see cref="T:System.Type" /> of the server-activated service type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +169,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URI of the well-known service type.</summary>
+        <value>The URI of the server-activated service type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +189,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the type name, assembly name, object URI and the <see cref="T:System.Runtime.Remoting.WellKnownObjectMode" /> of the server-activated type as a <see cref="T:System.String" />.</summary>
+        <returns>The type name, assembly name, object URI, and the <see cref="T:System.Runtime.Remoting.WellKnownObjectMode" /> of the server-activated type as a <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

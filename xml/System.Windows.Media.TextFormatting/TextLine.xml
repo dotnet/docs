@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an abstract class for supporting formatting services to a line of text.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,9 +47,17 @@
         <Parameter Name="pixelsPerDip" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="pixelsPerDip">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pixelsPerDip">
+          <c>pixelsPerDip</c> should be set to the TextSource's PixelsPerDip value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor must be called for every class that is inherited from <xref:System.Windows.Media.TextFormatting.TextLine>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Baseline">
@@ -65,8 +73,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the distance from the top to the baseline of the current <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> object.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the baseline distance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +100,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="collapsingPropertiesList">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="collapsingPropertiesList">A list of <see cref="T:System.Windows.Media.TextFormatting.TextCollapsingProperties" /> objects that represent the collapsed text properties.</param>
+        <summary>Create a collapsed line based on collapsed text properties.</summary>
+        <returns>A <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> value that represents a collapsed line that can be displayed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +119,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of characters following the last character of the line that may trigger reformatting of the current line.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the number of characters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,7 +138,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all managed and unmanaged resources used by the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,10 +160,10 @@
         <Parameter Name="inversion" Type="System.Windows.Media.TextFormatting.InvertAxes" />
       </Parameters>
       <Docs>
-        <param name="drawingContext">To be added.</param>
-        <param name="origin">To be added.</param>
-        <param name="inversion">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="drawingContext">The <see cref="T:System.Windows.Media.DrawingContext" /> object onto which the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> is rendered.</param>
+        <param name="origin">A <see cref="T:System.Windows.Point" /> value that represents the drawing origin.</param>
+        <param name="inversion">An enumerated <see cref="T:System.Windows.Media.TextFormatting.InvertAxes" /> value that indicates the inversion of the horizontal and vertical axes of the drawing surface.</param>
+        <summary>Renders the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> object based upon the specified <see cref="T:System.Windows.Media.DrawingContext" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,8 +180,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the distance from the top-most to bottom-most black pixel in a line.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the extent distance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,9 +201,9 @@
         <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
       </Parameters>
       <Docs>
-        <param name="characterHit">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="characterHit">The current <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object.</param>
+        <summary>Gets the previous character hit after backspacing.</summary>
+        <returns>The <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object after backspacing.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,10 +223,17 @@
         <Parameter Name="distance" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="distance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="distance">A <see cref="T:System.Double" /> value that represents the distance from the beginning of the line.</param>
+        <summary>Gets the character hit corresponding to the specified distance from the beginning of the line.</summary>
+        <returns>The <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object at the specified <paramref name="distance" /> from the beginning of the line.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text flow direction determines how the distance is measured.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDistanceFromCharacterHit">
@@ -237,10 +252,17 @@
         <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
       </Parameters>
       <Docs>
-        <param name="characterHit">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="characterHit">The <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object whose distance you want to query.</param>
+        <summary>Gets the distance from the beginning of the line to the specified character hit.</summary>
+        <returns>A <see cref="T:System.Double" /> that represents the distance from the beginning of the line.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text flow direction determines how the distance is measured.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIndexedGlyphRuns">
@@ -257,9 +279,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets an enumerator for enumerating <see cref="T:System.Windows.Media.TextFormatting.IndexedGlyphRun" /> objects in the <see cref="T:System.Windows.Media.TextFormatting.TextLine" />.</summary>
+        <returns>An enumerator that allows you to enumerate each <see cref="T:System.Windows.Media.TextFormatting.IndexedGlyphRun" /> object in the <see cref="T:System.Windows.Media.TextFormatting.TextLine" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By enumerating through the list of <xref:System.Windows.Media.TextFormatting.IndexedGlyphRun> objects, the text layout client can obtain glyph information for each text source character.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNextCaretCharacterHit">
@@ -278,9 +307,9 @@
         <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
       </Parameters>
       <Docs>
-        <param name="characterHit">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="characterHit">The current <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object.</param>
+        <summary>Gets the next character hit for caret navigation.</summary>
+        <returns>The next <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object based on caret navigation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,9 +329,9 @@
         <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
       </Parameters>
       <Docs>
-        <param name="characterHit">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="characterHit">The current <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object.</param>
+        <summary>Gets the previous character hit for caret navigation.</summary>
+        <returns>The previous <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object based on caret navigation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -323,10 +352,10 @@
         <Parameter Name="textLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="firstTextSourceCharacterIndex">To be added.</param>
-        <param name="textLength">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="firstTextSourceCharacterIndex">An <see cref="T:System.Int32" /> value that represents the index of first character of specified range.</param>
+        <param name="textLength">An <see cref="T:System.Int32" /> value that represents the number of characters of the specified range.</param>
+        <summary>Gets an array of bounding rectangles that represent the range of characters within a text line.</summary>
+        <returns>A list of <see cref="T:System.Windows.Media.TextFormatting.TextBounds" /> objects representing the bounding rectangle.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,8 +373,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a collection of collapsed text ranges after a line has been collapsed.</summary>
+        <returns>A list of <see cref="T:System.Windows.Media.TextFormatting.TextCollapsedRange" /> objects that represent the collapsed text.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -363,9 +392,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the state of the line when broken by line breaking process.</summary>
+        <returns>A <see cref="T:System.Windows.Media.TextFormatting.TextLineBreak" /> value that represents the line break.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is `null` when the line ends at the end of the paragraph.  
+  
+ The text formatter client may pass the return value back as a parameter to the <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method, which allows the value to be used when formatting the next line within the same paragraph.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTextRunSpans">
@@ -382,8 +420,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a collection of <see cref="T:System.Windows.Media.TextFormatting.TextRun" /> objects in a text span that are contained within a line.</summary>
+        <returns>Gets a list of <see cref="T:System.Windows.Media.TextFormatting.TextRun" /> objects contained within a text span.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -400,8 +438,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the line is collapsed.</summary>
+        <value>
+          <see langword="true" />, if the line is collapsed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,8 +457,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether content of the line overflows the specified paragraph width.</summary>
+        <value>
+          <see langword="true" />, it the line overflows the specified paragraph width; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,8 +476,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the height of a line of text.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the text line height.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -454,9 +494,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Determines whether the text line is truncated in the middle of a word.</summary>
+        <value>
+          <see langword="true" /> if the text line is truncated in the middle of a word; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.TextFormatting.TextLine.IsTruncated%2A> property value is set only when the <xref:System.Windows.TextWrapping> property of <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> is set to <xref:System.Windows.TextWrapping>, and a single word is wider than the formatting paragraph width. In such situation, <xref:System.Windows.Media.TextFormatting.TextFormatter> truncates the line in the middle of the word to honor the desired behavior specified by <xref:System.Windows.TextWrapping> setting.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -472,8 +520,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the total number of <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> positions of the current line.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the total number of <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> positions of the current line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,8 +538,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the distance from the edge of the line's highest point to the baseline marker of the line.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the baseline distance of the marker.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,8 +556,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the height of a marker for a list item.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the height of the marker.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -526,8 +574,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of newline characters at the end of a line.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the number of newline characters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -544,8 +592,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the distance that black pixels extend beyond the bottom alignment edge of a line.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the overhang after distance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -562,8 +610,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the distance that black pixels extend prior to the left leading alignment edge of the line.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the overhang leading distance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -580,8 +628,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the distance that black pixels extend following the right trailing alignment edge of the line.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the overhang trailing distance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -598,8 +646,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Get or sets the PixelsPerDip at which the text should be rendered.</summary>
+        <value>The current <see cref="P:System.Windows.Media.TextFormatting.TextLine.PixelsPerDip" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -616,8 +664,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the distance from the start of a paragraph to the starting point of a line.</summary>
+        <value>A <see cref="T:System.Double" /> value that represents the distance from the start of a paragraph to the starting point of a line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -634,8 +682,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the distance from the top to the baseline of the line of text.</summary>
+        <value>A <see cref="T:System.Double" /> value that represents the text baseline distance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -652,9 +700,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the height of the text and any other content in the line.</summary>
+        <value>A <see cref="T:System.Double" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.TextFormatting.TextLine.TextHeight%2A> may differ from the <xref:System.Windows.Media.TextFormatting.TextLine.Height%2A> property if the client specified the line height.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TrailingWhitespaceLength">
@@ -670,8 +725,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of whitespace code points beyond the last non-blank character in a line.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the number of whitespace code points beyond the last non-blank character in a line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -688,8 +743,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the width of a line of text, excluding trailing whitespace characters.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the text line width, excluding trailing whitespace characters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -706,8 +761,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the width of a line of text, including trailing whitespace characters.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the text line width, including trailing whitespace characters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

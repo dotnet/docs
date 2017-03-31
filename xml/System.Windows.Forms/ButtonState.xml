@@ -15,8 +15,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the appearance of a button.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration represents the different states of a button. The default state is `Normal`.  
+  
+   
+  
+## Examples  
+ In this example, you use the `ButtonState` enumeration as a parameter to the method <xref:System.Windows.Forms.ControlPaint.DrawButton%2A> to specify the state of `button1`. To run the example, create two buttons, `button1` and `button2`. Then replace the `button2_Click` method with the example code. Click `button2` to redraw `button1` and change its state to `Flat`.  
+  
+ [!code-cpp[ButtonState#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ButtonState/CPP/buttonstate1.cpp#1)]
+ [!code-csharp[ButtonState#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ButtonState/CS/buttonstate1.cs#1)]
+ [!code-vb[ButtonState#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ButtonState/VB/buttonstate1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -32,7 +48,7 @@
         <ReturnType>System.Windows.Forms.ButtonState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All flags except <see langword="Normal" /> are set.</summary>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -48,7 +64,7 @@
         <ReturnType>System.Windows.Forms.ButtonState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The button has a checked or latched appearance. Use this appearance to show that a toggle button has been pressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Flat">
@@ -64,7 +80,7 @@
         <ReturnType>System.Windows.Forms.ButtonState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The button has a flat, two-dimensional appearance.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inactive">
@@ -80,7 +96,7 @@
         <ReturnType>System.Windows.Forms.ButtonState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The button is inactive (grayed).</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -96,7 +112,7 @@
         <ReturnType>System.Windows.Forms.ButtonState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The button has its normal appearance (three-dimensional).</summary>
       </Docs>
     </Member>
     <Member MemberName="Pushed">
@@ -112,7 +128,7 @@
         <ReturnType>System.Windows.Forms.ButtonState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The button appears pressed.</summary>
       </Docs>
     </Member>
   </Members>

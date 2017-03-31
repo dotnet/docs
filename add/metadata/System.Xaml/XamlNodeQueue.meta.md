@@ -1,29 +1,29 @@
 ---
 uid: System.Xaml.XamlNodeQueue
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlNodeQueue.#ctor(System.Xaml.XamlSchemaContext)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlNodeQueue.Writer
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlNodeQueue.Count
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlNodeQueue.Reader
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlNodeQueue.IsEmpty
-internalonly: False
+manager: "martinek"
 ---

@@ -1,4 +1,5 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.StandardEventLevel
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

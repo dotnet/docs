@@ -16,8 +16,50 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an access control list (ACL) and is the base class for the <see cref="T:System.Security.AccessControl.DiscretionaryAcl" /> and <see cref="T:System.Security.AccessControl.SystemAcl" /> classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+-   Certain combinations of inheritance and access mask flags are meaningless:  
+  
+-   Any access control entry (ACE) with a zero-access mask is removed.  
+  
+-   Inherit-only ACEs inside object ACLs are removed.  
+  
+-   <xref:System.Security.AccessControl.PropagationFlags>, <xref:System.Security.AccessControl.PropagationFlags>, <xref:System.Security.AccessControl.InheritanceFlags>, and <xref:System.Security.AccessControl.InheritanceFlags> flags on all ACEs in leaf object ACLs are cleared.  
+  
+-   ACEs that have an <xref:System.Security.AccessControl.PropagationFlags> flag in the absence of the <xref:System.Security.AccessControl.InheritanceFlags> or <xref:System.Security.AccessControl.InheritanceFlags> flag are meaningless; they are removed.  
+  
+-   The <xref:System.Security.AccessControl.PropagationFlags> flag in the absence of the <xref:System.Security.AccessControl.InheritanceFlags> or <xref:System.Security.AccessControl.InheritanceFlags> flag can be removed.  
+  
+-   ACEs that have an <xref:System.Security.AccessControl.AuditFlags> value of <xref:System.Security.AccessControl.AuditFlags> or <xref:System.Security.AccessControl.AuditFlags> in discretionary access control lists (DACLs) are removed.  
+  
+-   Any audit ACE that does not specify either <xref:System.Security.AccessControl.AuditFlags> or <xref:System.Security.AccessControl.AuditFlags> is removed.  
+  
+-   On DACLs, SystemAudit and SystemAlarm ACEs are removed.  
+  
+-   On system access control lists (SACLs), AccessAllowed and AccessDenied ACEs are removed.  
+  
+ Canonical order is maintained according to the following algorithm:  
+  
+-   Explicit ACEs take precedence over inherited ACEs; this rule applies to both DACLs and SACLs.  
+  
+-   In DACLs, among the explicit ACEs, ACEs that deny access take precedence over ACEs that allow access. For directory object ACLs, the nonobject ACEs come before object ACEs.  
+  
+-   All common ACEs take precedence over noncommon ACEs.  
+  
+-   Inherited ACEs maintain their relative order after canonicity.  
+  
+-   Unrecognized and custom ACEs are disallowed in both DACLs and SACLs.  
+  
+-   Within contiguous ranges (explicit AccessDenied and AccessAllowed ACEs on DACLs, all explicit ACEs on SACLs), the ACEs are sorted by using the <xref:System.Security.Principal.SecurityIdentifier.CompareTo%2A> methods of the <xref:System.Security.Principal.SecurityIdentifier> objects associated with the ACEs.  
+  
+ Adjacent ACEs are combined, if appropriate.  This reduces the size of the ACL without affecting the access control semantics it grants.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BinaryLength">
@@ -38,8 +80,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the length, in bytes, of the binary representation of the current <see cref="T:System.Security.AccessControl.CommonAcl" /> object. This length should be used before marshaling the access control list (ACL) into a binary array by using the <see cref="M:System.Security.AccessControl.CommonAcl.GetBinaryForm(System.Byte[],System.Int32)" /> method.</summary>
+        <value>The length, in bytes, of the binary representation of the current <see cref="T:System.Security.AccessControl.CommonAcl" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +103,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of access control entries (ACEs) in the current <see cref="T:System.Security.AccessControl.CommonAcl" /> object.</summary>
+        <value>The number of ACEs in the current <see cref="T:System.Security.AccessControl.CommonAcl" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,9 +130,9 @@
         <Parameter Name="offset" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="binaryForm">To be added.</param>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binaryForm">The byte array into which the contents of the <see cref="T:System.Security.AccessControl.CommonAcl" /> is marshaled.</param>
+        <param name="offset">The offset at which to start marshaling.</param>
+        <summary>Marshals the contents of the <see cref="T:System.Security.AccessControl.CommonAcl" /> object into the specified byte array beginning at the specified offset.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +154,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a Boolean value that specifies whether the access control entries (ACEs) in the current <see cref="T:System.Security.AccessControl.CommonAcl" /> object are in canonical order.</summary>
+        <value>
+          <see langword="true" /> if the ACEs in the current <see cref="T:System.Security.AccessControl.CommonAcl" /> object are in canonical order; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +178,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Sets whether the <see cref="T:System.Security.AccessControl.CommonAcl" /> object is a container.</summary>
+        <value>
+          <see langword="true" /> if the current <see cref="T:System.Security.AccessControl.CommonAcl" /> object is a container.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,8 +202,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Sets whether the current <see cref="T:System.Security.AccessControl.CommonAcl" /> object is a directory object access control list (ACL).</summary>
+        <value>
+          <see langword="true" /> if the current <see cref="T:System.Security.AccessControl.CommonAcl" /> object is a directory object ACL.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,9 +229,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the <see cref="T:System.Security.AccessControl.CommonAce" /> to get or set.</param>
+        <summary>Gets or sets the <see cref="T:System.Security.AccessControl.CommonAce" /> at the specified index.</summary>
+        <value>The <see cref="T:System.Security.AccessControl.CommonAce" /> at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +256,8 @@
         <Parameter Name="sid" Type="System.Security.Principal.SecurityIdentifier" />
       </Parameters>
       <Docs>
-        <param name="sid">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sid">The <see cref="T:System.Security.Principal.SecurityIdentifier" /> object to check for.</param>
+        <summary>Removes all access control entries (ACEs) contained by this <see cref="T:System.Security.AccessControl.CommonAcl" /> object that are associated with the specified <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,7 +280,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all inherited access control entries (ACEs) from this <see cref="T:System.Security.AccessControl.CommonAcl" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,8 +302,8 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the revision level of the <see cref="T:System.Security.AccessControl.CommonAcl" />.</summary>
+        <value>A byte value that specifies the revision level of the <see cref="T:System.Security.AccessControl.CommonAcl" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

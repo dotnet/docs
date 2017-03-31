@@ -1,4 +1,5 @@
 ---
 uid: System.Configuration.Internal
-internalonly: False
+ms.author: "rachelap"
+manager: "wpickett"
 ---

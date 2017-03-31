@@ -1,39 +1,53 @@
 ---
 uid: Microsoft.VisualC.StlClr.GenericPair`2
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.GenericPair`2.#ctor(System.Collections.Generic.KeyValuePair{`0,`1}@)
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.GenericPair`2.Equals(System.Object)
-internalonly: False
----
-
----
-uid: Microsoft.VisualC.StlClr.GenericPair`2.#ctor(`0,`1)
-internalonly: False
----
-
----
-uid: Microsoft.VisualC.StlClr.GenericPair`2.#ctor(`0)
-internalonly: False
----
-
----
-uid: Microsoft.VisualC.StlClr.GenericPair`2.first
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.GenericPair`2.#ctor
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
+---
+
+---
+uid: Microsoft.VisualC.StlClr.GenericPair`2.#ctor(`0,`1)
+ms.author: "mblome"
+manager: "ghogen"
+---
+
+---
+uid: Microsoft.VisualC.StlClr.GenericPair`2.#ctor(`0)
+ms.author: "mblome"
+manager: "ghogen"
+---
+
+---
+uid: Microsoft.VisualC.StlClr.GenericPair`2.first
+ms.author: "mblome"
+manager: "ghogen"
+---
+
+---
+uid: Microsoft.VisualC.StlClr.GenericPair`2.#ctor
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.GenericPair`2.second
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

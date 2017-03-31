@@ -12,7 +12,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Used by the <see cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" /> class to localize data at design time.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,10 +33,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="resourceName">To be added.</param>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="resourceName">The name of the resource.</param>
+        <param name="obj">The object to localize.</param>
+        <summary>Creates a key, using the provided string, to use to retrieve data from the given resource.</summary>
+        <returns>The key used to write or retrieve <paramref name="obj" /> from <paramref name="resourceName" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

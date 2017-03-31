@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This class has been deprecated as of Visual Basic 2005.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides methods for manipulating data that potentially represents a `Decimal` value.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FromBoolean">
@@ -36,10 +43,17 @@
         <Parameter Name="Value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. <see langword="Boolean" /> value to convert to a <see langword="Decimal" /> value.</param>
+        <summary>Returns a <see langword="Decimal" /> value that corresponds to the specified <see langword="Boolean" /> value.</summary>
+        <returns>The <see langword="Decimal" /> value that corresponds to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromObject">
@@ -58,10 +72,17 @@
         <Parameter Name="Value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. Object to convert to a <see langword="Decimal" /> value.</param>
+        <summary>Returns a <see langword="Decimal" /> value that corresponds to the specified object.</summary>
+        <returns>The <see langword="Decimal" /> value that corresponds to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromObject">
@@ -81,11 +102,18 @@
         <Parameter Name="NumberFormat" Type="System.Globalization.NumberFormatInfo" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <param name="NumberFormat">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. Object to convert to a <see langword="Decimal" /> value.</param>
+        <param name="NumberFormat">A <see cref="T:System.Globalization.NumberFormatInfo" /> object that defines how numeric values are formatted and displayed, depending on the culture.</param>
+        <summary>Returns a <see langword="Decimal" /> value that corresponds to the specified object and number format information.</summary>
+        <returns>The <see langword="Decimal" /> value that corresponds to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromString">
@@ -104,10 +132,17 @@
         <Parameter Name="Value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. String to convert to a <see langword="Decimal" /> value.</param>
+        <summary>Returns a <see langword="Decimal" /> value that corresponds to the specified string.</summary>
+        <returns>The <see langword="Decimal" /> value that corresponds to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromString">
@@ -127,11 +162,18 @@
         <Parameter Name="NumberFormat" Type="System.Globalization.NumberFormatInfo" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <param name="NumberFormat">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. String to convert to a <see langword="Decimal" /> value.</param>
+        <param name="NumberFormat">A <see cref="T:System.Globalization.NumberFormatInfo" /> object that defines how numeric values are formatted and displayed, depending on the culture.</param>
+        <summary>Returns a <see langword="Decimal" /> value that corresponds to the specified string and number format information.</summary>
+        <returns>The <see langword="Decimal" /> value that corresponds to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -151,12 +193,53 @@
         <Parameter Name="NumberFormat" Type="System.Globalization.NumberFormatInfo" />
       </Parameters>
       <Docs>
-        <param name="Value">To be added.</param>
-        <param name="NumberFormat">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Value">Required. String to convert to a <see langword="Decimal" /> value.</param>
+        <param name="NumberFormat">A <see cref="T:System.Globalization.NumberFormatInfo" /> object that defines how numeric values are formatted and displayed, depending on the culture.</param>
+        <summary>Returns a <see langword="Decimal" /> value that corresponds to the specified string and number format information.</summary>
+        <returns>The <see langword="Decimal" /> value that corresponds to <paramref name="Value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromObject">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="Decimal" /> value that corresponds to the specified <see langword="Boolean" /> value and optional number format information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromString">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="Decimal" /> value that corresponds to the specified string and optional number format information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

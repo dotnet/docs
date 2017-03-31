@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates specific roles of a <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.DirectoryServices.ActiveDirectory.AdamRole> class refers to Active Directory Application Mode (ADAM) which has been renamed to Active Directory Lightweight Directory Services (AD LDS).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="NamingRole">
@@ -27,7 +36,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.AdamRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The AD LDS server holds the domain naming master role.</summary>
       </Docs>
     </Member>
     <Member MemberName="SchemaRole">
@@ -43,7 +52,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.AdamRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The AD LDS server holds the schema operations master role.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,1 +1,0 @@
-      String^ xmlParameters = rsaFormatter->Parameters;

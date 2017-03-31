@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.RegisteredHiddenField
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredHiddenField.InitialValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredHiddenField.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredHiddenField.Control
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

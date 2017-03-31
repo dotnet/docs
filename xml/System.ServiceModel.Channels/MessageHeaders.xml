@@ -16,8 +16,38 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of message headers for a message. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A message header contains optional metadata that describe a message encapsulated by the <xref:System.ServiceModel.Channels.Message> class.  
+  
+ A <xref:System.ServiceModel.Channels.Message> can have zero or more headers that are used as an extension mechanism to pass information in messages that are application-specific. You can use <xref:System.ServiceModel.Channels.Message.Headers%2A> to add message headers to a message by calling the <xref:System.ServiceModel.Channels.MessageHeaders.Add%2A> method.  
+  
+ [!INCLUDE[indigo1](~/includes/indigo1-md.md)] provides a number of predefined message headers:  
+  
+|Header Name|Description|  
+|-----------------|-----------------|  
+|To|Contains the role that the message is targeting.|  
+|Action|Provides a description of how the message should be processed.|  
+|FaultTo|Contains the address of the node to which faults should be sent.|  
+|From|Contains the address of the node that sent the message.|  
+|Request|Indicates whether the message is a request.|  
+|MessageID|Contains the unique ID of the message.|  
+|RelatesTo|Contains the IDs of messages that are related to this message.|  
+|ReplyTo|Contains the address of the node to which a reply should be sent for a request.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a basic client using the channel factory to send a message and read the action header from the reply.  
+  
+ [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
+ [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +65,7 @@
       </Parameters>
       <Docs>
         <param name="headers">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.MessageHeaders" /> class with the specified collection of message headers.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +83,8 @@
         <Parameter Name="version" Type="System.ServiceModel.Channels.MessageVersion" />
       </Parameters>
       <Docs>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="version">The SOAP version of the message.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.MessageHeaders" /> class with the specified message version.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +103,9 @@
         <Parameter Name="initialSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="version">To be added.</param>
+        <param name="version">The SOAP version of the message.</param>
         <param name="capacity">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.MessageHeaders" /> class with the specified message version and size.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +123,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a description of how the message should be processed.</summary>
+        <value>A description of how the message should be processed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the <`Action`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a simple client using the channel factory to send a message and read the action header from the reply.  
+  
+ [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
+ [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -115,8 +160,8 @@
         <Parameter Name="header" Type="System.ServiceModel.Channels.MessageHeader" />
       </Parameters>
       <Docs>
-        <param name="header">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="header">A message header to be added to the collection.</param>
+        <summary>Adds the specified message header to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,7 +180,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all the headers from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,9 +202,9 @@
         <Parameter Name="headerIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="headerIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message from which the header is copied from.</param>
+        <param name="headerIndex">The location of the original message header, from which the content is copied over.</param>
+        <summary>Copies the header content located at the specified index from the specified message to this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,9 +226,9 @@
         <Parameter Name="headerIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="collection">To be added.</param>
-        <param name="headerIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collection">A <see cref="T:System.ServiceModel.Channels.MessageHeaders" /> collection object.</param>
+        <param name="headerIndex">The location of the original message header, from which the content is copied over.</param>
+        <summary>Copies the header content located at the specified index from the specified message header collection to this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +249,8 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message from which the headers are copied from.</param>
+        <summary>Copies the content of all the headers from the specified message to this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,8 +271,8 @@
         <Parameter Name="collection" Type="System.ServiceModel.Channels.MessageHeaders" />
       </Parameters>
       <Docs>
-        <param name="collection">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collection">A <see cref="T:System.ServiceModel.Channels.MessageHeaders" /> collection object from which the headers are copied to this instance.</param>
+        <summary>Copies the content from the specified header collection to this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,9 +294,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional Array that is the destination of the message header objects copied from this instance. The Array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in the array at which copying begins.</param>
+        <summary>Copies the headers from this collection to an array, starting at a particular index of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,8 +314,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of message headers in this collection.</summary>
+        <value>The number of message headers in this collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,9 +333,16 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the address of the node to which faults should be sent.</summary>
+        <value>An <see cref="T:System.ServiceModel.EndpointAddress" /> of the node to which faults should be sent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the <`FaultTo`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindHeader">
@@ -311,11 +363,13 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The LocalName of the header XML element.</param>
+        <param name="ns">The namespace URI of the header XML element.</param>
+        <summary>Finds a message header in this collection by the specified LocalName and namespace URI of the header element.</summary>
+        <returns>The index of the message header in this collection if found or -1 if the header specified does not exist.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.MessageHeaderException">The header specified by the arguments exists multiple times.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindHeader">
@@ -343,12 +397,14 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="actors">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The LocalName of the header XML element.</param>
+        <param name="ns">The namespace URI of the header XML element.</param>
+        <param name="actors">The targeted recipient of the message header.</param>
+        <summary>Finds a message header in this collection by the specified LocalName, namespace URI and actors of the header element.</summary>
+        <returns>The index of the message header in this collection if found, or -1 if the header specified does not exist.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.MessageHeaderException">The header specified by the arguments exists multiple times.</exception>
       </Docs>
     </Member>
     <Member MemberName="From">
@@ -365,9 +421,16 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the address of the node that sent the message.</summary>
+        <value>An <see cref="T:System.ServiceModel.EndpointAddress" /> of the node that sent the message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the <`From`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -385,8 +448,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator for iterating through the collection. This method cannot be inherited.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,11 +473,18 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the message header.</typeparam>
+        <param name="index">The zero-based index of the header to get.</param>
+        <summary>Retrieves a message header at a specific position in this collection.</summary>
+        <returns>A message header at the specified index.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method only uses the <xref:System.Runtime.Serialization.DataContractSerializer>. It does not try to detect from the type whether it should use the <xref:System.Runtime.Serialization.XmlObjectSerializer> or `DataContractSerializer`. To use the XML serializer, call <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.String%2CSystem.String%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> or obtain the reader at the contents and call directly into the serializer.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHeader&lt;T&gt;">
@@ -438,11 +508,11 @@
         <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="index">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the message header.</typeparam>
+        <param name="index">The zero-based index of the header to get.</param>
+        <param name="serializer">An <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> that is used to serialize the header.</param>
+        <summary>Retrieves a message header at a specific position in this collection.</summary>
+        <returns>A message header at the specified index.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,12 +537,19 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the message header.</typeparam>
+        <param name="name">The LocalName of the header XML element.</param>
+        <param name="ns">The namespace URI of the header XML element.</param>
+        <summary>Finds a message header in this collection by the specified LocalName and namespace URI of the header element.</summary>
+        <returns>A message header with the specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method only uses the <xref:System.Runtime.Serialization.DataContractSerializer>. It does not try to detect from the type whether it should use the <xref:System.Runtime.Serialization.XmlObjectSerializer> or the `DataContractSerializer`. To use the XML serializer, call <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.String%2CSystem.String%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> or obtain the reader at the contents and call directly into the serializer.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHeader&lt;T&gt;">
@@ -497,12 +574,12 @@
         <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the message header.</typeparam>
+        <param name="name">The LocalName of the header XML element.</param>
+        <param name="ns">The namespace URI of the header XML element.</param>
+        <param name="serializer">An <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> that is used to serialize the header.</param>
+        <summary>Retrieves a message header in this collection by the specified LocalName, namespace URI and serializer.</summary>
+        <returns>A message header with the specified name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,13 +611,20 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="actors">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the message header.</typeparam>
+        <param name="name">The LocalName of the header XML element.</param>
+        <param name="ns">The namespace URI of the header XML element.</param>
+        <param name="actors">The targeted recipient of the message header.</param>
+        <summary>Retrieves a message header in this collection by the specified LocalName, namespace URI and actors of the header element.</summary>
+        <returns>A message header with the specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method only uses the <xref:System.Runtime.Serialization.DataContractSerializer>. It does not try to detect from the type whether it should use the <xref:System.Runtime.Serialization.XmlObjectSerializer> or `DataContractSerializer`. To use the XML serializer, call <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.String%2CSystem.String%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> or obtain the reader at the contents and call directly into the serializer.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetReaderAtHeader">
@@ -560,9 +644,9 @@
         <Parameter Name="headerIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="headerIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="headerIndex">The zero-based index of the header to get.</param>
+        <summary>Gets a XML dictionary reader that consumes the message header at the specified location of the collection.</summary>
+        <returns>An <see cref="T:System.Xml.XmlDictionaryReader" /> object that consumes the message header at the specified location of the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -581,9 +665,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Verifies whether all the message headers marked with <see langword="MustUnderstand" /> have been properly interpreted and processed.</summary>
+        <returns>
+          <see langword="true" /> if the recipients specified by <paramref name="actors" /> have properly interpreted and processed all the message headers marked with <see langword="MustUnderstand" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the message receiver cannot interpret the message headers marked with `MustUnderstand`, the message is not processed and an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HaveMandatoryHeadersBeenUnderstood">
@@ -609,10 +701,18 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="actors">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="actors">The targeted recipient of the message header.</param>
+        <summary>Verifies whether the specified recipients have properly interpreted and processed all the message headers marked with <see langword="MustUnderstand" />.</summary>
+        <returns>
+          <see langword="true" /> if the recipients specified by <paramref name="actors" /> have properly interpreted and processed all the message headers marked with <see langword="MustUnderstand" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the message receiver cannot interpret the message headers marked with `MustUnderstand`, the message is not processed and an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -633,9 +733,9 @@
         <Parameter Name="header" Type="System.ServiceModel.Channels.MessageHeader" />
       </Parameters>
       <Docs>
-        <param name="headerIndex">To be added.</param>
-        <param name="header">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="headerIndex">The zero-based index at which <c>header</c> should be inserted.</param>
+        <param name="header">A message header to insert.</param>
+        <summary>Inserts a message header into the collection at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -656,9 +756,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the header in the list.</param>
+        <summary>Retrieves a header at the given index.</summary>
+        <value>The <see cref="T:System.ServiceModel.Channels.MessageHeaderInfo" /> in the collection. If <paramref name="index" /> is greater than or equal to the number of headers in the list, this returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -676,9 +776,16 @@
         <ReturnType>System.Xml.UniqueId</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the unique ID of the message.</summary>
+        <value>The unique ID of the message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the <`MessageID`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageVersion">
@@ -695,8 +802,8 @@
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the SOAP version of the message.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.MessageVersion" /> that is SOAP version of the message.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -714,9 +821,16 @@
         <ReturnType>System.Xml.UniqueId</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the IDs of messages that are related to this message.</summary>
+        <value>The IDs of messages that are related to this message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the <`RelateTo`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -737,9 +851,9 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The LocalName of the header XML element.</param>
+        <param name="ns">The namespace URI of the header XML element.</param>
+        <summary>Removes all headers with the specified name and namespace from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -760,8 +874,8 @@
         <Parameter Name="headerIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="headerIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="headerIndex">The zero-based index of the header to remove.</param>
+        <summary>Removes the message header at the specified index from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -779,9 +893,16 @@
         <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the address of the node to which a reply should be sent for a request.</summary>
+        <value>An <see cref="T:System.ServiceModel.EndpointAddress" /> of the node to which a reply should be sent for a request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the <`ReplyTo`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAction">
@@ -801,8 +922,8 @@
         <Parameter Name="action" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">A description of how the message should be processed.</param>
+        <summary>Sets the action element of the header.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -821,8 +942,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator for iterating through the collection. This method cannot be inherited.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -840,9 +961,16 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the destination endpoint of a message.</summary>
+        <value>A URI that contains the destination endpoint of a message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the <`To`> element described in the [WS-Addressing specification](http://go.microsoft.com/fwlink/?LinkId=96163).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnderstoodHeaders">
@@ -859,9 +987,16 @@
         <ReturnType>System.ServiceModel.Channels.UnderstoodHeaders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets all the message headers that must be understood, according to SOAP 1.1/1.2 specification.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.UnderstoodHeaders" /> that represents the message headers that must be understood.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the message receiver cannot interpret the message headers contained in this property, the message is not processed and an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteHeader">
@@ -882,9 +1017,9 @@
         <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
       </Parameters>
       <Docs>
-        <param name="headerIndex">To be added.</param>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="headerIndex">The zero-based index of the header to be serialized.</param>
+        <param name="writer">An <see cref="T:System.Xml.XmlDictionaryWriter" /> that is used to serialize the header.</param>
+        <summary>Serializes the header from the specified location using the specified XML writer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -906,9 +1041,9 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="headerIndex">To be added.</param>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="headerIndex">The zero-based index of the header to be serialized.</param>
+        <param name="writer">An <see cref="T:System.Xml.XmlWriter" /> that is used to serialize the header.</param>
+        <summary>Serializes the header from the specified location using the specified XML writer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -930,9 +1065,9 @@
         <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
       </Parameters>
       <Docs>
-        <param name="headerIndex">To be added.</param>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="headerIndex">The zero-based index of the header to be serialized.</param>
+        <param name="writer">An <see cref="T:System.Xml.XmlDictionaryWriter" /> that is used to serialize the header contents.</param>
+        <summary>Serializes the specified header content using the specified XML writer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -954,9 +1089,9 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="headerIndex">To be added.</param>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="headerIndex">The zero-based index of the header to be serialized.</param>
+        <param name="writer">An <see cref="T:System.Xml.XmlWriter" /> that is used to serialize the header contents.</param>
+        <summary>Serializes the specified header content using the specified XML writer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -978,9 +1113,9 @@
         <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
       </Parameters>
       <Docs>
-        <param name="headerIndex">To be added.</param>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="headerIndex">The zero-based index of the header to be serialized.</param>
+        <param name="writer">An <see cref="T:System.Xml.XmlDictionaryWriter" /> that is used to serialize the start header.</param>
+        <summary>Serializes the start header using the specified XML writer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1002,9 +1137,9 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="headerIndex">To be added.</param>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="headerIndex">The zero-based index of the header to be serialized.</param>
+        <param name="writer">An <see cref="T:System.Xml.XmlWriter" /> that is used to serialize the start header.</param>
+        <summary>Serializes the start header using the specified XML writer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

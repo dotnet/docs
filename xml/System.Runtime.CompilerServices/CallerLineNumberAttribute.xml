@@ -28,8 +28,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Allows you to obtain the line number in the source file at which the method is called.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You apply the `CallerLineNumber` attribute to an optional parameter that has a default value. You must specify an explicit default value for the optional parameter. You can't apply this attribute to parameters that aren't specified as optional.  
+  
+ For more information, see [Caller Information](../Topic/Caller%20Information%20\(C%23%20and%20Visual%20Basic\).md).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the `CallerLineNumber` attribute. On each call to the `TraceMessage` method, the caller information is substituted as an argument to the optional parameter.  
+  
+ [!code-csharp[csProgGuideAttributes#51](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideAttributes/CS/callerinfo.cs#51)]
+ [!code-vb[csProgGuideAttributes#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csProgGuideAttributes/vb/callerinfo.vb#51)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,7 +72,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.CallerLineNumberAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

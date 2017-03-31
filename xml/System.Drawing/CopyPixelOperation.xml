@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines how the source color in a copy pixel operation is combined with the destination color to result in a final color.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.CopyPixelOperation> enumeration is used by the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method of the <xref:System.Drawing.Graphics> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Blackness">
@@ -32,7 +39,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The destination area is filled by using the color associated with index 0 in the physical palette. (This color is black for the default physical palette.)</summary>
       </Docs>
     </Member>
     <Member MemberName="CaptureBlt">
@@ -48,7 +55,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Windows that are layered on top of your window are included in the resulting image. By default, the image contains only your window. Note that this generally cannot be used for printing device contexts.</summary>
       </Docs>
     </Member>
     <Member MemberName="DestinationInvert">
@@ -64,7 +71,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The destination area is inverted.</summary>
       </Docs>
     </Member>
     <Member MemberName="MergeCopy">
@@ -80,7 +87,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The colors of the source area are merged with the colors of the selected brush of the destination device context using the Boolean <see langword="AND" /> operator.</summary>
       </Docs>
     </Member>
     <Member MemberName="MergePaint">
@@ -96,7 +103,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The colors of the inverted source area are merged with the colors of the destination area by using the Boolean <see langword="OR" /> operator.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoMirrorBitmap">
@@ -112,7 +119,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The bitmap is not mirrored.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSourceCopy">
@@ -128,7 +135,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The inverted source area is copied to the destination.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSourceErase">
@@ -144,7 +151,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The source and destination colors are combined using the Boolean <see langword="OR" /> operator, and then resultant color is then inverted.</summary>
       </Docs>
     </Member>
     <Member MemberName="PatCopy">
@@ -160,7 +167,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The brush currently selected in the destination device context is copied to the destination bitmap.</summary>
       </Docs>
     </Member>
     <Member MemberName="PatInvert">
@@ -176,7 +183,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The colors of the brush currently selected in the destination device context are combined with the colors of the destination are using the Boolean <see langword="XOR" /> operator.</summary>
       </Docs>
     </Member>
     <Member MemberName="PatPaint">
@@ -192,7 +199,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The colors of the brush currently selected in the destination device context are combined with the colors of the inverted source area using the Boolean <see langword="OR" /> operator. The result of this operation is combined with the colors of the destination area using the Boolean <see langword="OR" /> operator.</summary>
       </Docs>
     </Member>
     <Member MemberName="SourceAnd">
@@ -208,7 +215,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The colors of the source and destination areas are combined using the Boolean <see langword="AND" /> operator.</summary>
       </Docs>
     </Member>
     <Member MemberName="SourceCopy">
@@ -224,7 +231,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The source area is copied directly to the destination area.</summary>
       </Docs>
     </Member>
     <Member MemberName="SourceErase">
@@ -240,7 +247,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The inverted colors of the destination area are combined with the colors of the source area using the Boolean <see langword="AND" /> operator.</summary>
       </Docs>
     </Member>
     <Member MemberName="SourceInvert">
@@ -256,7 +263,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The colors of the source and destination areas are combined using the Boolean <see langword="XOR" /> operator.</summary>
       </Docs>
     </Member>
     <Member MemberName="SourcePaint">
@@ -272,7 +279,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The colors of the source and destination areas are combined using the Boolean <see langword="OR" /> operator.</summary>
       </Docs>
     </Member>
     <Member MemberName="Whiteness">
@@ -288,7 +295,7 @@
         <ReturnType>System.Drawing.CopyPixelOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The destination area is filled by using the color associated with index 1 in the physical palette. (This color is white for the default physical palette.)</summary>
       </Docs>
     </Member>
   </Members>

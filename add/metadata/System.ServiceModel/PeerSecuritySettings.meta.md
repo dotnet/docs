@@ -1,29 +1,29 @@
 ---
 uid: System.ServiceModel.PeerSecuritySettings
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerSecuritySettings.ShouldSerializeMode
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerSecuritySettings.Transport
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerSecuritySettings.ShouldSerializeTransport
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerSecuritySettings.Mode
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.PeerSecuritySettings.#ctor
-internalonly: False
+manager: "ghogen"
 ---

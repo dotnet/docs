@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Channels.IAnonymousUriPrefixMatcher
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IAnonymousUriPrefixMatcher.Register(System.Uri)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

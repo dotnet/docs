@@ -1,84 +1,119 @@
 ---
 uid: System.Windows.Annotations.Annotation
-internalonly: False
----
-
----
-uid: System.Windows.Annotations.Annotation.Id
-internalonly: False
----
-
----
-uid: System.Windows.Annotations.Annotation.WriteXml(System.Xml.XmlWriter)
-internalonly: False
----
-
----
-uid: System.Windows.Annotations.Annotation.#ctor(System.Xml.XmlQualifiedName)
-internalonly: False
----
-
----
-uid: System.Windows.Annotations.Annotation.Anchors
-internalonly: False
----
-
----
-uid: System.Windows.Annotations.Annotation.LastModificationTime
-internalonly: False
----
-
----
-uid: System.Windows.Annotations.Annotation.ReadXml(System.Xml.XmlReader)
-internalonly: False
----
-
----
-uid: System.Windows.Annotations.Annotation.GetSchema
-internalonly: False
----
-
----
-uid: System.Windows.Annotations.Annotation.CreationTime
-internalonly: False
----
-
----
-uid: System.Windows.Annotations.Annotation.Authors
-internalonly: False
----
-
----
-uid: System.Windows.Annotations.Annotation.AnchorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Annotation.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Annotations.Annotation.Id
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Annotations.Annotation.WriteXml(System.Xml.XmlWriter)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Annotations.Annotation.#ctor(System.Xml.XmlQualifiedName)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Annotations.Annotation.Anchors
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Annotations.Annotation.LastModificationTime
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Annotations.Annotation.ReadXml(System.Xml.XmlReader)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Annotations.Annotation.GetSchema
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Annotations.Annotation.CreationTime
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Annotations.Annotation.Authors
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Annotations.Annotation.AnchorChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Annotations.Annotation.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Annotation.CargoChanged
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Annotations.Annotation.Cargos
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Annotations.Annotation.AuthorChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Annotation.AnnotationType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Annotations.Annotation.#ctor(System.Xml.XmlQualifiedName,System.Guid,System.DateTime,System.DateTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

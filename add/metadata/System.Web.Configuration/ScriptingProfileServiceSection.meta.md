@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Configuration.ScriptingProfileServiceSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingProfileServiceSection.WriteAccessProperties
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingProfileServiceSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingProfileServiceSection.ReadAccessProperties
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.ScriptingProfileServiceSection.Enabled
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

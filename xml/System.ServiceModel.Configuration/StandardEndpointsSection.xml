@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a configuration section of standard endpoints. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.StandardEndpointsSection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Collections.Generic.List&lt;System.ServiceModel.Configuration.EndpointCollectionElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a collection of standard endpoints.</summary>
+        <value>A generic list.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,10 +64,12 @@
         <Parameter Name="config" Type="System.Configuration.Configuration" />
       </Parameters>
       <Docs>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="config">An object that contains one or more XML sections of configuration settings.</param>
+        <summary>Returns the standard endpoints section from the specified configuration file.</summary>
+        <returns>A standard endpoints configuration section.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="config" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -86,9 +88,9 @@
         <Parameter Name="endpoint" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="endpoint">A name of an endpoint.</param>
+        <summary>Returns an endpoint element collection that contains the specified endpoint.</summary>
+        <value>An endpoint collection element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +112,8 @@
         <ReturnType>System.ServiceModel.Configuration.ServiceMetadataEndpointCollectionElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a collection element that contains metadata exchange endpoints.</summary>
+        <value>A metadata exchange collection element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

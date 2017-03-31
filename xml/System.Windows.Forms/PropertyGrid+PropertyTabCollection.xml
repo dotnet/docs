@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains a collection of <see cref="T:System.Windows.Forms.Design.PropertyTab" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,9 +35,16 @@
         <Parameter Name="propertyTabType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="propertyTabType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="propertyTabType">The **Property** tab type to add to the grid.</param>
+        <summary>Adds a **Property** tab of the specified type to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The **Property** tab is added to the collection with a <xref:System.ComponentModel.PropertyTabScope> value of `Global`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddTabType">
@@ -57,9 +64,9 @@
         <Parameter Name="tabScope" Type="System.ComponentModel.PropertyTabScope" />
       </Parameters>
       <Docs>
-        <param name="propertyTabType">To be added.</param>
-        <param name="tabScope">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyTabType">The **Property** tab type to add to the grid.</param>
+        <param name="tabScope">One of the <see cref="T:System.ComponentModel.PropertyTabScope" /> values.</param>
+        <summary>Adds a **Property** tab of the specified type and with the specified scope to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,9 +86,17 @@
         <Parameter Name="tabScope" Type="System.ComponentModel.PropertyTabScope" />
       </Parameters>
       <Docs>
-        <param name="tabScope">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="tabScope">The scope of the tabs to clear.</param>
+        <summary>Removes all the **Property** tabs of the specified scope from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method clears the tabs of the specified scope or smaller. The `tabScope` parameter must be the `Component` or `Document` value of <xref:System.ComponentModel.PropertyTabScope>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The assigned value of the <paramref name="tabScope" /> parameter is less than the <see langword="Document" /> value of <see cref="T:System.ComponentModel.PropertyTabScope" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -97,8 +112,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of **Property** tabs in the collection.</summary>
+        <value>The number of **Property** tabs in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,9 +131,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumeration of all the **Property** tabs in the collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Windows.Forms.PropertyGrid.PropertyTabCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates an enumerator that contains a snapshot of the collection. You can change the collection by changing the enumerator; however, multiple enumerators can simultaneously access the same collection. Changing the collection, either directly or through another enumerator, can cause <xref:System.Collections.IEnumerator.Current%2A> or <xref:System.Collections.IEnumerator.MoveNext%2A> to throw an exception.  
+  
+ Two enumerators created from the same collection at the same time can contain different snapshots. Removing objects from the enumerator also removes them from the collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -137,9 +161,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the <see cref="T:System.Windows.Forms.Design.PropertyTab" /> to return.</param>
+        <summary>Gets the <see cref="T:System.Windows.Forms.Design.PropertyTab" /> at the specified index.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Design.PropertyTab" /> at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,9 +183,16 @@
         <Parameter Name="propertyTabType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="propertyTabType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="propertyTabType">The tab type to remove from the collection.</param>
+        <summary>Removes the specified tab type from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Removing the tab from the collection removes it from the property grid.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -181,10 +212,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dest">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dest">A zero-based array that receives the copied items from the collection.</param>
+        <param name="index">The first position in the specified array to receive copied contents.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid.PropertyTabCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -200,9 +238,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
+        <value>
+          <see langword="true" /> to indicate the list is synchronized; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid.PropertyTabCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -218,9 +264,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.SyncRoot" />.</summary>
+        <value>An object that can be used to synchronize access to the underlying list.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.PropertyGrid.PropertyTabCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

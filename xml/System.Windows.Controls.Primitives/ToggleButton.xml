@@ -16,8 +16,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Base class for controls that can switch states, such as <see cref="T:System.Windows.Controls.CheckBox" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Primitives.ToggleButton> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
+  
+ The <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property specifies the state of the <xref:System.Windows.Controls.Primitives.ToggleButton>. The <xref:System.Windows.Controls.Primitives.ToggleButton.IsThreeState%2A> property specifies whether the <xref:System.Windows.Controls.Primitives.ToggleButton> has two or three states.  
+  
+## Customizing the ToggleButton Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.Primitives.ToggleButton> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Primitives.ToggleButton>, see [ToggleButton Syles and Templates](../Topic/ToggleButton%20Syles%20and%20Templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in Button control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +48,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +70,33 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> is checked.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_Checked"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ToggleButton>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.RoutedEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example changes subscribes to the <xref:System.Windows.Controls.Primitives.ToggleButton.Checked> and <xref:System.Windows.Controls.Primitives.ToggleButton.UncheckedEvent> events to change the <xref:System.Windows.Controls.TextBlock.FontStyle%2A> of the <xref:System.Windows.Controls.TextBlock>, `textBlock1`.  
+  
+ [!code-xml[CheckBox_Snippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/CheckBox_Snippets/CSharp/Window1.xaml#2)]  
+  
+ [!code-csharp[CheckBox_Snippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/CheckBox_Snippets/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[CheckBox_Snippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CheckBox_Snippets/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckedEvent">
@@ -70,7 +112,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.Primitives.ToggleButton.Checked" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,8 +134,23 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the state of a <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> is neither on nor off.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_Indeterminate"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ToggleButton>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.RoutedEventHandler>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndeterminateEvent">
@@ -109,7 +166,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.Primitives.ToggleButton.Indeterminate" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,9 +194,54 @@
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether the <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> is checked.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> is checked; false if the <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> is unchecked; otherwise <see langword="null" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A control that inherits from <xref:System.Windows.Controls.Primitives.ToggleButton> determines its behavior when this property is `null`.  
+  
+## CheckBox  
+ When the <xref:System.Windows.Controls.Primitives.ToggleButton.IsThreeState%2A> property is set to true, a user can click a <xref:System.Windows.Controls.CheckBox> to pick three possible states. The following table describes the three states of a <xref:System.Windows.Controls.CheckBox>.  
+  
+|State of the <xref:System.Windows.Controls.CheckBox>|Value of <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A>|  
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
+|Checked|`true`|  
+|Unchecked|`false`|  
+|Indeterminate|`null`|  
+  
+ If <xref:System.Windows.Controls.Primitives.ToggleButton.IsThreeState%2A> is false, you can still programmatically set this property to `null` to put the <xref:System.Windows.Controls.CheckBox> in an indeterminate state, but the user cannot set the <xref:System.Windows.Controls.CheckBox> to the indeterminate state through the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+  
+## RadioButton  
+ If you set this property to `null` on a <xref:System.Windows.Controls.RadioButton>, the <xref:System.Windows.Controls.RadioButton> is unchecked.  
+  
+<a name="xamlAttributeUsage_IsChecked"></a>   
+## XAML Attribute Usage  
+ <*object* `IsChecked`="<xref:System.Boolean>"/>  
+  
+ \- or -  
+  
+ <*object* `IsChecked`="{[x:Null Markup Extension](../Topic/x:Null%20Markup%20Extension.md)}"/>  
+  
+<a name="dependencyPropertyInfo_IsChecked"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ToggleButton.IsCheckedProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.CheckBox> set to an indeterminate state.  
+  
+ [!code-xml[CheckBox_Snippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/CheckBox_Snippets/CSharp/Window1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCheckedProperty">
@@ -155,7 +257,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.ToggleButton.IsChecked" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,9 +282,25 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Determines whether the control supports two or three states.</summary>
+        <value>
+          <see langword="true" /> if the control supports three states; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property can be set to `null` as a third state when <xref:System.Windows.Controls.Primitives.ToggleButton.IsThreeState%2A> is `true`.  
+  
+<a name="dependencyPropertyInfo_IsThreeState"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ToggleButton.IsThreeStateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsThreeStateProperty">
@@ -198,7 +316,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.ToggleButton.IsThreeState" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +336,8 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for the <see cref="E:System.Windows.Controls.Primitives.ToggleButton.Checked" /> event.</param>
+        <summary>Called when a <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> raises a <see cref="E:System.Windows.Controls.Primitives.ToggleButton.Checked" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,7 +355,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when a control is clicked by the mouse or the keyboard.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,8 +373,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.ToggleButtonAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] infrastructure.</summary>
+        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,8 +394,8 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for the <see cref="E:System.Windows.Controls.Primitives.ToggleButton.Indeterminate" /> event.</param>
+        <summary>Called when a <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> raises an <see cref="E:System.Windows.Controls.Primitives.ToggleButton.Indeterminate" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,8 +413,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Called by the <see cref="M:System.Windows.Controls.Primitives.ToggleButton.OnClick" /> method to implement toggle behavior.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method toggles the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnUnchecked">
@@ -315,8 +440,8 @@
         <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">The event data for the <see cref="E:System.Windows.Controls.Primitives.ToggleButton.Unchecked" /> event.</param>
+        <summary>Called when a <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> raises an <see cref="E:System.Windows.Controls.Primitives.ToggleButton.Unchecked" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,9 +459,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the string representation of a <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> object.</summary>
+        <returns>String representation of a <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Primitives.ToggleButton.ToString%2A> method returns a string that contains the <xref:System.Windows.Controls.ContentControl.Content%2A> and the value of the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Unchecked">
@@ -357,8 +489,33 @@
         <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a <see cref="T:System.Windows.Controls.Primitives.ToggleButton" /> is unchecked.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_Unchecked"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ToggleButton>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.RoutedEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example changes subscribes to the <xref:System.Windows.Controls.Primitives.ToggleButton.Checked> and <xref:System.Windows.Controls.Primitives.ToggleButton.UncheckedEvent> events to change the <xref:System.Windows.Controls.TextBlock.FontStyle%2A> of the <xref:System.Windows.Controls.TextBlock>, `textBlock1`.  
+  
+ [!code-xml[CheckBox_Snippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/CheckBox_Snippets/CSharp/Window1.xaml#2)]  
+  
+ [!code-csharp[CheckBox_Snippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/CheckBox_Snippets/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[CheckBox_Snippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CheckBox_Snippets/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UncheckedEvent">
@@ -374,7 +531,7 @@
         <ReturnType>System.Windows.RoutedEvent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.Primitives.ToggleButton.Unchecked" /> routed event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -20,8 +20,25 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of designers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection object can store references to a set of designers.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.ComponentModel.Design.DesignerCollection> initialized with a specified array of <xref:System.ComponentModel.Design.IDesignerHost> objects.  
+  
+ [!code-cpp[DesignerCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerCollectionExample/CPP/examplecomponent.cpp#1)]
+ [!code-csharp[DesignerCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerCollectionExample/CS/examplecomponent.cs#1)]
+ [!code-vb[DesignerCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerCollectionExample/VB/examplecomponent.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,9 +59,10 @@
         <Parameter Name="designers" Type="System.Collections.IList" />
       </Parameters>
       <Docs>
-        <param name="designers">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="designers">A list that contains the collection of designers to add.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerCollection" /> class that contains the specified set of designers.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,9 +83,17 @@
         <Parameter Name="designers" Type="System.ComponentModel.Design.IDesignerHost[]" />
       </Parameters>
       <Docs>
-        <param name="designers">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="designers">An array of <see cref="T:System.ComponentModel.Design.IDesignerHost" /> objects to store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerCollection" /> class that contains the specified designers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a new designer collection from an array of designers. The collection does not clone the array.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -88,9 +114,21 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of designers in the collection.</summary>
+        <value>The number of designers in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets the number of elements in the collection.  
+  
+ [!code-cpp[DesignerCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerCollectionExample/CPP/examplecomponent.cpp#2)]
+ [!code-csharp[DesignerCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerCollectionExample/CS/examplecomponent.cs#2)]
+ [!code-vb[DesignerCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerCollectionExample/VB/examplecomponent.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -112,9 +150,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a new enumerator for this collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that enumerates the collection.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -138,10 +177,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the designer to return.</param>
+        <summary>Gets the designer at the specified index.</summary>
+        <value>The designer at the specified index.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -166,9 +206,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from collection. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the collection to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,8 +230,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements contained in the collection.</summary>
+        <value>The number of elements contained in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,8 +253,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,8 +277,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,9 +301,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a new enumerator for this collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that enumerates the collection.</returns>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
       </Docs>
     </Member>
   </Members>

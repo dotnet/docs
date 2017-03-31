@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Media.AdornerHitTestResult
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.AdornerHitTestResult.Adorner
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies a value indicating whether the text appears from right to left, such as when using Hebrew or Arabic fonts.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.RightToLeft</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The direction the text read is inherited from the parent control.</summary>
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -51,7 +51,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.RightToLeft</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text reads from left to right. This is the default.</summary>
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -67,7 +67,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.RightToLeft</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text reads from right to left.</summary>
       </Docs>
     </Member>
   </Members>

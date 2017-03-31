@@ -1,4 +1,4 @@
 ---
 uid: System.ComponentModel.Design.Data
-internalonly: False
+manager: "martinek"
 ---

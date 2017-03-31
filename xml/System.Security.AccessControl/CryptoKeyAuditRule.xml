@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an audit rule for a cryptographic key. An audit rule represents a combination of a user's identity and an access mask. An audit rule also contains information about the how the rule is inherited by child objects, how that inheritance is propagated, and for what conditions it is audited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,10 @@
         <Parameter Name="flags" Type="System.Security.AccessControl.AuditFlags" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <param name="cryptoKeyRights">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="identity">The identity to which the audit rule applies. This parameter must be an object that can be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" />.</param>
+        <param name="cryptoKeyRights">The cryptographic key operation for which this audit rule generates audits.</param>
+        <param name="flags">The conditions that generate audits.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.CryptoKeyAuditRule" /> class using the specified values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,10 +55,10 @@
         <Parameter Name="flags" Type="System.Security.AccessControl.AuditFlags" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <param name="cryptoKeyRights">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="identity">The identity to which the audit rule applies.</param>
+        <param name="cryptoKeyRights">The cryptographic key operation for which this audit rule generates audits.</param>
+        <param name="flags">The conditions that generate audits.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.CryptoKeyAuditRule" /> class using the specified values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +76,8 @@
         <ReturnType>System.Security.AccessControl.CryptoKeyRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the cryptographic key operation for which this audit rule generates audits.</summary>
+        <value>The cryptographic key operation for which this audit rule generates audits.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

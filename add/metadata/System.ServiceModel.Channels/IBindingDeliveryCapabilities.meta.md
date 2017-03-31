@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Channels.IBindingDeliveryCapabilities
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IBindingDeliveryCapabilities.AssuresOrderedDelivery
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IBindingDeliveryCapabilities.QueuedDelivery
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

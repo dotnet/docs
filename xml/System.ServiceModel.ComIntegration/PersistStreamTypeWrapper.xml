@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Persists objects that implement <see langword="IPersistStream" /> (such as ADO Recordset) to a byte stream.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +52,8 @@
         <ReturnType>System.Runtime.Serialization.ExtensionDataObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Runtime.Serialization.ExtensionDataObject" /> associated with the <see cref="T:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper" />.</summary>
+        <value>An<see cref="T:System.Runtime.Serialization.ExtensionDataObject" />instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,9 +81,9 @@
         <Parameter Name="obj" Type="T&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The object type.</typeparam>
+        <param name="obj">An object into which the deserialized object will be placed.</param>
+        <summary>Uses the <see langword="IPersistStream" /> interface of the object to deserialize an object from a byte stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,10 +111,17 @@
         <Parameter Name="obj" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The object type.</typeparam>
+        <param name="obj">The object to be persisted to the byte stream.</param>
+        <summary>Uses the <see langword="IPersistStream" /> interface of the object to serialize that object to a byte stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object to be persisted to the byte stream must be a COM object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

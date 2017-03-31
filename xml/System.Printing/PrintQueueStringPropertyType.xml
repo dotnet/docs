@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the intended meaning of a <see cref="T:System.Printing.PrintQueueStringProperty" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Printing.PrintQueueStringPropertyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A comment about the print queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -43,7 +43,7 @@
         <ReturnType>System.Printing.PrintQueueStringPropertyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The location of the physical printer.</summary>
       </Docs>
     </Member>
     <Member MemberName="ShareName">
@@ -59,7 +59,7 @@
         <ReturnType>System.Printing.PrintQueueStringPropertyType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The share name of the print queue.</summary>
       </Docs>
     </Member>
   </Members>

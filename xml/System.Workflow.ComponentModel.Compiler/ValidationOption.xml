@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the validation options in the <see cref="P:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute.ValidationOption" /> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -32,7 +41,7 @@
         <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No validation performed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Optional">
@@ -48,7 +57,7 @@
         <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Validation is optional. If value is present, it will be validated.</summary>
       </Docs>
     </Member>
     <Member MemberName="Required">
@@ -64,7 +73,7 @@
         <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Validation must be performed. Value must be present and will be validated.</summary>
       </Docs>
     </Member>
   </Members>

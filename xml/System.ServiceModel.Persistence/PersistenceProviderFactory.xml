@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The abstract class from which all durable service persistence providers must inherit.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.PersistenceProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,9 @@
         <Parameter Name="id" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="id">The unique identifier of the persistence provider being created.</param>
+        <summary>When implemented in a derived class, initializes a new <see cref="T:System.ServiceModel.Persistence.PersistenceProvider" /> instance.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Persistence.PersistenceProvider" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

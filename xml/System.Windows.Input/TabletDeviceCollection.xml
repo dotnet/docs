@@ -15,8 +15,18 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains the <see cref="T:System.Windows.Input.TabletDevice" /> objects that represent the digitizer devices of a tablet device.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection> class.  
+  
+ [!code-csharp[HwCaps#15](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#15)]
+ [!code-vb[HwCaps#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#15)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.TabletDeviceCollection" /> class</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,10 +61,23 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The one-dimensional array that is the destination of elements copied from the collection. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in the array parameter where copying begins.</param>
+        <summary>Copies all elements in the current collection to the specified one-dimensional array, starting at the specified destination array index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.CopyTo%2A> method.  
+  
+ [!code-csharp[HwCaps#18](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#18)]
+ [!code-vb[HwCaps#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="index" /> + collection count is greater than or equal to <paramref name="array.length" />.</exception>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">If <paramref name="index" /> is less than 0 or <paramref name="index" /> is greater than or equal to <paramref name="array.length" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -70,9 +93,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of <see cref="T:System.Windows.Input.TabletDevice" /> objects in the collection.</summary>
+        <value>The number of <see cref="T:System.Windows.Input.TabletDevice" /> objects in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.Count%2A> property.  
+  
+ [!code-csharp[HwCaps#16](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#16)]
+ [!code-vb[HwCaps#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#16)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -88,9 +121,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether access to the collection is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the collection is synchronized (thread safe); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.IsSynchronized%2A> property.  
+  
+ [!code-csharp[HwCaps#17](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#17)]
+ [!code-vb[HwCaps#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#17)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -109,10 +153,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the <see cref="T:System.Windows.Input.TabletDevice" /> that is retrieved from the collection.</param>
+        <summary>Gets the <see cref="T:System.Windows.Input.TabletDevice" /> object at the specified index within the collection.</summary>
+        <value>The <see cref="T:System.Windows.Input.TabletDevice" /> object at the specified index within the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.Item%2A> property.  
+  
+ [!code-csharp[HwCaps#19](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#19)]
+ [!code-vb[HwCaps#19](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">If <paramref name="index" /> is less than 0 or <paramref name="index" /> is greater than or equal to the number of <see cref="T:System.Windows.Input.TabletDeviceCollection" /> objects in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -128,9 +183,19 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>An object that can be used to synchronize access to the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.TabletDeviceCollection.SyncRoot%2A> property.  
+  
+ [!code-csharp[HwCaps#17](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#17)]
+ [!code-vb[HwCaps#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#17)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -150,9 +215,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array.</param>
+        <param name="index">The index.</param>
+        <summary>This member supports the .NET Framework and is not intended to be used from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,7 +235,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member supports the .NET Framework and is not intended to be used from your code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

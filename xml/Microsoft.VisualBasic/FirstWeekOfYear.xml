@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the first week of the year to use when calling date-related functions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+  
+ Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstWeekOfYear` enumeration specifies the valid values for the `WeekOfYear` arguments, as well as the possible return values from the functions.  
+  
+ The `WeekOfYear` argument takes the `FirstWeekOfYear` enumeration members.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FirstFourDays">
@@ -27,7 +38,7 @@
         <ReturnType>Microsoft.VisualBasic.FirstWeekOfYear</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The first week that has at least four days in the new year. This member is equivalent to the Visual Basic constant <see langword="vbFirstFourDays" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="FirstFullWeek">
@@ -43,7 +54,7 @@
         <ReturnType>Microsoft.VisualBasic.FirstWeekOfYear</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The first full week of the year. This member is equivalent to the Visual Basic constant <see langword="vbFirstFullWeek" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Jan1">
@@ -59,7 +70,7 @@
         <ReturnType>Microsoft.VisualBasic.FirstWeekOfYear</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The week in which January 1 occurs (default). This member is equivalent to the Visual Basic constant <see langword="vbFirstJan1" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="System">
@@ -75,7 +86,7 @@
         <ReturnType>Microsoft.VisualBasic.FirstWeekOfYear</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The weekspecified in your system settings as the first week of the year. This member is equivalent to the Visual Basic constant <see langword="vbUseSystem" />.</summary>
       </Docs>
     </Member>
   </Members>

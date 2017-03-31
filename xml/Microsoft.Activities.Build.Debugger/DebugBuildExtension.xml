@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Build Extension for Workflow debugger support.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Activities.Build.Debugger.DebugBuildExtension" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,10 +51,11 @@
         <Parameter Name="buildContext" Type="Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext" />
       </Parameters>
       <Docs>
-        <param name="classData">To be added.</param>
-        <param name="buildContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="classData">Class data to add the checksum.</param>
+        <param name="buildContext">The build context</param>
+        <summary>Indicates whether the debug symbol with specified checksum updates.</summary>
+        <returns>
+          <see langword="True" /> if the debug symbol with specified checksum updates; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

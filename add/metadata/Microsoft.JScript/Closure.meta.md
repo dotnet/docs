@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.JScript.Closure
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Closure.ToString
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Closure.arguments
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Closure.#ctor(Microsoft.JScript.FunctionObject)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Closure.caller
-internalonly: False
+ms.author: "mikejo"
 ---

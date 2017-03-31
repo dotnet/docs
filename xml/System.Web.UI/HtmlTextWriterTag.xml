@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the HTML tags that can be passed to an <see cref="T:System.Web.UI.HtmlTextWriter" /> or <see cref="T:System.Web.UI.Html32TextWriter" /> object output stream.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration allows the output stream to write HTML mark up, along with HTML server controls, in response to a Web request.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.Web.UI.HtmlTextWriterTag> enumeration. The Img field is used during rendering of an <xref:System.Web.UI.HtmlTextWriter> named `writer`.  
+  
+ [!code-cpp[System.Web.UI.HtmlTextWriter#3](~/samples/snippets/cpp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CPP/htmltextwriter.cpp#3)]
+ [!code-csharp[System.Web.UI.HtmlTextWriter#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CS/htmltextwriter.cs#3)]
+ [!code-vb[System.Web.UI.HtmlTextWriter#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/VB/htmltextwriter.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="A">
@@ -27,7 +43,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="a" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Acronym">
@@ -43,7 +59,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="acronym" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Address">
@@ -59,7 +75,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="address" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Area">
@@ -75,7 +91,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="area" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="B">
@@ -91,7 +107,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="b" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Base">
@@ -107,7 +123,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="base" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Basefont">
@@ -123,7 +139,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="basefont" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bdo">
@@ -139,7 +155,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="bdo" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bgsound">
@@ -155,7 +171,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="bgsound" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Big">
@@ -171,7 +187,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="big" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Blockquote">
@@ -187,7 +203,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="blockquote" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Body">
@@ -203,7 +219,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="body" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Br">
@@ -219,7 +235,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="br" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Button">
@@ -235,7 +251,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="button" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -251,7 +267,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="caption" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Center">
@@ -267,7 +283,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="center" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cite">
@@ -283,7 +299,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="cite" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Code">
@@ -299,7 +315,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="code" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Col">
@@ -315,7 +331,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="col" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Colgroup">
@@ -331,7 +347,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="colgroup" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dd">
@@ -347,7 +363,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="dd" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Del">
@@ -363,7 +379,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="del" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dfn">
@@ -379,7 +395,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="dfn" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dir">
@@ -395,7 +411,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="dir" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Div">
@@ -411,7 +427,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="div" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dl">
@@ -427,7 +443,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="dl" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dt">
@@ -443,7 +459,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="dt" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Em">
@@ -459,7 +475,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="em" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Embed">
@@ -475,7 +491,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="embed" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fieldset">
@@ -491,7 +507,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="fieldset" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -507,7 +523,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="font" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Form">
@@ -523,7 +539,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="form" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -539,7 +555,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="frame" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Frameset">
@@ -555,7 +571,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="frameset" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="H1">
@@ -571,7 +587,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="H1" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="H2">
@@ -587,7 +603,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="H2" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="H3">
@@ -603,7 +619,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="H3" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="H4">
@@ -619,7 +635,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="H4" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="H5">
@@ -635,7 +651,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="H5" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="H6">
@@ -651,7 +667,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="H6" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Head">
@@ -667,7 +683,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="head" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hr">
@@ -683,7 +699,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="hr" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Html">
@@ -699,7 +715,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="html" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="I">
@@ -715,7 +731,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="i" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Iframe">
@@ -731,7 +747,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="iframe" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Img">
@@ -747,7 +763,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="img" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -763,7 +779,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="input" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ins">
@@ -779,7 +795,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="ins" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Isindex">
@@ -795,7 +811,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="isindex" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Kbd">
@@ -811,7 +827,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="kbd" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -827,7 +843,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="label" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Legend">
@@ -843,7 +859,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="legend" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Li">
@@ -859,7 +875,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="li" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Link">
@@ -875,7 +891,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="link" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Map">
@@ -891,7 +907,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="map" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Marquee">
@@ -907,7 +923,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="marquee" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Menu">
@@ -923,7 +939,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="menu" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Meta">
@@ -939,7 +955,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="meta" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Nobr">
@@ -955,7 +971,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="nobr" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Noframes">
@@ -971,7 +987,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="noframes" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Noscript">
@@ -987,7 +1003,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="noscript" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -1003,7 +1019,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="object" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ol">
@@ -1019,7 +1035,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="ol" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Option">
@@ -1035,7 +1051,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="option" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="P">
@@ -1051,7 +1067,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="p" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Param">
@@ -1067,7 +1083,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="param" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pre">
@@ -1083,7 +1099,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="pre" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Q">
@@ -1099,7 +1115,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="q" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rt">
@@ -1115,7 +1131,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DHTML <see langword="rt" /> element, which specifies text for the <see langword="ruby" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ruby">
@@ -1131,7 +1147,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The DHTML <see langword="ruby" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="S">
@@ -1147,7 +1163,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="s" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Samp">
@@ -1163,7 +1179,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="samp" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Script">
@@ -1179,7 +1195,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="script" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1195,7 +1211,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="select" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Small">
@@ -1211,7 +1227,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="small" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Span">
@@ -1227,7 +1243,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="span" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Strike">
@@ -1243,7 +1259,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="strike" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Strong">
@@ -1259,7 +1275,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="strong" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -1275,7 +1291,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="style" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sub">
@@ -1291,7 +1307,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="sub" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sup">
@@ -1307,7 +1323,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="sup" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -1323,7 +1339,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="table" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tbody">
@@ -1339,7 +1355,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="tbody" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Td">
@@ -1355,7 +1371,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="td" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Textarea">
@@ -1371,7 +1387,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="textarea" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tfoot">
@@ -1387,7 +1403,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="tfoot" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Th">
@@ -1403,7 +1419,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="th" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Thead">
@@ -1419,7 +1435,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="thead" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1435,7 +1451,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="title" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tr">
@@ -1451,7 +1467,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="tr" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tt">
@@ -1467,7 +1483,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="tt" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="U">
@@ -1483,7 +1499,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="u" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ul">
@@ -1499,7 +1515,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="ul" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -1515,7 +1531,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The string passed as an HTML tag is not recognized.</summary>
       </Docs>
     </Member>
     <Member MemberName="Var">
@@ -1531,7 +1547,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="var" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wbr">
@@ -1547,7 +1563,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="wbr" /> element.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xml">
@@ -1563,7 +1579,7 @@
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The HTML <see langword="xml" /> element.</summary>
       </Docs>
     </Member>
   </Members>

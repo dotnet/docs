@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether to allow or exclude database objects that match the pattern specified in the <see cref="T:System.Data.Entity.Design.EntityStoreSchemaFilterEntry" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Entity.Design.EntityStoreSchemaFilterEffect> enumeration is used with the <xref:System.Data.Entity.Design.EntityStoreSchemaFilterEntry> class to allow or exclude particular database objects during generation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Allow">
@@ -27,7 +34,7 @@
         <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterEffect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allow the entries that match the specified pattern.</summary>
       </Docs>
     </Member>
     <Member MemberName="Exclude">
@@ -43,7 +50,7 @@
         <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterEffect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Exclude the entries that match the specified pattern.</summary>
       </Docs>
     </Member>
   </Members>

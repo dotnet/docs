@@ -1,19 +1,23 @@
 ---
 uid: System.Runtime.Caching.FileChangeMonitor
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.FileChangeMonitor.FilePaths
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.FileChangeMonitor.LastModified
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.FileChangeMonitor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---

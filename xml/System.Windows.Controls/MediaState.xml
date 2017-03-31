@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the states that can be applied to a <see cref="T:System.Windows.Controls.MediaElement" /> for the <see cref="P:System.Windows.Controls.MediaElement.LoadedBehavior" /> and <see cref="P:System.Windows.Controls.MediaElement.UnloadedBehavior" /> properties.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Controls.MediaState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The state used to close the media. All media resources are released (including video memory).</summary>
       </Docs>
     </Member>
     <Member MemberName="Manual">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Controls.MediaState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The state used to control a <see cref="T:System.Windows.Controls.MediaElement" /> manually. Interactive methods like <see cref="M:System.Windows.Controls.MediaElement.Play" /> and <see cref="M:System.Windows.Controls.MediaElement.Pause" /> can be used. Media will preroll but not play when the <see cref="T:System.Windows.Controls.MediaElement" /> is assigned valid media source.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pause">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Controls.MediaState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The state used to pause the media. Media will preroll but remains paused when the <see cref="T:System.Windows.Controls.MediaElement" /> is assigned valid media source.</summary>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Controls.MediaState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The state used to play the media. . Media will preroll automatically being playback when the <see cref="T:System.Windows.Controls.MediaElement" /> is assigned valid media source.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -91,7 +91,7 @@
         <ReturnType>System.Windows.Controls.MediaState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The state used to stop the media. Media will preroll but not play when the <see cref="T:System.Windows.Controls.MediaElement" /> is assigned valid media source. Media resources are not released.</summary>
       </Docs>
     </Member>
   </Members>

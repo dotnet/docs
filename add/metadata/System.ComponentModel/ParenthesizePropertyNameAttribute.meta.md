@@ -1,39 +1,62 @@
 ---
 uid: System.ComponentModel.ParenthesizePropertyNameAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ParenthesizePropertyNameAttribute.NeedParenthesis
-internalonly: False
----
-
----
-uid: System.ComponentModel.ParenthesizePropertyNameAttribute.GetHashCode
-internalonly: False
----
-
----
-uid: System.ComponentModel.ParenthesizePropertyNameAttribute.IsDefaultAttribute
-internalonly: False
----
-
----
-uid: System.ComponentModel.ParenthesizePropertyNameAttribute.#ctor(System.Boolean)
-internalonly: False
----
-
----
-uid: System.ComponentModel.ParenthesizePropertyNameAttribute.Equals(System.Object)
-internalonly: False
----
-
----
-uid: System.ComponentModel.ParenthesizePropertyNameAttribute.Default
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.ParenthesizePropertyNameAttribute.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.ParenthesizePropertyNameAttribute.GetHashCode
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.ParenthesizePropertyNameAttribute.IsDefaultAttribute
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.ParenthesizePropertyNameAttribute.#ctor(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.ParenthesizePropertyNameAttribute.Equals(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.ParenthesizePropertyNameAttribute.Default
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.ParenthesizePropertyNameAttribute.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

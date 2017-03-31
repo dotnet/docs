@@ -1,9 +1,11 @@
 ---
 uid: System.Web.Hosting.IAppDomainFactory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.IAppDomainFactory.Create(System.String,System.String,System.String,System.String,System.String,System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

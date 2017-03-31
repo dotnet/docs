@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Throws an exception. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The exception to throw.</param>
+        <summary>Returns the specified object as an exception, converting if it has to.</summary>
+        <returns>An exception that represents <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

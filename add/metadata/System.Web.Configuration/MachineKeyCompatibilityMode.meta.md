@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Configuration.MachineKeyCompatibilityMode
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

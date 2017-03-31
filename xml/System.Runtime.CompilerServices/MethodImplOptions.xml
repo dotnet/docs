@@ -30,8 +30,20 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the details of how a method is implemented.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:System.Runtime.CompilerServices.MethodImplAttribute> attribute.  
+  
+ You can specify multiple <xref:System.Runtime.CompilerServices.MethodImplOptions> values by using the bitwise OR operator.  
+  
+> [!NOTE]
+>  Locking on the instance or on the type, as with the Synchronized flag, is not recommended for public types, because code other than your own can take locks on public types and instances. This might cause deadlocks or other synchronization problems.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AggressiveInlining">
@@ -64,7 +76,7 @@
         <ReturnType>System.Runtime.CompilerServices.MethodImplOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The method should be inlined if possible.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForwardRef">
@@ -85,7 +97,7 @@
         <ReturnType>System.Runtime.CompilerServices.MethodImplOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The method is declared, but its implementation is provided elsewhere.</summary>
       </Docs>
     </Member>
     <Member MemberName="InternalCall">
@@ -106,7 +118,7 @@
         <ReturnType>System.Runtime.CompilerServices.MethodImplOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The call is internal, that is, it calls a method that is implemented within the common language runtime.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoInlining">
@@ -134,7 +146,7 @@
         <ReturnType>System.Runtime.CompilerServices.MethodImplOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The method cannot be inlined. Inlining is an optimization by which a method call is replaced with the method body.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoOptimization">
@@ -162,7 +174,7 @@
         <ReturnType>System.Runtime.CompilerServices.MethodImplOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The method is not optimized by the just-in-time (JIT) compiler or by native code generation (see [Ngen.exe](../Topic/Ngen.exe%20\(Native%20Image%20Generator\).md)) when debugging possible code generation problems.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreserveSig">
@@ -190,7 +202,7 @@
         <ReturnType>System.Runtime.CompilerServices.MethodImplOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The method signature is exported exactly as declared.</summary>
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -211,7 +223,7 @@
         <ReturnType>System.Runtime.CompilerServices.MethodImplOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The method can be executed by only one thread at a time. Static methods lock on the type, whereas instance methods lock on the instance. Only one thread can execute in any of the instance functions, and only one thread can execute in any of a class's static functions.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unmanaged">
@@ -232,7 +244,7 @@
         <ReturnType>System.Runtime.CompilerServices.MethodImplOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The method is implemented in unmanaged code.</summary>
       </Docs>
     </Member>
   </Members>

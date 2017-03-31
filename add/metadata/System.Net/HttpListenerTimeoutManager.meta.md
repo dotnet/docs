@@ -1,34 +1,41 @@
 ---
 uid: System.Net.HttpListenerTimeoutManager
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerTimeoutManager.RequestQueue
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerTimeoutManager.MinSendBytesPerSecond
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerTimeoutManager.HeaderWait
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerTimeoutManager.EntityBody
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerTimeoutManager.DrainEntityBody
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerTimeoutManager.IdleConnection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

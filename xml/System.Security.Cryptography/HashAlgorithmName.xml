@@ -24,8 +24,23 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the name of a cryptographic hash algorithm.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.HashAlgorithmName> structure includes some static properties that return predefined hash algorithm names, as well as a <xref:System.Security.Cryptography.HashAlgorithmName.Name%2A> property that can represent a custom hash algorithm name as a strongly-typed string. Hash algorithm names are case-sensitive.  
+  
+ Asymmetric algorithms implemented using Microsoft's CNG (Cryptographic Next Generation) API interpret the underlying string value as a [CNG algorithm identifier](https://msdn.microsoft.com/library/windows/desktop/aa375534.aspx).  
+  
+ Asymmetric algorithms implemented using other technologies:  
+  
+-   Must recognize at least "MD5", "SHA1", "SHA256", "SHA384", and "SHA512".  
+  
+-   Should recognize additional CNG identifiers for any additional hash algorithms that they support.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,9 +65,16 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The custom hash algorithm name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> structure with a custom name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor performs no validation on `name`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -80,9 +102,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare with the current instance.</param>
+        <summary>Returns a value that indicates whether the current instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> object and its <see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> property is equal to that of the current instance. The comparison is ordinal and case-sensitive.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,9 +134,10 @@
         <Parameter Name="other" Type="System.Security.Cryptography.HashAlgorithmName" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The object to compare with the current instance.</param>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> property of <paramref name="other" /> is equal to that of the current instance. The comparison is ordinal and case-sensitive.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +164,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for the current instance.</summary>
+        <returns>The hash code for the current instance, or 0 if no <paramref name="name" /> value was supplied to the <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> constructor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +191,8 @@
         <ReturnType>System.Security.Cryptography.HashAlgorithmName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a hash algorithm name that represents "MD5".</summary>
+        <value>A hash algorithm name that represents "MD5".</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,8 +218,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the underlying string representation of the algorithm name.</summary>
+        <value>The string representation of the algorithm name, or <see langword="null" /> or <see cref="F:System.String.Empty" /> if no hash algorithm is available.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,11 +249,19 @@
         <Parameter Name="right" Type="System.Security.Cryptography.HashAlgorithmName" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first object to compare.</param>
+        <param name="right">The second object to compare.</param>
+        <summary>Determines whether two specified <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if both <paramref name="left" /> and <paramref name="right" /> have the same <see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> value; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.HashAlgorithmName.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Security.Cryptography.HashAlgorithmName> values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -258,11 +290,19 @@
         <Parameter Name="right" Type="System.Security.Cryptography.HashAlgorithmName" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first object to compare.</param>
+        <param name="right">The second object to compare.</param>
+        <summary>Determines whether two specified <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> objects are not equal.</summary>
+        <returns>
+          <see langword="true" /> if both <paramref name="left" /> and <paramref name="right" /> do not have the same <see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> value; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.HashAlgorithmName.op_Inequality%2A> method defines the operation of the inequality operator for <xref:System.Security.Cryptography.HashAlgorithmName> values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SHA1">
@@ -287,8 +327,8 @@
         <ReturnType>System.Security.Cryptography.HashAlgorithmName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a hash algorithm name that represents "SHA1".</summary>
+        <value>A hash algorithm name that represents "SHA1".</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,8 +354,8 @@
         <ReturnType>System.Security.Cryptography.HashAlgorithmName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a hash algorithm name that represents "SHA256".</summary>
+        <value>A hash algorithm name that represents "SHA256".</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,8 +381,8 @@
         <ReturnType>System.Security.Cryptography.HashAlgorithmName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a hash algorithm name that represents "SHA384".</summary>
+        <value>A hash algorithm name that represents "SHA384".</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,8 +408,8 @@
         <ReturnType>System.Security.Cryptography.HashAlgorithmName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a hash algorithm name that represents "SHA512".</summary>
+        <value>A hash algorithm name that represents "SHA512".</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,9 +436,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the string representation of the current <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> instance.</summary>
+        <returns>The string representation of the current <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.HashAlgorithmName.ToString%2A> method returns the <xref:System.Security.Cryptography.HashAlgorithmName.Name%2A> property, if it has been assigned. Otherwise, it returns <xref:System.String.Empty?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

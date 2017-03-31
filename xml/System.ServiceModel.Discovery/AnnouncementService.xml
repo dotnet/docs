@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A self-hosted implementation of the announcement service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class listens for incoming messages on a standard announcement endpoint (<xref:System.ServiceModel.Discovery.AnnouncementEndpoint>) and provides event notification when Hello or Bye announcement messages arrive. You can provide a custom announcement service implementation by deriving from this class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.AnnouncementService" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +55,8 @@
         <Parameter Name="duplicateMessageHistoryLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="duplicateMessageHistoryLength">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="duplicateMessageHistoryLength">The maximum number of message hashes used by the transport for identifying duplicate messages. The default value is 0.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.AnnouncementService" /> class with the specified length of the duplicate message history.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +73,7 @@
         <ReturnType>System.EventHandler&lt;System.ServiceModel.Discovery.AnnouncementEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an offline announcement (Bye) message is received,</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,13 +96,20 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="messageSequence">To be added.</param>
-        <param name="endpointDiscoveryMetadata">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="messageSequence">The position of this message in the sequence for the current notification.</param>
+        <param name="endpointDiscoveryMetadata">An object that provides endpoint metadata, for example scopes, listen URI, contract names, and endpoint address.</param>
+        <param name="callback">The method to call when the asynchronous operation is complete.</param>
+        <param name="state">Infrastructure-defined state data.</param>
+        <summary>Starts the processing of incoming offline announcement (Bye) messages.</summary>
+        <returns>The status of the pending asynchronous request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that inherit from <xref:System.ServiceModel.Discovery.AnnouncementService> to implement a custom announcement listener service must override this method and begin to process incoming Bye messages.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBeginOnlineAnnouncement">
@@ -117,13 +131,20 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="messageSequence">To be added.</param>
-        <param name="endpointDiscoveryMetadata">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="messageSequence">The position of this message in the sequence for the current notification.</param>
+        <param name="endpointDiscoveryMetadata">An object that provides endpoint metadata, for example scopes, listen URI, contract names, and endpoint address.</param>
+        <param name="callback">The method to call when the asynchronous operation is complete.</param>
+        <param name="state">Infrastructure-defined state data.</param>
+        <summary>Starts the processing of incoming online announcement (Hello) messages.</summary>
+        <returns>The status of the pending asynchronous request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that inherit from <xref:System.ServiceModel.Discovery.AnnouncementService> to implement a custom announcement listener service must override this method and begin to process incoming Hello messages.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnEndOfflineAnnouncement">
@@ -142,8 +163,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">An asynchronous result returned by the corresponding <see cref="M:System.ServiceModel.Discovery.DiscoveryProxyBase.OnBeginOnlineAnnouncement(System.ServiceModel.Discovery.AnnouncementMessage,System.AsyncCallback,System.Object)" />.</param>
+        <summary>Users that inherit from <see cref="T:System.ServiceModel.Discovery.AnnouncementService" /> to implement a custom announcement listener service must override this method and begin to process incoming offline announcement (Bye) messages here.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,8 +184,8 @@
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">An asynchronous result returned by the corresponding <see cref="M:System.ServiceModel.Discovery.DiscoveryProxyBase.OnBeginOnlineAnnouncement(System.ServiceModel.Discovery.AnnouncementMessage,System.AsyncCallback,System.Object)" />.</param>
+        <summary>Users that inherit from <see cref="T:System.ServiceModel.Discovery.AnnouncementService" /> to implement a custom announcement listener service must override this method and begin to process incoming offline announcement (Bye) messages here.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,7 +202,7 @@
         <ReturnType>System.EventHandler&lt;System.ServiceModel.Discovery.AnnouncementEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when an online announcement (Hello) is received.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

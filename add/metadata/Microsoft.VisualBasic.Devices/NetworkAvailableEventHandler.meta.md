@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

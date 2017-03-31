@@ -1,49 +1,71 @@
 ---
 uid: System.Net.Configuration.ConnectionManagementElementCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElementCollection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElementCollection.Remove(System.Net.Configuration.ConnectionManagementElement)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElementCollection.Item(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElementCollection.RemoveAt(System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElementCollection.Remove(System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElementCollection.IndexOf(System.Net.Configuration.ConnectionManagementElement)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElementCollection.Add(System.Net.Configuration.ConnectionManagementElement)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElementCollection.Clear
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Configuration.ConnectionManagementElementCollection.Remove
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ConnectionManagementElementCollection.Item(System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Configuration.ConnectionManagementElementCollection.Item
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -14,8 +14,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Supports the methods that convert permission object state to and from an XML element representation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is similar to <xref:System.Security.ISecurityEncodable>, with the exception that it includes policy-level context. Policy level is needed to resolve references to named permission sets.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FromXml">
@@ -36,10 +43,17 @@
         <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <param name="level">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The XML encoding to use to reconstruct the security object.</param>
+        <param name="level">The policy-level context to resolve named permission set references.</param>
+        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom code that extends security policy objects needs to implement the <xref:System.Security.ISecurityPolicyEncodable.ToXml%2A> and <xref:System.Security.ISecurityPolicyEncodable.FromXml%2A> methods to make the objects security-encodable.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -59,10 +73,19 @@
         <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
       </Parameters>
       <Docs>
-        <param name="level">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="level">The policy-level context to resolve named permission set references.</param>
+        <summary>Creates an XML encoding of the security object and its current state.</summary>
+        <returns>The root element of the XML representation of the policy object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The policy-level context is provided for resolution of named permission set references. For example, code groups use policy level to find named permission sets by name.  
+  
+ Custom code that extends security policy objects needs to implement the <xref:System.Security.ISecurityPolicyEncodable.ToXml%2A> and <xref:System.Security.ISecurityPolicyEncodable.FromXml%2A> methods to make the objects security-encodable.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

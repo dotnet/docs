@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a parser for Web service handlers.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default directive name.</summary>
+        <value>A <see cref="T:System.String" /> containing the default directive name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,10 +50,10 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="inputFile">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="inputFile">The file to be compiled.</param>
+        <param name="context">The <see cref="T:System.Web.HttpContext" /> object for the current request.</param>
+        <summary>Returns the compiled type for a given input file.</summary>
+        <returns>A <see cref="T:System.Type" /> as specified by the <see cref="T:System.Web.HttpContext" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

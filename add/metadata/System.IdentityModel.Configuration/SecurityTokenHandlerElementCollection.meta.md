@@ -1,19 +1,23 @@
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.SecurityTokenHandlerConfiguration
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.Name
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.Design.ContentDefinition
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ContentDefinition.DefaultDesignTimeHtml
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ContentDefinition.#ctor(System.String,System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ContentDefinition.ContentPlaceHolderID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ContentDefinition.DefaultContent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

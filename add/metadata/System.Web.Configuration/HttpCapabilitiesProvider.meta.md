@@ -1,14 +1,20 @@
 ---
 uid: System.Web.Configuration.HttpCapabilitiesProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCapabilitiesProvider.GetBrowserCapabilities(System.Web.HttpRequest)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.HttpCapabilitiesProvider.#ctor
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

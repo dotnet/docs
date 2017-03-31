@@ -1,1 +1,0 @@
-        formatter.IndentationLevel += 1

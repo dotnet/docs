@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>An XML element that defines the security settings for a wsHttpBinding binding.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WSHttpSecurityElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the security settings for the message.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.MessageSecurityOverHttpElement" /> that specifies the security settings for the message.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +71,8 @@
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the type of security that is applied.</summary>
+        <value>A <see cref="T:System.ServiceModel.SecurityMode" /> value that specifies the type of security that is applied. The default value is <see cref="F:System.ServiceModel.SecurityMode.Message" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +112,8 @@
         <ReturnType>System.ServiceModel.Configuration.WSHttpTransportSecurityElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the security settings for the transport.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.HttpTransportSecurityElement" /> that specifies the security settings for the transport.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,1 +1,0 @@
-            msgVersion = MessageVersion.Soap11WSAddressingAugust2004;

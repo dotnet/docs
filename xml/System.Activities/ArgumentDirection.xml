@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the direction of data flow for an <see cref="T:System.Activities.Argument" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In this example, an <xref:System.Activities.InArgument%601> of type <xref:System.String> is created using the <xref:System.Activities.Argument.Create%2A> method of the <xref:System.Activities.Argument> class.  
+  
+```csharp  
+Argument a = Argument.Create(typeof(string), ArgumentDirection.In);  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="In">
@@ -27,7 +38,7 @@
         <ReturnType>System.Activities.ArgumentDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An <see cref="T:System.Activities.Argument" /> that represents the flow of data into a workflow or activity.</summary>
       </Docs>
     </Member>
     <Member MemberName="InOut">
@@ -43,7 +54,7 @@
         <ReturnType>System.Activities.ArgumentDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An <see cref="T:System.Activities.Argument" /> that represents the flow of data into and out of a workflow or activity.</summary>
       </Docs>
     </Member>
     <Member MemberName="Out">
@@ -59,7 +70,7 @@
         <ReturnType>System.Activities.ArgumentDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An <see cref="T:System.Activities.Argument" /> that represents the flow of data out of a workflow or activity.</summary>
       </Docs>
     </Member>
   </Members>

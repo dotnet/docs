@@ -1,4 +1,4 @@
 ---
 uid: System.Transactions.Configuration
-internalonly: False
+manager: "ghogen"
 ---

@@ -22,8 +22,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TBindingConfiguration">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TBindingConfiguration">A binding configuration element.</typeparam>
+    <summary>Represents a collection of <see cref="T:System.ServiceModel.Configuration.StandardBindingElement" /> objects. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.StandardBindingElementCollection`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

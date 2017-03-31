@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.Design.Directives.SchemaElementNameAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.Directives.SchemaElementNameAttribute.Value
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.Directives.SchemaElementNameAttribute.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

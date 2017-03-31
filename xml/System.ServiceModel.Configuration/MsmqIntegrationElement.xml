@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the configuration element that specifies settings required for interaction with a Message Queuing (MSMQ) sender or receiver.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [\&lt;msmqIntegration\&gt;](../Topic/%3CmsmqIntegration%3E.md)  
+  
+ <xref:System.ServiceModel.MsmqIntegration>  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.MsmqIntegrationElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +55,8 @@
         <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="bindingElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindingElement">The binding element to which the settings will be applied.</param>
+        <summary>Applies the settings of this configuration element to the specified <see cref="T:System.ServiceModel.Channels.BindingElement" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +73,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the binding type associated with this configuration element.</summary>
+        <value>A <see cref="T:System.Type" /> object that represents the type of binding element associated with this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +94,8 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> whose settings are to be copied to this configuration element.</param>
+        <summary>Copies the settings from the specified <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> to this configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,9 +175,28 @@
         <ReturnType>System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or set the <see cref="T:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat" /> to be used when serializing Message Queuing (MSMQ) messages.</summary>
+        <value>The <see cref="T:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat" /> to be used when serializing MSMQ messages.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can have one of the following values:  
+  
+-   `ActiveX` - The ActiveX serializer is used to serialize objects.  
+  
+-   `Binary` - The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> is used to serialize objects.  
+  
+-   `ByteArray` - The object is serialized to an array of bytes.  
+  
+-   `Stream` - The object is serialized to a stream.  
+  
+-   `Xml` - The <xref:System.Xml.Serialization.XmlSerializer> is used to serialize objects.  
+  
+ The default value is `Xml`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

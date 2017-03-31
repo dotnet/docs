@@ -1,14 +1,14 @@
 ---
 uid: System.Messaging.Cursor
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Cursor.Close
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.Cursor.Dispose
-internalonly: False
+manager: "tyoung"
 ---

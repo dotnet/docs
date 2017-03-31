@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.GridViewRowEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewRowEventArgs.Row
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.GridViewRowEventArgs.#ctor(System.Web.UI.WebControls.GridViewRow)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

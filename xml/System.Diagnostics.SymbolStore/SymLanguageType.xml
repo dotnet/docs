@@ -21,8 +21,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Holds the public GUIDs for language types to be used with the symbol store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how <xref:System.Diagnostics.SymbolStore.SymLanguageType> is used when calling <xref:System.Reflection.Emit.ModuleBuilder.DefineDocument%2A>.  
+  
+ [!code-cpp[ModuleBuilder_DefineDocument#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CPP/modulebuilder_definedocument.cpp#1)]
+ [!code-csharp[ModuleBuilder_DefineDocument#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefineDocument/CS/modulebuilder_definedocument.cs#1)]
+ [!code-vb[ModuleBuilder_DefineDocument#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ModuleBuilder_DefineDocument/VB/modulebuilder_definedocument.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymLanguageType" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,7 +74,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the GUID of the Basic language type to be used with the symbol store.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +96,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the GUID of the C language type to be used with the symbol store.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,7 +118,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the GUID of the Cobol language type to be used with the symbol store.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +140,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the GUID of the C++ language type to be used with the symbol store.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +162,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the GUID of the C# language type to be used with the symbol store.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,7 +184,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the GUID of the ILAssembly language type to be used with the symbol store.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,7 +206,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the GUID of the Java language type to be used with the symbol store.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,7 +228,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the GUID of the JScript language type to be used with the symbol store.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,7 +250,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the GUID of the C++ language type to be used with the symbol store.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,7 +272,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the GUID of the Pascal language type to be used with the symbol store.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,7 +294,7 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the GUID of the SMC language type to be used with the symbol store.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

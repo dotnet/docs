@@ -1,14 +1,17 @@
 ---
 uid: System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute.Property
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

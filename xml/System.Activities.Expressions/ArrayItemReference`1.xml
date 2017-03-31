@@ -17,8 +17,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TItem">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TItem">The type of the items within the array.</typeparam>
+    <summary>A reference to an item within an array.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.ArrayItemReference`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +58,8 @@
         <ReturnType>System.Activities.InArgument&lt;TItem[]&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the array whose item is being referenced.</summary>
+        <value>The array whose item is being referenced.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +127,8 @@
         <ReturnType>System.Activities.InArgument&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the array index number of the item being referenced.</summary>
+        <value>The array index number of the item being referenced.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

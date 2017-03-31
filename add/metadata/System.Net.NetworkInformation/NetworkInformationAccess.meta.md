@@ -1,4 +1,5 @@
 ---
 uid: System.Net.NetworkInformation.NetworkInformationAccess
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

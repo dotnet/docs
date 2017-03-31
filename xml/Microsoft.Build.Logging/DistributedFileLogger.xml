@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class creates a text file which will contain the build log for a node.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a file logger.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
         <ReturnType>Microsoft.Build.Framework.IEventRedirector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that determines how a node logger to forwards messages to the central logger.</summary>
+        <value>Returns a property that determines how a node logger to forwards messages to the central logger.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
         <Parameter Name="eventSource" Type="Microsoft.Build.Framework.IEventSource" />
       </Parameters>
       <Docs>
-        <param name="eventSource">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="eventSource">The event source.</param>
+        <summary>Initializes the logger with the given event source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +90,9 @@
         <Parameter Name="nodeCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="eventSource">To be added.</param>
-        <param name="nodeCount">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="eventSource">The event source.</param>
+        <param name="nodeCount">The node count.</param>
+        <summary>Initializes the logger with the given event source and node count.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +109,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the ID of the node.</summary>
+        <value>Returns the ID of the node.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +127,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a switch that determines whether to suppress the output of the errors and warnings summary at the end of a build.</summary>
+        <value>Returns a switch that determines whether to suppress the output of the errors and warnings summary at the end of a build.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,7 +146,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Called when the build engine is finished with this logger.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,8 +163,8 @@
         <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the level of detail to show in the event log.</summary>
+        <value>Returns the level of detail to show in the event log.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

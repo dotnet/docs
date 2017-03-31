@@ -1,24 +1,34 @@
 ---
 uid: System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs.StartIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs.IsSelected
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs.#ctor(System.Int32,System.Int32,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs.EndIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a base class with members common to an element that is used to configure security settings.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +32,9 @@
         <Parameter Name="mode" Type="System.ServiceModel.Configuration.AuthenticationMode" />
       </Parameters>
       <Docs>
-        <param name="bindingTemplates">To be added.</param>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindingTemplates">A pair that consists of an authentication mode and a binding element.</param>
+        <param name="mode">The authentication mode used for message exchange.</param>
+        <summary>Applies the specified configuration template to this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +54,8 @@
         <Parameter Name="bindingTemplates" Type="System.Collections.Generic.Dictionary&lt;System.ServiceModel.Configuration.AuthenticationMode,System.ServiceModel.Channels.SecurityBindingElement&gt;" />
       </Parameters>
       <Docs>
-        <param name="bindingTemplates">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindingTemplates">A pair that consists of an authentication mode and a binding element.</param>
+        <summary>Applies the specified configuration templates to this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,8 +77,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether unsecured transport is permitted.</summary>
+        <value>
+          <see langword="true" /> if unsecured transport is permitted; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +101,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a boolean value that specifies whether a serialized token can be used on reply.</summary>
+        <value>
+          <see langword="true" /> if a serialized token can be used on reply; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +123,8 @@
         <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="bindingElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindingElement">A binding element.</param>
+        <summary>Applies the content of a specified binding element to this binding configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +146,8 @@
         <ReturnType>System.ServiceModel.Configuration.AuthenticationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the authentication setting used for message exchange.</summary>
+        <value>The authentication setting used for message exchange.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,8 +164,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of this binding element.</summary>
+        <value>The type of this binding element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,8 +187,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the security context token can be renewed.</summary>
+        <value>
+          <see langword="true" /> if the security context token can be renewed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +209,8 @@
         <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The configuration element to be copied.</param>
+        <summary>Copies the content of the specified configuration element to this configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,8 +228,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a custom binding element object from the setting of this instance.</summary>
+        <returns>A custom <see cref="T:System.ServiceModel.Channels.BindingElement" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,9 +249,10 @@
         <Parameter Name="createTemplateOnly" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="createTemplateOnly">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="createTemplateOnly">
+          <see langword="true" /> to create only a template; otherwise, <see langword="false" />.</param>
+        <summary>Creates a custom binding element object from the setting of this instance.</summary>
+        <returns>A custom <see cref="T:System.ServiceModel.Channels.BindingElement" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,8 +277,8 @@
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the default algorithm suite for this binding.</summary>
+        <value>A <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" /> that specifies the default algorithm suite for this binding. The default is <see cref="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,8 +300,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether unsecured response is permitted.</summary>
+        <value>
+          <see langword="true" /> if unsecured response is permitted; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,8 +324,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether each message contains a timestamp.</summary>
+        <value>
+          <see langword="true" /> if message contains a timestamp; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,8 +346,8 @@
         <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
       </Parameters>
       <Docs>
-        <param name="bindingElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="bindingElement">A binding element.</param>
+        <summary>Initializes this binding configuration element with the content of the specified binding element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,9 +368,10 @@
         <Parameter Name="initializeNestedBindings" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="sp">To be added.</param>
-        <param name="initializeNestedBindings">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sp">The specified security token parameters.</param>
+        <param name="initializeNestedBindings">
+          <see langword="true" /> to indicate that all the nested bindings are updated with the values specified by <c>sp</c>; otherwise, <see langword="false" />.</param>
+        <summary>Applies the specified security token settings to this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,8 +393,8 @@
         <ReturnType>System.ServiceModel.Configuration.IssuedTokenParametersElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the configuration element that specifies the current issued token.</summary>
+        <value>An <see cref="T:System.ServiceModel.Configuration.IssuedTokenParametersElement" /> that specifies the current issued token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,8 +416,8 @@
         <ReturnType>System.ServiceModel.Security.SecurityKeyEntropyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the source of entropy used to create keys.</summary>
+        <value>A valid <see cref="T:System.ServiceModel.Security.SecurityKeyEntropyMode" /> value that specifies the source of entropy used to create keys. The default value is <see cref="F:System.ServiceModel.Security.SecurityKeyEntropyMode.CombinedEntropy" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,8 +439,8 @@
         <ReturnType>System.ServiceModel.Configuration.LocalClientSecuritySettingsElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the local client security settings for this binding.</summary>
+        <value>The local client security settings for this binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,8 +462,8 @@
         <ReturnType>System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the local service security settings for this binding.</summary>
+        <value>The local service security settings for this binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -478,8 +485,8 @@
         <ReturnType>System.ServiceModel.Security.MessageProtectionOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the order of message encryption and signing for this binding.</summary>
+        <value>A <see cref="T:System.ServiceModel.Security.MessageProtectionOrder" /> that specifies how message is protected. The default is <see cref="F:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -504,8 +511,8 @@
         <ReturnType>System.ServiceModel.MessageSecurityVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the version used for message security.</summary>
+        <value>A <see cref="T:System.ServiceModel.MessageSecurityVersion" /> that specifies the version used for message security.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -522,8 +529,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -545,8 +552,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the security element base protects tokens.</summary>
+        <value>
+          <see langword="true" /> if the security element base protects tokens; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -568,8 +576,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether derived keys are required.</summary>
+        <value>
+          <see langword="true" /> if derived keys are required; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -591,8 +600,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether security context should be cancelled and terminated when it is no longer required.</summary>
+        <value>
+          <see langword="true" /> if security context should be cancelled and terminated when it is no longer required; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -614,8 +624,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether message signatures must be confirmed.</summary>
+        <value>
+          <see langword="true" /> if message signatures must be confirmed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -637,8 +648,8 @@
         <ReturnType>System.ServiceModel.Channels.SecurityHeaderLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the order of elements in the security header for this binding.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.SecurityHeaderLayout" /> that specifies the order of elements in the security header for this binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -659,10 +670,12 @@
         <Parameter Name="serializeCollectionKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="serializeCollectionKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="writer">The XML writer that writes the configuration file.</param>
+        <param name="serializeCollectionKey">
+          <see langword="true" /> to serialize only the collection key properties; otherwise, <see langword="false" />.</param>
+        <summary>Writes the contents of this configuration element to the configuration file when implemented in a derived class.</summary>
+        <returns>
+          <see langword="true" /> if any data was actually serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -683,10 +696,11 @@
         <Parameter Name="elementName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="elementName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> that is used to write to the configuration file.</param>
+        <param name="elementName">The name of the <see cref="T:System.Configuration.ConfigurationElement" /> to be written.</param>
+        <summary>Writes the outer tags of this configuration element to the configuration file.</summary>
+        <returns>
+          <see langword="true" /> if the serialization is successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -708,10 +722,10 @@
         <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" />
       </Parameters>
       <Docs>
-        <param name="sourceElement">To be added.</param>
-        <param name="parentElement">To be added.</param>
-        <param name="saveMode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sourceElement">A <see cref="T:System.Configuration.ConfigurationElement" /> object at the current level that contains a merged view of the properties.</param>
+        <param name="parentElement">The parent <see cref="T:System.Configuration.ConfigurationElement" /> object, or <see langword="null" /> if this is the top level.</param>
+        <param name="saveMode">A <see cref="T:System.Configuration.ConfigurationSaveMode" /> object that determines which property values to include.</param>
+        <summary>Modifies this configuration element to remove all values that should not be saved.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

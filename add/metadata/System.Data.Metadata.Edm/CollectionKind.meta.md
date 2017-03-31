@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Metadata.Edm.CollectionKind
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

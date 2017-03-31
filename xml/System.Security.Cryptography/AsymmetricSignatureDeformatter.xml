@@ -21,8 +21,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the abstract base class from which all implementations of asymmetric signature deformatters derive.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Asymmetric signature deformatters verify the digital signatures that are created using implementations of <xref:System.Security.Cryptography.AsymmetricSignatureFormatter>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,8 +48,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of <see cref="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create an instance of an abstract class. Application code will create a new instance of a derived class.  
+  
+ Use implementations of <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.SetKey%2A> and <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.SetHashAlgorithm%2A> to set the key and hash algorithm before calling an implementation of <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.VerifySignature%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHashAlgorithm">
@@ -66,9 +82,16 @@
         <Parameter Name="strName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="strName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="strName">The name of the hash algorithm to use for verifying the signature.</param>
+        <summary>When overridden in a derived class, sets the hash algorithm to use for verifying the signature.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must set a hash algorithm before calling an implementation of <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.VerifySignature%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetKey">
@@ -92,9 +115,16 @@
         <Parameter Name="key" Type="System.Security.Cryptography.AsymmetricAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The instance of an implementation of <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> that holds the public key.</param>
+        <summary>When overridden in a derived class, sets the public key to use for verifying the signature.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must set a key before calling an implementation of <xref:System.Security.Cryptography.AsymmetricSignatureDeformatter.VerifySignature%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerifySignature">
@@ -119,11 +149,19 @@
         <Parameter Name="rgbSignature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="rgbHash">To be added.</param>
-        <param name="rgbSignature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rgbHash">The data signed with <c>rgbSignature</c>.</param>
+        <param name="rgbSignature">The signature to be verified for <c>rgbHash</c>.</param>
+        <summary>When overridden in a derived class, verifies the signature for the specified data.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="rgbSignature" /> matches the signature computed using the specified hash algorithm and key on <paramref name="rgbHash" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must specify a public key and a hash algorithm before calling this method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerifySignature">
@@ -148,11 +186,20 @@
         <Parameter Name="rgbSignature" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="hash">To be added.</param>
-        <param name="rgbSignature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="hash">The hash algorithm to use to verify the signature.</param>
+        <param name="rgbSignature">The signature to be verified.</param>
+        <summary>Verifies the signature from the specified hash value.</summary>
+        <returns>
+          <see langword="true" /> if the signature is valid for the hash; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method sets the hash algorithm to be used before verifying the signature of the input hash algorithm value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="hash" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a component editor for the <see cref="P:System.Web.UI.UpdatePanel.Triggers" /> collection of <see cref="T:System.Web.UI.UpdatePanel" /> controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor> class provides a user interface for editing triggers of the <xref:System.Web.UI.UpdatePanel> control. A trigger can be an <xref:System.Web.UI.AsyncPostBackTrigger> or a <xref:System.Web.UI.PostBackTrigger> object.  
+  
+ An instance of the <xref:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor> class can be invoked by selecting the ellipsis button (**…**) on the <xref:System.Web.UI.UpdatePanel.Triggers%2A> property in the visual designer's property grid control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +37,16 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">The type of the trigger to edit.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] internally constructs a new instance of the <xref:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor> class when the ellipsis button (…) is clicked on the <xref:System.Web.UI.UpdatePanel.Triggers%2A> property in the visual designer's property grid control at design time.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanSelectMultipleInstances">
@@ -47,9 +63,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether multiple triggers can be selected at the same time.</summary>
+        <returns>Always <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor.CanSelectMultipleInstances%2A> method always returns `false`. Therefore, only one trigger can be selected every time that the <xref:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor> object is used. A trigger can be an <xref:System.Web.UI.AsyncPostBackTrigger> or a <xref:System.Web.UI.PostBackTrigger> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCollectionItemType">
@@ -66,8 +89,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the data type that this collection edits.</summary>
+        <returns>An <see cref="T:System.Web.UI.UpdatePanelTrigger" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,9 +108,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the multiple data types that the collection editor can create.</summary>
+        <returns>An array of the data types that the <see cref="T:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor" /> can create.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The types that the <xref:System.Web.UI.Design.UpdatePanelTriggerCollectionEditor> instance can create are <xref:System.Web.UI.AsyncPostBackTrigger>, <xref:System.Web.UI.PostBackTrigger>, and other types that derive from the <xref:System.Web.UI.UpdatePanelControlTrigger> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EditValue">
@@ -108,11 +138,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="provider">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that provides additional context information.</param>
+        <param name="provider">A service provider object that provides editing services.</param>
+        <param name="value">The object whose value will be edited.</param>
+        <summary>Edits the value of the specified object by using the specified service provider and context.</summary>
+        <returns>The new value of the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

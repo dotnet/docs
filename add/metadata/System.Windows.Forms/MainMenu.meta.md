@@ -1,59 +1,99 @@
 ---
 uid: System.Windows.Forms.MainMenu
-internalonly: False
----
-
----
-uid: System.Windows.Forms.MainMenu.CreateMenuHandle
-internalonly: False
----
-
----
-uid: System.Windows.Forms.MainMenu.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.MainMenu.ToString
-internalonly: False
----
-
----
-uid: System.Windows.Forms.MainMenu.GetForm
-internalonly: False
----
-
----
-uid: System.Windows.Forms.MainMenu.Collapse
-internalonly: False
----
-
----
-uid: System.Windows.Forms.MainMenu.#ctor(System.ComponentModel.IContainer)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.MainMenu.OnCollapse(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.MainMenu.RightToLeft
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.MainMenu.#ctor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.MainMenu.CreateMenuHandle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.MainMenu.Dispose(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.MainMenu.ToString
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.MainMenu.GetForm
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.MainMenu.Collapse
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.MainMenu.#ctor(System.ComponentModel.IContainer)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.MainMenu.OnCollapse(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.MainMenu.RightToLeft
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.MainMenu.CloneMenu
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.MainMenu.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.MainMenu.CloneMenu
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.MainMenu.#ctor(System.Windows.Forms.MenuItem[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.MainMenu.Dispose
+manager: "ghogen"
 ---

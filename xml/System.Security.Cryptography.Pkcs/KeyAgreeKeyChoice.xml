@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.Security.Cryptography.Pkcs.KeyAgreeKeyChoice" /> enumeration defines the type of key used in a key agreement protocol.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Security.Cryptography.Pkcs.KeyAgreeKeyChoice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key agreement key is ephemeral, existing only for the duration of the key agreement protocol.</summary>
       </Docs>
     </Member>
     <Member MemberName="StaticKey">
@@ -43,7 +43,7 @@
         <ReturnType>System.Security.Cryptography.Pkcs.KeyAgreeKeyChoice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key agreement key is static, existing for an extended period of time.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -59,7 +59,7 @@
         <ReturnType>System.Security.Cryptography.Pkcs.KeyAgreeKeyChoice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The key agreement key type is unknown.</summary>
       </Docs>
     </Member>
   </Members>

@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Stores legend cells in a <see cref="T:System.Web.UI.DataVisualization.Charting.LegendCellCollection" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,11 +36,11 @@
         <Parameter Name="alignment" Type="System.Drawing.ContentAlignment" />
       </Parameters>
       <Docs>
-        <param name="cellType">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="alignment">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cellType">A <see cref="T:System.Web.UI.DataVisualization.Charting.LegendCellType" /> value representing the cell type.</param>
+        <param name="text">A <see langword="string" /> value that represents either the cell text or its image name, depending on the value of the <c>cellType</c> parameter.</param>
+        <param name="alignment">A <see cref="T:System.Drawing.ContentAlignment" /> value that represents the cell content alignment.</param>
+        <summary>Adds a legend cell with the specified cell type, text and alignment to the end of the collection.</summary>
+        <returns>An <see langword="integer" /> value that represents the index of the newly added legend cell in the collection. The index is zero-based.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,11 +63,11 @@
         <Parameter Name="alignment" Type="System.Drawing.ContentAlignment" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="cellType">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="alignment">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">Index of the location to insert the object.</param>
+        <param name="cellType">A <see cref="T:System.Web.UI.DataVisualization.Charting.LegendCellType" /> value that represents the cell type.</param>
+        <param name="text">A <see langword="string" /> value that represents either the cell text or its image name, depending on the value of the <c>cellType</c> parameter.</param>
+        <param name="alignment">A <see cref="T:System.Drawing.ContentAlignment" /> enumeration value that represents the alignment of the legend cell content.</param>
+        <summary>Inserts a legend cell with the specified cell type, text and alignment into the collection at a given location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

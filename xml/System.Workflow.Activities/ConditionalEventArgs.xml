@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Returns result information for the <see cref="T:System.Workflow.Activities.CodeCondition" /> class.  This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Activities.CodeCondition> class exposes an event of type EventHandler\<ConditionalEventArgs>. The purpose of the event is to provide information about the result of the condition evaluation (`true` or `false`) through the <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> property of the event args.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ConditionalEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +59,8 @@
         <Parameter Name="result" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The result of the condition.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ConditionalEventArgs" /> class using the result of the condition.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +77,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the result of a <see cref="T:System.Workflow.Activities.CodeCondition" /> evaluation.</summary>
+        <value>
+          <see langword="true" /> if the result of the condition is true; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

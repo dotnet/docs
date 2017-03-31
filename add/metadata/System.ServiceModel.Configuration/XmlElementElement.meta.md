@@ -1,24 +1,41 @@
 ---
 uid: System.ServiceModel.Configuration.XmlElementElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.XmlElementElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.XmlElementElement.Copy(System.ServiceModel.Configuration.XmlElementElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.XmlElementElement.#ctor(System.Xml.XmlElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.XmlElementElement.XmlElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.XmlElementElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

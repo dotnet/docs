@@ -14,8 +14,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a container for <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> elements. An instance of this type is returned by the <see cref="M:System.Net.PeerToPeer.Collaboration.ContactManager.GetContacts" /> static method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection holds instances of the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> element, which specifies information about a peer within a <xref:System.Net.PeerToPeer.Collaboration.ContactManager>.  
+  
+ No public constructors are defined for this class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="InsertItem">
@@ -35,10 +44,18 @@
         <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerContact" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element to replace</param>
+        <param name="item">The new value for the element at the specified index</param>
+        <summary>Inserts a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> element into the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" /> at the specified index or key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` items are not allowed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> provided is <see langword="null" /></exception>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -58,10 +75,18 @@
         <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerContact" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the element to replace.</param>
+        <param name="item">The new value for the element at the specified index.</param>
+        <summary>Replaces the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` items are not allowed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> provided is <see langword="null" /></exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -78,8 +103,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a Unicode <see cref="T:System.String" /> representing the current value of each <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />, separated by commas.</summary>
+        <returns>Unicode <see cref="T:System.String" /> representing the current value of each <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />, separated by commas.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

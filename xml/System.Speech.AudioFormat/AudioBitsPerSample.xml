@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enumerates values that describe the bits-per-sample characteristic of an audio format.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.BitsPerSample%2A> property gets a member of <xref:System.Speech.AudioFormat.AudioBitsPerSample> that indicates the bits-per-sample of an audio format.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Eight">
@@ -27,7 +34,7 @@
         <ReturnType>System.Speech.AudioFormat.AudioBitsPerSample</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The audio format has 8 bits per sample.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sixteen">
@@ -43,7 +50,7 @@
         <ReturnType>System.Speech.AudioFormat.AudioBitsPerSample</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The audio format has 16 bits per sample.</summary>
       </Docs>
     </Member>
   </Members>

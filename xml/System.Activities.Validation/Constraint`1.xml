@@ -19,8 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the element to be validated.</typeparam>
+    <summary>Handles a constraint used for validating an element of type T.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Validation.Constraint`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +52,8 @@
         <ReturnType>System.Activities.ActivityAction&lt;T,System.Activities.Validation.ValidationContext&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the validation logic.</summary>
+        <value>An <see cref="T:System.Activities.ActivityAction" /> delegate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

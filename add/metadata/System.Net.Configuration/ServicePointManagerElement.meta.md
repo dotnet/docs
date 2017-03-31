@@ -1,44 +1,53 @@
 ---
 uid: System.Net.Configuration.ServicePointManagerElement
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ServicePointManagerElement.CheckCertificateRevocationList
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ServicePointManagerElement.EnableDnsRoundRobin
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ServicePointManagerElement.DnsRefreshTimeout
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ServicePointManagerElement.UseNagleAlgorithm
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ServicePointManagerElement.EncryptionPolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ServicePointManagerElement.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ServicePointManagerElement.Expect100Continue
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Configuration.ServicePointManagerElement.CheckCertificateName
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the information needed by an event handler to perform custom processing whenever the contents of an <see cref="T:System.Workflow.ComponentModel.ActivityCollection" /> changes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,12 +48,12 @@
         <Parameter Name="action" Type="System.Workflow.ComponentModel.ActivityCollectionChangeAction" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="removedItems">To be added.</param>
-        <param name="addedItems">To be added.</param>
-        <param name="owner">To be added.</param>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the change within the subject <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</param>
+        <param name="removedItems">A strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" /> containing each removed <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <param name="addedItems">A strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" /> containing each added <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <param name="owner">The <see cref="T:System.Object" /> which originated the event.</param>
+        <param name="action">The <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeAction" /> corresponding to the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,12 +74,12 @@
         <Parameter Name="action" Type="System.Workflow.ComponentModel.ActivityCollectionChangeAction" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="removedActivity">To be added.</param>
-        <param name="addedActivity">To be added.</param>
-        <param name="owner">To be added.</param>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the change within the subject <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</param>
+        <param name="removedActivity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> which was removed from the collection.</param>
+        <param name="addedActivity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> which was added to the collection.</param>
+        <param name="owner">The <see cref="T:System.Object" /> which originated the event.</param>
+        <param name="action">The <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeAction" /> corresponding to the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +96,8 @@
         <ReturnType>System.Workflow.ComponentModel.ActivityCollectionChangeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeAction" /> representing the type of change that occurred.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeAction" /> representing the type of change that occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +114,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" /> containing each added <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <value>A strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" /> containing each added <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +132,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the index of the change originating the event.</summary>
+        <value>The index of the change originating the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,8 +150,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Object" /> which originated the event.</summary>
+        <value>The <see cref="T:System.Object" /> which originated the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,8 +168,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" /> containing each removed <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <value>A strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" /> containing each removed <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

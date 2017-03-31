@@ -1,39 +1,47 @@
 ---
 uid: System.Web.UI.Design.IWebFormsDocumentService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IWebFormsDocumentService.DocumentUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IWebFormsDocumentService.UpdateSelection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IWebFormsDocumentService.CreateDiscardableUndoUnit
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IWebFormsDocumentService.IsLoading
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IWebFormsDocumentService.DiscardUndoUnit(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IWebFormsDocumentService.EnableUndo(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IWebFormsDocumentService.LoadComplete
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -32,8 +32,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the COM dispatch identifier (DISPID) of a method, field, or property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to methods, fields, or properties.  
+  
+ This attribute contains the DISPID for the method, field, or property it describes. Unique DISPIDs are typically assigned by the common language runtime, but you can use this attribute to assign a specific DISPID to a method. When importing a type library, this attribute is applied to all methods with assigned DISPIDs. This ensures that any managed implementation of the same method retains the same DISPID if exposed to COM.  
+  
+ See [DISPID Constants](https://msdn.microsoft.com/library/windows/desktop/ms221242\(v=vs.85\).aspx) for a list of commonly used DISPID values.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how explicit DISPIDs can be assigned to members of a class.  
+  
+ [!code-cpp[Classic DispIdAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic DispIdAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DispIdAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic DispIdAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic DispIdAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic DispIdAttribute Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,8 +82,8 @@
         <Parameter Name="dispId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dispId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dispId">The DISPID for the member.</param>
+        <summary>Initializes a new instance of the <see langword="DispIdAttribute" /> class with the specified DISPID.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +113,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the DISPID for the member.</summary>
+        <value>The DISPID for the member.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the options that can be used when performing a hit test on the background specified by a visual style.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.HitTestOptions> values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.HitTestBackground%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BackgroundSegment">
@@ -32,7 +39,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.HitTestOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The hit test option for the background segment.</summary>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -48,7 +55,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.HitTestOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The hit test option for the caption.</summary>
       </Docs>
     </Member>
     <Member MemberName="FixedBorder">
@@ -64,7 +71,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.HitTestOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The hit test option for the fixed border.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResizingBorder">
@@ -80,7 +87,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.HitTestOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The hit test option for the resizing border.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResizingBorderBottom">
@@ -96,7 +103,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.HitTestOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The hit test option for the bottom resizing border.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResizingBorderLeft">
@@ -112,7 +119,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.HitTestOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The hit test option for the left resizing border.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResizingBorderRight">
@@ -128,7 +135,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.HitTestOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The hit test option for the right resizing border.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResizingBorderTop">
@@ -144,7 +151,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.HitTestOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The hit test option for the top resizing border.</summary>
       </Docs>
     </Member>
     <Member MemberName="SizingTemplate">
@@ -160,7 +167,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.HitTestOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The resizing border is specified as a template, not just window edges. This option is mutually exclusive with <see cref="F:System.Windows.Forms.VisualStyles.HitTestOptions.SystemSizingMargins" />; <see cref="F:System.Windows.Forms.VisualStyles.HitTestOptions.SizingTemplate" /> takes precedence.</summary>
       </Docs>
     </Member>
     <Member MemberName="SystemSizingMargins">
@@ -176,7 +183,7 @@
         <ReturnType>System.Windows.Forms.VisualStyles.HitTestOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The system resizing border width is used instead of visual style content margins. This option is mutually exclusive with <see cref="F:System.Windows.Forms.VisualStyles.HitTestOptions.SizingTemplate" />; <see cref="F:System.Windows.Forms.VisualStyles.HitTestOptions.SizingTemplate" /> takes precedence.</summary>
       </Docs>
     </Member>
   </Members>

@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a group of changes to the editing store. Change groups are transactional. The changes made under an editing scope can be committed or aborted as a unit.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an editing scope is committed, the editing store takes all changes that occurred within it and applies them to the model. If the editing scope’s <xref:System.Activities.Presentation.Model.ModelEditingScope.Revert%2A> method is called, or the editing scope is disposed of before <xref:System.Activities.Presentation.Model.ModelEditingScope.Complete%2A> is called, the editing scope will instead reverse the changes made to the underlying objects, reapplying state from the editing store. This provides a solid basis for an undo mechanism.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelEditingScope" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +55,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines whether <see cref="M:System.Activities.Presentation.Model.ModelEditingScope.OnComplete" /> should be called, or whether the change should instead be reverted. Reasons for reverting might include a file cannot be checked out of a source control system for modification.</summary>
+        <returns>
+          <see langword="true" /> if completion can occur; <see langword="false" /> if the change should instead revert.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +75,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Completes the editing scope by calling the <see cref="M:System.Activities.Presentation.Model.ModelEditingScope.OnComplete" /> method.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The editing scope has already been reverted or completed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -84,8 +93,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Describes the group of changes. It can be changed anytime before the changes are committed.</summary>
+        <value>Returnsa <see cref="T:System.String" /> that describes the changes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +112,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Disposes of this object by aborting changes unless the editing scope has already been completed or reverted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If either the editing scope has completed or it has been reverted previously, then calling this method does nothing. This method calls <xref:System.Activities.Presentation.Model.ModelEditingScope.Dispose%2A> with the input parameter set to `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -123,9 +139,16 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="disposing">Determines whether the changes should be reverted as part of an undo operation or because the object is being finalized.</param>
+        <summary>Disposes of this object by aborting changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calls <xref:System.Activities.Presentation.Model.ModelEditingScope.Revert%2A> if `disposing` is set to `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnComplete">
@@ -142,7 +165,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs the actual complete of the editing scope.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,10 +185,18 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="exception">The exception to handle.</param>
+        <summary>Handles an exception.</summary>
+        <returns>
+          <see langword="true" /> if the exception is handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.Model.ModelEditingScope.Complete%2A> and <xref:System.Activities.Presentation.Model.ModelEditingScope.Revert%2A> methods call this method to handle exceptions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRevert">
@@ -184,8 +215,8 @@
         <Parameter Name="finalizing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="finalizing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="finalizing">Determines whether the abort is occurring because the object is being finalized. Some undo systems might attempt to abort in this case, while others might abandon the change and record it as a reactive undo operation.</param>
+        <summary>Performs the actual revert of the editing scope.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +234,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Abandons the changes made during the editing scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls <xref:System.Activities.Presentation.Model.ModelEditingScope.OnRevert%2A> with the input parameter set to `false`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The group of changes has already been committed.</exception>
       </Docs>
     </Member>
   </Members>

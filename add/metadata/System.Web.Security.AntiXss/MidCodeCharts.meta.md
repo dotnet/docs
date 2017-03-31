@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Security.AntiXss.MidCodeCharts
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

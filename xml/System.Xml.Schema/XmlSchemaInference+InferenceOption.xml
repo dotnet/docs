@@ -15,8 +15,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Affects occurrence and type information inferred by the <see cref="T:System.Xml.Schema.XmlSchemaInference" /> class for elements and attributes in an XML document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For an example of the <xref:System.Xml.Schema.XmlSchemaInference.InferenceOption> enumeration, see the <xref:System.Xml.Schema.XmlSchemaInference> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Relaxed">
@@ -37,7 +44,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaInference+InferenceOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a less restrictive schema declaration should be inferred for a particular element or attribute.</summary>
       </Docs>
     </Member>
     <Member MemberName="Restricted">
@@ -58,7 +65,7 @@
         <ReturnType>System.Xml.Schema.XmlSchemaInference+InferenceOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a more restrictive schema declaration should be inferred for a particular element or attribute.</summary>
       </Docs>
     </Member>
   </Members>

@@ -20,7 +20,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+      <see langword="XmlNavigatorFilter" /> provides a flexible filtering abstraction over <see cref="T:System.Xml.XPath.XPathNavigator" />. Callers do not know what type of filtering will occur; they simply call <see cref="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToContent(System.Xml.XPath.XPathNavigator)" /> or <see cref="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToFollowingSibling(System.Xml.XPath.XPathNavigator)" />. The filter implementation invokes the appropriate operation on the <see cref="T:System.Xml.XPath.XPathNavigator" /> in order to skip over filtered nodes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides a flexible filtering abstraction over <see cref="T:System.Xml.XPath.XPathNavigator" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,9 +64,10 @@
         <Parameter Name="navigator" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <summary>Return <see langword="true" /> if the navigator's current node matches the filter condition.</summary>
+        <returns>
+          <see langword="true" /> if the current node matches the condition, otherwise returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,10 +91,18 @@
         <Parameter Name="navigator" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <summary>Repositions the navigator to the first matching content node or attribute and skips over filtered nodes. If there are no matching nodes, the navigator does not move and the method returns false.</summary>
+        <returns>
+          <see langword="true" /> if the navigator is repositioned on a child element with a matching name, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an abstract class and the filter, such as an element name, used to reposition the navigator is not defined by this class but by the class that derives from this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveToFollowing">
@@ -116,11 +126,19 @@
         <Parameter Name="navigatorEnd" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <param name="navigatorEnd">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class that identifies the beginning of the range over which navigation can move.</param>
+        <param name="navigatorEnd">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class that identifies the end of the range over which navigation can move.</param>
+        <summary>Repositions the navigator to the following matching content node or attribute and skips over filtered nodes. If there are no matching nodes, the navigator does not move and the method returns false.</summary>
+        <returns>
+          <see langword="true" /> if the navigator is repositioned on the next element with a matching name, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an abstract class and the filter, such as an element name, used to reposition the navigator is not defined by this class but by the class that derives from this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveToFollowingSibling">
@@ -143,10 +161,18 @@
         <Parameter Name="navigator" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <summary>Repositions the navigator to the sibling matching content node or descendent and skips over filtered nodes. If there are no matching nodes, the navigator does not move and the method returns false.</summary>
+        <returns>
+          <see langword="true" /> if the navigator is repositioned on the next element sibling with a matching name, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an abstract class and the filter, such as an element name, used to reposition the navigator is not defined by this class but by the class that derives from this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveToNextContent">
@@ -169,10 +195,18 @@
         <Parameter Name="navigator" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <summary>Repositions the navigator to the next matching content node or attribute and skips over filtered nodes. If there are no matching nodes, the navigator does not move and the method returns false.</summary>
+        <returns>
+          <see langword="true" /> if the navigator is repositioned on the next element child with a matching name, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an abstract class and the filter, such as an element name, used to reposition the navigator is not defined by this class but by the class that derives from this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveToPreviousSibling">
@@ -195,10 +229,18 @@
         <Parameter Name="navigator" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
+        <summary>Repositions the navigator to the previous matching sibling node and skips over filtered nodes. If there are no matching nodes, the navigator does not move and the method returns false.</summary>
+        <returns>
+          <see langword="true" /> if the navigator is repositioned on the previous element sibling with a matching name, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an abstract class and the filter, such as an element name, used to reposition the navigator is not defined by this class but by the class that derives from this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

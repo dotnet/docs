@@ -1,4 +1,4 @@
 ---
 uid: System.Transactions.TransactionCompletedEventHandler
-internalonly: False
+manager: "ghogen"
 ---

@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the presence status of a peer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.PeerToPeer.Collaboration.PeerPresenceStatus> values can be set for specific peer collaboration network endpoints to indicate the current level of participation of a peer to subscribed remote peers.  
+  
+ These status values are analogous to those utilized by the MSN Messenger system.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Away">
@@ -27,7 +36,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the peer is "Away" and unable to respond.</summary>
       </Docs>
     </Member>
     <Member MemberName="BeRightBack">
@@ -43,7 +52,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the peer has stepped away from the application and will participate soon.</summary>
       </Docs>
     </Member>
     <Member MemberName="Busy">
@@ -59,7 +68,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the peer is "Busy" and does not wish to be disturbed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Idle">
@@ -75,7 +84,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the peer is idling.</summary>
       </Docs>
     </Member>
     <Member MemberName="Offline">
@@ -91,7 +100,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the peer is Offline.</summary>
       </Docs>
     </Member>
     <Member MemberName="Online">
@@ -107,7 +116,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the peer is actively participating in the Peer Collaboration network.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnThePhone">
@@ -123,7 +132,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the peer is currently on the phone and does not wish to be disturbed.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutToLunch">
@@ -139,7 +148,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerPresenceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the peer is currently "Out to Lunch" and unable to respond.</summary>
       </Docs>
     </Member>
   </Members>

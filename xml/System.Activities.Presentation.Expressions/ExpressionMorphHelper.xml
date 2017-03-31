@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an expression morph helper.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Expressions.ExpressionMorphHelper" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,11 +48,12 @@
         <Parameter Name="returnType" Type="System.Type&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="returnType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression used.</param>
+        <param name="context">The context.</param>
+        <param name="returnType">The return type of the expression.</param>
+        <summary>Returns whether the expression tries to infer the return type.</summary>
+        <returns>
+          <see langword="True" /> if the expression tries to infer the return type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,13 +77,14 @@
         <Parameter Name="newExpression" Type="System.Activities.ActivityWithResult&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <param name="isLocationExpression">To be added.</param>
-        <param name="newType">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="newExpression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="expression">The expression to morph.</param>
+        <param name="isLocationExpression">
+          <see langword="True" /> if the expression is a location expression; otherwise, <see langword="false" />.</param>
+        <param name="newType">The new type of the expression.</param>
+        <param name="context">The context.</param>
+        <param name="newExpression">The new expression.</param>
+        <summary>Returns whether the expression tries to morph.</summary>
+        <returns>The morphed expression.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

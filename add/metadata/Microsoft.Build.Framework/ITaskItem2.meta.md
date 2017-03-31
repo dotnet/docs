@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Framework.ITaskItem2
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ITaskItem2.GetMetadataValueEscaped(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ITaskItem2.EvaluatedIncludeEscaped
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ITaskItem2.SetMetadataValueLiteral(System.String,System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ITaskItem2.CloneCustomMetadataEscaped
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

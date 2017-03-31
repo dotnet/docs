@@ -1,29 +1,41 @@
 ---
 uid: System.Configuration.ProviderSettings
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProviderSettings.Parameters
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProviderSettings.Type
-internalonly: False
----
-
----
-uid: System.Configuration.ProviderSettings.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProviderSettings.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ProviderSettings.#ctor(System.String,System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ProviderSettings.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProviderSettings.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

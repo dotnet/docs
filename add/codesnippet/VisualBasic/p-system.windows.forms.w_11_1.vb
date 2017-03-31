@@ -1,1 +1,0 @@
-        webBrowser1.AllowWebBrowserDrop = False

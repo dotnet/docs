@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Metadata.Edm.EntityTypeBase
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Metadata.Edm.EntityTypeBase.KeyMembers
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

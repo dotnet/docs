@@ -1,39 +1,53 @@
 ---
 uid: Microsoft.Build.Utilities.TargetPlatformSDK
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.TargetPlatformSDK.TargetPlatformIdentifier
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.TargetPlatformSDK.Path
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.TargetPlatformSDK.Equals(System.Object)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.TargetPlatformSDK.Equals(Microsoft.Build.Utilities.TargetPlatformSDK)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.TargetPlatformSDK.TargetPlatformVersion
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Utilities.TargetPlatformSDK.Equals
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.TargetPlatformSDK.GetHashCode
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Utilities.TargetPlatformSDK.#ctor(System.String,System.Version,System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

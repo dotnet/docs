@@ -19,8 +19,25 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the run-time behavior of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> enables the control of <xref:System.Runtime.Serialization.DataContractSerializer> options, such as the <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A> and <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> properties. Some of these properties can be set only using the constructor of the class.  In that case, the <xref:System.Runtime.Serialization.DataContractSerializer> can be replaced using the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior.CreateSerializer%2A> method. [!INCLUDE[crabout](~/includes/crabout-md.md)] data contracts, see [Using Data Contracts](../Topic/Using%20Data%20Contracts.md).  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] using the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> to replace the <xref:System.Runtime.Serialization.IDataContractSurrogate> returned by the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractSurrogate%2A> property, see [Data Contract Surrogates](../Topic/Data%20Contract%20Surrogates.md).  
+  
+   
+  
+## Examples  
+ The following example finds the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> in the collection of behaviors for an operation and resets the <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A> and <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> properties.  
+  
+ [!code-csharp[DataContractSerializerOperationBehavior#1](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractserializeroperationbehavior/cs/source.cs#1)]
+ [!code-vb[DataContractSerializerOperationBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractserializeroperationbehavior/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,8 +54,8 @@
         <Parameter Name="operation" Type="System.ServiceModel.Description.OperationDescription" />
       </Parameters>
       <Docs>
-        <param name="operation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operation">An <see cref="T:System.ServiceModel.Description.OperationDescription" /> that represents the operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.DataContractSerializerOperationBehavior" /> class with the specified operation description.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,9 +74,9 @@
         <Parameter Name="dataContractFormatAttribute" Type="System.ServiceModel.DataContractFormatAttribute" />
       </Parameters>
       <Docs>
-        <param name="operation">To be added.</param>
-        <param name="dataContractFormatAttribute">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operation">An <see cref="T:System.ServiceModel.Description.OperationDescription" /> that represents the operation.</param>
+        <param name="dataContractFormatAttribute">A <see cref="T:System.ServiceModel.DataContractFormatAttribute" /> that is used to control the serialization process.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.DataContractSerializerOperationBehavior" /> class with the specified operation description and data contract format.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,13 +100,20 @@
         <Parameter Name="knownTypes" Type="System.Collections.Generic.IList&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="knownTypes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The <see cref="T:System.Type" /> to create the serializer for.</param>
+        <param name="name">The name of the generated type.</param>
+        <param name="ns">The namespace of the generated type.</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IList`1" /> of <see cref="T:System.Type" /> that contains known types.</param>
+        <summary>Creates an instance of a class that inherits from <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> for serialization and deserialization processes.</summary>
+        <returns>An instance of a class that inherits from the <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> class.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Both the <xref:System.Runtime.Serialization.NetDataContractSerializer> and the <xref:System.Runtime.Serialization.DataContractSerializer> inherit from the <xref:System.Runtime.Serialization.XmlObjectSerializer> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateSerializer">
@@ -112,13 +136,20 @@
         <Parameter Name="knownTypes" Type="System.Collections.Generic.IList&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="knownTypes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The type to serialize or deserialize.</param>
+        <param name="name">The name of the serialized type.</param>
+        <param name="ns">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the namespace of the serialized type.</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IList`1" /> of <see cref="T:System.Type" /> that contains known types.</param>
+        <summary>Creates an instance of a class that inherits from <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> for serialization and deserialization processes with an <see cref="T:System.Xml.XmlDictionaryString" /> that contains the namespace.</summary>
+        <returns>An instance of a class that inherits from the <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> class.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Runtime.Serialization.NetDataContractSerializer> inherit from the <xref:System.Runtime.Serialization.XmlObjectSerializer> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataContractFormatAttribute">
@@ -135,8 +166,8 @@
         <ReturnType>System.ServiceModel.DataContractFormatAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.ServiceModel.DataContractFormatAttribute" /> associated with the operation.</summary>
+        <value>The <see cref="T:System.ServiceModel.DataContractFormatAttribute" /> associated with the operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,9 +185,18 @@
         <ReturnType>System.Runtime.Serialization.DataContractResolver</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an implementation of the <see cref="T:System.Runtime.Serialization.DataContractResolver" /> that is used to dynamically map types during serialization and deserialization processes.</summary>
+        <value>Type:  <see cref="T:System.Runtime.Serialization.DataContractResolver" />  
+  
+ A class that maps an <see langword="xsi:type" /> to a known data contract type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the <xref:System.Runtime.Serialization.DataContractResolver> class document.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataContractSurrogate">
@@ -172,8 +212,8 @@
         <ReturnType>System.Runtime.Serialization.IDataContractSurrogate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a surrogate to be used during the serialization and deserialization processes.</summary>
+        <value>An <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> that is used as a substitute serializer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,9 +231,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether the data provided by an extension of a type (and therefore not in the data contract) is ignored or not.</summary>
+        <value>
+          <see langword="true" /> to ignore the data; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When set to `true`, the extra data is returned with any other serialized data. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxItemsInObjectGraph">
@@ -210,8 +258,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of items in the object graph to serialize or deserialize.</summary>
+        <value>The maximum number of items in the object graph to serialize or deserialize. The default is <see cref="F:System.Int32.MaxValue" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,9 +281,9 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="description">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="description">The <see cref="T:System.ServiceModel.Description.OperationDescription" /> to add the parameters to.</param>
+        <param name="parameters">The <see cref="T:System.ServiceModel.Channels.BindingParameterCollection" /> that contains the parameters to add.</param>
+        <summary>Adds a collection of parameters to the behavior.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,9 +305,9 @@
         <Parameter Name="proxy" Type="System.ServiceModel.Dispatcher.ClientOperation" />
       </Parameters>
       <Docs>
-        <param name="description">To be added.</param>
-        <param name="proxy">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="description">The <see cref="T:System.ServiceModel.Description.OperationDescription" /> that represents the operation.</param>
+        <param name="proxy">A <see cref="T:System.ServiceModel.Dispatcher.ClientOperation" /> that represents a client.</param>
+        <summary>Attaches a client behavior to the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,9 +329,9 @@
         <Parameter Name="dispatch" Type="System.ServiceModel.Dispatcher.DispatchOperation" />
       </Parameters>
       <Docs>
-        <param name="description">To be added.</param>
-        <param name="dispatch">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="description">An <see cref="T:System.ServiceModel.Description.OperationDescription" /> that represents the operation.</param>
+        <param name="dispatch">The <see cref="T:System.ServiceModel.Dispatcher.DispatchOperation" /> to attach the behavior to.</param>
+        <summary>Applies the behavior to the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,8 +352,8 @@
         <Parameter Name="description" Type="System.ServiceModel.Description.OperationDescription" />
       </Parameters>
       <Docs>
-        <param name="description">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="description">An <see cref="T:System.ServiceModel.Description.OperationDescription" /> that represents the operation to validate.</param>
+        <summary>Validates the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,9 +374,9 @@
         <Parameter Name="contractContext" Type="System.ServiceModel.Description.WsdlContractConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">To be added.</param>
-        <param name="contractContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exporter">A <see cref="T:System.ServiceModel.Description.WsdlExporter" /> to use for the export.</param>
+        <param name="contractContext">A <see cref="T:System.ServiceModel.Description.WsdlContractConversionContext" /> for the WSDL.</param>
+        <summary>Exports the WSDL representation of the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,9 +397,9 @@
         <Parameter Name="endpointContext" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">To be added.</param>
-        <param name="endpointContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exporter">A <see cref="T:System.ServiceModel.Description.WsdlExporter" /> to use for the export.</param>
+        <param name="endpointContext">A <see cref="T:System.ServiceModel.Description.WsdlEndpointConversionContext" /> for the WSDL.</param>
+        <summary>Exports the endpoint description as a WSDL document.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

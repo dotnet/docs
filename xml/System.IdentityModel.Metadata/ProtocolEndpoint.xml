@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class defines a protocol endpoint.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.ProtocolEndpoint" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Metadata.ProtocolEndpoint.Binding%2A> property and the <xref:System.IdentityModel.Metadata.ProtocolEndpoint.Location%2A> property are both initialized to `null` in the new instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -44,9 +51,9 @@
         <Parameter Name="location" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <param name="location">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">The URI that represents the binding for the new instance. Initializes the <see cref="P:System.IdentityModel.Metadata.ProtocolEndpoint.Binding" /> property.</param>
+        <param name="location">The URI that represents the location for the new instance. Initializes the <see cref="P:System.IdentityModel.Metadata.ProtocolEndpoint.Location" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.ProtocolEndpoint" /> class that has the specified binding and location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +70,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the binding. This is a required element.</summary>
+        <value>The URI that represents the binding for the current instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +88,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the location. This is a required element.</summary>
+        <value>The URI that represents the location for the current instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +106,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the response location. This is an optional element.</summary>
+        <value>The URI that represents the response location for the current instance. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

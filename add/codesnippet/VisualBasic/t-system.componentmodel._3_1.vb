@@ -1,1 +1,0 @@
-'This data type is not supported in Visual Basic.

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes a change in the scrolling state and contains the required arguments for a <see cref="E:System.Windows.Controls.ScrollViewer.ScrollChanged" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the updated height of the <see cref="T:System.Windows.Controls.ScrollViewer" /> extent.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the updated extent height.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.ScrollChangedEventArgs.ExtentHeight%2A> property.  
+  
+ [!code-csharp[scrollchangedeventargsLayout#3](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[scrollchangedeventargsLayout#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtentHeightChange">
@@ -46,9 +56,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates the change in height of the <see cref="T:System.Windows.Controls.ScrollViewer" /> extent.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the change in extent height.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following  example shows how to get the value of the <xref:System.Windows.Controls.ScrollChangedEventArgs.ExtentHeightChange%2A> property.  
+  
+ [!code-csharp[scrollchangedeventargsLayout#3](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[scrollchangedeventargsLayout#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtentWidth">
@@ -64,9 +84,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the updated width of the <see cref="T:System.Windows.Controls.ScrollViewer" /> extent.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the updated extent width.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.ScrollChangedEventArgs.ExtentWidth%2A> property.  
+  
+ [!code-csharp[scrollchangedeventargsLayout#3](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[scrollchangedeventargsLayout#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtentWidthChange">
@@ -82,9 +112,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates the change in width of the <see cref="T:System.Windows.Controls.ScrollViewer" /> extent.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the change in extent width.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.ScrollChangedEventArgs.ExtentWidthChange%2A> property.  
+  
+ [!code-csharp[scrollchangedeventargsLayout#3](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[scrollchangedeventargsLayout#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalChange">
@@ -100,9 +140,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates the change in horizontal offset for a <see cref="T:System.Windows.Controls.ScrollViewer" />.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the change in horizontal offset for a <see cref="T:System.Windows.Controls.ScrollViewer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.ScrollChangedEventArgs.HorizontalChange%2A> property.  
+  
+ [!code-csharp[scrollchangedeventargsLayout#3](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[scrollchangedeventargsLayout#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalOffset">
@@ -118,9 +168,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the updated horizontal offset value for a <see cref="T:System.Windows.Controls.ScrollViewer" />.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the updated value of the horizontal offset for a <see cref="T:System.Windows.Controls.ScrollViewer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.ScrollChangedEventArgs.HorizontalOffset%2A> property.  
+  
+ [!code-csharp[scrollchangedeventargsLayout#3](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[scrollchangedeventargsLayout#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -140,10 +200,17 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">To be added.</param>
-        <param name="genericTarget">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="genericHandler">The event handler to invoke, in this case the <see cref="T:System.Windows.Controls.ScrollChangedEventHandler" /> delegate.</param>
+        <param name="genericTarget">The target upon which the <c>genericHandler</c> is invoked.</param>
+        <summary>Performs proper type casting before invoking the type-safe <see cref="T:System.Windows.Controls.ScrollChangedEventHandler" /> delegate</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you provide either the `genericHandler` or `genericTarget` as a null reference (`Nothing` in Visual Basic), exceptions are raised.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalChange">
@@ -159,9 +226,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates the change in vertical offset of a <see cref="T:System.Windows.Controls.ScrollViewer" />.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the change in vertical offset of a <see cref="T:System.Windows.Controls.ScrollViewer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.ScrollChangedEventArgs.VerticalChange%2A> property.  
+  
+ [!code-csharp[scrollchangedeventargsLayout#3](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[scrollchangedeventargsLayout#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalOffset">
@@ -177,9 +254,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the updated value of the vertical offset for a <see cref="T:System.Windows.Controls.ScrollViewer" />.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the updated vertical offset of a <see cref="T:System.Windows.Controls.ScrollViewer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.ScrollChangedEventArgs.VerticalOffset%2A> property.  
+  
+ [!code-csharp[scrollchangedeventargsLayout#3](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[scrollchangedeventargsLayout#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewportHeight">
@@ -195,9 +282,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the updated value of the viewport height for a <see cref="T:System.Windows.Controls.ScrollViewer" />.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the updated viewport height of a <see cref="T:System.Windows.Controls.ScrollViewer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.ScrollChangedEventArgs.ViewportHeight%2A> property.  
+  
+ [!code-csharp[scrollchangedeventargsLayout#3](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[scrollchangedeventargsLayout#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewportHeightChange">
@@ -213,9 +310,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates the change in value of the viewport height for a <see cref="T:System.Windows.Controls.ScrollViewer" />.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the change in vertical viewport height for a <see cref="T:System.Windows.Controls.ScrollViewer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.ScrollChangedEventArgs.ViewportHeightChange%2A> property.  
+  
+ [!code-csharp[scrollchangedeventargsLayout#3](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[scrollchangedeventargsLayout#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewportWidth">
@@ -231,9 +338,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the updated value of the viewport width for a <see cref="T:System.Windows.Controls.ScrollViewer" />.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the updated value of the viewport width for a <see cref="T:System.Windows.Controls.ScrollViewer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.ScrollChangedEventArgs.ViewportWidth%2A> property.  
+  
+ [!code-csharp[scrollchangedeventargsLayout#3](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[scrollchangedeventargsLayout#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewportWidthChange">
@@ -249,9 +366,19 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates the change in viewport width of a <see cref="T:System.Windows.Controls.ScrollViewer" />.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the change in viewport width for a <see cref="T:System.Windows.Controls.ScrollViewer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.ScrollChangedEventArgs.ViewportWidthChange%2A> property.  
+  
+ [!code-csharp[scrollchangedeventargsLayout#3](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollchangedeventargsLayout/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[scrollchangedeventargsLayout#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

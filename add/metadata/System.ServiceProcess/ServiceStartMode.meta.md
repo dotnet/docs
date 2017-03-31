@@ -1,4 +1,6 @@
 ---
 uid: System.ServiceProcess.ServiceStartMode
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

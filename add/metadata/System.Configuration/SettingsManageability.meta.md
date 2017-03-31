@@ -1,4 +1,6 @@
 ---
 uid: System.Configuration.SettingsManageability
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

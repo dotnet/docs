@@ -10,8 +10,21 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a palette when setting a <c>Palette</c> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.ChartColorPalette> enumeration represents the palettes to be used for the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object and any <xref:System.Web.UI.DataVisualization.Charting.Series> objects.  
+  
+ If no colors are assigned to data points and their associated series, the default colors will be assigned to the data. For example:  
+  
+-   If <xref:System.Web.UI.DataVisualization.Charting.Chart.Palette%2A> is set to None, then the default palette is set to <xref:System.Web.UI.DataVisualization.Charting.Chart.PaletteCustomColors%2A> or BrightPastel.  
+  
+-   If.<xref:System.Web.UI.DataVisualization.Charting.Series.Palette%2A> is set to None, then the default palette for the chart is used (<xref:System.Web.UI.DataVisualization.Charting.Chart.Palette%2A>).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Berry">
@@ -27,7 +40,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Palette utilizes blues and purples.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bright">
@@ -43,7 +56,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Palette utilizes bright colors.</summary>
       </Docs>
     </Member>
     <Member MemberName="BrightPastel">
@@ -59,7 +72,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Palette utilizes bright pastel colors.</summary>
       </Docs>
     </Member>
     <Member MemberName="Chocolate">
@@ -75,7 +88,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Palette utilizes shades of brown.</summary>
       </Docs>
     </Member>
     <Member MemberName="EarthTones">
@@ -91,7 +104,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Palette utilizes earth tone colors such as green and brown.</summary>
       </Docs>
     </Member>
     <Member MemberName="Excel">
@@ -107,7 +120,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Palette utilizes Excel-style colors.</summary>
       </Docs>
     </Member>
     <Member MemberName="Fire">
@@ -123,7 +136,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Palette utilizes red, orange and yellow colors.</summary>
       </Docs>
     </Member>
     <Member MemberName="Grayscale">
@@ -139,7 +152,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Palette utilizes grayscale colors, that is, shades of black and white.</summary>
       </Docs>
     </Member>
     <Member MemberName="Light">
@@ -155,7 +168,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Palette utilizes light colors.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -171,7 +184,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No palette is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pastel">
@@ -187,7 +200,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Palette utilizes pastel colors.</summary>
       </Docs>
     </Member>
     <Member MemberName="SeaGreen">
@@ -203,7 +216,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Palette utilizes colors that range from green to blue.</summary>
       </Docs>
     </Member>
     <Member MemberName="SemiTransparent">
@@ -219,7 +232,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Palette utilizes semi-transparent colors.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Media.Converters.CharIListConverter
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Converters.CharIListConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

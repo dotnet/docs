@@ -1,29 +1,29 @@
 ---
 uid: Microsoft.JScript.IActivationObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IActivationObject.GetMemberValue(System.String,System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IActivationObject.GetField(System.String,System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IActivationObject.GetDefaultThisObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IActivationObject.GetGlobalScope
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IActivationObject.GetLocalField(System.String)
-internalonly: False
+ms.author: "mikejo"
 ---

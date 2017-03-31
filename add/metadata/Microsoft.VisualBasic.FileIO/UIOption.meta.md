@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.VisualBasic.FileIO.UIOption
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

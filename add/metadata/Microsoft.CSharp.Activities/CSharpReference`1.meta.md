@@ -1,44 +1,76 @@
 ---
 uid: Microsoft.CSharp.Activities.CSharpReference`1
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.CSharp.Activities.CSharpReference`1.ExpressionText
-internalonly: False
----
-
----
-uid: Microsoft.CSharp.Activities.CSharpReference`1.RequiresCompilation
-internalonly: False
----
-
----
-uid: Microsoft.CSharp.Activities.CSharpReference`1.#ctor(System.String)
-internalonly: False
----
-
----
-uid: Microsoft.CSharp.Activities.CSharpReference`1.Language
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.CSharp.Activities.CSharpReference`1.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.CSharp.Activities.CSharpReference`1.RequiresCompilation
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.CSharp.Activities.CSharpReference`1.#ctor(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.CSharp.Activities.CSharpReference`1.CacheMetadata
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.CSharp.Activities.CSharpReference`1.Language
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.CSharp.Activities.CSharpReference`1.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.CSharp.Activities.CSharpReference`1.Execute(System.Activities.CodeActivityContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.CSharp.Activities.CSharpReference`1.GetExpressionTree
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: Microsoft.CSharp.Activities.CSharpReference`1.CacheMetadata(System.Activities.CodeActivityMetadata)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,1 +1,0 @@
-            Dim transSec As HttpTransportSecurity = security.Transport

@@ -1,39 +1,44 @@
 ---
 uid: System.Management.ManagementNamedValueCollection
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementNamedValueCollection.#ctor
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementNamedValueCollection.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ManagementNamedValueCollection.#ctor
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementNamedValueCollection.RemoveAll
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementNamedValueCollection.Item(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementNamedValueCollection.Remove(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementNamedValueCollection.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementNamedValueCollection.Add(System.String,System.Object)
-internalonly: False
+manager: "jillfra"
 ---

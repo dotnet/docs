@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.SelectionMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

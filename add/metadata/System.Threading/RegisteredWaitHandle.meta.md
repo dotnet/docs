@@ -1,9 +1,13 @@
 ---
 uid: System.Threading.RegisteredWaitHandle
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Threading.RegisteredWaitHandle.Unregister(System.Threading.WaitHandle)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

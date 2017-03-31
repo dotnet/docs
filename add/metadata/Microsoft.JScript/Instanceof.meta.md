@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.Instanceof
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Instanceof.JScriptInstanceof(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

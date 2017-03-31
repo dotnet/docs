@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.Design.IExtenderListService
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IExtenderListService.GetExtenderProviders
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

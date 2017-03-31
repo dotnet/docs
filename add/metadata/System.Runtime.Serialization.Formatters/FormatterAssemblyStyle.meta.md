@@ -1,4 +1,4 @@
 ---
 uid: System.Runtime.Serialization.Formatters.FormatterAssemblyStyle
-internalonly: False
+manager: "ghogen"
 ---

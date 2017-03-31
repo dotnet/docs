@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides extension methods for constructing composition services.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,9 @@
         <Parameter Name="composablePartCatalog" Type="System.ComponentModel.Composition.Primitives.ComposablePartCatalog" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="composablePartCatalog">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="composablePartCatalog">The catalog that will provide exports.</param>
+        <summary>Creates a new composition service by using the specified catalog as a source for exports.</summary>
+        <returns>A new composition service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

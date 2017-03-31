@@ -1,9 +1,9 @@
 ---
 uid: System.Management.Instrumentation.ManagementCreateAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementCreateAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Tokens.SamlSecurityKeyIdentifierClause
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SamlSecurityKeyIdentifierClause.#ctor(System.IdentityModel.Tokens.SamlAssertion)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.SamlSecurityKeyIdentifierClause.Assertion
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

@@ -18,8 +18,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents values for <see cref="F:System.Windows.Automation.TextPattern.AnimationStyleAttribute" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Animations appear on the screen only; the animated text prints, but the animation effect does not.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BlinkingBackground">
@@ -35,7 +42,7 @@
         <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the font and background alternate between assigned colors and contrasting colors.</summary>
       </Docs>
     </Member>
     <Member MemberName="LasVegasLights">
@@ -51,7 +58,7 @@
         <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the bounding rectangle displays a border of alternating icons of different colors.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarchingBlackAnts">
@@ -67,7 +74,7 @@
         <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the bounding rectangle displays moving black dashes.</summary>
       </Docs>
     </Member>
     <Member MemberName="MarchingRedAnts">
@@ -83,7 +90,7 @@
         <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the bounding rectangle displays moving red dashes.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -99,7 +106,7 @@
         <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that there is no animation style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Other">
@@ -115,7 +122,7 @@
         <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the animation style is one not explicitly itemized in the <see cref="T:System.Windows.Automation.Text.AnimationStyle" /> enumeration.</summary>
       </Docs>
     </Member>
     <Member MemberName="Shimmer">
@@ -131,7 +138,7 @@
         <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the font alternates between solid and blurred.</summary>
       </Docs>
     </Member>
     <Member MemberName="SparkleText">
@@ -147,7 +154,7 @@
         <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the background displays flashing, multi-colored icons.</summary>
       </Docs>
     </Member>
   </Members>

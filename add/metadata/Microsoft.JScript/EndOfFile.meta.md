@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.EndOfFile
-internalonly: False
+ms.author: "mikejo"
 ---

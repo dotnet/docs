@@ -24,8 +24,54 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies flags for the attributes of a method implementation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The attributes are combined using the bitwise OR operation as follows:  
+  
+ **Code implementation masks:**  
+  
+-   `CodeTypeMask`  
+  
+-   `IL`  
+  
+-   `Native`  
+  
+-   `OPTIL`  
+  
+-   `Runtime`  
+  
+ **Managed masks:**  
+  
+-   `ManagedMask`  
+  
+-   `Unmanaged`  
+  
+-   `Managed`  
+  
+ **Implementation information and interop masks:**  
+  
+-   `ForwardRef`  
+  
+-   `PreserveSig`  
+  
+-   `InternalCall`  
+  
+-   `Synchronized`  
+  
+-   `NoInlining`  
+  
+-   `NoOptimization`  
+  
+-   `MaxMethodImplVal`  
+  
+> [!NOTE]
+>  Locking on the instance or on the type, as with the Synchronized flag, is not recommended for public types, because code other than your own can take locks on public types and instances. This might cause deadlocks or other synchronization problems.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AggressiveInlining">
@@ -55,7 +101,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method should be inlined wherever possible.</summary>
       </Docs>
     </Member>
     <Member MemberName="CodeTypeMask">
@@ -80,7 +126,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies flags about code type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ForwardRef">
@@ -105,7 +151,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method is not defined.</summary>
       </Docs>
     </Member>
     <Member MemberName="IL">
@@ -130,7 +176,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method implementation is in Microsoft intermediate language (MSIL).</summary>
       </Docs>
     </Member>
     <Member MemberName="InternalCall">
@@ -155,7 +201,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies an internal call.</summary>
       </Docs>
     </Member>
     <Member MemberName="Managed">
@@ -180,7 +226,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method is implemented in managed code.</summary>
       </Docs>
     </Member>
     <Member MemberName="ManagedMask">
@@ -205,7 +251,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies whether the method is implemented in managed or unmanaged code.</summary>
       </Docs>
     </Member>
     <Member MemberName="MaxMethodImplVal">
@@ -226,7 +272,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a range check value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Native">
@@ -251,7 +297,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method implementation is native.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoInlining">
@@ -276,7 +322,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method cannot be inlined.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoOptimization">
@@ -301,7 +347,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method is not optimized by the just-in-time (JIT) compiler or by native code generation (see [Ngen.exe](../Topic/Ngen.exe%20\(Native%20Image%20Generator\).md)) when debugging possible code generation problems.</summary>
       </Docs>
     </Member>
     <Member MemberName="OPTIL">
@@ -326,7 +372,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method implementation is in Optimized Intermediate Language (OPTIL).</summary>
       </Docs>
     </Member>
     <Member MemberName="PreserveSig">
@@ -351,7 +397,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method signature is exported exactly as declared.</summary>
       </Docs>
     </Member>
     <Member MemberName="Runtime">
@@ -376,7 +422,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method implementation is provided by the runtime.</summary>
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -401,7 +447,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method is single-threaded through the body. Static methods (<see langword="Shared" /> in Visual Basic) lock on the type, whereas instance methods lock on the instance. You can also use the C# [lock statement](../Topic/lock%20Statement%20\(C%23%20Reference\).md) or the Visual Basic [SyncLock statement](../Topic/SyncLock%20Statement.md) for this purpose.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unmanaged">
@@ -426,7 +472,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the method is implemented in unmanaged code.</summary>
       </Docs>
     </Member>
   </Members>

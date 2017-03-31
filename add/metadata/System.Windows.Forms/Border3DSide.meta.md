@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.Border3DSide
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

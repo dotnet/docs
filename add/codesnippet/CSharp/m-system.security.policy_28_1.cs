@@ -1,1 +1,0 @@
-        int hashCode = codeGroup.GetHashCode();

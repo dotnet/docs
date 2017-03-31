@@ -1,59 +1,71 @@
 ---
 uid: System.Net.Http.WebRequestHandler
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.WebRequestHandler.ServerCertificateValidationCallback
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.WebRequestHandler.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.WebRequestHandler.ImpersonationLevel
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.WebRequestHandler.CachePolicy
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.WebRequestHandler.AuthenticationLevel
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.WebRequestHandler.ContinueTimeout
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.WebRequestHandler.UnsafeAuthenticatedConnectionSharing
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.WebRequestHandler.AllowPipelining
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.WebRequestHandler.MaxResponseHeadersLength
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.WebRequestHandler.ClientCertificates
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Http.WebRequestHandler.ReadWriteTimeout
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

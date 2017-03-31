@@ -1,29 +1,39 @@
 ---
 uid: System.Transactions.SinglePhaseEnlistment
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.SinglePhaseEnlistment.InDoubt
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.SinglePhaseEnlistment.InDoubt(System.Exception)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.SinglePhaseEnlistment.Aborted(System.Exception)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.SinglePhaseEnlistment.Aborted
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.SinglePhaseEnlistment.Aborted
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.SinglePhaseEnlistment.Committed
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.SinglePhaseEnlistment.InDoubt
+manager: "ghogen"
 ---

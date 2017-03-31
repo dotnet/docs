@@ -1,34 +1,55 @@
 ---
 uid: System.ServiceModel.Configuration.NetHttpBindingElement
-internalonly: False
----
-
----
-uid: System.ServiceModel.Configuration.NetHttpBindingElement.Security
-internalonly: False
----
-
----
-uid: System.ServiceModel.Configuration.NetHttpBindingElement.ReliableSession
-internalonly: False
----
-
----
-uid: System.ServiceModel.Configuration.NetHttpBindingElement.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Configuration.NetHttpBindingElement.WebSocketSettings
-internalonly: False
----
-
----
-uid: System.ServiceModel.Configuration.NetHttpBindingElement.MessageEncoding
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.NetHttpBindingElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.NetHttpBindingElement.Security
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.NetHttpBindingElement.ReliableSession
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.NetHttpBindingElement.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.NetHttpBindingElement.WebSocketSettings
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.NetHttpBindingElement.MessageEncoding
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.NetHttpBindingElement.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

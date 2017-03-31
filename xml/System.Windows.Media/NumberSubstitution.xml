@@ -11,8 +11,29 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how numbers in text are displayed in different cultures.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Most cultures use the decimal system to represent numbers, but many cultures use different digit shapes. The following table shows several numbering systems used by different cultures.  
+  
+ ![Table of number substitution glyphs](~/add/media/numbersubstitution01.png "Table of number substitution glyphs")  
+Example of the appearance of digits in different cultures  
+  
+ It is not sufficient to provide alternate Unicode code points for each set of digit shapes, because, unlike letters, digits are used in calculations. Every application, every operating system, and every run-time library contains code dedicated to converting an internal binary format numeric value to a string of characters, and vice versa. These conversion routines are coded to use Unicode digits "0030" through "0039".  
+  
+ The <xref:System.Windows.Media.NumberSubstitution> class provides functionality that allows different cultures to substitute the appropriate digit shapes at rendering time. This functionality is similar to the one used for providing font substitution and language dependent font rendering.  
+  
+> [!NOTE]
+>  Many cultures are discarding their traditional digits shapes and adopting Western digits shapes, therefore the number substitution functionality recognizes the distinction for each culture between traditional digit shapes and national standard digit shapes.  
+  
+<a name="xamlTextUsage_NumberSubstitution"></a>   
+## XAML Text Usage  
+ This type is not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] as an object element. However, the type exposes several attached properties that can be set on other object elements that have text content.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.NumberSubstitution" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,10 +66,10 @@
         <Parameter Name="substitution" Type="System.Windows.Media.NumberSubstitutionMethod" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="cultureOverride">To be added.</param>
-        <param name="substitution">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">Identifies the source of the culture value that is used to determine number substitution.</param>
+        <param name="cultureOverride">Identifies which culture to use when the value of the <see cref="P:System.Windows.Media.NumberSubstitution.CultureSource" /> property is set to <see cref="F:System.Windows.Media.NumberCultureSource.Override" />.</param>
+        <param name="substitution">Identifies the substitution method that is used to determine number substitution.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.NumberSubstitution" /> class with explicit property values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +91,44 @@
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value which identifies which culture to use when the value of the <see cref="P:System.Windows.Media.NumberSubstitution.CultureSource" /> property is set to <see cref="F:System.Windows.Media.NumberCultureSource.Override" />.</summary>
+        <value>A <see cref="T:System.Globalization.CultureInfo" /> value that represents the culture that is used as an override.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of the <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> property is `null`, which is interpreted as the "en-us" (United States English) culture.  
+  
+ If <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> is not set to <xref:System.Windows.Media.NumberCultureSource>, this property is ignored.  
+  
+ This reference page represents two identically named but not entirely equivalent usages for the <xref:System.Windows.Media.NumberSubstitution.CultureOverride%2A> property:  
+  
+-   You can set this property in code on a <xref:System.Windows.Media.NumberSubstitution> instance, as a [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] property. In this usage, the property is not backed by a dependency property identifier, it is backed by a private field and does not act as a dependency property.  
+  
+-   You can set this property as an attached property usage in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. The attached property usage is the reason why this property has a Dependency Property Information section, because the attached property is backed by a dependency property identifier. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* **NumberSubstitution.CultureOverride**`="`*value*`".../>`, where *object* is an object element where the specified number substitution logic applies, and *value* is one of the string-format values as explained in XAML Values. In code, the attached property usage is supported by <xref:System.Windows.Media.NumberSubstitution.GetCultureOverride%2A> and <xref:System.Windows.Media.NumberSubstitution.SetCultureOverride%2A>.  
+  
+<a name="xamlAttributeUsage_CultureOverride"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object NumberSubstitution.CultureOverrideProperty="CultureInfo"/>  
+```  
+  
+<a name="xamlValues_CultureOverride"></a>   
+## XAML Values  
+ *CultureInfo*  
+ String representation of a <xref:System.Globalization.CultureInfo> value. For example, the string, "en-us", represents the United States English culture setting.  
+  
+<a name="dependencyPropertyInfo_CultureOverride"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.NumberSubstitution.CultureOverrideProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CultureOverrideProperty">
@@ -88,7 +144,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.NumberSubstitution.CultureOverride" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,9 +161,34 @@
         <ReturnType>System.Windows.Media.NumberCultureSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value which identifies the source of the culture value that is used to determine number substitution.</summary>
+        <value>An enumerated value of <see cref="T:System.Windows.Media.NumberCultureSource" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of the <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> property is <xref:System.Windows.Media.NumberCultureSource>, which is the culture of the text run.  
+  
+ This reference page represents two identically named but not entirely equivalent usages for the <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> property:  
+  
+-   You can set this property in code on a <xref:System.Windows.Media.NumberSubstitution> instance, as a [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] property. In this usage, the property is not backed by a dependency property identifier, it is backed by a private field and does not act as a dependency property.  
+  
+-   You can set this property as an attached property usage in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. The attached property usage is the reason why this property has a Dependency Property Information section, because the attached property is backed by a dependency property identifier. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* **NumberSubstitution.CultureSource**`="`*value*`".../>`, where *object* is an object element where the specified number substitution logic applies, and *value* is a string representation of a <xref:System.Windows.Media.NumberCultureSource> value. In code, the attached property usage is supported by <xref:System.Windows.Media.NumberSubstitution.GetCultureSource%2A> and <xref:System.Windows.Media.NumberSubstitution.SetCultureSource%2A>.  
+  
+<a name="xamlAttributeUsage_CultureSource"></a>   
+## XAML Attribute Usage  
+ \<*object* **NumberSubstitution.CultureSource**="<xref:System.Windows.Media.NumberCultureSource>"/>  
+  
+<a name="dependencyPropertyInfo_CultureSource"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.NumberSubstitution.CultureSourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CultureSourceProperty">
@@ -123,7 +204,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.NumberSubstitution.CultureSource" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,10 +224,24 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Windows.Media.NumberSubstitution" /> object.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Media.NumberSubstitution" /> object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> is equal to the current <see cref="T:System.Windows.Media.NumberSubstitution" /> object; otherwise, <see langword="false" />. If <paramref name="o" /> is not a <see cref="T:System.Windows.Media.NumberSubstitution" /> object, <see langword="false" /> is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Windows.Media.NumberSubstitution> objects are equal if the following properties are equal:  
+  
+-   <xref:System.Windows.Media.NumberSubstitution.CultureOverride%2A>  
+  
+-   <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A>  
+  
+-   <xref:System.Windows.Media.NumberSubstitution.Substitution%2A>  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCultureOverride">
@@ -173,9 +268,9 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The element to return a <see cref="P:System.Windows.Media.NumberSubstitution.CultureOverride" /> value for.</param>
+        <summary>Returns the value of <see cref="P:System.Windows.Media.NumberSubstitution.CultureOverride" /> from the provided element.</summary>
+        <returns>A <see cref="T:System.Globalization.CultureInfo" /> value that represents the culture that is used as an override.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,9 +295,9 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The element to return a <see cref="P:System.Windows.Media.NumberSubstitution.CultureSource" /> value for.</param>
+        <summary>Returns the value of <see cref="P:System.Windows.Media.NumberSubstitution.CultureSource" /> from the provided element.</summary>
+        <returns>An enumerated value of <see cref="T:System.Windows.Media.NumberCultureSource" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +315,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Serves as a hash function for <see cref="T:System.Windows.Media.NumberSubstitution" />. It is suitable for use in hashing algorithms and data structures such as a hash table.</summary>
+        <returns>An <see cref="T:System.Int32" /> value that represents the hash code for the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,9 +341,9 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The element to return a <see cref="P:System.Windows.Media.NumberSubstitution.Substitution" /> value for.</param>
+        <summary>Returns the value of <see cref="P:System.Windows.Media.NumberSubstitution.Substitution" /> from the provided element.</summary>
+        <returns>An enumerated value of <see cref="T:System.Windows.Media.NumberSubstitutionMethod" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,9 +364,9 @@
         <Parameter Name="value" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">Element that is specifying a culture override.</param>
+        <param name="value">A culture override value of type <see cref="T:System.Globalization.CultureInfo" />.</param>
+        <summary>Sets the value of <see cref="P:System.Windows.Media.NumberSubstitution.CultureOverride" /> for a provided element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,9 +387,9 @@
         <Parameter Name="value" Type="System.Windows.Media.NumberCultureSource" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">Element that is specifying a culture override.</param>
+        <param name="value">A culture source value of type <see cref="T:System.Windows.Media.NumberCultureSource" />.</param>
+        <summary>Sets the value of <see cref="P:System.Windows.Media.NumberSubstitution.CultureSource" /> for a provided element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,9 +410,9 @@
         <Parameter Name="value" Type="System.Windows.Media.NumberSubstitutionMethod" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">Element that is specifying a substitution method.</param>
+        <param name="value">A substitution method value of type <see cref="T:System.Windows.Media.NumberSubstitutionMethod" />.</param>
+        <summary>Sets the value of <see cref="P:System.Windows.Media.NumberSubstitution.Substitution" /> for a provided element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,9 +429,34 @@
         <ReturnType>System.Windows.Media.NumberSubstitutionMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value which identifies the substitution method that is used to determine number substitution.</summary>
+        <value>An enumerated value of <see cref="T:System.Windows.Media.NumberSubstitutionMethod" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of the <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> property is <xref:System.Windows.Media.NumberSubstitutionMethod>, which specifies that the substitution method should be determined based on the number culture's <xref:System.Globalization.NumberFormatInfo.DigitSubstitution%2A> property value.  
+  
+ This reference page represents two identically named but not entirely equivalent usages for the <xref:System.Windows.Media.NumberSubstitution.Substitution%2A> property:  
+  
+-   You can set this property in code on a <xref:System.Windows.Media.NumberSubstitution> instance, as a [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] property. In this usage, the property is not backed by a dependency property identifier, it is backed by a private field and does not act as a dependency property.  
+  
+-   You can set this property as an attached property usage in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. The attached property usage is the reason why this property has a Dependency Property Information section, because the attached property is backed by a dependency property identifier. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is `<`*object* **NumberSubstitution.Substitution**`="`*value*`".../>`, where *object* is an object element where the specified number substitution logic applies, and *value* is a string representation of a <xref:System.Windows.Media.NumberSubstitutionMethod> value. In code, the attached property usage is supported by <xref:System.Windows.Media.NumberSubstitution.GetSubstitution%2A> and <xref:System.Windows.Media.NumberSubstitution.SetSubstitution%2A>.  
+  
+<a name="xamlAttributeUsage_Substitution"></a>   
+## XAML Attribute Usage  
+ \<*object* **NumberSubstitution.Substitution**="<xref:System.Windows.Media.NumberSubstitutionMethod>"/>  
+  
+<a name="dependencyPropertyInfo_Substitution"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.NumberSubstitution.SubstitutionProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SubstitutionProperty">
@@ -352,7 +472,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.NumberSubstitution.Substitution" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

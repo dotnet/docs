@@ -28,9 +28,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TSyndicationFeed">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TSyndicationFeed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" />-derived type to serialize.</typeparam>
+    <summary>A class that serializes <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" />-derived classes to RSS 2.0 format.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> derived classes. If you need to serialize a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance, use the <xref:System.ServiceModel.Syndication.Rss20FeedFormatter> formatter instead.  
+  
+   
+  
+## Examples  
+ The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> derived class and serialize it to RSS 2.0.  
+  
+ [!code-csharp[RssFormatter#3](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#3)]
+ [!code-vb[RssFormatter#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,7 +63,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +84,19 @@
         <Parameter Name="feedToWrite" Type="TSyndicationFeed" />
       </Parameters>
       <Docs>
-        <param name="feedToWrite">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="feedToWrite">The feed to serialize.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter`1" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> derived instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-csharp[RssFormatter#4](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#4)]
+ [!code-vb[RssFormatter#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -92,10 +117,25 @@
         <Parameter Name="serializeExtensionsAsAtom" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="feedToWrite">To be added.</param>
-        <param name="serializeExtensionsAsAtom">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="feedToWrite">The feed to serialize.</param>
+        <param name="serializeExtensionsAsAtom">A value that specifies whether to serialize elements that are defined in the Atom 1.0 specification, but not in the RSS 2.0 specification. The default is <see langword="true" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter`1" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> derived instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `serializeExtensionsAsAtom` parameter is `true`, all elements defined in the Atom 1.0 specification that are not defined in the RSS 2.0 specification are serialized with the Atom 1.0 namespace.  
+  
+   
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-csharp[RssFormatter#5](~/samples/snippets/csharp/VS_Snippets_CFX/rssformatter/cs/snippets.cs#5)]
+ [!code-vb[RssFormatter#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/rssformatter/vb/snippets.vb#5)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateFeedInstance">
@@ -116,8 +156,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> derived class.</summary>
+        <returns>A new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

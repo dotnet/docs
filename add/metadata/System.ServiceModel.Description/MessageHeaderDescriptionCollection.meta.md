@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Description.MessageHeaderDescriptionCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.MessageHeaderDescriptionCollection.GetKeyForItem(System.ServiceModel.Description.MessageHeaderDescription)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

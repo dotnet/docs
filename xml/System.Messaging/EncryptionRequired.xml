@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the privacy level of messages received by the queue.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can specify whether the queue accepts private (encrypted) messages, non-private (non-encrypted) messages, or both.  
+  
+ Documentation often refers to non-encrypted messages as clear.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Body">
@@ -27,7 +36,7 @@
         <ReturnType>System.Messaging.EncryptionRequired</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Accepts only private (encrypted) messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +52,7 @@
         <ReturnType>System.Messaging.EncryptionRequired</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Accepts only non-private (non-encrypted) messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="Optional">
@@ -59,7 +68,7 @@
         <ReturnType>System.Messaging.EncryptionRequired</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Does not force privacy. Accepts private (encrypted) messages and non-private (non-encrypted) messages.</summary>
       </Docs>
     </Member>
   </Members>

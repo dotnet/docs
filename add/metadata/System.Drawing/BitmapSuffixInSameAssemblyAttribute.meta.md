@@ -1,9 +1,13 @@
 ---
 uid: System.Drawing.BitmapSuffixInSameAssemblyAttribute
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.BitmapSuffixInSameAssemblyAttribute.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -11,8 +11,21 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implements a multiple-input, single-output compositor for two-dimensional (2-D) transformations in a shared coordinate space.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D> object treats a collection of manipulators as a composite object. Your application is then freed from the necessity of tracking and managing individual manipulators.  
+  
+ A manipulation processor by itself does not cause an element to move. Your application begins a manipulation as necessary, and then receives information from a manipulation processor by listening to the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Started>, <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Delta> and <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Completed> events. The values received via these events enable you to change the location, size or orientation of an element as needed.  
+  
+ You inform a manipulation processor which types of manipulations are allowed (translate, scale, rotate) by setting the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.SupportedManipulations%2A> property. You can then provide non-conditional logic to the transformation of the element that is being manipulated. For instance, instead of checking if rotation is enabled before changing the orientation of an element, you can unconditionally apply the rotation factor received from the manipulation processor; if rotation is not enabled, the manipulation processor will report that no rotational change has occurred.  
+  
+ When an element that is being manipulated is released (all manipulators are removed), you can use inertia processing to simulate friction and cause the element to gradually slow its movements before coming to a stop. For more information see the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +41,10 @@
         <Parameter Name="supportedManipulations" Type="System.Windows.Input.Manipulations.Manipulations2D" />
       </Parameters>
       <Docs>
-        <param name="supportedManipulations">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="supportedManipulations">The initial set of supported manipulations.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Input.Manipulations.ManipulationProcessor2D" /> object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="supportedManipulations" /> parameter is not a valid combination of the <see cref="T:System.Windows.Input.Manipulations.Manipulations2D" /> enumeration values.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -47,10 +61,11 @@
         <Parameter Name="pivot" Type="System.Windows.Input.Manipulations.ManipulationPivot2D" />
       </Parameters>
       <Docs>
-        <param name="supportedManipulations">To be added.</param>
-        <param name="pivot">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="supportedManipulations">The initial set of supported manipulations.</param>
+        <param name="pivot">Pivot information for single-manipulator rotations.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Input.Manipulations.ManipulationProcessor2D" /> object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="supportedManipulations" /> parameter is not a valid combination of the <see cref="T:System.Windows.Input.Manipulations.Manipulations2D" /> enumeration values.</exception>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -66,7 +81,7 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Input.Manipulations.Manipulation2DCompletedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a manipulation has competed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +101,10 @@
         <Parameter Name="timestamp" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="timestamp">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="timestamp">The timestamp to complete the manipulation, in 100-nanosecond ticks.</param>
+        <summary>Forces the current manipulation to complete and raises the <see cref="E:System.Windows.Input.Manipulations.ManipulationProcessor2D.Completed" /> event.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The timestamp is less than the previous timestamp for the current manipulation.</exception>
       </Docs>
     </Member>
     <Member MemberName="Delta">
@@ -104,8 +120,20 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the manipulation origin has changed or when translation, scaling, or rotation have occurred.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Delta?displayProperty=fullName> event and the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Delta?displayProperty=fullName> event are the same type. Typically, you can use the same event handler for both events.  
+  
+   
+  
+## Examples  
+ [!code-csharp[ManipulationAPI#_ManipulationItem_OnManipulationOrInertiaDelta](~/samples/snippets/csharp/VS_Snippets_Misc/manipulationapi/cs/manipulationitem.xaml.cs#_manipulationitem_onmanipulationorinertiadelta)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumScaleRotateRadius">
@@ -121,9 +149,20 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the minimum radius, in coordinate units, necessary for a manipulator to participate in scaling and rotation.</summary>
+        <value>The minimum radius, in coordinate units, necessary for a manipulator to participate in scaling and rotation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a manipulator is extremely close to the center of mass of the manipulators currently being processed, a very small manipulator motion can become a very large change to rotation or scaling. To avoid this problem, set <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.MinimumScaleRotateRadius%2A> to something greater than zero. Any manipulator that is closer than that distance to the center of mass will not be included in rotation and scaling operations.  
+  
+ A typical value to use should be based on the likely magnitude of "accidental" motions of the manipulators. For example, if the manipulator is a human finger touching a screen, a radius corresponding to a centimeter or so might be appropriate.  
+  
+ The value for <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.MinimumScaleRotateRadius%2A> must be a finite, non-negative number.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Pivot">
@@ -139,9 +178,16 @@
         <ReturnType>System.Windows.Input.Manipulations.ManipulationPivot2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the pivot information for the manipulation processor.</summary>
+        <value>The pivot information for the manipulation processor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Pivot%2A> property is used to provide pivot information for single-manipulator rotations. Setting this property to null disables single-manipulator rotations.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessManipulators">
@@ -161,10 +207,27 @@
         <Parameter Name="manipulators" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Input.Manipulations.Manipulator2D&gt;" />
       </Parameters>
       <Docs>
-        <param name="timestamp">To be added.</param>
-        <param name="manipulators">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="timestamp">The timestamp for the batch, in 100-nanosecond ticks.</param>
+        <param name="manipulators">The set of manipulators that are currently in scope.</param>
+        <summary>Processes the specified manipulators as a single batch action.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The parameter `manipulators` may be an empty list or null. If this results in the number of manipulators reaching zero, the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Completed> event is raised.  
+  
+   
+  
+## Examples  
+ In the following example, the <xref:System.Windows.UIElement.OnLostMouseCapture%2A> method of a <xref:System.Windows.UIElement> object is overridden to call the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.ProcessManipulators%2A> method with the list of <xref:System.Windows.Input.Manipulations.Manipulator2D> objects set to null.  
+  
+ [!code-csharp[ManipulationAPI#_ManipulationItem_OnLostMouseCapture](~/samples/snippets/csharp/VS_Snippets_Misc/manipulationapi/cs/manipulationitem.xaml.cs#_manipulationitem_onlostmousecapture)]  
+  
+ [!code-csharp[ManipulationAPI#_ManipulationItem_Timestamp](~/samples/snippets/csharp/VS_Snippets_Misc/manipulationapi/cs/manipulationitem.xaml.cs#_manipulationitem_timestamp)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The timestamp is less than the previous timestamp for the current manipulation.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetParameters">
@@ -188,8 +251,8 @@
         <Parameter Name="parameters" Type="System.Windows.Input.Manipulations.ManipulationParameters2D" />
       </Parameters>
       <Docs>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameters">Parameters to set.</param>
+        <summary>Sets parameters on the manipulation processor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +269,19 @@
         <ReturnType>System.EventHandler&lt;System.Windows.Input.Manipulations.Manipulation2DStartedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a new manipulation has started.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, an event handler for the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Started> event checks to see if inertia processing is running and if so, stops it.  
+  
+ [!code-csharp[ManipulationAPI#_ManipulationItem_OnManipulationStarted](~/samples/snippets/csharp/VS_Snippets_Misc/manipulationapi/cs/manipulationitem.xaml.cs#_manipulationitem_onmanipulationstarted)]  
+  
+ [!code-csharp[ManipulationAPI#_ManipulationItem_Timestamp](~/samples/snippets/csharp/VS_Snippets_Misc/manipulationapi/cs/manipulationitem.xaml.cs#_manipulationitem_timestamp)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportedManipulations">
@@ -223,9 +297,12 @@
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the current set of supported manipulations.</summary>
+        <value>The current set of supported manipulations.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property tries to set a value that is not a valid combination of the <see cref="T:System.Windows.Input.Manipulations.Manipulations2D" />  
+  
+ enumeration values.</exception>
       </Docs>
     </Member>
   </Members>

@@ -1,19 +1,19 @@
 ---
 uid: System.Web.Caching.MemoryResponseElement
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.MemoryResponseElement.Length
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.MemoryResponseElement.#ctor(System.Byte[],System.Int64)
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.MemoryResponseElement.Buffer
-internalonly: False
+manager: "wpickett"
 ---

@@ -1,4 +1,5 @@
 ---
 uid: System.Net.Mail
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

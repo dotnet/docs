@@ -16,8 +16,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the types of file protocol methods that can be used with a FILE request. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The members of this class can be used to set the <xref:System.Net.FileWebRequest.Method%2A> property that determines the protocol method that is to be used to perform a requested action, such as copying and retrieving a file.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DownloadFile">
@@ -38,7 +45,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the FILE GET protocol method that is used to retrieve a file from a specified location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,7 +67,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the FILE PUT protocol method that is used to copy a file to a specified location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

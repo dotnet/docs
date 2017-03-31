@@ -1,29 +1,35 @@
 ---
 uid: System.Web.UI.RegisteredExpandoAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredExpandoAttribute.Value
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredExpandoAttribute.ControlId
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredExpandoAttribute.Control
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredExpandoAttribute.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RegisteredExpandoAttribute.Encode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute.ExpressionMorphHelperType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute.#ctor(System.Type)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

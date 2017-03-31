@@ -1,44 +1,53 @@
 ---
 uid: System.Web.Configuration.UserMapPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.UserMapPath.MapPath(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.UserMapPath.GetAppPathForPath(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.UserMapPath.GetPathConfigFilename(System.String,System.String,System.String@,System.String@)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.UserMapPath.GetMachineConfigFilename
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.UserMapPath.ResolveSiteArgument(System.String,System.String@,System.String@)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.UserMapPath.GetDefaultSiteNameAndID(System.String@,System.String@)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.UserMapPath.#ctor(System.Configuration.ConfigurationFileMap)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.UserMapPath.GetRootWebConfigFilename
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

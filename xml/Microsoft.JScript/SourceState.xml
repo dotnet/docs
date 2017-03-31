@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the state of source code text. This class is used together with other classes that provide information to color JScript code in an editor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>Microsoft.JScript.SourceState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Comment text.</summary>
       </Docs>
     </Member>
     <Member MemberName="STATE_COLOR_NORMAL">
@@ -51,7 +51,7 @@
         <ReturnType>Microsoft.JScript.SourceState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Normal text.</summary>
       </Docs>
     </Member>
     <Member MemberName="STATE_COLOR_STRING">
@@ -67,7 +67,7 @@
         <ReturnType>Microsoft.JScript.SourceState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>String literal text.</summary>
       </Docs>
     </Member>
   </Members>

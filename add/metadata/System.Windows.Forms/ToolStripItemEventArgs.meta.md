@@ -1,14 +1,18 @@
 ---
 uid: System.Windows.Forms.ToolStripItemEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripItemEventArgs.Item
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripItemEventArgs.#ctor(System.Windows.Forms.ToolStripItem)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

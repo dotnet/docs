@@ -1,4 +1,5 @@
 ---
 uid: System.Net.OpenReadCompletedEventHandler
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

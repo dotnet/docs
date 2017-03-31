@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes a ClickOnce or native Win32 application manifest.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <Parameter Name="targetFrameworkVersion" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetFrameworkVersion">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="targetFrameworkVersion">A token that represents a version of the .NET Framework.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,9 +74,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the application configuration file.</summary>
+        <value>A string that represents the name of the application configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a native Win32 manifest, this input is ignored.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EntryPoint">
@@ -97,8 +104,8 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an assembly reference that represents the entry point of the application.</summary>
+        <value>An <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference" /> object that represents the entry point of the application.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +127,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the URL of the error report.</summary>
+        <value>A string that contains the URL of the error report.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +150,8 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the file associations that are defined in the manifest.</summary>
+        <value>A string that contains the file associations.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,9 +173,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether the application is hosted in a browser (as WPF Web Browser Applications are).</summary>
+        <value>A Boolean value that indicates whether the application being deployed will be hosted in a browser (<see langword="True" />), or not (<see langword="False" />). <see langword="True" /> applies only to WPF Web Browser Applications.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For project types other than WPF Web Browser Applications, you should set <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A> to `False` (the default value).  
+  
+ When you deploy a WPF Web Browser Application, you must set the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser%2A> property to `True`. This causes the `<hostInBrowser>` tag to be added to the generated application manifest. This tag enables ClickOnce to deploy projects for browser-hosted applications, which contain .xbap files.  
+  
+ You will also have to make the application available only online by setting <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install%2A> to `False`. If you do not do this, you will receive [MSBuild Error MSB3116](../Topic/MSBuild%20Error%20MSB3116.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconFile">
@@ -189,9 +207,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the program icon file.</summary>
+        <value>A string that represents the name of the icon file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The program icon is expressed in the generated application manifest and is used for the **Start** menu and **Add or Remove Programs**. If this the icon file is not specified, a default icon is used. For a native Win32 manifest, this input is ignored.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsClickOnceManifest">
@@ -212,8 +237,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether the manifest is a ClickOnce application manifest or a native Win32 application manifest.</summary>
+        <value>A Boolean value that indicates whether the manifest is a ClickOnce application manifest (<see langword="True" />) or a native Win32 manifest (<see langword="False" />).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,8 +260,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies the maximum allowed length of a file path in a ClickOnce application deployment. If this value is specified, the length of each file path in the application is checked against this limit. Any items that exceed the limit cause a warning message. If this input is not specified or is zero, no checking is performed. For a native Win32 manifest, this input is ignored.</summary>
+        <value>An integer that indicates the maximum allowed length of a file path in a ClickOnce application deployment.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,8 +283,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies a textual description for the operating system dependency.</summary>
+        <value>A string that indicates the operating system dependency.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,8 +306,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies a support URL for the operating system dependency.</summary>
+        <value>A string indicating the support URL for the operating system dependency.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,9 +329,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies the minimum required operating system version required by the application.</summary>
+        <value>A string that indicates the minimum required operating system version required by the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifies the minimum operating system version required by the application. An example value is "5.1.2600.0" for Windows XP. If this input is not specified, a default value is used. The default value is the minimum supported operating system of the .NET Framework, which is "4.10.0.0" for Windows 98SE. However, if the application contains any native or Reg-Free COM references, the default is Windows XP. For a native Win32 manifest, this input is ignored.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Product">
@@ -327,9 +359,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies the <see langword="ProductName" /> property in the project file.</summary>
+        <value>A string value that corresponds to the <see langword="ProductName" /> property in the project file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the `ProductName` property in the project file. The default is null. If `ProductName` is null and <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.UseApplicationTrust%2A> is `True`, the RegisteredOrganization value in the registry is written to the application manifest. If RegisteredOrganization is also null, the assembly name is used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Publisher">
@@ -350,9 +389,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies the <see langword="PublisherName" /> property in the project file.</summary>
+        <value>A string value that corresponds to the <see langword="PublisherName" /> property in the project file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the `PublisherName` property in the project file. The default is null. If `PublisherName` is null and <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.UseApplicationTrust%2A> is `True`, the assembly name is written to the application manifest.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SuiteName">
@@ -373,8 +419,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the suite name that is defined in the manifest.</summary>
+        <value>A string that contains the suite name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,9 +442,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies the <see langword="SupportUrl" /> property in the project file.</summary>
+        <value>A string value that corresponds to the <see langword="SupportUrl" /> property in the project file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the `SupportUrl` property in the project file. The default is null. If `SupportUrl` is null and <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.UseApplicationTrust%2A> is `True`, an empty string is written to the application manifest.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkVersion">
@@ -419,8 +472,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a token that represents a version of the .NET Framework.</summary>
+        <value>A <see cref="T:System.String" /> that represents a version of the .NET Framework.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,8 +495,8 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies a trust object that defines the application security.</summary>
+        <value>A <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo" /> object that defines the application security.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -465,9 +518,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Product" />, <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Publisher" />, and <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.SupportUrl" /> properties are written to the application manifest.</summary>
+        <value>A Boolean value that indicates whether the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Publisher" />, <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Product" />, and <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.SupportUrl" /> properties are written to the application manifest. If the value is <see langword="True" />, they are written to the application manifest. If the value is <see langword="False" />, these properties are ignored.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Product%2A>, <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Publisher%2A>, and <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.SupportUrl%2A> properties are set to null. They are used only if <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.UseApplicationTrust%2A> is `True`. If this property is `True`, the values of these properties are written to the corresponding tags in the application manifest.  
+  
+ If <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.UseApplicationTrust%2A> is `False` (the default value), these properties are ignored.  
+  
+ This property corresponds to the `UseApplicationTrust` property in the project file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -484,8 +548,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Performs various checks to verify the validity of the manifest. Any resulting errors or warnings are reported in the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before calling this method, you must set the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.TargetFrameworkVersion%2A> property so that the validation can verify application manifest against the correct version of the .NET Framework runtime.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlConfigFile">
@@ -512,8 +583,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.ConfigFile" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.ConfigFile" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,8 +612,8 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the entry point identity to an XML file.</summary>
+        <value>The entry point identity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -570,8 +641,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the entry point parameters to an XML file.</summary>
+        <value>The entry point parameters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -599,8 +670,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that specifies the entry point for executing the assembly and that is used to serialize the entry point to an XML file.</summary>
+        <value>The entry point for executing the assembly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -628,8 +699,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.ErrorReportUrl" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.ErrorReportUrl" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -657,8 +728,8 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.FileAssociations" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.FileAssociations" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -686,8 +757,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser" /> property to an XML file.</summary>
+        <value>
+          <see langword="true" /> or <see langword="false" />. The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -715,8 +787,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.IconFile" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.IconFile" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -744,8 +816,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.IsClickOnceManifest" /> property to an XML file.</summary>
+        <value>
+          <see langword="true" /> or <see langword="false" />. The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.IsClickOnceManifest" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -773,8 +846,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the build version of the operating system to an XML file.</summary>
+        <value>The build version of the operating system.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -802,8 +875,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.OSDescription" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.OSDescription" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -831,8 +904,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the major portion of the version number of the operating system to an XML file.</summary>
+        <value>The major portion of the version number of the operating system.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -860,8 +933,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the minor portion of the version number of the operating system to an XML file.</summary>
+        <value>The minor portion of the version number of the operating system.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -889,8 +962,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the revision portion of the version number of the operating system to an XML file.</summary>
+        <value>The revision portion of the version number of the operating system.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -918,8 +991,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.OSSupportUrl" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.OSSupportUrl" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -947,8 +1020,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Product" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Product" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -976,8 +1049,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Publisher" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.Publisher" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1005,8 +1078,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.SuiteName" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.SuiteName" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1034,8 +1107,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.SupportUrl" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.SupportUrl" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1063,8 +1136,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.UseApplicationTrust" /> property to an XML file.</summary>
+        <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.UseApplicationTrust" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

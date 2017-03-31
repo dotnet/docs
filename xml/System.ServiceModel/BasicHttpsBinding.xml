@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies basic https binding settings.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpsBinding" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="securityMode" Type="System.ServiceModel.BasicHttpsSecurityMode" />
       </Parameters>
       <Docs>
-        <param name="securityMode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityMode">The value of <see cref="T:System.ServiceModel.BasicHttpsSecurityMode" /> that specifies the type of security.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpsBinding" /> class with the specified type of security mode.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <Parameter Name="configurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configurationName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="configurationName">The binding configuration name for the BasicHttpsBindingElement.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpsBinding" /> class with the specified type of configuration name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +88,10 @@
         <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TChannel">The type of channel.</typeparam>
+        <param name="parameters">The <see cref="T:System.ServiceModel.Channels.BindingParameterCollection" /> that specifies requirements for the channel factory built.</param>
+        <summary>Builds the channel factory stack on the client that creates a specified type of channel.</summary>
+        <returns>The channel factory stack on the client.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +110,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an ordered collection of binding elements contained in the current binding.</summary>
+        <returns>An ordered collection of binding elements contained in the current binding.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +129,8 @@
         <ReturnType>System.ServiceModel.WSMessageEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether MTOM or Text is used to encode SOAP messages.</summary>
+        <value>The value that indicates whether MTOM or Text/XML is used to encode SOAP messages. The default value is Text.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +167,8 @@
         <ReturnType>System.ServiceModel.BasicHttpsSecurity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of security used with the binding.</summary>
+        <value>The BasicHttpSecurity that is used with the binding. The default value is None.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,8 +191,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Indicates whether the security settings should be serialized.</summary>
+        <returns>
+          <see langword="True" /> if the security settings should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

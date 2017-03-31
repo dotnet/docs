@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Automation.Text.FlowDirections
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The <see cref="T:System.Windows.Ink.PropertyDataChangedEventArgs" /> object that contains information about the event.</param>
+    <summary>Represents the method that handles the <see langword="PropertyDataChanged" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

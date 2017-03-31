@@ -1,1 +1,0 @@
-ruleSetting.Provider = "EventLogProvider";

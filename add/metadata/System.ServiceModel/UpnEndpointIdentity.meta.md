@@ -1,14 +1,27 @@
 ---
 uid: System.ServiceModel.UpnEndpointIdentity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.UpnEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.UpnEndpointIdentity.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.UpnEndpointIdentity.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

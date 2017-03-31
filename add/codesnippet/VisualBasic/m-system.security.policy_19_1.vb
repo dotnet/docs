@@ -1,1 +1,0 @@
-        If (Not policyStatementCopy.Equals(policyStatement)) Then

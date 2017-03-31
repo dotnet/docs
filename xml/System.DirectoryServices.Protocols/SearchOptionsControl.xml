@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SearchOptionsControl" /> class is used to pass flags to the server to control search behavior.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchOptionsControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.SearchOptionsControl" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="flags" Type="System.DirectoryServices.Protocols.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="flags">The <see cref="T:System.DirectoryServices.Protocols.SearchOption" /> enumeration value that specifies the search behavior.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchOptionsControl.#ctor(System.DirectoryServices.Protocols.SearchOption)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.SearchOptionsControl" /> class using the specified search options.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +62,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchOptionsControl.GetValue" /> method returns search option for this object.</summary>
+        <returns>The search option associated with this control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +80,10 @@
         <ReturnType>System.DirectoryServices.Protocols.SearchOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchOptionsControl.SearchOption" /> property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.SearchOption" /> enumeration that specifies the search behavior.</summary>
+        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.SearchOption" /> enumeration that specifies the search behavior.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not one of the values of <see cref="T:System.DirectoryServices.Protocols.SearchOption" />.</exception>
       </Docs>
     </Member>
   </Members>

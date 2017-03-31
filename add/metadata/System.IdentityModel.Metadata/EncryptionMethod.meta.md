@@ -1,14 +1,17 @@
 ---
 uid: System.IdentityModel.Metadata.EncryptionMethod
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.EncryptionMethod.#ctor(System.Uri)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.EncryptionMethod.Algorithm
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

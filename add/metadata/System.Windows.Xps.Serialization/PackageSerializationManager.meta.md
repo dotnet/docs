@@ -1,19 +1,19 @@
 ---
 uid: System.Windows.Xps.Serialization.PackageSerializationManager
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.PackageSerializationManager.#ctor
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.PackageSerializationManager.System#IDisposable#Dispose
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.PackageSerializationManager.SaveAsXaml(System.Object)
-internalonly: False
+manager: "leannef"
 ---

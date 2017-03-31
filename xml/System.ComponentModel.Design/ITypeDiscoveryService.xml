@@ -13,8 +13,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Discovers available types at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.ITypeDiscoveryService> is used to discover available types at design time, when a client of the service does not know the names of existing types or referenced assemblies.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetTypes">
@@ -39,11 +46,18 @@
         <Parameter Name="excludeGlobalTypes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="baseType">To be added.</param>
-        <param name="excludeGlobalTypes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="baseType">The base type to match. Can be <see langword="null" />.</param>
+        <param name="excludeGlobalTypes">Indicates whether types from all referenced assemblies should be checked.</param>
+        <summary>Retrieves the list of available types.</summary>
+        <returns>A collection of types that match the criteria specified by <paramref name="baseType" /> and <paramref name="excludeGlobalTypes" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `baseType` is `null`, all types are returned. Otherwise, only types derived from the specified base type are returned. If `excludeGlobalTypes` is `false`, types from all referenced assemblies are checked. Otherwise, only types from non-Global Assembly Cache (GAC) referenced assemblies are checked. For more information, see [Working with Assemblies and the Global Assembly Cache](../Topic/Working%20with%20Assemblies%20and%20the%20Global%20Assembly%20Cache.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

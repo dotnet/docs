@@ -11,7 +11,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies an enumeration of WebSocket transport usage.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
         <ReturnType>System.ServiceModel.Channels.WebSocketTransportUsage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates WebSocket transport will always be used.</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -46,7 +46,7 @@
         <ReturnType>System.ServiceModel.Channels.WebSocketTransportUsage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates WebSocket transport will never be used.</summary>
       </Docs>
     </Member>
     <Member MemberName="WhenDuplex">
@@ -63,7 +63,7 @@
         <ReturnType>System.ServiceModel.Channels.WebSocketTransportUsage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates WebSocket transport will be used for duplex service contracts only.</summary>
       </Docs>
     </Member>
   </Members>

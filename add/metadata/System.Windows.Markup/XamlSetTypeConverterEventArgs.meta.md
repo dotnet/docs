@@ -1,29 +1,29 @@
 ---
 uid: System.Windows.Markup.XamlSetTypeConverterEventArgs
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetTypeConverterEventArgs.TypeConverter
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetTypeConverterEventArgs.CultureInfo
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetTypeConverterEventArgs.CallBase
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetTypeConverterEventArgs.#ctor(System.Xaml.XamlMember,System.ComponentModel.TypeConverter,System.Object,System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetTypeConverterEventArgs.ServiceProvider
-internalonly: False
+manager: "martinek"
 ---

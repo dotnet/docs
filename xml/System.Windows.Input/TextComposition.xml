@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a composition related to text input which includes the composition text itself, any related control or system text, and a state of completion for the composition.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,11 +30,18 @@
         <Parameter Name="resultText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="inputManager">To be added.</param>
-        <param name="source">To be added.</param>
-        <param name="resultText">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inputManager">An input manager to associate with this text composition.</param>
+        <param name="source">A source element for this text composition.  The object underlying the source element must implement the <see cref="T:System.Windows.IInputElement" /> interface.</param>
+        <param name="resultText">A string containing the initial text for the composition.  This parameter will become the value of the <see cref="P:System.Windows.Input.TextComposition.Text" /> property in the new class instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.TextComposition" /> class, taking a specified <see cref="T:System.Windows.Input.InputManager" />, source element, and composition text as initial values for the new instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this constructor is used to create a new instance of <xref:System.Windows.Input.TextComposition>, the new instance will have <xref:System.Windows.Input.TextComposition.AutoComplete%2A> set to **On**.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -58,11 +65,11 @@
         <Parameter Name="autoComplete" Type="System.Windows.Input.TextCompositionAutoComplete" />
       </Parameters>
       <Docs>
-        <param name="inputManager">To be added.</param>
-        <param name="source">To be added.</param>
-        <param name="resultText">To be added.</param>
-        <param name="autoComplete">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="inputManager">An input manager to associate with this text composition.</param>
+        <param name="source">A source element for this text composition.  The object underlying the source element must implement the <see cref="T:System.Windows.IInputElement" /> interface.</param>
+        <param name="resultText">A string containing the initial text for the composition.  This parameter will become the value of the <see cref="P:System.Windows.Input.TextComposition.Text" /> property in the new class instance.</param>
+        <param name="autoComplete">A member of the <see cref="T:System.Windows.Input.TextCompositionAutoComplete" /> enumerations specifying desired auto-complete behavior for this text composition.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.TextComposition" /> class, taking a specified <see cref="T:System.Windows.Input.InputManager" />, source element, composition text, and a <see cref="T:System.Windows.Input.TextCompositionAutoComplete" /> setting as initial values for the new instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +86,8 @@
         <ReturnType>System.Windows.Input.TextCompositionAutoComplete</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the auto-complete setting for this text composition.</summary>
+        <value>A member of the <see cref="T:System.Windows.Input.TextCompositionAutoComplete" /> enumerations specifying the current auto-complete behavior for this text composition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +110,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Completes this text composition.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls the static <xref:System.Windows.Input.TextCompositionManager.CompleteComposition%2A> method with this text composition as the input parameter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CompositionText">
@@ -125,8 +139,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the composition text for this text composition.</summary>
+        <value>A string containing the composition text for this text composition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +162,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets any control text associated with this text composition.</summary>
+        <value>A string containing any control text associated with this text composition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,8 +185,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the system composition text for this text composition.</summary>
+        <value>A string containing the system composition text for this text composition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,8 +208,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the system text for this text composition.</summary>
+        <value>A string containing the system text for this text composition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,8 +231,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the current text for this text composition.</summary>
+        <value>A string containing the current text for this text composition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

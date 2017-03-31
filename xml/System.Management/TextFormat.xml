@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the possible text formats that can be used with <see cref="M:System.Management.ManagementBaseObject.GetText(System.Management.TextFormat)" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Management.TextFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>XML DTD that corresponds to CIM DTD version 2.0.</summary>
       </Docs>
     </Member>
     <Member MemberName="Mof">
@@ -43,7 +43,7 @@
         <ReturnType>System.Management.TextFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>*Managed Object Format*</summary>
       </Docs>
     </Member>
     <Member MemberName="WmiDtd20">
@@ -59,7 +59,7 @@
         <ReturnType>System.Management.TextFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>XML WMI DTD that corresponds to CIM DTD version 2.0. Using this value enables a few WMI-specific extensions, like embedded objects.</summary>
       </Docs>
     </Member>
   </Members>

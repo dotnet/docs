@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Abstract base class for objects that need to be notified of parse events during page parsing.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Iinitializes a new instance of the <see cref="T:System.Web.UI.ParseRecorder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="parser" Type="System.Web.UI.TemplateParser" />
       </Parameters>
       <Docs>
-        <param name="parser">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parser">The template parser.</param>
+        <summary>When implemented in a derived class, initializes the listener.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
         <Parameter Name="root" Type="System.Web.UI.ControlBuilder" />
       </Parameters>
       <Docs>
-        <param name="root">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="root">The control builder root.</param>
+        <summary>Called when the template parser is finished parsing the file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,13 +93,13 @@
         <Parameter Name="dataBindingMethod" Type="System.CodeDom.CodeMemberMethod" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <param name="codeCompileUnit">To be added.</param>
-        <param name="baseType">To be added.</param>
-        <param name="derivedType">To be added.</param>
-        <param name="buildMethod">To be added.</param>
-        <param name="dataBindingMethod">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="builder">The control builder.</param>
+        <param name="codeCompileUnit">The code compile unit.</param>
+        <param name="baseType">The code type declaration base type.</param>
+        <param name="derivedType">The code type declaration derived type.</param>
+        <param name="buildMethod">The build method.</param>
+        <param name="dataBindingMethod">The data binding method.</param>
+        <summary>When implemented in a derived class, enables the parse recorder to access the generated CodeDom and insert and modify code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +120,9 @@
         <Parameter Name="tag" Type="System.Text.RegularExpressions.Match" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <param name="tag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="builder">The control builder.</param>
+        <param name="tag">The tag.</param>
+        <summary>Called when the template parser encounters a web control start tag.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,9 +143,9 @@
         <Parameter Name="codeBlock" Type="System.Text.RegularExpressions.Match" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <param name="codeBlock">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="builder">The control builder.</param>
+        <param name="codeBlock">The code block.</param>
+        <summary>Called when the template parser encounters a code block.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,9 +166,9 @@
         <Parameter Name="tag" Type="System.Text.RegularExpressions.Match" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <param name="tag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="builder">The control builder.</param>
+        <param name="tag">The tag.</param>
+        <summary>Called when the template parser encounters a web control empty tag.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,9 +189,9 @@
         <Parameter Name="tag" Type="System.Text.RegularExpressions.Match" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <param name="tag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="builder">The control builder.</param>
+        <param name="tag">The tag.</param>
+        <summary>Called when the template parser encounters a web control end tag.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,8 +208,8 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.Func&lt;System.Web.UI.ParseRecorder&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of parse recorder factories.</summary>
+        <value>The parse recorder factories. If the property is <see langword="null" />, an empty collection is created and returned.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

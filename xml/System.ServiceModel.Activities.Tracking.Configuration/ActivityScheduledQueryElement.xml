@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A configuration element that represents a <see cref="T:System.Activities.Tracking.ActivityScheduledQuery" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the activity to filter <see cref="T:System.Activities.Tracking.ActivityScheduledRecord" /> instances on. The default value is "*" (all).</summary>
+        <value>The name of the activity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,8 +77,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the child activity to filter <see cref="T:System.Activities.Tracking.ActivityScheduledRecord" /> instances on. The default value is "*" (all).</summary>
+        <value>The name of the child activity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +96,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates the <see cref="T:System.Activities.Tracking.ActivityScheduledQuery" />.</summary>
+        <returns>The activity-scheduled query.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,8 +114,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the properties contained in this configuration element.</summary>
+        <value>The properties contained in this configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

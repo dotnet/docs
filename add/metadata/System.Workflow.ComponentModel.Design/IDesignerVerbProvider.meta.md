@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.Design.IDesignerVerbProvider
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Design.IDesignerVerbProvider.GetVerbs(System.Workflow.ComponentModel.Design.ActivityDesigner)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

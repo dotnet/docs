@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Generates dynamic data fields (columns) for data-bound controls automatically.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override the <xref:System.Web.DynamicData.DefaultAutoFieldGenerator> class to customize how Dynamic Data generates data fields.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,9 +39,17 @@
         <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" />
       </Parameters>
       <Docs>
-        <param name="table">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="table">The metadata for the table to generate dynamic fields for.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DefaultAutoFieldGenerator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DefaultAutoFieldGenerator.%23ctor%2A> constructor calls the <xref:System.Web.DynamicData.MetaTable.GetScaffoldColumns%2A> method to generate fields dynamically.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The table is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -55,12 +70,19 @@
         <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
       </Parameters>
       <Docs>
-        <param name="column">To be added.</param>
-        <param name="containerType">To be added.</param>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="column">The metadata for the column to create the dynamic field for.</param>
+        <param name="containerType">The data-bound control that contains the dynamic field.</param>
+        <param name="mode">The access mode for the dynamic field.</param>
+        <summary>Generates a dynamic data field.</summary>
+        <returns>The dynamic field to create.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override this method to customize dynamic-field options such as the access mode. The access <xref:System.Web.UI.WebControls.DataBoundControlMode> mode specifies the data-entry modes for a data field, such as `ReadOnly`, `Edit`, and `Insert`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateFields">
@@ -79,9 +101,9 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="control">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="control">The data-bound control that contains the dynamic data field.</param>
+        <summary>Generates <see cref="T:System.Web.DynamicData.DynamicField" /> objects based on metadata information for the table.</summary>
+        <returns>A collection of <see cref="T:System.Web.DynamicData.DynamicField" /> objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

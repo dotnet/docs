@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides access to the <see cref="T:System.Web.UI.CodeBlockType" /> of a code block builder.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,8 +25,8 @@
         <ReturnType>System.Web.UI.CodeBlockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of code block.</summary>
+        <value>The type of code block.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

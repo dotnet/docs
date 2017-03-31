@@ -8,8 +8,19 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a method that enables controls to obtain client-side script options.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that implement the <xref:System.Web.UI.WebControls.IPostBackContainer> interface enable buttons to get a <xref:System.Web.UI.PostBackOptions> object that is used to create the correct postback event reference.  
+  
+ For more information about postback processing, see [ASP.NET Web Forms Server Control Event Model](../Topic/ASP.NET%20Web%20Forms%20Server%20Control%20Event%20Model.md).  
+  
+ Controls that implement the <xref:System.Web.UI.WebControls.IPostBackContainer> interface should also implement the <xref:System.Web.UI.IPostBackEventHandler> interface to handle events raised by contained buttons.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetPostBackOptions">
@@ -28,10 +39,17 @@
         <Parameter Name="buttonControl" Type="System.Web.UI.WebControls.IButtonControl" />
       </Parameters>
       <Docs>
-        <param name="buttonControl">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buttonControl">The control generating the postback event.</param>
+        <summary>Returns the options required for a postback script for a specified button control.</summary>
+        <returns>A <see cref="T:System.Web.UI.PostBackOptions" /> object containing the options required to generate a postback script for <paramref name="buttonControl" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implementations of the <xref:System.Web.UI.WebControls.IPostBackContainer.GetPostBackOptions%2A> method should configure a new <xref:System.Web.UI.PostBackOptions> instance with the information required for the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%2A> method to construct a valid postback event reference, which, when executed on the client, initiates a postback.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

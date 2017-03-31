@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.ModifyRequest" /> class modifies the attributes of an existing directory entry.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ModifyRequest.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ModifyRequest" /> class. This constructor creates an empty request.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +50,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="distinguishedName">To be added.</param>
-        <param name="modifications">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="distinguishedName">The distinguished name of the object to modify.</param>
+        <param name="modifications">An array of <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeModification" /> objects that specify the modifications.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ModifyRequest.#ctor(System.String,System.DirectoryServices.Protocols.DirectoryAttributeModification[])" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ModifyRequest" /> class using the specified distinguished name and modifications.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,11 +78,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="distinguishedName">To be added.</param>
-        <param name="operation">To be added.</param>
-        <param name="attributeName">To be added.</param>
-        <param name="values">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="distinguishedName">The distinguished name of the object to be modified.</param>
+        <param name="operation">A <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeOperation" /> object that specifies the modification to perform.</param>
+        <param name="attributeName">The name of the attribute to modify. This parameter cannot be <see langword="null" />.</param>
+        <param name="values">The new values for the attribute.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ModifyRequest.#ctor(System.String,System.DirectoryServices.Protocols.DirectoryAttributeOperation,System.String,System.Object[])" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ModifyRequest" /> class using the specified distinguished name, modification, attribute name, and values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +99,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ModifyRequest.DistinguishedName" /> property contains the distinguished name of the object to modify.</summary>
+        <value>The distinguished name of the object to modify.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +117,8 @@
         <ReturnType>System.DirectoryServices.Protocols.DirectoryAttributeModificationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ModifyRequest.Modifications" /> property contains a <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeModificationCollection" /> object that specifies a list of attribute modifications.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeModificationCollection" /> object that specifies a list of attribute modifications.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,9 +138,9 @@
         <Parameter Name="doc" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
-        <param name="doc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="doc">A <see cref="T:System.Xml.XmlDocument" /> object.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ModifyRequest.ToXmlNode(System.Xml.XmlDocument)" /> method creates an XML node from the specified <see cref="T:System.Xml.XmlDocument" /> object.</summary>
+        <returns>The resulting <see cref="T:System.Xml.XmlElement" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

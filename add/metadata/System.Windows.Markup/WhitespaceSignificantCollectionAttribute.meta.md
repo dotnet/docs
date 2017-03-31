@@ -1,9 +1,9 @@
 ---
 uid: System.Windows.Markup.WhitespaceSignificantCollectionAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.WhitespaceSignificantCollectionAttribute.#ctor
-internalonly: False
+manager: "martinek"
 ---

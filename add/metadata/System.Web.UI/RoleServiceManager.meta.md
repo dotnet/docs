@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.RoleServiceManager
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RoleServiceManager.Path
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RoleServiceManager.LoadRoles
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.RoleServiceManager.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

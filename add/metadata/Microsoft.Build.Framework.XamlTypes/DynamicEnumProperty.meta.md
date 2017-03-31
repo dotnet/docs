@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.Build.Framework.XamlTypes.DynamicEnumProperty
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.DynamicEnumProperty.ProviderSettings
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.DynamicEnumProperty.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.DynamicEnumProperty.EnumProvider
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

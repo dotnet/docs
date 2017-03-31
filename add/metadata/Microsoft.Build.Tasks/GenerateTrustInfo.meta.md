@@ -1,44 +1,53 @@
 ---
 uid: Microsoft.Build.Tasks.GenerateTrustInfo
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GenerateTrustInfo.TargetZone
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GenerateTrustInfo.BaseManifest
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GenerateTrustInfo.TrustInfoFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GenerateTrustInfo.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GenerateTrustInfo.TargetFrameworkMoniker
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GenerateTrustInfo.ExcludedPermissions
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GenerateTrustInfo.ApplicationDependencies
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.GenerateTrustInfo.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains response information returned by a peer resolver as the result of a registration operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService.Register%2A> (or an implementation of  <xref:System.ServiceModel.PeerResolvers.IPeerResolverContract.Register%2A>) is called with a <xref:System.ServiceModel.PeerResolvers.RegisterInfo> instance passed to it, this object is returned to the caller to indicate the results of the registration operation.  
+  
+ Instances of this class are primarily used to pass registration response information from the resolver service to a network client of that service.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.PeerResolvers.RegisterResponseInfo" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +58,11 @@
         <Parameter Name="registrationLifetime" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="registrationId">To be added.</param>
-        <param name="registrationLifetime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="registrationId">
+          <see cref="T:System.Guid" /> that uniquely identifies the newly-registered peer.</param>
+        <param name="registrationLifetime">
+          <see cref="T:System.TimeSpan" /> that specifies the lifetime of the peer's registration.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerResolvers.RegisterResponseInfo" /> class with the supplied registration ID and lifetime.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +80,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Indicates whether the body of the message containing a serialized instance of this type is correctly formed.</summary>
+        <returns>True if the registration response information body is correctly-formed by the sender; false if it is not.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +98,9 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a GUID that uniquely identifies the newly-registered peer.</summary>
+        <value>
+          <see cref="T:System.Guid" /> that uniquely identifies the newly-registered peer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,8 +117,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the amount of time before a registration expires and is removed by the resolver service.</summary>
+        <value>
+          <see cref="T:System.TimeSpan" /> that specifies the lifetime of the peer's registration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.GridTickTypes
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

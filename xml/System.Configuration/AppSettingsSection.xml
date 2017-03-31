@@ -11,8 +11,27 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides configuration system support for the <see langword="appSettings" /> configuration section. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `appSettings` configuration section provides for key/value pairs of `string` values for an application. Rather than accessing these values by using an instance of an <xref:System.Configuration.AppSettingsSection> object, you should use the <xref:System.Configuration.ConfigurationManager.AppSettings%2A> property of the <xref:System.Configuration.ConfigurationManager> class or the <xref:System.Web.Configuration.WebConfigurationManager.AppSettings%2A> property of the <xref:System.Web.Configuration.WebConfigurationManager> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.AppSettingsSection> class in a console application. It reads and writes the key/value pairs that are contained by the `appSettings` section. It also shows how to access the <xref:System.Configuration.AppSettingsSection.File%2A> property of the <xref:System.Configuration.AppSettingsSection> class.  
+  
+> [!NOTE]
+>  Before you compile this code, add a reference in your project to System.Configuration.dll.  
+  
+ [!code-csharp[System.Configuration.AppSettingsSection#21](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/CS/UsingAppSettingsSection.cs#21)]
+ [!code-vb[System.Configuration.AppSettingsSection#21](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/AppSettingsSection.vb#21)]
+ [!code-vb[System.Configuration.AppSettingsSection#21](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/UsingAppSettingsSection.vb#21)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.AppSettingsSection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +90,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a configuration file that provides additional settings or overrides the settings specified in the <see langword="appSettings" /> element.</summary>
+        <value>A configuration file that provides additional settings or overrides the settings specified in the <see langword="appSettings" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example stores additional `appSettings` values in an external configuration file and saves the name of this file in the <xref:System.Configuration.AppSettingsSection.File%2A> property.  
+  
+ [!code-csharp[System.Configuration.AppSettingsSection#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/CS/UsingAppSettingsSection.cs#22)]
+ [!code-vb[System.Configuration.AppSettingsSection#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/AppSettingsSection.vb#22)]
+ [!code-vb[System.Configuration.AppSettingsSection#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/UsingAppSettingsSection.vb#22)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeObject">
@@ -197,9 +227,20 @@
         <ReturnType>System.Configuration.KeyValueConfigurationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of key/value pairs that contains application settings.</summary>
+        <value>A collection of key/value pairs that contains the application settings from the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Configuration.AppSettingsSection.Settings%2A> property to read the `appSettings` values.  
+  
+ [!code-csharp[System.Configuration.AppSettingsSection#24](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/CS/UsingAppSettingsSection.cs#24)]
+ [!code-vb[System.Configuration.AppSettingsSection#24](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/AppSettingsSection.vb#24)]
+ [!code-vb[System.Configuration.AppSettingsSection#24](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/UsingAppSettingsSection.vb#24)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

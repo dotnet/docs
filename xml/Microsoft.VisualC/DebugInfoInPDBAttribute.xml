@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>An attribute applied to native classes that tells the debugger to look up field information in the pdb rather than in metadata.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +39,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualC.DebugInfoInPDBAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

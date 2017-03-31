@@ -1,194 +1,257 @@
 ---
 uid: System.Speech.Recognition.SpeechRecognizer
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.#ctor
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.LoadGrammarCompleted
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.RecognizerInfo
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.AudioSignalProblemOccurred
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.MaxAlternates
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.UnloadGrammar(System.Speech.Recognition.Grammar)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync(System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.LoadGrammar(System.Speech.Recognition.Grammar)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.AudioFormat
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate(System.Object,System.TimeSpan)
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.StateChanged
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.AudioState
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognize(System.String,System.Globalization.CompareOptions)
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate(System.Object)
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.PauseRecognizerOnRecognition
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.AudioLevel
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.RecognizerAudioPosition
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.AudioPosition
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.Enabled
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.LoadGrammarAsync(System.Speech.Recognition.Grammar)
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.State
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.Grammars
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.Dispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync(System.String,System.Globalization.CompareOptions)
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognize(System.String)
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.SpeechDetected
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.UnloadAllGrammars
-internalonly: False
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognize(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.Dispose
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.SpeechRecognitionRejected
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate(System.Object,System.TimeSpan)
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.StateChanged
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.AudioState
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognize(System.String,System.Globalization.CompareOptions)
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate(System.Object)
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.PauseRecognizerOnRecognition
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.AudioLevel
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.RecognizerAudioPosition
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.AudioPosition
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognize
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.Enabled
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.LoadGrammarAsync(System.Speech.Recognition.Grammar)
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.State
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.Grammars
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.Dispose(System.Boolean)
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync(System.String,System.Globalization.CompareOptions)
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognize(System.String)
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.SpeechDetected
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.SpeechHypothesized
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.UnloadAllGrammars
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognize(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.SpeechRecognizer.Dispose
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.AudioLevelUpdated
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.SpeechRecognized
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.AudioStateChanged
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeCompleted
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

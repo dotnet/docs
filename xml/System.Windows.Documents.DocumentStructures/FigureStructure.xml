@@ -18,8 +18,30 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a drawing, chart, or diagram in a document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Documents.DocumentStructures.FigureStructure> can be a child of any of these document structure elements:  
+  
+-   <xref:System.Windows.Documents.DocumentStructures.StoryFragment>  
+  
+-   <xref:System.Windows.Documents.DocumentStructures.SectionStructure>  
+  
+-   <xref:System.Windows.Documents.DocumentStructures.TableCellStructure>  
+  
+-   <xref:System.Windows.Documents.DocumentStructures.ListItemStructure>  
+  
+   
+  
+## Examples  
+ The following example shows use of the <xref:System.Windows.Documents.DocumentStructures.FigureStructure> element as part of an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
+  
+ [!code-xml[DocumentStructure#DocStructStoryFragContent2](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Content/FixedPage2_structure.xaml#docstructstoryfragcontent2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +55,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.DocumentStructures.FigureStructure" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +75,10 @@
         <Parameter Name="element" Type="System.Windows.Documents.DocumentStructures.NamedElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element to add.</param>
+        <summary>Add a named element to the figure.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The element is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.NamedElement&gt;.GetEnumerator">
@@ -72,8 +95,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This method is not implemented.</summary>
+        <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +114,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This method has not been implemented.</summary>
+        <returns>Always raises <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +135,20 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The child <see cref="T:System.Object" /> to add.</param>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adds a child element to the <xref:System.Windows.Documents.DocumentStructures.FigureStructure>.  
+  
+ Only <xref:System.Windows.Documents.DocumentStructures.NamedElement> can be a child of <xref:System.Windows.Documents.DocumentStructures.FigureStructure>. If there are multiple children, they should together constitute a single drawing, chart, or diagram.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not one of the types that can be a child of this class. See **Remarks**.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddText">
@@ -133,8 +167,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

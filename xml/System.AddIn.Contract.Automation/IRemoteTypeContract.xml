@@ -12,8 +12,21 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a contract that components can use to access type information and invoke members across application domain and process boundaries.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get an <xref:System.AddIn.Contract.Automation.IRemoteTypeContract>, components can call the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType%2A> method of an object that implements the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract> interface.  
+  
+ To get information about the type of an object, components call the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetTypeData%2A> method.  
+  
+ To get information about the members of an object, components call one of the methods that returns information about a particular kind of member. For example, to get information about the events of an object, components can use the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvent%2A> or <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvents%2A> method.  
+  
+ To invoke a member of an object, components use the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.InvokeMember%2A> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetCanonicalName">
@@ -30,9 +43,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the canonical name of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>The canonical name of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The canonical name is a globally unique name, such as a fully qualified type name. Strings in the format \<*assembly name*>, \<*fully qualified type name*> are recommended for managed types. Strings in the format \<*type library name*>, \<*type name*> are recommended for COM types.  
+  
+ Do not change the canonical name for a type after the type is published. Changing the canonical name for a type in a future version of a component breaks compatibility between the component and clients that are already using the type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEvent">
@@ -52,10 +74,10 @@
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of an event of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</param>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the event.</param>
+        <summary>Returns an <see cref="T:System.AddIn.Contract.Automation.IRemoteEventInfoContract" /> that provides access to a specified event of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemoteEventInfoContract" /> that provides access to the specified event, if found; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +97,9 @@
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the events.</param>
+        <summary>Returns a collection of <see cref="T:System.AddIn.Contract.Automation.IRemoteEventInfoContract" /> objects that provides access to the specified events of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemoteEventInfoContract" /> objects that provides access to the events that match the specified binding constraints; otherwise, an empty <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,10 +120,10 @@
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of a field of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</param>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the field.</param>
+        <summary>Returns an <see cref="T:System.AddIn.Contract.Automation.IRemoteFieldInfoContract" /> that provides access to a specified field of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemoteFieldInfoContract" /> that provides access to the specified field, if found; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +143,9 @@
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the fields.</param>
+        <summary>Returns a collection of <see cref="T:System.AddIn.Contract.Automation.IRemoteFieldInfoContract" /> objects that provides access to the specified fields of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemoteFieldInfoContract" /> objects that provides access to the fields that match the specified binding constraints; otherwise, an empty <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,10 +165,19 @@
         <Parameter Name="canonicalName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="canonicalName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="canonicalName">The canonical name of an interface that is implemented by the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</param>
+        <summary>Returns an interface that is implemented by the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> that represents the interface with the specified canonical name that this <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> implements. <see langword="null" /> if this <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> does not implement an interface with the specified canonical name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A canonical name is a globally unique name, such as a GUID. Strings in the format \<*assembly name*>, \<*fully qualified type name*> are recommended for managed types. Strings in the format \<*type library name*>, \<*type name*> are recommended for COM types.  
+  
+ Do not change the canonical name for a type after the type is published. Changing the canonical name for a type in a future version of a component breaks compatibility between the component and clients that are already using the type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInterfaces">
@@ -163,8 +194,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the interfaces that are implemented by the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> objects that represent all the interfaces that are implemented by the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,12 +217,19 @@
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="memberTypes">To be added.</param>
-        <param name="bindingFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of a member of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />. The name can represent multiple members that have the same name.</param>
+        <param name="memberTypes">A bitwise combination of the <see cref="T:System.Reflection.MemberTypes" /> values that specifies the members to search for.</param>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the members.</param>
+        <summary>Returns a collection of <see cref="T:System.AddIn.Contract.IContract" /> objects that provides access to all the specified members of the specified member type in the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />, using the specified binding constraints.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.IContract" /> objects that represent the members of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> that have the specified name and that meet the criteria specified by the <paramref name="memberTypes" /> and <paramref name="bindingFlags" /> parameters.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to get a single member, or to get multiple members that have the same name, such as constructor or method overloads.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -210,9 +248,9 @@
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the members.</param>
+        <summary>Returns a collection of <see cref="T:System.AddIn.Contract.IContract" /> objects that provides access to all the members in the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> that match the specified binding constraints.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.IContract" /> objects that provides access to the members of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> that meet the specified binding constraints.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,11 +272,11 @@
         <Parameter Name="remoteTypes" Type="System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteTypeContract&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingFlags">To be added.</param>
-        <param name="remoteTypes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of a method of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</param>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the method.</param>
+        <param name="remoteTypes">An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> objects that represent the number, order, and type of the parameters for the method to get.</param>
+        <summary>Returns an <see cref="T:System.AddIn.Contract.Automation.IRemoteMethodInfoContract" /> that provides access to a specified method of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemoteMethodInfoContract" /> that provides access to the specified method, if found; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,9 +296,9 @@
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the methods.</param>
+        <summary>Returns a collection of <see cref="T:System.AddIn.Contract.Automation.IRemoteMethodInfoContract" /> objects that provides access to the specified methods of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemoteMethodInfoContract" /> objects that provides access to the methods that match the specified binding constraints.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,9 +318,9 @@
         <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
       </Parameters>
       <Docs>
-        <param name="bindingFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the properties.</param>
+        <summary>Returns a collection of <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> objects that provides access to the specified properties of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> objects that provides access to the properties that match the specified binding constraints.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -305,12 +343,12 @@
         <Parameter Name="remoteTypes" Type="System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteTypeContract&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingFlags">To be added.</param>
-        <param name="remoteReturnType">To be added.</param>
-        <param name="remoteTypes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of a property of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</param>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the method.</param>
+        <param name="remoteReturnType">An <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> that specifies the return type of the property.</param>
+        <param name="remoteTypes">An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> objects that represent the parameters for the specified property.</param>
+        <summary>Returns an <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> that provides access to a specified property of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> that provides access to the specified property, if found; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,8 +366,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns type information about the object that the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> identifies.</summary>
+        <returns>A <see cref="T:System.AddIn.Contract.Automation.RemoteTypeData" /> that contains information about the object that the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> identifies.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -354,15 +392,24 @@
         <Parameter Name="localeId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="bindingFlags">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="remoteArgs">To be added.</param>
-        <param name="remoteArgModifiers">To be added.</param>
-        <param name="localeId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the member to invoke.</param>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the member.</param>
+        <param name="target">The <see cref="T:System.AddIn.Contract.Automation.IRemoteObjectContract" /> on which to invoke the specified member.</param>
+        <param name="remoteArgs">An <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" /> that contains the arguments to pass to the member to invoke.</param>
+        <param name="remoteArgModifiers">An array of Boolean values that indicate whether each of the <c>remoteArgs</c> values is passed by reference.</param>
+        <param name="localeId">A locale ID to use for locale-specific conversions that might be performed by the member being invoked.</param>
+        <summary>Invokes the specified member of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that represents the return value of the invoked member.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `remoteArgModifiers` parameter is used only for components that are written using COM. Each value in the `remoteArgModifiers` parameter indicates whether the corresponding value in the `remoteArgs` parameter is passed by reference. The length of `remoteArgModifiers` should be the same as the length of `remoteArgs`.  
+  
+ If you pass `null` for `remoteArgModifiers`, this method uses default logic to determine whether an argument is passed by reference.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -20,8 +20,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables the .NET Framework Data Provider for Oracle to help ensure that a user has a security level adequate to access an Oracle database.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](../Topic/Oracle%20and%20ADO.NET.md).  
+  
+ The <xref:System.Data.OracleClient.OraclePermission.IsUnrestricted%2A> property takes precedence over the <xref:System.Data.OracleClient.OraclePermission.AllowBlankPassword%2A> property. Therefore, if you set <xref:System.Data.OracleClient.OraclePermission.AllowBlankPassword%2A> to `false`, you must also set <xref:System.Data.OracleClient.OraclePermission.IsUnrestricted%2A> to `false` to prevent a user from making a connection using a blank password.  
+  
+ For an example demonstrating how to use security demands, see [Code Access Security and ADO.NET](../Topic/Code%20Access%20Security%20and%20ADO.NET.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,8 +48,8 @@
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OraclePermission" /> class with one of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,10 +71,10 @@
         <Parameter Name="behavior" Type="System.Data.KeyRestrictionBehavior" />
       </Parameters>
       <Docs>
-        <param name="connectionString">To be added.</param>
-        <param name="restrictions">To be added.</param>
-        <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="connectionString">The connection string.</param>
+        <param name="restrictions">The key restrictions.</param>
+        <param name="behavior">One of the <see cref="T:System.Data.KeyRestrictionBehavior" /> enumerations.</param>
+        <summary>Creates a new set of permissions.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +91,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value indicating whether a blank password is allowed.</summary>
+        <value>
+          <see langword="true" /> if a blank password is allowed, otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Permissions.PermissionState> enumeration takes precedence over the <xref:System.Data.OracleClient.OraclePermission.AllowBlankPassword%2A> property. Therefore, if you set <xref:System.Data.OracleClient.OraclePermission.AllowBlankPassword%2A> to false, you must also set <xref:System.Security.Permissions.PermissionState> to `None` to prevent a user from making a connection using a blank password.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -99,8 +118,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When implemented by a derived class, creates and returns an identical copy of the current permission object.</summary>
+        <returns>A copy of the current permission object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +139,8 @@
         <Parameter Name="securityElement" Type="System.Security.SecurityElement" />
       </Parameters>
       <Docs>
-        <param name="securityElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityElement">A <see cref="T:System.Security.SecurityElement" /> expression.</param>
+        <summary>When overridden in a derived class, reconstructs a security object with a specified state from an XML encoding.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,9 +160,9 @@
         <Parameter Name="target" Type="System.Security.IPermission" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">A permission to intersect with the current permission. It must be of the same type as the current permission.</param>
+        <summary>When implemented by a derived class, creates and returns a permission that is the intersection of the current permission and the specified permission.</summary>
+        <returns>A new permission that represents the intersection of the current permission and the specified permission. This new permission is <see langword="null" /> if the intersection is empty.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +182,10 @@
         <Parameter Name="target" Type="System.Security.IPermission" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">A permission that is to be tested for the subset relationship. This permission must be of the same type as the current permission.</param>
+        <summary>When implemented by a derived class, determines whether the current permission is a subset of the specified permission.</summary>
+        <returns>
+          <see langword="true" /> if the current permission is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,8 +203,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a value indicating whether the permission can be represented as unrestricted without any knowledge of the permission semantics.</summary>
+        <returns>
+          <see langword="true" /> if the permission can be represented as unrestricted.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,8 +223,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an XML encoding of the security object and its current state.</summary>
+        <returns>An XML encoding of the security object, including any state information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,9 +244,9 @@
         <Parameter Name="target" Type="System.Security.IPermission" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">A permission to combine with the current permission. It must be of the same type as the current permission.</param>
+        <summary>Creates a permission that is the union of the current permission and the specified permission.</summary>
+        <returns>A new permission that represents the union of the current permission and the specified permission.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

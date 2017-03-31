@@ -1,29 +1,48 @@
 ---
 uid: System.Windows.Media.Animation.DiscreteDecimalKeyFrame
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.DiscreteDecimalKeyFrame.CreateInstanceCore
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.DiscreteDecimalKeyFrame.InterpolateValueCore(System.Decimal,System.Double)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.DiscreteDecimalKeyFrame.#ctor(System.Decimal)
-internalonly: False
----
-
----
-uid: System.Windows.Media.Animation.DiscreteDecimalKeyFrame.#ctor(System.Decimal,System.Windows.Media.Animation.KeyTime)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Animation.DiscreteDecimalKeyFrame.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.DiscreteDecimalKeyFrame.#ctor(System.Decimal)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.DiscreteDecimalKeyFrame.#ctor(System.Decimal,System.Windows.Media.Animation.KeyTime)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.DiscreteDecimalKeyFrame.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

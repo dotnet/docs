@@ -1,1 +1,0 @@
-            Dim nextDestS12 As String = envS12.NextDestinationActorValue

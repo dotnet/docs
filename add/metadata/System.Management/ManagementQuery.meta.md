@@ -1,24 +1,24 @@
 ---
 uid: System.Management.ManagementQuery
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementQuery.QueryString
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementQuery.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementQuery.ParseQuery(System.String)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementQuery.QueryLanguage
-internalonly: False
+manager: "jillfra"
 ---

@@ -1,19 +1,29 @@
 ---
 uid: System.Web.Caching.DatabaseNotEnabledForNotificationException
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.DatabaseNotEnabledForNotificationException.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.DatabaseNotEnabledForNotificationException.#ctor(System.String,System.Exception)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.DatabaseNotEnabledForNotificationException.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Caching.DatabaseNotEnabledForNotificationException.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---

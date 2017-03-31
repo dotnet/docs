@@ -13,7 +13,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides methods for reinitializing a binary reader to read a new document.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,12 +42,15 @@
         <Parameter Name="onClose" Type="System.Xml.OnXmlDictionaryReaderClose" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="dictionary">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <param name="session">To be added.</param>
-        <param name="onClose">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The stream from which to read.</param>
+        <param name="dictionary">
+          <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
+        <param name="quotas">
+          <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply.</param>
+        <param name="session">
+          <see cref="T:System.Xml.XmlBinaryReaderSession" /> to use.</param>
+        <param name="onClose">Delegate to call when the reader is closed.</param>
+        <summary>Reinitializes the binary reader using the given input stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,14 +81,17 @@
         <Parameter Name="onClose" Type="System.Xml.OnXmlDictionaryReaderClose" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="dictionary">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <param name="session">To be added.</param>
-        <param name="onClose">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">Starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">Number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="dictionary">
+          <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
+        <param name="quotas">
+          <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply.</param>
+        <param name="session">
+          <see cref="T:System.Xml.XmlBinaryReaderSession" /> to use.</param>
+        <param name="onClose">Delegate to call when the reader is closed.</param>
+        <summary>Reinitializes the binary reader using the given input buffer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

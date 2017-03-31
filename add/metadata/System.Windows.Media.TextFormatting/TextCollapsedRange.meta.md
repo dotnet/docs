@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Media.TextFormatting.TextCollapsedRange
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextCollapsedRange.Width
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextCollapsedRange.Length
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextCollapsedRange.TextSourceCharacterIndex
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

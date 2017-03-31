@@ -1,9 +1,13 @@
 ---
 uid: System.ComponentModel.Composition.PartNotDiscoverableAttribute
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.PartNotDiscoverableAttribute.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

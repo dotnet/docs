@@ -1,4 +1,6 @@
 ---
 uid: System.Globalization.TimeSpanStyles
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

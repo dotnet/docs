@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the user action that is required to activate items in a list view control and the feedback that is given as the user moves the mouse pointer over an item.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.ListView.Activation%2A> property of the <xref:System.Windows.Forms.ListView> control.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="OneClick">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.ItemActivation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user must single-click to activate items. The cursor changes to a hand pointer cursor, and the item text changes color as the user moves the mouse pointer over the item.</summary>
       </Docs>
     </Member>
     <Member MemberName="Standard">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.ItemActivation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user must double-click to activate items. No feedback is given as the user moves the mouse pointer over an item.</summary>
       </Docs>
     </Member>
     <Member MemberName="TwoClick">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.ItemActivation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The user must click an item twice to activate it. This is different from the standard double-click because the two clicks can have any duration between them. The item text changes color as the user moves the mouse pointer over the item.</summary>
       </Docs>
     </Member>
   </Members>

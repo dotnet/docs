@@ -1,4 +1,5 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.PathType
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

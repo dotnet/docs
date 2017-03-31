@@ -1,29 +1,39 @@
 ---
 uid: System.Windows.Media.Converters.DoubleCollectionValueSerializer
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Converters.DoubleCollectionValueSerializer.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Converters.DoubleCollectionValueSerializer.ConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Converters.DoubleCollectionValueSerializer.CanConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.Converters.DoubleCollectionValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Converters.DoubleCollectionValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

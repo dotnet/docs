@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Supports [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] as a content type and resource.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The only purpose of this class is to provide the [!INCLUDE[TLA#tla_mime](~/includes/tlasharptla-mime-md.md)] type string for [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] as a public field.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Resources.ContentTypes" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +50,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Declares the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] content type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

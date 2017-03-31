@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.Build.Tasks.CreateCSharpManifestResourceName
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CreateCSharpManifestResourceName.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CreateCSharpManifestResourceName.IsSourceFile(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.CreateCSharpManifestResourceName.CreateManifestName(System.String,System.String,System.String,System.String,System.IO.Stream)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

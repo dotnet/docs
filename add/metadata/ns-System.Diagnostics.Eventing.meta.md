@@ -1,4 +1,5 @@
 ---
 uid: System.Diagnostics.Eventing
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

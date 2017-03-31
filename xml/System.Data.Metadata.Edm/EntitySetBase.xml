@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A base class for an <see cref="T:System.Data.Metadata.Edm.EntitySet" /> and a <see cref="T:System.Data.Metadata.Edm.RelationshipSet" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.EntitySetBase" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> object that represents the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.EntitySetBase" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Data.Metadata.Edm.EntityTypeBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the entity type of this <see cref="T:System.Data.Metadata.Edm.EntityTypeBase" />.</summary>
+        <value>An <see cref="T:System.Data.Metadata.Edm.EntityTypeBase" /> object that represents the entity type of this <see cref="T:System.Data.Metadata.Edm.EntityTypeBase" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.Data.Metadata.Edm.EntityContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the entity container of the current entity or relationship set.</summary>
+        <value>An <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object that represents the entity container of the current entity or relationship set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the current entity or relationship set.</summary>
+        <value>The name of the current entity or relationship set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +101,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the name of the current entity or relationship set.</summary>
+        <returns>The name of the current entity or relationship set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

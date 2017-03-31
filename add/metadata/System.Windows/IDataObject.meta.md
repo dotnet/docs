@@ -1,64 +1,115 @@
 ---
 uid: System.Windows.IDataObject
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.IDataObject.SetData(System.String,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.IDataObject.GetDataPresent(System.Type)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.IDataObject.GetDataPresent(System.String,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.IDataObject.GetData(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.IDataObject.GetDataPresent(System.String)
-internalonly: False
----
-
----
-uid: System.Windows.IDataObject.SetData(System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.IDataObject.SetData(System.String,System.Object,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.IDataObject.GetData(System.Type)
-internalonly: False
----
-
----
-uid: System.Windows.IDataObject.GetFormats(System.Boolean)
-internalonly: False
+uid: System.Windows.IDataObject.SetData
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.IDataObject.GetFormats
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.IDataObject.GetDataPresent(System.String,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.IDataObject.GetData(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.IDataObject.GetDataPresent(System.String)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.IDataObject.SetData(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.IDataObject.SetData(System.String,System.Object,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.IDataObject.GetData(System.Type)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.IDataObject.GetFormats(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.IDataObject.GetFormats
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.IDataObject.GetDataPresent
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.IDataObject.GetData
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.IDataObject.SetData(System.Type,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.IDataObject.GetData(System.String,System.Boolean)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

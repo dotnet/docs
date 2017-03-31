@@ -1,1 +1,0 @@
-      result = s Is Nothing OrElse s = String.Empty

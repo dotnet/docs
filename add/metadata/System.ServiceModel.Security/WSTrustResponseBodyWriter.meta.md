@@ -1,14 +1,17 @@
 ---
 uid: System.ServiceModel.Security.WSTrustResponseBodyWriter
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustResponseBodyWriter.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.WSTrustResponseBodyWriter.#ctor(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---

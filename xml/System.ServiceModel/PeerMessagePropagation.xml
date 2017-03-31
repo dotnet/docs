@@ -11,7 +11,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the recipient of a message sent over a peer channel.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
         <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message is intended for the local peer node.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalAndRemote">
@@ -46,7 +46,7 @@
         <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message is intended for both the local peer node and a remote peer node in the peer mesh.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -63,7 +63,7 @@
         <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The recipient of the message is not known or available.</summary>
       </Docs>
     </Member>
     <Member MemberName="Remote">
@@ -80,7 +80,7 @@
         <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message is intended for a remote peer node in the peer mesh.</summary>
       </Docs>
     </Member>
   </Members>

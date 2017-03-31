@@ -16,9 +16,30 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the extension class.</typeparam>
+    <summary>Enable an object to participate in custom behavior, such as registering for events, or watching state transitions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement <xref:System.ServiceModel.IExtensibleObject%601> to enable aggregation of extensions.  
+  
+ For example, if you are implementing a `TreeNode` class and want to allow external code to add annotations and methods to some instances of `TreeNode`, you can have `TreeNode` implement `IExtensibleObject<TreeNode>`. This enables code that uses `TreeNode` to add objects that implement `IExtensibleObject<TreeNode>` to the <xref:System.ServiceModel.IExtensibleObject%601.Extensions%2A> collection.  
+  
+ There are four extensible objects in [!INCLUDE[indigo1](~/includes/indigo1-md.md)]:  
+  
+-   <xref:System.ServiceModel.ServiceHostBase?displayProperty=fullName>  
+  
+-   <xref:System.ServiceModel.InstanceContext?displayProperty=fullName>  
+  
+-   <xref:System.ServiceModel.IContextChannel?displayProperty=fullName>  
+  
+-   <xref:System.ServiceModel.OperationContext?displayProperty=fullName>  
+  
+ For a discussion about how to create extension to work with these objects, see [Extensible Objects](../Topic/Extensible%20Objects.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Extensions">
@@ -35,8 +56,8 @@
         <ReturnType>System.ServiceModel.IExtensionCollection&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of extension objects for this extensible object.</summary>
+        <value>A <see cref="T:System.ServiceModel.IExtensionCollection`1" /> of extension objects.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

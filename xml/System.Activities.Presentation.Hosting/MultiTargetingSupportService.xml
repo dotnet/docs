@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an abstract class for multi-targeting support service.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Hosting.MultiTargetingSupportService" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +50,9 @@
         <Parameter Name="targetAssemblyName" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="targetAssemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="targetAssemblyName">The target assembly name.</param>
+        <summary>Gets the reflection assembly given an assembly name.</summary>
+        <returns>The reflection assembly if target assembly name could be resolved.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +72,9 @@
         <Parameter Name="objectType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="objectType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="objectType">The object type.</param>
+        <summary>Gets the reflection type give an object type.</summary>
+        <returns>The reflection type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,9 +94,9 @@
         <Parameter Name="reflectionType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="reflectionType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reflectionType">The reflection type.</param>
+        <summary>Gets the runtime type given a reflection type.</summary>
+        <returns>The runtime type associated with the reflection type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,9 +116,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type to be checked.</param>
+        <summary>Checks if a given type is supported by target framework.</summary>
+        <returns>The given type that is supported by target framework.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

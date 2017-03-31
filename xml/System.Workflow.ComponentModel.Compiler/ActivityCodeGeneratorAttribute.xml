@@ -19,8 +19,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the type to be used for code generation for an activity. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,9 +45,11 @@
         <Parameter Name="codeGeneratorTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="codeGeneratorTypeName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="codeGeneratorTypeName">The specified value for <see cref="P:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute.CodeGeneratorTypeName" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute" /> class, also initializing the <see cref="P:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute.CodeGeneratorTypeName" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="codeGeneratorTypeName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -54,9 +65,13 @@
         <Parameter Name="codeGeneratorType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="codeGeneratorType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="codeGeneratorType">The <see cref="T:System.Type" /> to initialize the instance from.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute" /> class from a code generator <see cref="T:System.Type" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="codeGeneratorType" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="codeGeneratorType" /> has no default constructor.</exception>
       </Docs>
     </Member>
     <Member MemberName="CodeGeneratorTypeName">
@@ -72,8 +87,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the code generator <see cref="T:System.Type" /> which this instance is based on.</summary>
+        <value>A string that contains the name of the code generator <see cref="T:System.Type" /> on which this instance is based.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

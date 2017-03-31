@@ -1,29 +1,41 @@
 ---
 uid: System.Web.UI.Design.MobileControls.IMobileWebFormServices
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.MobileControls.IMobileWebFormServices.SetCache(System.String,System.Object,System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.MobileControls.IMobileWebFormServices.UpdateRenderingRecursive(System.Web.UI.Control)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.MobileControls.IMobileWebFormServices.RefreshPageView
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.MobileControls.IMobileWebFormServices.ClearUndoStack
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.MobileControls.IMobileWebFormServices.GetCache(System.String,System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

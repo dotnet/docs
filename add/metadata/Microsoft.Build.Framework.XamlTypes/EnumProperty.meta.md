@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.Build.Framework.XamlTypes.EnumProperty
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.EnumProperty.AdmissibleValues
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.EnumProperty.EndInit
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.XamlTypes.EnumProperty.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

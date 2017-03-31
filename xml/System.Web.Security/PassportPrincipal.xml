@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a Passport-authenticated principal. This class is deprecated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,10 +41,19 @@
         <Parameter Name="roles" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <param name="roles">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="identity">An implementation of the <see cref="T:System.Security.Principal.IIdentity" /> interface that represents the user.</param>
+        <param name="roles">An array of role names to which the user represented by the <c>identity</c> parameter belongs.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.PassportPrincipal" /> class from a <see cref="T:System.Web.Security.PassportIdentity" /> instance and an array of role names to which the user represented by that <see cref="T:System.Web.Security.PassportIdentity" /> belongs. This class is deprecated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identity" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

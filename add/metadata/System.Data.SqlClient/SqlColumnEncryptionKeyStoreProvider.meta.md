@@ -1,19 +1,27 @@
 ---
 uid: System.Data.SqlClient.SqlColumnEncryptionKeyStoreProvider
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlColumnEncryptionKeyStoreProvider.DecryptColumnEncryptionKey(System.String,System.String,System.Byte[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlColumnEncryptionKeyStoreProvider.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.SqlClient.SqlColumnEncryptionKeyStoreProvider.EncryptColumnEncryptionKey(System.String,System.String,System.Byte[])
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

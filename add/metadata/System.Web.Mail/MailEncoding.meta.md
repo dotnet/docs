@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Mail.MailEncoding
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -1,19 +1,23 @@
 ---
 uid: System.IdentityModel.Tokens.Saml2ProxyRestriction
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2ProxyRestriction.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2ProxyRestriction.Count
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2ProxyRestriction.Audiences
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

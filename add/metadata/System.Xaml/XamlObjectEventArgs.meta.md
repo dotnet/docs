@@ -1,29 +1,29 @@
 ---
 uid: System.Xaml.XamlObjectEventArgs
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectEventArgs.ElementLinePosition
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectEventArgs.ElementLineNumber
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectEventArgs.Instance
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectEventArgs.#ctor(System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectEventArgs.SourceBamlUri
-internalonly: False
+manager: "martinek"
 ---

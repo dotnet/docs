@@ -1,1 +1,0 @@
-            MessageEncoderFactory mef = be.CreateMessageEncoderFactory();

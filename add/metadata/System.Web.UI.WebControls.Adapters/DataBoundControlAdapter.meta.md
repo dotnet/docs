@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.Adapters.DataBoundControlAdapter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.Control
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.PerformDataBinding(System.Collections.IEnumerable)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

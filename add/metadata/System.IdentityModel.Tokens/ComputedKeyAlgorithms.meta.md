@@ -1,9 +1,11 @@
 ---
 uid: System.IdentityModel.Tokens.ComputedKeyAlgorithms
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.ComputedKeyAlgorithms.Psha1
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

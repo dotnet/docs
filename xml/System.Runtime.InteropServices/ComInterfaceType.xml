@@ -28,8 +28,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies how to expose an interface to COM.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration works in conjunction with the <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attribute.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="InterfaceIsDual">
@@ -58,7 +65,7 @@
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the interface is exposed to COM as a [dual interface](http://msdn.microsoft.com/en-us/1d39d64c-e23a-4249-a167-4369d5bd2b65), which enables both early and late binding. <see cref="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual" /> is the default value.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterfaceIsIDispatch">
@@ -87,7 +94,7 @@
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an interface is exposed to COM as a [dispinterface](http://msdn.microsoft.com/en-us/e8c18ae5-3d9e-4dff-aa20-b5acc723eacf), which enables late binding only.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterfaceIsIInspectable">
@@ -121,7 +128,7 @@
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an interface is exposed to COM as a [!INCLUDE[wrt](~/includes/wrt-md.md)] interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="InterfaceIsIUnknown">
@@ -150,7 +157,7 @@
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an interface is exposed to COM as an interface that is derived from [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003), which enables only early binding.</summary>
       </Docs>
     </Member>
   </Members>

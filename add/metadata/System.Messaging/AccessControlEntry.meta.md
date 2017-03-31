@@ -1,44 +1,49 @@
 ---
 uid: System.Messaging.AccessControlEntry
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.AccessControlEntry.#ctor
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.AccessControlEntry.#ctor(System.Messaging.Trustee)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.AccessControlEntry.GenericAccessRights
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.AccessControlEntry.EntryType
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.AccessControlEntry.#ctor(System.Messaging.Trustee,System.Messaging.GenericAccessRights,System.Messaging.StandardAccessRights,System.Messaging.AccessControlEntryType)
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.AccessControlEntry.CustomAccessRights
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.AccessControlEntry.StandardAccessRights
-internalonly: False
+manager: "tyoung"
+---
+
+---
+uid: System.Messaging.AccessControlEntry.#ctor
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.AccessControlEntry.Trustee
-internalonly: False
+manager: "tyoung"
 ---

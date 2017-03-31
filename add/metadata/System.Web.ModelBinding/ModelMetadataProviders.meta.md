@@ -1,9 +1,13 @@
 ---
 uid: System.Web.ModelBinding.ModelMetadataProviders
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.ModelMetadataProviders.Current
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

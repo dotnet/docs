@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a data service primitive, complex, or entity type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Nested types are not supported as resource types.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,13 +45,14 @@
         <Parameter Name="isAbstract" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="instanceType">To be added.</param>
-        <param name="resourceTypeKind">To be added.</param>
-        <param name="baseType">To be added.</param>
-        <param name="namespaceName">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="isAbstract">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instanceType">CLR type that represents the format inside the [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] runtime.</param>
+        <param name="resourceTypeKind">
+          <see cref="T:System.Data.Services.Providers.ResourceTypeKind" /> of the resource type.</param>
+        <param name="baseType">Base type of the resource type as string.</param>
+        <param name="namespaceName">Namespace name of the resource type as string.</param>
+        <param name="name">Name of the given resource type as string.</param>
+        <param name="isAbstract">Boolean value that indicates whether the resource type is an abstract type.</param>
+        <summary>Creates an instance of a data service <see cref="T:System.Data.Services.Providers.ResourceType" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +72,8 @@
         <Parameter Name="attribute" Type="System.Data.Services.Common.EntityPropertyMappingAttribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="attribute">The <see cref="T:System.Data.Services.Common.EntityPropertyMappingAttribute" /> to add.</param>
+        <summary>Adds an <see cref="T:System.Data.Services.Common.EntityPropertyMappingAttribute" /> for the resource type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +93,9 @@
         <Parameter Name="property" Type="System.Data.Services.Providers.ResourceProperty" />
       </Parameters>
       <Docs>
-        <param name="property">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="property">
+          <see cref="T:System.Data.Services.Providers.ResourceProperty" /> property to be added.</param>
+        <summary>Adds the property supplied by the <paramref name="resourceProperty" /> parameter to the type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +117,9 @@
         <ReturnType>System.Data.Services.Providers.ResourceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a reference to base resource type, if any.</summary>
+        <value>
+          <see cref="T:System.Data.Services.Providers.ResourceType" /> of the base type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +141,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Get whether the corresponding instance type represents the CLR type of this entity.</summary>
+        <value>
+          <see langword="true" /> if the instance type represents a CLR type; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,8 +160,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a placeholder to hold custom state information about a resource type that is defined by the developer.</summary>
+        <value>Custom state information defined by the developer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +178,9 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Services.Providers.ResourceProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the list of properties for this type.</summary>
+        <value>
+          <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Data.Services.Providers.ResourceType" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,8 +197,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the full name of the resource.</summary>
+        <value>The full name of the resource type as string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,9 +218,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">
+          <see cref="T:System.Type" /> type from which to get the primitive type.</param>
+        <summary>Gets a resource type that represent a primitive type when given a <see cref="T:System.Type" /> object.</summary>
+        <returns>The resource type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,8 +243,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Reference to the CLR type that this resource represents.</summary>
+        <value>The instance type as a <see cref="T:System.Data.Services.Providers.ResourceType" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,8 +261,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a Boolean value that indicates whether this is an abstract type.</summary>
+        <value>True if <see cref="T:System.Data.Services.Providers.ResourceType" /> is abstract.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,8 +284,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that is true if the resource type includes a default stream.</summary>
+        <value>A Boolean value that is true if the resource type includes a default stream.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,8 +307,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether the resource type has open properties.</summary>
+        <value>
+          <see langword="true" /> if the resource type has open properties defined; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,8 +326,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a Boolean value that is true if this resource type has been set to read-only.</summary>
+        <value>True if this resource type has been set to read-only; otherwise false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,8 +344,9 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Services.Providers.ResourceProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list of key properties for this type</summary>
+        <value>
+          <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Data.Services.Providers.ResourceProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,9 +364,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a list of properties declared by this resource type.</summary>
+        <returns>The list of properties declared on this type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Services.Providers.ResourceType.LoadPropertiesDeclaredOnThisType%2A> method enables you to defer loading of the properties of a resource type. This <xref:System.Data.Services.Providers.ResourceType.LoadPropertiesDeclaredOnThisType%2A> method is called only one time when either <xref:System.Data.Services.Providers.ResourceType.Properties%2A> or <xref:System.Data.Services.Providers.ResourceType.PropertiesDeclaredOnThisType%2A> properties are accessed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -367,8 +389,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the resource type.</summary>
+        <value>Name of the resource type as string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,8 +407,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the namespace of the resource type.</summary>
+        <value>Namespace of the resource type as string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,8 +425,9 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Services.Providers.ResourceProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list of properties declared of this type that includes only properties defined on the type, not in the base type.</summary>
+        <value>
+          <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Data.Services.Providers.ResourceProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,8 +444,9 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Services.Providers.ResourceProperty&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>List of properties declared on this type.</summary>
+        <value>
+          <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Data.Services.Providers.ResourceProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -444,8 +468,9 @@
         <ReturnType>System.Data.Services.Providers.ResourceTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Services.Providers.ResourceTypeKind" /> for the type.</summary>
+        <value>
+          <see cref="T:System.Data.Services.Providers.ResourceTypeKind" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -463,7 +488,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the resource type to read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

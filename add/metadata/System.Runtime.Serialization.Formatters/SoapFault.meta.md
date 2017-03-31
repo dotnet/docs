@@ -1,39 +1,44 @@
 ---
 uid: System.Runtime.Serialization.Formatters.SoapFault
-internalonly: False
----
-
----
-uid: System.Runtime.Serialization.Formatters.SoapFault.FaultActor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapFault.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Serialization.Formatters.SoapFault.FaultActor
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Serialization.Formatters.SoapFault.#ctor
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapFault.Detail
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapFault.FaultCode
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapFault.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapFault.#ctor(System.String,System.String,System.String,System.Runtime.Serialization.Formatters.ServerFault)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.Formatters.SoapFault.FaultString
-internalonly: False
+manager: "ghogen"
 ---

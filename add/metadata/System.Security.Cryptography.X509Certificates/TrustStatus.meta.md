@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Cryptography.X509Certificates.TrustStatus
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

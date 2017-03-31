@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.JScript.Vsa.JSVsaError
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

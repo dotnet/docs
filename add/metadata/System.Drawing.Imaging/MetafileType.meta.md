@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Imaging.MetafileType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

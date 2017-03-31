@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Associates cancellation logic, in the form of a <see cref="T:System.Activities.Activity" />, with a main path of execution, also expressed as a <see cref="T:System.Activities.Activity" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.CancellationScope" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +56,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Activities.Activity" /> contained by the <see cref="T:System.Activities.Statements.CancellationScope" /> that represents the main path of execution.</summary>
+        <value>The main path of execution.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +124,8 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="T:System.Activities.Activity" /> that is executed in the event of cancellation.</summary>
+        <value>The cancellation handler.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +186,8 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of <see cref="T:System.Activities.Activity" /> objects associated with the <see cref="T:System.Activities.Statements.CancellationScope" />.</summary>
+        <value>The collection of <see cref="T:System.Activities.Activity" /> objects associated with the <see cref="T:System.Activities.Statements.CancellationScope" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

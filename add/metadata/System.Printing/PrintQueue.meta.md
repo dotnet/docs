@@ -1,469 +1,694 @@
 ---
 uid: System.Printing.PrintQueue
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.IsServerUnknown
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.AddJob(System.String,System.String,System.Boolean,System.Printing.PrintTicket)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.IsShared
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.IsInError
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.GetPrintCapabilities
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsHidden
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.Resume
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsNotAvailable
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsPowerSaveOn
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsManualFeedRequired
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Printing.PrintQueue)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsInitializing
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsPrinting
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.MaxPrintSchemaVersion
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.Refresh
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.GetPrintCapabilities(System.Printing.PrintTicket)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.InternalDispose(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.InPartialTrust
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.Pause
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.GetJob(System.Int32)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.UntilTimeOfDay
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsOffline
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsPaperJammed
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.AddJob(System.String)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.CreateXpsDocumentWriter(System.String,System.Printing.PrintDocumentImageableArea@,System.Windows.Controls.PageRangeSelection@,System.Windows.Controls.PageRange@)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.ScheduleCompletedJobsFirst
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.QueuePrintProcessor
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsIOActive
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.QueueDriver
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.String[],System.Printing.PrintSystemDesiredAccess)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.NeedUserIntervention
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsBusy
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.UserPrintTicket
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Int32)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.HasPaperProblem
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.GetPrintJobInfoCollection
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.SeparatorFile
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.HostingPrintServer
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsPendingDeletion
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsOutOfPaper
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.QueueStatus
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Int32,System.Printing.PrintSystemDesiredAccess)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.MergeAndValidatePrintTicket(System.Printing.PrintTicket,System.Printing.PrintTicket)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Printing.PrintSystemDesiredAccess)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.ClientPrintSchemaVersion
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.AveragePagesPerMinute
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsWaiting
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsOutputBinFull
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.Purge
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.AddJob(System.String,System.String,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Double@,System.Double@)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.Name
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsRawOnlyEnabled
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.QueuePort
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.MergeAndValidatePrintTicket(System.Printing.PrintTicket,System.Printing.PrintTicket,System.Printing.PrintTicketScope)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.CurrentJobSettings
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsPaused
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.GetPrintCapabilitiesAsXml(System.Printing.PrintTicket)
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.FullName
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.DefaultPrintTicket
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsOutOfMemory
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.AddJob
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintQueue.Commit
-internalonly: False
+uid: System.Printing.PrintQueue.GetPrintCapabilities
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintQueue.Comment
-internalonly: False
+uid: System.Printing.PrintQueue.IsHidden
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintQueue.HasToner
-internalonly: False
+uid: System.Printing.PrintQueue.Resume
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintQueue.NumberOfJobs
-internalonly: False
+uid: System.Printing.PrintQueue.IsNotAvailable
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintQueue.PrintingIsCancelled
-internalonly: False
+uid: System.Printing.PrintQueue.IsPowerSaveOn
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.String[])
-internalonly: False
----
-
----
-uid: System.Printing.PrintQueue.IsTonerLow
-internalonly: False
+uid: System.Printing.PrintQueue.IsManualFeedRequired
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.GetPrintCapabilitiesAsXml
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Printing.PrintQueue)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.IsInitializing
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.IsPrinting
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.MaxPrintSchemaVersion
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.Refresh
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.GetPrintCapabilities(System.Printing.PrintTicket)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.InternalDispose(System.Boolean)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.InPartialTrust
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.Pause
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.GetJob(System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.UntilTimeOfDay
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.IsOffline
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.IsPaperJammed
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.AddJob(System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.CreateXpsDocumentWriter(System.String,System.Printing.PrintDocumentImageableArea@,System.Windows.Controls.PageRangeSelection@,System.Windows.Controls.PageRange@)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.ScheduleCompletedJobsFirst
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.QueuePrintProcessor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.IsIOActive
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.QueueDriver
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.String[],System.Printing.PrintSystemDesiredAccess)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.NeedUserIntervention
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.IsBusy
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.UserPrintTicket
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.HasPaperProblem
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.GetPrintJobInfoCollection
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.SeparatorFile
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.HostingPrintServer
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.IsPendingDeletion
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.IsOutOfPaper
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.CreateXpsDocumentWriter
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.QueueStatus
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.AddJob(System.String,System.Printing.PrintTicket)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Int32,System.Printing.PrintSystemDesiredAccess)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.MergeAndValidatePrintTicket(System.Printing.PrintTicket,System.Printing.PrintTicket)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Printing.PrintSystemDesiredAccess)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.ClientPrintSchemaVersion
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.GetPrintCapabilities
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.AveragePagesPerMinute
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.IsWaiting
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.IsOutputBinFull
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.Purge
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.AddJob(System.String,System.String,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Double@,System.Double@)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.Name
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.IsRawOnlyEnabled
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.QueuePort
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.MergeAndValidatePrintTicket(System.Printing.PrintTicket,System.Printing.PrintTicket,System.Printing.PrintTicketScope)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.CurrentJobSettings
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.IsPaused
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.GetPrintCapabilitiesAsXml(System.Printing.PrintTicket)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.FullName
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.DefaultPrintTicket
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.IsOutOfMemory
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.AddJob
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.Commit
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.Comment
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.HasToner
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.NumberOfJobs
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.PrintingIsCancelled
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.String[])
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.IsTonerLow
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintQueue.GetPrintCapabilitiesAsXml
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.IsDoorOpened
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.IsQueued
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.IsDevQueryEnabled
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.IsProcessing
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PrintQueue.Priority
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Printing.PrintQueueIndexedProperty[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.PagePunt
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.IsWarmingUp
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Printing.PrintDocumentImageableArea@,System.Windows.Controls.PageRangeSelection@,System.Windows.Controls.PageRange@)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.CreateXpsDocumentWriter(System.Printing.PrintDocumentImageableArea@)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.StartTimeOfDay
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.Location
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.IsPublished
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.CreateXpsDocumentWriter(System.String,System.Printing.PrintDocumentImageableArea@)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PrintQueue.IsDirect
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PrintQueue.ShareName
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.KeepPrintedJobs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.DefaultPriority
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.Description
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.IsBidiEnabled
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Printing.PrintQueue.MergeAndValidatePrintTicket
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Printing.PrintQueue.QueueAttributes
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.#ctor(System.Printing.PrintServer,System.String,System.Printing.PrintQueueIndexedProperty[],System.Printing.PrintSystemDesiredAccess)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Printing.PrintQueue.IsXpsDevice
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

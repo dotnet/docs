@@ -1,1004 +1,1398 @@
 ---
 uid: System.Windows.Controls.DataGrid
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.CellsPanelHorizontalOffset
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.NewItemMargin
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.HorizontalScrollBarVisibility
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.LoadingRowDetails
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.CellEditEnding
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.DeleteCommand
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.SelectionMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.CurrentColumn
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.AreRowDetailsFrozen
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.EnableRowVirtualization
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.AddingNewItem
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.BeginEdit(System.Windows.RoutedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowHeaderActualWidthProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.GridLinesVisibilityProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnExecutedCommitEdit(System.Windows.Input.ExecutedRoutedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowDetailsScrollingConverter
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnCellEditEnding(System.Windows.Controls.DataGridCellEditEndingEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnColumnHeaderDragDelta(System.Windows.Controls.Primitives.DragDeltaEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnExecutedCancelEdit(System.Windows.Input.ExecutedRoutedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowBackground
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.SelectAllCells
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnTextInput(System.Windows.Input.TextCompositionEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowValidationErrorTemplate
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.MinColumnWidthProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnExecutedBeginEdit(System.Windows.Input.ExecutedRoutedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.#ctor
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowHeaderTemplateProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.AlternatingRowBackgroundProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ClipboardCopyMode
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.BeginEditCommand
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnBeginningEdit(System.Windows.Controls.DataGridBeginningEditEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnCopyingRowClipboardContent(System.Windows.Controls.DataGridRowClipboardEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ColumnDisplayIndexChanged
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.SelectionUnitProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.FrozenColumnCount
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnMouseMove(System.Windows.Input.MouseEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.MinColumnWidth
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ClipboardCopyModeProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.EnableColumnVirtualization
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CurrentItem
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ColumnFromDisplayIndex(System.Int32)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowHeaderTemplateSelectorProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.VerticalScrollBarVisibility
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowStyle
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.NewItemMarginProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowHeightProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.MinRowHeight
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.HorizontalScrollBarVisibilityProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CanUserSortColumns
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnCanExecuteCommitEdit(System.Windows.Input.CanExecuteRoutedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnExecutedCopy(System.Windows.Input.ExecutedRoutedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnUnloadingRow(System.Windows.Controls.DataGridRowEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.LoadingRow
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.FrozenColumnCountProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.SelectionModeProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.GetDetailsVisibilityForItem(System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnColumnHeaderDragStarted(System.Windows.Controls.Primitives.DragStartedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowHeaderActualWidth
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.AutoGenerateColumnsProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CurrentItemProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.GenerateColumns(System.ComponentModel.IItemProperties)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.InitializingNewItem
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.DragIndicatorStyleProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.IsReadOnly
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowStyleSelector
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CanUserResizeColumnsProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowHeaderWidthProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.AutoGeneratingColumn
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.PreparingCellForEdit
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnColumnDisplayIndexChanged(System.Windows.Controls.DataGridColumnEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.CommitEdit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.BeginEdit(System.Windows.RoutedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowHeaderActualWidthProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.GridLinesVisibilityProperty
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnExecutedCommitEdit(System.Windows.Input.ExecutedRoutedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowDetailsScrollingConverter
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnCellEditEnding(System.Windows.Controls.DataGridCellEditEndingEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnColumnHeaderDragDelta(System.Windows.Controls.Primitives.DragDeltaEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnExecutedCancelEdit(System.Windows.Input.ExecutedRoutedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowBackground
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.SelectAllCells
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnTextInput(System.Windows.Input.TextCompositionEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowValidationErrorTemplate
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.MinColumnWidthProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnExecutedBeginEdit(System.Windows.Input.ExecutedRoutedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowHeaderTemplateProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.AlternatingRowBackgroundProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ClipboardCopyMode
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.BeginEditCommand
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnBeginningEdit(System.Windows.Controls.DataGridBeginningEditEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnCopyingRowClipboardContent(System.Windows.Controls.DataGridRowClipboardEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ColumnDisplayIndexChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.SelectionUnitProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.FrozenColumnCount
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnMouseMove(System.Windows.Input.MouseEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.MinColumnWidth
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ClipboardCopyModeProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.EnableColumnVirtualization
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CurrentItem
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ColumnFromDisplayIndex(System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowHeaderTemplateSelectorProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.VerticalScrollBarVisibility
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowStyle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.NewItemMarginProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowHeightProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.MinRowHeight
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.HorizontalScrollBarVisibilityProperty
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CanUserSortColumns
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnCanExecuteCommitEdit(System.Windows.Input.CanExecuteRoutedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnExecutedCopy(System.Windows.Input.ExecutedRoutedEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnUnloadingRow(System.Windows.Controls.DataGridRowEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.LoadingRow
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.FrozenColumnCountProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.SelectionModeProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.GetDetailsVisibilityForItem(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnColumnHeaderDragStarted(System.Windows.Controls.Primitives.DragStartedEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowHeaderActualWidth
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.AutoGenerateColumnsProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CurrentItemProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.GenerateColumns(System.ComponentModel.IItemProperties)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.InitializingNewItem
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.DragIndicatorStyleProperty
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.IsReadOnly
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowStyleSelector
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CanUserResizeColumnsProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowHeaderWidthProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.AutoGeneratingColumn
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.PreparingCellForEdit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnColumnDisplayIndexChanged(System.Windows.Controls.DataGridColumnEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CommitEdit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.OnColumnReordering(System.Windows.Controls.DataGridColumnReorderingEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.OnColumnHeaderDragCompleted(System.Windows.Controls.Primitives.DragCompletedEventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.RowHeaderWidth
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.CanUserDeleteRows
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.RowHeaderTemplate
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.GridLinesVisibility
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.MinRowHeightProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.CanUserResizeRowsProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.UnloadingRowDetails
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.Columns
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.ColumnHeaderStyle
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.NonFrozenColumnsViewportHorizontalOffset
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.OnAddingNewItem(System.Windows.Controls.AddingNewItemEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.RowDetailsTemplateSelector
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.DragIndicatorStyle
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.AlternatingRowBackground
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.BeginningEdit
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnUnloadingRowDetails(System.Windows.Controls.DataGridRowDetailsEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.EnableRowVirtualizationProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowBackgroundProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.MaxColumnWidthProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnCanExecuteBeginEdit(System.Windows.Input.CanExecuteRoutedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnCreateAutomationPeer
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.UnselectAllCells
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnExecutedDelete(System.Windows.Input.ExecutedRoutedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.VerticalGridLinesBrushProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CurrentColumnProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ColumnWidthProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ColumnWidth
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ScrollIntoView(System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.UnloadingRow
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.SelectionUnit
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.HandlesScrolling
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CurrentCellProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnApplyTemplate
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowStyleSelectorProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.EnableColumnVirtualizationProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ClearDetailsVisibilityForItem(System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowValidationErrorTemplateProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.HeadersVisibilityConverter
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowDetailsTemplateSelectorProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnCanExecuteCancelEdit(System.Windows.Input.CanExecuteRoutedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnColumnReordered(System.Windows.Controls.DataGridColumnEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CancelEditCommand
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnCanExecuteDelete(System.Windows.Input.CanExecuteRoutedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.AutoGenerateColumns
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnCurrentCellChanged(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.BeginEdit
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CurrentCell
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ColumnReordering
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.DropLocationIndicatorStyleProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnKeyDown(System.Windows.Input.KeyEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.GetContainerForItemOverride
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CanUserResizeColumns
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowValidationRules
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.MaxColumnWidth
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.NonFrozenColumnsViewportHorizontalOffsetProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CanUserAddRows
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowHeight
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.Sorting
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnPreparingCellForEdit(System.Windows.Controls.DataGridPreparingCellForEditEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnInitializingNewItem(System.Windows.Controls.InitializingNewItemEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnSelectedCellsChanged(System.Windows.Controls.SelectedCellsChangedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ColumnHeaderHeightProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CanUserDeleteRowsProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CommitEdit(System.Windows.Controls.DataGridEditingUnit,System.Boolean)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.SelectedCells
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ColumnHeaderDragStarted
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CanUserSortColumnsProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnSorting(System.Windows.Controls.DataGridSortingEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowDetailsTemplate
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnRowDetailsVisibilityChanged(System.Windows.Controls.DataGridRowDetailsEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowDetailsVisibilityModeProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.VerticalScrollBarVisibilityProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ColumnReordered
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ColumnHeaderDragDelta
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowDetailsTemplateProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnContextMenuOpening(System.Windows.Controls.ContextMenuEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowDetailsVisibilityMode
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.HeadersVisibilityProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CellStyle
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnCanExecuteCopy(System.Windows.Input.CanExecuteRoutedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowHeaderTemplateSelector
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.AreRowDetailsFrozenProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CurrentCellChanged
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CancelEdit(System.Windows.Controls.DataGridEditingUnit)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.HeadersVisibility
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowStyleProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CellsPanelHorizontalOffsetProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowHeaderStyleProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.IsReadOnlyProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnSelectionChanged(System.Windows.Controls.SelectionChangedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnAutoGeneratedColumns(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnLoadingRowDetails(System.Windows.Controls.DataGridRowDetailsEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ColumnHeaderStyleProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowEditEnding
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CellStyleProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.FocusBorderBrushKey
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.IsItemItsOwnContainerOverride(System.Object)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnAutoGeneratingColumn(System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowDetailsVisibilityChanged
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ColumnHeaderDragCompleted
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.SelectAllCommand
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.MeasureOverride(System.Windows.Size)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.DropLocationIndicatorStyle
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.SetDetailsVisibilityForItem(System.Object,System.Windows.Visibility)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CommitEditCommand
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CopyingRowClipboardContent
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnIsMouseCapturedChanged(System.Windows.DependencyPropertyChangedEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CanUserAddRowsProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnLoadingRow(System.Windows.Controls.DataGridRowEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CanUserReorderColumnsProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnRowEditEnding(System.Windows.Controls.DataGridRowEditEndingEventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CanUserReorderColumns
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.AutoGeneratedColumns
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.HorizontalGridLinesBrush
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.VerticalGridLinesBrush
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.OnItemsSourceChanged(System.Collections.IEnumerable,System.Collections.IEnumerable)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ColumnHeaderHeight
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.ScrollIntoView(System.Object,System.Windows.Controls.DataGridColumn)
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.RowHeaderStyle
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.HorizontalGridLinesBrushProperty
-internalonly: False
----
-
----
-uid: System.Windows.Controls.DataGrid.CanUserResizeRows
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.CancelEdit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.AlternatingRowBackground
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.BeginningEdit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnUnloadingRowDetails(System.Windows.Controls.DataGridRowDetailsEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.EnableRowVirtualizationProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowBackgroundProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.MaxColumnWidthProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnCanExecuteBeginEdit(System.Windows.Input.CanExecuteRoutedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnCreateAutomationPeer
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.UnselectAllCells
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.BeginEdit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnExecutedDelete(System.Windows.Input.ExecutedRoutedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.VerticalGridLinesBrushProperty
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CurrentColumnProperty
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ColumnWidthProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ColumnWidth
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ScrollIntoView(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.UnloadingRow
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.SelectionUnit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.HandlesScrolling
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CurrentCellProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnApplyTemplate
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowStyleSelectorProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.EnableColumnVirtualizationProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ClearDetailsVisibilityForItem(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowValidationErrorTemplateProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.HeadersVisibilityConverter
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowDetailsTemplateSelectorProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnCanExecuteCancelEdit(System.Windows.Input.CanExecuteRoutedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnColumnReordered(System.Windows.Controls.DataGridColumnEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CancelEditCommand
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnCanExecuteDelete(System.Windows.Input.CanExecuteRoutedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.AutoGenerateColumns
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnCurrentCellChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.BeginEdit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CurrentCell
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ColumnReordering
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.DropLocationIndicatorStyleProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnKeyDown(System.Windows.Input.KeyEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.GetContainerForItemOverride
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CanUserResizeColumns
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowValidationRules
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.MaxColumnWidth
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.NonFrozenColumnsViewportHorizontalOffsetProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CanUserAddRows
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowHeight
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.Sorting
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnPreparingCellForEdit(System.Windows.Controls.DataGridPreparingCellForEditEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnInitializingNewItem(System.Windows.Controls.InitializingNewItemEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnSelectedCellsChanged(System.Windows.Controls.SelectedCellsChangedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ColumnHeaderHeightProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CanUserDeleteRowsProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CommitEdit(System.Windows.Controls.DataGridEditingUnit,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.SelectedCells
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ColumnHeaderDragStarted
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CanUserSortColumnsProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnSorting(System.Windows.Controls.DataGridSortingEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowDetailsTemplate
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnRowDetailsVisibilityChanged(System.Windows.Controls.DataGridRowDetailsEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowDetailsVisibilityModeProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.VerticalScrollBarVisibilityProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ColumnReordered
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ColumnHeaderDragDelta
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowDetailsTemplateProperty
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnContextMenuOpening(System.Windows.Controls.ContextMenuEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowDetailsVisibilityMode
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.HeadersVisibilityProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CellStyle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnCanExecuteCopy(System.Windows.Input.CanExecuteRoutedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowHeaderTemplateSelector
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.AreRowDetailsFrozenProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CurrentCellChanged
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CancelEdit(System.Windows.Controls.DataGridEditingUnit)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.HeadersVisibility
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowStyleProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CellsPanelHorizontalOffsetProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowHeaderStyleProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.IsReadOnlyProperty
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnSelectionChanged(System.Windows.Controls.SelectionChangedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnAutoGeneratedColumns(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnLoadingRowDetails(System.Windows.Controls.DataGridRowDetailsEventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ColumnHeaderStyleProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowEditEnding
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CellStyleProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.FocusBorderBrushKey
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.IsItemItsOwnContainerOverride(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnAutoGeneratingColumn(System.Windows.Controls.DataGridAutoGeneratingColumnEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowDetailsVisibilityChanged
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ColumnHeaderDragCompleted
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.SelectAllCommand
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.MeasureOverride(System.Windows.Size)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.DropLocationIndicatorStyle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.SetDetailsVisibilityForItem(System.Object,System.Windows.Visibility)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CommitEditCommand
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CopyingRowClipboardContent
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnIsMouseCapturedChanged(System.Windows.DependencyPropertyChangedEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CanUserAddRowsProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnLoadingRow(System.Windows.Controls.DataGridRowEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CanUserReorderColumnsProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnRowEditEnding(System.Windows.Controls.DataGridRowEditEndingEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CanUserReorderColumns
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.AutoGeneratedColumns
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.HorizontalGridLinesBrush
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.VerticalGridLinesBrush
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.OnItemsSourceChanged(System.Collections.IEnumerable,System.Collections.IEnumerable)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ColumnHeaderHeight
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ScrollIntoView(System.Object,System.Windows.Controls.DataGridColumn)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.RowHeaderStyle
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.HorizontalGridLinesBrushProperty
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CanUserResizeRows
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.CancelEdit
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Controls.DataGrid.SelectedCellsChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.DataGrid.ScrollIntoView
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

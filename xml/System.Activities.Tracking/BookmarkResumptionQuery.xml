@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>When added to the <see cref="P:System.Activities.Tracking.TrackingProfile.Queries" /> collection, subscribes to bookmark resumption records when the tracking profile is queried for <see cref="T:System.Activities.Tracking.TrackingRecord" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.BookmarkResumptionQuery" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the bookmark record to subscribe to.</summary>
+        <value>The bookmark name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

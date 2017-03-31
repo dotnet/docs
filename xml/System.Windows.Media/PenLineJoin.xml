@@ -10,8 +10,21 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the shape that joins two lines or segments.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows several different joints used at the vertices of a shape.  
+  
+ [!code-xml[drawingwithshapeelements#PolylineExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/polylineexample.xaml#polylineexample1)]  
+  
+ The following illustration shows the different line joins.  
+  
+ ![Example of line joins.](~/add/media/graphicslinejoins.png "Example of line joins.")  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Bevel">
@@ -27,7 +40,7 @@
         <ReturnType>System.Windows.Media.PenLineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Beveled vertices.</summary>
       </Docs>
     </Member>
     <Member MemberName="Miter">
@@ -43,7 +56,7 @@
         <ReturnType>System.Windows.Media.PenLineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Regular angular vertices.</summary>
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -59,7 +72,7 @@
         <ReturnType>System.Windows.Media.PenLineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rounded vertices.</summary>
       </Docs>
     </Member>
   </Members>

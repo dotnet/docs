@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the settings for the bootstrapper build operation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +58,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the file to be installed after the bootstrapper installs the required components.</summary>
+        <value>The name of the file to be installed after the required components are installed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gets or sets the file to be installed after the bootstrapper installs the required components. By default, the file path is relative to the bootstrapper source path. Set this property to null if no application is to be installed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -76,9 +83,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the application to be installed after the bootstrapper installs all required components.</summary>
+        <value>The name of the application to be installed after the required components are installed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gets or sets the name of the application to be installed after the bootstrapper installs all required components. Set this property to null if no application is to be installed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplicationRequiresElevation">
@@ -94,9 +108,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether a component runs with elevated permissions when it is installed on a target computer.</summary>
+        <value>
+          <see langword="true" /> if the installed component runs with elevated permissions; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be set in the project file, but it is not exposed in the MSBuild schema.  
+  
+ A component runs with elevated permissions when it writes a registry key or is installed to the global assembly cache. For example, if you are installing assemblies to the global assembly cache, you have to set this property to `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplicationUrl">
@@ -112,9 +136,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the expected source location when the bootstrapper is published to a Web site.</summary>
+        <value>A URL that represents the expected source location when the bootstrapper is published to a Web site.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you specify <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings.ApplicationFile%2A>, the bootstraper will be published to the location specified by this value.  
+  
+ If <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings.ComponentsLocation%2A> is set to <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation>, required component files will be published to a location relative to this value.  
+  
+ Set this value to null if Setup.exe is not to be published to the Web.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ComponentsLocation">
@@ -130,8 +165,8 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the installation location for bootstrapper components.</summary>
+        <value>The <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation" /> installation location for bootstrapper components.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +183,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the location to which the bootstrapper will copy components if <see cref="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings.ComponentsLocation" /> is set to <see cref="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.Absolute" />.</summary>
+        <value>The location to which the bootstrapper will copy components if <see cref="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings.ComponentsLocation" /> is set to <see cref="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.Absolute" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,9 +201,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the bootstrapper components will be copied to the build output directory.</summary>
+        <value>
+          <see langword="true" /> if the bootstrapper components will be copied to the build output directory; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `true`, the bootstrapper components will be copied. If `false`, the files will not be copied.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FallbackLCID">
@@ -184,8 +227,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the culture identifier to use if the LCID identifier is not available.</summary>
+        <value>An integer value that represents the culture identifier to use if the LCID identifier is not available.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,8 +245,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the culture identifier specifying the culture for which the bootstrapper is built.</summary>
+        <value>An integer value that represents the culture identifier specifying the culture for which the bootstrapper is built.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +263,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the file location to which to copy output files.</summary>
+        <value>A string representing the file location to which to copy output files.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,8 +281,8 @@
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilderCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the product builders to use for generating the bootstrapper.</summary>
+        <value>A collection of product builders (<see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilderCollection" />) to use for generating the bootstrapper.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,8 +299,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the URL for the Web site that contains support information for the bootstrapper.</summary>
+        <value>The URL for the Web site that contains support information for the bootstrapper.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,9 +317,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether the bootstrapper performs XML validation on the component manifests.</summary>
+        <value>
+          <see langword="true" /> if the bootstrapper performs XML validation on the component manifests; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `true`, the bootstrapper validates component manifests; if `false`, the bootstrapper does not validate component manifests.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -31,8 +31,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the name by which an indexer is known in programming languages that do not support indexers directly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to properties.  
+  
+ This attribute is directly processed by the compiler, and cannot be accessed after compilation through Reflection.  
+  
+ The classes in <xref:System.Runtime.CompilerServices> are for compiler writers use only.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,8 +71,8 @@
         <Parameter Name="indexerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="indexerName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="indexerName">The name of the indexer, as shown to other languages.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.IndexerNameAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

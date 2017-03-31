@@ -1,2 +1,0 @@
-        string identityAuthenticationType = 
-            genericIdentity.AuthenticationType;

@@ -17,9 +17,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
+    <param name="sender">The instance of the object for which to invoke this method.</param>
+    <param name="e">The <see cref="T:System.Management.ProgressEventArgs" /> that specifies the reason the event was invoked.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Management.ManagementOperationObserver.Progress" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

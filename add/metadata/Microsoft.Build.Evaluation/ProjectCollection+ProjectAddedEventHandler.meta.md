@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedEventHandler
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

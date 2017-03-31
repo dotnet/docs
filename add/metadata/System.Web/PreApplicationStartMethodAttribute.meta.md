@@ -1,19 +1,23 @@
 ---
 uid: System.Web.PreApplicationStartMethodAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.PreApplicationStartMethodAttribute.Type
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.PreApplicationStartMethodAttribute.#ctor(System.Type,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.PreApplicationStartMethodAttribute.MethodName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

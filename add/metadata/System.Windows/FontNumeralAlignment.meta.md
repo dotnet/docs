@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.FontNumeralAlignment
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

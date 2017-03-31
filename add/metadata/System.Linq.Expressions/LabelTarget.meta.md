@@ -1,19 +1,26 @@
 ---
 uid: System.Linq.Expressions.LabelTarget
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.LabelTarget.Type
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.LabelTarget.ToString
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Linq.Expressions.LabelTarget.Name
-internalonly: False
+ms.author: "billchi"
+manager: "ghogen"
 ---

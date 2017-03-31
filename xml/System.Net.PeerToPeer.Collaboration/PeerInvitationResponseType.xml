@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the responses a local peer can receive from an application driven collaboration invitation requests.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The peer accepted the invitation request.</summary>
       </Docs>
     </Member>
     <Member MemberName="Declined">
@@ -43,7 +43,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The peer declined the invitation request.</summary>
       </Docs>
     </Member>
     <Member MemberName="Expired">
@@ -59,7 +59,7 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The invitation request has expired.</summary>
       </Docs>
     </Member>
   </Members>

@@ -12,7 +12,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes methods and properties that the <see cref="T:System.Web.UI.WebControls.QueryExtender" /> control uses to communicate with data source controls.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a query is created in a data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +47,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Raises the <see cref="E:System.Web.UI.DataSourceView.DataSourceViewChanged" /> event by calling the <see cref="M:System.Web.UI.DataSourceView.OnDataSourceViewChanged(System.EventArgs)" /> method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

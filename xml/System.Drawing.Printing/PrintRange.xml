@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the part of the document to print.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Printing.PrinterSettings> and <xref:System.Windows.Forms.PrintDialog> classes use this enumeration.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllPages">
@@ -27,7 +36,7 @@
         <ReturnType>System.Drawing.Printing.PrintRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All pages are printed.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurrentPage">
@@ -43,7 +52,7 @@
         <ReturnType>System.Drawing.Printing.PrintRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The currently displayed page is printed</summary>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -59,7 +68,7 @@
         <ReturnType>System.Drawing.Printing.PrintRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The selected pages are printed.</summary>
       </Docs>
     </Member>
     <Member MemberName="SomePages">
@@ -75,7 +84,7 @@
         <ReturnType>System.Drawing.Printing.PrintRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The pages between <see cref="P:System.Drawing.Printing.PrinterSettings.FromPage" /> and <see cref="P:System.Drawing.Printing.PrinterSettings.ToPage" /> are printed.</summary>
       </Docs>
     </Member>
   </Members>

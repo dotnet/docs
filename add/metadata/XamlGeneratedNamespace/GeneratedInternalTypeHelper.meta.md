@@ -1,9 +1,9 @@
 ---
 uid: XamlGeneratedNamespace.GeneratedInternalTypeHelper
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: XamlGeneratedNamespace.GeneratedInternalTypeHelper.#ctor
-internalonly: False
+manager: "ghogen"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Configuration.ServiceMetadataEndpointCollectionElement
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.ServiceMetadataEndpointCollectionElement.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,4 +1,5 @@
 ---
 uid: System.Configuration.ConfigurationElementCollectionType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

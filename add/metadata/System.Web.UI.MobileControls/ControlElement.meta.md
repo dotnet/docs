@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.MobileControls.ControlElement
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ControlElement.#ctor(System.String,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ControlElement.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ControlElement.Adapter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ControlElement.Control
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

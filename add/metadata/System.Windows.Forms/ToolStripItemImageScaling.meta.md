@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.ToolStripItemImageScaling
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

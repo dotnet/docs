@@ -1,4 +1,6 @@
 ---
 uid: System.DirectoryServices.AccountManagement.GroupScope
-internalonly: False
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
 ---

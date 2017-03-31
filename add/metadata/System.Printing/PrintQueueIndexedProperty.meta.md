@@ -1,4 +1,6 @@
 ---
 uid: System.Printing.PrintQueueIndexedProperty
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the AttributeStatement element specified in [Saml2Core, 2.7.3].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +33,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> class with no attributes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes%2A> property is initialized to an empty collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,9 +57,22 @@
         <Parameter Name="attributes" Type="System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.Saml2Attribute&gt;" />
       </Parameters>
       <Docs>
-        <param name="attributes">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attributes">A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that contains the Attribute elements contained in this statement.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes%2A> property (collection) is initialized with the attributes in the specified collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attributes" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ One of the elements of the collection specified by <paramref name="attributes" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -61,9 +88,18 @@
         <Parameter Name="attribute" Type="System.IdentityModel.Tokens.Saml2Attribute" />
       </Parameters>
       <Docs>
-        <param name="attribute">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attribute">A <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that represents a single Attribute element contained in this statement.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes%2A> property (collection) is initialized with the specified attribute.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attribute" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -79,9 +115,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of attributes contained in the attribute statement. These attributes are associated with the assertion subject. [Saml2Core, 2.7.3]</summary>
+        <value>A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that contains the attributes in the statement.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection contains the Attribute elements contained in the AttributeStatement element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

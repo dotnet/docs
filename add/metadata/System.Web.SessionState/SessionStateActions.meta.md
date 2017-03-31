@@ -1,4 +1,5 @@
 ---
 uid: System.Web.SessionState.SessionStateActions
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

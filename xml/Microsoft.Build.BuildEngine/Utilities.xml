@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains utility methods used by [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)]. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,10 +31,17 @@
         <Parameter Name="unescapedExpression" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="unescapedExpression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="unescapedExpression">The string to convert.</param>
+        <summary>Converts the specified string into a syntax that allows the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine to interpret the character literally.</summary>
+        <returns>The converted value of the specified string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Certain characters have special meaning in [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project files. Examples of the characters include semicolons (;) and asterisks (*). In order to use these special characters as literals, they must be specified with the syntax %nn, where nn represents the ASCII hexadecimal value of the character. This method performs that conversion.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

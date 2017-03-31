@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="destinationType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name as a string.</param>
+        <param name="destinationType">The destination type as a string.</param>
+        <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,10 +50,10 @@
         <Parameter Name="direct" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <param name="direct">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name as a string.</param>
+        <param name="destinationType">The destination type as a string.</param>
+        <param name="direct">A Boolean.</param>
+        <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,13 +75,13 @@
         <Parameter Name="direct" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="targetNamespace">To be added.</param>
-        <param name="references">To be added.</param>
-        <param name="namespaceImports">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <param name="direct">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name as a string.</param>
+        <param name="targetNamespace">The target namespace.</param>
+        <param name="references">String array of references.</param>
+        <param name="namespaceImports">Array of CodeNamespaceImport objects.</param>
+        <param name="destinationType">The destination type as a string.</param>
+        <param name="direct">A Boolean for direct.</param>
+        <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,16 +108,32 @@
         <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="schemas">To be added.</param>
-        <param name="importer">To be added.</param>
-        <param name="compileUnit">To be added.</param>
-        <param name="mainNamespace">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="codeProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">
+          <c>type</c>
+        </param>
+        <param name="context">
+          <c>context</c>
+        </param>
+        <param name="schemas">
+          <c>schemas</c>
+        </param>
+        <param name="importer">
+          <c>importer</c>
+        </param>
+        <param name="compileUnit">
+          <c>compileUnit</c>
+        </param>
+        <param name="mainNamespace">
+          <c>mainNamespace</c>
+        </param>
+        <param name="options">
+          <c>options</c>
+        </param>
+        <param name="codeProvider">
+          <c>codeProvider</c>
+        </param>
+        <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
+        <returns>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,17 +161,35 @@
         <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="xmlNamespace">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="schemas">To be added.</param>
-        <param name="importer">To be added.</param>
-        <param name="compileUnit">To be added.</param>
-        <param name="mainNamespace">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="codeProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">
+          <c>name</c>
+        </param>
+        <param name="xmlNamespace">
+          <c>xmlNamespace</c>
+        </param>
+        <param name="context">
+          <c>context</c>
+        </param>
+        <param name="schemas">
+          <c>schemas</c>
+        </param>
+        <param name="importer">
+          <c>importer</c>
+        </param>
+        <param name="compileUnit">
+          <c>compileUnit</c>
+        </param>
+        <param name="mainNamespace">
+          <c>mainNamespace</c>
+        </param>
+        <param name="options">
+          <c>options</c>
+        </param>
+        <param name="codeProvider">
+          <c>codeProvider</c>
+        </param>
+        <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
+        <returns>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,9 +206,26 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

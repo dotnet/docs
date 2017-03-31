@@ -1,34 +1,34 @@
 ---
 uid: System.Windows.Markup.XmlLanguage
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlLanguage.ToString
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlLanguage.GetEquivalentCulture
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlLanguage.IetfLanguageTag
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlLanguage.Empty
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlLanguage.GetSpecificCulture
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XmlLanguage.GetLanguage(System.String)
-internalonly: False
+manager: "martinek"
 ---

@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Navigation.ReturnEventHandler`1
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

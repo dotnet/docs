@@ -1,14 +1,17 @@
 ---
 uid: System.Configuration.SingleTagSectionHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SingleTagSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.SingleTagSectionHandler.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

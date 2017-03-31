@@ -1,1 +1,0 @@
-        Dim link As SyndicationLink = SyndicationLink.CreateMediaEnclosureLink(New Uri("http://server/link"), "audio/mpeg", 100000)

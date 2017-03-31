@@ -1,19 +1,23 @@
 ---
 uid: System.Configuration.ProtectedConfigurationSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfigurationSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfigurationSection.Providers
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ProtectedConfigurationSection.DefaultProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

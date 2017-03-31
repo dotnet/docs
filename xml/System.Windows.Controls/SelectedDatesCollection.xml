@@ -14,8 +14,31 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a set of selected dates in a <see cref="T:System.Windows.Controls.Calendar" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dates can be added to the <xref:System.Windows.Controls.Calendar.SelectedDates%2A> property of a <xref:System.Windows.Controls.Calendar>. Depending on the value of the <xref:System.Windows.Controls.Calendar.SelectionMode%2A?displayProperty=fullName> property, adding a date or a range to the <xref:System.Windows.Controls.SelectedDatesCollection> may cause it to be cleared. The following table lists how <xref:System.Windows.Controls.CalendarSelectionMode> affects the <xref:System.Windows.Controls.Calendar.SelectedDates%2A> property.  
+  
+|CalendarSelectionMode|Effect on SelectedDates|  
+|---------------------------|-----------------------------|  
+|<xref:System.Windows.Controls.CalendarSelectionMode>|No selections are allowed. <xref:System.Windows.Controls.Calendar.SelectedDate%2A> cannot be set and no values can be added to <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.|  
+|<xref:System.Windows.Controls.CalendarSelectionMode>|Only a single date can be selected, either by setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A> or the first value in <xref:System.Windows.Controls.Calendar.SelectedDates%2A>. <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> cannot be used.|  
+|<xref:System.Windows.Controls.CalendarSelectionMode>|A single range of dates can be selected. Setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A>, adding a date individually to <xref:System.Windows.Controls.Calendar.SelectedDates%2A>, or using <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> will clear all previous values from <xref:System.Windows.Controls.Calendar.SelectedDates%2A>.|  
+|<xref:System.Windows.Controls.CalendarSelectionMode>|Multiple non-contiguous ranges of dates can be selected. Adding a date individually to <xref:System.Windows.Controls.Calendar.SelectedDates%2A> or using <xref:System.Windows.Controls.SelectedDatesCollection.AddRange%2A> will not clear <xref:System.Windows.Controls.Calendar.SelectedDates%2A>. Setting <xref:System.Windows.Controls.Calendar.SelectedDate%2A> will still clear <xref:System.Windows.Controls.Calendar.SelectedDates%2A>, but additional dates or ranges can then be added. Adding a range that includes some dates that are already selected or overlaps with another range results in the union of the ranges and does not cause an exception.|  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.Calendar> that has multiple ranges of dates selected.  
+  
+ [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
+ [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
+ [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +54,8 @@
         <Parameter Name="owner" Type="System.Windows.Controls.Calendar" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The <see cref="T:System.Windows.Controls.Calendar" /> associated with this collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.SelectedDatesCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +76,9 @@
         <Parameter Name="end" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="start">To be added.</param>
-        <param name="end">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="start">The first date to add to the collection.</param>
+        <param name="end">The last date to add to the collection.</param>
+        <summary>Adds all the dates in the specified range, which includes the first and last dates, to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

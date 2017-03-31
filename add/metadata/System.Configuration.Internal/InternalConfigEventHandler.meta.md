@@ -1,4 +1,5 @@
 ---
 uid: System.Configuration.Internal.InternalConfigEventHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

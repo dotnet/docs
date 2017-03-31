@@ -11,8 +11,29 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The SOAP representation of a server error.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an XML Web service client adds a SOAP header to an XML Web service method call with the <xref:System.Web.Services.Protocols.SoapHeader.MustUnderstand%2A> property set to `true`, the XML Web service method must set the <xref:System.Web.Services.Protocols.SoapHeader.DidUnderstand%2A> property to `true`; otherwise, a <xref:System.Web.Services.Protocols.SoapHeaderException> is thrown.  
+  
+ The <xref:System.Web.Services.Protocols.SoapException.Detail%2A> property cannot be set according to the SOAP specification for a <xref:System.Web.Services.Protocols.SoapHeaderException>.  
+  
+> [!NOTE]
+>  Applications that use the SOAP 1.1 specification as the service protocol can use the <xref:System.Web.Services.Protocols.SoapHeaderException> to access SOAP faults. However, applications that use the SOAP 1.2 specification must use the <xref:System.Web.Services.Protocols.SoapException> to access SOAP faults.  
+  
+   
+  
+## Examples  
+ In the following example, an XML Web service client calls the `MyWebMethod` XML Web service method, passing in a SOAP header of type `MyHeader` with the <xref:System.Web.Services.Protocols.SoapHeader.MustUnderstand%2A> property set to `true`. If the XML Web service method does not set the <xref:System.Web.Services.Protocols.SoapHeader.DidUnderstand%2A> property of the `MyHeader` SOAP header to `true`, a <xref:System.Web.Services.Protocols.SoapHeaderException> is thrown.  
+  
+ [!code-cpp[Classic SoapHeader.MustUnderstand Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic SoapHeader.MustUnderstand Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SoapHeader.MustUnderstand Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapHeader.MustUnderstand Example/CS/source.cs#1)]
+ [!code-vb[Classic SoapHeader.MustUnderstand Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapHeader.MustUnderstand Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapHeaderException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +65,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains values that are used during serialization and deserialization.</param>
+        <param name="context">A <see cref="M:System.Web.Services.Protocols.SoapHeaderException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> that contains data about the source and destination of the serialization stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapHeaderException" /> class with parameters for controlling serialization.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +85,9 @@
         <Parameter Name="code" Type="System.Xml.XmlQualifiedName" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="code">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
+        <param name="code">The type of error that occurred. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Code" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapHeaderException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,10 +106,10 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="code">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
+        <param name="code">The type of error that occurred. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Code" /> property.</param>
+        <param name="innerException">A reference to the root cause of an exception. This parameter sets the <see cref="P:System.Exception.InnerException" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapHeaderException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,10 +128,10 @@
         <Parameter Name="actor" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="code">To be added.</param>
-        <param name="actor">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
+        <param name="code">The type of error that occurred. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Code" /> property.</param>
+        <param name="actor">The piece of code that caused the exception. Typically, this is a URL to an XML Web service method. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Actor" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapHeaderException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,11 +151,11 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="code">To be added.</param>
-        <param name="actor">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
+        <param name="code">The type of error that occurred. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Code" /> property.</param>
+        <param name="actor">The piece of code that caused the exception. Typically, this is a URL to an XML Web service method. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Actor" /> property.</param>
+        <param name="innerException">A reference to the root cause of an exception. This parameter sets the <see cref="P:System.Exception.InnerException" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapHeaderException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,13 +177,13 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="code">To be added.</param>
-        <param name="actor">To be added.</param>
-        <param name="role">To be added.</param>
-        <param name="subCode">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
+        <param name="code">The type of error that occurred. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Code" /> property.</param>
+        <param name="actor">The piece of code that caused the exception. Typically, this is a URL to an XML Web service method. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Actor" /> property.</param>
+        <param name="role">An URI that represents the role of the XML Web service in the processing of the SOAP message. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Role" /> property.</param>
+        <param name="subCode">A <see cref="T:System.Web.Services.Protocols.SoapFaultSubCode" /> that contains the contents of the <see langword="&lt;subcode&gt;" /> element of a SOAP fault.</param>
+        <param name="innerException">A reference to the root cause of the exception. This parameter sets the <see cref="P:System.Exception.InnerException" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapHeaderException" /> class with the associated data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,14 +206,14 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="code">To be added.</param>
-        <param name="actor">To be added.</param>
-        <param name="role">To be added.</param>
-        <param name="lang">To be added.</param>
-        <param name="subCode">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
+        <param name="code">The type of error that occurred. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Code" /> property.</param>
+        <param name="actor">The piece of code that caused the exception. Typically, this is a URL to an XML Web service method. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Actor" /> property.</param>
+        <param name="role">An URI that represents the role of the XML Web service in the processing of the SOAP message. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Role" /> property.</param>
+        <param name="lang">A string that identifies the human language associated with the exception. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Lang" /> property.</param>
+        <param name="subCode">A <see cref="T:System.Web.Services.Protocols.SoapFaultSubCode" /> that contains the contents of the <see langword="subcode" /> element of a SOAP fault.</param>
+        <param name="innerException">A reference to the root cause of an exception. This parameter sets the <see cref="P:System.Exception.InnerException" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapHeaderException" /> class with the associated data.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,1 +1,0 @@
-            IdentityVerifier id = settings.IdentityVerifier;

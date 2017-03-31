@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the same functionality as the <see cref="T:Microsoft.Build.Utilities.Task" /> class, but derives from <see cref="T:System.MarshalByRefObject" /> so that it can be instantiated in its own application domain.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <ReturnType>Microsoft.Build.Utilities.TaskLoggingHelper</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an instance of a <see cref="T:Microsoft.Build.Tasks.TaskLoggingHelperExtension" /> class containing task logging methods.</summary>
+        <value>The logging helper object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of curve to apply to the edge of a bitmap.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following figure illustrates the different values of this enumeration.  
+  
+ ![Screenshot: Compare values of EdgeProfile](~/add/media/effects-beveledgeprofile.png "Screenshot: Compare values of EdgeProfile")  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BulgedUp">
@@ -27,7 +36,7 @@
         <ReturnType>System.Windows.Media.Effects.EdgeProfile</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An edge that curves up and then down, like a ridge.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurvedIn">
@@ -43,7 +52,7 @@
         <ReturnType>System.Windows.Media.Effects.EdgeProfile</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A concave edge that curves in.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurvedOut">
@@ -59,7 +68,7 @@
         <ReturnType>System.Windows.Media.Effects.EdgeProfile</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A convex edge that curves out.</summary>
       </Docs>
     </Member>
     <Member MemberName="Linear">
@@ -75,7 +84,7 @@
         <ReturnType>System.Windows.Media.Effects.EdgeProfile</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An edge that is a straight line.</summary>
       </Docs>
     </Member>
   </Members>

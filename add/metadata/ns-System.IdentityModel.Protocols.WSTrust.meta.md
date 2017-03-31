@@ -1,4 +1,5 @@
 ---
 uid: System.IdentityModel.Protocols.WSTrust
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

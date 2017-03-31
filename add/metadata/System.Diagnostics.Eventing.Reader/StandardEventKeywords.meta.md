@@ -1,4 +1,5 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.StandardEventKeywords
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

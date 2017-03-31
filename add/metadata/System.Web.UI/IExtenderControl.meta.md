@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.IExtenderControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IExtenderControl.GetScriptDescriptors(System.Web.UI.Control)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IExtenderControl.GetScriptReferences
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

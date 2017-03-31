@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.Runtime
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Runtime.UncheckedDecimalToInt64(System.Decimal)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Runtime.Equals(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Runtime.DoubleToInt64(System.Double)
-internalonly: False
+ms.author: "mikejo"
 ---

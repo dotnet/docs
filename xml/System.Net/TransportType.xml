@@ -11,8 +11,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines transport types for the <see cref="T:System.Net.SocketPermission" /> and <see cref="T:System.Net.Sockets.Socket" /> classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.TransportType> enumeration defines transport types for the <xref:System.Net.SocketPermission> and <xref:System.Net.Sockets.Socket> classes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -29,7 +36,7 @@
         <ReturnType>System.Net.TransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All transport types.</summary>
       </Docs>
     </Member>
     <Member MemberName="Connectionless">
@@ -46,7 +53,7 @@
         <ReturnType>System.Net.TransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transport type is connectionless, such as UDP. Specifying this value has the same effect as specifying <see cref="F:System.Net.TransportType.Udp" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConnectionOriented">
@@ -63,7 +70,7 @@
         <ReturnType>System.Net.TransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transport is connection oriented, such as TCP. Specifying this value has the same effect as specifying <see cref="F:System.Net.TransportType.Tcp" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tcp">
@@ -80,7 +87,7 @@
         <ReturnType>System.Net.TransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>TCP transport.</summary>
       </Docs>
     </Member>
     <Member MemberName="Udp">
@@ -97,7 +104,7 @@
         <ReturnType>System.Net.TransportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>UDP transport.</summary>
       </Docs>
     </Member>
   </Members>

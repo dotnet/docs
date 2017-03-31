@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.Design.ControlDesignerState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ControlDesignerState.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

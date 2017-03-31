@@ -1,4 +1,5 @@
 ---
 uid: System.IdentityModel.Metadata.KeyType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

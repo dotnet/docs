@@ -1,34 +1,47 @@
 ---
 uid: System.ServiceModel.Security.PeerCredential
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.PeerCredential.SetCertificate(System.String,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName)
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.PeerCredential.MeshPassword
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.PeerCredential.PeerAuthentication
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.PeerCredential.SetCertificate(System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.X509FindType,System.Object)
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Security.PeerCredential.SetCertificate
+ms.author: "v-jibran"
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Security.PeerCredential.Certificate
-internalonly: False
+ms.author: "v-jibran"
+manager: "ghogen"
 ---

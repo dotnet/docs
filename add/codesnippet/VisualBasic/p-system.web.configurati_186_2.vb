@@ -1,1 +1,0 @@
-This snippet ID 50 is used in multiple files: /VB/Default2.aspx.vb, /VB/Default.aspx. Rename the duplicate ID to make it unique, and update the reference to the snippet ID in the topic(s).

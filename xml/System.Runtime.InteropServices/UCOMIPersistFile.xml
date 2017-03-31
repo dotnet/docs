@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IPersistFile" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IPersistFile` and `IPersist` in the com subfolder of the MSDN library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetClassID">
@@ -41,9 +48,16 @@
         <Parameter Name="pClassID" Type="System.Guid&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pClassID">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pClassID">On successful return, a reference to the CLSID.</param>
+        <summary>Retrieves the class identifier (CLSID) of an object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IPersist::GetClassID` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCurFile">
@@ -63,9 +77,16 @@
         <Parameter Name="ppszFileName" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ppszFileName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ppszFileName">The address of a pointer to a zero-terminated string containing the path for the current file, or the default filename prompt (such as *.txt).</param>
+        <summary>Retrieves either the absolute path to current working file of the object, or if there is no current working file, the default filename prompt of the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IPersistFile::GetCurFile` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDirty">
@@ -83,9 +104,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Checks an object for changes since it was last saved to its current file.</summary>
+        <returns>
+          <see langword="S_OK" /> if the file has changed since it was last saved; <see langword="S_FALSE" /> if the file has not changed since it was last saved.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IPersistFile::IsDirty` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -106,10 +135,19 @@
         <Parameter Name="dwMode" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pszFileName">To be added.</param>
-        <param name="dwMode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pszFileName">A zero-terminated string containing the absolute path of the file to open.</param>
+        <param name="dwMode">A combination of values from the <see langword="STGM" /> enumeration to indicate the access mode in which to open <c>pszFileName</c>.</param>
+        <summary>Opens the specified file and initializes an object from the file contents.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `STGM` enumeration is not part of the .NET Framework, but is documented in the MSDN library.  
+  
+ For more information, please see the existing documentation for `IPersistFile::Load` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -130,10 +168,17 @@
         <Parameter Name="fRemember" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="pszFileName">To be added.</param>
-        <param name="fRemember">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pszFileName">A zero-terminated string containing the absolute path of the file to which the object is saved.</param>
+        <param name="fRemember">Indicates whether <c>pszFileName</c> is to be used as the current working file.</param>
+        <summary>Saves a copy of the object into the specified file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IPersistFile::Save` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveCompleted">
@@ -153,9 +198,16 @@
         <Parameter Name="pszFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pszFileName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pszFileName">The absolute path of the file where the object was previously saved.</param>
+        <summary>Notifies the object that it can write to its file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IPersistFile::SaveCompleted` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

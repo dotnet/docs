@@ -32,8 +32,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Supplies an explicit <see cref="T:System.Guid" /> when an automatic GUID is undesirable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to assemblies, interfaces, classes, enumerations, structures, or delegates, although the [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) can apply it for you when it imports a type library.  
+  
+ The string passed to the attribute must be in a format that is an acceptable constructor argument for the type <xref:System.Guid>. To avoid conflicts with the type <xref:System.Guid>, use the long name <xref:System.Runtime.InteropServices.GuidAttribute> explicitly. Only use an explicit GUID when a type must have a specific GUID. If the attribute is omitted, a GUID is assigned automatically.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to apply the <xref:System.Runtime.InteropServices.GuidAttribute> to a class that is exported to COM with a fixed GUID.  
+  
+ [!code-cpp[Classic GuidAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic GuidAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic GuidAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic GuidAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic GuidAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic GuidAttribute Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,8 +80,8 @@
         <Parameter Name="guid" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="guid">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="guid">The <see cref="T:System.Guid" /> to be assigned.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.GuidAttribute" /> class with the specified GUID.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +111,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Guid" /> of the class.</summary>
+        <value>The <see cref="T:System.Guid" /> of the class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

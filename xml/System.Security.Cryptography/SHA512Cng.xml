@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a Cryptography Next Generation (CNG) implementation of the Secure Hash Algorithm (SHA) for 512-bit hash values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This algorithm is for hashing only and does not provide any encryption or decryption. It uses the BCrypt (BestCrypt) layer CNG.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +38,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.SHA512Cng" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +141,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes, or re-initializes, the instance of the hash algorithm.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

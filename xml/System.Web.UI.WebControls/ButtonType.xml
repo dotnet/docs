@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the different types of buttons that can be rendered in a Web Forms page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ButtonType> enumeration is used to represent the different types of buttons (such as command button, image button, link button, and so on) that can be rendered on an ASP.NET page. It is commonly used by properties such as the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property of the <xref:System.Web.UI.WebControls.ButtonFieldBase> class to indicate which button type is being used by the parent control.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonType> enumeration to specify that link buttons are displayed in a <xref:System.Web.UI.WebControls.ButtonField> field column of a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property of a <xref:System.Web.UI.WebControls.ButtonField> object is declaratively set to `ButtonType.Link`.  
+  
+ [!code-csharp[ButtonType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonType/CS/buttontypecs.aspx#1)]
+ [!code-vb[ButtonType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonType/VB/buttontypevb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Button">
@@ -27,7 +42,7 @@
         <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A command button.</summary>
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -43,7 +58,7 @@
         <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A button that displays an image.</summary>
       </Docs>
     </Member>
     <Member MemberName="Link">
@@ -59,7 +74,7 @@
         <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A hyperlink-style button.</summary>
       </Docs>
     </Member>
   </Members>

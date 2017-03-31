@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the initialization environment of a <see cref="T:System.Activities.Handle" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,9 +36,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="THandle">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="THandle">The type of the <see cref="T:System.Activities.Handle" /> to create and initialize.</typeparam>
+        <summary>Creates and initializes a new instance of the handle type specified by the type parameter.</summary>
+        <returns>A new initialized instance of the handle type specified by the type parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,9 +63,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The class.</typeparam>
+        <summary>Retrieves the extension of the class.</summary>
+        <returns>The extension of the class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,8 @@
         <Parameter Name="handle" Type="System.Activities.Handle" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handle">The <see cref="T:System.Activities.Handle" /> to uninitialize.</param>
+        <summary>Uninitializes the specified <see cref="T:System.Activities.Handle" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

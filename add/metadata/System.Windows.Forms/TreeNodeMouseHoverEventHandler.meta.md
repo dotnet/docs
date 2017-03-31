@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.TreeNodeMouseHoverEventHandler
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.WebControls.SendMailErrorEventHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

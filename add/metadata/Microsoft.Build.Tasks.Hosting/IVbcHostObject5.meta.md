@@ -1,34 +1,41 @@
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObject5
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObject5.CompileAsync(System.IntPtr@,System.IntPtr@)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetPlatformWith32BitPreference(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObject5.GetFreeThreadedHostObject
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObject5.EndCompile(System.Boolean)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetSubsystemVersion(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Hosting.IVbcHostObject5.SetHighEntropyVA(System.Boolean)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

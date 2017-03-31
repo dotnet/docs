@@ -1,4 +1,6 @@
 ---
 uid: System.Xml.XPath.XPathResultType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

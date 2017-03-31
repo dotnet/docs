@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies options to use when creating a registry key.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create a registry key that is available only in memory and that will not be persisted when the computer is restarted. This is known as a volatile key. You can specify that you want to create a volatile or non-volatile key by using the <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A?displayProperty=fullName> method overloads that take an `options` parameter.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -42,7 +49,7 @@
         <ReturnType>Microsoft.Win32.RegistryOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A non-volatile key. This is the default.</summary>
       </Docs>
     </Member>
     <Member MemberName="Volatile">
@@ -63,7 +70,7 @@
         <ReturnType>Microsoft.Win32.RegistryOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A volatile key. The information is stored in memory and is not preserved when the corresponding registry hive is unloaded.</summary>
       </Docs>
     </Member>
   </Members>

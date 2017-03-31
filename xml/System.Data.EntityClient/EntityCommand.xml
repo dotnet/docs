@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a command for the conceptual layer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No content here will be updated; please do not add material here.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityCommand" /> class using the specified values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <Parameter Name="statement" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="statement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="statement">The text of the command.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityCommand" /> class with the specified statement.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +69,9 @@
         <Parameter Name="connection" Type="System.Data.EntityClient.EntityConnection" />
       </Parameters>
       <Docs>
-        <param name="statement">To be added.</param>
-        <param name="connection">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="statement">The text of the command.</param>
+        <param name="connection">A connection to the data source.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityCommand" /> class with the specified statement and connection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +90,10 @@
         <Parameter Name="transaction" Type="System.Data.EntityClient.EntityTransaction" />
       </Parameters>
       <Docs>
-        <param name="statement">To be added.</param>
-        <param name="connection">To be added.</param>
-        <param name="transaction">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="statement">The text of the command.</param>
+        <param name="connection">A connection to the data source.</param>
+        <param name="transaction">The transaction in which the command executes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityCommand" /> class with the specified statement, connection and transaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +111,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Cancels the execution of an <see cref="T:System.Data.EntityClient.EntityCommand" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +128,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an Entity SQL statement that specifies a command or stored procedure to execute.</summary>
+        <value>The Entity SQL statement that specifies a command or stored procedure to execute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,8 +146,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the amount of time to wait before timing out.</summary>
+        <value>The time in seconds to wait for the command to execute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,8 +164,8 @@
         <ReturnType>System.Data.Common.CommandTrees.DbCommandTree</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the command tree to execute; only one of the command tree or the command text can be set, not both.</summary>
+        <value>The command tree to execute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +182,8 @@
         <ReturnType>System.Data.CommandType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates how the <see cref="P:System.Data.EntityClient.EntityCommand.CommandText" /> property is to be interpreted.</summary>
+        <value>One of the <see cref="T:System.Data.CommandType" /> enumeration values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,8 +200,8 @@
         <ReturnType>System.Data.EntityClient.EntityConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Data.EntityClient.EntityConnection" /> used by the <see cref="T:System.Data.EntityClient.EntityCommand" />.</summary>
+        <value>The connection used by the entity command.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,8 +238,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new instance of an <see cref="T:System.Data.EntityClient.EntityParameter" /> object.</summary>
+        <returns>A new instance of an <see cref="T:System.Data.EntityClient.EntityParameter" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,8 +310,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the command object should be visible in a Windows Form Designer control.</summary>
+        <value>
+          <see langword="true" /> if the command object should be visible in a Windows Form Designer control; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,8 +329,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the query plan caching is enabled.</summary>
+        <value>
+          <see langword="true" /> if the query plan caching is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,8 +371,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the current command.</summary>
+        <returns>The number of rows affected.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,8 +390,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the command and returns a data reader.</summary>
+        <returns>The <see cref="T:System.Data.EntityClient.EntityDataReader" /> that contains the results.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,9 +411,9 @@
         <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
       </Parameters>
       <Docs>
-        <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="behavior">One of the <see cref="T:System.Data.CommandBehavior" /> values.</param>
+        <summary>Compiles the <see cref="P:System.Data.EntityClient.EntityCommand.CommandText" /> into a command tree and passes it to the underlying store provider for execution, then builds an <see cref="T:System.Data.EntityClient.EntityDataReader" /> out of the produced result set using the specified <see cref="T:System.Data.CommandBehavior" />.</summary>
+        <returns>The <see cref="T:System.Data.EntityClient.EntityDataReader" /> that contains the results.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -422,8 +431,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Executes the command, and returns the first column of the first row in the result set. Additional columns or rows are ignored.</summary>
+        <returns>The first column of the first row in the result set, or a null reference (Nothing in Visual Basic) if the result set is empty.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -440,8 +449,8 @@
         <ReturnType>System.Data.EntityClient.EntityParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the parameters of the Entity SQL statement or stored procedure.</summary>
+        <value>The parameters of the Entity SQL statement or stored procedure.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,7 +468,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Compiles the entity-level command and creates a prepared version of the command.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -482,8 +491,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Compiles the entity-level command and returns the store command text.</summary>
+        <returns>The store command text.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,8 +509,8 @@
         <ReturnType>System.Data.EntityClient.EntityTransaction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the transaction within which the <see cref="T:System.Data.SqlClient.SqlCommand" /> executes.</summary>
+        <value>The transaction within which the <see cref="T:System.Data.SqlClient.SqlCommand" /> executes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,8 +527,8 @@
         <ReturnType>System.Data.UpdateRowSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets how command results are applied to rows being updated.</summary>
+        <value>One of the <see cref="T:System.Data.UpdateRowSource" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

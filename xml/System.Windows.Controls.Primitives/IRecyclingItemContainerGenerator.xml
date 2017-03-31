@@ -12,7 +12,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Extends the <see cref="T:System.Windows.Controls.Primitives.IItemContainerGenerator" /> interface to reuse the UI content it generates. Classes that are responsible for generating user interface (UI) content on behalf of a host implement this interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,9 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="position">The zero-based index of the first element to reuse. <c>position</c> must refer to a previously generated (realized) item.</param>
+        <param name="count">The number of elements to reuse, starting at <c>position</c>.</param>
+        <summary>Disassociates item containers from their data items and saves the containers so they can be reused later for other data items.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

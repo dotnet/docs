@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.IWrappedMember
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IWrappedMember.GetWrappedObject
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a financial formula.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.FinancialFormula> enumeration is used in calls to the `FinancialFormula` methods that are contained in the <xref:System.Windows.Forms.DataVisualization.Charting.DataFormula> class, and specifies the type of financial formula to be used.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AccumulationDistribution">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Accumulation Distribution formula uses a relationship between volume and prices to estimate the strength of price movements; if volume is increased, there is a high probability that prices will go up.</summary>
       </Docs>
     </Member>
     <Member MemberName="AverageTrueRange">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Average True Range indicator measures commitment and compares the range between the High, Low and Close prices.</summary>
       </Docs>
     </Member>
     <Member MemberName="BollingerBands">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Bollinger Bands indicators are plotted at standard deviation levels above and below a simple moving average.</summary>
       </Docs>
     </Member>
     <Member MemberName="ChaikinOscillator">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chaikin Oscillator indicator is the difference between a 3-day exponential moving average and a 10-day exponential moving average applied to the accumulation distribution.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommodityChannelIndex">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Commodity Channel Index compares prices with their moving averages.</summary>
       </Docs>
     </Member>
     <Member MemberName="DetrendedPriceOscillator">
@@ -107,7 +114,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Detrended Price Oscillator attempts to remove trends from prices.</summary>
       </Docs>
     </Member>
     <Member MemberName="EaseOfMovement">
@@ -123,7 +130,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ease of Movement deals with the relationship between volume and price change, and uses volume to indicate how strong a trend is for prices.</summary>
       </Docs>
     </Member>
     <Member MemberName="Envelopes">
@@ -139,7 +146,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Envelopes are plotted above and below a moving average using a specified percentage as the shift.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExponentialMovingAverage">
@@ -155,7 +162,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An Exponential Moving Average is an average of data calculated over a period of time where the most recent days have more weight.</summary>
       </Docs>
     </Member>
     <Member MemberName="Forecasting">
@@ -171,7 +178,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Forecasting predicts future values using historical observations.</summary>
       </Docs>
     </Member>
     <Member MemberName="MassIndex">
@@ -187,7 +194,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Mass Index is used to predict trend reversal by comparing the difference and range between High and Low prices.</summary>
       </Docs>
     </Member>
     <Member MemberName="MedianPrice">
@@ -203,7 +210,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Median prices are mid-point values of daily prices and can be used as a filter for trend indicators.</summary>
       </Docs>
     </Member>
     <Member MemberName="MoneyFlow">
@@ -219,7 +226,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Money Flow indicator compares upward changes and downward changes of volume-weighted typical prices.</summary>
       </Docs>
     </Member>
     <Member MemberName="MovingAverage">
@@ -235,7 +242,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Simple Moving Average is an average of data calculated over a period of time. The moving average is the most popular price indicator used in technical analysis, and can be used with any price, for example, Hi, Low, Open and Close, or can be applied to other indicators.</summary>
       </Docs>
     </Member>
     <Member MemberName="MovingAverageConvergenceDivergence">
@@ -251,7 +258,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Moving Average Convergence/Divergence indicator compares two moving averages of prices and is used with a 9-day Exponential Moving average as a signal that indicates buying and selling moments.</summary>
       </Docs>
     </Member>
     <Member MemberName="NegativeVolumeIndex">
@@ -267,7 +274,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Negative Volume Index should be used with the Positive Volume index; the Negative Volume Index only changes if the volume decreases from the previous day.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnBalanceVolume">
@@ -283,7 +290,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The On Balance Volume indicator measures positive and negative volume flow.</summary>
       </Docs>
     </Member>
     <Member MemberName="Performance">
@@ -299,7 +306,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Performance indicator compares a current closing price or any other price with the first closing value from the first time period.</summary>
       </Docs>
     </Member>
     <Member MemberName="PositiveVolumeIndex">
@@ -315,7 +322,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Positive Volume Index should be used with the Negative Volume index. The Positive volume index only changes if the volume decreases from the previous day.</summary>
       </Docs>
     </Member>
     <Member MemberName="PriceVolumeTrend">
@@ -331,7 +338,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Price Volume Trend is a cumulative volume total that is calculated using relative changes of the closing price, and should be used with other indicators.</summary>
       </Docs>
     </Member>
     <Member MemberName="RateOfChange">
@@ -347,7 +354,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Rate of Change indicator compares a specified closing price with the current price.</summary>
       </Docs>
     </Member>
     <Member MemberName="RelativeStrengthIndex">
@@ -363,7 +370,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Relative Strength Index is a momentum oscillator that compares upward movements of the closing price with downward movements, and results in values that range from 0 to 100.</summary>
       </Docs>
     </Member>
     <Member MemberName="StandardDeviation">
@@ -379,7 +386,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Standard Deviation is used to indicate volatility, and measures the difference between values, for example, closing price, and their moving average.</summary>
       </Docs>
     </Member>
     <Member MemberName="StochasticIndicator">
@@ -395,7 +402,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Stochastic Indicator helps to find trend reversal by searching in a period for when the closing prices are close to low prices in an upward trending market and when the closing prices are close to high prices in a downward trending market.</summary>
       </Docs>
     </Member>
     <Member MemberName="TriangularMovingAverage">
@@ -411,7 +418,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Triangular Moving Average is an average of data calculated over a period of time where the middle portion of data has more weight.</summary>
       </Docs>
     </Member>
     <Member MemberName="TripleExponentialMovingAverage">
@@ -427,7 +434,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Triple Exponential Moving Average is based on a triple moving average of the closing price. Its purpose is to eliminate short cycles. This indicator keeps the closing price in trends that are shorter than the specified period.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypicalPrice">
@@ -443,7 +450,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Typical Price is the average value of daily prices, and can be used as a filter for trend indicators.</summary>
       </Docs>
     </Member>
     <Member MemberName="VolatilityChaikins">
@@ -459,7 +466,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Volatility Chaikins indicator measures the difference between High and Low prices, and is used to indicate tops or bottoms of the market.</summary>
       </Docs>
     </Member>
     <Member MemberName="VolumeOscillator">
@@ -475,7 +482,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Volume Oscillator attempts to identify trends in volume by comparing two moving averages: one with a short period and another with a longer period.</summary>
       </Docs>
     </Member>
     <Member MemberName="WeightedClose">
@@ -491,7 +498,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Weighted Close formula calculates the average value of daily prices. The only difference between Typical Price and the Weighted Close is that the closing price has extra weight, and is considered the most important price.</summary>
       </Docs>
     </Member>
     <Member MemberName="WeightedMovingAverage">
@@ -507,7 +514,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Weighted Moving Average is an average of data that is calculated over a period of time, where greater weight is attached to the most recent data.</summary>
       </Docs>
     </Member>
     <Member MemberName="WilliamsR">
@@ -523,7 +530,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Williams %R is a momentum indicator, and is used to measure overbought and oversold levels.</summary>
       </Docs>
     </Member>
   </Members>

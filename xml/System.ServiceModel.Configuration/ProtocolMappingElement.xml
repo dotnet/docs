@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the functionality to create a protocol mapping element. This class is sealed.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.ProtocolMappingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -45,10 +45,10 @@
         <Parameter Name="bindingConfiguration" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="schemeType">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="bindingConfiguration">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="schemeType">A communications protocol scheme.</param>
+        <param name="binding">A communications protocol message format style.</param>
+        <param name="bindingConfiguration">The binding settings for the configuration of the protocol mapping element.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.ProtocolMappingElement" /> class with a specified scheme type, binding, and binding configuration.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +73,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the settings for the communications protocol message formatting.</summary>
+        <value>The communications protocol message formatting information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +99,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the binding settings for the protocol mapping configuration element.</summary>
+        <value>The binding configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +143,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the communications protocol type.</summary>
+        <value>Names the communications protocol.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

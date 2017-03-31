@@ -19,8 +19,26 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the current state of an IP address.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To help ensure that all interfaces on a network have a unique address, the interface host is responsible for running a "duplicate address detection" algorithm on unicast addresses. The purpose of this algorithm is to attempt to prevent non-unique addresses on the network. This process is defined in IETF RFC 1971.  
+  
+ This enumeration is used by the <xref:System.Net.NetworkInformation.UnicastIPAddressInformation> and <xref:System.Net.NetworkInformation.MulticastIPAddressInformation> classes. Instances of this class are returned when you retrieve the unicast address information for a <xref:System.Net.NetworkInformation.NetworkInterface> object.  
+  
+   
+  
+## Examples  
+ The following code example determines unicast address information.  
+  
+ [!code-cpp[NclNetInfo2#45](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#45)]
+ [!code-csharp[NclNetInfo2#45](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#45)]
+ [!code-vb[NclNetInfo2#45](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#45)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Deprecated">
@@ -45,7 +63,7 @@
         <ReturnType>System.Net.NetworkInformation.DuplicateAddressDetectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The address is valid, but it is nearing its lease lifetime and should not be used by applications.</summary>
       </Docs>
     </Member>
     <Member MemberName="Duplicate">
@@ -70,7 +88,7 @@
         <ReturnType>System.Net.NetworkInformation.DuplicateAddressDetectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The address is not unique. This address should not be assigned to the network interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -95,7 +113,7 @@
         <ReturnType>System.Net.NetworkInformation.DuplicateAddressDetectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The address is not valid. A nonvalid address is expired and no longer assigned to an interface; applications should not send data packets to it.</summary>
       </Docs>
     </Member>
     <Member MemberName="Preferred">
@@ -120,7 +138,7 @@
         <ReturnType>System.Net.NetworkInformation.DuplicateAddressDetectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The address is valid and its use is unrestricted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tentative">
@@ -145,7 +163,7 @@
         <ReturnType>System.Net.NetworkInformation.DuplicateAddressDetectionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The duplicate address detection procedure's evaluation of the address has not completed successfully. Applications should not use the address because it is not yet valid and packets sent to it are discarded.</summary>
       </Docs>
     </Member>
   </Members>

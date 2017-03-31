@@ -1,24 +1,29 @@
 ---
 uid: System.Net.UploadProgressChangedEventArgs
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.UploadProgressChangedEventArgs.TotalBytesToSend
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.UploadProgressChangedEventArgs.BytesSent
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.UploadProgressChangedEventArgs.BytesReceived
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

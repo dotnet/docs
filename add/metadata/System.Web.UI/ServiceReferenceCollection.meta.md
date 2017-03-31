@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.ServiceReferenceCollection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ServiceReferenceCollection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

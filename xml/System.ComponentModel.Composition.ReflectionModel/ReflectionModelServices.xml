@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides extension methods to create and retrieve reflection-based parts.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,12 +36,12 @@
         <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
       </Parameters>
       <Docs>
-        <param name="exportingMember">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <param name="origin">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="exportingMember">The member to export.</param>
+        <param name="contractName">The contract name to use for the export.</param>
+        <param name="metadata">The metadata for the export.</param>
+        <param name="origin">The object that the export originates from.</param>
+        <summary>Creates an export definition from the specified member, with the specified contract name, metadata, and origin.</summary>
+        <returns>An export definition created from the specified parameters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,15 +68,15 @@
         <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
       </Parameters>
       <Docs>
-        <param name="parameter">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <param name="requiredTypeIdentity">To be added.</param>
-        <param name="requiredMetadata">To be added.</param>
-        <param name="cardinality">To be added.</param>
-        <param name="requiredCreationPolicy">To be added.</param>
-        <param name="origin">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parameter">The parameter to import.</param>
+        <param name="contractName">The contract name to use for the import.</param>
+        <param name="requiredTypeIdentity">The required type identity for the import.</param>
+        <param name="requiredMetadata">The required metadata for the import.</param>
+        <param name="cardinality">The cardinality of the import.</param>
+        <param name="requiredCreationPolicy">One of the enumeration values that specifies the import's creation policy.</param>
+        <param name="origin">The object to import into.</param>
+        <summary>Creates an import definition for the specified parameter by using the specified contract name, type identity, import metadata, cardinality, and creation policy.</summary>
+        <returns>An import definition created from the specified parameters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,16 +104,17 @@
         <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
       </Parameters>
       <Docs>
-        <param name="importingMember">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <param name="requiredTypeIdentity">To be added.</param>
-        <param name="requiredMetadata">To be added.</param>
-        <param name="cardinality">To be added.</param>
-        <param name="isRecomposable">To be added.</param>
-        <param name="requiredCreationPolicy">To be added.</param>
-        <param name="origin">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="importingMember">The member to import into.</param>
+        <param name="contractName">The contract name to use for the import.</param>
+        <param name="requiredTypeIdentity">The required type identity for the import.</param>
+        <param name="requiredMetadata">The required metadata for the import.</param>
+        <param name="cardinality">The cardinality of the import.</param>
+        <param name="isRecomposable">
+          <see langword="true" /> to indicate that the import is recomposable; otherwise, <see langword="false" />.</param>
+        <param name="requiredCreationPolicy">One of the enumeration values that specifies the import's creation policy.</param>
+        <param name="origin">The object to import into.</param>
+        <summary>Creates an import definition for the specified member by using the specified contract name, type identity, import metadata, cardinality, recomposition policy, and creation policy.</summary>
+        <returns>An import definition created from the specified parameters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,17 +143,18 @@
         <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
       </Parameters>
       <Docs>
-        <param name="parameter">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <param name="requiredTypeIdentity">To be added.</param>
-        <param name="requiredMetadata">To be added.</param>
-        <param name="cardinality">To be added.</param>
-        <param name="requiredCreationPolicy">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <param name="isExportFactory">To be added.</param>
-        <param name="origin">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parameter">The parameter to import.</param>
+        <param name="contractName">The contract name to use for the import.</param>
+        <param name="requiredTypeIdentity">The required type identity for the import.</param>
+        <param name="requiredMetadata">The required metadata for the import.</param>
+        <param name="cardinality">The cardinality of the import.</param>
+        <param name="requiredCreationPolicy">One of the enumeration values that specifies the import's creation policy.</param>
+        <param name="metadata">The contract metadata</param>
+        <param name="isExportFactory">
+          <see langword="true" /> to indicate that the import represents an <see cref="T:System.ComponentModel.Composition.ExportFactory`1" />; otherwise, <see langword="false" />.</param>
+        <param name="origin">The object to import into.</param>
+        <summary>Creates an import definition for the specified parameter by using the specified contract name, type identity, import and contract metadata, cardinality, and creation policy.</summary>
+        <returns>An import definition created from the specified parameters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,18 +184,20 @@
         <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
       </Parameters>
       <Docs>
-        <param name="importingMember">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <param name="requiredTypeIdentity">To be added.</param>
-        <param name="requiredMetadata">To be added.</param>
-        <param name="cardinality">To be added.</param>
-        <param name="isRecomposable">To be added.</param>
-        <param name="requiredCreationPolicy">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <param name="isExportFactory">To be added.</param>
-        <param name="origin">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="importingMember">The member to import into.</param>
+        <param name="contractName">The contract name to use for the import.</param>
+        <param name="requiredTypeIdentity">The required type identity for the import.</param>
+        <param name="requiredMetadata">The required metadata for the import.</param>
+        <param name="cardinality">The cardinality of the import.</param>
+        <param name="isRecomposable">
+          <see langword="true" /> to indicate that the import is recomposable; otherwise, <see langword="false" />.</param>
+        <param name="requiredCreationPolicy">One of the enumeration values that specifies the import's creation policy.</param>
+        <param name="metadata">The contract metadata.</param>
+        <param name="isExportFactory">
+          <see langword="true" /> to indicate that the import represents an <see cref="T:System.ComponentModel.Composition.ExportFactory`1" />; otherwise, <see langword="false" />.</param>
+        <param name="origin">The object to import into.</param>
+        <summary>Creates an import definition for the specified member by using the specified contract name, type identity, import and contract metadata, cardinality, recomposition policy, and creation policy.</summary>
+        <returns>An import definition created from the specified parameters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,19 +228,22 @@
         <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
       </Parameters>
       <Docs>
-        <param name="importingMember">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <param name="requiredTypeIdentity">To be added.</param>
-        <param name="requiredMetadata">To be added.</param>
-        <param name="cardinality">To be added.</param>
-        <param name="isRecomposable">To be added.</param>
-        <param name="isPreRequisite">To be added.</param>
-        <param name="requiredCreationPolicy">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <param name="isExportFactory">To be added.</param>
-        <param name="origin">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="importingMember">The member to import into.</param>
+        <param name="contractName">The contract name to use for the import.</param>
+        <param name="requiredTypeIdentity">The required type identity for the import.</param>
+        <param name="requiredMetadata">The required metadata for the import.</param>
+        <param name="cardinality">The cardinality of the import.</param>
+        <param name="isRecomposable">
+          <see langword="true" /> to indicate that the import is recomposable; otherwise, <see langword="false" />.</param>
+        <param name="isPreRequisite">
+          <see langword="true" /> to indicate that the import is a prerequisite; otherwise, <see langword="false" />.</param>
+        <param name="requiredCreationPolicy">One of the enumeration values that specifies the import's creation policy.</param>
+        <param name="metadata">The contract metadata.</param>
+        <param name="isExportFactory">
+          <see langword="true" /> to indicate that the import represents an <see cref="T:System.ComponentModel.Composition.ExportFactory`1" />; otherwise, <see langword="false" />.</param>
+        <param name="origin">The object to import into.</param>
+        <summary>Creates an import definition for the specified member by using the specified contract name, type identity, import and contract metadata, cardinality, recomposition policy, and creation policy.</summary>
+        <returns>An import definition created from the specified parameters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,14 +269,15 @@
         <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
       </Parameters>
       <Docs>
-        <param name="partType">To be added.</param>
-        <param name="isDisposalRequired">To be added.</param>
-        <param name="imports">To be added.</param>
-        <param name="exports">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <param name="origin">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="partType">The type of the part.</param>
+        <param name="isDisposalRequired">
+          <see langword="true" /> if the part requires disposal; otherwise, <see langword="false" />.</param>
+        <param name="imports">A collection of the part's imports.</param>
+        <param name="exports">A collection of the part's exports.</param>
+        <param name="metadata">The part's metadata.</param>
+        <param name="origin">The part's origin.</param>
+        <summary>Creates a part definition with the specified part type, imports, exports, metadata, and origin.</summary>
+        <returns>A part definition created from the specified parameters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,9 +298,9 @@
         <Parameter Name="importDefinition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
       </Parameters>
       <Docs>
-        <param name="importDefinition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="importDefinition">The import definition to represent.</param>
+        <summary>Returns a representation of an import definition as an export factory product.</summary>
+        <returns>The representation of the import definition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,10 +321,12 @@
         <Parameter Name="exportDefinition" Type="System.ComponentModel.Composition.Primitives.ExportDefinition" />
       </Parameters>
       <Docs>
-        <param name="exportDefinition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="exportDefinition">The export definition to examine.</param>
+        <summary>Gets the exporting member from a specified export definition.</summary>
+        <returns>The member specified in the export definition.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="exportDefinition" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetImportingMember">
@@ -336,10 +346,12 @@
         <Parameter Name="importDefinition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
       </Parameters>
       <Docs>
-        <param name="importDefinition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="importDefinition">The import definition to examine.</param>
+        <summary>Gets the importing member from a specified import definition.</summary>
+        <returns>The member specified in the import definition.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="importDefinition" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetImportingParameter">
@@ -359,10 +371,12 @@
         <Parameter Name="importDefinition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
       </Parameters>
       <Docs>
-        <param name="importDefinition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="importDefinition">The import definition to examine.</param>
+        <summary>Gets the importing parameter from a specified import definition.</summary>
+        <returns>The parameter specified in the import definition.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="importDefinition" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPartType">
@@ -382,10 +396,12 @@
         <Parameter Name="partDefinition" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" />
       </Parameters>
       <Docs>
-        <param name="partDefinition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="partDefinition">The part definition to examine.</param>
+        <summary>Gets the type of a part from a specified part definition.</summary>
+        <returns>The type of the defined part.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partDefinition" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsDisposalRequired">
@@ -405,10 +421,13 @@
         <Parameter Name="partDefinition" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" />
       </Parameters>
       <Docs>
-        <param name="partDefinition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="partDefinition">The part to examine.</param>
+        <summary>Determines whether the specified part requires disposal.</summary>
+        <returns>
+          <see langword="true" /> if the part requires disposal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partDefinition" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsExportFactoryImportDefinition">
@@ -428,9 +447,10 @@
         <Parameter Name="importDefinition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
       </Parameters>
       <Docs>
-        <param name="importDefinition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="importDefinition">The import definition to check.</param>
+        <summary>Indicates whether a specified import definition represents an export factory (<see cref="T:System.ComponentModel.Composition.ExportFactory`1" /> or <see cref="T:System.ComponentModel.Composition.ExportFactory`2" /> object).</summary>
+        <returns>
+          <see langword="true" /> if the specified import definition represents an export factory; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,10 +471,13 @@
         <Parameter Name="importDefinition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
       </Parameters>
       <Docs>
-        <param name="importDefinition">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="importDefinition">The import definition to examine.</param>
+        <summary>Determines whether an import definition represents a member or a parameter.</summary>
+        <returns>
+          <see langword="true" /> if the import definition represents a parameter; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="importDefinition" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryMakeGenericPartDefinition">
@@ -476,11 +499,12 @@
         <Parameter Name="specialization" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="partDefinition">To be added.</param>
-        <param name="genericParameters">To be added.</param>
-        <param name="specialization">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="partDefinition">The part definition.</param>
+        <param name="genericParameters">A collection of types to specify the generic parameters.</param>
+        <param name="specialization">When this method returns, contains the specialized part definition. This parameter is treated as uninitialized.</param>
+        <summary>Indicates whether a generic part definition can be specialized with the provided parameters.</summary>
+        <returns>
+          <see langword="true" /> if the specialization succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,9 +1,13 @@
 ---
 uid: System.Web.Configuration.IConfigMapPathFactory
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.IConfigMapPathFactory.Create(System.String,System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

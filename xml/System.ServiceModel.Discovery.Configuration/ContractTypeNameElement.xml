@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a workflow element that identifies by name the workflow service contract being searched for.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A contract type name is a property that refers to the set of criteria typically used when searching for a service. The set of criteria, or contract, is a collection of operations that specify what the endpoint communicates to the outside world. Each operation is a message exchange. For example, a request message and an associated reply message form a request/reply message exchange.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,9 +51,9 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The type name of a workflow service contract.</param>
+        <param name="ns">The namespace name of the workflow service contract.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement" /> class using the specified contract type name and namespace name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +78,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the contract type.</summary>
+        <value>An alphanumeric name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +101,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the namespace of the contract type.</summary>
+        <value>An alphanumeric name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

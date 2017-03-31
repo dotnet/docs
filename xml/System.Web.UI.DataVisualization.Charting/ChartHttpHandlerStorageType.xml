@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies a storage type for chart images.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart images are stored in a file.</summary>
       </Docs>
     </Member>
     <Member MemberName="InProcess">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart images are stored in the private process memory. You cannot use this option in a multiple-process or farm environment.</summary>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart images are stored in the ASP.NET session.</summary>
       </Docs>
     </Member>
   </Members>

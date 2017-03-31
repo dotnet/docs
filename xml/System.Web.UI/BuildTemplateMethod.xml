@@ -16,8 +16,15 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="control">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="control">A <see cref="T:System.Web.UI.Control" /> that represents the container used to store the child controls in the template.</param>
+    <summary>Supports ASP.NET during the creation of a template for a templated control from generated class code. The <see cref="T:System.Web.UI.BuildTemplateMethod" /> delegate handles the <see cref="M:System.Web.UI.CompiledTemplateBuilder.InstantiateIn(System.Web.UI.Control)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.BuildTemplateMethod> delegate is used in conjunction with the <xref:System.Web.UI.CompiledTemplateBuilder> class, which creates a template for a templated control from generated class code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

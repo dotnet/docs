@@ -1,9 +1,13 @@
 ---
 uid: System.Data.Linq.SqlClient.Sql2008Provider
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Linq.SqlClient.Sql2008Provider.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

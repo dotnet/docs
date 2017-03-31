@@ -1,29 +1,41 @@
 ---
 uid: System.IdentityModel.Services.SignOutCleanupRequestMessage
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SignOutCleanupRequestMessage.Reply
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SignOutCleanupRequestMessage.#ctor(System.Uri)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Services.SignOutCleanupRequestMessage.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SignOutCleanupRequestMessage.#ctor(System.Uri,System.String)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SignOutCleanupRequestMessage.Validate
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SignOutCleanupRequestMessage.Write(System.IO.TextWriter)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

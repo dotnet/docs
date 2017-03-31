@@ -1,4 +1,5 @@
 ---
 uid: System.Printing.Interop
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

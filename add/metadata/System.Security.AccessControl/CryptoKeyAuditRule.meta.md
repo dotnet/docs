@@ -1,19 +1,34 @@
 ---
 uid: System.Security.AccessControl.CryptoKeyAuditRule
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.CryptoKeyAuditRule.CryptoKeyRights
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.CryptoKeyAuditRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.CryptoKeyRights,System.Security.AccessControl.AuditFlags)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.AccessControl.CryptoKeyAuditRule.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.CryptoKeyAuditRule.#ctor(System.String,System.Security.AccessControl.CryptoKeyRights,System.Security.AccessControl.AuditFlags)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

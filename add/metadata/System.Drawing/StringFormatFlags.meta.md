@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.StringFormatFlags
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

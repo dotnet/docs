@@ -1,189 +1,265 @@
 ---
 uid: System.Windows.Forms.ToolStripSplitButton
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.DefaultItemChanged
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.ButtonPressed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.#ctor(System.String,System.Drawing.Image,System.Windows.Forms.ToolStripItem[])
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.OnMouseLeave(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.ResetDropDownButtonWidth
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.DefaultItem
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.DropDownButtonPressed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.OnButtonClick(System.EventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.#ctor(System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.PerformButtonClick
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.OnPaint(System.Windows.Forms.PaintEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.OnMouseUp(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.OnMouseDown(System.Windows.Forms.MouseEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.#ctor(System.String,System.Drawing.Image,System.EventHandler)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.AutoToolTip
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.DropDownButtonWidth
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.#ctor(System.String,System.Drawing.Image)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.#ctor(System.Drawing.Image)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.SplitterBounds
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.DismissWhenClicked
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.ButtonBounds
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.#ctor(System.String,System.Drawing.Image,System.EventHandler,System.String)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.GetPreferredSize(System.Drawing.Size)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.CreateAccessibilityInstance
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.ProcessDialogKey(System.Windows.Forms.Keys)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.ProcessMnemonic(System.Char)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.OnButtonDoubleClick(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.CreateDefaultDropDown
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.ButtonDoubleClick
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.DropDownButtonSelected
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.ButtonSelected
-internalonly: False
----
-
----
-uid: System.Windows.Forms.ToolStripSplitButton.DropDownButtonBounds
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.AutoToolTip
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.DropDownButtonWidth
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.#ctor(System.String,System.Drawing.Image)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.#ctor(System.Drawing.Image)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.SplitterBounds
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.DismissWhenClicked
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.ButtonBounds
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.#ctor(System.String,System.Drawing.Image,System.EventHandler,System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.GetPreferredSize(System.Drawing.Size)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.CreateAccessibilityInstance
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.ProcessDialogKey(System.Windows.Forms.Keys)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.ProcessMnemonic(System.Char)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.OnButtonDoubleClick(System.EventArgs)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.CreateDefaultDropDown
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.ButtonDoubleClick
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.DropDownButtonSelected
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.ButtonSelected
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.DropDownButtonBounds
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStripSplitButton.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.OnDefaultItemChanged(System.EventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.DefaultAutoToolTip
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.ButtonClick
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.ToolStripSplitButton.OnRightToLeftChanged(System.EventArgs)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

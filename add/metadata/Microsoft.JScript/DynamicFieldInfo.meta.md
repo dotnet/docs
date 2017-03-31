@@ -1,29 +1,34 @@
 ---
 uid: Microsoft.JScript.DynamicFieldInfo
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.DynamicFieldInfo.fieldTypeName
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.DynamicFieldInfo.#ctor(System.String,System.Object,System.String)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.DynamicFieldInfo.#ctor(System.String,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.DynamicFieldInfo.value
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.DynamicFieldInfo.name
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.DynamicFieldInfo.#ctor
+ms.author: "mikejo"
 ---

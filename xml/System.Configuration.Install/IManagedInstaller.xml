@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an interface for a managed installer.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +37,10 @@
         <Parameter Name="hInstall" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="commandLine">To be added.</param>
-        <param name="hInstall">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="commandLine">The command line that specifies the installation.</param>
+        <param name="hInstall">The handle to the installation.</param>
+        <summary>Executes a managed installation.</summary>
+        <returns>The return code for installutil.exe. A successful installation returns 0. Other values indicate failure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

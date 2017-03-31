@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes possible writing states for a custom XAML writer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No existing [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] API uses this enumeration for its values. It could be used for a custom XAML writer.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Finished">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Markup.XamlWriterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Markup.XamlWriter" /> has completed its operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Starting">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Markup.XamlWriterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Markup.XamlWriter" /> has started its operation.</summary>
       </Docs>
     </Member>
   </Members>

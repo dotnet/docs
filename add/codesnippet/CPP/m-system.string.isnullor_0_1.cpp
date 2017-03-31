@@ -1,1 +1,0 @@
-      result = s == nullptr || s == String::Empty;

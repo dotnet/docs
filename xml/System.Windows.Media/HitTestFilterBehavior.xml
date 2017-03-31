@@ -10,8 +10,29 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the return behavior of a hit test in a hit test filter callback method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value of the hit test filter callback is a <xref:System.Windows.Media.HitTestFilterBehavior>, which determines what type of action should be taken when processing the visual tree for hit testing. For example, if your hit test filter callback return the value, ContinueSkipSelfAndChildren, you can remove the current visual object and its descendants from the hit test results evaluation.  
+  
+> [!NOTE]
+>  Pruning the visual tree of objects decreases the amount of processing that is required during the hit test results evaluation pass.  
+  
+ ![Pruning a visual tree using a hit test filter](~/add/media/filteredvisualtree-01.png "Pruning a visual tree using a hit test filter")  
+Pruning a visual tree  
+  
+   
+  
+## Examples  
+ The following example shows how to return a <xref:System.Windows.Media.HitTestFilterBehavior> value from a hit test filter callback method. In this case, the filter skips labels and their descendants and hit tests everything else.  
+  
+ [!code-csharp[HitTestingOverview#106](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#106)]
+ [!code-vb[HitTestingOverview#106](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#106)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Continue">
@@ -27,7 +48,7 @@
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Hit test against the current <see cref="T:System.Windows.Media.Visual" /> and its descendants.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContinueSkipChildren">
@@ -43,7 +64,7 @@
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Hit test against the current <see cref="T:System.Windows.Media.Visual" />, but not its descendants.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContinueSkipSelf">
@@ -59,7 +80,7 @@
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not hit test against the current <see cref="T:System.Windows.Media.Visual" />, but hit test against its descendants.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContinueSkipSelfAndChildren">
@@ -75,7 +96,7 @@
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not hit test against the current <see cref="T:System.Windows.Media.Visual" /> or its descendants.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -91,7 +112,7 @@
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stop hit testing at the current <see cref="T:System.Windows.Media.Visual" />.</summary>
       </Docs>
     </Member>
   </Members>

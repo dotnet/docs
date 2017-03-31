@@ -1,4 +1,6 @@
 ---
 uid: System.Data.Linq.Mapping.UpdateCheck
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

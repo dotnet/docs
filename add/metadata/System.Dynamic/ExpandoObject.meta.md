@@ -1,19 +1,25 @@
 ---
 uid: System.Dynamic.ExpandoObject
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---
 
 ---
 uid: System.Dynamic.ExpandoObject.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.ExpandoObject.#ctor
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Dynamic.ExpandoObject.System#Dynamic#IDynamicMetaObjectProvider#GetMetaObject(System.Linq.Expressions.Expression)
-internalonly: False
+ms.author: "billchi"
+manager: "douge"
 ---

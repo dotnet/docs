@@ -1,19 +1,31 @@
 ---
 uid: System.Configuration.WhiteSpaceTrimStringConverter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.WhiteSpaceTrimStringConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.WhiteSpaceTrimStringConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.WhiteSpaceTrimStringConverter.ConvertFrom
 ---
 
 ---
 uid: System.Configuration.WhiteSpaceTrimStringConverter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.WhiteSpaceTrimStringConverter.ConvertTo
 ---

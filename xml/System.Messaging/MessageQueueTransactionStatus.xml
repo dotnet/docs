@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the state of an internal Message Queuing transaction.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an instance of the <xref:System.Messaging.MessageQueueTransaction> class has been created, its <xref:System.Messaging.MessageQueueTransaction.Status%2A> property is set by the constructor to `Initialized`. After a transaction has begun, but before it is committed or rolled back, the <xref:System.Messaging.MessageQueueTransaction.Status%2A> is `Pending`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Aborted">
@@ -27,7 +34,7 @@
         <ReturnType>System.Messaging.MessageQueueTransactionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transaction has been aborted and all participants have been notified.</summary>
       </Docs>
     </Member>
     <Member MemberName="Committed">
@@ -43,7 +50,7 @@
         <ReturnType>System.Messaging.MessageQueueTransactionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transaction has been committed and all participants have been notified.</summary>
       </Docs>
     </Member>
     <Member MemberName="Initialized">
@@ -59,7 +66,7 @@
         <ReturnType>System.Messaging.MessageQueueTransactionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transaction has been initialized. It has not yet been started.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pending">
@@ -75,7 +82,7 @@
         <ReturnType>System.Messaging.MessageQueueTransactionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transaction has been started. It has not yet been either committed or rolled back.</summary>
       </Docs>
     </Member>
   </Members>

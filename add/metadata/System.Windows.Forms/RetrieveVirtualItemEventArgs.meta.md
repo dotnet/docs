@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Forms.RetrieveVirtualItemEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.RetrieveVirtualItemEventArgs.ItemIndex
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.RetrieveVirtualItemEventArgs.Item
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.RetrieveVirtualItemEventArgs.#ctor(System.Int32)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

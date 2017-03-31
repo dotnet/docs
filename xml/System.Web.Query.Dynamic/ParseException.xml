@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents errors that occur when a <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control parses values to create a query.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Query.Dynamic.ParseException> object contains information about exceptions that occur when the <xref:System.Web.UI.WebControls.LinqDataSource> control parses values in order to dynamically create a query.  
+  
+ If the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property includes a property that is not in the data object, the <xref:System.Web.UI.WebControls.LinqDataSource> control raises a <xref:System.Web.Query.Dynamic.ParseException> exception. The message indicates that the property does not exist in the data object.  
+  
+ You can assign the data object in the <xref:System.Web.UI.WebControls.LinqDataSource.Selecting> event by setting the <xref:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.Result%2A> property to an object that is returned from a query. If you select a property that does not exist in the data object, the <xref:System.Web.UI.WebControls.LinqDataSource> control raises a <xref:System.Web.Query.Dynamic.ParseException> exception. The message indicates that the particular property does not exist in an `AnonymousType` object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,9 +40,9 @@
         <Parameter Name="position" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="position">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The message that describes the error.</param>
+        <param name="position">The location of the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Query.Dynamic.ParseException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +59,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location of the error.</summary>
+        <value>The location where the exception occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +78,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the error message and the location of the error.</summary>
+        <returns>The message and the position of the error.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

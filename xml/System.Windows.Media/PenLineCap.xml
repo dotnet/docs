@@ -10,8 +10,18 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the shape at the end of a line or segment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration shows the available cap styles for lines or segments. The red portion of the line shows the extra area added by the line cap setting.  
+  
+ ![PenLineCap settings](~/add/media/wcpsdk-graphicsmm-linecaps.png "PenLineCap settings")  
+Line caps  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Flat">
@@ -27,7 +37,7 @@
         <ReturnType>System.Windows.Media.PenLineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A cap that does not extend past the last point of the line. Comparable to no line cap.</summary>
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -43,7 +53,7 @@
         <ReturnType>System.Windows.Media.PenLineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A semicircle that has a diameter equal to the line thickness.</summary>
       </Docs>
     </Member>
     <Member MemberName="Square">
@@ -59,7 +69,7 @@
         <ReturnType>System.Windows.Media.PenLineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A rectangle that has a height equal to the line thickness and a length equal to half the line thickness.</summary>
       </Docs>
     </Member>
     <Member MemberName="Triangle">
@@ -75,7 +85,7 @@
         <ReturnType>System.Windows.Media.PenLineCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An isosceles right triangle whose base length is equal to the thickness of the line.</summary>
       </Docs>
     </Member>
   </Members>

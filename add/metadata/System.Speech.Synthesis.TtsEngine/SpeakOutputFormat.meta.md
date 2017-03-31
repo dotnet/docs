@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Synthesis.TtsEngine.SpeakOutputFormat
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

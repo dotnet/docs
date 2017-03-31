@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DeleteRequest" /> class deletes an entry from the directory.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DeleteRequest.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DeleteRequest" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates an empty request.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,8 +50,8 @@
         <Parameter Name="distinguishedName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="distinguishedName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="distinguishedName">The distinguished name of the object to delete.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DeleteRequest.#ctor(System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DeleteRequest" /> class using the specified distinguished name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DeleteRequest.DistinguishedName" /> property gets or sets the distinguished name of object to delete.</summary>
+        <value>The distinguished name of object to delete.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +89,9 @@
         <Parameter Name="doc" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
-        <param name="doc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="doc">An <see cref="T:System.Xml.XmlDocument" /> object.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DeleteRequest.ToXmlNode(System.Xml.XmlDocument)" /> method creates an XML node from the specified <see cref="T:System.Xml.XmlDocument" /> object.</summary>
+        <returns>The resulting <see cref="T:System.Xml.XmlElement" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents information about a SOAP fault that is specified in a <see cref="T:System.ServiceModel.FaultContractAttribute" /> attribute.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can get a collection of <xref:System.ServiceModel.Dispatcher.FaultContractInfo> objects by accessing the <xref:System.ServiceModel.Dispatcher.ClientOperation.FaultContractInfos%2A?displayProperty=fullName> and <xref:System.ServiceModel.Dispatcher.DispatchOperation.FaultContractInfos%2A?displayProperty=fullName> properties. The <xref:System.ServiceModel.Dispatcher.FaultContractInfo> class exposes the action of the SOAP fault and the detail type that is serialized into the SOAP fault.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,10 +38,17 @@
         <Parameter Name="detail" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <param name="detail">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="action">The action of the SOAP fault.</param>
+        <param name="detail">The detail type that is serialized as the SOAP fault detail.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.FaultContractInfo" /> class that uses the specified action and detail type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a new FaultContractInfo from the `action` and `detail`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Action">
@@ -51,8 +65,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the SOAP fault action value.</summary>
+        <value>The SOAP fault action value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +84,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The type of the object that is serialized as the SOAP fault detail.</summary>
+        <value>The <see cref="T:System.Type" /> that represents the serialized SOAP fault detail.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

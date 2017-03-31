@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Configuration.ConfigurationDuplexChannelFactory`1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.ConfigurationDuplexChannelFactory`1.#ctor(System.Object,System.String,System.ServiceModel.EndpointAddress,System.Configuration.Configuration)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

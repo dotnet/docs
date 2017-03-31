@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a way to automatically generate fields that use ASP.NET Dynamic Data features for the <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.GridViewColumnsGenerator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +47,10 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="dataObject">To be added.</param>
-        <param name="control">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataObject">The current data item.</param>
+        <param name="control">The current control.</param>
+        <summary>Generates fields based on the current data item.</summary>
+        <returns>The list of generated fields.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -18,8 +18,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the values provided in the <see cref="P:System.Activities.Statements.ForEach`1.Values" /> collection of the <see cref="T:System.Activities.Statements.ForEach`1" /> activity.</typeparam>
+    <summary>Creates new <see cref="T:System.Activities.Statements.ForEach`1" /> activities with a body each.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Core.Presentation.Factories.ForEachWithBodyFactory`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,10 +54,17 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="target">The workflow UI element that is the visual container of the new activity.</param>
+        <summary>Creates a new <see cref="T:System.Activities.Statements.ForEach`1" /> activity with a body.</summary>
+        <returns>A new <see cref="T:System.Activities.Statements.ForEach`1" /> activity with a body.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This parameter is ignored.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

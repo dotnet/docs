@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how manipulation events are interpreted.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A manipulation can scale, translate, or rotate an object and can occur with one point of input.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +48,7 @@
         <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Manipulation events do not occur.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate">
@@ -64,7 +64,7 @@
         <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A manipulation can rotate an object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -80,7 +80,7 @@
         <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A manipulation can scale an object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Translate">
@@ -96,7 +96,7 @@
         <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A manipulation can translate an object.</summary>
       </Docs>
     </Member>
     <Member MemberName="TranslateX">
@@ -112,7 +112,7 @@
         <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A manipulation can translate an object horizontally.</summary>
       </Docs>
     </Member>
     <Member MemberName="TranslateY">
@@ -128,7 +128,7 @@
         <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A manipulation can translate an object vertically.</summary>
       </Docs>
     </Member>
   </Members>

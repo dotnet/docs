@@ -1,1 +1,0 @@
-            ContractDescription cd4 = ContractDescription.GetContract(typeof(ICalculator), typeof(CalculatorService));

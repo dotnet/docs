@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> class enables access to the attribute values.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,10 +44,12 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The attribute name.</param>
+        <param name="value">The attribute value.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.#ctor(System.String,System.Byte[])" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> class using the specified attribute name and value.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,10 +72,13 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="values">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The attribute name.</param>
+        <param name="values">An array of values for the attribute.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.#ctor(System.String,System.Object[])" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> class using the specified attribute name and values.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="value" /> contains a null reference (<paramref name="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">An element of <paramref name="values" /> is not of type string, byte[], or Uri.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,10 +95,12 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The attribute name.</param>
+        <param name="value">The attribute value.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.#ctor(System.String,System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> class using the specified attribute name and value.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -110,10 +117,12 @@
         <Parameter Name="value" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The attribute name.</param>
+        <param name="value">The attribute value.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.#ctor(System.String,System.Uri)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> class using the specified attribute name and value.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -132,10 +141,12 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to add.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.Add(System.Byte[])" /> method adds the specified value to this attribute.</summary>
+        <returns>The index at which the value has been added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="Value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -154,10 +165,12 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to add.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.Add(System.String)" /> method adds the specified value to this attribute.</summary>
+        <returns>The index at which the value has been added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="Value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -176,10 +189,12 @@
         <Parameter Name="value" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to add.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.Add(System.Uri)" /> method adds the specified value to this attribute.</summary>
+        <returns>The index at which the value has been added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="Value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -198,9 +213,13 @@
         <Parameter Name="values" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="values">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="values">The values to add.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.AddRange(System.Object[])" /> method adds an array of values to the attribute.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="values" /> is not a  byte[][], string[], or Uri[].</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="Values" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -219,9 +238,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value for which to search.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.Contains(System.Object)" /> method determines if the attribute contains the specified value.</summary>
+        <returns>
+          <see langword="true" /> if this attribute contains the value or <see langword="false" /> if it does not.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,10 +262,22 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object.</param>
+        <param name="index">The zero-based index of <c>array</c> where the copying begins.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.CopyTo(System.Object[],System.Int32)" /> method copies the entire collection to a one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">This exception can occur under one of the following conditions:  
+  
+-   <paramref name="array" /> is multidimensional  
+  
+-   <paramref name="index" /> is equal to, or greater than, the length of <paramref name="array" />  
+  
+-   The number of elements in the source <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> is greater than the space available from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -264,10 +296,13 @@
         <Parameter Name="valuesType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="valuesType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="valuesType">A <see cref="T:System.Type" /> object that specifies the type of values to return.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.GetValues(System.Type)" /> method returns all values of the specified type.</summary>
+        <returns>An array of <see cref="T:System.Object" /> objects that contain the values.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">A value cannot be converted to <paramref name="valuesType" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="valuesType" /> must be either string or byte.</exception>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -286,9 +321,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.Object" /> for which the value is returned.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.IndexOf(System.Object)" /> method returns the zero-based index of the first occurrence of the specified  <see cref="T:System.Object" /> in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection.</summary>
+        <returns>The index value of the specified <see cref="T:System.Object" />, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -309,10 +344,14 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at which to insert the <c>value</c>.</param>
+        <param name="value">The value to insert.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.Insert(System.Int32,System.Byte[])" /> method inserts the specified <paramref name="value" /> into the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at the specified <paramref name="index" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero, or <see langword="index" /> is greater than the number of elements in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -332,10 +371,14 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at which to insert the <c>value</c>.</param>
+        <param name="value">The value to insert.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.Insert(System.Int32,System.String)" /> method inserts the specified <paramref name="value" /> into the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at the specified <paramref name="index" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero, or <paramref name="index" /> is greater than  the number of elements in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -355,10 +398,14 @@
         <Parameter Name="value" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at which to insert the <c>value</c>.</param>
+        <param name="value">The value to insert.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.Insert(System.Int32,System.Uri)" /> method inserts the specified <paramref name="value" /> into the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> collection at the specified <paramref name="index" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero or <paramref name="index" /> is greater than the number of elements in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -377,10 +424,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index value at which the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object is found.</param>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryAttribute.Item(System.Int32)" /> property gets or sets the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object at the specified index.</summary>
+        <value>The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Get method of <xref:System.DirectoryServices.Protocols.DirectoryAttribute.Item%2A> always attempts to convert and return the value object as a string; otherwise it returns a byte array. To get a better performance, use the <xref:System.DirectoryServices.Protocols.DirectoryAttribute.GetValues%2A> method if you know the return type of the attribute value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> to set is an invalid type. The valid types are byte[], string, or URI.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -396,9 +454,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryAttribute.Name" /> property contains the attribute name.</summary>
+        <value>The attribute name.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -417,9 +477,20 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The <see cref="T:System.Object" /> to evaluate.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.OnValidate(System.Object)" /> method verifies that <paramref name="value" /> is a <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not return a value. Instead, an exception is thrown if the specified object is null or is an invalid <xref:System.DirectoryServices.Protocols.DirectoryAttribute> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> must be either a string, byte[], or URI.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -438,9 +509,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The <see cref="T:System.Object" /> to remove.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttribute.Remove(System.Object)" /> method removes the first occurrence of the specified <paramref name="value" /> from the list of attributes.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
   </Members>

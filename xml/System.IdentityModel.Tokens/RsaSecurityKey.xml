@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a security key that is generated using the RSA algorithm. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,11 @@
         <Parameter Name="rsa" Type="System.Security.Cryptography.RSA" />
       </Parameters>
       <Docs>
-        <param name="rsa">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rsa">An <see cref="T:System.Security.Cryptography.RSA" /> that represents an RSA algorithm.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.RsaSecurityKey" /> class using the specified RSA algorithm.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rsa" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DecryptKey">
@@ -50,11 +52,15 @@
         <Parameter Name="keyData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="keyData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The cryptographic algorithm that was used to encrypt the key. The supported algorithms are <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaV15KeyWrap" /> and <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaOaepKeyWrap" />.</param>
+        <param name="keyData">An array of <see cref="T:System.Byte" /> that contains the encrypted key.</param>
+        <summary>Decrypts the specified encrypted key.</summary>
+        <returns>An array of <see cref="T:System.Byte" /> that contains the decrypted key.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="algorithm" /> is not supported. The supported algorithms are <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaV15KeyWrap" /> and <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaOaepKeyWrap" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyData" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="EncryptKey">
@@ -74,11 +80,15 @@
         <Parameter Name="keyData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="keyData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The cryptographic algorithm to encrypt the key with.</param>
+        <param name="keyData">An array of <see cref="T:System.Byte" /> that contains the key.</param>
+        <summary>Encrypts the specified key using the specified algorithm.</summary>
+        <returns>An array of <see cref="T:System.Byte" /> that contains the encrypted key.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="algorithm" /> is not supported. The supported algorithms are <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaV15KeyWrap" /> and <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaOaepKeyWrap" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyData" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetAsymmetricAlgorithm">
@@ -98,11 +108,13 @@
         <Parameter Name="requiresPrivateKey" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
+        <param name="algorithm">The asymmetric algorithm to create.</param>
         <param name="privateKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the specified asymmetric cryptographic algorithm.</summary>
+        <returns>An <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> that represents the specified asymmetric cryptographic algorithm.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="requiresPrivateKey " />is <see langword="true" /> and a private key is not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashAlgorithmForSignature">
@@ -121,10 +133,12 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The hash algorithm. The supported algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />.</param>
+        <summary>Gets a cryptographic algorithm that generates a hash for a digital signature.</summary>
+        <returns>A <see cref="T:System.Security.Cryptography.HashAlgorithm" /> that generates hashes for digital signatures.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="algorithm " />is not supported. The supported algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSignatureDeformatter">
@@ -143,10 +157,12 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The de-formatter algorithm for the digital signature to get an instance of. The supported algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />.</param>
+        <summary>Gets the de-formatter algorithm for the digital signature.</summary>
+        <returns>An <see cref="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" /> that represents the de-formatter algorithm for the digital signature.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="algorithm " />is not supported. The supported algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSignatureFormatter">
@@ -165,10 +181,12 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The formatter algorithm for the digital signature to get an instance of. The supported algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />.</param>
+        <summary>Gets the formatter algorithm for the digital signature.</summary>
+        <returns>An <see cref="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" /> that represents the formatter algorithm for the digital signature.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="algorithm " />is not supported. The supported algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HasPrivateKey">
@@ -185,8 +203,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a value that indicates whether the private key is available.</summary>
+        <returns>
+          <see langword="true" /> when the private key is available; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,9 +225,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The cryptographic algorithm.</param>
+        <summary>Gets a value that indicates whether the specified algorithm uses asymmetric keys.</summary>
+        <returns>
+          <see langword="true" /> when the specified algorithm uses asymmetric keys; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,9 +248,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The cryptographic algorithm.</param>
+        <summary>Gets a value that indicates whether the specified algorithm is supported by this class.</summary>
+        <returns>
+          <see langword="true" /> when the specified algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaV15KeyWrap" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaOaepKeyWrap" />, or <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,9 +271,10 @@
         <Parameter Name="algorithm" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The cryptographic algorithm.</param>
+        <summary>Gets a value that indicates whether the specified algorithm uses symmetric keys.</summary>
+        <returns>
+          <see langword="true" /> when the specified algorithm uses symmetric keys; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,9 +291,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the size, in bits, of the key.</summary>
+        <value>The size, in bits, of the key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.RSACryptoServiceProvider> supports key lengths from 384 bits to 16384 bits in increments of 8 bits if you have the Microsoft Enhanced Cryptographic Provider installed. It supports key lengths from 384 bits to 512 bits in increments of 8 bits if you have the Microsoft Base Cryptographic Provider installed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -17,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Encapsulates a URI that returns the next page of a paged [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] query result.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,8 +35,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URI that is used to return the next page of data from a paged query result.</summary>
+        <value>A URI that returns the next page of data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +55,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the next link URI as a string.</summary>
+        <returns>A string representation of the next link URI.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

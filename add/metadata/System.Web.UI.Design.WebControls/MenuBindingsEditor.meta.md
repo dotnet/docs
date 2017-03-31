@@ -1,19 +1,31 @@
 ---
 uid: System.Web.UI.Design.WebControls.MenuBindingsEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MenuBindingsEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.MenuBindingsEditor.EditValue
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MenuBindingsEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.MenuBindingsEditor.GetEditStyle
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.MenuBindingsEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

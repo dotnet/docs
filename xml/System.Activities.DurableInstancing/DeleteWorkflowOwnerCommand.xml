@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Deletes lock owner information from the persistence database.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the lock owner is associated with an instance in the database, the lock owner on that instance is set to `null` before deleting the lock owner information.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.Activities.DurableInstancing.DeleteWorkflowOwnerCommand" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

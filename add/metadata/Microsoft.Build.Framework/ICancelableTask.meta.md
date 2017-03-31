@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Framework.ICancelableTask
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ICancelableTask.Cancel
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

@@ -31,7 +31,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a trademark custom attribute for an assembly manifest.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -60,8 +60,8 @@
         <Parameter Name="trademark" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="trademark">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="trademark">The trademark information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyTrademarkAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets trademark information.</summary>
+        <value>A <see langword="String" /> containing trademark information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,19 +1,34 @@
 ---
 uid: System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.#ctor(System.Boolean)
-internalonly: False
----
-
----
-uid: System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore(System.String,System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore(System.String,System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

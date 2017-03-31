@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Dispatcher.IChannelInitializer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.IChannelInitializer.Initialize(System.ServiceModel.IClientChannel)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

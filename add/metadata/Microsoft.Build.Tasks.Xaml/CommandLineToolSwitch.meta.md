@@ -1,134 +1,195 @@
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.BooleanValue
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.FalseSuffix
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.DisplayName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Separator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.SwitchValue
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Required
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Arguments
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Type
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.TaskItemArray
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Overrides
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Reversible
-internalonly: False
----
-
----
-uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.#ctor(Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType)
-internalonly: False
----
-
----
-uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.ArgumentRequired
-internalonly: False
----
-
----
-uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.StringList
-internalonly: False
----
-
----
-uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Number
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.#ctor(Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.ArgumentRequired
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.StringList
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Number
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Parents
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.TrueSuffix
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Value
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.FallbackArgumentParameter
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Description
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.AllowMultipleValues
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.ReverseSwitchValue
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.IncludeInCommandLine
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.IsValid
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

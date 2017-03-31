@@ -1,24 +1,41 @@
 ---
 uid: System.Drawing.Drawing2D.Blend
-internalonly: False
----
-
----
-uid: System.Drawing.Drawing2D.Blend.Factors
-internalonly: False
----
-
----
-uid: System.Drawing.Drawing2D.Blend.Positions
-internalonly: False
----
-
----
-uid: System.Drawing.Drawing2D.Blend.#ctor(System.Int32)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Drawing.Drawing2D.Blend.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Drawing2D.Blend.Factors
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Drawing2D.Blend.Positions
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Drawing2D.Blend.#ctor(System.Int32)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Drawing2D.Blend.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

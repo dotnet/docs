@@ -21,8 +21,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies which provider-specific property in the strongly typed parameter classes is to be used when setting a provider-specific type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Common.DbProviderSpecificTypePropertyAttribute> is used by a provider writer to designate a provider-specific type parameter property which is not inherited from the <xref:System.Data.Common.DbParameter> base class. The <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> property of a <xref:System.Data.SqlClient.SqlParameter> is an example of a provider-specific type property not found in `DbParameter`.  
+  
+ A provider writer can apply `DbProviderSpecificTypePropertyAttribute(true)` to indicate a provider-specific data type parameter property. This allows for its discovery using reflection, which enables code generation tools, such as those used in Visual Studio, to generate code geared to a specific provider. The <xref:System.Data.Common.DbProviderSpecificTypePropertyAttribute.IsProviderSpecificTypeProperty%2A> property returns `true` if the property has been set, otherwise `false`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,8 +52,8 @@
         <Parameter Name="isProviderSpecificTypeProperty" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isProviderSpecificTypeProperty">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="isProviderSpecificTypeProperty">Specifies whether this property is a provider-specific property.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Data.Common.DbProviderSpecificTypePropertyAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +75,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates whether the attributed property is a provider-specific type.</summary>
+        <value>
+          <see langword="true" /> if the property that this attribute is applied to is a provider-specific type property; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

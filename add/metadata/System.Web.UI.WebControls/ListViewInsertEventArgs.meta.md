@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.ListViewInsertEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewInsertEventArgs.Values
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewInsertEventArgs.Item
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.ListViewInsertEventArgs.#ctor(System.Web.UI.WebControls.ListViewItem)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

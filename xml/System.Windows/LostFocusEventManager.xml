@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a <see cref="T:System.Windows.WeakEventManager" /> implementation so that you can use the "weak event listener" pattern to attach listeners for the <see cref="E:System.Windows.UIElement.LostFocus" /> or <see cref="E:System.Windows.ContentElement.LostFocus" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In order to be listeners in this pattern, your listener objects must implement <xref:System.Windows.IWeakEventListener>. You do not need to implement <xref:System.Windows.IWeakEventListener> on the class that is the source of the events.  
+  
+ [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] data binding uses this <xref:System.Windows.WeakEventManager> so that internal classes that update bindings can attach listeners for a <xref:System.Windows.UIElement.LostFocus?displayProperty=fullName> or <xref:System.Windows.ContentElement.LostFocus?displayProperty=fullName> event on an object that is the target of a binding. This supports notification for the <xref:System.Windows.Data.UpdateSourceTrigger> mode of data binding, without creating strong references to data binding targets.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddHandler">
@@ -32,10 +41,19 @@
         <Parameter Name="handler" Type="System.EventHandler&lt;System.Windows.RoutedEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="source">The source object that the raises the <see cref="E:System.Windows.UIElement.LostFocus" /> or <see cref="E:System.Windows.ContentElement.LostFocus" /> event.</param>
+        <param name="handler">The delegate that handles the <see cref="E:System.Windows.UIElement.LostFocus" /> or <see cref="E:System.Windows.ContentElement.LostFocus" /> event.</param>
+        <summary>Adds the specified event handler, which is called when specified source raises the <see cref="E:System.Windows.UIElement.LostFocus" /> or <see cref="E:System.Windows.ContentElement.LostFocus" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to specify the event handler you want to use to subscribe to the <xref:System.Windows.UIElement.LostFocus?displayProperty=fullName> or <xref:System.Windows.ContentElement.LostFocus?displayProperty=fullName> event..  When you use this method, your listener object does not need to implement the <xref:System.Windows.IWeakEventListener> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddListener">
@@ -55,9 +73,9 @@
         <Parameter Name="listener" Type="System.Windows.IWeakEventListener" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The object with the event.</param>
+        <param name="listener">The object to add as a listener.</param>
+        <summary>Adds the provided listener to the list of listeners on the provided source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +93,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a new object to contain listeners to the <see cref="E:System.Windows.UIElement.LostFocus" /> or <see cref="E:System.Windows.ContentElement.LostFocus" /> event.</summary>
+        <returns>A new object to contain listeners to the <see cref="E:System.Windows.UIElement.LostFocus" /> or <see cref="E:System.Windows.ContentElement.LostFocus" /> event.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,10 +115,12 @@
         <Parameter Name="handler" Type="System.EventHandler&lt;System.Windows.RoutedEventArgs&gt;" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The source object that the raises the <see cref="E:System.Windows.UIElement.LostFocus" /> or <see cref="E:System.Windows.ContentElement.LostFocus" /> event.</param>
+        <param name="handler">The delegate that handles the <see cref="E:System.Windows.UIElement.LostFocus" /> or <see cref="E:System.Windows.ContentElement.LostFocus" /> event.</param>
+        <summary>Removes the specified event handler from the specified source.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveListener">
@@ -120,9 +140,9 @@
         <Parameter Name="listener" Type="System.Windows.IWeakEventListener" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="listener">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The object to remove the listener from.</param>
+        <param name="listener">The listener to remove.</param>
+        <summary>Removes the specified listener from the list of listeners on the provided source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,9 +162,16 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="source">The object on which to start listening for the pertinent <see cref="E:System.Windows.UIElement.LostFocus" /> event.</param>
+        <summary>Begins listening for the <see cref="E:System.Windows.UIElement.LostFocus" /> event on the given source, attaching an internal class handler to that source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The provided source is checked for type to see if it is <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> , and then adds the class handler for the appropriate event to that source.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StopListening">
@@ -163,8 +190,8 @@
         <Parameter Name="source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The source object on which to stop listening for <see cref="E:System.Windows.UIElement.LostFocus" />.</param>
+        <summary>Stops listening for the <see cref="E:System.Windows.UIElement.LostFocus" /> event on the given source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

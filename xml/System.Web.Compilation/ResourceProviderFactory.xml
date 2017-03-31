@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serves as the base class for classes that create resource providers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Compilation.ResourceProviderFactory> is an abstract class that serves as the base class for objects that return global and local resource providers. Classes must derive from <xref:System.Web.Compilation.ResourceProviderFactory> to implement its functionality.  
+  
+   
+  
+## Examples  
+ The following code example shows a customized resource provider factory that retrieves cached values.  
+  
+ [!code-csharp[System.Web.Compilation.ResourceProviderFactory#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/CS/source.cs#2)]
+ [!code-vb[System.Web.Compilation.ResourceProviderFactory#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +41,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>When implemented in a derived class, initializes a new instance of the derived class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of an abstract class cannot be created. Classes that derive from <xref:System.Web.Compilation.ResourceProviderFactory> can implement a constructor to set any default values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateGlobalResourceProvider">
@@ -46,10 +68,25 @@
         <Parameter Name="classKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="classKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="classKey">The name of the resource class.</param>
+        <summary>When overridden in a derived class, creates a global resource provider.</summary>
+        <returns>A global resource provider.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When overridden in a derived class, this method returns an <xref:System.Web.Compilation.IResourceProvider> object for the given `classKey` parameter. The method could be implemented such that `classKey` is the name of a .resx file in the App_GlobalResources folder.  
+  
+   
+  
+## Examples  
+ The following code example shows a customized resource provider factory that implements the <xref:System.Web.Compilation.ResourceProviderFactory.CreateGlobalResourceProvider%2A> method and retrieves cached values.  
+  
+ [!code-csharp[System.Web.Compilation.ResourceProviderFactory#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/CS/source.cs#2)]
+ [!code-vb[System.Web.Compilation.ResourceProviderFactory#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateLocalResourceProvider">
@@ -68,10 +105,25 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="virtualPath">The path to a resource file.</param>
+        <summary>When overridden in a derived class, creates a local resource provider.</summary>
+        <returns>A local resource provider.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When overridden in a derived class, this method returns an <xref:System.Web.Compilation.IResourceProvider> object for the given `virtualPath` parameter. The method could be implemented such that `virtualPath` maps to a resource file.  
+  
+   
+  
+## Examples  
+ The following code example shows a customized resource provider factory that implements the <xref:System.Web.Compilation.ResourceProviderFactory.CreateLocalResourceProvider%2A> method and retrieves cached values.  
+  
+ [!code-csharp[System.Web.Compilation.ResourceProviderFactory#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/CS/source.cs#2)]
+ [!code-vb[System.Web.Compilation.ResourceProviderFactory#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

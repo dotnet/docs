@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Workflow.Activities.ReceiveActivity.OperationValidation" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +42,8 @@
         <Parameter Name="claimSets" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Claims.ClaimSet&gt;" />
       </Parameters>
       <Docs>
-        <param name="claimSets">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="claimSets">The collection of <see cref="T:System.IdentityModel.Claims.ClaimSet" /> objects that contains the claims that have been added to the operation's authorization context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.OperationValidationEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +60,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Claims.ClaimSet&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The collection of <see cref="T:System.IdentityModel.Claims.ClaimSet" /> objects that contains the claims that have been added to the operation's authorization context.</summary>
+        <value>The collection of <see cref="T:System.IdentityModel.Claims.ClaimSet" /> objects that contains the claims that have been added to the operation's authorization context.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +78,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+          <see langword="true" /> if the operation is valid; <see langword="false" /> otherwise.</summary>
+        <value>
+          <see langword="true" /> if the operation is valid; <see langword="false" /> otherwise.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

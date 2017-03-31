@@ -1,1 +1,0 @@
-            MsmqTransportSecurity trnsSecurity = security.Transport;

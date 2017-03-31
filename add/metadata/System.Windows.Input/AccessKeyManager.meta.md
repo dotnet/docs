@@ -1,39 +1,50 @@
 ---
 uid: System.Windows.Input.AccessKeyManager
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyManager.AddAccessKeyPressedHandler(System.Windows.DependencyObject,System.Windows.Input.AccessKeyPressedEventHandler)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyManager.AccessKeyPressedEvent
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyManager.IsKeyRegistered(System.Object,System.String)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyManager.Register(System.String,System.Windows.IInputElement)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyManager.RemoveAccessKeyPressedHandler(System.Windows.DependencyObject,System.Windows.Input.AccessKeyPressedEventHandler)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyManager.ProcessKey(System.Object,System.String,System.Boolean)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.AccessKeyManager.Unregister(System.String,System.Windows.IInputElement)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

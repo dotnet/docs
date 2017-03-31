@@ -1,9 +1,15 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.LegendCellColumnCollection
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.LegendCellColumnCollection.Dispose(System.Boolean)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.LegendCellColumnCollection.Dispose
 ---

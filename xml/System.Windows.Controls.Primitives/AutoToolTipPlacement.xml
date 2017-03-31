@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the means by which the automatic <see cref="T:System.Windows.Controls.ToolTip" /> is positioned on a <see cref="T:System.Windows.Controls.Slider" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.Slider.AutoToolTipPlacement%2A> property of a <xref:System.Windows.Controls.Slider> using the values of this enumeration.  
+  
+  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BottomRight">
@@ -27,7 +36,7 @@
         <ReturnType>System.Windows.Controls.Primitives.AutoToolTipPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>For a horizontal <see cref="T:System.Windows.Controls.Slider" /> show the automatic <see cref="T:System.Windows.Controls.ToolTip" /> at the bottom edge of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />. For a vertical <see cref="T:System.Windows.Controls.Slider" /> show the automatic <see cref="T:System.Windows.Controls.ToolTip" /> at the right edge of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +52,7 @@
         <ReturnType>System.Windows.Controls.Primitives.AutoToolTipPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No automatic <see cref="T:System.Windows.Controls.ToolTip" /></summary>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -59,7 +68,7 @@
         <ReturnType>System.Windows.Controls.Primitives.AutoToolTipPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>For a horizontal <see cref="T:System.Windows.Controls.Slider" /> show the automatic <see cref="T:System.Windows.Controls.ToolTip" /> at the top edge of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />. For a vertical <see cref="T:System.Windows.Controls.Slider" /> show the automatic <see cref="T:System.Windows.Controls.ToolTip" /> at the left edge of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</summary>
       </Docs>
     </Member>
   </Members>

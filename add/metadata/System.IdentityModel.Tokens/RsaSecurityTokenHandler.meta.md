@@ -1,49 +1,71 @@
 ---
 uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler.CanReadToken
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler.CanValidateToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler.ReadToken(System.Xml.XmlReader)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler.GetTokenTypeIdentifiers
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler.ReadToken
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler.WriteToken(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityToken)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler.WriteToken
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler.CanWriteToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler.CanReadToken(System.Xml.XmlReader)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler.TokenType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.RsaSecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

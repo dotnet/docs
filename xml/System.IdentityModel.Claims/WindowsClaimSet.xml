@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of Windows claims that are associated with an entity.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,17 @@
       </Parameters>
       <Docs>
         <param name="identity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> class by using the Windows user identity specified by the <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The claims representing the Windows groups to which this user belongs are added to the claim set.  
+  
+ The expiration time is set to 10 hours.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -52,9 +61,17 @@
       </Parameters>
       <Docs>
         <param name="identity">To be added.</param>
-        <param name="includeWindowsGroups">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="includeWindowsGroups">
+          <see langword="true" /> to include the claims representing the Windows groups to which this user belongs; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> class by using the Windows user identity specified by the <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The expiration time is set to 10 hours.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -72,8 +89,8 @@
       </Parameters>
       <Docs>
         <param name="identity">To be added.</param>
-        <param name="expirationTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expirationTime">A <see cref="T:System.DateTime" /> that specifies the expiration time for the claim set.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> class by using the Windows user identity specified by the <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +110,10 @@
       </Parameters>
       <Docs>
         <param name="identity">To be added.</param>
-        <param name="includeWindowsGroups">To be added.</param>
-        <param name="expirationTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="includeWindowsGroups">
+          <see langword="true" /> to include the Windows groups to which this user belongs; otherwise, <see langword="false" />.</param>
+        <param name="expirationTime">A <see cref="T:System.DateTime" /> that specifies the expiration time for the claim set.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> class by using the Windows user identity specified by the <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,11 +133,12 @@
         <Parameter Name="expirationTime" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="windowsIdentity">To be added.</param>
-        <param name="authenticationType">To be added.</param>
-        <param name="includeWindowsGroups">To be added.</param>
-        <param name="expirationTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that specifies the Windows identity.</param>
+        <param name="authenticationType">The authentication type for the Windows Identity.</param>
+        <param name="includeWindowsGroups">
+          <see langword="true" /> to include the Windows groups to which this user belongs; otherwise, <see langword="false" />.</param>
+        <param name="expirationTime">A <see cref="T:System.DateTime" /> that specifies the expiration time for the claim set.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> class by using the Windows user identity specified by the <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +155,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of claims in this collection.</summary>
+        <value>The number of claims in this collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +174,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.IdentityModel.Claims.WindowsClaimSet.Dispose%2A> method when you are finished using the <xref:System.IdentityModel.Claims.WindowsClaimSet>. The <xref:System.IdentityModel.Claims.WindowsClaimSet.Dispose%2A> method leaves the <xref:System.IdentityModel.Claims.WindowsClaimSet> in an unusable state. After calling the <xref:System.IdentityModel.Claims.WindowsClaimSet.Dispose%2A> method, you must release all references to the <xref:System.IdentityModel.Claims.WindowsClaimSet> so that the garbage collector can reclaim the memory that the <xref:System.IdentityModel.Claims.WindowsClaimSet> occupied. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+  
+> [!NOTE]
+>  Always call the <xref:System.IdentityModel.Claims.WindowsClaimSet.Dispose%2A> method before you release your last reference to the <xref:System.IdentityModel.Claims.WindowsClaimSet>. Otherwise, the resources it is using are not freed until the garbage collector calls the <xref:System.IdentityModel.Claims.WindowsClaimSet> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpirationTime">
@@ -172,8 +201,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the expiration time for this <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" />.</summary>
+        <value>The <see cref="T:System.DateTime" /> in which this <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> expires.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,11 +223,18 @@
         <Parameter Name="right" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="claimType">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="claimType">The uniform resource identifier (URI) of a claim type.</param>
+        <param name="right">The URI of the right associated with the new claim.</param>
+        <summary>Searches for the claim that matches the specified claim type and rights in the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" />.</summary>
+        <returns>A<see langword=" System.Collections.Generic.IEnumerable&lt;Claim&gt;" /> object that enables you to enumerate the claims that match the specified criteria.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the properties of the <xref:System.IdentityModel.Claims.ClaimTypes> class to specify the `claimType` parameter.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -215,8 +251,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to enumerate the Windows claims in the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" />.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to enumerate the Windows claims in the <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,9 +269,16 @@
         <ReturnType>System.IdentityModel.Claims.ClaimSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the issuer for this <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" />.</summary>
+        <value>A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> that represents the issuer of this claim set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The issuer for a <xref:System.IdentityModel.Claims.WindowsClaimSet> is <xref:System.IdentityModel.Claims.ClaimSet.Windows%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -254,9 +297,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the Windows claim to be retrieved.</param>
+        <summary>Gets the claim for the specified index.</summary>
+        <value>The claim for the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,8 +317,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns this <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> object.</summary>
+        <returns>This <see cref="T:System.IdentityModel.Claims.WindowsClaimSet" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,8 +335,8 @@
         <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Windows identity for this claim set.</summary>
+        <value>The <see cref="T:System.Security.Principal.WindowsIdentity" /> for this claim set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

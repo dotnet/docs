@@ -19,8 +19,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Passes host objects from an integrated development environment (IDE) to individual tasks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Empty interface.  
+  
+ Depending on the task itself and what kinds parameters and functionality it exposes, the task should define its own interface that inherits from this one, and then use that interface to communicate with the host.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

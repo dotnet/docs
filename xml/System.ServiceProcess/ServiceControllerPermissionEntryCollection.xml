@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains a strongly-typed collection of <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,9 @@
         <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntry" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> object to add.</param>
+        <summary>Adds a specified <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> to this collection.</summary>
+        <returns>The zero-based index of the added <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +53,11 @@
         <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntry[]" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">An array of type <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> objects that contains the permission entries to add.</param>
+        <summary>Appends a set of specified permission entries to this collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -74,9 +76,11 @@
         <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntryCollection" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">A <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntryCollection" /> that contains the permission entries to add.</param>
+        <summary>Appends a set of specified permission entries to this collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -95,9 +99,10 @@
         <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntry" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> object to find.</param>
+        <summary>Determines whether this collection contains a specified <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> object belongs to this collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +123,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">An array of type <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> that receives the copied permission entries.</param>
+        <param name="index">The zero-based index at which to begin copying the permission entries.</param>
+        <summary>Copies the permission entries from this collection to an array, starting at a particular index of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,9 +145,9 @@
         <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntry" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The permission entry to search for.</param>
+        <summary>Determines the index of a specified permission entry in this collection.</summary>
+        <returns>The zero-based index of the specified permission entry, or -1 if the permission entry was not found in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +168,9 @@
         <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntry" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the collection at which to insert the permission entry.</param>
+        <param name="value">The permission entry to insert into this collection.</param>
+        <summary>Inserts a permission entry into this collection at a specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +190,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index into the collection.</param>
+        <summary>Gets or sets the object at a specified index.</summary>
+        <value>The <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> object that exists at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,7 +210,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs additional custom processes after clearing the contents of the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,9 +231,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
+        <param name="value">The new value of the permission entry at <c>index</c>.</param>
+        <summary>Performs additional custom processes before a new permission entry is inserted into the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,9 +254,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which <c>value</c> can be found.</param>
+        <param name="value">The permission entry to remove from <c>index</c>.</param>
+        <summary>Performs additional custom processes when removing a new permission entry from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,10 +278,10 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which <c>oldValue</c> can be found.</param>
+        <param name="oldValue">The value to replace with <c>newValue</c>.</param>
+        <param name="newValue">The new value of the permission entry at <c>index</c>.</param>
+        <summary>Performs additional custom processes before setting a value in the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,8 +301,8 @@
         <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntry" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The permission entry to remove.</param>
+        <summary>Removes a specified permission entry from this collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

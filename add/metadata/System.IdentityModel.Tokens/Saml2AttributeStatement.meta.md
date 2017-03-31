@@ -1,24 +1,35 @@
 ---
 uid: System.IdentityModel.Tokens.Saml2AttributeStatement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AttributeStatement.#ctor(System.IdentityModel.Tokens.Saml2Attribute)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AttributeStatement.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AttributeStatement.#ctor(System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.Saml2Attribute})
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.Saml2AttributeStatement.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

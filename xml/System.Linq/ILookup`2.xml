@@ -27,10 +27,27 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TKey">To be added.</typeparam>
-    <typeparam name="TElement">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TKey">The type of the keys in the <see cref="T:System.Linq.ILookup`2" />.</typeparam>
+    <typeparam name="TElement">The type of the elements in the <see cref="T:System.Collections.Generic.IEnumerable`1" /> sequences that make up the values in the <see cref="T:System.Linq.ILookup`2" />.</typeparam>
+    <summary>Defines an indexer, size property, and Boolean search method for data structures that map keys to <see cref="T:System.Collections.Generic.IEnumerable`1" /> sequences of values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type <xref:System.Linq.Lookup%602> implements the <xref:System.Linq.ILookup%602> interface.  
+  
+ The extension method <xref:System.Linq.Enumerable.ToLookup%2A>, which can be appended to the end of a LINQ query, returns an object of type <xref:System.Linq.ILookup%602>.  
+  
+   
+  
+## Examples  
+ The following code example creates an <xref:System.Linq.ILookup%602> object and iterates through its contents.  
+  
+ [!code-csharp[System.Linq.ILookup#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.ILookup/cs/ILookup.cs#1)]
+ [!code-vb[System.Linq.ILookup#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.ILookup/vb/ILookup.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Contains">
@@ -60,9 +77,10 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key to search for in the <see cref="T:System.Linq.ILookup`2" />.</param>
+        <summary>Determines whether a specified key exists in the <see cref="T:System.Linq.ILookup`2" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="key" /> is in the <see cref="T:System.Linq.ILookup`2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +108,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of key/value collection pairs in the <see cref="T:System.Linq.ILookup`2" />.</summary>
+        <value>The number of key/value collection pairs in the <see cref="T:System.Linq.ILookup`2" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,9 +140,9 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The key of the desired sequence of values.</param>
+        <summary>Gets the <see cref="T:System.Collections.Generic.IEnumerable`1" /> sequence of values indexed by a specified key.</summary>
+        <value>The <see cref="T:System.Collections.Generic.IEnumerable`1" /> sequence of values indexed by the specified key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

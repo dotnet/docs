@@ -1,24 +1,24 @@
 ---
 uid: System.Runtime.Remoting.Channels.IChannelReceiverHook
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IChannelReceiverHook.AddHookChannelUri(System.String)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IChannelReceiverHook.WantsToListen
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IChannelReceiverHook.ChannelSinkChain
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Channels.IChannelReceiverHook.ChannelScheme
-internalonly: False
+manager: "ghogen"
 ---

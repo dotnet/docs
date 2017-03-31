@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Configuration.SessionPageStateSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SessionPageStateSection.HistorySize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SessionPageStateSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.SessionPageStateSection.DefaultHistorySize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

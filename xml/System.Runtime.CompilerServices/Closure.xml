@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the runtime state of a dynamically generated method.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,9 +39,9 @@
         <Parameter Name="locals" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="constants">To be added.</param>
-        <param name="locals">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="constants">The constant values that are used by the method.</param>
+        <param name="locals">The hoisted local variables from the parent context.</param>
+        <summary>Creates an object to hold state of a dynamically generated method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +59,7 @@
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the non-trivial constants and locally executable expressions that are referenced by a dynamically generated method.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +77,7 @@
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the hoisted local variables from the parent context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

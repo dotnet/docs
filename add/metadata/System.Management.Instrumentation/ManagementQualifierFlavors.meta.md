@@ -1,4 +1,4 @@
 ---
 uid: System.Management.Instrumentation.ManagementQualifierFlavors
-internalonly: False
+manager: "jillfra"
 ---

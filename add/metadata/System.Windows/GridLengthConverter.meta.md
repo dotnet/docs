@@ -1,29 +1,65 @@
 ---
 uid: System.Windows.GridLengthConverter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.GridLengthConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.GridLengthConverter.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.GridLengthConverter.ConvertTo
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.GridLengthConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.GridLengthConverter.CanConvertTo
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.GridLengthConverter.ConvertFrom
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.GridLengthConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.GridLengthConverter.CanConvertFrom
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.GridLengthConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

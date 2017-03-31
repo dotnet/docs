@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.Presentation.Sqm
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

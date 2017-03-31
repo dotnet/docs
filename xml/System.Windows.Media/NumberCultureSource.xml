@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how the culture for numbers in a text run is determined.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.NumberSubstitution> class uses the enumerated values of the <xref:System.Windows.Media.NumberCultureSource> class to determine how numbers are displayed.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Override">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Media.NumberCultureSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Number culture is derived from the <see cref="P:System.Windows.Media.NumberSubstitution.CultureOverride" /> property.</summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Media.NumberCultureSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default. Number culture is derived from the value of the <see cref="P:System.Windows.Media.TextFormatting.TextRunProperties.CultureInfo" /> property, which is the culture of the text run. In markup, this is represented by the <c>xml:lang</c> attribute.</summary>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Media.NumberCultureSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Number culture is derived from the culture value of the current thread, which by default is the user default culture.</summary>
       </Docs>
     </Member>
   </Members>

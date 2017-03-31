@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Automation.ValuePattern.ValuePatternInformation
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.ValuePattern.ValuePatternInformation.Value
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.ValuePattern.ValuePatternInformation.IsReadOnly
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

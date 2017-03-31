@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.PersistOnCloseAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.PersistOnCloseAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

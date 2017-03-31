@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.Web.Services.Protocols.SoapHeaderMapping" /> class represents a SOAP header mapping.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,8 +30,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether the SOAP header mapping is custom-defined.</summary>
+        <value>
+          <see langword="true" /> if the SOAP header mapping is custom-defined; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +50,8 @@
         <ReturnType>System.Web.Services.Protocols.SoapHeaderDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Web.Services.Protocols.SoapHeaderDirection" /> value that indicates the direction of the SOAP header mapping.</summary>
+        <value>A <see cref="T:System.Web.Services.Protocols.SoapHeaderDirection" /> value that indicates the direction of the SOAP header mapping.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +69,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Type" /> that represents the type of the SOAP header mapping.</summary>
+        <value>A <see cref="T:System.Type" /> that represents the type of the SOAP header mapping.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +88,8 @@
         <ReturnType>System.Reflection.MemberInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Reflection.MemberInfo" /> associated with the SOAP header mapping.</summary>
+        <value>The <see cref="T:System.Reflection.MemberInfo" /> associated with the SOAP header mapping.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +107,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Boolean" /> value that indicates whether the SOAP header mapping repeats.</summary>
+        <value>
+          <see langword="true" /> if the SOAP header mapping repeats; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

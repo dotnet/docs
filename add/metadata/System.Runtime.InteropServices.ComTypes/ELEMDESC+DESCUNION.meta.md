@@ -1,14 +1,20 @@
 ---
 uid: System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.paramdesc
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComTypes.ELEMDESC.DESCUNION.idldesc
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

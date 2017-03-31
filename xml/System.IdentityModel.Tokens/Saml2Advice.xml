@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the Advice element specified in [Saml2Core, 2.6.1].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This information may be ignored by applications without affecting either the semantics or the validity of the assertion. [Saml2Core, 2.6.1]  
+  
+ For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +35,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Advice" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2Advice.AssertionIdReferences%2A>, <xref:System.IdentityModel.Tokens.Saml2Advice.Assertions%2A>, and <xref:System.IdentityModel.Tokens.Saml2Advice.AssertionUriReferences%2A> properties are all initialized with empty collections.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AssertionIdReferences">
@@ -43,9 +59,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Id&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of assertions referenced by ID.</summary>
+        <value>A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Id" /> that contains IDs that reference the assertions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the AssertionIDRef elements contained in this Advice element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Assertions">
@@ -61,9 +84,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Assertion&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of assertions specified by value.</summary>
+        <value>A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> that contains the assertions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the Assertion elements contained in this Advice element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AssertionUriReferences">
@@ -79,9 +109,16 @@
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Uri&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of assertions referenced by URI.</summary>
+        <value>A collection of type <see cref="T:System.Uri" /> that contains URIs that reference the assertions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the AssertionURIRef elements contained in this Advice element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

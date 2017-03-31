@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the owner of an instance in the instance store. An instance owner is an interaction participant with an instance in the instance store.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets ID of the instance owner as a GUID.</summary>
+        <value>The ID of the instance owner.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

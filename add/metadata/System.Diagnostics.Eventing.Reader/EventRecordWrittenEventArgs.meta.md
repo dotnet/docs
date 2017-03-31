@@ -1,14 +1,17 @@
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs.EventException
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs.EventRecord
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

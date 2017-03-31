@@ -1,29 +1,35 @@
 ---
 uid: System.Web.DynamicData.EntityTemplateUserControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.EntityTemplateUserControl.ValidationGroup
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.EntityTemplateUserControl.Mode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.EntityTemplateUserControl.ContainerType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.EntityTemplateUserControl.Table
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.DynamicData.EntityTemplateUserControl.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

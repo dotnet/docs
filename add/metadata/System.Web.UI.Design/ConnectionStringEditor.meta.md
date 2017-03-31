@@ -1,29 +1,43 @@
 ---
 uid: System.Web.UI.Design.ConnectionStringEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ConnectionStringEditor.GetEditStyle
 ---
 
 ---
 uid: System.Web.UI.Design.ConnectionStringEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ConnectionStringEditor.GetProviderName(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ConnectionStringEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.ConnectionStringEditor.EditValue
 ---
 
 ---
 uid: System.Web.UI.Design.ConnectionStringEditor.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.ConnectionStringEditor.SetProviderName(System.Object,System.ComponentModel.Design.Data.DesignerDataConnection)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Dispatcher.ClientOperationCompatBase
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Dispatcher.ClientOperationCompatBase.ParameterInspectors
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

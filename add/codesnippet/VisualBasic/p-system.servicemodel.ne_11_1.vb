@@ -1,1 +1,0 @@
-            Dim msgSecurity = security.Message

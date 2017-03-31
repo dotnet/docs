@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The base class for context classes that represent the execution environment of an activity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides limited access to the [!INCLUDE[wf1](~/includes/wf1-md.md)] runtime and is the base class for all execution contexts that are provided by [!INCLUDE[wf](~/includes/wf-md.md)].  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ActivityInstanceId">
@@ -28,8 +35,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unique identifier of the currently executing activity instance.</summary>
+        <value>The unique identifier of the currently executing activity instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.Activities.WorkflowDataContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the data context of the currently executing activity.</summary>
+        <value>The workflow data context of the currently executing activity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +79,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of extension to retrieve.</typeparam>
+        <summary>Returns an extension of the specified type.</summary>
+        <returns>The extension of the specified type if present; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,10 +104,10 @@
         <Parameter Name="locationReference" Type="System.Activities.LocationReference" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="locationReference">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the location to return.</typeparam>
+        <param name="locationReference">The referenced location.</param>
+        <summary>Returns the typed location for the specified referenced location for the current activity context.</summary>
+        <returns>The typed location.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,9 +127,9 @@
         <Parameter Name="argument" Type="System.Activities.Argument" />
       </Parameters>
       <Docs>
-        <param name="argument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="argument">The argument to inspect.</param>
+        <summary>Gets the value of the specified <see cref="T:System.Activities.Argument" />.</summary>
+        <returns>The value of the argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,9 +149,9 @@
         <Parameter Name="runtimeArgument" Type="System.Activities.RuntimeArgument" />
       </Parameters>
       <Docs>
-        <param name="runtimeArgument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="runtimeArgument">The argument to inspect.</param>
+        <summary>Gets the value of the specified <see cref="T:System.Activities.RuntimeArgument" />.</summary>
+        <returns>The value of the argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,10 +174,10 @@
         <Parameter Name="argument" Type="System.Activities.InArgument&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="argument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the argument.</typeparam>
+        <param name="argument">The argument to inspect.</param>
+        <summary>Gets the value of the specified <see cref="T:System.Activities.InArgument`1" />.</summary>
+        <returns>The value of the argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,10 +200,10 @@
         <Parameter Name="argument" Type="System.Activities.InOutArgument&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="argument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the argument.</typeparam>
+        <param name="argument">The argument to inspect.</param>
+        <summary>Gets the value of the specified <see cref="T:System.Activities.InOutArgument`1" />.</summary>
+        <returns>The value of the argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,10 +226,10 @@
         <Parameter Name="locationReference" Type="System.Activities.LocationReference" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="locationReference">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the value.</typeparam>
+        <param name="locationReference">The referenced location to inspect.</param>
+        <summary>Gets the value at the specified <see cref="T:System.Activities.LocationReference" />.</summary>
+        <returns>The value of the referenced location.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,10 +252,10 @@
         <Parameter Name="argument" Type="System.Activities.OutArgument&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="argument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the argument.</typeparam>
+        <param name="argument">The argument to inspect.</param>
+        <summary>Gets the value of the specified <see cref="T:System.Activities.OutArgument`1" />.</summary>
+        <returns>The value of the argument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,9 +276,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="argument">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="argument">The argument to receive the new value.</param>
+        <param name="value">The new value of the argument.</param>
+        <summary>Assigns a value to the specified <see cref="T:System.Activities.Argument" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,10 +302,10 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="argument">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the argument.</typeparam>
+        <param name="argument">The argument to receive the new value.</param>
+        <param name="value">The new value of the argument.</param>
+        <summary>Assigns a value to the specified <see cref="T:System.Activities.InArgument`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,10 +329,10 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="argument">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the argument.</typeparam>
+        <param name="argument">The argument to receive the new value.</param>
+        <param name="value">The new value of the argument.</param>
+        <summary>Assigns a value to the specified <see cref="T:System.Activities.InOutArgument`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,10 +356,10 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="locationReference">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the location.</typeparam>
+        <param name="locationReference">The referenced location to receive the new value.</param>
+        <param name="value">The new value of the referenced location.</param>
+        <summary>Assigns a value to the specified <see cref="T:System.Activities.LocationReference" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,10 +383,10 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="argument">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the argument.</typeparam>
+        <param name="argument">The argument to receive the new value.</param>
+        <param name="value">The new value of the argument.</param>
+        <summary>Assigns a value to the specified <see cref="T:System.Activities.OutArgument`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,8 +403,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unique indentifier of the currently executing workflow instance.</summary>
+        <value>The unique identifier of the currently executing workflow instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

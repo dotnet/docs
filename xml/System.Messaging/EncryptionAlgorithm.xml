@@ -10,8 +10,22 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the encryption algorithm used to encrypt the message body of a private message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Cipher modes define the method in which data is encrypted. The stream cipher mode encodes data one bit at a time. The block cipher mode encodes data one block at a time. Although it tends to execute more slowly than stream cipher, block cipher is more secure. The following table describes the cipher mode for each of the <xref:System.Messaging.EncryptionAlgorithm> values.  
+  
+|Encryption|Cipher mode|  
+|----------------|-----------------|  
+|RC2|64-bit block|  
+|RC4|Stream|  
+  
+ The Message Queuing message object's property ultimately provides access to operating system encryption levels.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">
@@ -27,7 +41,7 @@
         <ReturnType>System.Messaging.EncryptionAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No encryption.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rc2">
@@ -43,7 +57,7 @@
         <ReturnType>System.Messaging.EncryptionAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The value MQMSG_CALG_RC2. This is the default value for the encryption property of the Message Queuing application's message object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rc4">
@@ -59,7 +73,7 @@
         <ReturnType>System.Messaging.EncryptionAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The value MQMSG_CALG_RC4. This corresponds to the less secure option for the encryption property of the Message Queuing application's message object.</summary>
       </Docs>
     </Member>
   </Members>

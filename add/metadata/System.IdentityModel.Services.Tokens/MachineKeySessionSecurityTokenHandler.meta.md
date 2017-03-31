@@ -1,14 +1,23 @@
 ---
 uid: System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler.#ctor(System.TimeSpan)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

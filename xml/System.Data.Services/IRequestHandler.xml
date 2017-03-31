@@ -13,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides access to members that control handing of request messages.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,9 +41,9 @@
         <Parameter Name="messageBody" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="messageBody">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="messageBody">The <see cref="T:System.IO.Stream" /> object that contains the request.</param>
+        <summary>Provides an entry point for the request.</summary>
+        <returns>The resulting message for the supplied request.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

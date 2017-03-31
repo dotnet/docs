@@ -1,4 +1,5 @@
 ---
 uid: System.Net.WriteStreamClosedEventHandler
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

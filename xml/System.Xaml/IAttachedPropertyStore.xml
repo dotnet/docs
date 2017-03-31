@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an attachable member store for an object where attachable members are set. This attachable member store can then be referenced with <see cref="T:System.Xaml.AttachablePropertyServices" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An attachable member is typically implemented and used as an attachable property. The term "attachable member" provides for the possibility that a technology also defines a system for attachable events. As an item in a property store, an attachable event stores a reference to the handler that is assigned through attachable member usage. An attachable event in XAML can use the same store as the attachable properties do, even if the attachable event is not truly a property to the underlying type system or as it is considered in real-world use.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CopyPropertiesTo">
@@ -29,9 +36,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The destination array. The array is a generic array, should be passed undimensioned, and should have components of <see cref="T:System.Xaml.AttachableMemberIdentifier" /> and <see langword="object" />.</param>
+        <param name="index">The source index where copying should begin.</param>
+        <summary>Copies all attachable member/value pairs from this attachable member store into a destination array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +55,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the count of the attachable member entries in this attachable member store.</summary>
+        <value>The integer count of entries in the store.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +76,10 @@
         <Parameter Name="attachableMemberIdentifier" Type="System.Xaml.AttachableMemberIdentifier" />
       </Parameters>
       <Docs>
-        <param name="attachableMemberIdentifier">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attachableMemberIdentifier">The XAML type system identifier for the attachable member entry to remove.</param>
+        <summary>Removes the entry for the specified attachable member from this attachable member store.</summary>
+        <returns>
+          <see langword="true" /> if an attachable member entry for <paramref name="attachableMemberIdentifier" /> was found in the store and removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,10 +100,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="attachableMemberIdentifier">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="attachableMemberIdentifier">The XAML type system identifier for the attachable member entry to set.</param>
+        <param name="value">The value to set.</param>
+        <summary>Sets a value for the specified attachable member in the specified store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation should not throw an exception if the specific attachable member already exists. If a member already exists, the implementation should overwrite any existing value with `value`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetProperty">
@@ -115,11 +130,19 @@
         <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="attachableMemberIdentifier">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attachableMemberIdentifier">The XAML type system identifier for the attachable member entry to get.</param>
+        <param name="value">Out parameter. When this method returns, contains the destination object for the value if <c>attachableMemberIdentifier</c> exists in the store and has a value.</param>
+        <summary>Attempts to get a value for the specified attachable member in the specified store.</summary>
+        <returns>
+          <see langword="true" /> if an attachable member entry for <paramref name="attachableMemberIdentifier" /> was found in the store and a value was posted to <paramref name="value" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation should not throw an exception if the specific attachable member is not located in the store.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

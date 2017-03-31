@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an abstract base class for types that describe how to divide the items in a collection into groups.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.GroupDescription" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,9 +47,18 @@
         <ReturnType>System.Collections.IComparer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a custom comparer that sorts groups using an object that implements <see cref="T:System.Collections.IComparer" />.</summary>
+        <value>A custom comparer that sorts groups using an object that implements <see cref="T:System.Collections.IComparer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Setting the custom comparer object will clear previously set <xref:System.ComponentModel.GroupDescription.SortDescriptions%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupNameFromItem">
@@ -70,11 +79,11 @@
         <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="level">To be added.</param>
-        <param name="culture">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to return group names for.</param>
+        <param name="level">The level of grouping.</param>
+        <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> to supply to the converter.</param>
+        <summary>Returns the group name(s) for the given item.</summary>
+        <returns>The group name(s) for the given item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,9 +100,16 @@
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of names that are used to initialize a group with a set of subgroups with the given names.</summary>
+        <value>The collection of names that are used to initialize a group with a set of subgroups with the given names.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add additional subgroups later if there are items that do not match any of the given names.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NamesMatch">
@@ -113,10 +129,11 @@
         <Parameter Name="itemName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="groupName">To be added.</param>
-        <param name="itemName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="groupName">The name of the group to check.</param>
+        <param name="itemName">The name of the item to check.</param>
+        <summary>Returns a value that indicates whether the group name and the item name match such that the item belongs to the group.</summary>
+        <returns>
+          <see langword="true" /> if the names match and the item belongs to the group; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,9 +153,16 @@
         <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">Arguments of the event being raised.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.GroupDescription.PropertyChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Subclasses need to call this method to raise the <xref:System.ComponentModel.GroupDescription.PropertyChanged> event.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyChanged">
@@ -154,7 +178,7 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a property value changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,8 +201,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns whether serialization processes should serialize the effective value of the <see cref="P:System.ComponentModel.GroupDescription.GroupNames" /> property on instances of this class.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="P:System.ComponentModel.GroupDescription.GroupNames" /> property value should be serialized; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,8 +225,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns whether serialization processes should serialize the effective value of the <see cref="P:System.ComponentModel.GroupDescription.SortDescriptions" /> property on instances of this class.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ComponentModel.GroupDescription.SortDescriptions" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +244,8 @@
         <ReturnType>System.ComponentModel.SortDescriptionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of sort criteria in which to sort the groups.</summary>
+        <value>The collection of sort criteria in which to sort the groups.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

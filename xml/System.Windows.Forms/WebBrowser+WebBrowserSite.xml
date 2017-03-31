@@ -16,8 +16,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the host window of a <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you are familiar with OLE development using the unmanaged `WebBrowser` ActiveX control, you can extend the functionality of the Windows Forms <xref:System.Windows.Forms.WebBrowser> control, which is a managed wrapper for the ActiveX control. You can use this extensibility, for example, to customize the browser shortcut menu and shortcut keys or to provide a custom security configuration for hosted documents.  
+  
+ To use this feature, implement classes that inherit from the <xref:System.Windows.Forms.WebBrowser> and <xref:System.Windows.Forms.WebBrowser.WebBrowserSite> classes. The unmanaged `WebBrowser` ActiveX control uses the protected <xref:System.Windows.Forms.WebBrowser.CreateWebBrowserSiteBase%2A?displayProperty=fullName> method to retrieve extensibility interfaces implemented by the <xref:System.Windows.Forms.WebBrowser.WebBrowserSite> class. Override the <xref:System.Windows.Forms.WebBrowser.CreateWebBrowserSiteBase%2A> method to return an instance of your own class that inherits from the <xref:System.Windows.Forms.WebBrowser.WebBrowserSite> class. The <xref:System.Windows.Forms.WebBrowser.WebBrowserSite> class provides a default implementations of the OLE `IDocHostUIHandler` interface. For more information, see [IDocHostUIHandler Interface](http://go.microsoft.com/fwlink/?LinkId=98895) in the MSDN library. You can provide your own implementation of this interface or implement any other `WebBrowser` ActiveX control interface in order to customize the behavior of the control. For more information, see [WebBrowser Control](http://go.microsoft.com/fwlink/?LinkID=98894) in the MSDN library.  
+  
+> [!NOTE]
+>  If you provide your own implementation for any `IDocHostUIHandler` members, you must implement all the members of that interface.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for overriding this type, which requires access to unmanaged code. Associated enumerations: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /> and <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +46,10 @@
         <Parameter Name="host" Type="System.Windows.Forms.WebBrowser" />
       </Parameters>
       <Docs>
-        <param name="host">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="host">The <see cref="T:System.Windows.Forms.WebBrowser" /></param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.WebBrowser.WebBrowserSite" /> class.</summary>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing unmanaged code. Associated enumerations: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /> and <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
   </Members>

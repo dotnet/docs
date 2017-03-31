@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.ReferenceAttribute
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ReferenceAttribute.#ctor(System.String)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ReferenceAttribute.reference
-internalonly: False
+ms.author: "mikejo"
 ---

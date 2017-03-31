@@ -15,8 +15,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the parts of the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <see cref="T:System.IO.Packaging.Package" /> that are excluded from the range of a digital signature.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration has a FlagsAttribute that allows a bitwise combination of its member values.  
+  
+ Parts that are specified as excluded from the digital signature can be modified without invalidating the signature.  For example, if a document is to be signed by more than one person, the SignatureOrigin part needs to be excluded from the signature when the document is first signed.  (Exclusions are specified in the `restrictions` parameter of the call to <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A>.)  If the SignatureOrigin part is not excluded, any additional signatures invalidate the signature of the first signer.  
+  
+ For more information about digital signatures, see the MSDN article *Digital Signing Framework of the Open Packaging Conventions* available at [http://go.microsoft.com/fwlink/?LinkId=74494](http://go.microsoft.com/fwlink/?LinkId=74494).  
+  
+ For more information on the Core Properties and Signature Origin parts, see Chapter 3 of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+  
+   
+  
+## Examples  
+ The following example shows how to use this enumeration to digitally sign an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
+  
+ [!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
+ [!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Annotations">
@@ -32,7 +53,7 @@
         <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Annotations part is excluded.</summary>
       </Docs>
     </Member>
     <Member MemberName="CoreMetadata">
@@ -48,7 +69,7 @@
         <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Core Properties part is excluded.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +85,7 @@
         <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No parts are excluded.</summary>
       </Docs>
     </Member>
     <Member MemberName="SignatureOrigin">
@@ -80,7 +101,7 @@
         <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Signature Origin part is excluded.</summary>
       </Docs>
     </Member>
   </Members>

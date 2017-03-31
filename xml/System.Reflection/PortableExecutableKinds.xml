@@ -23,8 +23,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the nature of the code in an executable file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To obtain this value for a module, use the <xref:System.Reflection.Module.GetPEKind%2A?displayProperty=fullName> method.  
+  
+> [!NOTE]
+>  This enumeration corresponds to the `CorPEKind` enumeration in the unmanaged reflection API, which is accessed by the unmanaged `GetPEKind` function.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ILOnly">
@@ -45,7 +55,7 @@
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The executable contains only Microsoft intermediate language (MSIL), and is therefore neutral with respect to 32-bit or 64-bit platforms.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAPortableExecutableImage">
@@ -66,7 +76,7 @@
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The file is not in portable executable (PE) file format.</summary>
       </Docs>
     </Member>
     <Member MemberName="PE32Plus">
@@ -87,7 +97,7 @@
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The executable requires a 64-bit platform.</summary>
       </Docs>
     </Member>
     <Member MemberName="Preferred32Bit">
@@ -108,7 +118,7 @@
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The executable is platform-agnostic but should be run on a 32-bit platform whenever possible.</summary>
       </Docs>
     </Member>
     <Member MemberName="Required32Bit">
@@ -129,7 +139,7 @@
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The executable can be run on a 32-bit platform, or in the 32-bit Windows on Windows (WOW) environment on a 64-bit platform.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unmanaged32Bit">
@@ -150,7 +160,7 @@
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The executable contains pure unmanaged code.</summary>
       </Docs>
     </Member>
   </Members>

@@ -34,8 +34,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an abstract class for an expression, which evaluates to a <see langword="Boolean" />. This class must be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ A condition is an expression, which evaluates to a `Boolean` value.  
+  
+ Windows Workflow Foundation offers two condition types: <xref:System.Workflow.Activities.CodeCondition> and <xref:System.Workflow.Activities.Rules.RuleConditionReference>.  
+  
+ You can create a custom condition type by deriving from this class and implementing the <xref:System.Workflow.ComponentModel.ActivityCondition.Evaluate%2A> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,7 +64,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityCondition" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,10 +85,10 @@
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with this condition.</param>
+        <param name="provider">The <see cref="T:System.IServiceProvider" /> for this condition evaluation.</param>
+        <summary>Evaluates the underlying condition.</summary>
+        <returns>The <see langword="Boolean" /> resulting from evaluating the underlying expression.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

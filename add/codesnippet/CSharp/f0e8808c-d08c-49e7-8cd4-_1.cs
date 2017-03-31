@@ -1,1 +1,0 @@
-            activity.AsynchronousCall(serviceCall); 

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the reason that a <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control was closed.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.ToolStripDropDownCloseReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control was closed because an application was launched.</summary>
       </Docs>
     </Member>
     <Member MemberName="AppFocusChange">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.ToolStripDropDownCloseReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control was closed because another application has received the focus.</summary>
       </Docs>
     </Member>
     <Member MemberName="CloseCalled">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.ToolStripDropDownCloseReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control was closed because the <see cref="M:System.Windows.Forms.ToolStripDropDown.Close" /> method was called.</summary>
       </Docs>
     </Member>
     <Member MemberName="ItemClicked">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Forms.ToolStripDropDownCloseReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control was closed because one of its items was clicked.</summary>
       </Docs>
     </Member>
     <Member MemberName="Keyboard">
@@ -91,7 +91,7 @@
         <ReturnType>System.Windows.Forms.ToolStripDropDownCloseReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the <see cref="T:System.Windows.Forms.ToolStripDropDown" /> control was closed because of keyboard activity, such as the ESC key being pressed.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,14 +1,20 @@
 ---
 uid: System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor.Token
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Runtime.DebugEngine.ActivityHandlerDescriptor.Name
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

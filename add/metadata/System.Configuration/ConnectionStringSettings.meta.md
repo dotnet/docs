@@ -1,39 +1,53 @@
 ---
 uid: System.Configuration.ConnectionStringSettings
-internalonly: False
----
-
----
-uid: System.Configuration.ConnectionStringSettings.#ctor(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Configuration.ConnectionStringSettings.Name
-internalonly: False
----
-
----
-uid: System.Configuration.ConnectionStringSettings.ToString
-internalonly: False
----
-
----
-uid: System.Configuration.ConnectionStringSettings.#ctor(System.String,System.String,System.String)
-internalonly: False
----
-
----
-uid: System.Configuration.ConnectionStringSettings.ConnectionString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConnectionStringSettings.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConnectionStringSettings.#ctor(System.String,System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConnectionStringSettings.Name
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConnectionStringSettings.ToString
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConnectionStringSettings.#ctor(System.String,System.String,System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConnectionStringSettings.ConnectionString
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConnectionStringSettings.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ConnectionStringSettings.ProviderName
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

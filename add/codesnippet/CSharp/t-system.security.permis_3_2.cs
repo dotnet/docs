@@ -1,1 +1,0 @@
- [FileIOPermissionAttribute(SecurityAction.Demand, Unrestricted=true)]

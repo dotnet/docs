@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>An abstract class used as the base class for the abstract <see cref="T:System.Windows.Documents.Block" /> and <see cref="T:System.Windows.Documents.Inline" /> classes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,9 +32,40 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Brush" /> used to fill the background of the content area.</summary>
+        <value>The brush used to fill the background of the content area, or <see langword="null" /> to not use a background brush. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a table of swatches that show the available predefined brush colors, see <xref:System.Windows.Media.Brushes>.  
+  
+<a name="dependencyPropertyInfo_Background"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.TextElement.BackgroundProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.Background%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.  
+  
+ [!code-xml[TextElementSnippets#_TextElement_BackgroundXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_backgroundxaml)]  
+  
+ The following figure shows how the preceding example renders.  
+  
+ ![Screenshot: Foreground of green, background bisque](~/add/media/textelement-foreback.png "Screenshot: Foreground of green, background bisque")  
+  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.Background%2A> property programmatically.  
+  
+ [!code-csharp[TextElementSnippets#_TextElement_Background](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml.cs#_textelement_background)]
+ [!code-vb[TextElementSnippets#_TextElement_Background](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextElementSnippets/visualbasic/window1.xaml.vb#_textelement_background)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundProperty">
@@ -50,7 +81,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.TextElement.Background" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,9 +98,18 @@
         <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Documents.TextPointer" /> that represents the end of the content in the element.</summary>
+        <value>A <see cref="T:System.Windows.Documents.TextPointer" /> that represents the end of the content in the <see cref="T:System.Windows.Documents.TextElement" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.FlowDocument.ContentEnd%2A> property is often used to append content to the end of a <xref:System.Windows.Documents.TextElement>.  
+  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentStart">
@@ -85,9 +125,18 @@
         <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Documents.TextPointer" /> that represents the start of content in the element.</summary>
+        <value>A <see cref="T:System.Windows.Documents.TextPointerContext" /> that represents the start of the content in the <see cref="T:System.Windows.Documents.TextElement" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.FlowDocument.ContentStart%2A> property is often used to insert content to the beginning of a <xref:System.Windows.Documents.TextElement>.  
+  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementEnd">
@@ -103,9 +152,16 @@
         <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Documents.TextPointer" /> that represents the position just after the end of the element.</summary>
+        <value>A <see cref="T:System.Windows.Documents.TextPointer" /> that represents the position just after the end of the <see cref="T:System.Windows.Documents.TextElement" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ElementStart">
@@ -121,9 +177,16 @@
         <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Windows.Documents.TextPointer" /> that represents the position just before the start of the element.</summary>
+        <value>A <see cref="T:System.Windows.Documents.TextPointerContext" /> that represents the position just before the start of the <see cref="T:System.Windows.Documents.TextElement" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontFamily">
@@ -144,9 +207,71 @@
         <ReturnType>System.Windows.Media.FontFamily</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the preferred top-level font family for the content of the element.</summary>
+        <value>A <see cref="T:System.Windows.Media.FontFamily" /> object that specifies the preferred font family, or a primary preferred font family with one or more fallback font families. The default is the font determined by the <see cref="P:System.Windows.SystemFonts.MessageFontFamily" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When multiple families are specified, the second and subsequent font families serve as fallback families to be used in cases where the primary font family is unavailable or not applicable.  
+  
+ This property specifies a preference only.  If the specified font family is not available, the <xref:System.Windows.Documents.FlowDocument> silently falls back to the font determined by the <xref:System.Windows.SystemFonts.MessageFontFamily%2A> value.  
+  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is \<*object* <xref:System.Windows.Documents.TextElement.FontFamily%2A?displayProperty=fullName>="*value*".../>, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Controls.TextBlock>, and *value* is one of the string-format values as explained in XAML Values. In code, the attached property usage is supported by the <xref:System.Windows.Documents.TextElement.GetFontFamily%2A> and <xref:System.Windows.Documents.TextElement.SetFontFamily%2A> methods. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Documents.TextElement> support an analogous nonattached `FontFamily` property, which the content host uses for rendering.  
+  
+<a name="xamlAttributeUsage_FontFamily"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object FontFamily="fontFamilyName"/>  
+- or -  
+<object FontFamily="fontFamilyNamesList"/>  
+- or -  
+<object FontFamily="fontFamilyFolderReference"/>  
+- or -  
+<object FontFamily="fontFamilyUriReference"/>  
+```  
+  
+<a name="xamlValues_FontFamily"></a>   
+## XAML Values  
+ *fontFamilyName*  
+ A string specifying a font family name.  For example, `"Arial"` or `"Century Gothic"`.  
+  
+ *fontFamilyNamesList*  
+ A string specifying multiple font family names, each separated by a comma (any whitespace following a comma is ignored).  The first font family specified serves as the primary font family; subsequent font families serve as fallback families to be used in cases where the primary font family is unavailable or not applicable.  For example, `"Arial, Century Gothic"` specifies Arial as the primary font family, with Century Gothic as the fallback font family.  
+  
+ *fontFamilyFolderReference*  
+ A string specifying a folder containing the font, along with a font family name.  The folder and font family name are delimited by a # character.  The folder reference may be absolute, or relative.  For example, `"Custom Fonts\#My Custom Font"`.  
+  
+ *fontFamilyUriReference*  
+ A string specifying a [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the font, along with a font family name.  The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] and font family name are delimited by a # character.  For example, `"http://MyFontServer/Fonts/#My Custom Font"`.  
+  
+<a name="dependencyPropertyInfo_FontFamily"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.TextElement.FontFamilyProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.FontFamily%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.  
+  
+ [!code-xml[TextElementSnippets#_TextElement_FontPropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_fontpropsxaml)]  
+  
+ The following figure shows how the preceding example renders.  
+  
+ ![Screenshot: Text with text properties set](~/add/media/textelement-fontprops.png "Screenshot: Text with text properties set")  
+  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.FontFamily%2A> property programmatically.  
+  
+ [!code-csharp[TextElementSnippets#_TextElement_FontProps](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml.cs#_textelement_fontprops)]
+ [!code-vb[TextElementSnippets#_TextElement_FontProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextElementSnippets/visualbasic/window1.xaml.vb#_textelement_fontprops)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontFamilyProperty">
@@ -162,7 +287,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.TextElement.FontFamily" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,9 +312,69 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the font size for the content of the element.</summary>
+        <value>The desired font size to use in device independent pixels,  greater than 0.001 and less than or equal to 35791.  The default depends on current system settings and depends on the <see cref="P:System.Windows.SystemFonts.MessageFontSize" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is \<*object* <xref:System.Windows.Documents.TextElement.FontSize%2A?displayProperty=fullName>="*value*".../>, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Documents.TextElement>, and *value* is one of the string-format values as explained in XAML Values. In code, the attached property usage is supported by the <xref:System.Windows.Documents.TextElement.GetFontSize%2A> and <xref:System.Windows.Documents.TextElement.SetFontSize%2A> methods. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Documents.TextElement> support an analogous nonattached `FontSize` property, which the content host uses for rendering.  
+  
+<a name="xamlAttributeUsage_FontSize"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object FontSize="double"/>  
+- or -  
+<object FontSize="qualifiedDouble"/>  
+```  
+  
+<a name="xamlValues_FontSize"></a>   
+## XAML Values  
+ *double*  
+ <xref:System.Double>  
+  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+  
+ *qualifiedDouble*  
+ A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+<a name="dependencyPropertyInfo_FontSize"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.TextElement.FontSizeProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.FontSize%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.  
+  
+ [!code-xml[TextElementSnippets#_TextElement_FontPropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_fontpropsxaml)]  
+  
+ The following figure shows how the preceding example renders.  
+  
+ ![Screenshot: Text with text properties set](~/add/media/textelement-fontprops.png "Screenshot: Text with text properties set")  
+  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.FontSize%2A> property programmatically.  
+  
+ [!code-csharp[TextElementSnippets#_TextElement_FontProps](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml.cs#_textelement_fontprops)]
+ [!code-vb[TextElementSnippets#_TextElement_FontProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextElementSnippets/visualbasic/window1.xaml.vb#_textelement_fontprops)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <see cref="P:System.Windows.Documents.TextElement.FontSize" /> is set to a value greater than 35791 or less than or equal to 0.001.</exception>
       </Docs>
     </Member>
     <Member MemberName="FontSizeProperty">
@@ -205,7 +390,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.TextElement.FontSize" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,9 +407,40 @@
         <ReturnType>System.Windows.FontStretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the font-stretching characteristics for the content of the element.</summary>
+        <value>A <see cref="T:System.Windows.FontStretch" /> structure that specifies the desired font-stretching characteristics to use. The default is <see cref="P:System.Windows.FontStretches.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is \<*object* <xref:System.Windows.Documents.TextElement.FontStretch%2A?displayProperty=fullName>="*value*".../>, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Documents.TextElement>, and *value* is one of the string-format property names of the <xref:System.Windows.FontStretch> class. In code, the attached property usage is supported by the <xref:System.Windows.Documents.TextElement.GetFontStretch%2A> and <xref:System.Windows.Documents.TextElement.SetFontStretch%2A> methods. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Documents.TextElement> support an analogous nonattached `FontStretch` property, which the content host uses for rendering.  
+  
+<a name="dependencyPropertyInfo_FontStretch"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.TextElement.FontStretchProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.FontStretch%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.  
+  
+ [!code-xml[TextElementSnippets#_TextElement_FontPropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_fontpropsxaml)]  
+  
+ The following figure shows how the preceding example renders.  
+  
+ ![Screenshot: Text with text properties set](~/add/media/textelement-fontprops.png "Screenshot: Text with text properties set")  
+  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.FontStretch%2A> property programmatically.  
+  
+ [!code-csharp[TextElementSnippets#_TextElement_FontProps](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml.cs#_textelement_fontprops)]
+ [!code-vb[TextElementSnippets#_TextElement_FontProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextElementSnippets/visualbasic/window1.xaml.vb#_textelement_fontprops)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontStretchProperty">
@@ -240,7 +456,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.TextElement.FontStretch" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,9 +473,40 @@
         <ReturnType>System.Windows.FontStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the font style for the content of the element.</summary>
+        <value>A member of the <see cref="T:System.Windows.FontStyles" /> class that specifies the desired font style. The default is determined by the <see cref="P:System.Windows.SystemFonts.MessageFontStyle" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is \<*object* <xref:System.Windows.Documents.TextElement.FontStyle%2A?displayProperty=fullName>="*value*".../>, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Documents.TextElement>, and *value* is one of the string-format property names in the <xref:System.Windows.FontStyles> class. In code, the attached property usage is supported by the <xref:System.Windows.Documents.TextElement.GetFontStyle%2A> and <xref:System.Windows.Documents.TextElement.SetFontStyle%2A> methods. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Documents.TextElement> support an analogous nonattached `FontStyle` property, which the content host uses for rendering.  
+  
+<a name="dependencyPropertyInfo_FontStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.TextElement.FontStyleProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.FontStyle%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.  
+  
+ [!code-xml[TextElementSnippets#_TextElement_FontPropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_fontpropsxaml)]  
+  
+ The following figure shows how the preceding example renders.  
+  
+ ![Screenshot: Text with text properties set](~/add/media/textelement-fontprops.png "Screenshot: Text with text properties set")  
+  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.FontStyle%2A> property programmatically.  
+  
+ [!code-csharp[TextElementSnippets#_TextElement_FontProps](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml.cs#_textelement_fontprops)]
+ [!code-vb[TextElementSnippets#_TextElement_FontProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextElementSnippets/visualbasic/window1.xaml.vb#_textelement_fontprops)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontStyleProperty">
@@ -275,7 +522,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.TextElement.FontStyle" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,9 +539,40 @@
         <ReturnType>System.Windows.FontWeight</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the top-level font weight for the content of the element.</summary>
+        <value>A member of the <see cref="T:System.Windows.FontWeights" /> class that specifies the desired font weight. The default value is determined by the <see cref="P:System.Windows.SystemFonts.MessageFontWeight" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is \<*object* <xref:System.Windows.Documents.TextElement.FontWeight%2A?displayProperty=fullName>="*value*".../>, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Documents.TextElement>, and *value* is one of the string-format values of the <xref:System.Windows.FontWeight> enumeration. In code, the attached property usage is supported by the <xref:System.Windows.Documents.TextElement.GetFontWeight%2A> and <xref:System.Windows.Documents.TextElement.SetFontWeight%2A> methods. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Documents.TextElement> support an analogous nonattached `FontWeight` property, which the content host uses for rendering.  
+  
+<a name="dependencyPropertyInfo_FontWeight"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.TextElement.FontWeightProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.FontWeight%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.  
+  
+ [!code-xml[TextElementSnippets#_TextElement_FontPropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_fontpropsxaml)]  
+  
+ The following figure shows how the preceding example renders.  
+  
+ ![Screenshot: Text with text properties set](~/add/media/textelement-fontprops.png "Screenshot: Text with text properties set")  
+  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.FontWeight%2A> property programmatically.  
+  
+ [!code-csharp[TextElementSnippets#_TextElement_FontProps](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml.cs#_textelement_fontprops)]
+ [!code-vb[TextElementSnippets#_TextElement_FontProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextElementSnippets/visualbasic/window1.xaml.vb#_textelement_fontprops)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontWeightProperty">
@@ -310,7 +588,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.TextElement.FontWeight" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,9 +605,42 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Brush" /> to apply to the content of the element.</summary>
+        <value>The brush used to apply to the text contents. The default is <see cref="P:System.Windows.Media.Brushes.Black" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a table of swatches that shows the available predefined brush colors, see <xref:System.Windows.Media.Brushes>.  
+  
+ This dependency property also has an attached property usage. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the usage is \<*object* <xref:System.Windows.Documents.TextElement.Foreground%2A?displayProperty=fullName>="*value*".../>, where *object* is an object element (typically a flow element) contained within a <xref:System.Windows.Documents.TextElement>, and *value* is a string that resolves to a <xref:System.Windows.Media.Brush> implementation value. In code, the attached property usage is supported by the <xref:System.Windows.Documents.TextElement.GetForeground%2A> and <xref:System.Windows.Documents.TextElement.SetForeground%2A> methods. The attached property usage is not common, because most elements that can be contained in a <xref:System.Windows.Documents.TextElement> support an analogous nonattached `Foreground` property, which the content host uses for rendering.  
+  
+<a name="dependencyPropertyInfo_Foreground"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.TextElement.ForegroundProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.Foreground%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.  
+  
+ [!code-xml[TextElementSnippets#_TextElement_BackgroundXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_backgroundxaml)]  
+  
+ The following figure shows how the preceding example renders.  
+  
+ ![Screenshot: Foreground of green, background bisque](~/add/media/textelement-foreback.png "Screenshot: Foreground of green, background bisque")  
+  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.Foreground%2A> property programmatically.  
+  
+ [!code-csharp[TextElementSnippets#_TextElement_Background](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml.cs#_textelement_background)]
+ [!code-vb[TextElementSnippets#_TextElement_Background](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextElementSnippets/visualbasic/window1.xaml.vb#_textelement_background)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForegroundProperty">
@@ -345,7 +656,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.TextElement.Foreground" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,10 +676,12 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The dependency object for which to retrieve the value of the <see cref="P:System.Windows.Documents.TextElement.FontFamily" /> property.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Documents.TextElement.FontFamily" /> attached property for a specified dependency object.</summary>
+        <returns>The current value of the <see cref="P:System.Windows.Documents.TextElement.FontFamily" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFontSize">
@@ -392,10 +705,12 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The dependency object for which to retrieve the value of the <see cref="P:System.Windows.Documents.TextElement.FontSize" /> property.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Documents.TextElement.FontSize" /> attached property for a specified dependency object.</summary>
+        <returns>The current value of the <see cref="P:System.Windows.Documents.TextElement.FontSize" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFontStretch">
@@ -414,10 +729,12 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The dependency object for which to retrieve the value of the <see cref="P:System.Windows.Documents.TextElement.FontStretch" /> property.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Documents.TextElement.FontStretch" /> attached property for a specified dependency object.</summary>
+        <returns>The current value of the <see cref="P:System.Windows.Documents.TextElement.FontStretch" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFontStyle">
@@ -436,10 +753,12 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The dependency object for which to retrieve the value of the <see cref="P:System.Windows.Documents.TextElement.FontStyle" /> property.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Documents.TextElement.FontStyle" /> attached property for a specified dependency object.</summary>
+        <returns>The current value of the <see cref="P:System.Windows.Documents.TextElement.FontStyle" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFontWeight">
@@ -458,10 +777,12 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The dependency object for which to retrieve the value of the <see cref="P:System.Windows.Documents.TextElement.FontWeight" /> property.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Documents.TextElement.FontWeight" /> attached property for a specified dependency object.</summary>
+        <returns>The current value of the <see cref="P:System.Windows.Documents.TextElement.FontWeight" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetForeground">
@@ -480,10 +801,12 @@
         <Parameter Name="element" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The dependency object for which to retrieve the value of the <see cref="P:System.Windows.Documents.TextElement.Foreground" /> property.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Documents.TextElement.Foreground" /> attached property for a specified dependency object.</summary>
+        <returns>The current value of the <see cref="P:System.Windows.Documents.TextElement.Foreground" /> attached property on the specified dependency object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -499,8 +822,8 @@
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an enumerator that can iterate the logical children of the element.</summary>
+        <value>An enumerator for the logical children.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,9 +843,16 @@
         <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">Arguments associated with the property value change.  The <see cref="P:System.Windows.DependencyPropertyChangedEventArgs.Property" /> property specifies which property has changed, the <see cref="P:System.Windows.DependencyPropertyChangedEventArgs.OldValue" /> property specifies the previous property value, and the <see cref="P:System.Windows.DependencyPropertyChangedEventArgs.NewValue" /> property specifies the new property value.</param>
+        <summary>Handles notifications that one or more of the dependency properties that exist on the element have had their effective values changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Windows.FrameworkContentElement.OnPropertyChanged%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFontFamily">
@@ -542,10 +872,12 @@
         <Parameter Name="value" Type="System.Windows.Media.FontFamily" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The dependency object for which to set the value of the <see cref="P:System.Windows.Documents.TextElement.FontFamily" /> property.</param>
+        <param name="value">The new value to set the property to.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Documents.TextElement.FontFamily" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetFontSize">
@@ -565,10 +897,12 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The dependency object for which to set the value of the <see cref="P:System.Windows.Documents.TextElement.FontSize" /> property.</param>
+        <param name="value">The new value to set the property to.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Documents.TextElement.FontSize" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetFontStretch">
@@ -588,10 +922,12 @@
         <Parameter Name="value" Type="System.Windows.FontStretch" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The dependency object for which to set the value of the <see cref="P:System.Windows.Documents.TextElement.FontStretch" /> property.</param>
+        <param name="value">The new value to set the property to.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Documents.TextElement.FontStretch" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetFontStyle">
@@ -611,10 +947,12 @@
         <Parameter Name="value" Type="System.Windows.FontStyle" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The dependency object for which to set the value of the <see cref="P:System.Windows.Documents.TextElement.FontStyle" /> property.</param>
+        <param name="value">The new value to set the property to.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Documents.TextElement.FontStyle" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetFontWeight">
@@ -634,10 +972,12 @@
         <Parameter Name="value" Type="System.Windows.FontWeight" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The dependency object for which to set the value of the <see cref="P:System.Windows.Documents.TextElement.FontWeight" /> property.</param>
+        <param name="value">The new value to set the property to.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Documents.TextElement.FontWeight" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetForeground">
@@ -657,10 +997,12 @@
         <Parameter Name="value" Type="System.Windows.Media.Brush" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The dependency object for which to set the value of the <see cref="P:System.Windows.Documents.TextElement.Foreground" /> property.</param>
+        <param name="value">The new value to set the property to.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Documents.TextElement.Foreground" /> attached property for a specified dependency object.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
@@ -679,8 +1021,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The child object to add.</param>
+        <summary>Adds a child object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -700,8 +1042,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -718,9 +1060,32 @@
         <ReturnType>System.Windows.Media.TextEffectCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a collection of text effects to apply to the content of the element.</summary>
+        <value>A <see cref="T:System.Windows.Media.TextEffectCollection" /> containing one or more <see cref="T:System.Windows.Media.TextEffect" /> objects that define effects to apply to the content in this element. The default is <see langword="null" /> (not an empty collection).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this property is set to `null` and has no <xref:System.Windows.Media.TextEffectCollection> associated with it.  Before adding any text effects, create a new <xref:System.Windows.Media.TextEffectCollection> and assign it to this property.  
+  
+<a name="dependencyPropertyInfo_TextEffects"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Documents.TextElement.TextEffectsProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to create a simple text effect and apply it to a text <xref:System.Windows.Documents.Run> through the <xref:System.Windows.Documents.TextElement.TextEffects%2A> property.  
+  
+ [!code-csharp[TextElementSnippets#_TextElement_TextEffects](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml.cs#_textelement_texteffects)]
+ [!code-vb[TextElementSnippets#_TextElement_TextEffects](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextElementSnippets/visualbasic/window1.xaml.vb#_textelement_texteffects)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextEffectsProperty">
@@ -736,7 +1101,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Documents.TextElement.TextEffects" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -753,9 +1118,36 @@
         <ReturnType>System.Windows.Documents.Typography</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the currently effective typography variations for the content of the element.</summary>
+        <value>A <see cref="T:System.Windows.Documents.Typography" /> object that specifies the currently effective typography variations. For a list of default typography values, see <see cref="T:System.Windows.Documents.Typography" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.FlowDocument.Typography%2A> property is applicable only to [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] fonts. A typography variant has no effect on fonts that do not support the variant.  For more information on this topic, see [Typography in WPF](../Topic/Typography%20in%20WPF.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.Typography%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.  
+  
+ [!code-xml[TextElementSnippets#_TextElement_TypogXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_typogxaml)]  
+  
+ The following figure shows how the preceding example renders.  
+  
+ ![Screenshot: Text with altered typography](~/add/media/textelement-typog.png "Screenshot: Text with altered typography")  
+  
+ In contrast, the following figure shows how a similar example with default typographic properties renders.  
+  
+ ![Screenshot: Text with altered typography](~/add/media/textelement-typog-default.png "Screenshot: Text with altered typography")  
+  
+ The following example shows how to set the <xref:System.Windows.Documents.TextElement.Typography%2A> property programmatically.  
+  
+ [!code-csharp[TextElementSnippets#_TextElement_Typog](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml.cs#_textelement_typog)]
+ [!code-vb[TextElementSnippets#_TextElement_Typog](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextElementSnippets/visualbasic/window1.xaml.vb#_textelement_typog)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

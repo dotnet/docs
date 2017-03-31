@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="owner" Type="System.Windows.Controls.Ribbon.RibbonComboBox" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The element associated with this automation peer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
+        <returns>The child elements of the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +72,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="patternInterface">A value enumeration that specifies the control pattern.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" />.</summary>
+        <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is the <see cref="F:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.ItemContainer" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.Scroll" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.Transform" />, or <see cref="F:System.Windows.Automation.Peers.PatternInterface.Value" /> value, this method returns an object that supports the control pattern; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +91,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> is read-only</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> is not enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +111,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the keyboard focus on the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.SetFocus" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> did not get focus.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -130,9 +132,12 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The value to set the <see cref="P:System.Windows.Controls.Ribbon.RibbonComboBox.Text" /> property to.</param>
+        <summary>Sets the <see cref="P:System.Windows.Controls.Ribbon.RibbonComboBox.Text" /> property of the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> to the specified value.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> is not enabled.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -148,8 +153,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="P:System.Windows.Controls.Ribbon.RibbonComboBox.Text" /> property of the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /></summary>
+        <value>The <see cref="P:System.Windows.Controls.Ribbon.RibbonComboBox.Text" /> property of the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

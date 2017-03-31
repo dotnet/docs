@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.IHierarchicalDataSource
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IHierarchicalDataSource.DataSourceChanged
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IHierarchicalDataSource.GetHierarchicalView(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the possible types of delivery failure for a message read from the queue.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can get the <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure%2A> property to determine why a message failed delivery and was sent to the dead-letter queue. For additional information about message processing in a dead-letter queue, see [Using Dead-Letter Queues to Handle Message Transfer Failures](../Topic/Using%20Dead-Letter%20Queues%20to%20Handle%20Message%20Transfer%20Failures.md).  
+  
+   
+  
+## Examples  
+ The example below shows how to access the <xref:System.ServiceModel.Channels.DeliveryFailure> of a message within a service operation.  
+  
+ [!code-csharp[S_DeadLetter#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_deadletter/cs/dlservice.cs#0)]
+ [!code-vb[S_DeadLetter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_deadletter/vb/dlservice.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AccessDenied">
@@ -27,7 +42,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The sender does not have access rights to place messages in the destination queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadDestinationQueue">
@@ -43,7 +58,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The destination queue was not found.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadEncryption">
@@ -59,7 +74,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The destination queue manager cannot decrypt the message.</summary>
       </Docs>
     </Member>
     <Member MemberName="BadSignature">
@@ -75,7 +90,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The destination queue manager cannot authenticate the message because the attached signature is invalid.</summary>
       </Docs>
     </Member>
     <Member MemberName="CouldNotEncrypt">
@@ -91,7 +106,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The source queue manager cannot encrypt the message.</summary>
       </Docs>
     </Member>
     <Member MemberName="HopCountExceeded">
@@ -107,7 +122,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message hop count was exceeded, which indicates the number of intermediate servers.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotTransactionalMessage">
@@ -123,7 +138,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A nontransactional message was sent to a transactional queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotTransactionalQueue">
@@ -139,7 +154,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A transactional message was sent to a nontransactional queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="Purged">
@@ -155,7 +170,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message was purged before reaching the destination queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueDeleted">
@@ -171,7 +186,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The destination queue was deleted before the message could be delivered to the application.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueueExceedMaximumSize">
@@ -187,7 +202,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message was not delivered because the destination queue is full.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueuePurged">
@@ -203,7 +218,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The queue was purged and the message no longer exists.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReachQueueTimeout">
@@ -219,7 +234,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message did not reach the destination queue before timing out.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReceiveTimeout">
@@ -235,7 +250,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The message was not delivered to the application on time.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -251,7 +266,7 @@
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unknown error occurred.</summary>
       </Docs>
     </Member>
   </Members>

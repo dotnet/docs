@@ -1,29 +1,41 @@
 ---
 uid: System.Web.UI.IDReferencePropertyAttribute
-internalonly: False
----
-
----
-uid: System.Web.UI.IDReferencePropertyAttribute.ReferencedControlType
-internalonly: False
----
-
----
-uid: System.Web.UI.IDReferencePropertyAttribute.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDReferencePropertyAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.IDReferencePropertyAttribute.ReferencedControlType
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.IDReferencePropertyAttribute.#ctor(System.Type)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.IDReferencePropertyAttribute.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDReferencePropertyAttribute.GetHashCode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IDReferencePropertyAttribute.Equals(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

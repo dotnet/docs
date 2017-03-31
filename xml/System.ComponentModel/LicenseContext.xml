@@ -20,8 +20,20 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies when you can use a licensed object and provides a way of obtaining additional services needed to support licenses running within its domain.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides the default <xref:System.ComponentModel.LicenseContext>. It implements only run-time support and does not support saved license keys.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>If you want to implement design-time license support, you must inherit from this class, and override the following members: <see cref="P:System.ComponentModel.LicenseContext.UsageMode" />, <see cref="M:System.ComponentModel.LicenseContext.GetSavedLicenseKey(System.Type,System.Reflection.Assembly)" />, <see cref="M:System.ComponentModel.LicenseContext.GetService(System.Type)" />, and <see cref="M:System.ComponentModel.LicenseContext.SetSavedLicenseKey(System.Type,System.String)" />. If you want to implement saved license keys, override the <see cref="M:System.ComponentModel.LicenseContext.GetSavedLicenseKey(System.Type,System.Reflection.Assembly)" /> and <see cref="M:System.ComponentModel.LicenseContext.SetSavedLicenseKey(System.Type,System.String)" /> methods.  
+  
+ For more information about licensing, see [How to: License Components and Controls](../Topic/How%20to:%20License%20Components%20and%20Controls.md).</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,7 +52,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.LicenseContext" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,11 +78,14 @@
         <Parameter Name="resourceAssembly" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="resourceAssembly">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">A <see cref="T:System.Type" /> that represents the type of component.</param>
+        <param name="resourceAssembly">An <see cref="T:System.Reflection.Assembly" /> with the license key.</param>
+        <summary>When overridden in a derived class, returns a saved license key for the specified type, from the specified resource assembly.</summary>
+        <returns>The <see cref="P:System.ComponentModel.License.LicenseKey" /> for the specified type. This method returns <see langword="null" /> unless you override it.</returns>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Override this method and the <see cref="M:System.ComponentModel.LicenseContext.SetSavedLicenseKey(System.Type,System.String)" /> method to implement a saved license key. If the <paramref name="resourceAssembly" /> parameter is <see langword="null" />, then you can retrieve the resource from the primary executing <see cref="T:System.Reflection.Assembly" />.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="GetService">
@@ -94,9 +109,9 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type of service to retrieve.</param>
+        <summary>Gets the requested service, if it is available.</summary>
+        <returns>An instance of the service, or <see langword="null" /> if the service cannot be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +137,20 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">A <see cref="T:System.Type" /> that represents the component associated with the license key.</param>
+        <param name="key">The <see cref="P:System.ComponentModel.License.LicenseKey" /> to save for the type of component.</param>
+        <summary>When overridden in a derived class, sets a license key for the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, call this method when you set <xref:System.ComponentModel.LicenseUsageMode> at design time. You must override the <xref:System.ComponentModel.LicenseContext.UsageMode%2A> property to implement design-time license support.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method does not provide support for a saved license key. Override this method and the <see cref="M:System.ComponentModel.LicenseContext.GetSavedLicenseKey(System.Type,System.Reflection.Assembly)" /> method to implement a key.</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="UsageMode">
@@ -146,9 +171,12 @@
         <ReturnType>System.ComponentModel.LicenseUsageMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets a value that specifies when you can use a license.</summary>
+        <value>One of the <see cref="T:System.ComponentModel.LicenseUsageMode" /> values that specifies when you can use a license. The default is <see cref="F:System.ComponentModel.LicenseUsageMode.Runtime" />.</value>
         <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>To implement design-time support, override this property in a class that inherits.</para>
+        </block>
       </Docs>
     </Member>
   </Members>

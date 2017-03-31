@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a base class to manage the serializers and type converters that insert [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] root objects into an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] package.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When overridden in a derived class, initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.PackageSerializationManager" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,8 +55,8 @@
         <Parameter Name="serializedObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="serializedObject">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serializedObject">The object to save.</param>
+        <summary>When overridden in a derived class, saves the specified serialized object to an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] package.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +74,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member supports the [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

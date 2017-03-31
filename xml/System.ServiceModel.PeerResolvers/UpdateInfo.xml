@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains the information used to update the endpoint address of a specific registration entry in the lookup table of a peer resolver service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of this class are primarily used to pass registration update request information to the resolver service from a network client of that service.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.PeerResolvers.UpdateInfo" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,12 +58,23 @@
         <Parameter Name="address" Type="System.ServiceModel.PeerNodeAddress" />
       </Parameters>
       <Docs>
-        <param name="registrationId">To be added.</param>
-        <param name="client">To be added.</param>
-        <param name="meshId">To be added.</param>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="registrationId">
+          <see cref="T:System.Guid" /> that specifies the unique ID of the registration entry to update.</param>
+        <param name="client">
+          <see cref="T:System.Guid" /> that specifies the unique ID of the peer client that submitted the updated registration entry information.</param>
+        <param name="meshId">
+          <see cref="T:System.String" /> that contains the mesh ID of the entry.</param>
+        <param name="address">
+          <see cref="T:System.ServiceModel.PeerNodeAddress" /> that contains the endpoint address to update for the registration entry.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerResolvers.UpdateInfo" /> class with the supplied peer client ID, registration ID, peer mesh ID, and peer endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A peer can have multiple entries for any mesh ID, each for a specific peer endpoint. Each endpoint entry is updated separately.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClientId">
@@ -72,8 +90,9 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unique ID of the peer client that submitted the updated registration entry information.</summary>
+        <value>
+          <see cref="T:System.Guid" /> that specifies the unique ID of the peer client that submitted the updated registration entry information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +110,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Indicates whether the body of the message containing a serialized instance of this type is correctly formed.</summary>
+        <returns>True if the registration update information body is correctly-formed by the sender; false if it is not.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +128,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the mesh ID of the registration entry.</summary>
+        <value>
+          <see cref="T:System.String" /> that contains the mesh ID of the updated registration entry.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +147,9 @@
         <ReturnType>System.ServiceModel.PeerNodeAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the endpoint address to update for the registration entry.</summary>
+        <value>
+          <see cref="T:System.ServiceModel.PeerNodeAddress" /> that contains the endpoint address to update for the registration entry.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,8 +166,9 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unique ID of the registration entry to update.</summary>
+        <value>
+          <see cref="T:System.Guid" /> that specifies the unique ID of the registration entry to update.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

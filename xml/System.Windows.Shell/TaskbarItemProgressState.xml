@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the state of the progress indicator in the Windows taskbar.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can communicate the progress of long-running tasks by displaying a progress indicator in the [!INCLUDE[win7](~/includes/win7-md.md)] taskbar. The color of the indicator is determined by the <xref:System.Windows.Shell.TaskbarItemInfo.ProgressState%2A> property, which contains one of the <xref:System.Windows.Shell.TaskbarItemProgressState> enumeration values. If the <xref:System.Windows.Shell.TaskbarItemProgressState> is Normal, Paused, or Error, the <xref:System.Windows.Shell.TaskbarItemInfo.ProgressValue%2A> property determines the completeness of the progress indicator. <xref:System.Windows.Shell.TaskbarItemInfo.ProgressValue%2A> is ignored for other values of <xref:System.Windows.Shell.TaskbarItemInfo.ProgressState%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Error">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Shell.TaskbarItemProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A red progress indicator is displayed in the taskbar button.</summary>
       </Docs>
     </Member>
     <Member MemberName="Indeterminate">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Shell.TaskbarItemProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A pulsing green indicator is displayed in the taskbar button.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -59,7 +66,7 @@
         <ReturnType>System.Windows.Shell.TaskbarItemProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No progress indicator is displayed in the taskbar button.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -75,7 +82,7 @@
         <ReturnType>System.Windows.Shell.TaskbarItemProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A green progress indicator is displayed in the taskbar button.</summary>
       </Docs>
     </Member>
     <Member MemberName="Paused">
@@ -91,7 +98,7 @@
         <ReturnType>System.Windows.Shell.TaskbarItemProgressState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A yellow progress indicator is displayed in the taskbar button.</summary>
       </Docs>
     </Member>
   </Members>

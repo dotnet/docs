@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains arguments associated with changes to a <see cref="T:System.Windows.Input.TextComposition" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Attached events supported by this delegate include are provided by the <xref:System.Windows.Input.TextCompositionManager> class, and include <xref:System.Windows.Input.TextCompositionManager.TextInput> (<xref:System.Windows.Input.TextCompositionManager.PreviewTextInput>), <xref:System.Windows.Input.TextCompositionManager.TextInputStart> (<xref:System.Windows.Input.TextCompositionManager.PreviewTextInputStart>), and <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate> (<xref:System.Windows.Input.TextCompositionManager.PreviewTextInputUpdate>).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,10 +36,11 @@
         <Parameter Name="composition" Type="System.Windows.Input.TextComposition" />
       </Parameters>
       <Docs>
-        <param name="inputDevice">To be added.</param>
-        <param name="composition">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="inputDevice">The input device associated with this event.</param>
+        <param name="composition">A <see cref="T:System.Windows.Input.TextComposition" /> object associated with this event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.TextCompositionEventArgs" /> class, taking a specified <see cref="T:System.Windows.Input.InputDevice" /> and <see cref="T:System.Windows.Input.TextComposition" /> as initial values for the class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when *composition* is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="ControlText">
@@ -48,8 +56,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets control text associated with a <see cref="T:System.Windows.Input.TextComposition" /> event.</summary>
+        <value>A string containing any control text associated with this event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,10 +78,17 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">To be added.</param>
-        <param name="genericTarget">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="genericHandler">The generic handler to call in a type-specific way.</param>
+        <param name="genericTarget">The target to call the handler on.</param>
+        <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation casts the generic handler as a <xref:System.Windows.Input.TextCompositionEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SystemText">
@@ -89,8 +104,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets system text associated with a <see cref="T:System.Windows.Input.TextComposition" /> event.</summary>
+        <value>A string containing any system text associated with this event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +122,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets input text associated with a <see cref="T:System.Windows.Input.TextComposition" /> event.</summary>
+        <value>A string containing the input text associated with this event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,8 +140,8 @@
         <ReturnType>System.Windows.Input.TextComposition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Input.TextComposition" /> associated with a <see cref="T:System.Windows.Input.TextComposition" /> event.</summary>
+        <value>A <see cref="T:System.Windows.Input.TextComposition" /> object containing the text composition associated with this event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,14 @@
 ---
 uid: System.Xaml.IXamlIndexingReader
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlIndexingReader.CurrentIndex
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlIndexingReader.Count
-internalonly: False
+manager: "martinek"
 ---

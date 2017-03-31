@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides programmatic access to the context of the incoming Web response.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,8 +30,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the content length header from the incoming Web response.</summary>
+        <value>The content length of the incoming Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +49,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the content type header from the incoming Web response.</summary>
+        <value>The content type header of the incoming Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +68,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the etag header from the incoming Web response.</summary>
+        <value>The etag header of the incoming Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +87,8 @@
         <ReturnType>System.Net.WebHeaderCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the headers from the incoming Web response.</summary>
+        <value>A <see cref="T:System.Net.WebHeaderCollection" /> instance that contains the headers from the incoming Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location header from the incoming Web response.</summary>
+        <value>The location header from the incoming Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,8 +125,8 @@
         <ReturnType>System.Net.HttpStatusCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the status code of the incoming Web response.</summary>
+        <value>A <see cref="T:System.Net.HttpStatusCode" /> instance that contains the status code of the incoming Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +144,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the status description of the incoming Web response.</summary>
+        <value>The status description of the incoming Web response.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

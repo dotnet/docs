@@ -1,14 +1,14 @@
 ---
 uid: Microsoft.JScript.BitwiseBinary
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BitwiseBinary.#ctor(System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.BitwiseBinary.EvaluateBitwiseBinary(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

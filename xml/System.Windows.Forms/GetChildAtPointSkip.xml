@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies which child controls to skip.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system maintains an internal list that contains the child controls associated with a parent window. The order of the controls in the list depends on the z-order of the child controls. If more than one child window contains the specified point, the system returns the first control in the list that contains the point and meets the criteria specified by <xref:System.Windows.Forms.GetChildAtPointSkip>.  
+  
+ For more information, see `ChildWindowFromPointEx` in the Platform SDK documentation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -32,7 +41,7 @@
         <ReturnType>System.Windows.Forms.GetChildAtPointSkip</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Skips disabled child windows.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invisible">
@@ -48,7 +57,7 @@
         <ReturnType>System.Windows.Forms.GetChildAtPointSkip</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Skips invisible child windows.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +73,7 @@
         <ReturnType>System.Windows.Forms.GetChildAtPointSkip</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Does not skip any child windows.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transparent">
@@ -80,7 +89,7 @@
         <ReturnType>System.Windows.Forms.GetChildAtPointSkip</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Skips transparent child windows.</summary>
       </Docs>
     </Member>
   </Members>

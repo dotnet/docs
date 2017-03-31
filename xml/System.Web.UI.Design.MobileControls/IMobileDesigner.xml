@@ -13,8 +13,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the interface for all mobile control designers between the .NET framework and a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)]. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface adds one method to the base designer interface: <xref:System.Web.UI.Design.MobileControls.IMobileDesigner.UpdateRendering%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="UpdateRendering">
@@ -31,7 +38,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Updates design-time rendering for the container control that implements the <see cref="T:System.Web.UI.Design.MobileControls.IMobileDesigner" /> interface. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -20,8 +20,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies whether a calendar is solar-based, lunar-based, or lunisolar-based.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A date calculation for a particular calendar depends on whether the calendar is solar-based, lunar-based, or lunisolar-based. For example, the <xref:System.Globalization.GregorianCalendar>, <xref:System.Globalization.JapaneseCalendar>, and <xref:System.Globalization.JulianCalendar> classes are solar-based, the <xref:System.Globalization.HijriCalendar> and <xref:System.Globalization.UmAlQuraCalendar> classes are lunar-based,.and the <xref:System.Globalization.HebrewCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes are lunisolar-based, thus using solar calculations for the year and lunar calculations for the month and day.  
+  
+ A <xref:System.Globalization.CalendarAlgorithmType> value, which is returned by a calendar member such as the <xref:System.Globalization.Calendar.AlgorithmType%2A?displayProperty=fullName> property, specifies the foundation for a particular calendar.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Globalization.Calendar.AlgorithmType%2A> property and the <xref:System.Globalization.CalendarAlgorithmType> enumeration.  
+  
+ [!code-cpp[sys.glob.calendartype#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.glob.calendartype/CPP/caltype.cpp#1)]
+ [!code-csharp[sys.glob.calendartype#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.calendartype/CS/caltype.cs#1)]
+ [!code-vb[sys.glob.calendartype#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.calendartype/VB/caltype.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="LunarCalendar">
@@ -42,7 +60,7 @@
         <ReturnType>System.Globalization.CalendarAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A lunar-based calendar.</summary>
       </Docs>
     </Member>
     <Member MemberName="LunisolarCalendar">
@@ -63,7 +81,7 @@
         <ReturnType>System.Globalization.CalendarAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A lunisolar-based calendar.</summary>
       </Docs>
     </Member>
     <Member MemberName="SolarCalendar">
@@ -84,7 +102,7 @@
         <ReturnType>System.Globalization.CalendarAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A solar-based calendar.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -105,7 +123,7 @@
         <ReturnType>System.Globalization.CalendarAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unknown calendar basis.</summary>
       </Docs>
     </Member>
   </Members>

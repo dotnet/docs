@@ -12,7 +12,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This interface extends IBuildEngine to provide a mechanism allowing tasks to share data between task invocations.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,10 +33,10 @@
         <Parameter Name="lifetime" Type="Microsoft.Build.Framework.RegisteredTaskObjectLifetime" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="lifetime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key used to retrieve the object.</param>
+        <param name="lifetime">The lifetime of the object.</param>
+        <summary>Retrieves a previously registered task object stored with the specified key.</summary>
+        <returns>Returns a registered object, or null if there is no object registered under that key or if the object has been discarded through early collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,12 +59,23 @@
         <Parameter Name="allowEarlyCollection" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="obj">To be added.</param>
-        <param name="lifetime">To be added.</param>
-        <param name="allowEarlyCollection">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The key used to retrieve the object.</param>
+        <param name="obj">The object to be held for later disposal.</param>
+        <param name="lifetime">The lifetime of the object.</param>
+        <param name="allowEarlyCollection">Flag that determines whether the object can be disposed earlier than the requested time.</param>
+        <summary>Registers an object with the system that will be disposed of at some specified time in the future.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method may be called by tasks which need to maintain state across task invocations, such as data caching tasks. It is strongly recommended that `allowEarlyCollection` be set to `true` if the object will retain any significant amount of data.  
+  
+ The thread on which the object is disposed may be arbitrarily, but it will not be disposed while the task is executing, even if `allowEarlyCollection` is set to `true`.  
+  
+ If the object implements IDisposable, IDisposable.Dispose will be invoked on the object before discarding it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnregisterTaskObject">
@@ -84,10 +95,10 @@
         <Parameter Name="lifetime" Type="Microsoft.Build.Framework.RegisteredTaskObjectLifetime" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="lifetime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key used to retrieve the object.</param>
+        <param name="lifetime">The lifetime of the object.</param>
+        <summary>Unregisters a previously registered task object.</summary>
+        <returns>Returns a previously registered object, or null if there is no object registered under that key or if the object has been discarded through early collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the order in which items are added to the legend.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendItemOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The chart automatically determines the order in which items are added to the legend.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReversedSeriesOrder">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendItemOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Items are added to the legend in the reverse order of items added to the chart series.</summary>
       </Docs>
     </Member>
     <Member MemberName="SameAsSeriesOrder">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendItemOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Items are added to the legend in the same order as items added to the chart series.</summary>
       </Docs>
     </Member>
   </Members>

@@ -25,8 +25,39 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Client activity that models the synchronous invocation of a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Activities.SendActivity> activity enables you to participate in a conversation with a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service using a predefined message exchange pattern.  
+  
+> [!NOTE]
+>  The <xref:System.Workflow.Activities.SendActivity> activity is a blocking activity, meaning that workflow execution is blocked until the activity completes execution.  
+  
+ The message exchange patterns supported by the <xref:System.Workflow.Activities.SendActivity> activity include:  
+  
+-   One-way Send Message  
+  
+     The <xref:System.Workflow.Activities.SendActivity> activity sends a message but does not expect a response from the service.  
+  
+-   Send Request - Receive Reply  
+  
+     The <xref:System.Workflow.Activities.SendActivity> activity sends a message and waits until a response is received from the service.  
+  
+-   Send Request - Receive Fault  
+  
+     The <xref:System.Workflow.Activities.SendActivity> activity sends a message and waits until a response or a fault is received from the service. During execution, the send activity throws all of the faults that were received from the server. <xref:System.Workflow.ComponentModel.FaultHandlerActivity> activities can be used to handle the faults in the client workflow.  
+  
+> [!NOTE]
+>  This activity is part of [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)]. For the equivalent activity in [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], see <xref:System.ServiceModel.Activities.Send>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,8 +71,22 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SendActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.SendActivity> constructor is typically invoked in the code-beside file created by the workflow designer.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a new instance of the <xref:System.Workflow.Activities.SendActivity> class.  This example was adapted from the `Conversations` SDK sample.  
+  
+ [!code-csharp[SendActivity#16](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#16)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -57,9 +102,23 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The value assigned to <see cref="P:System.Workflow.ComponentModel.Activity.Name" /> when the activity is initialized.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SendActivity" /> class with the specified <see langword="name" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.SendActivity> constructor is typically invoked in the code-beside file created by the workflow designer.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a new instance of the <xref:System.Workflow.Activities.SendActivity> class.  
+  
+ [!code-csharp[SendActivity#17](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#17)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AfterResponse">
@@ -83,8 +142,22 @@
         <ReturnType>System.EventHandler&lt;System.Workflow.Activities.SendActivityEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs after the response has been received from the service.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event handler associated with this event can be used to read the return value from the service operation invoked.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the `AfterResponse` event.  
+  
+ [!code-csharp[SendActivity#2](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AfterResponseEvent">
@@ -100,8 +173,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.Activities.SendActivity.AfterResponse" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This dependency event property can be used to bind the send activity's <xref:System.Workflow.Activities.SendActivity.AfterResponse> event to a public event handler on the workflow class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeSend">
@@ -125,8 +205,25 @@
         <ReturnType>System.EventHandler&lt;System.Workflow.Activities.SendActivityEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs before the <see cref="T:System.Workflow.Activities.SendActivity" /> activity sends the message to the service.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event handler associated with this event can be used to set the parameter values for the service operation being invoked.  
+  
+> [!NOTE]
+>  The context of a <xref:System.Workflow.Activities.SendActivity> cannot be set in this event handler.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the `BeforeSend` event. This example was adapted from the `Conversations` SDK sample.  
+  
+ [!code-csharp[SendActivity#3](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeSendEvent">
@@ -142,8 +239,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.Activities.SendActivity.BeforeSend" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This dependency event property can be used to bind the send activity's <xref:System.Workflow.Activities.SendActivity.BeforeSend> event to a public event handler on the workflow class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChannelToken">
@@ -170,9 +274,26 @@
         <ReturnType>System.Workflow.Activities.ChannelToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <see cref="T:System.Workflow.Activities.ChannelToken" /> used by the <see cref="T:System.Workflow.Activities.SendActivity" /> to associate itself with a client channel.</summary>
+        <value>A <see cref="T:System.Workflow.Activities.ChannelToken" /> defining a client channel that a <see cref="T:System.Workflow.Activities.SendActivity" /> uses to communicate with a service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A channel token specifies the name of the channel, the scope of the channel, and the endpoint configuration name to be used in establishing the channel. The endpoint name in the configuration file has the address, binding, and contract information for a service that the <xref:System.Workflow.Activities.SendActivity> activity communicates with.  
+  
+ The channel token also specifies a unique channel name and an owner activity name for the token. A channel token can be shared between multiple send activities that want to use the same endpoint to communicate with a service.  
+  
+   
+  
+## Examples  
+ The following example shows how to access the `ChannelToken` property. This example was adapted from the `CalculatorClient` SDK sample.  
+  
+ [!code-csharp[SendActivity#7](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -196,9 +317,23 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns a dictionary that contains the context used for communication between the client and the service it is communicating with, including such things as identification for correlation.</summary>
+        <value>A dictionary-based collection that contains <see cref="T:System.Xml.XmlQualifiedName" /> keys and their associated <see cref="T:System.String" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Context information is used for communication between the client and the service it is communicating with and includes such things as identification for correlation.  
+  
+   
+  
+## Examples  
+ The following example shows how to access the `Context` property. This example was adapted from the `CalculatorClient` SDK sample.  
+  
+ [!code-csharp[SendActivity#8](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#8)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomAddress">
@@ -219,9 +354,23 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the custom address used to communicate with a service.</summary>
+        <value>String value whose value is the address a service is listening on.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If present, this value is used to define the endpoint address for the operation.  
+  
+   
+  
+## Examples  
+ The following example shows how to access the `CustomAddress` property. This example was adapted from the `CalculatorClient` SDK sample.  
+  
+ [!code-csharp[SendActivity#9](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#9)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomAddressProperty">
@@ -237,8 +386,15 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> for the <see cref="P:System.Workflow.Activities.SendActivity.CustomAddress" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If present, this value is used to define the endpoint address for the operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -281,12 +437,26 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <param name="contractType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="activity">Activity whose context information is required.</param>
+        <param name="endpoint">Endpoint information for correlation with a service.</param>
+        <param name="contractType">The <see cref="T:System.Type" /> of the contract implemented by a service.</param>
+        <summary>Gets or sets the context information for a send operation.</summary>
+        <returns>A dictionary-based collection that contains <see cref="T:System.Xml.XmlQualifiedName" /> keys and their associated <see cref="T:System.String" /> values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Context information is used for communication between the client and the service it is communicating with and includes such things as identification for correlation.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the `GetContext` method.  
+  
+ [!code-csharp[SendActivity#12](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#12)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContext">
@@ -308,13 +478,27 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="endpointName">To be added.</param>
-        <param name="ownerActivityName">To be added.</param>
-        <param name="contractType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="activity">Activity whose context information is required.</param>
+        <param name="endpointName">Name of the endpoint used for correlation with a service.</param>
+        <param name="ownerActivityName">The name of the owning activity.</param>
+        <param name="contractType">The <see cref="T:System.Type" /> of the contract implemented by a service.</param>
+        <summary>Static method that returns context information given an activity instance, an endpoint name used by that activity, the name of the owner activity, and a <see cref="T:System.Type" /> object that represents the type of the contract.</summary>
+        <returns>A dictionary-based collection that contains <see cref="T:System.Xml.XmlQualifiedName" /> keys and their associated <see cref="T:System.String" /> values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Context information is used for communication between the client and the service it is communicating with and includes such things as identification for correlation.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the `GetContext` method.  
+  
+ [!code-csharp[SendActivity#15](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#15)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InitializeProperties">
@@ -356,9 +540,27 @@
         <ReturnType>System.Workflow.ComponentModel.WorkflowParameterBindingCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of bindable parameters as found in the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service's formal parameter list.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBindingCollection" /> of parameters to bind to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.SendActivity.ParameterBindings%2A> can be used to specify bindings between the service operation parameters and public field and properties of the workflow that contains the <xref:System.Workflow.Activities.SendActivity> activity. When the <xref:System.Workflow.Activities.SendActivity> activity executes, the corresponding parameter values are read from the workflow properties they are bound to and are sent to the service as service operation parameters.  
+  
+ <xref:System.Workflow.Activities.SendActivity.ParameterBindings%2A> can also be used to retrieve the return values from a service operation.  
+  
+ All parameters of the service operation should be bound. Unbound service operation parameters produce compiler warnings and the default values of the parameter are sent when the <xref:System.Workflow.Activities.SendActivity> is invoked.  
+  
+   
+  
+## Examples  
+ The following example shows how to access the `ParameterBindings` property. This example was adapted from the `Conversations` SDK sample.  
+  
+ [!code-csharp[SendActivity#0](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#0)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnValuePropertyName">
@@ -374,8 +576,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Name of the property that is used for the return value sent by the service that the <see langword="SendActivity" /> activity is communicating with.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This string can be used to retrieve the return value from the <xref:System.Workflow.Activities.SendActivity.ParameterBindings%2A> associated with the <xref:System.Workflow.Activities.SendActivity> activity in the <xref:System.Workflow.Activities.SendActivity.AfterResponse> event handler.  
+  
+   
+  
+## Examples  
+ The following example shows how to access the `ReturnValuePropertyName` field.  
+  
+ [!code-csharp[SendActivity#6](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceOperationInfo">
@@ -399,9 +615,23 @@
         <ReturnType>System.Workflow.Activities.TypedOperationInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Defines the contract and operation of the service that the <see langword="SendActivity" /> activity communicates with.</summary>
+        <value>A <see cref="T:System.Workflow.Activities.TypedOperationInfo" /> object that contains the contract name, the contract type, the operation name, (which may be distinct from the actual method name), whether the operation is a one-way operation, and method information including parameters about the operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.SendActivity> activity always refers to an existing contract and its defined operations. There is no provision that allows a <xref:System.Workflow.Activities.SendActivity> activity to define a contract itself.  
+  
+   
+  
+## Examples  
+ The following example shows how to access the `ServiceOperationInfo` property. This example was adapted from the `Conversations` SDK sample.  
+  
+ [!code-csharp[SendActivity#1](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetContext">
@@ -423,12 +653,26 @@
         <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <param name="contractType">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="activity">The Activity instance to associate the context information with.</param>
+        <param name="endpoint">The endpoint used for correlation with a service.</param>
+        <param name="contractType">The <see cref="T:System.Type" /> of the contract implemented by a service.</param>
+        <param name="context">The context information to set.</param>
+        <summary>A static method that sets context information for a <see cref="T:System.Workflow.Activities.SendActivity" /> activity, given an activity instance, an endpoint used by that activity, a <see cref="T:System.Type" /> object that represents the type of the contract, and the context information itself.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Context information is used for communication between the client and the service it is communicating with and includes such things as identification for correlation.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the `SetContext` method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetContext">
@@ -451,14 +695,74 @@
         <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="endpointName">To be added.</param>
-        <param name="ownerActivityName">To be added.</param>
-        <param name="contractType">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="activity">The Activity instance to associate the context information with.</param>
+        <param name="endpointName">The name of an endpoint used for correlation with a service.</param>
+        <param name="ownerActivityName">The name of the owning activity</param>
+        <param name="contractType">The <see cref="T:System.Type" /> of the contract implemented by a service.</param>
+        <param name="context">The context information to set.</param>
+        <summary>A static method that sets context information for a <see cref="T:System.Workflow.Activities.SendActivity" /> activity, given an activity instance, an endpoint name used by that activity, the name of the owner activity, a <see cref="T:System.Type" /> object that represents the type of the contract, and the context information itself.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the `SetContext` method.  
+  
+ [!code-csharp[SendActivity#15](~/samples/snippets/csharp/VS_Snippets_CFX/sendactivity/cs/snippets.cs#15)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SendActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.SendActivity> constructor is typically invoked in the code-beside file created by the workflow designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetContext">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets context information for a <see cref="T:System.Workflow.Activities.SendActivity" /> activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Context information is used for communication between the client and the service it is communicating and includes such things as identification for correlation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetContext">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a dictionary that contains the context used for communication between the client and the service it is communicating with, including such things as identification for correlation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Context information is used for communication between the client and the service it is communicating with and includes such things as identification for correlation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,29 +1,35 @@
 ---
 uid: Microsoft.Build.Execution.ProjectMetadataInstance
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectMetadataInstance.ToString
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectMetadataInstance.System#IEquatable{Microsoft#Build#Execution#ProjectMetadataInstance}#Equals(Microsoft.Build.Execution.ProjectMetadataInstance)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectMetadataInstance.DeepClone
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectMetadataInstance.Name
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Execution.ProjectMetadataInstance.EvaluatedValue
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

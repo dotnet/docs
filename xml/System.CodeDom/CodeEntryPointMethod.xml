@@ -19,8 +19,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the entry point method of an executable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.CodeDom.CodeEntryPointMethod> is a <xref:System.CodeDom.CodeMemberMethod> that represents the entry point method of an executable.  
+  
+   
+  
+## Examples  
+ This example demonstrates using a <xref:System.CodeDom.CodeEntryPointMethod> to indicate the method to start program execution at.  
+  
+ [!code-cpp[CodeEntryPointMethod#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeEntryPointMethod/CPP/codeentrypointmethodexample.cpp#2)]
+ [!code-csharp[CodeEntryPointMethod#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeEntryPointMethod/CS/codeentrypointmethodexample.cs#2)]
+ [!code-vb[CodeEntryPointMethod#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeEntryPointMethod/VB/codeentrypointmethodexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +50,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeEntryPointMethod" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

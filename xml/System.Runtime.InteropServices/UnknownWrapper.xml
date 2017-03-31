@@ -29,8 +29,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Wraps objects the marshaler should marshal as a <see langword="VT_UNKNOWN" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only applies when the managed signature of a method takes an object.  
+  
+```  
+int MyMethod(Object o); //Managed signature  
+    HRESULT MyMethod(VARIANT o); //COM signature  
+    MyObject o = new MyObject();  
+    MyMethod(o); //o gets passed as VARIANT VT_DISPATCH  
+    MyMethod(new UnknownWrapper(o)); //o gets passed as VARIANT VT_UNKNOWN  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,8 +74,8 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="obj">The object being wrapped.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.UnknownWrapper" /> class with the object to be wrapped.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +105,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the object contained by this wrapper.</summary>
+        <value>The wrapped object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

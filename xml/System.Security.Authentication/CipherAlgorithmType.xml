@@ -19,8 +19,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the possible cipher algorithms for the <see cref="T:System.Net.Security.SslStream" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration specifies valid values for the <xref:System.Net.Security.SslStream.CipherAlgorithm?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of an <xref:System.Net.Security.SslStream>.  
+  
+ [!code-cpp[NCLSslClientAsync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#3)]
+ [!code-csharp[NCLSslClientAsync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Aes">
@@ -45,7 +60,7 @@
         <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Advanced Encryption Standard (AES) algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="Aes128">
@@ -70,7 +85,7 @@
         <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Advanced Encryption Standard (AES) algorithm with a 128 bit key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Aes192">
@@ -95,7 +110,7 @@
         <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Advanced Encryption Standard (AES) algorithm with a 192 bit key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Aes256">
@@ -120,7 +135,7 @@
         <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Advanced Encryption Standard (AES) algorithm with a 256 bit key.</summary>
       </Docs>
     </Member>
     <Member MemberName="Des">
@@ -145,7 +160,7 @@
         <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Data Encryption Standard (DES) algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -170,7 +185,7 @@
         <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No encryption algorithm is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -195,7 +210,7 @@
         <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No encryption is used with a Null cipher algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rc2">
@@ -220,7 +235,7 @@
         <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rivest's Code 2 (RC2) algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rc4">
@@ -245,7 +260,7 @@
         <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Rivest's Code 4 (RC4) algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="TripleDes">
@@ -270,7 +285,7 @@
         <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Triple Data Encryption Standard (3DES) algorithm.</summary>
       </Docs>
     </Member>
   </Members>

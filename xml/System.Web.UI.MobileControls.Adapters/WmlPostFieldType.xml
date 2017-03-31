@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how a post field is rendered. This class cannot be inherited. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.WmlPostFieldType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The value is written as a literal, with encoding. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
     </Member>
     <Member MemberName="Raw">
@@ -48,7 +48,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.WmlPostFieldType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The value is written as a literal, without encoding. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
     </Member>
     <Member MemberName="Submit">
@@ -64,7 +64,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.WmlPostFieldType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The value is written as <see cref="F:System.Web.UI.MobileControls.Adapters.WmlPostFieldType.Normal" /> with an associated submit action. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
     </Member>
     <Member MemberName="Variable">
@@ -80,7 +80,7 @@
         <ReturnType>System.Web.UI.MobileControls.Adapters.WmlPostFieldType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The value is written as a variable name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
     </Member>
   </Members>

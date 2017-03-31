@@ -27,8 +27,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides access to manifest resources, which are XML files that describe application dependencies.</summary>
     <remarks>To be added.</remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,10 +58,10 @@
         <Parameter Name="resourceLocation" Type="System.Reflection.ResourceLocation" />
       </Parameters>
       <Docs>
-        <param name="containingAssembly">To be added.</param>
-        <param name="containingFileName">To be added.</param>
-        <param name="resourceLocation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="containingAssembly">The assembly that contains the manifest resource.</param>
+        <param name="containingFileName">The name of the file that contains the manifest resource, if the file is not the same as the manifest file.</param>
+        <param name="resourceLocation">A bitwise combination of enumeration values that provides information about the location of the manifest resource.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.ManifestResourceInfo" /> class for a resource that is contained by the specified assembly and file, and that has the specified location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +89,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the file that contains the manifest resource, if it is not the same as the manifest file.</summary>
+        <value>The manifest resource's file name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,8 +118,8 @@
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the containing assembly for the manifest resource.</summary>
+        <value>The manifest resource's containing assembly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +147,8 @@
         <ReturnType>System.Reflection.ResourceLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the manifest resource's location.</summary>
+        <value>A bitwise combination of <see cref="T:System.Reflection.ResourceLocation" /> flags that indicates the location of the manifest resource.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the configuration section for scripting settings. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Configuration.ScriptingSectionGroup> class to programmatically set and retrieve the values of the `scripting` section of the configuration file.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ScriptingSectionGroup" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +55,16 @@
         <ReturnType>System.Web.Configuration.ScriptingScriptResourceHandlerSection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Web.Configuration.ScriptingScriptResourceHandlerSection" /> object that is derived from the current system configuration.</summary>
+        <value>A <see cref="T:System.Web.Configuration.ScriptingScriptResourceHandlerSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the `ScriptingScriptResourceHandler` configuration section to set whether script files that are embedded as resources are compressed and cached. You can enable or disable compression and caching by using the <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCompression%2A> and <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCaching%2A> properties.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WebServices">
@@ -71,8 +85,8 @@
         <ReturnType>System.Web.Configuration.ScriptingWebServicesSectionGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Web.Configuration.ScriptingWebServicesSectionGroup" /> object that is derived from the current system configuration.</summary>
+        <value>A <see cref="T:System.Web.Configuration.ScriptingWebServicesSectionGroup" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

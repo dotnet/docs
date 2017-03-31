@@ -25,8 +25,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates whether the name of the associated property is displayed with parentheses in the Properties window. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.ComponentModel.ParenthesizePropertyNameAttribute> with a <xref:System.ComponentModel.ParenthesizePropertyNameAttribute.NeedParenthesis%2A> value of `true` indicates to the Properties window that the associated property should be displayed with parentheses around its name. The Properties window displays a property with parentheses around its name near the top of the list in alphabetical mode, or near the top of its category if the Properties window is in categorize mode.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,7 +56,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ParenthesizePropertyNameAttribute" /> class that indicates that the associated property should not be shown with parentheses.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +82,9 @@
         <Parameter Name="needParenthesis" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="needParenthesis">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="needParenthesis">
+          <see langword="true" /> if the name should be enclosed in parentheses; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ParenthesizePropertyNameAttribute" /> class, using the specified value to indicate whether the attribute is displayed with parentheses.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +110,7 @@
         <ReturnType>System.ComponentModel.ParenthesizePropertyNameAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ParenthesizePropertyNameAttribute" /> class with a default value that indicates that the associated property should not be shown with parentheses. This field is read-only.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +139,10 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="o">The object to be compared.</param>
+        <summary>Compares the specified object to this object and tests for equality.</summary>
+        <returns>
+          <see langword="true" /> if equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +169,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the hash code for this object.</summary>
+        <returns>The hash code for the object the attribute belongs to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +193,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a value indicating whether the current value of the attribute is the default value for the attribute.</summary>
+        <returns>
+          <see langword="true" /> if the current value of the attribute is the default value of the attribute; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +221,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the Properties window displays the name of the property in parentheses in the Properties window.</summary>
+        <value>
+          <see langword="true" /> if the property is displayed with parentheses; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

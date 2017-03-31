@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents HttpBindingBaseElement for HttpBindingBase.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">the name of the binding.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.HttpBindingBaseElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the client accepts cookies.</summary>
+        <value>
+          <see langword="true" /> if the client accepts cookies; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +75,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether to bypass the proxy server for local addresses.</summary>
+        <value>
+          <see langword="true" /> if the proxy server is bypassed for local addresses; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +99,8 @@
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the HTTP hostname comparison mode used to parse URIs.</summary>
+        <value>The HTTP hostname comparison mode used to parse URIs.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +120,8 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">A collection of binding elements.</param>
+        <summary>Initializes this binding configuration section with the content of the specified binding elements.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,8 +146,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum size for a buffer pool that is processed by the binding.</summary>
+        <value>The maximum size for a buffer pool that is processed by the binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +172,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum size of the buffer to use.</summary>
+        <value>The maximum size of the buffer to use.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,8 +198,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum size for a message that can be processed by the binding.</summary>
+        <value>The maximum size for a message that can be processed by the binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,8 +219,8 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">The binding to be applied.</param>
+        <summary>Applies the specified binding to this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,8 +237,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the properties of the binding.</summary>
+        <value>The properties of the binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,8 +260,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the URI address of the HTTP proxy.</summary>
+        <value>The URI address of the HTTP proxy.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,8 +283,8 @@
         <ReturnType>System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding.</summary>
+        <value>The complexity constraints.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,8 +309,8 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the character set encoding to be used for emitting messages on the binding.</summary>
+        <value>The character set encoding to be used for emitting messages on the binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,8 +332,8 @@
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the transfer mode.</summary>
+        <value>The transfer mode.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,8 +355,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the system’s auto-configured HTTP proxy is used.</summary>
+        <value>True if the system’s auto-configured HTTP proxy is used; otherwise.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,8 +15,41 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies generic undo/redo functionality at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.UndoEngine> abstract class provides a default implementation of undo functionality at design time. An undo unit represents a single unit of undoable work. This unit is added to a stack and the user can then walk the stack to undo each action. Undo units typically are designed to toggle, which means that calling undo twice returns the application to its starting state.  
+  
+ The <xref:System.ComponentModel.Design.UndoEngine> class takes advantage of the following characteristics of objects running within the designer:  
+  
+-   All interesting objects can be persisted to some format by the designer loader.  
+  
+-   All objects raise property-change notifications when a property is changed.  
+  
+-   <xref:System.ComponentModel.Design.IDesignerHost> offers the idea of transactions, which can be used to fabricate an undo action that spans multiple smaller actions.  
+  
+ With these features, <xref:System.ComponentModel.Design.UndoEngine> can fabricate any undo units it needs automatically.  
+  
+> [!NOTE]
+>  Do not change property values directly. The <xref:System.ComponentModel.Design.UndoEngine> class requires you to use the appropriate <xref:System.ComponentModel.TypeDescriptor> to change property values.  
+  
+ <xref:System.ComponentModel.Design.UndoEngine> monitors for change notifications to create undo units, and the units themselves consist of serialized object states. The following table shows the services that must be available when <xref:System.ComponentModel.Design.UndoEngine> is created.  
+  
+|Service|Description|  
+|-------------|-----------------|  
+|<xref:System.ComponentModel.Design.Serialization.ComponentSerializationService>|Saves property and object values for a component before and after a change is made.|  
+|<xref:System.ComponentModel.Design.IComponentChangeService>|Notifies the undo engine of changes made to components.|  
+|<xref:System.ComponentModel.Design.IDesignerHost>|Used to track transactions.|  
+  
+> [!NOTE]
+>  Because the <xref:System.ComponentModel.Design.UndoEngine> class requires <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService> and <xref:System.ComponentModel.Design.IComponentChangeService>, it is available only at design time.  
+  
+ The undo engine tracks transactions and creates a single undo unit that encompasses a transaction. As a result, the undo engine has control over the duration of an undoable action. Also, because transactions can be named, undoable actions inherit their names from the current transaction. If no transaction is available and a change is reported, the undo engine creates an undo name based on the type of change (for example, "Change property 'Text'").  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,9 +65,19 @@
         <Parameter Name="provider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="provider">A parenting service provider.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.UndoEngine" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.UndoEngine> requires several services from the `provider` parameter to be useful.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="provider" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">A required service cannot be found. See <see cref="T:System.ComponentModel.Design.UndoEngine" /> for required services. If you have removed this service, ensure that you provide a replacement.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddUndoUnit">
@@ -53,9 +96,16 @@
         <Parameter Name="unit" Type="System.ComponentModel.Design.UndoEngine+UndoUnit" />
       </Parameters>
       <Docs>
-        <param name="unit">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="unit">The undo unit to add</param>
+        <summary>Adds an <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" /> to the undo stack.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Create the `unit` parameter by calling the <xref:System.ComponentModel.Design.UndoEngine.CreateUndoUnit%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateUndoUnit">
@@ -75,11 +125,21 @@
         <Parameter Name="primary" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="primary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the unit to create.</param>
+        <param name="primary">
+          <see langword="true" /> to create the first of a series of nested units; <see langword="false" /> to create subsequent nested units.</param>
+        <summary>Creates a new <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" />.</summary>
+        <returns>A new <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" /> with a specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of the <xref:System.ComponentModel.Design.UndoEngine.CreateUndoUnit%2A> method simply returns a new <xref:System.ComponentModel.Design.UndoEngine.UndoUnit>.  
+  
+ By default, <xref:System.ComponentModel.Design.UndoEngine> does nothing with the `primary` parameter, but some implementations of undo, such as those involving the COM `Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit` design pattern, may need to identify the difference between a primary unit and its children.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DiscardUndoUnit">
@@ -98,9 +158,16 @@
         <Parameter Name="unit" Type="System.ComponentModel.Design.UndoEngine+UndoUnit" />
       </Parameters>
       <Docs>
-        <param name="unit">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="unit">The unit to discard.</param>
+        <summary>Discards an <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before the <xref:System.ComponentModel.Design.UndoEngine.DiscardUndoUnit%2A> method is called, the undo unit is closed and then undone.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -117,7 +184,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.UndoEngine" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,8 +204,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.ComponentModel.Design.UndoEngine" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +223,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Enables or disables the <see cref="T:System.ComponentModel.Design.UndoEngine" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.ComponentModel.Design.UndoEngine" /> is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,10 +245,14 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceType">The type of service to retrieve.</param>
+        <summary>Gets the requested service.</summary>
+        <returns>The requested service, if found.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="serviceType" /> is required but cannot be found. If you have removed this service, ensure that you provide a replacement.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetService">
@@ -198,10 +271,12 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="serviceType">The type of service to retrieve.</param>
+        <summary>Gets the requested service.</summary>
+        <returns>The requested service, or <see langword="null" /> if the requested service is not found.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnUndoing">
@@ -220,8 +295,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.Design.UndoEngine.Undoing" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,8 +316,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.Design.UndoEngine.Undone" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,7 +334,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs immediately before an undo action is performed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,8 +351,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates if an undo action is in progress.</summary>
+        <value>
+          <see langword="true" /> if an undo action is in progress; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,8 +370,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs immediately after an undo action is performed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.UndoEngine.Undone> event is always raised, even if an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

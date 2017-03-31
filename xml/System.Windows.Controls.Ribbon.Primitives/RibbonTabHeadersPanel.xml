@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a panel that supports horizontal scrolling of the tab headers in a <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,9 +57,9 @@
         <Parameter Name="finalSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="finalSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="finalSize">The size that the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel" /> needs to position its child elements.</param>
+        <summary>Positions and sizes the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel" />.</summary>
+        <returns>The actual size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +76,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether scrolling on the horizontal axis is possible.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +95,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtentHeight">
@@ -105,9 +121,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <value>0.0 in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtentWidth">
@@ -123,9 +146,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the horizontal size of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <value>The horizontal size of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property contains the <xref:System.Windows.Controls.ScrollViewer.ExtentWidth%2A> value of the panel’s internal <xref:System.Windows.Controls.ScrollViewer>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalOffset">
@@ -141,9 +171,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the horizontal offset of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <value>The horizontal offset of the scrolled content in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property contains the <xref:System.Windows.Controls.ScrollViewer.HorizontalOffset%2A> value of the panel’s internal <xref:System.Windows.Controls.ScrollViewer>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineDown">
@@ -160,8 +197,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineLeft">
@@ -178,7 +222,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Scrolls the content left by one line.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,7 +240,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Scrolls the content right by one line.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,8 +258,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeVisible">
@@ -235,10 +286,10 @@
         <Parameter Name="rectangle" Type="System.Windows.Rect" />
       </Parameters>
       <Docs>
-        <param name="visual">To be added.</param>
-        <param name="rectangle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="visual">The object to make visible.</param>
+        <param name="rectangle">A bounding rectangle that identifies the coordinate space to make visible.</param>
+        <summary>Forces content to scroll until the coordinate space of a <see cref="T:System.Windows.Media.Visual" /> object is visible.</summary>
+        <returns>The rectangle that is visible.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,9 +309,9 @@
         <Parameter Name="availableSize" Type="System.Windows.Size" />
       </Parameters>
       <Docs>
-        <param name="availableSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="availableSize">The maximum size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel" />.</param>
+        <summary>Measures the child elements in this <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel" /> in preparation of arranging them during the <see cref="M:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.ArrangeOverride(System.Windows.Size)" /> pass.</summary>
+        <returns>The desired size of the <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,8 +329,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseWheelLeft">
@@ -296,8 +354,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseWheelRight">
@@ -314,8 +379,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseWheelUp">
@@ -332,8 +404,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnIsItemsHostChanged">
@@ -353,9 +432,9 @@
         <Parameter Name="newIsItemsHost" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="oldIsItemsHost">To be added.</param>
-        <param name="newIsItemsHost">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="oldIsItemsHost">The old value of the <see cref="P:System.Windows.Controls.Panel.IsItemsHost" /> property.</param>
+        <param name="newIsItemsHost">The new value of the <see cref="P:System.Windows.Controls.Panel.IsItemsHost" /> property.</param>
+        <summary>Invoked when the <see cref="P:System.Windows.Controls.Panel.IsItemsHost" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,8 +454,8 @@
         <Parameter Name="drawingContext" Type="System.Windows.Media.DrawingContext" />
       </Parameters>
       <Docs>
-        <param name="drawingContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="drawingContext">The <see cref="T:System.Windows.Media.DrawingContext" /> object to draw.</param>
+        <summary>Draws the content of a <see cref="T:System.Windows.Media.DrawingContext" /> object during the render pass of a <see cref="T:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel" /> element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,8 +473,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageLeft">
@@ -412,8 +498,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageRight">
@@ -430,8 +523,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PageUp">
@@ -448,8 +548,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Ribbon">
@@ -465,9 +572,24 @@
         <ReturnType>System.Windows.Controls.Ribbon.Ribbon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to.</summary>
+        <value>A reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is set on the parent <xref:System.Windows.Controls.Ribbon.Ribbon> control and is inherited by the child controls. It is used to access visual style brushes defined on the <xref:System.Windows.Controls.Ribbon.Ribbon> class.  
+  
+<a name="dependencyPropertyInfo_Ribbon"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.RibbonProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RibbonProperty">
@@ -483,7 +605,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel.Ribbon" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,8 +622,8 @@
         <ReturnType>System.Windows.Controls.ScrollViewer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a <see cref="T:System.Windows.Controls.ScrollViewer" /> element that controls scrolling behavior.</summary>
+        <value>A <see cref="T:System.Windows.Controls.ScrollViewer" /> element that controls scrolling behavior. This property has no default value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -521,8 +643,8 @@
         <Parameter Name="offset" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="offset">The amount that content is horizontally offset in the containing viewport in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</param>
+        <summary>Sets the amount that content is horizontal offset in the containing viewport in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -542,9 +664,16 @@
         <Parameter Name="offset" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="offset">This API is not implemented.</param>
+        <summary>This API is not implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalOffset">
@@ -560,9 +689,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <value>0.0 in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewportHeight">
@@ -578,9 +714,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This API is not implemented.</summary>
+        <value>0.0 in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Ribbon.Primitives.RibbonTabHeadersPanel> provides horizontal scrolling by line for <xref:System.Windows.Controls.Ribbon.RibbonTabHeader> controls in a <xref:System.Windows.Controls.Ribbon.Ribbon>. Scrolling up or down, and scrolling by page is not supported.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewportWidth">
@@ -596,9 +739,16 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the horizontal size of the content's visible range in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <value>The horizontal size of the content's visible range in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property contains the <xref:System.Windows.Controls.ScrollViewer.ViewportWidth%2A> value of the panel’s internal <xref:System.Windows.Controls.ScrollViewer>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

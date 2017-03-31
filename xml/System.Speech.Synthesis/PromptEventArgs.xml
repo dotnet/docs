@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the base class for <see langword="EventArgs" /> classes in the <see cref="N:System.Speech.Synthesis" /> namespace.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Speech.Synthesis.Prompt</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the prompt associated with the event.</summary>
+        <value>The <see langword="Prompt" /> object associated with the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,19 +1,28 @@
 ---
 uid: System.Security.Authentication.ExtendedProtection.ChannelBinding
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ChannelBinding.#ctor
-internalonly: False
+manager: "markl"
+---
+
+---
+uid: System.Security.Authentication.ExtendedProtection.ChannelBinding.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ChannelBinding.Size
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Security.Authentication.ExtendedProtection.ChannelBinding.#ctor(System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

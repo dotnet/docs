@@ -13,7 +13,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a way for an object to be invalidated.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,9 +38,9 @@
         <Parameter Name="validationContext" Type="System.ComponentModel.DataAnnotations.ValidationContext" />
       </Parameters>
       <Docs>
-        <param name="validationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="validationContext">The validation context.</param>
+        <summary>Determines whether the specified object is valid.</summary>
+        <returns>A collection that holds failed-validation information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

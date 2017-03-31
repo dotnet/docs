@@ -1,39 +1,47 @@
 ---
 uid: System.Runtime.Caching.CacheItemPolicy
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.CacheItemPolicy.Priority
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.CacheItemPolicy.ChangeMonitors
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.CacheItemPolicy.RemovedCallback
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.CacheItemPolicy.UpdateCallback
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.CacheItemPolicy.AbsoluteExpiration
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.CacheItemPolicy.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Caching.CacheItemPolicy.SlidingExpiration
-internalonly: False
+ms.author: "riande"
+manager: "ghogen"
 ---

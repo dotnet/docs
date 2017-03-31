@@ -1,4 +1,5 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.SerializationFormat
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

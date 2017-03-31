@@ -17,8 +17,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that the type should be registered as a user-defined aggregate. The properties on the attribute reflect the physical attributes used when the type is registered with SQL Server. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ SQL Server creates a user-defined aggregate that is bound to the class definition that has the <xref:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute> custom attribute. Every user-defined aggregate must be annotated with this attribute.  
+  
+ See "CLR User-Defined Aggregates" in SQL Server 2005 Books Online for more information on user-defined aggregates and examples.  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute> attribute for a user-defined aggregate.  The aggregate uses custom serialization, has a maximum size of 8000 bytes when serialized, and is invariant to nulls, duplicates, and order.  
+  
+ [!code-csharp[DataWorks SqlUserDefinedAggregateAttribute Sample#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlUserDefinedAggregateAttribute Sample/CS/source.cs#1)]
+ [!code-vb[DataWorks SqlUserDefinedAggregateAttribute Sample#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlUserDefinedAggregateAttribute Sample/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +52,8 @@
         <Parameter Name="format" Type="Microsoft.SqlServer.Server.Format" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="format">One of the <see cref="T:Microsoft.SqlServer.Server.Format" /> values representing the serialization format of the aggregate.</param>
+        <summary>A required attribute on a user-defined aggregate, used to indicate that the given type is a user-defined aggregate and the storage format of the user-defined aggregate.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +71,17 @@
         <ReturnType>Microsoft.SqlServer.Server.Format</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The serialization format as a <see cref="T:Microsoft.SqlServer.Server.Format" />.</summary>
+        <value>A <see cref="T:Microsoft.SqlServer.Server.Format" /> representing the serialization format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[VbRaddataSQLObjects#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSQLObjects/CS/Aggregate1.cs#6)]
+ [!code-vb[VbRaddataSQLObjects#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSQLObjects/VB/Aggregate1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInvariantToDuplicates">
@@ -73,9 +98,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether the aggregate is invariant to duplicates.</summary>
+        <value>
+          <see langword="true" /> if the aggregate is invariant to duplicates; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used by the query processor, this property is `true` if the aggregate is invariant to duplicates. That is, the aggregate of S, {X} is the same as aggregate of S when X is already in S. For example, aggregate functions such as MIN and MAX satisfy this property, while SUM does not.  
+  
+ Incorrectly setting this property can result in incorrect query results. This property is not an optimizer hint; it affects both the plan selected and the results returned by the query.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInvariantToNulls">
@@ -92,9 +127,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether the aggregate is invariant to nulls.</summary>
+        <value>
+          <see langword="true" /> if the aggregate is invariant to nulls; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used by the query processor, this property is `true` if the aggregate is invariant to nulls. That is, the aggregate of S, {NULL} is the same as aggregate of S. For example, aggregate functions such as MIN and MAX satisfy this property, while COUNT(*) does not.  
+  
+ Incorrectly setting this property can result in incorrect query results. This property is not an optimizer hint; it affects the plan selected and the results returned by the query.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInvariantToOrder">
@@ -111,9 +156,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether the aggregate is invariant to order.</summary>
+        <value>
+          <see langword="true" /> if the aggregate is invariant to order; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Reserved for future use. This property is not currently used by the query processor: order is currently not guaranteed.  
+  
+ Incorrectly setting this property can result in incorrect query results. This property is not an optimizer hint; it affects the plan selected and the results returned by the query.  
+  
+ The default value for this property is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsNullIfEmpty">
@@ -130,9 +187,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Indicates whether the aggregate returns <see langword="null" /> if no values have been accumulated.</summary>
+        <value>
+          <see langword="true" /> if the aggregate returns <see langword="null" /> if no values have been accumulated; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used by the query processor, this property is `true` if the aggregate returns `null` if no values have been accumulated.  
+  
+ Incorrectly setting this property can result in incorrect query results. This property is not an optimizer hint; it affects the plan selected and the results returned by the query.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxByteSize">
@@ -149,9 +216,24 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The maximum size, in bytes, of the aggregate instance.</summary>
+        <value>An <see cref="T:System.Int32" /> value representing the maximum size of the aggregate instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property does not have to be specified for Native format serialization.  
+  
+ You must specify the <xref:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.MaxByteSize%2A> property with the UserDefined serialization <xref:Microsoft.SqlServer.Server.Format>.  
+  
+ The maximum allowed value for this property is specified by the <xref:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.MaxByteSizeValue> field.  
+  
+ The maximum size allowed is 2 gigabytes (GB). You can specify a number from 1 to 8000 bytes, or -1 to represent a value larger than 8000 bytes, up to 2 gigabytes.  
+  
+ For an aggregate with user-defined serialization specified, <xref:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.MaxByteSize%2A> refers to the total size of the serialized data. Consider an aggregate serializing a string of 10 characters (<xref:System.Char>). When the string is serialized using a <xref:System.IO.BinaryWriter>, the total size of the serialized string is 22 bytes: 2 bytes per Unicode UTF-16 character, multiplied by the maximum number of characters, plus 2 control bytes of overhead incurred from serializing a binary stream. So, when determining the value of <xref:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute.MaxByteSize%2A>, the total size of the serialized data must be considered: the size of the data serialized in binary form plus the overhead incurred by serialization.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxByteSizeValue">
@@ -169,8 +251,15 @@
       </ReturnValue>
       <MemberValue>8000</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The maximum size, in bytes, required to store the state of this aggregate instance during computation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Int32> value representing the maximum size of the aggregate instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -187,8 +276,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The name of the aggregate.</summary>
+        <value>A <see cref="T:System.String" /> value representing the name of the aggregate.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

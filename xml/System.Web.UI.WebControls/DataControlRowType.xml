@@ -10,8 +10,25 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the function of a row in a data control, such as a <see cref="T:System.Web.UI.WebControls.DetailsView" /> or <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataControlRowType> enumeration identifies the function of rows in a data control. It is used by the <xref:System.Web.UI.WebControls.DetailsView> and <xref:System.Web.UI.WebControls.GridView> controls to distinguish between rows that display data and rows that display other user interface (UI) elements, such as a header row, row separator, or pager buttons.  
+  
+ You can use the <xref:System.Web.UI.WebControls.DataControlRowType> enumeration to identify the type of a <xref:System.Web.UI.WebControls.GridViewRow> or <xref:System.Web.UI.WebControls.DetailsViewRow> object when you enumerate through a <xref:System.Web.UI.WebControls.GridViewRowCollection> or <xref:System.Web.UI.WebControls.DetailsViewRowCollection> collection. If you are writing a data control that creates rows, you can use the <xref:System.Web.UI.WebControls.DataControlRowType> enumeration to identify the function of different rows in the control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataControlRowType> enumeration to check the type of a row when working with a <xref:System.Web.UI.WebControls.GridView> control. The `AuthorsGridView_RowCreated` method ensures that the <xref:System.Web.UI.WebControls.LinkButton.CommandArgument%2A> property of a <xref:System.Web.UI.WebControls.LinkButton> control is unique for all the data rows in the <xref:System.Web.UI.WebControls.GridView> control, so that when a row's <xref:System.Web.UI.WebControls.LinkButton> control is clicked, it can be identified correctly.  
+  
+ [!code-csharp[GridViewCommandEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCommandEventArgs/CS/gridviewcommandeventargscs.aspx#1)]
+ [!code-vb[GridViewCommandEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCommandEventArgs/VB/gridviewcommandeventargsvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DataRow">
@@ -27,7 +44,7 @@
         <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data row of a data control. Only <see cref="F:System.Web.UI.WebControls.DataControlRowType.DataRow" /> rows can be data-bound.</summary>
       </Docs>
     </Member>
     <Member MemberName="EmptyDataRow">
@@ -43,7 +60,7 @@
         <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The empty row of a data-bound control. The empty row is displayed when the data-bound control has no records to display and the <see langword="EmptyDataTemplate" /> template is not <see langword="null" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Footer">
@@ -59,7 +76,7 @@
         <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A footer row of a data control. Footer rows cannot be data-bound.</summary>
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -75,7 +92,7 @@
         <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A header row of a data control. Header rows cannot be data-bound.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pager">
@@ -91,7 +108,7 @@
         <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A row that displays pager buttons or a pager control. Pager rows cannot be data-bound.</summary>
       </Docs>
     </Member>
     <Member MemberName="Separator">
@@ -107,7 +124,7 @@
         <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A row separator. Row separators cannot be data-bound.</summary>
       </Docs>
     </Member>
   </Members>

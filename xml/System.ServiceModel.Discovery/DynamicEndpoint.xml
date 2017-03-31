@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An endpoint that uses WS-Discovery to find the endpoint address dynamically at runtime.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use a <xref:System.ServiceModel.Discovery.DynamicEndpoint> a <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> is added to the binding you specify in the <xref:System.ServiceModel.Discovery.DynamicEndpoint> constructor if not already present. The <xref:System.ServiceModel.Discovery.DynamicEndpoint.FindCriteria%2A> property enables you to describe the service you want to use. The <xref:System.ServiceModel.Discovery.DynamicEndpoint.FindCriteria%2A> and the <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> used by the <xref:System.ServiceModel.Discovery.DynamicEndpoint> override these values specified in the <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,9 +36,9 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="contract">To be added.</param>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contract">The contract.</param>
+        <param name="binding">The binding.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DynamicEndpoint" /> class with the specified <see cref="T:System.ServiceModel.Description.ContractDescription" /> and <see cref="T:System.ServiceModel.Channels.Binding" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +55,8 @@
         <ReturnType>System.ServiceModel.Discovery.DiscoveryEndpointProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets an object that provides a discovery endpoint.</summary>
+        <value>A discovery endpoint provider.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +73,16 @@
         <ReturnType>System.ServiceModel.Discovery.FindCriteria</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Discovery.FindCriteria" /> used to search for a service.</summary>
+        <value>The find criteria.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Discovery.FindCriteria> is used to describe the service to call.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

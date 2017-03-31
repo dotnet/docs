@@ -1,34 +1,41 @@
 ---
 uid: System.IdentityModel.Services.FederatedAuthentication
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.FederatedAuthentication.ClaimsAuthorizationModule
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.FederatedAuthentication.GetHttpModule``1
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.FederatedAuthentication.WSFederationAuthenticationModule
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.FederatedAuthentication.SessionAuthenticationModule
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

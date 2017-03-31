@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.UIElement.StylusButtonDown" /> and <see cref="E:System.Windows.UIElement.StylusButtonUp" /> events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,10 +30,10 @@
         <Parameter Name="button" Type="System.Windows.Input.StylusButton" />
       </Parameters>
       <Docs>
-        <param name="stylusDevice">To be added.</param>
-        <param name="timestamp">To be added.</param>
-        <param name="button">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stylusDevice">The <see cref="T:System.Windows.Input.StylusDevice" /> to associate with this event.</param>
+        <param name="timestamp">The time when the event occurs.</param>
+        <param name="button">The <see cref="T:System.Windows.Input.StylusButton" /> that raises the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusButtonEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,10 +54,17 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">To be added.</param>
-        <param name="genericTarget">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="genericHandler">The generic handler to call in a type-specific way.</param>
+        <param name="genericTarget">The target to call the handler on.</param>
+        <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation casts the generic handler as a <xref:System.Windows.Input.StylusButtonEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StylusButton">
@@ -73,8 +80,8 @@
         <ReturnType>System.Windows.Input.StylusButton</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Input.StylusButton" /> that raises this event.</summary>
+        <value>The <see cref="T:System.Windows.Input.StylusButton" /> that raises this event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

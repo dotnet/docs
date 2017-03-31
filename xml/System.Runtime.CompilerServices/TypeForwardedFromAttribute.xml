@@ -28,8 +28,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies a source <see cref="T:System.Type" /> in another assembly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.CompilerServices.TypeForwardedFromAttribute> attribute enables the target framework provider to trace a loaded type back to the original assembly it was forwarded from.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,9 +64,11 @@
         <Parameter Name="assemblyFullName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyFullName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="assemblyFullName">The source <see cref="T:System.Type" /> in another assembly.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.TypeForwardedFromAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assemblyFullName" /> is <see langword="null" /> or empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="AssemblyFullName">
@@ -87,8 +96,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the assembly-qualified name of the source type.</summary>
+        <value>The assembly-qualified name of the source type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

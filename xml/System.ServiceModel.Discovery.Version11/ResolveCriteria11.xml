@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the criteria to use when resolving a service using version 1.1 of the WS-Discovery protocol.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resolve is performed when a service to which you already have an endpoint reference changes its endpoint address.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FromResolveCriteria">
@@ -40,9 +47,9 @@
         <Parameter Name="resolveCriteria" Type="System.ServiceModel.Discovery.ResolveCriteria" />
       </Parameters>
       <Docs>
-        <param name="resolveCriteria">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="resolveCriteria">The resolve criteria.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.Version11.ResolveCriteria11" /> using the specified <see cref="T:System.ServiceModel.Discovery.ResolveCriteria" /> instance.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Discovery.Version11.ResolveCriteria11" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +67,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the resolve criteria schema.</summary>
+        <returns>The resolve criteria schema.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,9 +88,9 @@
         <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" />
       </Parameters>
       <Docs>
-        <param name="schemaSet">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="schemaSet">The schema set.</param>
+        <summary>Gets the find criteria schema from the specified <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
+        <returns>The <see cref="T:System.Xml.XmlQualifiedName" /> of the schema.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +110,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The XML reader to read from.</param>
+        <summary>Reads a <see cref="T:System.ServiceModel.Discovery.Version11.ResolveCriteria11" /> instance from XML.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +129,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.ResolveCriteria" /> associated with this <see cref="T:System.ServiceModel.Discovery.Version11.ResolveCriteria11" /> instance.</summary>
+        <returns>The resolve criteria.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +150,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The XML writer to write to.</param>
+        <summary>Writes a <see cref="T:System.ServiceModel.Discovery.Version11.ResolveCriteria11" /> instance to XML.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

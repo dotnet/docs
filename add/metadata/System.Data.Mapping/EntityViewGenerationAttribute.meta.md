@@ -1,14 +1,20 @@
 ---
 uid: System.Data.Mapping.EntityViewGenerationAttribute
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Mapping.EntityViewGenerationAttribute.#ctor(System.Type)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Mapping.EntityViewGenerationAttribute.ViewGenerationType
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

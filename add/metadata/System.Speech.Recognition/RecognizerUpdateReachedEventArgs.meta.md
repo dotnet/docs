@@ -1,14 +1,17 @@
 ---
 uid: System.Speech.Recognition.RecognizerUpdateReachedEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizerUpdateReachedEventArgs.AudioPosition
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.RecognizerUpdateReachedEventArgs.UserToken
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

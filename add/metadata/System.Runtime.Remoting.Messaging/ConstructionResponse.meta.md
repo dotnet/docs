@@ -1,14 +1,14 @@
 ---
 uid: System.Runtime.Remoting.Messaging.ConstructionResponse
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.ConstructionResponse.#ctor(System.Runtime.Remoting.Messaging.Header[],System.Runtime.Remoting.Messaging.IMethodCallMessage)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Remoting.Messaging.ConstructionResponse.Properties
-internalonly: False
+manager: "ghogen"
 ---

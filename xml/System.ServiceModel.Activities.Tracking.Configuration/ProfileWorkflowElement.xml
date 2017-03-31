@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A configuration element that contains all queries for a specific workflow identified by the <see cref="P:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the activity definition ID of the workflow being tracked.</summary>
+        <value>The activity definition ID</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +74,8 @@
         <ReturnType>System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElement" /> elements.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElement" /> elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
         <ReturnType>System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement" /> elements.</summary>
+        <value>A <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +120,8 @@
         <ReturnType>System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElement" /> elements.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElement" /> elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +143,8 @@
         <ReturnType>System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement" /> elements.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement" /> elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +166,8 @@
         <ReturnType>System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElement" /> elements.</summary>
+        <value>A <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,8 +184,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a key that uniquely identifies the workflow being tracked.</summary>
+        <value>The element key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,8 +207,8 @@
         <ReturnType>System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement" /> elements.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement" /> elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,8 +225,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> properties.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,8 +248,8 @@
         <ReturnType>System.ServiceModel.Activities.Tracking.Configuration.StateMachineStateQueryElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of StateMachineStateQueryElement configuration in DotNetConfig.xsd file.</summary>
+        <value>A collection of StateMachineStateQueryElement configuration in DotNetConfig.xsd file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,8 +271,8 @@
         <ReturnType>System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement" /> elements.</summary>
+        <value>A <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

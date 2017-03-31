@@ -1,9 +1,13 @@
 ---
 uid: System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract.GetCount
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

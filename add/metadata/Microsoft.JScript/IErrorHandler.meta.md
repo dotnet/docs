@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.IErrorHandler
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IErrorHandler.OnCompilerError(Microsoft.JScript.IVsaFullErrorInfo)
-internalonly: False
+ms.author: "mikejo"
 ---

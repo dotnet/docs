@@ -1,14 +1,14 @@
 ---
 uid: System.Messaging.ReceiveCompletedEventArgs
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.ReceiveCompletedEventArgs.Message
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.ReceiveCompletedEventArgs.AsyncResult
-internalonly: False
+manager: "tyoung"
 ---

@@ -1,1 +1,0 @@
-            Dim maxReceivedMessageSize = binding1.MaxReceivedMessageSize

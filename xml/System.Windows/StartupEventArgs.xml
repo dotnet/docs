@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains the arguments for the <see cref="E:System.Windows.Application.Startup" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets command line arguments that were passed to the application from either the command prompt or the desktop.</summary>
+        <value>A string array that contains the command line arguments that were passed to the application from either the command prompt or the desktop. If no command line arguments were passed, the string array as zero items.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

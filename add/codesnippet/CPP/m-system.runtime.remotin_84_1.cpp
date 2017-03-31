@@ -1,1 +1,0 @@
-      Console::WriteLine( "Server type: {0}", RemotingServices::GetServerTypeForUri( const_cast<String^>(myObjectUri) ) );

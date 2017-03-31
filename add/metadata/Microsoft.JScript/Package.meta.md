@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.Package
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.Package.JScriptPackage(System.String,Microsoft.JScript.Vsa.VsaEngine)
-internalonly: False
+ms.author: "mikejo"
 ---

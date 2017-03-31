@@ -1,4 +1,6 @@
 ---
 uid: System.Diagnostics.Tracing.EventLevel
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

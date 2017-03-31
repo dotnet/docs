@@ -1,34 +1,34 @@
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentWriter
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentWriter.Uri
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentWriter.PrintTicket
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentWriter.Commit
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentWriter.DocumentNumber
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentWriter.AddFixedPage
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Packaging.IXpsFixedDocumentWriter.AddThumbnail(System.Windows.Xps.Packaging.XpsImageType)
-internalonly: False
+manager: "leannef"
 ---

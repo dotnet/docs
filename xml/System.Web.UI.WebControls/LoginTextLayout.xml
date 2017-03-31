@@ -10,8 +10,18 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the position of labels relative to their associated text boxes for the <see cref="T:System.Web.UI.WebControls.Login" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.WebControls.LoginTextLayout> enumeration to set the <xref:System.Web.UI.WebControls.Login.TextLayout%2A> property on the <xref:System.Web.UI.WebControls.Login> control.  
+  
+ [!code-csharp[LoginLoginTextLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginLoginTextLayout/CS/loginlogintextlayoutcs.aspx#1)]
+ [!code-vb[LoginLoginTextLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginLoginTextLayout/VB/loginlogintextlayoutvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="TextOnLeft">
@@ -27,7 +37,7 @@
         <ReturnType>System.Web.UI.WebControls.LoginTextLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Places labels to the left of the associated text entry fields.</summary>
       </Docs>
     </Member>
     <Member MemberName="TextOnTop">
@@ -43,7 +53,7 @@
         <ReturnType>System.Web.UI.WebControls.LoginTextLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Places labels above the associated text entry fields.</summary>
       </Docs>
     </Member>
   </Members>

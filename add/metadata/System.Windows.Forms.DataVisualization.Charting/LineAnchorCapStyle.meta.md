@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

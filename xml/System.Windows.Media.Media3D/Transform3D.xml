@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a parent class for all three-dimensional transformations, including translation, rotation, and scale transformations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.Media3D.MatrixTransform3D> class to create transformations not available from the <xref:System.Windows.Media.Media3D.RotateTransform3D>, <xref:System.Windows.Media.Media3D.TranslateTransform3D>, and <xref:System.Windows.Media.Media3D.ScaleTransform3D> classes.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -34,9 +41,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Media3D.Transform3D" />, making deep copies of this object's values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ When copying dependency properties, this method copies resource references and data bindings (they might no longer resolve) but not animations or their current values.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -53,9 +71,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Media3D.Transform3D" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -71,9 +98,16 @@
         <ReturnType>System.Windows.Media.Media3D.Transform3D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the identity transformation.</summary>
+        <value>Identity transformation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identity transformation has the effect of multiplying the object by the identity matrix.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Inverse">
@@ -89,9 +123,16 @@
         <ReturnType>System.Windows.Media.Media3D.GeneralTransform3D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the inverse transformation of this object, if possible.</summary>
+        <value>An inverse of this instance, if possible; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.Transform3D.Inverse%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAffine">
@@ -107,9 +148,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that specifies whether the matrix is affine.</summary>
+        <value>
+          <see langword="true" /> if the matrix is affine; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An affine transformation preserves collinearity.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Transform">
@@ -128,9 +177,9 @@
         <Parameter Name="point" Type="System.Windows.Media.Media3D.Point3D" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="point">Point3D to transform.</param>
+        <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Point3D" />.</summary>
+        <returns>Transformed Point3D.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,8 +199,8 @@
         <Parameter Name="points" Type="System.Windows.Media.Media3D.Point3D[]" />
       </Parameters>
       <Docs>
-        <param name="points">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="points">Array of Point3D objects to transform.</param>
+        <summary>Transforms the specified array of <see cref="T:System.Windows.Media.Media3D.Point3D" /> objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,9 +220,9 @@
         <Parameter Name="point" Type="System.Windows.Media.Media3D.Point4D" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="point">Point4D to transform.</param>
+        <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Point4D" />.</summary>
+        <returns>Transformed Point4D.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,8 +242,8 @@
         <Parameter Name="points" Type="System.Windows.Media.Media3D.Point4D[]" />
       </Parameters>
       <Docs>
-        <param name="points">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="points">Array of Point4D objects to transform.</param>
+        <summary>Transforms the specified array of <see cref="T:System.Windows.Media.Media3D.Point4D" /> objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,9 +263,9 @@
         <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="vector">Vector3D to transform.</param>
+        <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" />.</summary>
+        <returns>Transformed Vector3D.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,8 +285,8 @@
         <Parameter Name="vectors" Type="System.Windows.Media.Media3D.Vector3D[]" />
       </Parameters>
       <Docs>
-        <param name="vectors">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="vectors">Array of Vector3D objects to transform.</param>
+        <summary>Transforms the specified array of <see cref="T:System.Windows.Media.Media3D.Vector3D" /> objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,10 +306,17 @@
         <Parameter Name="rect" Type="System.Windows.Media.Media3D.Rect3D" />
       </Parameters>
       <Docs>
-        <param name="rect">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rect">The 3-D bounding box to transform.</param>
+        <summary>Transforms the specified 3-D bounding box and returns an axis-aligned 3-D bounding box that is exactly large enough to contain it.</summary>
+        <returns>The smallest axis-aligned 3-D bounding box possible that contains the transformed <paramref name="rect" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.Transform3D.TransformBounds%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryTransform">
@@ -280,11 +336,21 @@
         <Parameter Name="result" Type="System.Windows.Media.Media3D.Point3D&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="inPoint">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inPoint">The 3-D point to transform.</param>
+        <param name="result">The result of transforming <c>inPoint</c>.</param>
+        <summary>Attempts to transform the specified 3-D point and returns a value that indicates whether the transformation was successful.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="inPoint" /> was transformed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike the <xref:System.Windows.Media.Media3D.GeneralTransform3D.Transform%2A> method, this method does not throw an exception if the transformation is unsuccessful.  
+  
+ <xref:System.Windows.Media.Media3D.Transform3D.TryTransform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -300,9 +366,17 @@
         <ReturnType>System.Windows.Media.Media3D.Matrix3D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> that represents the value of the current transformation.</summary>
+        <value>Matrix3D that represents the value of the current transformation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn4)]
+ [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains values that specify the visual state of a window.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.Windows.Automation.WindowVisualState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the window is maximized.</summary>
       </Docs>
     </Member>
     <Member MemberName="Minimized">
@@ -51,7 +51,7 @@
         <ReturnType>System.Windows.Automation.WindowVisualState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the window is minimized.</summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -67,7 +67,7 @@
         <ReturnType>System.Windows.Automation.WindowVisualState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the window is normal (restored).</summary>
       </Docs>
     </Member>
   </Members>

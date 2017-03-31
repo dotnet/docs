@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used for weakly typed query scenarios.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about methods, see <xref:System.Data.Linq.Table%601>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Attach">
@@ -35,9 +42,16 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to be attached.</param>
+        <summary>Attaches an entity to the <see cref="T:System.Data.Linq.DataContext" /> in an unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about how to use this method, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Attach">
@@ -57,10 +71,18 @@
         <Parameter Name="asModified" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <param name="asModified">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The collection of entities.</param>
+        <param name="asModified">
+          <see langword="true" /> to attach the entities as modified.</param>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about how to use this method, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Attach">
@@ -80,10 +102,17 @@
         <Parameter Name="original" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <param name="original">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to be attached.</param>
+        <param name="original">An instance of the same entity type with data members that contain the original values.</param>
+        <summary>Attaches an entity to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state by specifying both the entity and its original state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about how to use this method, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AttachAll">
@@ -102,9 +131,16 @@
         <Parameter Name="entities" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="entities">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entities">The collection of entities.</param>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about how to use this method, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AttachAll">
@@ -124,10 +160,18 @@
         <Parameter Name="asModified" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="entities">To be added.</param>
-        <param name="asModified">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entities">The collection of entities.</param>
+        <param name="asModified">
+          <see langword="true" /> to attach the entities as modified.</param>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about how to use this method, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -143,8 +187,8 @@
         <ReturnType>System.Data.Linq.DataContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Data.Linq.DataContext" /> that has been used to retrieve this <see cref="T:System.Data.Linq.ITable" />.</summary>
+        <value>The <see cref="T:System.Data.Linq.DataContext" /> used to retrieve the <see cref="T:System.Data.Linq.ITable" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,9 +208,16 @@
         <Parameter Name="entities" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="entities">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entities">The collection from which all items are removed.</param>
+        <summary>Puts all entities from the collection into a <see langword="pending delete" /> state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> to perform the actual deletion in the database.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteOnSubmit">
@@ -185,9 +236,16 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to be removed.</param>
+        <summary>Puts an entity from this table into a <see langword="pending delete" /> state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Disconnected entities must be attached before they can be deleted. Call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> to perform the actual deletion in the database.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetModifiedMembers">
@@ -206,8 +264,8 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="entity">The entity from which to get the array.</param>
+        <summary>Returns an array of modified members that contain their current and original values.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,10 +286,21 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity whose original value is to be retrieved.</param>
+        <summary>Retrieves original values.</summary>
+        <returns>A copy of the original entity. The value is null if the entity passed in is not tracked. Disconnected entities sent back by a client must be attached before the <see cref="T:System.Data.Linq.DataContext" /> can begin to track their state. The "original state" of a newly attached entity is established based on values supplied by the client. The data context does not track the state of disconnected entities.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note the following:  
+  
+-   The entity argument must be non-null. Otherwise, a null argument exception is thrown.  
+  
+-   In the case of the strongly typed (`TEntity`) method, the type must be mapped and must be an entity type. That is, it must have object ID information in its mapping. Otherwise, a wrong type exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertAllOnSubmit">
@@ -250,9 +319,16 @@
         <Parameter Name="entities" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="entities">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entities">The entities to add.</param>
+        <summary>Adds all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in a <see langword="pending insert" /> state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> to perform the actual insertion into the database.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertOnSubmit">
@@ -271,9 +347,16 @@
         <Parameter Name="entity" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="entity">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entity">The entity to be added.</param>
+        <summary>Adds an entity in a <see langword="pending insert" /> state to this table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> to perform the actual insertion into the database.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -289,10 +372,29 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Indicates if the type of the entities contained in this <see cref="T:System.Data.Linq.ITable" /> instance has a primary key.</summary>
+        <value>Returns <see langword="true" /> if the entity type does not have a primary key; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Attach">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allows deserialized entities to be associated with a new instance of a <see cref="T:System.Data.Linq.DataContext" /> so that they can be updated or deleted from the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about how to use this method, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../Topic/Data%20Retrieval%20and%20CUD%20Operations%20in%20N-Tier%20Applications%20\(LINQ%20to%20SQL\).md).  
+  
+ If a required member is missing, a <xref:System.Data.Linq.ChangeConflictException> is thrown during <xref:System.Data.Linq.DataContext.SubmitChanges%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

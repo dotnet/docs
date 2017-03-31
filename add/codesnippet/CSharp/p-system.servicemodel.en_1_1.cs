@@ -1,1 +1,0 @@
-     EnvelopeVersion envNotSOAP =  EnvelopeVersion.None;

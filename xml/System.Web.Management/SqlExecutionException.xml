@@ -11,8 +11,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines a class for SQL execution exceptions in the <see cref="N:System.Web.Management" /> namespace.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is provided as a means to differentiate SQL execution exceptions from other application exceptions.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.SqlExecutionException> exception type. This code example is part of a larger example provided for the <xref:System.Web.Management.SqlServices> class.  
+  
+ [!code-csharp[System.Web.Management.SqlServices#14](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#14)]
+ [!code-vb[System.Web.Management.SqlServices#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#14)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.SqlExecutionException" /> class using default values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +58,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.SqlExecutionException" /> class using the passed message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +77,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="innerException">The <see cref="T:System.Exception" /> encountered.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.SqlExecutionException" /> class using the passed message and exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,13 +101,13 @@
         <Parameter Name="sqlException" Type="System.Data.SqlClient.SqlException" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="server">To be added.</param>
-        <param name="database">To be added.</param>
-        <param name="sqlFile">To be added.</param>
-        <param name="commands">To be added.</param>
-        <param name="sqlException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="server">The SQL Server instance against which the SQL commands are run.</param>
+        <param name="database">The database against which the SQL commands are run.</param>
+        <param name="sqlFile">The name of the installation file containing the SQL commands being run.</param>
+        <param name="commands">The SQL commands being run when the exception occurred.</param>
+        <param name="sqlException">The <see cref="T:System.Data.SqlClient.SqlException" /> encountered when processing the SQL commands.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.SqlExecutionException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +124,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the SQL commands being run when the exception occurred.</summary>
+        <value>The SQL commands being run when the exception occurred.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Web.Management.SqlExecutionException.Commands%2A> property of the <xref:System.Web.Management.SqlExecutionException> exception type. This code example is part of a larger example provided for the <xref:System.Web.Management.SqlServices> class.  
+  
+ [!code-csharp[System.Web.Management.SqlServices#18](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#18)]
+ [!code-vb[System.Web.Management.SqlServices#18](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#18)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Database">
@@ -127,9 +152,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the database being accessed when the exception occurred.</summary>
+        <value>The name of the database being accessed when the exception occurred.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Web.Management.SqlExecutionException.Database%2A> property of the <xref:System.Web.Management.SqlExecutionException> exception type. This code example is part of a larger example provided for the <xref:System.Web.Management.SqlServices> class.  
+  
+ [!code-csharp[System.Web.Management.SqlServices#17](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#17)]
+ [!code-vb[System.Web.Management.SqlServices#17](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#17)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -145,9 +180,19 @@
         <ReturnType>System.Data.SqlClient.SqlException</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the exception encountered when processing the SQL commands.</summary>
+        <value>The <see cref="T:System.Data.SqlClient.SqlException" /> encountered when processing the SQL commands.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Web.Management.SqlExecutionException.Exception%2A> property of the <xref:System.Web.Management.SqlExecutionException> exception type. This code example is part of a larger example provided for the <xref:System.Web.Management.SqlServices> class.  
+  
+ [!code-csharp[System.Web.Management.SqlServices#20](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#20)]
+ [!code-vb[System.Web.Management.SqlServices#20](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#20)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -167,9 +212,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object to use.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> object to use.</param>
+        <summary>Allows the exception to be serialized.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +231,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the SQL Server instance being accessed when the exception occurred.</summary>
+        <value>The name of the SQL Server instance being accessed when the exception occurred.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Web.Management.SqlExecutionException.Server%2A> property of the <xref:System.Web.Management.SqlExecutionException> exception type. This code example is part of a larger example provided for the <xref:System.Web.Management.SqlServices> type.  
+  
+ [!code-csharp[System.Web.Management.SqlServices#16](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#16)]
+ [!code-vb[System.Web.Management.SqlServices#16](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#16)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SqlFile">
@@ -204,9 +259,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the path and name of the file containing the SQL commands being run when the exception occurred.</summary>
+        <value>The path and name of the file that contains the SQL commands being run when the exception occurred.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Web.Management.SqlExecutionException.SqlFile%2A> property of the <xref:System.Web.Management.SqlExecutionException> exception type. This code example is part of a larger example provided for the <xref:System.Web.Management.SqlServices> class.  
+  
+ [!code-csharp[System.Web.Management.SqlServices#19](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#19)]
+ [!code-vb[System.Web.Management.SqlServices#19](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#19)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

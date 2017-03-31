@@ -1,4 +1,6 @@
 ---
 uid: System.ServiceModel.Description.ServiceContractGenerationOptions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

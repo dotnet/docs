@@ -15,8 +15,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement" /> instances.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [\&lt;ws2007FederationHttpBinding\&gt;](../Topic/%3Cws2007FederationHttpBinding%3E.md)  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WS2007FederationHttpBindingCollectionElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

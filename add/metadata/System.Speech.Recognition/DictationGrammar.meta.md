@@ -1,19 +1,29 @@
 ---
 uid: System.Speech.Recognition.DictationGrammar
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.DictationGrammar.#ctor
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Recognition.DictationGrammar.#ctor
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.DictationGrammar.#ctor(System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.DictationGrammar.SetDictationContext(System.String,System.String)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

@@ -1,14 +1,20 @@
 ---
 uid: System.Activities.Core.Presentation.Factories.StateMachineWithInitialStateFactory
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Core.Presentation.Factories.StateMachineWithInitialStateFactory.Create(System.Windows.DependencyObject)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Core.Presentation.Factories.StateMachineWithInitialStateFactory.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

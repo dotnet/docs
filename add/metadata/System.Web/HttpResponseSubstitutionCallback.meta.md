@@ -1,4 +1,5 @@
 ---
 uid: System.Web.HttpResponseSubstitutionCallback
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

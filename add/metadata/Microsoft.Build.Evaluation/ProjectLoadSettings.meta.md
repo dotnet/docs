@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Evaluation.ProjectLoadSettings
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

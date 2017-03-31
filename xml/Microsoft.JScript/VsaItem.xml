@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents items added to the .NET script engine. This includes code items, reference items, and global items.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemFlag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the type of the item as <see cref="F:Microsoft.Vsa.VsaItemFlag.Class" />, <see cref="F:Microsoft.Vsa.VsaItemFlag.Module" />, or <see cref="F:Microsoft.Vsa.VsaItemFlag.None" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +52,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The string literal "codebase".</param>
+        <summary>Gets the **codebase** option.</summary>
+        <returns>The value of the **codebase** option.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +71,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies whether the current in-memory representation of the item differs from the persisted representation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the current in-memory representation of the item differs from the persisted representation.</summary>
+        <value>
+          <see langword="true" /> if the in-memory representation differs from the persisted representation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +107,8 @@
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the item.</summary>
+        <value>One of the enumeration values. The value indicates the type of the item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +125,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the name of the item.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,8 +142,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the item.</summary>
+        <value>The string literal name of the item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +164,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The string literal "codebase".</param>
+        <param name="value">The new value for the option.</param>
+        <summary>Sets the **codebase** option.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,7 +183,7 @@
         <ReturnType>Microsoft.JScript.Vsa.JSVsaItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies the type of the item as <see cref="F:Microsoft.Vsa.VsaItemType.Code" />, <see cref="F:Microsoft.Vsa.VsaItemType.Reference" />, or <see cref="F:Microsoft.Vsa.VsaItemType.AppGlobal" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

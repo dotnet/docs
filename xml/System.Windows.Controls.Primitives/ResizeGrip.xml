@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an implementation of a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control that enables a <see cref="T:System.Windows.Window" /> to change its size.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ResizeGrip is defined as part of the visual tree of a <xref:System.Windows.Window>.  
+  
+ This property only affects a control whose template uses the <xref:System.Windows.Controls.Primitives.ResizeGrip> property as a parameter. On other controls, this property has no impact.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.ResizeGrip" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

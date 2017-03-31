@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter.Control
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.Adapters.HierarchicalDataBoundControlAdapter.PerformDataBinding
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

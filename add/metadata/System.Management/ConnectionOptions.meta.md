@@ -1,64 +1,69 @@
 ---
 uid: System.Management.ConnectionOptions
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ConnectionOptions.EnablePrivileges
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ConnectionOptions.Authentication
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ConnectionOptions.Password
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ConnectionOptions.#ctor(System.String,System.String,System.Security.SecureString,System.String,System.Management.ImpersonationLevel,System.Management.AuthenticationLevel,System.Boolean,System.Management.ManagementNamedValueCollection,System.TimeSpan)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ConnectionOptions.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ConnectionOptions.Authority
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ConnectionOptions.Locale
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ConnectionOptions.Impersonation
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ConnectionOptions.#ctor
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ConnectionOptions.SecurePassword
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ConnectionOptions.#ctor
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ConnectionOptions.Username
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ConnectionOptions.#ctor(System.String,System.String,System.String,System.String,System.Management.ImpersonationLevel,System.Management.AuthenticationLevel,System.Boolean,System.Management.ManagementNamedValueCollection,System.TimeSpan)
-internalonly: False
+manager: "jillfra"
 ---

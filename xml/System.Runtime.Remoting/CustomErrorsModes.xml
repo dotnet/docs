@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how custom errors are handled.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Complete exception information includes the exact server exception and the server stack trace. Filtered information includes a standard remoting exception but no server stack trace.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Off">
@@ -34,7 +41,7 @@
         <ReturnType>System.Runtime.Remoting.CustomErrorsModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All callers receive complete exception information.</summary>
       </Docs>
     </Member>
     <Member MemberName="On">
@@ -51,7 +58,7 @@
         <ReturnType>System.Runtime.Remoting.CustomErrorsModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All callers receive filtered exception information.</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoteOnly">
@@ -68,7 +75,7 @@
         <ReturnType>System.Runtime.Remoting.CustomErrorsModes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Local callers receive complete exception information; remote callers receive filtered exception information.</summary>
       </Docs>
     </Member>
   </Members>

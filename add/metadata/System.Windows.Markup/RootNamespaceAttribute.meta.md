@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.RootNamespaceAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.RootNamespaceAttribute.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.RootNamespaceAttribute.Namespace
-internalonly: False
+manager: "martinek"
 ---

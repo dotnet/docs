@@ -1,19 +1,29 @@
 ---
 uid: System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause.#ctor(System.Object)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.EmptySecurityKeyIdentifierClause.Context
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

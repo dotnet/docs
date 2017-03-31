@@ -20,8 +20,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An <see langword="abstract" /> class that the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] derives from <see cref="T:System.Xml.XmlReader" /> to do serialization and deserialization.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Methods in this class read <xref:System.Xml.XmlDictionary> objects.  
+  
+ This class is derived from <xref:System.Xml.XmlReader>.  
+  
+ Note that there is a known issue with the normalization of linefeed characters inside of CDATA sections that you may encounter.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,8 +55,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates an instance of this class.  Invoked only by its derived classes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The only constructor for this class is the default constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanCanonicalize">
@@ -70,9 +88,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>This property always returns <see langword="false" />. Its derived classes can override to return <see langword="true" /> if they support canonicalization.</summary>
+        <value>Returns <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property always returns `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateBinaryReader">
@@ -101,11 +126,20 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="quotas">The quotas that apply to this operation.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read .NET Binary XML Format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateBinaryReader">
@@ -134,11 +168,20 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream from which to read.</param>
+        <param name="quotas">The quotas that apply to this operation.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read .NET Binary XML Format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateBinaryReader">
@@ -168,12 +211,22 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="dictionary">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream from which to read.</param>
+        <param name="dictionary">
+          <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
+        <param name="quotas">The quotas that apply to this operation.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read .NET Binary XML Format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> or <paramref name="quotas" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateBinaryReader">
@@ -204,13 +257,24 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="quotas">The quotas that apply to this operation.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read .NET Binary XML Format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is less than zero or greater than the buffer length minus the offset.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateBinaryReader">
@@ -241,13 +305,24 @@
         <Parameter Name="session" Type="System.Xml.XmlBinaryReaderSession" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="dictionary">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <param name="session">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream from which to read.</param>
+        <param name="dictionary">
+          <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
+        <param name="quotas">The quotas that apply to this operation.</param>
+        <param name="session">
+          <see cref="T:System.Xml.XmlBinaryReaderSession" /> to use.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read .NET Binary XML Format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateBinaryReader">
@@ -279,14 +354,26 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="dictionary">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="dictionary">
+          <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
+        <param name="quotas">The quotas that apply to this operation.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read .NET Binary XML Format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is less than zero or greater than the buffer length minus the offset.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateBinaryReader">
@@ -314,14 +401,26 @@
         <Parameter Name="onClose" Type="System.Xml.OnXmlDictionaryReaderClose" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="dictionary">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <param name="session">To be added.</param>
-        <param name="onClose">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream from which to read.</param>
+        <param name="dictionary">
+          <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
+        <param name="quotas">
+          <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply.</param>
+        <param name="session">
+          <see cref="T:System.Xml.XmlBinaryReaderSession" /> to use.</param>
+        <param name="onClose">Delegate to be called when the reader is closed.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read .NET Binary XML Format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateBinaryReader">
@@ -354,15 +453,26 @@
         <Parameter Name="session" Type="System.Xml.XmlBinaryReaderSession" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="dictionary">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <param name="session">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="dictionary">The <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
+        <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply.</param>
+        <param name="session">The <see cref="T:System.Xml.XmlBinaryReaderSession" /> to use.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read .NET Binary XML Format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is less than zero or greater than the buffer length minus the offset.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateBinaryReader">
@@ -392,16 +502,27 @@
         <Parameter Name="onClose" Type="System.Xml.OnXmlDictionaryReaderClose" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="dictionary">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <param name="session">To be added.</param>
-        <param name="onClose">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="dictionary">The <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
+        <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply.</param>
+        <param name="session">The <see cref="T:System.Xml.XmlBinaryReaderSession" /> to use.</param>
+        <param name="onClose">Delegate to be called when the reader is closed.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read .NET Binary XML Format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Other <xref:System.Xml.XmlDictionaryReader> properties are set to default values or `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is less than zero or greater than the buffer length minus the offset.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateDictionaryReader">
@@ -429,10 +550,12 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">An instance of <see cref="T:System.Xml.XmlReader" />.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> from an existing <see cref="T:System.Xml.XmlReader" />.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateMtomReader">
@@ -458,12 +581,21 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="encoding">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream from which to read.</param>
+        <param name="encoding">The possible character encoding of the stream.</param>
+        <param name="quotas">The quotas to apply to this reader.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that reads XML in the MTOM format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method reads from a stream, using the character encoding specified by `encoding`, an instance of <xref:System.Text.Encoding>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="encoding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateMtomReader">
@@ -489,12 +621,21 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="encodings">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream from which to read.</param>
+        <param name="encodings">The possible character encodings of the stream.</param>
+        <param name="quotas">The quotas to apply to this reader.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that reads XML in the MTOM format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method reads from a stream, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="encoding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateMtomReader">
@@ -521,13 +662,20 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="encodings">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream from which to read.</param>
+        <param name="encodings">The possible character encodings of the stream.</param>
+        <param name="contentType">The Content-Type MIME type of the message.</param>
+        <param name="quotas">The quotas to apply to this reader.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that reads XML in the MTOM format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method reads from a stream, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>. The message is of the specified MIME type. If `contentType` is `null`, the Content-Type MIME header must be present in the message.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMtomReader">
@@ -555,14 +703,23 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="encoding">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="encoding">The possible character encoding of the input.</param>
+        <param name="quotas">The quotas to apply to this reader.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that reads XML in the MTOM format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method reads from a buffer with a specified offset and count, using the character encoding specified by `encoding`, an instance of <xref:System.Text.Encoding>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="encoding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateMtomReader">
@@ -590,14 +747,21 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="encodings">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="encodings">The possible character encodings of the input.</param>
+        <param name="quotas">The quotas to apply to this reader.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that reads XML in the MTOM format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method reads from a buffer with a specified offset and count, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMtomReader">
@@ -626,15 +790,22 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="encodings">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="encodings">The possible character encodings of the input.</param>
+        <param name="contentType">The Content-Type MIME type of the message.</param>
+        <param name="quotas">The quotas to apply to this reader.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that reads XML in the MTOM format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method reads from a buffer with a specified offset and count, using one of the  character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>. The message is of the specified MIME type. If `contentType` is `null`, the Content-Type MIME header must be present in the message.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMtomReader">
@@ -663,15 +834,22 @@
         <Parameter Name="onClose" Type="System.Xml.OnXmlDictionaryReaderClose" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="encodings">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <param name="maxBufferSize">To be added.</param>
-        <param name="onClose">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream from which to read.</param>
+        <param name="encodings">The possible character encodings of the stream.</param>
+        <param name="contentType">The Content-Type MIME type of the message.</param>
+        <param name="quotas">The MIME type of the message.</param>
+        <param name="maxBufferSize">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply to the reader.</param>
+        <param name="onClose">The delegate to be called when the reader is closed.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that reads XML in the MTOM format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method reads from a stream, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>. The message is of the specified MIME type. If `contentType` is `null`, the Content-Type MIME header must be present in the message.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMtomReader">
@@ -702,17 +880,24 @@
         <Parameter Name="onClose" Type="System.Xml.OnXmlDictionaryReaderClose" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="encodings">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <param name="maxBufferSize">To be added.</param>
-        <param name="onClose">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="encodings">The possible character encodings of the input.</param>
+        <param name="contentType">The Content-Type MIME type of the message.</param>
+        <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply to the reader.</param>
+        <param name="maxBufferSize">The maximum allowed size of the buffer.</param>
+        <param name="onClose">The delegate to be called when the reader is closed.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that reads XML in the MTOM format.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method reads from a buffer with a specified offset and count, using one of the character encodings specified by `encodings`, an array of instances of <xref:System.Text.Encoding>. The message is of the specified MIME type. If `contentType` is `null`, the Content-Type MIME header must be present in the message.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateTextReader">
@@ -741,11 +926,20 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="quotas">The quotas applied to the reader.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The reader created is optimized for reading UTF-8 text.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateTextReader">
@@ -774,11 +968,18 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream from which to read.</param>
+        <param name="quotas">The quotas applied to the reader.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The reader created is optimized for reading UTF-8 text.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateTextReader">
@@ -809,13 +1010,20 @@
         <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="quotas">The quotas applied to the reader.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The reader created is optimized for reading UTF-8 text.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateTextReader">
@@ -846,13 +1054,20 @@
         <Parameter Name="onClose" Type="System.Xml.OnXmlDictionaryReaderClose" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="encoding">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <param name="onClose">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream from which to read.</param>
+        <param name="encoding">The <see cref="T:System.Text.Encoding" /> object that specifies the encoding properties to apply.</param>
+        <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply.</param>
+        <param name="onClose">The delegate to be called when the reader is closed.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The reader created is optimized for reading UTF-8 text.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateTextReader">
@@ -881,15 +1096,22 @@
         <Parameter Name="onClose" Type="System.Xml.OnXmlDictionaryReaderClose" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="encoding">To be added.</param>
-        <param name="quotas">To be added.</param>
-        <param name="onClose">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <param name="encoding">The <see cref="T:System.Text.Encoding" /> object that specifies the encoding properties to apply.</param>
+        <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> to apply.</param>
+        <param name="onClose">The delegate to be called when the reader is closed.</param>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</summary>
+        <returns>An instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The reader created is optimized for reading UTF-8 text.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCanonicalization">
@@ -915,8 +1137,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This method is not yet implemented.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetAttribute">
@@ -945,10 +1168,10 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">An <see cref="T:System.Xml.XmlDictionaryString" /> that represents the local name of the attribute.</param>
+        <param name="namespaceUri">An <see cref="T:System.Xml.XmlDictionaryString" /> that represents the namespace of the attribute.</param>
+        <summary>When overridden in a derived class, gets the value of an attribute.</summary>
+        <returns>The value of the attribute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -974,9 +1197,9 @@
         <Parameter Name="namespaceUri" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="localName">The local name.</param>
+        <param name="namespaceUri">The namespace for the local <c>localName</c>.</param>
+        <summary>Gets non-atomized names.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1006,11 +1229,20 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localNames">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localNames">The string array of local names to be searched.</param>
+        <param name="namespaceUri">The namespace of current node.</param>
+        <summary>Gets the index of the local name of the current node within an array of names.</summary>
+        <returns>The index of the local name of the current node within an array of names.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `localNames` is an array of strings, and `namespaceUri` is a string.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceUri" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IndexOfLocalName">
@@ -1039,11 +1271,20 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localNames">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localNames">The <see cref="T:System.Xml.XmlDictionaryString" /> array of local names to be searched.</param>
+        <param name="namespaceUri">The namespace of current node.</param>
+        <summary>Gets the index of the local name of the current node within an array of names.</summary>
+        <returns>The index of the local name of the current node within an array of names.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `localNames` is an array of <xref:System.Xml.XmlDictionaryString>, and `namespaceUri` is an <xref:System.Xml.XmlDictionaryString>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceUri" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsLocalName">
@@ -1071,9 +1312,10 @@
         <Parameter Name="localName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the current node.</param>
+        <summary>Checks whether the parameter, <paramref name="localName" />, is the local name of the current node.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="localName" /> matches local name of the current node; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1102,10 +1344,13 @@
         <Parameter Name="localName" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">An <see cref="T:System.Xml.XmlDictionaryString" /> that represents the local name of the current node.</param>
+        <summary>Checks whether the parameter, <paramref name="localName" />, is the local name of the current node.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="localName" /> matches local name of the current node; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="localName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsNamespaceUri">
@@ -1133,10 +1378,13 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="namespaceUri">The namespace of current node.</param>
+        <summary>Checks whether the parameter, <paramref name="namespaceUri" />, is the namespace of the current node.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="namespaceUri" /> matches namespace of the current node; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceUri" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsNamespaceUri">
@@ -1164,10 +1412,13 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="namespaceUri">Namespace of current node.</param>
+        <summary>Checks whether the parameter, <paramref name="namespaceUri" />, is the namespace of the current node.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="namespaceUri" /> matches namespace of the current node; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceUri" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsStartArray">
@@ -1195,9 +1446,10 @@
         <Parameter Name="type" Type="System.Type&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">Type of the node, if a valid node; otherwise <see langword="null" />.</param>
+        <summary>Checks whether the reader is positioned at the start of an array. This class returns <see langword="false" />, but derived classes that have the concept of arrays might return <see langword="true" />.</summary>
+        <returns>
+          <see langword="true" /> if the reader is positioned at the start of an array node; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1227,10 +1479,11 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">An <see cref="T:System.Xml.XmlDictionaryString" /> that represents the local name of the attribute.</param>
+        <param name="namespaceUri">An <see cref="T:System.Xml.XmlDictionaryString" /> that represents the namespace of the attribute.</param>
+        <summary>Tests whether the first tag is a start tag or empty element tag and if the local name and namespace URI match those of the current node.</summary>
+        <returns>
+          <see langword="true" /> if the first tag in the array is a start tag or empty element tag and matches <paramref name="localName" /> and <paramref name="namespaceUri" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1259,9 +1512,10 @@
         <Parameter Name="nodeType" Type="System.Xml.XmlNodeType" />
       </Parameters>
       <Docs>
-        <param name="nodeType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="nodeType">Type of the node being tested.</param>
+        <summary>Tests whether the current node is a text node.</summary>
+        <returns>
+          <see langword="true" /> if the node type is <see cref="F:System.Xml.XmlNodeType.Text" />, <see cref="F:System.Xml.XmlNodeType.Whitespace" />, <see cref="F:System.Xml.XmlNodeType.SignificantWhitespace" />, <see cref="F:System.Xml.XmlNodeType.CDATA" />, or <see cref="F:System.Xml.XmlNodeType.Attribute" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1288,7 +1542,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tests whether the current content node is a start element or an empty element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1317,8 +1571,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The <see cref="P:System.Xml.XmlReader.Name" /> property of the element.</param>
+        <summary>Tests whether the current content node is a start element or an empty element and if the <see cref="P:System.Xml.XmlReader.Name" /> property of the element matches the given argument.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1348,9 +1602,9 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Tests whether the current content node is a start element or an empty element and if the <see cref="P:System.Xml.XmlReader.LocalName" /> and <see cref="P:System.Xml.XmlReader.NamespaceURI" /> properties of the element matches the given arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1380,9 +1634,9 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Tests whether the current content node is a start element or an empty element and if the <see cref="P:System.Xml.XmlReader.LocalName" /> and <see cref="P:System.Xml.XmlReader.NamespaceURI" /> properties of the element matches the given argument.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1408,8 +1662,8 @@
         <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the quota values that apply to the current instance of this class.</summary>
+        <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that applies to the current instance of this class.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1442,14 +1696,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The local name of the element.</param>
+        <param name="array">The array into which the nodes are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to put in the array.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.Boolean" /> nodes into a typed array.</summary>
+        <returns>The number of nodes put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1481,14 +1739,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the nodes are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to put in the array.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.DateTime" /> nodes into a typed array.</summary>
+        <returns>The number of nodes put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1520,14 +1782,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the nodes are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to put in the array.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.Decimal" /> nodes into a typed array.</summary>
+        <returns>The number of nodes put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1559,14 +1825,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the nodes are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to put in the array.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.Double" /> nodes into a typed array.</summary>
+        <returns>The number of nodes put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1598,14 +1868,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the nodes are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to put in the array.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.Guid" /> nodes into a typed array.</summary>
+        <returns>The number of nodes put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1637,14 +1911,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the integers are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of integers to put in the array.</param>
+        <summary>Reads repeated occurrences of <see langword="short" /> integers into a typed array.</summary>
+        <returns>The number of integers put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1676,14 +1954,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the integers are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of integers to put in the array.</param>
+        <summary>Reads repeated occurrences of integers into a typed array.</summary>
+        <returns>The number of integers put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1715,14 +1997,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the integers are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of integers to put in the array.</param>
+        <summary>Reads repeated occurrences of <see langword="long" /> integers into a typed array.</summary>
+        <returns>The number of integers put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1754,14 +2040,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the float numbers are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of float numbers to put in the array.</param>
+        <summary>Reads repeated occurrences of <see langword="float" /> numbers into a typed array.</summary>
+        <returns>The umber of float numbers put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1793,14 +2083,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the nodes are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to put in the array.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.TimeSpan" /> nodes into a typed array.</summary>
+        <returns>The number of nodes put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1832,14 +2126,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the nodes are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to put in the array.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.Boolean" /> nodes into a typed array.</summary>
+        <returns>The number of nodes put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1871,14 +2169,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the nodes are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to put in the array.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.DateTime" /> nodes into a typed array.</summary>
+        <returns>The number of nodes put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1910,14 +2212,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the nodes are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to put in the array.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.Decimal" /> nodes into a typed array.</summary>
+        <returns>The number of nodes put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1949,14 +2255,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the nodes are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to put in the array.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.Double" /> nodes type into a typed array.</summary>
+        <returns>The number of nodes put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -1988,14 +2298,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the nodes are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to put in the array.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.Guid" /> nodes into a typed array.</summary>
+        <returns>The number of nodes put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -2027,14 +2341,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the integers are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of integers to put in the array.</param>
+        <summary>Reads repeated occurrences of <see langword="short" /> integers into a typed array.</summary>
+        <returns>The number of integers put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -2066,14 +2384,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the integers are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of integers to put in the array.</param>
+        <summary>Reads repeated occurrences of integers into a typed array.</summary>
+        <returns>The number of integers put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -2105,14 +2427,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the integers are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of integers to put in the array.</param>
+        <summary>Reads repeated occurrences of <see langword="long" /> integers into a typed array.</summary>
+        <returns>The number of integers put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -2144,14 +2470,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the float numbers are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of float numbers to put in the array.</param>
+        <summary>Reads repeated occurrences of <see langword="float" /> numbers into a typed array.</summary>
+        <returns>The number of float numbers put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadArray">
@@ -2183,14 +2513,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <param name="array">The array into which the nodes are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of nodes to put in the array.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.TimeSpan" /> nodes into a typed array.</summary>
+        <returns>The number of nodes put in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is &lt; 0 or &gt; <paramref name="array" /> length minus <paramref name="offset" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadBooleanArray">
@@ -2219,11 +2553,18 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.Boolean" /> nodes into a typed array.</summary>
+        <returns>A <see cref="T:System.Boolean" /> array of the <see cref="T:System.Boolean" /> nodes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadBooleanArray">
@@ -2252,11 +2593,18 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads repeated occurrences of <see cref="T:System.Boolean" /> nodes into a typed array.</summary>
+        <returns>A <see cref="T:System.Boolean" /> array of the <see cref="T:System.Boolean" /> nodes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAs">
@@ -2285,10 +2633,10 @@
         <Parameter Name="namespaceResolver" Type="System.Xml.IXmlNamespaceResolver" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="namespaceResolver">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The <see cref="T:System.Type" /> of the value to be returned.</param>
+        <param name="namespaceResolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> object that is used to resolve any namespace prefixes related to type conversion. For example, this can be used when converting an <see cref="T:System.Xml.XmlQualifiedName" /> object to an <c>xs:string</c>. This value can be a null reference.</param>
+        <summary>Converts a node's content to a specified type.</summary>
+        <returns>The concatenated text content or attribute value converted to the requested type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2315,9 +2663,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Reads the content and returns the Base64 decoded binary bytes.</summary>
+        <returns>A byte array that contains the Base64 decoded binary bytes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">The array size is greater than the MaxArrayLength quota for this reader.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsBinHex">
@@ -2343,9 +2699,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Reads the content and returns the <see langword="BinHex" /> decoded binary bytes.</summary>
+        <returns>A byte array that contains the <see langword="BinHex" /> decoded binary bytes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">The array size is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsBinHex">
@@ -2373,10 +2737,11 @@
         <Parameter Name="maxByteArrayContentLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="maxByteArrayContentLength">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="maxByteArrayContentLength">The maximum array length.</param>
+        <summary>Reads the content and returns the <see langword="BinHex" /> decoded binary bytes.</summary>
+        <returns>A byte array that contains the <see langword="BinHex" /> decoded binary bytes.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.XmlException">The array size is greater than <paramref name="maxByteArrayContentLength" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsChars">
@@ -2406,11 +2771,11 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="chars">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="chars">The array into which the characters are put.</param>
+        <param name="offset">The starting index in the array.</param>
+        <param name="count">The number of characters to put in the array.</param>
+        <summary>Reads the content into a <see langword="char" /> array.</summary>
+        <returns>Number of characters read.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2437,8 +2802,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts a node's content to <see langword="decimal" />.</summary>
+        <returns>The <see langword="decimal" /> representation of node's content.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2465,8 +2830,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts a node's content to <see langword="float" />.</summary>
+        <returns>The <see langword="float" /> representation of node's content.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2493,8 +2858,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts a node's content to <see langword="guid" />.</summary>
+        <returns>The <see langword="guid" /> representation of node's content.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2524,9 +2889,9 @@
         <Parameter Name="namespaceUri" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="localName">The <see cref="P:System.Xml.XmlReader.LocalName" /> part of the qualified name (<see langword="out" /> parameter).</param>
+        <param name="namespaceUri">The <see cref="P:System.Xml.XmlReader.NamespaceURI" /> part of the qualified name (<see langword="out" /> parameter).</param>
+        <summary>Converts a node's content to a qualified name representation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2553,9 +2918,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Converts a node's content to a string.</summary>
+        <returns>The node content in a string representation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this read operation is limited by the MaxStringContentLength quota  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsString">
@@ -2583,10 +2955,17 @@
         <Parameter Name="maxStringContentLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="maxStringContentLength">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="maxStringContentLength">The maximum string length.</param>
+        <summary>Converts a node's content to a string.</summary>
+        <returns>Node content in string representation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this read operation is limited by the MaxStringContentLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsString">
@@ -2615,11 +2994,12 @@
         <Parameter Name="index" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="strings">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="strings">The array of strings to match content against.</param>
+        <param name="index">The index of the entry in <c>strings</c> that matches the content.</param>
+        <summary>Converts a node's content to a string.</summary>
+        <returns>The node content in a string representation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An entry in<paramref name=" strings" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsString">
@@ -2648,11 +3028,12 @@
         <Parameter Name="index" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="strings">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="strings">The array of <see cref="T:System.Xml.XmlDictionaryString" /> objects to match content against.</param>
+        <param name="index">The index of the entry in <c>strings</c> that matches the content.</param>
+        <summary>Converts a node's content to a string.</summary>
+        <returns>The node content in a string representation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An entry in<paramref name=" strings" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsTimeSpan">
@@ -2678,8 +3059,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts a node's content to <see cref="T:System.TimeSpan" />.</summary>
+        <returns>
+          <see cref="T:System.TimeSpan" /> representation of node's content.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2706,8 +3088,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts a node's content to a unique identifier.</summary>
+        <returns>The node's content represented as a unique identifier.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2737,11 +3119,18 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Converts a node's content to a <see cref="T:System.DateTime" /> array.</summary>
+        <returns>The node's content represented as a <see cref="T:System.DateTime" /> array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadDateTimeArray">
@@ -2770,10 +3159,10 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Converts a node's content to a <see cref="T:System.DateTime" /> array.</summary>
+        <returns>The node's content represented as a <see cref="T:System.DateTime" /> array.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2803,11 +3192,18 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Converts a node's content to a <see cref="T:System.Decimal" /> array.</summary>
+        <returns>The node's content represented as a <see cref="T:System.Decimal" /> array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadDecimalArray">
@@ -2836,11 +3232,18 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Converts a node's content to a <see cref="T:System.Decimal" /> array.</summary>
+        <returns>The node's content represented as a <see cref="T:System.Decimal" /> array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadDoubleArray">
@@ -2869,11 +3272,18 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Converts a node's content to a <see cref="T:System.Double" /> array.</summary>
+        <returns>The node's content represented as a <see cref="T:System.Double" /> array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadDoubleArray">
@@ -2902,11 +3312,18 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Converts a node's content to a <see cref="T:System.Double" /> array.</summary>
+        <returns>The node's content represented as a <see cref="T:System.Double" /> array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBase64">
@@ -2932,9 +3349,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Converts a node's content to a array of Base64 bytes.</summary>
+        <returns>The node's content represented as an array of Base64 bytes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBinHex">
@@ -2960,9 +3384,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Converts a node's content to an array of <see langword="BinHex" /> bytes.</summary>
+        <returns>The node's content represented as an array of <see langword="BinHex" /> bytes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBoolean">
@@ -2988,8 +3419,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts an element's content to a <see cref="T:System.Boolean" />.</summary>
+        <returns>The node's content represented as a <see cref="T:System.Boolean" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3012,9 +3443,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts an element's content to a <see cref="T:System.DateTime" />.</summary>
+        <returns>The node's content represented as a <see cref="T:System.DateTime" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The element is not in valid format.</exception>
+        <exception cref="T:System.FormatException">The element is not in valid format.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsDecimal">
@@ -3040,8 +3473,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts an element's content to a <see cref="T:System.Decimal" />.</summary>
+        <returns>The node's content represented as a <see cref="T:System.Decimal" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3068,8 +3501,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts an element's content to a <see cref="T:System.Double" />.</summary>
+        <returns>The node's content represented as a <see cref="T:System.Double" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3096,8 +3529,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts an element's content to a floating point number (<see cref="T:System.Single" />).</summary>
+        <returns>The node's content represented as a floating point number (<see cref="T:System.Single" />).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3124,9 +3557,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts an element's content to a <see cref="T:System.Guid" />.</summary>
+        <returns>The node's content represented as a <see cref="T:System.Guid" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The element is not in valid format.</exception>
+        <exception cref="T:System.FormatException">The element is not in valid format.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsInt">
@@ -3152,8 +3587,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts an element's content to an integer (<see cref="T:System.Int32" />).</summary>
+        <returns>The node's content represented as an integer (<see cref="T:System.Int32" />).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3180,8 +3615,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts an element's content to a long integer (<see cref="T:System.Int64" />).</summary>
+        <returns>The node's content represented as a long integer (<see cref="T:System.Int64" />).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3208,9 +3643,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Converts an element's content to a <see cref="T:System.String" />.</summary>
+        <returns>The node's content represented as a <see cref="T:System.String" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this read operation is limited by the MaxStringContentLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsTimeSpan">
@@ -3236,8 +3678,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts an element's content to a <see cref="T:System.TimeSpan" />.</summary>
+        <returns>The node's content represented as a <see cref="T:System.TimeSpan" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3264,9 +3706,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts an element's content to a unique identifier.</summary>
+        <returns>The node's content represented as a unique identifier.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The element is not in valid format.</exception>
+        <exception cref="T:System.FormatException">The element is not in valid format.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadFullStartElement">
@@ -3292,8 +3736,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Checks whether the current node is an element and advances the reader to the next node.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.XmlException">
+          <see cref="M:System.Xml.XmlDictionaryReader.IsStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" /> returns <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadFullStartElement">
@@ -3321,9 +3767,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The qualified name of the element.</param>
+        <summary>Checks whether the current node is an element with the given <paramref name="name" /> and advances the reader to the next node.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.XmlException">
+          <see cref="M:System.Xml.XmlDictionaryReader.IsStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" /> returns <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadFullStartElement">
@@ -3352,10 +3800,12 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Checks whether the current node is an element with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> and advances the reader to the next node.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.XmlException">
+          <see cref="M:System.Xml.XmlDictionaryReader.IsStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" /> returns <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadFullStartElement">
@@ -3384,10 +3834,12 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Checks whether the current node is an element with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> and advances the reader to the next node.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.XmlException">
+          <see cref="M:System.Xml.XmlDictionaryReader.IsStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)" /> returns <see langword="false" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadGuidArray">
@@ -3416,11 +3868,18 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads the contents of a series of nodes with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> into an array of <see cref="T:System.Guid" />.</summary>
+        <returns>An array of <see cref="T:System.Guid" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadGuidArray">
@@ -3449,11 +3908,18 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads the contents of a series of nodes with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> into an array of <see cref="T:System.Guid" />.</summary>
+        <returns>An array of <see cref="T:System.Guid" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt16Array">
@@ -3482,11 +3948,18 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads the contents of a series of nodes with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> into an array of <see langword="short" /> integers (<see cref="T:System.Int16" />).</summary>
+        <returns>An array of <see langword="short" /> integers (<see cref="T:System.Int16" />).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt16Array">
@@ -3515,11 +3988,18 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads the contents of a series of nodes with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> into an array of <see langword="short" /> integers (<see cref="T:System.Int16" />).</summary>
+        <returns>An array of <see langword="short" /> integers (<see cref="T:System.Int16" />).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt32Array">
@@ -3548,11 +4028,18 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads the contents of a series of nodes with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> into an array of integers (<see cref="T:System.Int32" />).</summary>
+        <returns>An array of integers (<see cref="T:System.Int32" />).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt32Array">
@@ -3581,11 +4068,18 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads the contents of a series of nodes with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> into an array of integers (<see cref="T:System.Int32" />).</summary>
+        <returns>An array of integers (<see cref="T:System.Int32" />).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt64Array">
@@ -3614,11 +4108,18 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads the contents of a series of nodes with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> into an array of <see langword="long" /> integers (<see cref="T:System.Int64" />).</summary>
+        <returns>An array of <see langword="long" /> integers (<see cref="T:System.Int64" />).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadInt64Array">
@@ -3647,11 +4148,18 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads the contents of a series of nodes with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> into an array of <see langword="long" /> integers (<see cref="T:System.Int64" />).</summary>
+        <returns>An array of <see langword="long" /> integers (<see cref="T:System.Int64" />).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadSingleArray">
@@ -3680,11 +4188,18 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads the contents of a series of nodes with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> into an array of <see langword="float" /> numbers (<see cref="T:System.Single" />).</summary>
+        <returns>An array of <see langword="float" /> numbers (<see cref="T:System.Single" />).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadSingleArray">
@@ -3713,11 +4228,18 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads the contents of a series of nodes with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> into an array of <see langword="float" /> numbers (<see cref="T:System.Single" />).</summary>
+        <returns>An array of <see langword="float" /> numbers (<see cref="T:System.Single" />).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadStartElement">
@@ -3746,9 +4268,9 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Checks whether the current node is an element with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> and advances the reader to the next node.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3771,9 +4293,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads the contents of the current node into a string.</summary>
+        <returns>A string that contains the contents of the current node.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Unable to read the contents of the current node.</exception>
+        <exception cref="T:System.Xml.XmlException">Maximum allowed string length exceeded.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadString">
@@ -3797,10 +4321,12 @@
         <Parameter Name="maxStringContentLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="maxStringContentLength">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="maxStringContentLength">Maximum allowed string length.</param>
+        <summary>Reads the contents of the current node into a string with a given maximum length.</summary>
+        <returns>A string that contains the contents of the current node.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Unable to read the contents of the current node.</exception>
+        <exception cref="T:System.Xml.XmlException">Maximum allowed string length exceeded.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadTimeSpanArray">
@@ -3829,11 +4355,18 @@
         <Parameter Name="namespaceUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads the contents of a series of nodes with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> into a <see cref="T:System.TimeSpan" /> array.</summary>
+        <returns>A <see cref="T:System.TimeSpan" /> array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadTimeSpanArray">
@@ -3862,11 +4395,18 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="localName">The local name of the element.</param>
+        <param name="namespaceUri">The namespace URI of the element.</param>
+        <summary>Reads the contents of a series of nodes with the given <paramref name="localName" /> and <paramref name="namespaceUri" /> into a <see cref="T:System.TimeSpan" /> array.</summary>
+        <returns>A <see cref="T:System.TimeSpan" /> array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The buffer allocated by this read operation is limited by the MaxArrayLength quota.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadValueAsBase64">
@@ -3896,12 +4436,13 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="buffer">The buffer from which to read.</param>
+        <param name="offset">The starting position from which to read in <c>buffer</c>.</param>
+        <param name="count">The number of bytes that can be read from <c>buffer</c>.</param>
+        <summary>Not implemented.</summary>
+        <returns>Not implemented.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="StartCanonicalization">
@@ -3931,11 +4472,19 @@
         <Parameter Name="inclusivePrefixes" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="includeComments">To be added.</param>
-        <param name="inclusivePrefixes">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream to read from.</param>
+        <param name="includeComments">Determines whether comments are included.</param>
+        <param name="inclusivePrefixes">The prefixes to be included.</param>
+        <summary>This method is not yet implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Start reading the canonical octets of the XML being read to this reader from the supplied stream until the matching `EndCanonicalization` call is made. The content read from the main reader stream is unaffected by this call. `includeComments` defines whether comments are to be included in the canonical input and `inclusivePrefixes` provides the list of prefixes to be treated as inclusive prefixes with the exclusive canonicalization algorithm.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetArrayLength">
@@ -3963,9 +4512,10 @@
         <Parameter Name="count" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="count">Returns 0, unless overridden in a derived class.</param>
+        <summary>Not implemented in this class (it always returns <see langword="false" />). May be overridden in derived classes.</summary>
+        <returns>
+          <see langword="false" />, unless overridden in a derived class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3994,9 +4544,10 @@
         <Parameter Name="length" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="length">Returns 0, unless overridden in a derived class.</param>
+        <summary>Not implemented in this class (it always returns <see langword="false" />). May be overridden in derived classes.</summary>
+        <returns>
+          <see langword="false" />, unless overridden in a derived class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4025,9 +4576,10 @@
         <Parameter Name="localName" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="localName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="localName">Returns <see langword="null" />, unless overridden in a derived class. .</param>
+        <summary>Not implemented in this class (it always returns <see langword="false" />). May be overridden in derived classes.</summary>
+        <returns>
+          <see langword="false" />, unless overridden in a derived class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4056,9 +4608,10 @@
         <Parameter Name="namespaceUri" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="namespaceUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="namespaceUri">Returns <see langword="null" />, unless overridden in a derived class.</param>
+        <summary>Not implemented in this class (it always returns <see langword="false" />). May be overridden in derived classes.</summary>
+        <returns>
+          <see langword="false" />, unless overridden in a derived class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4087,11 +4640,64 @@
         <Parameter Name="value" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">Returns <see langword="null" />, unless overridden in a derived class.</param>
+        <summary>Not implemented in this class (it always returns <see langword="false" />). May be overridden in derived classes.</summary>
+        <returns>
+          <see langword="false" />, unless overridden in a derived class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateMtomReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that reads XML in the MTOM format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ MTOM allows users to optimize the transmission and wire format of their SOAP messages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateTextReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These overloads create an instance of <xref:System.Xml.XmlDictionaryReader>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateBinaryReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Xml.XmlDictionaryReader" /> that can read .NET Binary XML Format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These overloads create an instance of <xref:System.Xml.XmlDictionaryReader> that can read .NET Binary XML Format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

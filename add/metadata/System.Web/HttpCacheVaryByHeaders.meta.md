@@ -1,49 +1,59 @@
 ---
 uid: System.Web.HttpCacheVaryByHeaders
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByHeaders.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByHeaders.UserAgent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByHeaders.SetHeaders(System.String[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByHeaders.GetHeaders
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByHeaders.AcceptTypes
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByHeaders.Item(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByHeaders.VaryByUnspecifiedParameters
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByHeaders.UserCharSet
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.HttpCacheVaryByHeaders.UserLanguage
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

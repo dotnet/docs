@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.Design.IProjectItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IProjectItem.PhysicalPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IProjectItem.Parent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IProjectItem.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.IProjectItem.AppRelativeUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

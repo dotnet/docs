@@ -1,1 +1,0 @@
-        Dim inputBlockSize As Integer = cryptoTransform.InputBlockSize

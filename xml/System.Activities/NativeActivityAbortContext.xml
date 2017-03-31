@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the execution environment of an activity that is being aborted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom activity authors that create activities that are derived from <xref:System.Activities.NativeActivity%601> can override <xref:System.Activities.NativeActivity%601.Abort%2A> to take action in response to being aborted. For example, an activity that interacts with <xref:System.Data.SqlClient.SqlCommand> might want to call <xref:System.Data.SqlClient.SqlCommand.Cancel%2A> if the activity is being aborted.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Reason">
@@ -28,8 +35,8 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an <see cref="T:System.Exception" /> that contains the reason for the activity being aborted.</summary>
+        <value>An exception that contains the reason for the activity being aborted.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

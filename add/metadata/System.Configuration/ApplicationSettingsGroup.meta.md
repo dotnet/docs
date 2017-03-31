@@ -1,9 +1,9 @@
 ---
 uid: System.Configuration.ApplicationSettingsGroup
-internalonly: False
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.ApplicationSettingsGroup.#ctor
-internalonly: False
+manager: "wpickett"
 ---

@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the position of input that is needed to create a manipulation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each touch point is an <xref:System.Windows.Input.IManipulator> object.  For example, if you use two fingers to resize an object, a <xref:System.Windows.Input.TouchDevice>, which implements <xref:System.Windows.Input.IManipulator>, is created for each finger.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetPosition">
@@ -28,9 +35,9 @@
         <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="relativeTo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="relativeTo">The element to use as the frame of reference for calculating the position of the <see cref="T:System.Windows.Input.IManipulator" />.</param>
+        <summary>Returns the position of the <see cref="T:System.Windows.Input.IManipulator" /> object.</summary>
+        <returns>The position of the <see cref="T:System.Windows.Input.IManipulator" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,9 +54,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a unique identifier for the object.</summary>
+        <value>A unique identifier for the object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.IManipulator.Id%2A> property should be unique for each object of a certain type.  For example, if the types `Manipulator1` and `Manipulator2` implement <xref:System.Windows.Input.IManipulator>, all of the objects of type `Maniplulator1` must have unique <xref:System.Windows.Input.IManipulator.Id%2A> values, but an object of type `Manipulator1` might have the same <xref:System.Windows.Input.IManipulator.Id%2A> as an object of type `Manipulator2`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ManipulationEnded">
@@ -73,8 +87,9 @@
         <Parameter Name="cancel" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="cancel">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cancel">
+          <see langword="true" /> if the manipulation is canceled; otherwise, <see langword="false" />.</param>
+        <summary>Called when the manipulation ends.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +106,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="T:System.Windows.Input.IManipulator" /> object changes position.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

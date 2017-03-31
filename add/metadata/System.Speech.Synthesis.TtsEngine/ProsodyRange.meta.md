@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Synthesis.TtsEngine.ProsodyRange
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

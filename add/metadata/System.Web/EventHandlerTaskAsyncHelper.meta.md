@@ -1,19 +1,27 @@
 ---
 uid: System.Web.EventHandlerTaskAsyncHelper
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.EventHandlerTaskAsyncHelper.#ctor(System.Web.TaskEventHandler)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.EventHandlerTaskAsyncHelper.EndEventHandler
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.EventHandlerTaskAsyncHelper.BeginEventHandler
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A configuration element that contains a collection of <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.ProfileElement" /> elements.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,8 +36,8 @@
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that specifies the type of collection contained within this element.</summary>
+        <value>One of the <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> enumeration values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

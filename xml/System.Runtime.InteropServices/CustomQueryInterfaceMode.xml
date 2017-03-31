@@ -23,7 +23,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates whether the <see cref="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type,System.Runtime.InteropServices.CustomQueryInterfaceMode)" /> method's [IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkID=144867) calls can use the <see cref="T:System.Runtime.InteropServices.ICustomQueryInterface" /> interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,7 +53,7 @@
         <ReturnType>System.Runtime.InteropServices.CustomQueryInterfaceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>[IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkID=144867) method calls can use the <see cref="T:System.Runtime.InteropServices.ICustomQueryInterface" /> interface. When you use this value, the <see cref="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type,System.Runtime.InteropServices.CustomQueryInterfaceMode)" /> method overload functions like the <see cref="M:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type)" /> overload.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ignore">
@@ -82,7 +82,7 @@
         <ReturnType>System.Runtime.InteropServices.CustomQueryInterfaceMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>[IUnknown::QueryInterface](http://go.microsoft.com/fwlink/?LinkID=144867) method calls should ignore the <see cref="T:System.Runtime.InteropServices.ICustomQueryInterface" /> interface.</summary>
       </Docs>
     </Member>
   </Members>

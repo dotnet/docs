@@ -1,14 +1,17 @@
 ---
 uid: System.Speech.Synthesis.StateChangedEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.StateChangedEventArgs.PreviousState
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.StateChangedEventArgs.State
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

@@ -11,8 +11,30 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods for drawing and getting information about a <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles?displayProperty=fullName> namespace exposes <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects that represent all of the controls and user interface (UI) elements that are supported by visual styles. To draw or get information about a particular element, you must set a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> to the element you are interested in. A <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> is automatically set to a specified <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.%23ctor%2A> constructor, but you can also set an existing <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> to a different element by calling the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.SetParameters%2A> method.  
+  
+ To draw an element, use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawBackground%2A> method. The <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class also includes methods, such as <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetColor%2A> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A>, that provide information about how an element is defined by the current visual style.  
+  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.%23ctor%2A> constructor and many of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> methods throw exceptions unless visual styles are enabled in the operating system and visual styles are applied to the client area of application windows. To check for these conditions, use the `static`<xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A> property.  
+  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class wraps the functionality of the visual styles (UxTheme) API from the Windows Shell portion of the Windows Platform SDK. For more information about visual styles, see "Using Windows XP Visual Styles" in the Platform SDK portion of the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library/).  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class to implement a custom control that simulates some of the basic UI of a window, including dragging with the title bar, resizing with the sizing handle, and closing. This example uses several <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects that represent standard parts of a window, including the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.Caption>, <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.CloseButton>, and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Status.Gripper> classes.  
+  
+ [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/cpp/form1.cpp#0)]
+ [!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/CS/form1.cs#0)]
+ [!code-vb[System.Windows.Forms.VisualStyles.VisualStyleRenderer#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/VB/form1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +50,38 @@
         <Parameter Name="element" Type="System.Windows.Forms.VisualStyles.VisualStyleElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> will represent.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> class using the given <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor uses the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ClassName%2A?displayProperty=fullName>, <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Part%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.State%2A?displayProperty=fullName> properties of the `element` parameter to initialize the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class%2A>, <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Part%2A>, and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.State%2A> properties.  
+  
+ Before using this constructor, you should call the `static`<xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsElementDefined%2A> method to verify whether the current visual style provides a definition for the element specified by the `element` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.%23ctor%28System.Windows.Forms.VisualStyles.VisualStyleElement%29> constructor to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>. This code example is part of a larger code example provided for the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class overview.  
+  
+ [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#40](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/cpp/form1.cpp#40)]
+ [!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/CS/form1.cs#40)]
+ [!code-vb[System.Windows.Forms.VisualStyles.VisualStyleRenderer#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/VB/form1.vb#40)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="element" /> is not defined by the current visual style.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -48,11 +99,30 @@
         <Parameter Name="state" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="part">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="className">The class name of the element that this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> will represent.</param>
+        <param name="part">The part of the element that this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> will represent.</param>
+        <param name="state">The state of the element that this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> will represent.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> class using the given class, part, and state values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor uses the `className`, `part`, and `state` parameters to initialize the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class%2A>, <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Part%2A>, and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.State%2A> properties.  
+  
+ Before using this constructor, you should call the `static`<xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsElementDefined%2A> method to verify whether the current visual style provides a definition for the element specified by the `className`, `part`, and `state` parameters.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+        <exception cref="T:System.ArgumentException">The combination of <paramref name="className" />, <paramref name="part" />, and <paramref name="state" /> is not defined by the current visual style.</exception>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -68,9 +138,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the class name of the current visual style element.</summary>
+        <value>A string that identifies the class of the current visual style element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property identifies a group of related controls or user interface (UI) elements. For more information about the class, part, and state of a visual style element, see the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DrawBackground">
@@ -90,10 +167,32 @@
         <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> used to draw the background image.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which the background image is drawn.</param>
+        <summary>Draws the background image of the current visual style element within the specified bounding rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method draws the background of the current visual style element specified by the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class%2A>, <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Part%2A>, and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.State%2A> properties.  
+  
+ If the <xref:System.Drawing.Rectangle.Width%2A> or <xref:System.Drawing.Rectangle.Height%2A> of the rectangle specified by the `bounds` parameter is less than 0, the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawBackground%2A> method will return without drawing the background.  
+  
+ The background of a visual style element can be a bitmap file or a filled border. To determine the background type, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>. To determine whether the element background will scale to fit the specified bounds, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawBackground%28System.Drawing.IDeviceContext%2CSystem.Drawing.Rectangle%29> method to a draw a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> within a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method. This code example is part of a larger example provided for the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class overview.  
+  
+ [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#20](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/cpp/form1.cpp#20)]
+ [!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/CS/form1.cs#20)]
+ [!code-vb[System.Windows.Forms.VisualStyles.VisualStyleRenderer#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/VB/form1.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawBackground">
@@ -114,11 +213,24 @@
         <Parameter Name="clipRectangle" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="clipRectangle">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> used to draw the background image.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which the background image is drawn.</param>
+        <param name="clipRectangle">A <see cref="T:System.Drawing.Rectangle" /> that defines a clipping rectangle for the drawing operation.</param>
+        <summary>Draws the background image of the current visual style element within the specified bounding rectangle and clipped to the specified clipping rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method draws the background of the current visual style element specified by the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class%2A>, <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Part%2A>, and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.State%2A> properties. The background will be clipped to the area specified by the `clipRectangle` parameter.  
+  
+ If the <xref:System.Drawing.Rectangle.Width%2A> or <xref:System.Drawing.Rectangle.Height%2A> of the rectangle specified by either the `bounds` or `clipRectangle` parameters is less than 0, the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawBackground%2A> method will return without drawing the background.  
+  
+ The background of a visual style element can be a bitmap file or a filled border. To determine the background type, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>. To determine whether the element background will scale to fit the specified bounds, call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawEdge">
@@ -141,14 +253,16 @@
         <Parameter Name="effects" Type="System.Windows.Forms.VisualStyles.EdgeEffects" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="edges">To be added.</param>
-        <param name="style">To be added.</param>
-        <param name="effects">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> used to draw the edges.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> whose bounds define the edges to draw.</param>
+        <param name="edges">A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.Edges" /> values.</param>
+        <param name="style">A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.EdgeStyle" /> values.</param>
+        <param name="effects">A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.EdgeEffects" /> values.</param>
+        <summary>Draws one or more edges of the specified bounding rectangle.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the interior of the <paramref name="bounds" /> parameter, minus the edges that were drawn.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -169,11 +283,20 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="image">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the image.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which the image is drawn.</param>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> to draw.</param>
+        <summary>Draws the specified image within the specified bounds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the visual style applies one of the effects specified by the <xref:System.Windows.Forms.VisualStyles.IconEffect?displayProperty=fullName> values to the current element, this method will apply the effect to the drawn image.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="g" /> or <paramref name="image" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawImage">
@@ -195,12 +318,23 @@
         <Parameter Name="imageIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="imageList">To be added.</param>
-        <param name="imageIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the image.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which the image is drawn.</param>
+        <param name="imageList">An <see cref="T:System.Windows.Forms.ImageList" /> that contains the <see cref="T:System.Drawing.Image" /> to draw.</param>
+        <param name="imageIndex">The index of the <see cref="T:System.Drawing.Image" /> within <c>imageList</c> to draw.</param>
+        <summary>Draws the image from the specified <see cref="T:System.Windows.Forms.ImageList" /> within the specified bounds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the visual style applies one of the effects specified by the <xref:System.Windows.Forms.VisualStyles.IconEffect?displayProperty=fullName> values to the current element, this method will apply the effect to the drawn image.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="g" /> or <paramref name="image" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="imageIndex" /> is less than 0, or greater than or equal to the number of images in<paramref name=" imageList" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawParentBackground">
@@ -221,11 +355,13 @@
         <Parameter Name="childControl" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="childControl">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> used to draw the background of the parent of <c>childControl</c>. This object typically belongs to the child control.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which to draw the parent control's background. This rectangle should be inside the child control’s bounds.</param>
+        <param name="childControl">The control whose parent's background will be drawn.</param>
+        <summary>Draws the background of a control's parent in the specified area.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -246,11 +382,13 @@
         <Parameter Name="textToDraw" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="textToDraw">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> used to draw the text.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which to draw the text.</param>
+        <param name="textToDraw">The text to draw.</param>
+        <summary>Draws text in the specified bounds using default formatting.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -272,12 +410,15 @@
         <Parameter Name="drawDisabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="textToDraw">To be added.</param>
-        <param name="drawDisabled">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> used to draw the text.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which to draw the text.</param>
+        <param name="textToDraw">The text to draw.</param>
+        <param name="drawDisabled">
+          <see langword="true" /> to draw grayed-out text; otherwise, <see langword="false" />.</param>
+        <summary>Draws text in the specified bounds with the option of displaying disabled text.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawText">
@@ -300,13 +441,16 @@
         <Parameter Name="flags" Type="System.Windows.Forms.TextFormatFlags" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="textToDraw">To be added.</param>
-        <param name="drawDisabled">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> used to draw the text.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which to draw the text.</param>
+        <param name="textToDraw">The text to draw.</param>
+        <param name="drawDisabled">
+          <see langword="true" /> to draw grayed-out text; otherwise, <see langword="false" />.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
+        <summary>Draws text in the specified bounding rectangle with the option of displaying disabled text and applying other text formatting.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetBackgroundContentRectangle">
@@ -326,11 +470,20 @@
         <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that contains the entire background area of the current visual style element.</param>
+        <summary>Returns the content area for the background of the current visual style element.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that contains the content area for the background of the current visual style element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A visual style can define a content area within each background image. This is the area in which content such as text and icons can be placed without overwriting background borders. This method uses the given background area to calculate the content area for the current visual style element.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetBackgroundExtent">
@@ -350,11 +503,20 @@
         <Parameter Name="contentBounds" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="contentBounds">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
+        <param name="contentBounds">A <see cref="T:System.Drawing.Rectangle" /> that contains the content area of the current visual style element.</param>
+        <summary>Returns the entire background area for the current visual style element.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that contains the entire background area of the current visual style element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A visual style can define a content area within each background image. This is the area in which content such as text and icons can be placed without overwriting background borders. This method uses the given content area to calculate the entire background area for the current visual style element.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetBackgroundRegion">
@@ -379,11 +541,29 @@
         <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that contains the entire background area of the current visual style element.</param>
+        <summary>Returns the region for the background of the current visual style element.</summary>
+        <returns>The <see cref="T:System.Drawing.Region" /> that contains the background of the current visual style element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to get the <xref:System.Drawing.Region> of a visual style element that has partially transparent or alpha-blended parts in its background.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetBackgroundRegion%2A> method in a custom control. This example uses <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetBackgroundRegion%2A> to get the <xref:System.Drawing.Region> of the window title bar element returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.Caption.Active%2A?displayProperty=fullName> property. This <xref:System.Drawing.Region> is used to set the <xref:System.Windows.Forms.Control.Region%2A?displayProperty=fullName> property of the control, so that the window title bar will appear with the rounded corners defined by the standard Windows XP visual style. This code example is part of a larger example provided for the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class overview.  
+  
+ [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#30](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/cpp/form1.cpp#30)]
+ [!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/CS/form1.cs#30)]
+ [!code-vb[System.Windows.Forms.VisualStyles.VisualStyleRenderer#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/VB/form1.vb#30)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetBoolean">
@@ -402,10 +582,20 @@
         <Parameter Name="prop" Type="System.Windows.Forms.VisualStyles.BooleanProperty" />
       </Parameters>
       <Docs>
-        <param name="prop">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.BooleanProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
+        <summary>Returns the value of the specified Boolean property for the current visual style element.</summary>
+        <returns>
+          <see langword="true" /> if the property specified by the <paramref name="prop" /> parameter is <see langword="true" /> for the current visual style element; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Visual styles use a set of Boolean values to describe some properties of the elements defined by a style. These properties are encapsulated by the <xref:System.Windows.Forms.VisualStyles.BooleanProperty> values.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="prop" /> is not one of the <see cref="T:System.Windows.Forms.VisualStyles.BooleanProperty" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetColor">
@@ -424,10 +614,19 @@
         <Parameter Name="prop" Type="System.Windows.Forms.VisualStyles.ColorProperty" />
       </Parameters>
       <Docs>
-        <param name="prop">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.ColorProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
+        <summary>Returns the value of the specified color property for the current visual style element.</summary>
+        <returns>A <see cref="T:System.Drawing.Color" /> that contains the value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Visual styles use a set of color values to describe some properties of the elements defined by a style. These properties are encapsulated by the <xref:System.Windows.Forms.VisualStyles.ColorProperty> values.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="prop" /> is not one of the <see cref="T:System.Windows.Forms.VisualStyles.ColorProperty" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumValue">
@@ -446,10 +645,19 @@
         <Parameter Name="prop" Type="System.Windows.Forms.VisualStyles.EnumProperty" />
       </Parameters>
       <Docs>
-        <param name="prop">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.EnumProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
+        <summary>Returns the value of the specified enumerated type property for the current visual style element.</summary>
+        <returns>The integer value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Visual styles use a set of enumerated types to describe some properties of the elements defined by a style. These enumerated types are encapsulated by the <xref:System.Windows.Forms.VisualStyles.EnumProperty> values.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="prop" /> is not one of the <see cref="T:System.Windows.Forms.VisualStyles.EnumProperty" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFilename">
@@ -468,10 +676,19 @@
         <Parameter Name="prop" Type="System.Windows.Forms.VisualStyles.FilenameProperty" />
       </Parameters>
       <Docs>
-        <param name="prop">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.FilenameProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
+        <summary>Returns the value of the specified file name property for the current visual style element.</summary>
+        <returns>A <see cref="T:System.String" /> that contains the value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Visual styles can specify the names of image files that are used to draw a particular element in different sizes and resolutions. These file names are encapsulated by the <xref:System.Windows.Forms.VisualStyles.FilenameProperty> values.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="prop" /> is not one of the <see cref="T:System.Windows.Forms.VisualStyles.FilenameProperty" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFont">
@@ -491,11 +708,22 @@
         <Parameter Name="prop" Type="System.Windows.Forms.VisualStyles.FontProperty" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="prop">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
+        <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.FontProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
+        <summary>Returns the value of the specified font property for the current visual style element.</summary>
+        <returns>A <see cref="T:System.Drawing.Font" /> that contains the value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Visual styles use a set of font values to describe some properties of the elements defined by a style. These properties are encapsulated by the <xref:System.Windows.Forms.VisualStyles.FontProperty> values.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="prop" /> is not one of the <see cref="T:System.Windows.Forms.VisualStyles.FontProperty" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetInteger">
@@ -514,10 +742,19 @@
         <Parameter Name="prop" Type="System.Windows.Forms.VisualStyles.IntegerProperty" />
       </Parameters>
       <Docs>
-        <param name="prop">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.IntegerProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
+        <summary>Returns the value of the specified integer property for the current visual style element.</summary>
+        <returns>The integer value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Visual styles use a set of integer values to describe some properties of the elements defined by a style. These properties are encapsulated by the <xref:System.Windows.Forms.VisualStyles.IntegerProperty> values.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="prop" /> is not one of the <see cref="T:System.Windows.Forms.VisualStyles.IntegerProperty" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMargins">
@@ -537,11 +774,22 @@
         <Parameter Name="prop" Type="System.Windows.Forms.VisualStyles.MarginProperty" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="prop">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
+        <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.MarginProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
+        <summary>Returns the value of the specified margins property for the current visual style element.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.Padding" /> that contains the value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Visual styles use a set of margin values to describe some properties of the elements defined by a style. These properties are encapsulated by the <xref:System.Windows.Forms.VisualStyles.MarginProperty> values.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="prop" /> is not one of the <see cref="T:System.Windows.Forms.VisualStyles.MarginProperty" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPartSize">
@@ -561,11 +809,31 @@
         <Parameter Name="type" Type="System.Windows.Forms.VisualStyles.ThemeSizeType" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
+        <param name="type">One of the <see cref="T:System.Windows.Forms.VisualStyles.ThemeSizeType" /> values that specifies which size value to retrieve for the part.</param>
+        <summary>Returns the value of the specified size property of the current visual style part.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> that contains the size specified by the <paramref name="type" /> parameter for the current visual style part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, only the <xref:System.Windows.Forms.VisualStyles.ThemeSizeType> and <xref:System.Windows.Forms.VisualStyles.ThemeSizeType> values should be used for the `type` parameter of this method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetPartSize%28System.Drawing.IDeviceContext%2CSystem.Windows.Forms.VisualStyles.ThemeSizeType%29> method in a custom control to get the sizes of a window title bar, **Close** button, borders, and sizing handle specified by the visual style. These sizes are used to calculate the sizes of the <xref:System.Drawing.Rectangle> objects used to draw the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects that represent these window parts. This code example is part of a larger example provided for the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class overview.  
+  
+ [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/cpp/form1.cpp#10)]
+ [!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/CS/form1.cs#10)]
+ [!code-vb[System.Windows.Forms.VisualStyles.VisualStyleRenderer#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/VB/form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="prop" /> is not one of the <see cref="T:System.Windows.Forms.VisualStyles.ThemeSizeType" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPartSize">
@@ -586,12 +854,16 @@
         <Parameter Name="type" Type="System.Windows.Forms.VisualStyles.ThemeSizeType" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that contains the area in which the part will be drawn.</param>
+        <param name="type">One of the <see cref="T:System.Windows.Forms.VisualStyles.ThemeSizeType" /> values that specifies which size value to retrieve for the part.</param>
+        <summary>Returns the value of the specified size property of the current visual style part using the specified drawing bounds.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> that contains the size specified by the <paramref name="type" /> parameter for the current visual style part.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="prop" /> is not one of the <see cref="T:System.Windows.Forms.VisualStyles.ThemeSizeType" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPoint">
@@ -610,10 +882,28 @@
         <Parameter Name="prop" Type="System.Windows.Forms.VisualStyles.PointProperty" />
       </Parameters>
       <Docs>
-        <param name="prop">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.PointProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
+        <summary>Returns the value of the specified point property for the current visual style element.</summary>
+        <returns>A <see cref="T:System.Drawing.Point" /> that contains the value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Visual styles use a set of point values to describe some properties of the elements defined by a style. These properties are encapsulated by the <xref:System.Windows.Forms.VisualStyles.PointProperty> values.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetPoint%2A> method in a custom control to get the offset of the window **Close** button in relation to the upper-right corner of the title bar. This code example is part of a larger example provided for the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class overview.  
+  
+ [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/cpp/form1.cpp#10)]
+ [!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/CS/form1.cs#10)]
+ [!code-vb[System.Windows.Forms.VisualStyles.VisualStyleRenderer#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/VB/form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="prop" /> is not one of the <see cref="T:System.Windows.Forms.VisualStyles.PointProperty" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -632,10 +922,19 @@
         <Parameter Name="prop" Type="System.Windows.Forms.VisualStyles.StringProperty" />
       </Parameters>
       <Docs>
-        <param name="prop">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.StringProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
+        <summary>Returns the value of the specified string property for the current visual style element.</summary>
+        <returns>A <see cref="T:System.String" /> that contains the value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Visual styles use a set of string values to describe some properties of the elements defined by a style. These properties are encapsulated by the <xref:System.Windows.Forms.VisualStyles.StringProperty> values.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="prop" /> is not one of the <see cref="T:System.Windows.Forms.VisualStyles.StringProperty" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetTextExtent">
@@ -656,12 +955,14 @@
         <Parameter Name="flags" Type="System.Windows.Forms.TextFormatFlags" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="textToDraw">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
+        <param name="textToDraw">The string to measure.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
+        <summary>Returns the size and location of the specified string when drawn with the font of the current visual style element.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that contains the area required to fit the rendered text.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetTextExtent">
@@ -683,13 +984,15 @@
         <Parameter Name="flags" Type="System.Windows.Forms.TextFormatFlags" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="bounds">To be added.</param>
-        <param name="textToDraw">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> used to control the flow and wrapping of the text.</param>
+        <param name="textToDraw">The string to measure.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
+        <summary>Returns the size and location of the specified string when drawn with the font of the current visual style element within the specified initial bounding rectangle.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that contains the area required to fit the rendered text.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetTextMetrics">
@@ -708,10 +1011,12 @@
         <Parameter Name="dc" Type="System.Drawing.IDeviceContext" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
+        <summary>Retrieves information about the font specified by the current visual style element.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.VisualStyles.TextMetrics" /> that provides information about the font specified by the current visual style element.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -727,9 +1032,27 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a unique identifier for the current class of visual style elements.</summary>
+        <value>An <see cref="T:System.IntPtr" /> that identifies a set of data that defines the class of elements specified by <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used internally by the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> methods. If the class of elements specified by the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class%2A> property is not defined by the current visual style, then this property returns <xref:System.IntPtr.Zero?displayProperty=fullName>.  
+  
+ This property value is invalidated when the visual style of the operating system changes, or when the user disables visual styles. If you access this property directly, your code should query this property again to get a new handle when the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged?displayProperty=fullName> event is raised with the <xref:Microsoft.Win32.UserPreferenceChangedEventArgs.Category%2A?displayProperty=fullName> property value of <xref:Microsoft.Win32.UserPreferenceCategory?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="HitTestBackground">
@@ -751,13 +1074,15 @@
         <Parameter Name="options" Type="System.Windows.Forms.VisualStyles.HitTestOptions" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="backgroundRectangle">To be added.</param>
-        <param name="pt">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
+        <param name="backgroundRectangle">A <see cref="T:System.Drawing.Rectangle" /> that contains the background of the current visual style element.</param>
+        <param name="pt">The <see cref="T:System.Drawing.Point" /> to test.</param>
+        <param name="options">A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.HitTestOptions" /> values.</param>
+        <summary>Returns a hit test code indicating whether a point is contained in the background of the current visual style element.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.VisualStyles.HitTestCode" /> that describes where <paramref name="pt" /> is located in the background of the current visual style element.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HitTestBackground">
@@ -780,14 +1105,16 @@
         <Parameter Name="options" Type="System.Windows.Forms.VisualStyles.HitTestOptions" />
       </Parameters>
       <Docs>
-        <param name="g">To be added.</param>
-        <param name="backgroundRectangle">To be added.</param>
-        <param name="region">To be added.</param>
-        <param name="pt">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
+        <param name="backgroundRectangle">A <see cref="T:System.Drawing.Rectangle" /> that contains the background of the current visual style element.</param>
+        <param name="region">A <see cref="T:System.Drawing.Region" /> that specifies the bounds of the hit test area within the background.</param>
+        <param name="pt">The <see cref="T:System.Drawing.Point" /> to test.</param>
+        <param name="options">A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.HitTestOptions" /> values.</param>
+        <summary>Returns a hit test code indicating whether the point is contained in the background of the current visual style element and within the specified bounds.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.VisualStyles.HitTestCode" /> that describes where <paramref name="pt" /> is located in the background of the current visual style element, if at all.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="g" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HitTestBackground">
@@ -810,14 +1137,16 @@
         <Parameter Name="options" Type="System.Windows.Forms.VisualStyles.HitTestOptions" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="backgroundRectangle">To be added.</param>
-        <param name="hRgn">To be added.</param>
-        <param name="pt">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
+        <param name="backgroundRectangle">A <see cref="T:System.Drawing.Rectangle" /> that contains the background of the current visual style element.</param>
+        <param name="hRgn">A Windows handle to a <see cref="T:System.Drawing.Region" /> that specifies the bounds of the hit test area within the background.</param>
+        <param name="pt">The <see cref="T:System.Drawing.Point" /> to test.</param>
+        <param name="options">A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.HitTestOptions" /> values.</param>
+        <summary>Returns a hit test code indicating whether the point is contained in the background of the current visual style element and within the specified region.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.VisualStyles.HitTestCode" /> that describes where <paramref name="pt" /> is located in the background of the current visual style element.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsBackgroundPartiallyTransparent">
@@ -834,8 +1163,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Indicates whether the background of the current visual style element has any semitransparent or alpha-blended pieces.</summary>
+        <returns>
+          <see langword="true" /> if the background of the current visual style element has any semitransparent or alpha-blended pieces; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -855,10 +1185,36 @@
         <Parameter Name="element" Type="System.Windows.Forms.VisualStyles.VisualStyleElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="element">A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> whose class and part combination will be verified.</param>
+        <summary>Determines whether the specified visual style element is defined by the current visual style.</summary>
+        <returns>
+          <see langword="true" /> if the combination of the <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ClassName" /> and <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Part" /> properties of <paramref name="element" /> are defined; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A> property internally.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsElementDefined%2A> method to determine whether to initialize a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> to a given <xref:System.Windows.Forms.VisualStyles.VisualStyleElement>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class overview.  
+  
+ [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#40](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/cpp/form1.cpp#40)]
+ [!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/CS/form1.cs#40)]
+ [!code-vb[System.Windows.Forms.VisualStyles.VisualStyleRenderer#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/VB/form1.vb#40)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsSupported">
@@ -874,9 +1230,23 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value specifying whether the operating system is using visual styles to draw controls.</summary>
+        <value>
+          <see langword="true" /> if the operating system supports visual styles, the user has enabled visual styles in the operating system, and visual styles are applied to the client area of application windows; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table describes how to individually check for each of the three conditions that must exist for the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A> property to return `true`.  
+  
+|Condition|How to determine separately|  
+|---------------|---------------------------------|  
+|The operating system supports visual styles.|Verify that the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsSupportedByOS%2A> property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> class is `true`.|  
+|The user has enabled visual styles in the operating system.|Verify that the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> class is `true`.|  
+|Visual styles are being used to draw the client area of application windows.|Verify that the <xref:System.Windows.Forms.Application.VisualStyleState%2A> property of the <xref:System.Windows.Forms.Application> class has the value <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=fullName> or <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=fullName>.|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LastHResult">
@@ -892,9 +1262,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the last error code returned by the native visual styles (UxTheme) API methods encapsulated by the <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> class.</summary>
+        <value>A value specifying the last error code returned by the native visual styles API methods that this class encapsulates.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property gets the HRESULT value that was returned by the last native visual styles API method called by a member of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class. For more information about the native visual styles API, see "Using Windows XP Visual Styles" in the Platform SDK portion of the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library/).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Part">
@@ -910,9 +1287,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the part of the current visual style element.</summary>
+        <value>A value that specifies the part of the current visual style element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property identifies a particular specialization of a class. For more information about the class, part, and state of a visual style element, see the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParameters">
@@ -931,9 +1315,36 @@
         <Parameter Name="element" Type="System.Windows.Forms.VisualStyles.VisualStyleElement" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="element">A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that specifies the new values of the <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class" />, <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Part" />, and <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.State" /> properties.</param>
+        <summary>Sets this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> to the visual style element represented by the specified <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A> property internally. Before calling this method, you should call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsElementDefined%2A> method to verify that the current visual style provides a definition for the element specified by the `element` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.SetParameters%28System.Windows.Forms.VisualStyles.VisualStyleElement%29> method to set a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> to a new <xref:System.Windows.Forms.VisualStyles.VisualStyleElement>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class overview.  
+  
+ [!code-cpp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#40](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/cpp/form1.cpp#40)]
+ [!code-csharp[System.Windows.Forms.VisualStyles.VisualStyleRenderer#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/CS/form1.cs#40)]
+ [!code-vb[System.Windows.Forms.VisualStyles.VisualStyleRenderer#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyles.VisualStyleRenderer/VB/form1.vb#40)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="element" /> is not defined by the current visual style.</exception>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetParameters">
@@ -954,11 +1365,28 @@
         <Parameter Name="state" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="className">To be added.</param>
-        <param name="part">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="className">The new value of the <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class" /> property.</param>
+        <param name="part">The new value of the <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Part" /> property.</param>
+        <param name="state">The new value of the <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.State" /> property.</param>
+        <summary>Sets this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> to the visual style element represented by the specified class, part, and state values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method checks the value of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A> property internally. Before calling this method, you should call the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsElementDefined%2A> method to verify that the current visual style provides a definition for the element specified by the `className`, `part`, and `state` parameters.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The combination of <paramref name="className" />, <paramref name="part" />, and <paramref name="state" /> is not defined by the current visual style.</exception>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -974,9 +1402,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the state of the current visual style element.</summary>
+        <value>A value that identifies the state of the current visual style element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property identifies the current visual state of the element identified by the current <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class%2A> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Part%2A> property values. For more information about the class, part, and state of a visual style element, see the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

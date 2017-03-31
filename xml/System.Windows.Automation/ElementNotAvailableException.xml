@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains information about the exception that is raised when an attempt is made to access an [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element corresponding to a part of the user interface that is no longer available.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This exception can be raised if the element was in a dialog box that was closed, or an application that was closed or terminated.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ElementNotAvailableException" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,8 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="innerException">The exception that caused this exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ElementNotAvailableException" /> class with a reference to the inner exception that caused this exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The description of the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ElementNotAvailableException" /> class with a specified error message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +87,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">Data needed to serialize or deserialize the object.</param>
+        <param name="context">The source and destination of the serialized stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ElementNotAvailableException" /> class with serialization information.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,9 +107,9 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The description of the error.</param>
+        <param name="innerException">The exception that caused this exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ElementNotAvailableException" /> class with a specified error message and a reference to the inner exception that caused this exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,9 +135,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">Data needed to serialize or deserialize the object.</param>
+        <param name="context">The destination of the serialized stream.</param>
+        <summary>Retrieves data needed to serialize the target object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

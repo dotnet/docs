@@ -1,4 +1,5 @@
 ---
 uid: System.IdentityModel.Services.ApplicationType
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

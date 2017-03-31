@@ -1,109 +1,143 @@
 ---
 uid: System.Configuration.Configuration
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Configuration.Save(System.Configuration.ConfigurationSaveMode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Configuration.HasFile
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Configuration.Save(System.Configuration.ConfigurationSaveMode,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Configuration.NamespaceDeclared
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.Configuration.GetSection(System.String)
-internalonly: False
----
-
----
-uid: System.Configuration.Configuration.Sections
-internalonly: False
----
-
----
-uid: System.Configuration.Configuration.RootSectionGroup
-internalonly: False
----
-
----
-uid: System.Configuration.Configuration.GetSectionGroup(System.String)
-internalonly: False
----
-
----
-uid: System.Configuration.Configuration.Locations
-internalonly: False
----
-
----
-uid: System.Configuration.Configuration.SaveAs(System.String)
-internalonly: False
----
-
----
-uid: System.Configuration.Configuration.AssemblyStringTransformer
-internalonly: False
----
-
----
-uid: System.Configuration.Configuration.SectionGroups
-internalonly: False
----
-
----
-uid: System.Configuration.Configuration.ConnectionStrings
-internalonly: False
----
-
----
-uid: System.Configuration.Configuration.AppSettings
-internalonly: False
----
-
----
-uid: System.Configuration.Configuration.TypeStringTransformer
-internalonly: False
+uid: System.Configuration.Configuration.SaveAs
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Configuration.Save
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Configuration.GetSection(System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Configuration.Sections
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Configuration.RootSectionGroup
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Configuration.GetSectionGroup(System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Configuration.Locations
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Configuration.SaveAs(System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Configuration.AssemblyStringTransformer
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Configuration.SectionGroups
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Configuration.ConnectionStrings
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Configuration.AppSettings
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Configuration.TypeStringTransformer
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Configuration.Save
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Configuration.TargetFramework
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Configuration.FilePath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Configuration.EvaluationContext
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

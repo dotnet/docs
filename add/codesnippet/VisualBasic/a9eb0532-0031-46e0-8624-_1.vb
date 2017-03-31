@@ -1,1 +1,0 @@
-                Dim classDescription As String = secondTransform.ToString()

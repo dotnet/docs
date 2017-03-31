@@ -11,8 +11,22 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates an entity template.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.EntityTemplateFactory> class is used at run time by Dynamic Data to get an instance of an entity template for a table. Entity templates are user controls that apply to a whole table row instead of a single data field, as with field templates. The entity templates are displayed on a page by using the <xref:System.Web.DynamicData.DynamicEntity> class. They use field templates to display values from the data model.  
+  
+ Dynamic Data provides default entity templates that are found in the ~\DynamicData\EntityTemplates folder. You can modify these default entity templates or create custom ones to change the appearance and behavior for a table. There are templates for display, edit, and insert operations.  
+  
+   
+  
+## Examples  
+ For an example of how to use entity templates, see [Walkthrough: Customizing Table Layout Using Entity Templates](../Topic/Walkthrough:%20Customizing%20Table%20Layout%20Using%20Entity%20Templates.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.EntityTemplateFactory" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,11 +61,12 @@
         <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
       </Parameters>
       <Docs>
-        <param name="templateName">To be added.</param>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="templateName">The name of the entity template for which to build the path.</param>
+        <param name="mode">The display mode of the entity template.</param>
+        <summary>Builds the path of the entity template for the specified table.</summary>
+        <returns>The path of the entity template for the specified table.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="templateName" /> is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateEntityTemplate">
@@ -72,12 +87,13 @@
         <Parameter Name="uiHint" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="table">To be added.</param>
-        <param name="mode">To be added.</param>
-        <param name="uiHint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="table">The metadata for the table to which the entity template applies.</param>
+        <param name="mode">The display mode of the entity template.</param>
+        <param name="uiHint">The name of the template to use.</param>
+        <summary>Creates an instance of the entity template for the specified table.</summary>
+        <returns>An instance of the <see cref="T:System.Web.DynamicData.EntityTemplateUserControl" /> class.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The table is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEntityTemplateVirtualPath">
@@ -98,12 +114,13 @@
         <Parameter Name="uiHint" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="table">To be added.</param>
-        <param name="mode">To be added.</param>
-        <param name="uiHint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="table">The metadata for the table to which the entity template applies.</param>
+        <param name="mode">The display mode of the entity template.</param>
+        <param name="uiHint">The name of the template to use.</param>
+        <summary>Gets the virtual path of the entity template for the specified table.</summary>
+        <returns>The virtual path of the entity template for the specified table.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The table is **null**.</exception>
       </Docs>
     </Member>
   </Members>

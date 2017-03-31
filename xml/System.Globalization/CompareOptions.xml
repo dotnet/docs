@@ -28,8 +28,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the string comparison options to use with <see cref="T:System.Globalization.CompareInfo" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These options denote case sensitivity or necessity to ignore types of characters.  
+  
+ The .NET Framework uses three distinct ways of sorting: word sort, string sort, and ordinal sort. Word sort performs a culture-sensitive comparison of strings. Certain nonalphanumeric characters might have special weights assigned to them. For example, the hyphen ("-") might have a very small weight assigned to it so that "coop" and "co-op" appear next to each other in a sorted list. String sort is similar to word sort, except that there are no special cases. Therefore, all nonalphanumeric symbols come before all alphanumeric characters. Ordinal sort compares strings based on the Unicode values of each element of the string.  
+  
+ The StringSort value can only be used with <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=fullName> and <xref:System.Globalization.CompareInfo.GetSortKey%2A?displayProperty=fullName>. <xref:System.ArgumentException> is thrown if the StringSort value is used with <xref:System.Globalization.CompareInfo.IsPrefix%2A?displayProperty=fullName>, <xref:System.Globalization.CompareInfo.IsSuffix%2A?displayProperty=fullName>, <xref:System.Globalization.CompareInfo.IndexOf%2A?displayProperty=fullName>, or <xref:System.Globalization.CompareInfo.LastIndexOf%2A?displayProperty=fullName>.  
+  
+> [!NOTE]
+>  When possible, the application should use string comparison methods that accept a <xref:System.Globalization.CompareOptions> value to specify the kind of comparison expected. As a general rule, user-facing comparisons are best served by the use of linguistic options (using the current culture), while security comparisons should specify Ordinal or OrdinalIgnoreCase.  
+  
+   
+  
+## Examples  
+ The following code example shows how sorting with StringSort differs from sorting without StringSort.  
+  
+ [!code-cpp[System.Globalization.CompareOptions.StringSort#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CompareOptions.StringSort/CPP/compareoptions_stringsort.cpp#1)]
+ [!code-csharp[System.Globalization.CompareOptions.StringSort#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CompareOptions.StringSort/CS/compareoptions_stringsort.cs#1)]
+ [!code-vb[System.Globalization.CompareOptions.StringSort#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.CompareOptions.StringSort/VB/compareoptions_stringsort.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="IgnoreCase">
@@ -55,7 +78,7 @@
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the string comparison must ignore case.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreKanaType">
@@ -81,7 +104,7 @@
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the string comparison must ignore the Kana type. Kana type refers to Japanese hiragana and katakana characters, which represent phonetic sounds in the Japanese language. Hiragana is used for native Japanese expressions and words, while katakana is used for words borrowed from other languages, such as "computer" or "Internet". A phonetic sound can be expressed in both hiragana and katakana. If this value is selected, the hiragana character for one sound is considered equal to the katakana character for the same sound.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreNonSpace">
@@ -107,7 +130,7 @@
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the string comparison must ignore nonspacing combining characters, such as diacritics. The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) defines combining characters as characters that are combined with base characters to produce a new character. Nonspacing combining characters do not occupy a spacing position by themselves when rendered.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreSymbols">
@@ -133,7 +156,7 @@
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the string comparison must ignore symbols, such as white-space characters, punctuation, currency symbols, the percent sign, mathematical symbols, the ampersand, and so on.</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreWidth">
@@ -159,7 +182,7 @@
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the string comparison must ignore the character width. For example, Japanese katakana characters can be written as full-width or half-width. If this value is selected, the katakana characters written as full-width are considered equal to the same characters written as half-width.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -185,7 +208,7 @@
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the default option settings for string comparisons.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ordinal">
@@ -211,7 +234,7 @@
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the string comparison must use successive Unicode UTF-16 encoded values of the string (code unit by code unit comparison), leading to a fast comparison but one that is culture-insensitive. A string starting with a code unit XXXX16 comes before a string starting with YYYY16, if XXXX16 is less than YYYY16. This value cannot be combined with other <see cref="T:System.Globalization.CompareOptions" /> values and must be used alone.</summary>
       </Docs>
     </Member>
     <Member MemberName="OrdinalIgnoreCase">
@@ -237,7 +260,7 @@
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>String comparison must ignore case, then perform an ordinal comparison. This technique is equivalent to converting the string to uppercase using the invariant culture and then performing an ordinal comparison on the result.</summary>
       </Docs>
     </Member>
     <Member MemberName="StringSort">
@@ -263,7 +286,7 @@
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the string comparison must use the string sort algorithm. In a string sort, the hyphen and the apostrophe, as well as other nonalphanumeric symbols, come before alphanumeric characters.</summary>
       </Docs>
     </Member>
   </Members>

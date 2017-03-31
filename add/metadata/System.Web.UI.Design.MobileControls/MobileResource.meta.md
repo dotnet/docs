@@ -1,9 +1,13 @@
 ---
 uid: System.Web.UI.Design.MobileControls.MobileResource
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.MobileControls.MobileResource.GetString(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

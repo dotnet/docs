@@ -21,8 +21,36 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the editor to use to change a property. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When editing the property, a visual designer should create a new instance of the specified editor through a dialog box or drop-down window.  
+  
+ Use the <xref:System.ComponentModel.EditorAttribute.EditorBaseTypeName%2A> property to find this editor's base type. The only available base type is <xref:System.Drawing.Design.UITypeEditor>.  
+  
+ Use the <xref:System.ComponentModel.EditorAttribute.EditorTypeName%2A> property to get the name of the type of editor associated with this attribute.  
+  
+ For general information on using attributes. see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md). For more information on design-time attributes, see [Attributes and Design-Time Support](../Topic/Attributes%20and%20Design-Time%20Support.md).  
+  
+   
+  
+## Examples  
+ The following code example creates the `MyImage` class. The class is marked with an <xref:System.ComponentModel.EditorAttribute> that specifies the <xref:System.Drawing.Design.ImageEditor> as its editor.  
+  
+ [!code-cpp[Classic EditorAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EditorAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic EditorAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EditorAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic EditorAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EditorAttribute Example/VB/source.vb#1)]  
+  
+ The following code example creates an instance of the `MyImage` class, gets the attributes for the class, and then prints the name of the editor used by `myNewImage`.  
+  
+ [!code-cpp[Classic EditorAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EditorAttribute Example/CPP/source.cpp#2)]
+ [!code-csharp[Classic EditorAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EditorAttribute Example/CS/source.cs#2)]
+ [!code-vb[Classic EditorAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic EditorAttribute Example/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +69,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EditorAttribute" /> class with the default editor, which is no editor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,10 +92,21 @@
         <Parameter Name="baseTypeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="typeName">To be added.</param>
-        <param name="baseTypeName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="typeName">The fully qualified type name of the editor.</param>
+        <param name="baseTypeName">The fully qualified type name of the base class or interface to use as a lookup key for the editor. This class must be or derive from <see cref="T:System.Drawing.Design.UITypeEditor" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EditorAttribute" /> class with the type name and base type name of the editor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `typeName` parameter must be in the <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> format.  
+  
+ The <xref:System.Type> represented by the `typeName` parameter must either derive from or implement the base class.  
+  
+ The <xref:System.Type> represented by the `baseTypeName` parameter is used as a key to find a particular editor, because a data type can have more than one editor associated with it. This can be any class, but is typically <xref:System.Drawing.Design.UITypeEditor> or <xref:System.ComponentModel.ComponentEditor>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -89,10 +128,21 @@
         <Parameter Name="baseType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeName">To be added.</param>
-        <param name="baseType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="typeName">The fully qualified type name of the editor.</param>
+        <param name="baseType">The <see cref="T:System.Type" /> of the base class or interface to use as a lookup key for the editor. This class must be or derive from <see cref="T:System.Drawing.Design.UITypeEditor" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EditorAttribute" /> class with the type name and the base type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `typeName` parameter must be in the <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> format.  
+  
+ The <xref:System.Type> represented by the `typeName` must either derive from or implement the base class.  
+  
+ The `baseType` parameter is used as a key to find a particular editor, because a data type can have more than one editor associated with it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,10 +164,19 @@
         <Parameter Name="baseType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="baseType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">A <see cref="T:System.Type" /> that represents the type of the editor.</param>
+        <param name="baseType">The <see cref="T:System.Type" /> of the base class or interface to use as a lookup key for the editor. This class must be or derive from <see cref="T:System.Drawing.Design.UITypeEditor" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EditorAttribute" /> class with the type and the base type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Type> represented by the `type` parameter must either derive from or implement the base class.  
+  
+ The `baseType` parameter is used as a key to find a particular editor, because a data type can have more than one editor associated with it.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EditorBaseTypeName">
@@ -138,9 +197,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the base class or interface serving as a lookup key for this editor.</summary>
+        <value>The name of the base class or interface serving as a lookup key for this editor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.EditorAttribute.EditorBaseTypeName%2A> property is an assembly qualified type name. The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] provides both <xref:System.Drawing.Design.UITypeEditor> and <xref:System.ComponentModel.ComponentEditor> as valid base classes, but any value is valid here.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EditorTypeName">
@@ -161,8 +227,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the editor class in the <see cref="P:System.Type.AssemblyQualifiedName" /> format.</summary>
+        <value>The name of the editor class in the <see cref="P:System.Type.AssemblyQualifiedName" /> format.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,9 +253,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to test the value equality of.</param>
+        <summary>Returns whether the value of the given object is equal to the current <see cref="T:System.ComponentModel.EditorAttribute" />.</summary>
+        <returns>
+          <see langword="true" /> if the value of the given object is equal to that of the current object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,8 +279,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,9 +302,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a unique ID for this attribute type.</summary>
+        <value>A unique ID for this attribute type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.EditorAttribute.TypeId%2A> property is used by filtering algorithms to identify two attributes that are the same type. For most attributes, this just returns the <xref:System.Type> instance for the attribute. <xref:System.ComponentModel.EditorAttribute> overrides this to include the type of the editor base type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

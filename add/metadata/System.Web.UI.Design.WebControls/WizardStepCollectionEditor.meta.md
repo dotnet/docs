@@ -1,29 +1,35 @@
 ---
 uid: System.Web.UI.Design.WebControls.WizardStepCollectionEditor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WizardStepCollectionEditor.CanSelectMultipleInstances
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WizardStepCollectionEditor.CreateCollectionForm
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WizardStepCollectionEditor.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WizardStepCollectionEditor.CreateNewItemTypes
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.WizardStepCollectionEditor.CreateInstance(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

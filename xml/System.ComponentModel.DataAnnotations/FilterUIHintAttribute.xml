@@ -21,8 +21,43 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an attribute that is used to specify the filtering behavior for a column.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to replace default filters on the product entity.  
+  
+```csharp  
+MetadataType(typeof(Product_MD))]  
+public partial class Product {  
+    private class Product_MD {  
+        [FilterUIHint("MultiForeignKey")]  
+        public object Category { get; set; }  
+        [FilterUIHint("BooleanRadio")]  
+        public object Discontinued { get; set; }  
+    }  
+}  
+```  
+  
+```vb  
+<MetadataType(GetType(Product_MD))>  _  
+Public Class Product  
+    Private Class Product_MD  
+        <FilterUIHint("MultiForeignKey")>  _  
+        Public Property Category As Object  
+        End Property  
+  
+        <FilterUIHint("BooleanRadio")>  _  
+        Public Property Discontinued As Object  
+        End Property  
+  
+    End Class  
+End Class  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,9 +78,44 @@
         <Parameter Name="filterUIHint" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filterUIHint">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filterUIHint">The name of the control to use for filtering.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.FilterUIHintAttribute" /> class by using the filter UI hint.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to replace default filters on the product entity.  
+  
+```csharp  
+MetadataType(typeof(Product_MD))]  
+public partial class Product {  
+    private class Product_MD {  
+        [FilterUIHint("MultiForeignKey")]  
+        public object Category { get; set; }  
+        [FilterUIHint("BooleanRadio")]  
+        public object Discontinued { get; set; }  
+    }  
+}  
+```  
+  
+```vb  
+<MetadataType(GetType(Product_MD))>  _  
+Public Class Product  
+    Private Class Product_MD  
+        <FilterUIHint("MultiForeignKey")>  _  
+        Public Property Category As Object  
+        End Property  
+  
+        <FilterUIHint("BooleanRadio")>  _  
+        Public Property Discontinued As Object  
+        End Property  
+  
+    End Class  
+End Class  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -67,9 +137,9 @@
         <Parameter Name="presentationLayer" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filterUIHint">To be added.</param>
-        <param name="presentationLayer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filterUIHint">The name of the control to use for filtering.</param>
+        <param name="presentationLayer">The name of the presentation layer that supports this control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.FilterUIHintAttribute" /> class by using the filter UI hint and presentation layer name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,10 +169,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="filterUIHint">To be added.</param>
-        <param name="presentationLayer">To be added.</param>
-        <param name="controlParameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filterUIHint">The name of the control to use for filtering.</param>
+        <param name="presentationLayer">The name of the presentation layer that supports this control.</param>
+        <param name="controlParameters">The list of parameters for the control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.FilterUIHintAttribute" /> class by using the filter UI hint, presentation layer name, and control parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +194,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name/value pairs that are used as parameters in the control's constructor.</summary>
+        <value>The name/value pairs that are used as parameters in the control's constructor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,9 +220,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare with this attribute instance.</param>
+        <summary>Returns a value that indicates whether this attribute instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="True" /> if the passed object is equal to this attribute instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,8 +245,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the control to use for filtering.</summary>
+        <value>The name of the control to use for filtering.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +269,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this attribute instance.</summary>
+        <returns>This attribute insatnce hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,8 +292,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the presentation layer that supports this control.</summary>
+        <value>The name of the presentation layer that supports this control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,8 +311,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the unique identifier for this attribute instance.</summary>
+        <value>This attribuet instance unique identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

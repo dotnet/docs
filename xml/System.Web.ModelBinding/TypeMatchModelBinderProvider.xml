@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a model binder for a model that does not require type conversion.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.TypeMatchModelBinderProvider" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,10 +52,10 @@
         <Parameter Name="bindingContext" Type="System.Web.ModelBinding.ModelBindingContext" />
       </Parameters>
       <Docs>
-        <param name="modelBindingExecutionContext">To be added.</param>
-        <param name="bindingContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <param name="bindingContext">The binding context.</param>
+        <summary>Returns a model binder for a model that does not require type conversion.</summary>
+        <returns>The model binder, or <see langword="null" /> if the attempt to get a model binder is unsuccessful.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

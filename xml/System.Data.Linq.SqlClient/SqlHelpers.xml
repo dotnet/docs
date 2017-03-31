@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides helper methods for operations that match string patterns.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,10 @@
         <Parameter Name="escape" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="escape">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="text">The string to insert into the search pattern string.</param>
+        <param name="escape">The character to use to escape wildcard characters.</param>
+        <summary>Creates a search pattern string where the specified text can have other text before and following it.</summary>
+        <returns>A search pattern string that contains the specified string and the '%' character before and after it.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,10 +56,10 @@
         <Parameter Name="escape" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="escape">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="text">The string to insert into the search pattern string.</param>
+        <param name="escape">The character to use to escape wildcard characters.</param>
+        <summary>Creates a search pattern string where the specified text can have other text before it but not following it.</summary>
+        <returns>A search pattern string that contains the '%' character followed by the specified string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,10 +80,10 @@
         <Parameter Name="escape" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="escape">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="text">The string to insert into the search pattern string.</param>
+        <param name="escape">The character to use to escape wildcard characters.</param>
+        <summary>Creates a search pattern string where the specified text can have other text after it but not before it.</summary>
+        <returns>A search pattern string that contains the specified string followed by the '%' character.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,10 +104,10 @@
         <Parameter Name="escape" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="pattern">To be added.</param>
-        <param name="escape">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pattern">The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Like" /> search pattern to translate to a [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] <see langword="LIKE" /> search pattern.</param>
+        <param name="escape">The character to use to escape special SQL characters or the escape character itself.</param>
+        <summary>Translates a search pattern for the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Like" /> operator to a search pattern for the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] <see langword="LIKE" /> operator.</summary>
+        <returns>A search pattern for the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] <see langword="LIKE" /> operator that corresponds to the specified [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Like" /> search pattern.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

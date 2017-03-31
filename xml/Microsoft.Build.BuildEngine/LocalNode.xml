@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class hosts a node class in the child build process. It uses shared memory to communicate with the local node provider.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,8 +31,8 @@
         <Parameter Name="nodeNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="nodeNumber">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="nodeNumber">The number of nodes to start.</param>
+        <summary>Starts the local node when the process is launched and shuts it down on timeout.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

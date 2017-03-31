@@ -1,1 +1,0 @@
-        MsgBox(My.Computer.FileSystem.SpecialDirectories.CurrentUserApplicationData)

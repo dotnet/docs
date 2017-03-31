@@ -1,44 +1,53 @@
 ---
 uid: Microsoft.VisualC.StlClr.IPriorityQueue`2
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.IPriorityQueue`2.pop
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.IPriorityQueue`2.empty
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.IPriorityQueue`2.top_item
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.IPriorityQueue`2.value_comp
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.IPriorityQueue`2.assign(Microsoft.VisualC.StlClr.IPriorityQueue{`0,`1})
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.IPriorityQueue`2.top
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.IPriorityQueue`2.size
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.IPriorityQueue`2.push(`0)
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

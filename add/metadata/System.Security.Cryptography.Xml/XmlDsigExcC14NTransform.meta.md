@@ -1,69 +1,111 @@
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor(System.Boolean)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetInnerXml
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.LoadInput(System.Object)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetOutput
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetOutput
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor(System.Boolean,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.LoadInnerXml(System.Xml.XmlNodeList)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.InputTypes
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetDigestedOutput(System.Security.Cryptography.HashAlgorithm)
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.OutputTypes
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.InclusiveNamespacesPrefixList
-internalonly: False
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetOutput(System.Type)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.LoadInnerXml(System.Xml.XmlNodeList)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.InputTypes
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetDigestedOutput(System.Security.Cryptography.HashAlgorithm)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.OutputTypes
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.InclusiveNamespacesPrefixList
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetOutput(System.Type)
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

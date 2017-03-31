@@ -17,9 +17,26 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="sender">To be added.</param>
-    <param name="e">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="sender">The object that raised the event.</param>
+    <param name="e">Information about the event.</param>
+    <summary>Represents the method implemented by the UI Automation client application to handle the event raised by a UI Automation provider when the focus has changed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use an <xref:System.Windows.Automation.AutomationFocusChangedEventHandler> delegate to define the method that is called by a client to handle [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] focus-changed events.  
+  
+ The <xref:System.Windows.Automation.AutomationElement> represented by `sender` might not have any cached properties or patterns, depending on whether the application subscribed to this event while a <xref:System.Windows.Automation.CacheRequest> was active.  
+  
+   
+  
+## Examples  
+ The following example implements a delegate to handle focus-changed events.  
+  
+ [!code-csharp[UIAFocusTracker_snip#106](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFocusTracker_snip/CSharp/FocusTracker.cs#106)]
+ [!code-vb[UIAFocusTracker_snip#106](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFocusTracker_snip/VisualBasic/FocusTracker.vb#106)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

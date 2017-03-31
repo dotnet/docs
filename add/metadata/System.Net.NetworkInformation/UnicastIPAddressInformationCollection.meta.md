@@ -1,59 +1,71 @@
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformationCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformationCollection.Contains(System.Net.NetworkInformation.UnicastIPAddressInformation)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformationCollection.Clear
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformationCollection.CopyTo(System.Net.NetworkInformation.UnicastIPAddressInformation[],System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformationCollection.IsReadOnly
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformationCollection.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformationCollection.Count
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformationCollection.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformationCollection.Add(System.Net.NetworkInformation.UnicastIPAddressInformation)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformationCollection.Remove(System.Net.NetworkInformation.UnicastIPAddressInformation)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformationCollection.GetEnumerator
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.UnicastIPAddressInformationCollection.Item(System.Int32)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

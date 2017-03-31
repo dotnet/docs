@@ -1,24 +1,29 @@
 ---
 uid: System.Speech.Synthesis.InstalledVoice
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.InstalledVoice.Equals(System.Object)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.InstalledVoice.VoiceInfo
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.InstalledVoice.GetHashCode
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.InstalledVoice.Enabled
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

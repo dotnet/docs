@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A consumer of workflow tracking data that emits an Event Tracking for Windows (ETW) event to an ETW session that contains the data from the tracking record.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.EtwTrackingParticipant" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the reference value used by the ETW provider created by this tracking participant.</summary>
+        <value>The reference value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,9 +110,16 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the provider ID used by the ETW provider created by this tracking participant.</summary>
+        <value>The provider ID.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default ETW provider ID is built into the functionality. All applications that do not specify an ETW provider ID in their configuration emit application trace and tracking events that use the default provider ID. An ETW session can listen with the default provider ID and receive events from multiple services. If isolation of events is required, the application should specify an application-specific ETW provider ID in the configuration.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Track">

@@ -1,4 +1,5 @@
 ---
 uid: System.Web.HttpCacheValidateHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

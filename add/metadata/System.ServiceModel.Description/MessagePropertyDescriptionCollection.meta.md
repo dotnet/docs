@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Description.MessagePropertyDescriptionCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Description.MessagePropertyDescriptionCollection.GetKeyForItem(System.ServiceModel.Description.MessagePropertyDescription)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

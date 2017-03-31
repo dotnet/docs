@@ -1,14 +1,14 @@
 ---
 uid: System.Xaml.IXamlObjectWriterFactory
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlObjectWriterFactory.GetParentSettings
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.IXamlObjectWriterFactory.GetXamlObjectWriter(System.Xaml.XamlObjectWriterSettings)
-internalonly: False
+manager: "martinek"
 ---

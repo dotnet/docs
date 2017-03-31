@@ -1,29 +1,52 @@
 ---
 uid: System.Collections.CaseInsensitiveHashCodeProvider
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.CaseInsensitiveHashCodeProvider.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.CaseInsensitiveHashCodeProvider.#ctor(System.Globalization.CultureInfo)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Collections.CaseInsensitiveHashCodeProvider.GetHashCode
 ---
 
 ---
 uid: System.Collections.CaseInsensitiveHashCodeProvider.DefaultInvariant
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.CaseInsensitiveHashCodeProvider.GetHashCode(System.Object)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Collections.CaseInsensitiveHashCodeProvider.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Collections.CaseInsensitiveHashCodeProvider.Default
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

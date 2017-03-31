@@ -1,9 +1,9 @@
 ---
 uid: System.Management.Instrumentation.ManagementKeyAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementKeyAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---

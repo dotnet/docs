@@ -1,19 +1,19 @@
 ---
 uid: System.Transactions.IDtcTransaction
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.IDtcTransaction.GetTransactionInfo(System.IntPtr)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.IDtcTransaction.Abort(System.IntPtr,System.Int32,System.Int32)
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.IDtcTransaction.Commit(System.Int32,System.Int32,System.Int32)
-internalonly: False
+manager: "ghogen"
 ---

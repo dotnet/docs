@@ -10,8 +10,22 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes a position reference for a figure in a horizontal direction.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Documents.Figure.HorizontalOffset%2A> attribute of a <xref:System.Windows.Documents.Figure> element.  
+  
+ [!code-xml[FloaterFigureSnippets#_FigurePropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_figurepropsxaml)]  
+  
+ The following example shows how to set the <xref:System.Windows.Documents.Figure.HorizontalOffset%2A> property programmatically.  
+  
+ [!code-csharp[FloaterFigureSnippets#_FigureProps](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml.cs#_figureprops)]
+ [!code-vb[FloaterFigureSnippets#_FigureProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FloaterFigureSnippets/visualbasic/window1.xaml.vb#_figureprops)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ColumnCenter">
@@ -27,7 +41,7 @@
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Anchor the figure in the center of the column content area.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColumnLeft">
@@ -43,7 +57,7 @@
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Anchor the figure to the left of the column content area.</summary>
       </Docs>
     </Member>
     <Member MemberName="ColumnRight">
@@ -59,7 +73,7 @@
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Anchor the figure to the right of the column content area.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentCenter">
@@ -75,7 +89,7 @@
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Anchor the figure in the center of the page content area.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentLeft">
@@ -91,7 +105,7 @@
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Anchor the figure to the left of the page content area.</summary>
       </Docs>
     </Member>
     <Member MemberName="ContentRight">
@@ -107,7 +121,7 @@
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Anchor the figure to the right of the page content area.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageCenter">
@@ -123,7 +137,7 @@
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Anchor the figure in the center of the page area.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageLeft">
@@ -139,7 +153,7 @@
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Anchor the figure to the left of the page area.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageRight">
@@ -155,7 +169,7 @@
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Anchor the figure to the right of the page area.</summary>
       </Docs>
     </Member>
   </Members>

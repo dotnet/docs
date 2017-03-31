@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.SiteMapPathDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.Web.UI.Design.DesignerAutoFormatCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of automatic formatting schemes to display in the **Auto Format** dialog box for the associated control at design time.</summary>
+        <value>Returns <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,8 +62,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the HTML markup that is used to represent the control at design time.</summary>
+        <returns>Returns <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,9 +83,9 @@
         <Parameter Name="e" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="e">The exception that occurred.</param>
+        <summary>Gets the HTML markup that provides information about the specified exception.</summary>
+        <returns>Returns <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,8 +105,8 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="component">An <see cref="T:System.ComponentModel.IComponent" /> that can be cast as a <see cref="T:System.Web.UI.WebControls.SiteMapPath" />.</param>
+        <summary>Prepares the designer to view, edit, and design the associated <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +123,8 @@
         <ReturnType>System.Web.UI.Design.TemplateGroupCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of template groups, each containing one or more template definitions.</summary>
+        <value>Returns <see cref="T:System.Web.UI.Design.TemplateGroupCollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,8 +141,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the control designer uses a temporary preview control to generate the design-time HTML markup.</summary>
+        <value>
+          <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,289 +1,427 @@
 ---
 uid: System.Web.UI.MobileControls.MobilePage
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.LoadViewState(System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.Forms
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.EnableEventValidation
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.Title
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.VerifyRenderingInServerForm(System.Web.UI.Control)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.QueryStringText
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.OnLoad(System.EventArgs)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.OnPreRender(System.EventArgs)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.OnInit(System.EventArgs)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.DesignMode
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.RelativeFilePath
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.InitOutputCache(System.Int32,System.String,System.String,System.Web.UI.OutputCacheLocation,System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.SavePageStateToPersistenceMedium(System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.AllowCustomAttributes
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.LoadPageStateFromPersistenceMedium
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler,System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.AddParsedSubObject(System.Object)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.RedirectToMobilePage(System.String,System.Boolean)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.GetForm(System.String)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.UniqueFilePathSuffix
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.OnViewStateExpire(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.StyleSheetTheme
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.Device
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.ViewStateID
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.RedirectToMobilePage(System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.CreateHtmlTextWriter(System.IO.TextWriter)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.MakePathAbsolute(System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.OnPreInit(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.InitOutputCache(System.Int32,System.String,System.String,System.String,System.Web.UI.OutputCacheLocation,System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.DeterminePostBackMode
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.ClientViewState
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.OnError(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.Adapter
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.HiddenPostEventArgumentId
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.HiddenVariablePrefix
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.Theme
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.Render(System.Web.UI.HtmlTextWriter)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.#ctor
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.HiddenPostEventSourceId
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.OnDeviceCustomize(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.ActiveForm
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.HiddenVariables
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.AddedControl(System.Web.UI.Control,System.Int32)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.SaveViewState
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.MasterPageFile
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.EnableTheming
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.HasHiddenVariables
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.GetPrivateViewState(System.Web.UI.MobileControls.MobileControl)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.IdSeparator
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.OnUnload(System.EventArgs)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.PageClientViewStateKey
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.RemovedControl(System.Web.UI.Control)
-internalonly: False
----
-
----
-uid: System.Web.UI.MobileControls.MobilePage.AbsoluteFilePath
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.Validate
-internalonly: False
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.StyleSheetTheme
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.Device
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.ViewStateID
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.RedirectToMobilePage(System.String)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.CreateHtmlTextWriter(System.IO.TextWriter)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.MakePathAbsolute(System.String)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.OnPreInit(System.EventArgs)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.InitOutputCache(System.Int32,System.String,System.String,System.String,System.Web.UI.OutputCacheLocation,System.String)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.DeterminePostBackMode
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.ClientViewState
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.OnError(System.EventArgs)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.Adapter
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.HiddenPostEventArgumentId
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.HiddenVariablePrefix
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.Theme
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.Render(System.Web.UI.HtmlTextWriter)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.HiddenPostEventSourceId
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.OnDeviceCustomize(System.EventArgs)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.ActiveForm
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.RedirectToMobilePage
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.HiddenVariables
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.AddedControl(System.Web.UI.Control,System.Int32)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.SaveViewState
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.MasterPageFile
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.EnableTheming
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.HasHiddenVariables
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.GetPrivateViewState(System.Web.UI.MobileControls.MobileControl)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.IdSeparator
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.InitOutputCache
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.OnUnload(System.EventArgs)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.PageClientViewStateKey
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.RemovedControl(System.Web.UI.Control)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.AbsoluteFilePath
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.Validate
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.RenderControl(System.Web.UI.HtmlTextWriter)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.MobileControls.MobilePage.RenderControl
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.GetControlAdapter(System.Web.UI.MobileControls.MobileControl)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.MobilePage.StyleSheet
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

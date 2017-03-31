@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Profile.ProfileAutoSaveEventHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

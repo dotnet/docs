@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Drawing2D.SmoothingMode
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

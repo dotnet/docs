@@ -1,39 +1,55 @@
 ---
 uid: System.IO.Packaging.RightsManagementInformation
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.RightsManagementInformation.LoadUseLicense(System.Security.RightsManagement.ContentUser)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.RightsManagementInformation.CryptoProvider
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.RightsManagementInformation.SaveUseLicense(System.Security.RightsManagement.ContentUser,System.Security.RightsManagement.UseLicense)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.RightsManagementInformation.SavePublishLicense(System.Security.RightsManagement.PublishLicense)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.RightsManagementInformation.DeleteUseLicense(System.Security.RightsManagement.ContentUser)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.RightsManagementInformation.LoadPublishLicense
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.IO.Packaging.RightsManagementInformation.GetEmbeddedUseLicenses
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies style changes that can automatically be made to a label when the <see cref="P:System.Web.UI.DataVisualization.Charting.Axis.LabelAutoFitStyle" /> property is used.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles> enumeration represents the changes to the font or orientation of labels that can be automatically made to enable labels to fit along the axis.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DecreaseFont">
@@ -32,7 +39,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Label font can be decreased.</summary>
       </Docs>
     </Member>
     <Member MemberName="IncreaseFont">
@@ -48,7 +55,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Label font can be increased.</summary>
       </Docs>
     </Member>
     <Member MemberName="LabelsAngleStep30">
@@ -64,7 +71,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Labels can be angled in 30 degree steps: 0, 30, 60 and 90.</summary>
       </Docs>
     </Member>
     <Member MemberName="LabelsAngleStep45">
@@ -80,7 +87,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Labels can be angled in 45 degree steps: 0, 45, and 90.</summary>
       </Docs>
     </Member>
     <Member MemberName="LabelsAngleStep90">
@@ -96,7 +103,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Labels can be angled in 90 degree steps: 0 and 90.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -112,7 +119,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No label changes are allowed.</summary>
       </Docs>
     </Member>
     <Member MemberName="StaggeredLabels">
@@ -128,7 +135,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Labels can be staggered.</summary>
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -144,7 +151,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Labels can be word wrapped.</summary>
       </Docs>
     </Member>
   </Members>

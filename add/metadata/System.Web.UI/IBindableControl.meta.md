@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.IBindableControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IBindableControl.ExtractValues(System.Collections.Specialized.IOrderedDictionary)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

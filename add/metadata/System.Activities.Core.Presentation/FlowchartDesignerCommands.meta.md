@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.Core.Presentation.FlowchartDesignerCommands
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Core.Presentation.FlowchartDesignerCommands.ConnectNodesCommand
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

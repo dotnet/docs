@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Exposes a method to enable applications to find an element in a container, such as a virtualized list.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface must be implemented by containers that support virtualization and have no other means to find the virtualized element.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FindItemByProperty">
@@ -41,12 +48,19 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="startAfter">To be added.</param>
-        <param name="propertyId">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="startAfter">The item in the container after which to begin the search.</param>
+        <param name="propertyId">The property that contains the value to retrieve.</param>
+        <param name="value">The value to retrieve.</param>
+        <summary>Retrieves an element by the specified property value.</summary>
+        <returns>The first item that matches the search criterion; otherwise, <see langword="null" /> if no items match.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the `propertyId` parameter to `0` to retrieve the next item after `startAfter`, regardless of the value specified in `value`. Set `startAfter` to `null` to start the search with the first item.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

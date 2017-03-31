@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines methods for resolving scope. The global scope object of the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" /> implements this interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,10 +41,10 @@
         <Parameter Name="type" Type="Microsoft.JScript.Vsa.JSVsaItemType" />
       </Parameters>
       <Docs>
-        <param name="itemName">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="itemName">The name of the item.</param>
+        <param name="type">One of the enumeration values. Specifies the type of the item to add.</param>
+        <summary>When implemented in a class, adds an item to the scope.</summary>
+        <returns>The new item, if it is successfully added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,10 +65,10 @@
         <Parameter Name="type" Type="Microsoft.JScript.Vsa.JSVsaItemType" />
       </Parameters>
       <Docs>
-        <param name="itemName">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="itemName">The name of the item.</param>
+        <param name="type">One of the enumeration values. Specifies the type of the item to add.</param>
+        <summary>When implemented in a class, adds an item to the scope. The <see cref="T:Microsoft.JScript.Vsa.VsaEngine" /> must be running to use this method.</summary>
+        <returns>The new item, if it is successfully added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,9 +88,9 @@
         <Parameter Name="itemName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="itemName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="itemName">The name of the item to get.</param>
+        <summary>When implemented in a class, gets the item from the scope that is designated by the specified name.</summary>
+        <returns>The item that is named <paramref name="itemName" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,9 +110,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The index of the item to get.</param>
+        <summary>When implemented in a class, gets the item from the scope that is designated by the specified index value.</summary>
+        <returns>The item at <paramref name="index" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +130,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When implemented in a class, gets the number of items in the scope.</summary>
+        <returns>The number of items in the scope.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,8 +149,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When implemented in a class, gets a reference to the global scope.</summary>
+        <returns>A reference to the global scope.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +167,8 @@
         <ReturnType>Microsoft.JScript.IVsaScriptScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a class, gets a reference to the parent object.</summary>
+        <value>The parent scope.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +188,8 @@
         <Parameter Name="item" Type="Microsoft.JScript.Vsa.IJSVsaItem" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The item to remove.</param>
+        <summary>When implemented in a class, removes the specified <see cref="T:Microsoft.JScript.Vsa.IJSVsaItem" /> object from the scope.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,8 +209,8 @@
         <Parameter Name="itemName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="itemName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="itemName">The name of the item to remove.</param>
+        <summary>When implemented in a class, removes the item that is designated by the specified name from the scope.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,8 +230,8 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The index of the item to remove.</param>
+        <summary>When implemented in a class, removes the item that is designated by the specified index value from the scope.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

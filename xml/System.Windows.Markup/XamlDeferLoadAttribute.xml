@@ -16,8 +16,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that a class or property has a deferred load usage for XAML (such as a template behavior), and reports the class that enables the deferring behavior and its destination/content type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xaml.XamlDeferringLoader> is possibly involved in defer load scenarios as a support class.  
+  
+## WPF Usage Notes  
+ An example class where this attribute is applied in the WPF XAML implementation is <xref:System.Windows.TemplateContent>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,10 +44,12 @@
         <Parameter Name="contentType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="loaderType">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="loaderType">The string name of the type for the implementation to use for the defer load behavior.</param>
+        <param name="contentType">The string name of the type for the destination/content type of the defer load behavior.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlDeferLoadAttribute" /> class, using string names of types.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="loaderType" /> or <paramref name="contentType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -54,10 +66,12 @@
         <Parameter Name="contentType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="loaderType">To be added.</param>
-        <param name="contentType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="loaderType">The CLR <see cref="T:System.Type" /> value for the implementation to use for the defer load behavior.</param>
+        <param name="contentType">The CLR <see cref="T:System.Type" /> value for the destination/content type of the defer load behavior.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlDeferLoadAttribute" /> class, using CLR <see cref="T:System.Type" /> values.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="loaderType" /> or <paramref name="contentType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -73,8 +87,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the CLR <see cref="T:System.Type" /> value for the destination/content type of the defer load behavior.</summary>
+        <value>The CLR <see cref="T:System.Type" /> value for the destination/content type of the defer load behavior.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +105,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the string name of the type for the implementation to use for the defer load behavior.</summary>
+        <value>The string name of the type for the converter to use for the defer load behavior.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,8 +123,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the CLR <see cref="T:System.Type" /> value for the implementation to use for the defer load behavior.</summary>
+        <value>The CLR <see cref="T:System.Type" /> value for the implementation to use for the defer load behavior.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +141,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the string name of the type for the destination/content type of the defer load behavior.</summary>
+        <value>The string name of the type for the destination/content type of the defer load behavior.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

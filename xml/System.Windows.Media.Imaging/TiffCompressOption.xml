@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the possible compression schemes for [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] bitmap images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Ccitt3, Ccitt4, and Rle require that the <xref:System.Windows.Media.PixelFormat> value be set to <xref:System.Windows.Media.PixelFormats.BlackWhite%2A>. Setting the <xref:System.Windows.Media.PixelFormat> to any other value resets the <xref:System.Windows.Media.Imaging.TiffBitmapEncoder.Compression%2A> property value to Default.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Media.Imaging.TiffBitmapEncoder.Compression%2A> property.  
+  
+ [!code-cpp[tiffbitmapdecoderencoder#3](~/samples/snippets/cpp/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/CPP/TiffEncoderDecoder.cpp#3)]
+ [!code-csharp[tiffbitmapdecoderencoder#3](~/samples/snippets/csharp/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/CSharp/TiffEncoderDecoder.cs#3)]
+ [!code-vb[tiffbitmapdecoderencoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TiffBitmapDecoderEncoder/VB/TiffEncoderDecoder.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ccitt3">
@@ -27,7 +43,7 @@
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The CCITT3 compression schema is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ccitt4">
@@ -43,7 +59,7 @@
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The CCITT4 compression schema is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -59,7 +75,7 @@
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Windows.Media.Imaging.TiffBitmapEncoder" /> encoder attempts to save the bitmap with the best possible compression schema.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lzw">
@@ -75,7 +91,7 @@
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The LZW compression schema is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -91,7 +107,7 @@
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The [!INCLUDE[TLA#tla_tiff](~/includes/tlasharptla-tiff-md.md)] image is not compressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rle">
@@ -107,7 +123,7 @@
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The RLE compression schema is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="Zip">
@@ -123,7 +139,7 @@
         <ReturnType>System.Windows.Media.Imaging.TiffCompressOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Zip compression schema is used.</summary>
       </Docs>
     </Member>
   </Members>

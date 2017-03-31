@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a base class for all the types in a conceptual model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Metadata Type Hierarchy Overview](http://msdn.microsoft.com/en-us/d2b18fe0-60a5-4a5c-940d-21d07e5165d4).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Abstract">
@@ -28,8 +35,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether this type is abstract or not.</summary>
+        <value>
+          <see langword="true" /> if this type is abstract; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +54,8 @@
         <ReturnType>System.Data.Metadata.Edm.EdmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the base type of this type.</summary>
+        <value>The base type of this type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +72,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the full name of this type.</summary>
+        <value>The full name of this type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,8 +91,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an instance of the <see cref="T:System.Data.Metadata.Edm.CollectionType" /> whose element type is this type.</summary>
+        <returns>The <see cref="T:System.Data.Metadata.Edm.CollectionType" /> object whose element type is this type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +109,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of this type.</summary>
+        <value>The name of this type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +127,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the namespace of this type.</summary>
+        <value>The namespace of this type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +146,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the full name of this type.</summary>
+        <returns>The full name of this type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.VerifyNameControl" /> class is used with an LDAP search function to specify the server used to verify the existence of an object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.VerifyNameControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.VerifyNameControl" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <Parameter Name="serverName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serverName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serverName">The global catalog the performs the validation.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.VerifyNameControl.#ctor(System.String)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.VerifyNameControl" /> class using the specified server name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,9 +62,9 @@
         <Parameter Name="flag" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="serverName">To be added.</param>
-        <param name="flag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serverName">The global catalog that performs the validation.</param>
+        <param name="flag">The flags used for the validation.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.VerifyNameControl.#ctor(System.String,System.Int32)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.VerifyNameControl" /> class using the specified server name and flags.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +81,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.VerifyNameControl.Flag" /> property contains the flag used for validation.</summary>
+        <value>The flag used for validation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.VerifyNameControl.GetValue" /> method returns the name of the validation server.</summary>
+        <returns>The name of the validation server.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +118,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.VerifyNameControl.ServerName" /> property contains the name of the server that performs the validation.</summary>
+        <value>The name of the server that performs the validation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

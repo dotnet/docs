@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a stream that sends its data to an <see cref="T:Microsoft.JScript.IMessageReceiver" />. The data is stored in a buffer until the data is flushed or the stream is closed.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="messageReceiver" Type="Microsoft.JScript.IMessageReceiver" />
       </Parameters>
       <Docs>
-        <param name="messageReceiver">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="messageReceiver">The receiver of the data of the stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.COMCharStream" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the current stream supports reading.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +65,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the current stream supports seeking.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +84,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the current stream supports writing.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +104,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sends this stream's data to the <see cref="T:Microsoft.JScript.IMessageReceiver" /> and clears its buffer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +122,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sends this stream's data to the <see cref="T:Microsoft.JScript.IMessageReceiver" /> and clears its buffer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +139,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the length of the stream.</summary>
+        <value>The length of the stream.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +157,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current position in the stream. The set method does not do anything.</summary>
+        <value>The current position in the stream.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,11 +180,11 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="buffer">An array of bytes in which to store the data that is read from the stream.</param>
+        <param name="offset">The zero-based byte offset in <c>buffer</c> at which to begin storing the data that is read from the stream.</param>
+        <param name="count">The maximum number of bytes to read from the stream.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
+        <returns>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,10 +205,10 @@
         <Parameter Name="origin" Type="System.IO.SeekOrigin" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <param name="origin">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="offset">A byte offset relative to the <c>origin</c> parameter.</param>
+        <param name="origin">A value that indicates the reference point that is used to obtain the new position.</param>
+        <summary>Sets the position in the current stream. This method does not do anything. It always returns 0.</summary>
+        <returns>0 in all cases.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,8 +228,8 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The new length of the stream.</param>
+        <summary>Sets the length of the stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,10 +251,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="buffer">An array of byte data to copy to the current stream.</param>
+        <param name="offset">The zero-based byte offset in <c>buffer</c> at which to begin copying bytes to the current stream.</param>
+        <param name="count">The number of bytes to copy from <c>buffer</c> to the current stream.</param>
+        <summary>Writes the specified byte data to the stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -20,8 +20,34 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates whether a listener should trace based on the event type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ One of several different types of filters can be assigned to a trace listener through the <xref:System.Diagnostics.TraceListener.Filter%2A> property to provide a layer of screening beyond that provided by the <xref:System.Diagnostics.TraceSwitch>. The filter can be used to control the event types that are produced by the listener.  
+  
+ This class filters events based on the value of the <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property.  This property can be set by code or in a configuration file to specify the event type of messages that should be traced by the listener. The value of the property indicates the threshold at which to begin tracing. Event types at and above the specified level are traced. The <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method, called by listeners  to determine if an event should be traced, uses the value of the <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property.  
+  
+ To set the event type at which to begin tracing, edit the configuration file that corresponds to the name of your application. Within this file, you can add a listener, set its filter type, and specify the event type to trace. The configuration file should be formatted as follows.  
+  
+```  
+<configuration>  
+  <system.diagnostics>  
+    <sharedListeners>  
+      <add name="Console" type="System.Diagnostics.ConsoleTraceListener">  
+        <filter type="System.Diagnostics.EventTypeFilter"   
+          initializeData="Warning" />  
+      </add>  
+    </sharedListeners>  
+  </system.diagnostics>  
+</configuration>  
+```  
+  
+ For more information about how to initialize data for an <xref:System.Diagnostics.EventTypeFilter>, see [\&lt;filter\&gt;](../Topic/%3Cfilter%3E%20Element%20for%20%3Cadd%3E%20for%20%3CsharedListeners%3E.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,9 +72,16 @@
         <Parameter Name="level" Type="System.Diagnostics.SourceLevels" />
       </Parameters>
       <Docs>
-        <param name="level">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="level">A bitwise combination of the <see cref="T:System.Diagnostics.SourceLevels" /> values that specifies the event type of the messages to trace.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventTypeFilter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the `level` parameter is used to initialize the <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventType">
@@ -73,9 +106,16 @@
         <ReturnType>System.Diagnostics.SourceLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the event type of the messages to trace.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Diagnostics.SourceLevels" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property indicates the level at which to trace.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldTrace">
@@ -110,17 +150,25 @@
         <Parameter Name="data" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="cache">To be added.</param>
-        <param name="source">To be added.</param>
-        <param name="eventType">To be added.</param>
-        <param name="id">To be added.</param>
-        <param name="formatOrMessage">To be added.</param>
-        <param name="args">To be added.</param>
-        <param name="data1">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="cache">A <see cref="T:System.Diagnostics.TraceEventCache" /> that represents the information cache for the trace event.</param>
+        <param name="source">The name of the source.</param>
+        <param name="eventType">One of the <see cref="T:System.Diagnostics.TraceEventType" /> values.</param>
+        <param name="id">A trace identifier number.</param>
+        <param name="formatOrMessage">The format to use for writing an array of arguments, or a message to write.</param>
+        <param name="args">An array of argument objects.</param>
+        <param name="data1">A trace data object.</param>
+        <param name="data">An array of trace data objects.</param>
+        <summary>Determines whether the trace listener should trace the event.</summary>
+        <returns>
+          <see langword="true" />if the trace should be produced; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of the `eventType` parameter is greater than or equal to the value of the <xref:System.Diagnostics.EventTypeFilter.EventType%2A> property, the method returns `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Automation.Provider.IVirtualizedItemProvider
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---
 
 ---
 uid: System.Windows.Automation.Provider.IVirtualizedItemProvider.Realize
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "markl"
 ---

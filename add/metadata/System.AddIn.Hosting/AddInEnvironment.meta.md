@@ -1,14 +1,20 @@
 ---
 uid: System.AddIn.Hosting.AddInEnvironment
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Hosting.AddInEnvironment.Process
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Hosting.AddInEnvironment.#ctor(System.AppDomain)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

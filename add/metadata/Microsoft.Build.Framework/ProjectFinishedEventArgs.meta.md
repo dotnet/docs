@@ -1,29 +1,41 @@
 ---
 uid: Microsoft.Build.Framework.ProjectFinishedEventArgs
-internalonly: False
----
-
----
-uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.Succeeded
-internalonly: False
----
-
----
-uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor(System.String,System.String,System.String,System.Boolean)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.Succeeded
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor(System.String,System.String,System.String,System.Boolean)
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor(System.String,System.String,System.String,System.Boolean,System.DateTime)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.ProjectFile
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

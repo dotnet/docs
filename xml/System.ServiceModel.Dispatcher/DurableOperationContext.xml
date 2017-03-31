@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a set of static methods to gain access to related information and functionality.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,8 +34,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Purges the current durable service instance from memory after the operation has completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method call will fail unless the `ConcurrencyMode` value for your service is set to `Single` and <xref:System.ServiceModel.Description.DurableServiceAttribute.SaveStateInOperationTransaction%2A> is set to `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CompleteInstance">
@@ -52,7 +59,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unloads the durable service instance from memory and deletes it from persistence after the operation has completed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +76,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the service ID of this service instance.</summary>
+        <value>A <see cref="T:System.Guid" /> that contains the ID of the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

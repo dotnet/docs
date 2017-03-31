@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The abstract base class from which workflow roles are derived.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ You can derive classes from the <xref:System.Workflow.Activities.WorkflowRole> class in order to implement role-based access to your workflows and their activities. The <xref:System.Workflow.Activities.WebWorkflowRole> class and the <xref:System.Workflow.Activities.ActiveDirectoryRole> class derive from the <xref:System.Workflow.Activities.WorkflowRole> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Activities.WorkflowRole" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,8 +60,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>When implemented in a derived class gets the identities contained by this <see cref="T:System.Workflow.Activities.WorkflowRole" />.</summary>
+        <returns>A list of the names of the identities contained by this <see cref="T:System.Workflow.Activities.WorkflowRole" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +81,10 @@
         <Parameter Name="identity" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="identity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="identity">The name of the identity for which to test.</param>
+        <summary>When implemented in a derived class, returns a value that indicates whether this role contains the specified identity.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="identity" /> is included in this <see cref="T:System.Workflow.Activities.WorkflowRole" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +101,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When implemented in a derived class, gets or sets the name of this <see cref="T:System.Workflow.Activities.WorkflowRole" />.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Activities.WorkflowRole" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

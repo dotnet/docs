@@ -1,29 +1,45 @@
 ---
 uid: System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.#ctor
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.Matches
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.Matches(System.Security.Cryptography.X509Certificates.X509Certificate2)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.GetX509Thumbprint
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.#ctor(System.Byte[])
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.ToString
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

@@ -18,8 +18,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains values that specify the <see cref="T:System.Windows.Automation.ToggleState" /> of a UI Automation element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A control must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: On, Off and if supported, Indeterminate.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Indeterminate">
@@ -35,7 +42,17 @@
         <ReturnType>System.Windows.Automation.ToggleState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The UI Automation element is in an indeterminate state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Indeterminate property can be used to indicate whether the user has acted on a control. For example, a check box can appear checked and dimmed, indicating an indeterminate state.  
+  
+ Creating an indeterminate state is different from disabling the control. Consequently, a check box in the indeterminate state can still receive the focus. When the user clicks an indeterminate control the <xref:System.Windows.Automation.ToggleState> cycles to its next value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Off">
@@ -51,7 +68,7 @@
         <ReturnType>System.Windows.Automation.ToggleState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The UI Automation element is not selected, checked, marked or otherwise activated.</summary>
       </Docs>
     </Member>
     <Member MemberName="On">
@@ -67,7 +84,7 @@
         <ReturnType>System.Windows.Automation.ToggleState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The UI Automation element is selected, checked, marked or otherwise activated.</summary>
       </Docs>
     </Member>
   </Members>

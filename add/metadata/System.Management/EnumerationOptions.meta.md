@@ -1,59 +1,64 @@
 ---
 uid: System.Management.EnumerationOptions
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EnumerationOptions.Rewindable
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EnumerationOptions.EnumerateDeep
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EnumerationOptions.PrototypeOnly
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EnumerationOptions.UseAmendedQualifiers
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EnumerationOptions.BlockSize
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EnumerationOptions.EnsureLocatable
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EnumerationOptions.Clone
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EnumerationOptions.DirectRead
-internalonly: False
----
-
----
-uid: System.Management.EnumerationOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EnumerationOptions.#ctor
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.EnumerationOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+manager: "jillfra"
+---
+
+---
+uid: System.Management.EnumerationOptions.#ctor
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.EnumerationOptions.ReturnImmediately
-internalonly: False
+manager: "jillfra"
 ---

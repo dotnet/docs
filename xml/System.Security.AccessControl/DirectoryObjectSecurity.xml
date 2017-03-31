@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the ability to control access to directory objects without direct manipulation of Access Control Lists (ACLs).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +36,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,8 +58,8 @@
         <Parameter Name="securityDescriptor" Type="System.Security.AccessControl.CommonSecurityDescriptor" />
       </Parameters>
       <Docs>
-        <param name="securityDescriptor">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityDescriptor">The security descriptor to be associated with the new <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" />object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> class with the specified security descriptor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,16 +91,16 @@
         <Parameter Name="inheritedObjectType" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="identityReference">To be added.</param>
-        <param name="accessMask">To be added.</param>
-        <param name="isInherited">To be added.</param>
-        <param name="inheritanceFlags">To be added.</param>
-        <param name="propagationFlags">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="objectType">To be added.</param>
-        <param name="inheritedObjectType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="identityReference">The identity to which the access rule applies.  It must be an object that can be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" />.</param>
+        <param name="accessMask">The access mask of this rule. The access mask is a 32-bit collection of anonymous bits, the meaning of which is defined by the individual integrators.</param>
+        <param name="isInherited">true if this rule is inherited from a parent container.</param>
+        <param name="inheritanceFlags">Specifies the inheritance properties of the access rule.</param>
+        <param name="propagationFlags">Specifies whether inherited access rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="type">Specifies the valid access control type.</param>
+        <param name="objectType">The identity of the class of objects to which the new access rule applies.</param>
+        <param name="inheritedObjectType">The identity of the class of child objects which can inherit the new access rule.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.AccessRule" /> class with the specified values.</summary>
+        <returns>The <see cref="T:System.Security.AccessControl.AccessRule" /> object that this method creates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,9 +125,16 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.ObjectAccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rule">The access rule to add.</param>
+        <summary>Adds the specified access rule to the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adding an access rule might cause existing access rules in the DACL to be merged.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAuditRule">
@@ -151,9 +158,16 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.ObjectAuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rule">The audit rule to add.</param>
+        <summary>Adds the specified audit rule to the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adding an audit rule might cause existing audit rules in the SACL to be merged.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AuditRuleFactory">
@@ -184,16 +198,17 @@
         <Parameter Name="inheritedObjectType" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="identityReference">To be added.</param>
-        <param name="accessMask">To be added.</param>
-        <param name="isInherited">To be added.</param>
-        <param name="inheritanceFlags">To be added.</param>
-        <param name="propagationFlags">To be added.</param>
-        <param name="flags">To be added.</param>
-        <param name="objectType">To be added.</param>
-        <param name="inheritedObjectType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="identityReference">The identity to which the audit rule applies.  It must be an object that can be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" />.</param>
+        <param name="accessMask">The access mask of this rule. The access mask is a 32-bit collection of anonymous bits, the meaning of which is defined by the individual integrators.</param>
+        <param name="isInherited">
+          <see langword="true" /> if this rule is inherited from a parent container.</param>
+        <param name="inheritanceFlags">Specifies the inheritance properties of the audit rule.</param>
+        <param name="propagationFlags">Specifies whether inherited audit rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="flags">Specifies the conditions for which the rule is audited.</param>
+        <param name="objectType">The identity of the class of objects to which the new audit rule applies.</param>
+        <param name="inheritedObjectType">The identity of the class of child objects which can inherit the new audit rule.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.AuditRule" /> class with the specified values.</summary>
+        <returns>The <see cref="T:System.Security.AccessControl.AuditRule" /> object that this method creates.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,11 +235,13 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="includeExplicit">To be added.</param>
-        <param name="includeInherited">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="includeExplicit">
+          <see langword="true" /> to include access rules explicitly set for the object.</param>
+        <param name="includeInherited">
+          <see langword="true" /> to include inherited access rules.</param>
+        <param name="targetType">The security identifier for which to retrieve access rules. This must be an object that can be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</param>
+        <summary>Gets a collection of the access rules associated with the specified security identifier.</summary>
+        <returns>The collection of access rules associated with the specified <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,11 +268,13 @@
         <Parameter Name="targetType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="includeExplicit">To be added.</param>
-        <param name="includeInherited">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="includeExplicit">
+          <see langword="true" /> to include audit rules explicitly set for the object.</param>
+        <param name="includeInherited">
+          <see langword="true" /> to include inherited audit rules.</param>
+        <param name="targetType">The security identifier for which to retrieve audit rules. This must be an object that can be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</param>
+        <summary>Gets a collection of the audit rules associated with the specified security identifier.</summary>
+        <returns>The collection of audit rules associated with the specified <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,11 +301,13 @@
         <Parameter Name="modified" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="modification">To be added.</param>
-        <param name="rule">To be added.</param>
-        <param name="modified">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modification">The modification to apply to the DACL.</param>
+        <param name="rule">The access rule to modify.</param>
+        <param name="modified">
+          <see langword="true" /> if the DACL is successfully modified; otherwise, <see langword="false" />.</param>
+        <summary>Applies the specified modification to the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the DACL is successfully modified; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,11 +334,13 @@
         <Parameter Name="modified" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="modification">To be added.</param>
-        <param name="rule">To be added.</param>
-        <param name="modified">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modification">The modification to apply to the SACL.</param>
+        <param name="rule">The audit rule to modify.</param>
+        <param name="modified">
+          <see langword="true" /> if the SACL is successfully modified; otherwise, <see langword="false" />.</param>
+        <summary>Applies the specified modification to the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the SACL is successfully modified; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,10 +365,20 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.ObjectAccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rule">The access rule to remove.</param>
+        <summary>Removes access rules that contain the same security identifier and access mask as the specified access rule from the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the access rule was successfully removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Access removal is accomplished by using a complex algorithm that might add access control rules in addition to removing them.  
+  
+ This method fails to remove the access rule and returns `false` if the inheritance rules associated with the access rule are too complex for the removal algorithm to succeed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAccessRuleAll">
@@ -369,8 +402,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.ObjectAccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The access rule to remove.</param>
+        <summary>Removes all access rules that have the same security identifier as the specified access rule from the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,8 +428,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.ObjectAccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The access rule to remove.</param>
+        <summary>Removes all access rules that exactly match the specified access rule from the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,10 +454,20 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.ObjectAuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="rule">The audit rule to remove.</param>
+        <summary>Removes audit rules that contain the same security identifier and access mask as the specified audit rule from the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.CommonObjectSecurity" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the audit rule was successfully removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Audit removal is accomplished by using a complex algorithm that might add audit control rules in addition to removing them.  
+  
+ This method fails to remove the audit rule and returns `false` if the inheritance rules associated with the audit rule are too complex for the removal algorithm to succeed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAuditRuleAll">
@@ -448,8 +491,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.ObjectAuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to remove.</param>
+        <summary>Removes all audit rules that have the same security identifier as the specified audit rule from the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -474,8 +517,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.ObjectAuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to remove.</param>
+        <summary>Removes all audit rules that exactly match the specified audit rule from the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,8 +543,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.ObjectAccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The access rule to reset.</param>
+        <summary>Removes all access rules in the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> object and then adds the specified access rule.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -526,8 +569,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.ObjectAccessRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The access rule to set.</param>
+        <summary>Removes all access rules that contain the same security identifier and qualifier as the specified access rule in the Discretionary Access Control List (DACL) associated with this <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> object and then adds the specified access rule.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -552,8 +595,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.ObjectAuditRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The audit rule to set.</param>
+        <summary>Removes all audit rules that contain the same security identifier and qualifier as the specified audit rule in the System Access Control List (SACL) associated with this <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> object and then adds the specified audit rule.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

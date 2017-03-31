@@ -27,8 +27,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the attributes that can be associated with a parameter. These are defined in CorHdr.h.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get the `ParameterAttributes` value, first get the `Type`. From the `Type`, get the `ParameterInfo` array. The `ParameterAttributes` value is within the array.  
+  
+ These enumerator values are dependent on optional metadata. Not all attributes are available from all compilers. See the appropriate compiler instructions to determine which enumerated values are available.  
+  
+   
+  
+## Examples  
+ The following example displays the attributes of the specified parameter.  
+  
+ [!code-cpp[Classic ParameterAttributes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ParameterAttributes Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ParameterAttributes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ParameterAttributes Example/CS/source.cs#1)]
+ [!code-vb[Classic ParameterAttributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ParameterAttributes Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="HasDefault">
@@ -53,7 +71,7 @@
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the parameter has a default value.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasFieldMarshal">
@@ -78,7 +96,7 @@
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the parameter has field marshaling information.</summary>
       </Docs>
     </Member>
     <Member MemberName="In">
@@ -103,7 +121,7 @@
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the parameter is an input parameter.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lcid">
@@ -128,7 +146,7 @@
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the parameter is a locale identifier (lcid).</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -153,7 +171,7 @@
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that there is no parameter attribute.</summary>
       </Docs>
     </Member>
     <Member MemberName="Optional">
@@ -178,7 +196,7 @@
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the parameter is optional.</summary>
       </Docs>
     </Member>
     <Member MemberName="Out">
@@ -203,7 +221,7 @@
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the parameter is an output parameter.</summary>
       </Docs>
     </Member>
     <Member MemberName="Reserved3">
@@ -224,7 +242,7 @@
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reserved.</summary>
       </Docs>
     </Member>
     <Member MemberName="Reserved4">
@@ -245,7 +263,7 @@
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reserved.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReservedMask">
@@ -266,7 +284,7 @@
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the parameter is reserved.</summary>
       </Docs>
     </Member>
     <Member MemberName="Retval">
@@ -291,7 +309,7 @@
         <ReturnType>System.Reflection.ParameterAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the parameter is a return value.</summary>
       </Docs>
     </Member>
   </Members>

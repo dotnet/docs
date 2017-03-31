@@ -1,1 +1,0 @@
-    randomValue = CInt(Math.Floor((upperbound - lowerbound + 1) * Rnd())) + lowerbound

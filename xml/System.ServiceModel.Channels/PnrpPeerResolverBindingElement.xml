@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the binding element used to create a Peer Name Resolution Protocol (PNRP) peer resolver.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create a peer resolver from an instance of this class, call <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement.CreatePeerResolver%2A> after the instance has been constructed.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.Channels.PnrpPeerResolverBindingElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +50,9 @@
         <Parameter Name="referralPolicy" Type="System.ServiceModel.PeerResolvers.PeerReferralPolicy" />
       </Parameters>
       <Docs>
-        <param name="referralPolicy">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="referralPolicy">
+          <see cref="T:System.ServiceModel.PeerResolvers.PeerReferralPolicy" /> that specifies the referral policy for this resolver.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.PnrpPeerResolverBindingElement" /> class with the provided peer referral policy.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,11 +75,20 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TChannel">The type of channel to produce.</typeparam>
+        <param name="context">
+          <see cref="T:System.ServiceModel.Channels.BindingContext" /> that specifies the binding context for the channel factory.</param>
+        <summary>Creates a channel factory that can be used to create a channel for sending messages.</summary>
+        <returns>
+          <see cref="T:System.ServiceModel.Channels.IChannelFactory" /> that contains the new channel factory of the specified type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to get a channel factory for sending messages based on the configuration of the transport binding element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
@@ -98,11 +115,21 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TChannel">
+          <see cref="T:System.ServiceModel.Channels.IChannel" /> that specifies the type of the channels to produce.</typeparam>
+        <param name="context">
+          <see cref="T:System.ServiceModel.Channels.BindingContext" /> that specifies the binding context for the channel listener.</param>
+        <summary>Creates a channel listener of the specified type for receiving messages.</summary>
+        <returns>
+          <see cref="T:System.ServiceModel.Channels.IChannelListener" /> that contains the new channel listener of the specified type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to get a channel listener for receiving messages based on the configuration of the transport binding element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanBuildChannelFactory&lt;TChannel&gt;">
@@ -124,10 +151,13 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TChannel">
+          <see cref="T:System.ServiceModel.Channels.IChannel" /> that specifies the type of the channels to produce.</typeparam>
+        <param name="context">
+          <see cref="T:System.ServiceModel.Channels.BindingContext" /> that specifies the binding context for the channel factory.</param>
+        <summary>Determines whether a channel factory of the specified type can be built.</summary>
+        <returns>
+          <see langword="true" /> if this binding element can produce a channel factory of the specified type; <see langword="false" /> if it cannot.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,10 +185,13 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="TChannel">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TChannel">
+          <see cref="T:System.ServiceModel.Channels.IChannel" /> that specifies the type of the channel listener.</typeparam>
+        <param name="context">
+          <see cref="T:System.ServiceModel.Channels.BindingContext" /> that specifies the binding context for the channel listener.</param>
+        <summary>Determines whether a channel listener of the specified type can be built.</summary>
+        <returns>
+          <see langword="true" /> if this binding element can produce a channel listener of the specified type; <see langword="false" /> if it cannot.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,9 +209,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance that is a copy of the current binding element.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Channels.BindingElement" /> that contains a copy of the current binding element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object returned by this method can be reboxed as an object of the more specific <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement> type.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePeerResolver">
@@ -195,8 +235,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a PNRP-specific <see cref="T:System.ServiceModel.PeerResolver" /> instance.</summary>
+        <returns>
+          <see cref="T:System.ServiceModel.PeerResolver" /> object that contains the new PNRP resolver created by this binding element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,10 +264,11 @@
         <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The specific property to obtain from the binding context.</typeparam>
+        <param name="context">
+          <see cref="T:System.ServiceModel.Channels.BindingContext" /> that specifies the binding context.</param>
+        <summary>Returns a property from the specified <see cref="T:System.ServiceModel.Channels.BindingContext" /> object.</summary>
+        <returns>The property from the specified <see cref="T:System.ServiceModel.Channels.BindingContext" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,8 +285,9 @@
         <ReturnType>System.ServiceModel.PeerResolvers.PeerReferralPolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the referral policy for the PNRP peer resolver created by this binding element.</summary>
+        <value>
+          <see cref="T:System.ServiceModel.PeerResolvers.PeerReferralPolicy" /> that specifies the referral policy for resolvers created by this binding element instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

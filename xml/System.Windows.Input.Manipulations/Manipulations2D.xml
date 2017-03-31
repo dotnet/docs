@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the possible affine two-dimensional (2-D) manipulations.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All available manipulations.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +48,7 @@
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No manipulations.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotate">
@@ -64,7 +64,7 @@
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A rotation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Scale">
@@ -80,7 +80,7 @@
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A scale in both directions.</summary>
       </Docs>
     </Member>
     <Member MemberName="Translate">
@@ -96,7 +96,7 @@
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A translation in the x and/or y axes.</summary>
       </Docs>
     </Member>
     <Member MemberName="TranslateX">
@@ -112,7 +112,7 @@
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A translation in the x-axis.</summary>
       </Docs>
     </Member>
     <Member MemberName="TranslateY">
@@ -128,7 +128,7 @@
         <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A translation in the y-axis.</summary>
       </Docs>
     </Member>
   </Members>

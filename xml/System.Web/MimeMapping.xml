@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Maps document extensions to content MIME types.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,8 +31,8 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileName">The file name that is used to determine the MIME type.</param>
+        <summary>Returns the MIME mapping for the specified file name.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

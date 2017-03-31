@@ -1,94 +1,217 @@
 ---
 uid: System.Reflection.TypeInfo
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.IsAssignableFrom(System.Reflection.TypeInfo)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.DeclaredMembers
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.DeclaredFields
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.ImplementedInterfaces
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetNestedType
+manager: "ghogen"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetConstructors
+manager: "ghogen"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetProperties
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.DeclaredMethods
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetDeclaredEvent(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetEvent
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.DeclaredNestedTypes
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetMember
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetDeclaredMethod(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetDeclaredProperty(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.TypeInfo.MakeArrayType
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.System#Reflection#IReflectableType#GetTypeInfo
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GenericTypeParameters
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetMethod
+manager: "ghogen"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetEvents
+manager: "ghogen"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetProperty
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.DeclaredConstructors
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetDeclaredMethods(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetNestedTypes
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.AsType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.TypeInfo.IsAssignableFrom
+manager: "ghogen"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetMembers
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.DeclaredEvents
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetDeclaredField(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.GetDeclaredNestedType(System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetFields
+manager: "ghogen"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetConstructor
+manager: "ghogen"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetInterface
+manager: "ghogen"
 ---
 
 ---
 uid: System.Reflection.TypeInfo.DeclaredProperties
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetField
+manager: "ghogen"
+---
+
+---
+uid: System.Reflection.TypeInfo.GetMethods
+manager: "ghogen"
 ---

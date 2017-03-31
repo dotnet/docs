@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implements an accessibility object that <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> classes use to adjust the designer user interface for users with disabilities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +42,8 @@
         <Parameter Name="workflowView" Type="System.Workflow.ComponentModel.Design.WorkflowView" />
       </Parameters>
       <Docs>
-        <param name="workflowView">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="workflowView">The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> to associate with the accessible object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" /> class by using the specified <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +60,8 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the location and size of the accessible object.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +78,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a string that describes the default action of the accessible object. Not all objects have a default action.</summary>
+        <value>A string that contains a description of the default action for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" />, or a null reference (<see langword="Nothing" /> in Visual Basic) if the accessible object has no default action.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +96,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a string that describes the visual appearance of the specified accessible object. Not all accessible objects have a description.</summary>
+        <value>A description of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" /> visual appearance to the user, or a null reference (<see langword="Nothing" /> in Visual Basic) if the object does not have a description.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +117,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The zero-based index of the accessible child object to retrieve.</param>
+        <summary>Returns the accessible child object associated with the specified index.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the accessible child object corresponding to the specified index.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +137,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves the number of children that belong to the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" />.</summary>
+        <returns>An integer that represents the number of child objects that belong to the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,8 +155,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a description of what the accessible object does or how the accessible object is used.</summary>
+        <value>A string that contains the description of what the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" /> does or how it is used or a null reference (<see langword="Nothing" /> in Visual Basic) if no help is defined.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,8 +173,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the accessible object name.</summary>
+        <value>A string that contains the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" /> name, or a null reference (<see langword="Nothing" /> in Visual Basic) if the property has not been set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +194,9 @@
         <Parameter Name="navdir" Type="System.Windows.Forms.AccessibleNavigation" />
       </Parameters>
       <Docs>
-        <param name="navdir">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="navdir">One of the <see cref="T:System.Windows.Forms.AccessibleNavigation" /> values.</param>
+        <summary>Navigates to another accessible object.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents one of the <see cref="T:System.Windows.Forms.AccessibleNavigation" /> values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +213,8 @@
         <ReturnType>System.Windows.Forms.AccessibleRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the role of the accessible object.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values. <see cref="F:System.Windows.Forms.AccessibleRole.None" /> is returned if no role has been specified</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

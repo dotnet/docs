@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains arguments relevant to all drag-and-drop events (<see cref="E:System.Windows.DragDrop.DragEnter" />, <see cref="E:System.Windows.DragDrop.DragLeave" />, <see cref="E:System.Windows.DragDrop.DragOver" />, and <see cref="E:System.Windows.DragDrop.Drop" />).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,16 @@
         <ReturnType>System.Windows.DragDropEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a member of the <see cref="T:System.Windows.DragDropEffects" /> enumeration that specifies which operations are allowed by the originator of the drag event.</summary>
+        <value>A member of the <see cref="T:System.Windows.DragDropEffects" /> enumeration that specifies which operations are allowed by the originator of the drag event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a drag-and-drop operation is initiated by calling the <xref:System.Windows.DragDrop.DoDragDrop%2A> method, permissible operations are specified with a member of the <xref:System.Windows.DragDropEffects> enumeration. For example, when dragging a read-only file the drag initiator should indicate that the file can be copied, but not moved.  Before attempting to perform an operation on dragged data, examine this property to ensure that the operation is allowed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -46,8 +53,8 @@
         <ReturnType>System.Windows.IDataObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a data object that contains the data associated with the corresponding drag event.</summary>
+        <value>A data object that contains the data associated with the corresponding drag event..</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +71,16 @@
         <ReturnType>System.Windows.DragDropEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the target drag-and-drop operation.</summary>
+        <value>A member of the <see cref="T:System.Windows.DragDropEffects" /> enumeration specifying the target drag-and-drop operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the effect specified in this property determines the mouse cursor for the target of a drag-and-drop operation. This is useful to provide feedback to the user on the operation that will occur when the corresponding object is dropped.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPosition">
@@ -85,10 +99,11 @@
         <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="relativeTo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="relativeTo">An <see cref="T:System.Windows.IInputElement" /> object for which to get a relative drop point.</param>
+        <summary>Returns a drop point that is relative to a specified <see cref="T:System.Windows.IInputElement" />.</summary>
+        <returns>A drop point that is relative to the element specified in <paramref name="relativeTo" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="relativeTo" /> is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -127,9 +142,16 @@
         <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a flag enumeration indicating the current state of the SHIFT, CTRL, and ALT keys, as well as the state of the mouse buttons.</summary>
+        <value>One or more members of the <see cref="T:System.Windows.DragDropKeyStates" /> flag enumeration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The effect of a drag-and-drop operation can be adjusted depending on the state of a particular key. For example, data may either be copied or moved depending on whether the CTRL or SHIFT keys are pressed during the drag-and-drop operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

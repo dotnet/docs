@@ -1,9 +1,13 @@
 ---
 uid: System.Windows.Documents.DocumentStructures.StoryBreak
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Documents.DocumentStructures.StoryBreak.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

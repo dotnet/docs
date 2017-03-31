@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the visibility modes within a tracking profile.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Tracking records from activities that are contained within another activity can be filtered using the visibility modes described by **ImplementationVisibility**. The filter is applied to subscribe for tracking records for all activities or only the root activity and its implementation for a workflow. For more information, see <xref:System.Activities.Tracking.TrackingProfile.ImplementationVisibility%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -27,7 +34,7 @@
         <ReturnType>System.Activities.Tracking.ImplementationVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All tracking records are emitted.</summary>
       </Docs>
     </Member>
     <Member MemberName="RootScope">
@@ -43,7 +50,7 @@
         <ReturnType>System.Activities.Tracking.ImplementationVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only the root activity and its implementation for the workflow is emitted.</summary>
       </Docs>
     </Member>
   </Members>

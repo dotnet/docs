@@ -1,24 +1,28 @@
 ---
 uid: Microsoft.JScript.JScriptCodeProvider
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JScriptCodeProvider.#ctor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JScriptCodeProvider.CreateGenerator
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JScriptCodeProvider.FileExtension
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JScriptCodeProvider.CreateGenerator
 ---
 
 ---
 uid: Microsoft.JScript.JScriptCodeProvider.CreateCompiler
-internalonly: False
+ms.author: "mikejo"
 ---

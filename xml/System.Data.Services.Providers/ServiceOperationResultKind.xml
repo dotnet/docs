@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>An enumeration that describes the kind of results that a service operation provides.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Data.Services.Providers.ServiceOperationResultKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A single value that cannot be further composed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enumeration">
@@ -43,7 +43,7 @@
         <ReturnType>System.Data.Services.Providers.ServiceOperationResultKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An enumeration of values that cannot be further composed.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueryWithMultipleResults">
@@ -59,7 +59,7 @@
         <ReturnType>System.Data.Services.Providers.ServiceOperationResultKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A queryable object that returns multiple elements.</summary>
       </Docs>
     </Member>
     <Member MemberName="QueryWithSingleResult">
@@ -75,7 +75,7 @@
         <ReturnType>System.Data.Services.Providers.ServiceOperationResultKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A query that returns a single item.</summary>
       </Docs>
     </Member>
     <Member MemberName="Void">
@@ -91,7 +91,7 @@
         <ReturnType>System.Data.Services.Providers.ServiceOperationResultKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No results.</summary>
       </Docs>
     </Member>
   </Members>

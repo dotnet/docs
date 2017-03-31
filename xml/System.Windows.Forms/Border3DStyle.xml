@@ -15,8 +15,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the style of a three-dimensional border.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration when calling the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A> method of the <xref:System.Windows.Forms.ControlPaint> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A?displayProperty=fullName> method and the <xref:System.Windows.Forms.Border3DStyle> enumeration. To run this example paste the following code in a form that imports the System.Windows.Forms and System.Drawing namespaces. Ensure the form's <xref:System.Windows.Forms.Control.Paint> event is associated with the event-handling method in this example.  
+  
+ [!code-cpp[System.Windows.Forms.ControlPaintMembers#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaintMembers/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ControlPaintMembers#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaintMembers/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ControlPaintMembers#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ControlPaintMembers/VB/form1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Adjust">
@@ -32,7 +48,7 @@
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The border is drawn outside the specified rectangle, preserving the dimensions of the rectangle for drawing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Bump">
@@ -48,7 +64,7 @@
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The inner and outer edges of the border have a raised appearance.</summary>
       </Docs>
     </Member>
     <Member MemberName="Etched">
@@ -64,7 +80,7 @@
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The inner and outer edges of the border have an etched appearance.</summary>
       </Docs>
     </Member>
     <Member MemberName="Flat">
@@ -80,7 +96,7 @@
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The border has no three-dimensional effects.</summary>
       </Docs>
     </Member>
     <Member MemberName="Raised">
@@ -96,7 +112,7 @@
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The border has raised inner and outer edges.</summary>
       </Docs>
     </Member>
     <Member MemberName="RaisedInner">
@@ -112,7 +128,7 @@
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The border has a raised inner edge and no outer edge.</summary>
       </Docs>
     </Member>
     <Member MemberName="RaisedOuter">
@@ -128,7 +144,7 @@
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The border has a raised outer edge and no inner edge.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sunken">
@@ -144,7 +160,7 @@
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The border has sunken inner and outer edges.</summary>
       </Docs>
     </Member>
     <Member MemberName="SunkenInner">
@@ -160,7 +176,7 @@
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The border has a sunken inner edge and no outer edge.</summary>
       </Docs>
     </Member>
     <Member MemberName="SunkenOuter">
@@ -176,7 +192,7 @@
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The border has a sunken outer edge and no inner edge.</summary>
       </Docs>
     </Member>
   </Members>

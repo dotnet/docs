@@ -1,4 +1,6 @@
 ---
 uid: System.Reflection.Emit.OperandType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

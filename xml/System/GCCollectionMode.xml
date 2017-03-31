@@ -22,8 +22,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the behavior for a forced garbage collection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.GC.Collect%2A?displayProperty=fullName> method overload to specify the <xref:System.GCCollectionMode> value.  
+  
+   
+  
+## Examples  
+ The following example forces a garbage collection for generation 2 objects with the Optimized setting.  
+  
+ [!code-csharp[System.GC.GCCollectionMode#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.GC.GCCollectionMode/cs/Program.cs#1)]
+ [!code-vb[System.GC.GCCollectionMode#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.GC.GCCollectionMode/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -51,7 +66,7 @@
         <ReturnType>System.GCCollectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default setting for this enumeration, which is currently <see cref="F:System.GCCollectionMode.Forced" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Forced">
@@ -79,7 +94,7 @@
         <ReturnType>System.GCCollectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Forces the garbage collection to occur immediately.</summary>
       </Docs>
     </Member>
     <Member MemberName="Optimized">
@@ -107,7 +122,7 @@
         <ReturnType>System.GCCollectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Allows the garbage collector to determine whether the current time is optimal to reclaim objects.</summary>
       </Docs>
     </Member>
   </Members>

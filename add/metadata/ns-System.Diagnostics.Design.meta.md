@@ -1,4 +1,6 @@
 ---
 uid: System.Diagnostics.Design
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

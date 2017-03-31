@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumerates the items that are visible in the shell bar.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that all items are visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="Arguments">
@@ -48,7 +48,7 @@
         <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that arguments are visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="Imports">
@@ -64,7 +64,7 @@
         <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that imports are visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiniMap">
@@ -80,7 +80,7 @@
         <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the mini map is visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -96,7 +96,7 @@
         <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that nothing is visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="PanMode">
@@ -112,7 +112,7 @@
         <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that PanMode is visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="Variables">
@@ -128,7 +128,7 @@
         <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the variables are visible.</summary>
       </Docs>
     </Member>
     <Member MemberName="Zoom">
@@ -144,7 +144,7 @@
         <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the zoom is visible.</summary>
       </Docs>
     </Member>
   </Members>

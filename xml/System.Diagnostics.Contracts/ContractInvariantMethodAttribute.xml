@@ -28,8 +28,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Marks a method as being the invariant method for a class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The invariant method can have any name, but it must return `void` and take no parameters. A suggested name for the method is `ObjectInvariant`. The body of the invariant method must consist solely of one or more calls to the <xref:System.Diagnostics.Contracts.Contract.Invariant%2A?displayProperty=fullName> method. A type can have more than one contract invariant method, which can be public or private.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Contracts.ContractInvariantMethodAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -28,8 +28,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that a field should be treated as containing a fixed number of elements of the specified primitive type. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.Runtime.CompilerServices.FixedBufferAttribute> attribute to a field to indicate that it should be treated as a fixed-length inline array. The type of the field that the attribute is applied to must have a size that can contain the indicated number of elements.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,9 +65,9 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="elementType">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="elementType">The type of the elements contained in the buffer.</param>
+        <param name="length">The number of elements in the buffer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.FixedBufferAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +96,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the elements contained in the fixed buffer.</summary>
+        <value>The type of the elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +126,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements in the fixed buffer.</summary>
+        <value>The number of elements in the fixed buffer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

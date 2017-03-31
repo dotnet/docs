@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a type converter that retrieves a list of control IDs in the current container.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter> class derives from the <xref:System.ComponentModel.StringConverter> class. It provides a list of control IDs to be displayed in a property-editing control in design-time environments.  
+  
+ For more information about type converters, see [How to: Implement a Type Converter](../Topic/How%20to:%20Implement%20a%20Type%20Converter.md) and [Generalized Type Conversion](../Topic/Generalized%20Type%20Conversion.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +35,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -46,9 +64,9 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A context that can be used for more information about the environment that this converter is invoked from. This parameter and its properties can be <see langword="null" />.</param>
+        <summary>Returns a collection of control IDs from the container inside the <see cref="T:System.ComponentModel.Design.IDesignerHost" /> object for the specified format context.</summary>
+        <returns>A collection of strings that represent the control IDs of the controls in the current container. If no controls are currently in the container, the method returns an empty collection. If the context is <see langword="null" /> or if there is no current container, the method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +86,10 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The format context.</param>
+        <summary>Returns a value that indicates whether the collection of standard values that is returned from <see cref="M:System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" /> is an exclusive list of possible values for the specified context.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> returned from <see cref="M:System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" /> is an exclusive list of possible values; <see langword="false" /> if other values are possible. The default is <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +109,10 @@
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">The format context.</param>
+        <summary>Returns a value that indicates whether this converter supports a set of control ID values that can be selected from a list.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="M:System.Web.UI.Design.UpdateProgressAssociatedUpdatePanelIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" /> should be called to find a common set of control ID values the object supports; otherwise, <see langword="false" />. The default is <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

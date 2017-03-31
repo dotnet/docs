@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Media.ExceptionEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.ExceptionEventArgs.ErrorException
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

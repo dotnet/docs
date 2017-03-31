@@ -1,9 +1,9 @@
 ---
 uid: System.Runtime.Serialization.OnDeserializingAttribute
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Runtime.Serialization.OnDeserializingAttribute.#ctor
-internalonly: False
+manager: "ghogen"
 ---

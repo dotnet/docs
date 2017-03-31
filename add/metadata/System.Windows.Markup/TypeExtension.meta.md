@@ -1,34 +1,39 @@
 ---
 uid: System.Windows.Markup.TypeExtension
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.TypeExtension.TypeName
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.TypeExtension.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.TypeExtension.ProvideValue(System.IServiceProvider)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.TypeExtension.#ctor(System.Type)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.TypeExtension.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.TypeExtension.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.TypeExtension.Type
-internalonly: False
+manager: "martinek"
 ---

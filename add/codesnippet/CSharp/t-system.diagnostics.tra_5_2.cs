@@ -1,2 +1,0 @@
-        [Event(4, Opcode = EventOpcode.Stop, Task = Tasks.Page, Keywords = Keywords.Page, Level = EventLevel.Informational)]
-        public void PageStop(int ID) { if (IsEnabled()) WriteEvent(4, ID); }

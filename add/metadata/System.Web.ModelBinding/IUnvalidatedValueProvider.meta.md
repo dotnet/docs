@@ -1,9 +1,17 @@
 ---
 uid: System.Web.ModelBinding.IUnvalidatedValueProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.IUnvalidatedValueProvider.GetValue(System.String,System.Boolean)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.ModelBinding.IUnvalidatedValueProvider.GetValue
 ---

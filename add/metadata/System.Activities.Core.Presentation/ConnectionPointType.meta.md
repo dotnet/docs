@@ -1,4 +1,6 @@
 ---
 uid: System.Activities.Core.Presentation.ConnectionPointType
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

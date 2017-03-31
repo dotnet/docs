@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains values that specify the type of synchronized input.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A key has been pressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -51,7 +51,7 @@
         <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A key has been released.</summary>
       </Docs>
     </Member>
     <Member MemberName="MouseLeftButtonDown">
@@ -67,7 +67,7 @@
         <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The left mouse button has been pressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="MouseLeftButtonUp">
@@ -83,7 +83,7 @@
         <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The left mouse button has been released.</summary>
       </Docs>
     </Member>
     <Member MemberName="MouseRightButtonDown">
@@ -99,7 +99,7 @@
         <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The right mouse button has been pressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="MouseRightButtonUp">
@@ -115,7 +115,7 @@
         <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The right mouse button has been released.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,29 +1,45 @@
 ---
 uid: System.Windows.Markup.EventSetterHandlerConverter
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.EventSetterHandlerConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.EventSetterHandlerConverter.ConvertFrom
 ---
 
 ---
 uid: System.Windows.Markup.EventSetterHandlerConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.EventSetterHandlerConverter.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.EventSetterHandlerConverter.CanConvertFrom
+---
+
+---
+uid: System.Windows.Markup.EventSetterHandlerConverter.ConvertTo
 ---
 
 ---
 uid: System.Windows.Markup.EventSetterHandlerConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.EventSetterHandlerConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.EventSetterHandlerConverter.CanConvertTo
 ---

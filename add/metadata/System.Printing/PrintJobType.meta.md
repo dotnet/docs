@@ -1,4 +1,6 @@
 ---
 uid: System.Printing.PrintJobType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

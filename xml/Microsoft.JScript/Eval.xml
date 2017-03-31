@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Evaluates JScript code. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,10 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="engine">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The code to evaluate.</param>
+        <param name="engine">A reference to the scripting engine to use to evaluate <c>source</c>.</param>
+        <summary>Evaluates the specified JScript code by using the specified engine.</summary>
+        <returns>The result of the evaluation. If <paramref name="source" /> is not a string, return value is <paramref name="source" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,11 +57,11 @@
         <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="unsafeOption">To be added.</param>
-        <param name="engine">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The code to evaluate.</param>
+        <param name="unsafeOption">The string literal <c>unsafe</c> to enable unsafe evaluation; otherwise, <see langword="false" />.</param>
+        <param name="engine">A reference to the scripting engine to use to evaluate <c>source</c>.</param>
+        <summary>Evaluates the specified JScript code by using the specified engine and safety option.</summary>
+        <returns>The result of the evaluation. If <paramref name="source" /> is not a string, return value is <paramref name="source" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

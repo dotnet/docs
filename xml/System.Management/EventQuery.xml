@@ -11,8 +11,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a WMI *event query*.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+  
+ [!code-csharp[wminet_EventQuery#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventQuery/cs/EventQuery.cs#1)]
+ [!code-vb[wminet_EventQuery#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventQuery/vb/EventQuery.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +36,25 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.EventQuery" /> class. This is the default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+  
+ [!code-csharp[wminet_EventQuery()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventQuery()/cs/EventQuery().cs#1)]
+ [!code-vb[wminet_EventQuery()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventQuery()/vb/EventQuery().vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,9 +70,26 @@
         <Parameter Name="query" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="query">A textual representation of the <c>event query</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.EventQuery" /> class for the specified query.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+  
+ [!code-csharp[wminet_EventQuery(1)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventQuery(1)/cs/EventQuery(1).cs#1)]
+ [!code-vb[wminet_EventQuery(1)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventQuery(1)/vb/EventQuery(1).vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -62,10 +106,27 @@
         <Parameter Name="query" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="language">To be added.</param>
-        <param name="query">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="language">The language in which the query string is specified.</param>
+        <param name="query">The string representation of the query.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.EventQuery" /> class for the specified language and query.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+   
+  
+## Examples  
+ The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+  
+ [!code-csharp[wminet_EventQuery(2)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventQuery(2)/cs/EventQuery(2).cs#1)]
+ [!code-vb[wminet_EventQuery(2)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventQuery(2)/vb/EventQuery(2).vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -82,9 +143,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a copy of the object.</summary>
+        <returns>The cloned object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,39 +1,44 @@
 ---
 uid: System.Management.ManagementException
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementException.#ctor
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementException.ErrorInformation
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementException.ErrorCode
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementException.#ctor(System.String,System.Exception)
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementException.#ctor(System.String)
-internalonly: False
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ManagementException.#ctor
+manager: "jillfra"
 ---

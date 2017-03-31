@@ -21,8 +21,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Unifies enumerable, collection, and dictionary support that are useful for exposing a dictionary of names in a XAML namescope.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.INameScopeDictionary> defines no members of its own. Instead, the interface inherits <xref:System.Collections.Generic.IDictionary%602>, <xref:System.Collections.Generic.ICollection%601> and <xref:System.Collections.Generic.IEnumerable%601> generic interfaces, with <xref:System.String> and <xref:System.Object> (or a <xref:System.Collections.Generic.KeyValuePair%602> thereof) as constraints. <xref:System.Windows.Markup.INameScopeDictionary> also inherits <xref:System.Windows.Markup.INameScope>.  
+  
+ The <xref:System.Windows.Markup.INameScopeDictionary> interface is used internally as a type for information passing, as part of object writer context for the WPF XAML implementation.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

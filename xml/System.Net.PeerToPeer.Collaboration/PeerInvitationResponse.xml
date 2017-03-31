@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a response received from a remote peer to an invitation sent via the <see cref="M:System.Net.PeerToPeer.Collaboration.Peer.Invite" /> or <see cref="M:System.Net.PeerToPeer.Collaboration.PeerNearMe.Invite" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class does not have a public constructor. The <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType> class is used to encapsulate the response to accommodate the return of any additional data with a future release.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="PeerInvitationResponseType">
@@ -28,8 +35,9 @@
         <ReturnType>System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the response to the invitation from the remote peer specified by <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType" /> class.</summary>
+        <value>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType" /> object containing the response from an invitation to a remote peer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

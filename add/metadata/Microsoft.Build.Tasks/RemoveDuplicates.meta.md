@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Tasks.RemoveDuplicates
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RemoveDuplicates.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RemoveDuplicates.Filtered
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RemoveDuplicates.Inputs
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Tasks.RemoveDuplicates.Execute
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

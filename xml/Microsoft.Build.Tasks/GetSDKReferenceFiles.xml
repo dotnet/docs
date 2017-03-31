@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Resolves an SDKReference to a full path on disk</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of GetSDKReferenceFiles.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the path where the cache files are stored.</summary>
+        <value>Returns the cache file folder path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Files that need to be copied locally. These are the reference assemblies and the xml intellisense files.</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Execute the task</summary>
+        <returns>Returns <see cref="T:System.Boolean" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +103,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag indicating whether to log cache file reading or writing exceptions.</summary>
+        <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +121,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag specifying whether to log conflicts between <see langword="redist" /> files across different referenced SDKs as messages or warnings. Default is <see langword="true" />, they are logged as warnings.</summary>
+        <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,8 +139,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag specifying whether to log conflicts between reference files within an SDK as messages or warnings. Default is <see langword="false" />, they are logged as messages.</summary>
+        <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,8 +157,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag specifying whether to log <see langword="redist" /> files found as a part of resolving the SDK. Default is <see langword="true" />, <see langword="redist" /> files are logged.</summary>
+        <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +175,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag specifying whether to log conflicts between reference files across different referenced SDKs as messages or warnings. Default is <see langword="true" />, they are logged as warnings.</summary>
+        <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,8 +193,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag specifying whether to log conflicts between reference files across different referenced SDKs as messages or warnings. Default is <see langword="false" />, they are logged as messages.</summary>
+        <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +211,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a flag specifying whether to log references found as a part of resolving the SDK. Default is <see langword="true" />, references are logged.</summary>
+        <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,8 +234,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the resolved <see langword="redist" /> files.</summary>
+        <value>Returns an array of<see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,8 +252,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Extensions which should be considered reference files</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,8 +275,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Resolved reference items.</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,8 +293,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Resolved SDK references which we will get the reference assemblies from.</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

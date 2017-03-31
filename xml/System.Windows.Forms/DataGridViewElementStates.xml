@@ -18,8 +18,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the user interface (UI) state of a element within a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although these different states, like Frozen, are enforced by the UI, they can be programmatically overruled.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this type. For more information, see [How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control](../Topic/How%20to:%20Perform%20a%20Custom%20Action%20Based%20on%20Changes%20in%20a%20Cell%20of%20a%20Windows%20Forms%20DataGridView%20Control.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#135)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Displayed">
@@ -35,7 +50,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates the an element is currently displayed onscreen.</summary>
       </Docs>
     </Member>
     <Member MemberName="Frozen">
@@ -51,7 +66,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element cannot be scrolled through the UI.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -67,7 +82,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element is in its default state.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -83,7 +98,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element will not accept user input to change its value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Resizable">
@@ -99,7 +114,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element can be resized through the UI. This value is ignored except when combined with the <see cref="F:System.Windows.Forms.DataGridViewElementStates.ResizableSet" /> value.</summary>
       </Docs>
     </Member>
     <Member MemberName="ResizableSet">
@@ -115,7 +130,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element does not inherit the resizable state of its parent.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -131,7 +146,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element is in a selected (highlighted) UI state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -147,7 +162,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that an element is visible (displayable).</summary>
       </Docs>
     </Member>
   </Members>

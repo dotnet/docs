@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.UIElement.StylusSystemGesture" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,10 +30,10 @@
         <Parameter Name="systemGesture" Type="System.Windows.Input.SystemGesture" />
       </Parameters>
       <Docs>
-        <param name="stylusDevice">To be added.</param>
-        <param name="timestamp">To be added.</param>
-        <param name="systemGesture">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stylusDevice">The <see cref="T:System.Windows.Input.StylusDevice" /> to associate with the event.</param>
+        <param name="timestamp">The time the event occurs.</param>
+        <param name="systemGesture">The <see cref="T:System.Windows.Input.SystemGesture" /> that raises the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusSystemGestureEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,10 +54,17 @@
         <Parameter Name="genericTarget" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="genericHandler">To be added.</param>
-        <param name="genericTarget">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="genericHandler">The generic handler to call in a type-specific way.</param>
+        <param name="genericTarget">The target to call the handler on.</param>
+        <summary>Invokes a type-specific handler on the target whenever the <see cref="E:System.Windows.UIElement.StylusSystemGesture" /> event is raised.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation casts the generic handler as a <xref:System.Windows.Input.StylusSystemGestureEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SystemGesture">
@@ -73,8 +80,8 @@
         <ReturnType>System.Windows.Input.SystemGesture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Input.SystemGesture" /> that raises the event.</summary>
+        <value>The <see cref="T:System.Windows.Input.SystemGesture" /> that raises the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

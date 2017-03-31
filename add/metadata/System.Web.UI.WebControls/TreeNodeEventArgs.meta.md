@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.TreeNodeEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TreeNodeEventArgs.#ctor(System.Web.UI.WebControls.TreeNode)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.TreeNodeEventArgs.Node
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

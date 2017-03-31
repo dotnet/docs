@@ -1,749 +1,1235 @@
 ---
 uid: System.String
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.StartsWith
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Compare(System.String,System.String,System.StringComparison)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.IndexOf(System.String,System.Int32,System.Int32,System.StringComparison)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.IndexOfAny(System.Char[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.LastIndexOf(System.String,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Concat(System.Object,System.Object,System.Object,System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Empty
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Globalization.CultureInfo,System.Globalization.CompareOptions)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.PadLeft(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.PadRight
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.#ctor(System.Char[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.ToString(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.EndsWith
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Format(System.String,System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Normalize
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Normalize
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.System#IConvertible#ToUInt32(System.IFormatProvider)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Join(System.String,System.String[],System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.IndexOfAny(System.Char[],System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Concat(System.Object,System.Object,System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Concat(System.Object,System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Trim
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.System#IConvertible#ToByte(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.IndexOf(System.String,System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.LastIndexOf(System.String,System.Int32,System.Int32,System.StringComparison)
-internalonly: False
----
-
----
-uid: System.String.LastIndexOfAny(System.Char[],System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.LastIndexOf(System.String,System.Int32,System.StringComparison)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.ToCharArray
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IndexOf(System.String,System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.LastIndexOf(System.String,System.Int32,System.Int32,System.StringComparison)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.LastIndexOfAny(System.Char[],System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Compare
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.CompareOrdinal
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.LastIndexOf(System.String,System.Int32,System.StringComparison)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.ToCharArray
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.PadRight(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Concat(System.String,System.String,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Intern(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.IndexOf(System.Char,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.IndexOf(System.Char)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.GetHashCode
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.CompareOrdinal(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.String.ToString
-internalonly: False
----
-
----
-uid: System.String.IsInterned(System.String)
-internalonly: False
----
-
----
-uid: System.String.Format(System.String,System.Object,System.Object,System.Object)
-internalonly: False
----
-
----
-uid: System.String.GetEnumerator
-internalonly: False
----
-
----
-uid: System.String.Contains(System.String)
-internalonly: False
----
-
----
-uid: System.String.Trim(System.Char[])
-internalonly: False
----
-
----
-uid: System.String.Split(System.Char[],System.Int32,System.StringSplitOptions)
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToDecimal(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.IsNullOrEmpty(System.String)
-internalonly: False
----
-
----
-uid: System.String.Concat(System.String,System.String,System.String,System.String)
-internalonly: False
----
-
----
-uid: System.String.Format(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)
-internalonly: False
----
-
----
-uid: System.String.ToLower(System.Globalization.CultureInfo)
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToSByte(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.#ctor(System.Char[],System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.ToUpperInvariant
-internalonly: False
----
-
----
-uid: System.String.Equals(System.String,System.String,System.StringComparison)
-internalonly: False
----
-
----
-uid: System.String.Concat(System.String[])
-internalonly: False
----
-
----
-uid: System.String.Join(System.String,System.Collections.Generic.IEnumerable{System.String})
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToType(System.Type,System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.Compare(System.String,System.String,System.Boolean,System.Globalization.CultureInfo)
-internalonly: False
----
-
----
-uid: System.String.IndexOf(System.String)
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToDouble(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.Compare(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.String.Clone
-internalonly: False
----
-
----
-uid: System.String.ToLower
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToDateTime(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.LastIndexOfAny(System.Char[])
-internalonly: False
----
-
----
-uid: System.String.Chars(System.Int32)
-internalonly: False
----
-
----
-uid: System.String.Concat(System.Object[])
-internalonly: False
----
-
----
-uid: System.String.Normalize(System.Text.NormalizationForm)
-internalonly: False
----
-
----
-uid: System.String.LastIndexOf(System.Char,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.#ctor(System.Char*)
-internalonly: False
----
-
----
-uid: System.String.LastIndexOf(System.String,System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.#ctor(System.SByte*)
-internalonly: False
----
-
----
-uid: System.String.PadLeft(System.Int32,System.Char)
-internalonly: False
----
-
----
-uid: System.String.Split(System.String[],System.Int32,System.StringSplitOptions)
-internalonly: False
----
-
----
-uid: System.String.IsNormalized
-internalonly: False
----
-
----
-uid: System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.#ctor(System.Char*,System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.Concat``1(System.Collections.Generic.IEnumerable{``0})
-internalonly: False
----
-
----
-uid: System.String.PadRight(System.Int32,System.Char)
-internalonly: False
----
-
----
-uid: System.String.StartsWith(System.String,System.StringComparison)
-internalonly: False
----
-
----
-uid: System.String.IndexOf(System.String,System.Int32,System.StringComparison)
-internalonly: False
----
-
----
-uid: System.String.Format(System.IFormatProvider,System.String,System.Object[])
-internalonly: False
----
-
----
-uid: System.String.#ctor(System.Char,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.Split(System.Char[],System.Int32)
-internalonly: False
----
-
----
-uid: System.String.Copy(System.String)
-internalonly: False
----
-
----
-uid: System.String.Format(System.IFormatProvider,System.String,System.Object,System.Object)
-internalonly: False
----
-
----
-uid: System.String.IndexOf(System.String,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean)
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToUInt64(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.GetTypeCode
-internalonly: False
----
-
----
-uid: System.String.Replace(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.String.Concat(System.Collections.Generic.IEnumerable{System.String})
-internalonly: False
----
-
----
-uid: System.String.Equals(System.Object)
-internalonly: False
----
-
----
-uid: System.String.TrimStart(System.Char[])
-internalonly: False
----
-
----
-uid: System.String.IndexOf(System.Char,System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.Split(System.Char[])
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToSingle(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToChar(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.CompareTo(System.Object)
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToInt16(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.LastIndexOf(System.String,System.StringComparison)
-internalonly: False
----
-
----
-uid: System.String.Compare(System.String,System.String,System.Boolean)
-internalonly: False
----
-
----
-uid: System.String.EndsWith(System.String)
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToBoolean(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.op_Inequality(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.String.EndsWith(System.String,System.Boolean,System.Globalization.CultureInfo)
-internalonly: False
----
-
----
-uid: System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.StringComparison)
-internalonly: False
----
-
----
-uid: System.String.Join``1(System.String,System.Collections.Generic.IEnumerable{``0})
-internalonly: False
----
-
----
-uid: System.String.Remove(System.Int32)
-internalonly: False
----
-
----
-uid: System.String.Equals(System.String,System.StringComparison)
-internalonly: False
----
-
----
-uid: System.String.Remove(System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.ToLowerInvariant
-internalonly: False
----
-
----
-uid: System.String.op_Equality(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToInt32(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.StartsWith(System.String)
-internalonly: False
----
-
----
-uid: System.String.Concat(System.String,System.String)
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToUInt16(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.LastIndexOfAny(System.Char[],System.Int32)
-internalonly: False
----
-
----
-uid: System.String.Substring(System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.IndexOfAny(System.Char[],System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.System#Collections#Generic#IEnumerable{System#Char}#GetEnumerator
-internalonly: False
----
-
----
-uid: System.String.Replace(System.Char,System.Char)
-internalonly: False
----
-
----
-uid: System.String.Format(System.IFormatProvider,System.String,System.Object)
-internalonly: False
----
-
----
-uid: System.String.Equals(System.String)
-internalonly: False
----
-
----
-uid: System.String.System#IConvertible#ToInt64(System.IFormatProvider)
-internalonly: False
----
-
----
-uid: System.String.Split(System.String[],System.StringSplitOptions)
-internalonly: False
----
-
----
-uid: System.String.CompareOrdinal(System.String,System.Int32,System.String,System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.StartsWith(System.String,System.Boolean,System.Globalization.CultureInfo)
-internalonly: False
----
-
----
-uid: System.String.ToUpper(System.Globalization.CultureInfo)
-internalonly: False
----
-
----
-uid: System.String.Split(System.Char[],System.StringSplitOptions)
-internalonly: False
----
-
----
-uid: System.String.Compare(System.String,System.String,System.Globalization.CultureInfo,System.Globalization.CompareOptions)
-internalonly: False
----
-
----
-uid: System.String.IndexOf(System.String,System.StringComparison)
-internalonly: False
----
-
----
-uid: System.String.LastIndexOf(System.Char)
-internalonly: False
----
-
----
-uid: System.String.#ctor(System.SByte*,System.Int32,System.Int32,System.Text.Encoding)
-internalonly: False
----
-
----
-uid: System.String.TrimEnd(System.Char[])
-internalonly: False
----
-
----
-uid: System.String.LastIndexOf(System.Char,System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.#ctor(System.SByte*,System.Int32,System.Int32)
-internalonly: False
----
-
----
-uid: System.String.IsNormalized(System.Text.NormalizationForm)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.ToUpper
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.CompareOrdinal(System.String,System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.ToString
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.ToString
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IsInterned(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Format(System.String,System.Object,System.Object,System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.GetEnumerator
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Contains(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Trim(System.Char[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Split(System.Char[],System.Int32,System.StringSplitOptions)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToDecimal(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IsNullOrEmpty(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Concat(System.String,System.String,System.String,System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Format(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.ToLower(System.Globalization.CultureInfo)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToSByte(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.#ctor(System.Char[],System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.ToUpperInvariant
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Equals(System.String,System.String,System.StringComparison)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.ToLower
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Join
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.LastIndexOfAny
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Concat(System.String[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Join(System.String,System.Collections.Generic.IEnumerable{System.String})
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToType(System.Type,System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Compare(System.String,System.String,System.Boolean,System.Globalization.CultureInfo)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IndexOf(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToDouble(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Compare(System.String,System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Clone
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.ToLower
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToDateTime(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.LastIndexOfAny(System.Char[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Chars(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Concat(System.Object[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Normalize(System.Text.NormalizationForm)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.LastIndexOf(System.Char,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.#ctor(System.Char*)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.LastIndexOf(System.String,System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Remove
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.#ctor(System.SByte*)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.PadLeft(System.Int32,System.Char)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Split(System.String[],System.Int32,System.StringSplitOptions)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IsNormalized
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.#ctor(System.Char*,System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Concat``1(System.Collections.Generic.IEnumerable{``0})
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.PadRight(System.Int32,System.Char)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IndexOfAny
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Format
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.StartsWith(System.String,System.StringComparison)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IndexOf(System.String,System.Int32,System.StringComparison)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Concat
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Format(System.IFormatProvider,System.String,System.Object[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.#ctor(System.Char,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Split(System.Char[],System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Copy(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Format(System.IFormatProvider,System.String,System.Object,System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IndexOf(System.String,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.LastIndexOf
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToUInt64(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.GetTypeCode
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Replace(System.String,System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Concat(System.Collections.Generic.IEnumerable{System.String})
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Equals(System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.TrimStart(System.Char[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IndexOf(System.Char,System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Split(System.Char[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToSingle(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToChar(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.CompareTo(System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToInt16(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.LastIndexOf(System.String,System.StringComparison)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Compare(System.String,System.String,System.Boolean)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.EndsWith(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToBoolean(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.op_Inequality(System.String,System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.EndsWith(System.String,System.Boolean,System.Globalization.CultureInfo)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.StringComparison)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Join``1(System.String,System.Collections.Generic.IEnumerable{``0})
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Remove(System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Equals
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Equals(System.String,System.StringComparison)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Remove(System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.ToLowerInvariant
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.op_Equality(System.String,System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Split
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToInt32(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.StartsWith(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.PadLeft
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Concat(System.String,System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Trim
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToUInt16(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.LastIndexOfAny(System.Char[],System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Substring(System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IndexOfAny(System.Char[],System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#Collections#Generic#IEnumerable{System#Char}#GetEnumerator
+---
+
+---
+uid: System.String.Replace
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Replace(System.Char,System.Char)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Format(System.IFormatProvider,System.String,System.Object)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.CompareTo
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Equals(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.System#IConvertible#ToInt64(System.IFormatProvider)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Split(System.String[],System.StringSplitOptions)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Substring
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.CompareOrdinal(System.String,System.Int32,System.String,System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.StartsWith(System.String,System.Boolean,System.Globalization.CultureInfo)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.ToUpper(System.Globalization.CultureInfo)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Split(System.Char[],System.StringSplitOptions)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.Compare(System.String,System.String,System.Globalization.CultureInfo,System.Globalization.CompareOptions)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IndexOf(System.String,System.StringComparison)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.LastIndexOf(System.Char)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.#ctor(System.SByte*,System.Int32,System.Int32,System.Text.Encoding)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.TrimEnd(System.Char[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.LastIndexOf(System.Char,System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.#ctor(System.SByte*,System.Int32,System.Int32)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IsNormalized(System.Text.NormalizationForm)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.ToUpper
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.EndsWith(System.String,System.StringComparison)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Substring(System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean,System.Globalization.CultureInfo)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IsNormalized
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.ToCharArray(System.Int32,System.Int32)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.CompareTo(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Insert(System.Int32,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.LastIndexOf(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Equals(System.String,System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Join(System.String,System.String[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Length
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Format(System.String,System.Object[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Concat(System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.IsNullOrWhiteSpace(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Format(System.String,System.Object,System.Object)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.String.IndexOf
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.String.Join(System.String,System.Object[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

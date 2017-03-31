@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Supports the creation of templates.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is a deprecated way to programmatically create templates, which are subclasses of <xref:System.Windows.FrameworkTemplate> such as <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>; not all of the template functionality is available when you create a template using this class. The recommended way to programmatically create a template is to load [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] from a string or a memory stream using the <xref:System.Windows.Markup.XamlReader.Load%2A> method of the <xref:System.Windows.Markup.XamlReader> class.  
+  
+<a name="xamlTextUsage_FrameworkElementFactory"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkElementFactory" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +57,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">The text string to produce.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkElementFactory" /> class with the specified text to produce.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +75,8 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of instance to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkElementFactory" /> class with the specified <see cref="T:System.Type" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,9 +94,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of instance to create.</param>
+        <param name="name">The style identifier.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkElementFactory" /> class with the specified <see cref="T:System.Type" /> and name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +117,9 @@
         <Parameter Name="handler" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="routedEvent">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="routedEvent">Identifier object for the routed event being handled.</param>
+        <param name="handler">A reference to the handler implementation.</param>
+        <summary>Adds an event handler for the given routed event to the instances created by this factory.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,10 +141,10 @@
         <Parameter Name="handledEventsToo" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="routedEvent">To be added.</param>
-        <param name="handler">To be added.</param>
-        <param name="handledEventsToo">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="routedEvent">Identifier object for the routed event being handled.</param>
+        <param name="handler">A reference to the handler implementation.</param>
+        <param name="handledEventsToo">Whether to invoke the handler in cases where the routed event has already been marked as handled in its arguments object. <see langword="true" /> to invoke the handler even when the routed event is marked handled; otherwise, <see langword="false" />. The default is <see langword="false" />. Asking to handle already-handled routed events is not common.</param>
+        <summary>Adds an event handler for the given routed event to the instances created by this factory, with the option of having the provided handler be invoked even in cases of routed events that had already been marked as handled by another element along the route.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,8 +164,8 @@
         <Parameter Name="child" Type="System.Windows.FrameworkElementFactory" />
       </Parameters>
       <Docs>
-        <param name="child">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="child">The <see cref="T:System.Windows.FrameworkElementFactory" /> object to add as a child.</param>
+        <summary>Adds a child factory to this factory.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,9 +182,17 @@
         <ReturnType>System.Windows.FrameworkElementFactory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the first child factory.</summary>
+        <value>A <see cref="T:System.Windows.FrameworkElementFactory" /> the first child factory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_FirstChild"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSealed">
@@ -191,9 +208,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this object is in an immutable state.</summary>
+        <value>
+          <see langword="true" /> if this object is in an immutable state; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_IsSealed"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -209,9 +235,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of a template item.</summary>
+        <value>A string that is the template identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_Name"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NextSibling">
@@ -227,9 +261,17 @@
         <ReturnType>System.Windows.FrameworkElementFactory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the next sibling factory.</summary>
+        <value>A <see cref="T:System.Windows.FrameworkElementFactory" /> that is the next sibling factory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_NextSibling"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -245,9 +287,17 @@
         <ReturnType>System.Windows.FrameworkElementFactory</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the parent <see cref="T:System.Windows.FrameworkElementFactory" />.</summary>
+        <value>A <see cref="T:System.Windows.FrameworkElementFactory" /> that is the parent factory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_Parent"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveHandler">
@@ -267,9 +317,9 @@
         <Parameter Name="handler" Type="System.Delegate" />
       </Parameters>
       <Docs>
-        <param name="routedEvent">To be added.</param>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="routedEvent">Identifier object for the routed event.</param>
+        <param name="handler">The handler to remove.</param>
+        <summary>Removes an event handler from the given routed event. This applies to the instances created by this factory.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,9 +340,9 @@
         <Parameter Name="binding" Type="System.Windows.Data.BindingBase" />
       </Parameters>
       <Docs>
-        <param name="dp">To be added.</param>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dp">Identifies the property where the binding should be established.</param>
+        <param name="binding">Description of the binding.</param>
+        <summary>Sets up data binding on a property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,9 +363,9 @@
         <Parameter Name="name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="dp">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dp">The property to which the resource is bound.</param>
+        <param name="name">The name of the resource.</param>
+        <summary>Set up a dynamic resource reference on a child property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,9 +386,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="dp">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dp">The dependency property identifier of the property to set.</param>
+        <param name="value">The new value.</param>
+        <summary>Sets the value of a dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,9 +405,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the text string to produce.</summary>
+        <value>The text string to produce.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_Text"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -373,9 +431,17 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of the objects this factory produces.</summary>
+        <value>The type of the objects this factory produces.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_Type"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

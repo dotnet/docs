@@ -1,194 +1,300 @@
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginClose(System.AsyncCallback,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.EndOpen(System.IAsyncResult)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.State
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Opened
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.SecurityTokenSerializer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerAddress
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginOpen
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.SecurityAlgorithmSuite
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.SupportsTokenCancellation
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.KeyEntropyMode
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerBinding
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.EndClose(System.IAsyncResult)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuedTokenRenewalThresholdPercentage
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Faulted
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Open(System.TimeSpan)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.CacheIssuedTokens
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.EndGetTokenCore(System.IAsyncResult)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.MaxIssuedTokenCachingTime
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginGetTokenCore(System.TimeSpan,System.AsyncCallback,System.Object)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerChannelBehaviors
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Dispose
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.DefaultOpenTimeout
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Close
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.#ctor
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Close(System.TimeSpan)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore(System.TimeSpan)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Closed
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Open
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.KeyEntropyMode
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerBinding
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.EndClose(System.IAsyncResult)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuedTokenRenewalThresholdPercentage
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Faulted
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Open(System.TimeSpan)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.CacheIssuedTokens
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.EndGetTokenCore(System.IAsyncResult)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Close
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginClose
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.MaxIssuedTokenCachingTime
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginGetTokenCore(System.TimeSpan,System.AsyncCallback,System.Object)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerChannelBehaviors
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Dispose
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.DefaultOpenTimeout
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Close
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Close(System.TimeSpan)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore(System.TimeSpan)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Closed
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Open
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginOpen(System.AsyncCallback,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.TokenRequestParameters
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.MessageSecurityVersion
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Closing
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.DefaultCloseTimeout
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.TargetAddress
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IdentityVerifier
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Opening
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Abort
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

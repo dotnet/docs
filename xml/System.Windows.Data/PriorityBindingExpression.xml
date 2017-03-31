@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains instance information about a single instance of a <see cref="T:System.Windows.Data.PriorityBinding" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Data.PriorityBinding> is a single run-time instance of a <xref:System.Windows.Data.PriorityBindingExpression>. Therefore, it describes a collection of <xref:System.Windows.Data.BindingExpression> objects that are attached to a single binding target property, which receives its value from the first <xref:System.Windows.Data.BindingExpression> object in the collection that returns a value successfully. For information about binding expressions, see the Binding and BindingExpression section in the [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+  
+ The binding engine determines which of the <xref:System.Windows.Data.BindingExpression> objects is the <xref:System.Windows.Data.PriorityBindingExpression.ActiveBindingExpression%2A> based on priority. For more information, see <xref:System.Windows.Data.PriorityBinding>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveBindingExpression">
@@ -28,9 +37,16 @@
         <ReturnType>System.Windows.Data.BindingExpressionBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the active <see cref="T:System.Windows.Data.BindingExpression" /> object.</summary>
+        <value>The active <see cref="T:System.Windows.Data.BindingExpression" /> object; or <see langword="null" />, if no <see cref="T:System.Windows.Data.BindingExpression" /> object is active. Although the return type is <see cref="T:System.Windows.Data.BindingExpressionBase" />, the returned object is only a <see cref="T:System.Windows.Data.BindingExpression" /> object because the <see cref="T:System.Windows.Data.PriorityBinding" /> class currently supports only <see cref="T:System.Windows.Data.Binding" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The binding engine determines which of the <xref:System.Windows.Data.BindingExpression> objects is the <xref:System.Windows.Data.PriorityBindingExpression.ActiveBindingExpression%2A> based on priority. For more information, see <xref:System.Windows.Data.PriorityBinding>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BindingExpressions">
@@ -46,8 +62,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Data.BindingExpressionBase&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of <see cref="T:System.Windows.Data.BindingExpression" /> objects inside this instance of <see cref="T:System.Windows.Data.PriorityBindingExpression" />.</summary>
+        <value>A read-only collection of the <see cref="T:System.Windows.Data.BindingExpression" /> objects. Although the return type is a collection of <see cref="T:System.Windows.Data.BindingExpressionBase" /> objects, the returned collection only contains <see cref="T:System.Windows.Data.BindingExpression" /> objects because the <see cref="T:System.Windows.Data.PriorityBinding" /> class currently supports only <see cref="T:System.Windows.Data.Binding" /> objects.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +80,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the parent binding has a failed validation rule.</summary>
+        <value>
+          <see langword="true" /> if the parent binding has a failed validation rule; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +99,8 @@
         <ReturnType>System.Windows.Data.PriorityBinding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Data.PriorityBinding" /> object from which this <see cref="T:System.Windows.Data.PriorityBindingExpression" /> is created.</summary>
+        <value>The <see cref="T:System.Windows.Data.PriorityBinding" /> object from which this <see cref="T:System.Windows.Data.PriorityBindingExpression" /> is created.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +118,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Updates the source on the active binding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls the <xref:System.Windows.Data.BindingExpression.UpdateSource%2A> method on the <xref:System.Windows.Data.PriorityBindingExpression.ActiveBindingExpression%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateTarget">
@@ -119,8 +143,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Updates the target on the active binding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls the <xref:System.Windows.Data.BindingExpression.UpdateTarget%2A> method on the <xref:System.Windows.Data.PriorityBindingExpression.ActiveBindingExpression%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

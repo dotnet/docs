@@ -22,8 +22,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A general-purpose class that represents a binding to a named parameter. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The binding is to the source of an `in` parameter, or the target of an `out` parameter.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,8 +48,18 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBinding" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates creating a new instance of a <xref:System.Workflow.ComponentModel.WorkflowParameterBinding> object.  This example is from the Ordering State Machine SDK sample.  For more information, see [Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
+  
+ [!code-csharp[WF_Samples#90](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#90)]
+ [!code-vb[WF_Samples#90](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#90)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -54,8 +75,8 @@
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterName">A <see langword="string" /> that contains the name of the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBinding" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +93,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="P:System.Workflow.ComponentModel.WorkflowParameterBinding.ParameterName" /> property. Represents the name of the parameter being bound.</summary>
+        <value>The name of the parameter being bound.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the user-defined name of the parameter to which the binding applies.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterNameProperty">
@@ -90,8 +118,17 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The dependency property which targets <see cref="P:System.Workflow.ComponentModel.WorkflowParameterBinding.ParameterName" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each of the public `properties` and `events` of this type is accessed indirectly by the resolution of a corresponding <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>. This is the `public static field` named `XProperty`, respectively `XEvent`, where X is the corresponding `property`,respectively `event`.  
+  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -112,8 +149,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value assigned to the corresponding parameter.</summary>
+        <value>The assigned value as an <see cref="T:System.Object" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,8 +167,24 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The dependency property which targets <see cref="P:System.Workflow.ComponentModel.WorkflowParameterBinding.Value" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each of the public `properties` and `events` of this type is accessed indirectly by the resolution of a corresponding <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>. This is the `public static field` named `XProperty`, respectively `XEvent`, where X is the corresponding `property`, respectively `event`.  
+  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+   
+  
+## Examples  
+ The following sample demonstrates accessing the ValueProperty field.  This example is from the Host Communication SDK sample.  For more information, see [Host Communication Sample](http://msdn.microsoft.com/en-us/ce4b0b8c-bfa3-4c24-b85a-5835a440ea8f).  
+  
+ [!code-csharp[WF_Samples#300](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets38.cs#300)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

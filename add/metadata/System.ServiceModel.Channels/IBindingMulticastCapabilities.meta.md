@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Channels.IBindingMulticastCapabilities
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IBindingMulticastCapabilities.IsMulticast
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

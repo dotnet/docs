@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.Design.Behavior.GlyphSelectionType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

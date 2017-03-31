@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a workflow control endpoint element for a workflow configuration file.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.Configuration.WorkflowControlEndpointElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the URI address for the control endpoint.</summary>
+        <value>A string containing the URI address.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +74,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the binding for the control endpoint.</summary>
+        <value>A string containing the control endpoint binding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +100,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the binding configuration for the control endpoint.</summary>
+        <value>A string containing the binding configuration for the endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +121,9 @@
         <Parameter Name="contractDescription" Type="System.ServiceModel.Description.ContractDescription" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contractDescription">Not used.</param>
+        <summary>Returns a new <see cref="T:System.ServiceModel.Activities.WorkflowControlEndpoint" />.</summary>
+        <returns>A workflow control service endpoint .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +140,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When called or overridden by a derived class, gets the type of the workflow control endpoint.</summary>
+        <value>The type of endpoint.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,9 +162,9 @@
         <Parameter Name="channelEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="channelEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">The service endpoint to which control configuration settings are applied.</param>
+        <param name="channelEndpointElement">Not implemented.</param>
+        <summary>When called or overridden by a derived class, converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a workflow control endpoint.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,9 +185,9 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="serviceEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">The service endpoint to which control configuration settings are applied.</param>
+        <param name="serviceEndpointElement">Not implemented.</param>
+        <summary>When called or overridden by a derived class, converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a workflow control endpoint.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,8 +207,8 @@
         <Parameter Name="channelEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="channelEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="channelEndpointElement">The channel endpoint element to initialize and validate.</param>
+        <summary>When called or overridden by a derived class, initializes and validates the specified channel endpoint element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +228,8 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceEndpointElement">The service endpoint element to initialize and validate.</param>
+        <summary>When called or overridden by a derived class, initializes and validates the specified service endpoint element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,8 +246,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of properties for the control endpoint element.</summary>
+        <value>A collection of configuration properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

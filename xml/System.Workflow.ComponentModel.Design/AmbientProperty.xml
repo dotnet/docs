@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the source of ambient theme settings for designer theme classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DesignerSize">
@@ -32,7 +41,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.AmbientProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ambient theme settings are obtained from the <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> class associated with the activity designer.</summary>
       </Docs>
     </Member>
     <Member MemberName="OperatingSystemSetting">
@@ -48,7 +57,7 @@
         <ReturnType>System.Workflow.ComponentModel.Design.AmbientProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The ambient theme settings are obtained from the operating system.</summary>
       </Docs>
     </Member>
   </Members>

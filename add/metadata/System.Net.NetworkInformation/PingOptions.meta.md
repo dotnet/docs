@@ -1,24 +1,35 @@
 ---
 uid: System.Net.NetworkInformation.PingOptions
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.PingOptions.Ttl
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.PingOptions.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.NetworkInformation.PingOptions.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.PingOptions.#ctor(System.Int32,System.Boolean)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.NetworkInformation.PingOptions.DontFragment
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

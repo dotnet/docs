@@ -21,8 +21,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the event that is raised when a faulted <see cref="T:System.Threading.Tasks.Task" />'s exception goes unobserved.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Exception property is used to examine the exception without marking it as observed, whereas the <xref:System.Threading.Tasks.UnobservedTaskExceptionEventArgs.SetObserved%2A> method is used to mark the exception as observed. Marking the exception as observed prevents it from triggering exception escalation policy which, by default, terminates the process.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,8 +55,8 @@
         <Parameter Name="exception" Type="System.AggregateException" />
       </Parameters>
       <Docs>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exception">The Exception that has gone unobserved.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.UnobservedTaskExceptionEventArgs" /> class with the unobserved exception.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +83,8 @@
         <ReturnType>System.AggregateException</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The Exception that went unobserved.</summary>
+        <value>The Exception that went unobserved.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +111,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether this exception has been marked as "observed."</summary>
+        <value>true if this exception has been marked as "observed"; otherwise false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,7 +140,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Marks the <see cref="P:System.Threading.Tasks.UnobservedTaskExceptionEventArgs.Exception" /> as "observed," thus preventing it from triggering exception escalation policy which, by default, terminates the process.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

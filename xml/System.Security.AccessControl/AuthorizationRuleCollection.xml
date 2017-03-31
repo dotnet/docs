@@ -18,7 +18,7 @@
   <Interfaces>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a collection of <see cref="T:System.Security.AccessControl.AuthorizationRule" /> objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.AuthorizationRuleCollection" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,8 +63,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AuthorizationRule" />
       </Parameters>
       <Docs>
-        <param name="rule">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rule">The <see cref="T:System.Web.Configuration.AuthorizationRule" /> object to add to the collection.</param>
+        <summary>Adds an <see cref="T:System.Web.Configuration.AuthorizationRule" /> object to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +90,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="rules">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rules">An array to which to copy the contents of the collection.</param>
+        <param name="index">The zero-based index from which to begin copying.</param>
+        <summary>Copies the contents of the collection to an array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,9 +135,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the <see cref="T:System.Security.AccessControl.AuthorizationRule" /> object to get.</param>
+        <summary>Gets the <see cref="T:System.Security.AccessControl.AuthorizationRule" /> object at the specified index of the collection.</summary>
+        <value>The <see cref="T:System.Security.AccessControl.AuthorizationRule" /> object at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

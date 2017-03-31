@@ -1,1 +1,0 @@
-   Public Function MatchEvaluatorMethod(match As Match) As String

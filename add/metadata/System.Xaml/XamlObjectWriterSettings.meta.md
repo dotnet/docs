@@ -1,84 +1,91 @@
 ---
 uid: System.Xaml.XamlObjectWriterSettings
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterSettings.AfterEndInitHandler
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterSettings.RegisterNamesOnExternalNamescope
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterSettings.RootObjectInstance
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterSettings.#ctor(System.Xaml.XamlObjectWriterSettings)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterSettings.SkipDuplicatePropertyCheck
-internalonly: False
----
-
----
-uid: System.Xaml.XamlObjectWriterSettings.SkipProvideValueOnRoot
-internalonly: False
----
-
----
-uid: System.Xaml.XamlObjectWriterSettings.XamlSetValueHandler
-internalonly: False
----
-
----
-uid: System.Xaml.XamlObjectWriterSettings.SourceBamlUri
-internalonly: False
----
-
----
-uid: System.Xaml.XamlObjectWriterSettings.AfterPropertiesHandler
-internalonly: False
----
-
----
-uid: System.Xaml.XamlObjectWriterSettings.IgnoreCanConvert
-internalonly: False
----
-
----
-uid: System.Xaml.XamlObjectWriterSettings.ExternalNameScope
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterSettings.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlObjectWriterSettings.SkipProvideValueOnRoot
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlObjectWriterSettings.XamlSetValueHandler
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlObjectWriterSettings.SourceBamlUri
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Xaml.XamlObjectWriterSettings.AfterPropertiesHandler
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlObjectWriterSettings.IgnoreCanConvert
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlObjectWriterSettings.ExternalNameScope
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.XamlObjectWriterSettings.#ctor
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterSettings.AfterBeginInitHandler
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterSettings.BeforePropertiesHandler
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterSettings.PreferUnconvertedDictionaryKeys
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.XamlObjectWriterSettings.AccessLevel
-internalonly: False
+manager: "martinek"
 ---

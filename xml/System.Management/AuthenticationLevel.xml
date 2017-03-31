@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the authentication level to be used to connect to WMI. This is used for the COM connection to WMI.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Call-level COM authentication.</summary>
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -43,7 +43,7 @@
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Connect-level COM authentication.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -59,7 +59,7 @@
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The default COM authentication level. WMI uses the default Windows Authentication setting.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -75,7 +75,7 @@
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No COM authentication.</summary>
       </Docs>
     </Member>
     <Member MemberName="Packet">
@@ -91,7 +91,7 @@
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Packet-level COM authentication.</summary>
       </Docs>
     </Member>
     <Member MemberName="PacketIntegrity">
@@ -107,7 +107,7 @@
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Packet Integrity-level COM authentication.</summary>
       </Docs>
     </Member>
     <Member MemberName="PacketPrivacy">
@@ -123,7 +123,7 @@
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Packet Privacy-level COM authentication.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unchanged">
@@ -139,7 +139,7 @@
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authentication level should remain as it was before.</summary>
       </Docs>
     </Member>
   </Members>

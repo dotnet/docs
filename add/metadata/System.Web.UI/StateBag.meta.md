@@ -1,139 +1,173 @@
 ---
 uid: System.Web.UI.StateBag
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.System#Collections#IEnumerable#GetEnumerator
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.System#Web#UI#IStateManager#TrackViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.IsItemDirty(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.System#Collections#IDictionary#Remove(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.SetItemDirty(System.String,System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.System#Web#UI#IStateManager#LoadViewState(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.System#Collections#IDictionary#IsFixedSize
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.System#Collections#IDictionary#Contains(System.Object)
-internalonly: False
----
-
----
-uid: System.Web.UI.StateBag.Remove(System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.StateBag.GetEnumerator
-internalonly: False
----
-
----
-uid: System.Web.UI.StateBag.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-internalonly: False
----
-
----
-uid: System.Web.UI.StateBag.System#Collections#IDictionary#Add(System.Object,System.Object)
-internalonly: False
----
-
----
-uid: System.Web.UI.StateBag.System#Web#UI#IStateManager#SaveViewState
-internalonly: False
----
-
----
-uid: System.Web.UI.StateBag.#ctor(System.Boolean)
-internalonly: False
----
-
----
-uid: System.Web.UI.StateBag.Clear
-internalonly: False
----
-
----
-uid: System.Web.UI.StateBag.Item(System.String)
-internalonly: False
----
-
----
-uid: System.Web.UI.StateBag.System#Collections#ICollection#IsSynchronized
-internalonly: False
----
-
----
-uid: System.Web.UI.StateBag.Values
-internalonly: False
----
-
----
-uid: System.Web.UI.StateBag.System#Collections#IDictionary#Item(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.StateBag.Remove(System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.StateBag.GetEnumerator
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.StateBag.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.StateBag.System#Collections#IDictionary#Add(System.Object,System.Object)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.StateBag.System#Web#UI#IStateManager#SaveViewState
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.StateBag.#ctor(System.Boolean)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.StateBag.Clear
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.StateBag.Item(System.String)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.StateBag.System#Collections#ICollection#IsSynchronized
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.StateBag.Values
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.StateBag.System#Collections#IDictionary#Item(System.Object)
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.StateBag.#ctor
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.System#Collections#IDictionary#IsReadOnly
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.System#Web#UI#IStateManager#IsTrackingViewState
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.Count
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.SetDirty(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.Add(System.String,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.Keys
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.StateBag.System#Collections#ICollection#SyncRoot
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

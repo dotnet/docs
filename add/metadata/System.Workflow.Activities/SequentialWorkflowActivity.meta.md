@@ -1,49 +1,76 @@
 ---
 uid: System.Workflow.Activities.SequentialWorkflowActivity
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.SequentialWorkflowActivity.InitializedEvent
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.SequentialWorkflowActivity.Completed
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.SequentialWorkflowActivity.Initialized
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.SequentialWorkflowActivity.OnSequenceComplete(System.Workflow.ComponentModel.ActivityExecutionContext)
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.SequentialWorkflowActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.SequentialWorkflowActivity.DynamicUpdateCondition
-internalonly: False
----
-
----
-uid: System.Workflow.Activities.SequentialWorkflowActivity.CompletedEvent
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.SequentialWorkflowActivity.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.SequentialWorkflowActivity.InitializedEvent
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.SequentialWorkflowActivity.Completed
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.SequentialWorkflowActivity.Initialized
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.SequentialWorkflowActivity.OnSequenceComplete(System.Workflow.ComponentModel.ActivityExecutionContext)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.SequentialWorkflowActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.SequentialWorkflowActivity.DynamicUpdateCondition
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.SequentialWorkflowActivity.CompletedEvent
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.SequentialWorkflowActivity.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.Activities.SequentialWorkflowActivity.#ctor(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Resolves security context tokens.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,10 +33,18 @@
         <Parameter Name="removeOldestTokensOnCacheFull" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="securityContextCacheCapacity">To be added.</param>
-        <param name="removeOldestTokensOnCacheFull">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="securityContextCacheCapacity">The size of the security context cache.</param>
+        <param name="removeOldestTokensOnCacheFull">
+          <see langword="true" /> if the oldest tokens should be removed when the cache is full; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityTokenResolver" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `removeOldestTokensOnCacheFull` is `false`, `AddContext` throws a <xref:System.ServiceModel.QuotaExceededException> if the cache capacity has been reached.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -54,10 +62,11 @@
         <Parameter Name="clockSkew" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="securityContextCacheCapacity">To be added.</param>
-        <param name="removeOldestTokensOnCacheFull">To be added.</param>
-        <param name="clockSkew">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityContextCacheCapacity">The size of the security context cache.</param>
+        <param name="removeOldestTokensOnCacheFull">
+          <see langword="true" /> if the oldest tokens should be removed when the cache is full; otherwise, <see langword="false" />.</param>
+        <param name="clockSkew">The maximum allowable time difference between client and server clock settings.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityTokenResolver" /> class with the specified security context cache capacity and clock skew maximum.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +86,10 @@
         <Parameter Name="token" Type="System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="token">The security context token.</param>
+        <summary>Adds a security context security token to the token cache.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">The <see cref="P:System.ServiceModel.Security.Tokens.SecurityContextSecurityTokenResolver.RemoveOldestTokensOnCacheFull" /> property is <see langword="false" /> and the cache capacity has been reached or exceeded.</exception>
       </Docs>
     </Member>
     <Member MemberName="ClearContexts">
@@ -96,7 +106,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears the token cache of content.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +123,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the maximum allowable time difference between client and server clock settings.</summary>
+        <value>The maximum allowable time difference between client and server clock settings.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,9 +144,9 @@
         <Parameter Name="contextId" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="contextId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contextId">The specified security context ID.</param>
+        <summary>Gets a collection of security context security token IDs that match a specified context ID.</summary>
+        <returns>A generic collection of security context tokens.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,10 +167,10 @@
         <Parameter Name="generation" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="contextId">To be added.</param>
-        <param name="generation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contextId">The specified security context ID.</param>
+        <param name="generation">The generation.</param>
+        <summary>Gets the security context security token ID that matches a specified context ID and generation.</summary>
+        <returns>The matching security context token.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,8 +190,8 @@
         <Parameter Name="contextId" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="contextId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contextId">The specified security context ID.</param>
+        <summary>Removes all tokens from the cache that match a given context ID.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,9 +212,9 @@
         <Parameter Name="generation" Type="System.Xml.UniqueId" />
       </Parameters>
       <Docs>
-        <param name="contextId">To be added.</param>
-        <param name="generation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contextId">The specified security context ID.</param>
+        <param name="generation">The generation.</param>
+        <summary>Removes the token from the cache that matches a given context ID and generation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,8 +231,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the oldest tokens should be removed when the cache is full.</summary>
+        <value>
+          <see langword="true" /> if the oldest tokens should be removed when the cache is full; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,8 +250,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the security context token cache size.</summary>
+        <value>The security context token cache size.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,10 +271,13 @@
         <Parameter Name="token" Type="System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="token">The security context token.</param>
+        <summary>Attempts to add a token to the cache.</summary>
+        <returns>
+          <see langword="true" /> if the token was added successfully to the cache; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="token" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="token" /> date or time is outside limits.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryResolveSecurityKeyCore">
@@ -283,10 +297,11 @@
         <Parameter Name="key" Type="System.IdentityModel.Tokens.SecurityKey&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifierClause">The security key identifier clause.</param>
+        <param name="key">When this method returns, contains resolved key core. This parameter is passed uninitialized.</param>
+        <summary>Attempts to resolve the security key core, given a specified key identifier clause.</summary>
+        <returns>
+          <see langword="true" /> if the key core was successfully resolved; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,10 +322,11 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifier">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifier">The security key identifier.</param>
+        <param name="token">When this method returns, contains the resolved key core. This parameter is passed uninitialized.</param>
+        <summary>Attempts to resolve the token, given a specified key identifier.</summary>
+        <returns>
+          <see langword="true" /> if the key token was successfully resolved; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,10 +347,11 @@
         <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="keyIdentifierClause">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyIdentifierClause">The security key identifier clause.</param>
+        <param name="token">When this method returns, contains the resolved key core. This parameter is passed uninitialized.</param>
+        <summary>Attempts to resolve the token, given a specified key identifier clause.</summary>
+        <returns>
+          <see langword="true" /> if the key token was successfully resolved; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,9 +372,9 @@
         <Parameter Name="expirationTime" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="expirationTime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The security context.</param>
+        <param name="expirationTime">The new expiration time and date.</param>
+        <summary>Updates the expiration date for a token in the cache.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

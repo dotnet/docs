@@ -1,9 +1,11 @@
 ---
 uid: System.Web.Profile.DefaultProfile
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Profile.DefaultProfile.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

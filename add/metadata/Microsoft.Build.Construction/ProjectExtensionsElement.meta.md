@@ -1,24 +1,29 @@
 ---
 uid: Microsoft.Build.Construction.ProjectExtensionsElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectExtensionsElement.Condition
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectExtensionsElement.ConditionLocation
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectExtensionsElement.Content
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectExtensionsElement.Item(System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

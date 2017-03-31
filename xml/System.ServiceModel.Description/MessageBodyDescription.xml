@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the body of a SOAP message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.MessageBodyDescription> class to construct or modify a SOAP message body when added to the description tree.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MessageBodyDescription" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.ServiceModel.Description.MessagePartDescriptionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the parts for the body of the SOAP message.</summary>
+        <value>The body parts that you can inspect or modify.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +72,8 @@
         <ReturnType>System.ServiceModel.Description.MessagePartDescription</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the portion of the SOAP message that contains the return value.</summary>
+        <value>The return value, if any.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +91,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the wrapper element inside the SOAP body element if there is one.</summary>
+        <value>The wrapper element if there is one.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,8 +110,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the namespace of the wrapper element in the SOAP body if there is one.</summary>
+        <value>The namespace of the wrapper element if there is one.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

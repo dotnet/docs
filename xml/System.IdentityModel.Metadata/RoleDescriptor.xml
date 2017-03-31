@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines a role descriptor.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,8 +26,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.RoleDescriptor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Metadata.RoleDescriptor.ProtocolsSupported%2A> property is initialized to an empty collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,8 +50,8 @@
         <Parameter Name="protocolsSupported" Type="System.Collections.ObjectModel.Collection&lt;System.Uri&gt;" />
       </Parameters>
       <Docs>
-        <param name="protocolsSupported">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="protocolsSupported">The supported protocol collection. Initializes the <see cref="P:System.IdentityModel.Metadata.RoleDescriptor.ProtocolsSupported" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.RoleDescriptor" /> class that has the collection of supported protocols.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +68,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.ContactPerson&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of <see cref="T:System.IdentityModel.Metadata.ContactPerson" />.</summary>
+        <value>The collection of contact persons for this role descriptor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +86,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the error URL.</summary>
+        <value>The error URL for this role descriptor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +104,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.KeyDescriptor&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of <see cref="T:System.IdentityModel.Metadata.KeyDescriptor" />.</summary>
+        <value>The collection of key descriptors for this role descriptor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,8 +122,8 @@
         <ReturnType>System.IdentityModel.Metadata.Organization</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:System.IdentityModel.Metadata.RoleDescriptor.Organization" />.</summary>
+        <value>The organization for this role descriptor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,8 +140,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Uri&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of protocols supported.</summary>
+        <value>The collection of supported protocols for this role descriptor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,8 +158,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the expiration time.</summary>
+        <value>The expiration time for this role descriptor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

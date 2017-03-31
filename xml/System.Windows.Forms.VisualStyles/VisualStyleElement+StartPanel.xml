@@ -11,8 +11,39 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the parts of the **Start** menu. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.LogOff>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.LogOffButtons>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.MorePrograms>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.MoreProgramsArrow>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.PlaceList>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.PlaceListSeparator>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.Preview>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.ProgList>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.ProgListSeparator>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.UserPane>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.UserPicture>  
+  
+ Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for each state of the **Start** menu part specified by the class name.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

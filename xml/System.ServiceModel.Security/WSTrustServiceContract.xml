@@ -38,8 +38,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Definition of the WS-Trust service contract implementation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implements the following service contract interfaces:  
+  
+-   <xref:System.ServiceModel.Security.IWSTrustFeb2005SyncContract>  
+  
+-   <xref:System.ServiceModel.Security.IWSTrust13SyncContract>  
+  
+-   <xref:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract>  
+  
+-   <xref:System.ServiceModel.Security.IWSTrust13AsyncContract>  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,8 +70,8 @@
         <Parameter Name="securityTokenServiceConfiguration" Type="System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" />
       </Parameters>
       <Docs>
-        <param name="securityTokenServiceConfiguration">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="securityTokenServiceConfiguration">The configuration object that initializes this instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustServiceContract" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,10 +93,10 @@
         <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <param name="bindingParameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contractDescription">The contract description to modify.</param>
+        <param name="endpoint">The endpoint to modify.</param>
+        <param name="bindingParameters">The objects that binding elements require to support the behavior.</param>
+        <summary>Configures any binding elements to support the contract behavior.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,10 +118,10 @@
         <Parameter Name="clientRuntime" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <param name="clientRuntime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contractDescription">The contract description for which the extension is intended.</param>
+        <param name="endpoint">The endpoint.</param>
+        <param name="clientRuntime">The client runtime.</param>
+        <summary>The contract description for which the extension is intended.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,10 +143,10 @@
         <Parameter Name="dispatchRuntime" Type="System.ServiceModel.Dispatcher.DispatchRuntime" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <param name="dispatchRuntime">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contractDescription">The contract description to be modified.</param>
+        <param name="endpoint">The endpoint that exposes the contract.</param>
+        <param name="dispatchRuntime">The dispatch runtime that controls service execution.</param>
+        <summary>Implements a modification or extension of the client across a contract.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,11 +168,11 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="dispatchContext">To be added.</param>
-        <param name="asyncCallback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dispatchContext">Defines the request parameters to process and exposes properties that determine the response message and action.</param>
+        <param name="asyncCallback">An optional asynchronous callback, to be called when the dispatch is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous dispatch request from other requests.</param>
+        <summary>Begins an asynchronous call to <see cref="M:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest(System.ServiceModel.Security.DispatchContext)" />.</summary>
+        <returns>A <see cref="T:System.IAsyncResult" /> that represents the asynchronous operation. Used as the input to the <see cref="M:System.ServiceModel.Security.WSTrustServiceContract.EndDispatchRequest(System.IAsyncResult)" /> method.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,17 +199,18 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="requestMessage">To be added.</param>
-        <param name="requestSerializer">To be added.</param>
-        <param name="responseSerializer">To be added.</param>
-        <param name="requestAction">To be added.</param>
-        <param name="responseAction">To be added.</param>
-        <param name="trustNamespace">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="requestMessage">The incoming request message.</param>
+        <param name="requestSerializer">The WS-Trust request Serializer.</param>
+        <param name="responseSerializer">The WS-Trust response Serializer.</param>
+        <param name="requestAction">The request SOAP action.</param>
+        <param name="responseAction">The response SOAP action.</param>
+        <param name="trustNamespace">The namespace URI of the WS-Trust version of the incoming request.</param>
+        <param name="callback">A callback that gets invoked when the asynchronous call ends.</param>
+        <param name="state">An object that contains state information for the asynchronous call.</param>
+        <summary>Handles an asynchronous call to the STS.</summary>
+        <returns>IAsyncResult that should be passed back to the End method to complete the Asynchronous call.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">One of the argument is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginTrust13Cancel">
@@ -215,11 +231,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 1.3 Cancel message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,11 +257,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 RSTR/Cancel message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,11 +283,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 Issue message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,11 +309,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 RSTR/Issue message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,11 +335,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 Renew message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,11 +361,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 RSTR/Renew message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,11 +387,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 Validate message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,11 +413,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 RSTR/Validate message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,11 +439,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 Cancel message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -449,11 +465,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 RSTR/Cancel message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -475,11 +491,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 Issue message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,11 +517,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 RSTR/Issue message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,11 +543,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 Renew message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,11 +569,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 RSTR/Renew message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -579,11 +595,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 Validate message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,11 +621,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 RSTR/Validate message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -635,15 +651,15 @@
         <Parameter Name="serializationContext" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
       </Parameters>
       <Docs>
-        <param name="requestMessage">To be added.</param>
-        <param name="requestAction">To be added.</param>
-        <param name="responseAction">To be added.</param>
-        <param name="trustNamespace">To be added.</param>
-        <param name="requestSerializer">To be added.</param>
-        <param name="responseSerializer">To be added.</param>
-        <param name="serializationContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="requestMessage">The incoming request message.</param>
+        <param name="requestAction">The SOAP action of the request.</param>
+        <param name="responseAction">The default SOAP action of the response.</param>
+        <param name="trustNamespace">Namespace URI of the WS-Trust version of the incoming request.</param>
+        <param name="requestSerializer">The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" /> used to deserialize incoming RST messages.</param>
+        <param name="responseSerializer">The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" /> used to deserialize incoming RSTR messages.</param>
+        <param name="serializationContext">The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> to use when deserializing incoming messages.</param>
+        <summary>Creates a <see cref="T:System.ServiceModel.Security.DispatchContext" /> object for use by the <see cref="M:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest(System.ServiceModel.Security.DispatchContext)" /> method.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Security.DispatchContext" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,8 +677,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> object using the local resolver information of the WSTrustServiceClient.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> initialized with the current resolver information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -682,8 +698,8 @@
         <Parameter Name="dispatchContext" Type="System.ServiceModel.Security.DispatchContext" />
       </Parameters>
       <Docs>
-        <param name="dispatchContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dispatchContext">Defines the request parameters to process and exposes properties that determine the response message and action.</param>
+        <summary>Processes a WS-Trust request message, and optionally determines the appropriate response message and the WS-Addressing action for the response message.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -703,9 +719,10 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">
+          <see cref="T:System.IAsyncResult" /> that was returned by the call to the <see cref="M:System.ServiceModel.Security.WSTrustServiceContract.BeginDispatchRequest(System.ServiceModel.Security.DispatchContext,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous call to <see cref="M:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest(System.ServiceModel.Security.DispatchContext)" />.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Security.DispatchContext" /> that exposes properties that determine the response message and action.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -728,13 +745,14 @@
         <Parameter Name="trustNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <param name="requestAction">To be added.</param>
-        <param name="responseAction">To be added.</param>
-        <param name="trustNamespace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> that was returned by the call to the asynchronous begin method.</param>
+        <param name="requestAction">The request SOAP Action.</param>
+        <param name="responseAction">The response SOAP Action.</param>
+        <param name="trustNamespace">The namespace URI of the current WS-Trust version.</param>
+        <summary>Completes an asynchronous call to the STS.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RST message.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">One of the arguments is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndTrust13Cancel">
@@ -753,9 +771,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 Cancel message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -775,9 +793,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 RSTR/Cancel message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -797,9 +815,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 Issue message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -819,9 +837,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 RSTR/Issue message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -841,9 +859,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 Renew message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -863,9 +881,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 RSTR/Renew message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -885,9 +903,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 Validate message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -907,9 +925,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 RSTR/Validate message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -929,9 +947,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 Cancel message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -951,9 +969,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 RSTR/Cancel message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -973,9 +991,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Complete an Asynchronous call to Trust Feb 2005 Cancel message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -995,9 +1013,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 RSTR/Issue message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1017,9 +1035,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 Renew message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1039,9 +1057,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 RSTR/Renew message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1061,9 +1079,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 Validate message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1083,9 +1101,9 @@
         <Parameter Name="ar" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="ar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 RSTR/Validate message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1106,10 +1124,17 @@
         <Parameter Name="context" Type="System.ServiceModel.Description.WsdlContractConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> that exports the contract information.</param>
+        <param name="context">Provides mappings from exported WSDL elements to the contract description.</param>
+        <summary>When implemented in a derived class, writes custom Web Services Description Language (WSDL) elements into the generated WSDL for a contract.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Provides an implementation of the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> method. The default implementation does nothing. You can override this method in a derived class to implement specific behavior.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportEndpoint">
@@ -1129,10 +1154,25 @@
         <Parameter Name="context" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
       </Parameters>
       <Docs>
-        <param name="exporter">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> that exports the contract information.</param>
+        <param name="context">Provides mappings from exported WSDL elements to the endpoint description.</param>
+        <summary>Writes custom Web Services Description Language (WSDL) elements into the generated WSDL for an endpoint.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implements the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint%2A> method.  
+  
+ The default implementation does the following for every WS-Trust contract found:  
+  
+1.  Includes the appropriate WS-Trust namespace in the WSDL.  
+  
+2.  Imports the appropriate WS-Trust schema and all dependent schemas.  
+  
+3.  Fixes the Messages of each operation to appropriate WS-Trust equivalents. The WS-Trust Contract exposed by Windows Identity Foundation (WIF) takes a <xref:System.ServiceModel.Channels.Message> in and returns a <xref:System.ServiceModel.Channels.Message> out. But WS-Trust messages expect an RST and return an RSTR/RSTRC. This method fixes the message names with the appropriate WS-Trust messages.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FixMessageElement">
@@ -1156,14 +1196,37 @@
         <Parameter Name="outputMessageElement" Type="System.Xml.XmlQualifiedName" />
       </Parameters>
       <Docs>
-        <param name="serviceDescription">To be added.</param>
-        <param name="portType">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="operationName">To be added.</param>
-        <param name="inputMessageElement">To be added.</param>
-        <param name="outputMessageElement">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceDescription">The <see cref="T:System.Web.Services.Description.ServiceDescription" /> that has the current state of the exported WSDL.</param>
+        <param name="portType">The WSDL PortType for which the messages are to be fixed.</param>
+        <param name="context">Provides mappings from exported WSDL elements to the endpoint description.</param>
+        <param name="operationName">The operation name inside the PortType.</param>
+        <param name="inputMessageElement">The <see cref="T:System.Xml.XmlQualifiedName" /> of the input message element.</param>
+        <param name="outputMessageElement">The <see cref="T:System.Xml.XmlQualifiedName" /> of the output message element.</param>
+        <summary>During WSDL generation, this method fixes a specified operation message element to refer to the RST and RSTR elements of the appropriate WS-Trust version.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The WS-Trust Contract exposed by Windows Identity Foundation (WIF) takes a <xref:System.ServiceModel.Channels.Message> in and returns a <xref:System.ServiceModel.Channels.Message> out. But WS-Trust messages expect an RST and return an RSTR/RSTRC. This method fixes the message names with the appropriate WS-Trust messages specified by the XML qualified names in `inputMessageElement` and `outputMessageLement`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceDescription" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="portType" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="inputMessageType" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="outputMessageType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationName" /> is <see langword="null" /> or Empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRstSecurityTokenResolver">
@@ -1180,8 +1243,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that will be used when resolving tokens and keys in the WS-Trust message body.</summary>
+        <returns>The security token resolver that will be used when resolving tokens and keys in the WS-Trust message body.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1201,10 +1264,19 @@
         <Parameter Name="requestContext" Type="System.ServiceModel.Channels.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="requestContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="requestContext">The context associated with the request.</param>
+        <summary>Returns the <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that resolves the following security tokens contained in the security header of the current WCF message request: protection token, endorsing, or signed endorsing supporting tokens.</summary>
+        <returns>The security token resolver that is used to resolve any SecurityTokenIdentifiers when deserializing RST UseKey elements or RST RenewTarget elements.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.IdentityModel.Selectors.SecurityTokenResolver> is used to resolve any SecurityTokenIdentifiers when deserializing RST UseKey elements or RST RenewTarget elements.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="requestContext" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HandleException">
@@ -1226,12 +1298,12 @@
         <Parameter Name="requestEnvelopeVersion" Type="System.ServiceModel.EnvelopeVersion" />
       </Parameters>
       <Docs>
-        <param name="ex">To be added.</param>
-        <param name="trustNamespace">To be added.</param>
-        <param name="action">To be added.</param>
-        <param name="requestEnvelopeVersion">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="ex">The original exception.</param>
+        <param name="trustNamespace">The namespace of the current WS-Trust version.</param>
+        <param name="action">The WS-Trust action that caused the exception.</param>
+        <param name="requestEnvelopeVersion">The SOAP version of the request envelope.</param>
+        <summary>Raises the <see cref="E:System.ServiceModel.Security.WSTrustServiceContract.RequestFailed" /> event and converts the specified exception to a <see cref="T:System.ServiceModel.FaultException" /> if required. If the original exception was a <see cref="T:System.ServiceModel.FaultException" /> or if the PreserveOriginalException flag is set to <see langword="true" />, the conversion to a <see cref="T:System.ServiceModel.FaultException" /> is not performed.</summary>
+        <returns>Returns <see cref="T:System.Boolean" />. <see langword="false" /> if the original exception is thrown.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1253,11 +1325,27 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="exporter">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> that exports the contract information.</param>
+        <param name="context">Provides mappings from exported WSDL elements to the endpoint description.</param>
+        <param name="ns">The current WS-Trust namespace for which the schemas are imported.</param>
+        <summary>Imports all of the required schemas if not already present in the WSDL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation imports the following schemas: WS-Trust Feb 2005 and WS-Trust 1.3. You can override this method in derived classes to import other schemas.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="exporter" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="context" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ns" /> is <see langword="null" /> or an empty string.</exception>
+        <exception cref="T:System.InvalidOperationException">The namespace specified in <paramref name="ns" /> is not a recognized WS-Trust namespace.</exception>
       </Docs>
     </Member>
     <Member MemberName="IncludeNamespace">
@@ -1278,11 +1366,13 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="prefix">To be added.</param>
-        <param name="ns">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">Provides mappings from exported WSDL elements to the endpoint description.</param>
+        <param name="prefix">The prefix of the namespace to be included.</param>
+        <param name="ns">The namespace to be included.</param>
+        <summary>Adds the required WS-Trust namespaces to the WSDL if not already present.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ProcessCore">
@@ -1306,15 +1396,16 @@
         <Parameter Name="trustNamespace" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="requestMessage">To be added.</param>
-        <param name="requestSerializer">To be added.</param>
-        <param name="responseSerializer">To be added.</param>
-        <param name="requestAction">To be added.</param>
-        <param name="responseAction">To be added.</param>
-        <param name="trustNamespace">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="requestMessage">The incoming request message.</param>
+        <param name="requestSerializer">The WS-Trust Request Serializer.</param>
+        <param name="responseSerializer">The WS-Trust Response Serializer.</param>
+        <param name="requestAction">The request SOAP action.</param>
+        <param name="responseAction">The response SOAP action.</param>
+        <param name="trustNamespace">The namespace URI of the WS-Trust version of the incoming request.</param>
+        <summary>Handles synchronous calls to the STS.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">One of the arguments is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ProcessTrust13Cancel">
@@ -1333,9 +1424,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 Cancel message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1355,9 +1446,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 RSTR/Cancel message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1377,9 +1468,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Process a WS-Trust 1.3 Issue message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1399,9 +1490,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 RSTR/Cancel message synchronously.</summary>
+        <returns>Returns <see cref="T:System.ServiceModel.Channels.Message" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1421,9 +1512,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 Renew message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1443,9 +1534,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 RSTR/Renew message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1465,9 +1556,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 Validate message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1487,9 +1578,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 RSTR/Validate message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1509,9 +1600,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 Cancel message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1531,9 +1622,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 RSTR/Cancel message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1553,9 +1644,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 Issue message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1575,9 +1666,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 RSTR/Issue message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1597,9 +1688,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 Renew message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1619,9 +1710,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 RSTR/Renew message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1641,9 +1732,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 Validate message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1663,9 +1754,9 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 RSTR/Validate message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1682,8 +1773,15 @@
         <ReturnType>System.EventHandler&lt;System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a failure happens processing a WS-Trust request from the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the <xref:System.ServiceModel.Security.WSTrustServiceContract.HandleException%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SecurityTokenServiceConfiguration">
@@ -1699,8 +1797,8 @@
         <ReturnType>System.IdentityModel.Configuration.SecurityTokenServiceConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the service configuration.</summary>
+        <value>A <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> that represents the configuration for the service.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1721,10 +1819,19 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contractDescription">The contract to validate.</param>
+        <param name="endpoint">The endpoint to validate.</param>
+        <summary>When implemented in a derived class, confirms that the contract and endpoint can support the contract behavior.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation just returns without throwing an exception. This indicates that the specified contract and endpoint are valid.  
+  
+ Inherited from <xref:System.ServiceModel.Description.IContractBehavior>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidateDispatchContext">
@@ -1743,9 +1850,16 @@
         <Parameter Name="dispatchContext" Type="System.ServiceModel.Security.DispatchContext" />
       </Parameters>
       <Docs>
-        <param name="dispatchContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dispatchContext">The <see cref="T:System.ServiceModel.Security.DispatchContext" /> object to validate.</param>
+        <summary>Validates the specified <see cref="T:System.ServiceModel.Security.DispatchContext" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method ensures that the <xref:System.ServiceModel.Security.DispatchContext> Object represents a legal request prior to being passed into the <xref:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest%2A> method. The default implementation rejects incoming RST messages with RSTR actions and vice versa.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

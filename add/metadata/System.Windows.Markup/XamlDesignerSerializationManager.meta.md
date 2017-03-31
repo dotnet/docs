@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.XamlDesignerSerializationManager
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlDesignerSerializationManager.#ctor(System.Xml.XmlWriter)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlDesignerSerializationManager.XamlWriterMode
-internalonly: False
+manager: "martinek"
 ---

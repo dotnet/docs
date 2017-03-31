@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.ScriptBlock
-internalonly: False
+ms.author: "mikejo"
 ---

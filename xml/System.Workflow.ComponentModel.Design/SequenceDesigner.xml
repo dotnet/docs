@@ -19,8 +19,33 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides design-time support for <see cref="T:System.Workflow.Activities.SequenceActivity" /> and all classes that derive from it.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.ComponentModel.Design.SequenceDesigner> provides design-time support for the following classes that derive from <xref:System.Workflow.Activities.SequenceActivity>:  
+  
+-   <xref:System.Workflow.Activities.EventDrivenActivity>  
+  
+-   <xref:System.Workflow.Activities.IfElseBranchActivity>  
+  
+-   <xref:System.Workflow.Activities.StateFinalizationActivity>  
+  
+-   <xref:System.Workflow.Activities.StateInitializationActivity>  
+  
+-   <xref:System.Workflow.ComponentModel.TransactionScopeActivity>  
+  
+-   <xref:System.Workflow.ComponentModel.SynchronizationScopeActivity>  
+  
+-   <xref:System.Workflow.Activities.ReplicatorActivity>  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.SequenceDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

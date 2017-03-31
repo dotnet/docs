@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Extends design-time behavior for the <see cref="T:System.Web.UI.WebControls.Calendar" /> Web server control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.CalendarDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Web.UI.Design.DesignerAutoFormatCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets all the <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> objects available for the control.</summary>
+        <value>A <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object containing the <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> objects available for the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,9 +69,16 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> object for this designer.</param>
+        <summary>Initializes the designer with the specified component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The designer host calls <xref:System.Web.UI.Design.WebControls.CalendarDesigner.Initialize%2A> to initialize the component for the designer.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnAutoFormat">
@@ -91,10 +98,17 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sender">The source of the event.</param>
+        <param name="e">The <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Called when an auto-format scheme has been applied to the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Schemes are applied by the user to set the appearance of a control from a collection of predefined styles. Override this method to perform other actions that might be needed after a scheme is applied to a control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -21,8 +21,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>References a variable-length argument list.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This structure has no members other than those that it inherits from the <xref:System.Object> and <xref:System.ValueType> classes. It exists only to support C/C++ programming language functions that take a variable number of parameters. An instance of the structure is passed to the <xref:System.ArgIterator> constructor.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

@@ -17,8 +17,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an XML document that specifies a list of file system directory paths that should not be searched for references to add to a Web services discovery document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Discovery.DynamicDiscoveryDocument> class is employed by the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class's <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, which handles an HTTP request for a discovery document. The request specifies another document, an XML dynamic discovery document containing a list of directories to exclude. The list corresponds to the <xref:System.Web.Services.Discovery.DynamicDiscoveryDocument> class's <xref:System.Web.Services.Discovery.DynamicDiscoveryDocument.ExcludePaths%2A> property and contains directories at or below the directory containing the XML document.  
+  
+ Normally, none of these classes need to be used directly by a developer.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DynamicDiscoveryDocument" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +65,16 @@
         <ReturnType>System.Web.Services.Discovery.ExcludePathInfo[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the file-system directory paths that should not be searched for references to add to a discovery document.</summary>
+        <value>An array of <see cref="T:System.Web.Services.Discovery.ExcludePathInfo" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The exclude paths are serialized to an XML dynamic discovery document.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -78,10 +94,17 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> object from which the XML dynamic discovery document is deserialized.</param>
+        <summary>Deserializes an XML document into a <see cref="T:System.Web.Services.Discovery.DynamicDiscoveryDocument" /> instance.</summary>
+        <returns>The <see cref="T:System.Web.Services.Discovery.DynamicDiscoveryDocument" /> that was loaded.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This `static` method takes an XML document, represented as a <xref:System.IO.Stream>, and converts in to a <xref:System.Web.Services.Discovery.DynamicDiscoveryDocument> .  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -98,7 +121,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Contains the dynamic discovery document namespace "urn:schemas-dynamicdiscovery:disco.2000-03-17". This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +142,8 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> object to which the XML dynamic discovery document is serialized.</param>
+        <summary>Serializes a <see cref="T:System.Web.Services.Discovery.DynamicDiscoveryDocument" /> instance into an XML document specified as an output stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,2 +1,0 @@
-		HostNameComparisonMode hostNameComparisonMode =
-			binding.HostNameComparisonMode;

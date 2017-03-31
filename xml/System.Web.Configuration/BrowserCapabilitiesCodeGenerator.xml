@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see cref="T:System.Web.Configuration.BrowserCapabilitiesCodeGenerator" /> class is used internally by the <see langword="aspnet_regbrowsers" /> tool to parse .browser browser definition files and add browsers to the run-time collection of known browsers contained in the <see cref="T:System.Web.Configuration.BrowserCapabilitiesFactory" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class generates the source code for an assembly for the <xref:System.Web.Configuration.BrowserCapabilitiesFactory> class, which, at run time, produces request-specific <xref:System.Web.Configuration.HttpCapabilitiesBase> objects to be publicly accessed through the ASP.NET intrinsic `Request.Browser` property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Used internally to create a new instance of <see cref="T:System.Web.Configuration.BrowserCapabilitiesCodeGenerator" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,8 +51,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Used internally to coordinate the behavior of this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method first iterates through the "Browsers" folder. It then calls <xref:System.Web.Configuration.BrowserCapabilitiesCodeGenerator.ProcessBrowserFiles%2A>, which loads and parses the XML contained in a collection of browser-definition files and inserts the information contained therein into an internal collection of browsers. Then it calls an internal method which generates the source code compiles it, and registers it as an assembly in the global assembly cache for the <xref:System.Web.Configuration.BrowserCapabilitiesFactory> object. If necessary, this method then calls an internal method that restarts the Web server.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessBrowserFiles">
@@ -65,10 +79,16 @@
         <Parameter Name="virtualDir" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="useVirtualPath">To be added.</param>
-        <param name="virtualDir">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="useVirtualPath">
+          <see langword="true" /> to use a virtual path; otherwise, <see langword="false" />. The default is <see langword="false" />.</param>
+        <param name="virtualDir">The path to the virtual directory that contains the browser-definition files. The default is <see cref="F:System.String.Empty" />.</param>
+        <summary>Loads and parses the XML contained in a collection of browser-definition files and inserts the information contained therein into an internal collection of browsers.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpParseException">One of the browser-definition files does not have a root element named "browsers".  
+  
+ \- or -  
+  
+ One of the browser-definition files fails to load.</exception>
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -85,9 +105,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Removes the browser capabilities factory from the global assembly cache and deletes its strong name public key token file.</summary>
+        <returns>
+          <see langword="true" /> if the browser capabilities factory was uninstalled from the global assembly cache; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method restarts the Web service. The browser capabilities factory is then removed from the global assembly cache, and its strong name public key token file is deleted. The Web service is then restarted again if the uninstall succeeds.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

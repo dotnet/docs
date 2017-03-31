@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Hosting.HostSecurityPolicyResults
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Forms.IMessageFilter
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.IMessageFilter.PreFilterMessage(System.Windows.Forms.Message@)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

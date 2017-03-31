@@ -1,4 +1,6 @@
 ---
 uid: System.Diagnostics.DataReceivedEventHandler
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

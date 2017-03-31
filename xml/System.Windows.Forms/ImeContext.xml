@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains static methods that interact directly with the IME API.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,8 +31,8 @@
         <Parameter Name="handle" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handle">A pointer to the IME to disable.</param>
+        <summary>Disables the specified IME.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +52,8 @@
         <Parameter Name="handle" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handle">A pointer to the IME to enable.</param>
+        <summary>Enables the specified IME.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +73,9 @@
         <Parameter Name="handle" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="handle">A pointer to the IME to query.</param>
+        <summary>Returns the <see cref="T:System.Windows.Forms.ImeMode" /> of the specified IME.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ImeMode" /> of the specified IME.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,9 +95,10 @@
         <Parameter Name="handle" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="handle">A pointer to the IME to query.</param>
+        <summary>Returns a value that indicates whether the specified IME is open.</summary>
+        <returns>
+          <see langword="true" /> if the specified IME is open; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +119,9 @@
         <Parameter Name="handle" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="imeMode">To be added.</param>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="imeMode">The status to set.</param>
+        <param name="handle">A pointer to the IME to set status of.</param>
+        <summary>Sets the status of the specified IME.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,9 +142,10 @@
         <Parameter Name="handle" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="open">To be added.</param>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="open">
+          <see langword="true" /> to open the IME or <see langword="false" /> to close it.</param>
+        <param name="handle">A pointer to the IME to open or close.</param>
+        <summary>Opens or closes the IME context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

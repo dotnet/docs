@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class provides helpers that the Visual Basic compiler uses for late binding calls; it is not meant to be called directly from your code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,14 +51,21 @@
         <Parameter Name="IgnoreReturn" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="MemberName">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <param name="IgnoreReturn">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="MemberName">The name of the property or method on the call object.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <param name="IgnoreReturn">A <see langword="Boolean" /> value indicating whether or not the return value can be ignored.</param>
+        <summary>Executes a late-bound method or function call. This helper method is not meant to be called directly from your code.</summary>
+        <returns>An instance of the call object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Similar to <xref:Microsoft.VisualBasic.Interaction.CallByName%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FallbackGet">
@@ -91,12 +98,12 @@
         <Parameter Name="ArgumentNames" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="MemberName">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="MemberName">The name of the property or method on the call object.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <summary>Executes a late-bound property get or field access call. This helper method is not meant to be called directly from your code.</summary>
+        <returns>An instance of the call object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,10 +136,10 @@
         <Parameter Name="ArgumentNames" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <summary>Executes a late-bound property set or field write call. This helper method is not meant to be called directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,12 +174,12 @@
         <Parameter Name="RValueBase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <param name="OptimisticSet">To be added.</param>
-        <param name="RValueBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <param name="OptimisticSet">A <see langword="Boolean" /> value used to determine whether the set operation will work. Set to <see langword="True" /> when you believe that an intermediate value has been set in the property or field; otherwise <see langword="False" />.</param>
+        <param name="RValueBase">A <see langword="Boolean" /> value that specifies when the base reference of the late reference is an <see langword="RValue" />. Set to <see langword="True" /> when the base reference of the late reference is an <see langword="RValue" />; this allows you to generate a run-time exception for late assignments to fields of <see langword="RValues" /> of value types. Otherwise, set to <see langword="False" />.</param>
+        <summary>Executes a late-bound property set or field write call. This helper method is not meant to be called directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,12 +213,12 @@
         <Parameter Name="ReportErrors" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <param name="ReportErrors">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="Instance">An instance of the call object exposing the property or method. If <c>Instance</c> is of type <see cref="T:System.Dynamic.IDynamicMetaObjectProvider" />, then bind using the Dynamic Language Runtime; otherwise perform standard late-binding.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <param name="ReportErrors">A <see langword="Boolean" /> value used to specify whether to throw exceptions when an error is encountered. Set to <see langword="True" /> to throw exceptions. Set to <see langword="False" /> to return <see langword="Nothing" /> when an error is encountered.</param>
+        <summary>Executes a late-bound get of the default property or field, or call to the default method or function. This helper method is not meant to be called directly from your code.</summary>
+        <returns>An instance of the call object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,12 +252,12 @@
         <Parameter Name="ReportErrors" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <param name="ReportErrors">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <param name="ReportErrors">A <see langword="Boolean" /> value used to specify whether to throw exceptions when an error is encountered. Set to <see langword="True" /> to throw exceptions. Set to <see langword="False" /> to return <see langword="Nothing" /> when an error is encountered.</param>
+        <summary>Executes a late-bound get of the default property or field, or call to the default method or function. This helper method is not meant to be called directly from your code.</summary>
+        <returns>An instance of the call object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,10 +290,10 @@
         <Parameter Name="Arguments" Type="System.Object[]" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="MemberName">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="MemberName">The name of the property or method on the call object.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <summary>Executes a late-bound property set or field write call. This helper method is not meant to be called directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,12 +328,12 @@
         <Parameter Name="RValueBase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="MemberName">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="OptimisticSet">To be added.</param>
-        <param name="RValueBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="MemberName">The name of the property or method on the call object.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="OptimisticSet">A <see langword="Boolean" /> value used to determine whether the set operation will work. Set to <see langword="True" /> when you believe that an intermediate value has been set in the property or field; otherwise <see langword="False" />.</param>
+        <param name="RValueBase">A <see langword="Boolean" /> value that specifies when the base reference of the late reference is an <see langword="RValue" />. Set to <see langword="True" /> when the base reference of the late reference is an <see langword="RValue" />; this allows you to generate a run-time exception for late assignments to fields of <see langword="RValues" /> of value types. Otherwise, set to <see langword="False" />.</param>
+        <summary>Executes a late-bound property set or field write call. This helper method is not meant to be called directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,17 +365,24 @@
         <Parameter Name="IgnoreReturn" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Type">To be added.</param>
-        <param name="MemberName">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <param name="TypeArguments">To be added.</param>
-        <param name="CopyBack">To be added.</param>
-        <param name="IgnoreReturn">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Type">The type of the call object.</param>
+        <param name="MemberName">The name of the property or method on the call object.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <param name="TypeArguments">An array of argument types; used only for generic calls to pass argument types.</param>
+        <param name="CopyBack">An array of <see langword="Boolean" /> values that the late binder uses to communicate back to the call site which arguments match <see langword="ByRef" /> parameters. Each <see langword="True" /> value indicates that the arguments matched and should be copied out after the call to <see langword="LateCall" /> is complete.</param>
+        <param name="IgnoreReturn">A <see langword="Boolean" /> value indicating whether or not the return value can be ignored.</param>
+        <summary>Executes a late-bound method or function call. This helper method is not meant to be called directly from your code.</summary>
+        <returns>An instance of the call object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Similar to <xref:Microsoft.VisualBasic.Interaction.CallByName%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LateCallInvokeDefault">
@@ -398,12 +412,12 @@
         <Parameter Name="ReportErrors" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <param name="ReportErrors">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <param name="ReportErrors">A <see langword="Boolean" /> value used to specify whether to throw exceptions when an error is encountered. Set to <see langword="True" /> to throw exceptions. Set to <see langword="False" /> to return <see langword="Nothing" /> when an error is encountered.</param>
+        <summary>Executes a late-bound call to the default method or function. This helper method is not meant to be called directly from your code.</summary>
+        <returns>An instance of the call object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,14 +447,14 @@
         <Parameter Name="allowPropertyEvaluation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="memberName">To be added.</param>
-        <param name="arguments">To be added.</param>
-        <param name="allowFunctionEvaluation">To be added.</param>
-        <param name="allowPropertyEvaluation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">An instance of the call object exposing the property or method.</param>
+        <param name="type">The type of the call object.</param>
+        <param name="memberName">The name of the property or method on the call object.</param>
+        <param name="arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="allowFunctionEvaluation">A <see langword="Boolean" /> value that specifies whether to allow function evaluation.</param>
+        <param name="allowPropertyEvaluation">A <see langword="Boolean" /> value that specifies whether to allow property evaluation.</param>
+        <summary>Indicates whether a call requires late-bound evaluation. This helper method is not meant to be called directly from your code.</summary>
+        <returns>A <see langword="Boolean" /> value that indicates whether the expression requires late-bound evaluation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -471,15 +485,15 @@
         <Parameter Name="CopyBack" Type="System.Boolean[]" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Type">To be added.</param>
-        <param name="MemberName">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <param name="TypeArguments">To be added.</param>
-        <param name="CopyBack">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Type">The type of the call object.</param>
+        <param name="MemberName">The name of the property or method on the call object.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <param name="TypeArguments">An array of argument types; used only for generic calls to pass argument types.</param>
+        <param name="CopyBack">An array of <see langword="Boolean" /> values that the late binder uses to communicate back to the call site which arguments match <see langword="ByRef" /> parameters. Each <see langword="True" /> value indicates that the arguments matched and should be copied out after the call to <see langword="LateCall" /> is complete.</param>
+        <summary>Executes a late-bound property get or field access call. This helper method is not meant to be called directly from your code.</summary>
+        <returns>An instance of the call object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -510,12 +524,12 @@
         <Parameter Name="ReportErrors" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <param name="ReportErrors">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <param name="ReportErrors">A <see langword="Boolean" /> value used to specify whether to throw exceptions when an error is encountered. Set to <see langword="True" /> to throw exceptions. Set to <see langword="False" /> to return <see langword="Nothing" /> when an error is encountered.</param>
+        <summary>Executes a late-bound get of the default property or field. This helper method is not meant to be called directly from your code.</summary>
+        <returns>An instance of the call object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -542,11 +556,11 @@
         <Parameter Name="ArgumentNames" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <summary>Executes a late-bound property get or field access call. This helper method is not meant to be called directly from your code.</summary>
+        <returns>An instance of the call object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -573,10 +587,10 @@
         <Parameter Name="ArgumentNames" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <summary>Executes a late-bound property set or field write call. This helper method is not meant to be called directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,12 +619,12 @@
         <Parameter Name="RValueBase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <param name="OptimisticSet">To be added.</param>
-        <param name="RValueBase">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <param name="OptimisticSet">A <see langword="Boolean" /> value used to determine whether the set operation will work. Set to <see langword="True" /> when you believe that an intermediate value has been set in the property or field; otherwise <see langword="False" />.</param>
+        <param name="RValueBase">A <see langword="Boolean" /> value that specifies when the base reference of the late reference is an <see langword="RValue" />. Set to <see langword="True" /> when the base reference of the late reference is an <see langword="RValue" />; this allows you to generate a run-time exception for late assignments to fields of <see langword="RValues" /> of value types. Otherwise, set to <see langword="False" />.</param>
+        <summary>Executes a late-bound property set or field write call. This helper method is not meant to be called directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -640,13 +654,13 @@
         <Parameter Name="TypeArguments" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Type">To be added.</param>
-        <param name="MemberName">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <param name="TypeArguments">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Type">The type of the call object.</param>
+        <param name="MemberName">The name of the property or method on the call object.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <param name="TypeArguments">An array of argument types; used only for generic calls to pass argument types.</param>
+        <summary>Executes a late-bound property set or field write call. This helper method is not meant to be called directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -679,17 +693,24 @@
         <Parameter Name="CallType" Type="Microsoft.VisualBasic.CallType" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Type">To be added.</param>
-        <param name="MemberName">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <param name="TypeArguments">To be added.</param>
-        <param name="OptimisticSet">To be added.</param>
-        <param name="RValueBase">To be added.</param>
-        <param name="CallType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Type">The type of the call object.</param>
+        <param name="MemberName">The name of the property or method on the call object.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <param name="TypeArguments">An array of argument types; used only for generic calls to pass argument types.</param>
+        <param name="OptimisticSet">A <see langword="Boolean" /> value used to determine whether the set operation will work. Set to <see langword="True" /> when you believe that an intermediate value has been set in the property or field; otherwise <see langword="False" />.</param>
+        <param name="RValueBase">A <see langword="Boolean" /> value that specifies when the base reference of the late reference is an <see langword="RValue" />. Set to <see langword="True" /> when the base reference of the late reference is an <see langword="RValue" />; this allows you to generate a run-time exception for late assignments to fields of <see langword="RValues" /> of value types. Otherwise, set to <see langword="False" />.</param>
+        <param name="CallType">An enumeration member of type <see cref="T:Microsoft.VisualBasic.CallType" /> representing the type of procedure being called. The value of CallType can be <see langword="Method" />, <see langword="Get" />, or <see langword="Set" />. Only <see langword="Set" /> is used.</param>
+        <summary>Executes a late-bound property set or field write call. This helper method is not meant to be called directly from your code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the set operation is the copy-back of a late-bound expression being passed as a `ByRef` parameter, `OptimisticSet` is used to determine whether the set operation will work, as the latebound expression may result in a read-only property or a method. For more information see the CopyBack parameter of <xref:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateCall%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LateSetComplex">
@@ -720,16 +741,23 @@
         <Parameter Name="RValueBase" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Instance">To be added.</param>
-        <param name="Type">To be added.</param>
-        <param name="MemberName">To be added.</param>
-        <param name="Arguments">To be added.</param>
-        <param name="ArgumentNames">To be added.</param>
-        <param name="TypeArguments">To be added.</param>
-        <param name="OptimisticSet">To be added.</param>
-        <param name="RValueBase">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="Instance">An instance of the call object exposing the property or method.</param>
+        <param name="Type">The type of the call object.</param>
+        <param name="MemberName">The name of the property or method on the call object.</param>
+        <param name="Arguments">An array containing the arguments to be passed to the property or method being called.</param>
+        <param name="ArgumentNames">An array of argument names.</param>
+        <param name="TypeArguments">An array of argument types; used only for generic calls to pass argument types.</param>
+        <param name="OptimisticSet">A <see langword="Boolean" /> value used to determine whether the set operation will work. Set to <see langword="True" /> when you believe that an intermediate value has been set in the property or field; otherwise <see langword="False" />.</param>
+        <param name="RValueBase">A <see langword="Boolean" /> value that specifies when the base reference of the late reference is an <see langword="RValue" />. Set to <see langword="True" /> when the base reference of the late reference is an <see langword="RValue" />; this allows you to generate a run-time exception for late assignments to fields of <see langword="RValues" /> of value types. Otherwise, set to <see langword="False" />.</param>
+        <summary>Executes a late-bound property set or field write call. This helper method is not meant to be called directly from your code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Similar to <xref:Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateSet%2A> except that this method is use with complex expressions (for example, expressions in parentheses).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,29 +1,35 @@
 ---
 uid: System.Web.Hosting.VirtualFileBase
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.VirtualFileBase.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.VirtualFileBase.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.VirtualFileBase.VirtualPath
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.VirtualFileBase.IsDirectory
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.VirtualFileBase.InitializeLifetimeService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

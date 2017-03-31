@@ -1,1 +1,0 @@
-      return this.Real == value.Real && this.Imaginary == value.Imaginary;

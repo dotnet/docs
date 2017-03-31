@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the encryption method.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,11 @@
         <Parameter Name="algorithm" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="algorithm">The encryption algorithm URI.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.EncryptionMethod" /> class that has the specified encryption algorithm.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="algorithm" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Algorithm">
@@ -46,8 +48,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the encryption method algorithm attribute.</summary>
+        <value>The encryption algorithm URI.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

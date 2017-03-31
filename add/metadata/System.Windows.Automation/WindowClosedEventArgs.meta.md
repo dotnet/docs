@@ -1,14 +1,20 @@
 ---
 uid: System.Windows.Automation.WindowClosedEventArgs
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.WindowClosedEventArgs.#ctor(System.Int32[])
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Automation.WindowClosedEventArgs.GetRuntimeId
-internalonly: False
+author: "Xansky"
+ms.author: "mhopkins"
+manager: "ghogen"
 ---

@@ -1,1 +1,0 @@
-            int minKeySize = firstKeySize.MinSize;

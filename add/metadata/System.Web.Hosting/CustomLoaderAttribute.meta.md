@@ -1,14 +1,17 @@
 ---
 uid: System.Web.Hosting.CustomLoaderAttribute
-internalonly: False
+ms.author: "robmcm"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.CustomLoaderAttribute.#ctor(System.Type)
-internalonly: False
+ms.author: "robmcm"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.CustomLoaderAttribute.CustomLoaderType
-internalonly: False
+ms.author: "robmcm"
+manager: "wpickett"
 ---

@@ -1,14 +1,21 @@
 ---
 uid: System.Web.UI.Design.QueryExtenderDesigner
-internalonly: False
----
-
----
-uid: System.Web.UI.Design.QueryExtenderDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.QueryExtenderDesigner.GetDesignTimeHtml
-internalonly: False
+---
+
+---
+uid: System.Web.UI.Design.QueryExtenderDesigner.#ctor
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.QueryExtenderDesigner.GetDesignTimeHtml
+ms.author: "riande"
+manager: "wpickett"
 ---

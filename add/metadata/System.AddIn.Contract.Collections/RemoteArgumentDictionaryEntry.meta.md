@@ -1,19 +1,27 @@
 ---
 uid: System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry.Value
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry.Key
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry.#ctor(System.AddIn.Contract.RemoteArgument,System.AddIn.Contract.RemoteArgument)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

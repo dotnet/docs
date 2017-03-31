@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the SourceLocationUpdated event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="updatedSourceLocation" Type="System.Activities.Debugger.SourceLocation" />
       </Parameters>
       <Docs>
-        <param name="objectReference">To be added.</param>
-        <param name="updatedSourceLocation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="objectReference">The Guid of the ObjectReference that changed.</param>
+        <param name="updatedSourceLocation">The updated SourceLocation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.SourceLocationUpdatedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Guid of the ObjectReference that changed.</summary>
+        <value>The Guid of the ObjectReference that changed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the updated source location.</summary>
+        <value>The updated source location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

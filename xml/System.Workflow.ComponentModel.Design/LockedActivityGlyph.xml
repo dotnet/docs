@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a glyph for an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to display when the activity associated with the designer cannot be modified.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ An activity designer displays <xref:System.Workflow.ComponentModel.Design.LockedActivityGlyph> when the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.IsLocked%2A> property is set to `true`.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.LockedActivityGlyph" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,11 +63,14 @@
         <Parameter Name="activated" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="designer">To be added.</param>
-        <param name="activated">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="designer">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> with which the glyph is associated.</param>
+        <param name="activated">
+          <see langword="true" /> to indicate whether the glyph appears on the activity designer surface; otherwise, <see langword="false" />.</param>
+        <summary>Returns the bounds for the glyph on the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds for the glyph.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="designer" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -78,11 +92,12 @@
         <Parameter Name="designer" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
       </Parameters>
       <Docs>
-        <param name="graphics">To be added.</param>
-        <param name="activated">To be added.</param>
-        <param name="ambientTheme">To be added.</param>
-        <param name="designer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to perform fill and drawing tasks.</param>
+        <param name="activated">
+          <see langword="true" /> to indicate that the glyph appears on the design surface; otherwise, <see langword="false" />.</param>
+        <param name="ambientTheme">The <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> to use to access ambient property settings.</param>
+        <param name="designer">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> from which to obtain information about user actions.</param>
+        <summary>Performs any tasks required to render the glyph on the activity designer surface.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +114,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the priority setting for the glyph on the activity design surface.</summary>
+        <value>An integer value that represents the priority setting for the <see cref="T:System.Workflow.ComponentModel.Design.LockedActivityGlyph" /> on the activity design surface.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults.CompiledUnit
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

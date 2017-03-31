@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>An enumerated data type that determines where projects are built.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Build.Execution.NodeAffinity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The project may be scheduled anywhere.</summary>
       </Docs>
     </Member>
     <Member MemberName="InProc">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Build.Execution.NodeAffinity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The project may only be scheduled on the in-proc node. This happens automatically if there is a host object or if a ProjectInstance was specified. A host may wish to specify it if they know a task depends explicitly on shared static data or other host-provided objects.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfProc">
@@ -59,7 +59,7 @@
         <ReturnType>Microsoft.Build.Execution.NodeAffinity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The project may only be scheduled on an out-of-proc node. A host may wish to specify this if it is known the project being built could contaminate the host environment (or the host contaminates the environment while a build is proceeding.)</summary>
       </Docs>
     </Member>
   </Members>

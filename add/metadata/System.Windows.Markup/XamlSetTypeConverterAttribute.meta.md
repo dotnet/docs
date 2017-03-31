@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.XamlSetTypeConverterAttribute
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetTypeConverterAttribute.XamlSetTypeConverterHandler
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.XamlSetTypeConverterAttribute.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---

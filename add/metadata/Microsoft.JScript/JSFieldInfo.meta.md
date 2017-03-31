@@ -1,69 +1,79 @@
 ---
 uid: Microsoft.JScript.JSFieldInfo
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.FieldType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.DeclaringType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.GetCustomAttributes(System.Type,System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.ReflectedType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.SetValue(System.Object,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.MemberType
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.GetCustomAttributes(System.Boolean)
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSFieldInfo.GetCustomAttributes
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSFieldInfo.SetValue
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.Name
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.FieldHandle
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.Attributes
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.GetValue(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSFieldInfo.IsDefined(System.Type,System.Boolean)
-internalonly: False
+ms.author: "mikejo"
 ---

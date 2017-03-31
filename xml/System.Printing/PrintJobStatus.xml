@@ -15,8 +15,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the current status of a print job in a print queue.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used primarily as the value of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this enumeration when diagnosing a problem with a print job.  
+  
+ [!code-cpp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobAttributes](~/samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#spottroubleusingjobattributes)]
+ [!code-csharp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobAttributes](~/samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#spottroubleusingjobattributes)]
+ [!code-vb[DiagnoseProblematicPrintJob#SpotTroubleUsingJobAttributes](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#spottroubleusingjobattributes)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Blocked">
@@ -32,7 +48,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An error condition, possibly on a print job that precedes this one in the queue, blocked the print job.</summary>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -48,7 +64,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print job is complete, including any post-printing processing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Deleted">
@@ -64,7 +80,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print job was deleted from the queue, typically after printing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Deleting">
@@ -80,7 +96,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print job is in the process of being deleted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -96,7 +112,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print job is in an error state.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -112,7 +128,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print job has no specified state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Offline">
@@ -128,7 +144,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is offline.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaperOut">
@@ -144,7 +160,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is out of the required paper size.</summary>
       </Docs>
     </Member>
     <Member MemberName="Paused">
@@ -160,7 +176,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print job is paused.</summary>
       </Docs>
     </Member>
     <Member MemberName="Printed">
@@ -176,7 +192,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print job printed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Printing">
@@ -192,7 +208,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print job is now printing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Restarted">
@@ -208,7 +224,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print job was blocked but has restarted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Retained">
@@ -224,7 +240,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print job is retained in the print queue after printing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Spooling">
@@ -240,7 +256,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print job is spooling.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserIntervention">
@@ -256,7 +272,7 @@
         <ReturnType>System.Printing.PrintJobStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer requires user action to fix an error condition.</summary>
       </Docs>
     </Member>
   </Members>

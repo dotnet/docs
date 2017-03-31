@@ -1,19 +1,27 @@
 ---
 uid: System.Runtime.ExceptionServices.ExceptionDispatchInfo
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.ExceptionServices.ExceptionDispatchInfo.SourceException
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(System.Exception)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

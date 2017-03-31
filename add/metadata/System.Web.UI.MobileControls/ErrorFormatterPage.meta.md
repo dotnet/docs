@@ -1,34 +1,41 @@
 ---
 uid: System.Web.UI.MobileControls.ErrorFormatterPage
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ErrorFormatterPage.LoadPageStateFromPersistenceMedium
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ErrorFormatterPage.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ErrorFormatterPage.InitContent
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ErrorFormatterPage.ErrorInfo
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ErrorFormatterPage.OnInit(System.EventArgs)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.MobileControls.ErrorFormatterPage.SavePageStateToPersistenceMedium(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

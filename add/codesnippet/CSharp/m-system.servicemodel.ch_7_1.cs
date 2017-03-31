@@ -1,1 +1,0 @@
-            BasicHttpBinding binding = new BasicHttpBinding();

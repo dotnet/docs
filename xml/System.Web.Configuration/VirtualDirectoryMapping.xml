@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies a custom virtual-directory hierarchy for a Web application. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="isAppRoot" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="physicalDirectory">To be added.</param>
-        <param name="isAppRoot">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="physicalDirectory">A string value that specifies the absolute path to a physical directory.</param>
+        <param name="isAppRoot">A Boolean value that indicates whether the virtual directory is the application root of the Web application.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> class based on supplied parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,10 +50,10 @@
         <Parameter Name="configFileBaseName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="physicalDirectory">To be added.</param>
-        <param name="isAppRoot">To be added.</param>
-        <param name="configFileBaseName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="physicalDirectory">A string value that specifies the absolute path to a physical directory.</param>
+        <param name="isAppRoot">A Boolean value that indicates whether the virtual directory is the application root of the Web application.</param>
+        <param name="configFileBaseName">The name of the configuration file.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> class based on supplied parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +70,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the configuration file.</summary>
+        <value>A value that indicates the name of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the name of the configuration file is not specified, Web.config is used.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The selected value is null or an empty string ("").</exception>
       </Docs>
     </Member>
     <Member MemberName="IsAppRoot">
@@ -88,8 +96,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the virtual directory should be treated as the application root.</summary>
+        <value>A value that indicates whether the virtual directory should be treated as the application root.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,9 +114,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies the full server path of a Web application.</summary>
+        <value>A value that indicates the full server path of a Web application.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The selected value is invalid or fails internal security validation.</exception>
       </Docs>
     </Member>
     <Member MemberName="VirtualDirectory">
@@ -124,8 +133,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that specifies the virtual directory relative to the root of the Web server.</summary>
+        <value>A value that indicates the relative Web-application directory.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

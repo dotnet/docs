@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains an event opcode that is defined in an event provider. An opcode defines a numeric value that identifies the activity or a point within an activity that the application was performing when it raised the event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class cannot be instantiated. A <xref:System.Diagnostics.Eventing.Reader.ProviderMetadata> object defies a list of <xref:System.Diagnostics.Eventing.Reader.EventOpcode> objects, one for each opcode defined in the provider.  
+  
+ The standard event opcodes are defined in the <xref:System.Diagnostics.Eventing.Reader.StandardEventOpcode> enumeration.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DisplayName">
@@ -28,8 +37,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the localized name for an event opcode.</summary>
+        <value>Returns a string that contains the localized name for an event opcode.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +55,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the non-localized name for an event opcode.</summary>
+        <value>Returns a string that contains the non-localized name for an event opcode.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +73,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the numeric value associated with the event opcode.</summary>
+        <value>Returns an integer value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

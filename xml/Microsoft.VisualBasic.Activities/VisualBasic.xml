@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an attached property store for <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.VisualBasic.Activities.VisualBasic> allows for an instance of <xref:Microsoft.VisualBasic.Activities.VisualBasicSettings> to be attached to the top level activity in a workflow defined in a XAML file, thus defining the settings for all <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> and <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> expressions in that workflow.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetSettings">
@@ -31,9 +38,9 @@
         <Parameter Name="target" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The object to inspect.</param>
+        <summary>Retrieves the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance attached to the specified object.</summary>
+        <returns>The <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance attached to the specified object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,9 +61,9 @@
         <Parameter Name="value" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">The object to which the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance is attached.</param>
+        <param name="value">The <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance to attach.</param>
+        <summary>Attaches a <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance to the specified object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,10 +84,17 @@
         <Parameter Name="value" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="target">The object to which the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance is attached.</param>
+        <param name="value">The <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance to attach.</param>
+        <summary>Attaches a <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance to an object for use by its implementation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.VisualBasic.Activities.VisualBasic.SetSettingsForImplementation%2A> exists for the activity author who is creating a new activity in a class. Any <xref:Microsoft.VisualBasic.Activities.VisualBasicSettings> required by the new activity’s implementation should be attached to the activity in the constructor using <xref:Microsoft.VisualBasic.Activities.VisualBasic.SetSettingsForImplementation%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeSettings">
@@ -99,9 +113,10 @@
         <Parameter Name="target" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The object to inspect.</param>
+        <summary>Returns a value that indicates whether the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance associated with the specified object should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

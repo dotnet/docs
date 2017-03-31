@@ -1,9 +1,13 @@
 ---
 uid: System.Runtime.CompilerServices.CallConvFastcall
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.CallConvFastcall.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.ProjectFinished" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ProjectFinishedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,11 +46,12 @@
         <Parameter Name="succeeded" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="projectFile">To be added.</param>
-        <param name="succeeded">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The text of the event.</param>
+        <param name="helpKeyword">The Help keyword associated with the event.</param>
+        <param name="projectFile">The project file associated with the event.</param>
+        <param name="succeeded">
+          <see langword="true" /> to indicate the build succeeded; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ProjectFinishedEventArgs" /> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" />, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword" />, <see cref="P:Microsoft.Build.Framework.ProjectFinishedEventArgs.ProjectFile" />, and <see cref="P:Microsoft.Build.Framework.ProjectFinishedEventArgs.Succeeded" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,12 +72,13 @@
         <Parameter Name="eventTimestamp" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="helpKeyword">To be added.</param>
-        <param name="projectFile">To be added.</param>
-        <param name="succeeded">To be added.</param>
-        <param name="eventTimestamp">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The text of the event.</param>
+        <param name="helpKeyword">The Help keyword associated with the event.</param>
+        <param name="projectFile">The project file associated with the event.</param>
+        <param name="succeeded">
+          <see langword="true" /> to indicate the build succeeded; otherwise, false.</param>
+        <param name="eventTimestamp">The date and time the event was created.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ProjectFinishedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +95,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the project file associated with the event.</summary>
+        <value>The project file associated with the event.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +113,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the build succeeded.</summary>
+        <value>The value indicating whether the build succeeded.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

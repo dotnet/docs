@@ -1,19 +1,27 @@
 ---
 uid: Microsoft.Build.Construction.ProjectItemGroupElement
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectItemGroupElement.Items
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Construction.ProjectItemGroupElement.AddItem
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectItemGroupElement.AddItem(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Construction.ProjectItemGroupElement.AddItem(System.String,System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

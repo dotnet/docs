@@ -26,8 +26,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines an interface that allows the [Csc](../Topic/Csc%20Task.md) task to communicate with the host integrated development environment (IDE).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface allows the `Csc` task to delegate project compilation to the IDE rather than using command line compilers.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="SetWin32Manifest">
@@ -46,9 +53,10 @@
         <Parameter Name="win32Manifest" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="win32Manifest">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="win32Manifest">The name of the manifest to insert into the assembly.</param>
+        <summary>Specifies a manifest file to insert into the assembly.</summary>
+        <returns>
+          <see langword="true" /> if the method was successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

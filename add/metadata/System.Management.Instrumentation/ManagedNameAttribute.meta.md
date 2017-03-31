@@ -1,14 +1,14 @@
 ---
 uid: System.Management.Instrumentation.ManagedNameAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagedNameAttribute.Name
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagedNameAttribute.#ctor(System.String)
-internalonly: False
+manager: "jillfra"
 ---

@@ -23,8 +23,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies the target operating system platform.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about the `SYSKIND` enumeration, see the MSDN Library.  
+  
+ The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](../Topic/How%20to:%20Map%20HRESULTs%20and%20Exceptions.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="SYS_MAC">
@@ -53,7 +62,7 @@
         <ReturnType>System.Runtime.InteropServices.ComTypes.SYSKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The target operating system for the type library is Apple Macintosh. By default, all data fields are aligned on even-byte boundaries.</summary>
       </Docs>
     </Member>
     <Member MemberName="SYS_WIN16">
@@ -82,7 +91,7 @@
         <ReturnType>System.Runtime.InteropServices.ComTypes.SYSKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The target operating system for the type library is 16-bit Windows systems. By default, data fields are packed.</summary>
       </Docs>
     </Member>
     <Member MemberName="SYS_WIN32">
@@ -111,7 +120,7 @@
         <ReturnType>System.Runtime.InteropServices.ComTypes.SYSKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The target operating system for the type library is 32-bit Windows systems. By default, data fields are naturally aligned (for example, 2-byte integers are aligned on even-byte boundaries; 4-byte integers are aligned on quad-word boundaries, and so on).</summary>
       </Docs>
     </Member>
     <Member MemberName="SYS_WIN64">
@@ -140,7 +149,7 @@
         <ReturnType>System.Runtime.InteropServices.ComTypes.SYSKIND</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The target operating system for the type library is 64-bit Windows systems.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.IDebugScriptScope
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.IDebugScriptScope.SetThisValue(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

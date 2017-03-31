@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Activities.RequestReplyCorrelationInitializer
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.RequestReplyCorrelationInitializer.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

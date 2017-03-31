@@ -1,19 +1,32 @@
 ---
 uid: System.Runtime.CompilerServices.ReferenceAssemblyAttribute
-internalonly: False
----
-
----
-uid: System.Runtime.CompilerServices.ReferenceAssemblyAttribute.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.Runtime.CompilerServices.ReferenceAssemblyAttribute.Description
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.CompilerServices.ReferenceAssemblyAttribute.#ctor
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.CompilerServices.ReferenceAssemblyAttribute.#ctor(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.CompilerServices.ReferenceAssemblyAttribute.Description
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.CompilerServices.ReferenceAssemblyAttribute.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

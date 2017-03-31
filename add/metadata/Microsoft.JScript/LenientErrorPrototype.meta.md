@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.LenientErrorPrototype
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientErrorPrototype.name
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientErrorPrototype.constructor
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.LenientErrorPrototype.toString
-internalonly: False
+ms.author: "mikejo"
 ---

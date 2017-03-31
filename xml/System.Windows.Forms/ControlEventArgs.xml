@@ -11,8 +11,24 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.ControlAdded" /> and <see cref="E:System.Windows.Forms.Control.ControlRemoved" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.Control.ControlAdded> and <xref:System.Windows.Forms.Control.ControlRemoved> events. The example requires that two <xref:System.Windows.Forms.Button> controls are added to the form and connected to the `addControl_Click` and `removeControl_Click` event handling methods.  
+  
+ [!code-cpp[Control.ControlRemoved#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.ControlRemoved/CPP/form1.cpp#1)]
+ [!code-csharp[Control.ControlRemoved#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.ControlRemoved/CS/form1.cs#1)]
+ [!code-vb[Control.ControlRemoved#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.ControlRemoved/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,9 +44,20 @@
         <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
-        <param name="control">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="control">The <see cref="T:System.Windows.Forms.Control" /> to store in this event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ControlEventArgs" /> class for the specified control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.Control.ControlAdded> and <xref:System.Windows.Forms.Control.ControlRemoved> events. The example requires that two <xref:System.Windows.Forms.Button> controls are added to the form and connected to the `addControl_Click` and `removeControl_Click` event handling methods.  
+  
+ [!code-cpp[Control.ControlRemoved#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.ControlRemoved/CPP/form1.cpp#1)]
+ [!code-csharp[Control.ControlRemoved#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.ControlRemoved/CS/form1.cs#1)]
+ [!code-vb[Control.ControlRemoved#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.ControlRemoved/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -46,9 +73,20 @@
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the control object used by this event.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Control" /> used by this event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.Control.ControlAdded> and <xref:System.Windows.Forms.Control.ControlRemoved> events. The example requires that two <xref:System.Windows.Forms.Button> controls are added to the form and connected to the `addControl_Click` and `removeControl_Click` event handling methods.  
+  
+ [!code-cpp[Control.ControlRemoved#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.ControlRemoved/CPP/form1.cpp#1)]
+ [!code-csharp[Control.ControlRemoved#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.ControlRemoved/CS/form1.cs#1)]
+ [!code-vb[Control.ControlRemoved#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.ControlRemoved/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

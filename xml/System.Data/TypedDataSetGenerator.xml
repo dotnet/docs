@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used to create a strongly typed <see cref="T:System.Data.DataSet" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.TypedDataSetGenerator> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +38,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.TypedDataSetGenerator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.TypedDataSetGenerator> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Generate">
@@ -53,11 +67,18 @@
         <Parameter Name="codeGen" Type="System.CodeDom.Compiler.ICodeGenerator" />
       </Parameters>
       <Docs>
-        <param name="dataSet">To be added.</param>
-        <param name="codeNamespace">To be added.</param>
-        <param name="codeGen">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dataSet">The source <see cref="T:System.Data.DataSet" /> that specifies the metadata for the typed <see cref="T:System.Data.DataSet" />.</param>
+        <param name="codeNamespace">The namespace that provides the target namespace for the typed <see cref="T:System.Data.DataSet" />.</param>
+        <param name="codeGen">The generator used to create the typed <see cref="T:System.Data.DataSet" />.</param>
+        <summary>Generates a strongly typed <see cref="T:System.Data.DataSet" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.TypedDataSetGenerator> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateIdName">
@@ -77,11 +98,18 @@
         <Parameter Name="codeGen" Type="System.CodeDom.Compiler.ICodeGenerator" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="codeGen">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The source name to transform into a valid, typed <see cref="T:System.Data.DataSet" /> name.</param>
+        <param name="codeGen">The generator used to perform the conversion.</param>
+        <summary>Transforms a string in a valid, typed <see cref="T:System.Data.DataSet" /> name.</summary>
+        <returns>A string that is the converted name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.TypedDataSetGenerator> class is not intended for use as a stand-alone component, but as a class from which other classes derive standard functionality.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

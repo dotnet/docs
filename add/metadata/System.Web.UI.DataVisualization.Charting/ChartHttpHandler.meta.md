@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartHttpHandler
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartHttpHandler.System#Web#IHttpHandler#ProcessRequest(System.Web.HttpContext)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartHttpHandler.#ctor
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartHttpHandler.System#Web#IHttpHandler#IsReusable
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartHttpHandler.Settings
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

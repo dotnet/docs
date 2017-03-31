@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Media.Animation.PauseStoryboard
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.Animation.PauseStoryboard.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

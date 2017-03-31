@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Implements the <c>Vbc</c> task. Use the <c>Vbc</c> element in your project file to create and execute this task. For usage and parameter information, see [Vbc Task](../Topic/Vbc%20Task.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Vbc" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <Parameter Name="commandLine" Type="Microsoft.Build.Tasks.CommandLineBuilderExtension" />
       </Parameters>
       <Docs>
-        <param name="commandLine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandLine">Command line builder to add arguments to.</param>
+        <summary>Fills the specified <paramref name="commandLine" /> parameter with switches and other information that can go into a response file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the base address of the DLL.</summary>
+        <value>The base address of the DLL.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,9 +83,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Compiles the project through the host object.</summary>
+        <returns>
+          <see langword="true" /> if compilation succeeded; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method will get called during execution if a host object was passed to the `Vbc` task.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisabledWarnings">
@@ -101,9 +109,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets one or more warnings to suppress that are specified by the numeric part of the warning identifier.</summary>
+        <value>The warnings to suppress that are specified by the numeric part of the warning identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multiple warnings are separated by semicolons.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentationFile">
@@ -119,9 +134,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Turns on documentation comments processing and gets or sets the output documentation XML file.</summary>
+        <value>The output documentation XML file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property overrides the <xref:Microsoft.Build.Tasks.Vbc.GenerateDocumentation%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorReport">
@@ -137,9 +159,28 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a string value that specifies how the task will report internal compiler errors.</summary>
+        <value>A string value that specifies how the task will report internal compiler errors.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can have the following values:  
+  
+-   `prompt`  
+  
+-   `send`  
+  
+-   `none`  
+  
+ If `prompt` is specified and an internal compiler error occurs, the user is prompted with an option of whether to send the error data to Microsoft.  
+  
+ If `send` is specified and an internal compiler error occurs, the task sends the error data to Microsoft.  
+  
+ The default value is `none`, which reports errors in text output only.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -156,8 +197,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Override Execute so that we can move the PDB file, if we need to, after the compiler is done.</summary>
+        <returns>Returns <see cref="T:System.Boolean" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,9 +215,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that specifies whether to process documentation comments to an XML file.</summary>
+        <value>
+          <see langword="true" /> if the <c>Vbc</c> task processes documentation comments to a XML file; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of the output XML file is the name of the executable file or the library that the task is creating.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateFullPathToTool">
@@ -193,8 +242,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the full file path of the tool.</summary>
+        <returns>The full file path of the tool.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +260,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the item collections to import namespaces from.</summary>
+        <value>The item collections to import namespaces from.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,9 +279,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a host object initialization status value that indicates what the next action should be.</summary>
+        <returns>A host object initialization status value that indicates what the next action should be.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method will get called during execution of this task if a host object was passed to the `Vbc` task.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LangVersion">
@@ -248,8 +304,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the language version.</summary>
+        <value>Returns the language version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,10 +326,17 @@
         <Parameter Name="messageImportance" Type="Microsoft.Build.Framework.MessageImportance" />
       </Parameters>
       <Docs>
-        <param name="singleLine">To be added.</param>
-        <param name="messageImportance">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="singleLine">A single line captured from the STDOUT of the vbc compiler</param>
+        <param name="messageImportance">The message importance: High,Low, or Normal</param>
+        <summary>This method intercepts the lines to be logged coming from STDOUT from VBC.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once we see a standard vb warning or error, then we capture it and grab the next 3 lines so we can transform the string form the form of FileName.vb(line) to FileName.vb(line,column) which will allow us to report the line and column to the IDE, and thus filter the error in the duplicate case for multi-targeting, or just squiggle the appropriate token instead of the entire line.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ModuleAssemblyName">
@@ -289,8 +352,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the assembly that this module will be a part of.</summary>
+        <value>The name of the assembly that this module will be a part of.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,8 +370,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether the compiler should not reference the standard libraries.</summary>
+        <value>
+          <see langword="true" /> if the compiler should not reference the standard libraries; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,8 +389,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether the compiler should compile without a reference to the Visual Basic Runtime Library.</summary>
+        <value>
+          <see langword="true" /> if the compiler should compile without a reference to the Visual Basic Runtime Library; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,8 +408,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether the task will suppress all warnings.</summary>
+        <value>
+          <see langword="true" /> if the task will suppress all warnings; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,9 +427,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a string value that specifies how string comparisons are made.</summary>
+        <value>A string value that specifies how string comparisons are made.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can have the following values:  
+  
+-   `binary`  
+  
+-   `text`  
+  
+ The value `binary` specifies that the task uses binary string comparisons. The value `text` specifies that the task uses text string comparisons. The default value is `binary`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OptionExplicit">
@@ -379,8 +458,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether explicit declaration of variables is required.</summary>
+        <value>
+          <see langword="true" /> if explicit declaration of variables is required; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,8 +477,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether to use local type inference in variable declarations.</summary>
+        <value>
+          <see langword="true" /> if the <c>Vbc</c> task will use local type inference in variable declarations; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,8 +496,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether the task enforces strict type semantics to restrict implicit type conversions.</summary>
+        <value>
+          <see langword="true" /> if the task enforces strict type semantics; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,8 +515,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value for the <see cref="P:Microsoft.Build.Tasks.Vbc.OptionStrict" /> property. Currently, the value can be set to "custom" and specifies whether the task generates warnings for implicit narrowing type conversions.</summary>
+        <value>A value for the <see cref="P:Microsoft.Build.Tasks.Vbc.OptionStrict" /> property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,8 +533,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The path to the .Pdb file.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,9 +551,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a Boolean value that specifies whether to disable integer overflow error checks.</summary>
+        <value>
+          <see langword="true" /> if the <c>Vbc</c> task will disable integer overflow error checks; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RootNamespace">
@@ -487,8 +577,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the root namespace for all type declarations.</summary>
+        <value>The root namespace for all type declarations.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -505,8 +595,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the location of mscorlib.dll and microsoft.visualbasic.dll.</summary>
+        <value>The location of mscorlib.dll and microsoft.visualbasic.dll.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -523,8 +613,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether to target the [!INCLUDE[Compact](~/includes/compact-md.md)].</summary>
+        <value>
+          <see langword="true" /> if the <c>Vbc</c> task should target the [!INCLUDE[Compact](~/includes/compact-md.md)]; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,8 +632,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the tool executable file (vbc.exe).</summary>
+        <value>The name of the tool executable file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -559,8 +650,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a Boolean value that specifies whether to use the in-process compiler object, if available. Used only by [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].</summary>
+        <value>
+          <see langword="true" /> if the <c>Vbc</c> task will use the in-process compiler object, if available; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,8 +670,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Validates input parameters and logs errors or warnings, if any. Returns a Boolean value that indicates whether task execution should proceed.</summary>
+        <returns>
+          <see langword="true" /> if task execution should proceed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -596,8 +689,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies whether to compile with the default Visual Basic runtime.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -614,8 +707,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The path to the Visual Basic runtime to use.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -632,9 +725,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the verbosity of the compiler’s output, which can be <c>Quiet</c>, <c>Normal</c>, or <c>Verbose</c>.</summary>
+        <value>The verbosity of the compiler’s output.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default verbosity is `Normal`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WarningsAsErrors">
@@ -650,8 +750,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a list of warnings to treat as errors.</summary>
+        <value>A list of warnings to treat as errors.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -668,8 +768,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a list of warnings that are not treated as errors.</summary>
+        <value>A list of warnings that are not treated as errors.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

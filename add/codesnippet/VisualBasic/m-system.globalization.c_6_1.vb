@@ -1,1 +1,0 @@
-      returnTime = DateTime.SpecifyKind(cal.AddDays(time, days), time.Kind)

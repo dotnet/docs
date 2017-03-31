@@ -1,1 +1,0 @@
-        Dim c As Color = CType(TypeDescriptor.GetConverter(GetType(Color)).ConvertFromString("Red"), Color)

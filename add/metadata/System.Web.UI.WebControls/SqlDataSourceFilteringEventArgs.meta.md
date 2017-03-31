@@ -1,14 +1,20 @@
 ---
 uid: System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs.ParameterValues
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs.#ctor(System.Collections.Specialized.IOrderedDictionary)
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

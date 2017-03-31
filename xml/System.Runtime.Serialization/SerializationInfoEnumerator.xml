@@ -30,8 +30,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a formatter-friendly mechanism for parsing the data in <see cref="T:System.Runtime.Serialization.SerializationInfo" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current class is a standard enumerator that parses over the values stored in <xref:System.Runtime.Serialization.SerializationInfo>. Instead of recording the values, the <xref:System.Runtime.Serialization.SerializationInfoEnumerator> keeps pointers to the member variables of the <xref:System.Runtime.Serialization.SerializationInfo> that created it.  
+  
+ This class follows the <xref:System.Collections.IEnumerator> mechanism.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Runtime.Serialization.FormatterServices> class in order to properly serialize or deserialize an object where the base class does not implement <xref:System.Runtime.Serialization.ISerializable> but the derived class does.  
+  
+ [!code-cpp[FormatterServices#1](~/samples/snippets/cpp/VS_Snippets_Remoting/FormatterServices/cpp/FormatterServices.cpp#1)]
+ [!code-csharp[FormatterServices#1](~/samples/snippets/csharp/VS_Snippets_Remoting/FormatterServices/CS/FormatterServices.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -57,9 +74,10 @@
         <ReturnType>System.Runtime.Serialization.SerializationEntry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the item currently being examined.</summary>
+        <value>The item currently being examined.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The enumerator has not started enumerating items or has reached the end of the enumeration.</exception>
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -86,9 +104,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Updates the enumerator to the next item.</summary>
+        <returns>
+          <see langword="true" /> if a new element is found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To initialize the enumerator, call <xref:System.Runtime.Serialization.SerializationInfoEnumerator.MoveNext%2A> and go through each item until you reach the last element.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling the <xref:System.Runtime.Serialization.SerializationInfoEnumerator.MoveNext%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.Serialization.SerializationInfo> class.  
+  
+ [!code-cpp[FormatterServices#3](~/samples/snippets/cpp/VS_Snippets_Remoting/FormatterServices/cpp/FormatterServices.cpp#3)]
+ [!code-csharp[FormatterServices#3](~/samples/snippets/csharp/VS_Snippets_Remoting/FormatterServices/CS/FormatterServices.cs#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -114,9 +148,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name for the item currently being examined.</summary>
+        <value>The item name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Runtime.Serialization.SerializationInfoEnumerator.Name%2A> property. This code example is part of a larger example provided for the <xref:System.Runtime.Serialization.SerializationInfo> class.  
+  
+ [!code-cpp[FormatterServices#3](~/samples/snippets/cpp/VS_Snippets_Remoting/FormatterServices/cpp/FormatterServices.cpp#3)]
+ [!code-csharp[FormatterServices#3](~/samples/snippets/csharp/VS_Snippets_Remoting/FormatterServices/CS/FormatterServices.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The enumerator has not started enumerating items or has reached the end of the enumeration.</exception>
       </Docs>
     </Member>
     <Member MemberName="ObjectType">
@@ -142,9 +187,20 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of the item currently being examined.</summary>
+        <value>The type of the item currently being examined.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Runtime.Serialization.SerializationInfoEnumerator.ObjectType%2A> property. This code example is part of a larger example provided for the <xref:System.Runtime.Serialization.SerializationInfo> class.  
+  
+ [!code-cpp[FormatterServices#3](~/samples/snippets/cpp/VS_Snippets_Remoting/FormatterServices/cpp/FormatterServices.cpp#3)]
+ [!code-csharp[FormatterServices#3](~/samples/snippets/csharp/VS_Snippets_Remoting/FormatterServices/CS/FormatterServices.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The enumerator has not started enumerating items or has reached the end of the enumeration.</exception>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -171,8 +227,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Resets the enumerator to the first item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After calling this method, the <xref:System.Runtime.Serialization.SerializationInfoEnumerator.Current%2A> property will contain the first item in the current set of elements.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">
@@ -198,9 +261,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current item in the collection.</summary>
+        <value>A <see cref="T:System.Runtime.Serialization.SerializationEntry" /> that contains the current serialization data.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The enumeration has not started or has already ended.</exception>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -226,9 +290,20 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the item currently being examined.</summary>
+        <value>The value of the item currently being examined.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Runtime.Serialization.SerializationInfoEnumerator.Value%2A> property. This code example is part of a larger example provided for the <xref:System.Runtime.Serialization.SerializationInfo> class.  
+  
+ [!code-cpp[FormatterServices#3](~/samples/snippets/cpp/VS_Snippets_Remoting/FormatterServices/cpp/FormatterServices.cpp#3)]
+ [!code-csharp[FormatterServices#3](~/samples/snippets/csharp/VS_Snippets_Remoting/FormatterServices/CS/FormatterServices.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The enumerator has not started enumerating items or has reached the end of the enumeration.</exception>
       </Docs>
     </Member>
   </Members>

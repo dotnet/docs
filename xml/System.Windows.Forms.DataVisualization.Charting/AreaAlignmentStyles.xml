@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the alignment styles of chart areas.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart areas are aligned using all values.</summary>
       </Docs>
     </Member>
     <Member MemberName="AxesView">
@@ -48,7 +48,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart areas are aligned by their data view.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -64,7 +64,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart areas are aligned using their cursors.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,7 +80,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart areas are not automatically aligned.</summary>
       </Docs>
     </Member>
     <Member MemberName="PlotPosition">
@@ -96,7 +96,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart areas are aligned by their inner plot position.</summary>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -112,7 +112,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chart areas are aligned by the chart area position.</summary>
       </Docs>
     </Member>
   </Members>

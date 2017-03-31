@@ -1,24 +1,35 @@
 ---
 uid: System.Web.UI.DataVisualization.Charting.CustomizeLegendEventArgs
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.CustomizeLegendEventArgs.#ctor(System.Web.UI.DataVisualization.Charting.LegendItemsCollection)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.CustomizeLegendEventArgs.LegendName
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.CustomizeLegendEventArgs.#ctor(System.Web.UI.DataVisualization.Charting.LegendItemsCollection,System.String)
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.CustomizeLegendEventArgs.LegendItems
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.CustomizeLegendEventArgs.#ctor
+ms.author: "mblythe"
+manager: "mblythe"
 ---

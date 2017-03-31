@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Controls.ClickMode
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

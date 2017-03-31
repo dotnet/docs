@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Annotations.Storage.StoreContentAction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

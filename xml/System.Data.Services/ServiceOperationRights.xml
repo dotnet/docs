@@ -15,8 +15,33 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An enumeration used to define access rights to service operations deployed by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets all rights access to the service operation `OrdersByCity`.  
+  
+```  
+namespace AccountingServiceWebApp  
+{  
+  public class AccountingService : DataService<DataModel>  
+  {  
+      public static void InitializeService(IDataServiceConfiguration config)  
+      {  
+          config.SetServiceOperationAccessRule("OrdersInCity", ServiceOperationRights.All);  
+      }  
+      public IQueryable<Orders> OrdersByCity(string city)  
+      {  
+          return this.CurrentDataSource.Orders.Where(o => o.ShippingCity == city);  
+      }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -32,7 +57,7 @@
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All rights assigned to the service operation..</summary>
       </Docs>
     </Member>
     <Member MemberName="AllRead">
@@ -48,7 +73,7 @@
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authorization to read single or multiple data items deployed by the service operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +89,7 @@
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No authorization to access the service operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="OverrideEntitySetRights">
@@ -80,7 +105,7 @@
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Overrides entity set rights that are explicitly defined in the data service with the service operation rights.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadMultiple">
@@ -96,7 +121,7 @@
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authorization to read multiple data items by using the service operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReadSingle">
@@ -112,7 +137,7 @@
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authorization to read a single data item by using the service operation.</summary>
       </Docs>
     </Member>
   </Members>

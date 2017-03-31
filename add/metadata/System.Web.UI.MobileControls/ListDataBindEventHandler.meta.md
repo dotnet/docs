@@ -1,4 +1,6 @@
 ---
 uid: System.Web.UI.MobileControls.ListDataBindEventHandler
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

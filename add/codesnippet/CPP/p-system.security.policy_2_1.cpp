@@ -1,1 +1,0 @@
-      Console::WriteLine( "\nThe default value for the Locked property = {0}", myEvidence->Locked );

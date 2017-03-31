@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Renders the <see cref="T:System.Windows.Media.Media3D.Visual3D" /> children within the specified 2D viewport bounds.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Media3D.Viewport3DVisual> is a 2D Visual with 3D children. The <xref:System.Windows.Media.Media3D.Viewport3DVisual> provides necessary infrastructure for the <xref:System.Windows.Controls.Viewport3D> element.  Most users will want to use the <xref:System.Windows.Controls.Viewport3D> element.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +60,16 @@
         <ReturnType>System.Windows.Media.Effects.BitmapEffect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Effects.BitmapEffect" /> applied to the Viewport3DVisual.</summary>
+        <value>BitmapEffect applied to the Viewport3DVisual.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Bitmap effects are software-rendered. Any object that applies an effect will also be rendered in software. Bitmap effects should not be applied to large visuals or animations as this can degrade performance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BitmapEffectInput">
@@ -76,9 +90,18 @@
         <ReturnType>System.Windows.Media.Effects.BitmapEffectInput</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Effects.BitmapEffectInput" /> applied to the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" />.</summary>
+        <value>BitmapEffectInput applied to the Viewport3DVisual.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Effects.BitmapEffectInput> applies the <xref:System.Windows.Media.Effects.BitmapEffect> given in the <xref:System.Windows.Media.Media3D.Viewport3DVisual.BitmapEffect%2A> property to a specified region of the visual object.  
+  
+ Bitmap effects are software-rendered. Any object that applies an effect will also be rendered in software. Bitmap effects should not be applied to large visuals or animations as this can degrade performance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Camera">
@@ -94,8 +117,8 @@
         <ReturnType>System.Windows.Media.Media3D.Camera</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Media3D.Camera" /> used by the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" />.</summary>
+        <value>Camera used by the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +135,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Media3D.Viewport3DVisual.Camera" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +157,8 @@
         <ReturnType>System.Windows.Media.Media3D.Visual3DCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of <see cref="T:System.Windows.Media.Media3D.Visual3D" /> objects contained by <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" />.</summary>
+        <value>Collection of the objects contained by the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,8 +175,9 @@
         <ReturnType>System.Windows.Media.Geometry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the clipping region of the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" />.</summary>
+        <value>
+          <see cref="T:System.Windows.Media.Geometry" /> that defines the clipping area.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,8 +194,9 @@
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the bounding box for the contents of the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" />.</summary>
+        <value>
+          <see cref="T:System.Windows.Rect" /> that defines the bounding box.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +213,9 @@
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the union of all of the content bounding boxes for all of the descendants of the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" />, but not including the contents of the Viewport3DVisual.</summary>
+        <value>
+          <see cref="T:System.Windows.Rect" /> that defines the union.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +235,9 @@
         <Parameter Name="point" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="point">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="point">Point against which to hit test.</param>
+        <summary>Returns the top-most visual object of a hit test performed at a specified <see cref="T:System.Windows.Point" />.</summary>
+        <returns>The hit test result of the visual returned as a <see cref="T:System.Windows.Media.HitTestResult" /> type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,11 +259,18 @@
         <Parameter Name="hitTestParameters" Type="System.Windows.Media.HitTestParameters" />
       </Parameters>
       <Docs>
-        <param name="filterCallback">To be added.</param>
-        <param name="resultCallback">To be added.</param>
-        <param name="hitTestParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filterCallback">Value of type HitTestFilterCallback.</param>
+        <param name="resultCallback">Value of type HitTestResultCallback.</param>
+        <param name="hitTestParameters">Value of type <see cref="T:System.Windows.Media.HitTestParameters" />.</param>
+        <summary>Initiate a hit test on the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" /> by using the <see cref="T:System.Windows.Media.HitTestFilterCallback" /> and <see cref="T:System.Windows.Media.HitTestResultCallback" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `filterCallback` parameter can be null, in which case, it is ignored. If `filterCallback` is not a null reference (`Nothing` in Visual Basic), it is invoked before `resultCallback`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HitTestCore">
@@ -275,8 +308,9 @@
         <ReturnType>System.Windows.Vector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the offset value of the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" />.</summary>
+        <value>
+          <see cref="T:System.Windows.Vector" /> that represents the offset value of the Viewport3DVisual.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,8 +327,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the opacity of the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" />.</summary>
+        <value>The value of the Opacity property is expressed as a value between 0 and 1, specifying a range from fully transparent to fully opaque. A value of 0 indicates that the Opacity is completely transparent, while a value of 1 indicates that the Opacity is completely opaque. A value 0.5 would indicate the Opacity is 50% opaque, a value of 0.725 would indicate the Opacity is 72.5% opaque, and so on. Values less than 0 are treated as 0, while values greater than 1 are treated as 1.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -311,8 +345,9 @@
         <ReturnType>System.Windows.Media.Brush</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the opacity mask value of the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" />.</summary>
+        <value>
+          <see cref="T:System.Windows.Media.Brush" /> that represents the opacity mask value of the Viewport3DVisual.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,8 +364,8 @@
         <ReturnType>System.Windows.DependencyObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the parent <see cref="T:System.Windows.Media.Visual" /> for the Viewport3DVisual.</summary>
+        <value>Visual parent of the Viewport3DVisual.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,8 +382,9 @@
         <ReturnType>System.Windows.Media.Transform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the transform value of the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" />.</summary>
+        <value>
+          <see cref="T:System.Windows.Media.Transform" /> applied to the Viewport3DVisual.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,9 +401,23 @@
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the rectangle in which the <see cref="T:System.Windows.Media.Media3D.Viewport3DVisual" /> will be rendered.</summary>
+        <value>Rectangle in which the contents of the Viewport3D will be rendered.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Viewport"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Media3D.Viewport3DVisual>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewportProperty">
@@ -383,7 +433,7 @@
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Media3D.Viewport3DVisual.Viewport" /> dependency property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

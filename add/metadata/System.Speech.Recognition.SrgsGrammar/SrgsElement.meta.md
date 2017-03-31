@@ -1,9 +1,11 @@
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsElement
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.SrgsGrammar.SrgsElement.#ctor
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

@@ -1,34 +1,41 @@
 ---
 uid: System.Net.WebRequestMethods.Http
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Http.MkCol
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Http.Post
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Http.Connect
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Http.Get
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Http.Head
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.WebRequestMethods.Http.Put
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

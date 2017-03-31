@@ -1,14 +1,27 @@
 ---
 uid: System.Security.AccessControl.FileSecurity
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.FileSecurity.#ctor
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.FileSecurity.#ctor(System.String,System.Security.AccessControl.AccessControlSections)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.AccessControl.FileSecurity.#ctor
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

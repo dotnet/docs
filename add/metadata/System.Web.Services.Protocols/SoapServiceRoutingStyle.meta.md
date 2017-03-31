@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Services.Protocols.SoapServiceRoutingStyle
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

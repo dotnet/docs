@@ -23,8 +23,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a query on an XML document defined by an XPath 1.0 expression.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> uses an XPath expression to determine whether an XML document contains specific elements, attributes, text, or other XML syntactic constructs. Typically, an application uses an <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> at an endpoint to query the contents of a SOAP message and then takes the appropriate action based on the results of that query. A queuing process, for example, may use an XPath query to check the priority element of a known header to decide whether to move a message to the front of the queue.  
+  
+ The XML Path Language (XPath) provides a language for addressing parts of an XML document. The primary syntactic construct in XPath is an expression that defines how to traverse the logical structure of an XML document and address or identify an XPath data type. Specifically, XPath implementations evaluate an expression against the structure of an XML document to yield one of the four basic XPath data types: strings, numbers, Booleans, and node sets. They also support functions that convert an XPath data type to a string, number, or Boolean data type. If a method expects one of these three data types, the result of the expression evaluation is implicitly converted. Note that these three data types cannot be converted to a node-set type. The XML Path language is fully described in the [W3C XML Path Language 1.0 specification](http://go.microsoft.com/fwlink/?LinkId=96179).  
+  
+ Numbers in XPath expressions are expressed as double-precision 64-bit values. Therefore XPath expressions that involve testing numbers with many significant digits can return incorrect results due to floating point precision issues. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][XML Path Language (XPath) Version 1.0, section 3.5](http://go.microsoft.com/fwlink/?LinkId=96180).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +49,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class that matches all well-formed XML documents.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Initializes a new instance of the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> class with an empty XPath expression. An empty XPath expression always matches a well-formed XML document, so all objects satisfy the criteria of a filter defined by an empty XPath expression.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -55,9 +73,20 @@
         <Parameter Name="xpath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xpath">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="xpath">A <see cref="T:System.String" /> that contains an XPath 1.0 expression.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class using an XPath expression to specify query criteria for the filter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when there are no namespaces to manage.  
+  
+ This constructor initializes the <xref:System.Xml.XmlNamespaceManager> assigned to the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Namespaces%2A> property by using the default <xref:System.ServiceModel.Dispatcher.XPathMessageContext>, so the XPath expression has access to the function library that the <xref:System.ServiceModel.Dispatcher.XPathMessageContext> defines.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xpath" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,9 +102,20 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read the streamed XPath expression.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class by reading a streamed XPath with the specified XML reader.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is assumed that the reader is positioned at the start element of the serialized `XPathMessageFilter`. The name of the element is not validated before reading. When this method returns, the reader is positioned immediately after the serialized `XPathMessageFilter`. The constructor also automatically initializes the namespace manager by resolving all prefixes in the XPath expression as they were bound in the reader.  
+  
+ This method can access any XML that can be created by the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.WriteXPathTo%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -92,10 +132,21 @@
         <Parameter Name="namespaces" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="xpath">To be added.</param>
-        <param name="namespaces">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="xpath">An XPath 1.0 expression.</param>
+        <param name="namespaces">An <see cref="T:System.Xml.XmlNamespaceManager" /> that resolves any namespace prefixes in <c>xpath</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class using the specified XPath expression and namespace manager.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when XPath uses prefixes not defined in <xref:System.ServiceModel.Dispatcher.XPathMessageContext>, or when you want to use your own <xref:System.Xml.XmlNamespaceManager>. An instance of <xref:System.ServiceModel.Dispatcher.XPathMessageContext> can be created and passed to this method.  
+  
+ If the instances provided to this method are <xref:System.Xml.Xsl.XsltContext> implementations, it is equivalent to calling the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xpath" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,9 +163,9 @@
         <Parameter Name="context" Type="System.Xml.Xsl.XsltContext" />
       </Parameters>
       <Docs>
-        <param name="xpath">To be added.</param>
+        <param name="xpath">The XPath 1.0 expression for the filter.</param>
         <param name="namespaces">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class using a specified XPath expression and <see cref="T:System.Xml.Xsl.XsltContext" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,10 +183,24 @@
         <Parameter Name="namespaces" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="namespaces">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read the streamed XPath expression.</param>
+        <param name="namespaces">An <see cref="T:System.Xml.XmlNamespaceManager" /> that resolves any namespace prefixes in the XPath expression from <c>reader</c>. This can also be an <see cref="T:System.Xml.Xsl.XsltContext" /> that defines custom functions or variables.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class by reading in a streamed XPath with a specified XML reader and using the specified namespace manager.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you want to use your own <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlNamespaceManager> to define the filter.  
+  
+ It is assumed that the reader is positioned at the start element of the serialized `XPathMessageFilter`. The name of the element is not validated before reading. When this method returns, the reader is positioned immediately after the serialized `XPathMessageFilter`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reader" /> is not positioned on the starting element.</exception>
+        <exception cref="T:System.InvalidOperationException">An invalid dialect attribute was read: it was not XPath.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -152,10 +217,21 @@
         <Parameter Name="context" Type="System.Xml.Xsl.XsltContext" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read the streamed XPath expression.</param>
         <param name="namespaces">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> class by reading a streamed XPath with a specified XML reader and using the <see cref="T:System.Xml.Xsl.XsltContext" /> to resolve namespaces, custom functions, and variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you want to use your own <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlNamespaceManager> to define the filter.  
+  
+ It is assumed that the reader is positioned at the start element of the serialized `XPathMessageFilter`. The name of the element is not validated before reading. When this method returns, the reader is positioned immediately after the serialized `XPathMessageFilter`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateFilterTable&lt;FilterData&gt;">
@@ -175,10 +251,17 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="FilterData">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="FilterData">Data associated with the filters in the table.</typeparam>
+        <summary>Creates an <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1" /> that has a specified type of data associated with it.</summary>
+        <returns>An <see cref="T:System.ServiceModel.Dispatcher.IMessageFilterTable`1" /> object to which filters associated with <paramref name="FilterData" /> can be added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601>. Users should create a filter table by calling a constructor for the filter table. This implementation returns an instance of <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -197,10 +280,22 @@
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to test.</param>
+        <summary>Tests whether a specified message satisfies the criteria of the XPath filter. This form is not allowed to access the body of the message.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.ServiceModel.Channels.Message" /> satisfies the filter criteria; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A?displayProperty=fullName> method to match elements from the body. An exception is thrown by this method if the engine attempts to access the message body in order to evaluate the XPath expression. This helps to ensure that the filter engine does not access the body stream.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="message" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.Dispatcher.InvalidBodyAccessException">The XPath evaluation attempted to examine the body of the message.</exception>
+        <exception cref="T:System.Xml.XPath.XPathException">A compiler error occurred.</exception>
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -219,10 +314,21 @@
         <Parameter Name="messageBuffer" Type="System.ServiceModel.Channels.MessageBuffer" />
       </Parameters>
       <Docs>
-        <param name="messageBuffer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="messageBuffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
+        <summary>Determines whether a buffered message satisfies the query criteria of the XPath filter.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" /> satisfies the filter criteria; otherwise<see langword=" false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this overload of the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method when a <xref:System.ServiceModel.Channels.MessageBuffer> is available. This form is allowed to examine the body of the message.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="message" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.XPath.XPathException">A compiler error occurred.</exception>
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -241,10 +347,21 @@
         <Parameter Name="navigator" Type="System.ServiceModel.Dispatcher.SeekableXPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">The <see cref="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" /> that provides data to test.</param>
+        <summary>Determines whether the XML document provided by the specified optimized XPath navigator satisfies the query criteria of the XPath filter.</summary>
+        <returns>
+          <see langword="true" /> if the data from the <see cref="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" /> satisfies the filter criteria; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator> class extends the <xref:System.Xml.XPath.XPathNavigator> class with methods that run queries more efficiently.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="navigator" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.XPath.XPathException">A compiler error occurred.</exception>
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -263,10 +380,14 @@
         <Parameter Name="navigator" Type="System.Xml.XPath.XPathNavigator" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="navigator">The <see cref="T:System.Xml.XPath.XPathNavigator" /> that provides data to test.</param>
+        <summary>Evaluates the filter over the specified XPath navigator.</summary>
+        <returns>
+          <see langword="true" /> if the data from the <see cref="T:System.Xml.XPath.XPathNavigator" /> satisfies the filter criteria; <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="navigator" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.XPath.XPathException">A compiler error occurred.</exception>
       </Docs>
     </Member>
     <Member MemberName="Namespaces">
@@ -282,9 +403,18 @@
         <ReturnType>System.Xml.XmlNamespaceManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the manager that resolves namespace prefixes in the XPath expression that defines the filter.</summary>
+        <value>The <see cref="T:System.Xml.XmlNamespaceManager" /> for the current <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Namespaces%2A> property can also be an <xref:System.Xml.Xsl.XsltContext> that defines custom function or variables.  
+  
+ Do not modify the namespace manager instance once the filter is created.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NodeQuota">
@@ -300,9 +430,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum number of nodes that should be looked at during filter evaluation.</summary>
+        <value>The maximum number of nodes that should be looked at during filter evaluation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some filters can be extremely expensive to evaluate or are very long running. Because filters operate on XML documents, the best way to set computational limits is to specify the maximum number of nodes that should be looked at during a filter evaluation.  
+  
+ The quota is initially set to <xref:System.Int32>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The quota is zero or negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnGetSchema">
@@ -319,8 +459,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the schema for the current XML document.</summary>
+        <returns>The <see cref="T:System.Xml.Schema.XmlSchema" /> that represents the current document.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,9 +480,14 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> used to read the XML document.</param>
+        <summary>Reads the current XML node.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reader" /> encountered an empty element.</exception>
+        <exception cref="T:System.InvalidOperationException">Content of a node is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnWriteXml">
@@ -361,9 +506,11 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the node.</param>
+        <summary>Writes a node using <paramref name="writer" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadXPath">
@@ -383,10 +530,17 @@
         <Parameter Name="namespaces" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="namespaces">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> used to deserialize the XPath filter.</param>
+        <param name="namespaces">The <see cref="T:System.Xml.XmlNamespaceManager" /> used to manage the namespaces being read from.</param>
+        <summary>Initializes the current instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> with an XPath obtained from a specified XML reader using a specified namespace manager.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The namespace manager instance can be an <xref:System.Xml.Xsl.XsltContext> that is used to resolve functions and variables.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StaticGetSchema">
@@ -405,10 +559,12 @@
         <Parameter Name="schemas" Type="System.Xml.Schema.XmlSchemaSet" />
       </Parameters>
       <Docs>
-        <param name="schemas">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="schemas">The <see cref="T:System.Xml.Schema.XmLSchemaSet" /> that contains the cache of XML Schema definition language (XSD) schemas.</param>
+        <summary>Gets the type of XML schema used to serialize the XPath filter.</summary>
+        <returns>The <see cref="T:System.Xml.Schema.XmLSchemaType" /> used to serialize the XPath filter.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="schemas" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
@@ -425,8 +581,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>An explicit interface implementation that gets the current schema.</summary>
+        <returns>The <see cref="T:System.Xml.Schema.XmlSchema" /> that represents the current document.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,8 +602,8 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> used to read the XML document.</param>
+        <summary>An explicit interface implementation that reads the current XML node.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,8 +623,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the node.</param>
+        <summary>An explicit interface implementation that writes an XML node using <paramref name="writer" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,8 +642,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Compacts the XPath filter, which releases all unused memory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation is similar to the resizing of an array so that it has no unused elements.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteXPath">
@@ -507,10 +671,17 @@
         <Parameter Name="resolver" Type="System.Xml.IXmlNamespaceResolver" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="resolver">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to serialize the XPath filter.</param>
+        <param name="resolver">The <see cref="T:System.Xml.IXmlNamespaceResolver" /> used to resolve any namespace conflict for the XPath filter.</param>
+        <summary>Serializes the XPath filter to an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `writer` must be in the *Start* state. Otherwise an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteXPathTo">
@@ -533,13 +704,25 @@
         <Parameter Name="writeNamespaces" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="prefix">To be added.</param>
-        <param name="localName">To be added.</param>
-        <param name="ns">To be added.</param>
-        <param name="writeNamespaces">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" />.</param>
+        <param name="prefix">The namespace prefix of the XPath XML element.</param>
+        <param name="localName">The local name of the XPath XML element.</param>
+        <param name="ns">The namespace URI to associate with the XML element.</param>
+        <param name="writeNamespaces">
+          <see langword="true" /> if namespaces should be serialized out separately as attributes; otherwise, <see langword="false" />.</param>
+        <summary>Writes the XML XPath element with a specified XML writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `writer` must be in the *Start* state. Otherwise an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="localName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="localName" /> has length = 0.</exception>
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -555,10 +738,33 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the XPath expression that defines the query criteria for the filter.</summary>
+        <value>The XPath expression for the filter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Match">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a message or XML document satisfies the query criteria of the XPath filter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These methods check one filter against a message. If you need to check the message against multiple filters, put the filters into a filter table and then use the match methods provided by the table.  
+  
+ If you only need to test the message headers and not the message body, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method.  
+  
+ If you need to test parts of the message body, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method.  
+  
+ For tests that involve XPath queries, use one of the remaining overloads of the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

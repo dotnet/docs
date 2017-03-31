@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how to join consecutive line or curve segments in a figure (subpath) contained in a <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Drawing.Drawing2D.LineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a beveled join. This produces a diagonal corner.</summary>
       </Docs>
     </Member>
     <Member MemberName="Miter">
@@ -43,7 +43,7 @@
         <ReturnType>System.Drawing.Drawing2D.LineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a mitered join. This produces a sharp corner or a clipped corner, depending on whether the length of the miter exceeds the miter limit.</summary>
       </Docs>
     </Member>
     <Member MemberName="MiterClipped">
@@ -59,7 +59,7 @@
         <ReturnType>System.Drawing.Drawing2D.LineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a mitered join. This produces a sharp corner or a beveled corner, depending on whether the length of the miter exceeds the miter limit.</summary>
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -75,7 +75,7 @@
         <ReturnType>System.Drawing.Drawing2D.LineJoin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies a circular join. This produces a smooth, circular arc between the lines.</summary>
       </Docs>
     </Member>
   </Members>

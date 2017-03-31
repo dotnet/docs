@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Values for <see cref="F:System.Windows.Automation.TextPattern.UnderlineStyleAttribute" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +35,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Dashed line.</summary>
       </Docs>
     </Member>
     <Member MemberName="DashDot">
@@ -51,7 +51,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Alternating dash-dot line.</summary>
       </Docs>
     </Member>
     <Member MemberName="DashDotDot">
@@ -67,7 +67,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Alternating dash-dot-dot line.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dot">
@@ -83,7 +83,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Dotted line.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -99,7 +99,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Double line.</summary>
       </Docs>
     </Member>
     <Member MemberName="DoubleWavy">
@@ -115,7 +115,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Double wavy line.</summary>
       </Docs>
     </Member>
     <Member MemberName="LongDash">
@@ -131,7 +131,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Long-dashed line.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -147,7 +147,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No text decoration line style.</summary>
       </Docs>
     </Member>
     <Member MemberName="Other">
@@ -163,7 +163,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Another text decoration line style not explicitly specified in the <see cref="T:System.Windows.Automation.Text.TextDecorationLineStyle" /> enumeration.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -179,7 +179,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Single line.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThickDash">
@@ -195,7 +195,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Thick dashed line.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThickDashDot">
@@ -211,7 +211,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Thick alternating dash-dot line.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThickDashDotDot">
@@ -227,7 +227,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Thick alternating dash-dot-dot line.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThickDot">
@@ -243,7 +243,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Thick dotted line.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThickLongDash">
@@ -259,7 +259,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Thick long-dash line.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThickSingle">
@@ -275,7 +275,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Thick single line.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThickWavy">
@@ -291,7 +291,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Thick wavy line.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wavy">
@@ -307,7 +307,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Wavy line.</summary>
       </Docs>
     </Member>
     <Member MemberName="WordsOnly">
@@ -323,7 +323,7 @@
         <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Words only.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.ProfileServiceManager
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ProfileServiceManager.Path
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ProfileServiceManager.LoadProperties
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ProfileServiceManager.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

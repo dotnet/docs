@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.MessageQueueErrorCode
-internalonly: False
+manager: "tyoung"
 ---

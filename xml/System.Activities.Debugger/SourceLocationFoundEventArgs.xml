@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents SourceLocationFoundEventArgs.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="sourceLocation" Type="System.Activities.Debugger.SourceLocation" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="sourceLocation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="target">The target location.</param>
+        <param name="sourceLocation">The source location.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.SourceLocationFoundEventArgs" /> class using the target and source location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,8 +48,8 @@
         <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the specific location in a target source code file.</summary>
+        <value>The specific location in a target source code file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,8 +66,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the target source code files for the specific location.</summary>
+        <value>The target source code files for the specific location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

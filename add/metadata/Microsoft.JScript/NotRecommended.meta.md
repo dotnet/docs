@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.JScript.NotRecommended
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NotRecommended.#ctor(System.String)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NotRecommended.IsError
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NotRecommended.Message
-internalonly: False
+ms.author: "mikejo"
 ---

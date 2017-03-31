@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies what an installer should do during an uninstallation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following sample creates a custom uninstaller that inherits the <xref:System.Configuration.Install.Installer> class. In the overridden <xref:System.Configuration.Install.Installer.Uninstall%2A> function, the <xref:System.Configuration.Install.UninstallAction> enumeration is set based on user input. If the input is "n", the custom uninstaller will not take any action on the resource in the event log entered by the user. Otherwise, it will remove the resource from the event log.  
+  
+ [!code-cpp[UninstallAction_NoAction_Remove_3#1](~/samples/snippets/cpp/VS_Snippets_CLR/UninstallAction_NoAction_Remove_3/CPP/uninstallaction_noaction_remove_3.cpp#1)]
+ [!code-csharp[UninstallAction_NoAction_Remove_3#1](~/samples/snippets/csharp/VS_Snippets_CLR/UninstallAction_NoAction_Remove_3/CS/uninstallaction_noaction_remove_3.cs#1)]
+ [!code-vb[UninstallAction_NoAction_Remove_3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/UninstallAction_NoAction_Remove_3/VB/uninstallaction_noaction_remove_3.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="NoAction">
@@ -27,7 +38,7 @@
         <ReturnType>System.Configuration.Install.UninstallAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Leaves the resource created by the installer as is.</summary>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -43,7 +54,7 @@
         <ReturnType>System.Configuration.Install.UninstallAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes the resource the installer created.</summary>
       </Docs>
     </Member>
   </Members>

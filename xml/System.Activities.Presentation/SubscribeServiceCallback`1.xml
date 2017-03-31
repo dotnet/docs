@@ -19,9 +19,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="TServiceType">To be added.</typeparam>
-    <param name="serviceInstance">To be added.</param>
-    <summary>To be added.</summary>
+    <typeparam name="TServiceType">The type of the service to subscribe to.</typeparam>
+    <param name="serviceInstance">The instance of the service to subscribe to.</param>
+    <summary>Represents a generic delegate that is a callback for service subscriptions.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

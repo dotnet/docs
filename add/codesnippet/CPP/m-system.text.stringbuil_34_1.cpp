@@ -1,1 +1,0 @@
-      StringBuilder^ stringBuilder = gcnew StringBuilder;

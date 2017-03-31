@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The Visual Basic compiler emits this helper class to indicate (for Visual Basic debugging) which comparison option, binary or text, is being used</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use of this class is similar to specifying the text option in the [Option Compare Statement](../Topic/Option%20Compare%20Statement.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,8 +41,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.CompilerServices.OptionTextAttribute" /> class. This is a helper method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use of this class is similar to specifying the text option in the [Option Compare Statement](../Topic/Option%20Compare%20Statement.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

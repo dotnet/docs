@@ -1,19 +1,24 @@
 ---
 uid: System.Windows.Markup.ContentPropertyAttribute
-internalonly: False
----
-
----
-uid: System.Windows.Markup.ContentPropertyAttribute.Name
-internalonly: False
----
-
----
-uid: System.Windows.Markup.ContentPropertyAttribute.#ctor(System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.ContentPropertyAttribute.#ctor
-internalonly: False
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ContentPropertyAttribute.Name
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ContentPropertyAttribute.#ctor(System.String)
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ContentPropertyAttribute.#ctor
+manager: "martinek"
 ---

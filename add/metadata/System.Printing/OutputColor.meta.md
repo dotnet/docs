@@ -1,4 +1,5 @@
 ---
 uid: System.Printing.OutputColor
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

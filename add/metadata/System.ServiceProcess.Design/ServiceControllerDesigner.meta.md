@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceProcess.Design.ServiceControllerDesigner
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceProcess.Design.ServiceControllerDesigner.PreFilterProperties(System.Collections.IDictionary)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceProcess.Design.ServiceControllerDesigner.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

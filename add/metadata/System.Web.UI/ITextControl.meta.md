@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.ITextControl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ITextControl.Text
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

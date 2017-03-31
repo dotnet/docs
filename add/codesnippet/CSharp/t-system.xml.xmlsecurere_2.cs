@@ -1,1 +1,0 @@
-XmlReader reader = XmlReader.Create("books.xml", settings);

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.WebControls.FormViewPageEventArgs
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewPageEventArgs.#ctor(System.Int32)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

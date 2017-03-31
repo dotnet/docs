@@ -1,54 +1,88 @@
 ---
 uid: System.ServiceModel.Routing.Configuration.FilterElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.Clear
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.Remove(System.ServiceModel.Routing.Configuration.FilterElement)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.IsReadOnly
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.Add(System.ServiceModel.Routing.Configuration.FilterElement)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.IsElementRemovable(System.Configuration.ConfigurationElement)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.#ctor
-internalonly: False
----
-
----
-uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.GetElementKey(System.Configuration.ConfigurationElement)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.Item(System.String)
-internalonly: False
----
-
----
-uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.Item(System.Int32)
-internalonly: False
+uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.Item
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.CreateNewElement
-internalonly: False
+manager: "ghogen"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.Add(System.ServiceModel.Routing.Configuration.FilterElement)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.IsElementRemovable(System.Configuration.ConfigurationElement)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.GetElementKey(System.Configuration.ConfigurationElement)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.Item(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.Item(System.Int32)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.CreateNewElement
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

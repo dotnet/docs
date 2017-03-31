@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a provider-independent service API for geospatial (Geometry/Geography) type support.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Spatial.DbSpatialServices" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,10 +46,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value for which the well-known binary should be generated.</param>
+        <summary>Gets the well-known binary representation of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</summary>
+        <returns>The well-known binary representation of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="AsBinary">
@@ -68,10 +74,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value for which the well-known binary should be generated.</param>
+        <summary>Gets the well-known binary representation of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</summary>
+        <returns>The well-known binary representation of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="AsGml">
@@ -90,10 +102,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value for which the GML should be generated.</param>
+        <summary>Generates the Geography Markup Language (GML) representation of this <see cref="T:System.Data.Spatial.DbGeography" /> value.</summary>
+        <returns>A string containing the GML representation of this DbGeography value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="AsGml">
@@ -112,10 +130,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value for which the GML should be generated.</param>
+        <summary>Generates the Geography Markup Language (GML) representation of this <see cref="T:System.Data.Spatial.DbGeometry" /> value.</summary>
+        <returns>A string containing the GML representation of this DbGeometry value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="AsText">
@@ -134,10 +158,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value for which the well-known text should be generated.</param>
+        <summary>Gets the well-known text representation of the given <see cref="T:System.Data.Spatial.DbGeography" /> value. This value should include only the Longitude and Latitude of points.</summary>
+        <returns>A string containing the well-known text representation of <paramref name="geographyValue" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="AsText">
@@ -156,10 +186,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value for which the well-known text should be generated.</param>
+        <summary>Gets the well-known text representation of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, including only X and Y coordinates for points.</summary>
+        <returns>A string containing the well-known text representation of <paramref name="geometryValue" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="AsTextIncludingElevationAndMeasure">
@@ -178,9 +214,9 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value.</param>
+        <summary>Returns a text representation of <see cref="T:System.Data.Spatial.DbSpatialServices" /> with elevation and measure.</summary>
+        <returns>A text representation of <see cref="T:System.Data.Spatial.DbSpatialServices" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,9 +236,9 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value.</param>
+        <summary>Returns a text representation of <see cref="T:System.Data.Spatial.DbSpatialServices" /> with elevation and measure.</summary>
+        <returns>A text representation of <see cref="T:System.Data.Spatial.DbSpatialServices" /> with elevation and measure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,11 +259,17 @@
         <Parameter Name="distance" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <param name="distance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value.</param>
+        <param name="distance">A double value specifying how far from <c>geographyValue</c> to buffer.</param>
+        <summary>Creates a geography value representing all points less than or equal to <paramref name="distance" /> from the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</summary>
+        <returns>A new DbGeography value representing all points less than or equal to <paramref name="distance" /> from <paramref name="geographyValue" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Buffer">
@@ -247,11 +289,17 @@
         <Parameter Name="distance" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="distance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value.</param>
+        <param name="distance">A double value specifying how far from <c>geometryValue</c> to buffer.</param>
+        <summary>Creates a geometry value representing all points less than or equal to <paramref name="distance" /> from the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</summary>
+        <returns>A new DbGeometry value representing all points less than or equal to <paramref name="distance" /> from <paramref name="geometryValue" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -271,11 +319,16 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value.</param>
+        <param name="otherGeometry">The second geometry value.</param>
+        <summary>Determines whether one <see cref="T:System.Data.Spatial.DbGeometry" /> value spatially contains the other.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="geometryValue" /> contains <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="CreateGeography">
@@ -295,11 +348,13 @@
         <Parameter Name="providerValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="spatialServices">To be added.</param>
-        <param name="providerValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="spatialServices">The spatial services instance that the returned <see cref="T:System.Data.Spatial.DbGeography" /> value will depend on for its implementation of spatial functionality.</param>
+        <param name="providerValue">The provider value.</param>
+        <summary>This method is intended for use by derived implementations of <see cref="M:System.Data.Spatial.DbSpatialServices.GeographyFromProviderValue(System.Object)" /> after suitable validation of the specified provider value to ensure it is suitable for use with the derived implementation.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> instance that contains the specified <paramref name="providerValue" /> and uses the specified <paramref name="spatialServices" /> as its spatial implementation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="spatialServices" /> <paramref name="providerValue" /></exception>
       </Docs>
     </Member>
     <Member MemberName="CreateGeometry">
@@ -319,11 +374,13 @@
         <Parameter Name="providerValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="spatialServices">To be added.</param>
-        <param name="providerValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="spatialServices">The spatial services instance that the returned <see cref="T:System.Data.Spatial.DbGeometry" /> value will depend on for its implementation of spatial functionality.</param>
+        <param name="providerValue">A provider value.</param>
+        <summary>This method is intended for use by derived implementations of <see cref="M:System.Data.Spatial.DbSpatialServices.GeometryFromProviderValue(System.Object)" /> after suitable validation of the specified provider value to ensure it is suitable for use with the derived implementation.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> instance that contains the specified <paramref name="providerValue" /> and uses the specified <paramref name="spatialServices" /> as its spatial implementation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="spatialServices" /> <paramref name="providerValue" /></exception>
       </Docs>
     </Member>
     <Member MemberName="CreateProviderValue">
@@ -342,10 +399,13 @@
         <Parameter Name="wellKnownValue" Type="System.Data.Spatial.DbGeographyWellKnownValue" />
       </Parameters>
       <Docs>
-        <param name="wellKnownValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="wellKnownValue">An instance of <see cref="T:System.Data.Spatial.DbGeographyWellKnownValue" /> that contains the well-known representation of a geography value.</param>
+        <summary>Creates a provider-specific value compatible with this spatial services implementation based on the specified well-known <see cref="T:System.Data.Spatial.DbGeography" /> representation.</summary>
+        <returns>A provider-specific value that encodes the information contained in <paramref name="wellKnownValue" /> in a fashion compatible with this spatial services implementation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateProviderValue">
@@ -364,10 +424,13 @@
         <Parameter Name="wellKnownValue" Type="System.Data.Spatial.DbGeometryWellKnownValue" />
       </Parameters>
       <Docs>
-        <param name="wellKnownValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="wellKnownValue">An instance of <see cref="T:System.Data.Spatial.DbGeometryWellKnownValue" /> that contains the well-known representation of a geometry value.</param>
+        <summary>Creates a provider-specific value compatible with this spatial services implementation based on the specified well-known <see cref="T:System.Data.Spatial.DbGeometry" /> representation.</summary>
+        <returns>A provider-specific value that encodes the information contained in <paramref name="wellKnownValue" /> in a fashion compatible with this spatial services implementation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateWellKnownValue">
@@ -386,10 +449,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value.</param>
+        <summary>Creates an instance of <see cref="T:System.Data.Spatial.DbGeographyWellKnownValue" /> that represents the specified <see cref="T:System.Data.Spatial.DbGeography" /> value using one or both of the standard well-known spatial formats.</summary>
+        <returns>The well-known representation of <paramref name="geographyValue" />, as a new <see cref="T:System.Data.Spatial.DbGeographyWellKnownValue" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateWellKnownValue">
@@ -408,10 +477,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value.</param>
+        <summary>Creates an instance of <see cref="T:System.Data.Spatial.DbGeometryWellKnownValue" /> that represents the specified <see cref="T:System.Data.Spatial.DbGeometry" /> value using one or both of the standard well-known spatial formats.</summary>
+        <returns>The well-known representation of <paramref name="geometryValue" />, as a new <see cref="T:System.Data.Spatial.DbGeometryWellKnownValue" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Crosses">
@@ -431,11 +506,16 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value.</param>
+        <param name="otherGeometry">The second geometry value.</param>
+        <summary>Determines whether the two given <see cref="T:System.Data.Spatial.DbGeometry" /> values spatially cross.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="geometryValue" /> crosses <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -451,8 +531,8 @@
         <ReturnType>System.Data.Spatial.DbSpatialServices</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default services for the <see cref="T:System.Data.Spatial.DbSpatialServices" />.</summary>
+        <value>The default services.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,11 +553,15 @@
         <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <param name="otherGeography">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The first geography value.</param>
+        <param name="otherGeography">The second geography value.</param>
+        <summary>Computes the difference of two <see cref="T:System.Data.Spatial.DbGeography" /> values.</summary>
+        <returns>A new DbGeography value representing the difference of <paramref name="geographyValue" /> and <paramref name="otherGeography" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Difference">
@@ -497,11 +581,15 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value.</param>
+        <param name="otherGeometry">The second geometry value.</param>
+        <summary>Computes the difference between two <see cref="T:System.Data.Spatial.DbGeometry" /> values.</summary>
+        <returns>A new DbGeometry value representing the difference between <paramref name="geometryValue" /> and <paramref name="otherGeometry" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Disjoint">
@@ -521,11 +609,16 @@
         <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <param name="otherGeography">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The first geography value to compare for disjointness.</param>
+        <param name="otherGeography">The second geography value to compare for disjointness.</param>
+        <summary>Determines whether the two given <see cref="T:System.Data.Spatial.DbGeography" /> values are spatially disjoint.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="geographyValue" /> is disjoint from <paramref name="otherGeography" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Disjoint">
@@ -545,11 +638,16 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value to compare for disjointness.</param>
+        <param name="otherGeometry">The second geometry value to compare for disjointness.</param>
+        <summary>Determines whether the two given <see cref="T:System.Data.Spatial.DbGeometry" /> values are spatially disjoint.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="geometryValue" /> is disjoint from <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Distance">
@@ -569,11 +667,15 @@
         <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <param name="otherGeography">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The first geography value.</param>
+        <param name="otherGeography">The second geography value.</param>
+        <summary>Computes the distance between the closest points in two <see cref="T:System.Data.Spatial.DbGeography" /> values.</summary>
+        <returns>A double value that specifies the distance between the two closest points in <paramref name="geographyValue" /> and <paramref name="otherGeography" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Distance">
@@ -593,11 +695,15 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value.</param>
+        <param name="otherGeometry">The second geometry value.</param>
+        <summary>Computes the distance between the closest points in two <see cref="T:System.Data.Spatial.DbGeometry" /> values.</summary>
+        <returns>A double value that specifies the distance between the two closest points in <paramref name="geometryValue" /> and <paramref name="otherGeometry" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="ElementAt">
@@ -617,11 +723,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a geography collection.</param>
+        <param name="index">The position within the geography value from which the element should be taken.</param>
+        <summary>Returns an element of the given <see cref="T:System.Data.Spatial.DbGeography" /> value, if it represents a geography collection.</summary>
+        <returns>The element in <paramref name="geographyValue" /> at position <paramref name="index" />, if it represents a collection of other geography values; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="ElementAt">
@@ -641,11 +753,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a geometry collection.</param>
+        <param name="index">The position within the geometry value from which the element should be taken.</param>
+        <summary>Returns an element of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, if it represents a geometry collection.</summary>
+        <returns>The element in <paramref name="geometryValue" /> at position <paramref name="index" />, if it represents a collection of other geometry values; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyCollectionFromBinary">
@@ -665,11 +783,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="geographyCollectionWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyCollectionWellKnownBinary">A byte array that contains a well-known binary representation of the geography value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeography" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> collection value based on the specified well-known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the well-known binary value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyCollectionWellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyCollectionFromText">
@@ -689,11 +813,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="geographyCollectionWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyCollectionWellKnownText">A string that contains a well-known text representation of the geography value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeography" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> collection value based on the specified well-known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the well-known text value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyCollectionWellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyFromBinary">
@@ -712,10 +842,13 @@
         <Parameter Name="wellKnownBinary" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="wellKnownBinary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="wellKnownBinary">A byte array that contains a well-known binary representation of the geography value.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified well-known binary value.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the well-known binary value with the default <see cref="T:System.Data.Spatial.DbGeography" /> coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownBinary" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyFromBinary">
@@ -735,11 +868,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="wellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="wellKnownBinary">A byte array that contains a well-known binary representation of the geography value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeography" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified well-known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the well-known binary value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyFromGml">
@@ -758,10 +897,13 @@
         <Parameter Name="geographyMarkup" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="geographyMarkup">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyMarkup">A string that contains a Geometry Markup Language (GML) representation of the geography value.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified Geography Markup Language (GML) value.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the GML value with the default <see cref="T:System.Data.Spatial.DbGeography" /> coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyMarkup" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyFromGml">
@@ -781,11 +923,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="geographyMarkup">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyMarkup">A string that contains a Geometry Markup Language (GML) representation of the geography value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeography" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified Geography Markup Language (GML) value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the GML value with the specified coordinate system identifier (SRID).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyMarkup" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyFromProviderValue">
@@ -804,10 +952,16 @@
         <Parameter Name="providerValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="providerValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="providerValue">A provider-specific value that this spatial services implementation is capable of interpreting as a geography value.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on a provider-specific value that is compatible with this spatial services implementation.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value backed by this spatial services implementation and the specified provider value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="providerValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="providerValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyFromText">
@@ -826,10 +980,13 @@
         <Parameter Name="wellKnownText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="wellKnownText">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="wellKnownText">A string that contains a well-known text representation of the geography value.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified well-known text value.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the well-known text value with the default <see cref="T:System.Data.Spatial.DbGeography" /> coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownText" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyFromText">
@@ -849,11 +1006,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="wellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="wellKnownText">A string that contains a well-known text representation of the geography value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeography" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified well-known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the well-known text value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyLineFromBinary">
@@ -873,11 +1036,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="lineWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lineWellKnownBinary">A byte array that contains a well-known binary representation of the geography value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeography" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> line value based on the specified well-known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the well-known binary value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="lineWellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyLineFromText">
@@ -897,11 +1066,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="lineWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lineWellKnownText">A string that contains a well-known text representation of the geography value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeography" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> line value based on the specified well-known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the well-known text value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="lineWellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiLineFromBinary">
@@ -921,10 +1096,10 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="multiLineWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="multiLineWellKnownBinary">The well-known binary value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> multiline value based on the specified well-known binary value and coordinate system identifier.</summary>
+        <returns>The new <see cref="T:System.Data.Spatial.DbGeography" /> multiline value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -945,10 +1120,10 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="multiLineWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="multiLineWellKnownText">The well-known text value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> multiline value based on the specified well-known text value and coordinate system identifier.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> multiline value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -969,10 +1144,10 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="multiPointWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="multiPointWellKnownBinary">The well-known binary value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> multipoint value based on the specified well-known binary value and coordinate system identifier.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> multipoint value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -993,10 +1168,10 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="multiPointWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="multiPointWellKnownText">The well-known text value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> multipoint value based on the specified well-known text value and coordinate system identifier.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> multipoint value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1017,10 +1192,10 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="multiPolygonWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="multiPolygonWellKnownBinary">The well-known binary value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> multi polygon value based on the specified well-known binary value and coordinate system identifier.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> multi polygon value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1041,10 +1216,10 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="multiPolygonWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="multiPolygonWellKnownText">The well-known text value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> multi polygon value based on the specified well-known text value and coordinate system identifier.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> multi polygon value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1065,11 +1240,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pointWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pointWellKnownBinary">A byte array that contains a well-known binary representation of the geography value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeography" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> point value based on the specified well-known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the well-known binary value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pointWellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyPointFromText">
@@ -1089,11 +1270,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pointWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pointWellKnownText">A string that contains a well-known text representation of the geography value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeography" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> point value based on the specified well-known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the well-known text value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pointWellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyPolygonFromBinary">
@@ -1113,11 +1300,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="polygonWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="polygonWellKnownBinary">A byte array that contains a well-known binary representation of the geography value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeography" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> polygon value based on the specified well-known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the well-known binary value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="polygonWellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyPolygonFromText">
@@ -1137,11 +1330,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="polygonWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="polygonWellKnownText">A string that contains a well-known text representation of the geography value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeography" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> polygon value based on the specified well-known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value as defined by the well-known text value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="polygonWellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryCollectionFromBinary">
@@ -1161,11 +1360,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="geometryCollectionWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryCollectionWellKnownBinary">A byte array that contains a well-known binary representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" />value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> collection value based on the specified well-known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known binary value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryCollectionWellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryCollectionFromText">
@@ -1185,11 +1390,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="geometryCollectionWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryCollectionWellKnownText">A string that contains a well-known text representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> collection value based on the specified well-known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known text value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryCollectionWellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryFromBinary">
@@ -1208,10 +1419,13 @@
         <Parameter Name="wellKnownBinary" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="wellKnownBinary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="wellKnownBinary">A byte array that contains a well-known binary representation of the geometry value.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified well-known binary value.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known binary value with the default <see cref="T:System.Data.Spatial.DbGeometry" /> coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownBinary" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryFromBinary">
@@ -1231,11 +1445,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="wellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="wellKnownBinary">A byte array that contains a well-known binary representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified well-known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known binary value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryFromGml">
@@ -1254,10 +1474,13 @@
         <Parameter Name="geometryMarkup" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="geometryMarkup">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryMarkup">A string that contains a Geography Markup Language (GML) representation of the geometry value.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified Geography Markup Language (GML) value.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the GML value with the default <see cref="T:System.Data.Spatial.DbGeometry" /> coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryMarkup" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryFromGml">
@@ -1277,11 +1500,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="geometryMarkup">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryMarkup">A string that contains a Geography Markup Language (GML) representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified Geography Markup Language (GML) value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the GML value with the specified coordinate system identifier (SRID).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryMarkup" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryFromProviderValue">
@@ -1300,10 +1529,16 @@
         <Parameter Name="providerValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="providerValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="providerValue">A provider-specific value that this spatial services implementation is capable of interpreting as a geometry value.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on a provider-specific value that is compatible with this spatial services implementation.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value backed by this spatial services implementation and the specified provider value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="providerValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="providerValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryFromText">
@@ -1322,10 +1557,13 @@
         <Parameter Name="wellKnownText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="wellKnownText">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="wellKnownText">A string that contains a well-known text representation of the geometry value.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified well-known text value.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known text value with the default <see cref="T:System.Data.Spatial.DbGeometry" /> coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownText" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryFromText">
@@ -1345,11 +1583,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="wellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="wellKnownText">A string that contains a well-known text representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified well-known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known text value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryLineFromBinary">
@@ -1369,11 +1613,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="lineWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lineWellKnownBinary">A byte array that contains a well-known binary representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> line value based on the specified well-known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known binary value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="lineWellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryLineFromText">
@@ -1393,11 +1643,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="lineWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="lineWellKnownText">A string that contains a well-known text representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> line value based on the specified well-known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known text value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="lineWellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiLineFromBinary">
@@ -1417,10 +1673,10 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="multiLineWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="multiLineWellKnownBinary">The well-known binary value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> multiline value based on the specified well-known binary value and coordinate system identifier.</summary>
+        <returns>The new <see cref="T:System.Data.Spatial.DbGeometry" /> multiline value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1441,10 +1697,10 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="multiLineWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="multiLineWellKnownText">The well-known text value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> multiline value based on the specified well-known text value and coordinate system identifier.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> multiline value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1465,10 +1721,10 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="multiPointWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="multiPointWellKnownBinary">The well-known binary value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> multipoint value based on the specified well-known binary value and coordinate system identifier.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> multipoint value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1489,10 +1745,10 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="multiPointWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="multiPointWellKnownText">The well-known text value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> multipoint value based on the specified well-known text value and coordinate system identifier.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> multipoint value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1513,10 +1769,10 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="multiPolygonWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="multiPolygonWellKnownBinary">The well-known binary value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> multi polygon value based on the specified well-known binary value and coordinate system identifier.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> multi polygon value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1537,10 +1793,10 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="multiPolygonKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="multiPolygonKnownText">The well-known text value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> multi polygon value based on the specified well-known text value and coordinate system identifier.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> multi polygon value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1561,11 +1817,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pointWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pointWellKnownBinary">A byte array that contains a well-known binary representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> point value based on the specified well-known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known binary value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pointWellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryPointFromText">
@@ -1585,11 +1847,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pointWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pointWellKnownText">A string that contains a well-known text representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> point value based on the specified well-known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known text value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pointWellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryPolygonFromBinary">
@@ -1609,11 +1877,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="polygonWellKnownBinary">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="polygonWellKnownBinary">A byte array that contains a well-known binary representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> polygon value based on the specified well-known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known binary value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="polygonWellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryPolygonFromText">
@@ -1633,11 +1907,17 @@
         <Parameter Name="coordinateSystemId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="polygonWellKnownText">To be added.</param>
-        <param name="coordinateSystemId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="polygonWellKnownText">A string that contains a well-known text representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" /> value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> polygon value based on the specified well-known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known text value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="polygonWellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetArea">
@@ -1656,10 +1936,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a surface.</param>
+        <summary>Returns a nullable double value that indicates the area of the given <see cref="T:System.Data.Spatial.DbGeography" /> value, which may be null if the value does not represent a surface.</summary>
+        <returns>A nullable double value that indicates the area of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetArea">
@@ -1678,10 +1964,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a surface.</param>
+        <summary>Returns a nullable double value that indicates the area of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, which may be null if the value does not represent a surface.</summary>
+        <returns>A nullable double value that indicates the area of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetBoundary">
@@ -1700,9 +1992,9 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value.</param>
+        <summary>Returns a nullable double value that indicates the boundary of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</summary>
+        <returns>The boundary of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1722,10 +2014,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a surface.</param>
+        <summary>Returns a <see cref="T:System.Data.Spatial.DbGeometry" /> value that represents the centroid of the given DbGeometry value, which may be null if the value does not represent a surface.</summary>
+        <returns>The centroid of <paramref name="geometryValue" />, if it represents a surface; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetConvexHull">
@@ -1744,9 +2042,9 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value.</param>
+        <summary>Returns a nullable double value that indicates the convex hull of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</summary>
+        <returns>The convex hull of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1766,9 +2064,9 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value.</param>
+        <summary>Returns the coordinate system identifier of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</summary>
+        <returns>The coordinate system identifier of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1788,9 +2086,9 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value.</param>
+        <summary>Returns the coordinate system identifier of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</summary>
+        <returns>The coordinate system identifier of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1810,10 +2108,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value for which the dimension value should be retrieved.</param>
+        <summary>Gets the dimension of the given <see cref="T:System.Data.Spatial.DbGeography" /> value or, if the value is a collections, the largest element dimension.</summary>
+        <returns>The dimension of <paramref name="geographyValue" />, or the largest element dimension if <see cref="T:System.Data.Spatial.DbGeography" /> is a collection.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetDimension">
@@ -1832,10 +2136,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value for which the dimension value should be retrieved.</param>
+        <summary>Gets the dimension of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value or, if the value is a collections, the largest element dimension.</summary>
+        <returns>The dimension of <paramref name="geometryValue" />, or the largest element dimension if <see cref="T:System.Data.Spatial.DbGeometry" /> is a collection.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetElementCount">
@@ -1854,10 +2164,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a geography collection.</param>
+        <summary>Returns the number of elements in the given <see cref="T:System.Data.Spatial.DbGeography" /> value, if it represents a geography collection.</summary>
+        <returns>The number of elements in <paramref name="geographyValue" />, if it represents a collection of other geography values; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetElementCount">
@@ -1876,10 +2192,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a geometry collection.</param>
+        <summary>Returns the number of elements in the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, if it represents a geometry collection.</summary>
+        <returns>The number of elements in <paramref name="geometryValue" />, if it represents a collection of other geometry values; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetElevation">
@@ -1898,10 +2220,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a point.</param>
+        <summary>Returns the elevation (Z coordinate) of the given <see cref="T:System.Data.Spatial.DbGeography" /> value, if it represents a point.</summary>
+        <returns>The elevation (Z coordinate) of <paramref name="geographyValue" />, if it represents a point; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetElevation">
@@ -1920,10 +2248,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a point.</param>
+        <summary>Returns the elevation (Z) of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, if it represents a point.</summary>
+        <returns>The elevation (Z) of <paramref name="geometryValue" />, if it represents a point; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEndPoint">
@@ -1942,10 +2276,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a curve.</param>
+        <summary>Returns a <see cref="T:System.Data.Spatial.DbGeography" /> value that represents the end point of the given DbGeography value, which may be null if the value does not represent a curve.</summary>
+        <returns>The end point of <paramref name="geographyValue" />, if it represents a curve; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEndPoint">
@@ -1964,10 +2304,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a curve.</param>
+        <summary>Returns a <see cref="T:System.Data.Spatial.DbGeometry" /> value that represents the end point of the given DbGeometry value, which may be null if the value does not represent a curve.</summary>
+        <returns>The end point of <paramref name="geometryValue" />, if it represents a curve; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnvelope">
@@ -1986,10 +2332,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value for which the envelope value should be retrieved.</param>
+        <summary>Gets the envelope (minimum bounding box) of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, as a geometry value.</summary>
+        <returns>The envelope of <paramref name="geometryValue" />, as a <see cref="T:System.Data.Spatial.DbGeometry" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetExteriorRing">
@@ -2008,10 +2360,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a polygon.</param>
+        <summary>Returns a <see cref="T:System.Data.Spatial.DbGeometry" /> value that represents the exterior ring of the given DbGeometry value, which may be null if the value does not represent a polygon.</summary>
+        <returns>A DbGeometry value representing the exterior ring on <paramref name="geometryValue" />, if it represents a polygon; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetInteriorRingCount">
@@ -2030,10 +2388,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a polygon.</param>
+        <summary>Returns the number of interior rings in the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, if it represents a polygon.</summary>
+        <returns>The number of elements in <paramref name="geometryValue" />, if it represents a polygon; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIsClosed">
@@ -2052,10 +2416,17 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a curve.</param>
+        <summary>Returns a nullable Boolean value that whether the given <see cref="T:System.Data.Spatial.DbGeography" /> value is closed, which may be null if the value does not represent a curve.</summary>
+        <returns>
+          <see langword="true" /> if the given <see cref="T:System.Data.Spatial.DbGeography" /> value is closed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIsClosed">
@@ -2074,10 +2445,17 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a curve.</param>
+        <summary>Returns a nullable Boolean value that whether the given <see cref="T:System.Data.Spatial.DbGeometry" /> value is closed, which may be null if the value does not represent a curve.</summary>
+        <returns>
+          <see langword="true" /> if the given <see cref="T:System.Data.Spatial.DbGeography" /> value is closed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIsEmpty">
@@ -2096,9 +2474,10 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value.</param>
+        <summary>Returns a nullable Boolean value that whether the given <see cref="T:System.Data.Spatial.DbGeography" /> value is empty.</summary>
+        <returns>
+          <see langword="true" /> if the given <see cref="T:System.Data.Spatial.DbGeography" /> value is empty; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2118,9 +2497,10 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value.</param>
+        <summary>Returns a nullable Boolean value that whether the given <see cref="T:System.Data.Spatial.DbGeometry" /> value is empty.</summary>
+        <returns>
+          <see langword="true" /> if the given <see cref="T:System.Data.Spatial.DbGeometry" /> value is empty; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2140,10 +2520,17 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a curve.</param>
+        <summary>Returns a nullable Boolean value that whether the given <see cref="T:System.Data.Spatial.DbGeometry" /> value is a ring, which may be null if the value does not represent a curve.</summary>
+        <returns>
+          <see langword="true" /> if the given <see cref="T:System.Data.Spatial.DbGeometry" /> value is a ring; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetIsSimple">
@@ -2162,9 +2549,10 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value.</param>
+        <summary>Returns a nullable Boolean value that whether the given <see cref="T:System.Data.Spatial.DbGeometry" /> value is simple.</summary>
+        <returns>
+          <see langword="true" /> if the given <see cref="T:System.Data.Spatial.DbGeometry" /> value is simple; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2184,9 +2572,10 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value.</param>
+        <summary>Returns a nullable Boolean value that whether the given <see cref="T:System.Data.Spatial.DbGeometry" /> value is valid.</summary>
+        <returns>
+          <see langword="true" /> if the given <see cref="T:System.Data.Spatial.DbGeometry" /> value is valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2206,10 +2595,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a point.</param>
+        <summary>Returns the Latitude coordinate of the given <see cref="T:System.Data.Spatial.DbGeography" /> value, if it represents a point.</summary>
+        <returns>The Latitude coordinate of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLength">
@@ -2228,10 +2623,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a curve.</param>
+        <summary>Returns a nullable double value that indicates the length of the given <see cref="T:System.Data.Spatial.DbGeography" /> value, which may be null if the value does not represent a curve.</summary>
+        <returns>The length of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLength">
@@ -2250,10 +2651,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a curve.</param>
+        <summary>Returns a nullable double value that indicates the length of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, which may be null if the value does not represent a curve.</summary>
+        <returns>The length of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetLongitude">
@@ -2272,10 +2679,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a point.</param>
+        <summary>Returns the Longitude coordinate of the given <see cref="T:System.Data.Spatial.DbGeography" /> value, if it represents a point.</summary>
+        <returns>The Longitude coordinate of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetMeasure">
@@ -2294,10 +2707,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a point.</param>
+        <summary>Returns the M (Measure) coordinate of the given <see cref="T:System.Data.Spatial.DbGeography" /> value, if it represents a point.</summary>
+        <returns>The M (Measure) coordinate of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetMeasure">
@@ -2316,10 +2735,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a point.</param>
+        <summary>Returns the M (Measure) coordinate of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, if it represents a point.</summary>
+        <returns>The M (Measure) coordinate of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetPointCount">
@@ -2338,10 +2763,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a linestring or linear ring.</param>
+        <summary>Returns the number of points in the given <see cref="T:System.Data.Spatial.DbGeography" /> value, if it represents a linestring or linear ring.</summary>
+        <returns>The number of points in the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetPointCount">
@@ -2360,10 +2791,14 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a linestring or linear ring.</param>
+        <summary>Returns the number of points in the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, if it represents a linestring or linear ring.</summary>
+        <returns>The number of points in the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">geometryValue</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetPointOnSurface">
@@ -2382,10 +2817,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a surface.</param>
+        <summary>Returns a <see cref="T:System.Data.Spatial.DbGeometry" /> value that represents a point on the surface of the given DbGeometry value, which may be null if the value does not represent a surface.</summary>
+        <returns>A <see cref="T:System.Data.Spatial.DbGeometry" /> value that represents a point on the surface of the given DbGeometry value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSpatialTypeName">
@@ -2404,9 +2845,9 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value.</param>
+        <summary>Returns a value that indicates the spatial type name of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</summary>
+        <returns>The spatial type name of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2426,9 +2867,9 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value.</param>
+        <summary>Returns a value that indicates the spatial type name of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</summary>
+        <returns>The spatial type name of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2448,10 +2889,16 @@
         <Parameter Name="geographyValue" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a curve.</param>
+        <summary>Returns a <see cref="T:System.Data.Spatial.DbGeography" /> value that represents the start point of the given DbGeography value, which may be null if the value does not represent a curve.</summary>
+        <returns>The start point of the given <see cref="T:System.Data.Spatial.DbGeography" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetStartPoint">
@@ -2470,10 +2917,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a curve.</param>
+        <summary>Returns a <see cref="T:System.Data.Spatial.DbGeometry" /> value that represents the start point of the given DbGeometry value, which may be null if the value does not represent a curve.</summary>
+        <returns>The start point of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetXCoordinate">
@@ -2492,10 +2945,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a point.</param>
+        <summary>Returns the X coordinate of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, if it represents a point.</summary>
+        <returns>The X coordinate of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GetYCoordinate">
@@ -2514,10 +2973,16 @@
         <Parameter Name="geometryValue" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a point.</param>
+        <summary>Returns the Y coordinate of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, if it represents a point.</summary>
+        <returns>The Y coordinate of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="InteriorRingAt">
@@ -2537,11 +3002,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a polygon.</param>
+        <param name="index">The position within the geometry value from which the element should be taken.</param>
+        <summary>Returns an interior ring from the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, if it represents a polygon.</summary>
+        <returns>The interior ring in <paramref name="geometryValue" /> at position <paramref name="index" />, if it represents a polygon; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Intersection">
@@ -2561,11 +3032,15 @@
         <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <param name="otherGeography">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The first geography value.</param>
+        <param name="otherGeography">The second geography value.</param>
+        <summary>Computes the intersection of two <see cref="T:System.Data.Spatial.DbGeography" /> values.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value representing the intersection of <paramref name="geographyValue" /> and <paramref name="otherGeography" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Intersection">
@@ -2585,11 +3060,15 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value.</param>
+        <param name="otherGeometry">The second geometry value.</param>
+        <summary>Computes the intersection of two <see cref="T:System.Data.Spatial.DbGeometry" /> values.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value representing the intersection of <paramref name="geometryValue" /> and <paramref name="otherGeometry" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Intersects">
@@ -2609,11 +3088,16 @@
         <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <param name="otherGeography">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The first geography value to compare for intersection.</param>
+        <param name="otherGeography">The second geography value to compare for intersection.</param>
+        <summary>Determines whether the two given <see cref="T:System.Data.Spatial.DbGeography" /> values spatially intersect.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="geographyValue" /> intersects <paramref name="otherGeography" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Intersects">
@@ -2633,11 +3117,16 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value to compare for intersection.</param>
+        <param name="otherGeometry">The second geometry value to compare for intersection.</param>
+        <summary>Determines whether the two given <see cref="T:System.Data.Spatial.DbGeometry" /> values spatially intersect.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="geometryValue" /> intersects <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Overlaps">
@@ -2657,11 +3146,16 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value.</param>
+        <param name="otherGeometry">The second geometry value.</param>
+        <summary>Determines whether the two given <see cref="T:System.Data.Spatial.DbGeometry" /> values spatially overlap.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="geometryValue" /> overlaps <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="PointAt">
@@ -2681,11 +3175,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The geography value, which need not represent a linestring or linear ring.</param>
+        <param name="index">The position within the geography value from which the element should be taken.</param>
+        <summary>Returns a point element of the given <see cref="T:System.Data.Spatial.DbGeography" /> value, if it represents a linestring or linear ring.</summary>
+        <returns>The point in <paramref name="geographyValue" /> at position <paramref name="index" />, if it represents a linestring or linear ring; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="PointAt">
@@ -2705,11 +3205,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The geometry value, which need not represent a linestring or linear ring.</param>
+        <param name="index">The position within the geometry value from which the element should be taken.</param>
+        <summary>Returns a point element of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value, if it represents a linestring or linear ring.</summary>
+        <returns>The point in <paramref name="geometryValue" /> at position <paramref name="index" />, if it represents a linestring or linear ring; otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Relate">
@@ -2730,12 +3236,17 @@
         <Parameter Name="matrix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <param name="matrix">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value.</param>
+        <param name="otherGeometry">The geometry value that should be compared with the first geometry value for relation.</param>
+        <param name="matrix">A string that contains the text representation of the (DE-9IM) intersection pattern that defines the relation.</param>
+        <summary>Determines whether the two given <see cref="T:System.Data.Spatial.DbGeometry" /> values are spatially related according to the given Dimensionally Extended Nine-Intersection Model (DE-9IM) intersection pattern.</summary>
+        <returns>
+          <see langword="true" /> if this <paramref name="geometryValue" /> value relates to <paramref name="otherGeometry" /> according to the specified intersection pattern matrix; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /> <paramref name="matrix" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialEquals">
@@ -2755,11 +3266,16 @@
         <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <param name="otherGeography">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The first geography value to compare for equality.</param>
+        <param name="otherGeography">The second geography value to compare for equality.</param>
+        <summary>Determines whether the two given <see cref="T:System.Data.Spatial.DbGeography" /> values are spatially equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="geographyValue" /> is spatially equal to <paramref name="otherGeography" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialEquals">
@@ -2779,11 +3295,16 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value to compare for equality.</param>
+        <param name="otherGeometry">The second geometry value to compare for equality.</param>
+        <summary>Determines whether the two given <see cref="T:System.Data.Spatial.DbGeometry" /> values are spatially equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="geometryValue" /> is spatially equal to <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="SymmetricDifference">
@@ -2803,11 +3324,15 @@
         <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <param name="otherGeography">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The first geography value.</param>
+        <param name="otherGeography">The second geography value.</param>
+        <summary>Computes the symmetric difference of two <see cref="T:System.Data.Spatial.DbGeography" /> values.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value representing the symmetric difference of <paramref name="geographyValue" /> and <paramref name="otherGeography" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
       </Docs>
     </Member>
     <Member MemberName="SymmetricDifference">
@@ -2827,11 +3352,15 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value.</param>
+        <param name="otherGeometry">The second geometry value.</param>
+        <summary>Computes the symmetric difference between two <see cref="T:System.Data.Spatial.DbGeometry" /> values.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value representing the symmetric difference between <paramref name="geometryValue" /> and <paramref name="otherGeometry" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Touches">
@@ -2851,11 +3380,16 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value.</param>
+        <param name="otherGeometry">The second geometry value.</param>
+        <summary>Determines whether the two given <see cref="T:System.Data.Spatial.DbGeometry" /> values spatially touch.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="geometryValue" /> touches <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -2875,11 +3409,15 @@
         <Parameter Name="otherGeography" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="geographyValue">To be added.</param>
-        <param name="otherGeography">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geographyValue">The first geography value.</param>
+        <param name="otherGeography">The second geography value.</param>
+        <summary>Computes the union of two <see cref="T:System.Data.Spatial.DbGeography" /> values.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value representing the union of <paramref name="geographyValue" /> and <paramref name="otherGeography" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -2899,11 +3437,15 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value.</param>
+        <param name="otherGeometry">The second geometry value.</param>
+        <summary>Computes the union of two <see cref="T:System.Data.Spatial.DbGeometry" /> values.</summary>
+        <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value representing the union of <paramref name="geometryValue" /> and <paramref name="otherGeometry" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
     <Member MemberName="Within">
@@ -2923,11 +3465,16 @@
         <Parameter Name="otherGeometry" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="geometryValue">To be added.</param>
-        <param name="otherGeometry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="geometryValue">The first geometry value.</param>
+        <param name="otherGeometry">The second geometry value.</param>
+        <summary>Determines whether one <see cref="T:System.Data.Spatial.DbGeometry" /> value is spatially within the other.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="geometryValue" /> is within <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
       </Docs>
     </Member>
   </Members>

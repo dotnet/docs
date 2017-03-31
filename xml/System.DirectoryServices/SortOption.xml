@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how to sort the results of a search.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="M:System.DirectoryServices.SortOption.#ctor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +49,9 @@
         <Parameter Name="direction" Type="System.DirectoryServices.SortDirection" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">The name of the property to sort by. The <see cref="P:System.DirectoryServices.SortOption.PropertyName" /> property is set to this value.</param>
+        <param name="direction">One of the <see cref="T:System.DirectoryServices.SortDirection" /> values. The <see cref="P:System.DirectoryServices.SortOption.Direction" /> property is set to this value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.SortOption" /> class, which contains the specified property name and specified sort direction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,9 +76,10 @@
         <ReturnType>System.DirectoryServices.SortDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the direction in which to sort the results of a query.</summary>
+        <value>One of the <see cref="T:System.DirectoryServices.SortDirection" /> values. The default is **Ascending**.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not one of the <see cref="T:System.DirectoryServices.SortDirection" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="PropertyName">
@@ -102,9 +103,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the property to sort on.</summary>
+        <value>The name of the property to sort on. The default is a null reference (<see langword="Nothing" /> in Visual Basic).</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The property value is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
   </Members>

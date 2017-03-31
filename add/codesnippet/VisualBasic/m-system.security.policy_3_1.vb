@@ -1,1 +1,0 @@
-        Dim policyStatementCopy As PolicyStatement = policyStatement.Copy()

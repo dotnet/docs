@@ -22,8 +22,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines host name types for the <see cref="M:System.Uri.CheckHostName(System.String)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.UriHostNameType> enumeration defines the values that the <xref:System.Uri.CheckHostName%2A?displayProperty=fullName> method can return.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Basic">
@@ -51,7 +58,7 @@
         <ReturnType>System.UriHostNameType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The host is set, but the type cannot be determined.</summary>
       </Docs>
     </Member>
     <Member MemberName="Dns">
@@ -79,7 +86,7 @@
         <ReturnType>System.UriHostNameType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The host name is a domain name system (DNS) style host name.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPv4">
@@ -107,7 +114,7 @@
         <ReturnType>System.UriHostNameType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The host name is an Internet Protocol (IP) version 4 host address.</summary>
       </Docs>
     </Member>
     <Member MemberName="IPv6">
@@ -135,7 +142,7 @@
         <ReturnType>System.UriHostNameType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The host name is an Internet Protocol (IP) version 6 host address.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -163,7 +170,7 @@
         <ReturnType>System.UriHostNameType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The type of the host name is not supplied.</summary>
       </Docs>
     </Member>
   </Members>

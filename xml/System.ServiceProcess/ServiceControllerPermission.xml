@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Allows control of code access security permissions for service controllers.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermission" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +43,10 @@
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermission" /> class with the specified access to resources.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="state" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -61,9 +62,11 @@
         <Parameter Name="permissionAccessEntries" Type="System.ServiceProcess.ServiceControllerPermissionEntry[]" />
       </Parameters>
       <Docs>
-        <param name="permissionAccessEntries">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="permissionAccessEntries">An array of <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> objects. The <see cref="P:System.ServiceProcess.ServiceControllerPermission.PermissionEntries" /> property is set to this value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermission" /> class with the specified permission entries.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="permissionAccessEntries " />is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -81,10 +84,10 @@
         <Parameter Name="serviceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="permissionAccess">To be added.</param>
-        <param name="machineName">To be added.</param>
-        <param name="serviceName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="permissionAccess">One of the <see cref="T:System.ServiceProcess.ServiceControllerPermissionAccess" /> values.</param>
+        <param name="machineName">The name of the computer on which the service resides.</param>
+        <param name="serviceName">The short name that identifies the service to the system.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermission" /> class with the specified permission access levels, the name of the computer on which the service resides, and the short name that identifies the service to the system.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +104,8 @@
         <ReturnType>System.ServiceProcess.ServiceControllerPermissionEntryCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of permission entries for this permissions request.</summary>
+        <value>A <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntryCollection" /> that contains the permission entries for this permissions request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

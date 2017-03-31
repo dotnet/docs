@@ -1,19 +1,23 @@
 ---
 uid: System.Web.Hosting.ProcessHostFactoryHelper
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.ProcessHostFactoryHelper.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.ProcessHostFactoryHelper.GetProcessHost(System.Web.Hosting.IProcessHostSupportFunctions)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Hosting.ProcessHostFactoryHelper.InitializeLifetimeService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

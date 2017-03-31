@@ -1,9 +1,13 @@
 ---
 uid: System.Web.ModelBinding.IUnvalidatedValueProviderSource
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ModelBinding.IUnvalidatedValueProviderSource.ValidateInput
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -11,7 +11,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies a value for [PoolBlockingPeriod Property](../Topic/PoolBlockingPeriod%20Property.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
         <ReturnType>System.Data.SqlClient.PoolBlockingPeriod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Blocking period ON for all SQL servers including Azure SQL servers.</summary>
       </Docs>
     </Member>
     <Member MemberName="Auto">
@@ -46,7 +46,7 @@
         <ReturnType>System.Data.SqlClient.PoolBlockingPeriod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Blocking period OFF for Azure SQL servers, but ON for all other SQL servers.</summary>
       </Docs>
     </Member>
     <Member MemberName="NeverBlock">
@@ -63,7 +63,7 @@
         <ReturnType>System.Data.SqlClient.PoolBlockingPeriod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Blocking period OFF for all SQL servers including Azure SQL servers.</summary>
       </Docs>
     </Member>
   </Members>

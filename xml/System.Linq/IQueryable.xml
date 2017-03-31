@@ -23,8 +23,19 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides functionality to evaluate queries against a specific data source wherein the type of the data is not specified.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.IQueryable> interface is intended for implementation by query providers. It is only supposed to be implemented by providers that also implement <xref:System.Linq.IQueryable%601>. If the provider does not also implement <xref:System.Linq.IQueryable%601>, the standard query operators cannot be used on the provider's data source.  
+  
+ The <xref:System.Linq.IQueryable> interface inherits the <xref:System.Collections.IEnumerable> interface so that if it represents a query, the results of that query can be enumerated. Enumeration causes the expression tree associated with an <xref:System.Linq.IQueryable> object to be executed. The definition of "executing an expression tree" is specific to a query provider. For example, it may involve translating the expression tree to an appropriate query language for the underlying data source. Queries that do not return enumerable results are executed when the <xref:System.Linq.IQueryProvider.Execute%2A> method is called.  
+  
+ For more information about how to create your own LINQ provider, see [LINQ: Building an IQueryable Provider](http://go.microsoft.com/fwlink/?LinkID=112370) on MSDN Blogs.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ElementType">
@@ -51,9 +62,16 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of the element(s) that are returned when the expression tree associated with this instance of <see cref="T:System.Linq.IQueryable" /> is executed.</summary>
+        <value>A <see cref="T:System.Type" /> that represents the type of the element(s) that are returned when the expression tree associated with this object is executed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.IQueryable.ElementType%2A> property represents the "T" in `IQueryable<T>` or `IQueryable(Of T)`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Expression">
@@ -80,9 +98,16 @@
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the expression tree that is associated with the instance of <see cref="T:System.Linq.IQueryable" />.</summary>
+        <value>The <see cref="T:System.Linq.Expressions.Expression" /> that is associated with this instance of <see cref="T:System.Linq.IQueryable" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an instance of <xref:System.Linq.IQueryable> represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query against a data source, the associated expression tree represents that query.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -109,9 +134,16 @@
         <ReturnType>System.Linq.IQueryProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the query provider that is associated with this data source.</summary>
+        <value>The <see cref="T:System.Linq.IQueryProvider" /> that is associated with this data source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an instance of <xref:System.Linq.IQueryable> represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query against a data source, the associated query provider is the provider that created the <xref:System.Linq.IQueryable> instance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

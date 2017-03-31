@@ -1,4 +1,4 @@
 ---
 uid: System.Transactions.IsolationLevel
-internalonly: False
+manager: "ghogen"
 ---

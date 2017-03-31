@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Creates a new <see cref="T:System.AppDomain" /> instance for the Web application. This class cannot be inherited. This class was used by earlier versions of the .NET Framework than version 2.0, which uses the <see cref="T:System.Web.Hosting.AppManagerAppDomainFactory" /> class instead.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.AppDomainFactory" /> class. This class was used by earlier versions of the .NET Framework than version 2.0, which uses the <see cref="T:System.Web.Hosting.AppManagerAppDomainFactory" /> class instead.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,14 +55,14 @@
         <Parameter Name="iZone" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="module">To be added.</param>
-        <param name="typeName">To be added.</param>
-        <param name="appId">To be added.</param>
-        <param name="appPath">To be added.</param>
-        <param name="strUrlOfAppOrigin">To be added.</param>
-        <param name="iZone">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="module">The module containing the Web application.</param>
+        <param name="typeName">The type of the Web application.</param>
+        <param name="appId">The unique identifier for the Web application.</param>
+        <param name="appPath">The path to the Web application's files.</param>
+        <param name="strUrlOfAppOrigin">The URL of origin for the Web application.</param>
+        <param name="iZone">The zone of origin for the Web application.</param>
+        <summary>Returns a new application domain for the specified Web application. This class was used by earlier versions of the .NET Framework than version 2.0, which uses the <see cref="T:System.Web.Hosting.AppManagerAppDomainFactory" /> class instead.</summary>
+        <returns>A new application domain.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

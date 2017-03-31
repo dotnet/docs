@@ -20,8 +20,29 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the directory events: <see cref="E:System.IO.FileSystemWatcher.Changed" />, <see cref="E:System.IO.FileSystemWatcher.Created" />, <see cref="E:System.IO.FileSystemWatcher.Deleted" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.FileSystemEventArgs> class is passed as a parameter to event handlers for these events:  
+  
+ The <xref:System.IO.FileSystemWatcher.Changed> event occurs when changes are made to the size, system attributes, last write time, last access time, or security permissions in a file or directory in the specified <xref:System.IO.FileSystemWatcher.Path%2A> of a <xref:System.IO.FileSystemWatcher>.  
+  
+ The <xref:System.IO.FileSystemWatcher.Created> event occurs when a file or directory in the specified <xref:System.IO.FileSystemWatcher.Path%2A> of a <xref:System.IO.FileSystemWatcher> is created.  
+  
+ The <xref:System.IO.FileSystemWatcher.Deleted> event occurs when a file or directory in the specified <xref:System.IO.FileSystemWatcher.Path%2A> of a <xref:System.IO.FileSystemWatcher> is deleted. For more information, see <xref:System.IO.FileSystemWatcher>.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.IO.FileSystemWatcher> to monitor file changes (creates, deletes, renames, changes) occurring on a disk drive. The example also shows how to properly receive error notifications.  
+  
+ [!code-csharp[FileSystemWatcher#1](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#1)]
+ [!code-vb[FileSystemWatcher#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,10 +69,10 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="changeType">To be added.</param>
-        <param name="directory">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="changeType">One of the <see cref="T:System.IO.WatcherChangeTypes" /> values, which represents the kind of change detected in the file system.</param>
+        <param name="directory">The root directory of the affected file or directory.</param>
+        <param name="name">The name of the affected file or directory.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.FileSystemEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +98,19 @@
         <ReturnType>System.IO.WatcherChangeTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of directory event that occurred.</summary>
+        <value>One of the <see cref="T:System.IO.WatcherChangeTypes" /> values that represents the kind of change detected in the file system.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.IO.FileSystemEventArgs.ChangeType%2A> property. This code example is part of a larger example provided for the <xref:System.IO.FileSystemEventArgs> class.  
+  
+ [!code-csharp[FileSystemWatcher#7](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#7)]
+ [!code-vb[FileSystemWatcher#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#7)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FullPath">
@@ -104,9 +135,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the fully qualifed path of the affected file or directory.</summary>
+        <value>The path of the affected file or directory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.IO.FileSystemEventArgs.FullPath%2A> property. This code example is part of a larger example provided for the <xref:System.IO.FileSystemEventArgs> class.  
+  
+ [!code-csharp[FileSystemWatcher#7](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#7)]
+ [!code-vb[FileSystemWatcher#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for reading files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -131,9 +173,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the affected file or directory.</summary>
+        <value>The name of the affected file or directory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name returned by the <xref:System.IO.FileSystemEventArgs.Name%2A> property is the relative path of the affected file or directory, with respect to the directory being watched. For example, if a <xref:System.IO.FileSystemWatcher> object is watching the directory "C:\temp" and the file at "C:\temp\test\file.txt" changes, the <xref:System.IO.FileSystemEventArgs.Name%2A> property will return "test\file.txt".  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

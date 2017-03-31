@@ -1,24 +1,35 @@
 ---
 uid: System.Net.Sockets.IPv6MulticastOption
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.IPv6MulticastOption.#ctor(System.Net.IPAddress,System.Int64)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.IPv6MulticastOption.InterfaceIndex
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Sockets.IPv6MulticastOption.#ctor
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.IPv6MulticastOption.#ctor(System.Net.IPAddress)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Sockets.IPv6MulticastOption.Group
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

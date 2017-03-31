@@ -32,9 +32,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TFilterData">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TFilterData">The type of the filter data associated with each filter in the table.</typeparam>
+    <summary>Holds a collection of filter/data pairs for efficient matching.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601> implements the <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601> interface. This filter table is optimized for declarative XPath filters, so the table key is a <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>.  
+  
+ The <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601> class optimizes matching for a subset of XPath that covers most of the messaging scenarios and also supports the full XPath 1.0 grammar. It has optimized algorithms for efficient parallel matching.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,7 +57,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +74,8 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="capacity">Initial capacity of the table.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +95,19 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter,TFilterData&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> &lt;Filter, <c>FilterData</c>&gt; to add to the table.</param>
+        <summary>Adds a filter/<paramref name="FilterData" /> (key/value) pair to the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method implements the <xref:System.Collections.Generic.ICollection%601.Add%2A> method of the <xref:System.Collections.Generic.ICollection%601> class.  The implicit conversion of the `filter` parameter from type <xref:System.ServiceModel.Dispatcher.MessageFilter> to the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> can be avoided by using the strongly-typed overload, <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.Add%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filter" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.XPath.XPathException">A compiler error occurred.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -108,10 +127,22 @@
         <Parameter Name="data" Type="TFilterData" />
       </Parameters>
       <Docs>
-        <param name="filter">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filter">The <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> used as the key of the pair added. Must be an instance of <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" />.</param>
+        <param name="data">The <c>FilterData</c> associated with the filter used as the value of the pair added.</param>
+        <summary>Adds a filter/data pair to the filter table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The internal conversion of the `filter` parameter from <xref:System.ServiceModel.Dispatcher.MessageFilter> to the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> can be avoided by using the strongly-typed overload, <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.Add%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filter" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="filter" /> is not an <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" />.</exception>
+        <exception cref="T:System.Xml.XPath.XPathException">A compiler error occurred.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -131,10 +162,20 @@
         <Parameter Name="data" Type="TFilterData" />
       </Parameters>
       <Docs>
-        <param name="filter">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="filter">The <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> used as the key of the pair added.</param>
+        <param name="data">The <c>FilterData</c> associated with the filter; used as the value of the pair added.</param>
+        <summary>Adds a filter/data pair to the filter table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This provides a strongly-typed overload for adding an <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> to the filter table that performs better than the weakly-typed overload because it avoids implicit conversion of the `filter` parameter from type <xref:System.ServiceModel.Dispatcher.MessageFilter> to the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filter" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.XPath.XPathException">A compiler error occurred.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -151,7 +192,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all filter/data pairs from the filter table.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,10 +212,18 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter,TFilterData&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="item">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> &lt;<see cref="T:System.ServiceModel.Dispatcher.MessageFilter" />, <c>FilterData</c>&gt; to find in the table.</param>
+        <summary>Determines whether the filter table contains a specified filter and its associated <paramref name="FilterData" />.</summary>
+        <returns>
+          <see langword="true" /> if the filter/*FilterData* pair is contained in the filter table; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns `false` if the filter is found but corresponds to different data.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -193,10 +242,18 @@
         <Parameter Name="filter" Type="System.ServiceModel.Dispatcher.MessageFilter" />
       </Parameters>
       <Docs>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="filter">The <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> being tested for.</param>
+        <summary>Determines whether the filter table contains a specified filter.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="filter" /> is contained in the filter table; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method implements the `ContainsKey` method of <xref:System.Collections.Generic.IDictionary%602>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -216,9 +273,9 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array of type <see cref="T:System.Collections.Generic.KeyValuePair`2" /> &lt;Filter, <c>FilterData</c>&gt; to which the pairs are being copied.</param>
+        <param name="arrayIndex">The index at which to begin copying.</param>
+        <summary>Copies the filter/<paramref name="FilterData" /> pairs to an array that starts at a specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,8 +292,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of filter/data pairs currently in the filter table.</summary>
+        <value>The number of filter/data pairs currently in the filter table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,9 +311,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that can iterate through the filter table.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" />&lt;KeyValuePair&lt;Filter, FilterData&gt;&gt; that can be used to iterate through the filter table.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method implements <xref:System.Collections.Generic.SynchronizedCollection%601.GetEnumerator%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingFilter">
@@ -276,11 +340,28 @@
         <Parameter Name="filter" Type="System.ServiceModel.Dispatcher.MessageFilter&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to test.</param>
+        <param name="filter">The <see langword="out" /> parameter that stores the filter that is satisfied by the <c>message</c>. If no filter was found, the parameter is set to its default value.</param>
+        <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified message and returns that filter in an <see langword="out" /> parameter.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> whose query criteria are satisfied by the message; or <see langword="null" /> if no filters are found to match.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when a single filter is expected to match the message and the matching filter is required.  
+  
+ This method tests for a single filter match in the highest priority bucket of filters. The filters in the table are not allowed to inspect the message body.  
+  
+ If more than one filter is expected to match the message, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.GetMatchingFilters%2A>.  
+  
+ This method implements <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601.GetMatchingFilter%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="message" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException">More than one filter matches the <paramref name="message" />.</exception>
+        <exception cref="T:System.ServiceModel.Dispatcher.InvalidBodyAccessException">A filter attempted to examine the contents of the message body.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingFilter">
@@ -300,11 +381,27 @@
         <Parameter Name="filter" Type="System.ServiceModel.Dispatcher.MessageFilter&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="messageBuffer">To be added.</param>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="messageBuffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
+        <param name="filter">The <see langword="out" /> parameter that stores the filter that is satisfied by the <c>message</c>. If no filter was found, the parameter is set to its default value.</param>
+        <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified message or buffered message and returns that filter in an <see langword="out" /> parameter.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> whose query criteria are satisfied by the buffered message; or <see langword="null" /> if no filters are found to match.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when a single filter is expected to match the buffered message and the matching filter is required.  
+  
+ The filters in the table are allowed to inspect the message body.  
+  
+ If more than one filter is expected to match the message, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.GetMatchingFilters%2A>.  
+  
+ This method implements <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601.GetMatchingFilter%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="messageBuffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException">More than one filter matches the <paramref name="messageBuffer" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingFilter">
@@ -324,11 +421,23 @@
         <Parameter Name="filter" Type="System.ServiceModel.Dispatcher.MessageFilter&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">The <see cref="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" /> to test.</param>
+        <param name="filter">The <see langword="out" /> parameter that stores the filter that is satisfied by the <c>message</c>. If no filter was found, the parameter is set to its default value.</param>
+        <summary>Returns a value that indicates whether the match criterion of exactly one <see cref="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" /> in the table is satisfied by the specified message or buffered message and returns that filter in an <see langword="out" /> parameter.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> whose query criteria are satisfied by the navigator; or <see langword="null" /> if no filters are found to match.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when a single filter is expected to match the message specified by the <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator> and the matching filter is required.  
+  
+ If more than one filter is expected to match the message, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.GetMatchingFilters%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="navigator" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException">More than one filter matches the <paramref name="navigator" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingFilter">
@@ -348,11 +457,23 @@
         <Parameter Name="filter" Type="System.ServiceModel.Dispatcher.MessageFilter&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">The <see cref="T:System.Xml.XPath.XPathNavigator" /> to test.</param>
+        <param name="filter">The <see langword="out" /> parameter that stores the filter that is satisfied by the <c>navigator</c>. If no filter was found, the parameter is set to its default value.</param>
+        <summary>Returns a value that indicates whether the match criterion of exactly one <see cref="T:System.Xml.XPath.XPathNavigator" /> in the table is satisfied by the specified message or buffered message and returns that filter in an <see langword="out" /> parameter.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> whose query criteria are satisfied by the navigator; or <see langword="null" /> if no filters are found to match.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when a single filter is expected to match the message specified by the <xref:System.Xml.XPath.XPathNavigator> and the matching filter is required.  
+  
+ If more than one filter is expected to match the message, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.GetMatchingFilters%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="navigator" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException">More than one filter matches the <paramref name="navigator" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingFilters">
@@ -372,11 +493,28 @@
         <Parameter Name="results" Type="System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt;" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="results">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to test.</param>
+        <param name="results">The reference parameter that stores the <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> objects that match in <see cref="T:System.Collections.Generic.ICollection`1" />&lt;Filter&gt;.</param>
+        <summary>Returns a value that indicates whether the match criterion of at least one <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> in the table is satisfied by the specified message and adds the matching filters to a collection.</summary>
+        <returns>
+          <see langword="true" /> if the match criterion of at least one filter in the table is satisfied by <paramref name="message" />; <see langword="false" /> if no filter is satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when more than one filter is expected to match the message and the matching filters are required.  
+  
+ The filters in the table are not allowed to inspect the message body.  
+  
+ The matching <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> objects are stored in the `results` parameter of <xref:System.Collections.Generic.ICollection%601>. The `FilterData` can then be recovered from the filter table using these filters as keys with the methods provided by <xref:System.Collections.Generic.IDictionary%602>.  
+  
+ This method implements <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601.GetMatchingFilters%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="results" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.Dispatcher.InvalidBodyAccessException">A filter attempted to examine the contents of the message body.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingFilters">
@@ -396,11 +534,27 @@
         <Parameter Name="results" Type="System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt;" />
       </Parameters>
       <Docs>
-        <param name="messageBuffer">To be added.</param>
-        <param name="results">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="messageBuffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
+        <param name="results">The reference parameter that stores the <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> objects that match in <see cref="T:System.Collections.Generic.ICollection`1" />&lt;Filter&gt;.</param>
+        <summary>Returns a value that indicates whether the match criterion of at least one <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> in the table is satisfied by the specified buffered message and adds the matching filters to a collection.</summary>
+        <returns>
+          <see langword="true" /> if the match criterion of at least one filter in the table is satisfied by <paramref name="messageBuffer" />; <see langword="false" /> if no filter is satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when more than one filter is expected to match the buffered message and the matching filters are required.  
+  
+ The filters in the table are allowed to inspect the message body.  
+  
+ The matching <xref:System.ServiceModel.Dispatcher.MessageFilter> objects are stored in the `results` parameter of <xref:System.Collections.Generic.ICollection%601>. The `FilterData` can then be recovered from the filter table using these filters as keys with the methods provided by <xref:System.Collections.Generic.IDictionary%602>.  
+  
+ This method implements <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601.GetMatchingFilters%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingFilters">
@@ -420,11 +574,23 @@
         <Parameter Name="results" Type="System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt;" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <param name="results">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">The <see cref="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" /> to test.</param>
+        <param name="results">The reference parameter that stores the <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> objects that match in <see cref="T:System.Collections.Generic.ICollection`1" />&lt;Filter&gt;.</param>
+        <summary>Returns a value that indicates whether the match criterion of at least one <see cref="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" /> in the table is satisfied by the specified buffered message and adds the matching filters to a collection.</summary>
+        <returns>
+          <see langword="true" /> if the match criterion of at least one filter in the table is satisfied by <paramref name="messageBuffer" />; <see langword="false" /> if no filter is satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when more than one filter is expected to match the navigator and the matching filters are required.  
+  
+ If only one filter is expected to match the message, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.GetMatchingFilter%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingFilters">
@@ -444,11 +610,23 @@
         <Parameter Name="results" Type="System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt;" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <param name="results">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">The <see cref="T:System.Xml.XPath.XPathNavigator" /> to test.</param>
+        <param name="results">The reference parameter that stores the <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> objects that match in <see cref="T:System.Collections.Generic.ICollection`1" />&lt;Filter&gt;.</param>
+        <summary>Returns a value that indicates whether the match criterion of at least one <see cref="T:System.Xml.XPath.XPathNavigator" /> in the table is satisfied by the specified buffered message and adds the matching filters to a collection.</summary>
+        <returns>
+          <see langword="true" /> if the match criterion of at least one filter in the table is satisfied by <paramref name="messageBuffer" />; <see langword="false" /> if no filter is satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when multiple filters can be expected to match the message specified by the <xref:System.Xml.XPath.XPathNavigator> and the matching filters are required.  
+  
+ If only one filter is expected to match the message, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.GetMatchingFilter%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="matches" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingValue">
@@ -468,11 +646,24 @@
         <Parameter Name="data" Type="TFilterData&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to test.</param>
+        <param name="data">The <see langword="out" /> parameter that stores the <c>FilterData</c> for the filter that matches the <c>message</c>.</param>
+        <summary>Returns a value that indicates whether the match criterion of exactly one <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> in the table is satisfied by the specified message and returns the matching filter data.</summary>
+        <returns>
+          <see langword="true" /> if the match criterion of one filter in the table is satisfied by the message; <see langword="false" /> if no filter is satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when a single filter is expected to match the message and only the `FilterData` from the matching filter must be recovered.  
+  
+ This method implements <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601.GetMatchingValue%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="message" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException">More than one filter matches the <paramref name="message" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingValue">
@@ -492,11 +683,24 @@
         <Parameter Name="data" Type="TFilterData&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="messageBuffer">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="messageBuffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
+        <param name="data">The <see langword="out" /> parameter that stores the <c>FilterData</c> for the filter that matches the <c>messageBuffer</c>.</param>
+        <summary>Returns a value that indicates whether the match criterion of exactly one <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> in the table is satisfied by the specified buffered message and returns the matching filter data.</summary>
+        <returns>
+          <see langword="true" /> if the match criterion of one filter in the table is satisfied by the buffered message; <see langword="false" /> if no filter is satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when a single filter is expected to match the buffered message and only the `FilterData` from the matching filter must be recovered.  
+  
+ This method implements <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601.GetMatchingFilter%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="message" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException">More than one filter matches the <paramref name="messageBuffer" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingValue">
@@ -516,11 +720,24 @@
         <Parameter Name="data" Type="TFilterData&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">The <see cref="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" /> to test.</param>
+        <param name="data">The <see langword="out" /> parameter that stores the <c>FilterData</c> that matches the <c>navigator</c>.</param>
+        <summary>Returns a value that indicates whether the match criterion of exactly one <see cref="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" /> in the table is satisfied by the <paramref name="navigator" /> and returns the filter data of the matching filter in an <see langword="out" /> parameter.</summary>
+        <returns>
+          <see langword="true" /> if the match criterion of exactly one filter in the table is satisfied by the <paramref name="navigator" />; <see langword="false" /> if no filter is satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to specify an XPath condition that the message must meet.  
+  
+ This method is similar to <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.GetMatchingValue%2A>, except that it uses a <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator>, which extends the functionality of the <xref:System.Xml.XPath.XPathNavigator> to include methods that allow various optimizations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="navigator" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException">More than one filter matches the <paramref name="navigator" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingValue">
@@ -540,11 +757,22 @@
         <Parameter Name="data" Type="TFilterData&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">The <see cref="T:System.Xml.XPath.XPathNavigator" /> to test.</param>
+        <param name="data">The <see langword="out" /> parameter that stores the <c>FilterData</c> that matches the <c>navigator</c>.</param>
+        <summary>Returns a value that indicates whether the match criterion of exactly one <see cref="T:System.Xml.XPath.XPathNavigator" /> in the table is satisfied by the <paramref name="navigator" /> and returns the filter data of the matching filter in an <see langword="out" /> parameter.</summary>
+        <returns>
+          <see langword="true" /> if the match criterion of exactly one filter in the table is satisfied by the <paramref name="navigator" />; <see langword="false" /> if no filter is satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to specify an XPath condition that the message must meet.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="navigator" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException">More than one filter matches the <paramref name="navigator" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingValues">
@@ -564,11 +792,26 @@
         <Parameter Name="results" Type="System.Collections.Generic.ICollection&lt;TFilterData&gt;" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="results">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to test.</param>
+        <param name="results">The reference parameter that stores the filter data of the matching filters in a generic <see cref="T:System.Collections.Generic.ICollection`1" />&lt;<c>FilterData</c>&gt;.</param>
+        <summary>Returns a value that indicates whether the match criterion of at least one filter in the table is satisfied by the specified message and adds the filter data of the matching filters to a collection.</summary>
+        <returns>
+          <see langword="true" /> if match criterion of at least one filter in the table is satisfied by <paramref name="message" />; <see langword="false" /> if no filter is satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when more than one filter is expected to match the message, only the filter data is required, and the body of the message is not inspected.  
+  
+ The filter data of the matching <xref:System.ServiceModel.Dispatcher.MessageFilter> objects are stored in the `results` parameter of <xref:System.Collections.Generic.ICollection%601>.  
+  
+ This method implements <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601.GetMatchingValues%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="results" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ServiceModel.Dispatcher.InvalidBodyAccessException">A filter attempted to examine the contents of the message body.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingValues">
@@ -588,11 +831,25 @@
         <Parameter Name="results" Type="System.Collections.Generic.ICollection&lt;TFilterData&gt;" />
       </Parameters>
       <Docs>
-        <param name="messageBuffer">To be added.</param>
-        <param name="results">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="messageBuffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
+        <param name="results">The reference parameter that stores the filter data of the matching filters in a generic <see cref="T:System.Collections.Generic.ICollection`1" />&lt;<c>FilterData</c>&gt;.</param>
+        <summary>Returns a value that indicates whether the match criterion of at least one filter in the table is satisfied by the specified buffered message and adds the filter data of the matching filters to a collection.</summary>
+        <returns>
+          <see langword="true" /> if the match criterion of at least one filter in the table is satisfied by <paramref name="message" />; <see langword="false" /> if no filter is satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when more than one filter is expected to match the buffered message and only the filter data is required.  
+  
+ The filter data of the matching <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> objects are stored in the `results`<xref:System.Collections.Generic.ICollection%601>.  
+  
+ This method implements <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601.GetMatchingValues%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingValues">
@@ -612,11 +869,23 @@
         <Parameter Name="results" Type="System.Collections.Generic.ICollection&lt;TFilterData&gt;" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <param name="results">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">The <see cref="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" /> to test.</param>
+        <param name="results">The reference parameter that stores the filter data of the matching filters in a generic <see cref="T:System.Collections.Generic.ICollection`1" />&lt;<c>FilterData</c>&gt;.</param>
+        <summary>Returns a value that indicates whether the match criterion of at least one <see cref="T:System.ServiceModel.Dispatcher.SeekableXPathNavigator" /> in the table is satisfied by the <paramref name="navigator" /> and adds the filter data of the matching filters to a collection.</summary>
+        <returns>
+          <see langword="true" /> if the match criterion of at least one filter in the table is satisfied by the <paramref name="navigator" />; <see langword="false" /> if no filter is satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when more than one filter is expected to match the query criteria of the XML document derived from the optimized XPath navigator <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator> and only the filter data is required.  
+  
+ The filter data of the matching <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> objects are stored in the `results` parameter of <xref:System.Collections.Generic.ICollection%601>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingValues">
@@ -636,11 +905,23 @@
         <Parameter Name="results" Type="System.Collections.Generic.ICollection&lt;TFilterData&gt;" />
       </Parameters>
       <Docs>
-        <param name="navigator">To be added.</param>
-        <param name="results">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="navigator">The <see cref="T:System.Xml.XPath.XPathNavigator" /> to test.</param>
+        <param name="results">The reference parameter that stores the filter data of the matching filters in a generic <see cref="T:System.Collections.Generic.ICollection`1" />&lt;<c>FilterData</c>&gt;.</param>
+        <summary>Returns a value that indicates whether the match criterion of at least one <see cref="T:System.Xml.XPath.XPathNavigator" /> in the table is satisfied by the <paramref name="navigator" /> and adds the filter data of the matching filters to a collection.</summary>
+        <returns>
+          <see langword="true" /> if the match criterion of at least one filter in the table is satisfied by the <paramref name="navigator" />; <see langword="false" /> if no filter is satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when more than one filter is expected to match the query criteria of the XML document derived from the optimized XPath navigator <xref:System.ServiceModel.Dispatcher.SeekableXPathNavigator> and only the filter data is required.  
+  
+ The filter data of the matching <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> objects are stored in the `results` parameter of <xref:System.Collections.Generic.ICollection%601>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -656,8 +937,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1" /> is not read-only.</summary>
+        <value>Always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -677,10 +958,37 @@
         <Parameter Name="filter" Type="System.ServiceModel.Dispatcher.MessageFilter" />
       </Parameters>
       <Docs>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="filter">The <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> associated with the filter data to get or set.</param>
+        <summary>Gets or sets the filter data associated with the specified <paramref name="filter" />.</summary>
+        <value>The filter data associated with the <paramref name="filter" />. If the specified <paramref name="filter" /> is not found, a get operation throws a <see cref="T:System.Collections.Generic.KeyNotFoundException" /> and a set operation creates a new filter data element with the specified <paramref name="filter" /> as key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Item` property (the indexer in C#) provides the ability to access the filter data associated with a `filter` in the table's filter collection by using the following syntax.  
+  
+```csharp  
+myFilters[filter]  
+  
+```  
+  
+ [Visual Basic]  
+  
+```  
+myFilters(filter)  
+  
+```  
+  
+ You can also use the `Item` property to add new elements by setting the values of a `filter`/filter data pair that does not exist in the action filter table. However if `filter` is already in the table, setting the `Item` property overwrites the old value. In contrast, the <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.Add%2A> method does not modify the filter data of an existing `filter`.  
+  
+ The dictionary `Item` is a `filter`/filter data pair in the case of <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filter" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.XPath.XPathException">A compiler error occurred.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">The property is retrieved and the <paramref name="filter" /> is not in the table.</exception>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -696,9 +1004,18 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of all the filters contained in the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1" />.</summary>
+        <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> of all the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" />s contained in the filter table.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property implements <xref:System.Collections.Generic.IDictionary%602.Keys%2A>. The <xref:System.Collections.Generic.IDictionary%602> that the filter table implements uses the <xref:System.ServiceModel.Dispatcher.MessageFilter> as the key and the `FilterData` as the value of the pair.  
+  
+ The order of the filters returned in the collection is unspecified, but it is guaranteed to be the same order as the corresponding `FilterData` in the collection returned by the <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.Values%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NodeQuota">
@@ -719,9 +1036,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the maximum number of XML document nodes that can be examined by the individual filters during a single call to a <see langword="Match" /> method. This value applies for each filter.</summary>
+        <value>The number of nodes that can be examined.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be used to alleviate a security threat. Some filters can be extremely expensive to evaluate or are very long-running. <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>s are most often evaluated against a document from an untrusted source (SOAP message off the wire), which may be malicious. Because filters operate on XML documents, the best way to set computational limits on filter tables is to specify the maximum number of nodes that are examined while evaluating a filter in this table.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -740,10 +1064,18 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.ServiceModel.Dispatcher.MessageFilter,TFilterData&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="item">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> &lt;Filter, <c>FilterData</c>&gt; to remove from the table.</param>
+        <summary>Removes a filter and its associated filter data from the filter table.</summary>
+        <returns>
+          <see langword="true" /> if the filter/<paramref name="FilterData" /> pair was found and removed; <see langword="false" /> if it was not found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the filter key of the `item` is present but is associated with data that differs from the `FilterData`, the method fails to remove the filter and returns `false`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -762,10 +1094,15 @@
         <Parameter Name="filter" Type="System.ServiceModel.Dispatcher.MessageFilter" />
       </Parameters>
       <Docs>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="filter">The <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> to remove.</param>
+        <summary>Removes a filter and its associated filter data from the filter table.</summary>
+        <returns>
+          <see langword="true" /> if the filter was found and removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filter" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="filter" /> is not a <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -784,10 +1121,22 @@
         <Parameter Name="filter" Type="System.ServiceModel.Dispatcher.XPathMessageFilter" />
       </Parameters>
       <Docs>
-        <param name="filter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="filter">The <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> to remove.</param>
+        <summary>Removes an <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> and its associated filter data from the filter table.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> was found and removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not throw an exception if the specified filter does not exist in the filter table.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filter" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="filter" /> is not an <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -804,9 +1153,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that can iterate through the filter table.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" />&lt;KeyValuePair&lt;Filter, FilterData&gt;&gt; that can be used to iterate through the filter table.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method implements <xref:System.Collections.Generic.SynchronizedCollection%601.GetEnumerator%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TrimToSize">
@@ -823,8 +1179,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Compacts the filter table, purging any excess allocations or buffers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is conceptually equivalent to setting a collection's capacity to its count.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -844,11 +1207,19 @@
         <Parameter Name="data" Type="TFilterData&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="filter">To be added.</param>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="filter">A key to retrieve the data.</param>
+        <param name="data">The <c>data</c> associated with the <c>filter</c> when this method returns <see langword="true" />; otherwise, the default value for the type of the <c>data</c> parameter.</param>
+        <summary>Checks whether a filter is stored in the filter table.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="filter" /> is present in the filter table; <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an efficient way to check whether a filter is in the filter table because when the filter is not present it returns `false` instead of throwing an exception. If you try to retrieve the filter from the table using its `Item` property (the indexer in C#) and it is not there, an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -864,10 +1235,93 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;TFilterData&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of all the <paramref name="FilterData" /> contained in the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1" />.</summary>
+        <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> of all the <paramref name="FilterData" /> contained in the filter table.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property implements <xref:System.Collections.Generic.IDictionary%602.Values%2A>. The <xref:System.Collections.Generic.IDictionary%602><Filter, `FilterData`> that the filter table implements uses the <xref:System.ServiceModel.Dispatcher.MessageFilter> as the key and the `FilterData` as the value of the pair.  
+  
+ The order of the `FilterData` returned in the collection is unspecified, but it is guaranteed to be the same order as the corresponding filters in the collection returned by the <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.Keys%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMatchingFilter">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified message or buffered message and returns that filter in an <see langword="out" /> parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Tests whether a message satisfies exactly one of the filters in the filter table.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMatchingValue">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the match criterion of exactly one <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> in the table is satisfied by the specified document object and adds the matching filter data to a collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use one of these four methods when a single filter is expected to match the document object and only the `FilterData` from the matching filter must be recovered.  
+  
+ The first two methods are implementations of <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.GetMatchingValue%2A>.  
+  
+ Use <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.GetMatchingValue%2A> if the body content does not require examination. Use <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.GetMatchingValue%2A> if the contents of the message body may require examination.  
+  
+ The remaining two methods are overloads specific to <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601>. To filter on a document provided through a navigator, use <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.GetMatchingValue%2A> or <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.GetMatchingValue%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMatchingValues">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the match criterion of at least one filter in the table is satisfied by the specified message or buffered message and adds the <paramref name="FilterData" /> of the matching filters to a collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when more than one filter is expected to match the message or buffered message and only the `FilterData` is required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMatchingFilters">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the match criterion of a filter in the table is satisfied by the specified XML document and adds the matching filters to a collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when more than one filter is expected to match the message and the matching filters are required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

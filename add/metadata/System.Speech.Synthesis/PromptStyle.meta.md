@@ -1,39 +1,53 @@
 ---
 uid: System.Speech.Synthesis.PromptStyle
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.PromptStyle.Rate
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.PromptStyle.Volume
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.PromptStyle.#ctor(System.Speech.Synthesis.PromptEmphasis)
-internalonly: False
----
-
----
-uid: System.Speech.Synthesis.PromptStyle.#ctor(System.Speech.Synthesis.PromptVolume)
-internalonly: False
----
-
----
-uid: System.Speech.Synthesis.PromptStyle.Emphasis
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.PromptStyle.#ctor
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Synthesis.PromptStyle.#ctor(System.Speech.Synthesis.PromptVolume)
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Synthesis.PromptStyle.Emphasis
+ms.author: "kbridge"
+manager: "ghogen"
+---
+
+---
+uid: System.Speech.Synthesis.PromptStyle.#ctor
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Synthesis.PromptStyle.#ctor(System.Speech.Synthesis.PromptRate)
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

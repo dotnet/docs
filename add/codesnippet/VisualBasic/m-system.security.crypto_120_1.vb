@@ -1,1 +1,0 @@
-        Dim hashAlgorithm As HashAlgorithm = dsaSignature.CreateDigest()

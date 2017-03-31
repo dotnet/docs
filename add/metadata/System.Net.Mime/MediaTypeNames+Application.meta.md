@@ -1,29 +1,35 @@
 ---
 uid: System.Net.Mime.MediaTypeNames.Application
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.MediaTypeNames.Application.Rtf
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.MediaTypeNames.Application.Zip
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.MediaTypeNames.Application.Octet
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.MediaTypeNames.Application.Soap
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.Mime.MediaTypeNames.Application.Pdf
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

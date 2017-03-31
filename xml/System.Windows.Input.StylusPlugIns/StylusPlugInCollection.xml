@@ -14,8 +14,23 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represent a collection of <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.Windows.UIElement> has a <xref:System.Windows.UIElement.StylusPlugIns%2A> property that is a <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection>. Add a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> to the element's <xref:System.Windows.UIElement.StylusPlugIns%2A> property to manipulate ink on the real-time thread. The order of the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> objects in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection> affects the appearance of the ink when it is rendered. Suppose you have a <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> called `dynamicRenderer` and a custom <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> called `translatePlugin` that offsets the ink from the tablet pen. If `translatePlugin` is the first <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection>, and `dynamicRenderer` is the second, the ink that "flows" will be offset as the user moves the pen. If `dynamicRenderer` is first, and `translatePlugin` is second, the ink will seem to "flow" underneath the pen, and when the user lifts the pen, the ink will move.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to add a <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> to a custom control. To create a control that collects ink, see [Creating an Ink Input Control](../Topic/Creating%20an%20Ink%20Input%20Control.md).  
+  
+ [!code-csharp[StylusPluginSamples#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusPluginSamples/CSharp/StylusControl.cs#3)]
+ [!code-vb[StylusPluginSamples#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusPluginSamples/VisualBasic/StylusControl.vb#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ClearItems">

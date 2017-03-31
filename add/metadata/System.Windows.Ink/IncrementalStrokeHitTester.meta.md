@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Ink.IncrementalStrokeHitTester
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.IncrementalStrokeHitTester.OnStrokeHit(System.Windows.Ink.StrokeHitEventArgs)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.IncrementalStrokeHitTester.AddPointsCore(System.Collections.Generic.IEnumerable{System.Windows.Point})
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

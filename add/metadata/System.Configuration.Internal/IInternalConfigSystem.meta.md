@@ -1,19 +1,23 @@
 ---
 uid: System.Configuration.Internal.IInternalConfigSystem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigSystem.SupportsUserConfig
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigSystem.RefreshConfig(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.Internal.IInternalConfigSystem.GetSection(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

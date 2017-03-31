@@ -1,19 +1,33 @@
 ---
 uid: System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.#ctor
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.GetTypeDescriptor
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.#ctor(System.Type,System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.#ctor(System.Type)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

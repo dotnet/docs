@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the properties that allow the designer to access information about a user control at design time.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,9 +25,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When implemented, gets or sets text between the opening and closing tags of a user control.</summary>
+        <value>The text placed between the opening and closing tags of a user control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IUserControlDesignerAccessor.InnerText%2A> property is used by the designer to specify or determine the text between the opening and closing tags of a user control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TagName">
@@ -43,9 +50,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>When implemented, gets or sets the full tag name of the user control.</summary>
+        <value>The full tag name of the user control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IUserControlDesignerAccessor.TagName%2A> property is used by the designer to specify or determine the full tag name of the user control.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

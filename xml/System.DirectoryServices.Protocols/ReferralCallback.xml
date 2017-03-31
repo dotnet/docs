@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.ReferralCallback" /> class contains delegates used as referral callback methods.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ReferralCallback.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ReferralCallback" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,8 +43,8 @@
         <ReturnType>System.DirectoryServices.Protocols.DereferenceConnectionCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ReferralCallback.DereferenceConnection" /> property contains a <see cref="T:System.DirectoryServices.Protocols.DereferenceConnectionCallback" /> object.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.DereferenceConnectionCallback" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
         <ReturnType>System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ReferralCallback.NotifyNewConnection" /> property contains a <see cref="T:System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback" /> object.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>System.DirectoryServices.Protocols.QueryForConnectionCallback</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ReferralCallback.QueryForConnection" /> property contains a <see cref="T:System.DirectoryServices.Protocols.QueryForConnectionCallback" /> object.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.QueryForConnectionCallback" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

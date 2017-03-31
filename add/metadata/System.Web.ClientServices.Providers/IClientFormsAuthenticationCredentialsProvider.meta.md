@@ -1,9 +1,13 @@
 ---
 uid: System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

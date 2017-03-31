@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Activities.WorkflowHostingResponseContext
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Activities.WorkflowHostingResponseContext.SendResponse(System.Object,System.Object[])
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

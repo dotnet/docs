@@ -8,8 +8,37 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the factory method that a class implements to create a template that encapsulates "placeholder" <see cref="T:System.Activities.Activity" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom activity templates must implement the <xref:System.Activities.Presentation.IActivityTemplateFactory>. Custom activity templates are used to customize the configuration of activities, including custom composite activities, so that users do not have to create each of the activities individually and configure all their properties and other settings manually.  
+  
+   
+  
+## Examples  
+  
+```  
+  
+public sealed class MyDelayActivity : IActivityTemplateFactory  
+  
+{  
+     public Activity Create(DependencyObject target)  
+     {  
+         return new System.Activities.Statements.Delay  
+         {  
+             DisplayName = "DelayActivityTemplate",  
+             Duration = new TimeSpan(0,0,10)  
+  
+         };  
+     }  
+ }  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -28,10 +57,40 @@
         <Parameter Name="target" Type="System.Windows.DependencyObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="target">The dependency object used by this instance of an <see cref="T:System.Activities.Presentation.IActivityTemplateFactory" />.</param>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Activity" /> class that represents a predefined design pattern for the specified target object.</summary>
+        <returns>A workflow   <see cref="T:System.Activities.Activity" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this to create and configure the activity instances used in a custom activity template.  
+  
+   
+  
+## Examples  
+ Create a template that configures a Delay activity with a duration of ten seconds.  
+  
+```  
+  
+public sealed class MyDelayActivity : IActivityTemplateFactory  
+  
+{  
+     public Activity Create(DependencyObject target)  
+     {  
+         return new System.Activities.Statements.Delay  
+         {  
+             DisplayName = "DelayActivityTemplate",  
+             Duration = new TimeSpan(0,0,10)  
+  
+         };  
+     }  
+ }  
+  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

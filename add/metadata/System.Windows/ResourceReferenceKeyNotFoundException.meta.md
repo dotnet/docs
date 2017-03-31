@@ -1,29 +1,45 @@
 ---
 uid: System.Windows.ResourceReferenceKeyNotFoundException
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.ResourceReferenceKeyNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Windows.ResourceReferenceKeyNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
----
-
----
-uid: System.Windows.ResourceReferenceKeyNotFoundException.Key
-internalonly: False
----
-
----
-uid: System.Windows.ResourceReferenceKeyNotFoundException.#ctor(System.String,System.Object)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.ResourceReferenceKeyNotFoundException.#ctor
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.ResourceReferenceKeyNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.ResourceReferenceKeyNotFoundException.Key
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.ResourceReferenceKeyNotFoundException.#ctor(System.String,System.Object)
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.ResourceReferenceKeyNotFoundException.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

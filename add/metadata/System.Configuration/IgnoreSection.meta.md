@@ -1,9 +1,11 @@
 ---
 uid: System.Configuration.IgnoreSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.IgnoreSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

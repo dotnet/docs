@@ -1,2 +1,0 @@
-	    OptionalReliableSession reliableSession =
-		    binding.ReliableSession;

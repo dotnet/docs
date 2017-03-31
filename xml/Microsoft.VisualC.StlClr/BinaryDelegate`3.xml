@@ -30,13 +30,20 @@
     <ReturnType>TResult</ReturnType>
   </ReturnValue>
   <Docs>
-    <typeparam name="TArg1">To be added.</typeparam>
-    <typeparam name="TArg2">To be added.</typeparam>
-    <typeparam name="TResult">To be added.</typeparam>
-    <param name="A_0">To be added.</param>
-    <param name="A_1">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
-    <remarks>To be added.</remarks>
+    <typeparam name="TArg1">The first delegate argument.</typeparam>
+    <typeparam name="TArg2">The second delegate argument.</typeparam>
+    <typeparam name="TResult">The return type of the delegate.</typeparam>
+    <param name="A_0">The first argument.</param>
+    <param name="A_1">The second argument.</param>
+    <summary>Describes a two-argument delegate. You use it to specify the arguments and return type of the delegate.</summary>
+    <returns>The return type of the delegate.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is the generic equivalent of the STL/CLR `binary_delegate` class. For more information, see [binary_delegate (STL/CLR)](../Topic/binary_delegate%20\(STL-CLR\).md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This attribute is interpreted during the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] compilation process to associate loose content with a [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] application.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <Parameter Name="relativeContentFilePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="relativeContentFilePath">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="relativeContentFilePath">The path to the associated content.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Resources.AssemblyAssociatedContentFileAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +51,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the path to the associated content.</summary>
+        <value>The path, as declared in the attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

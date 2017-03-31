@@ -15,8 +15,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Uses the Windows 2000 and Windows NT access format to specify a set of common access rights that Message Queuing maps to both standard and object-specific access rights for reading, writing, and executing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.GenericAccessRights> enumeration provides less detail in what you can specify, but is typically simpler than specifying all the corresponding standard and specific rights. Each object type can map generic access rights to a set of standard (common to most types of securable objects) and object-specific rights.  
+  
+ For example, giving a user Read and Write access to a message queue enables sending, peeking, and receiving messages from a queue. However, for finer access rights control, you can use the <xref:System.Messaging.StandardAccessRights> and the <xref:System.Messaging.MessageQueueAccessRights> enumeration to specify, for example, that a user can peek but not receive messages, can delete queues or messages, or can set queue properties.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -32,7 +41,7 @@
         <ReturnType>System.Messaging.GenericAccessRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read, write, and execute access.</summary>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -48,7 +57,7 @@
         <ReturnType>System.Messaging.GenericAccessRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Execute access.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +73,7 @@
         <ReturnType>System.Messaging.GenericAccessRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No access.</summary>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -80,7 +89,7 @@
         <ReturnType>System.Messaging.GenericAccessRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Read access.</summary>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -96,7 +105,7 @@
         <ReturnType>System.Messaging.GenericAccessRights</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Write access.</summary>
       </Docs>
     </Member>
   </Members>

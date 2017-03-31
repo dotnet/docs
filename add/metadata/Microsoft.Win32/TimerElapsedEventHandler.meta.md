@@ -1,4 +1,6 @@
 ---
 uid: Microsoft.Win32.TimerElapsedEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

@@ -1,19 +1,19 @@
 ---
 uid: System.Xaml.NamespaceDeclaration
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.NamespaceDeclaration.#ctor(System.String,System.String)
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.NamespaceDeclaration.Namespace
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.NamespaceDeclaration.Prefix
-internalonly: False
+manager: "martinek"
 ---

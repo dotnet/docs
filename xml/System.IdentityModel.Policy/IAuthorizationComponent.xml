@@ -8,8 +8,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a component that is used to authorize users.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Authorization policies and authorization contexts, which implement the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> interface and derive from the <xref:System.IdentityModel.Policy.AuthorizationContext> class, respectively, implement the <xref:System.IdentityModel.Policy.IAuthorizationComponent> interface. The <xref:System.IdentityModel.Policy.IAuthorizationComponent> interface defines a unique identifier for authorization components with the <xref:System.IdentityModel.Policy.IAuthorizationComponent.Id%2A> property, which is generally used for auditing.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Id">
@@ -25,9 +32,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a string that identifies this authorization component.</summary>
+        <value>A string that identifies this authorization component.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.IdentityModel.Policy.IAuthorizationComponent.Id%2A> property must be unique for all objects in the Identity Model.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

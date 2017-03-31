@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates which type of conversion to perform when calling the <see langword="StrConv" /> function.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call the `StrConv` function, you can use the following enumeration members in your code in place of the actual values. The `Conversion` argument takes the `VbStrConv` enumeration members.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Hiragana">
@@ -32,7 +39,7 @@
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Converts Katakana characters in the string to Hiragana characters. Applies to Japanese locale only. This member is equivalent to the Visual Basic constant <see langword="vbHiragana" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Katakana">
@@ -48,7 +55,7 @@
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Converts Hiragana characters in the string to Katakana characters. Applies to Japanese locale only. This member is equivalent to the Visual Basic constant <see langword="vbKatakana" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="LinguisticCasing">
@@ -64,7 +71,7 @@
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Converts the string from file system rules for casing to linguistic rules. This member is equivalent to the Visual Basic constant <see langword="vbLinguisticCasing" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Lowercase">
@@ -80,7 +87,7 @@
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Converts the string to lowercase characters. This member is equivalent to the Visual Basic constant <see langword="vbLowerCase" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Narrow">
@@ -96,7 +103,7 @@
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Converts wide (double-byte) characters in the string to narrow (single-byte) characters. Applies to Asian locales. This member is equivalent to the Visual Basic constant <see langword="vbNarrow" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -112,7 +119,7 @@
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs no conversion.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProperCase">
@@ -128,7 +135,7 @@
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Converts the first letter of every word in the string to uppercase. This member is equivalent to the Visual Basic constant <see langword="vbProperCase" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="SimplifiedChinese">
@@ -144,7 +151,7 @@
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Converts the string to Simplified Chinese characters. This member is equivalent to the Visual Basic constant <see langword="vbSimplifiedChinese" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="TraditionalChinese">
@@ -160,7 +167,7 @@
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Converts the string to Traditional Chinese characters. This member is equivalent to the Visual Basic constant <see langword="vbTraditionalChinese" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Uppercase">
@@ -176,7 +183,7 @@
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Converts the string to uppercase characters. This member is equivalent to the Visual Basic constant <see langword="vbUpperCase" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Wide">
@@ -192,7 +199,7 @@
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Converts narrow (single-byte) characters in the string to wide (double-byte) characters. Applies to Asian locales. This member is equivalent to the Visual Basic constant <see langword="vbWide" />.</summary>
       </Docs>
     </Member>
   </Members>

@@ -29,8 +29,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Windows.Documents.Inline" /> elements. <see cref="T:System.Windows.Documents.InlineCollection" /> defines the allowable child content of the <see cref="T:System.Windows.Documents.Paragraph" />, <see cref="T:System.Windows.Documents.Span" />, and <see cref="T:System.Windows.Controls.TextBlock" /> elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.InlineCollection> creation is only permitted inside an element that owns an <xref:System.Windows.Documents.InlineCollection>, such as a <xref:System.Windows.Controls.TextBlock> or a <xref:System.Windows.Documents.Paragraph>. As such, an <xref:System.Windows.Documents.InlineCollection> cannot be instantiated directly and has no default or overloaded constructor.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -49,8 +56,8 @@
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="text">Text set as the <see cref="P:System.Windows.Documents.Run.Text" /> property for the implicit <see cref="T:System.Windows.Documents.Run" />.</param>
+        <summary>Adds an implicit <see cref="T:System.Windows.Documents.Run" /> element with the given text, supplied as a <see cref="T:System.String" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +77,9 @@
         <Parameter Name="uiElement" Type="System.Windows.UIElement" />
       </Parameters>
       <Docs>
-        <param name="uiElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="uiElement">
+          <see cref="T:System.Windows.UIElement" /> set as the <see cref="P:System.Windows.Documents.InlineUIContainer.Child" /> property for the implicit <see cref="T:System.Windows.Documents.InlineUIContainer" />.</param>
+        <summary>Adds an implicit <see cref="T:System.Windows.Documents.InlineUIContainer" /> with the supplied <see cref="T:System.Windows.UIElement" /> already in it.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +96,8 @@
         <ReturnType>System.Windows.Documents.Inline</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the first <see cref="T:System.Windows.Documents.Inline" /> element within this instance of <see cref="T:System.Windows.Documents.InlineCollection" />.</summary>
+        <value>The first <see cref="T:System.Windows.Documents.Inline" /> element within this instance of <see cref="T:System.Windows.Documents.InlineCollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +114,8 @@
         <ReturnType>System.Windows.Documents.Inline</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the last <see cref="T:System.Windows.Documents.Inline" /> element within this instance of <see cref="T:System.Windows.Documents.InlineCollection" />.</summary>
+        <value>The last <see cref="T:System.Windows.Documents.Inline" /> element within this instance of <see cref="T:System.Windows.Documents.InlineCollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

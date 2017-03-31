@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Controls.InkCanvasSelectionEditingEventHandler
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

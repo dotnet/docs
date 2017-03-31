@@ -12,8 +12,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines an interface that host applications can implement to extend add-in executors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This type is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AssemblyLoaded">
@@ -32,9 +41,18 @@
         <Parameter Name="assemblyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="assemblyName">The name of the assembly that was loaded.</param>
+        <summary>Called after an add-in executor loads an add-in assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AssemblyLoadedFrom">
@@ -53,9 +71,18 @@
         <Parameter Name="assemblyFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyFile">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="assemblyFile">The name of the assembly that was loaded.</param>
+        <summary>Called after an add-in executor loads an add-in assembly from a specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AssemblyLoading">
@@ -74,9 +101,18 @@
         <Parameter Name="assemblyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="assemblyName">The name of the assembly to be loaded.</param>
+        <summary>Called just before an add-in executor loads an add-in assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AssemblyLoadingFrom">
@@ -95,9 +131,18 @@
         <Parameter Name="assemblyFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assemblyFile">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="assemblyFile">The name of the assembly to be loaded.</param>
+        <summary>Called just before an add-in executor loads an add-in assembly from a specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EntryPointStarted">
@@ -116,9 +161,18 @@
         <Parameter Name="entryPoint" Type="System.AddIn.Contract.IContract" />
       </Parameters>
       <Docs>
-        <param name="entryPoint">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="entryPoint">An <see cref="T:System.AddIn.Contract.IContract" /> that represents the entry point that was instantiated.</param>
+        <summary>Called after an add-in executor instantiates the entry point of an add-in assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EntryPointStarting">
@@ -139,11 +193,20 @@
         <Parameter Name="initArgs" Type="System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <param name="startupClass">To be added.</param>
-        <param name="initArgs">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="assemblyName">The name of the add-in assembly.</param>
+        <param name="startupClass">The name of the class that is the entry point for the add-in assembly.</param>
+        <param name="initArgs">An <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" /> that contains the arguments that will be passed to the constructor for <c>startupClass</c>.</param>
+        <summary>Called just before an add-in executor instantiates the entry point in an add-in assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecutorCreated">
@@ -160,8 +223,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Called after an add-in loader creates a new add-in executor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

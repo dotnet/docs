@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines routed commands that are common to window management.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The commands in the <xref:System.Windows.SystemCommands> class represent a set of common commands that manage a <xref:System.Windows.Window>.  The properties in this class represent <xref:System.Windows.Input.RoutedCommand> objects and do not provide the implementation logic for the command. You can provide the logic for a command by binding the command with a <xref:System.Windows.Input.CommandBinding>.  For more information, see [How to: Hook Up a Command to a Control with No Command Support](../Topic/How%20to:%20Hook%20Up%20a%20Command%20to%20a%20Control%20with%20No%20Command%20Support.md). Alternatively, the <xref:System.Windows.SystemCommands> class provides static methods that implement the logic for the specified <xref:System.Windows.Window>. You can pass a static method to a type that implements <xref:System.Windows.Input.ICommand> and that accepts a delegate. For more information, see the example in the <xref:System.Windows.Input.InputBinding> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CloseWindow">
@@ -36,8 +43,8 @@
         <Parameter Name="window" Type="System.Windows.Window" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="window">The window to close.</param>
+        <summary>Closes the specified window.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +61,8 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a command that closes a window.</summary>
+        <value>A command that closes a window.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +87,8 @@
         <Parameter Name="window" Type="System.Windows.Window" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="window">The window to maximize.</param>
+        <summary>Maximizes the specified window.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,8 +105,8 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a command that maximizes a window.</summary>
+        <value>A command that maximizes a window.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +131,8 @@
         <Parameter Name="window" Type="System.Windows.Window" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="window">The window to minimize.</param>
+        <summary>Minimizes the specified window.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +149,8 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a command that maximizes a window.</summary>
+        <value>A command that maximizes a window.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,8 +175,8 @@
         <Parameter Name="window" Type="System.Windows.Window" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="window">The window to restore.</param>
+        <summary>Restores the specified widow.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,8 +193,8 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a command that restores a window.</summary>
+        <value>A command that restores a window.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,9 +220,9 @@
         <Parameter Name="screenLocation" Type="System.Windows.Point" />
       </Parameters>
       <Docs>
-        <param name="window">To be added.</param>
-        <param name="screenLocation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="window">The window to have its system menu displayed.</param>
+        <param name="screenLocation">The location of the system menu.</param>
+        <summary>Displays the system menu for the specified window.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,8 +239,8 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a command that displays the system menu.</summary>
+        <value>A command that displays the system menu.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

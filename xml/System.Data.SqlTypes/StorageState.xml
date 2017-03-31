@@ -15,7 +15,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.Data.SqlTypes.StorageState" /> enumeration is not intended for use as a stand-alone component, but as an enumeration from which other classes derive standard functionality.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,7 +37,7 @@
         <ReturnType>System.Data.SqlTypes.StorageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Buffer size.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stream">
@@ -58,7 +58,7 @@
         <ReturnType>System.Data.SqlTypes.StorageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Stream.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnmanagedBuffer">
@@ -79,7 +79,7 @@
         <ReturnType>System.Data.SqlTypes.StorageState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unmanaged buffer.</summary>
       </Docs>
     </Member>
   </Members>

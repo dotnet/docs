@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.CoerceValueCallback
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

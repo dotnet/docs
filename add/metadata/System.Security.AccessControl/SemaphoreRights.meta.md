@@ -1,4 +1,6 @@
 ---
 uid: System.Security.AccessControl.SemaphoreRights
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

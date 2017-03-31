@@ -1,49 +1,53 @@
 ---
 uid: Microsoft.JScript.ActivationObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ActivationObject.CreateField(System.String,System.Reflection.FieldAttributes,System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ActivationObject.GetMembers(System.Reflection.BindingFlags)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ActivationObject.field_table
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ActivationObject.GetDefaultThisObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ActivationObject.GetLocalField(System.String)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ActivationObject.GetGlobalScope
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ActivationObject.GetMemberValue(System.String,System.Int32)
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.ActivationObject.GetField
 ---
 
 ---
 uid: Microsoft.JScript.ActivationObject.GetField(System.String,System.Int32)
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ActivationObject.GetMember(System.String,System.Reflection.BindingFlags)
-internalonly: False
+ms.author: "mikejo"
 ---

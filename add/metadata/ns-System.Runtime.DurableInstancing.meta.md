@@ -1,4 +1,4 @@
 ---
 uid: System.Runtime.DurableInstancing
-internalonly: False
+manager: "ghogen"
 ---

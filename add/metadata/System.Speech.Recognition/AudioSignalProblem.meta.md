@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Recognition.AudioSignalProblem
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

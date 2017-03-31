@@ -1,19 +1,32 @@
 ---
 uid: System.ServiceModel.Configuration.XPathMessageFilterElementCollection
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.XPathMessageFilterElementCollection.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.XPathMessageFilterElementCollection.ContainsKey(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.XPathMessageFilterElementCollection.Item
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.XPathMessageFilterElementCollection.Item(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

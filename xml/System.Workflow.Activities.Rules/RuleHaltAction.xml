@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Causes the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to stop executing and returns control back to the calling method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Halt action is similar to a break command, although it ends the execution of the <xref:System.Workflow.Activities.Rules.RuleSet>. The Halt action will stop execution of the <xref:System.Workflow.Activities.Rules.RuleSet> when all the actions in the same action block have finished executing.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleHaltAction" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,8 +51,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a deep copy of the current <see cref="T:System.Workflow.Activities.Rules.RuleAction" />.</summary>
+        <returns>A <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> that is identical to this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,9 +72,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Object" />.</param>
+        <summary>Determines whether two object instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +95,11 @@
         <Parameter Name="context" Type="System.Workflow.Activities.Rules.RuleExecution" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The <see cref="T:System.Workflow.Activities.Rules.RuleExecution" /> context used to execute the <see cref="T:System.Workflow.Activities.Rules.RuleAction" />.</param>
+        <summary>Executes the <see cref="T:System.Workflow.Activities.Rules.RuleAction" /> using the specified <see cref="T:System.Workflow.Activities.Rules.RuleExecution" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -106,8 +116,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>The hash code for this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,9 +137,16 @@
         <Parameter Name="validation" Type="System.Workflow.Activities.Rules.RuleValidation" />
       </Parameters>
       <Docs>
-        <param name="validation">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="validation">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> to manage the validation process.</param>
+        <summary>Returns the fields and properties updated by the <see cref="T:System.Workflow.Activities.Rules.RuleAction" />.</summary>
+        <returns>A list of the fields and properties changed by the <see cref="T:System.Workflow.Activities.Rules.RuleAction" />.  
+  
+ <block subset="none" type="note">  
+<para>  
+ Since <see cref="T:System.Workflow.Activities.Rules.RuleHaltAction" /> does not have parameters, the return value will always be an empty list.  
+  
+</para>  
+</block></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,8 +164,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the string "Halt".</summary>
+        <returns>The string "Halt".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,9 +185,9 @@
         <Parameter Name="validator" Type="System.Workflow.Activities.Rules.RuleValidation" />
       </Parameters>
       <Docs>
-        <param name="validator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="validator">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> to manage the validation process.</param>
+        <summary>Returns true, no validation is performed.</summary>
+        <returns>Always returns <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

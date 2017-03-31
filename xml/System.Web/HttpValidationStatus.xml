@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides enumerated values that indicate cache validation status.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.HttpValidationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the request is treated as a cache miss and the page is executed. The cache is not invalidated.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.HttpValidationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the cache is invalid. The item is evicted from the cache and the request is handled as a cache miss.</summary>
       </Docs>
     </Member>
     <Member MemberName="Valid">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.HttpValidationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the cache is valid.</summary>
       </Docs>
     </Member>
   </Members>

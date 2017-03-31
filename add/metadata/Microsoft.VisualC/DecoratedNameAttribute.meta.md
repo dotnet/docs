@@ -1,14 +1,23 @@
 ---
 uid: Microsoft.VisualC.DecoratedNameAttribute
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.DecoratedNameAttribute.#ctor(System.String)
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.DecoratedNameAttribute.#ctor
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
+---
+
+---
+uid: Microsoft.VisualC.DecoratedNameAttribute.#ctor
+ms.author: "mblome"
+manager: "ghogen"
 ---

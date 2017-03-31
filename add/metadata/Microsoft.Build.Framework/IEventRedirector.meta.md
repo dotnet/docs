@@ -1,9 +1,11 @@
 ---
 uid: Microsoft.Build.Framework.IEventRedirector
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.IEventRedirector.ForwardEvent(Microsoft.Build.Framework.BuildEventArgs)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

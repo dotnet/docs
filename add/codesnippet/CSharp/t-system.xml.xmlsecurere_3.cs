@@ -1,1 +1,0 @@
-XmlSecureResolver myResolver = new XmlSecureResolver(new XmlUrlResolver(), "http://myLocalSite/");

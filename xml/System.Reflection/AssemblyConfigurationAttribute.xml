@@ -31,8 +31,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the build configuration, such as retail or debug, for an assembly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In integrated build environments such as Microsoft Visual Studio, build configuration information is usually determined by the development environment settings for the project.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,8 +67,8 @@
         <Parameter Name="configuration" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configuration">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="configuration">The assembly configuration.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyConfigurationAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +97,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets assembly configuration information.</summary>
+        <value>A string containing the assembly configuration information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

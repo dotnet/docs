@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the page size or roll width of the paper or other print media.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used to provide values for the <xref:System.Printing.PageMediaSize.PageMediaSizeName%2A> property. The <xref:System.Printing.PageMediaSize> class, in turn, is used to provide values for the <xref:System.Printing.PrintCapabilities.PageMediaSizeCapability%2A> property where it specifies the various page sizes a printer can use, and the <xref:System.Printing.PrintTicket.PageMediaSize%2A> property, where it instructs a printer which page size to use.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BusinessCard">
@@ -27,7 +34,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Business card</summary>
       </Docs>
     </Member>
     <Member MemberName="CreditCard">
@@ -43,7 +50,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Credit card</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA0">
@@ -59,7 +66,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A0</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA1">
@@ -75,7 +82,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A1</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA10">
@@ -91,7 +98,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A10</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA2">
@@ -107,7 +114,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A2</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA3">
@@ -123,7 +130,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A3</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA3Extra">
@@ -139,7 +146,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A3 Extra</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA3Rotated">
@@ -155,7 +162,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A3 Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA4">
@@ -171,7 +178,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A4</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA4Extra">
@@ -187,7 +194,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A4 Extra</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA4Rotated">
@@ -203,7 +210,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A4 Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA5">
@@ -219,7 +226,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A5</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA5Extra">
@@ -235,7 +242,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A5 Extra</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA5Rotated">
@@ -251,7 +258,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A5 Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA6">
@@ -267,7 +274,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A6</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA6Rotated">
@@ -283,7 +290,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A6 Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA7">
@@ -299,7 +306,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A7</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA8">
@@ -315,7 +322,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A8</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOA9">
@@ -331,7 +338,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A9</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB0">
@@ -347,7 +354,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>B0</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB1">
@@ -363,7 +370,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>B1</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB10">
@@ -379,7 +386,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>B10</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB2">
@@ -395,7 +402,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>B2</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB3">
@@ -411,7 +418,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>B3</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB4">
@@ -427,7 +434,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>B4</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB4Envelope">
@@ -443,7 +450,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>B4 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB5Envelope">
@@ -459,7 +466,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>B5 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB5Extra">
@@ -475,7 +482,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>B5 Extra</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB7">
@@ -491,7 +498,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>B7</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB8">
@@ -507,7 +514,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>B8</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOB9">
@@ -523,7 +530,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>B9</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC0">
@@ -539,7 +546,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C0</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC1">
@@ -555,7 +562,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C1</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC10">
@@ -571,7 +578,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C10</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC2">
@@ -587,7 +594,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C2</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC3">
@@ -603,7 +610,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C3</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC3Envelope">
@@ -619,7 +626,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C3 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC4">
@@ -635,7 +642,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C4</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC4Envelope">
@@ -651,7 +658,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C4 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC5">
@@ -667,7 +674,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C5</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC5Envelope">
@@ -683,7 +690,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C5 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC6">
@@ -699,7 +706,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C6</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC6C5Envelope">
@@ -715,7 +722,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C6C5 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC6Envelope">
@@ -731,7 +738,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C6 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC7">
@@ -747,7 +754,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C7</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC8">
@@ -763,7 +770,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C8</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOC9">
@@ -779,7 +786,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C9</summary>
       </Docs>
     </Member>
     <Member MemberName="ISODLEnvelope">
@@ -795,7 +802,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>DL Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="ISODLEnvelopeRotated">
@@ -811,7 +818,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>DL Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="ISOSRA3">
@@ -827,7 +834,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>SRA 3</summary>
       </Docs>
     </Member>
     <Member MemberName="Japan2LPhoto">
@@ -843,7 +850,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>2L Photo</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanChou3Envelope">
@@ -859,7 +866,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chou 3 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanChou3EnvelopeRotated">
@@ -875,7 +882,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chou 3 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanChou4Envelope">
@@ -891,7 +898,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chou 4 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanChou4EnvelopeRotated">
@@ -907,7 +914,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Chou 4 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanDoubleHagakiPostcard">
@@ -923,7 +930,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Double Hagaki Postcard</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanDoubleHagakiPostcardRotated">
@@ -939,7 +946,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Double Hagaki Postcard Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanHagakiPostcard">
@@ -955,7 +962,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Hagaki Postcard</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanHagakiPostcardRotated">
@@ -971,7 +978,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Hagaki Postcard Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanKaku2Envelope">
@@ -987,7 +994,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Kaku 2 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanKaku2EnvelopeRotated">
@@ -1003,7 +1010,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Kaku 2 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanKaku3Envelope">
@@ -1019,7 +1026,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Kaku 3 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanKaku3EnvelopeRotated">
@@ -1035,7 +1042,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Kaku 3 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanLPhoto">
@@ -1051,7 +1058,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>L Photo</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanQuadrupleHagakiPostcard">
@@ -1067,7 +1074,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Quadruple Hagaki Postcard</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou1Envelope">
@@ -1083,7 +1090,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>You 1 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou2Envelope">
@@ -1099,7 +1106,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>You 2 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou3Envelope">
@@ -1115,7 +1122,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>You 3 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou4Envelope">
@@ -1131,7 +1138,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>You 4 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou4EnvelopeRotated">
@@ -1147,7 +1154,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>You 4 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou6Envelope">
@@ -1163,7 +1170,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>You 6 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="JapanYou6EnvelopeRotated">
@@ -1179,7 +1186,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>You 6 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB0">
@@ -1195,7 +1202,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B0</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB1">
@@ -1211,7 +1218,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B1</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB10">
@@ -1227,7 +1234,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B10</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB2">
@@ -1243,7 +1250,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B2</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB3">
@@ -1259,7 +1266,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B3</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB4">
@@ -1275,7 +1282,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B4</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB4Rotated">
@@ -1291,7 +1298,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B4 Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB5">
@@ -1307,7 +1314,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B5</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB5Rotated">
@@ -1323,7 +1330,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B5 Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB6">
@@ -1339,7 +1346,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B6</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB6Rotated">
@@ -1355,7 +1362,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B6 Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB7">
@@ -1371,7 +1378,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B7</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB8">
@@ -1387,7 +1394,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B8</summary>
       </Docs>
     </Member>
     <Member MemberName="JISB9">
@@ -1403,7 +1410,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Japanese Industrial Standard B9</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica10x11">
@@ -1419,7 +1426,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>10 x 11</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica10x12">
@@ -1435,7 +1442,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>10 x 12</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica10x14">
@@ -1451,7 +1458,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>10 x 14</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica11x17">
@@ -1467,7 +1474,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>11 x 17</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica14x17">
@@ -1483,7 +1490,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>14 x 17</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica4x6">
@@ -1499,7 +1506,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>4 x 6</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica4x8">
@@ -1515,7 +1522,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>4 x 8</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica5x7">
@@ -1531,7 +1538,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>5 x 7</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica8x10">
@@ -1547,7 +1554,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>8 x 10</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmerica9x11">
@@ -1563,7 +1570,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>9 x 11</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaArchitectureASheet">
@@ -1579,7 +1586,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Architecture A Sheet</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaArchitectureBSheet">
@@ -1595,7 +1602,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Architecture B Sheet</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaArchitectureCSheet">
@@ -1611,7 +1618,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Architecture C Sheet</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaArchitectureDSheet">
@@ -1627,7 +1634,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Architecture D Sheet</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaArchitectureESheet">
@@ -1643,7 +1650,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Architecture E Sheet</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaCSheet">
@@ -1659,7 +1666,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>C Sheet</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaDSheet">
@@ -1675,7 +1682,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>D Sheet</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaESheet">
@@ -1691,7 +1698,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>E Sheet</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaExecutive">
@@ -1707,7 +1714,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Executive</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaGermanLegalFanfold">
@@ -1723,7 +1730,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>German Legal Fanfold</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaGermanStandardFanfold">
@@ -1739,7 +1746,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>German Standard Fanfold</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaLegal">
@@ -1755,7 +1762,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Legal</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaLegalExtra">
@@ -1771,7 +1778,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Legal Extra</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaLetter">
@@ -1787,7 +1794,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Letter</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaLetterExtra">
@@ -1803,7 +1810,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Letter Extra</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaLetterPlus">
@@ -1819,7 +1826,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Letter Plus</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaLetterRotated">
@@ -1835,7 +1842,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Letter Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaMonarchEnvelope">
@@ -1851,7 +1858,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Monarch Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNote">
@@ -1867,7 +1874,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Note</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNumber10Envelope">
@@ -1883,7 +1890,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>\#10 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNumber10EnvelopeRotated">
@@ -1899,7 +1906,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>\#10 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNumber11Envelope">
@@ -1915,7 +1922,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>\#11 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNumber12Envelope">
@@ -1931,7 +1938,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>\#12 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNumber14Envelope">
@@ -1947,7 +1954,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>\#14 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaNumber9Envelope">
@@ -1963,7 +1970,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>\#9 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaPersonalEnvelope">
@@ -1979,7 +1986,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Personal Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaQuarto">
@@ -1995,7 +2002,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Quarto</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaStatement">
@@ -2011,7 +2018,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Statement</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaSuperA">
@@ -2027,7 +2034,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Super A</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaSuperB">
@@ -2043,7 +2050,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Super B</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaTabloid">
@@ -2059,7 +2066,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tabloid</summary>
       </Docs>
     </Member>
     <Member MemberName="NorthAmericaTabloidExtra">
@@ -2075,7 +2082,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tabloid Extra</summary>
       </Docs>
     </Member>
     <Member MemberName="OtherMetricA3Plus">
@@ -2091,7 +2098,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A3 Plus</summary>
       </Docs>
     </Member>
     <Member MemberName="OtherMetricA4Plus">
@@ -2107,7 +2114,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A4 Plus</summary>
       </Docs>
     </Member>
     <Member MemberName="OtherMetricFolio">
@@ -2123,7 +2130,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Folio</summary>
       </Docs>
     </Member>
     <Member MemberName="OtherMetricInviteEnvelope">
@@ -2139,7 +2146,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Invite Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="OtherMetricItalianEnvelope">
@@ -2155,7 +2162,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Italian Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC10Envelope">
@@ -2171,7 +2178,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #10 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC10EnvelopeRotated">
@@ -2187,7 +2194,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #10 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC16K">
@@ -2203,7 +2210,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China 16K</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC16KRotated">
@@ -2219,7 +2226,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China 16K Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC1Envelope">
@@ -2235,7 +2242,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #1 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC1EnvelopeRotated">
@@ -2251,7 +2258,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #1 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC2Envelope">
@@ -2267,7 +2274,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #2 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC2EnvelopeRotated">
@@ -2283,7 +2290,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #2 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC32K">
@@ -2299,7 +2306,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China 32K</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC32KBig">
@@ -2315,7 +2322,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China 32K Big</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC32KRotated">
@@ -2331,7 +2338,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China 32K Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC3Envelope">
@@ -2347,7 +2354,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #3 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC3EnvelopeRotated">
@@ -2363,7 +2370,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #3 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC4Envelope">
@@ -2379,7 +2386,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #4 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC4EnvelopeRotated">
@@ -2395,7 +2402,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #4 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC5Envelope">
@@ -2411,7 +2418,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #5 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC5EnvelopeRotated">
@@ -2427,7 +2434,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #5 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC6Envelope">
@@ -2443,7 +2450,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #6 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC6EnvelopeRotated">
@@ -2459,7 +2466,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #6 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC7Envelope">
@@ -2475,7 +2482,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #7 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC7EnvelopeRotated">
@@ -2491,7 +2498,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #7 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC8Envelope">
@@ -2507,7 +2514,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #8 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC8EnvelopeRotated">
@@ -2523,7 +2530,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #8 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC9Envelope">
@@ -2539,7 +2546,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #9 Envelope</summary>
       </Docs>
     </Member>
     <Member MemberName="PRC9EnvelopeRotated">
@@ -2555,7 +2562,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>People's Republic of China #9 Envelope Rotated</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll04Inch">
@@ -2571,7 +2578,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>4-inch wide roll</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll06Inch">
@@ -2587,7 +2594,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>6-inch wide roll</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll08Inch">
@@ -2603,7 +2610,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>8-inch wide roll</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll12Inch">
@@ -2619,7 +2626,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>12-inch wide roll</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll15Inch">
@@ -2635,7 +2642,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>15-inch wide roll</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll18Inch">
@@ -2651,7 +2658,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>18-inch wide roll</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll22Inch">
@@ -2667,7 +2674,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>22-inch wide roll</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll24Inch">
@@ -2683,7 +2690,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>24-inch wide roll</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll30Inch">
@@ -2699,7 +2706,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>30-inch wide roll</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll36Inch">
@@ -2715,7 +2722,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>36-inch wide roll</summary>
       </Docs>
     </Member>
     <Member MemberName="Roll54Inch">
@@ -2731,7 +2738,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>54-inch wide roll</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -2747,7 +2754,7 @@
         <ReturnType>System.Printing.PageMediaSizeName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unknown paper size</summary>
       </Docs>
     </Member>
   </Members>

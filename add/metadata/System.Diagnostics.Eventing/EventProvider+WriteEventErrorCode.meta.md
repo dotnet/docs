@@ -1,4 +1,5 @@
 ---
 uid: System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode
-internalonly: False
+ms.author: "jgalasyn"
+manager: "ghogen"
 ---

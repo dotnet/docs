@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.UpdatePanelControlTrigger
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.UpdatePanelControlTrigger.ControlID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.UpdatePanelControlTrigger.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.UpdatePanelControlTrigger.FindTargetControl(System.Boolean)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

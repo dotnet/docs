@@ -1,24 +1,24 @@
 ---
 uid: System.Management.Instrumentation.ManagementEntityAttribute
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementEntityAttribute.Name
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementEntityAttribute.Singleton
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementEntityAttribute.External
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.Instrumentation.ManagementEntityAttribute.#ctor
-internalonly: False
+manager: "jillfra"
 ---

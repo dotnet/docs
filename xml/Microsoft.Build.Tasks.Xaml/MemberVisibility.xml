@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the member visibility options.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The assembly visibility.</summary>
       </Docs>
     </Member>
     <Member MemberName="Family">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The family visibility.</summary>
       </Docs>
     </Member>
     <Member MemberName="FamilyAndAssembly">
@@ -59,7 +59,7 @@
         <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The family and assembly visibility.</summary>
       </Docs>
     </Member>
     <Member MemberName="FamilyOrAssembly">
@@ -75,7 +75,7 @@
         <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The family or assembly visibility.</summary>
       </Docs>
     </Member>
     <Member MemberName="Private">
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The private visibility.</summary>
       </Docs>
     </Member>
     <Member MemberName="Public">
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The public visibility.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,19 +1,23 @@
 ---
 uid: System.Web.UI.WebControls.QueryableDataSourceEditData
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.QueryableDataSourceEditData.OriginalDataObject
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.QueryableDataSourceEditData.NewDataObject
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.WebControls.QueryableDataSourceEditData.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

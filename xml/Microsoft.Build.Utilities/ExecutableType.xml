@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumeration to express the type of executable being wrapped by Tracker.exe</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>Microsoft.Build.Utilities.ExecutableType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A managed executable specifically marked as 32-bit</summary>
       </Docs>
     </Member>
     <Member MemberName="Managed64Bit">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Build.Utilities.ExecutableType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A managed executable specifically marked as 64-bit</summary>
       </Docs>
     </Member>
     <Member MemberName="ManagedIL">
@@ -59,7 +59,7 @@
         <ReturnType>Microsoft.Build.Utilities.ExecutableType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A managed executable without a specified bitness</summary>
       </Docs>
     </Member>
     <Member MemberName="Native32Bit">
@@ -75,7 +75,7 @@
         <ReturnType>Microsoft.Build.Utilities.ExecutableType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>32-bit native executable</summary>
       </Docs>
     </Member>
     <Member MemberName="Native64Bit">
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Build.Utilities.ExecutableType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>64-bit native executable</summary>
       </Docs>
     </Member>
     <Member MemberName="SameAsCurrentProcess">
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.Build.Utilities.ExecutableType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Use the same bitness as the currently running executable.</summary>
       </Docs>
     </Member>
   </Members>

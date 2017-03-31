@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how often to emit type information.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>System.Runtime.Serialization.EmitTypeInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Always to emit type information.</summary>
       </Docs>
     </Member>
     <Member MemberName="AsNeeded">
@@ -70,7 +70,7 @@
         <ReturnType>System.Runtime.Serialization.EmitTypeInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>As needed emit type information.</summary>
       </Docs>
     </Member>
     <Member MemberName="Never">
@@ -95,7 +95,7 @@
         <ReturnType>System.Runtime.Serialization.EmitTypeInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Never to emit type information.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,6 @@
 ---
 uid: System.ComponentModel.Design.Data.QueryBuilderMode
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

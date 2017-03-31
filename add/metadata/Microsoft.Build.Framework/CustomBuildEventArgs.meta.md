@@ -1,24 +1,35 @@
 ---
 uid: Microsoft.Build.Framework.CustomBuildEventArgs
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.CustomBuildEventArgs.#ctor(System.String,System.String,System.String,System.DateTime,System.Object[])
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.CustomBuildEventArgs.#ctor(System.String,System.String,System.String)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.CustomBuildEventArgs.#ctor
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.CustomBuildEventArgs.#ctor
+ms.author: "susanno"
+manager: "douge"
 ---
 
 ---
 uid: Microsoft.Build.Framework.CustomBuildEventArgs.#ctor(System.String,System.String,System.String,System.DateTime)
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

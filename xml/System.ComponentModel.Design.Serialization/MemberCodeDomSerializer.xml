@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the base class for serializing a reflection primitive within the object graph.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer> class is a "meta" serializer; that is, is a serializer that does not serialize part of the object graph, but instead serializes a reflection primitive within the object graph. For example, a <xref:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer> would be associated with a <xref:System.ComponentModel.PropertyDescriptor> in order for it to serialize a property. <xref:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer> objects enable constructs, such as properties and events, to be logical, rather than requiring them to have a physical backing in code.  
+  
+ Unlike <xref:System.ComponentModel.Design.Serialization.CodeDomSerializer> classes, <xref:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer> objects must be able to deserialize.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,12 +58,19 @@
         <Parameter Name="statements" Type="System.CodeDom.CodeStatementCollection" />
       </Parameters>
       <Docs>
-        <param name="manager">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="descriptor">To be added.</param>
-        <param name="statements">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="manager">The serialization manager to use for serialization.</param>
+        <param name="value">The object to which the member is bound.</param>
+        <param name="descriptor">The descriptor of the member to serialize.</param>
+        <param name="statements">The <see cref="T:System.CodeDom.CodeStatementCollection" /> into which <c>descriptor</c> is serialized.</param>
+        <summary>Serializes the given member descriptor on the given value to a statement collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method actually performs the serialization. When the member is serialized the necessary statements will be added to the statements collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerialize">
@@ -75,12 +91,20 @@
         <Parameter Name="descriptor" Type="System.ComponentModel.MemberDescriptor" />
       </Parameters>
       <Docs>
-        <param name="manager">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="descriptor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="manager">The serialization manager to use for serialization.</param>
+        <param name="value">The object to which the member is bound.</param>
+        <param name="descriptor">The descriptor of the member to serialize.</param>
+        <summary>Determines if the given member should be serialized.</summary>
+        <returns>
+          <see langword="true" />, if the member described by <paramref name="descriptor" /> should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns `true` if the given member descriptor should be serialized, or `false` if there is no need to serialize the member.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

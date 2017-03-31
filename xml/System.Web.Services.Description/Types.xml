@@ -17,8 +17,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes data type definitions relevant to exchanged messages. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is a container for data type definitions for the XML Web service. Note especially that this class does not represent a collection of instances of the <xref:System.Type> class, as its name might imply. Instead, it corresponds to the Web Services Description Language (WSDL) `<types>` element enclosed by the `<definitions>` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+ The `Types` class has two read-only properties, <xref:System.Web.Services.Description.Types.Schemas%2A> and <xref:System.Web.Services.Description.Types.Extensions%2A>, representing the collections of data type definitions available to an XML Web service.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.Types" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,9 +65,16 @@
         <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtension" /> elements included in the XML Web service. This property is read-only.</summary>
+        <value>A collection of extension elements included in the XML Web service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the default implementation of the <xref:System.Web.Services.Description.Types> class, this property returns an empty collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Schemas">
@@ -80,9 +96,16 @@
         <ReturnType>System.Xml.Serialization.XmlSchemas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of XML schemas included as data type definitions for the XML Web service. This property is read-only.</summary>
+        <value>An <see cref="T:System.Xml.Serialization.XmlSchemas" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the default implementation of the <xref:System.Web.Services.Description.Types> class, this property returns an empty collection.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

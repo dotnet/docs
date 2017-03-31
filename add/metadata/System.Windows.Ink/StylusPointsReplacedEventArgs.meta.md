@@ -1,19 +1,27 @@
 ---
 uid: System.Windows.Ink.StylusPointsReplacedEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StylusPointsReplacedEventArgs.#ctor(System.Windows.Input.StylusPointCollection,System.Windows.Input.StylusPointCollection)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StylusPointsReplacedEventArgs.NewStylusPoints
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StylusPointsReplacedEventArgs.PreviousStylusPoints
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

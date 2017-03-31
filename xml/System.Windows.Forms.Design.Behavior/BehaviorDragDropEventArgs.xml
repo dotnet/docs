@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.Design.Behavior.BehaviorService.BeginDrag" /> and <see cref="E:System.Windows.Forms.Design.Behavior.BehaviorService.EndDrag" /> events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="dragComponents" Type="System.Collections.ICollection" />
       </Parameters>
       <Docs>
-        <param name="dragComponents">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dragComponents">The <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.ComponentModel.IComponent" /> objects currently being dragged.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorDragDropEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the list of <see cref="T:System.ComponentModel.IComponent" /> objects currently being dragged.</summary>
+        <value>The <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.ComponentModel.IComponent" /> objects currently being dragged.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

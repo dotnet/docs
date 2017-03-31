@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A factory that provides instances of <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" /> in managed hosting environments where the host instance is created dynamically in response to incoming messages.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Activation.WorkflowServiceHostFactory" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,10 +47,10 @@
         <Parameter Name="baseAddresses" Type="System.Uri[]" />
       </Parameters>
       <Docs>
-        <param name="constructorString">To be added.</param>
-        <param name="baseAddresses">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="constructorString">The name of the XAML file that defines the workflow service or the service type.</param>
+        <param name="baseAddresses">A list of addresses that serves as a reference point for other addresses.</param>
+        <summary>Creates a new service host.</summary>
+        <returns>A service host base instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +71,10 @@
         <Parameter Name="baseAddresses" Type="System.Uri[]" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="baseAddresses">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="activity">The workflow definition.</param>
+        <param name="baseAddresses">A list of addresses that serves as a reference point for other addresses.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" /> class using the specified <see cref="T:System.Activities.Activity" /> and base addresses.</summary>
+        <returns>A workflow service host instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,10 +95,10 @@
         <Parameter Name="baseAddresses" Type="System.Uri[]" />
       </Parameters>
       <Docs>
-        <param name="service">To be added.</param>
-        <param name="baseAddresses">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="service">The workflow service that becomes the host.</param>
+        <param name="baseAddresses">A list of addresses that serves as a reference point for other addresses.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" /> class with the specified <see cref="T:System.ServiceModel.Activities.WorkflowService" /> and base addresses.</summary>
+        <returns>A workflow service host instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

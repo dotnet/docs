@@ -1,4 +1,6 @@
 ---
 uid: System.Linq
-internalonly: False
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---

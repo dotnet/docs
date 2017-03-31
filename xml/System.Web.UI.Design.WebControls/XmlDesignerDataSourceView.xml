@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a design-time view of data for the <see cref="T:System.Web.UI.Design.WebControls.XmlDataSourceDesigner" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <param name="viewName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The parent <see cref="T:System.Web.UI.Design.WebControls.XmlDataSourceDesigner" />.</param>
+        <param name="viewName">The name of the view in the data source.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.XmlDesignerDataSourceView" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,10 +52,11 @@
         <Parameter Name="isSampleData" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="minimumRows">To be added.</param>
-        <param name="isSampleData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="minimumRows">The minimum number of rows to return.</param>
+        <param name="isSampleData">
+          <see langword="true" /> to indicate that the returned data is sample data; <see langword="false" /> to indicate that the returned data is live data.</param>
+        <summary>Generates design-time data that matches the schema of the associated data source control and returns a value indicating whether the data is sample or real data.</summary>
+        <returns>A <see cref="T:System.Web.UI.DataSourceView" /> object containing data to display at design time.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +73,8 @@
         <ReturnType>System.Web.UI.Design.IDataSourceViewSchema</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a schema that describes the data source view that is represented by this view object.</summary>
+        <value>An <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

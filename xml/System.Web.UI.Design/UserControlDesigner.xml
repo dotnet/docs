@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides designer functionality for user controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is no developer advantage to creating your own designer derived from <xref:System.Web.UI.Design.UserControlDesigner>. To enhance the design-time experience for a custom control, derive your control from <xref:System.Web.UI.WebControls.CompositeControl> and your designer from <xref:System.Web.UI.Design.WebControls.CompositeControlDesigner>. In that case, you would not use an .ascx file for your ASP.NET markup.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.UserControlDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +50,16 @@
         <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the action list collection for the user control designer.</summary>
+        <value>A <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> that contains the action list tags for the control designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation creates two <xref:System.ComponentModel.Design.DesignerActionMethodItem> objects in the collection: **Edit User Control** and **Refresh**.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowResize">
@@ -61,8 +75,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the user control can be resized.</summary>
+        <value>
+          <see langword="false" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,9 +95,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the HTML markup that is used to represent the user control at design time.</summary>
+        <returns>The markup that is used to represent the control at design time.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.Control.ID" /> property of a child control is empty or <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

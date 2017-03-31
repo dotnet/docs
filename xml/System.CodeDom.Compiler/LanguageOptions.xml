@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines identifiers that indicate special features of a language.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.CodeDom.Compiler.CodeDomProvider> has a <xref:System.CodeDom.Compiler.CodeDomProvider.LanguageOptions%2A> property that is used to indicate certain characteristics of the programming language supported by the provider. The meaning of a <xref:System.CodeDom.Compiler.LanguageOptions> identifier can be relevant to properly generating, compiling, and reading the language.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CaseInsensitive">
@@ -32,7 +39,7 @@
         <ReturnType>System.CodeDom.Compiler.LanguageOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The language is case-insensitive.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -48,7 +55,7 @@
         <ReturnType>System.CodeDom.Compiler.LanguageOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The language has default characteristics.</summary>
       </Docs>
     </Member>
   </Members>

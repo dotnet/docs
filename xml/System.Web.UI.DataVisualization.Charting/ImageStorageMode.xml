@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the mode of storing chart images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode> enumeration is used with the <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> control. It defines the type of storage that will be used when the chart is rendered as an image.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="UseHttpHandler">
@@ -27,7 +34,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ImageStorageMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> uses an HTTP handler to store images to memory or a file.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseImageLocation">
@@ -43,7 +50,7 @@
         <ReturnType>System.Web.UI.DataVisualization.Charting.ImageStorageMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> stores the image in a temporary file at the specified location.</summary>
       </Docs>
     </Member>
   </Members>

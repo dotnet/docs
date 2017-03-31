@@ -1,4 +1,4 @@
 ---
 uid: System.Messaging.MessageQueueTransactionType
-internalonly: False
+manager: "tyoung"
 ---

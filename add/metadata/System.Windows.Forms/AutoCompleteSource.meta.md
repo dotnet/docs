@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Forms.AutoCompleteSource
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

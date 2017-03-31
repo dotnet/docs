@@ -1,1 +1,0 @@
-Windows Presentation Foundation (WPF)

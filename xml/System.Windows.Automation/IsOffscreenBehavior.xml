@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how the <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> property is determined.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,8 @@
         <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> is calculated based on the <see cref="P:System.Windows.UIElement.IsVisible" /> property.</summary>
       </Docs>
     </Member>
     <Member MemberName="FromClip">
@@ -43,7 +44,8 @@
         <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> is calculated based on clip regions.</summary>
       </Docs>
     </Member>
     <Member MemberName="Offscreen">
@@ -59,7 +61,8 @@
         <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> is <see langword="true" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Onscreen">
@@ -75,7 +78,8 @@
         <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> is <see langword="false" />.</summary>
       </Docs>
     </Member>
   </Members>

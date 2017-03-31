@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlDocument" /> class is an abstract class to construct or manipulate a DSML document. It is the base class for both <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> and <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" />. <see cref="T:System.DirectoryServices.Protocols.DsmlDocument" /> supports collections and indexes. Each item in its collection is an object derived from <see cref="T:System.DirectoryServices.Protocols.DirectoryOperation" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlDocument.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlDocument" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,8 +44,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlDocument.ToXml" /> method transforms this <see cref="T:System.DirectoryServices.Protocols.DsmlDocument" /> object into a <see cref="T:System.Xml.XmlDocument" /> object.</summary>
+        <returns>The transformed <see cref="T:System.Xml.XmlDocument" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

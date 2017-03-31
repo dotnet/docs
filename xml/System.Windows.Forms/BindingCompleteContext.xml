@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the direction of the binding operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingCompleteContext> enumeration is used by the <xref:System.Windows.Forms.BindingCompleteEventArgs> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ControlUpdate">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.BindingCompleteContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An indication that the control property value is being updated from the data source.</summary>
       </Docs>
     </Member>
     <Member MemberName="DataSourceUpdate">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.BindingCompleteContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An indication that the data source value is being updated from the control property.</summary>
       </Docs>
     </Member>
   </Members>

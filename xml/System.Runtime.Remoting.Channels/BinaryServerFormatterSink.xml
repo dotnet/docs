@@ -15,8 +15,26 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the implementation for a server formatter sink that uses the <see cref="T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The request stream propagates from the server transport sink through the server channel sinks until it reaches the appropriate formatter sink. The formatter sink deserializes the message and passes it through the pipeline. A special dispatch sink is inserted at the end of the channel sink chain by the <xref:System.Runtime.Remoting.Channels.ChannelServices.CreateServerChannelSinkChain%2A?displayProperty=fullName> method, which is called by server channels to create the server channel sink chains. When the message reaches the dispatch sink, the dispatch sink passes the message to the remoting infrastructure.  
+  
+ The following table shows the sink configuration properties that can be specified for the current sink provider.  
+  
+|Property|Description|  
+|--------------|-----------------|  
+|`includeVersions`|Specifies whether the formatter will include versioning information. Values `true` or `false`.|  
+|`strictBinding`|Indicates that a receiving formatter will first try to identify the type using complete version information if it exists before using only the type name and assembly name without version information. Values `true` or `false`. The default for both system-provided formatters is `false`.|  
+|`typeFilterLevel`|A string value that specifies the level of automatic deserialization that a server channel attempts. Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [&#91;\<topic://cpconAutomaticDeserializationInNETRemoting>&#93;](http://msdn.microsoft.com/en-us/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).<br /><br /> This property is supported only by the .NET Framework version 1.1 on the following platforms: Windows 98, Windows NT 4.0, Windows Millennium Edition, Windows 2000, Windows XP Home Edition, Windows XP Professional, and Windows Server 2003 family.|  
+  
+> [!IMPORTANT]
+>  Using an instance of this object with untrusted data or across an unsecure channel is a security risk. Use this object only with trusted data and across a secure channel. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,10 +52,10 @@
         <Parameter Name="receiver" Type="System.Runtime.Remoting.Channels.IChannelReceiver" />
       </Parameters>
       <Docs>
-        <param name="protocol">To be added.</param>
-        <param name="nextSink">To be added.</param>
-        <param name="receiver">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="protocol">The <see cref="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSink.Protocol" /> that will be used with the current instance of <see cref="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSink" />.</param>
+        <param name="nextSink">The next sink in the channel sink chain.</param>
+        <param name="receiver">Indicates the channel that will receive the messages that are serialized by the new instance of <see cref="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSink" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSink" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,12 +79,12 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="sinkStack">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="msg">To be added.</param>
-        <param name="headers">To be added.</param>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sinkStack">A stack of sinks that is leading back to the server transport sink.</param>
+        <param name="state">Information that is associated with the current sink, generated on the request side, and needed on the response side.</param>
+        <param name="msg">The response message.</param>
+        <param name="headers">The headers to add to the return message that is heading to the client.</param>
+        <param name="stream">The stream that is heading back to the transport sink.</param>
+        <summary>Requests processing of the response from a method call that is sent asynchronously.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,13 +107,20 @@
         <Parameter Name="headers" Type="System.Runtime.Remoting.Channels.ITransportHeaders" />
       </Parameters>
       <Docs>
-        <param name="sinkStack">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="msg">To be added.</param>
-        <param name="headers">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sinkStack">A stack of sinks that is leading back to the server transport sink.</param>
+        <param name="state">Information that is associated with the current sink, generated on the request side, and needed on the response side.</param>
+        <param name="msg">The response message to serialize.</param>
+        <param name="headers">The headers to put in the response stream to the client.</param>
+        <summary>Returns the <see cref="T:System.IO.Stream" /> onto which the provided response message is to be serialized.</summary>
+        <returns>The <see cref="T:System.IO.Stream" /> onto which the provided response message is to be serialized.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when a response stream needs to be created.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NextChannelSink">
@@ -111,8 +136,8 @@
         <ReturnType>System.Runtime.Remoting.Channels.IServerChannelSink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the next <see cref="T:System.Runtime.Remoting.Channels.IServerChannelSink" /> in the sink chain.</summary>
+        <value>The next <see cref="T:System.Runtime.Remoting.Channels.IServerChannelSink" /> in the sink chain.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,16 +163,29 @@
         <Parameter Name="responseStream" Type="System.IO.Stream&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="sinkStack">To be added.</param>
-        <param name="requestMsg">To be added.</param>
-        <param name="requestHeaders">To be added.</param>
-        <param name="requestStream">To be added.</param>
-        <param name="responseMsg">To be added.</param>
-        <param name="responseHeaders">To be added.</param>
-        <param name="responseStream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sinkStack">A stack of channel sinks that called the current sink.</param>
+        <param name="requestMsg">The message that contains the request.</param>
+        <param name="requestHeaders">Headers that are retrieved from the incoming message from the client.</param>
+        <param name="requestStream">The stream that needs to be processed and passed on to the deserialization sink.</param>
+        <param name="responseMsg">When this method returns, contains a <see cref="T:System.Runtime.Remoting.Messaging.IMessage" /> that holds the response message. This parameter is passed uninitialized.</param>
+        <param name="responseHeaders">When this method returns, contains a <see cref="T:System.Runtime.Remoting.Channels.ITransportHeaders" /> that holds the headers to add to the return message that is heading to the client. This parameter is passed uninitialized.</param>
+        <param name="responseStream">When this method returns, contains a <see cref="T:System.IO.Stream" /> that is heading to the transport sink. This parameter is passed uninitialized.</param>
+        <summary>Requests message processing from the current sink.</summary>
+        <returns>A <see cref="T:System.Runtime.Remoting.Channels.ServerProcessing" /> status value that provides information about how the message was processed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The proxy's job is to convert a method call that is invoked on it into a message. The message, which implements the <xref:System.Runtime.Remoting.Messaging.IMessage> interface, is passed from the client end to the server end by invoking <xref:System.Runtime.Remoting.Channels.IServerChannelSink.ProcessMessage%2A> on message sink objects. Message sinks are chained together, which means that every message sink is responsible for calling <xref:System.Runtime.Remoting.Channels.IServerChannelSink.ProcessMessage%2A> on the next message sink after the current message sink has finished its work. For instance, a synchronization-related message sink might cause a lock to be acquired or released and delegated to the downstream message sink.  
+  
+ When the formatter channel sink gets a message that needs to be sent over the channel, it calls <xref:System.Runtime.Remoting.Messaging.IMessageSink.SyncProcessMessage%2A>, passing the message as a parameter. The formatter sink then creates the transport header array and calls <xref:System.Runtime.Remoting.Channels.IClientChannelSink.GetRequestStream%2A> on the formatter sink. This call is forwarded down the sink chain, and any sink can create a request stream that will be passed back to the formatter sink. After this call returns, the message is serialized, <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A> is called on the first chain in the sink chain, and the message is passed to the channel sinks.  
+  
+ After the channel sinks get the message, they can write data to the stream, add headers to the header array, and add themselves to the sink stack before forwarding the call to the next sink. When the call reaches the transport sink at the end of the chain, the transport sink sends the headers and serialized message over the channel to the server, where the process is reversed.  
+  
+ When the message gets to the server side, the transport sink retrieves the headers and serialized message from the stream and forwards these through the sink chain until the formatter sink is reached. The formatter sink then deserializes the message and forwards it to the remoting infrastructure. Then, the remoting infrastructure turns the message into a method call, and calls the server object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -163,9 +201,16 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Collections.IDictionary" /> of properties for the current channel sink.</summary>
+        <value>A <see cref="T:System.Collections.IDictionary" /> of properties for the current channel sink.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [&#91;\<topic://cpconchannelformatterconfigurationproperties>&#93;](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TypeFilterLevel">
@@ -186,9 +231,16 @@
         <ReturnType>System.Runtime.Serialization.Formatters.TypeFilterLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see langword="TypeFilterLevel" /> value of automatic deserialization that the <see langword="BinaryServerFormatterSink" /> performs.</summary>
+        <value>The <see langword="TypeFilterLevel" /> that represents the current automatic deserialization level.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Supported values are `Low` (the default) and `Full`. For details about deserialization levels, see [Automatic Deserialization in .NET Remoting](http://msdn.microsoft.com/en-us/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

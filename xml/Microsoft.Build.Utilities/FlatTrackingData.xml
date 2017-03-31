@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class is used to track file dependencies during a build.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,9 +29,9 @@
         <Parameter Name="skipMissingFiles" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="tlogFiles">To be added.</param>
-        <param name="skipMissingFiles">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="tlogFiles">The .write. tlog files to interpret</param>
+        <param name="skipMissingFiles">Ignore files that do not exist on disk</param>
+        <summary>Constructor</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +49,9 @@
         <Parameter Name="missingFileTimeUtc" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="tlogFiles">To be added.</param>
-        <param name="missingFileTimeUtc">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="tlogFiles">The .write. tlog files to interpret</param>
+        <param name="missingFileTimeUtc">The DateTime that should be recorded for missing file.</param>
+        <summary>Constructor</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,10 +70,10 @@
         <Parameter Name="skipMissingFiles" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="ownerTask">To be added.</param>
-        <param name="tlogFiles">To be added.</param>
-        <param name="skipMissingFiles">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ownerTask">The task that is using file tracker</param>
+        <param name="tlogFiles">The tlog files to interpret</param>
+        <param name="skipMissingFiles">Ignore files that do not exist on disk</param>
+        <summary>Constructor</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,10 +92,10 @@
         <Parameter Name="missingFileTimeUtc" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="ownerTask">To be added.</param>
-        <param name="tlogFiles">To be added.</param>
-        <param name="missingFileTimeUtc">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ownerTask">The task that is using file tracker</param>
+        <param name="tlogFiles">The tlog files to interpret</param>
+        <param name="missingFileTimeUtc">The DateTime that should be recorded for missing file.</param>
+        <summary>Constructor</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,10 +114,10 @@
         <Parameter Name="missingFileTimeUtc" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="tlogFiles">To be added.</param>
-        <param name="tlogFilesToIgnore">To be added.</param>
-        <param name="missingFileTimeUtc">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="tlogFiles">The .write. tlog files to interpret</param>
+        <param name="tlogFilesToIgnore">The TLogs to ignore.</param>
+        <param name="missingFileTimeUtc">The DateTime that should be recorded for missing file.</param>
+        <summary>Constructor</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,12 +138,12 @@
         <Parameter Name="sharedLastWriteTimeUtcCache" Type="System.Collections.Generic.IDictionary&lt;System.String,System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="tlogFiles">To be added.</param>
-        <param name="tlogFilesToIgnore">To be added.</param>
-        <param name="missingFileTimeUtc">To be added.</param>
-        <param name="excludedInputPaths">To be added.</param>
-        <param name="sharedLastWriteTimeUtcCache">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="tlogFiles">The .tlog files to interpret</param>
+        <param name="tlogFilesToIgnore">The .tlog files to ignore</param>
+        <param name="missingFileTimeUtc">The date and time that should be recorded for missing file.</param>
+        <param name="excludedInputPaths">The set of paths that contain files to be ignored, including any subdirectories.</param>
+        <param name="sharedLastWriteTimeUtcCache">Cache to be used which can be shared between multiple <c>FlatTrackingData</c> instances.</param>
+        <summary>Constructor</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +160,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.DateTime&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the dependency table.</summary>
+        <value>Returns the dependency table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,9 +181,10 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">Name of the file to test.</param>
+        <summary>Returns <see langword="true" /> if the specified file is excluded from tracked dependency checking.</summary>
+        <returns>
+          <see langword="true" /> if the file is excluded.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,12 +207,19 @@
         <Parameter Name="trackedFilesToRemoveFromTLogs" Type="Microsoft.Build.Framework.ITaskItem[]" />
       </Parameters>
       <Docs>
-        <param name="trackedOperationsSucceeded">To be added.</param>
-        <param name="readTLogNames">To be added.</param>
-        <param name="writeTLogNames">To be added.</param>
-        <param name="trackedFilesToRemoveFromTLogs">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="trackedOperationsSucceeded">True indicates that tracked operations succeeded.</param>
+        <param name="readTLogNames">TLogs to be read.</param>
+        <param name="writeTLogNames">TLogs to be written.</param>
+        <param name="trackedFilesToRemoveFromTLogs">Tracked files to be removed from TLogs.</param>
+        <summary>Compact and finalize the Tlogs based on the success of the tracked execution.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once tracked operations have been completed then we need to compact / finalize the Tlogs based on the success of the tracked execution. If it fails, then we clean out the TLogs. If it succeeds then we clean temporary files from the TLogs and re-write them.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLastWriteTimeUtc">
@@ -230,9 +238,9 @@
         <Parameter Name="file" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="file">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="file">Name of the file</param>
+        <summary>Returns cached value for last write time of file. Updates the cache the first            time the file is checked.</summary>
+        <returns>the last write time of the file.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,13 +263,20 @@
         <Parameter Name="writeTLogNames" Type="Microsoft.Build.Framework.ITaskItem[]" />
       </Parameters>
       <Docs>
-        <param name="hostTask">To be added.</param>
-        <param name="upToDateCheckType">To be added.</param>
-        <param name="readTLogNames">To be added.</param>
-        <param name="writeTLogNames">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="hostTask">The host task.</param>
+        <param name="upToDateCheckType">UpToDateCheckType</param>
+        <param name="readTLogNames">The array of read tlogs</param>
+        <param name="writeTLogNames">The array of write tlogs</param>
+        <summary>Checks to see if the tracking data indicates that everything is up to date according to UpToDateCheckType.</summary>
+        <returns>Returns true if everything is up to date; false otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If things are not up to date, then the TLogs are compacted to remove all entries in preparation to re-track execution of work.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsUpToDate">
@@ -283,13 +298,20 @@
         <Parameter Name="outputs" Type="Microsoft.Build.Utilities.FlatTrackingData" />
       </Parameters>
       <Docs>
-        <param name="Log">To be added.</param>
-        <param name="upToDateCheckType">To be added.</param>
-        <param name="inputs">To be added.</param>
-        <param name="outputs">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="Log">TaskLoggingHelper from the host task</param>
+        <param name="upToDateCheckType">UpToDateCheckType to use</param>
+        <param name="inputs">FlatTrackingData structure containing the inputs</param>
+        <param name="outputs">FlatTrackingData structure containing the outputs</param>
+        <summary>Simple check of up to date state according to the tracking data and the UpToDateCheckType.</summary>
+        <returns>Returns true if everything is up to date; false otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No tracking log compaction will take place when using this overload  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MissingFiles">
@@ -305,8 +327,8 @@
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets missing files that have been detected in the TLog</summary>
+        <value>Returns missing files that have been detected in the TLog</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -323,8 +345,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the path for the newest file we have seen.</summary>
+        <value>Returns the path for the newest file we have seen.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,8 +363,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the time for the newest file we have seen</summary>
+        <value>Returns the time for the newest file we have seen.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,8 +381,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the UTC time for the newest file we have seen.</summary>
+        <value>Returns the UTC time for the newest file we have seen.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,8 +399,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the path of the newest TLog file.</summary>
+        <value>Returns the path of the newest TLog file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,8 +417,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the time of the newest Tlog.</summary>
+        <value>Returns the time of the newest Tlog.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,8 +435,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the UTC time of the newest Tlog.</summary>
+        <value>Returns the time of the newest Tlog.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,8 +453,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the path for the oldest file we have seen.</summary>
+        <value>Returns the path for the oldest file we have seen.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -449,8 +471,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the time for the oldest file we have seen.</summary>
+        <value>Returns the time for the oldest file we have seen.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,8 +489,8 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the UTC time for the oldest file we have seen.</summary>
+        <value>Returns the UTC time for the oldest file we have seen.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,7 +508,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This method will re-write the tlogs from the output table.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -506,8 +528,8 @@
         <Parameter Name="includeInTLog" Type="Microsoft.Build.Utilities.DependencyFilter" />
       </Parameters>
       <Docs>
-        <param name="includeInTLog">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="includeInTLog">The dependency filter.</param>
+        <summary>This method will re-write the tlogs from the current table</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -524,8 +546,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a switch that specifies whether files in the TLog, but which no longer exist, be skipped or recorded.</summary>
+        <value>Returns the switch that specifies whether files in the TLog, but which no longer exist, be skipped or recorded.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -542,8 +564,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the TLog files that back this structure.</summary>
+        <value>Returns the TLog files that back this structure.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -560,8 +582,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a switch that specifies whether all the TLogs that were passed to us are available on disk.</summary>
+        <value>Returns a switch that specifies whether all the TLogs that were passed to us are available on disk.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,8 +600,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a switch that specifies whether root markers in the TLog be treated as file accesses, or only as markers.</summary>
+        <value>Returns a switch that specifies whether root markers in the TLog be treated as file accesses, or only as markers.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,7 +619,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Update the current state of entry details for the dependency table</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

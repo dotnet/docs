@@ -1,24 +1,29 @@
 ---
 uid: System.Web.UI.INavigateUIData
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.INavigateUIData.Description
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.INavigateUIData.Name
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.INavigateUIData.Value
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.INavigateUIData.NavigateUrl
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

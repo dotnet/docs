@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of resource referenced by a parsed virtual path.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.VirtualReferenceType> enumeration describes the type of resource referenced by a virtual path. The <xref:System.Web.UI.VirtualReferenceType> is determined from the parsed extension of the resource.  
+  
+ Page and control developers do not use the <xref:System.Web.UI.VirtualReferenceType> enumeration directly. Extensibility developers might use the <xref:System.Web.UI.VirtualReferenceType> enumeration when extending the <xref:System.Web.UI.PageParserFilter> class and overriding its <xref:System.Web.UI.PageParserFilter.AllowVirtualReference%2A> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Master">
@@ -27,7 +36,7 @@
         <ReturnType>System.Web.UI.VirtualReferenceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parsed virtual path references a master page file.</summary>
       </Docs>
     </Member>
     <Member MemberName="Other">
@@ -43,7 +52,7 @@
         <ReturnType>System.Web.UI.VirtualReferenceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parsed virtual path references a resource that is not an ASP.NET page, master page, user control, or language-specific code file.</summary>
       </Docs>
     </Member>
     <Member MemberName="Page">
@@ -59,7 +68,7 @@
         <ReturnType>System.Web.UI.VirtualReferenceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parsed virtual path references an ASP.NET page.</summary>
       </Docs>
     </Member>
     <Member MemberName="SourceFile">
@@ -75,7 +84,7 @@
         <ReturnType>System.Web.UI.VirtualReferenceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parsed virtual path references a code file that is compiled using a specific language compiler.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserControl">
@@ -91,7 +100,7 @@
         <ReturnType>System.Web.UI.VirtualReferenceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parsed virtual path references an ASP.NET user control.</summary>
       </Docs>
     </Member>
   </Members>

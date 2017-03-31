@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Configuration.NamespaceInfo
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.NamespaceInfo.Equals(System.Object)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.NamespaceInfo.#ctor(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.NamespaceInfo.GetHashCode
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.NamespaceInfo.Namespace
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

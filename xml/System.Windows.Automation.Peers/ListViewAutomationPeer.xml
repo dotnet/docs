@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.ListView" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="owner" Type="System.Windows.Controls.ListView" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The <see cref="T:System.Windows.Controls.ListView" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +49,9 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The <see cref="T:System.Windows.Controls.ListViewItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> class.</summary>
+        <returns>The <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> instance that is associated with this <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.ListView" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.List" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Controls.ListView" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
+        <returns>The collection of child elements.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +107,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the name of the <see cref="T:System.Windows.Controls.ListView" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>A string that contains "ListView".</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,9 +128,9 @@
         <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
       </Parameters>
       <Docs>
-        <param name="patternInterface">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="patternInterface">A value in the enumeration.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.ListView" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" />.</summary>
+        <returns>An <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the view that this <see cref="T:System.Windows.Controls.ListView" /> is using. Default <see cref="T:System.Windows.Controls.ListView" /> implementation uses the <see cref="T:System.Windows.Controls.GridView" />, and this method returns <see cref="T:System.Windows.Automation.Peers.GridViewAutomationPeer" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,8 +147,8 @@
         <ReturnType>System.Windows.Automation.Peers.IViewAutomationPeer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Windows.Automation.Peers.IViewAutomationPeer" /> for this <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" />.</summary>
+        <value>The interface instance that is associated with this <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

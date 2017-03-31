@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.Media.TextFormatting.TextSimpleMarkerProperties
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextSimpleMarkerProperties.TextSource
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextSimpleMarkerProperties.#ctor(System.Windows.TextMarkerStyle,System.Double,System.Int32,System.Windows.Media.TextFormatting.TextParagraphProperties)
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.TextFormatting.TextSimpleMarkerProperties.Offset
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

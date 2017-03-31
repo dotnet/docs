@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides information for the <see cref="E:System.Workflow.Activities.SendActivity.BeforeSend" /> and <see cref="E:System.Workflow.Activities.SendActivity.AfterResponse" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +42,8 @@
         <Parameter Name="sendActivity" Type="System.Workflow.Activities.SendActivity" />
       </Parameters>
       <Docs>
-        <param name="sendActivity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sendActivity">The T:System.Workflow.Activities.SendActivity that threw the event associated with this <see cref="T:System.Workflow.Activities.SendActivityEventArgs" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SendActivityEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +60,8 @@
         <ReturnType>System.Workflow.Activities.SendActivity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Workflow.Activities.SendActivity" /> that threw the event associated with this <see cref="T:System.Workflow.Activities.SendActivityEventArgs" />.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.SendActivity" /> that threw the event associated with this <see cref="T:System.Workflow.Activities.SendActivityEventArgs" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

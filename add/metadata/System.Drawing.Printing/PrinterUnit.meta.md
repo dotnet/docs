@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Printing.PrinterUnit
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

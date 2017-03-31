@@ -1,4 +1,6 @@
 ---
 uid: System.Web.ModelBinding.ModelBinderErrorMessageProvider
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

@@ -1,39 +1,62 @@
 ---
 uid: System.CodeDom.CodeCatchClause
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeCatchClause.#ctor(System.String)
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeCatchClause.Statements
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeCatchClause.#ctor(System.String,System.CodeDom.CodeTypeReference)
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeCatchClause.LocalName
-internalonly: False
----
-
----
-uid: System.CodeDom.CodeCatchClause.#ctor(System.String,System.CodeDom.CodeTypeReference,System.CodeDom.CodeStatement[])
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeCatchClause.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeCatchClause.#ctor(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeCatchClause.Statements
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeCatchClause.#ctor(System.String,System.CodeDom.CodeTypeReference)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeCatchClause.LocalName
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeCatchClause.#ctor(System.String,System.CodeDom.CodeTypeReference,System.CodeDom.CodeStatement[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeCatchClause.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.CodeDom.CodeCatchClause.CatchExceptionType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

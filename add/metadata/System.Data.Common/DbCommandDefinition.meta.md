@@ -1,19 +1,34 @@
 ---
 uid: System.Data.Common.DbCommandDefinition
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbCommandDefinition.CreateCommand
-internalonly: False
----
-
----
-uid: System.Data.Common.DbCommandDefinition.#ctor(System.Data.Common.DbCommand)
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---
 
 ---
 uid: System.Data.Common.DbCommandDefinition.#ctor
-internalonly: False
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbCommandDefinition.#ctor(System.Data.Common.DbCommand)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbCommandDefinition.#ctor
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
 ---

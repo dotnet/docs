@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implements the record and playback logic that templates use for deferring content when they interact with XAML readers and writers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has no public API in .NET Framework 4.5 Beta. It provides a property value for <xref:System.Windows.FrameworkTemplate.Template%2A>. Its constructor is internal. There is an instantiation pathway, but it is complex. Instantiating a template relies on <xref:System.Windows.TemplateContentLoader>, which requires a <xref:System.Xaml.XamlReader> representing a deferred reader instance, and a <xref:System.Xaml.IXamlObjectWriterFactory> service. Both these considerations are typically only relevant to those that are not using the default XAML for WPF processing behavior, which includes deferred content processing of templates as part of its infrastructure, and does not require the typical WPF application author to access the aforementioned APIs.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

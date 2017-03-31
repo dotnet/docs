@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies text orientation in a chart element.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text orientation is automatically determined, based on the type of chart element in which the text appears.</summary>
       </Docs>
     </Member>
     <Member MemberName="Horizontal">
@@ -43,7 +43,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text is horizontal.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotated270">
@@ -59,7 +59,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text is rotated 270 degrees and oriented from bottom to top.</summary>
       </Docs>
     </Member>
     <Member MemberName="Rotated90">
@@ -75,7 +75,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text is rotated 90 degrees and oriented from top to bottom.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stacked">
@@ -91,7 +91,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Text characters are not rotated and are positioned one below the other.</summary>
       </Docs>
     </Member>
   </Members>

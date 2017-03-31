@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.ITypeLib" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about the `ITypeLib` interface, see the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="FindName">
@@ -45,13 +52,24 @@
         <Parameter Name="pcFound" Type="System.Int16&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="szNameBuf">To be added.</param>
-        <param name="lHashVal">To be added.</param>
-        <param name="ppTInfo">To be added.</param>
-        <param name="rgMemId">To be added.</param>
-        <param name="pcFound">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="szNameBuf">The name to search for.</param>
+        <param name="lHashVal">A hash value to speed up the search, computed by the <see langword="LHashValOfNameSys" /> function. If <c>lHashVal</c> is 0, a value is computed.</param>
+        <param name="ppTInfo">On successful return, an array of pointers to the type descriptions that contain the name specified in <c>szNameBuf</c>.</param>
+        <param name="rgMemId">An array of the <see langword="MEMBERID" /> 's of the found items; <c>rgMemId</c> [i] is the <see langword="MEMBERID" /> that indexes into the type description specified by <c>ppTInfo</c> [i]. Cannot be <see langword="null" />.</param>
+        <param name="pcFound">On entry, indicates how many instances to look for. For example, <c>pcFound</c> = 1 can be called to find the first occurrence. The search stops when one instance is found.  
+  
+ On exit, indicates the number of instances that were found. If the <see langword="in" /> and <see langword="out" /> values of <c>pcFound</c> are identical, there might be more type descriptions that contain the name.</param>
+        <summary>Finds occurrences of a type description in a type library.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There must be enough room in `rgMemId` to hold `pcFound` entries.  
+  
+ For additional information about `ITypeLib::FindName`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDocumentation">
@@ -75,13 +93,20 @@
         <Parameter Name="strHelpFile" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="strName">To be added.</param>
-        <param name="strDocString">To be added.</param>
-        <param name="dwHelpContext">To be added.</param>
-        <param name="strHelpFile">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">Index of the type description whose documentation is to be returned.</param>
+        <param name="strName">Returns a string that contains the name of the specified item.</param>
+        <param name="strDocString">Returns a string that contains the documentation string for the specified item.</param>
+        <param name="dwHelpContext">Returns the Help context identifier associated with the specified item.</param>
+        <param name="strHelpFile">Returns a string that contains the fully qualified name of the Help file.</param>
+        <summary>Retrieves the library's documentation string, the complete Help file name and path, and the context identifier for the library Help topic in the Help file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `ITypeLib::GetDocumentation`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLibAttr">
@@ -101,9 +126,18 @@
         <Parameter Name="ppTLibAttr" Type="System.IntPtr&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ppTLibAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ppTLibAttr">On successful return, a structure that contains the library's attributes.</param>
+        <summary>Retrieves the structure that contains the library's attributes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values of the structure referenced by `ppTLibAttr` can be obtained by <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A>.  
+  
+ For additional information about `ITypeLib::GetTypeLibAttr`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTypeComp">
@@ -123,9 +157,16 @@
         <Parameter Name="ppTComp" Type="System.Runtime.InteropServices.UCOMITypeComp&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ppTComp">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ppTComp">On successful return, an instance of a <see langword="UCOMITypeComp" /> instance for this <see langword="ITypeLib" />.</param>
+        <summary>Enables a client compiler to bind to a library's types, variables, constants, and global functions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `ITypeLib::GetTypeComp`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTypeInfo">
@@ -146,10 +187,17 @@
         <Parameter Name="ppTI" Type="System.Runtime.InteropServices.UCOMITypeInfo&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="ppTI">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">Index of the <see langword="UCOMITypeInfo" /> interface to return.</param>
+        <param name="ppTI">On successful return, a <see langword="UCOMITypeInfo" /> describing the type referenced by <c>index</c>.</param>
+        <summary>Retrieves the specified type description in the library.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `ITypeLib::GetTypeInfo`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTypeInfoCount">
@@ -167,9 +215,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the number of type descriptions in the type library.</summary>
+        <returns>The number of type descriptions in the type library.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `ITypeLib::GetTypeInfoCount`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTypeInfoOfGuid">
@@ -190,10 +245,17 @@
         <Parameter Name="ppTInfo" Type="System.Runtime.InteropServices.UCOMITypeInfo&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="guid">To be added.</param>
-        <param name="ppTInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="guid">IID of the interface of CLSID of the class whose type info is requested.</param>
+        <param name="ppTInfo">On successful return, the requested <see langword="ITypeInfo" /> interface.</param>
+        <summary>Retrieves the type description that corresponds to the specified GUID.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `ITypeLib::GetTypeInfoOfGuid`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTypeInfoType">
@@ -214,10 +276,17 @@
         <Parameter Name="pTKind" Type="System.Runtime.InteropServices.TYPEKIND&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="pTKind">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the type description within the type library.</param>
+        <param name="pTKind">Reference to the <see langword="TYPEKIND" /> enumeration for the type description.</param>
+        <summary>Retrieves the type of a type description.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `ITypeLib::GetTypeInfoOfType`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsName">
@@ -238,11 +307,19 @@
         <Parameter Name="lHashVal" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="szNameBuf">To be added.</param>
-        <param name="lHashVal">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="szNameBuf">The string to test.</param>
+        <param name="lHashVal">The hash value of <c>szNameBuf</c>.</param>
+        <summary>Indicates whether a passed-in string contains the name of a type or member described in the library.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="szNameBuf" /> was found in the type library; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `ITypeLib::IsName`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReleaseTLibAttr">
@@ -262,9 +339,16 @@
         <Parameter Name="pTLibAttr" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="pTLibAttr">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pTLibAttr">The <see langword="TLIBATTR" /> to release.</param>
+        <summary>Releases the <see cref="T:System.Runtime.InteropServices.TYPELIBATTR" /> originally obtained from <see cref="M:System.Runtime.InteropServices.UCOMITypeLib.GetLibAttr(System.IntPtr@)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `ITypeLib::ReleaseTLibAttr`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

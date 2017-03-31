@@ -1,4 +1,6 @@
 ---
 uid: System.Drawing.Design.ToolboxItemCreatorCallback
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

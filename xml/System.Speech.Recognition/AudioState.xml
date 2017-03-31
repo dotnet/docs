@@ -10,8 +10,45 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a list of possible states for the audio input to a speech recognition engine.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can obtain the audio input state of the speech recognition engine with the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioState%2A?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioState%2A?displayProperty=fullName> properties. The <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioStateChanged?displayProperty=fullName> events are raised when the audio input state of a speech recognition engine changes.  
+  
+   
+  
+## Examples  
+ The following example demonstrates an event handler that handles the changing audio state of a speech recognizer.  
+  
+```csharp  
+  
+private SpeechRecognitionEngine sre;  
+  
+// Initializes the speech recognition engine.  
+private void Initialize()  
+{  
+  sre = new SpeechRecognitionEngine();  
+  
+  // Add a handler for the AudioStateChanged event.  
+  sre.AudioStateChanged += new EventHandler<AudioStateChangedEventArgs>(sre_AudioStateChanged);  
+  
+  // Add other initialization code here.  
+}  
+  
+  // Handle the AudioStateChanged event.  
+  void sre_AudioStateChanged(object sender, AudioStateChangedEventArgs e)  
+{  
+  AudioState newState = e.AudioState;  
+  
+  // Handle event here.  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Silence">
@@ -27,7 +64,7 @@
         <ReturnType>System.Speech.Recognition.AudioState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Receiving silence or non-speech background noise.</summary>
       </Docs>
     </Member>
     <Member MemberName="Speech">
@@ -43,7 +80,7 @@
         <ReturnType>System.Speech.Recognition.AudioState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Receiving speech input.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stopped">
@@ -59,7 +96,7 @@
         <ReturnType>System.Speech.Recognition.AudioState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Not processing audio input.</summary>
       </Docs>
     </Member>
   </Members>

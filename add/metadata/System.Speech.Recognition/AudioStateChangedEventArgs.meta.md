@@ -1,9 +1,11 @@
 ---
 uid: System.Speech.Recognition.AudioStateChangedEventArgs
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Speech.Recognition.AudioStateChangedEventArgs.AudioState
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

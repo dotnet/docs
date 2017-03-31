@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Encapsulations the relations between command line arguments.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,11 +31,12 @@
         <Parameter Name="separator" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="argument">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="required">To be added.</param>
-        <param name="separator">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="argument">The argument</param>
+        <param name="value">The value.</param>
+        <param name="required">
+          <see langword="true" /> if required.</param>
+        <param name="separator">The separator between arguments.</param>
+        <summary>Initializes an instance of the <see cref="Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +53,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Contains the separator between command line arguments.</summary>
+        <value>A string containing the separator.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

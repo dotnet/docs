@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a message version that corresponds to the Basic Security Profile specification.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,8 +30,8 @@
         <ReturnType>System.ServiceModel.Security.BasicSecurityProfileVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Provides a message version that corresponds to the Basic Security Profile specification.</summary>
+        <value>A class that has a <c>ToString</c> method that returns the version in text form.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

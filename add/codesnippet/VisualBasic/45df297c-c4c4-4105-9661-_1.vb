@@ -1,1 +1,0 @@
-        sqlCdds.RemoveAt(0)

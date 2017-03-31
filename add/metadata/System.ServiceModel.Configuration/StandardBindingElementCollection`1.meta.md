@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.Configuration.StandardBindingElementCollection`1
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.StandardBindingElementCollection`1.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -26,8 +26,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a wrapper class for a wait handle.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> class is used by the <xref:System.Threading.WaitHandle?displayProperty=fullName> class. It is a wrapper for Win32 mutexes and auto and manual reset events.  
+  
+> [!IMPORTANT]
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use interop to create a mutex using the <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> class and the unmanaged `CreateMutex` function.  
+  
+ [!code-csharp[Microsoft.Win32.SafeHandles.SafeWaitHandle#1](~/samples/snippets/csharp/VS_Snippets_CLR/Microsoft.Win32.SafeHandles.SafeWaitHandle/cs/sample.cs#1)]
+ [!code-vb[Microsoft.Win32.SafeHandles.SafeWaitHandle#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Microsoft.Win32.SafeHandles.SafeWaitHandle/vb/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,10 +77,22 @@
         <Parameter Name="ownsHandle" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="existingHandle">To be added.</param>
-        <param name="ownsHandle">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="existingHandle">An <see cref="T:System.IntPtr" /> object that represents the pre-existing handle to use.</param>
+        <param name="ownsHandle">
+          <see langword="true" /> to reliably release the handle during the finalization phase; <see langword="false" /> to prevent reliable release (not recommended).</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.SafeHandles.SafeWaitHandle" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use interop to create a mutex using the <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> class and the unmanaged `CreateMutex` function.  
+  
+ [!code-csharp[Microsoft.Win32.SafeHandles.SafeWaitHandle-ctor#1](~/samples/snippets/csharp/VS_Snippets_CLR/Microsoft.Win32.SafeHandles.SafeWaitHandle-ctor/cs/sample.cs#1)]
+ [!code-vb[Microsoft.Win32.SafeHandles.SafeWaitHandle-ctor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Microsoft.Win32.SafeHandles.SafeWaitHandle-ctor/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="IsInvalid">

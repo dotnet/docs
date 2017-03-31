@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the 15-minute intervals within an hour.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.MinuteOfHour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents 15 to 29 minutes after the hour.</summary>
       </Docs>
     </Member>
     <Member MemberName="FortyFive">
@@ -43,7 +43,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.MinuteOfHour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents 45 to 59 minutes after the hour.</summary>
       </Docs>
     </Member>
     <Member MemberName="Thirty">
@@ -59,7 +59,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.MinuteOfHour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents 30 to 44 minutes after the hour.</summary>
       </Docs>
     </Member>
     <Member MemberName="Zero">
@@ -75,7 +75,7 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.MinuteOfHour</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents 0 to 14 minutes after the hour.</summary>
       </Docs>
     </Member>
   </Members>

@@ -13,7 +13,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the interfaces used by the internal design time API to create a <see cref="T:System.Configuration.Configuration" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,10 +40,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="typeConfigHost">To be added.</param>
-        <param name="hostInitConfigurationParams">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="typeConfigHost">The <see cref="T:System.Type" /> of the <see cref="T:System.Configuration.Configuration" /> object to be created.</param>
+        <param name="hostInitConfigurationParams">A parameter array of <see cref="T:System.Object" /> that contains the parameters to be applied to the created <see cref="T:System.Configuration.Configuration" /> object.</param>
+        <summary>Creates and initializes a <see cref="T:System.Configuration.Configuration" /> object.</summary>
+        <returns>A <see cref="T:System.Configuration.Configuration" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,10 +64,10 @@
         <Parameter Name="errorInfo" Type="System.Configuration.Internal.IConfigErrorInfo" />
       </Parameters>
       <Docs>
-        <param name="subPath">To be added.</param>
-        <param name="errorInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="subPath">A string representing the path to the configuration file.</param>
+        <param name="errorInfo">An instance of <see cref="T:System.Configuration.Internal.IConfigErrorInfo" /> or <see langword="null" />.</param>
+        <summary>Normalizes a location subpath of a path to a configuration file.</summary>
+        <returns>A normalized subpath string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

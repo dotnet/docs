@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies processing rules or option settings for a <see cref="T:System.Xaml.XamlObjectReader" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectReaderSettings" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,9 +43,23 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that determines whether writers that use the associated <see cref="T:System.Xaml.XamlObjectReader" /> for context should use designer settings for writing content explicitly.</summary>
+        <value>
+          <see langword="true" /> to specify that writers that use this context should use designer settings for writing any output content in cases where <see cref="P:System.Xaml.XamlMember.IsWritePublic" /> reports <see langword="false" />; <see langword="false" /> if designer settings should be ignored.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This setting is queried internally. It influences the following behavior for the context that a <xref:System.Xaml.XamlObjectReader> passes to any <xref:System.Xaml.XamlWriter>:  
+  
+-   The <xref:System.Xaml.XamlObjectReaderSettings.RequireExplicitContentVisibility%2A> behavior only applies for properties where <xref:System.Xaml.XamlMember.IsWritePublic%2A> is `false`, AND when a `ShouldSerialize` pattern is unavailable for the property value.  
+  
+-   If the statement in the first bullet point is true, AND <xref:System.Xaml.XamlObjectReaderSettings.RequireExplicitContentVisibility%2A> is `true`, then designer settings determine whether the property writes its output as content or the property is considered implicit. Access to designer settings is through internal APIs in .NET Framework XAML Services and is based on reading <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> from backing assemblies. In this case, the internal code checks for the value <xref:System.ComponentModel.DesignerSerializationVisibility?displayProperty=fullName> and writes its output to the property. Otherwise, the content is considered implicit.  
+  
+-   If the statement in the first bullet is `true`, AND <xref:System.Xaml.XamlObjectReaderSettings.RequireExplicitContentVisibility%2A> is `false`, the property always writes its output, and <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> from backing assemblies is irrelevant.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

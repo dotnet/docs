@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a custom configuration element that defines a <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" /> in a configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Web scripting enables working with the data entered onto a web page.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initiates a new instance of the <see cref="T:System.ServiceModel.Configuration.WebScriptEndpointElement" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +58,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the group of behaviors and metadata that produce the web document configured by the current <see cref="T:System.ServiceModel.Configuration.WebScriptEndpointElement" />.</summary>
+        <value>The name of a content type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +79,15 @@
         <Parameter Name="contractDescription" Type="System.ServiceModel.Description.ContractDescription" />
       </Parameters>
       <Docs>
-        <param name="contractDescription">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="contractDescription">An object whose properties define an endpoint’s characteristics, including  
+  
+-   the signature of the operations in terms of messages exchanged  
+  
+-   the data types of these messages, the location of the operations  
+  
+-   the specific protocols and serialization formats that are used to support successful communication with the service</param>
+        <summary>Initiates a new <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" /> with the specified <see cref="T:System.ServiceModel.Description.ContractDescription" />.</summary>
+        <returns>A web script endpoint.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,8 +109,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets whether different host computers can access each others’ scripts.</summary>
+        <value>
+          <see langword="true" /> if cross domain script access is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,8 +128,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
+        <value>An web script endpoint object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,9 +154,16 @@
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Specifies how the host name should be used in URI comparisons when dispatching an incoming message to a <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
+        <value>An enumerated description of a comparison mode.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Comparison mode settings refer to the StrongWildcard, Exact, and WeakWildcard descriptions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxBufferPoolSize">
@@ -166,8 +187,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum size, in bytes, of any buffer pools used by the message transport.</summary>
+        <value>The maximum buffer pool size.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,8 +213,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum size, in bytes, of the buffer used to receive messages.</summary>
+        <value>The maximum buffer size.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +239,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum byte size of messages received by a <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
+        <value>The maximum byte size.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,9 +261,9 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="serviceEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to convert.</param>
+        <param name="serviceEndpointElement">Not used.</param>
+        <summary>Converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,9 +284,9 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="endpoint">To be added.</param>
-        <param name="serviceEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to convert.</param>
+        <param name="serviceEndpointElement">Not used.</param>
+        <summary>Converts the specified <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to a <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,8 +306,8 @@
         <Parameter Name="channelEndpointElement" Type="System.ServiceModel.Configuration.ChannelEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="channelEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="channelEndpointElement">The <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> to be initialized.</param>
+        <summary>Initializes and verifies the format of the specified <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> and configures it to include web HTTP binding content.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,8 +327,8 @@
         <Parameter Name="serviceEndpointElement" Type="System.ServiceModel.Configuration.ServiceEndpointElement" />
       </Parameters>
       <Docs>
-        <param name="serviceEndpointElement">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceEndpointElement">The <see cref="T:System.ServiceModel.Configuration.ServiceEndpointElement" /> to be initialized.</param>
+        <summary>Initializes and verifies the format of the specified <see cref="T:System.ServiceModel.Configuration.ServiceEndpointElement" /> and configures it to include web HTTP binding content.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,8 +345,8 @@
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets all the properties attached to the current <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" />.</summary>
+        <value>A collection of endpoint element properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,8 +368,8 @@
         <ReturnType>System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a configuration element that defines the constraints on the complexity of messages that can be processed by <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" /> objects.</summary>
+        <value>A configuration element that defines Xml dictionary reader quotas.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,8 +391,8 @@
         <ReturnType>System.ServiceModel.Configuration.WebHttpSecurityElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an HTTP web security binding element.</summary>
+        <value>A web script endpoint configuration element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,9 +417,16 @@
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the manner in which WCF messages are transported.</summary>
+        <value>An object that contains a string that designates a WCF message transfer mode.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Examples of message transfer types include buffered and streamed.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteEncoding">
@@ -422,8 +450,8 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the encoding that is used to format the characters in a text message.</summary>
+        <value>The character encoding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

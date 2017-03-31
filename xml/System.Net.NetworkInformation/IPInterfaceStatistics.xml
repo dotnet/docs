@@ -20,8 +20,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides Internet Protocol (IP) statistical data for an network interface on the local computer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by the <xref:System.Net.NetworkInformation.NetworkInterface.GetIPStatistics%2A> method to return network traffic information for an interface.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,8 +51,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.IPInterfaceStatistics" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor can be called only by classes that derive from <xref:System.Net.NetworkInformation.IPInterfaceStatistics>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BytesReceived">
@@ -70,8 +84,10 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of bytes that were received on the interface.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The total number of bytes that were received on the interface.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +113,10 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of bytes that were sent on the interface.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The total number of bytes that were sent on the interface.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,9 +142,18 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of incoming packets that were discarded.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The total number of incoming packets that were discarded.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This data does not include packets with errors.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncomingPacketsWithErrors">
@@ -151,9 +178,18 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of incoming packets with errors.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The total number of incoming packets with errors.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This data does not include packets without errors that were discarded.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncomingUnknownProtocolPackets">
@@ -178,9 +214,18 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of incoming packets with an unknown protocol that were received on the interface.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The total number of incoming packets with an unknown protocol that were received on the interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This data reflects packets that were discarded because the protocol identifier in the packet header was not recognized.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NonUnicastPacketsReceived">
@@ -205,9 +250,18 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of non-unicast packets that were received on the interface.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The total number of incoming non-unicast packets received on the interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Packets with unicast addresses are delivered to a single interface. Packets with non-unicast addresses can be delivered to multiple interfaces. Anycast, broadcast, and multicast addresses are types of non-unicast addresses.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NonUnicastPacketsSent">
@@ -232,9 +286,18 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of non-unicast packets that were sent on the interface.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The total number of non-unicast packets that were sent on the interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Packets with unicast addresses are delivered to a single interface. Packets with non-unicast addresses can be delivered to multiple interfaces. Anycast, broadcast, and multicast addresses are types of non-unicast addresses.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutgoingPacketsDiscarded">
@@ -259,9 +322,18 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of outgoing packets that were discarded.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The total number of outgoing packets that were discarded.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This data does not include outgoing packets with errors.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutgoingPacketsWithErrors">
@@ -286,9 +358,18 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of outgoing packets with errors.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The total number of outgoing packets with errors.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This data does not include packets without errors that were discarded.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputQueueLength">
@@ -313,8 +394,10 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the length of the output queue.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The total number of packets in the output queue.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,9 +423,18 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of unicast packets that were received on the interface.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The total number of unicast packets that were received on the interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Packets with unicast addresses are delivered to a single interface. Packets with non-unicast addresses can be delivered to multiple interfaces. Anycast, broadcast, and multicast addresses are types of non-unicast addresses.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnicastPacketsSent">
@@ -367,9 +459,18 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of unicast packets that were sent on the interface.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The total number of unicast packets that were sent on the interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Packets with unicast addresses are delivered to a single interface. Packets with non-unicast addresses can be delivered to multiple interfaces. Anycast, broadcast, and multicast addresses are types of non-unicast addresses.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

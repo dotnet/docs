@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see cref="T:Accessibility.IAccPropServer" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServer" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about <xref:Accessibility.IAccPropServer>, see the documentation for `Dynamic Properties` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetPropValue">
@@ -40,13 +47,20 @@
         <Parameter Name="pfHasProp" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pIDString">To be added.</param>
-        <param name="dwIDStringLen">To be added.</param>
-        <param name="idProp">To be added.</param>
-        <param name="pvarValue">To be added.</param>
-        <param name="pfHasProp">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pIDString">Contains a string that identifies the property being requested.</param>
+        <param name="dwIDStringLen">Specifies the length of the identity string specified by the <c>pIDString</c> parameter.</param>
+        <param name="idProp">Specifies a GUID indicating the desired property.</param>
+        <param name="pvarValue">Specifies the value of the overridden property. This parameter is valid only if <c>pfHasProp</c> is TRUE. The server must set this to VT_EMPTY if <c>pfHasProp</c> is set to FALSE.</param>
+        <param name="pfHasProp">Indicates whether the server is supplying a value for the requested property. The server should set this to TRUE if it is returning an overriding property or to FALSE if it is not returning a property (in which case it should also set <c>pvarValue</c> to VT_EMPTY).</param>
+        <summary>The <see cref="T:Accessibility.IAccPropServer" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServer" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about <xref:Accessibility.IAccPropServer>, see the documentation for `IAccPropServer::GetPropValue` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

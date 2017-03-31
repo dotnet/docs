@@ -1,14 +1,14 @@
 ---
 uid: System.Device.Location.GeoPositionChangedEventArgs`1
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoPositionChangedEventArgs`1.#ctor(System.Device.Location.GeoPosition{`0})
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Device.Location.GeoPositionChangedEventArgs`1.Position
-internalonly: False
+manager: "martinek"
 ---

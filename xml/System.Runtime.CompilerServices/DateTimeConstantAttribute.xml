@@ -31,8 +31,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Persists an 8-byte <see cref="T:System.DateTime" /> constant for a field or parameter.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to fields or parameters.  
+  
+ For more information about constant attributes, see the <xref:System.Runtime.CompilerServices.CustomConstantAttribute> class.  
+  
+ The classes in <xref:System.Runtime.CompilerServices> are for compiler writers use only.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,8 +71,8 @@
         <Parameter Name="ticks" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="ticks">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ticks">The number of 100-nanosecond ticks that represent the date and time of this instance.</param>
+        <summary>Initializes a new instance of the <see langword="DateTimeConstantAttribute" /> class with the number of 100-nanosecond ticks that represent the date and time of this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +101,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of 100-nanosecond ticks that represent the date and time of this instance.</summary>
+        <value>The number of 100-nanosecond ticks that represent the date and time of this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

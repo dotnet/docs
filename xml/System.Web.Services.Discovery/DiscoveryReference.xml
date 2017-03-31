@@ -12,8 +12,22 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The base class for discoverable references using XML Web services discovery.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Services.Discovery.ContractReference>, <xref:System.Web.Services.Discovery.SchemaReference>, and <xref:System.Web.Services.Discovery.DiscoveryDocumentReference> all inherit from <xref:System.Web.Services.Discovery.DiscoveryReference>, and represent the three types of documents discoverable through XML Web services discovery: Service Descriptions, XML Schema Definition (XSD) schemas, and discovery documents, respectively.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DiscoveryReference1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference1/CPP/discoveryreference.cpp#1)]
+ [!code-csharp[DiscoveryReference1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference1/CS/discoveryreference.cs#1)]
+ [!code-vb[DiscoveryReference1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference1/VB/discoveryreference.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +65,18 @@
         <ReturnType>System.Web.Services.Discovery.DiscoveryClientProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the instance of <see cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" /> used in a discovery process.</summary>
+        <value>An instance of <see cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" /> used in a discovery process</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
+ [!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
+ [!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultFilename">
@@ -75,9 +98,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the default file to use when saving the referenced discovery document, XSD schema, or Service Description.</summary>
+        <value>Name of the default file to use when saving the referenced document.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
+ [!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
+ [!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilenameFromUrl">
@@ -97,9 +129,9 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="url">The URL on which the name of the file is based.</param>
+        <summary>Returns a file name based on the passed URL.</summary>
+        <returns>Name of the file based on the passed URL.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,10 +152,25 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">
+          <see cref="T:System.IO.Stream" /> containing the reference document.</param>
+        <summary>Reads the passed <see cref="T:System.IO.Stream" /> and returns an instance of the class representing the type of referenced document.</summary>
+        <returns>An <see cref="T:System.Object" /> with an underlying type matching the type of referenced document.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is always an <xref:System.Object>. However, the underlying type varies, depending on the type of document referenced. For instance, a <xref:System.IO.Stream> passed into <xref:System.Web.Services.Discovery.SchemaReference.ReadDocument%2A?displayProperty=fullName> returns an instance of <xref:System.Xml.Schema.XmlSchema>.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
+ [!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
+ [!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Resolve">
@@ -141,8 +188,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Downloads the referenced document at <see cref="P:System.Web.Services.Discovery.DiscoveryReference.Url" /> to resolve whether the referenced document is valid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Downloads the referenced document and then invokes the overloaded <xref:System.Web.Services.Discovery.DiscoveryReference.Resolve%2A> member that takes a MIME type and a <xref:System.IO.Stream>. If the MIME type and the contents of `stream` match those expected by the reference type, then the contents of `stream` are added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> and <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> properties of <xref:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol%2A>.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
+ [!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
+ [!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" /> property is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Resolve">
@@ -163,10 +225,17 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="contentType">To be added.</param>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contentType">The MIME type of <c>stream</c>.</param>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> containing the referenced document.</param>
+        <summary>Resolves whether the referenced document is valid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the MIME type and the contents of `stream` match those expected by the reference type, then the contents of `stream` are added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> and <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> properties of <xref:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -188,9 +257,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the URL of the referenced document.</summary>
+        <value>The URL of the referenced document.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryReference/CPP/discoveryreference.cpp#1)]
+ [!code-csharp[DiscoveryReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryReference/CS/discoveryreference.cs#1)]
+ [!code-vb[DiscoveryReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryReference/VB/discoveryreference.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteDocument">
@@ -211,10 +289,17 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="document">To be added.</param>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="document">The document to write into a <see cref="T:System.IO.Stream" />.</param>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> into which the <c>document</c> is written.</param>
+        <summary>When overridden in a derived class, writes the document to a <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ DiscoveryReference#1  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

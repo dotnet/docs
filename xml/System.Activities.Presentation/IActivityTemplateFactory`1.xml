@@ -15,8 +15,8 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type this factory is created.</typeparam>
+    <summary>Represents the generic IActivityTemplateFactory.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +37,10 @@
         <Parameter Name="dataObject" Type="System.Windows.IDataObject" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="dataObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The dependency object used by this instance of an <see cref="T:System.Activities.Presentation.IActivityTemplateFactory" />.</param>
+        <param name="dataObject">The data object in the activity.</param>
+        <summary>Creates an instance of the activity class that represents a predefined design pattern for the specified target object.</summary>
+        <returns>An instance of the activity class.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

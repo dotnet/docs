@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.VlvResponseControl" /> class is used to pass virtual list view (VLV) data from the server to the client.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.VlvResponseControl.ContentCount" /> property contains the number of items in the list.</summary>
+        <value>The number of items in the list.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.VlvResponseControl.ContextId" /> property contains the context ID assigned by the server to identify this search.</summary>
+        <value>The context ID assigned by the server to identify this search.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +64,8 @@
         <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.VlvResponseControl.Result" /> property contains a result code in the form of a <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> object.</summary>
+        <value>A result code in the form of a <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +82,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.VlvResponseControl.TargetPosition" /> property contains the list index position of the target entry.</summary>
+        <value>The list index position of the target entry.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

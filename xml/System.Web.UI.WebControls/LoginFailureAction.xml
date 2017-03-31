@@ -10,8 +10,18 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines the page that the user will go to when a login attempt is not successful.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.WebControls.LoginFailureAction> enumeration to set the <xref:System.Web.UI.WebControls.Login.FailureAction%2A> property to redirect the user to the login page defined in the Web.config file when a login attempt fails.  
+  
+ [!code-csharp[LoginLoginFailureAction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginLoginFailureAction/CS/loginloginfailureactioncs.aspx#1)]
+ [!code-vb[LoginLoginFailureAction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginLoginFailureAction/VB/loginloginfailureactionvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="RedirectToLoginPage">
@@ -27,7 +37,7 @@
         <ReturnType>System.Web.UI.WebControls.LoginFailureAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Redirects the user to the login page defined in the site's configuration files (Machine.config and Web.config).</summary>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -43,7 +53,7 @@
         <ReturnType>System.Web.UI.WebControls.LoginFailureAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Refreshes the current page so that the <see cref="T:System.Web.UI.WebControls.Login" /> control can display an error message.</summary>
       </Docs>
     </Member>
   </Members>

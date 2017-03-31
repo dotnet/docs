@@ -1,4 +1,6 @@
 ---
 uid: System.Security.Cryptography.Pkcs.RecipientInfoType
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

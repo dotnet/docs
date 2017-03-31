@@ -15,8 +15,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the state of an item that is being drawn.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by members such as <xref:System.Windows.Forms.DrawItemEventArgs.State%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
+  
+ [!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
+ [!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
+ [!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Checked">
@@ -32,7 +48,7 @@
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is checked. Only menu controls use this value.</summary>
       </Docs>
     </Member>
     <Member MemberName="ComboBoxEdit">
@@ -48,7 +64,7 @@
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is the editing portion of a <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -64,7 +80,7 @@
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is in its default visual state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Disabled">
@@ -80,7 +96,7 @@
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is unavailable.</summary>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -96,7 +112,7 @@
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item has focus.</summary>
       </Docs>
     </Member>
     <Member MemberName="Grayed">
@@ -112,7 +128,7 @@
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is grayed. Only menu controls use this value.</summary>
       </Docs>
     </Member>
     <Member MemberName="HotLight">
@@ -128,7 +144,7 @@
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is being hot-tracked, that is, the item is highlighted as the mouse pointer passes over it.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inactive">
@@ -144,7 +160,7 @@
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is inactive.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoAccelerator">
@@ -160,7 +176,7 @@
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item displays without a keyboard accelerator.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoFocusRect">
@@ -176,7 +192,7 @@
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item displays without the visual cue that indicates it has focus.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -192,7 +208,7 @@
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item currently has no state.</summary>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -208,7 +224,7 @@
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The item is selected.</summary>
       </Docs>
     </Member>
   </Members>

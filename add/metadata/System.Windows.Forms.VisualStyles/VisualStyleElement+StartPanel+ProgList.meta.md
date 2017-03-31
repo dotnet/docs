@@ -1,9 +1,12 @@
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.ProgList
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel.ProgList.Normal
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a parameter that is used for master-detail filters in which a data source gets information from another data control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DynamicControlParameter> object is used in the `Where` parameters collection of the data source control's query. The parameter object automatically filters by primary key or foreign keys between the two controls and supports multi-part keys automatically.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicControlParameter" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +54,8 @@
         <Parameter Name="controlId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="controlId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="controlId">The ID of the control whose values the parameter represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicControlParameter" /> class, bound to the specified control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +72,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the unique identifier of the control that the <see cref="T:System.Web.DynamicData.DynamicControlParameter" /> object binds to.</summary>
+        <value>The unique identifier of the control from which the <see cref="T:System.Web.DynamicData.DynamicControlParameter" /> object gets its data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,11 +94,18 @@
         <Parameter Name="control" Type="System.Web.UI.Control" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="control">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="context">The HTTP context.</param>
+        <param name="control">The dynamic control parameter.</param>
+        <summary>Throws an <see cref="T:System.InvalidOperationException" /> exception to indicate that the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control is missing.</summary>
+        <returns>A <see cref="T:System.InvalidOperationException" /> object that indicates the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control is missing.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method should not be called by the page developer.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetWhereParameters">
@@ -110,9 +124,9 @@
         <Parameter Name="dataSource" Type="System.Web.DynamicData.IDynamicDataSource" />
       </Parameters>
       <Docs>
-        <param name="dataSource">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataSource">The <see cref="T:System.Web.DynamicData.IDynamicDataSource" /> instance to get the parameters from.</param>
+        <summary>Returns the collection of parameters that are used to create a <see langword="Where" /> clause for when the data source is queried.</summary>
+        <returns>A collection of <see cref="T:System.Web.UI.WebControls.Parameter" /> objects that represent the query parameters for the specified <see cref="T:System.Web.DynamicData.IDynamicDataSource" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

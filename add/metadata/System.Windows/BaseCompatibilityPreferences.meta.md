@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.BaseCompatibilityPreferences
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.BaseCompatibilityPreferences.InlineDispatcherSynchronizationContextSend
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.BaseCompatibilityPreferences.FlowDispatcherSynchronizationContextPriority
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.BaseCompatibilityPreferences.ReuseDispatcherSynchronizationContextInstance
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

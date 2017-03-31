@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.IPostBackEventHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

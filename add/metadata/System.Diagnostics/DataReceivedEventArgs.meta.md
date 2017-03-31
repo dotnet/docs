@@ -1,9 +1,13 @@
 ---
 uid: System.Diagnostics.DataReceivedEventArgs
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.DataReceivedEventArgs.Data
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

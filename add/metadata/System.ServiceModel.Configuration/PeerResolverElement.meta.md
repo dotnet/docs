@@ -1,24 +1,24 @@
 ---
 uid: System.ServiceModel.Configuration.PeerResolverElement
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerResolverElement.Mode
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerResolverElement.#ctor
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerResolverElement.ReferralPolicy
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.ServiceModel.Configuration.PeerResolverElement.Custom
-internalonly: False
+manager: "ghogen"
 ---

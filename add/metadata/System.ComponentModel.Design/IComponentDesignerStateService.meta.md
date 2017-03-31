@@ -1,14 +1,20 @@
 ---
 uid: System.ComponentModel.Design.IComponentDesignerStateService
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IComponentDesignerStateService.GetState(System.ComponentModel.IComponent,System.String)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Design.IComponentDesignerStateService.SetState(System.ComponentModel.IComponent,System.String,System.Object)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

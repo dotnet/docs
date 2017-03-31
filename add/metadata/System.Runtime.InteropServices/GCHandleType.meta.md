@@ -1,4 +1,6 @@
 ---
 uid: System.Runtime.InteropServices.GCHandleType
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

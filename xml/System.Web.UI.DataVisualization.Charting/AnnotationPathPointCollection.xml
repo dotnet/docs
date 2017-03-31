@@ -14,8 +14,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.DataVisualization.Charting.PolylineAnnotation" /> or <see cref="T:System.Web.UI.DataVisualization.Charting.PolygonAnnotation" /> path points, which can be accessed using the <c>GraphicPathPoints</c> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection is used at design time only, and employs serialization to expose the shape of a polyline or polygon annotation, using their respective `GraphicPathPoints` collection properties.  
+  
+ At run time, use the `GraphicsPath` property to set the path of a <xref:System.Web.UI.DataVisualization.Charting.PolylineAnnotation> or <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +40,8 @@
         <Parameter Name="annotation" Type="System.Web.UI.DataVisualization.Charting.PolylineAnnotation" />
       </Parameters>
       <Docs>
-        <param name="annotation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="annotation">A polyline annotation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection" /> class with the specified polyline annotation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +61,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases unmanaged and, optionally, managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +81,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Forces the invalidation of the chart element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

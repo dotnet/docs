@@ -1,19 +1,23 @@
 ---
 uid: System.Net.HttpVersion
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpVersion.Version10
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpVersion.Version11
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpVersion.#ctor
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

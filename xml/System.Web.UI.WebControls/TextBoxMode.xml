@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the behavior mode of the text box.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TextBoxMode> enumeration represents the different display options for <xref:System.Web.UI.WebControls.TextBox> controls.  
+  
+ SingleLine mode displays the <xref:System.Web.UI.WebControls.TextBox> control as a single row. If the user enters text that exceeds the physical size of the <xref:System.Web.UI.WebControls.TextBox> control, the text will scroll horizontally.  
+  
+ MultiLine mode displays the height of the <xref:System.Web.UI.WebControls.TextBox> based on the <xref:System.Web.UI.WebControls.TextBox.Rows%2A> property, and allows data entry on multiple lines. The text will automatically wrap if the <xref:System.Web.UI.WebControls.TextBox.Wrap%2A> property is set to `true`. If the user enters text that exceeds the physical size of the <xref:System.Web.UI.WebControls.TextBox>, the text will scroll accordingly and scroll bars will appear.  
+  
+ The behavior of Password mode is similar to SingleLine mode except that all characters entered in the <xref:System.Web.UI.WebControls.TextBox> control are masked and are not saved in view state.  
+  
+ The remaining options correspond to `type` attribute values for the `input` element in the HTML5 specification.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Color">
@@ -27,7 +42,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents color entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -43,7 +58,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents date entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -59,7 +74,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents date-time entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTimeLocal">
@@ -75,7 +90,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents local date-time entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Email">
@@ -91,7 +106,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents email address entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Month">
@@ -107,7 +122,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents month entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="MultiLine">
@@ -123,7 +138,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents multiline entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -139,7 +154,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents number entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -155,7 +170,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents password entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Phone">
@@ -171,7 +186,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents phone number entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -187,7 +202,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents numeric range entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Search">
@@ -203,7 +218,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents search string entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="SingleLine">
@@ -219,7 +234,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents single-line entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Time">
@@ -235,7 +250,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents time entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -251,7 +266,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents URL entry mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Week">
@@ -267,7 +282,7 @@
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents week entry mode.</summary>
       </Docs>
     </Member>
   </Members>

@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies how a window will automatically size itself to fit the size of its content. Used by the <see cref="P:System.Windows.Window.SizeToContent" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Windows.SizeToContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a window will automatically set its height to fit the height of its content, but not the width.</summary>
       </Docs>
     </Member>
     <Member MemberName="Manual">
@@ -48,7 +48,7 @@
         <ReturnType>System.Windows.SizeToContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a window will not automatically set its size to fit the size of its content. Instead, the size of a window is determined by other properties, including <see cref="P:System.Windows.FrameworkElement.Width" />, <see cref="P:System.Windows.FrameworkElement.Height" />, <see cref="P:System.Windows.FrameworkElement.MaxWidth" />, <see cref="P:System.Windows.FrameworkElement.MaxHeight" />, <see cref="P:System.Windows.FrameworkElement.MinWidth" />, and <see cref="P:System.Windows.FrameworkElement.MinHeight" />. See [WPF Windows Overview](../Topic/WPF%20Windows%20Overview.md).</summary>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -64,7 +64,7 @@
         <ReturnType>System.Windows.SizeToContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a window will automatically set its width to fit the width of its content, but not the height.</summary>
       </Docs>
     </Member>
     <Member MemberName="WidthAndHeight">
@@ -80,7 +80,7 @@
         <ReturnType>System.Windows.SizeToContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that a window will automatically set both its width and height to fit the width and height of its content.</summary>
       </Docs>
     </Member>
   </Members>

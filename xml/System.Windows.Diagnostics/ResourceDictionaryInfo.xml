@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents information about a <see cref="T:System.Windows.ResourceDictionary" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +33,7 @@
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the assembly that uses the <see cref="T:System.Windows.ResourceDictionary" /> object referenced by the <see cref="P:System.Windows.Diagnostics.ResourceDictionaryInfo.ResourceDictionaryAssembly" /> property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -51,7 +51,7 @@
         <ReturnType>System.Windows.ResourceDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the resource dictionary for which additional information is described by this <see cref="T:System.Windows.Diagnostics.ResourceDictionaryInfo" /> object instance.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -69,7 +69,7 @@
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of the assembly from which the resource dictionary is loaded.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +87,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the URI of the compiled BAML file embedded in the <see cref="P:System.Windows.Diagnostics.ResourceDictionaryInfo.ResourceDictionaryAssembly" /> property from which the resource dictionary is loaded.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -15,8 +15,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Specifies whether transaction flow across thread continuations is enabled for <see cref="T:System.Transactions.TransactionScope" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Transactions.TransactionScopeAsyncFlowOption> is configured in the <xref:System.Transactions.TransactionScope.%23ctor%2A> overloads that take a <xref:System.Transactions.TransactionScopeAsyncFlowOption> parameter. Suppress is the default setting if no <xref:System.Transactions.TransactionScopeAsyncFlowOption> is specified.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Enabled">
@@ -37,7 +46,7 @@
         <ReturnType>System.Transactions.TransactionScopeAsyncFlowOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that transaction flow across thread continuations is enabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="Suppress">
@@ -58,7 +67,15 @@
         <ReturnType>System.Transactions.TransactionScopeAsyncFlowOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that transaction flow across thread continuations is suppressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the default setting if no <xref:System.Transactions.TransactionScopeAsyncFlowOption> is specified in the <xref:System.Transactions.TransactionScope.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a virtual call stack frame for the interpreter.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,8 +33,8 @@
         <Parameter Name="state" Type="System.Activities.Debugger.State" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="state">For this implementation, an object that contains the set of properties that define a virtual environment for a frame on a call stack.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.VirtualStackFrame" /> class with the state specified.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +52,9 @@
         <Parameter Name="locals" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <param name="locals">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="state">For this implementation, an object that contains the set of properties that define a virtual environment for a frame on a call stack.</param>
+        <param name="locals">Early and late bound variables associated with the state.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.VirtualStackFrame" /> class with the state and local variables specified.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +71,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets local variables for a frame on a call stack.</summary>
+        <value>A collection of key/value pairs that define early and late bound variables associated with the specified state.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +89,8 @@
         <ReturnType>System.Activities.Debugger.State</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the properties that define a virtual environment for a frame on a call stack.</summary>
+        <value>A <see langword="State" /> object that contains the properties that define a specified virtual environment.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +108,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>A string instance of the state information.</summary>
+        <returns>The state information for a virtual environment.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,24 +1,29 @@
 ---
 uid: System.IdentityModel.Metadata.SingleSignOnDescriptor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.SingleSignOnDescriptor.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.SingleSignOnDescriptor.SingleLogoutServices
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.SingleSignOnDescriptor.NameIdentifierFormats
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Metadata.SingleSignOnDescriptor.ArtifactResolutionServices
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

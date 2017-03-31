@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides support when creating directive IntelliSense at design time.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +32,10 @@
         <Parameter Name="extension" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="frameworkVersion">To be added.</param>
-        <param name="extension">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="frameworkVersion">The .NET Framework version.</param>
+        <param name="extension">The file name extension.</param>
+        <summary>Returns a collection of directives based on the <paramref name="frameworkVersion" /> parameter and the <paramref name="extension" /> parameter.</summary>
+        <returns>A read only collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

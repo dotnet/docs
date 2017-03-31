@@ -1,4 +1,5 @@
 ---
 uid: System.Configuration.ValidatorCallback
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

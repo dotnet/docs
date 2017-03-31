@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.ComplexPropertyEntry
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ComplexPropertyEntry.ReadOnly
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.ComplexPropertyEntry.IsCollectionItem
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

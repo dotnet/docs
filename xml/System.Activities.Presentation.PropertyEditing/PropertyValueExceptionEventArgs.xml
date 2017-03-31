@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an object that contains event arguments for the occurrence of a <see cref="E:System.Activities.Presentation.PropertyEditing.PropertyValue.PropertyValueException" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,11 +31,11 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="source">To be added.</param>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">A message that indicates what failed during the property value change.</param>
+        <param name="value">The <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> instance in which the exception is occurring.</param>
+        <param name="source">The source that generated this exception—a <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> get or set operation.</param>
+        <param name="exception">The error that occurred during the property value change.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueExceptionEventArgs" /> class that contains information about an error that has occurred during the updating of a property value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +52,8 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the error that occurred during the property value change associated with this instance of event arguments.</summary>
+        <value>An <see cref="T:System.Exception" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the message that indicates what failed during the property value change associated with this instance of event arguments.</summary>
+        <value>A <see cref="T:System.String" /> description of the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> associated with this instance of event arguments.</summary>
+        <value>A <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> associated with this instance of event arguments.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,8 @@
         <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyValueExceptionSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueExceptionSource" /> associated with this instance of event arguments.</summary>
+        <value>A <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueExceptionSource" /> associated with this instance of event arguments.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

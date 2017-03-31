@@ -1,19 +1,19 @@
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.#ctor(System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel,System.Int32,System.Int32,System.Object)
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel
-internalonly: False
+manager: "leannef"
 ---
 
 ---
 uid: System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.PageNumber
-internalonly: False
+manager: "leannef"
 ---

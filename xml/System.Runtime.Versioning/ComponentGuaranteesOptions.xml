@@ -20,8 +20,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes the compatibility guarantee of a component, type, or type member that may span multiple versions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> enumeration is used by the <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute> class to indicate the level of compatibility that is guaranteed for a component or class library that spans multiple versions. Exchange provides the strongest compatibility guarantee, followed by Stable and SideBySide. None does not promise compatibility across versions.  
+  
+ For a detailed discussion of the meaning of each guarantee, see the <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute> topic.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Exchange">
@@ -42,7 +51,7 @@
         <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The developer promises multi-version exchange compatibility for the type. Consumers of the type can expect compatibility across future versions and can use the type in all their interfaces. Versioning problems cannot be fixed by side-by-side execution.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -63,7 +72,7 @@
         <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The developer does not guarantee compatibility across versions. Consumers of the component, type, or member can expect future versions to break the existing client.</summary>
       </Docs>
     </Member>
     <Member MemberName="SideBySide">
@@ -84,7 +93,7 @@
         <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The component has been tested to work when more than one version of the assembly is loaded into the same application domain. Future versions can break compatibility. However, when such breaking changes are made, the old version is not modified but continues to exist alongside the new version.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stable">
@@ -105,7 +114,7 @@
         <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The developer promises stable compatibility across versions. Consumers of the type can expect that future versions will not break the existing client. However, if they do and if the client has not used the type in its interfaces, side-by-side execution may fix the problem.</summary>
       </Docs>
     </Member>
   </Members>

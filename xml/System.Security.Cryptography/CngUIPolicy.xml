@@ -20,8 +20,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Encapsulates optional configuration parameters for the user interface (UI) that Cryptography Next Generation (CNG) displays when you access a protected key.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class enables you to create a UI policy for displaying prompts about key operations such as smart card PIN prompts. It also enables you to enforce user interaction to access a key, even if the key is stored in a software key storage provider (KSP) instead of in a smart card. CNG displays these configuration parameters for the UI when you access a protected key.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,9 +53,16 @@
         <Parameter Name="protectionLevel" Type="System.Security.Cryptography.CngUIProtectionLevels" />
       </Parameters>
       <Docs>
-        <param name="protectionLevel">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="protectionLevel">A bitwise combination of the enumeration values that specify the protection level.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CngUIPolicy" /> class by using the specified protection level.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the protection level for the key in UI prompting scenarios.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -74,9 +88,9 @@
         <Parameter Name="friendlyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="protectionLevel">To be added.</param>
-        <param name="friendlyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="protectionLevel">A bitwise combination of the enumeration values that specify the protection level.</param>
+        <param name="friendlyName">A friendly name for the key to be used in the UI prompt. Specify a null string to use the default name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CngUIPolicy" /> class by using the specified protection level and friendly name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,10 +118,10 @@
         <Parameter Name="description" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="protectionLevel">To be added.</param>
-        <param name="friendlyName">To be added.</param>
-        <param name="description">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="protectionLevel">A bitwise combination of the enumeration values that specify the protection level.</param>
+        <param name="friendlyName">A friendly name for the key to be used in the UI prompt. Specify a null string to use the default name.</param>
+        <param name="description">The full-text description of the key. Specify a null string to use the default description.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CngUIPolicy" /> class by using the specified protection level, friendly name, and description.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,11 +150,11 @@
         <Parameter Name="useContext" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="protectionLevel">To be added.</param>
-        <param name="friendlyName">To be added.</param>
-        <param name="description">To be added.</param>
-        <param name="useContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="protectionLevel">A bitwise combination of the enumeration values that specify the protection level.</param>
+        <param name="friendlyName">A friendly name for the key to be used in the UI prompt. Specify a null string to use the default name.</param>
+        <param name="description">The full-text description of the key. Specify a null string to use the default description.</param>
+        <param name="useContext">A description of how the key will be used. Specify a null string to use the default description.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CngUIPolicy" /> class by using the specified protection level, friendly name, description string, and use context.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,12 +184,12 @@
         <Parameter Name="creationTitle" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="protectionLevel">To be added.</param>
-        <param name="friendlyName">To be added.</param>
-        <param name="description">To be added.</param>
-        <param name="useContext">To be added.</param>
-        <param name="creationTitle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="protectionLevel">A bitwise combination of the enumeration values that specify the protection level.</param>
+        <param name="friendlyName">A friendly name for the key to be used in the UI prompt. Specify a null string to use the default name.</param>
+        <param name="description">The full-text description of the key. Specify a null string to use the default description.</param>
+        <param name="useContext">A description of how the key will be used. Specify a null string to use the default description.</param>
+        <param name="creationTitle">The title for the dialog box that provides the UI prompt. Specify a null string to use the default title.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CngUIPolicy" /> class by using the specified protection level, friendly name, description string, use context, and title.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,8 +215,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the title that is displayed by the UI prompt.</summary>
+        <value>The title of the dialog box that appears when the key is accessed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +242,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the description string that is displayed by the UI prompt.</summary>
+        <value>The description text for the dialog box that appears when the key is accessed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,8 +269,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the friendly name that is displayed by the UI prompt.</summary>
+        <value>The friendly name that is used to describe the key in the dialog box that appears when the key is accessed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,8 +296,8 @@
         <ReturnType>System.Security.Cryptography.CngUIProtectionLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the UI protection level for the key.</summary>
+        <value>An object that describes the level of UI protection to apply to the key.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -309,8 +323,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the description of how the key will be used.</summary>
+        <value>The description of how the key will be used.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

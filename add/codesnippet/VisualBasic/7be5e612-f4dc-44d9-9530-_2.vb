@@ -1,1 +1,0 @@
-         Dim pp1 As IPermission = New PrincipalPermission("", "Administrator")

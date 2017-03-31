@@ -21,8 +21,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an attribute indicating that a service operation is logically a retrieval operation and that it can be called by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST programming model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Web.WebGetAttribute> attribute is applied to a service operation in addition to the <xref:System.ServiceModel.OperationContractAttribute> and associates the operation with a <xref:System.UriTemplate> as well as the HTTP protocol Get verb. The association with HTTP Get verb means that the operation is used to retrieve information from the service. The <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a *passive* operation behavior (the <xref:System.ServiceModel.Description.IOperationBehavior> methods do nothing) that adds metadata to the operation description. Applying the <xref:System.ServiceModel.Web.WebGetAttribute> attribute to a service operation has no effect unless a behavior that is looking for this metadata in the operation description (such as <xref:System.ServiceModel.Description.WebHttpBehavior>) is added to the service's behavior collection.  
+  
+ Service operations with the <xref:System.ServiceModel.Web.WebGetAttribute> attribute applied should be logical retrieval operations. The HTTP GET method is associated with all operations marked with the <xref:System.ServiceModel.Web.WebGetAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.ServiceModel.Web.WebGetAttribute> attribute.  
+  
+ [!code-csharp[WebAttribute#0](~/samples/snippets/csharp/VS_Snippets_CFX/webattribute/cs/program.cs#0)]
+ [!code-vb[WebAttribute#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/webattribute/vb/program.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,7 +54,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebGetAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,9 +72,24 @@
         <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the body style of the messages that are sent to and from the service operation.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.Web.WebMessageBodyStyle" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When set to <xref:System.ServiceModel.Web.WebMessageBodyStyle>, the result of the service operation is written directly to the body of the response message.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Web.WebGetAttribute.BodyStyle%2A> property.  
+  
+ [!code-csharp[WebAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/webattribute/cs/program.cs#1)]
+ [!code-vb[WebAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/webattribute/vb/program.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsBodyStyleSetExplicitly">
@@ -74,9 +106,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.IsBodyStyleSetExplicitly" /> property.</summary>
+        <value>A value that specifies whether the <see cref="P:System.ServiceModel.Web.WebGetAttribute.BodyStyle" /> property is set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is designed to be used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and should never be set from user code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRequestFormatSetExplicitly">
@@ -93,9 +132,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.IsRequestFormatSetExplicitly" /> property.</summary>
+        <value>A value that specifies whether the <see cref="P:System.ServiceModel.Web.WebGetAttribute.RequestFormat" /> property was set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is designed to be used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and should never be set from user code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsResponseFormatSetExplicitly">
@@ -112,9 +158,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.IsResponseFormatSetExplicitly" /> property.</summary>
+        <value>A value that specifies whether the <see cref="P:System.ServiceModel.Web.WebGetAttribute.ResponseFormat" /> property was set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is designed to be used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and should never be set from user code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestFormat">
@@ -131,9 +184,24 @@
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.RequestFormat" /> property.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property determines the format of requests made to a service operation. The two possible values are `Xml` and `Json`.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Web.WebGetAttribute.RequestFormat%2A> property.  
+  
+ [!code-csharp[WebAttribute#2](~/samples/snippets/csharp/VS_Snippets_CFX/webattribute/cs/program.cs#2)]
+ [!code-vb[WebAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/webattribute/vb/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResponseFormat">
@@ -150,9 +218,24 @@
         <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.ResponseFormat" /> property.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property determines the format of responses sent from a service operation. The two possible values are `Xml` and `Json`.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> property.  
+  
+ [!code-csharp[WebAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/webattribute/cs/program.cs#3)]
+ [!code-vb[WebAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/webattribute/vb/program.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.AddBindingParameters">
@@ -175,8 +258,15 @@
       <Docs>
         <param name="operation">To be added.</param>
         <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing because the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a passive operation behavior.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior">
@@ -199,8 +289,15 @@
       <Docs>
         <param name="operation">To be added.</param>
         <param name="client">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing because the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a passive operation behavior.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior">
@@ -223,8 +320,15 @@
       <Docs>
         <param name="operation">To be added.</param>
         <param name="service">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing because the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a passive operation behavior.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IOperationBehavior.Validate">
@@ -245,8 +349,15 @@
       </Parameters>
       <Docs>
         <param name="operation">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing because the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a passive operation behavior.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UriTemplate">
@@ -263,9 +374,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets and sets the Uniform Resource Identifier (URI) template for the service operation.</summary>
+        <value>The URI template for the service operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ URI templates are used to determine which requests get dispatched to which service operations. URI templates allow you to map a URI or a set of URIs to a service operation. [!INCLUDE[crabout](~/includes/crabout-md.md)] URI templates, see [UriTemplate and UriTemplateTable](../Topic/UriTemplate%20and%20UriTemplateTable.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Web.WebGetAttribute.UriTemplate%2A> property.  
+  
+ [!code-csharp[WebAttribute#4](~/samples/snippets/csharp/VS_Snippets_CFX/webattribute/cs/program.cs#4)]
+ [!code-vb[WebAttribute#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/webattribute/vb/program.vb#4)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

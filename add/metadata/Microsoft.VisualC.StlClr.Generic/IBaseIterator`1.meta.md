@@ -1,19 +1,23 @@
 ---
 uid: Microsoft.VisualC.StlClr.Generic.IBaseIterator`1
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.Generic.IBaseIterator`1.valid
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.Generic.IBaseIterator`1.container
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---
 
 ---
 uid: Microsoft.VisualC.StlClr.Generic.IBaseIterator`1.next
-internalonly: False
+ms.author: "mblome"
+manager: "ghogen"
 ---

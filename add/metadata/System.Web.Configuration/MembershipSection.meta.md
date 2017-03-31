@@ -1,29 +1,35 @@
 ---
 uid: System.Web.Configuration.MembershipSection
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.MembershipSection.UserIsOnlineTimeWindow
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.MembershipSection.Providers
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.MembershipSection.HashAlgorithmType
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.MembershipSection.DefaultProvider
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Configuration.MembershipSection.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

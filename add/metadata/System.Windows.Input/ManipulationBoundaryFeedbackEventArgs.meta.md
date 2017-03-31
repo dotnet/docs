@@ -1,19 +1,25 @@
 ---
 uid: System.Windows.Input.ManipulationBoundaryFeedbackEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationBoundaryFeedbackEventArgs.Manipulators
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationBoundaryFeedbackEventArgs.ManipulationContainer
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationBoundaryFeedbackEventArgs.BoundaryFeedback
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

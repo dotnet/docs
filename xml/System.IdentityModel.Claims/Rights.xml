@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the pre-defined types of rights that can be associated with a <see cref="T:System.IdentityModel.Claims.Claim" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a string that specifies that the right represents an identity.</summary>
+        <value>The right that represents an identity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string that is returned by the <xref:System.IdentityModel.Claims.Rights.Identity%2A> property is http://schemas.xmlsoap.org/ws/2005/05/identity/right/Identity.  
+  
+ In general, a typical <xref:System.IdentityModel.Claims.ClaimSet> has one claim with the <xref:System.IdentityModel.Claims.Rights.Identity%2A> right. This claim represents the identity of the <xref:System.IdentityModel.Claims.ClaimSet>. For example, a <xref:System.IdentityModel.Claims.WindowsClaimSet> has a SID claim that represents the user's SID. Likewise, the <xref:System.IdentityModel.Claims.X509CertificateClaimSet> has a <xref:System.IdentityModel.Claims.ClaimTypes.Thumbprint%2A> claim that represents the identity that is associated with an X.509 certificate.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PossessProperty">
@@ -46,9 +55,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a string that specifies that the right represents a property that the entity associated with a claim possesses.</summary>
+        <value>The right that represents a property that the entity associated with a <see cref="T:System.IdentityModel.Claims.Claim" /> object possesses.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string that is returned by the <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> property is http://schemas.xmlsoap.org/ws/2005/05/identity/right/PossessProperty.  
+  
+ A claim of type <xref:System.IdentityModel.Claims.ClaimTypes.Name%2A> with right <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> over the value `Martin` indicates that the entity with which such a claim is associated possesses a `Name` property with the value `Martin`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

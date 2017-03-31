@@ -10,8 +10,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the access mode for a <see cref="T:System.Messaging.MessageQueue" /> at creation time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When creating a <xref:System.Messaging.MessageQueue>, if no access mode is specified, the access mode defaults to `QueueAccessMode.SendAndReceive`.  
+  
+ Once the <xref:System.Messaging.MessageQueue> is created, the access mode cannot be changed.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Peek">
@@ -27,7 +36,7 @@
         <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The queue can only peek at messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="PeekAndAdmin">
@@ -43,7 +52,7 @@
         <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The queue can peek at messages. It can also be purged.</summary>
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -59,7 +68,7 @@
         <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The queue can peek at or receive messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReceiveAndAdmin">
@@ -75,7 +84,7 @@
         <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The queue can receive messages. It can also be purged.</summary>
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -91,7 +100,7 @@
         <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The queue can only send messages.</summary>
       </Docs>
     </Member>
     <Member MemberName="SendAndReceive">
@@ -107,7 +116,7 @@
         <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The queue can peek at, receive, or send messages.</summary>
       </Docs>
     </Member>
   </Members>

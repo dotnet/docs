@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the characteristics of a <see cref="T:System.Activities.DelegateArgument" /> to the runtime.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,12 +31,19 @@
         <Parameter Name="boundArgument" Type="System.Activities.DelegateArgument" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="type">To be added.</param>
-        <param name="direction">To be added.</param>
-        <param name="boundArgument">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the <see cref="T:System.Activities.RuntimeDelegateArgument" />.</param>
+        <param name="type">The data type of the <see cref="T:System.Activities.RuntimeDelegateArgument" />.</param>
+        <param name="direction">One of the enumeration values that specifies the direction of data flow through an argument.</param>
+        <param name="boundArgument">The delegate argument that is represented by this <see cref="T:System.Activities.RuntimeDelegateArgument" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeDelegateArgument" /> class using the specified name, data type, argument direction, and <see cref="T:System.Activities.DelegateArgument" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `type` and `direction` parameters do not match the associated values of `boundArgument`, an <xref:System.InvalidArgumentException> is thrown.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BoundArgument">
@@ -52,8 +59,8 @@
         <ReturnType>System.Activities.DelegateArgument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Activities.DelegateArgument" /> that is represented by this <see cref="T:System.Activities.RuntimeDelegateArgument" />.</summary>
+        <value>The bound argument represented by this <see cref="T:System.Activities.RuntimeDelegateArgument" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +77,8 @@
         <ReturnType>System.Activities.ArgumentDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the direction of data flow through the <see cref="T:System.Activities.RuntimeDelegateArgument" />.</summary>
+        <value>One of the enumeration values that specifies the direction of data flow through an argument.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +95,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the <see cref="T:System.Activities.RuntimeDelegateArgument" />.</summary>
+        <value>The name of the <see cref="T:System.Activities.RuntimeDelegateArgument" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +113,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the data type of the <see cref="T:System.Activities.RuntimeDelegateArgument" />.</summary>
+        <value>The data type of the <see cref="T:System.Activities.RuntimeDelegateArgument" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

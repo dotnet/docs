@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides the functionality to parse XAML markup code into an object or tree of objects.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="underlyingTextReader" Type="System.IO.TextReader" />
       </Parameters>
       <Docs>
-        <param name="underlyingTextReader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="underlyingTextReader">The text reader to the underlying text data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.XamlDebuggerXmlReader" /> class with the specified text reader.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,9 @@
         <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
       </Parameters>
       <Docs>
-        <param name="underlyingTextReader">To be added.</param>
-        <param name="schemaContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="underlyingTextReader">The text reader to the underlying text data.</param>
+        <param name="schemaContext">The schema context for interpreting or mapping XAML types.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.XamlDebuggerXmlReader" /> class with the specified text reader and schema context for interpreting or mapping XAML types.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,9 +76,9 @@
         <Parameter Name="textReader" Type="System.IO.TextReader" />
       </Parameters>
       <Docs>
-        <param name="underlyingReader">To be added.</param>
-        <param name="textReader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="underlyingReader">The XAML reader to the underlying XAML data.</param>
+        <param name="textReader">The text reader to the underlying text data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.XamlDebuggerXmlReader" /> class with the specified XAML reader and text reader.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,10 +102,10 @@
         <Parameter Name="textReader" Type="System.IO.TextReader" />
       </Parameters>
       <Docs>
-        <param name="underlyingReader">To be added.</param>
-        <param name="xamlLineInfo">To be added.</param>
-        <param name="textReader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="underlyingReader">The XAML reader to the underlying XAML data.</param>
+        <param name="xamlLineInfo">The object that reports XAML line information.</param>
+        <param name="textReader">The text reader to the underlying text data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.XamlDebuggerXmlReader" /> class with the specified XAML reader, XAML line information, and text reader.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,8 +122,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether a non-activity source location is collected.</summary>
+        <value>
+          <see langword="true" /> if the non-activity source location is collected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,9 +145,9 @@
         <Parameter Name="destination" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="destination">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The XAML activity instance from which to read source location values.</param>
+        <param name="destination">An activity instance.</param>
+        <summary>Retrieves row and column values from the specified activity object and assigns them to the current instance of the XAML reader.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +167,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="true" /> to release the managed resources; otherwise, <see langword="false" />.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Activities.Debugger.XamlDebuggerXmlReader" />, and optionally, releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,7 +186,7 @@
         <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of an attached property that represents the ending column of an activity element in its XAML form.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,7 +203,7 @@
         <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of an attached property that represents the ending line of an activity element in its XAML form.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,7 +220,7 @@
         <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of an attached property that represents the name of the file to be parsed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,9 +245,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">An activity instance.</param>
+        <summary>Gets the value of the attached property named in the **EndColumnName** dependency property field of the specified instance of a XAML reader.</summary>
+        <returns>An attached property object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,9 +272,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">An activity instance.</param>
+        <summary>Gets the value of the attached property named in the **EndLineName** dependency property field of the specified instance of a XAML reader.</summary>
+        <returns>An attached property object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,9 +294,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">An activity instance.</param>
+        <summary>Gets the value of the attached property named in the **FileNameName** dependency property field of the specified instance of a XAML reader.</summary>
+        <returns>An attached property object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,9 +321,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">An activity instance.</param>
+        <summary>Gets the value of the attached property named in the **StartColumnName** dependency property field of the specified instance of a XAML reader.</summary>
+        <returns>An attached property object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,9 +348,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="instance">An activity instance.</param>
+        <summary>Gets the value of the attached property named in the **StartLineName** dependency property field of the specified instance of a XAML reader.</summary>
+        <returns>An attached property object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,8 +367,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether line information is available.</summary>
+        <value>
+          <see langword="true" /> if line information is available; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,8 +386,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the underlying reader has reached the end of the XAML file that is being parsed.</summary>
+        <value>
+          <see langword="true" /> if the reader has reached the end of the file it is parsing; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,8 +405,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the line in a XAML file that is currently being examined by the reader.</summary>
+        <value>The line in a XAML file that is currently being examined by the reader.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -419,9 +423,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the position of the line in a XAML file that is currently being examined by the XML reader.</summary>
+        <value>The position of the line in a XAML file that is currently being examined by the XML reader.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Line position is also known as "Column" in some text editors or text editing metaphors.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Member">
@@ -437,8 +448,8 @@
         <ReturnType>System.Xaml.XamlMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the starting member of the document being parsed to the XAML member base.</summary>
+        <value>The starting member of the document being parsed to the XAML member base.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,8 +466,8 @@
         <ReturnType>System.Xaml.NamespaceDeclaration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the path that is used in the root element of the XAML document to establish a relationship between the XAML code and its schema.</summary>
+        <value>A namespace declaration for use in the root element of the XAML document.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,8 +484,8 @@
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the node currently being read in a XAML file.</summary>
+        <value>One of the enumeration values of the <see cref="T:System.Xaml.XamlNodeType" /> enumeration.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -492,8 +503,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides the next XAML node from the loaded source, if a XAML node is available.</summary>
+        <returns>
+          <see langword="true" /> if a node is available; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -510,8 +522,8 @@
         <ReturnType>System.Xaml.XamlSchemaContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the schema context for the underlying XAML reader.</summary>
+        <value>The schema context information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -532,9 +544,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">The current instance of the XAML reader.</param>
+        <param name="value">The **EndColumnName** property identifier or name.</param>
+        <summary>Sets the value of the attached property named in the **EndColumnName** dependency property field of the specified instance of a XAML reader.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -555,9 +567,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">The current instance of the XAML reader.</param>
+        <param name="value">The **EndLineName** identifier or name.</param>
+        <summary>Sets the value of the attached property named in the **EndLineName** dependency property field of the specified instance of a XAML reader.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,9 +590,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">The current instance of the XAML reader.</param>
+        <param name="value">The **FileNameName** property identifier or name.</param>
+        <summary>Sets the value of the attached property named in the **FileNameName** dependency property field of the specified instance of a XAML reader.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -601,9 +613,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">The current instance of the XAML reader.</param>
+        <param name="value">The **StartColumnName** property identifier or name.</param>
+        <summary>Sets the value of the attached property named in the **StartColumnName** dependency property field of the specified instance of a XAML reader.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -624,9 +636,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="instance">The current instance of the XAML reader.</param>
+        <param name="value">The **StartLineName** property identifier or name.</param>
+        <summary>Sets the value of the attached property named in the **StartLineName** dependency property field of the specified instance of a XAML reader.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -643,7 +655,7 @@
         <ReturnType>System.EventHandler&lt;System.Activities.Debugger.SourceLocationFoundEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the source location is found.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -660,7 +672,7 @@
         <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of an attached property that represents the starting column of the activity in its XAML form.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -677,7 +689,7 @@
         <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of an attached property that represents the starting line of the activity in its XAML form.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -694,8 +706,8 @@
         <ReturnType>System.Xaml.XamlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the record type at the XAML start node.</summary>
+        <value>A XAML record type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -712,8 +724,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the element at the node currently being read.</summary>
+        <value>An element in an XAML file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

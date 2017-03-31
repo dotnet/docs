@@ -1,9 +1,13 @@
 ---
 uid: System.Activities.Presentation.WorkflowDesignerIcons
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.WorkflowDesignerIcons.UseWindowsStoreAppStyleIcons
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,4 +1,4 @@
 ---
 uid: Microsoft.JScript.URIErrorObject
-internalonly: False
+ms.author: "mikejo"
 ---

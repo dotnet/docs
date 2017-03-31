@@ -21,8 +21,18 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Returns a collection of objects involved in concurrency conflicts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example that retrieves information about objects in conflict, `db.ChangeConflicts` represents the collection of those objects.  
+  
+ [!code-csharp[System.Data.Linq.ObjectChangeConflict#1](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.objectchangeconflict/cs/program.cs#1)]
+ [!code-vb[System.Data.Linq.ObjectChangeConflict#1](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.objectchangeconflict/vb/module1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Clear">
@@ -39,7 +49,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all conflicts from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,9 +69,9 @@
         <Parameter Name="item" Type="System.Data.Linq.ObjectChangeConflict" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The specified conflict.</param>
+        <summary>Specifies whether a given conflict is a member of the collection.</summary>
+        <returns>Returns true if the specified conflict is a member of the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,10 +92,19 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The array to copy to.</param>
+        <param name="arrayIndex">The array index where the copy is to start.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Copies the elements of the collection to an array.  
+  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -101,8 +120,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the number of conflicts in the collection</summary>
+        <value>integer</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +139,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the enumerator for the collection.</summary>
+        <returns>An enumerator for the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,9 +160,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">Index in the collection of the item in conflict.</param>
+        <summary>Returns an item in conflict.</summary>
+        <value>An <see cref="T:System.Data.Linq.ObjectChangeConflict" /> representing the item in conflict.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +182,9 @@
         <Parameter Name="item" Type="System.Data.Linq.ObjectChangeConflict" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The conflict to remove.</param>
+        <summary>Specifies whether the specified conflict is removed from the collection.</summary>
+        <returns>Returns true if the <see cref="T:System.Data.Linq.ObjectChangeConflict" /> is removed from the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,8 +204,8 @@
         <Parameter Name="mode" Type="System.Data.Linq.RefreshMode" />
       </Parameters>
       <Docs>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mode">One of the options available in <see cref="T:System.Data.Linq.RefreshMode" />.</param>
+        <summary>Resolves all conflicts in the collection by using the specified strategy.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,9 +226,9 @@
         <Parameter Name="autoResolveDeletes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="mode">To be added.</param>
-        <param name="autoResolveDeletes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mode">The strategy to use to resolve the conflict.</param>
+        <param name="autoResolveDeletes">If true, automatically resolves conflicts that result from a modified object that is no longer in the database.</param>
+        <summary>Resolves all conflicts in the collection by using the specified strategy.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,9 +248,18 @@
         <Parameter Name="item" Type="System.Data.Linq.ObjectChangeConflict" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The item to add.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.ICollection`1.Add(`0)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adds an item to the collection.  
+  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Data.Linq.ObjectChangeConflict&gt;.IsReadOnly">
@@ -247,9 +275,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
+        <value>Returns <see langword="true" /> if the collection is read-only.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -269,9 +304,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">Name of the array.</param>
+        <param name="index">Index of the array.</param>
+        <summary>Copies the collection to an array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,9 +323,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
+        <value>Returns <see langword="true" /> if access to the collection is synchronized (thread safe).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -306,9 +348,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
+        <value>Returns an object that can be used to synchronize access to the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -325,9 +374,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
+        <returns>An enumerator that iterates through a collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Linq.ChangeConflictCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

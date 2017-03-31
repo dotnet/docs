@@ -1,9 +1,13 @@
 ---
 uid: System.Xml.Serialization.XmlNamespaceDeclarationsAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlNamespaceDeclarationsAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

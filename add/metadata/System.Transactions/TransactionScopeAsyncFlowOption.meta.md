@@ -1,4 +1,4 @@
 ---
 uid: System.Transactions.TransactionScopeAsyncFlowOption
-internalonly: False
+manager: "ghogen"
 ---

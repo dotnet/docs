@@ -1,24 +1,33 @@
 ---
 uid: System.Windows.Input.ManipulationVelocities
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationVelocities.#ctor(System.Windows.Vector,System.Double,System.Windows.Vector)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationVelocities.LinearVelocity
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationVelocities.ExpansionVelocity
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Input.ManipulationVelocities.AngularVelocity
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

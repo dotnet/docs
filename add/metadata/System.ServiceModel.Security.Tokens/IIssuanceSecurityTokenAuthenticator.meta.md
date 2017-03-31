@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Security.Tokens.IIssuanceSecurityTokenAuthenticator
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IIssuanceSecurityTokenAuthenticator.IssuedSecurityTokenHandler
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.IIssuanceSecurityTokenAuthenticator.RenewedSecurityTokenHandler
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

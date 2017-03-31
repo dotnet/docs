@@ -1,54 +1,83 @@
 ---
 uid: System.ServiceModel.EndpointAddressBuilder
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.EndpointAddressBuilder.Headers
-internalonly: False
----
-
----
-uid: System.ServiceModel.EndpointAddressBuilder.GetReaderAtMetadata
-internalonly: False
----
-
----
-uid: System.ServiceModel.EndpointAddressBuilder.#ctor(System.ServiceModel.EndpointAddress)
-internalonly: False
----
-
----
-uid: System.ServiceModel.EndpointAddressBuilder.SetMetadataReader(System.Xml.XmlDictionaryReader)
-internalonly: False
----
-
----
-uid: System.ServiceModel.EndpointAddressBuilder.SetExtensionReader(System.Xml.XmlDictionaryReader)
-internalonly: False
----
-
----
-uid: System.ServiceModel.EndpointAddressBuilder.ToEndpointAddress
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.EndpointAddressBuilder.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.EndpointAddressBuilder.GetReaderAtMetadata
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.EndpointAddressBuilder.#ctor(System.ServiceModel.EndpointAddress)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.EndpointAddressBuilder.SetMetadataReader(System.Xml.XmlDictionaryReader)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.EndpointAddressBuilder.SetExtensionReader(System.Xml.XmlDictionaryReader)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.EndpointAddressBuilder.ToEndpointAddress
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.EndpointAddressBuilder.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.EndpointAddressBuilder.Uri
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.EndpointAddressBuilder.GetReaderAtExtensions
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.EndpointAddressBuilder.Identity
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

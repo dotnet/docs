@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Supports the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control and provides an interface for data-bound controls to perform queries and other operations against entity data.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,9 +33,9 @@
         <Parameter Name="viewName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="owner">To be added.</param>
-        <param name="viewName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="owner">The data source control that the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> object is associated with.</param>
+        <param name="viewName">A unique name for the data source view within the scope of the data source control that owns it.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> class, setting the specified <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control as the owner of the current view.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +52,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control supports the delete operation.</summary>
+        <value>
+          <see langword="true" /> if the operation is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +71,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control supports the insert operation.</summary>
+        <value>
+          <see langword="true" /> if the operation is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +90,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control supports paging of retrieved data.</summary>
+        <value>
+          <see langword="true" /> if the operation is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +109,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control supports retrieving the total number of data rows, in addition to retrieving the data.</summary>
+        <value>
+          <see langword="true" /> if the operation is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +128,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control supports a sorted view of the retrieved data.</summary>
+        <value>
+          <see langword="true" /> if the operation is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,8 +147,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control supports the update operation.</summary>
+        <value>
+          <see langword="true" /> if the operation is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,7 +166,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> has finished creating the <see cref="T:System.Data.Objects.ObjectContext" /> used to bind data to controls.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,7 +183,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> creates the <see cref="T:System.Data.Objects.ObjectContext" /> used in data binding.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,7 +200,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceContextDisposingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs before an <see cref="T:System.Data.Objects.ObjectContext" /> is disposed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +217,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs after an object has been deleted from the data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,7 +234,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs before an object is deleted from the data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,7 +251,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.DynamicData.DynamicValidatorEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when validation fails in a partial methods or when an exception is raised.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,10 +272,10 @@
         <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="keys">To be added.</param>
-        <param name="oldValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keys">The keys of the entity to be deleted.</param>
+        <param name="oldValues">The values of the entity to be deleted.</param>
+        <summary>Performs a delete operation.</summary>
+        <returns>The number of rows deleted; otherwise, -1, if the operation fails or the number is not known.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,9 +295,9 @@
         <Parameter Name="values" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="values">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="values">The values of the entity to be inserted.</param>
+        <summary>Performs an insert operation.</summary>
+        <returns>The number of rows inserted; otherwise, -1, if the operation fails or the number is not known.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -311,9 +317,9 @@
         <Parameter Name="arguments" Type="System.Web.UI.DataSourceSelectArguments" />
       </Parameters>
       <Docs>
-        <param name="arguments">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="arguments">The select operation arguments.</param>
+        <summary>Performs a select operation.</summary>
+        <returns>The result of the select operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,11 +341,11 @@
         <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="keys">To be added.</param>
-        <param name="values">To be added.</param>
-        <param name="oldValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keys">The keys of the entity to be updated.</param>
+        <param name="values">The new values of the entity to be updated.</param>
+        <param name="oldValues">The old values of the entity to be updated.</param>
+        <summary>Performs an update operation.</summary>
+        <returns>The number of rows updated; otherwise, -1, if the operation fails or the number is not known.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,8 +363,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a table that represents the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" />.</summary>
+        <returns>A table that contains the properties of the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,7 +381,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs after a new object is created at the data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,7 +398,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs before a new object is persisted to the data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -414,8 +420,15 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs after the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> has created an Entity SQL query that was specified during the configuration of the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Applying LINQ Queries to EntityDataSource](http://msdn.microsoft.com/en-us/cb70db56-9f9d-4b79-98fe-f03dd5ad1e38).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -431,7 +444,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs after a query has been executed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -448,7 +461,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceSelectingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs before a query is constructed and executed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -465,8 +478,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> object is saving changes to its view state.</summary>
+        <value>
+          <see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,8 +500,8 @@
         <Parameter Name="savedState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="savedState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="savedState">The <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> control state to restore.</param>
+        <summary>Restores the previously saved view state for the data source view.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -505,8 +519,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Saves the changes to view state for the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> control since the time that the page was posted back to the server.</summary>
+        <returns>The object that contains the changes to the <see cref="T:System.Web.UI.WebControls.EntityDataSourceView" /> control's view state, or <see langword="null" /> (<see langword="Nothing" /> in Visual Basic) if there is no view state associated with the object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -524,7 +538,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Tracks view state changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,7 +555,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs after changes to an object have been persisted to the data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -558,7 +572,7 @@
         <ReturnType>System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs before changes to an object are persisted to the data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

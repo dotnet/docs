@@ -1,4 +1,6 @@
 ---
 uid: System.Windows.Controls.UndoAction
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

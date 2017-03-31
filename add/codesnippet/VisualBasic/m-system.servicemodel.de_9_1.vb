@@ -1,1 +1,0 @@
-			Dim cd0 As New ContractDescription("ICalculator")

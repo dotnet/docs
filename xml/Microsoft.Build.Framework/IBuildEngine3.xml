@@ -12,7 +12,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This interface extends IBuildEngine to provide a method allowing building project files in parallel.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,14 +37,16 @@
         <Parameter Name="returnTargetOutputs" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="projectFileNames">To be added.</param>
-        <param name="targetNames">To be added.</param>
-        <param name="globalProperties">To be added.</param>
-        <param name="removeGlobalProperties">To be added.</param>
-        <param name="toolsVersion">To be added.</param>
-        <param name="returnTargetOutputs">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="projectFileNames">The project to build.</param>
+        <param name="targetNames">The targets in the project to build (can be null).</param>
+        <param name="globalProperties">An array of <see cref="T:System.Collections.IDictionary" /> of additional global properties to apply to the child project (array entries can be null).  
+  
+ The keys and should both be strings.</param>
+        <param name="removeGlobalProperties">A list of global properties which should be removed.</param>
+        <param name="toolsVersion">A tools version recognized by the Engine that will be used during this build (can be null).</param>
+        <param name="returnTargetOutputs">Should the target outputs be returned in the BuildEngineResult.</param>
+        <summary>Allows tasks to initiate a build on a project file</summary>
+        <returns>If the build is successful, the outputs of the specified targets are returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +64,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Waits to reacquire control after yielding.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +82,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Informs the system that this task has a long-running out-of-process component and other work can be done in the build while that work completes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is only one node (msbuild.exe process) per CPU. Only one project, target, and task can build at any time on a node. If a task is waiting, for example, for a spawned tool or some other event to complete, the task can call Yield, which returns immediately. This lets the node build a target in another project, if any are available.  When the task is ready to continue, it should call <xref:Microsoft.Build.Framework.IBuildEngine3.Reacquire%2A>. As a rough rule, if a task expects that an operation will take more than 20 or 30 seconds, it can choose to call `Yield` before it starts the operation, and `Reaquire` when the operation is complete.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

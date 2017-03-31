@@ -1,14 +1,14 @@
 ---
 uid: System.Windows.Markup.MarkupExtension
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.MarkupExtension.#ctor
-internalonly: False
+manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)
-internalonly: False
+manager: "martinek"
 ---

@@ -18,9 +18,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TStandardBinding">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TStandardBinding">A standard binding element.</typeparam>
+    <summary>Represents a base configuration element that specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This binding element defines the basic settings for publishing service metadata for retrieval using a WS-MetadataExchange (WS-MEX) message exchange.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +43,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the binding.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.MexBindingElement`1" /> class with the specified name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +61,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of this binding element.</summary>
+        <value>The <see cref="T:System.Type" /> of this binding element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +82,8 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">A binding configuration element.</param>
+        <summary>Called when the content of a specified binding configuration element is applied to this binding configuration element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

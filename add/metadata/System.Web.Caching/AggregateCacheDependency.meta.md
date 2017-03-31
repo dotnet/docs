@@ -1,24 +1,29 @@
 ---
 uid: System.Web.Caching.AggregateCacheDependency
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.AggregateCacheDependency.Add(System.Web.Caching.CacheDependency[])
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.AggregateCacheDependency.GetFileDependencies
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.AggregateCacheDependency.GetUniqueID
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.Caching.AggregateCacheDependency.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

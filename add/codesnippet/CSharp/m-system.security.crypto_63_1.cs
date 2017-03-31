@@ -1,2 +1,0 @@
-        SignatureDescription signatureDescription = 
-            new SignatureDescription();

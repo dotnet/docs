@@ -15,8 +15,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the state of a data-bound <see cref="T:System.Windows.Forms.DataGridView" /> control when a data error occurred.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Members of this enumeration may be combined using the bitwise OR operation to represent the state of a data-bound <xref:System.Windows.Forms.DataGridView> when a data error occurred. For example, if a user enters an invalid cell value (such as entering a name in a cell that expects a date) and then selects a different cell, the <xref:System.Windows.Forms.DataGridView> will try to commit the invalid cell value. When the commit fails, the <xref:System.Windows.Forms.DataGridView> will raise a <xref:System.Windows.Forms.DataGridView.DataError> event whose <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.Context%2A> property will have a value of Commit and CurrentCellChange.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this type. This example is part of a larger example available in [How to: Handle Errors That Occur During Data Entry in the Windows Forms DataGridView Control](../Topic/How%20to:%20Handle%20Errors%20That%20Occur%20During%20Data%20Entry%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridView.DataError#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DataError/CS/errorhandling.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridView.DataError#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DataError/VB/errorhandling.vb#20)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ClipboardContent">
@@ -32,7 +47,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data error occurred when copying content to the Clipboard. This value indicates that the cell value could not be converted to a string.</summary>
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -48,7 +63,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data error occurred when committing changes to the data store. This value indicates that data entered in a cell could not be committed to the underlying data store.</summary>
       </Docs>
     </Member>
     <Member MemberName="CurrentCellChange">
@@ -64,7 +79,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data error occurred when the selection cursor moved to another cell. This value indicates that a user selected a cell when the previously selected cell had an error condition.</summary>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -80,7 +95,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data error occurred when displaying a cell that was populated by a data source. This value indicates that the value from the data source cannot be displayed by the cell, or a mapping that translates the value from the data source to the cell is missing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Formatting">
@@ -96,7 +111,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data error occurred when trying to format data that is either being sent to a data store, or being loaded from a data store. This value indicates that a change to a cell failed to format correctly. Either the new cell value needs to be corrected or the cell's formatting needs to change.</summary>
       </Docs>
     </Member>
     <Member MemberName="InitialValueRestoration">
@@ -112,7 +127,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data error occurred when restoring a cell to its previous value. This value indicates that a cell tried to cancel an edit and the rollback to the initial value failed. This can occur if the cell formatting changed so that it is incompatible with the initial value.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeaveControl">
@@ -128,7 +143,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data error occurred when the <see cref="T:System.Windows.Forms.DataGridView" /> lost focus. This value indicates that the <see cref="T:System.Windows.Forms.DataGridView" /> could not commit user changes after losing focus.</summary>
       </Docs>
     </Member>
     <Member MemberName="Parsing">
@@ -144,7 +159,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data error occurred when parsing new data. This value indicates that the <see cref="T:System.Windows.Forms.DataGridView" /> could not parse new data that was entered by the user or loaded from the underlying data store.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreferredSize">
@@ -160,7 +175,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data error occurred when calculating the preferred size of a cell. This value indicates that the <see cref="T:System.Windows.Forms.DataGridView" /> failed to calculate the preferred width or height of a cell when programmatically resizing a column or row. This can occur if the cell failed to format its value.</summary>
       </Docs>
     </Member>
     <Member MemberName="RowDeletion">
@@ -176,7 +191,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data error occurred when deleting a row. This value indicates that the underlying data store threw an exception when a data-bound <see cref="T:System.Windows.Forms.DataGridView" /> deleted a row.</summary>
       </Docs>
     </Member>
     <Member MemberName="Scroll">
@@ -192,7 +207,7 @@
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A data error occurred when scrolling a new region into view. This value indicates that a cell with data errors scrolled into view programmatically or with the scroll bar.</summary>
       </Docs>
     </Member>
   </Members>

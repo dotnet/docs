@@ -16,8 +16,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Associates activities together in a correlation by representing a particular shared <see cref="T:System.Runtime.DurableInstancing.InstanceKey" /> or transient context in the workflow.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[wf](~/includes/wf-md.md)] provides four types of correlation: [Content Based](../Topic/Content%20Based%20Correlation.md), [Request-Reply](../Topic/Request-Reply%20Correlation.md), [Durable Duplex](../Topic/Durable%20Duplex%20Correlation.md), and [Context Exchange](../Topic/Context%20Exchange%20Correlation.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] correlation, see [Correlation Overview](../Topic/Correlation%20Overview.md), the specific correlation types mentioned previously, and the correlation samples located in the [Services &#91;WF Samples&#93;](../Topic/Services1.md) node of the [!INCLUDE[wf1](~/includes/wf1-md.md)] samples.  
+  
+ The runtime uses the <xref:System.ServiceModel.Activities.CorrelationInitializer.CorrelationHandle%2A> for correlation if it is present, otherwise the **CorrelatesWith** property of the messaging activity will be used.  If both are absent, the ambient handle provided by <xref:System.ServiceModel.Activities.CorrelationScope> or the workflow service is used.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Activities.CorrelationHandle> on a <xref:System.ServiceModel.Activities.SendReply> activity.  
+  
+ [!code-csharp[ImplicitExplicitCorrelation#0](~/samples/snippets/csharp/VS_Snippets_CFX/implicitexplicitcorrelation/cs/service/pharmacyservice.cs#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +47,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.CorrelationHandle" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +67,8 @@
         <Parameter Name="context" Type="System.Activities.HandleInitializationContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The initialization environment.</param>
+        <summary>Registers the <see cref="T:System.ServiceModel.Activities.CorrelationHandle" /> with the workflow runtime.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +88,8 @@
         <Parameter Name="context" Type="System.Activities.HandleInitializationContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The initialization environment of the <see cref="T:System.ServiceModel.Activities.CorrelationHandle" />.</param>
+        <summary>Unregisters the <see cref="T:System.ServiceModel.Activities.CorrelationHandle" /> with the workflow runtime.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

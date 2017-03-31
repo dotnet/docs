@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumerates model-binding behavior options.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Web.ModelBinding.BindingBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property should be excluded from model binding.</summary>
       </Docs>
     </Member>
     <Member MemberName="Optional">
@@ -43,7 +43,7 @@
         <ReturnType>System.Web.ModelBinding.BindingBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property should be model bound if a value is available from the value provider.</summary>
       </Docs>
     </Member>
     <Member MemberName="Required">
@@ -59,7 +59,7 @@
         <ReturnType>System.Web.ModelBinding.BindingBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property is required for model binding.</summary>
       </Docs>
     </Member>
   </Members>

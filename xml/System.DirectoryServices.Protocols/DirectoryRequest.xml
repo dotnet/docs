@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> class is the base class for request related classes, like the <see cref="T:System.DirectoryServices.Protocols.SearchRequest" /> and <see cref="T:System.DirectoryServices.Protocols.AddRequest" /> classes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.DirectoryServices.Protocols.DirectoryControlCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryRequest.Controls" /> property contains a <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> object.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryRequest.RequestId" /> property contains the <paramref name="requestID" /> specified in the request.</summary>
+        <value>The <paramref name="requestID" /> specified in the request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,9 +67,9 @@
         <Parameter Name="doc" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
-        <param name="doc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="doc">The <see cref="T:System.Xml.XmlDocument" /> to represent as an XML element.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryRequest.ToXmlNode(System.Xml.XmlDocument)" /> method creates an XML node from the specified <see cref="T:System.Xml.XmlDocument" /> object.</summary>
+        <returns>The created <see cref="T:System.Xml.XmlElement" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

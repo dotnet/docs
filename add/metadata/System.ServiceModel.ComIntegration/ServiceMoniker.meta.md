@@ -1,9 +1,13 @@
 ---
 uid: System.ServiceModel.ComIntegration.ServiceMoniker
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.ComIntegration.ServiceMoniker.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Web.UI.IFilterResolutionService
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IFilterResolutionService.CompareFilters(System.String,System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.IFilterResolutionService.EvaluateFilter(System.String)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

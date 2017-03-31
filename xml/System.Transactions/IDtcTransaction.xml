@@ -18,8 +18,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes a DTC transaction.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement this interface, as it is used only by the <xref:System.Transactions.TransactionInterop> class internally to represent the unmanaged version of the <xref:System.EnterpriseServices.ITransaction> interface of the <xref:System.EnterpriseServices> namespace.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Abort">
@@ -48,8 +55,15 @@
         <param name="manager">To be added.</param>
         <param name="whatever">To be added.</param>
         <param name="whatever2">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Aborts a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement any method of this interface, as it is used only by the <xref:System.Transactions.TransactionInterop> class internally to represent the unmanaged version of the <xref:System.EnterpriseServices.ITransaction> interface of the <xref:System.EnterpriseServices> namespace.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -78,8 +92,17 @@
         <param name="whatever">To be added.</param>
         <param name="whatever2">To be added.</param>
         <param name="whatever3">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Commits a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For values of `commitType`, see `ITransaction::Commit` in the OLE DB Programmers Reference.  
+  
+ You should not implement any method of this interface, as it is used only by the <xref:System.Transactions.TransactionInterop> class internally to represent the unmanaged version of the <xref:System.EnterpriseServices.ITransaction> interface of the <xref:System.EnterpriseServices> namespace.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTransactionInfo">
@@ -104,8 +127,15 @@
       </Parameters>
       <Docs>
         <param name="whatever">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves information about a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement any method of this interface, as it is used only by the <xref:System.Transactions.TransactionInterop> class internally to represent the unmanaged version of the <xref:System.EnterpriseServices.ITransaction> interface of the <xref:System.EnterpriseServices> namespace.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

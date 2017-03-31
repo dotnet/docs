@@ -1,9 +1,11 @@
 ---
 uid: System.IdentityModel.Tokens.Saml2Statement
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Tokens.Saml2Statement.#ctor
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

@@ -1,19 +1,24 @@
 ---
 uid: System.Windows.Forms.KeyPressEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.KeyPressEventArgs.#ctor(System.Char)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.KeyPressEventArgs.KeyChar
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.KeyPressEventArgs.Handled
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

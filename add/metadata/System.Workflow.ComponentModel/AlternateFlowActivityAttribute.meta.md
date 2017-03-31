@@ -1,9 +1,13 @@
 ---
 uid: System.Workflow.ComponentModel.AlternateFlowActivityAttribute
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Workflow.ComponentModel.AlternateFlowActivityAttribute.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

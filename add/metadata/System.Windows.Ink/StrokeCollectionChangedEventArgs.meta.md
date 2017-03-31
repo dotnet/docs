@@ -1,19 +1,26 @@
 ---
 uid: System.Windows.Ink.StrokeCollectionChangedEventArgs
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollectionChangedEventArgs.Removed
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollectionChangedEventArgs.#ctor(System.Windows.Ink.StrokeCollection,System.Windows.Ink.StrokeCollection)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Ink.StrokeCollectionChangedEventArgs.Added
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

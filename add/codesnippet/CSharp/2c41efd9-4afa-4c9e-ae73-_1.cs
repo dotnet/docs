@@ -1,1 +1,0 @@
-            SecurityBindingElement security = SecurityBindingElement.CreateMutualCertificateBindingElement();

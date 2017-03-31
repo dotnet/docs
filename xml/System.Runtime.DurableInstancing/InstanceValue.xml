@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Stores the information about instance data and metadata.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data and metadata in the instance persistence system is organized as named values in property bags.  Each property bag is a dictionary associating <xref:System.Xml.Linq.XName> objects with <xref:System.Runtime.DurableInstancing.InstanceValue> objects.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +40,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The value object.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceValue" /> class by using value object passed as a parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +59,9 @@
         <Parameter Name="options" Type="System.Runtime.DurableInstancing.InstanceValueOptions" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The value object.</param>
+        <param name="options">The options for the value object. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<see cref="T:System.Runtime.DurableInstancing.InstanceValueOptions" />.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceValue" /> class by using the value Object and the options for those values passed as parameters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +78,8 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the previously deleted value.</summary>
+        <value>The previously deleted value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +96,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the object represents a deleted value.</summary>
+        <value>
+          <see langword="true" /> if the object represents a deleted value; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +115,8 @@
         <ReturnType>System.Runtime.DurableInstancing.InstanceValueOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the option for an instance value.</summary>
+        <value>The option for an instance value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,8 +133,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the instance value as an object.</summary>
+        <value>The value of the instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

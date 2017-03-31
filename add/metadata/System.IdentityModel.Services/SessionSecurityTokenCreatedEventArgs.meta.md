@@ -1,19 +1,23 @@
 ---
 uid: System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs.SessionToken
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs.WriteSessionCookie
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---
 
 ---
 uid: System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs.#ctor(System.IdentityModel.Tokens.SessionSecurityToken)
-internalonly: False
+ms.author: "v-jibran"
+manager: "markgal"
 ---

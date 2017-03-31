@@ -1,49 +1,59 @@
 ---
 uid: System.Configuration.TimeSpanValidatorAttribute
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.TimeSpanValidatorAttribute.TimeSpanMaxValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.TimeSpanValidatorAttribute.ExcludeRange
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.TimeSpanValidatorAttribute.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.TimeSpanValidatorAttribute.TimeSpanMinValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.TimeSpanValidatorAttribute.MaxValueString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.TimeSpanValidatorAttribute.MinValueString
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.TimeSpanValidatorAttribute.ValidatorInstance
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.TimeSpanValidatorAttribute.MaxValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Configuration.TimeSpanValidatorAttribute.MinValue
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Associates a <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> with its component.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.Behavior.ComponentGlyph> class contains the <xref:System.Windows.Forms.Design.Behavior.ComponentGlyph.RelatedComponent%2A> property, which points back to the glyph's related component. This property can be used to trace <xref:System.Windows.Forms.Design.Behavior.Glyph> objects back to their component, such as during drag operations.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +35,8 @@
         <Parameter Name="relatedComponent" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="relatedComponent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="relatedComponent">The component with which the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.ComponentGlyph" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,9 +54,9 @@
         <Parameter Name="behavior" Type="System.Windows.Forms.Design.Behavior.Behavior" />
       </Parameters>
       <Docs>
-        <param name="relatedComponent">To be added.</param>
-        <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="relatedComponent">The component with which the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated.</param>
+        <param name="behavior">The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> with which the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.ComponentGlyph" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,10 +76,17 @@
         <Parameter Name="p" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="p">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="p">A point to hit-test.</param>
+        <summary>Indicates whether a mouse click at the specified point should be handled by the <see cref="T:System.Windows.Forms.Design.Behavior.ComponentGlyph" />.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.Cursor" /> if the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated with <paramref name="p" />; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation does nothing and returns `null`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -91,9 +105,16 @@
         <Parameter Name="pe" Type="System.Windows.Forms.PaintEventArgs" />
       </Parameters>
       <Docs>
-        <param name="pe">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pe">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> containing the <see cref="P:System.Windows.Forms.Design.Behavior.BehaviorService.AdornerWindowGraphics" /> of the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</param>
+        <summary>Provides paint logic.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation does nothing.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RelatedComponent">
@@ -109,8 +130,8 @@
         <ReturnType>System.ComponentModel.IComponent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the component that is associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> .</summary>
+        <value>An <see cref="T:System.ComponentModel.IComponent" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

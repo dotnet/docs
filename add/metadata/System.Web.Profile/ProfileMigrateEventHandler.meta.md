@@ -1,4 +1,5 @@
 ---
 uid: System.Web.Profile.ProfileMigrateEventHandler
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

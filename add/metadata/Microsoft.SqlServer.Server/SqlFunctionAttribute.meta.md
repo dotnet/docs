@@ -1,44 +1,44 @@
 ---
 uid: Microsoft.SqlServer.Server.SqlFunctionAttribute
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFunctionAttribute.Name
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFunctionAttribute.TableDefinition
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFunctionAttribute.SystemDataAccess
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFunctionAttribute.IsDeterministic
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFunctionAttribute.DataAccess
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFunctionAttribute.FillRowMethodName
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFunctionAttribute.#ctor
-internalonly: False
+manager: "mblythe"
 ---
 
 ---
 uid: Microsoft.SqlServer.Server.SqlFunctionAttribute.IsPrecise
-internalonly: False
+manager: "mblythe"
 ---

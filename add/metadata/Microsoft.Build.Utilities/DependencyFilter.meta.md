@@ -1,4 +1,5 @@
 ---
 uid: Microsoft.Build.Utilities.DependencyFilter
-internalonly: False
+ms.author: "susanno"
+manager: "douge"
 ---

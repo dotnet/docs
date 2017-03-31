@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Documents.DocumentStructures
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

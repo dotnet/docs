@@ -18,9 +18,25 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TChannel">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TChannel">The type of channel produced by the channel factory.</typeparam>
+    <summary>Provides the means to create and manage duplex channels of different types that are used by clients to send and receive messages to and from service endpoints.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A duplex channel allows clients and servers to communicate with each other independently so that either can initiate calls to the other. A duplex service can send messages to the client endpoint, providing event-like behavior. Duplex communication occurs when a client establishes a session with a service and provides the service with a channel on which the service can send messages back to the client. The various <xref:System.ServiceModel.DuplexChannelFactory%601.CreateChannel%2A> methods are used to create these duplex channels. The duplex message pattern is one of three message patterns available to [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services. The other two message patterns are one-way and request-reply.  
+  
+ For a general discussion of duplex services that allow clients to connect back to the service, see [Duplex Services](../Topic/Duplex%20Services.md). For an outline and discussion of the steps involved in writing a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client application using a channel factory, see [How to: Use the ChannelFactory](../Topic/How%20to:%20Use%20the%20ChannelFactory.md). For a procedure describing how to create a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client in a client class that implements the callback interface to access a service that uses a duplex messaging pattern, see [How to: Access Services with a Duplex Contract](../Topic/How%20to:%20Access%20Services%20with%20a%20Duplex%20Contract.md).  
+  
+   
+  
+## Examples  
+ The following sample shows how to create a channel factory and use it to create and manage channels.  
+  
+ [!code-csharp[S_CustomAuthentication#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_customauthentication/cs/instance.cs#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +54,17 @@
       </Parameters>
       <Docs>
         <param name="callbackInstance">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass an object that implements the callback contract for the target service programmatically rather than by using an application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackObject" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -56,9 +81,11 @@
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with specified instance context.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -75,9 +102,11 @@
         <Parameter Name="callbackInstanceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="callbackInstanceType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with specified type of callback instance.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstanceType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -96,9 +125,18 @@
       </Parameters>
       <Docs>
         <param name="callbackInstance">To be added.</param>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified binding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass the binding information programmatically rather than by using an application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackObject" /> or <paramref name="binding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,9 +155,18 @@
       </Parameters>
       <Docs>
         <param name="callbackInstance">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to which channels produced by the factory connect.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified endpoint.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass a service object that implements the callback contract for the target service and to pass the service endpoint information programmatically rather than using an application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackObject" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -138,9 +185,18 @@
       </Parameters>
       <Docs>
         <param name="callbackInstance">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="endpointConfigurationName">The configuration name used for the endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified configuration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the client application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackObject" /> or <paramref name="endpointConfigurationName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -158,10 +214,19 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with a context that implements the callback contract and a specified binding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass the binding information programmatically rather than by using an application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> or <paramref name="binding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,10 +244,19 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to which channels produced by the factory connect.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified endpoint.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass the endpoint information programmatically rather than by using an application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -200,10 +274,19 @@
         <Parameter Name="endpointConfigurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="endpointConfigurationName">The name used for the endpoint configuration.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified configuration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass an instance context object that implements the callback contract for the target service and to determine the target endpoint information from the client application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> or <paramref name="endpointConfigurationName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -221,10 +304,12 @@
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
       </Parameters>
       <Docs>
-        <param name="callbackInstanceType">To be added.</param>
-        <param name="binding">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with specified type of callback instance and binding.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstanceType" /> or <paramref name="binding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -242,10 +327,12 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="callbackInstanceType">To be added.</param>
-        <param name="endpoint">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
+        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> for the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with specified type of callback instance and service endpoint.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstanceType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -263,10 +350,12 @@
         <Parameter Name="endpointConfigurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="callbackInstanceType">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
+        <param name="endpointConfigurationName">The name used for the endpoint configuration.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with specified type of callback instance and configuration.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstanceType" /> or <paramref name="endpointConfigurationName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -286,10 +375,19 @@
       </Parameters>
       <Docs>
         <param name="callbackInstance">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified binding and endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass a service object that implements the callback contract for the target service and pass in the binding and address information programmatically rather than using an application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackObject" /> or <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -309,10 +407,12 @@
       </Parameters>
       <Docs>
         <param name="callbackInstance">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <param name="remoteAddress">The remote address that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with specified callback object, binding, and remote address.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackObject" /> or <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -332,10 +432,19 @@
       </Parameters>
       <Docs>
         <param name="callbackInstance">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="endpointConfigurationName">The name used for the endpoint configuration.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract, and a specified configuration and endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass a service object that implements the callback contract for the target service, pass in the address information programmatically, and determine the remaining target endpoint information from the client application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackObject" /> or <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -354,11 +463,20 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified binding and endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass in the binding and address information programmatically rather than using an application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> or <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -377,11 +495,13 @@
         <Parameter Name="remoteAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <param name="remoteAddress">The remote address that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with specified instance context, binding, and remote address.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> or <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -400,11 +520,20 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="endpointConfigurationName">The name used for the endpoint configuration.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified configuration and endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass an instance context object that implements the callback contract for the target service address information programmatically, pass in the address information programmatically, and determine the remaining target endpoint information from the client application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> or <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -423,11 +552,13 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackInstanceType">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with specified type of callback instance, binding, and remote address.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstanceType" /> or <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -446,11 +577,13 @@
         <Parameter Name="remoteAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="callbackInstanceType">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <param name="remoteAddress">The remote address that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with the specified type of callback instance, binding, and remote address.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstanceType" /> or <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -469,11 +602,13 @@
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackInstanceType">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <param name="remoteAddress">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callbackInstanceType">The <see cref="T:System.Type" /> that provides the callback instance that the client uses to listen for messages from the connected service.</param>
+        <param name="endpointConfigurationName">The name used for the endpoint configuration.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with the specified type of callback instance, configuration, and remote address.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstanceType" /> or <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
@@ -493,10 +628,12 @@
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
+        <summary>Creates a duplex channel between a service and a callback instance on the client.</summary>
+        <returns>A duplex channel of type <paramref name="TChannel" />, the generic parameter for the factory, between the client and service.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="callbackInstance" /> or <paramref name="callbackInstance" />.UserObject is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
@@ -517,11 +654,15 @@
         <Parameter Name="endpointConfigurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="callbackObject">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="endpointConfigurationName">The name used for the endpoint configuration.</param>
+        <summary>Creates a duplex channel between a service and a callback instance on the client.</summary>
+        <returns>A channel of type <paramref name="TChannel" />, the generic parameter for the factory, between the client and service.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="endpointConfigurationName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="callbackInstance" /> or <paramref name="callbackInstance" />.UserObject is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
@@ -542,11 +683,13 @@
         <Parameter Name="via" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="address">To be added.</param>
-        <param name="via">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="address">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <param name="via">The <see cref="T:System.Uri" /> that contains the transport address to which the message is sent.</param>
+        <summary>Creates a duplex channel between a service and a callback instance on the client.</summary>
+        <returns>A duplex channel of type <paramref name="TChannel" />, the generic parameter for the factory, between the client and service.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="address" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
@@ -567,11 +710,15 @@
         <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="address">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Creates a duplex channel between a service and a callback instance on the client.</summary>
+        <returns>A duplex channel of type <paramref name="TChannel" />, the generic parameter for the factory, between the client and service.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="address" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="callbackInstance" /> or <paramref name="callbackInstance" />.UserObject is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
@@ -592,11 +739,15 @@
         <Parameter Name="endpointConfigurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="endpointConfigurationName">The name used for the endpoint configuration.</param>
+        <summary>Creates a duplex channel between a service and a callback instance on the client.</summary>
+        <returns>A channel of type <paramref name="TChannel" />, the generic parameter for the factory, between the client and service.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="endpointConfigurationName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="callbackInstance" /> or <paramref name="callbackInstance" />.UserObject is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
@@ -618,12 +769,16 @@
         <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackObject">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="endpointAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <param name="endpointAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Creates a duplex channel between a service and a callback instance on the client.</summary>
+        <returns>A channel of type <paramref name="TChannel" />, the generic parameter for the factory, between the client and service.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binding" /> or <paramref name="endpointAddress" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="callbackInstance" /> or <paramref name="callbackInstance" />.UserObject is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
@@ -645,12 +800,16 @@
         <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="endpointAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <param name="endpointAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Creates a duplex channel between a service and a callback instance on the client.</summary>
+        <returns>A channel of type <paramref name="TChannel" />, the generic parameter for the factory, between the client and service.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binding" /> or <paramref name="endpointAddress" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="callbackInstance" /> or <paramref name="callbackInstance" />.UserObject is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
@@ -672,12 +831,16 @@
         <Parameter Name="via" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="address">To be added.</param>
-        <param name="via">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="address">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <param name="via">The <see cref="T:System.Uri" /> that contains the transport address to which the message is sent.</param>
+        <summary>Creates a duplex channel between a service and a callback instance on the client.</summary>
+        <returns>A channel of type <paramref name="TChannel" />, the generic parameter for the factory, between the client and service.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="address" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="callbackInstance" /> or <paramref name="callbackInstance" />.UserObject is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
@@ -700,13 +863,17 @@
         <Parameter Name="via" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="callbackObject">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="endpointAddress">To be added.</param>
-        <param name="via">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callbackObject">The <see cref="T:System.Object" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <param name="endpointAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <param name="via">The <see cref="T:System.Uri" /> that contains the transport address to which the message is sent.</param>
+        <summary>Creates a duplex channel between a service and a callback instance on the client.</summary>
+        <returns>A channel of type <paramref name="TChannel" />, the generic parameter for the factory, between the client and service.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binding" /> or <paramref name="endpointAddress" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="callbackInstance" /> or <paramref name="callbackInstance" />.UserObject is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
@@ -729,13 +896,17 @@
         <Parameter Name="via" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="endpointAddress">To be added.</param>
-        <param name="via">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callbackInstance">The <see cref="T:System.ServiceModel.InstanceContext" /> that the client uses to listen for messages from the connected service.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <param name="endpointAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <param name="via">The <see cref="T:System.Uri" /> that contains the transport address to which the message is sent.</param>
+        <summary>Creates a duplex channel between a service and a callback instance on the client.</summary>
+        <returns>A channel of type <paramref name="TChannel" />, the generic parameter for the factory, between the client and service.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binding" /> or <paramref name="endpointAddress" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="callbackInstance" /> or <paramref name="callbackInstance" />.UserObject is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

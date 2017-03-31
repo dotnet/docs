@@ -1,19 +1,24 @@
 ---
 uid: System.Messaging.MessageQueueAccessControlEntry
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueueAccessControlEntry.MessageQueueAccessRights
-internalonly: False
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueueAccessControlEntry.#ctor(System.Messaging.Trustee,System.Messaging.MessageQueueAccessRights)
-internalonly: False
+manager: "tyoung"
+---
+
+---
+uid: System.Messaging.MessageQueueAccessControlEntry.#ctor
+manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageQueueAccessControlEntry.#ctor(System.Messaging.Trustee,System.Messaging.MessageQueueAccessRights,System.Messaging.AccessControlEntryType)
-internalonly: False
+manager: "tyoung"
 ---

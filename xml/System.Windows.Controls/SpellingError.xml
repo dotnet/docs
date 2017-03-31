@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a misspelled word in an editing control (i.e. <see cref="T:System.Windows.Controls.TextBox" /> or <see cref="T:System.Windows.Controls.RichTextBox" />).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +31,16 @@
         <Parameter Name="correctedText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="correctedText">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="correctedText">The text used to replace the misspelled text.</param>
+        <summary>Replaces the spelling error text with the specified correction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method repositions the caret to the position immediately following the corrected text.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreAll">
@@ -50,7 +57,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Instructs the control to ignore this error and any duplicates for the remainder of the lifetime of the control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,8 +79,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a list of suggested spelling replacements for the misspelled word.</summary>
+        <value>The collection of spelling suggestions for the misspelled word.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

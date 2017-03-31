@@ -1,1 +1,0 @@
-			Dim timeSpan As TimeSpan = settings.MaxClockSkew

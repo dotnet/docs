@@ -1,4 +1,5 @@
 ---
 uid: System.Speech.Synthesis.SynthesisTextFormat
-internalonly: False
+ms.author: "kbridge"
+manager: "ghogen"
 ---

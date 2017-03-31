@@ -1,9 +1,13 @@
 ---
 uid: System.Diagnostics.SymbolStore.ISymbolBinder
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.SymbolStore.ISymbolBinder.GetReader(System.Int32,System.String,System.String)
-internalonly: False
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---

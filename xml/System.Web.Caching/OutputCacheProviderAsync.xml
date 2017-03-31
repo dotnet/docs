@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an asynchronous <see cref="T:System.Web.Caching.OutputCacheProvider" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.OutputCacheProviderAsync" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,11 +48,11 @@
         <Parameter Name="utcExpiry" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="entry">To be added.</param>
-        <param name="utcExpiry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">A unique identifier for entry.</param>
+        <param name="entry">The content to add to the output cache.</param>
+        <param name="utcExpiry">The time and date on which the cached entry expires.</param>
+        <summary>Asynchronously inserts the specified entry into the output cache.</summary>
+        <returns>The specified entry.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +72,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">A unique identifier for a cached entry in the output cache.</param>
+        <summary>Asynchronously returns a reference to the specified entry in the output cache.</summary>
+        <returns>The <paramref name="key" /> value that identifies the specified entry in the cache, or <see langword="null" /> if the specified entry is not in the cache.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,9 +94,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The unique identifier for the entry to remove from the output cache.</param>
+        <summary>Asynchronously removes the specified entry from the output cache.</summary>
+        <returns>The status of the operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,11 +118,11 @@
         <Parameter Name="utcExpiry" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="entry">To be added.</param>
-        <param name="utcExpiry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">A unique identifier for <c>entry</c></param>
+        <param name="entry">The content to add to the output cache.</param>
+        <param name="utcExpiry">The time and date on which the cached <c>entry</c> expires.</param>
+        <summary>Asynchronously Inserts the specified entry into the output cache, overwriting the entry if it is already cached.</summary>
+        <returns>The status of the operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

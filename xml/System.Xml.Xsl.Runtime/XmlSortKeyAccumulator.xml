@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Accumulates a list of sort keys and stores them in an array.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,9 +45,9 @@
         <Parameter Name="value" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="collation">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <param name="value">A <see langword="DateTime" /> value.</param>
+        <summary>Creates a new <see cref="T:System.DateTime" /> sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +72,9 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="collation">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <param name="value">A <see langword="decimal" /> value.</param>
+        <summary>Creates a new <see cref="T:System.Decimal" /> sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,9 +99,9 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="collation">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <param name="value">A <see langword="double" /> value.</param>
+        <summary>Creates a new <see cref="T:System.Double" /> sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,8 +125,8 @@
         <Parameter Name="collation" Type="System.Xml.Xsl.Runtime.XmlCollation" />
       </Parameters>
       <Docs>
-        <param name="collation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <summary>Creates a new empty sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,9 +151,9 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="collation">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <param name="value">A value of type <see langword="Int64" />.</param>
+        <summary>Creates a new <see cref="T:System.Int64" /> sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,9 +178,9 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="collation">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <param name="value">A value of type <see langword="Int32" />.</param>
+        <summary>Creates a new <see cref="T:System.Int32" /> sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,9 +205,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="collation">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <param name="value">A value of type <see langword="string" />.</param>
+        <summary>Creates a new <see cref="T:System.String" /> sort key and appends it to the current run of sort keys.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,7 +229,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,7 +251,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Finishes creating the current run of sort keys and begins a new run.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,8 +272,8 @@
         <ReturnType>System.Array</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an array of sort keys that was constructed by the internal <see cref="T:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator" /> class.</summary>
+        <value>An array of sort keys.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

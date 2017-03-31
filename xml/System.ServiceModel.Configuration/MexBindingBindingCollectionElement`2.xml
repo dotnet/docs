@@ -28,9 +28,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TStandardBinding">To be added.</typeparam>
-    <typeparam name="TBindingConfiguration">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TStandardBinding">A standard binding element.</typeparam>
+    <typeparam name="TBindingConfiguration">A binding configuration element.</typeparam>
+    <summary>Represents a collection of MEX binding configuration elements.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.MexBindingBindingCollectionElement`2" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,11 +67,12 @@
         <Parameter Name="config" Type="System.Configuration.Configuration" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="binding">To be added.</param>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the binding to be added.</param>
+        <param name="binding">A <see cref="T:System.ServiceModel.Channels.Binding" /> object that represents the binding to be added.</param>
+        <param name="config">The configuration settings for this binding.</param>
+        <summary>Adds the specified binding to the collection.</summary>
+        <returns>
+          <see langword="true" /> if the binding can be added to this collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

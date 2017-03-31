@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the policy for removing clients from the cache maintained by remoting clients.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used when setting the `socketCachePolicy` configuration property of a <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel> object. It determines whether the time specified by the `socketCacheTimeout` configuration property is measured from the time a socket was last used or from the time a socket was created.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AbsoluteTimeout">
@@ -27,7 +34,7 @@
         <ReturnType>System.Runtime.Remoting.Channels.SocketCachePolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Remove a socket from the cache a fixed time after its creation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -43,7 +50,7 @@
         <ReturnType>System.Runtime.Remoting.Channels.SocketCachePolicy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Remove a socket from the cache a fixed time after its last use.</summary>
       </Docs>
     </Member>
   </Members>

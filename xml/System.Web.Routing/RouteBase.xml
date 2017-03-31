@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serves as the base class for all classes that represent an ASP.NET route.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The RouteBase class enables you to create customized classes for defining routes in your application. Typically, you will use the <xref:System.Web.Routing.Route> class when you define routes. The <xref:System.Web.Routing.Route> class derives from the RouteBase class. However, if you want to provide different functionality than what is provided by the <xref:System.Web.Routing.Route> class, you create a class that derives from RouteBase and implement the properties and methods that you need.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +58,9 @@
         <Parameter Name="httpContext" Type="System.Web.HttpContextBase" />
       </Parameters>
       <Docs>
-        <param name="httpContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="httpContext">An object that encapsulates information about the HTTP request.</param>
+        <summary>When overridden in a derived class, returns route information about the request.</summary>
+        <returns>An object that contains the values from the route definition if the route matches the current request, or <see langword="null" /> if the route does not match the request.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,11 +81,18 @@
         <Parameter Name="values" Type="System.Web.Routing.RouteValueDictionary" />
       </Parameters>
       <Docs>
-        <param name="requestContext">To be added.</param>
-        <param name="values">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="requestContext">An object that encapsulates information about the requested route.</param>
+        <param name="values">An object that contains the parameters for a route.</param>
+        <summary>When overridden in a derived class, checks whether the route matches the specified values, and if so, generates a URL and retrieves information about the route.</summary>
+        <returns>An object that contains the generated URL and information about the route, or <see langword="null" /> if the route does not match <paramref name="values" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To generate a URL, you use the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method of the <xref:System.Web.Routing.RouteCollection> class. That method calls the GetVirtualPath method for each route in the collection to determine whether that route matches the values in `values` and can therefore generate the URL.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RouteExistingFiles">
@@ -94,8 +108,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether ASP.NET routing should handle URLs that match an existing file.</summary>
+        <value>
+          <see langword="true" /> if ASP.NET routing handles all requests, even those that match an existing file; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

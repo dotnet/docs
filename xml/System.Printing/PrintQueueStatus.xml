@@ -15,8 +15,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the status of a print queue or its printer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Like the <xref:System.Printing.PrintQueue> class, this enumeration handles the print queue and the physical printer (or device) as one unit. Some values represent the status of the physical device and others represent the status of the print queue program that is running on the print server.  
+  
+ Use this enumeration to provide values for the <xref:System.Printing.PrintQueue.QueueStatus%2A> property of the <xref:System.Printing.PrintQueue> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this enumeration as part of a survey all printers for possible error status.  
+  
+ [!code-cpp[PrinterStatusSurvey#SpotTroubleUsingQueueAttributes](~/samples/snippets/cpp/VS_Snippets_Wpf/PrinterStatusSurvey/CPP/Program.cpp#spottroubleusingqueueattributes)]
+ [!code-csharp[PrinterStatusSurvey#SpotTroubleUsingQueueAttributes](~/samples/snippets/csharp/VS_Snippets_Wpf/PrinterStatusSurvey/CSharp/Program.cs#spottroubleusingqueueattributes)]
+ [!code-vb[PrinterStatusSurvey#SpotTroubleUsingQueueAttributes](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrinterStatusSurvey/visualbasic/program.vb#spottroubleusingqueueattributes)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Busy">
@@ -32,7 +50,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is busy.</summary>
       </Docs>
     </Member>
     <Member MemberName="DoorOpen">
@@ -48,7 +66,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A door on the printer is open.</summary>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -64,7 +82,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer cannot print due to an error condition.</summary>
       </Docs>
     </Member>
     <Member MemberName="Initializing">
@@ -80,7 +98,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is initializing.</summary>
       </Docs>
     </Member>
     <Member MemberName="IOActive">
@@ -96,7 +114,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is exchanging data with the print server.</summary>
       </Docs>
     </Member>
     <Member MemberName="ManualFeed">
@@ -112,7 +130,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is waiting for a user to place print media in the manual feed bin.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -128,7 +146,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Status is not specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAvailable">
@@ -144,7 +162,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Status information is unavailable.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoToner">
@@ -160,7 +178,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is out of toner.</summary>
       </Docs>
     </Member>
     <Member MemberName="Offline">
@@ -176,7 +194,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is offline.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutOfMemory">
@@ -192,7 +210,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer has no available memory.</summary>
       </Docs>
     </Member>
     <Member MemberName="OutputBinFull">
@@ -208,7 +226,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer's output bin is full.</summary>
       </Docs>
     </Member>
     <Member MemberName="PagePunt">
@@ -224,7 +242,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is unable to print the current page.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaperJam">
@@ -240,7 +258,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The paper in the printer is jammed.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaperOut">
@@ -256,7 +274,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer does not have, or is out of, the type of paper needed for the current print job.</summary>
       </Docs>
     </Member>
     <Member MemberName="PaperProblem">
@@ -272,7 +290,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The paper in the printer is causing an unspecified error condition.</summary>
       </Docs>
     </Member>
     <Member MemberName="Paused">
@@ -288,7 +306,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print queue is paused.</summary>
       </Docs>
     </Member>
     <Member MemberName="PendingDeletion">
@@ -304,7 +322,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The print queue is deleting a print job.</summary>
       </Docs>
     </Member>
     <Member MemberName="PowerSave">
@@ -320,7 +338,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is in power save mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="Printing">
@@ -336,7 +354,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The device is printing.</summary>
       </Docs>
     </Member>
     <Member MemberName="Processing">
@@ -352,7 +370,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The device is doing some kind of work, which need not be printing if the device is a combination printer, fax machine, and scanner.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerUnknown">
@@ -368,7 +386,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is in an error state.</summary>
       </Docs>
     </Member>
     <Member MemberName="TonerLow">
@@ -384,7 +402,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Only a small amount of toner remains in the printer.</summary>
       </Docs>
     </Member>
     <Member MemberName="UserIntervention">
@@ -400,7 +418,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer requires user action to correct an error condition.</summary>
       </Docs>
     </Member>
     <Member MemberName="Waiting">
@@ -416,7 +434,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is waiting for a print job.</summary>
       </Docs>
     </Member>
     <Member MemberName="WarmingUp">
@@ -432,7 +450,7 @@
         <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The printer is warming up.</summary>
       </Docs>
     </Member>
   </Members>

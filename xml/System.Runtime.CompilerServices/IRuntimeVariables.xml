@@ -13,7 +13,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the values of run-time variables.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,8 +35,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a count of the run-time variables.</summary>
+        <value>The number of run-time variables.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,9 +61,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the run-time variable whose value is to be returned.</param>
+        <summary>Gets the value of the run-time variable at the specified index.</summary>
+        <value>The value of the run-time variable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

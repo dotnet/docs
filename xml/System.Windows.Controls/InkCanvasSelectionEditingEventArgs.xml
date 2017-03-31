@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.InkCanvas.SelectionMoving" /> and <see cref="E:System.Windows.Controls.InkCanvas.SelectionResizing" /> events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the bounds of the selection after it is moved or resized.</summary>
+        <value>The bounds of the selection after it is moved or resized.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,8 @@
         <ReturnType>System.Windows.Rect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the bounds of the selection before the user moved or resized it.</summary>
+        <value>The bounds of the selection before the user moved or resized it.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

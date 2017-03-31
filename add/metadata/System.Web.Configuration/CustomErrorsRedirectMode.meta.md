@@ -1,4 +1,6 @@
 ---
 uid: System.Web.Configuration.CustomErrorsRedirectMode
-internalonly: False
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
 ---

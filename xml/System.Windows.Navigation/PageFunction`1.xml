@@ -14,9 +14,34 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of value that the <see cref="T:System.Windows.Navigation.PageFunction`1" /> returns to a caller.</typeparam>
+    <summary>Represents a special type of page that allows you to treat navigation to a page in a similar fashion to calling a method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Navigation.PageFunction%601> essentially allows you to treat a page navigation like a function call, in which a page navigates to (calls) a page function.  
+  
+ To enable function call semantics, <xref:System.Windows.Navigation.PageFunction%601> provides the following capabilities:  
+  
+-   When the page function has finished processing, the page function code calls <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A> to return to the calling page.  
+  
+-   <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A> accepts a <xref:System.Windows.Navigation.ReturnEventArgs%601> parameter, which can be used to return a value by settings the <xref:System.Windows.Navigation.ReturnEventArgs%601.Result%2A> property. Otherwise, null can be passed to <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A> to signify no value is returned  
+  
+-   To detect when a page function has returned, the calling page can handle the <xref:System.Windows.Navigation.PageFunction%601.Return> event.  
+  
+-   To return a value, the page function creates an instance of the <xref:System.Windows.Navigation.ReturnEventArgs%601> class and sets the <xref:System.Windows.Navigation.ReturnEventArgs%601.Result%2A> property with the return value. The calling page can retrieve this value from the <xref:System.Windows.Navigation.ReturnEventArgs%601> object that is passed to the <xref:System.Windows.Navigation.PageFunction%601.Return> event handler.  
+  
+ By default, a <xref:System.Windows.Navigation.PageFunction%601> is retained in navigation history after it returns. To ensure that it is not retained in navigation history, its <xref:System.Windows.Navigation.PageFunctionBase.RemoveFromJournal%2A> property should be set to `true`.  
+  
+ See [Structured Navigation Overview](../Topic/Structured%20Navigation%20Overview.md) for details on how to use page functions.  
+  
+ See [Navigation Topologies Overview](../Topic/Navigation%20Topologies%20Overview.md) for information on complex navigation structures that benefit from page functions.  
+  
+ <xref:System.Windows.Navigation.PageFunction%601> enables the development of wizards.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,8 +55,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Navigation.PageFunction`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Windows.Navigation.PageFunction%601> is not being kept alive (see <xref:System.Windows.Controls.Page.KeepAlive%2A>), it needs to implement a default constructor to allow [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] to create a new instance of it when navigated to in back or forward navigation history.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnReturn">
@@ -50,9 +82,30 @@
         <Parameter Name="e" Type="System.Windows.Navigation.ReturnEventArgs&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">A <see cref="T:System.Windows.Navigation.ReturnEventArgs`1" /> object that contains the <see cref="T:System.Windows.Navigation.PageFunction`1" /> return value (<see cref="P:System.Windows.Navigation.ReturnEventArgs`1.Result" />).</param>
+        <summary>A <see cref="T:System.Windows.Navigation.PageFunction`1" /> calls <see cref="M:System.Windows.Navigation.PageFunction`1.OnReturn(System.Windows.Navigation.ReturnEventArgs{`0})" /> to return to the caller, passing a return value via a <see cref="T:System.Windows.Navigation.ReturnEventArgs`1" /> object</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A> is called by a <xref:System.Windows.Navigation.PageFunction%601> to initiate a navigation to the calling page.  
+  
+ This causes the <xref:System.Windows.Navigation.PageFunction%601.Return> event to be raised, in order for the calling page to:  
+  
+-   Detect when the <xref:System.Windows.Navigation.PageFunction%601> has returned.  
+  
+-   Retrieve the return value from the <xref:System.Windows.Navigation.PageFunction%601>.  
+  
+   
+  
+## Examples  
+ The following example shows how to call <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A>.  
+  
+ [!code-csharp[PageFunctionMembersSnippets#CallOnReturnCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/PageFunctionMembersSnippets/CSharp/GetStringPageFunction.xaml.cs#callonreturncode)]
+ [!code-vb[PageFunctionMembersSnippets#CallOnReturnCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PageFunctionMembersSnippets/visualbasic/getstringpagefunction.xaml.vb#callonreturncode)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Return">
@@ -68,8 +121,30 @@
         <ReturnType>System.Windows.Navigation.ReturnEventHandler&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a called <see cref="T:System.Windows.Navigation.PageFunction`1" /> returns, and can only be handled by the calling page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A calling page detects when a called <xref:System.Windows.Navigation.PageFunction%601> returns by handling <xref:System.Windows.Navigation.PageFunction%601.Return>. Additionally, the calling page can retrieve the <xref:System.Windows.Navigation.PageFunction%601> return value from the <xref:System.Windows.Navigation.ReturnEventArgs%601.Result%2A> property of the <xref:System.Windows.Navigation.ReturnEventArgs%601> which is passed to the event handler.  
+  
+<a name="xamlAttributeUsage_Return"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object Return="ReturnEventHandler"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example shows how to handle the <xref:System.Windows.Navigation.PageFunction%601.Return> event.  
+  
+ [!code-csharp[PageFunctionMembersSnippets#HandlePageFunctionReturnCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/PageFunctionMembersSnippets/CSharp/GetStringPageFunctionCaller.xaml.cs#handlepagefunctionreturncode)]
+ [!code-vb[PageFunctionMembersSnippets#HandlePageFunctionReturnCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PageFunctionMembersSnippets/visualbasic/getstringpagefunctioncaller.xaml.vb#handlepagefunctionreturncode)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

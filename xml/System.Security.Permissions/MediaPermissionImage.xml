@@ -10,8 +10,23 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the permission level for images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this enumeration to set the <xref:System.Security.Permissions.MediaPermission.Image%2A> property of the <xref:System.Security.Permissions.MediaPermission> class. The default is SafeImage.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Permissions.MediaPermissionAttribute.Image%2A> property.  
+  
+ [!code-csharp[SecurityPermissionsSnippets#MediaPermissionAttribute5](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermissionattribute5)]
+ [!code-vb[SecurityPermissionsSnippets#MediaPermissionAttribute5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermissionattribute5)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllImage">
@@ -27,7 +42,7 @@
         <ReturnType>System.Security.Permissions.MediaPermissionImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Permission that allows unrestricted image display.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoImage">
@@ -43,7 +58,7 @@
         <ReturnType>System.Security.Permissions.MediaPermissionImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Permission that denies all images to be displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="SafeImage">
@@ -59,7 +74,7 @@
         <ReturnType>System.Security.Permissions.MediaPermissionImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Permission that allows safe, limited image display, which includes denying stream access to the image file.</summary>
       </Docs>
     </Member>
     <Member MemberName="SiteOfOriginImage">
@@ -75,7 +90,7 @@
         <ReturnType>System.Security.Permissions.MediaPermissionImage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Permission that only allows display of images that are located at the application's site of origin.</summary>
       </Docs>
     </Member>
   </Members>

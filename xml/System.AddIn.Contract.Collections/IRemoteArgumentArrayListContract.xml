@@ -12,7 +12,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an array of <see cref="T:System.AddIn.Contract.RemoteArgument" /> objects that dynamically resizes itself as required.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,8 +32,8 @@
         <Parameter Name="newItem" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="newItem">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="newItem">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> to be added to the end of the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" />.</param>
+        <summary>Adds a <see cref="T:System.AddIn.Contract.RemoteArgument" /> to the end of the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +51,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all elements from the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,9 +71,10 @@
         <Parameter Name="item" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> to locate in the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" />.</param>
+        <summary>Indicates whether a specified <see cref="T:System.AddIn.Contract.RemoteArgument" /> is in the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> is found in the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +94,9 @@
         <Parameter Name="item" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> to locate in the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" />.</param>
+        <summary>Returns the zero-based index of the first occurrence of a specified <see cref="T:System.AddIn.Contract.RemoteArgument" /> in the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" />.</summary>
+        <returns>The zero-based index of the first occurrence of <paramref name="item" /> in the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" />, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,10 +117,16 @@
         <Parameter Name="item" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which to insert <c>item</c>.</param>
+        <param name="item">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> to insert.</param>
+        <summary>Inserts a <see cref="T:System.AddIn.Contract.RemoteArgument" /> into the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than the return value of <see cref="M:System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract.GetCount" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -138,8 +145,8 @@
         <Parameter Name="item" Type="System.AddIn.Contract.RemoteArgument" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> to remove.</param>
+        <summary>Removes the first occurrence of a specified <see cref="T:System.AddIn.Contract.RemoteArgument" /> from the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,9 +166,15 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the element to remove.</param>
+        <summary>Removes the element at the specified index of the <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than the return value of <see cref="M:System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract.GetCount" />.</exception>
       </Docs>
     </Member>
   </Members>

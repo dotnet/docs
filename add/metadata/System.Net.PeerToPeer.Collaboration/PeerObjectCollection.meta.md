@@ -1,19 +1,23 @@
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObjectCollection
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObjectCollection.SetItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerObject)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObjectCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerObject)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObjectCollection.ToString
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

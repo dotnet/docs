@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Controls.DataGridSelectionMode
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

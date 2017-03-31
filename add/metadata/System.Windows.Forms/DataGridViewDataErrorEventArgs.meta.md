@@ -1,24 +1,32 @@
 ---
 uid: System.Windows.Forms.DataGridViewDataErrorEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewDataErrorEventArgs.Context
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewDataErrorEventArgs.#ctor(System.Exception,System.Int32,System.Int32,System.Windows.Forms.DataGridViewDataErrorContexts)
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Forms.DataGridViewDataErrorEventArgs.Exception
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

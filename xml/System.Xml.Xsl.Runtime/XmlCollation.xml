@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Constructs a collation that uses the specified culture and compare options.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,9 +44,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">
+          <see cref="T:System.Object" /> with which to determine equality..</param>
+        <summary>Returns <see langword="true" /> if this XML extension function has the same values as another XML extension function.</summary>
+        <returns>Returns <see langword="true" /> if this XML extension function has the same values as another XML extension function, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +69,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the object's hash code.</summary>
+        <returns>Returns the object's hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

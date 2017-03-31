@@ -1,1 +1,0 @@
-            MsmqIntegrationBinding binding = new MsmqIntegrationBinding("MyBindingConfig");

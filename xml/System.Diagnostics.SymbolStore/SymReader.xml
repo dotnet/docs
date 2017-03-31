@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides access to documents, methods, and variables within a symbol store.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -59,7 +59,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymReader" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +84,17 @@
         <Parameter Name="A_0" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="A_0">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="A_0">
+          <see langword="true" /> to release managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Called by the <see cref="M:System.Diagnostics.SymbolStore.SymReader.Dispose" /> and <see cref="M:System.Diagnostics.SymbolStore.SymReader.Finalize" /> methods to release the managed and unmanaged resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymReader" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called only by the public <xref:System.Diagnostics.SymbolStore.SymReader.Dispose%2A> and <xref:System.Diagnostics.SymbolStore.SymReader.Finalize%2A> methods; do not call this method directly.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -103,8 +111,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases unmanaged resources and performs other cleanup operations before the <see cref="T:System.Diagnostics.SymbolStore.SymReader" /> is reclaimed by garbage collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDocument">
@@ -126,13 +141,20 @@
         <Parameter Name="documentType" Type="System.Guid" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <param name="language">To be added.</param>
-        <param name="languageVendor">To be added.</param>
-        <param name="documentType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="url">The URL that identifies the document.</param>
+        <param name="language">The document language. You can specify this parameter as <see cref="F:System.Guid.Empty" />. to indicate any language.</param>
+        <param name="languageVendor">The identity of the vendor for the document language. You can specify this parameter as <see cref="F:System.Guid.Empty" /> to indicate any language vendor.</param>
+        <param name="documentType">The type of the document. You can specify this parameter as <see cref="F:System.Guid.Empty" /> to indicate any document type.</param>
+        <summary>Gets a document specified by the URL for the document and optionally the language, language vendor, and type.</summary>
+        <returns>The document with the specified URL if found in the symbol store, or <see langword="null" /> if the document does not exist.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `language`, `languageVendor`, and `documentType` parameters are currently ignored.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDocuments">
@@ -149,9 +171,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an array of all documents defined in the symbol store.</summary>
+        <returns>An array of all documents defined in the symbol store.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.OutOfMemoryException">There is insufficient memory to satisfy the request.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetGlobalVariables">
@@ -168,9 +191,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
+        <returns>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -189,9 +213,9 @@
         <Parameter Name="method" Type="System.Diagnostics.SymbolStore.SymbolToken" />
       </Parameters>
       <Docs>
-        <param name="method">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="method">The metadata token of the method.</param>
+        <summary>Gets a symbol reader method object when given the identifier of a method.</summary>
+        <returns>The symbol reader method object for the specified method identifier.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,10 +236,10 @@
         <Parameter Name="version" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="method">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="method">The metadata token of the method.</param>
+        <param name="version">The edit and continue version of the method.</param>
+        <summary>Gets a symbol reader method object when given the identifier of a method and its edit and continue version.</summary>
+        <returns>The symbol reader method object for the specified method identifier and version.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,11 +261,11 @@
         <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="document">To be added.</param>
-        <param name="line">To be added.</param>
-        <param name="column">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="document">The document in which the method is located.</param>
+        <param name="line">The position of the line within the document. The lines are numbered, beginning with 1.</param>
+        <param name="column">The position of column within the document. The columns are numbered, beginning with 1.</param>
+        <summary>Gets a symbol reader method object that contains a specified position in a document.</summary>
+        <returns>The symbol reader method object for the specified position in the document.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,9 +283,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
+        <returns>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSymAttribute">
@@ -281,11 +306,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parent">This parameter is not used.</param>
+        <param name="name">This parameter is not used.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
+        <returns>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetVariables">
@@ -304,10 +330,11 @@
         <Parameter Name="parent" Type="System.Diagnostics.SymbolStore.SymbolToken" />
       </Parameters>
       <Docs>
-        <param name="parent">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="parent">This parameter is not used.</param>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</summary>
+        <returns>Throws a <see cref="T:System.NotSupportedException" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReplaceSymbolStore">
@@ -327,10 +354,19 @@
         <Parameter Name="stream" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fileName">The name of the file containing the symbol store, or <see langword="null" /> if using an in-memory store.</param>
+        <param name="stream">The pointer to the input stream for the symbol store, or <see cref="F:System.IntPtr.Zero" /> if using an on-disk store.</param>
+        <summary>Replaces the existing symbol store with a delta symbol store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.SymbolStore.SymReader.ReplaceSymbolStore%2A> is much like the <xref:System.Diagnostics.SymbolStore.SymReader.UpdateSymbolStore%2A> method, but the given delta acts as a complete replacement rather than an update.  
+  
+ Only one of the parameters, `fileName` or `stream`, needs to be specified. If `fileName` is specified, the symbol store is updated with the symbols in that file. If `stream` is specified, the symbol store is updated with the data from the <xref:System.Runtime.InteropServices.ComTypes.IStream> .  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateSymbolStore">
@@ -350,10 +386,19 @@
         <Parameter Name="stream" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fileName">The name of the file containing the symbol store, or <see langword="null" /> if using an in-memory store.</param>
+        <param name="stream">The pointer to the input stream for the symbol store, or <see cref="F:System.IntPtr.Zero" /> if using an on-disk store.</param>
+        <summary>Updates the existing symbol store with a delta symbol store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used in Edit and Continue scenarios as a way to update the symbol store to match deltas to the original PE file.  
+  
+ Only one of the parameters, `fileName` or `stream`, needs to be specified. If `fileName` is specified, the symbol store is updated with the symbols in that file. If `stream` is specified, the symbol store is updated with the data from the <xref:System.Runtime.InteropServices.ComTypes.IStream> .  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserEntryPoint">
@@ -369,9 +414,17 @@
         <ReturnType>System.Diagnostics.SymbolStore.SymbolToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metadata token for the method that was specified as the user entry point for the module, if any.</summary>
+        <value>The metadata token for the method that is the user entry point for the module.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is normally the main method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.COMException">An entry point was not found.</exception>
       </Docs>
     </Member>
   </Members>

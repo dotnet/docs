@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Abstract class that represents the parameters of a 3D hit test.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To specify a hit test in a 3-D scene, use the <xref:System.Windows.Media.Media3D.RayHitTestParameters> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

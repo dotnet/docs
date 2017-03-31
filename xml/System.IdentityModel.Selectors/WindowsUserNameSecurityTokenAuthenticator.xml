@@ -11,8 +11,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Uses Windows authentication to authenticate the user name and password in a <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> security token.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore%2A> method uses Windows authentication to authenticate a user name and password.  
+  
+ To provide a custom authentication scheme, see the <xref:System.IdentityModel.Selectors.CustomUserNameSecurityTokenAuthenticator> class.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +35,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" /> class</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the user is authenticated, claims that identify the Windows groups that a user belongs to are initially added to the <xref:System.IdentityModel.Policy.EvaluationContext.ClaimSets%2A> property and eventually to the <xref:System.IdentityModel.Policy.AuthorizationContext.ClaimSets%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -43,8 +59,9 @@
         <Parameter Name="includeWindowsGroups" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="includeWindowsGroups">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="includeWindowsGroups">
+          <see langword="true" /> to get the groups the Windows user belongs to; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" /> class by specifying whether the claims that identify the Windows groups that a user belongs to are initially added to the <see cref="P:System.IdentityModel.Policy.AuthorizationContext.ClaimSets" /> property when the user is authenticated.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,11 +82,20 @@
         <Parameter Name="password" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="userName">To be added.</param>
-        <param name="password">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="userName">The user name associated with the security token.</param>
+        <param name="password">The password associated with the security token.</param>
+        <summary>Authenticates the specified user name and password and returns the set of authorization policies for <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> security tokens.</summary>
+        <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that contains the set of authorization policies in effect for this application.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `userName` parameter must be in one of the following formats: `domain\username` or `username`. If the `userName` parameter is in the `domain\username` format, then there must be only one backslash (\\) character separating the user name and domain.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="userName" /> contains more than one backslash (\\) character.</exception>
       </Docs>
     </Member>
   </Members>

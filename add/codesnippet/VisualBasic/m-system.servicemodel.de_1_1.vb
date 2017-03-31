@@ -1,1 +1,0 @@
-			Dim cd2 As ContractDescription = ContractDescription.GetContract(GetType(ICalculator))

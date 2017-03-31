@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the version of the WS-Discovery protocol to use.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the address to which ad hoc discovery messages are sent.</summary>
+        <value>The discovery address.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +49,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the discovery version requested.</param>
+        <summary>Gets the specified discovery version.</summary>
+        <returns>The discovery version.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +68,16 @@
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the message version.</summary>
+        <value>The message version.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is a combination of the WS-Addressing version and SOAP version that the protocol mandates. The underlying binding used for discovery must support this version of WS-Addressing and SOAP. [!INCLUDE[crabout](~/includes/crabout-md.md)] message version, see <xref:System.ServiceModel.Channels.MessageVersion>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -86,8 +93,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the discovery version.</summary>
+        <value>The discovery version name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +111,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the discovery version namespace.</summary>
+        <value>The discovery version namespace.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,8 +130,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a string representation of the WS-Discovery protocol version.</summary>
+        <returns>The WS-Discovery protocol version.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,8 +148,8 @@
         <ReturnType>System.ServiceModel.Discovery.DiscoveryVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the 1.1 version of the WS-Discovery protocol.</summary>
+        <value>The 1.1 version of the WS-Discovery protocol.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,8 +166,8 @@
         <ReturnType>System.ServiceModel.Discovery.DiscoveryVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the April 2005 version of the WS-Discovery protocol.</summary>
+        <value>The April 2005 version of the WS-Discovery protocol.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,8 +184,8 @@
         <ReturnType>System.ServiceModel.Discovery.DiscoveryVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Committee Draft 1 version of the WS-Discovery protocol.</summary>
+        <value>The Committee Draft 1 version of the WS-Discovery protocol.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

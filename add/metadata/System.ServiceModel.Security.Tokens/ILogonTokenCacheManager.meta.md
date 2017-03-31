@@ -1,14 +1,20 @@
 ---
 uid: System.ServiceModel.Security.Tokens.ILogonTokenCacheManager
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ILogonTokenCacheManager.FlushLogonTokenCache
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.ServiceModel.Security.Tokens.ILogonTokenCacheManager.RemoveCachedLogonToken(System.String)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

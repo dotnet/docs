@@ -15,8 +15,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TValue">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TValue">[!INCLUDE[cpp_iter_arg](~/includes/cpp-iter-arg-md.md)]</typeparam>
+    <summary>Interface for an iterator that is used to read a sequence from a container only in the forward direction. The element that the iterator points to can be read only one time, and it cannot be modified.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,9 +36,10 @@
         <Parameter Name="A_0" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="A_0">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="A_0">The <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object.</param>
+        <summary>Determines whether two <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if the current iterator and the specified iterator are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

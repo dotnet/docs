@@ -11,7 +11,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the basic https security mode.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +29,7 @@
         <ReturnType>System.ServiceModel.BasicHttpsSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Transport security mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="TransportWithMessageCredential">
@@ -46,7 +46,7 @@
         <ReturnType>System.ServiceModel.BasicHttpsSecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The TransportWithMessageCredential security mode.</summary>
       </Docs>
     </Member>
   </Members>

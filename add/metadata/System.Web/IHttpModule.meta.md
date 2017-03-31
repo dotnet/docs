@@ -1,14 +1,17 @@
 ---
 uid: System.Web.IHttpModule
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.IHttpModule.Init(System.Web.HttpApplication)
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.IHttpModule.Dispose
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

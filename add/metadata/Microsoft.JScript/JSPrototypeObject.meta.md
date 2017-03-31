@@ -1,9 +1,9 @@
 ---
 uid: Microsoft.JScript.JSPrototypeObject
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.JSPrototypeObject.constructor
-internalonly: False
+ms.author: "mikejo"
 ---

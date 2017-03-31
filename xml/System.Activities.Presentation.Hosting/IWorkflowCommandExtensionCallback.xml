@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides additional functions when a specified workflow command is loaded.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <Parameter Name="commandInfo" Type="System.Activities.Presentation.Hosting.CommandInfo" />
       </Parameters>
       <Docs>
-        <param name="commandInfo">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="commandInfo">The workflow command to be loaded.</param>
+        <summary>Provides additional functions based on the specified workflow command to be loaded.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

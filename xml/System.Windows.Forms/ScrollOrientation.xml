@@ -10,8 +10,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the scroll bar orientation for the <see cref="E:System.Windows.Forms.ScrollBar.Scroll" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.ScrollEventArgs.ScrollOrientation%2A> property.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="HorizontalScroll">
@@ -27,7 +34,7 @@
         <ReturnType>System.Windows.Forms.ScrollOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The horizontal scroll bar.</summary>
       </Docs>
     </Member>
     <Member MemberName="VerticalScroll">
@@ -43,7 +50,7 @@
         <ReturnType>System.Windows.Forms.ScrollOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The vertical scroll bar.</summary>
       </Docs>
     </Member>
   </Members>

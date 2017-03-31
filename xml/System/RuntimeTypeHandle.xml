@@ -32,8 +32,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a type using an internal metadata token.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to obtain a <xref:System.RuntimeTypeHandle>from a type or from an object, and how to turn the handle back into a type.  
+  
+ [!code-cpp[Type_GetTypeHandle#1](~/samples/snippets/cpp/VS_Snippets_CLR/Type_GetTypeHandle/CPP/Type_GetTypeHandle.cpp#1)]
+ [!code-csharp[Type_GetTypeHandle#1](~/samples/snippets/csharp/VS_Snippets_CLR/Type_GetTypeHandle/CS/type_gettypehandle.cs#1)]
+ [!code-vb[Type_GetTypeHandle#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Type_GetTypeHandle/VB/type_gettypehandle.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -69,9 +80,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">An object to compare to the current instance.</param>
+        <summary>Indicates whether the specified object is equal to the current <see cref="T:System.RuntimeTypeHandle" /> structure.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.RuntimeTypeHandle" /> structure and is equal to the value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +120,10 @@
         <Parameter Name="handle" Type="System.RuntimeTypeHandle" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="handle">The <see cref="T:System.RuntimeTypeHandle" /> structure to compare to the current instance.</param>
+        <summary>Indicates whether the specified <see cref="T:System.RuntimeTypeHandle" /> structure is equal to the current <see cref="T:System.RuntimeTypeHandle" /> structure.</summary>
+        <returns>
+          <see langword="true" /> if the value of <paramref name="handle" /> is equal to the value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,8 +153,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for the current instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,8 +185,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a handle to the module that contains the type represented by the current instance.</summary>
+        <returns>A <see cref="T:System.ModuleHandle" /> structure representing a handle to the module that contains the type represented by the current instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,10 +212,24 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="info">The object to be populated with serialization information.</param>
+        <param name="context">(Reserved) The location where serialized data will be stored and retrieved.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data necessary to deserialize the type represented by the current instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `context` parameter is reserved; it does not currently participate in this operation.  
+  
+ For more information about the serialization operation performed by this method, see the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%28System.String%2CSystem.Object%2CSystem.Type%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">
+          <see cref="P:System.RuntimeTypeHandle.Value" /> is invalid.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -234,11 +261,19 @@
         <Parameter Name="right" Type="System.RuntimeTypeHandle" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">An object to compare to <c>right</c>.</param>
+        <param name="right">A <see cref="T:System.RuntimeTypeHandle" /> structure to compare to <c>left</c>.</param>
+        <summary>Indicates whether an object and a <see cref="T:System.RuntimeTypeHandle" /> structure are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> is a <see cref="T:System.RuntimeTypeHandle" /> structure and is equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using this operator to compare two variables of type <xref:System.RuntimeTypeHandle> causes an ambiguous overload resolution error when compiled. Use the <xref:System.RuntimeTypeHandle.Equals%2A> method instead.  
+  
+ The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals%28System.Object%2CSystem.RuntimeTypeHandle%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -270,11 +305,19 @@
         <Parameter Name="right" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">A <see cref="T:System.RuntimeTypeHandle" /> structure to compare to <c>right</c>.</param>
+        <param name="right">An object to compare to <c>left</c>.</param>
+        <summary>Indicates whether a <see cref="T:System.RuntimeTypeHandle" /> structure is equal to an object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="right" /> is a <see cref="T:System.RuntimeTypeHandle" /> and is equal to <paramref name="left" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using this operator to compare two variables of type <xref:System.RuntimeTypeHandle> causes an ambiguous overload resolution error when compiled. Use the <xref:System.RuntimeTypeHandle.Equals%2A> method instead.  
+  
+ The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals%28System.RuntimeTypeHandle%2CSystem.Object%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -306,11 +349,19 @@
         <Parameter Name="right" Type="System.RuntimeTypeHandle" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">An object to compare to <c>right</c>.</param>
+        <param name="right">A <see cref="T:System.RuntimeTypeHandle" /> structure to compare to <c>left</c>.</param>
+        <summary>Indicates whether an object and a <see cref="T:System.RuntimeTypeHandle" /> structure are not equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> is a <see cref="T:System.RuntimeTypeHandle" /> and is not equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using this operator to compare two variables of type <xref:System.RuntimeTypeHandle> causes an ambiguous overload resolution error when compiled. Use the <xref:System.RuntimeTypeHandle.Equals%2A> method instead.  
+  
+ The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals%28System.Object%2CSystem.RuntimeTypeHandle%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -342,11 +393,19 @@
         <Parameter Name="right" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">A <see cref="T:System.RuntimeTypeHandle" /> structure to compare to <c>right</c>.</param>
+        <param name="right">An object to compare to <c>left</c>.</param>
+        <summary>Indicates whether a <see cref="T:System.RuntimeTypeHandle" /> structure is not equal to an object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="right" /> is a <see cref="T:System.RuntimeTypeHandle" /> structure and is not equal to <paramref name="left" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using this operator to compare two variables of type <xref:System.RuntimeTypeHandle> causes an ambiguous overload resolution error when compiled. Use the <xref:System.RuntimeTypeHandle.Equals%2A> method instead.  
+  
+ The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals%28System.RuntimeTypeHandle%2CSystem.Object%29?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -367,9 +426,10 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a handle to the type represented by this instance.</summary>
+        <value>A handle to the type represented by this instance.</value>
         <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
   </Members>

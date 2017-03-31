@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the impersonation level to be used to connect to WMI.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.Management.ImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Anonymous COM impersonation level that hides the identity of the caller. Calls to WMI may fail with this impersonation level.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -43,7 +43,7 @@
         <ReturnType>System.Management.ImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Default impersonation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delegate">
@@ -59,7 +59,7 @@
         <ReturnType>System.Management.ImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Delegate-level COM impersonation level that allows objects to permit other objects to use the credentials of the caller. This level, which will work with WMI calls but may constitute an unnecessary security risk, is supported only under Windows 2000.</summary>
       </Docs>
     </Member>
     <Member MemberName="Identify">
@@ -75,7 +75,7 @@
         <ReturnType>System.Management.ImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Identify-level COM impersonation level that allows objects to query the credentials of the caller. Calls to WMI may fail with this impersonation level.</summary>
       </Docs>
     </Member>
     <Member MemberName="Impersonate">
@@ -91,7 +91,7 @@
         <ReturnType>System.Management.ImpersonationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Impersonate-level COM impersonation level that allows objects to use the credentials of the caller. This is the recommended impersonation level for WMI calls.</summary>
       </Docs>
     </Member>
   </Members>

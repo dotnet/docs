@@ -1,14 +1,19 @@
 ---
 uid: System.Windows.Media.MediaScriptCommandEventArgs
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.MediaScriptCommandEventArgs.ParameterType
-internalonly: False
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Windows.Media.MediaScriptCommandEventArgs.ParameterValue
-internalonly: False
+ms.author: "kempb"
+manager: "ghogen"
 ---

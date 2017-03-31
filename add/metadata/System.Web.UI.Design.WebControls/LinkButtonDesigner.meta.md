@@ -1,9 +1,11 @@
 ---
 uid: System.Web.UI.Design.WebControls.LinkButtonDesigner
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Web.UI.Design.WebControls.LinkButtonDesigner.#ctor
-internalonly: False
+ms.author: "riande"
+manager: "wpickett"
 ---

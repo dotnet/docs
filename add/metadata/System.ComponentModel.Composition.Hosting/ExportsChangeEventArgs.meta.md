@@ -1,29 +1,41 @@
 ---
 uid: System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs.AddedExports
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs.AtomicComposition
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs.ChangedContractNames
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs.#ctor(System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ExportDefinition},System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ExportDefinition},System.ComponentModel.Composition.Hosting.AtomicComposition)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs.RemovedExports
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

@@ -1,14 +1,17 @@
 ---
 uid: System.Net.HttpListenerBasicIdentity
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerBasicIdentity.#ctor(System.String,System.String)
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
 uid: System.Net.HttpListenerBasicIdentity.Password
-internalonly: False
+ms.author: "bobdel"
+manager: "markl"
 ---

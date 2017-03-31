@@ -1,39 +1,43 @@
 ---
 uid: Microsoft.JScript.NumberConstructor
-internalonly: False
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.NumberConstructor.Invoke
 ---
 
 ---
 uid: Microsoft.JScript.NumberConstructor.NaN
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberConstructor.NEGATIVE_INFINITY
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberConstructor.MIN_VALUE
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberConstructor.POSITIVE_INFINITY
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberConstructor.MAX_VALUE
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberConstructor.CreateInstance(System.Object[])
-internalonly: False
+ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.NumberConstructor.Invoke(System.Object)
-internalonly: False
+ms.author: "mikejo"
 ---

@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Reports the bracket characters that a markup extension can return.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +34,9 @@
         <Parameter Name="closingBracket" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="openingBracket">To be added.</param>
-        <param name="closingBracket">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="openingBracket">A <see cref="T:System.Char" /> that defines the opening bracket character.</param>
+        <param name="closingBracket">A <see cref="T:System.Char" /> that defines the closing bracket character.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.MarkupExtensionBracketCharactersAttribute" /> class using the provided characters.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,8 +53,8 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the character to be used as the closing delimiter in a <see cref="T:System.Windows.Markup.MarkupExtension" />.</summary>
+        <value>A <see cref="T:System.Char" /> representing the character.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +71,8 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Specifies the character to be used as the opening delimiter in a <see cref="T:System.Windows.Markup.MarkupExtension" />.</summary>
+        <value>A <see cref="T:System.Char" /> representing the character.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

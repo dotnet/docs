@@ -1,9 +1,13 @@
 ---
 uid: System.Xml.Serialization.XmlSerializationGeneratedCode
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Xml.Serialization.XmlSerializationGeneratedCode.#ctor
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

@@ -11,8 +11,27 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines the security settings for a binding.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any `ProtectionLevel` settings of a transport are ignored if the <xref:System.ServiceModel.SecurityMode> is set to None. [!INCLUDE[crabout](~/includes/crabout-md.md)] the `ProtectionLevel` property, see [Understanding Protection Level](../Topic/Understanding%20Protection%20Level.md).  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] [!INCLUDE[indigo1](~/includes/indigo1-md.md)] security and how this property affects general security features, see [Securing Services](../Topic/Securing%20Services.md) and [Programming WCF Security](../Topic/Programming%20WCF%20Security.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] the transport mode, see [Transport Security](../Topic/Transport%20Security.md).  
+  
+ Note that if you choose TransportWithMessageCredential, then the value set in <xref:System.ServiceModel.HttpClientCredentialType> or <xref:System.ServiceModel.TcpClientCredentialType> is ignored.  
+  
+   
+  
+## Examples  
+ The following example sets the `Mode` property of the <xref:System.ServiceModel.WSHttpBinding>. For more examples, see [How to: Set the Security Mode](../Topic/How%20to:%20Set%20the%20Security%20Mode.md).  
+  
+ [!code-csharp[c_SettingSecurityMode#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_settingsecuritymode/cs/source.cs#1)]
+ [!code-vb[c_SettingSecurityMode#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_settingsecuritymode/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Message">
@@ -29,7 +48,7 @@
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Security is provided using SOAP message security.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -46,7 +65,7 @@
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Security is disabled.</summary>
       </Docs>
     </Member>
     <Member MemberName="Transport">
@@ -63,7 +82,7 @@
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Security is provided using a secure transport (for example, HTTPS).</summary>
       </Docs>
     </Member>
     <Member MemberName="TransportWithMessageCredential">
@@ -80,7 +99,7 @@
         <ReturnType>System.ServiceModel.SecurityMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A secure transport (for example, HTTPS) provides integrity, confidentiality, and authentication while SOAP message security provides client authentication.</summary>
       </Docs>
     </Member>
   </Members>

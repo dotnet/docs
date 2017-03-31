@@ -1,4 +1,5 @@
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Docking
-internalonly: False
+ms.author: "mblythe"
+manager: "mblythe"
 ---

@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A service contract that defines the methods that wrap the Message-oriented operation contracts exposed by <see cref="T:System.ServiceModel.Security.IWSTrustChannelContract" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,11 +42,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>Asynchronously sends a WS-Trust Cancel message to an endpoint.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,11 +68,11 @@
         <Parameter Name="asyncState" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="asyncState">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>Asynchronously sends a WS-Trust Renew message to an endpoint.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,11 +94,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>Asynchronously sends a WS-Trust Renew message to an endpoint.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,11 +120,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <param name="callback">An optional <see cref="T:System.AsyncCallback" /> delegate, to be called when the send is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous send request from other requests.</param>
+        <summary>Asynchronously sends a WS-Trust Validate message to an endpoint.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the asynchronous send, which could still be pending.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,9 +144,9 @@
         <Parameter Name="request" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <summary>Sends a WS-Trust Cancel message to an endpoint.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,9 +167,9 @@
         <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">A reference to the outstanding asynchronous send request.</param>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</param>
+        <summary>Completes the asynchronous send operation initiated by a call to <see cref="M:System.ServiceModel.Security.IWSTrustChannelContract.BeginCancel(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,10 +190,10 @@
         <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="result">A reference to the outstanding asynchronous send request.</param>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</param>
+        <summary>Completes the asynchronous send operation initiated by a call to <see cref="M:System.ServiceModel.Security.IWSTrustChannelContract.BeginIssue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the token issued by the STS.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,9 +214,9 @@
         <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">A reference to the outstanding asynchronous send request.</param>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</param>
+        <summary>Completes the asynchronous send operation initiated by a call to <see cref="M:System.ServiceModel.Security.IWSTrustChannelContract.BeginRenew(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,9 +237,9 @@
         <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">A reference to the outstanding asynchronous send request.</param>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</param>
+        <summary>Completes the asynchronous send operation initiated by a call to <see cref="M:System.ServiceModel.Security.IWSTrustChannelContract.BeginValidate(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,9 +259,9 @@
         <Parameter Name="request" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <summary>Sends a WS-Trust Issue message to an endpoint STS.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the token issued by the STS.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,10 +282,10 @@
         <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <param name="response">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the response from the STS.</param>
+        <summary>Sends a WS-Trust Issue message to an endpoint STS.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the token issued by the STS.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -305,9 +305,9 @@
         <Parameter Name="request" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <summary>Sends a WS-Trust Renew message to an endpoint.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,9 +327,9 @@
         <Parameter Name="request" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> that represents the request to the STS.</param>
+        <summary>Sends a WS-Trust Validate message to an endpoint.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" /> that represents the STS response.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

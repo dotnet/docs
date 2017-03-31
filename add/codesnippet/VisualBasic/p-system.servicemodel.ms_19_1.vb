@@ -1,1 +1,0 @@
-            message.BodyType = 23

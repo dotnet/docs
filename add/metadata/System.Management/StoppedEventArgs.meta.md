@@ -1,9 +1,9 @@
 ---
 uid: System.Management.StoppedEventArgs
-internalonly: False
+manager: "jillfra"
 ---
 
 ---
 uid: System.Management.StoppedEventArgs.Status
-internalonly: False
+manager: "jillfra"
 ---

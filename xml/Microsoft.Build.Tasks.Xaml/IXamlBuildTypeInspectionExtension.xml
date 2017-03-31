@@ -8,7 +8,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies information about the XAML build type inspection extension.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +28,9 @@
         <Parameter Name="buildContext" Type="Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext" />
       </Parameters>
       <Docs>
-        <param name="buildContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="buildContext">The build context for the extension.</param>
+        <summary>Indicates whether the XAML build type inspection extension executes.</summary>
+        <returns>True if the XAML build type inspection extension executes; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

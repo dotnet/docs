@@ -1,74 +1,111 @@
 ---
 uid: System.AggregateException
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AggregateException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AggregateException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AggregateException.#ctor(System.Collections.Generic.IEnumerable{System.Exception})
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AggregateException.InnerExceptions
-internalonly: False
----
-
----
-uid: System.AggregateException.ToString
-internalonly: False
----
-
----
-uid: System.AggregateException.#ctor(System.String,System.Exception)
-internalonly: False
----
-
----
-uid: System.AggregateException.#ctor(System.Exception[])
-internalonly: False
----
-
----
-uid: System.AggregateException.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Exception})
-internalonly: False
----
-
----
-uid: System.AggregateException.Flatten
-internalonly: False
----
-
----
-uid: System.AggregateException.#ctor(System.String,System.Exception[])
-internalonly: False
----
-
----
-uid: System.AggregateException.Handle(System.Func{System.Exception,System.Boolean})
-internalonly: False
----
-
----
-uid: System.AggregateException.#ctor(System.String)
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AggregateException.#ctor
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AggregateException.ToString
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AggregateException.#ctor(System.String,System.Exception)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AggregateException.#ctor(System.Exception[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AggregateException.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Exception})
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AggregateException.Flatten
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AggregateException.#ctor(System.String,System.Exception[])
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AggregateException.Handle(System.Func{System.Exception,System.Boolean})
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AggregateException.#ctor(System.String)
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AggregateException.#ctor
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
 
 ---
 uid: System.AggregateException.GetBaseException
-internalonly: False
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---

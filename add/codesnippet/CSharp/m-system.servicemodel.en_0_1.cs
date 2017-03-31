@@ -1,1 +1,0 @@
-     string toStrS12 = envS12.ToString();

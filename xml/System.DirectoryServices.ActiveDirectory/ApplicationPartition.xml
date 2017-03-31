@@ -11,8 +11,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> class represents an application partition for a particular domain.</summary>
     <remarks>To be added.</remarks>
+    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,10 +30,22 @@
         <Parameter Name="distinguishedName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="distinguishedName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that is used to create this application partition.</param>
+        <param name="distinguishedName">The <see cref="T:System.String" /> that specifies the distinguished name for this application partition.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> class, using the specified distinguished name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default object class that represents the application partition is domainDNS.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">The target in the <paramref name="context" /> parameter is not a server, or the <paramref name="distinguishedName" /> parameter is not in a valid distinguished name format.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or <paramref name="distinguishedName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -50,11 +63,23 @@
         <Parameter Name="objectClass" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="distinguishedName">To be added.</param>
-        <param name="objectClass">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that is used to create this application partition.</param>
+        <param name="distinguishedName">The <see cref="T:System.String" /> that specifies the distinguished name for this application partition.</param>
+        <param name="objectClass">The <see cref="T:System.String" /> that specifies the object class that represents this application partition.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> class, using the specified distinguished name and object class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default object class that represents the application partition is domainDNS.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">The target in the <paramref name="context" /> parameter is not a server, or the <paramref name="distinguishedName" /> parameter is not in a valid distinguished name format.  This exception is also thrown if the application partition is being created within an Active Directory forest, rather than an AD LDS configuration set, because the <paramref name="objectClass" /> can only be specified for AD LDS configuration sets.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or <paramref name="distinguishedName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -71,8 +96,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Deletes this application partition.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been saved in the underlying directory store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="DirectoryServers">
@@ -88,9 +116,18 @@
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryServerCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection" /> object that contains the directory servers that host this application partition.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection" /> object that contains <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> objects that represent directory servers for this application partition.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.DirectoryServers%2A?displayProperty=fullName> property returns the same collection of <xref:System.DirectoryServices.ActiveDirectory.DirectoryServer> objects as the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDirectoryServers?displayProperty=fullName> method if the <xref:System.DirectoryServices.ActiveDirectory.ApplicationPartition> object has been committed to the underlying directory services store.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -109,8 +146,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">A <see cref="T:System.Boolean" /> value that determines if the managed resources should be released. <see langword="true" /> if the managed resources should be released; <see langword="false" /> if only the unmanaged resources should be released.</param>
+        <summary>Releases the managed resources that are used by the <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object and optionally releases unmanaged resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,9 +165,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" /> object that contains all of the directory servers that host this application partition.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" /> object that contains all of the directory servers that host this application partition.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAllDirectoryServers">
@@ -149,10 +188,16 @@
         <Parameter Name="siteName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="siteName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="siteName">A <see cref="T:System.String" /> that specifies the name of the site to search.</param>
+        <summary>Returns an <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" /> object that contains all of the directory servers that host this application partition in the specified site.</summary>
+        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" /> object that contains the directory servers that host this application partition in the specified site.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="siteName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAllDiscoverableDirectoryServers">
@@ -169,9 +214,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" /> object that contains all of the directory servers that have registered either a site-specific DNS record for the current site or a non-site-specific DNS record for the application partition.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" /> object that contains the directory servers that were found.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
+        <exception cref="T:System.NotSupportedException">The application partition is an AD LDS application partition.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindAllDiscoverableDirectoryServers">
@@ -190,10 +238,17 @@
         <Parameter Name="siteName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="siteName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="siteName">A <see cref="T:System.String" /> that specifies the name of the site to search.</param>
+        <summary>Returns a <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" /> object that contains all of the directory servers that have registered a site-specific DNS record, for the specified site, for the application partition.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" /> object that contains the directory servers that are found.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="siteName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
+        <exception cref="T:System.NotSupportedException">The application partition is an AD LDS application partition.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindByName">
@@ -213,11 +268,32 @@
         <Parameter Name="distinguishedName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="distinguishedName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to use for the search.</param>
+        <param name="distinguishedName">A <see cref="T:System.String" /> that contains the distinguished name of the application partition to search for.</param>
+        <summary>Returns an <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object for a given <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object and distinguished name.</summary>
+        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object that represents the results of the search.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">This exception will occur for any one of the following reasons:  
+  
+-   A target specified in the <paramref name="context" /> parameter could not be found.  
+  
+-   The target is a configuration set and no AD LDS instance was found in that configuration set.  
+  
+-   The target is a forest and the application partition was not found in that forest.  
+  
+-   The target does not host the current application partition.  
+  
+-   No AD LDS instance was found for the application partition.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or <paramref name="distinguishedName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any of the following reasons:  
+  
+-   The <paramref name="context" /> parameter is not a valid forest, configuration set, or directory server.  
+  
+-   The <paramref name="distinguishedName" /> has a zero length  
+  
+-   The <paramref name="distinguishedName" /> parameter is in an invalid format.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindDirectoryServer">
@@ -234,9 +310,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object for this application partition and current site.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object for this application partition and site.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindDirectoryServer">
@@ -255,10 +333,12 @@
         <Parameter Name="forceRediscovery" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="forceRediscovery">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="forceRediscovery">A <see cref="T:System.Boolean" /> value that indicates whether cached information should be ignored. <see langword="true" /> if cached information should be ignored; otherwise, <see langword="false" />.</param>
+        <summary>Returns a <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object for the application partition and current site with an option to ignore cached information.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object for this application partition and site.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindDirectoryServer">
@@ -277,10 +357,16 @@
         <Parameter Name="siteName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="siteName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="siteName">A <see cref="T:System.String" /> that specifies a site name.</param>
+        <summary>Returns a <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object for the application partition and a specified site.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object for this application partition and specified site.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="siteName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindDirectoryServer">
@@ -300,11 +386,17 @@
         <Parameter Name="forceRediscovery" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="siteName">To be added.</param>
-        <param name="forceRediscovery">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="siteName">A <see cref="T:System.String" /> that specifies a site name.</param>
+        <param name="forceRediscovery">A <see cref="T:System.Boolean" /> value that indicates whether cached information should be ignored. <see langword="true" /> if cached information should be ignored; otherwise, <see langword="false" />.</param>
+        <summary>Returns a <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object for this application partition for a specified site, with an option to ignore cached information.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object for this application partition and specified site.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="siteName" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="siteName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetApplicationPartition">
@@ -323,10 +415,16 @@
         <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to use to retrieve the application partition object.  The directory context must specify the DNS name of the application partition.</param>
+        <summary>Returns an <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object for a specified directory context.</summary>
+        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object that represents the application partition for the specified directory context.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A target specified in <paramref name="context" /> could not be found.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="context" /> is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -343,9 +441,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a <see cref="T:System.DirectoryServices.DirectoryEntry" /> object for this application partition.</summary>
+        <returns>The <see cref="T:System.DirectoryServices.DirectoryEntry" /> for this application partition.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -362,8 +463,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Commits all changes to the current application partition object to the underlying directory store.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException">An application partition with the same name already exists.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="SecurityReferenceDomain">
@@ -379,9 +484,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets and sets the security reference domain for this application partition.</summary>
+        <value>The distinguished name of the security reference domain for this application.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartition" /> object has not yet been committed to the underlying directory store (applies to set only).</exception>
+        <exception cref="T:System.NotSupportedException">The application partition is an AD LDS application partition.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

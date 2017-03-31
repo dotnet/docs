@@ -10,8 +10,18 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enumerates values for levels of emphasis in prompts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Members of the <xref:System.Speech.Synthesis.PromptEmphasis> enumeration are used by the <xref:System.Speech.Synthesis.PromptStyle.%23ctor%2A> constructor, by the <xref:System.Speech.Synthesis.PromptBuilder.AppendText%2A> method, and by the <xref:System.Speech.Synthesis.PromptBuilder.StartStyle%2A> method to specify the level of emphasis for spoken text. The <xref:System.Speech.Synthesis.PromptStyle.Emphasis%2A> property gets the emphasis for a <xref:System.Speech.Synthesis.PromptStyle> object using a <xref:System.Speech.Synthesis.PromptEmphasis> instance.  
+  
+> [!NOTE]
+>  The speech synthesis engines in Windows do not support variations in the emphasis of speech output at this time. Setting values for emphasis using a member of the <xref:System.Speech.Synthesis.PromptEmphasis> enumeration will produce no audible change in the synthesized speech output.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Moderate">
@@ -27,7 +37,7 @@
         <ReturnType>System.Speech.Synthesis.PromptEmphasis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a moderate level of emphasis.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +53,7 @@
         <ReturnType>System.Speech.Synthesis.PromptEmphasis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates no emphasis.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -59,7 +69,7 @@
         <ReturnType>System.Speech.Synthesis.PromptEmphasis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that no emphasis value is specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="Reduced">
@@ -75,7 +85,7 @@
         <ReturnType>System.Speech.Synthesis.PromptEmphasis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a reduced level of emphasis.</summary>
       </Docs>
     </Member>
     <Member MemberName="Strong">
@@ -91,7 +101,7 @@
         <ReturnType>System.Speech.Synthesis.PromptEmphasis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a strong level of emphasis.</summary>
       </Docs>
     </Member>
   </Members>

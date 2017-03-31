@@ -1,34 +1,48 @@
 ---
 uid: System.Activities.Presentation.View.VirtualizedContainerService
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.VirtualizedContainerService.#ctor(System.Activities.Presentation.EditingContext)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.VirtualizedContainerService.SetHintSize(System.Object,System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.VirtualizedContainerService.HintSizeName
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.VirtualizedContainerService.GetViewElement(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.ICompositeView)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.VirtualizedContainerService.GetHintSize(System.Object)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
 uid: System.Activities.Presentation.View.VirtualizedContainerService.GetContainer(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.ICompositeView)
-internalonly: False
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---

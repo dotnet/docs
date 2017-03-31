@@ -1,9 +1,9 @@
 ---
 uid: System.Transactions.ISinglePhaseNotification
-internalonly: False
+manager: "ghogen"
 ---
 
 ---
 uid: System.Transactions.ISinglePhaseNotification.SinglePhaseCommit(System.Transactions.SinglePhaseEnlistment)
-internalonly: False
+manager: "ghogen"
 ---

@@ -4,7 +4,7 @@ description: Information on samples and tutorials for .NET Core, ASP.NET Core, a
 keywords: .NET, .NET Core, ASP.NET, C#, sample, tutorial
 author: BillWagner
 ms.author: wiwagn
-ms.date: 03/30/2017
+ms.date: 03/31/2017
 ms.topic: article
 ms.prod: .net
 ms.devlang: dotnet
@@ -13,21 +13,21 @@ ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 
 # Samples and tutorials
 
-The .NET documentation contains a rich set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET samples and tutorials. Find great resources to learn the F# programming language on the [F# Foundation's site](http://fsharp.org/learn.html). If you're interested in exploring C# using an online code editor, try these [interactive tutorials](http://go.microsoft.com/fwlink/p/?LinkId=817234).
+The .NET documentation contains a rich set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find great resources to learn the F# programming language on the [F# Foundation's site](http://fsharp.org/learn.html). If you're interested in exploring C# using an online code editor, try these [interactive tutorials](http://go.microsoft.com/fwlink/p/?LinkId=817234).
 
 ## Viewing or downloading samples
 
 Many topics show source code and samples that are available for viewing or download from GitHub. To view the sample, follow the sample link to the sample folder at the aspnet/Docs or dotnet/docs repository on GitHub. To obtain the code for the sample mentioned in a topic, follow these instructions:
 
 1. Obtain the repository containing the sample code for your local system by performing one of the following procedures:
-   * [Fork](https://help.github.com/articles/fork-a-repo/) the repository and [clone](https://help.github.com/articles/cloning-a-repository/) your fork locally.
-   * Clone the repository locally.
+   * [Fork](https://help.github.com/articles/fork-a-repo/) the repository and [clone](https://help.github.com/articles/cloning-a-repository/) the fork to your local system. Forking and cloning permits you to make contributions to the .NET documentation by committing to your fork and creating pull requests to the docs repositories. For more information, see the [.NET Documentation Contributing Guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md) and the [ASP.NET Docs Contributing Guide](https://github.com/aspnet/Docs/blob/master/CONTRIBUTING.md).
+   * Clone the repository locally. Note that if you clone a docs repository directly to your local system that you won't be able to make commits, so you won't be able to make documentation contributions later.
    * Download a ZIP of the repository to your local system. Un-ZIP the compressed archive.
-1. Navigate within the repository to the sample's location. The relative path to the sample's location appears in your browser's address bar when you follow the link to the sample in the topic where the sample is described.
+1. Navigate within the repository to the sample's location. The relative path to the sample's location appears in the GitHub UI and in your browser's address bar when you follow the link to the sample in the topic where the sample is described.
 1. If you intend to run the sample code locally and prefer to run it from a different location on your system than where you maintain your repository files, copy the sample's files and folders to your preferred location.
 1. To run a sample, you have several options:
    * Use the [dotnet CLI tools](../core/tools/index.md): In a console window, navigate to the sample's folder and use dotnet CLI commands.
-   * Use [Visual Studio](https://www.visualstudio.com/) or [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/): Open the sample by selecting **File > Open > Project/Solution** from the menu bar, navigate to the sample project folder, and select the project's *.csproj* file.
+   * Use [Visual Studio](https://www.visualstudio.com/) or [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/): Open the sample by selecting **File > Open > Project/Solution** from the menu bar, navigate to the sample project folder, and select the project file (*.csproj* or *.fsproj*).
    * Use [Visual Studio Code](https://code.visualstudio.com/): Open the sample by selecting **File > Open Folder** from the menu bar and selecting the sample's project folder.
    * Use a different IDE that supports .NET Core projects.
 
